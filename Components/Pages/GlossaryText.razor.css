@@ -1,0 +1,303 @@
+/* =========================================
+   ROYAL TREASURY
+   GLOSSARY TEXT
+   ========================================= */
+
+
+/* =========================================
+   GLOSSARY TEXT CONTAINER
+
+   IMPORTANT:
+   Do NOT use pre-wrap here.
+
+   Razor itself contains formatting
+   whitespace and indentation. Preserving
+   that whitespace causes giant gaps in
+   normal paragraph text.
+   ========================================= */
+
+.glossary-text {
+    display: inline;
+
+    white-space: normal;
+}
+
+
+/* =========================================
+   GLOSSARY TERM
+
+   inline-block gives the tooltip a stable
+   positioning anchor.
+   ========================================= */
+
+.glossary-term {
+    position: relative;
+
+    display: inline-block;
+
+    vertical-align: baseline;
+
+    cursor: help;
+
+    outline: none;
+
+    /*
+     * Keep a multi-word glossary term
+     * together where possible.
+     */
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   VISIBLE TERM
+   ========================================= */
+
+.glossary-term-text {
+    color: #d6a74d;
+
+    font-weight: 700;
+
+    text-decoration-line: underline;
+
+    text-decoration-color: #d6a74d;
+
+    text-decoration-thickness: 1px;
+
+    text-underline-offset: 0.16em;
+
+    transition:
+        color 120ms ease,
+        text-decoration-color 120ms ease;
+}
+
+
+/* =========================================
+   TERM HOVER / FOCUS
+   ========================================= */
+
+.glossary-term:hover
+.glossary-term-text,
+
+.glossary-term:focus
+.glossary-term-text,
+
+.glossary-term:focus-visible
+.glossary-term-text {
+    color: #f1c66d;
+
+    text-decoration-color: #f1c66d;
+}
+
+
+/* =========================================
+   TOOLTIP
+   ========================================= */
+
+.glossary-tooltip {
+    position: absolute;
+
+    /*
+     * Anchor directly beneath the term.
+     */
+    top: calc(100% + 0.65rem);
+
+    left: 50%;
+
+    z-index: 5000;
+
+    /*
+     * Tooltip sizing.
+     */
+    width: max-content;
+
+    min-width: 280px;
+
+    max-width: min(
+        520px,
+        80vw
+    );
+
+    padding:
+        0.75rem
+        0.9rem;
+
+    border:
+        2px solid
+        #805526;
+
+    border-radius:
+        3px;
+
+    background: #050505;
+
+    color: #f5e7d0;
+
+    box-shadow:
+        0 12px 32px
+        rgba(
+            0,
+            0,
+            0,
+            0.7
+        );
+
+    /*
+     * Center tooltip under term.
+     */
+    transform:
+        translateX(-50%)
+        translateY(-4px);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    /*
+     * Tooltip text itself should wrap
+     * normally.
+     */
+    white-space: normal;
+
+    text-align: left;
+
+    transition:
+        opacity 100ms ease,
+        transform 100ms ease,
+        visibility 100ms ease;
+}
+
+
+/* =========================================
+   TOOLTIP ARROW
+   ========================================= */
+
+.glossary-tooltip::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 100%;
+
+    width: 12px;
+    height: 12px;
+
+    border-top:
+        2px solid
+        #805526;
+
+    border-left:
+        2px solid
+        #805526;
+
+    background: #050505;
+
+    transform:
+        translate(
+            -50%,
+            7px
+        )
+        rotate(45deg);
+}
+
+
+/* =========================================
+   SHOW TOOLTIP
+   ========================================= */
+
+.glossary-term:hover
+.glossary-tooltip,
+
+.glossary-term:focus
+.glossary-tooltip,
+
+.glossary-term:focus-visible
+.glossary-tooltip {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+}
+
+
+/* =========================================
+   TOOLTIP TITLE
+   ========================================= */
+
+.glossary-tooltip-title {
+    display: block;
+
+    margin-bottom: 0.3rem;
+
+    color: #f3d49a;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 1.15rem;
+
+    font-weight: 900;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   TOOLTIP DEFINITION
+
+   pre-line preserves the intentional
+   \\n\\n paragraph breaks from glossary.json
+   without preserving Razor indentation.
+   ========================================= */
+
+.glossary-tooltip-definition {
+    display: block;
+
+    color: #f0e1cb;
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
+
+    line-height: 1.45;
+
+    white-space: pre-line;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .glossary-tooltip {
+        min-width: 220px;
+
+        max-width: 75vw;
+
+        padding:
+            0.65rem
+            0.75rem;
+    }
+
+
+    .glossary-tooltip-title {
+        font-size: 1.05rem;
+    }
+
+
+    .glossary-tooltip-definition {
+        font-size: 0.88rem;
+    }
+
+}

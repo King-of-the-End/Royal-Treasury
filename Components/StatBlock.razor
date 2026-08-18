@@ -1,0 +1,988 @@
+@using System.Text.Json
+@using Website_of_Everything.Models
+
+
+<article class="rt-statblock">
+
+
+    <!-- =================================
+         CREATURE HEADER
+         ================================= -->
+
+    <header class="rt-statblock-header">
+
+        <h2>
+            @Data.Title
+        </h2>
+
+
+        @if (!string.IsNullOrWhiteSpace(CreatureLine))
+        {
+            <p>
+
+                <GlossaryText
+                    Text="@CreatureLine"
+                    Context="GlossaryContext.StatBlock" />
+
+            </p>
+        }
+
+    </header>
+
+
+    <!-- =================================
+         COLUMNS
+         ================================= -->
+
+    <div class="
+        rt-statblock-columns
+        @(HasRightColumn
+            ? ""
+            : "rt-statblock-columns-single")">
+
+
+        <!-- =================================
+             LEFT COLUMN
+             ================================= -->
+
+        <div class="rt-statblock-column">
+
+
+            <!-- =================================
+                 CORE STATS
+                 ================================= -->
+
+            <section class="rt-stat-card">
+
+                <div class="rt-stat-section-bar">
+                    Stats
+                </div>
+
+
+                <dl class="rt-core-stats">
+
+
+                    <!-- AC -->
+
+                    @if (
+                        !string.IsNullOrWhiteSpace(
+                            Data.ArmorClass))
+                    {
+                        <div>
+
+                            <dt>
+                                AC
+                            </dt>
+
+                            <dd>
+
+                                <GlossaryText
+                                    Text="@Data.ArmorClass"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </dd>
+
+                        </div>
+                    }
+
+
+                    <!-- HIT POINTS -->
+
+                    @if (
+                        !string.IsNullOrWhiteSpace(
+                            Data.HitPoints))
+                    {
+                        <div>
+
+                            <dt>
+                                Hit Points
+                            </dt>
+
+                            <dd>
+
+                                <GlossaryText
+                                    Text="@Data.HitPoints"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </dd>
+
+                        </div>
+                    }
+
+
+                    <!-- SPEED -->
+
+                    @if (Data.Speed.Count > 0)
+                    {
+                        <div>
+
+                            <dt>
+                                Speed
+                            </dt>
+
+                            <dd>
+
+                                <GlossaryText
+                                    Text="@SpeedText"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </dd>
+
+                        </div>
+                    }
+
+                </dl>
+
+            </section>
+
+
+            <!-- =================================
+                 ABILITY SCORES
+                 ================================= -->
+
+            @if (Data.AbilityScores.Count > 0)
+            {
+                <section class="rt-stat-card">
+
+                    <div class="rt-stat-section-bar">
+                        Abilities
+                    </div>
+
+
+                    <div class="rt-abilities">
+
+                        @foreach (
+                            var abilityName
+                            in AbilityOrder)
+                        {
+                            @if (
+                                Data.AbilityScores
+                                    .TryGetValue(
+                                        abilityName,
+                                        out var ability))
+                            {
+                                <div class="rt-ability">
+
+
+                                    <!-- SCORE -->
+
+                                    <div class="rt-ability-score">
+
+                                        <span>
+                                            @abilityName
+                                        </span>
+
+                                        <strong>
+                                            @ability.Score
+                                        </strong>
+
+                                    </div>
+
+
+                                    <!-- CHECK / SAVE -->
+
+                                    <div class="rt-ability-rolls">
+
+                                        <div>
+
+                                            <small>
+                                                Check
+                                            </small>
+
+                                            <strong>
+                                                @DisplayRoll(
+                                                    ability.Check)
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div>
+
+                                            <small>
+                                                Save
+                                            </small>
+
+                                            <strong>
+                                                @DisplayRoll(
+                                                    ability.Save)
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            }
+                        }
+
+                    </div>
+
+                </section>
+            }
+
+
+            <!-- =================================
+                 CREATURE INFO
+                 ================================= -->
+
+            @if (HasInfo)
+            {
+                <section class="rt-stat-card">
+
+                    <div class="rt-stat-section-bar">
+                        Info
+                    </div>
+
+
+                    <dl class="rt-details">
+
+
+                        <!-- SKILLS -->
+
+                        @if (Data.Skills.Count > 0)
+                        {
+                            <div>
+
+                                <dt>
+                                    Skills
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@string.Join(", ", Data.Skills)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
+                        <!-- RESISTANCES -->
+
+                        @if (Data.Resistances.Count > 0)
+                        {
+                            <div>
+
+                                <dt>
+                                    Resistances
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@string.Join(", ", Data.Resistances)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
+                        <!-- VULNERABILITIES -->
+
+                        @if (Data.Vulnerabilities.Count > 0)
+                        {
+                            <div>
+
+                                <dt>
+                                    Vulnerabilities
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@string.Join(", ", Data.Vulnerabilities)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
+                        <!-- IMMUNITIES -->
+
+                        @if (Data.Immunities.Count > 0)
+                        {
+                            <div>
+
+                                <dt>
+                                    Immunities
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@string.Join(", ", Data.Immunities)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
+                        <!-- SENSES -->
+
+                        @if (Data.Senses.Count > 0)
+                        {
+                            <div>
+
+                                <dt>
+                                    Senses
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@string.Join(", ", Data.Senses)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
+                        <!-- LANGUAGES -->
+
+                        @if (HasJsonValue(Data.Languages))
+                        {
+                            <div>
+
+                                <dt>
+                                    Languages
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@FormatJsonValue(Data.Languages)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
+                        <!-- PROFICIENCY BONUS -->
+
+                        @if (
+                            HasJsonValue(
+                                Data.ProficiencyBonus))
+                        {
+                            <div>
+
+                                <dt>
+                                    PB
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@FormatJsonValue(Data.ProficiencyBonus)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+                    </dl>
+
+                </section>
+            }
+
+
+            <!-- =================================
+                 TRAITS
+                 ================================= -->
+
+            @if (Data.Traits.Count > 0)
+            {
+                <section class="rt-stat-section">
+
+                    <div class="rt-stat-section-bar">
+                        Traits
+                    </div>
+
+
+                    @foreach (
+                        var entry
+                        in Data.Traits)
+                    {
+                        <p class="rt-stat-entry">
+
+                            <strong>
+                                <em>
+
+                                    <GlossaryText
+                                        Text="@entry.Name"
+                                        Context="GlossaryContext.StatBlock" />.
+
+                                </em>
+                            </strong>
+
+                            <GlossaryText
+                                Text="@entry.Description"
+                                Context="GlossaryContext.StatBlock" />
+
+                        </p>
+                    }
+
+                </section>
+            }
+
+        </div>
+
+
+        <!-- =================================
+             RIGHT COLUMN
+             ================================= -->
+
+        @if (HasRightColumn)
+        {
+            <div class="rt-statblock-column">
+
+
+                <!-- =================================
+                     ACTIONS
+                     ================================= -->
+
+                @if (Data.Actions.Count > 0)
+                {
+                    <section class="rt-stat-section">
+
+                        <div class="rt-stat-section-bar">
+                            Actions
+                        </div>
+
+
+                        @foreach (
+                            var entry
+                            in Data.Actions)
+                        {
+                            <p class="rt-stat-entry">
+
+                                <strong>
+                                    <em>
+
+                                        <GlossaryText
+                                            Text="@entry.Name"
+                                            Context="GlossaryContext.StatBlock" />.
+
+                                    </em>
+                                </strong>
+
+                                <GlossaryText
+                                    Text="@entry.Description"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
+
+                    </section>
+                }
+
+
+                <!-- =================================
+                     BONUS ACTIONS
+                     ================================= -->
+
+                @if (Data.BonusActions.Count > 0)
+                {
+                    <section class="rt-stat-section">
+
+                        <div class="rt-stat-section-bar">
+                            Bonus Actions
+                        </div>
+
+
+                        @foreach (
+                            var entry
+                            in Data.BonusActions)
+                        {
+                            <p class="rt-stat-entry">
+
+                                <strong>
+                                    <em>
+
+                                        <GlossaryText
+                                            Text="@entry.Name"
+                                            Context="GlossaryContext.StatBlock" />.
+
+                                    </em>
+                                </strong>
+
+                                <GlossaryText
+                                    Text="@entry.Description"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
+
+                    </section>
+                }
+
+
+                <!-- =================================
+                     REACTIONS
+                     ================================= -->
+
+                @if (Data.Reactions.Count > 0)
+                {
+                    <section class="rt-stat-section">
+
+                        <div class="rt-stat-section-bar">
+                            Reactions
+                        </div>
+
+
+                        @foreach (
+                            var entry
+                            in Data.Reactions)
+                        {
+                            <p class="rt-stat-entry">
+
+                                <strong>
+                                    <em>
+
+                                        <GlossaryText
+                                            Text="@entry.Name"
+                                            Context="GlossaryContext.StatBlock" />.
+
+                                    </em>
+                                </strong>
+
+                                <GlossaryText
+                                    Text="@entry.Description"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
+
+                    </section>
+                }
+
+
+                <!-- =================================
+                     LEGENDARY ACTIONS
+                     ================================= -->
+
+                @if (
+                    Data.LegendaryActions.Count > 0)
+                {
+                    <section class="rt-stat-section">
+
+                        <div class="rt-stat-section-bar">
+                            Legendary Actions
+                        </div>
+
+
+                        @foreach (
+                            var entry
+                            in Data.LegendaryActions)
+                        {
+                            <p class="rt-stat-entry">
+
+                                <strong>
+                                    <em>
+
+                                        <GlossaryText
+                                            Text="@entry.Name"
+                                            Context="GlossaryContext.StatBlock" />.
+
+                                    </em>
+                                </strong>
+
+                                <GlossaryText
+                                    Text="@entry.Description"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
+
+                    </section>
+                }
+
+            </div>
+        }
+
+    </div>
+
+</article>
+
+
+@code {
+
+    // =====================================
+    // DATA
+    // =====================================
+
+    [Parameter]
+    [EditorRequired]
+    public StatBlockData Data { get; set; } =
+        new();
+
+
+    // =====================================
+    // ABILITY ORDER
+    // =====================================
+
+    private static readonly string[]
+        AbilityOrder =
+        [
+            "STR",
+            "DEX",
+            "CON",
+            "INT",
+            "WIS",
+            "CHA"
+        ];
+
+
+    // =====================================
+    // SPEED ORDER
+    // =====================================
+
+    private static readonly string[]
+        SpeedOrder =
+        [
+            "walk",
+            "climb",
+            "fly",
+            "swim",
+            "burrow"
+        ];
+
+
+    // =====================================
+    // CREATURE LINE
+    // =====================================
+
+    private string CreatureLine
+    {
+        get
+        {
+            var creatureType =
+                JoinWords(
+                    Data.Creature.Size,
+                    Data.Creature.Type);
+
+
+            return string.Join(
+                ", ",
+                new[]
+                {
+                    creatureType,
+                    Data.Creature.Alignment
+                }
+                .Where(
+                    value =>
+                        !string.IsNullOrWhiteSpace(
+                            value)));
+        }
+    }
+
+
+    // =====================================
+    // SPEED TEXT
+    // =====================================
+
+    private string SpeedText
+    {
+        get
+        {
+            var results =
+                new List<string>();
+
+
+            var used =
+                new HashSet<string>(
+                    StringComparer
+                        .OrdinalIgnoreCase);
+
+
+            // =================================
+            // NORMAL MOVEMENT TYPES
+            // =================================
+
+            foreach (
+                var speedName
+                in SpeedOrder)
+            {
+                if (
+                    Data.Speed.TryGetValue(
+                        speedName,
+                        out var speedValue)
+                    &&
+                    !string.IsNullOrWhiteSpace(
+                        speedValue))
+                {
+                    results.Add(
+                        FormatSpeed(
+                            speedName,
+                            speedValue));
+
+
+                    used.Add(
+                        speedName);
+                }
+            }
+
+
+            // =================================
+            // CUSTOM MOVEMENT TYPES
+            // =================================
+
+            foreach (
+                var speed
+                in Data.Speed)
+            {
+                if (
+                    used.Contains(speed.Key)
+                    ||
+                    string.IsNullOrWhiteSpace(
+                        speed.Value))
+                {
+                    continue;
+                }
+
+
+                results.Add(
+                    FormatSpeed(
+                        speed.Key,
+                        speed.Value));
+            }
+
+
+            return string.Join(
+                ", ",
+                results);
+        }
+    }
+
+
+    // =====================================
+    // HAS INFO
+    // =====================================
+
+    private bool HasInfo =>
+        Data.Skills.Count > 0
+        ||
+        Data.Resistances.Count > 0
+        ||
+        Data.Vulnerabilities.Count > 0
+        ||
+        Data.Immunities.Count > 0
+        ||
+        Data.Senses.Count > 0
+        ||
+        HasJsonValue(
+            Data.Languages)
+        ||
+        HasJsonValue(
+            Data.ProficiencyBonus);
+
+
+    // =====================================
+    // RIGHT COLUMN
+    // =====================================
+
+    private bool HasRightColumn =>
+        Data.Actions.Count > 0
+        ||
+        Data.BonusActions.Count > 0
+        ||
+        Data.Reactions.Count > 0
+        ||
+        Data.LegendaryActions.Count > 0;
+
+
+    // =====================================
+    // JOIN WORDS
+    // =====================================
+
+    private static string JoinWords(
+        string first,
+        string second)
+    {
+        return string.Join(
+            " ",
+            new[]
+            {
+                first,
+                second
+            }
+            .Where(
+                value =>
+                    !string.IsNullOrWhiteSpace(
+                        value)));
+    }
+
+
+    // =====================================
+    // FORMAT SPEED
+    // =====================================
+
+    private static string FormatSpeed(
+        string name,
+        string value)
+    {
+        /*
+         * Walking speed displays as:
+         *
+         * 30 ft.
+         *
+         * rather than:
+         *
+         * Walk 30 ft.
+         */
+        if (
+            name.Equals(
+                "walk",
+                StringComparison
+                    .OrdinalIgnoreCase))
+        {
+            return value;
+        }
+
+
+        return
+            $"{ToTitleCase(name)} {value}";
+    }
+
+
+    // =====================================
+    // TITLE CASE
+    // =====================================
+
+    private static string ToTitleCase(
+        string value)
+    {
+        if (
+            string.IsNullOrWhiteSpace(
+                value))
+        {
+            return string.Empty;
+        }
+
+
+        var cleaned =
+            value.Replace(
+                '_',
+                ' ');
+
+
+        return
+            char.ToUpperInvariant(
+                cleaned[0])
+            +
+            cleaned[1..];
+    }
+
+
+    // =====================================
+    // DISPLAY CHECK / SAVE
+    // =====================================
+
+    private static string DisplayRoll(
+        string value)
+    {
+        if (
+            string.IsNullOrWhiteSpace(
+                value)
+            ||
+            value == "-")
+        {
+            return "—";
+        }
+
+
+        return value;
+    }
+
+
+    // =====================================
+    // JSON HAS VALUE
+    // =====================================
+
+    private static bool HasJsonValue(
+        JsonElement value)
+    {
+        if (
+            value.ValueKind
+            is JsonValueKind.Undefined
+            or JsonValueKind.Null)
+        {
+            return false;
+        }
+
+
+        if (
+            value.ValueKind ==
+            JsonValueKind.String)
+        {
+            return
+                !string.IsNullOrWhiteSpace(
+                    value.GetString());
+        }
+
+
+        if (
+            value.ValueKind ==
+            JsonValueKind.Array)
+        {
+            return
+                value.GetArrayLength() > 0;
+        }
+
+
+        return true;
+    }
+
+
+    // =====================================
+    // FORMAT JSON
+    // =====================================
+
+    private static string FormatJsonValue(
+        JsonElement value)
+    {
+        return value.ValueKind switch
+        {
+            JsonValueKind.String =>
+                value.GetString()
+                ?? string.Empty,
+
+            JsonValueKind.Array =>
+                string.Join(
+                    ", ",
+                    value
+                        .EnumerateArray()
+                        .Select(
+                            FormatJsonValue)),
+
+            JsonValueKind.True =>
+                "Yes",
+
+            JsonValueKind.False =>
+                "No",
+
+            JsonValueKind.Null =>
+                string.Empty,
+
+            JsonValueKind.Undefined =>
+                string.Empty,
+
+            _ =>
+                value.ToString()
+        };
+    }
+
+}

@@ -1,0 +1,555 @@
+@using Website_of_Everything.Models
+@using Website_of_Everything.Services
+
+@inject GlossaryService GlossaryService
+
+
+<span class="glossary-text">
+
+    @foreach (var segment in segments)
+    {
+        if (segment.Entry is not null)
+        {
+            <span
+                class="glossary-term"
+                tabindex="0">
+
+                <span class="glossary-term-text">
+                    @RenderText(segment.Text)
+                </span>
+
+
+                <span
+                    class="glossary-tooltip"
+                    role="tooltip">
+
+                    <strong class="glossary-tooltip-title">
+                        @segment.Entry.Term
+                    </strong>
+
+                    <span class="glossary-tooltip-definition">
+                        @segment.Entry.Definition
+                    </span>
+
+                </span>
+
+            </span>
+        }
+        else
+        {
+            @RenderText(segment.Text)
+        }
+    }
+
+</span>
+
+
+@code {
+
+    // =====================================
+    // INPUT TEXT
+    // =====================================
+
+    [Parameter]
+    public string Text { get; set; } =
+        string.Empty;
+
+
+    // =====================================
+    // GLOSSARY CONTEXT
+    //
+    // General
+    // Spell
+    // StatBlock
+    // Subclass
+    // =====================================
+
+    [Parameter]
+    public GlossaryContext Context { get; set; } =
+        GlossaryContext.General;
+
+
+    // =====================================
+    // GENERATED TEXT SEGMENTS
+    // =====================================
+
+    private List<GlossarySegment> segments =
+        new();
+
+
+    // =====================================
+    // PROCESS TEXT
+    // =====================================
+
+    protected override async Task
+        OnParametersSetAsync()
+    {
+        var entries =
+            await GlossaryService
+                .GetEntriesAsync(
+                    Context);
+
+
+        segments =
+            BuildSegments(
+                Text,
+                entries);
+    }
+
+
+    // =====================================
+    // BUILD TEXT SEGMENTS
+    //
+    // Ordinary text becomes:
+    //
+    // Entry = null
+    //
+    // Glossary matches become:
+    //
+    // Entry = matching glossary entry
+    // =====================================
+
+    private static List<GlossarySegment>
+        BuildSegments(
+            string text,
+            IReadOnlyList<GlossaryEntry> entries)
+    {
+        var result =
+            new List<GlossarySegment>();
+
+
+        // =================================
+        // NOTHING TO PROCESS
+        // =================================
+
+        if (
+            string.IsNullOrEmpty(text)
+            ||
+            entries.Count == 0)
+        {
+            result.Add(
+                new GlossarySegment
+                {
+                    Text =
+                        text
+                });
+
+
+            return result;
+        }
+
+
+        // =================================
+        // POSITION TRACKING
+        // =================================
+
+        var plainStart =
+            0;
+
+
+        var index =
+            0;
+
+
+        // =================================
+        // SCAN THROUGH TEXT
+        // =================================
+
+        while (
+            index <
+            text.Length)
+        {
+            GlossaryEntry? matchedEntry =
+                null;
+
+
+            /*
+             * GlossaryService returns entries
+             * longest-first.
+             *
+             * This is important for terms such
+             * as:
+             *
+             * Tremor
+             *
+             * Tremor Burst
+             *
+             * Tremor - Scorch
+             *
+             * The longer term gets the first
+             * chance to match.
+             */
+            foreach (
+                var entry
+                in entries)
+            {
+                if (
+                    IsMatchAt(
+                        text,
+                        index,
+                        entry))
+                {
+                    matchedEntry =
+                        entry;
+
+                    break;
+                }
+            }
+
+
+            // =================================
+            // NO MATCH AT THIS CHARACTER
+            // =================================
+
+            if (
+                matchedEntry
+                is null)
+            {
+                index++;
+
+                continue;
+            }
+
+
+            // =================================
+            // ADD ORDINARY TEXT BEFORE MATCH
+            // =================================
+
+            if (
+                index >
+                plainStart)
+            {
+                result.Add(
+                    new GlossarySegment
+                    {
+                        Text =
+                            text.Substring(
+                                plainStart,
+                                index -
+                                plainStart)
+                    });
+            }
+
+
+            // =================================
+            // ADD GLOSSARY MATCH
+            //
+            // IMPORTANT:
+            //
+            // We copy the exact source text,
+            // not matchedEntry.Term.
+            //
+            // This preserves capitalization
+            // when CaseSensitive = false.
+            //
+            // Example:
+            //
+            // glossary:
+            // Burn
+            //
+            // page:
+            // burn
+            //
+            // displayed:
+            // burn
+            //
+            // not:
+            // Burn
+            // =================================
+
+            result.Add(
+                new GlossarySegment
+                {
+                    Text =
+                        text.Substring(
+                            index,
+                            matchedEntry
+                                .Term
+                                .Length),
+
+                    Entry =
+                        matchedEntry
+                });
+
+
+            // =================================
+            // SKIP PAST MATCH
+            // =================================
+
+            index +=
+                matchedEntry
+                    .Term
+                    .Length;
+
+
+            plainStart =
+                index;
+        }
+
+
+        // =================================
+        // ADD REMAINING NORMAL TEXT
+        // =================================
+
+        if (
+            plainStart <
+            text.Length)
+        {
+            result.Add(
+                new GlossarySegment
+                {
+                    Text =
+                        text.Substring(
+                            plainStart)
+                });
+        }
+
+
+        return result;
+    }
+
+
+    // =====================================
+    // CHECK FOR TERM AT POSITION
+    // =====================================
+
+    private static bool IsMatchAt(
+        string text,
+        int index,
+        GlossaryEntry entry)
+    {
+        var term =
+            entry.Term;
+
+
+        // =================================
+        // EMPTY TERM
+        // =================================
+
+        if (
+            string.IsNullOrEmpty(
+                term))
+        {
+            return false;
+        }
+
+
+        // =================================
+        // TERM WOULD GO PAST END OF TEXT
+        // =================================
+
+        if (
+            index +
+            term.Length >
+            text.Length)
+        {
+            return false;
+        }
+
+
+        // =================================
+        // PER-TERM CASE HANDLING
+        //
+        // CaseSensitive = true
+        //
+        // Burn matches Burn
+        // Burn != burn
+        //
+        //
+        // CaseSensitive = false
+        //
+        // Burn matches:
+        //
+        // Burn
+        // burn
+        // BURN
+        // BuRn
+        // =================================
+
+        var comparison =
+            entry.CaseSensitive
+
+            ? StringComparison.Ordinal
+
+            : StringComparison.OrdinalIgnoreCase;
+
+
+        // =================================
+        // ACTUAL TEXT COMPARISON
+        // =================================
+
+        if (
+            !text.AsSpan(
+                    index,
+                    term.Length)
+                .Equals(
+                    term.AsSpan(),
+                    comparison))
+        {
+            return false;
+        }
+
+
+        // =================================
+        // LEFT WORD BOUNDARY
+        //
+        // Prevent:
+        //
+        // Burn
+        //
+        // matching inside:
+        //
+        // Burnished
+        // =================================
+
+        if (
+            NeedsLeftBoundary(
+                term)
+            &&
+            index > 0
+            &&
+            IsWordCharacter(
+                text[index - 1]))
+        {
+            return false;
+        }
+
+
+        // =================================
+        // RIGHT WORD BOUNDARY
+        // =================================
+
+        var end =
+            index +
+            term.Length;
+
+
+        if (
+            NeedsRightBoundary(
+                term)
+            &&
+            end <
+            text.Length
+            &&
+            IsWordCharacter(
+                text[end]))
+        {
+            return false;
+        }
+
+
+        return true;
+    }
+
+
+    // =====================================
+    // LEFT BOUNDARY REQUIRED?
+    // =====================================
+
+    private static bool NeedsLeftBoundary(
+        string term)
+    {
+        return
+            term.Length > 0
+            &&
+            IsWordCharacter(
+                term[0]);
+    }
+
+
+    // =====================================
+    // RIGHT BOUNDARY REQUIRED?
+    // =====================================
+
+    private static bool NeedsRightBoundary(
+        string term)
+    {
+        return
+            term.Length > 0
+            &&
+            IsWordCharacter(
+                term[^1]);
+    }
+
+
+    // =====================================
+    // WORD CHARACTER
+    //
+    // Letters, numbers and underscore
+    // count as belonging to a word.
+    // =====================================
+
+    private static bool IsWordCharacter(
+        char value)
+    {
+        return
+            char.IsLetterOrDigit(
+                value)
+            ||
+            value == '_';
+    }
+
+
+    // =====================================
+    // RENDER SOURCE LINE BREAKS
+    // =====================================
+
+    private static Microsoft.AspNetCore.Components.RenderFragment RenderText(
+        string text)
+    {
+        return builder =>
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                return;
+            }
+
+
+            var lines =
+                text
+                    .Replace("\r\n", "\n")
+                    .Replace('\r', '\n')
+                    .Split('\n');
+
+
+            var sequence =
+                0;
+
+
+            for (
+                var i = 0;
+                i < lines.Length;
+                i++)
+            {
+                if (i > 0)
+                {
+                    builder.OpenElement(
+                        sequence++,
+                        "br");
+
+                    builder.CloseElement();
+                }
+
+
+                builder.AddContent(
+                    sequence++,
+                    lines[i]);
+            }
+        };
+    }
+
+
+    // =====================================
+    // INTERNAL TEXT SEGMENT
+    // =====================================
+
+    private sealed class GlossarySegment
+    {
+        public string Text { get; set; } =
+            string.Empty;
+
+
+        public GlossaryEntry? Entry { get; set; }
+    }
+
+}

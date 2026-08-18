@@ -1,0 +1,118 @@
+<div class="site-search">
+
+    <div class="site-search-box">
+
+        <!-- SEARCH ICON -->
+
+        <svg
+            class="site-search-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true">
+
+            <path
+                d="M11 4a7 7 0 1 0 4.9 12l4.55 4.55 1.4-1.4L17.3 14.6A7 7 0 0 0 11 4Zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z" />
+
+        </svg>
+
+
+        <!-- SEARCH INPUT -->
+
+        <input
+            id="@Id"
+            type="search"
+            value="@Value"
+            placeholder="@Placeholder"
+            aria-label="@AriaLabel"
+            autocomplete="off"
+            spellcheck="false"
+            @oninput="HandleInput" />
+
+
+        <!-- CLEAR BUTTON -->
+
+        @if (!string.IsNullOrWhiteSpace(Value))
+        {
+            <button
+                type="button"
+                class="site-search-clear"
+                aria-label="Clear search"
+                title="Clear search"
+                @onclick="ClearSearch">
+
+                ×
+
+            </button>
+        }
+
+    </div>
+
+</div>
+
+
+@code {
+
+    // =====================================
+    // ID
+    // =====================================
+
+    [Parameter]
+    public string Id { get; set; } =
+        "site-search-input";
+
+
+    // =====================================
+    // VALUE
+    // =====================================
+
+    [Parameter]
+    public string Value { get; set; } =
+        string.Empty;
+
+
+    [Parameter]
+    public EventCallback<string>
+        ValueChanged { get; set; }
+
+
+    // =====================================
+    // TEXT
+    // =====================================
+
+    [Parameter]
+    public string Placeholder { get; set; } =
+        "Search...";
+
+
+    [Parameter]
+    public string AriaLabel { get; set; } =
+        "Search";
+
+
+    // =====================================
+    // INPUT
+    // =====================================
+
+    private async Task HandleInput(
+        ChangeEventArgs args)
+    {
+        var value =
+            args.Value?.ToString()
+            ?? string.Empty;
+
+
+        await ValueChanged.InvokeAsync(
+            value);
+    }
+
+
+    // =====================================
+    // CLEAR
+    // =====================================
+
+    private async Task ClearSearch()
+    {
+        await ValueChanged.InvokeAsync(
+            string.Empty);
+    }
+
+}

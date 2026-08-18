@@ -1,0 +1,176 @@
+[
+  {
+    "Term": "Bleed",
+    "Definition": "A Bleeding creature is, well, bleeding! They take 1d4 damage when they perform any action ( Each attack is considered a different action, this also includes Bonus Actions, Legendary Actions, Lair Actions and Reactions, but not Free Actions ), and then Bleed is reduced by a count. They may have all Bleed count removed if any creature passes a successful Medicine check on them as an Action. Otherwise, half their current Bleed count is removed upon receiving healing through an item or through a 4th level or lower spell. It is also fully removed upon the use of an item such as a potion of Greater Healing or a 5th level or greater spell.\n\nOn the case of casting a spell, they suffer an amount of d4 damage and lose an amount count equal to the spell’s level plus one. ( Cantrips only deal 1d4 damage, 1st Level Spells deal 2d4 and so on. ) If a creature is suffering from lesser count than the spell slot level spent, they still suffer the maximum damage and remain at a single count.\n\nThe DC for this is 10 + their current Bleed count. If they have only one Bleed count, it may only be reduced through a Medicine check.\n\nWhile out of combat, you may spend one minute to safely tend to your wounds and remove this Condition without taking further Bleed damage.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Burn",
+    "Definition": "A Burning creature is set ablaze constantly, taking an amount of d4 fire damage equal to the number of Burn count on itself at the end of their turn, also halving its total count.\n\nWhen at one Burn count, it extinguishes at the end of the creature’s turn.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Charge",
+    "Definition": "A creature that is Charging is amassing an amount of energy - electrical, magical or otherwise, having jolts and arcs surround her body as the quantity intensifies.\n\nCharge and its unique counterparts do not affect a character by itself, instead being a renewable resource to be spent for activating certain abilities and effects.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Haste",
+    "Definition": "A creature that is going through Haste has a spring to their step, pushing themselves to move faster or are being carried through magical effects to become nimble as the breeze.\n\nThis creature gains 5-ft. of additional walking speed and, if already available, flying speed for each Haste count they are benefitting from, to a maximum value of 5 times their proficiency bonus plus 5. All count of the Condition is lost at the start of the creature’s next turn.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Heavy Blood",
+    "Definition": "Heavily Bleeding creatures are bleeding intensely, instead causing the afflicted creature to suffer 2d6 damage on the same triggers as the Bleed Condition and 2 count are removed every time it is triggered. The Medicine Check required to remove this Condition is increased by 5.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Immobilized",
+    "Definition": "A creature suffering from Immobilized is one who's suffering to move their stiffening limbs and joints. While enduring Immobilized, they take a penalty equal to the count of Immobilized they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All Immobilized stacks are removed at the end of the creature’s turn or after a minute has passed outside of combat.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Immolation",
+    "Definition": "A creature beset by Immolation is suffering from the holiest of flames, taking an amount of d4 radiant damage equal to their current Immolation count at the end of their turns, also halving its total count. When at one Immolation count, it extinguishes at the end of the creature’s turn.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Nails",
+    "Definition": "A creature suffering from Nails has a number of them embedded in their flesh, drawing out blood and the faith of certain individuals in equal measure. At the end of their turns, a Nailed Creature halves their Nail count and gains the same value halved as Bleed count instead.\n\nFanatical creatures gain a +1 bonus modifier to attack rolls against Nailed creatures for each 15 Nails* they are currently suffering from, to a maximum of +3.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Poise",
+    "Definition": "A creature benefitting from being Poised has their stance slowly being perfected to enter \"the zone\" while fighting, being able to perform a Posture Critical hit whenever they roll at least a 19 on attack, before adding any modifiers. This threshold is reduced by each additional count of Poise they have after the first, up to 4 ( Triggering a Posture Critical Hit on a roll of 16 or higher ) and removing all Poise count from them when they land a Posture Critical hit.\n\nWhen this effect is triggered, this creature deals an additional 2d6 damage on a hit of type equal to your attacks damage type.\n\nIf they have 6 or more stacks of Poise, they deal an extra d6 of damage for each two count above 6, to a maximum of 6d6 total. A Posture Critical Hit is not a regular Critical Hit.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Sinking",
+    "Definition": "A creature that is Sinking has trouble focusing on anything as a deep unease washes over them, making way for pure leg-shaking terror or difficulty performing what they must. While suffering Sinking the afflicted creature has a negative modifier to Attack Rolls for each 3 Sinking afflicted to them, to a maximum of -5. Additionally, they have their Wisdom Saving Throws reduced by a negative modifier for each 10 Sinking, to a maximum of -3.\n\nSinking count is halved at the end of a creatures turn, rounded up. Upon having one count remaining it is removed entirely instead.\n\nEx: A creature with 12 stacks of Sinking suffers a -4 penalty to Hit. Additionally, that creature has their Wisdom Saving Throws reduced by a negative modifier for each 10 Sinking, to a maximum of -3.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Tremor",
+    "Definition": "A creature suffering from Tremor is one suffering from immeasurable shaking and vibrations inside their body. When a Tremoring creature suffers Tremor Burst by other means, they take a number of d4 thunder damage equal to their current Tremor count, then losing all remaining count.\n\nThe Condition is also lost after combat is over or at the end of the next short or long rest, if it was gained outside of combat.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Tremor - Hemorrhage",
+    "Definition": "A creature suffering from Tremor- Hemorrhage is one that is currently bleeding out from countless cuts that move and worsen inside their being.\n\nA creature with Tremor- Hemorrhage counts suffers 1d4 damage whenever they perform any action ( Each Attack counts as a different Action, also including Bonus Actions and Reactions, but not Free Actions ) and then the Condition’s count is reduced by one count. Creatures that have no blood are immune to this effect.\n\nWhen a creature with Tremor - Hemorrhage suffers Tremor Burst by other means, they take a number of d6 damage equal to the total count of the Condition they are currently suffering from, then losing all remaining counts of the Condition. The Condition is also lost after the creature is knocked Unconscious, If they are healed to their Maximum Hit Points they instantly lose all counts of the Condition, also losing 2 counts whenever they are healed by any amount of Hit Points.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Tremor - Scorch",
+    "Definition": "A creature suffering from Tremor-Scorch is one currently suffering from a blazing inferno that is eating them from inside out, with each flicker of flame reverberating across their entire being.\n\nA creature with Tremor-Scorch counts suffers an amount of d4 fire damage equal to their current Tremor - Scorch count divided by 3, to a maximum of 8d4 per turn. After suffering this damage, the Condition’s total count is halved.\n\nWhen a creature with Tremor - Scorch suffers Tremor Burst by other means, they take a number of d6 fire damage equal to the total count of Tremor - Scorch they currently have, then losing all counts of Tremor - Scorch. The Condition is also lost after the creature is knocked Unconscious, if they are fully submerged in non-flammable liquid or combat is over or on the next short rest, if it was gained outside of combat.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Tremor Burst",
+    "Definition": "Tremor Burst is not a Condition, but instead a trigger for the Tremor Condition which is caused by some feats, spells or other abilities.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+  "Term": "Rupture",
+  "Definition": "A creature suffering from the Rupture Condition takes an amount of extra damage die equal to half their current Rupture count whenever they suffer an attack hit. The additional damage die depend on the attacking creature's Proficiency Bonus, being d4 at +2 Bonus, d6 at +3 Bonus, d8 at +4 Bonus, d10 at +5 Bonus, a d12 for +6 Bonus and finally 2d6 at +7 Bonus and greater.\n\nOnce an attack successfully hits and the condition is triggered, they lose all of their remaining Rupture count.\n\nEx: If a creature suffering from 5 Rupture would suffer a hit from a creature with a +4 Proficiency Bonus, they would take an additional 3d8 damage.",
+  "CaseSensitive": true,
+  "Contexts": []
+},
+{
+  "Term": "Concentration",
+  "Definition": "Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends.\n\nIf a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end concentration at any time (no action required).\n\nNormal activity, such as moving and attacking, doesn’t interfere with concentration. The following factors can break concentration:\n\nCasting another spell that requires concentration. You lose concentration on a spell if you cast another spell that requires concentration. You can’t concentrate on two spells at once.\n\nTaking damage. Whenever you take damage while you are concentrating on a spell, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon’s breath, you make a separate saving throw for each source of damage.\n\nBeing incapacitated or killed. You lose concentration on a spell if you are incapacitated or if you die.\n\nThe GM might also decide that certain environmental phenomena, such as a wave crashing over you while you’re on a storm-tossed ship, require you to succeed on a DC 10 Constitution saving throw to maintain concentration on a spell.",
+  "CaseSensitive": false,
+  "Contexts": []
+},
+{
+  "Term": "Ritual",
+  "Definition": "Certain spells have a special tag: ritual. Such a spell can be cast following the normal rules for spellcasting, or the spell can be cast as a ritual. The ritual version of a spell takes 10 minutes longer to cast than normal. It also doesn’t expend a spell slot, which means the ritual version of a spell can’t be cast at a higher level.\n\nTo cast a spell as a ritual, a spellcaster must have a feature that grants the ability to do so. The cleric and the druid, for example, have such a feature. The caster must also have the spell prepared or on his or her list of spells known, unless the character’s ritual feature specifies otherwise, as the wizard’s does.",
+  "CaseSensitive": false,
+  "Contexts": []
+},
+  {
+    "Term": "Arts of Value",
+    "Definition": "The Arts of Value are a spell group that falls under Lana’s influence or were created by her, and serve as spells she has a special connection with. They are spells that alter fate, fortune, or desires, and can grant great boons to those willing to risk everything on the roll of a die.",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Bloody Values",
+    "Definition": "A spell group associated with Scorn, which includes the following new spells:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Burning Rites",
+    "Definition": "The Burning Rites are spells born from the might of Burtromet, and lay bare his power over fire and iron. They include the following:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Elemental Confluence",
+    "Definition": "Any spell listed as being in the Elemental Confluence spell group is considered to be in all of these spell groups (Burning Rites, Harvest Manual, Torrential Arcanics, and Twisting Gale Path) simultaneously, and includes the following:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Harvest Tradition",
+    "Definition": "The Harvest Tradition contains spells bound to the nature of Tithiss, and include the ability to manipulate earthy elements and plants. It includes the following:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Sealed Words",
+    "Definition": "A spell group associated with Hightrankul, which includes the following new spells:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Sinful Codex",
+    "Definition": "Some of the spells included in this section below belong to a spell group based on a combination of dark sorceries and incantations known together as the Sinful Codex. This group features spells used by the Gentle Sins collective to invoke the darkest aspects of mankind, and weapons used by the monsters that haunt the land, sea, and imagination.\n\nThe following are the Sinful Codex spells included in this book:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Tempest Damage",
+    "Definition": "When any spell, trait, or feature in this book refers to tempest damage, it is referring to acid, cold, fire, lightning, and/or poison damage. If a feature says it deals tempest damage or refers to it in a singular sense (such as “you are resistant to tempest damage”) you must choose which damage type it means when using the feature. If it says “all tempest damage” it refers to all of them.",
+    "CaseSensitive": false,
+    "Contexts": []
+  },
+  {
+    "Term": "Torrential Arcanics",
+    "Definition": "The Torrential Arcanics are powers derived from Il-srabae, and display her power over ice, water, and the beasts of the sea. They include the following:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Twisting Gale Path",
+    "Definition": "The Twisting Gale Path is a collection of spells that are granted power by Ivsil, and are mostly destructive in nature. They represent the powers of wind and lightning, and include the following:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Unbound Moralisms",
+    "Definition": "A spell group associated with Gotham, which includes the following new spells:",
+    "CaseSensitive": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Zanjen",
+    "Definition": "Zanjen spells are those developed for spiritual or magically aware warriors, and were developed by arcanists and swordsmen from all sorts of walks of life across the ages. Many were developed by spirit saints or their followers, and some were granted their power by Meirlach Musashi after they grew to godhood. It is generally accepted that these spells are an arcane alternative to the focus techniques of sword saints.",
+    "CaseSensitive": true,
+    "Contexts": []
+  }
+]

@@ -1607,6 +1607,7 @@ textarea:focus {
 
 }
 
+
 /* =========================================
    SPELL RESULTS TABLE
    ========================================= */
@@ -1842,7 +1843,7 @@ textarea:focus {
 }
 
 
-.spell-detail-groups span {
+.spell-detail-groups > span {
     padding:
         0.35rem
         0.6rem;
@@ -1993,10 +1994,10 @@ textarea:focus {
         var(--text);
 
     line-height:
-        1.75;
+        1.5;
 
     white-space:
-        pre-line;
+        normal;
 }
 
 

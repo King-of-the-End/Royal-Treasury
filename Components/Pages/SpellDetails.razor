@@ -28,13 +28,13 @@
 
     </section>
 }
-
 else if (spell is null)
 {
     <section class="spell-detail-page">
 
-        <a class="spell-back-link"
-           href="@BackUrl">
+        <a
+            class="spell-back-link"
+            href="@BackUrl">
 
             ← Back to Spells
 
@@ -42,14 +42,11 @@ else if (spell is null)
 
 
         <div class="spell-empty-state">
-
             That spell could not be found.
-
         </div>
 
     </section>
 }
-
 else
 {
     <article class="spell-detail-page">
@@ -59,8 +56,9 @@ else
              BACK
              ================================= -->
 
-        <a class="spell-back-link"
-           href="@BackUrl">
+        <a
+            class="spell-back-link"
+            href="@BackUrl">
 
             ← Back to Spells
 
@@ -82,8 +80,22 @@ else
             </div>
 
 
-            <h1>
-                @spell.Name
+            <h1 class="spell-detail-title">
+
+                @if (HasRitualTag(spell))
+                {
+                    <img
+                        class="spell-ritual-title-icon"
+                        src="/images/ritual-tag.png"
+                        alt="Ritual"
+                        title="Ritual" />
+                }
+
+
+                <span>
+                    @spell.Name
+                </span>
+
             </h1>
 
 
@@ -97,7 +109,11 @@ else
                         in spell.SpellGroups)
                     {
                         <span>
-                            @group
+
+                            <GlossaryText
+                                Text="@group"
+                                Context="GlossaryContext.Spell" />
+
                         </span>
                     }
 
@@ -108,10 +124,15 @@ else
 
 
         <!-- =================================
-             QUICK INFORMATION
+             QUICK INFO
              ================================= -->
 
         <dl class="spell-detail-summary">
+
+
+            <!-- =================================
+                 CASTING TIME
+                 ================================= -->
 
             <div>
 
@@ -119,12 +140,33 @@ else
                     Casting Time
                 </dt>
 
-                <dd>
-                    @spell.CastingTime
+
+                <dd class="spell-casting-time-value">
+
+                    <span>
+
+                        <GlossaryText
+                            Text="@spell.CastingTime"
+                            Context="GlossaryContext.Spell" />
+
+                    </span>
+
+
+                    @if (HasRitualTag(spell))
+                    {
+                        <span class="spell-ritual-badge">
+                            Ritual
+                        </span>
+                    }
+
                 </dd>
 
             </div>
 
+
+            <!-- =================================
+                 RANGE
+                 ================================= -->
 
             <div>
 
@@ -133,11 +175,19 @@ else
                 </dt>
 
                 <dd>
-                    @spell.Range
+
+                    <GlossaryText
+                        Text="@spell.Range"
+                        Context="GlossaryContext.Spell" />
+
                 </dd>
 
             </div>
 
+
+            <!-- =================================
+                 COMPONENTS
+                 ================================= -->
 
             <div>
 
@@ -146,11 +196,19 @@ else
                 </dt>
 
                 <dd>
-                    @spell.Components
+
+                    <GlossaryText
+                        Text="@spell.Components"
+                        Context="GlossaryContext.Spell" />
+
                 </dd>
 
             </div>
 
+
+            <!-- =================================
+                 DURATION
+                 ================================= -->
 
             <div>
 
@@ -159,11 +217,19 @@ else
                 </dt>
 
                 <dd>
-                    @spell.Duration
+
+                    <GlossaryText
+                        Text="@spell.Duration"
+                        Context="GlossaryContext.Spell" />
+
                 </dd>
 
             </div>
 
+
+            <!-- =================================
+                 CLASSES
+                 ================================= -->
 
             <div>
 
@@ -173,16 +239,18 @@ else
 
                 <dd>
 
-                    @(spell.Classes.Count == 0
-                        ? "—"
-                        : string.Join(
-                            ", ",
-                            spell.Classes))
+                    <GlossaryText
+                        Text="@DisplayClasses"
+                        Context="GlossaryContext.Spell" />
 
                 </dd>
 
             </div>
 
+
+            <!-- =================================
+                 SPELL GROUP
+                 ================================= -->
 
             <div>
 
@@ -192,11 +260,9 @@ else
 
                 <dd>
 
-                    @(spell.SpellGroups.Count == 0
-                        ? "—"
-                        : string.Join(
-                            ", ",
-                            spell.SpellGroups))
+                    <GlossaryText
+                        Text="@DisplaySpellGroups"
+                        Context="GlossaryContext.Spell" />
 
                 </dd>
 
@@ -221,23 +287,34 @@ else
 
 
                 <p>
-                    @CleanMarkers(
-                        spell.Description)
+
+                    <GlossaryText
+                        Text="@CleanMarkers(spell.Description)"
+                        Context="GlossaryContext.Spell" />
+
                 </p>
 
 
+                <!-- TABLES AFTER DESCRIPTION -->
+
                 @foreach (
                     var table
-                    in TablesFor("Description"))
+                    in TablesFor(
+                        "Description"))
                 {
                     <div class="spell-inline-table-wrap">
+
 
                         @if (
                             !string.IsNullOrWhiteSpace(
                                 table.Title))
                         {
                             <h3>
-                                @table.Title
+
+                                <GlossaryText
+                                    Text="@table.Title"
+                                    Context="GlossaryContext.Spell" />
+
                             </h3>
                         }
 
@@ -253,7 +330,11 @@ else
                                         in table.Columns)
                                     {
                                         <th>
-                                            @column
+
+                                            <GlossaryText
+                                                Text="@column"
+                                                Context="GlossaryContext.Spell" />
+
                                         </th>
                                     }
 
@@ -276,9 +357,9 @@ else
                                         {
                                             <td>
 
-                                                @TableCell(
-                                                    row,
-                                                    column)
+                                                <GlossaryText
+                                                    Text="@TableCell(row, column)"
+                                                    Context="GlossaryContext.Spell" />
 
                                             </td>
                                         }
@@ -294,6 +375,21 @@ else
                 }
 
             </section>
+        }
+
+
+        <!-- =================================
+             STAT BLOCKS:
+             AFTER DESCRIPTION
+             ================================= -->
+
+        @foreach (
+            var statBlock
+            in StatBlocksFor(
+                "After Description"))
+        {
+            <StatBlock
+                Data="@statBlock" />
         }
 
 
@@ -314,11 +410,14 @@ else
 
                 <p>
 
-                    @CleanMarkers(
-                        spell.AtHigherLevels)
+                    <GlossaryText
+                        Text="@CleanMarkers(spell.AtHigherLevels)"
+                        Context="GlossaryContext.Spell" />
 
                 </p>
 
+
+                <!-- TABLES AFTER HIGHER LEVELS -->
 
                 @foreach (
                     var table
@@ -327,12 +426,17 @@ else
                 {
                     <div class="spell-inline-table-wrap">
 
+
                         @if (
                             !string.IsNullOrWhiteSpace(
                                 table.Title))
                         {
                             <h3>
-                                @table.Title
+
+                                <GlossaryText
+                                    Text="@table.Title"
+                                    Context="GlossaryContext.Spell" />
+
                             </h3>
                         }
 
@@ -348,7 +452,11 @@ else
                                         in table.Columns)
                                     {
                                         <th>
-                                            @column
+
+                                            <GlossaryText
+                                                Text="@column"
+                                                Context="GlossaryContext.Spell" />
+
                                         </th>
                                     }
 
@@ -371,9 +479,9 @@ else
                                         {
                                             <td>
 
-                                                @TableCell(
-                                                    row,
-                                                    column)
+                                                <GlossaryText
+                                                    Text="@TableCell(row, column)"
+                                                    Context="GlossaryContext.Spell" />
 
                                             </td>
                                         }
@@ -389,6 +497,39 @@ else
                 }
 
             </section>
+        }
+
+
+        <!-- =================================
+             STAT BLOCKS:
+             AFTER HIGHER LEVELS
+             ================================= -->
+
+        @foreach (
+            var statBlock
+            in StatBlocksFor(
+                "After Higher Levels"))
+        {
+            <StatBlock
+                Data="@statBlock" />
+        }
+
+
+        <!-- =================================
+             STAT BLOCKS:
+             AFTER SPELL
+
+             Also catches unknown or blank
+             placement values so a stat block
+             is never silently lost.
+             ================================= -->
+
+        @foreach (
+            var statBlock
+            in AfterSpellStatBlocks())
+        {
+            <StatBlock
+                Data="@statBlock" />
         }
 
 
@@ -414,9 +555,13 @@ else
                         @field.Key
                     </h2>
 
+
                     <p>
-                        @FormatJsonValue(
-                            field.Value)
+
+                        <GlossaryText
+                            Text="@FormatJsonValue(field.Value)"
+                            Context="GlossaryContext.Spell" />
+
                     </p>
 
                 </section>
@@ -443,10 +588,47 @@ else
         string.Empty;
 
 
+    // =====================================
+    // SPELL
+    // =====================================
+
     private SpellData? spell;
+
 
     private bool loading =
         true;
+
+
+    // =====================================
+    // DISPLAY CLASSES
+    // =====================================
+
+    private string DisplayClasses =>
+        spell is null
+        ||
+        spell.Classes.Count == 0
+
+        ? "—"
+
+        : string.Join(
+            ", ",
+            spell.Classes);
+
+
+    // =====================================
+    // DISPLAY SPELL GROUPS
+    // =====================================
+
+    private string DisplaySpellGroups =>
+        spell is null
+        ||
+        spell.SpellGroups.Count == 0
+
+        ? "—"
+
+        : string.Join(
+            ", ",
+            spell.SpellGroups);
 
 
     // =====================================
@@ -468,8 +650,9 @@ else
 
 
             /*
-             * The spell list passed its
-             * exact state to us.
+             * Spells.razor passes its current
+             * search / filter state through
+             * returnUrl.
              */
             if (
                 query.TryGetValue(
@@ -482,8 +665,8 @@ else
 
 
                 /*
-                 * Only accept an internal
-                 * /spells URL.
+                 * Only permit an internal
+                 * spells URL.
                  */
                 if (
                     !string.IsNullOrWhiteSpace(
@@ -500,8 +683,8 @@ else
 
 
             /*
-             * Fallback if somebody opens
-             * a spell directly.
+             * Fallback when someone opens a
+             * spell directly.
              */
             return
                 $"/spells?level=" +
@@ -523,13 +706,32 @@ else
 
 
         spell =
-            await SpellService.GetSpellAsync(
-                LevelFolder,
-                Slug);
+            await SpellService
+                .GetSpellAsync(
+                    LevelFolder,
+                    Slug);
 
 
         loading =
             false;
+    }
+
+
+    // =====================================
+    // RITUAL
+    // =====================================
+
+    private static bool HasRitualTag(
+        SpellData value)
+    {
+        return
+            value.Tags.Any(
+                tag =>
+                    string.Equals(
+                        tag,
+                        "Ritual",
+                        StringComparison
+                            .OrdinalIgnoreCase));
     }
 
 
@@ -554,27 +756,141 @@ else
     }
 
 
-    /*
-     * Your JSON uses things such as:
-     *
-     * {{TABLE:zap_damage_type}}
-     *
-     * The actual table is displayed beneath
-     * the appropriate section instead.
-     */
+    // =====================================
+    // STAT BLOCKS
+    // =====================================
+
+    private IEnumerable<StatBlockData>
+        StatBlocksFor(
+            string placement)
+    {
+        return
+            spell?.StatBlocks.Where(
+                statBlock =>
+                    string.Equals(
+                        statBlock.Placement,
+                        placement,
+                        StringComparison
+                            .OrdinalIgnoreCase))
+            ??
+            Enumerable.Empty<StatBlockData>();
+    }
+
+
+    // =====================================
+    // STAT BLOCKS AFTER SPELL
+    // =====================================
+
+    private IEnumerable<StatBlockData>
+        AfterSpellStatBlocks()
+    {
+        if (spell is null)
+        {
+            return
+                Enumerable.Empty<
+                    StatBlockData>();
+        }
+
+
+        return
+            spell.StatBlocks.Where(
+                statBlock =>
+                {
+                    /*
+                     * No placement was supplied.
+                     *
+                     * Still render it.
+                     */
+                    if (
+                        string.IsNullOrWhiteSpace(
+                            statBlock.Placement))
+                    {
+                        return true;
+                    }
+
+
+                    /*
+                     * Explicitly after spell.
+                     */
+                    if (
+                        string.Equals(
+                            statBlock.Placement,
+                            "After Spell",
+                            StringComparison
+                                .OrdinalIgnoreCase))
+                    {
+                        return true;
+                    }
+
+
+                    /*
+                     * These placements were
+                     * already rendered above.
+                     */
+                    if (
+                        string.Equals(
+                            statBlock.Placement,
+                            "After Description",
+                            StringComparison
+                                .OrdinalIgnoreCase)
+                        ||
+                        string.Equals(
+                            statBlock.Placement,
+                            "After Higher Levels",
+                            StringComparison
+                                .OrdinalIgnoreCase))
+                    {
+                        return false;
+                    }
+
+
+                    /*
+                     * Unknown future placement:
+                     *
+                     * render at the bottom rather
+                     * than silently ignoring it.
+                     */
+                    return true;
+                });
+    }
+
+
+    // =====================================
+    // CLEAN SPECIAL MARKERS
+    // =====================================
+
     private static string CleanMarkers(
         string text)
     {
+        /*
+         * Removes:
+         *
+         * {{TABLE:table_id}}
+         *
+         * and:
+         *
+         * {{STAT_BLOCK:stat_block_id}}
+         *
+         * because the matching structured
+         * object is rendered separately.
+         */
         return
             System.Text.RegularExpressions
                 .Regex
                 .Replace(
                     text,
-                    @"\s*\{\{TABLE:[^}]+\}\}\s*",
-                    " ")
+                    @"\s*\{\{(?:TABLE|STAT_BLOCK):[^}]+\}\}\s*",
+                    " ",
+                    System.Text.RegularExpressions
+                        .RegexOptions
+                        .IgnoreCase)
                 .Trim();
     }
 
+
+    // =====================================
+    // TABLE CELL
+    // =====================================
 
     private static string TableCell(
         Dictionary<
@@ -588,11 +904,16 @@ else
                 column,
                 out var value)
 
-            ? FormatJsonValue(value)
+            ? FormatJsonValue(
+                value)
 
             : string.Empty;
     }
 
+
+    // =====================================
+    // JSON DISPLAY
+    // =====================================
 
     private static string FormatJsonValue(
         JsonElement value)
@@ -620,6 +941,9 @@ else
             JsonValueKind.Null =>
                 string.Empty,
 
+            JsonValueKind.Undefined =>
+                string.Empty,
+
             _ =>
                 value.ToString()
         };
@@ -627,40 +951,55 @@ else
 
 
     // =====================================
-    // LEVEL HELPERS
+    // LEVEL FROM FOLDER
     // =====================================
 
     private static int LevelFromFolder(
         string folder)
     {
-        return folder.ToLowerInvariant()
-            switch
-            {
-                "cantrips" => 0,
-                "1st" => 1,
-                "2nd" => 2,
-                "3rd" => 3,
-                "4th" => 4,
-                "5th" => 5,
-                "6th" => 6,
-                "7th" => 7,
-                "8th" => 8,
-                "9th" => 9,
-                _ => 0
-            };
+        return
+            folder.ToLowerInvariant()
+                switch
+                {
+                    "cantrips" => 0,
+                    "1st" => 1,
+                    "2nd" => 2,
+                    "3rd" => 3,
+                    "4th" => 4,
+                    "5th" => 5,
+                    "6th" => 6,
+                    "7th" => 7,
+                    "8th" => 8,
+                    "9th" => 9,
+                    _ => 0
+                };
     }
 
+
+    // =====================================
+    // LEVEL LABEL
+    // =====================================
 
     private static string LevelLabel(
         int level)
     {
         return level switch
         {
-            0 => "Cantrip",
-            1 => "1st Level",
-            2 => "2nd Level",
-            3 => "3rd Level",
-            _ => $"{level}th Level"
+            0 =>
+                "Cantrip",
+
+            1 =>
+                "1st Level",
+
+            2 =>
+                "2nd Level",
+
+            3 =>
+                "3rd Level",
+
+            _ =>
+                $"{level}th Level"
         };
     }
+
 }

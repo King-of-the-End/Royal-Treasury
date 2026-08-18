@@ -1,0 +1,1135 @@
+/* =========================================
+   ROYAL TREASURY
+   STAT BLOCK
+
+   STRUCTURE:
+   Image 1
+
+   APPEARANCE:
+   Image 2
+   ========================================= */
+
+
+.rt-statblock {
+
+    --stat-red:
+        #9f0000;
+
+    --stat-red-bright:
+        #b50000;
+
+    --stat-red-dark:
+        #650000;
+
+    --stat-gold:
+        #e2b600;
+
+    --stat-gold-light:
+        #f4d33d;
+
+    --stat-panel:
+        #050505;
+
+    --stat-panel-light:
+        #171313;
+
+    --stat-panel-lighter:
+        #211919;
+
+    --stat-text:
+        #f3eee8;
+
+    --stat-muted:
+        #b9b0a9;
+
+
+    width:
+        min(
+            100%,
+            1500px
+        );
+
+    margin:
+        0
+        auto
+        2rem;
+
+
+    overflow:
+        hidden;
+
+
+    border:
+        2px solid
+        var(--stat-red-dark);
+
+
+    border-radius:
+        4px;
+
+
+    background:
+        #000;
+
+
+    color:
+        var(--stat-text);
+
+
+    box-shadow:
+        0 12px 35px
+        rgba(
+            0,
+            0,
+            0,
+            0.45
+        );
+}
+
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.rt-statblock-header {
+
+    padding:
+        1.1rem
+        1.3rem
+        1rem;
+
+
+    border-bottom:
+        2px solid
+        var(--stat-red-dark);
+
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(
+                159,
+                0,
+                0,
+                0.40
+            ),
+            transparent
+            55%
+        ),
+
+        #050505;
+}
+
+
+
+.rt-statblock-header h2 {
+
+    margin:
+        0;
+
+
+    color:
+        #ffffff;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.5rem
+        );
+
+
+    font-variant:
+        small-caps;
+
+
+    font-weight:
+        900;
+
+
+    letter-spacing:
+        0.035em;
+
+
+    line-height:
+        1;
+}
+
+
+
+.rt-statblock-header p {
+
+    margin:
+        0.5rem
+        0
+        0;
+
+
+    color:
+        #d4ccc5;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        1.05rem;
+
+
+    font-style:
+        italic;
+}
+
+
+
+/* =========================================
+   TWO COLUMN STRUCTURE
+   ========================================= */
+
+.rt-statblock-columns {
+
+    display:
+        grid;
+
+
+    /*
+     * Left side resembles the information
+     * panel in image 2.
+     *
+     * Right side is slightly wider for
+     * long action descriptions.
+     */
+
+    grid-template-columns:
+        minmax(
+            0,
+            1fr
+        )
+
+        minmax(
+            0,
+            1.35fr
+        );
+}
+
+
+
+.rt-statblock-column {
+
+    min-width:
+        0;
+
+
+    padding:
+        0.75rem;
+}
+
+
+
+.rt-statblock-column
++
+.rt-statblock-column {
+
+    border-left:
+        2px solid
+        var(--stat-red-dark);
+}
+
+
+
+/* =========================================
+   COMMON PANELS
+   ========================================= */
+
+.rt-stat-card,
+.rt-stat-section {
+
+    margin-bottom:
+        0.8rem;
+
+
+    background:
+        var(--stat-panel);
+}
+
+
+
+/* =========================================
+   RED SECTION HEADERS
+
+   Inspired by the large red bars
+   in image 2.
+   ========================================= */
+
+.rt-stat-section-bar {
+
+    margin-bottom:
+        0.65rem;
+
+
+    padding:
+        0.4rem
+        0.8rem;
+
+
+    border:
+        1px solid
+        #bc0808;
+
+
+    border-radius:
+        4px;
+
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #aa0000,
+            #850000
+        );
+
+
+    color:
+        #ffffff;
+
+
+    font-size:
+        1.05rem;
+
+
+    font-weight:
+        900;
+
+
+    letter-spacing:
+        0.025em;
+
+
+    line-height:
+        1.2;
+
+
+    text-align:
+        center;
+
+
+    text-transform:
+        uppercase;
+
+
+    text-shadow:
+        0 1px 2px
+        rgba(
+            0,
+            0,
+            0,
+            0.8
+        );
+}
+
+
+
+/* =========================================
+   AC / HP / SPEED
+   ========================================= */
+
+.rt-core-stats {
+
+    margin:
+        0;
+
+
+    border:
+        1px solid
+        #261515;
+}
+
+
+
+.rt-core-stats > div {
+
+    display:
+        grid;
+
+
+    grid-template-columns:
+        125px
+        minmax(
+            0,
+            1fr
+        );
+
+
+    border-bottom:
+        1px solid
+        #2d1717;
+}
+
+
+
+.rt-core-stats > div:last-child {
+
+    border-bottom:
+        0;
+}
+
+
+
+.rt-core-stats dt,
+.rt-core-stats dd {
+
+    margin:
+        0;
+
+
+    padding:
+        0.55rem
+        0.7rem;
+}
+
+
+
+.rt-core-stats dt {
+
+    display:
+        flex;
+
+
+    align-items:
+        center;
+
+
+    background:
+        #1c1818;
+
+
+    color:
+        #ffffff;
+
+
+    font-size:
+        0.95rem;
+
+
+    font-weight:
+        800;
+}
+
+
+
+.rt-core-stats dd {
+
+    background:
+        #080707;
+
+
+    color:
+        #f4eee8;
+
+
+    font-size:
+        1rem;
+
+
+    line-height:
+        1.4;
+}
+
+
+
+/* =========================================
+   THRESHOLD
+   ========================================= */
+
+.rt-threshold {
+
+    display:
+        inline-block;
+
+
+    margin-left:
+        0.55rem;
+
+
+    color:
+        var(--stat-gold-light);
+
+
+    font-weight:
+        800;
+}
+
+
+
+/* =========================================
+   ABILITY GRID
+   ========================================= */
+
+.rt-abilities {
+
+    display:
+        grid;
+
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+
+    gap:
+        0.55rem;
+}
+
+
+
+.rt-ability {
+
+    min-width:
+        0;
+
+
+    overflow:
+        hidden;
+
+
+    border:
+        1px solid
+        #3a2020;
+
+
+    border-radius:
+        2px;
+
+
+    background:
+        #090707;
+}
+
+
+
+/* =========================================
+   ABILITY SCORE HEADER
+   ========================================= */
+
+.rt-ability-score {
+
+    display:
+        flex;
+
+
+    align-items:
+        center;
+
+
+    justify-content:
+        space-between;
+
+
+    gap:
+        0.5rem;
+
+
+    padding:
+        0.55rem
+        0.65rem;
+
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #351d1d,
+            #221515
+        );
+}
+
+
+
+.rt-ability-score span {
+
+    color:
+        #ffffff;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        1rem;
+
+
+    font-weight:
+        900;
+
+
+    text-transform:
+        uppercase;
+}
+
+
+
+.rt-ability-score strong {
+
+    color:
+        var(--stat-gold-light);
+
+
+    font-size:
+        1.25rem;
+}
+
+
+
+/* =========================================
+   CHECK + SAVE
+   ========================================= */
+
+.rt-ability-rolls {
+
+    display:
+        grid;
+
+
+    grid-template-columns:
+        1fr
+        1fr;
+}
+
+
+
+.rt-ability-rolls > div {
+
+    display:
+        flex;
+
+
+    flex-direction:
+        column;
+
+
+    align-items:
+        center;
+
+
+    gap:
+        0.15rem;
+
+
+    padding:
+        0.4rem;
+}
+
+
+
+.rt-ability-rolls > div
++
+.rt-ability-rolls > div {
+
+    border-left:
+        1px solid
+        #3a2020;
+}
+
+
+
+.rt-ability-rolls small {
+
+    color:
+        var(--stat-muted);
+
+
+    font-size:
+        0.65rem;
+
+
+    font-weight:
+        700;
+
+
+    letter-spacing:
+        0.04em;
+
+
+    text-transform:
+        uppercase;
+}
+
+
+
+.rt-ability-rolls strong {
+
+    color:
+        #ffffff;
+
+
+    font-size:
+        0.95rem;
+}
+
+
+
+/* =========================================
+   ABILITY NOTE
+   ========================================= */
+
+.rt-ability-note {
+
+    margin:
+        0.65rem
+        0.25rem
+        0;
+
+
+    color:
+        #d5c8bd;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        0.88rem;
+
+
+    font-style:
+        italic;
+
+
+    line-height:
+        1.4;
+}
+
+
+
+/* =========================================
+   INFORMATION ROWS
+   ========================================= */
+
+.rt-details {
+
+    margin:
+        0;
+
+
+    border:
+        1px solid
+        #261515;
+}
+
+
+
+.rt-details > div {
+
+    display:
+        grid;
+
+
+    grid-template-columns:
+        125px
+        minmax(
+            0,
+            1fr
+        );
+
+
+    border-bottom:
+        1px solid
+        #2d1717;
+}
+
+
+
+.rt-details > div:last-child {
+
+    border-bottom:
+        0;
+}
+
+
+
+.rt-details dt,
+.rt-details dd {
+
+    margin:
+        0;
+
+
+    padding:
+        0.48rem
+        0.65rem;
+}
+
+
+
+.rt-details dt {
+
+    background:
+        #1c1818;
+
+
+    color:
+        #ffffff;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-weight:
+        900;
+}
+
+
+
+.rt-details dd {
+
+    background:
+        #080707;
+
+
+    color:
+        #e9dfd8;
+
+
+    line-height:
+        1.4;
+}
+
+
+
+/* =========================================
+   TRAITS / ACTIONS
+   ========================================= */
+
+.rt-stat-section {
+
+    padding-bottom:
+        0.25rem;
+}
+
+
+
+.rt-section-intro,
+.rt-stat-entry {
+
+    margin:
+        0.55rem
+        0.8rem;
+
+
+    color:
+        #f0eae5;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        1rem;
+
+
+    line-height:
+        1.5;
+}
+
+
+
+/* =========================================
+   SECTION INTRO
+
+   e.g.
+   Cosmogony +2, eidolos (pleromael)
+   ========================================= */
+
+.rt-section-intro {
+
+    color:
+        #d6c7ba;
+
+
+    font-style:
+        italic;
+}
+
+
+
+/* =========================================
+   TRAIT / ACTION NAME
+   ========================================= */
+
+.rt-stat-entry strong {
+
+    color:
+        #ffffff;
+}
+
+
+
+.rt-stat-entry em {
+
+    color:
+        #fff1d7;
+}
+
+
+
+/*
+ * Slight gold accent at the beginning of
+ * each entry, similar to image 2's use of
+ * gold for important information.
+ */
+
+.rt-stat-entry strong em {
+
+    text-decoration-color:
+        var(--stat-gold);
+}
+
+
+
+/* =========================================
+   HOVER
+
+   Very subtle since this is primarily
+   a reading interface.
+   ========================================= */
+
+.rt-core-stats > div,
+.rt-details > div,
+.rt-ability {
+
+    transition:
+        background-color
+        120ms ease,
+
+        border-color
+        120ms ease;
+}
+
+
+
+.rt-ability:hover {
+
+    border-color:
+        #7f3a28;
+}
+
+
+
+/* =========================================
+   DESKTOP LARGE
+   ========================================= */
+
+@media
+(
+    min-width:
+        1250px
+) {
+
+    .rt-statblock-column {
+
+        padding:
+            0.9rem;
+    }
+
+
+    .rt-section-intro,
+    .rt-stat-entry {
+
+        font-size:
+            1.04rem;
+    }
+
+}
+
+
+
+/* =========================================
+   TABLET
+
+   Collapse to one column.
+   ========================================= */
+
+@media
+(
+    max-width:
+        980px
+) {
+
+    .rt-statblock-columns {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .rt-statblock-column
+    +
+    .rt-statblock-column {
+
+        border-top:
+            2px solid
+            var(--stat-red-dark);
+
+
+        border-left:
+            0;
+    }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media
+(
+    max-width:
+        650px
+) {
+
+    .rt-statblock-header {
+
+        padding:
+            0.9rem;
+    }
+
+
+    .rt-statblock-column {
+
+        padding:
+            0.5rem;
+    }
+
+
+    /*
+     * Six abilities become 2 per row.
+     */
+
+    .rt-abilities {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+    }
+
+
+    .rt-core-stats > div {
+
+        grid-template-columns:
+            95px
+            minmax(
+                0,
+                1fr
+            );
+    }
+
+
+    .rt-details > div {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .rt-details dt {
+
+        border-bottom:
+            1px solid
+            #2d1717;
+    }
+
+
+    .rt-threshold {
+
+        display:
+            block;
+
+
+        margin:
+            0.25rem
+            0
+            0;
+    }
+
+}
+
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   ========================================= */
+
+@media
+(
+    max-width:
+        420px
+) {
+
+    .rt-abilities {
+
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .rt-stat-section-bar {
+
+        font-size:
+            0.92rem;
+    }
+
+
+    .rt-stat-entry {
+
+        margin-inline:
+            0.55rem;
+
+
+        font-size:
+            0.95rem;
+    }
+
+}
+
+.rt-statblock-columns-single {
+    grid-template-columns:
+        1fr;
+}
