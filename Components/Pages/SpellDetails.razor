@@ -390,6 +390,22 @@ else
         {
             <StatBlock
                 Data="@statBlock" />
+
+
+            @if (
+                !string.IsNullOrWhiteSpace(
+                    statBlock.Image))
+            {
+                <div class="spell-statblock-image-wrap">
+
+                    <img
+                        class="spell-statblock-image"
+                        src="@statBlock.Image"
+                        alt="@($"{statBlock.Title} artwork")"
+                        loading="lazy" />
+
+                </div>
+            }
         }
 
 
@@ -512,6 +528,22 @@ else
         {
             <StatBlock
                 Data="@statBlock" />
+
+
+            @if (
+                !string.IsNullOrWhiteSpace(
+                    statBlock.Image))
+            {
+                <div class="spell-statblock-image-wrap">
+
+                    <img
+                        class="spell-statblock-image"
+                        src="@statBlock.Image"
+                        alt="@($"{statBlock.Title} artwork")"
+                        loading="lazy" />
+
+                </div>
+            }
         }
 
 
@@ -530,6 +562,22 @@ else
         {
             <StatBlock
                 Data="@statBlock" />
+
+
+            @if (
+                !string.IsNullOrWhiteSpace(
+                    statBlock.Image))
+            {
+                <div class="spell-statblock-image-wrap">
+
+                    <img
+                        class="spell-statblock-image"
+                        src="@statBlock.Image"
+                        alt="@($"{statBlock.Title} artwork")"
+                        loading="lazy" />
+
+                </div>
+            }
         }
 
 

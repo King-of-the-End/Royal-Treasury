@@ -8,7 +8,10 @@
 
     @foreach (var segment in segments)
     {
-        if (segment.Entry is not null)
+        if (
+            segment.Entry is not null
+            &&
+            !segment.Entry.NoOverlay)
         {
             <span
                 class="glossary-term"
@@ -26,6 +29,7 @@
                     <strong class="glossary-tooltip-title">
                         @segment.Entry.Term
                     </strong>
+
 
                     <span class="glossary-tooltip-definition">
                         @segment.Entry.Definition
@@ -100,13 +104,22 @@
     // =====================================
     // BUILD TEXT SEGMENTS
     //
-    // Ordinary text becomes:
+    // Ordinary text:
     //
     // Entry = null
     //
-    // Glossary matches become:
+    // Glossary term:
     //
     // Entry = matching glossary entry
+    //
+    // Suppressed glossary phrase:
+    //
+    // Entry = matching glossary entry
+    // NoOverlay = true
+    //
+    // The suppressed phrase still gets
+    // matched so shorter glossary terms
+    // cannot activate inside it.
     // =====================================
 
     private static List<GlossarySegment>
@@ -167,17 +180,26 @@
              * GlossaryService returns entries
              * longest-first.
              *
-             * This is important for terms such
-             * as:
+             * This allows:
              *
-             * Tremor
+             * Eidomancy Burn
              *
-             * Tremor Burst
+             * to be matched before:
+             *
+             * Eidomancy
+             *
+             *
+             * It also allows:
              *
              * Tremor - Scorch
              *
-             * The longer term gets the first
-             * chance to match.
+             * and:
+             *
+             * Tremor Burst
+             *
+             * to be matched before:
+             *
+             * Tremor
              */
             foreach (
                 var entry
@@ -234,10 +256,7 @@
             // =================================
             // ADD GLOSSARY MATCH
             //
-            // IMPORTANT:
-            //
-            // We copy the exact source text,
-            // not matchedEntry.Term.
+            // Copy the exact source text.
             //
             // This preserves capitalization
             // when CaseSensitive = false.
@@ -252,9 +271,6 @@
             //
             // displayed:
             // burn
-            //
-            // not:
-            // Burn
             // =================================
 
             result.Add(
@@ -349,21 +365,6 @@
 
         // =================================
         // PER-TERM CASE HANDLING
-        //
-        // CaseSensitive = true
-        //
-        // Burn matches Burn
-        // Burn != burn
-        //
-        //
-        // CaseSensitive = false
-        //
-        // Burn matches:
-        //
-        // Burn
-        // burn
-        // BURN
-        // BuRn
         // =================================
 
         var comparison =
@@ -474,9 +475,6 @@
 
     // =====================================
     // WORD CHARACTER
-    //
-    // Letters, numbers and underscore
-    // count as belonging to a word.
     // =====================================
 
     private static bool IsWordCharacter(
@@ -492,14 +490,21 @@
 
     // =====================================
     // RENDER SOURCE LINE BREAKS
+    //
+    // Converts actual newline characters
+    // from JSON into <br> elements without
+    // preserving Razor indentation.
     // =====================================
 
-    private static Microsoft.AspNetCore.Components.RenderFragment RenderText(
-        string text)
+    private static Microsoft.AspNetCore.Components.RenderFragment
+        RenderText(
+            string text)
     {
         return builder =>
         {
-            if (string.IsNullOrEmpty(text))
+            if (
+                string.IsNullOrEmpty(
+                    text))
             {
                 return;
             }
@@ -507,9 +512,14 @@
 
             var lines =
                 text
-                    .Replace("\r\n", "\n")
-                    .Replace('\r', '\n')
-                    .Split('\n');
+                    .Replace(
+                        "\r\n",
+                        "\n")
+                    .Replace(
+                        '\r',
+                        '\n')
+                    .Split(
+                        '\n');
 
 
             var sequence =
@@ -526,6 +536,7 @@
                     builder.OpenElement(
                         sequence++,
                         "br");
+
 
                     builder.CloseElement();
                 }

@@ -12,14 +12,26 @@
 
 .rt-statblock {
 
-    --stat-red:
-        #9f0000;
+    /*
+     * Creature-type accent palette.
+     * Defaults to the Monstrosity/dark-red theme so
+     * unknown or missing types retain the old look.
+     */
 
-    --stat-red-bright:
-        #b50000;
+    --stat-accent:
+        #8f1010;
 
-    --stat-red-dark:
-        #650000;
+    --stat-accent-bright:
+        #ad1717;
+
+    --stat-accent-dark:
+        #560909;
+
+    --stat-accent-rgb:
+        143, 16, 16;
+
+    --stat-accent-text:
+        #ffffff;
 
     --stat-gold:
         #e2b600;
@@ -56,12 +68,12 @@
 
 
     overflow:
-        hidden;
+        visible;
 
 
     border:
         2px solid
-        var(--stat-red-dark);
+        var(--stat-accent-dark);
 
 
     border-radius:
@@ -89,6 +101,306 @@
 
 
 /* =========================================
+   CREATURE TYPE THEMES
+   ========================================= */
+
+
+/* ABERRATION - PURPLE */
+
+.rt-statblock.rt-type-aberration {
+
+    --stat-accent:
+        #6f42c1;
+
+    --stat-accent-bright:
+        #865bd3;
+
+    --stat-accent-dark:
+        #452776;
+
+    --stat-accent-rgb:
+        111, 66, 193;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* BEAST - BROWN */
+
+.rt-statblock.rt-type-beast {
+
+    --stat-accent:
+        #8b5a2b;
+
+    --stat-accent-bright:
+        #a86d36;
+
+    --stat-accent-dark:
+        #563719;
+
+    --stat-accent-rgb:
+        139, 90, 43;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* CELESTIAL - WHITE */
+
+.rt-statblock.rt-type-celestial {
+
+    --stat-accent:
+        #e6e6e1;
+
+    --stat-accent-bright:
+        #ffffff;
+
+    --stat-accent-dark:
+        #a6a7a2;
+
+    --stat-accent-rgb:
+        230, 230, 225;
+
+    --stat-accent-text:
+        #111111;
+}
+
+
+/* CONSTRUCT - ORANGE */
+
+.rt-statblock.rt-type-construct {
+
+    --stat-accent:
+        #d97706;
+
+    --stat-accent-bright:
+        #f59e0b;
+
+    --stat-accent-dark:
+        #8d4a03;
+
+    --stat-accent-rgb:
+        217, 119, 6;
+
+    --stat-accent-text:
+        #111111;
+}
+
+
+/* DRAGON - PINK */
+
+.rt-statblock.rt-type-dragon {
+
+    --stat-accent:
+        #c44f8a;
+
+    --stat-accent-bright:
+        #df6ba6;
+
+    --stat-accent-dark:
+        #7d2e56;
+
+    --stat-accent-rgb:
+        196, 79, 138;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* ELEMENTAL - DARK / NEUTRAL BLUE */
+
+.rt-statblock.rt-type-elemental {
+
+    --stat-accent:
+        #315b78;
+
+    --stat-accent-bright:
+        #467a9f;
+
+    --stat-accent-dark:
+        #1d3648;
+
+    --stat-accent-rgb:
+        49, 91, 120;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* FEY - LIGHT GREEN */
+
+.rt-statblock.rt-type-fey {
+
+    --stat-accent:
+        #8fce82;
+
+    --stat-accent-bright:
+        #aae49e;
+
+    --stat-accent-dark:
+        #598550;
+
+    --stat-accent-rgb:
+        143, 206, 130;
+
+    --stat-accent-text:
+        #10200d;
+}
+
+
+/* FIEND - BRIGHT RED */
+
+.rt-statblock.rt-type-fiend {
+
+    --stat-accent:
+        #e53935;
+
+    --stat-accent-bright:
+        #ff5a5a;
+
+    --stat-accent-dark:
+        #7f1010;
+
+    --stat-accent-rgb:
+        229, 57, 53;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* GIANT - GRAY */
+
+.rt-statblock.rt-type-giant {
+
+    --stat-accent:
+        #777777;
+
+    --stat-accent-bright:
+        #969696;
+
+    --stat-accent-dark:
+        #494949;
+
+    --stat-accent-rgb:
+        119, 119, 119;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* HUMANOID - YELLOW */
+
+.rt-statblock.rt-type-humanoid {
+
+    --stat-accent:
+        #d6b51f;
+
+    --stat-accent-bright:
+        #ebcf49;
+
+    --stat-accent-dark:
+        #8c7614;
+
+    --stat-accent-rgb:
+        214, 181, 31;
+
+    --stat-accent-text:
+        #141414;
+}
+
+
+/* MONSTROSITY - DARK RED */
+
+.rt-statblock.rt-type-monstrosity {
+
+    --stat-accent:
+        #8f1010;
+
+    --stat-accent-bright:
+        #ad1717;
+
+    --stat-accent-dark:
+        #560909;
+
+    --stat-accent-rgb:
+        143, 16, 16;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* OOZE - CYAN / TEAL */
+
+.rt-statblock.rt-type-ooze {
+
+    --stat-accent:
+        #168d8d;
+
+    --stat-accent-bright:
+        #20aaaa;
+
+    --stat-accent-dark:
+        #0b5656;
+
+    --stat-accent-rgb:
+        22, 141, 141;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* PLANT - DARK GREEN */
+
+.rt-statblock.rt-type-plant {
+
+    --stat-accent:
+        #28613b;
+
+    --stat-accent-bright:
+        #397f50;
+
+    --stat-accent-dark:
+        #173922;
+
+    --stat-accent-rgb:
+        40, 97, 59;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+/* UNDEAD - BLACK */
+
+.rt-statblock.rt-type-undead {
+
+    --stat-accent:
+        #111111;
+
+    --stat-accent-bright:
+        #2c2c2c;
+
+    --stat-accent-dark:
+        #3a3a3a;
+
+    --stat-accent-rgb:
+        17, 17, 17;
+
+    --stat-accent-text:
+        #ffffff;
+}
+
+
+
+/* =========================================
    HEADER
    ========================================= */
 
@@ -102,7 +414,7 @@
 
     border-bottom:
         2px solid
-        var(--stat-red-dark);
+        var(--stat-accent-dark);
 
 
     background:
@@ -110,9 +422,7 @@
         linear-gradient(
             90deg,
             rgba(
-                159,
-                0,
-                0,
+                var(--stat-accent-rgb),
                 0.40
             ),
             transparent
@@ -244,7 +554,7 @@
 
     border-left:
         2px solid
-        var(--stat-red-dark);
+        var(--stat-accent-dark);
 }
 
 
@@ -267,10 +577,7 @@
 
 
 /* =========================================
-   RED SECTION HEADERS
-
-   Inspired by the large red bars
-   in image 2.
+   COLOURED SECTION HEADERS
    ========================================= */
 
 .rt-stat-section-bar {
@@ -286,7 +593,7 @@
 
     border:
         1px solid
-        #bc0808;
+        var(--stat-accent-bright);
 
 
     border-radius:
@@ -297,13 +604,13 @@
 
         linear-gradient(
             180deg,
-            #aa0000,
-            #850000
+            var(--stat-accent-bright),
+            var(--stat-accent)
         );
 
 
     color:
-        #ffffff;
+        var(--stat-accent-text);
 
 
     font-size:
@@ -354,7 +661,10 @@
 
     border:
         1px solid
-        #261515;
+        rgba(
+            var(--stat-accent-rgb),
+            0.26
+        );
 }
 
 
@@ -375,7 +685,10 @@
 
     border-bottom:
         1px solid
-        #2d1717;
+        rgba(
+            var(--stat-accent-rgb),
+            0.31
+        );
 }
 
 
@@ -413,7 +726,10 @@
 
 
     background:
-        #1c1818;
+        rgba(
+            var(--stat-accent-rgb),
+            0.12
+        );
 
 
     color:
@@ -512,7 +828,10 @@
 
     border:
         1px solid
-        #3a2020;
+        rgba(
+            var(--stat-accent-rgb),
+            0.38
+        );
 
 
     border-radius:
@@ -556,8 +875,14 @@
 
         linear-gradient(
             180deg,
-            #351d1d,
-            #221515
+            rgba(
+                var(--stat-accent-rgb),
+                0.28
+            ),
+            rgba(
+                var(--stat-accent-rgb),
+                0.14
+            )
         );
 }
 
@@ -648,7 +973,10 @@
 
     border-left:
         1px solid
-        #3a2020;
+        rgba(
+            var(--stat-accent-rgb),
+            0.38
+        );
 }
 
 
@@ -737,7 +1065,10 @@
 
     border:
         1px solid
-        #261515;
+        rgba(
+            var(--stat-accent-rgb),
+            0.26
+        );
 }
 
 
@@ -758,7 +1089,10 @@
 
     border-bottom:
         1px solid
-        #2d1717;
+        rgba(
+            var(--stat-accent-rgb),
+            0.31
+        );
 }
 
 
@@ -788,7 +1122,10 @@
 .rt-details dt {
 
     background:
-        #1c1818;
+        rgba(
+            var(--stat-accent-rgb),
+            0.12
+        );
 
 
     color:
@@ -904,8 +1241,7 @@
 
 /*
  * Slight gold accent at the beginning of
- * each entry, similar to image 2's use of
- * gold for important information.
+ * each entry.
  */
 
 .rt-stat-entry strong em {
@@ -918,9 +1254,6 @@
 
 /* =========================================
    HOVER
-
-   Very subtle since this is primarily
-   a reading interface.
    ========================================= */
 
 .rt-core-stats > div,
@@ -940,7 +1273,7 @@
 .rt-ability:hover {
 
     border-color:
-        #7f3a28;
+        var(--stat-accent-bright);
 }
 
 
@@ -975,8 +1308,6 @@
 
 /* =========================================
    TABLET
-
-   Collapse to one column.
    ========================================= */
 
 @media
@@ -998,7 +1329,7 @@
 
         border-top:
             2px solid
-            var(--stat-red-dark);
+            var(--stat-accent-dark);
 
 
         border-left:
@@ -1072,7 +1403,10 @@
 
         border-bottom:
             1px solid
-            #2d1717;
+            rgba(
+                var(--stat-accent-rgb),
+                0.31
+            );
     }
 
 
@@ -1129,7 +1463,464 @@
 
 }
 
+
+
 .rt-statblock-columns-single {
+
     grid-template-columns:
         1fr;
+}
+
+
+
+/* =========================================
+   GLOSSARY TEXT INSIDE STAT BLOCKS
+
+   StatBlock contains GlossaryText child
+   components. Force their ordinary text
+   back to normal stat-block text styling.
+   ========================================= */
+
+.rt-statblock
+::deep .glossary-text {
+
+    display:
+        inline;
+
+
+    margin:
+        0;
+
+
+    padding:
+        0;
+
+
+    border:
+        0;
+
+
+    background:
+        transparent;
+
+
+    color:
+        inherit;
+
+
+    font-family:
+        inherit;
+
+
+    font-size:
+        inherit;
+
+
+    font-weight:
+        inherit;
+
+
+    line-height:
+        inherit;
+
+
+    opacity:
+        1;
+
+
+    visibility:
+        visible;
+
+
+    white-space:
+        normal;
+}
+
+
+
+.rt-statblock
+::deep .glossary-term {
+
+    display:
+        inline-block;
+
+
+    margin:
+        0;
+
+
+    padding:
+        0;
+
+
+    border:
+        0;
+
+
+    background:
+        transparent;
+
+
+    font-family:
+        inherit;
+
+
+    font-size:
+        inherit;
+
+
+    line-height:
+        inherit;
+
+
+    opacity:
+        1;
+
+
+    visibility:
+        visible;
+}
+
+
+
+.rt-statblock
+::deep .glossary-term-text {
+
+    display:
+        inline;
+
+
+    font-size:
+        inherit;
+
+
+    line-height:
+        inherit;
+
+
+    opacity:
+        1;
+
+
+    visibility:
+        visible;
+}
+
+
+
+/* =========================================
+   STAT BLOCK CORE VALUES
+   ========================================= */
+
+.rt-core-stats dd
+::deep .glossary-text,
+
+.rt-details dd
+::deep .glossary-text {
+
+    color:
+        #ffffff;
+}
+
+
+
+/* =========================================
+   STAT BLOCK ENTRY TEXT
+   ========================================= */
+
+.rt-stat-entry
+::deep .glossary-text {
+
+    color:
+        inherit;
+
+
+    font-size:
+        inherit;
+
+
+    line-height:
+        inherit;
+}
+
+
+
+/* =========================================
+   GLOSSARY TOOLTIP OVERFLOW SAFETY
+   ========================================= */
+
+.rt-statblock,
+.rt-statblock-columns,
+.rt-statblock-column,
+.rt-stat-card,
+.rt-stat-section,
+.rt-stat-entry,
+.rt-core-stats,
+.rt-details {
+
+    overflow:
+        visible;
+}
+
+
+
+/* =========================================
+   GLOSSARY TOOLTIP SIZE SAFETY
+   ========================================= */
+
+.rt-statblock
+::deep .glossary-tooltip {
+
+    width:
+        max-content;
+
+
+    min-width:
+        min(
+            280px,
+            calc(100vw - 2rem)
+        );
+
+
+    max-width:
+        min(
+            520px,
+            calc(100vw - 2rem)
+        );
+
+
+    white-space:
+        normal;
+
+
+    overflow-wrap:
+        break-word;
+
+
+    word-break:
+        normal;
+}
+
+
+
+/* =========================================
+   LEFT STAT BLOCK COLUMN
+   ========================================= */
+
+.rt-statblock-column:first-child
+::deep .glossary-tooltip {
+
+    left:
+        0;
+
+
+    right:
+        auto;
+
+
+    transform:
+        translateX(0)
+        translateY(-4px);
+}
+
+
+
+.rt-statblock-column:first-child
+::deep .glossary-term:hover
+.glossary-tooltip,
+
+.rt-statblock-column:first-child
+::deep .glossary-term:focus
+.glossary-tooltip,
+
+.rt-statblock-column:first-child
+::deep .glossary-term:focus-visible
+.glossary-tooltip {
+
+    transform:
+        translateX(0)
+        translateY(0);
+}
+
+
+
+.rt-statblock-column:first-child
+::deep .glossary-tooltip::before {
+
+    left:
+        1.25rem;
+
+
+    right:
+        auto;
+
+
+    transform:
+        translate(
+            0,
+            7px
+        )
+        rotate(45deg);
+}
+
+
+
+/* =========================================
+   RIGHT STAT BLOCK COLUMN
+   ========================================= */
+
+.rt-statblock-column:nth-child(2)
+::deep .glossary-tooltip {
+
+    left:
+        auto;
+
+
+    right:
+        0;
+
+
+    transform:
+        translateX(0)
+        translateY(-4px);
+}
+
+
+
+.rt-statblock-column:nth-child(2)
+::deep .glossary-term:hover
+.glossary-tooltip,
+
+.rt-statblock-column:nth-child(2)
+::deep .glossary-term:focus
+.glossary-tooltip,
+
+.rt-statblock-column:nth-child(2)
+::deep .glossary-term:focus-visible
+.glossary-tooltip {
+
+    transform:
+        translateX(0)
+        translateY(0);
+}
+
+
+
+.rt-statblock-column:nth-child(2)
+::deep .glossary-tooltip::before {
+
+    left:
+        auto;
+
+
+    right:
+        1.25rem;
+
+
+    transform:
+        translate(
+            0,
+            7px
+        )
+        rotate(45deg);
+}
+
+
+
+/* =========================================
+   TABLET / MOBILE TOOLTIP POSITIONING
+   ========================================= */
+
+@media
+(
+    max-width:
+        980px
+) {
+
+    .rt-statblock-column
+    ::deep .glossary-tooltip {
+
+        left:
+            0;
+
+
+        right:
+            auto;
+
+
+        transform:
+            translateX(0)
+            translateY(-4px);
+    }
+
+
+    .rt-statblock-column
+    ::deep .glossary-term:hover
+    .glossary-tooltip,
+
+    .rt-statblock-column
+    ::deep .glossary-term:focus
+    .glossary-tooltip,
+
+    .rt-statblock-column
+    ::deep .glossary-term:focus-visible
+    .glossary-tooltip {
+
+        transform:
+            translateX(0)
+            translateY(0);
+    }
+
+
+    .rt-statblock-column
+    ::deep .glossary-tooltip::before {
+
+        left:
+            1.25rem;
+
+
+        right:
+            auto;
+
+
+        transform:
+            translate(
+                0,
+                7px
+            )
+            rotate(45deg);
+    }
+
+}
+
+
+
+/* =========================================
+   SMALL SCREEN TOOLTIP WIDTH
+   ========================================= */
+
+@media
+(
+    max-width:
+        700px
+) {
+
+    .rt-statblock
+    ::deep .glossary-tooltip {
+
+        width:
+            min(
+                420px,
+                calc(100vw - 2rem)
+            );
+
+
+        min-width:
+            0;
+
+
+        max-width:
+            calc(100vw - 2rem);
+    }
+
 }

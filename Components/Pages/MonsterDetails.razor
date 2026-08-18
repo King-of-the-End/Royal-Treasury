@@ -1,0 +1,409 @@
+@page "/bestiary/{ChallengeRating}/{Slug}"
+@rendermode InteractiveServer
+
+@using Microsoft.AspNetCore.WebUtilities
+@using Website_of_Everything.Models
+@using Website_of_Everything.Services
+
+@inject MonsterService MonsterService
+@inject NavigationManager Navigation
+
+
+<PageTitle>
+    @(monster is null
+        ? "Monster"
+        : monster.Title)
+    - Royal Treasury
+</PageTitle>
+
+
+@if (isLoading)
+{
+    <section class="monster-detail-page">
+
+        <div class="spell-empty-state">
+            Loading monster...
+        </div>
+
+    </section>
+}
+else if (monster is null)
+{
+    <section class="monster-detail-page">
+
+        <a
+            class="monster-back-link"
+            href="@BackUrl">
+
+            ← Back to Bestiary
+
+        </a>
+
+
+        <div class="spell-empty-state">
+
+            That monster could not be found.
+
+        </div>
+
+    </section>
+}
+else
+{
+    <article class="monster-detail-page">
+
+
+        <!-- =================================
+             BACK LINK
+             ================================= -->
+
+        <a
+            class="monster-back-link"
+            href="@BackUrl">
+
+            ← Back to Bestiary
+
+        </a>
+
+
+        <!-- =================================
+             MONSTER DOCUMENT INFORMATION
+
+             Source, Group, and Information
+             live outside "Stat Blocks" in
+             monster JSON files. The service
+             carries those values onto the
+             loaded StatBlockData.
+             ================================= -->
+
+        @if (
+            HasMetadata
+            ||
+            !string.IsNullOrWhiteSpace(
+                monster.Information))
+        {
+            <section class="monster-detail-intro">
+
+
+                @if (HasMetadata)
+                {
+                    <div class="monster-detail-meta">
+
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                DisplaySource))
+                        {
+                            <div>
+
+                                <strong>
+                                    Source
+                                </strong>
+
+                                <span>
+                                    @DisplaySource
+                                </span>
+
+                            </div>
+                        }
+
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                DisplayGroup))
+                        {
+                            <div>
+
+                                <strong>
+                                    Group
+                                </strong>
+
+                                <span>
+                                    @DisplayGroup
+                                </span>
+
+                            </div>
+                        }
+
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                monster.ChallengeRating))
+                        {
+                            <div>
+
+                                <strong>
+                                    Challenge Rating
+                                </strong>
+
+                                <span>
+                                    @monster.ChallengeRating
+                                </span>
+
+                            </div>
+                        }
+
+                    </div>
+                }
+
+
+                @if (
+                    !string.IsNullOrWhiteSpace(
+                        monster.Information))
+                {
+                    <p class="monster-detail-information">
+
+                        <GlossaryText
+                            Text="@monster.Information"
+                            Context="GlossaryContext.StatBlock" />
+
+                    </p>
+                }
+
+            </section>
+        }
+
+
+        <!-- =================================
+             FULL EXISTING STAT BLOCK
+             ================================= -->
+
+        <StatBlock
+            Data="@monster" />
+
+
+        <!-- =================================
+             OPTIONAL IMAGE
+             ================================= -->
+
+        @if (
+            !string.IsNullOrWhiteSpace(
+                monster.Image))
+        {
+            <div class="monster-detail-image-wrap">
+
+                <img
+                    src="@monster.Image"
+                    alt="@monster.Title" />
+
+            </div>
+        }
+
+    </article>
+}
+
+
+@code {
+
+    // =====================================
+    // ROUTE PARAMETERS
+    // =====================================
+
+    [Parameter]
+    public string ChallengeRating { get; set; } =
+        string.Empty;
+
+
+    [Parameter]
+    public string Slug { get; set; } =
+        string.Empty;
+
+
+    // =====================================
+    // PAGE STATE
+    // =====================================
+
+    private StatBlockData? monster;
+
+
+    private bool isLoading =
+        true;
+
+
+    // =====================================
+    // LOAD MONSTER WHEN ROUTE CHANGES
+    // =====================================
+
+    protected override async Task
+        OnParametersSetAsync()
+    {
+        isLoading =
+            true;
+
+
+        monster =
+            await MonsterService
+                .GetMonsterAsync(
+                    ChallengeRating,
+                    Slug);
+
+
+        isLoading =
+            false;
+    }
+
+
+    // =====================================
+    // BACK URL
+    //
+    // CR3       -> /bestiary?cr=3
+    // CR0.125   -> /bestiary?cr=0.125
+    // =====================================
+
+    private string BackUrl
+    {
+        get
+        {
+            var uri =
+                Navigation.ToAbsoluteUri(
+                    Navigation.Uri);
+
+
+            var query =
+                QueryHelpers.ParseQuery(
+                    uri.Query);
+
+
+            /*
+             * Bestiary.razor passes its
+             * current CR/search/filter state
+             * through returnUrl.
+             */
+            if (
+                query.TryGetValue(
+                    "returnUrl",
+                    out var returnValue))
+            {
+                var returnUrl =
+                    returnValue
+                        .FirstOrDefault();
+
+
+                /*
+                 * Only permit an internal
+                 * Bestiary URL.
+                 */
+                if (
+                    !string.IsNullOrWhiteSpace(
+                        returnUrl)
+                    &&
+                    returnUrl.StartsWith(
+                        "/bestiary",
+                        StringComparison.OrdinalIgnoreCase))
+                {
+                    return returnUrl;
+                }
+            }
+
+
+            /*
+             * Fallback when someone opens a
+             * monster detail URL directly.
+             */
+            var cr =
+                ChallengeRating
+                    ?.Trim()
+                ??
+                string.Empty;
+
+
+            if (
+                cr.StartsWith(
+                    "CR",
+                    StringComparison.OrdinalIgnoreCase))
+            {
+                cr =
+                    cr[2..];
+            }
+
+
+            return
+                string.IsNullOrWhiteSpace(
+                    cr)
+
+                ? "/bestiary"
+
+                : $"/bestiary?cr=" +
+                  $"{Uri.EscapeDataString(cr)}";
+        }
+    }
+
+
+    // =====================================
+    // DISPLAY GROUP
+    // =====================================
+
+    private string DisplayGroup =>
+        monster is null
+
+        ? string.Empty
+
+        : DisplayValues(
+            new[]
+            {
+                monster.Group
+            }
+            .Concat(
+                monster.Groups));
+
+
+    // =====================================
+    // DISPLAY SOURCE
+    // =====================================
+
+    private string DisplaySource =>
+        monster is null
+
+        ? string.Empty
+
+        : DisplayValues(
+            new[]
+            {
+                monster.Source
+            }
+            .Concat(
+                monster.Sources));
+
+
+    // =====================================
+    // HAS METADATA
+    // =====================================
+
+    private bool HasMetadata =>
+        monster is not null
+        &&
+        (
+            !string.IsNullOrWhiteSpace(
+                DisplayGroup)
+            ||
+            !string.IsNullOrWhiteSpace(
+                DisplaySource)
+            ||
+            !string.IsNullOrWhiteSpace(
+                monster.ChallengeRating)
+        );
+
+
+    // =====================================
+    // DISPLAY UNIQUE VALUES
+    // =====================================
+
+    private static string DisplayValues(
+        IEnumerable<string> values)
+    {
+        return
+            string.Join(
+                ", ",
+                values
+                    .Where(
+                        value =>
+                            !string.IsNullOrWhiteSpace(
+                                value))
+                    .Select(
+                        value =>
+                            value.Trim())
+                    .Distinct(
+                        StringComparer.OrdinalIgnoreCase));
+    }
+
+}

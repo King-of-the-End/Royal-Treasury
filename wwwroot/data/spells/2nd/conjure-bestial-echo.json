@@ -6,7 +6,7 @@
   "Range": "90 feet",
   "Components": "V, S, M (a feather, tuft of fur, and fish tail inside a gilded acorn worth at least 200 gp)",
   "Duration": "Concentration, up to 1 hour",
-  "Description": "You call forth a bestial echo, which manifests in an unoccupied space that you can see within range. This corporeal form uses the Bestial Echo stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends. The creature is an ally to you and your companions. In combat, it shares your initiative count, but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any commands, it takes the Dodge action and uses its movement to avoid danger. If the echo is killed while outside your range of vision, you see through its senses briefly and get a momentary glimpse of what happened when it died (unless you are unconscious).",
+  "Description": "You call forth a bestial echo, which manifests in an unoccupied space that you can see within range. This corporeal form uses the Bestial Echo stat block.\n\nWhen you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain traits in its stat block.\n\nThe creature disappears when it drops to 0 hit points or when the spell ends.\n\nThe creature is an ally to you and your companions. In combat, it shares your initiative count, but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any commands, it takes the Dodge action and uses its movement to avoid danger.\n\nIf the echo is killed while outside your range of vision, you see through its senses briefly and get a momentary glimpse of what happened when it died (unless you are unconscious).",
   "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, use the higher-level version wherever the spell's level appears in the Bestial Echo stat block.",
   "Classes": [
     "Druid"
@@ -30,6 +30,7 @@
       "title": "Bestial Echo Template",
       "placement": "After Spell",
       "marker": "{{STAT_BLOCK:bestial_echo_template}}",
+      "image": "/images/Monsters/Spells/conjure-bestial-echo.png",
       "creature": {
         "size": "Small",
         "type": "beast",

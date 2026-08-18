@@ -1,8 +1,9 @@
 @using System.Text.Json
 @using Website_of_Everything.Models
+@using Website_of_Everything.Components.Pages
 
 
-<article class="rt-statblock">
+<article class="rt-statblock @CreatureTypeClass">
 
 
     <!-- =================================
@@ -20,9 +21,18 @@
         {
             <p>
 
+                <!--
+                    IMPORTANT:
+
+                    Creature types such as
+                    beast, undead, fiend, etc.
+                    are only permitted to
+                    activate in this context.
+                -->
+
                 <GlossaryText
                     Text="@CreatureLine"
-                    Context="GlossaryContext.StatBlock" />
+                    Context="GlossaryContext.StatBlockCreatureLine" />
 
             </p>
         }
@@ -78,6 +88,30 @@
 
                                 <GlossaryText
                                     Text="@Data.ArmorClass"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </dd>
+
+                        </div>
+                    }
+
+
+                    <!-- THRESHOLD -->
+
+                    @if (
+                        !string.IsNullOrWhiteSpace(
+                            Data.Threshold))
+                    {
+                        <div>
+
+                            <dt>
+                                Threshold
+                            </dt>
+
+                            <dd>
+
+                                <GlossaryText
+                                    Text="@Data.Threshold"
                                     Context="GlossaryContext.StatBlock" />
 
                             </dd>
@@ -164,8 +198,6 @@
                                 <div class="rt-ability">
 
 
-                                    <!-- SCORE -->
-
                                     <div class="rt-ability-score">
 
                                         <span>
@@ -179,8 +211,6 @@
                                     </div>
 
 
-                                    <!-- CHECK / SAVE -->
-
                                     <div class="rt-ability-rolls">
 
                                         <div>
@@ -190,8 +220,8 @@
                                             </small>
 
                                             <strong>
-                                                @DisplayRoll(
-                                                    ability.Check)
+                                                @DisplayAbilityCheck(
+                                                    ability)
                                             </strong>
 
                                         </div>
@@ -236,6 +266,50 @@
 
 
                     <dl class="rt-details">
+
+
+                        <!-- QUALITY TRAITS -->
+
+                        @if (Data.QualityTraits.Count > 0)
+                        {
+                            <div>
+
+                                <dt>
+                                    Quality Traits
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@string.Join(", ", Data.QualityTraits)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
+                        <!-- SAVING THROWS -->
+
+                        @if (Data.SavingThrows.Count > 0)
+                        {
+                            <div>
+
+                                <dt>
+                                    Saving Throws
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@string.Join(", ", Data.SavingThrows)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
 
 
                         <!-- SKILLS -->
@@ -326,6 +400,28 @@
                         }
 
 
+                        <!-- CONDITION IMMUNITIES -->
+
+                        @if (Data.ConditionImmunities.Count > 0)
+                        {
+                            <div>
+
+                                <dt>
+                                    Condition Immunities
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@string.Join(", ", Data.ConditionImmunities)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
                         <!-- SENSES -->
 
                         @if (Data.Senses.Count > 0)
@@ -362,6 +458,30 @@
 
                                     <GlossaryText
                                         Text="@FormatJsonValue(Data.Languages)"
+                                        Context="GlossaryContext.StatBlock" />
+
+                                </dd>
+
+                            </div>
+                        }
+
+
+                        <!-- CHALLENGE RATING -->
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                Data.ChallengeRating))
+                        {
+                            <div>
+
+                                <dt>
+                                    CR
+                                </dt>
+
+                                <dd>
+
+                                    <GlossaryText
+                                        Text="@Data.ChallengeRating"
                                         Context="GlossaryContext.StatBlock" />
 
                                 </dd>
@@ -662,6 +782,72 @@
 
 
     // =====================================
+    // CREATURE-TYPE COLOUR CLASS
+    // =====================================
+
+    private string CreatureTypeClass
+    {
+        get
+        {
+            var creatureType =
+                Data.Creature.Type
+                    ?.Trim()
+                    .ToLowerInvariant()
+                ?? string.Empty;
+
+
+            /*
+             * StartsWith is intentional.
+             *
+             * It means:
+             *
+             * fiend (yokai)
+             *
+             * still receives the Fiend
+             * colour scheme.
+             *
+             * Likewise:
+             *
+             * humanoid (petitioner)
+             *
+             * still receives Humanoid.
+             */
+            var knownTypes =
+                new[]
+                {
+                    "aberration",
+                    "beast",
+                    "celestial",
+                    "construct",
+                    "dragon",
+                    "elemental",
+                    "fey",
+                    "fiend",
+                    "giant",
+                    "humanoid",
+                    "monstrosity",
+                    "ooze",
+                    "plant",
+                    "undead"
+                };
+
+
+            var match =
+                knownTypes.FirstOrDefault(
+                    type =>
+                        creatureType.StartsWith(
+                            type,
+                            StringComparison.OrdinalIgnoreCase));
+
+
+            return match is null
+                ? "rt-type-default"
+                : $"rt-type-{match}";
+        }
+    }
+
+
+    // =====================================
     // CREATURE LINE
     // =====================================
 
@@ -708,10 +894,6 @@
                         .OrdinalIgnoreCase);
 
 
-            // =================================
-            // NORMAL MOVEMENT TYPES
-            // =================================
-
             foreach (
                 var speedName
                 in SpeedOrder)
@@ -736,16 +918,13 @@
             }
 
 
-            // =================================
-            // CUSTOM MOVEMENT TYPES
-            // =================================
-
             foreach (
                 var speed
                 in Data.Speed)
             {
                 if (
-                    used.Contains(speed.Key)
+                    used.Contains(
+                        speed.Key)
                     ||
                     string.IsNullOrWhiteSpace(
                         speed.Value))
@@ -773,6 +952,10 @@
     // =====================================
 
     private bool HasInfo =>
+        Data.QualityTraits.Count > 0
+        ||
+        Data.SavingThrows.Count > 0
+        ||
         Data.Skills.Count > 0
         ||
         Data.Resistances.Count > 0
@@ -781,10 +964,15 @@
         ||
         Data.Immunities.Count > 0
         ||
+        Data.ConditionImmunities.Count > 0
+        ||
         Data.Senses.Count > 0
         ||
         HasJsonValue(
             Data.Languages)
+        ||
+        !string.IsNullOrWhiteSpace(
+            Data.ChallengeRating)
         ||
         HasJsonValue(
             Data.ProficiencyBonus);
@@ -846,8 +1034,7 @@
         if (
             name.Equals(
                 "walk",
-                StringComparison
-                    .OrdinalIgnoreCase))
+                StringComparison.OrdinalIgnoreCase))
         {
             return value;
         }
@@ -884,6 +1071,41 @@
                 cleaned[0])
             +
             cleaned[1..];
+    }
+
+
+    // =====================================
+    // DISPLAY ABILITY CHECK
+    //
+    // Older stat blocks use "check".
+    // Monster files may instead use
+    // "modifier".
+    // =====================================
+
+    private static string DisplayAbilityCheck(
+        StatBlockAbilityScore ability)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                ability.Check)
+            &&
+            ability.Check != "-")
+        {
+            return ability.Check;
+        }
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                ability.Modifier)
+            &&
+            ability.Modifier != "-")
+        {
+            return ability.Modifier;
+        }
+
+
+        return "—";
     }
 
 

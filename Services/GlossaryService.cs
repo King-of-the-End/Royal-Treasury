@@ -19,6 +19,51 @@ public sealed class GlossaryService
             1);
 
 
+    /*
+     * These glossary entries represent
+     * creature types/subtypes.
+     *
+     * They are ONLY allowed to create
+     * glossary overlays in the creature
+     * line beneath a stat-block title.
+     *
+     * This prevents words such as:
+     *
+     * beast
+     * fiend
+     * undead
+     *
+     * from becoming glossary links when
+     * they appear inside Actions, Traits,
+     * spell descriptions, etc.
+     */
+    private static readonly HashSet<string>
+        CreatureLineOnlyTerms =
+            new(
+                StringComparer.OrdinalIgnoreCase)
+            {
+                "Aberration",
+                "Beast",
+                "Celestial",
+                "Construct",
+                "Dragon",
+                "Elemental",
+                "Fey",
+                "Fiend",
+                "Giant",
+                "Humanoid",
+                "Monstrosity",
+                "Ooze",
+                "Plant",
+                "Undead",
+
+                // Creature subtypes / tags
+                "Eidolos",
+                "Petitioner",
+                "Yokai"
+            };
+
+
     public GlossaryService(
         IWebHostEnvironment environment)
     {
@@ -46,18 +91,23 @@ public sealed class GlossaryService
         /*
          * First remove entries that don't
          * apply to the requested context.
+         *
+         * Creature types are handled by
+         * IsAllowedInContext(), which makes
+         * them creature-line-only.
          */
         var applicable =
             entries
                 .Where(
                     entry =>
-                        IsApplicable(
-                            entry,
-                            contextName))
-                .Where(
-                    entry =>
                         !string.IsNullOrWhiteSpace(
                             entry.Term))
+                .Where(
+                    entry =>
+                        IsAllowedInContext(
+                            entry,
+                            context,
+                            contextName))
                 .ToList();
 
 
@@ -93,15 +143,18 @@ public sealed class GlossaryService
 
 
         /*
-         * IMPORTANT:
-         *
          * Longest terms first.
          *
-         * "K Corp Ampule"
+         * This ensures longer glossary
+         * phrases win over shorter ones.
          *
-         * is therefore tested before:
+         * Example:
          *
-         * "Ampule"
+         * Eidomancy Burn
+         *
+         * before:
+         *
+         * Eidomancy
          */
         return
             resolved
@@ -117,7 +170,45 @@ public sealed class GlossaryService
 
 
     // =====================================
-    // CONTEXT CHECK
+    // IS ENTRY ALLOWED IN THIS CONTEXT?
+    // =====================================
+
+    private static bool IsAllowedInContext(
+        GlossaryEntry entry,
+        GlossaryContext context,
+        string contextName)
+    {
+        /*
+         * Creature types and creature subtype
+         * tags ONLY work in the creature line.
+         *
+         * Their JSON Contexts value does not
+         * matter for this rule.
+         */
+        if (
+            CreatureLineOnlyTerms.Contains(
+                entry.Term.Trim()))
+        {
+            return
+                context ==
+                GlossaryContext
+                    .StatBlockCreatureLine;
+        }
+
+
+        /*
+         * Everything else uses the normal
+         * glossary context system.
+         */
+        return
+            IsApplicable(
+                entry,
+                contextName);
+    }
+
+
+    // =====================================
+    // NORMAL CONTEXT CHECK
     // =====================================
 
     private static bool IsApplicable(
@@ -148,7 +239,7 @@ public sealed class GlossaryService
 
 
     // =====================================
-    // LOAD THE ONE GLOSSARY FILE
+    // LOAD THE GLOSSARY FILE
     // =====================================
 
     private async Task<IReadOnlyList<GlossaryEntry>>

@@ -19,17 +19,64 @@ builder.Services
 // SERVICES
 // =========================================
 
-// Spell JSON loading
+
+// =========================================
+// SPELL SERVICE
+//
+// Loads spell JSON files used by the
+// Spells section.
+// =========================================
+
 builder.Services
     .AddScoped<SpellService>();
 
 
+// =========================================
+// MONSTER SERVICE
+//
+// Loads monster JSON files used by the
+// Bestiary section.
+//
+// Expected location:
+//
+// wwwroot/data/Monsters/
+//
+// Examples:
+//
+// CR0.json
+// CR0.125.json
+// CR0.25.json
+// CR0.5.json
+// CR1.json
+// CR2.json
+// ...
+// CR30.json
+//
+// The MonsterService also supports folders
+// with these names containing individual
+// monster JSON files.
+// =========================================
+
+builder.Services
+    .AddScoped<MonsterService>();
+
+
+// =========================================
+// GLOSSARY SERVICE
+//
 // Shared site glossary.
 //
 // The service loads:
+//
 // wwwroot/data/glossary.json
 //
 // once and reuses the parsed glossary.
+//
+// Singleton is appropriate here because the
+// glossary is shared throughout the site and
+// does not need a separate copy per user.
+// =========================================
+
 builder.Services
     .AddSingleton<GlossaryService>();
 
@@ -58,6 +105,9 @@ if (!app.Environment.IsDevelopment())
 
 // =========================================
 // NOT FOUND
+//
+// Sends missing pages through the custom
+// /not-found page.
 // =========================================
 
 app.UseStatusCodePagesWithReExecute(
@@ -74,6 +124,9 @@ app.UseHttpsRedirection();
 
 // =========================================
 // ANTIFORGERY
+//
+// Required by interactive server-side
+// Razor components.
 // =========================================
 
 app.UseAntiforgery();
@@ -81,6 +134,14 @@ app.UseAntiforgery();
 
 // =========================================
 // STATIC FILES
+//
+// Makes files in wwwroot available,
+// including:
+//
+// wwwroot/data/
+// wwwroot/images/
+// wwwroot/css/
+// etc.
 // =========================================
 
 app.MapStaticAssets();

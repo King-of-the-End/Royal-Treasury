@@ -1,0 +1,137 @@
+{
+  "Name": "Black Bloated Horker",
+  "Group": "Abishai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A large, rotund abishai whose body produces an excess amount of acidic bile. These gluttonous beasts are more animalistic than other devils, and are concerned with devouring raw meat and bones, which are quickly dissolved within their stomachs, causing a perpetual state of hunger. They hunt by shrouding themselves or their targets in pure darkness (which has no effect on them), and weakening their target by vomiting projectile bursts of acid onto them.",
+  "Stat Blocks": [
+    {
+      "id": "black_bloated_horker",
+      "section_type": "Stat Block",
+      "title": "Black Bloated Horker",
+      "creature": {
+        "size": "Large",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "13",
+      "threshold": "8",
+      "hit_points": "48 (5d10 + 20)",
+      "speed": {
+        "walk": "20 ft.",
+        "fly": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 11,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Con +6",
+        "Wis +4"
+      ],
+      "skills": [
+        "Athletics +4",
+        "Survival +4"
+      ],
+      "resistances": [
+        "cold",
+        "B/S/P (magical or silvered)"
+      ],
+      "immunities": [
+        "acid",
+        "fire",
+        "poison"
+      ],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "devilsight 60 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Death Burst",
+          "name_format": "bold_italic",
+          "description": "If the fiend is reduced to 0 hit points by piercing or slashing damage, its body ruptures and explodes. All creatures within 15 feet of the fiend must succeed a DC 14 Dexterity saving throw or take 2d12 acid damage. Medium and smaller creatures who fail the saving throw are knocked prone from the force of the blast."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes two Acid Hork attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 2) piercing damage plus 9 (2d8) acid damage. The target must make a DC 14 Constitution saving throw, and on a failure is poisoned for 1 minute.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Acid Hork",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 30/90 ft., one target. Hit: (2d8 + 4) acid damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Occluding Shroud (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The fiend creates a shroud of darkness centered either on itself, or on a point it can see within 100 feet. If centered on itself, the shroud moves with the fiend if they do. The shroud is a sphere of magical darkness with a radius of 20 feet, which suffocates natural light and magical light originating from spells of 3rd level or lower. The fiend must concentrate on this effect as if it were a spell, and cannot recharge this ability while the shroud is present."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**BLACK BLOATED HORKER**\n*Large fiend (devil), lawful evil*\n**Armor Class** 13 **Threshold** 8\n**Hit Points** 48 (5d10 + 20)\n**Speed** 20 ft., fly 30 ft.\n**Quality Traits** Magic resist, magical\n**STR** 18 (+4) | **DEX** 13 (+1) | **CON** 18 (+4) | **INT** 12 (+1) | **WIS** 14 (+2) | **CHA** 11 (-)\n**Saving Throws** Con +6, Wis +4\n**Skills** Athletics +4, Survival +4\n**Resistances** cold; B/S/P (magical or silvered)\n**Immunities** acid, fire, poison\n**Condition Immunities** poisoned\n**Senses** darkvision 120 ft., devilsight 60 ft., passive Perception 12\n**Languages** Draconic, Infernal, telepathy 120 ft.\n**Challenge Rating** 3 (700 XP) **Proficiency Bonus** +2\n\n***Death Burst.*** If the fiend is reduced to 0 hit points by piercing or slashing damage, its body ruptures and explodes. All creatures within 15 feet of the fiend must succeed a DC 14 Dexterity saving throw or take 2d12 acid damage. Medium and smaller creatures who fail the saving throw are knocked prone from the force of the blast.\n\n**ACTIONS**\n***Multiattack.*** The fiend makes two Acid Hork attacks.\n\n***Bite.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (1d12 + 2) piercing damage plus 9 (2d8) acid damage. The target must make a DC 14 Constitution saving throw, and on a failure is poisoned for 1 minute.\n\n***Acid Hork.*** *Ranged Weapon Attack:* +6 to hit, range 30/90 ft., one target. *Hit:* (2d8 + 4) acid damage.\n\n**Bonus Actions**\n***Occluding Shroud (Recharge 5-6).*** The fiend creates a shroud of darkness centered either on itself, or on a point it can see within 100 feet. If centered on itself, the shroud moves with the fiend if they do. The shroud is a sphere of magical darkness with a radius of 20 feet, which suffocates natural light and magical light originating from spells of 3rd level or lower. The fiend must concentrate on this effect as if it were a spell, and cannot recharge this ability while the shroud is present."
+    }
+  ]
+}

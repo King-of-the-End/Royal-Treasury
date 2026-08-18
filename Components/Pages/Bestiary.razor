@@ -1,22 +1,31 @@
 @page "/bestiary"
+@rendermode InteractiveServer
+
+@using Microsoft.AspNetCore.WebUtilities
+@using Microsoft.AspNetCore.Components.Web
+@using Website_of_Everything.Models
+@using Website_of_Everything.Services
+
+@inject MonsterService MonsterService
+@inject NavigationManager Navigation
 
 
 <PageTitle>
-    Bestiary
+    Bestiary - Royal Treasury
 </PageTitle>
 
 
-<section class="landing-page">
+<section class="spell-browser bestiary-browser">
 
 
-    <!-- =================================
-         PAGE HEADER
-         ================================= -->
+    <!-- =====================================
+         HEADER
+         ===================================== -->
 
-    <header class="landing-header">
+    <header class="spell-browser-header">
 
         <div class="landing-kicker">
-            Creatures
+            Compendium
         </div>
 
 
@@ -25,33 +34,1965 @@
         </h1>
 
 
-        <p class="landing-intro">
-            Creatures, monsters, allies,
-            summons, and other entities.
+        <p>
+            Browse monsters by challenge rating,
+            type, group, and source.
         </p>
 
     </header>
 
 
-    <!-- =================================
-         BESTIARY CONTENT
-         
-         Creature entries will eventually
-         be loaded here from Bestiary JSON.
-         
-         The actual creature page will use:
-         
-         <StatBlock Data="@creature" />
-         
-         using the exact same component that
-         spell JSON stat blocks use.
-         ================================= -->
+    <!-- =====================================
+         MAIN FILTER BUTTONS
+         ===================================== -->
 
-    <div class="spell-empty-state">
+    <div class="spell-filter-buttons">
 
-        Bestiary entries coming soon.
+
+        <!-- ALL MONSTERS -->
+
+        <button
+            type="button"
+            class="@FilterButtonClass(AllFiltersClear)"
+            @onclick="ClearMonsterFilters">
+
+            All Monsters
+
+        </button>
+
+
+        <!-- MONSTERS BY TYPE -->
+
+        <button
+            type="button"
+            class="@FilterButtonClass(typeFilterOpen)"
+            @onclick="ToggleTypeFilter">
+
+            Monsters by Type
+
+        </button>
+
+
+        <!-- MONSTERS BY GROUP -->
+
+        <button
+            type="button"
+            class="@FilterButtonClass(groupFilterOpen)"
+            @onclick="ToggleGroupFilter">
+
+            Monsters by Group
+
+        </button>
+
+
+        <!-- MONSTERS BY SOURCE -->
+
+        <button
+            type="button"
+            class="@FilterButtonClass(sourceFilterOpen)"
+            @onclick="ToggleSourceFilter">
+
+            Monsters by Source
+
+        </button>
 
     </div>
 
 
+    <!-- =====================================
+         SEARCH
+         ===================================== -->
+
+    <SiteSearchBar
+        Id="bestiary-search"
+        Value="@searchQuery"
+        ValueChanged="SearchChanged"
+        Placeholder="Search monsters..."
+        AriaLabel="Search monsters" />
+
+
+    <!-- =====================================
+         FILTER PANEL
+
+         Type, Group, and Source are
+         completely independent.
+
+         Any or all may be open and active
+         at the same time.
+         ===================================== -->
+
+    @if (
+        typeFilterOpen
+        ||
+        groupFilterOpen
+        ||
+        sourceFilterOpen)
+    {
+        <div class="spell-filter-selects bestiary-filter-selects">
+
+
+            <!-- =================================
+                 TYPE
+                 ================================= -->
+
+            @if (typeFilterOpen)
+            {
+                <div class="
+                    spell-filter-field
+                    bestiary-type-filter-field">
+
+                    <span>
+                        Creature Type
+                    </span>
+
+
+                    <div class="bestiary-type-filter-buttons">
+
+                        @foreach (
+                            var creatureType
+                            in CreatureTypes)
+                        {
+                            <button
+                                type="button"
+                                class="@TypeFilterButtonClass(
+                                    creatureType)"
+                                @onclick="() =>
+                                    SelectCreatureType(
+                                        creatureType)">
+
+                                @creatureType.Label
+
+                            </button>
+                        }
+
+                    </div>
+
+                </div>
+            }
+
+
+            <!-- =================================
+                 GROUP
+                 ================================= -->
+
+            @if (groupFilterOpen)
+            {
+                <label class="spell-filter-field">
+
+                    <span>
+                        Monster Group
+                    </span>
+
+
+                    <select
+                        @bind="selectedGroup"
+                        @bind:after="SyncUrl">
+
+                        <option value="">
+                            All Monster Groups
+                        </option>
+
+
+                        @foreach (
+                            var group
+                            in GroupOptions)
+                        {
+                            <option value="@group">
+                                @group
+                            </option>
+                        }
+
+                    </select>
+
+                </label>
+            }
+
+
+            <!-- =================================
+                 SOURCE
+                 ================================= -->
+
+            @if (sourceFilterOpen)
+            {
+                <label class="spell-filter-field">
+
+                    <span>
+                        Source
+                    </span>
+
+
+                    <select
+                        @bind="selectedSource"
+                        @bind:after="SyncUrl">
+
+                        <option value="">
+                            All Sources
+                        </option>
+
+
+                        @foreach (
+                            var source
+                            in SourceOptions)
+                        {
+                            <option value="@source">
+                                @source
+                            </option>
+                        }
+
+                    </select>
+
+                </label>
+            }
+
+        </div>
+    }
+
+
+    <!-- =====================================
+         CHALLENGE RATING TABS
+         ===================================== -->
+
+    <div
+        class="bestiary-cr-tabs"
+        role="tablist"
+        aria-label="Challenge rating">
+
+
+        @foreach (
+            var cr
+            in ChallengeRatings)
+        {
+            <button
+                type="button"
+                role="tab"
+                aria-selected="@(
+                    ActiveChallengeRating.Value
+                    == cr.Value)"
+                class="@ChallengeRatingTabClass(cr)"
+                @onclick="() =>
+                    SelectChallengeRatingAsync(cr)">
+
+                @cr.Label
+
+            </button>
+        }
+
+    </div>
+
+
+    <!-- =====================================
+         RESULTS
+         ===================================== -->
+
+    <section
+        class="spell-results bestiary-results"
+        role="tabpanel">
+
+
+        <!-- =================================
+             LOADING
+             ================================= -->
+
+        @if (isLoading)
+        {
+            <div class="spell-empty-state">
+
+                Loading
+                @ActiveChallengeRating.Label
+                monsters...
+
+            </div>
+        }
+
+
+        <!-- =================================
+             LOAD ERROR
+             ================================= -->
+
+        @if (
+            !isLoading
+            &&
+            !string.IsNullOrWhiteSpace(
+                loadError))
+        {
+            <div class="spell-empty-state">
+
+                @loadError
+
+            </div>
+        }
+
+
+        <!-- =================================
+             NO FILTER RESULTS
+             ================================= -->
+
+        @if (
+            !isLoading
+            &&
+            string.IsNullOrWhiteSpace(
+                loadError)
+            &&
+            !FilteredMonsters.Any())
+        {
+            <div class="spell-empty-state">
+
+                No monsters match the current
+                search and filters in
+                @ActiveChallengeRating.Label.
+
+            </div>
+        }
+
+
+        <!-- =================================
+             MONSTER TABLE
+             ================================= -->
+
+        @if (
+            !isLoading
+            &&
+            string.IsNullOrWhiteSpace(
+                loadError)
+            &&
+            FilteredMonsters.Any())
+        {
+            <div class="spell-results-heading">
+
+                <h2>
+                    @ResultsHeading
+                </h2>
+
+
+                <span>
+
+                    @FilteredMonsterCount
+
+                    @(FilteredMonsterCount == 1
+                        ? "monster"
+                        : "monsters")
+
+                </span>
+
+            </div>
+
+
+            <div class="spell-table-wrap bestiary-table-wrap">
+
+                <table class="spell-table bestiary-table">
+
+
+                    <!-- =========================
+                         TABLE HEADER
+                         ========================= -->
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Name
+                            </th>
+
+                            <th>
+                                Type
+                            </th>
+
+                            <th>
+                                Alignment
+                            </th>
+
+                            <th>
+                                Size
+                            </th>
+
+                            <th>
+                                Source
+                            </th>
+
+                            <th>
+                                Group
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <!-- =========================
+                         TABLE BODY
+                         ========================= -->
+
+                    <tbody>
+
+                        @foreach (
+                            var monster
+                            in FilteredMonsters)
+                        {
+                            <tr
+                                class="bestiary-table-row"
+                                role="link"
+                                tabindex="0"
+                                aria-label="View @monster.Title"
+                                title="View @monster.Title"
+                                @onclick="() =>
+                                    OpenMonster(monster)"
+                                @onkeydown="args =>
+                                    HandleMonsterRowKeyDown(
+                                        args,
+                                        monster)">
+
+
+                                <!-- =====================
+                                     NAME
+                                     ===================== -->
+
+                                <td class="spell-name-cell">
+
+                                    <a
+                                        class="bestiary-monster-link"
+                                        href="@MonsterDetailsUrl(monster)"
+                                        @onclick:stopPropagation="true">
+
+                                        @monster.Title
+
+                                    </a>
+
+                                </td>
+
+
+                                <!-- =====================
+                                     TYPE
+                                     ===================== -->
+
+                                <td
+                                    class="bestiary-type-cell"
+                                    @onclick:stopPropagation="true">
+
+                                    @if (
+                                        !string.IsNullOrWhiteSpace(
+                                            monster.Creature?.Type))
+                                    {
+                                        <GlossaryText
+                                            Text="@monster.Creature.Type"
+                                            Context="GlossaryContext.StatBlockCreatureLine" />
+                                    }
+                                    else
+                                    {
+                                        <span>
+                                            —
+                                        </span>
+                                    }
+
+                                </td>
+
+
+                                <!-- =====================
+                                     ALIGNMENT
+                                     ===================== -->
+
+                                <td>
+
+                                    @DisplayValue(
+                                        monster.Creature?.Alignment)
+
+                                </td>
+
+
+                                <!-- =====================
+                                     SIZE
+                                     ===================== -->
+
+                                <td>
+
+                                    @DisplayValue(
+                                        monster.Creature?.Size)
+
+                                </td>
+
+
+                                <!-- =====================
+                                     SOURCE
+                                     ===================== -->
+
+                                <td>
+
+                                    @DisplayList(
+                                        MonsterSources(
+                                            monster))
+
+                                </td>
+
+
+                                <!-- =====================
+                                     GROUP
+                                     ===================== -->
+
+                                <td>
+
+                                    @DisplayList(
+                                        MonsterGroups(
+                                            monster))
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        }
+
+    </section>
+
 </section>
+
+
+@code {
+
+    // =====================================
+    // CHALLENGE RATING TAB
+    // =====================================
+
+    private sealed record ChallengeRatingTab(
+        string Label,
+        string Value,
+        string FileName);
+
+
+    // =====================================
+    // CREATURE TYPE FILTER
+    // =====================================
+
+    private sealed record CreatureTypeFilter(
+        string Label,
+        string Value);
+
+
+    // =====================================
+    // CHALLENGE RATINGS
+    // =====================================
+
+    private static readonly IReadOnlyList<
+        ChallengeRatingTab>
+        ChallengeRatings =
+            BuildChallengeRatings();
+
+
+    // =====================================
+    // CREATURE TYPES
+    // =====================================
+
+    private static readonly IReadOnlyList<
+        CreatureTypeFilter>
+        CreatureTypes =
+            new[]
+            {
+                new CreatureTypeFilter(
+                    "Aberration",
+                    "Aberration"),
+
+                new CreatureTypeFilter(
+                    "Beast",
+                    "Beast"),
+
+                new CreatureTypeFilter(
+                    "Celestial",
+                    "Celestial"),
+
+                new CreatureTypeFilter(
+                    "Construct",
+                    "Construct"),
+
+                new CreatureTypeFilter(
+                    "Dragon",
+                    "Dragon"),
+
+                new CreatureTypeFilter(
+                    "Elemental",
+                    "Elemental"),
+
+                new CreatureTypeFilter(
+                    "Fey",
+                    "Fey"),
+
+                new CreatureTypeFilter(
+                    "Fiend",
+                    "Fiend"),
+
+                new CreatureTypeFilter(
+                    "Giant",
+                    "Giant"),
+
+                new CreatureTypeFilter(
+                    "Humanoid",
+                    "Humanoid"),
+
+                new CreatureTypeFilter(
+                    "Monstrosity",
+                    "Monstrosity"),
+
+                new CreatureTypeFilter(
+                    "Oozes",
+                    "Ooze"),
+
+                new CreatureTypeFilter(
+                    "Plant",
+                    "Plant"),
+
+                new CreatureTypeFilter(
+                    "Undead",
+                    "Undead")
+            };
+
+
+    // =====================================
+    // CURRENT MONSTERS
+    // =====================================
+
+    private IReadOnlyList<StatBlockData>
+        monsters =
+            Array.Empty<StatBlockData>();
+
+
+    // =====================================
+    // CURRENT CR
+    // =====================================
+
+    private string activeChallengeRating =
+        "0";
+
+
+    // =====================================
+    // SEARCH
+    // =====================================
+
+    private string searchQuery =
+        string.Empty;
+
+
+    // =====================================
+    // FILTER PANELS
+    //
+    // These are independent.
+    // =====================================
+
+    private bool typeFilterOpen;
+
+
+    private bool groupFilterOpen;
+
+
+    private bool sourceFilterOpen;
+
+
+    // =====================================
+    // FILTER VALUES
+    // =====================================
+
+    private string selectedCreatureType =
+        string.Empty;
+
+
+    private string selectedGroup =
+        string.Empty;
+
+
+    private string selectedSource =
+        string.Empty;
+
+
+    // =====================================
+    // LOAD STATE
+    // =====================================
+
+    private bool isLoading;
+
+
+    private string? loadError;
+
+
+    // =====================================
+    // ACTIVE CR
+    // =====================================
+
+    private ChallengeRatingTab
+        ActiveChallengeRating =>
+            ChallengeRatings
+                .FirstOrDefault(
+                    cr =>
+                        string.Equals(
+                            cr.Value,
+                            activeChallengeRating,
+                            StringComparison.OrdinalIgnoreCase))
+            ??
+            ChallengeRatings[0];
+
+
+    // =====================================
+    // ALL MONSTERS ACTIVE STATE
+    // =====================================
+
+    private bool AllFiltersClear =>
+        !typeFilterOpen
+        &&
+        !groupFilterOpen
+        &&
+        !sourceFilterOpen
+        &&
+        string.IsNullOrWhiteSpace(
+            selectedCreatureType)
+        &&
+        string.IsNullOrWhiteSpace(
+            selectedGroup)
+        &&
+        string.IsNullOrWhiteSpace(
+            selectedSource)
+        &&
+        string.IsNullOrWhiteSpace(
+            searchQuery);
+
+
+    // =====================================
+    // AVAILABLE GROUPS
+    //
+    // Automatically generated from the
+    // monsters in the selected CR.
+    // =====================================
+
+    private IEnumerable<string>
+        GroupOptions =>
+            monsters
+                .SelectMany(
+                    MonsterGroups)
+                .Where(
+                    value =>
+                        !string.IsNullOrWhiteSpace(
+                            value))
+                .Distinct(
+                    StringComparer.OrdinalIgnoreCase)
+                .OrderBy(
+                    value =>
+                        value,
+                    StringComparer.OrdinalIgnoreCase);
+
+
+    // =====================================
+    // AVAILABLE SOURCES
+    // =====================================
+
+    private IEnumerable<string>
+        SourceOptions =>
+            monsters
+                .SelectMany(
+                    MonsterSources)
+                .Where(
+                    value =>
+                        !string.IsNullOrWhiteSpace(
+                            value))
+                .Distinct(
+                    StringComparer.OrdinalIgnoreCase)
+                .OrderBy(
+                    value =>
+                        value,
+                    StringComparer.OrdinalIgnoreCase);
+
+
+    // =====================================
+    // RESULTS HEADING
+    // =====================================
+
+    private string ResultsHeading
+    {
+        get
+        {
+            var filters =
+                new List<string>();
+
+
+            // =================================
+            // TYPE
+            // =================================
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedCreatureType))
+            {
+                var type =
+                    CreatureTypes
+                        .FirstOrDefault(
+                            value =>
+                                value.Value.Equals(
+                                    selectedCreatureType,
+                                    StringComparison.OrdinalIgnoreCase));
+
+
+                filters.Add(
+                    type?.Label
+                    ??
+                    selectedCreatureType);
+            }
+
+
+            // =================================
+            // GROUP
+            // =================================
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedGroup))
+            {
+                filters.Add(
+                    selectedGroup);
+            }
+
+
+            // =================================
+            // SOURCE
+            // =================================
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedSource))
+            {
+                filters.Add(
+                    selectedSource);
+            }
+
+
+            if (filters.Count == 0)
+            {
+                return
+                    ActiveChallengeRating.Label;
+            }
+
+
+            return
+                $"{string.Join(
+                    " • ",
+                    filters)} — " +
+                ActiveChallengeRating.Label;
+        }
+    }
+
+
+    // =====================================
+    // FILTERED MONSTERS
+    //
+    // Search, Type, Group, and Source all
+    // stack with one another.
+    // =====================================
+
+    private IEnumerable<StatBlockData>
+        FilteredMonsters
+    {
+        get
+        {
+            IEnumerable<StatBlockData>
+                result =
+                    monsters;
+
+
+            // =================================
+            // SEARCH
+            // =================================
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    searchQuery))
+            {
+                var search =
+                    searchQuery.Trim();
+
+
+                result =
+                    result.Where(
+                        monster =>
+                            ContainsSearch(
+                                monster.Title,
+                                search)
+
+                            ||
+
+                            ContainsSearch(
+                                monster.Creature?.Type,
+                                search)
+
+                            ||
+
+                            ContainsSearch(
+                                monster.Creature?.Alignment,
+                                search)
+
+                            ||
+
+                            ContainsSearch(
+                                monster.Creature?.Size,
+                                search)
+
+                            ||
+
+                            MonsterGroups(
+                                monster)
+                                .Any(
+                                    group =>
+                                        ContainsSearch(
+                                            group,
+                                            search))
+
+                            ||
+
+                            MonsterSources(
+                                monster)
+                                .Any(
+                                    source =>
+                                        ContainsSearch(
+                                            source,
+                                            search)));
+            }
+
+
+            // =================================
+            // TYPE
+            // =================================
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedCreatureType))
+            {
+                result =
+                    result.Where(
+                        monster =>
+                            MonsterMatchesType(
+                                monster,
+                                selectedCreatureType));
+            }
+
+
+            // =================================
+            // GROUP
+            // =================================
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedGroup))
+            {
+                result =
+                    result.Where(
+                        monster =>
+                            MonsterGroups(
+                                monster)
+                                .Any(
+                                    group =>
+                                        string.Equals(
+                                            group,
+                                            selectedGroup,
+                                            StringComparison.OrdinalIgnoreCase)));
+            }
+
+
+            // =================================
+            // SOURCE
+            // =================================
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedSource))
+            {
+                result =
+                    result.Where(
+                        monster =>
+                            MonsterSources(
+                                monster)
+                                .Any(
+                                    source =>
+                                        string.Equals(
+                                            source,
+                                            selectedSource,
+                                            StringComparison.OrdinalIgnoreCase)));
+            }
+
+
+            // =================================
+            // ALPHABETICAL ORDER
+            // =================================
+
+            return
+                result.OrderBy(
+                    monster =>
+                        monster.Title,
+                    StringComparer.OrdinalIgnoreCase);
+        }
+    }
+
+
+    // =====================================
+    // RESULT COUNT
+    // =====================================
+
+    private int FilteredMonsterCount =>
+        FilteredMonsters.Count();
+
+
+    // =====================================
+    // INITIAL LOAD
+    // =====================================
+
+    protected override async Task
+        OnInitializedAsync()
+    {
+        RestoreStateFromUrl();
+
+
+        await LoadActiveChallengeRatingAsync();
+    }
+
+
+    // =====================================
+    // BUILD CR TABS
+    // =====================================
+
+    private static IReadOnlyList<
+        ChallengeRatingTab>
+        BuildChallengeRatings()
+    {
+        var result =
+            new List<ChallengeRatingTab>
+            {
+                new(
+                    "CR 0",
+                    "0",
+                    "CR0"),
+
+                new(
+                    "CR 1/8",
+                    "0.125",
+                    "CR0.125"),
+
+                new(
+                    "CR 1/4",
+                    "0.25",
+                    "CR0.25"),
+
+                new(
+                    "CR 1/2",
+                    "0.5",
+                    "CR0.5")
+            };
+
+
+        // =================================
+        // CR 1 - CR 30
+        // =================================
+
+        for (
+            var challengeRating = 1;
+            challengeRating <= 30;
+            challengeRating++)
+        {
+            result.Add(
+                new ChallengeRatingTab(
+                    $"CR {challengeRating}",
+                    challengeRating.ToString(),
+                    $"CR{challengeRating}"));
+        }
+
+
+        return result;
+    }
+
+
+    // =====================================
+    // SELECT CR
+    // =====================================
+
+    private async Task
+        SelectChallengeRatingAsync(
+            ChallengeRatingTab cr)
+    {
+        if (
+            string.Equals(
+                activeChallengeRating,
+                cr.Value,
+                StringComparison.OrdinalIgnoreCase))
+        {
+            return;
+        }
+
+
+        activeChallengeRating =
+            cr.Value;
+
+
+        SyncUrl();
+
+
+        await LoadActiveChallengeRatingAsync();
+    }
+
+
+    // =====================================
+    // LOAD CURRENT CR
+    // =====================================
+
+    private async Task
+        LoadActiveChallengeRatingAsync()
+    {
+        isLoading =
+            true;
+
+
+        loadError =
+            null;
+
+
+        monsters =
+            Array.Empty<StatBlockData>();
+
+
+        try
+        {
+            monsters =
+                await MonsterService
+                    .GetMonstersForChallengeRatingAsync(
+                        ActiveChallengeRating.FileName);
+
+
+            if (monsters.Count == 0)
+            {
+                loadError =
+                    $"No monsters were found for " +
+                    $"{ActiveChallengeRating.Label}.";
+            }
+        }
+        catch (Exception ex)
+        {
+            loadError =
+                $"Could not load " +
+                $"{ActiveChallengeRating.Label}: " +
+                ex.Message;
+        }
+        finally
+        {
+            isLoading =
+                false;
+        }
+    }
+
+
+    // =====================================
+    // OPEN MONSTER
+    // =====================================
+
+    private void OpenMonster(
+        StatBlockData monster)
+    {
+        Navigation.NavigateTo(
+            MonsterDetailsUrl(
+                monster));
+    }
+
+
+    // =====================================
+    // KEYBOARD ROW NAVIGATION
+    // =====================================
+
+    private void HandleMonsterRowKeyDown(
+        KeyboardEventArgs args,
+        StatBlockData monster)
+    {
+        if (
+            args.Key.Equals(
+                "Enter",
+                StringComparison.OrdinalIgnoreCase)
+            ||
+            args.Key.Equals(
+                " ",
+                StringComparison.Ordinal))
+        {
+            OpenMonster(
+                monster);
+        }
+    }
+
+
+    // =====================================
+    // MONSTER DETAIL URL
+    // =====================================
+
+    private string MonsterDetailsUrl(
+        StatBlockData monster)
+    {
+        var detailUrl =
+            $"/bestiary/" +
+            $"{Uri.EscapeDataString(
+                ActiveChallengeRating.FileName)}/" +
+            $"{Uri.EscapeDataString(
+                MonsterSlug(monster))}";
+
+
+        return
+            QueryHelpers.AddQueryString(
+                detailUrl,
+                "returnUrl",
+                BuildListUrl());
+    }
+
+
+    // =====================================
+    // MONSTER SLUG
+    // =====================================
+
+    private static string MonsterSlug(
+        StatBlockData monster)
+    {
+        var value =
+            !string.IsNullOrWhiteSpace(
+                monster.Id)
+
+            ? monster.Id
+
+            : monster.Title;
+
+
+        var result =
+            new List<char>();
+
+
+        var needsSeparator =
+            false;
+
+
+        foreach (
+            var character
+            in value.Trim().ToLowerInvariant())
+        {
+            if (char.IsLetterOrDigit(character))
+            {
+                if (
+                    needsSeparator
+                    &&
+                    result.Count > 0)
+                {
+                    result.Add('-');
+                }
+
+
+                result.Add(character);
+
+
+                needsSeparator =
+                    false;
+            }
+            else
+            {
+                needsSeparator =
+                    result.Count > 0;
+            }
+        }
+
+
+        return
+            new string(
+                result.ToArray());
+    }
+
+
+    // =====================================
+    // SEARCH
+    // =====================================
+
+    private void SearchChanged(
+        string value)
+    {
+        searchQuery =
+            value;
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // ALL MONSTERS
+    //
+    // Clears every Bestiary filter and the
+    // search box.
+    //
+    // Does not change the selected CR.
+    // =====================================
+
+    private void ClearMonsterFilters()
+    {
+        typeFilterOpen =
+            false;
+
+
+        groupFilterOpen =
+            false;
+
+
+        sourceFilterOpen =
+            false;
+
+
+        selectedCreatureType =
+            string.Empty;
+
+
+        selectedGroup =
+            string.Empty;
+
+
+        selectedSource =
+            string.Empty;
+
+
+        searchQuery =
+            string.Empty;
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // TOGGLE TYPE
+    //
+    // Group and Source are unaffected.
+    // =====================================
+
+    private void ToggleTypeFilter()
+    {
+        typeFilterOpen =
+            !typeFilterOpen;
+
+
+        if (!typeFilterOpen)
+        {
+            selectedCreatureType =
+                string.Empty;
+        }
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // TOGGLE GROUP
+    //
+    // Type and Source are unaffected.
+    // =====================================
+
+    private void ToggleGroupFilter()
+    {
+        groupFilterOpen =
+            !groupFilterOpen;
+
+
+        if (!groupFilterOpen)
+        {
+            selectedGroup =
+                string.Empty;
+        }
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // TOGGLE SOURCE
+    //
+    // Type and Group are unaffected.
+    // =====================================
+
+    private void ToggleSourceFilter()
+    {
+        sourceFilterOpen =
+            !sourceFilterOpen;
+
+
+        if (!sourceFilterOpen)
+        {
+            selectedSource =
+                string.Empty;
+        }
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // SELECT TYPE
+    // =====================================
+
+    private void SelectCreatureType(
+        CreatureTypeFilter creatureType)
+    {
+        if (
+            string.Equals(
+                selectedCreatureType,
+                creatureType.Value,
+                StringComparison.OrdinalIgnoreCase))
+        {
+            selectedCreatureType =
+                string.Empty;
+        }
+        else
+        {
+            selectedCreatureType =
+                creatureType.Value;
+        }
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // TYPE MATCH
+    //
+    // StartsWith means:
+    //
+    // Fiend
+    //
+    // also matches:
+    //
+    // fiend (yokai)
+    // fiend (devil)
+    // fiend (demon)
+    //
+    // etc.
+    // =====================================
+
+    private static bool MonsterMatchesType(
+        StatBlockData monster,
+        string selectedType)
+    {
+        var monsterType =
+            monster.Creature?.Type
+                ?.Trim()
+            ??
+            string.Empty;
+
+
+        return
+            monsterType.StartsWith(
+                selectedType,
+                StringComparison.OrdinalIgnoreCase);
+    }
+
+
+    // =====================================
+    // MONSTER GROUPS
+    //
+    // Supports:
+    //
+    // "group": "Devil"
+    //
+    // and:
+    //
+    // "groups": [
+    //   "Devil",
+    //   "Infernal"
+    // ]
+    // =====================================
+
+    private static IEnumerable<string>
+        MonsterGroups(
+            StatBlockData monster)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                monster.Group))
+        {
+            yield return
+                monster.Group.Trim();
+        }
+
+
+        if (monster.Groups is not null)
+        {
+            foreach (
+                var group
+                in monster.Groups)
+            {
+                if (
+                    !string.IsNullOrWhiteSpace(
+                        group))
+                {
+                    yield return
+                        group.Trim();
+                }
+            }
+        }
+    }
+
+
+    // =====================================
+    // MONSTER SOURCES
+    //
+    // Supports:
+    //
+    // "source": "Monster Manual"
+    //
+    // and:
+    //
+    // "sources": [
+    //   "Monster Manual",
+    //   "Royal Treasury"
+    // ]
+    // =====================================
+
+    private static IEnumerable<string>
+        MonsterSources(
+            StatBlockData monster)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                monster.Source))
+        {
+            yield return
+                monster.Source.Trim();
+        }
+
+
+        if (monster.Sources is not null)
+        {
+            foreach (
+                var source
+                in monster.Sources)
+            {
+                if (
+                    !string.IsNullOrWhiteSpace(
+                        source))
+                {
+                    yield return
+                        source.Trim();
+                }
+            }
+        }
+    }
+
+
+    // =====================================
+    // FILTER BUTTON CLASS
+    // =====================================
+
+    private static string FilterButtonClass(
+        bool active)
+    {
+        return
+            active
+
+            ? "spell-filter-button active"
+
+            : "spell-filter-button";
+    }
+
+
+    // =====================================
+    // TYPE BUTTON CLASS
+    // =====================================
+
+    private string TypeFilterButtonClass(
+        CreatureTypeFilter creatureType)
+    {
+        return
+            string.Equals(
+                selectedCreatureType,
+                creatureType.Value,
+                StringComparison.OrdinalIgnoreCase)
+
+            ? "bestiary-type-filter-button active"
+
+            : "bestiary-type-filter-button";
+    }
+
+
+    // =====================================
+    // CR TAB CLASS
+    // =====================================
+
+    private string
+        ChallengeRatingTabClass(
+            ChallengeRatingTab cr)
+    {
+        return
+            string.Equals(
+                ActiveChallengeRating.Value,
+                cr.Value,
+                StringComparison.OrdinalIgnoreCase)
+
+            ? "bestiary-cr-tab active"
+
+            : "bestiary-cr-tab";
+    }
+
+
+    // =====================================
+    // RESTORE URL STATE
+    // =====================================
+
+    private void RestoreStateFromUrl()
+    {
+        var uri =
+            Navigation.ToAbsoluteUri(
+                Navigation.Uri);
+
+
+        var query =
+            QueryHelpers.ParseQuery(
+                uri.Query);
+
+
+        // =================================
+        // CR
+        // =================================
+
+        var requestedCr =
+            QueryValue(
+                query,
+                "cr");
+
+
+        if (
+            ChallengeRatings.Any(
+                cr =>
+                    string.Equals(
+                        cr.Value,
+                        requestedCr,
+                        StringComparison.OrdinalIgnoreCase)))
+        {
+            activeChallengeRating =
+                requestedCr;
+        }
+
+
+        // =================================
+        // SEARCH
+        // =================================
+
+        searchQuery =
+            QueryValue(
+                query,
+                "search");
+
+
+        // =================================
+        // OPEN PANELS
+        // =================================
+
+        typeFilterOpen =
+            QueryIsTrue(
+                query,
+                "typeOpen");
+
+
+        groupFilterOpen =
+            QueryIsTrue(
+                query,
+                "groupOpen");
+
+
+        sourceFilterOpen =
+            QueryIsTrue(
+                query,
+                "sourceOpen");
+
+
+        // =================================
+        // TYPE
+        // =================================
+
+        selectedCreatureType =
+            QueryValue(
+                query,
+                "type");
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                selectedCreatureType))
+        {
+            var valid =
+                CreatureTypes.Any(
+                    type =>
+                        type.Value.Equals(
+                            selectedCreatureType,
+                            StringComparison.OrdinalIgnoreCase));
+
+
+            if (!valid)
+            {
+                selectedCreatureType =
+                    string.Empty;
+            }
+        }
+
+
+        // =================================
+        // GROUP
+        // =================================
+
+        selectedGroup =
+            QueryValue(
+                query,
+                "group");
+
+
+        // =================================
+        // SOURCE
+        // =================================
+
+        selectedSource =
+            QueryValue(
+                query,
+                "source");
+
+
+        // =================================
+        // IF A VALUE EXISTS, KEEP ITS PANEL
+        // OPEN SO THE USER CAN SEE IT.
+        // =================================
+
+        typeFilterOpen |=
+            !string.IsNullOrWhiteSpace(
+                selectedCreatureType);
+
+
+        groupFilterOpen |=
+            !string.IsNullOrWhiteSpace(
+                selectedGroup);
+
+
+        sourceFilterOpen |=
+            !string.IsNullOrWhiteSpace(
+                selectedSource);
+    }
+
+
+    // =====================================
+    // SYNC URL
+    // =====================================
+
+    private void SyncUrl()
+    {
+        Navigation.NavigateTo(
+            BuildListUrl(),
+            replace: true);
+    }
+
+
+    // =====================================
+    // BUILD URL
+    // =====================================
+
+    private string BuildListUrl()
+    {
+        var query =
+            new Dictionary<string, string?>
+            {
+                ["cr"] =
+                    activeChallengeRating
+            };
+
+
+        // =================================
+        // SEARCH
+        // =================================
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                searchQuery))
+        {
+            query["search"] =
+                searchQuery.Trim();
+        }
+
+
+        // =================================
+        // OPEN FILTER PANELS
+        // =================================
+
+        if (typeFilterOpen)
+        {
+            query["typeOpen"] =
+                "1";
+        }
+
+
+        if (groupFilterOpen)
+        {
+            query["groupOpen"] =
+                "1";
+        }
+
+
+        if (sourceFilterOpen)
+        {
+            query["sourceOpen"] =
+                "1";
+        }
+
+
+        // =================================
+        // TYPE
+        // =================================
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                selectedCreatureType))
+        {
+            query["type"] =
+                selectedCreatureType;
+        }
+
+
+        // =================================
+        // GROUP
+        // =================================
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                selectedGroup))
+        {
+            query["group"] =
+                selectedGroup;
+        }
+
+
+        // =================================
+        // SOURCE
+        // =================================
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                selectedSource))
+        {
+            query["source"] =
+                selectedSource;
+        }
+
+
+        return
+            QueryHelpers.AddQueryString(
+                "/bestiary",
+                query);
+    }
+
+
+    // =====================================
+    // SEARCH HELPER
+    // =====================================
+
+    private static bool ContainsSearch(
+        string? value,
+        string search)
+    {
+        return
+            !string.IsNullOrWhiteSpace(
+                value)
+            &&
+            value.Contains(
+                search,
+                StringComparison.OrdinalIgnoreCase);
+    }
+
+
+    // =====================================
+    // DISPLAY ONE VALUE
+    // =====================================
+
+    private static string DisplayValue(
+        string? value)
+    {
+        return
+            string.IsNullOrWhiteSpace(
+                value)
+
+            ? "—"
+
+            : value;
+    }
+
+
+    // =====================================
+    // DISPLAY LIST
+    // =====================================
+
+    private static string DisplayList(
+        IEnumerable<string> values)
+    {
+        var list =
+            values
+                .Where(
+                    value =>
+                        !string.IsNullOrWhiteSpace(
+                            value))
+                .Distinct(
+                    StringComparer.OrdinalIgnoreCase)
+                .ToList();
+
+
+        return
+            list.Count == 0
+
+            ? "—"
+
+            : string.Join(
+                ", ",
+                list);
+    }
+
+
+    // =====================================
+    // QUERY BOOLEAN
+    // =====================================
+
+    private static bool QueryIsTrue(
+        Dictionary<
+            string,
+            Microsoft.Extensions.Primitives.StringValues
+        > query,
+        string key)
+    {
+        return
+            query.TryGetValue(
+                key,
+                out var value)
+            &&
+            value.FirstOrDefault()
+                == "1";
+    }
+
+
+    // =====================================
+    // QUERY STRING
+    // =====================================
+
+    private static string QueryValue(
+        Dictionary<
+            string,
+            Microsoft.Extensions.Primitives.StringValues
+        > query,
+        string key)
+    {
+        return
+            query.TryGetValue(
+                key,
+                out var value)
+
+            ? value.FirstOrDefault()
+                ?? string.Empty
+
+            : string.Empty;
+    }
+
+}
