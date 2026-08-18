@@ -1,0 +1,17 @@
+{
+  "Name": "Longlimb",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "Touch",
+  "Components": "V, S, M (a length of rubber)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You touch a willing creature, causing one pair of limbs to grow two beyond their normal length and become flexible until the end of your next turn. Choose one of the following: Arms. The target’s reach is increased by 10 feet. Legs. The creature’s walking speed is increased by 15 feet, and their jump distance is tripled.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the target’s reach or movement speed is increased by 5 feet for each slot level above 1st.",
+  "Classes": [
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Allergen Cloud",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, M (a pinch of ragweed)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "A cloud of irritating dust and pollen fills a 15-foot-radius, 10-foot-high cylinder centered on a point you can see within range. For the duration, the area is lightly obscured. When creature enters the spell’s area for the first time on a turn or starts its turn there, it must succeed on a Constitution saving throw or be poisoned for 1 minute, experiencing watering of the eyes and fits of coughs and sneezing. Constructs, Undead, and creatures that do not need to breathe succeed their saving throw automatically. An affected creature makes a new saving throw at the end of each of their turns. On a success, the effects end and it becomes immune to this spell for 24 hours. The cloud lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the cylinder’s radius increases by 15 feet, and its height increases by 5 feet for each spell slot above 1st.",
+  "Classes": [
+    "Druid",
+    "Ranger",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

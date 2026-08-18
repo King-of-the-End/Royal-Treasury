@@ -1,0 +1,22 @@
+{
+  "Name": "Arcane Strike",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "10 feet",
+  "Components": "V, S, M (a melee weapon made of metal worth at least 10 gp)",
+  "Duration": "Instantaneous",
+  "Description": "You lunge at a creature, striking them with arcane force. As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the target suffers the attack’s normal effects, and up to two of the following effects of your choice:\n• The target takes an additional 1d8 force damage.\n• You force a Large or smaller target make a Strength saving throw. If they fail, they are pushed 10 feet away from you.\n• The target can’t take reactions until the start of its next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the additional force damage increases by 1d8 and the distance the creature is pushed increases by 5 feet for each slot level above 1st.",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Dusksworn",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

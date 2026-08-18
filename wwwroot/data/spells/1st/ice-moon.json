@@ -1,0 +1,21 @@
+{
+  "Name": "Ice Moon",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (30-foot line)",
+  "Components": "V, S, M (a snowflake)",
+  "Duration": "Instantaneous",
+  "Description": "You form a curving blade of ice and project it forward in an eviscerating rush. Each creature in a 5-foot-wide, 30-foot-long line must make a Dexterity saving throw. On a failure, a creature takes 1d6 slashing damage and 1d6 cold damage, and its speed is reduced by 10 feet until the end of its next turn. On a success, a creature takes half as much damage and its speed is unaffected.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+  "Classes": [
+    "Bladebearer",
+    "Druid",
+    "Petal Knight",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

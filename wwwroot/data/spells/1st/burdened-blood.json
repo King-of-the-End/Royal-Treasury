@@ -1,0 +1,24 @@
+{
+  "Name": "Burdened Blood",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Daemoturgy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "One creature you choose is given enhanced fortitude, gaining an amount of temporary hit points equal to 2d6 + your spellcasting ability modifier. These temporary hit points disappear after 1 minute. Every time this creature makes an attack roll, they can choose to lose 5 of these temporary hit points to give that attack advantage, and/or 5 to negate any disadvantage they would have had.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points gained increases by 1d6 for each slot level above 1st.",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Dusksworn",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

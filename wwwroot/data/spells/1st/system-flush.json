@@ -1,0 +1,19 @@
+{
+  "Name": "System Flush",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "M (a healer’s kit or item that restores hit points when used, which one use of is consumed)",
+  "Duration": "Instantaneous",
+  "Description": "Choose one creature within range who is suffering from the effects of being poisoned or diseased. One of those effects ends, including whatever other effects are causing that condition. The creature gains 1d8 temporary hit points, which they lose after 1 minute.",
+  "At Higher Levels": "When you cast this spell at 2nd level or higher, you can choose one of the following effects for each slot level above 1st:\n• Choose one additional creature within range to target.\n• One additional effect ends on the target(s).\n• The creature gains an additional 1d8 temporary hit points.",
+  "Classes": [
+    "Cleric",
+    "Druid",
+    "Paladin",
+    "Ranger"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

@@ -1,0 +1,23 @@
+{
+  "Name": "Bone Blade",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Sinful Codex",
+    "Unbound Moralisms"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "S, Special, M (the handle of a melee weapon)",
+  "Duration": "10 minutes",
+  "Description": "As an additional component of this spell, you must have a number of hit dice equal to half the level you cast this spell at (rounded up), which are consumed when you cast it. These hit dice must always be your largest hit dice, if you have multiple types. When you cast this spell, you draw out a bone-like material created from your own body, which is magically fashioned into a magical longsword (with its usual properties), which you are proficient with. The weapon remains until the spell ends, at which point the bone-like material crumbles to dust. This weapon also has the following properties, which it has for anyone who wields it: The weapon created this way has a +1 enhancement bonus, and deals necrotic damage instead of its usual type. When this weapon deals damage to a living creature (excluding constructs, spirits, and undead) you regain hit points equal to the necrotic damage it deals. Even if the weapon is wielded by another creature, you regain these hit points (not them), as long as you are within 60 feet of the target. Bloodbound. If you wield this weapon, you may choose to use your spellcasting ability in place of Strength or Dexterity to determine its attack and damage bonuses, and you count as having any Strength requirements needed to wield it. You can also make a single weapon attack using it on your turn as a bonus action. When using your spellcasting ability to make these attacks, you may treat them as melee weapon attacks, or melee spell attacks, but not both. Versatile Weaponry. You may choose to create this weapon as one other than a longsword, but the weapon must be a melee weapon, and you must have the handle of the weapon when creating it. As with the longsword above, the weapon is magical and has its usual properties. If you do not have a handle to use, the weapon is always a longsword. If the weapon you create has the heavy property, it consumes twice as many hit dice to create. Warlock Pact Bonus. If you are a warlock who took the Pact of the Blade, you can choose to bind weapons made by this spell as your pact weapon, allowing any weapon produced by it to gain the benefits of being your pact weapon while it exists.",
+  "At Higher Levels": "When you cast this spell at 2nd level or higher, you may choose one of the following effects for each level above 1st:\n• The enhancement bonus increases to +2 (1 slot level), to +3 (3 slot levels), or to +4 (5 slot levels).\n• When you take the Attack action, and use your spellcasting ability for this weapon, you may make two attacks with it, instead of one (1 slot level), or can make three attacks with it, instead of one (3 slot levels).\n• (2 slot levels) The weapon deals an additional weapon damage die of necrotic damage.",
+  "Classes": [
+    "Dusksworn",
+    "Favored Soul",
+    "Ranger",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

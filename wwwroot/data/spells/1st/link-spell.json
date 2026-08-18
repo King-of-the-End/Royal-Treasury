@@ -1,0 +1,27 @@
+{
+  "Name": "Link Spell",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Eidomancy",
+    "Epic of Duality"
+  ],
+  "Casting Time": "Special",
+  "Range": "Special",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "When you cast a spell with a casting time of 1 action, you may cast this spell before it to change that spell’s casting time to 1 bonus action. This spell must be cast at a level equal to half the level of the spell you are affecting with it (rounded up). When you make an eidomancy burn check for this spell, make it as if this spell was cast at the level of the spell you are affecting.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

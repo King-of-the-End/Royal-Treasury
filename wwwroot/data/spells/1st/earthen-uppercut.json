@@ -1,0 +1,17 @@
+{
+  "Name": "Earthen Uppercut",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (30-foot line)",
+  "Components": "S, M (a mosaic tile)",
+  "Duration": "Instantaneous",
+  "Description": "Stone erupts upward from the ground in a line extending from you that is 30 feet long, 10 feet wide, and 10 feet high. Each creature in the area must make a Dexterity saving throw. On a failure, a creature takes 1d10 bludgeoning damage and is flung 10 feet in a direction of your choice where it lands prone. On a success, a creature takes half as much damage and isn’t flung.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 and the distance you can fling a target increases by 5 feet for each slot level above 1st.",
+  "Classes": [
+    "Druid",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

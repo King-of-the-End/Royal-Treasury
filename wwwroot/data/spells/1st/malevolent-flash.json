@@ -1,0 +1,23 @@
+{
+  "Name": "Malevolent Flash",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [
+    "Zanjen"
+  ],
+  "Casting Time": "Special",
+  "Range": "30 feet",
+  "Components": "S, M (the weapon being used to attack)",
+  "Duration": "Instantaneous",
+  "Description": "When you take an action to attack with a weapon, you may cast this spell in place of making one of your attacks as part of it. Then, choose a number of targets within range equal to twice the level this spell is cast at. Each target makes a Dexterity saving throw, and if at least one target fails, roll an attack roll with the triggering weapon. Each target who fails the saving throw is hit by that attack (even if the attack roll would miss), taking damage equal to the weapon’s damage dice, plus your spellcasting ability modifier, and one additional damage die. This damage is dealt as force damage. If the attack roll was a critical hit, you may roll the damage dice (including the extra one) again and add them to the damage result. You may only cast this spell once per Attack action or reaction. Sword Saint Bonus. When this spell is cast by a sword saint, it is treated as being cast one level higher. This spell is also treated as being on the class spell list(s) of any creature who has at least three levels in sword saint.",
+  "At Higher Levels": "When you cast this spell at 2nd level or higher, you gain one of the following effects for each level above 1st:\n• Each target who fails takes an additional die of weapon damage.\n• The spell’s range doubles.",
+  "Classes": [
+    "Bladebearer",
+    "Dusksworn",
+    "Inscriptor",
+    "Petal Knight",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

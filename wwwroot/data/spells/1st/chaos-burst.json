@@ -1,0 +1,72 @@
+{
+  "Name": "Chaos Burst",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target: on a hit, the target takes 2d8 + 1d6 damage. After rolling, choose one of the d8s. The number rolled on that die determines the attack’s damage type, as shown below. {{TABLE:chaos_burst_damage_type}} If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again. A creature can be targeted only once by each casting of this spell.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can choose from the following effects for each slot level above 1st:\n• 1d6 extra damage of the type rolled.\n• You may roll an additional d8 - it is not added to the damage, but you may use the result to determine the damage type.\n• The spell targets one additional creature, firing an additional bolt toward them. This second bolt requires its own damage roll and may have a different damage type.",
+  "Classes": [
+    "Inscriptor",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": [],
+  "Special Notes": [
+    {
+      "type": "table",
+      "table_id": "chaos_burst_damage_type",
+      "placement": "Description",
+      "marker": "{{TABLE:chaos_burst_damage_type}}",
+      "instruction": "Replace this marker with the table whose id matches table_id when rendering the spell."
+    }
+  ],
+  "Tables": [
+    {
+      "id": "chaos_burst_damage_type",
+      "title": "Chaos Burst Damage Type",
+      "placement": "Description",
+      "marker": "{{TABLE:chaos_burst_damage_type}}",
+      "columns": [
+        "d8",
+        "Damage Type"
+      ],
+      "rows": [
+        {
+          "d8": "1",
+          "Damage Type": "Acid"
+        },
+        {
+          "d8": "2",
+          "Damage Type": "Cold"
+        },
+        {
+          "d8": "3",
+          "Damage Type": "Fire"
+        },
+        {
+          "d8": "4",
+          "Damage Type": "Force"
+        },
+        {
+          "d8": "5",
+          "Damage Type": "Lightning"
+        },
+        {
+          "d8": "6",
+          "Damage Type": "Poison"
+        },
+        {
+          "d8": "7",
+          "Damage Type": "Psychic"
+        },
+        {
+          "d8": "8",
+          "Damage Type": "Thunder"
+        }
+      ]
+    }
+  ]
+}

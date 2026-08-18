@@ -1,0 +1,25 @@
+{
+  "Name": "Bloodblade",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "45 feet",
+  "Components": "V, S, M (a bloody fingernail)",
+  "Duration": "Instantaneous",
+  "Description": "With a simple swipe of your hand, you conjure sharp blades of crystalized blood that are flung unto a target creature within reach. Make a ranged spell attack against it. On a hit, they take 2d8 slashing damage and suffer 2 Bleed count, as the blades of glass cut and pierce at their body, causing considerable bleeding.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you may perform an additional ranged spell attack against creatures within reach for each slot level above 1st.",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Inscriptor",
+    "Paladin",
+    "Ranger",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

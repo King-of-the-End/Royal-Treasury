@@ -1,0 +1,26 @@
+{
+  "Name": "Antigravity Zone",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Graviturgy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Choose a point you can see within range. From that point expands a 15-foot radius sphere that remains for the spell’s duration. The area within this sphere is treated as a zero-gravity environment or a low-gravity environment (you choose when casting the spell).",
+  "At Higher Levels": "When you cast this spell at 2nd level or higher, you can choose one of the following for each slot level above 1st:\n• The radius of the sphere doubles in order of 30 feet (2nd), 60 feet (3rd), 120 feet (4th), 240 feet (5th), 480 feet (6th), 960 feet (7th), 1920 feet (8th), 3840 feet (9th).\n• The spell’s duration increases in order of 1 hour, 10 hours, 1 day, 30 days, 1 year, permanent.\n• The spell does not require concentration, and you can end it at any time as an action.\n• You can choose one additional point within range to create an additional antigravity bubble, from which another sphere emerges. Each time this effect is used the radius of each individual sphere is halved (rounded up to the nearest increment of 10 feet).",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Inscriptor",
+    "Petal Knight",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": [
+    "Ritual"
+  ]
+}

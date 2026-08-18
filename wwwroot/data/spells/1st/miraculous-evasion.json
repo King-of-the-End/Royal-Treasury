@@ -1,0 +1,21 @@
+{
+  "Name": "Miraculous Evasion",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [
+    "Skulker’s Grimoire"
+  ],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S, M (a number of pearls equal to the level the spell is cast at, worth 50 gp each)",
+  "Duration": "10 minutes",
+  "Description": "You target a number of creatures within range that you can see equal to the level this spell is cast at. Those creatures gain 1 temporary hit point (this number cannot be changed by any effect) which remains until the spell ends. When any amount of damage would reduce their hit points while they have that temporary hit point, the creature rolls 1d100 plus your spellcasting ability. On a result of 51 or higher, the damage from that effect is reduced to 1 point, and their immunities, vulnerabilities, and resistances aren’t considered. Otherwise, the damage is reduced to half (rounded down).",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Petal Knight"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

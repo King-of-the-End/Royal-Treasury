@@ -1,0 +1,20 @@
+{
+  "Name": "Cernunnos Eye",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "60 feet",
+  "Components": "S, M (an emerald worth at least 100 gp)",
+  "Duration": "Instantaneous",
+  "Description": "You can gaze through the spell’s material component at a creature within 60 feet in an attempt to glean information on them. Choose one of the following options:\n• Condition immunities\n• Current armor class\n• Current hit points (rounded to the nearest multiple of 25)\n• Damage vulnerabilities\n• Damage immunities and resistances\n• Movement types and speeds\n• Proficiency bonus\n• Saving throw proficiencies (not modifiers)\n• Skill proficiencies (not modifier)\n• Special senses The target must then make a Charisma saving throw. If they fail their save, you learn those properties about your target.",
+  "At Higher Levels": "When casting this spell at 2nd level or higher, you can choose one additional option from the list to learn for each slot level above 1st.",
+  "Classes": [
+    "Artificer",
+    "Druid",
+    "Inscriptor",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

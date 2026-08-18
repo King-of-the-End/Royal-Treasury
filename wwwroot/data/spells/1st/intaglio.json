@@ -1,0 +1,22 @@
+{
+  "Name": "Intaglio",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "5 feet",
+  "Components": "V, S, M (a quill or a vial of ink)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You transform a piece of parchment into a duplicate of a text or symbol. While concentrating on this spell, you can use an action to trace your hand over any non-magical text or imagery on a surface within range. You imprint the text or imagery onto parchment you provide, choosing how to resize or crop it. This spell copies a single page with each action, and cannot copy sections larger than 9x12 inches at a time. When copying a spell book, you can do so using the same method as you would replace a spell book, except the time and gp requirements are both halved.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Grim Hollow",
+  "Tags": [
+    "Ritual"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "See Future Death",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "S, M (a piece of broken mirror)",
+  "Duration": "1 minute",
+  "Description": "You peer into the divergent potentials of the future, your attention drawn to moments of your own harm. For the duration, any critical hits you suffer become normal hits and opportunity attacks against you have disadvantage. In addition, when an attack hits you with an attack or you fail a Strength or Dexterity saving throw, you can use your reaction to roll a d4 and add the result to your AC against that attack or to the result of the saving throw, potentially turning a hit into a miss or a failure into a success.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases to 10 minutes (3rd level), 1 hour (5th level), 8 hours (7th level), or 24 hours (9th level). When you cast this spell using a spell slot of 2nd level or higher, the size of the die you can roll to add to your AC or saving throw increases to 1d6 (2nd level), 1d8 (4th level), 1d10 (6th level), or 1d12 (8th level).",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Inscriptor",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

@@ -1,0 +1,16 @@
+{
+  "Name": "Writ Recollection",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "60 feet",
+  "Components": "S",
+  "Duration": "1 hour",
+  "Description": "On a still surface within range, you create an animated 2d projection that has dimensions of 5 feet by 5 feet and glows lightly, allowing it to be seen in the dark. The projection does not have sound, but reflects your perspective from memory and shows what you saw in a 1-minute-long period of time within the last month. You can scrub through the visuals of the recollection: pausing it, slowing it down, and allowing it to play freely at will. Anything you were visually uncertain of and small details you might not have noticed may be inaccurate, blurred, or absent. This projection remains for the spell’s duration or vanishes when you choose.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd-level or higher, you can choose one of the following effects for each slot level above 1st:\n• The dimensions of the projection are doubled.\n• The duration of the memory becomes 10 minutes, then at higher levels becomes 1 hour, then 12 hours, then 1 day.\n• The spell’s duration becomes 12 hours, then at higher levels becomes 1 day, then 1 week.\n• The memory’s auditory effects are included and can be heard by everyone within a range equal to twice the projection’s dimensions.\n• The memory can be drawn from up to 6 months ago, then at higher levels becomes 1 year, 5 years, 10 years, then any time during your life. If this spell is cast using a 9th-level spell slot, you can alter the projection to show anything you’d like as if it were a memory, including the bonuses above from casting it at a heightened spell level. When modified this way it does not benefit from the details of your memory.",
+  "Classes": [
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

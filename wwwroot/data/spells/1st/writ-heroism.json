@@ -1,0 +1,16 @@
+{
+  "Name": "Writ Heroism",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You write a short phrase describing the heroic antics of an allied creature you can see within 30 feet, and you gain three points of ascribed heroism corresponding to your target. Any time before the spell ends, if you witness that creature make a saving throw you may spend one point of ascribed heroism and write a short addendum to the phrase, allowing them to roll another d20 and use it in place of the d20 result that they rolled if the result is higher. You may only do so once per failed save and must choose to do so before the DM announces if the save failed or succeeded. When you run out of ascribed heroism the spell ends.",
+  "At Higher Levels": "When you cast this spell at 2nd level or higher, you gain 1 extra point of ascribed heroism and can target 1 additional creature within range for each slot level above 1st. You must split the total number of points among your targets as you see fit.",
+  "Classes": [
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}
