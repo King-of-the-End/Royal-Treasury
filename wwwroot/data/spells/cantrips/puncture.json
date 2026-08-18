@@ -1,0 +1,15 @@
+{
+  "Name": "Puncture",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "S, M (a steel needle)",
+  "Duration": "Instantaneous",
+  "Description": "A psionic needle streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage.",
+  "At Higher Levels": "The spell creates more needles when you reach higher levels: two needles at 5th level, three needles at 11th level, and four needles at 17th level. You can direct the needles at the same target or at different ones. Make a separate attack roll for each needle.",
+  "Classes": [
+    "Artificer"
+  ],
+  "Sourcebook": "Old Gus"
+}

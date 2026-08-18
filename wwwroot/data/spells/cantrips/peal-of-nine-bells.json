@@ -1,0 +1,18 @@
+{
+  "Name": "Peal of Nine Bells",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "20 feet",
+  "Components": "S, M (a chime or bell)",
+  "Duration": "Instantaneous",
+  "Description": "You create a beam of ringing sound that strikes at one creature of your choice that you can see within range. The target must succeed on a Strength saving throw or be pushed up to 10 feet in a straight line away from you, taking 1d6 thunder damage.",
+  "At Higher Levels": "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus"
+}

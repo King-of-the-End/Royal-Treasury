@@ -1,0 +1,1046 @@
+@page "/spells"
+@rendermode InteractiveServer
+
+@using Microsoft.AspNetCore.WebUtilities
+@using Website_of_Everything.Models
+@using Website_of_Everything.Services
+
+@inject SpellService SpellService
+@inject NavigationManager Navigation
+
+
+<PageTitle>
+    Spells - Royal Treasury
+</PageTitle>
+
+
+<section class="spell-browser">
+
+    <header class="spell-browser-header">
+
+        <div class="landing-kicker">
+            Compendium
+        </div>
+
+        <h1>
+            Spells
+        </h1>
+
+        <p>
+            Browse spells by level,
+            class, school, or spell group.
+        </p>
+
+    </header>
+
+
+    <!-- =====================================
+         FILTER BUTTONS
+         ===================================== -->
+
+    <div class="spell-filter-buttons">
+
+        <button type="button"
+                class="@FilterButtonClass(
+                    !classFilterOpen &&
+                    !schoolFilterOpen &&
+                    !groupFilterOpen)"
+                @onclick="ClearFilters">
+
+            All Spells
+
+        </button>
+
+
+        <button type="button"
+                class="@FilterButtonClass(
+                    classFilterOpen)"
+                @onclick="ToggleClassFilter">
+
+            Spells by Class
+
+        </button>
+
+
+        <button type="button"
+                class="@FilterButtonClass(
+                    schoolFilterOpen)"
+                @onclick="ToggleSchoolFilter">
+
+            Spells by School
+
+        </button>
+
+
+        <button type="button"
+                class="@FilterButtonClass(
+                    groupFilterOpen)"
+                @onclick="ToggleGroupFilter">
+
+            Spell Groups
+
+        </button>
+
+    </div>
+
+
+    <!-- =====================================
+         FILTER DROP DOWNS
+         ===================================== -->
+
+    @if (
+        classFilterOpen ||
+        schoolFilterOpen ||
+        groupFilterOpen)
+    {
+        <div class="spell-filter-selects">
+
+
+            @if (classFilterOpen)
+            {
+                <label class="spell-filter-field">
+
+                    <span>
+                        Class
+                    </span>
+
+                    <select
+                        @bind="selectedClass"
+                        @bind:after="SyncUrl">
+
+                        <option value="">
+                            All Classes
+                        </option>
+
+                        @foreach (
+                            var className
+                            in ClassOptions)
+                        {
+                            <option value="@className">
+                                @className
+                            </option>
+                        }
+
+                    </select>
+
+                </label>
+            }
+
+
+            @if (schoolFilterOpen)
+            {
+                <label class="spell-filter-field">
+
+                    <span>
+                        School
+                    </span>
+
+                    <select
+                        @bind="selectedSchool"
+                        @bind:after="SyncUrl">
+
+                        <option value="">
+                            All Schools
+                        </option>
+
+                        @foreach (
+                            var school
+                            in SchoolOptions)
+                        {
+                            <option value="@school">
+                                @school
+                            </option>
+                        }
+
+                    </select>
+
+                </label>
+            }
+
+
+            @if (groupFilterOpen)
+            {
+                <label class="spell-filter-field">
+
+                    <span>
+                        Spell Group
+                    </span>
+
+                    <select
+                        @bind="selectedGroup"
+                        @bind:after="SyncUrl">
+
+                        <option value="">
+                            All Spell Groups
+                        </option>
+
+                        @foreach (
+                            var group
+                            in GroupOptions)
+                        {
+                            <option value="@group">
+                                @group
+                            </option>
+                        }
+
+                    </select>
+
+                </label>
+            }
+
+        </div>
+    }
+
+
+    <!-- =====================================
+         LEVEL TABS
+         ===================================== -->
+
+    <div class="spell-level-tabs"
+         role="tablist">
+
+        @for (
+            var level = 0;
+            level <= 9;
+            level++)
+        {
+            var tabLevel =
+                level;
+
+
+            <button type="button"
+                    role="tab"
+                    aria-selected="@(
+                        activeLevel ==
+                        tabLevel)"
+                    class="@LevelTabClass(
+                        tabLevel)"
+                    @onclick="() =>
+                        SelectLevel(tabLevel)">
+
+                @LevelLabel(tabLevel)
+
+            </button>
+        }
+
+    </div>
+
+
+    <!-- =====================================
+         RESULTS
+         ===================================== -->
+
+    <section class="spell-results"
+             role="tabpanel">
+
+
+        @if (
+            !string.IsNullOrWhiteSpace(
+                loadError))
+        {
+            <div class="spell-empty-state">
+
+                @loadError
+
+            </div>
+        }
+
+        else if (
+            !FilteredSpells.Any())
+        {
+            <div class="spell-empty-state">
+
+                No spells match the selected
+                level and filters.
+
+            </div>
+        }
+
+        else
+        {
+            <div class="spell-results-heading">
+
+                <h2>
+                    @LevelLabel(activeLevel)
+                </h2>
+
+                <span>
+
+                    @FilteredSpells.Count()
+
+                    @(FilteredSpells.Count() == 1
+                        ? "spell"
+                        : "spells")
+
+                </span>
+
+            </div>
+
+
+            <!-- =================================
+                 SPELL TABLE
+                 ================================= -->
+
+            <div class="spell-table-wrap">
+
+                <table class="spell-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Spell Name
+                            </th>
+
+                            <th>
+                                School
+                            </th>
+
+                            <th>
+                                Casting Time
+                            </th>
+
+                            <th>
+                                Range
+                            </th>
+
+                            <th>
+                                Duration
+                            </th>
+
+                            <th>
+                                Components
+                            </th>
+
+                            <th>
+                                Spell Group
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        @foreach (
+                            var spell
+                            in FilteredSpells)
+                        {
+                            <tr class="spell-table-row"
+                                tabindex="0"
+                                @onclick="() =>
+                                    OpenSpell(spell)"
+                                @onkeydown="args =>
+                                    HandleRowKey(
+                                        args,
+                                        spell)">
+
+
+                                <!-- SPELL NAME -->
+
+                                <td class="spell-name-cell">
+
+                                    <a href="@BuildSpellUrl(spell)"
+                                       @onclick:stopPropagation="true">
+
+                                        @spell.Name
+
+                                    </a>
+
+                                </td>
+
+
+                                <!-- SCHOOL -->
+
+                                <td class="spell-school-cell">
+
+                                    @spell.SpellSchool
+
+                                </td>
+
+
+                                <!-- CASTING TIME -->
+
+                                <td>
+
+                                    @spell.CastingTime
+
+                                </td>
+
+
+                                <!-- RANGE -->
+
+                                <td>
+
+                                    @spell.Range
+
+                                </td>
+
+
+                                <!-- DURATION -->
+
+                                <td>
+
+                                    @spell.Duration
+
+                                </td>
+
+
+                                <!-- COMPONENTS -->
+
+                                <td>
+
+                                    @spell.Components
+
+                                </td>
+
+
+                                <!-- SPELL GROUP -->
+
+                                <td>
+
+                                    @DisplayGroups(
+                                        spell.SpellGroups)
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        }
+
+    </section>
+
+</section>
+
+
+@code {
+
+    private IReadOnlyList<SpellData> spells =
+        Array.Empty<SpellData>();
+
+
+    // =====================================
+    // CURRENT UI STATE
+    // =====================================
+
+    private int activeLevel;
+
+
+    private bool classFilterOpen;
+
+    private bool schoolFilterOpen;
+
+    private bool groupFilterOpen;
+
+
+    private string selectedClass =
+        string.Empty;
+
+    private string selectedSchool =
+        string.Empty;
+
+    private string selectedGroup =
+        string.Empty;
+
+
+    private string? loadError;
+
+
+    // =====================================
+    // DROP DOWN VALUES
+    // =====================================
+
+    private IEnumerable<string>
+        ClassOptions =>
+            spells
+                .SelectMany(
+                    spell =>
+                        spell.Classes)
+                .Where(
+                    value =>
+                        !string.IsNullOrWhiteSpace(
+                            value))
+                .Distinct(
+                    StringComparer.OrdinalIgnoreCase)
+                .OrderBy(
+                    value =>
+                        value,
+                    StringComparer.OrdinalIgnoreCase);
+
+
+    private IEnumerable<string>
+        SchoolOptions =>
+            spells
+                .Select(
+                    spell =>
+                        spell.SpellSchool)
+                .Where(
+                    value =>
+                        !string.IsNullOrWhiteSpace(
+                            value))
+                .Distinct(
+                    StringComparer.OrdinalIgnoreCase)
+                .OrderBy(
+                    value =>
+                        value,
+                    StringComparer.OrdinalIgnoreCase);
+
+
+    private IEnumerable<string>
+        GroupOptions =>
+            spells
+                .SelectMany(
+                    spell =>
+                        spell.SpellGroups)
+                .Where(
+                    value =>
+                        !string.IsNullOrWhiteSpace(
+                            value))
+                .Distinct(
+                    StringComparer.OrdinalIgnoreCase)
+                .OrderBy(
+                    value =>
+                        value,
+                    StringComparer.OrdinalIgnoreCase);
+
+
+    // =====================================
+    // FILTER SPELLS
+    // =====================================
+
+    private IEnumerable<SpellData>
+        FilteredSpells
+    {
+        get
+        {
+            IEnumerable<SpellData> result =
+                spells.Where(
+                    spell =>
+                        spell.Level ==
+                        activeLevel);
+
+
+            // CLASS
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedClass))
+            {
+                result =
+                    result.Where(
+                        spell =>
+                            spell.Classes.Contains(
+                                selectedClass,
+                                StringComparer
+                                    .OrdinalIgnoreCase));
+            }
+
+
+            // SCHOOL
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedSchool))
+            {
+                result =
+                    result.Where(
+                        spell =>
+                            string.Equals(
+                                spell.SpellSchool,
+                                selectedSchool,
+                                StringComparison
+                                    .OrdinalIgnoreCase));
+            }
+
+
+            // SPELL GROUP
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    selectedGroup))
+            {
+                result =
+                    result.Where(
+                        spell =>
+                            spell.SpellGroups.Contains(
+                                selectedGroup,
+                                StringComparer
+                                    .OrdinalIgnoreCase));
+            }
+
+
+            return result
+                .OrderBy(
+                    spell =>
+                        spell.Name,
+                    StringComparer.OrdinalIgnoreCase);
+        }
+    }
+
+
+    // =====================================
+    // INITIAL LOAD
+    // =====================================
+
+    protected override async Task
+        OnInitializedAsync()
+    {
+        /*
+         * Restore the tab and filters
+         * from the URL first.
+         */
+        RestoreStateFromUrl();
+
+
+        try
+        {
+            spells =
+                await SpellService
+                    .GetAllSpellsAsync();
+
+
+            if (spells.Count == 0)
+            {
+                loadError =
+                    "No spell files were found " +
+                    "in wwwroot/data/spells/.";
+            }
+        }
+        catch (Exception ex)
+        {
+            loadError =
+                $"The spell files could not " +
+                $"be loaded: {ex.Message}";
+        }
+    }
+
+
+    // =====================================
+    // RESTORE SAVED STATE FROM URL
+    // =====================================
+
+    private void RestoreStateFromUrl()
+    {
+        var uri =
+            Navigation.ToAbsoluteUri(
+                Navigation.Uri);
+
+
+        var query =
+            QueryHelpers.ParseQuery(
+                uri.Query);
+
+
+        // LEVEL
+
+        if (
+            query.TryGetValue(
+                "level",
+                out var levelValue)
+            &&
+            int.TryParse(
+                levelValue.FirstOrDefault(),
+                out var parsedLevel)
+            &&
+            parsedLevel is >= 0 and <= 9)
+        {
+            activeLevel =
+                parsedLevel;
+        }
+
+
+        // OPEN FILTERS
+
+        classFilterOpen =
+            QueryIsTrue(
+                query,
+                "classOpen");
+
+
+        schoolFilterOpen =
+            QueryIsTrue(
+                query,
+                "schoolOpen");
+
+
+        groupFilterOpen =
+            QueryIsTrue(
+                query,
+                "groupOpen");
+
+
+        // SELECTED VALUES
+
+        selectedClass =
+            QueryValue(
+                query,
+                "class");
+
+
+        selectedSchool =
+            QueryValue(
+                query,
+                "school");
+
+
+        selectedGroup =
+            QueryValue(
+                query,
+                "group");
+
+
+        /*
+         * If a filter value exists,
+         * make sure its selector is shown.
+         */
+
+        classFilterOpen |=
+            !string.IsNullOrWhiteSpace(
+                selectedClass);
+
+
+        schoolFilterOpen |=
+            !string.IsNullOrWhiteSpace(
+                selectedSchool);
+
+
+        groupFilterOpen |=
+            !string.IsNullOrWhiteSpace(
+                selectedGroup);
+    }
+
+
+    // =====================================
+    // LEVEL SELECTION
+    // =====================================
+
+    private void SelectLevel(
+        int level)
+    {
+        activeLevel =
+            level;
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // ALL SPELLS
+    // =====================================
+
+    private void ClearFilters()
+    {
+        classFilterOpen =
+            false;
+
+        schoolFilterOpen =
+            false;
+
+        groupFilterOpen =
+            false;
+
+
+        selectedClass =
+            string.Empty;
+
+        selectedSchool =
+            string.Empty;
+
+        selectedGroup =
+            string.Empty;
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // CLASS FILTER
+    // =====================================
+
+    private void ToggleClassFilter()
+    {
+        classFilterOpen =
+            !classFilterOpen;
+
+
+        if (!classFilterOpen)
+        {
+            selectedClass =
+                string.Empty;
+        }
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // SCHOOL FILTER
+    // =====================================
+
+    private void ToggleSchoolFilter()
+    {
+        schoolFilterOpen =
+            !schoolFilterOpen;
+
+
+        if (!schoolFilterOpen)
+        {
+            selectedSchool =
+                string.Empty;
+        }
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // GROUP FILTER
+    // =====================================
+
+    private void ToggleGroupFilter()
+    {
+        groupFilterOpen =
+            !groupFilterOpen;
+
+
+        if (!groupFilterOpen)
+        {
+            selectedGroup =
+                string.Empty;
+        }
+
+
+        SyncUrl();
+    }
+
+
+    // =====================================
+    // SAVE STATE TO URL
+    // =====================================
+
+    private void SyncUrl()
+    {
+        Navigation.NavigateTo(
+            BuildListUrl(),
+            replace: true);
+    }
+
+
+    private string BuildListUrl()
+    {
+        var query =
+            new Dictionary<string, string?>
+            {
+                ["level"] =
+                    activeLevel.ToString()
+            };
+
+
+        if (classFilterOpen)
+        {
+            query["classOpen"] =
+                "1";
+        }
+
+
+        if (schoolFilterOpen)
+        {
+            query["schoolOpen"] =
+                "1";
+        }
+
+
+        if (groupFilterOpen)
+        {
+            query["groupOpen"] =
+                "1";
+        }
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                selectedClass))
+        {
+            query["class"] =
+                selectedClass;
+        }
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                selectedSchool))
+        {
+            query["school"] =
+                selectedSchool;
+        }
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                selectedGroup))
+        {
+            query["group"] =
+                selectedGroup;
+        }
+
+
+        return QueryHelpers.AddQueryString(
+            "/spells",
+            query);
+    }
+
+
+    // =====================================
+    // SPELL DETAILS URL
+    // =====================================
+
+    private string BuildSpellUrl(
+        SpellData spell)
+    {
+        /*
+         * Example:
+         *
+         * /spells/cantrips/acid-splash
+         */
+        var detailUrl =
+            $"/spells/" +
+            $"{Uri.EscapeDataString(
+                spell.LevelFolder)}/" +
+            $"{Uri.EscapeDataString(
+                spell.Slug)}";
+
+
+        /*
+         * Store the current spell-browser
+         * state in the detail URL.
+         *
+         * This makes the Back to Spells
+         * button return to exactly the same
+         * filters and level.
+         */
+        return QueryHelpers.AddQueryString(
+            detailUrl,
+            "returnUrl",
+            BuildListUrl());
+    }
+
+
+    // =====================================
+    // OPEN SPELL
+    // =====================================
+
+    private void OpenSpell(
+        SpellData spell)
+    {
+        Navigation.NavigateTo(
+            BuildSpellUrl(spell));
+    }
+
+
+    private void HandleRowKey(
+        KeyboardEventArgs args,
+        SpellData spell)
+    {
+        if (
+            args.Key is
+                "Enter"
+                or " ")
+        {
+            OpenSpell(spell);
+        }
+    }
+
+
+    // =====================================
+    // DISPLAY HELPERS
+    // =====================================
+
+    private static string DisplayGroups(
+        IReadOnlyCollection<string> groups)
+    {
+        return groups.Count == 0
+            ? "—"
+            : string.Join(
+                ", ",
+                groups);
+    }
+
+
+    private static string FilterButtonClass(
+        bool active)
+    {
+        return active
+            ? "spell-filter-button active"
+            : "spell-filter-button";
+    }
+
+
+    private string LevelTabClass(
+        int level)
+    {
+        return activeLevel == level
+            ? "spell-level-tab active"
+            : "spell-level-tab";
+    }
+
+
+    private static string LevelLabel(
+        int level)
+    {
+        return level switch
+        {
+            0 => "Cantrips",
+            1 => "1st Level",
+            2 => "2nd Level",
+            3 => "3rd Level",
+            _ => $"{level}th Level"
+        };
+    }
+
+
+    private static bool QueryIsTrue(
+        Dictionary<
+            string,
+            Microsoft.Extensions.Primitives.StringValues
+        > query,
+        string key)
+    {
+        return
+            query.TryGetValue(
+                key,
+                out var value)
+            &&
+            value.FirstOrDefault() ==
+            "1";
+    }
+
+
+    private static string QueryValue(
+        Dictionary<
+            string,
+            Microsoft.Extensions.Primitives.StringValues
+        > query,
+        string key)
+    {
+        return
+            query.TryGetValue(
+                key,
+                out var value)
+
+            ? value.FirstOrDefault()
+                ?? string.Empty
+
+            : string.Empty;
+    }
+}

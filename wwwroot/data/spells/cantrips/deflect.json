@@ -1,0 +1,23 @@
+{
+  "Name": "Deflect",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [
+    "Zanjen"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "1 round",
+  "Description": "You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit"
+}

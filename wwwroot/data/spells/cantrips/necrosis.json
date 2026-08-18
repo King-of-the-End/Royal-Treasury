@@ -1,0 +1,23 @@
+{
+  "Name": "Necrosis",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [
+    "Daemoturgy",
+    "Unbound Moralisms"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You touch one creature, rotting their body where you strike them. Make a melee spell attack against the target: on a hit, the target takes 1d10 necrotic damage. If the creature has their maximum amount of hit points and hasn't taken any damage yet, they take an additional 1d10 damage.\n\nIf this damage reduces a creature to 0 hit points, you gain temporary hit points equal to half the damage you dealt to them with that attack (rounded down).",
+  "At Higher Levels": "At Higher Levels. This spell's base damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit"
+}

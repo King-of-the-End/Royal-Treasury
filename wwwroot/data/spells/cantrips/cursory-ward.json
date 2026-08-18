@@ -1,0 +1,19 @@
+{
+  "Name": "Cursory Ward",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You ward yourself from injury, granting yourself temporary hit points equal to 1d4 + your spellcasting ability modifier (minimum of 1). The temporary hit points last until the end of your next turn.",
+  "At Higher Levels": "The number temporary hit points increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+  "Classes": [
+    "Cleric",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus"
+}

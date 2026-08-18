@@ -1,0 +1,21 @@
+{
+  "Name": "Incantation",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Eidomancy",
+    "Sealed Words",
+    "Sky-Keeper’s Arcana"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Special",
+  "Components": "V",
+  "Duration": "1 round",
+  "Description": "This spell is ignored by all rules regarding how many spells you can cast in a single turn, as long as you have enough actions to cast it. The next time you cast a spell before the start of your next turn, you can choose to expend an additional spell slot. If you do, the slot level used to cast that spell is treated as if it was higher: it is increased by half the level of the additional slot you used (rounded down). This cannot increase the slot level above 9th.\n\nIf you do not have the spell slots to cast a spell at its base level but have cast this spell, you can cast that spell as long as you use this spell's effects to produce a slot level equal to or higher than the target spell level.\n\nYou do not make an eidomantic burn check for this spell. Instead, you make one for the spell it affects, treating it as an eidomancy spell cast at the resulting heightened slot level.\n\nEidomancy Burn. When you cast this spell, you must attempt a Constitution saving throw with a DC equal to 10 + the level at which it was cast. On a failure, you suffer a level of exhaustion and cannot cast this spell again until seven days have passed. If this failure would increase a creature's level of exhaustion to 6, they are reduced to 5 and are immediately reduced to 0 hit points instead.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Inscriptor",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit"
+}

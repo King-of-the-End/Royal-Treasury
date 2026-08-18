@@ -1,0 +1,18 @@
+{
+  "Name": "Thirsting Claws",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You perform a swiping notion with your hand, gigantic blood-soaked claws forming in the air to rake at a target. You perform a Ranged Spell Attack against a target within reach, dealing 1d4 slashing damage and inflicting 2 Bleed on a hit.",
+  "At Higher Levels": "This spell’s damage increases by 1d4 and inflicts 2 more Bleed when you reach 5th level (2d4 and 4), 11th level (3d4 and 6), and 17th level (4d4 and 8).",
+  "Classes": [
+    "Cleric",
+    "Druid",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Undertomes"
+}

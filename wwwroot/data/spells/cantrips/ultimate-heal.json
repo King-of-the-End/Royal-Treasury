@@ -1,0 +1,23 @@
+{
+  "Name": "Ultimate Heal",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "5 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You create a sphere of healing energy and launch it towards a creature within range. They recover 1 Hit Point. This can only recover a creature to 1 Hit Point back from 0 Hit Points once per Long Rest. You can only heal a total of 10 Hit Points across all creatures per Long Rest this way.",
+  "At Higher Levels": "At Higher Levels. This spell’s maximum healing increases to 20 when you reach 5th level, 40 at 11th level, and 80 at 17th level.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes"
+}

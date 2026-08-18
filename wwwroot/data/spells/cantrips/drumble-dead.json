@@ -1,0 +1,16 @@
+{
+  "Name": "Drumble Dead",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "Up to an hour",
+  "Description": "You disturb the veil between life and death, creating one of the following magical effects within range:\n\n- You cause nonmagical food or drink that fits within a 5-foot cube to instantaneously spoil and become inedible, and any nonmagical foliage in the area wilts.\n\n- You cause the temperature in a 5-foot radius to drop 5 degrees Fahrenheit for 1 minute. Within the same area, you can cause flames to flicker, dim, or change color.\n\n- A corpse (or partial remains) you can see within range speaks a message up to three words in length of your choosing in a language you know, and creates brief gestures in a manner of your choosing for up to an hour.\n\n- A Medium or smaller corpse (or partial remains) you can see within range instantaneously moves up to 10 feet along the ground in a direction of your choice.\n\n- One Medium creature of your choice that you can see within range and also within 5 feet of a corpse (or partial remains) must succeed on a Strength saving throw or become grappled by the corpse (or partial remains). A grappled creature can use its action to repeat the saving throw on its turn to end the grapple. At the start of your next turn the target is released from the grapple.\n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+  "At Higher Levels": "The spell can target corpses of larger size categories when you reach higher levels: Large at 5th level, Huge at 11th level, and Gargantuan at 17th level.",
+  "Classes": [
+    "Cleric",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus"
+}

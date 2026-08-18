@@ -1,0 +1,18 @@
+{
+  "Name": "Soften Descent",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 reaction, which you take when you are about to hit a surface after falling",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "With a gesture, you cause an updraft in the air, slowing your descent. You ignore the first 30 feet when calculating falling damage.",
+  "At Higher Levels": "This spell ignores an additional 30 feet of falling damage when you reach 5th level (60 feet), 11th level (90 feet), and 17th level (120 feet).",
+  "Classes": [
+    "Bard",
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms"
+}

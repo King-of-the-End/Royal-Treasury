@@ -1,0 +1,18 @@
+{
+  "Name": "Puff of Smoke",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You create a 5-foot-radius, 15-foot-high cylinder of fog centered on a point within range. The smoke spreads around corners, and its area is heavily obscured. When created, the puff produces a dull thud which is audible out to 100 feet.\n\nThe smoke can be any color you desire, and you can cause it to shed dim light in a 5-foot-radius in the same color. It lasts until the start of your next turn, or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+  "At Higher Levels": "When you reach 11th level, you can create two puffs of smoke with the spell.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus"
+}

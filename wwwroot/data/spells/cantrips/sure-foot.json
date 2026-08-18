@@ -1,0 +1,20 @@
+{
+  "Name": "Sure Foot",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "1 round",
+  "Description": "Choose a willing creature within range that you can see. Until the end of your next turn, that creature is immune to the prone condition. If it is already prone and is not restrained, this spell sets it on its feet.",
+  "At Higher Levels": "The number of creatures you can simultaneously target with this spell increases by 1 when you reach 5th level (2 creatures), 11th level (3 creatures), and 17th level (4 creatures).",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Helianas Guide to Monster Hunting"
+}

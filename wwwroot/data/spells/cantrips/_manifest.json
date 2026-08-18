@@ -1,0 +1,480 @@
+{
+  "spell_count": 109,
+  "file_format": "UTF-8 JSON",
+  "categorical_fields": {
+    "Spell Group(s)": "array of strings; each element is an independent filter/category value",
+    "Classes": "array of strings; each element is an independent filter/category value"
+  },
+  "allowed_spell_groups": [
+    "Arts of Value",
+    "Bloody Values",
+    "Sealed Words",
+    "Sinful Codex",
+    "Unbound Moralisms",
+    "Zanjen",
+    "Burning Rites",
+    "Harvest Tradition",
+    "Twisting Gale Path",
+    "Torrential Arcanics",
+    "Elemental Confluence",
+    "Altissima-Cor’s Arcane Arts",
+    "Nine Branch Arts",
+    "Legacy of Gold",
+    "Epic of Duality",
+    "Blood of Cineris",
+    "Chromatic Convocation",
+    "Daemoturgy",
+    "Eidomancy",
+    "Sky-Keeper’s Arcana",
+    "Ossenheimer’s Memoirs",
+    "Whisperwood Tome",
+    "Biomancy",
+    "Sangromancy",
+    "Skulker’s Grimoire",
+    "Chronurgy",
+    "Graviturgy",
+    "Dunamancy"
+  ],
+  "table_handling": {
+    "marker_format": "{{TABLE:<table_id>}}",
+    "note": "Only spells with a source table contain Special Notes and Tables. Use placement + marker to reconstruct the table in the correct section."
+  },
+  "spells": [
+    {
+      "Name": "Aqueous Blast",
+      "file": "aqueous-blast.json"
+    },
+    {
+      "Name": "Beloved Wretch",
+      "file": "beloved-wretch.json"
+    },
+    {
+      "Name": "Bestial Ravage",
+      "file": "bestial-ravage.json"
+    },
+    {
+      "Name": "Cross Handle",
+      "file": "cross-handle.json"
+    },
+    {
+      "Name": "Deflect",
+      "file": "deflect.json"
+    },
+    {
+      "Name": "Incantation",
+      "file": "incantation.json"
+    },
+    {
+      "Name": "Necrosis",
+      "file": "necrosis.json"
+    },
+    {
+      "Name": "Thought Shard",
+      "file": "thought-shard.json"
+    },
+    {
+      "Name": "True Strike",
+      "file": "true-strike.json"
+    },
+    {
+      "Name": "Bladed Halo",
+      "file": "bladed-halo.json"
+    },
+    {
+      "Name": "Acid Splash",
+      "file": "acid-splash.json"
+    },
+    {
+      "Name": "Booming Blade",
+      "file": "booming-blade.json"
+    },
+    {
+      "Name": "Chill Touch",
+      "file": "chill-touch.json"
+    },
+    {
+      "Name": "Create Bonfire",
+      "file": "create-bonfire.json"
+    },
+    {
+      "Name": "Dancing Lights",
+      "file": "dancing-lights.json"
+    },
+    {
+      "Name": "Druidcraft",
+      "file": "druidcraft.json"
+    },
+    {
+      "Name": "Eldritch Blast",
+      "file": "eldritch-blast.json"
+    },
+    {
+      "Name": "Fire Bolt",
+      "file": "fire-bolt.json"
+    },
+    {
+      "Name": "Frostbite",
+      "file": "frostbite.json"
+    },
+    {
+      "Name": "Green-Flame Blade",
+      "file": "green-flame-blade.json"
+    },
+    {
+      "Name": "Guidance",
+      "file": "guidance.json"
+    },
+    {
+      "Name": "Gust",
+      "file": "gust.json"
+    },
+    {
+      "Name": "Hand of Radiance",
+      "file": "hand-of-radiance.json"
+    },
+    {
+      "Name": "Infestation",
+      "file": "infestation.json"
+    },
+    {
+      "Name": "Light",
+      "file": "light.json"
+    },
+    {
+      "Name": "Mage Hand",
+      "file": "mage-hand.json"
+    },
+    {
+      "Name": "Magic Stone",
+      "file": "magic-stone.json"
+    },
+    {
+      "Name": "Mending",
+      "file": "mending.json"
+    },
+    {
+      "Name": "Message",
+      "file": "message.json"
+    },
+    {
+      "Name": "Minor Illusion",
+      "file": "minor-illusion.json"
+    },
+    {
+      "Name": "Poison Spray",
+      "file": "poison-spray.json"
+    },
+    {
+      "Name": "Prestidigitation",
+      "file": "prestidigitation.json"
+    },
+    {
+      "Name": "Produce Flame",
+      "file": "produce-flame.json"
+    },
+    {
+      "Name": "Ray of Frost",
+      "file": "ray-of-frost.json"
+    },
+    {
+      "Name": "Resistance",
+      "file": "resistance.json"
+    },
+    {
+      "Name": "Sacred Flame",
+      "file": "sacred-flame.json"
+    },
+    {
+      "Name": "Sapping Sting",
+      "file": "sapping-sting.json"
+    },
+    {
+      "Name": "Shillelagh",
+      "file": "shillelagh.json"
+    },
+    {
+      "Name": "Shocking Grasp",
+      "file": "shocking-grasp.json"
+    },
+    {
+      "Name": "Spare the Dying",
+      "file": "spare-the-dying.json"
+    },
+    {
+      "Name": "Sword Burst",
+      "file": "sword-burst.json"
+    },
+    {
+      "Name": "Thaumaturgy",
+      "file": "thaumaturgy.json"
+    },
+    {
+      "Name": "Thorn Whip",
+      "file": "thorn-whip.json"
+    },
+    {
+      "Name": "Thunderclap",
+      "file": "thunderclap.json"
+    },
+    {
+      "Name": "Toll the Dead",
+      "file": "toll-the-dead.json"
+    },
+    {
+      "Name": "Vicious Mockery",
+      "file": "vicious-mockery.json"
+    },
+    {
+      "Name": "Virtue",
+      "file": "virtue.json"
+    },
+    {
+      "Name": "Word of Radiance",
+      "file": "word-of-radiance.json"
+    },
+    {
+      "Name": "Bestial Roar",
+      "file": "bestial-roar.json"
+    },
+    {
+      "Name": "Brittle Bone Throw",
+      "file": "brittle-bone-throw.json"
+    },
+    {
+      "Name": "Cosmic Eye",
+      "file": "cosmic-eye.json"
+    },
+    {
+      "Name": "Gravity Whip",
+      "file": "gravity-whip.json"
+    },
+    {
+      "Name": "Gravity Spike",
+      "file": "gravity-spike.json"
+    },
+    {
+      "Name": "Calling Card",
+      "file": "calling-card.json"
+    },
+    {
+      "Name": "Holy Word",
+      "file": "holy-word.json"
+    },
+    {
+      "Name": "Hunter Sense",
+      "file": "hunter-sense.json"
+    },
+    {
+      "Name": "Illusory Instrument",
+      "file": "illusory-instrument.json"
+    },
+    {
+      "Name": "Ferocious Strike",
+      "file": "ferocious-strike.json"
+    },
+    {
+      "Name": "Flare",
+      "file": "flare.json"
+    },
+    {
+      "Name": "Howl",
+      "file": "howl.json"
+    },
+    {
+      "Name": "Lesser Apotrope",
+      "file": "lesser-apotrope.json"
+    },
+    {
+      "Name": "Primal Scent",
+      "file": "primal-scent.json"
+    },
+    {
+      "Name": "Smokescreen",
+      "file": "smokescreen.json"
+    },
+    {
+      "Name": "Spark",
+      "file": "spark.json"
+    },
+    {
+      "Name": "Spore Cloud",
+      "file": "spore-cloud.json"
+    },
+    {
+      "Name": "Stalker’s Eye",
+      "file": "stalkers-eye.json"
+    },
+    {
+      "Name": "Sure Foot",
+      "file": "sure-foot.json"
+    },
+    {
+      "Name": "Swarm",
+      "file": "swarm.json"
+    },
+    {
+      "Name": "Ash Coat",
+      "file": "ash-coat.json"
+    },
+    {
+      "Name": "Electric Chain",
+      "file": "electric-chain.json"
+    },
+    {
+      "Name": "Fiendish Aspect",
+      "file": "fiendish-aspect.json"
+    },
+    {
+      "Name": "Literal Manifest",
+      "file": "literal-manifest.json"
+    },
+    {
+      "Name": "Manipulate Ego",
+      "file": "manipulate-ego.json"
+    },
+    {
+      "Name": "Manipulate Water",
+      "file": "manipulate-water.json"
+    },
+    {
+      "Name": "Psychic Sidearm",
+      "file": "psychic-sidearm.json"
+    },
+    {
+      "Name": "Psychic Sliver",
+      "file": "psychic-sliver.json"
+    },
+    {
+      "Name": "Writ Seizure",
+      "file": "writ-seizure.json"
+    },
+    {
+      "Name": "Cursory Ward",
+      "file": "cursory-ward.json"
+    },
+    {
+      "Name": "Drumble Dead",
+      "file": "drumble-dead.json"
+    },
+    {
+      "Name": "Dulling Chains",
+      "file": "dulling-chains.json"
+    },
+    {
+      "Name": "Flickering Fists",
+      "file": "flickering-fists.json"
+    },
+    {
+      "Name": "Frigidigitation",
+      "file": "frigidigitation.json"
+    },
+    {
+      "Name": "Gift of the Soothsayer",
+      "file": "gift-of-the-soothsayer.json"
+    },
+    {
+      "Name": "Lucky Coin",
+      "file": "lucky-coin.json"
+    },
+    {
+      "Name": "Nature Bolt",
+      "file": "nature-bolt.json"
+    },
+    {
+      "Name": "Peal of Nine Bells",
+      "file": "peal-of-nine-bells.json"
+    },
+    {
+      "Name": "Puff of Smoke",
+      "file": "puff-of-smoke.json"
+    },
+    {
+      "Name": "Puncture",
+      "file": "puncture.json"
+    },
+    {
+      "Name": "Sacred Strike",
+      "file": "sacred-strike.json"
+    },
+    {
+      "Name": "Sanguine Strike",
+      "file": "sanguine-strike.json"
+    },
+    {
+      "Name": "Time Knife",
+      "file": "time-knife.json"
+    },
+    {
+      "Name": "Whelm",
+      "file": "whelm.json"
+    },
+    {
+      "Name": "Zap",
+      "file": "zap.json"
+    },
+    {
+      "Name": "Billow",
+      "file": "billow.json"
+    },
+    {
+      "Name": "Frostveil",
+      "file": "frostveil.json"
+    },
+    {
+      "Name": "Manipulate Earth",
+      "file": "manipulate-earth.json"
+    },
+    {
+      "Name": "Manipulate Flames",
+      "file": "manipulate-flames.json"
+    },
+    {
+      "Name": "Dash Strike",
+      "file": "dash-strike.json"
+    },
+    {
+      "Name": "Earthen Fist",
+      "file": "earthen-fist.json"
+    },
+    {
+      "Name": "Incendiary Strike",
+      "file": "incendiary-strike.json"
+    },
+    {
+      "Name": "Reinforce",
+      "file": "reinforce.json"
+    },
+    {
+      "Name": "Soften Descent",
+      "file": "soften-descent.json"
+    },
+    {
+      "Name": "Fleeting Emberblade",
+      "file": "fleeting-emberblade.json"
+    },
+    {
+      "Name": "Mind Lasher",
+      "file": "mind-lasher.json"
+    },
+    {
+      "Name": "Sanctified Salt Splash",
+      "file": "sanctified-salt-splash.json"
+    },
+    {
+      "Name": "Sanguine Authority",
+      "file": "sanguine-authority.json"
+    },
+    {
+      "Name": "Thirsting Claws",
+      "file": "thirsting-claws.json"
+    },
+    {
+      "Name": "Ticking Clockhand",
+      "file": "ticking-clockhand.json"
+    },
+    {
+      "Name": "Ultimate Heal",
+      "file": "ultimate-heal.json"
+    }
+  ]
+}

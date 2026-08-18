@@ -1,0 +1,59 @@
+{
+  "Name": "Nature Bolt",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "A handful of solid material you can reach crumbles at your touch, and you hurl the mass at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 of damage of a type based on the terrain, according to the following table:\n\nThis spell has no effect on terrain consisting of living or undead creatures, air, lava, or magical surfaces. Terrain removed with this spell must be located directly at your feet. It would take approximately one hour of continuous casting to remove a 5-foot cube of material from a surface using this spell.\n\n{{TABLE:nature_bolt_damage}}",
+  "At Higher Levels": "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "Classes": [
+    "Druid",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Special Notes": [
+    {
+      "type": "table",
+      "table_id": "nature_bolt_damage",
+      "placement": "Description",
+      "marker": "{{TABLE:nature_bolt_damage}}",
+      "instruction": "Replace this marker with the table whose id matches table_id when rendering the spell."
+    }
+  ],
+  "Tables": [
+    {
+      "id": "nature_bolt_damage",
+      "title": "Nature Bolt Damage",
+      "placement": "Description",
+      "marker": "{{TABLE:nature_bolt_damage}}",
+      "columns": [
+        "Terrain",
+        "Damage"
+      ],
+      "rows": [
+        {
+          "Terrain": "stone, dirt",
+          "Damage": "bludgeoning"
+        },
+        {
+          "Terrain": "metal, wood",
+          "Damage": "piercing"
+        },
+        {
+          "Terrain": "gravel, sand",
+          "Damage": "slashing"
+        },
+        {
+          "Terrain": "swamp, marsh",
+          "Damage": "poison"
+        },
+        {
+          "Terrain": "water, snow, ice",
+          "Damage": "cold"
+        }
+      ]
+    }
+  ]
+}

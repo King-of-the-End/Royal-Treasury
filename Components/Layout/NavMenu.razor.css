@@ -1,0 +1,235 @@
+/* =========================================
+   ROYAL TREASURY
+   SIDE NAVIGATION
+   ========================================= */
+
+
+/* =========================================
+   MAIN NAV CONTAINER
+   ========================================= */
+
+.side-nav {
+    padding:
+        1.25rem
+        1rem
+        2rem;
+}
+
+
+/* =========================================
+   BRAND / EMBLEM
+   ========================================= */
+
+.side-brand {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0.75rem;
+
+    padding:
+        1rem
+        0.6rem
+        1.5rem;
+
+    color:
+        #f1ede6;
+
+    text-align:
+        center;
+
+    text-decoration:
+        none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        1.1rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================
+   ROYAL TREASURY EMBLEM
+   ========================================= */
+
+.brand-mark {
+    width:
+        112px;
+
+    height:
+        112px;
+
+    display:
+        block;
+
+    object-fit:
+        contain;
+
+    border-radius:
+        10px;
+
+    filter:
+        drop-shadow(
+            0 0 16px
+            rgba(211, 169, 0, 0.18)
+        );
+
+    transition:
+        transform 150ms ease,
+        filter 150ms ease;
+}
+
+
+/* Logo hover */
+
+.side-brand:hover .brand-mark {
+    transform:
+        scale(1.04);
+
+    filter:
+        drop-shadow(
+            0 0 20px
+            rgba(255, 214, 77, 0.28)
+        );
+}
+
+
+/* =========================================
+   NAVIGATION SECTIONS
+   ========================================= */
+
+.side-section {
+    border:
+        1px solid
+        #6f130f;
+
+    border-bottom:
+        0;
+
+    background:
+        rgba(
+            24,
+            22,
+            21,
+            0.82
+        );
+}
+
+
+.side-section:last-child {
+    border-bottom:
+        1px solid
+        #6f130f;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+   ========================================= */
+
+.side-heading {
+    padding:
+        0.7rem
+        0.75rem
+        0.45rem;
+
+    color:
+        #f1ede6;
+
+    font-weight:
+        700;
+
+    border-bottom:
+        1px solid
+        rgba(138, 18, 13, 0.65);
+}
+
+
+/* =========================================
+   NAV LINKS
+   ========================================= */
+
+.side-section ::deep .side-link {
+    display:
+        block;
+
+    padding:
+        0.38rem
+        0.75rem;
+
+    color:
+        #d6a900;
+
+    text-decoration:
+        none;
+
+    transition:
+        background 140ms ease,
+        color 140ms ease,
+        padding-left 140ms ease;
+}
+
+
+/* Hover / selected */
+
+.side-section ::deep .side-link:hover,
+.side-section ::deep .side-link.active {
+    background:
+        rgba(
+            126,
+            45,
+            30,
+            0.42
+        );
+
+    color:
+        #fff4cb;
+
+    padding-left:
+        0.95rem;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .side-brand {
+        flex-direction:
+            row;
+
+        justify-content:
+            center;
+
+        padding-bottom:
+            1rem;
+    }
+
+
+    .brand-mark {
+        width:
+            58px;
+
+        height:
+            58px;
+    }
+
+
+    .side-section {
+        max-width:
+            680px;
+
+        margin:
+            0 auto;
+    }
+
+}

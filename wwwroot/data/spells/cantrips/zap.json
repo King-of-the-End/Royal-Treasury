@@ -1,0 +1,72 @@
+{
+  "Name": "Zap",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "A thrum of chaotic magic streaks out of you toward one creature of your choice that you can see within range.\n\nMake a ranged spell attack. If it hits, roll a d8 to determine the type of damage, then deal 1d8 of that type to the creature.\n\n{{TABLE:zap_damage_type}}",
+  "At Higher Levels": "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). Each time the damage dice increase, you can modify the results of your damage type's roll by an additional ±1.",
+  "Classes": [
+    "Bard",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Special Notes": [
+    {
+      "type": "table",
+      "table_id": "zap_damage_type",
+      "placement": "Description",
+      "marker": "{{TABLE:zap_damage_type}}",
+      "instruction": "Replace this marker with the table whose id matches table_id when rendering the spell."
+    }
+  ],
+  "Tables": [
+    {
+      "id": "zap_damage_type",
+      "title": "Zap Damage Type",
+      "placement": "Description",
+      "marker": "{{TABLE:zap_damage_type}}",
+      "columns": [
+        "d8",
+        "Damage Type"
+      ],
+      "rows": [
+        {
+          "d8": "1",
+          "Damage Type": "fire"
+        },
+        {
+          "d8": "2",
+          "Damage Type": "cold"
+        },
+        {
+          "d8": "3",
+          "Damage Type": "acid"
+        },
+        {
+          "d8": "4",
+          "Damage Type": "lightning"
+        },
+        {
+          "d8": "5",
+          "Damage Type": "thunder"
+        },
+        {
+          "d8": "6",
+          "Damage Type": "radiant"
+        },
+        {
+          "d8": "7",
+          "Damage Type": "force"
+        },
+        {
+          "d8": "8",
+          "Damage Type": "psychic"
+        }
+      ]
+    }
+  ]
+}

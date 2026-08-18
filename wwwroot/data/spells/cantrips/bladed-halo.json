@@ -1,0 +1,20 @@
+{
+  "Name": "Bladed Halo",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "Instant",
+  "Description": "You throw a bouncing blade of solid light. Make a single ranged spell attack against up to 3 different creatures within range that are within 10ft of each other. A target hit takes 1d4 radiant damage.",
+  "At Higher Levels": "At Higher Levels. The halo can bounce more times at higher levels: 4 bounces at 5th level, 5 bounces at 11th level, and 6 bounces at 17th level. Use the same attack roll against each creature.",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Cleric",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blaine's Anime in DnD Series"
+}

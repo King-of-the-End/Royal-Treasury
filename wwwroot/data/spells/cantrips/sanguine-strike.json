@@ -1,0 +1,19 @@
+{
+  "Name": "Sanguine Strike",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 round",
+  "Description": "You touch a willing creature. Your magic grants them exceptional skill with their weapon. The target then designates a creature they can see within 30 feet of them. Until the end of their next turn, they gain advantage on the first attack roll they make against the designated creature, provided that this spell hasn't ended.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Inscriptor",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Old Gus"
+}

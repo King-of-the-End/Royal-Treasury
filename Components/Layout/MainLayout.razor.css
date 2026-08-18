@@ -1,0 +1,88 @@
+.site-shell {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+}
+
+.site-sidebar {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(10, 7, 7, 0.84), rgba(10, 7, 7, 0.96)),
+        repeating-linear-gradient(155deg, #240706 0 12px, #4d0b08 12px 15px, #170606 15px 31px);
+    border-right: 1px solid #8c110c;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.site-main {
+    min-width: 0;
+    background:
+        linear-gradient(rgba(22, 20, 19, 0.93), rgba(18, 16, 15, 0.97)),
+        repeating-linear-gradient(90deg, transparent 0 118px, rgba(110, 42, 30, 0.08) 118px 121px),
+        repeating-linear-gradient(0deg, #231f1d 0 55px, #1f1b1a 55px 110px);
+}
+
+.site-topbar {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 1.5rem;
+    background: rgba(12, 10, 10, 0.9);
+    border-bottom: 1px solid #8c110c;
+    color: #d8a900;
+}
+
+.site-topbar a {
+    color: #f1ede6;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.site-content {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+    padding: 3.5rem 2rem 4rem;
+}
+
+#blazor-error-ui {
+    color-scheme: light only;
+    background: #fff3cd;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+    .site-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .site-sidebar {
+        min-height: auto;
+        height: auto;
+        position: static;
+        border-right: 0;
+        border-bottom: 1px solid #8c110c;
+    }
+
+    .site-content {
+        padding: 2rem 1rem 3rem;
+    }
+}

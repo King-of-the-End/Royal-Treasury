@@ -1,0 +1,666 @@
+@page "/spells/{LevelFolder}/{Slug}"
+@rendermode InteractiveServer
+
+@using System.Text.Json
+@using Microsoft.AspNetCore.WebUtilities
+@using Website_of_Everything.Models
+@using Website_of_Everything.Services
+
+@inject SpellService SpellService
+@inject NavigationManager Navigation
+
+
+<PageTitle>
+    @(spell is null
+        ? "Spell"
+        : spell.Name)
+    - Royal Treasury
+</PageTitle>
+
+
+@if (loading)
+{
+    <section class="spell-detail-page">
+
+        <div class="spell-empty-state">
+            Loading spell...
+        </div>
+
+    </section>
+}
+
+else if (spell is null)
+{
+    <section class="spell-detail-page">
+
+        <a class="spell-back-link"
+           href="@BackUrl">
+
+            ← Back to Spells
+
+        </a>
+
+
+        <div class="spell-empty-state">
+
+            That spell could not be found.
+
+        </div>
+
+    </section>
+}
+
+else
+{
+    <article class="spell-detail-page">
+
+
+        <!-- =================================
+             BACK
+             ================================= -->
+
+        <a class="spell-back-link"
+           href="@BackUrl">
+
+            ← Back to Spells
+
+        </a>
+
+
+        <!-- =================================
+             TITLE
+             ================================= -->
+
+        <header class="spell-detail-header">
+
+            <div class="landing-kicker">
+
+                @LevelLabel(spell.Level)
+                ·
+                @spell.SpellSchool
+
+            </div>
+
+
+            <h1>
+                @spell.Name
+            </h1>
+
+
+            @if (
+                spell.SpellGroups.Count > 0)
+            {
+                <div class="spell-detail-groups">
+
+                    @foreach (
+                        var group
+                        in spell.SpellGroups)
+                    {
+                        <span>
+                            @group
+                        </span>
+                    }
+
+                </div>
+            }
+
+        </header>
+
+
+        <!-- =================================
+             QUICK INFORMATION
+             ================================= -->
+
+        <dl class="spell-detail-summary">
+
+            <div>
+
+                <dt>
+                    Casting Time
+                </dt>
+
+                <dd>
+                    @spell.CastingTime
+                </dd>
+
+            </div>
+
+
+            <div>
+
+                <dt>
+                    Range
+                </dt>
+
+                <dd>
+                    @spell.Range
+                </dd>
+
+            </div>
+
+
+            <div>
+
+                <dt>
+                    Components
+                </dt>
+
+                <dd>
+                    @spell.Components
+                </dd>
+
+            </div>
+
+
+            <div>
+
+                <dt>
+                    Duration
+                </dt>
+
+                <dd>
+                    @spell.Duration
+                </dd>
+
+            </div>
+
+
+            <div>
+
+                <dt>
+                    Classes
+                </dt>
+
+                <dd>
+
+                    @(spell.Classes.Count == 0
+                        ? "—"
+                        : string.Join(
+                            ", ",
+                            spell.Classes))
+
+                </dd>
+
+            </div>
+
+
+            <div>
+
+                <dt>
+                    Spell Group
+                </dt>
+
+                <dd>
+
+                    @(spell.SpellGroups.Count == 0
+                        ? "—"
+                        : string.Join(
+                            ", ",
+                            spell.SpellGroups))
+
+                </dd>
+
+            </div>
+
+        </dl>
+
+
+        <!-- =================================
+             DESCRIPTION
+             ================================= -->
+
+        @if (
+            !string.IsNullOrWhiteSpace(
+                spell.Description))
+        {
+            <section class="spell-detail-section">
+
+                <h2>
+                    Description
+                </h2>
+
+
+                <p>
+                    @CleanMarkers(
+                        spell.Description)
+                </p>
+
+
+                @foreach (
+                    var table
+                    in TablesFor("Description"))
+                {
+                    <div class="spell-inline-table-wrap">
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                table.Title))
+                        {
+                            <h3>
+                                @table.Title
+                            </h3>
+                        }
+
+
+                        <table class="spell-inline-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    @foreach (
+                                        var column
+                                        in table.Columns)
+                                    {
+                                        <th>
+                                            @column
+                                        </th>
+                                    }
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                @foreach (
+                                    var row
+                                    in table.Rows)
+                                {
+                                    <tr>
+
+                                        @foreach (
+                                            var column
+                                            in table.Columns)
+                                        {
+                                            <td>
+
+                                                @TableCell(
+                                                    row,
+                                                    column)
+
+                                            </td>
+                                        }
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                }
+
+            </section>
+        }
+
+
+        <!-- =================================
+             AT HIGHER LEVELS
+             ================================= -->
+
+        @if (
+            !string.IsNullOrWhiteSpace(
+                spell.AtHigherLevels))
+        {
+            <section class="spell-detail-section">
+
+                <h2>
+                    At Higher Levels
+                </h2>
+
+
+                <p>
+
+                    @CleanMarkers(
+                        spell.AtHigherLevels)
+
+                </p>
+
+
+                @foreach (
+                    var table
+                    in TablesFor(
+                        "At Higher Levels"))
+                {
+                    <div class="spell-inline-table-wrap">
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                table.Title))
+                        {
+                            <h3>
+                                @table.Title
+                            </h3>
+                        }
+
+
+                        <table class="spell-inline-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    @foreach (
+                                        var column
+                                        in table.Columns)
+                                    {
+                                        <th>
+                                            @column
+                                        </th>
+                                    }
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                @foreach (
+                                    var row
+                                    in table.Rows)
+                                {
+                                    <tr>
+
+                                        @foreach (
+                                            var column
+                                            in table.Columns)
+                                        {
+                                            <td>
+
+                                                @TableCell(
+                                                    row,
+                                                    column)
+
+                                            </td>
+                                        }
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                }
+
+            </section>
+        }
+
+
+        <!-- =================================
+             FUTURE / EXTRA JSON FIELDS
+             ================================= -->
+
+        @if (
+            spell.ExtraFields is not null)
+        {
+            @foreach (
+                var field
+                in spell.ExtraFields
+                    .OrderBy(
+                        pair =>
+                            pair.Key,
+                        StringComparer
+                            .OrdinalIgnoreCase))
+            {
+                <section class="spell-detail-section">
+
+                    <h2>
+                        @field.Key
+                    </h2>
+
+                    <p>
+                        @FormatJsonValue(
+                            field.Value)
+                    </p>
+
+                </section>
+            }
+        }
+
+    </article>
+}
+
+
+@code {
+
+    // =====================================
+    // ROUTE PARAMETERS
+    // =====================================
+
+    [Parameter]
+    public string LevelFolder { get; set; } =
+        string.Empty;
+
+
+    [Parameter]
+    public string Slug { get; set; } =
+        string.Empty;
+
+
+    private SpellData? spell;
+
+    private bool loading =
+        true;
+
+
+    // =====================================
+    // BACK URL
+    // =====================================
+
+    private string BackUrl
+    {
+        get
+        {
+            var uri =
+                Navigation.ToAbsoluteUri(
+                    Navigation.Uri);
+
+
+            var query =
+                QueryHelpers.ParseQuery(
+                    uri.Query);
+
+
+            /*
+             * The spell list passed its
+             * exact state to us.
+             */
+            if (
+                query.TryGetValue(
+                    "returnUrl",
+                    out var returnValue))
+            {
+                var returnUrl =
+                    returnValue
+                        .FirstOrDefault();
+
+
+                /*
+                 * Only accept an internal
+                 * /spells URL.
+                 */
+                if (
+                    !string.IsNullOrWhiteSpace(
+                        returnUrl)
+                    &&
+                    returnUrl.StartsWith(
+                        "/spells",
+                        StringComparison
+                            .OrdinalIgnoreCase))
+                {
+                    return returnUrl;
+                }
+            }
+
+
+            /*
+             * Fallback if somebody opens
+             * a spell directly.
+             */
+            return
+                $"/spells?level=" +
+                $"{LevelFromFolder(
+                    LevelFolder)}";
+        }
+    }
+
+
+    // =====================================
+    // LOAD SPELL
+    // =====================================
+
+    protected override async Task
+        OnParametersSetAsync()
+    {
+        loading =
+            true;
+
+
+        spell =
+            await SpellService.GetSpellAsync(
+                LevelFolder,
+                Slug);
+
+
+        loading =
+            false;
+    }
+
+
+    // =====================================
+    // TABLES
+    // =====================================
+
+    private IEnumerable<SpellTable>
+        TablesFor(
+            string placement)
+    {
+        return
+            spell?.Tables.Where(
+                table =>
+                    string.Equals(
+                        table.Placement,
+                        placement,
+                        StringComparison
+                            .OrdinalIgnoreCase))
+            ??
+            Enumerable.Empty<SpellTable>();
+    }
+
+
+    /*
+     * Your JSON uses things such as:
+     *
+     * {{TABLE:zap_damage_type}}
+     *
+     * The actual table is displayed beneath
+     * the appropriate section instead.
+     */
+    private static string CleanMarkers(
+        string text)
+    {
+        return
+            System.Text.RegularExpressions
+                .Regex
+                .Replace(
+                    text,
+                    @"\s*\{\{TABLE:[^}]+\}\}\s*",
+                    " ")
+                .Trim();
+    }
+
+
+    private static string TableCell(
+        Dictionary<
+            string,
+            JsonElement
+        > row,
+        string column)
+    {
+        return
+            row.TryGetValue(
+                column,
+                out var value)
+
+            ? FormatJsonValue(value)
+
+            : string.Empty;
+    }
+
+
+    private static string FormatJsonValue(
+        JsonElement value)
+    {
+        return value.ValueKind switch
+        {
+            JsonValueKind.String =>
+                value.GetString()
+                ?? string.Empty,
+
+            JsonValueKind.Array =>
+                string.Join(
+                    ", ",
+                    value
+                        .EnumerateArray()
+                        .Select(
+                            FormatJsonValue)),
+
+            JsonValueKind.True =>
+                "Yes",
+
+            JsonValueKind.False =>
+                "No",
+
+            JsonValueKind.Null =>
+                string.Empty,
+
+            _ =>
+                value.ToString()
+        };
+    }
+
+
+    // =====================================
+    // LEVEL HELPERS
+    // =====================================
+
+    private static int LevelFromFolder(
+        string folder)
+    {
+        return folder.ToLowerInvariant()
+            switch
+            {
+                "cantrips" => 0,
+                "1st" => 1,
+                "2nd" => 2,
+                "3rd" => 3,
+                "4th" => 4,
+                "5th" => 5,
+                "6th" => 6,
+                "7th" => 7,
+                "8th" => 8,
+                "9th" => 9,
+                _ => 0
+            };
+    }
+
+
+    private static string LevelLabel(
+        int level)
+    {
+        return level switch
+        {
+            0 => "Cantrip",
+            1 => "1st Level",
+            2 => "2nd Level",
+            3 => "3rd Level",
+            _ => $"{level}th Level"
+        };
+    }
+}

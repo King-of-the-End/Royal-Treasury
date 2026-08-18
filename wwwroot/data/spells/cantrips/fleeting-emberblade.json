@@ -1,0 +1,15 @@
+{
+  "Name": "Fleeting Emberblade",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "10 feet",
+  "Components": "S, M, V (a finger coated in candle wax)",
+  "Duration": "Instantaneous",
+  "Description": "You create a bright flaming blade that extends from your stretched fingers, quickly swinging it at a creature nearby. You perform a melee spell attack against a creature within reach, dealing 1d8 fire damage on a hit and inflicting 1 Burn.",
+  "At Higher Levels": "This spell’s damage increases by 1d8 and deals an additional point of Burn when you reach 5th level (2d8, 3), 11th level (2d8, 4), and 17th level (4d8, 5).",
+  "Classes": [
+    "Sorcerer"
+  ],
+  "Sourcebook": "Undertomes"
+}

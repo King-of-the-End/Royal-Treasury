@@ -1,0 +1,19 @@
+{
+  "Name": "Fiendish Aspect",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Daemoturgy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Your body is altered to gain the properties it needs to adapt to a type of movement of your choice. Choose between swimming, climbing, or one effect/aspect of the environment causing there to be difficult terrain. Your base movement speed becomes that type of movement, and if you choose an effect or environmental element then it does not count as difficult terrain.\n\nIf moving through any area using these newly acquired movement types or through the designated effect/environment would automatically cause damage to you, you ignore that damage until the start of your next turn.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Druid",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry"
+}

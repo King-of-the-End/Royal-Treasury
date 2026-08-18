@@ -1,0 +1,19 @@
+{
+  "Name": "Psychic Sidearm",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Sealed Words"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "When you take the Attack action or cast a spell that involves an attack roll, you may cast this spell to create a weapon in your other hand, made of psychic energy. You immediately make an attack using that weapon, making a melee spell attack against melee targets, or a ranged spell attack if you throw it. On a hit, the weapon deals 1d6 psychic damage to its target. The weapon then vanishes.\n\nThe weapon is treated as having the light and thrown (20/60) properties.",
+  "At Higher Levels": "At Higher Levels. The psychic damage this spell deals increases to 1d8 when you reach 5th level, to 1d10 at 11th level, then to 2d6 at 17th level.",
+  "Classes": [
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry"
+}

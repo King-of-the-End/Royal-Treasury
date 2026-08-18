@@ -1,0 +1,16 @@
+{
+  "Name": "Sacred Strike",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "5 feet",
+  "Components": "V, M (a weapon)",
+  "Duration": "1 round",
+  "Description": "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it is wreathed in light, shedding dim light in a 5-foot-radius until the start of your next turn. For the duration, if the creature is hit with an attack made by a creature other than you, the target deals additional radiant damage equal to your spellcasting modifier, and the wreath of light dissipates.",
+  "At Higher Levels": "This spell's damage increases by 1d6 when you reach 5th level (1d6 + your spellcasting ability modifier), 11th level (2d6 + your spellcasting ability modifier), and 17th level (3d6 + your spellcasting ability modifier).",
+  "Classes": [
+    "Bladebearer",
+    "Cleric"
+  ],
+  "Sourcebook": "Old Gus"
+}

@@ -1,0 +1,22 @@
+{
+  "Name": "Time Knife",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "A magical blade of disruptive energy sails toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 slashing damage plus force damage equal to your spellcasting ability modifier.",
+  "At Higher Levels": "The spell creates additional blades when you reach higher levels: two blades at 5th level, three blades at 11th level, and four blades at 17th level. You can direct the blades at the same target or at different ones. Make a separate attack roll for each blade.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus"
+}

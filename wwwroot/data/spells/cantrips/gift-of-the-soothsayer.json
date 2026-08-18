@@ -1,0 +1,21 @@
+{
+  "Name": "Gift of the Soothsayer",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "Special",
+  "Range": "Special",
+  "Components": "V, S, M (a deck of cards, crystal ball, bones, runic stones, a haruspex, sacred oils, needles, ritual salts, tea leaves, or a pendulum)",
+  "Duration": "Special",
+  "Description": "The spell can be cast in several ways. When you cast it, choose one from the following three versions of the spell:\n\nAuspex. The spell's casting time is 1 action. A truth is revealed to you, choosing one of the following:\n\n- Sixth Sense. You learn if any space within 30 feet of you has been consecrated, desecrated, or the site of planar travel within the last 7 days.\n\n- True North. You learn what time it is and what direction you are facing.\n\n- Weathervane. You learn what the weather will be at your location for the next 24 hours.\n\nIf magic prevents you from learning anything, you are aware of the obstruction, but gain no special insight as to its source.\n\nPsychometry. The spell's casting time is 1 minute, during which you touch a nonmagical object, becoming deaf and blind to your own senses, instead experiencing a vision the most potent memory left imprinted on the object by a creature that was carrying it within the last 30 days. You gain no special insight into the identity of the creature that created the memory.\n\nRead Fortune. The spell's casting time is 1 action. You touch a willing creature other than yourself, and learn two pieces of information about it, choosing from the following options:\n\n- Feature and Foil. You learn which ability scores are its highest and lowest.\n\n- Health. You learn if its total hit points are higher or lower than yours.\n\n- Nature. You learn your choice of its creature type, Armor Class, or total class levels (if any).\n\n- Skillsets. You learn two skills, tools, or weapons it is proficient with, or spells it can cast (the DM's choice).\n\nIf you continue to cast the spell for 1 minute, and the target willingly remains within 5 feet of you throughout, you experience a brief vision about the target. The DM determines the exact nature of the vision, but you guide it, choosing one of the following options:\n\n- Provenance. You experience the moment of its birth (from its perspective) or the moment of its conception (from the perspective of a parent).\n\n- Memory. You experience a powerful memory of when it gained a personality trait, ideal, bond, or flaw.\n\n- Motivation. You experience a recent dream it had, or a great ambition it holds, or a great fear it harbors.\n\nIf magic prevents you from learning anything about the target, you are aware of the obstruction, but gain no special insight as to its source.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus"
+}

@@ -1,0 +1,19 @@
+{
+  "Name": "Beloved Wretch",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Arts of Value"
+  ],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You gather twisted psychic energy around your hand and strike out at a target you choose within range as either a melee spell attack or a ranged spell attack (your choice). On a hit, the target takes a d8 of psychic damage, inflicted as conflicting thoughts of temptation and loyalty overwhelm their mind. If they are charmed by you or a creature allied to you, they take twice as much damage.\n\nIf this attack reduces a target to 0 hit points, you can choose to have that target quickly make a weapon attack using a weapon they possess against a target within range of it before they begin dying or are killed outright. This roll uses either their weapon attack bonus or your spell attack bonus (whichever is higher).",
+  "At Higher Levels": "At Higher Levels. The spell's damage increases by a d8 each when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "Classes": [
+    "Bard",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit"
+}

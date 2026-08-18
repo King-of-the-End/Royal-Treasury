@@ -1,0 +1,22 @@
+{
+  "Name": "True Strike",
+  "Spell School": "Divination",
+  "Spell Group(s)": [
+    "Zanjen"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "30 feet",
+  "Components": "S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You extend your hand and point at a target in range, who must make a Charisma saving throw. On a failure, you recognize an opening that you can exploit, and choose one more creature within range (which can include you). Until the second creature hits the primary target, they gain advantage on attack rolls against them, after which the spell ends.",
+  "At Higher Levels": "At Higher Levels. As you level, you can choose additional secondary creatures to benefit from this spell, and the spell ends for them all when any of them hit. You can choose two secondary creatures at 5th level, three at 11th, and four at 17th.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit"
+}

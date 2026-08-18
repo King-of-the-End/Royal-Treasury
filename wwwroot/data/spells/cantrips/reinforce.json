@@ -1,0 +1,17 @@
+{
+  "Name": "Reinforce",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S, M (a spherical pebble)",
+  "Duration": "Instantaneous",
+  "Description": "You place your hand on one Large or smaller creature, imbuing it with the resilience and fortitude of stone. That target gains 1d6 temporary hit points. These temporary hit points disappear if you cast the spell again.",
+  "At Higher Levels": "The temporary hit points granted by this spell increase by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Druid"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms"
+}

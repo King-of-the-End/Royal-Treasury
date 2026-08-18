@@ -1,0 +1,2079 @@
+/* =========================================
+   ROYAL TREASURY
+   MAIN SITE STYLES
+   ========================================= */
+
+:root {
+    --background: #171412;
+    --background-dark: #0f0d0c;
+
+    --panel: #211d1a;
+    --panel-light: #3f2b21;
+    --panel-hover: #573725;
+
+    --red: #8e0d09;
+    --red-bright: #c21b12;
+    --red-dark: #5f0806;
+
+    --gold: #d3a900;
+    --gold-light: #ffd64d;
+
+    --text: #f0ece6;
+    --text-muted: #b8aea5;
+
+    --border: #76221a;
+}
+
+
+/* =========================================
+   GLOBAL
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100%;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(91, 31, 20, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            #1d1917 0%,
+            var(--background) 40%,
+            var(--background-dark) 100%
+        );
+
+    color: var(--text);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a {
+    color: var(--gold);
+}
+
+
+a:hover {
+    color: var(--gold-light);
+}
+
+
+/* =========================================
+   HEADINGS
+   ========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: var(--text);
+}
+
+
+h1 {
+    margin-top: 0;
+
+    font-size:
+        clamp(
+            2.4rem,
+            5vw,
+            4.5rem
+        );
+
+    line-height: 1.05;
+}
+
+
+/* =========================================
+   LANDING PAGE
+   ========================================= */
+
+.landing-page {
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+
+.landing-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.2rem;
+
+    border-bottom:
+        1px solid
+        var(--red);
+}
+
+
+.landing-kicker {
+    margin-bottom: 0.6rem;
+
+    color: var(--gold);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+
+.landing-intro {
+    max-width: 720px;
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+    color: var(--text-muted);
+
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CARD GRID
+   ========================================= */
+
+.card-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0, 1fr)
+        );
+
+    gap: 1rem;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   LANDING CARDS
+   ========================================= */
+
+.landing-card {
+    position: relative;
+    isolation: isolate;
+
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.35rem;
+
+    padding: 1.5rem;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-top:
+        4px solid
+        var(--red);
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(108, 72, 49, 0.95),
+            rgba(54, 35, 27, 0.98)
+        );
+
+    color: var(--text);
+
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.05),
+
+        0 7px 20px
+        rgba(0, 0, 0, 0.28);
+
+    transition:
+        transform 150ms ease,
+        border-color 150ms ease,
+        background 150ms ease,
+        box-shadow 150ms ease;
+}
+
+
+/* Decorative red diamond */
+
+.landing-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 75%;
+    height: 75%;
+
+    right: -35%;
+    bottom: -40%;
+
+    z-index: -1;
+
+    border:
+        2px solid
+        rgba(194, 27, 18, 0.25);
+
+    transform:
+        rotate(45deg);
+}
+
+
+/* Subtle center glow */
+
+.landing-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 205, 70, 0.04),
+            transparent 60%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   CARD ICON CONTAINER
+   ========================================= */
+
+.card-icon {
+    width: 112px;
+    height: 112px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        #8a281e;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18, 15, 14, 0.98),
+            rgba(40, 24, 19, 0.98)
+        );
+
+    box-shadow:
+        inset 0 0 20px
+        rgba(0, 0, 0, 0.6),
+
+        0 5px 12px
+        rgba(0, 0, 0, 0.3);
+
+    transition:
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+
+/* =========================================
+   CARD ICON IMAGES
+   ========================================= */
+
+.card-icon img {
+    width: 94%;
+    height: 94%;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center;
+
+    transition:
+        transform 150ms ease,
+        filter 150ms ease;
+}
+
+
+/* =========================================
+   CARD TEXT
+   ========================================= */
+
+.landing-card strong {
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+
+    color: var(--text);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            1.45rem,
+            2vw,
+            2rem
+        );
+
+    font-weight: 700;
+    line-height: 1.1;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CARD HOVER
+   ========================================= */
+
+.landing-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        var(--red-bright);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(130, 82, 53, 0.98),
+            rgba(68, 40, 29, 0.98)
+        );
+
+    box-shadow:
+        0 0 0 1px
+        rgba(194, 27, 18, 0.3),
+
+        0 14px 30px
+        rgba(0, 0, 0, 0.35);
+
+    color: white;
+}
+
+
+.landing-card:hover .card-icon {
+    border-color:
+        var(--red-bright);
+
+    box-shadow:
+        inset 0 0 20px
+        rgba(0, 0, 0, 0.55),
+
+        0 0 12px
+        rgba(255, 214, 77, 0.12),
+
+        0 7px 18px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+.landing-card:hover .card-icon img {
+    transform:
+        scale(1.08);
+
+    filter:
+        drop-shadow(
+            0 0 6px
+            rgba(255, 214, 77, 0.4)
+        );
+}
+
+
+/* =========================================
+   KEYBOARD FOCUS
+   ========================================= */
+
+.landing-card:focus-visible {
+    outline:
+        3px solid
+        var(--gold-light);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   CONTENT PAGES
+   ========================================= */
+
+.page-panel {
+    padding: 1.5rem;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-top:
+        5px solid
+        var(--red);
+
+    border-radius: 4px;
+
+    background:
+        rgba(
+            31,
+            27,
+            24,
+            0.95
+        );
+
+    box-shadow:
+        0 8px 22px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+.page-panel h1 {
+    padding-bottom: 0.6rem;
+
+    border-bottom:
+        1px solid
+        var(--red);
+}
+
+
+.page-panel p {
+    color: var(--text-muted);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   GENERAL BUTTONS
+   ========================================= */
+
+button,
+.button {
+    padding:
+        0.65rem
+        1rem;
+
+    border:
+        1px solid
+        var(--red);
+
+    border-radius: 4px;
+
+    background:
+        #4c3024;
+
+    color:
+        var(--text);
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 150ms ease,
+        border-color 150ms ease,
+        color 150ms ease,
+        transform 150ms ease;
+}
+
+
+button:hover,
+.button:hover {
+    background:
+        #633a29;
+
+    border-color:
+        var(--red-bright);
+}
+
+
+/* =========================================
+   TABLES
+   ========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background:
+        #1c1816;
+}
+
+
+th,
+td {
+    padding: 0.75rem;
+
+    border:
+        1px solid
+        #4d2922;
+
+    text-align: left;
+}
+
+
+th {
+    background:
+        #74100c;
+
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background:
+        rgba(255, 255, 255, 0.02);
+}
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+input,
+select,
+textarea {
+    padding:
+        0.6rem
+        0.7rem;
+
+    border:
+        1px solid
+        #633127;
+
+    border-radius: 4px;
+
+    background:
+        #181412;
+
+    color:
+        var(--text);
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline:
+        2px solid
+        var(--gold);
+
+    outline-offset: 1px;
+}
+
+
+/* =========================================
+   BLAZOR VALIDATION
+   ========================================= */
+
+.valid.modified:not([type="checkbox"]) {
+    outline:
+        1px solid
+        #26b050;
+}
+
+
+.invalid {
+    outline:
+        1px solid
+        #e50000;
+}
+
+
+.validation-message {
+    color:
+        #ff6257;
+}
+
+
+/* =========================================
+   BLAZOR ERROR UI
+   ========================================= */
+
+#blazor-error-ui {
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    padding:
+        0.8rem
+        1.2rem;
+
+    border-top:
+        2px solid
+        var(--red);
+
+    background:
+        #241714;
+
+    color: white;
+}
+
+
+#blazor-error-ui .reload {
+    margin-left: 1rem;
+
+    color:
+        var(--gold-light);
+}
+
+
+#blazor-error-ui .dismiss {
+    position: absolute;
+
+    right: 1rem;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SPELL BROWSER
+   ========================================= */
+
+.spell-browser {
+    width: 100%;
+
+    padding-bottom: 3rem;
+}
+
+
+.spell-browser-header {
+    margin-bottom: 1.5rem;
+
+    padding-bottom: 1rem;
+
+    border-bottom:
+        1px solid
+        var(--red);
+}
+
+
+.spell-browser-header h1 {
+    margin-bottom: 0.65rem;
+
+    color: #ffffff;
+}
+
+
+.spell-browser-header p {
+    margin: 0;
+
+    color:
+        var(--text-muted);
+}
+
+
+/* =========================================
+   SPELL FILTER BUTTONS
+   ========================================= */
+
+.spell-filter-buttons {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0, 1fr)
+        );
+
+    gap: 0.65rem;
+
+    width: 100%;
+
+    margin-bottom: 0.9rem;
+}
+
+
+.spell-filter-button {
+    width: 100%;
+
+    min-height: 4.25rem;
+
+    padding:
+        0.8rem
+        1rem;
+
+    border:
+        1px solid
+        #7d5238;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #684832,
+            #4a3025
+        );
+
+    color:
+        #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-align: center;
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.04),
+
+        0 5px 12px
+        rgba(0, 0, 0, 0.22);
+}
+
+
+.spell-filter-button:hover {
+    background:
+        linear-gradient(
+            145deg,
+            #825235,
+            #56372a
+        );
+
+    border-color:
+        var(--red-bright);
+
+    color:
+        var(--gold-light);
+}
+
+
+/* Active filter */
+
+.spell-filter-button.active {
+    background:
+        linear-gradient(
+            145deg,
+            #815334,
+            #56341f
+        );
+
+    border-color:
+        var(--gold);
+
+    color:
+        var(--gold-light);
+
+    box-shadow:
+        inset 0 -3px 0
+        rgba(
+            211,
+            169,
+            0,
+            0.45
+        ),
+
+        0 0 0 1px
+        rgba(
+            211,
+            169,
+            0,
+            0.15
+        ),
+
+        0 5px 12px
+        rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+
+/* =========================================
+   SPELL FILTER DROP DOWN PANEL
+   ========================================= */
+
+.spell-filter-selects {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    padding: 1rem 1.25rem;
+
+    margin-bottom: 1.4rem;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(34, 29, 26, 0.98),
+            rgba(22, 18, 16, 0.98)
+        );
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.03
+        ),
+
+        0 6px 16px
+        rgba(
+            0,
+            0,
+            0,
+            0.18
+        );
+}
+
+
+/* =========================================
+   SPELL FILTER FIELDS
+   ========================================= */
+
+.spell-filter-field {
+    display: grid;
+
+    gap: 0.45rem;
+
+    min-width: 220px;
+
+    flex:
+        1 1 220px;
+}
+
+
+.spell-filter-field span {
+    color:
+        var(--gold);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    letter-spacing:
+        0.08em;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* =========================================
+   SPELL DROP DOWNS
+   ========================================= */
+
+.spell-filter-field select {
+    width: 100%;
+
+    min-height: 42px;
+
+    padding:
+        0.65rem
+        0.8rem;
+
+    border:
+        1px solid
+        #875538;
+
+    border-radius: 6px;
+
+    background:
+        #2a211d;
+
+    color:
+        #ffffff;
+
+    font:
+        inherit;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+
+.spell-filter-field select:hover {
+    border-color:
+        var(--gold);
+}
+
+
+.spell-filter-field select:focus {
+    outline:
+        2px solid
+        var(--gold);
+
+    outline-offset: 1px;
+}
+
+
+/*
+   Dropdown option colors
+*/
+
+.spell-filter-field select option {
+    background:
+        #211d1a;
+
+    color:
+        #ffffff;
+}
+
+
+/* =========================================
+   SPELL LEVEL TABS
+   ========================================= */
+
+.spell-level-tabs {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 4px;
+
+    width: 100%;
+
+    padding:
+        0
+        0.15rem;
+
+    overflow: hidden;
+
+    border-bottom:
+        5px solid
+        var(--red-dark);
+}
+
+
+/*
+   Each of the ten tabs shares
+   the available width equally.
+*/
+
+.spell-level-tab {
+    flex:
+        1 1 0;
+
+    min-width: 0;
+
+    padding:
+        0.7rem
+        0.15rem;
+
+    overflow: hidden;
+
+    border:
+        2px solid
+        #6e2d1f;
+
+    border-bottom: 0;
+
+    border-radius:
+        8px
+        8px
+        0
+        0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #432e25 0%,
+            #281f1b 100%
+        );
+
+    color:
+        var(--gold-light);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            0.65rem,
+            0.9vw,
+            0.9rem
+        );
+
+    font-style: italic;
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.04
+        ),
+
+        0 2px 6px
+        rgba(
+            0,
+            0,
+            0,
+            0.2
+        );
+}
+
+
+/* =========================================
+   SPELL TAB HOVER
+   ========================================= */
+
+.spell-level-tab:hover {
+    background:
+        linear-gradient(
+            180deg,
+            #5b3b2c 0%,
+            #34251f 100%
+        );
+
+    border-color:
+        var(--red-bright);
+
+    color:
+        #ffffff;
+}
+
+
+/* =========================================
+   ACTIVE SPELL TAB
+   ========================================= */
+
+.spell-level-tab.active {
+    position: relative;
+
+    z-index: 1;
+
+    margin-bottom: -5px;
+
+    padding-bottom:
+        calc(
+            0.7rem + 5px
+        );
+
+    background:
+        linear-gradient(
+            180deg,
+            #755036 0%,
+            #4c3023 100%
+        );
+
+    border-color:
+        var(--gold);
+
+    color:
+        #ffffff;
+
+    box-shadow:
+        inset 0 3px 0
+        rgba(
+            211,
+            169,
+            0,
+            0.3
+        ),
+
+        0 0 0 1px
+        rgba(
+            211,
+            169,
+            0,
+            0.12
+        ),
+
+        0 -2px 12px
+        rgba(
+            211,
+            169,
+            0,
+            0.08
+        );
+}
+
+
+.spell-level-tab:focus-visible {
+    outline:
+        2px solid
+        var(--gold-light);
+
+    outline-offset:
+        -3px;
+}
+
+
+/* =========================================
+   SPELL RESULTS PANEL
+   ========================================= */
+
+.spell-results {
+    min-height: 250px;
+
+    padding: 1.25rem;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-top: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(24, 20, 18, 0.92),
+            rgba(17, 14, 13, 0.92)
+        );
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.02
+        );
+}
+
+
+/* =========================================
+   SPELL RESULTS HEADING
+   ========================================= */
+
+.spell-results-heading {
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content:
+        space-between;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+
+    padding-bottom: 0.7rem;
+
+    border-bottom:
+        1px solid
+        #5d392d;
+}
+
+
+.spell-results-heading h2 {
+    margin: 0;
+
+    color:
+        #ffffff;
+}
+
+
+.spell-results-heading span {
+    color:
+        var(--gold);
+
+    font-weight:
+        700;
+
+    white-space:
+        nowrap;
+}
+
+
+/* =========================================
+   SPELL LIST
+   ========================================= */
+
+.spell-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 0.75rem;
+}
+
+
+/* =========================================
+   SPELL CARDS
+   ========================================= */
+
+.spell-list-card {
+    display: grid;
+
+    gap: 0.75rem;
+
+    padding: 1rem;
+
+    border:
+        1px solid
+        #5d392d;
+
+    border-left:
+        4px solid
+        var(--red);
+
+    border-radius: 5px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #251f1b,
+            #1d1916
+        );
+
+    box-shadow:
+        0 4px 10px
+        rgba(
+            0,
+            0,
+            0,
+            0.18
+        );
+
+    transition:
+        border-color 150ms ease,
+        background 150ms ease,
+        transform 150ms ease,
+        box-shadow 150ms ease;
+}
+
+
+.spell-list-card:hover {
+    transform:
+        translateY(-2px);
+
+    border-color:
+        #8a4a37;
+
+    border-left-color:
+        var(--red-bright);
+
+    background:
+        linear-gradient(
+            145deg,
+            #30251f,
+            #231c18
+        );
+
+    box-shadow:
+        0 7px 15px
+        rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+
+/* Spell names */
+
+.spell-list-card h3 {
+    margin:
+        0
+        0
+        0.25rem;
+
+    color:
+        #ffffff;
+
+    font-size:
+        1.2rem;
+}
+
+
+/* Spell school */
+
+.spell-list-card p {
+    margin: 0;
+
+    color:
+        var(--gold-light);
+
+    font-style:
+        italic;
+}
+
+
+/* =========================================
+   SPELL METADATA
+   ========================================= */
+
+.spell-list-meta {
+    display: grid;
+
+    gap: 0.35rem;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.88rem;
+}
+
+
+.spell-list-meta strong {
+    color:
+        var(--gold);
+}
+
+
+/* =========================================
+   EMPTY SPELL RESULTS
+   ========================================= */
+
+.spell-empty-state {
+    padding:
+        2rem
+        1rem;
+
+    color:
+        var(--text-muted);
+
+    text-align:
+        center;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1050px) {
+
+    .card-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    .card-icon {
+        width: 105px;
+        height: 105px;
+    }
+
+
+    .spell-filter-buttons {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    .spell-list {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .spell-level-tabs {
+        gap: 2px;
+    }
+
+
+    .spell-level-tab {
+        padding:
+            0.6rem
+            0.1rem;
+
+        font-size:
+            clamp(
+                0.6rem,
+                1.15vw,
+                0.78rem
+            );
+    }
+
+
+    .spell-level-tab.active {
+        padding-bottom:
+            calc(
+                0.6rem + 5px
+            );
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+    .card-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .landing-card {
+        aspect-ratio: auto;
+
+        min-height: 230px;
+    }
+
+
+    .card-icon {
+        width: 110px;
+        height: 110px;
+    }
+
+
+    h1 {
+        font-size:
+            2.35rem;
+    }
+
+
+    /* Spell filter buttons */
+
+    .spell-filter-buttons {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .spell-filter-button {
+        min-height:
+            3.4rem;
+    }
+
+
+    /* Filter dropdowns */
+
+    .spell-filter-selects {
+        padding:
+            0.75rem;
+    }
+
+
+    .spell-filter-field {
+        min-width:
+            100%;
+    }
+
+
+    /*
+       Keep all ten tabs visible
+       on narrow screens.
+    */
+
+    .spell-level-tabs {
+        gap: 1px;
+
+        padding: 0;
+
+        border-bottom-width:
+            4px;
+    }
+
+
+    .spell-level-tab {
+        padding:
+            0.55rem
+            0.02rem;
+
+        border-width:
+            1px;
+
+        border-bottom: 0;
+
+        border-radius:
+            5px
+            5px
+            0
+            0;
+
+        font-size:
+            0.56rem;
+
+        letter-spacing:
+            -0.02em;
+    }
+
+
+    .spell-level-tab.active {
+        margin-bottom:
+            -4px;
+
+        padding-bottom:
+            calc(
+                0.55rem + 4px
+            );
+    }
+
+
+    .spell-results {
+        padding:
+            0.8rem;
+    }
+
+
+    .spell-results-heading {
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap:
+            0.3rem;
+    }
+
+}
+
+/* =========================================
+   SPELL RESULTS TABLE
+   ========================================= */
+
+.spell-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+.spell-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+}
+
+
+.spell-table thead {
+    background:
+        linear-gradient(
+            180deg,
+            #7a6534,
+            #665328
+        );
+}
+
+
+.spell-table th {
+    padding: 0.9rem 1rem;
+
+    border:
+        0;
+
+    border-bottom:
+        2px solid
+        var(--gold);
+
+    background:
+        transparent;
+
+    color:
+        #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        0.95rem;
+
+    text-align:
+        left;
+
+    white-space:
+        nowrap;
+}
+
+
+.spell-table td {
+    padding:
+        0.9rem
+        1rem;
+
+    border: 0;
+
+    border-bottom:
+        1px solid
+        #4e3b30;
+
+    color:
+        var(--text);
+
+    vertical-align:
+        middle;
+}
+
+
+.spell-table-row {
+    cursor: pointer;
+
+    transition:
+        background 120ms ease;
+}
+
+
+.spell-table-row:nth-child(even) {
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.018
+        );
+}
+
+
+.spell-table-row:hover {
+    background:
+        rgba(
+            211,
+            169,
+            0,
+            0.08
+        );
+}
+
+
+.spell-table-row:focus-visible {
+    outline:
+        2px solid
+        var(--gold);
+
+    outline-offset:
+        -2px;
+}
+
+
+.spell-name-cell a {
+    color:
+        var(--gold-light);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        1rem;
+
+    font-weight:
+        700;
+
+    text-decoration:
+        none;
+}
+
+
+.spell-name-cell a:hover {
+    color:
+        #ffffff;
+
+    text-decoration:
+        underline;
+}
+
+
+.spell-school-cell {
+    color:
+        var(--gold) !important;
+
+    font-style:
+        italic;
+}
+
+
+/* =========================================
+   INDIVIDUAL SPELL PAGE
+   ========================================= */
+
+.spell-detail-page {
+    width:
+        min(
+            1100px,
+            100%
+        );
+
+    margin:
+        0 auto;
+
+    padding-bottom:
+        3rem;
+}
+
+
+.spell-back-link {
+    display:
+        inline-block;
+
+    margin-bottom:
+        1.5rem;
+
+    color:
+        var(--gold);
+
+    font-weight:
+        700;
+
+    text-decoration:
+        none;
+}
+
+
+.spell-back-link:hover {
+    color:
+        #ffffff;
+}
+
+
+.spell-detail-header {
+    margin-bottom:
+        1.5rem;
+
+    padding-bottom:
+        1rem;
+
+    border-bottom:
+        1px solid
+        var(--red);
+}
+
+
+.spell-detail-header h1 {
+    margin:
+        0.3rem
+        0
+        0.8rem;
+
+    color:
+        #ffffff;
+}
+
+
+.spell-detail-groups {
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        0.5rem;
+}
+
+
+.spell-detail-groups span {
+    padding:
+        0.35rem
+        0.6rem;
+
+    border:
+        1px solid
+        #7b5835;
+
+    border-radius:
+        4px;
+
+    background:
+        #33251e;
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        0.82rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================
+   SPELL DETAIL QUICK INFO
+   ========================================= */
+
+.spell-detail-summary {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        1px;
+
+    margin:
+        0
+        0
+        1.5rem;
+
+    padding:
+        1px;
+
+    border:
+        1px solid
+        #54362b;
+
+    background:
+        #54362b;
+}
+
+
+.spell-detail-summary div {
+    padding:
+        1rem;
+
+    background:
+        #211d1a;
+}
+
+
+.spell-detail-summary dt {
+    margin-bottom:
+        0.4rem;
+
+    color:
+        var(--gold);
+
+    font-size:
+        0.75rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.08em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.spell-detail-summary dd {
+    margin:
+        0;
+
+    color:
+        #ffffff;
+
+    line-height:
+        1.45;
+}
+
+
+/* =========================================
+   SPELL DETAIL SECTIONS
+   ========================================= */
+
+.spell-detail-section {
+    margin-top:
+        1rem;
+
+    padding:
+        1.25rem;
+
+    border:
+        1px solid
+        #533128;
+
+    border-left:
+        4px solid
+        var(--red);
+
+    border-radius:
+        5px;
+
+    background:
+        #211d1a;
+}
+
+
+.spell-detail-section h2 {
+    margin:
+        0
+        0
+        0.8rem;
+
+    color:
+        #ffffff;
+
+    font-size:
+        1.4rem;
+}
+
+
+.spell-detail-section p {
+    margin:
+        0;
+
+    color:
+        var(--text);
+
+    line-height:
+        1.75;
+
+    white-space:
+        pre-line;
+}
+
+
+/* =========================================
+   SPELL'S INTERNAL TABLES
+   ========================================= */
+
+.spell-inline-table-wrap {
+    margin-top:
+        1rem;
+
+    overflow-x:
+        auto;
+}
+
+
+.spell-inline-table-wrap h3 {
+    color:
+        var(--gold-light);
+}
+
+
+.spell-inline-table {
+    width:
+        100%;
+
+    border-collapse:
+        collapse;
+}
+
+
+.spell-inline-table th {
+    background:
+        #6a512c;
+
+    color:
+        #ffffff;
+}
+
+
+.spell-inline-table td {
+    background:
+        #191614;
+
+    color:
+        var(--text);
+}
+
+
+/* =========================================
+   RESPONSIVE SPELL TABLE
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .spell-table {
+        min-width:
+            900px;
+    }
+
+
+    .spell-detail-summary {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .spell-detail-summary {
+        grid-template-columns:
+            1fr;
+    }
+
+}

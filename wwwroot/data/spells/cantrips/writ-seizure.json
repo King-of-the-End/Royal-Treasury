@@ -1,0 +1,15 @@
+{
+  "Name": "Writ Seizure",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You conjure a narrative in the mind of a target within range, forcing them to experience the sensation of physical pain. That target must make an Intelligence saving throw, taking 1d10 psychic damage on a failed save.",
+  "At Higher Levels": "At Higher Levels. The spell's damage increases to 2d10 when you reach 5th level, 3d10 when you reach 11th level, then 4d10 when you reach 17th level. When casting the spell you can separate these d10s to target additional creatures within range at the same time, doing the d10s you assigned to each target as psychic damage if they fail their saves.",
+  "Classes": [
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry"
+}

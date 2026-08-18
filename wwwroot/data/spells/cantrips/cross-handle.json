@@ -1,0 +1,23 @@
+{
+  "Name": "Cross Handle",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Zanjen"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You draw knowledge from a weapon that you are touching, allowing you to make an attack with it as though you were proficient with it. When you do, you make an appropriate melee spell attack or ranged spell attack in place of its usual attack roll, and use your spellcasting ability modifier to determine its damage bonus (using the weapon's regular damage dice). This attack is made as though the weapon was magical.\n\nFocus Limit. If you cast this spell on any turn that is not your own, it is limited to making a single attack.\n\nSword Saint Bonus. This spell is treated as being on the class spell list(s) of any creature who has at least three levels in sword saint.",
+  "At Higher Levels": "At Higher Levels. When you reach 5th level, you can make two attacks with the weapon as part of this spell, then three at 11th level, and four at 17th level. You can only make one more attack with this spell than you would usually be allowed to make using this spell, to a maximum of four attacks.",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit"
+}

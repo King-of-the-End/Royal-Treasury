@@ -1,0 +1,20 @@
+{
+  "Name": "Dulling Chains",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You summon a magical restraint to ensnare an enemy. The target makes a Strength saving throw. On a failure, it takes 1d4 force damage, and its speed is reduced by 15 feet until the start of your next turn.",
+  "At Higher Levels": "The spell creates more than one restraint when you reach higher levels: two restraints at 5th level, three restraints at 11th level, and four restraints at 17th level. You can direct the restraints at the same target or at different ones. Make a separate attack roll for each restraint.",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Cleric",
+    "Inscriptor",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus"
+}

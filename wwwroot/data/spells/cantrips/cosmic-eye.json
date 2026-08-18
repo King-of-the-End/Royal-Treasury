@@ -1,0 +1,16 @@
+{
+  "Name": "Cosmic Eye",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "150 feet",
+  "Components": "M (an eldritch parasite)",
+  "Duration": "Instantaneous",
+  "Description": "Your eye darkens under the influence of the eldritch madness, appearing as an endless starry sky. Make a ranged spell attack, on a hit this eye fires a projectile of eldritch energy that deals 1d8 necrotic damage. If you score a critical hit, you can reroll any roll of 4 or lower on the damage die until you get a higher result.",
+  "At Higher Levels": "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "Classes": [
+    "Inscriptor",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Steinhardt's Guide to the Eldritch Hunt"
+}

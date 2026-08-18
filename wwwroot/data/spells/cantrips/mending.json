@@ -1,0 +1,23 @@
+{
+  "Name": "Mending",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Burning Rites"
+  ],
+  "Casting Time": "1 minute",
+  "Range": "Touch",
+  "Components": "V, S, M (two lodestones)",
+  "Duration": "Instantaneous",
+  "Description": "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.\n\nThis spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "D&D 5e"
+}

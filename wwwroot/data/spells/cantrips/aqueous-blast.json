@@ -1,0 +1,18 @@
+{
+  "Name": "Aqueous Blast",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You conjure a powerful stream of water from your hands. Make a melee spell attack. On a hit you deal 1d8 bludgeoning damage to the target and you are pushed back 10 feet in a straight line by the pressure of the water.",
+  "At Higher Levels": "At Higher Levels. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "Classes": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Abyssal Depths"
+}

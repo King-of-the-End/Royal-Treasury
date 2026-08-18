@@ -1,0 +1,18 @@
+{
+  "Name": "Sanctified Salt Splash",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "45 feet",
+  "Components": "V, S, M (holy water or salt)",
+  "Duration": "Instantaneous",
+  "Description": "You toss a handful of consecrated salt or holy water onto a target creature within reach, performing a Ranged Spell Attack against them. On a hit, the target suffers 1d6 radiant damage and a further 1d4 radiant damage if they are Bloodfiends, Vampires, Undead or being possessed. If the target creature is possessed by another, they have Advantage on their next Saving Throw against being possessed.",
+  "At Higher Levels": "This spell’s damage increases by 1d6 and 1d4 when you reach 5th level (2d6 and 2d4), 11th level (3d6 and 3d4), and 17th level (4d6 and 4d4).",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Druid",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Undertomes"
+}

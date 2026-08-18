@@ -1,0 +1,18 @@
+{
+  "Name": "Mind Lasher",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "10-ft",
+  "Components": "V, M, S (a chain wrapped in your hand)",
+  "Duration": "Instantaneous",
+  "Description": "You produce a heavy spectral chain that buzzes with purple-tinted energy in your hand and use it to deal a devastating lashing. You perform a melee spell attack against any target within reach, on a hit the target takes 1d8 plus your spellcasting modifier’s worth of psychic damage.",
+  "At Higher Levels": "This spell’s damage increases by 1d8 and its range increases by 5ft when you reach 5th level (2d8, 20ft), 11th level (3d8, 25ft), and 17th level (4d8, 30ft).",
+  "Classes": [
+    "Artificer",
+    "Inscriptor",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes"
+}
