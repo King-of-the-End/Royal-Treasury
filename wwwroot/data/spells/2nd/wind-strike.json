@@ -1,0 +1,21 @@
+{
+  "Name": "Wind Strike",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "With a blast of air, you leap up to 30 feet before making one unarmed strike or melee attack with a weapon you are holding. You can make two attacks if you have the Extra Attack class feature. On a hit, a target takes additional thunder damage equal to 1d8 + your spellcasting ability modifier.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the distance you can leap increases by 15 feet and the attacks deal an additional 1d8 thunder damage on a hit for each slot level above 2nd.",
+  "Classes": [
+    "Bladebearer",
+    "Favored Soul",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

@@ -1,0 +1,20 @@
+{
+  "Name": "Nosferatu",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S, M (a damp cloth from a cleric’s robe)",
+  "Duration": "Instantaneous",
+  "Description": "This vampiric art steals away the very lifeforce from a target and takes it for itself. You point to a creature within range and perform a ranged spell attack against them. On a hit, they take 2d8 necrotic damage and you are healed by the damage the target has taken.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you deal an additional 1d8 damage for each slot level above 1st.",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Dusksworn",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

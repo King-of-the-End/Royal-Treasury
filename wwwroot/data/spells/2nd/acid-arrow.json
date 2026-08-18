@@ -1,0 +1,18 @@
+{
+  "Name": "Acid Arrow",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Torrential Arcanics"
+  ],
+  "Casting Time": "1 action",
+  "Range": "90 feet",
+  "Components": "V, S, M (powdered rhubarb leaf and an adder’s stomach)",
+  "Duration": "Instantaneous",
+  "Description": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target: on a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of their next turn, on a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of their next turn.",
+  "At Higher Levels": "When you cast this spell at 3rd level or higher, you can choose one of the following effects for each slot level above 2nd:\n● The initial and secondary damage increase by 1d4 each.\n● You may choose an additional target within range.\n● When the arrow misses and splashes for half damage, it also forces all creatures within 5 feet of its initial target to make a Dexterity saving throw, taking the same half damage on a failure.",
+  "Classes": [
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

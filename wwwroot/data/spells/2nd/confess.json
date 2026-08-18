@@ -1,0 +1,21 @@
+{
+  "Name": "Confess",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "10 feet",
+  "Components": "V, S",
+  "Duration": "1 round",
+  "Description": "You attempt to force a creature to answer truthfully. When you cast the spell, you ask a target creature that you can see and that can hear you a single question no more than ten words in length, for example, “Where does Count Bartholomew Van Der Woodsen sleep?”. If the target does not understand the question or the language you spoke, the spell fails. At the start of the creature’s next turn, the target makes a Charisma saving throw. On a failure, the target must answer truthfully or suffer the effects of the spell. The target can still be evasive in its answers as long as it remains within the boundaries of the truth, but must answer directly (in ten words or less) if they fail their saving throw by 5 or more. If the target fails to answer the question in the same language the question was asked, it takes 1d8 psychic damage and becomes poisoned until the end of its turn. On a success, the creature takes 1d4 psychic damage and is not compelled to answer truthfully nor are they poisoned. Constructs, Undead, and creatures that cannot speak or that have an Intelligence score lower than 4 are immune to the spell. You receive no magical indications as to whether the answer you receive is truthful in nature. If you reduce a creature to 0 hit points with this spell, they are stable, but rendered unconscious for 1 minute. At the end of that duration, they regain 1 hit point and make a Constitution saving throw. On a failure, the target gains one level of exhaustion.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage for a failed save increases by 1d8 for each slot level above 2nd.",
+  "Classes": [
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Warlock"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

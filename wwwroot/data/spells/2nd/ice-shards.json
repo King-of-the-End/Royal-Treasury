@@ -1,0 +1,19 @@
+{
+  "Name": "Ice Shards",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 ft",
+  "Components": "V, S, M (a handful of Icecubes)",
+  "Duration": "Instantaneous",
+  "Description": "You create three frozen icicles that shudder from cold. You perform a Ranged Spell Attack against a target of your choice within reach, dealing 2d4 cold damage and reducing the targets movement speed by 10-ft on a hit. A creature slowed in this way has their limbs freezing over, recovering 5-ft of movement at the end of their subsequent turns or whenever they suffer fire damage.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the spell creates one more icicle for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

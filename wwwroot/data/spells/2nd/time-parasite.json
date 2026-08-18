@@ -1,0 +1,19 @@
+{
+  "Name": "Time Parasite",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "1 round",
+  "Description": "You attempt to steal time from a creature you can see within range. The target makes a Constitution saving throw. On a failure, they become incapacitated until the end of their next turn, and you gain an additional action, which you can use at the end of the target’s next turn.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

@@ -1,0 +1,24 @@
+{
+  "Name": "Boomerang Weapon",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Skulker’s Grimoire"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Touch",
+  "Components": "S",
+  "Duration": "10 minutes",
+  "Description": "You touch one weapon that has the thrown property, held either by you or a willing creature, and for the spell’s duration that weapon counts as magical. Any time that weapon is used for a thrown weapon attack and misses, either you or the attacker can use their reaction to cause the weapon to swerve in the air and fly at another creature within its normal thrown attack range, in proximity to the initial target. The creature who threw it then rolls another attack roll against the new target. If this attack misses, you or the attacker can use their reaction to use this effect again. After an attack is made with the weapon, it swerves in the air and returns to the creature that threw it as long as they are still within the item’s long range.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th-level or higher, the normal and long range of the thrown weapon doubles, then doubles again for every two slot levels above 4th.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Dusksworn",
+    "Paladin",
+    "Petal Knight",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

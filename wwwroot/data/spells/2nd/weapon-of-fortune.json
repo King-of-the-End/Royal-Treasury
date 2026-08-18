@@ -1,0 +1,23 @@
+{
+  "Name": "Weapon of Fortune",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Arts of Value"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Touch",
+  "Components": "V, S, M (1 platinum coin, doubled for each level the spell is cast above 2nd, which the spell consumes)",
+  "Duration": "10 minutes",
+  "Description": "You touch one weapon, which becomes magical for the spell's duration if it wasn't already. This weapon is infused with the power to bend fate dramatically, for better or worse. For the spell's duration, when the spell is used to make an attack against a creature, its wielder does not roll an attack roll. Instead, they roll a d20 with no modifiers. On a result of 1-10 the attack automatically misses, and on a result of 11-20 the attack automatically hits, and also deals an extra weapon die of damage. On a result of 1 or a third miss caused by this spell's effects, the spell immediately ends and the wielder cannot attack with that weapon again for the remainder of that turn. On a result of 20, the attack is treated as an automatic critical hit, then the spell ends. Also, after this effect causes the weapon to hit three times, the third hit is treated as a critical hit (but not a d20 result of 20) then the spell ends. Bardic Aspiration. A creature who is currently carrying an unspent use of Bardic Inspiration may spend it when this effect causes an attack to miss to roll a new d20 and use it as their result instead. When they do, they may roll the Bardic Inspiration and add half its result to the d20.",
+  "At Higher Levels": "When this spell is cast at 3rd level or higher, you can choose one of the following effects for each level above 2nd:\n● On a hit, the weapon deals one additional weapon die of damage.\n● One result of 10 or less is not counted as a failure to hit for the purposes of the spell ending. This use can also prevent the spell from ending on a natural result of 1.\n● The d20 result needed for a successful hit is lowered by 1.\n● (3 levels) Attacks that hit because of this effect ignore Damage Thresholds, resistances, and immunities.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Favored Soul",
+    "Inscriptor",
+    "Ranger"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

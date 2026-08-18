@@ -1,0 +1,21 @@
+{
+  "Name": "Scoremark",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [
+    "Bloody Values",
+    "Sinful Codex"
+  ],
+  "Casting Time": "1 reaction, taken when a target within range suffers a critical hit",
+  "Range": "60 feet",
+  "Components": "S",
+  "Duration": "1 minute",
+  "Description": "When a creature within range is subjected to a critical hit by a weapon attack, you can attempt to prolong their suffering from that attack. The target must make a Wisdom saving throw. On a failure, they become vulnerable to the type of damage the critical hit dealt them (if there were multiple, only choose the type that did the majority of the damage) until the end of the spell. A target made vulnerable this way repeats the saving throw at the end of each of their turns, and at the end of each turn they take that damage type, ending the effect on a success. A creature who succeeds their initial save instead only becomes vulnerable to this damage type until the start of their next turn.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

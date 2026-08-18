@@ -1,0 +1,23 @@
+{
+  "Name": "Bestow Serenity",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30-feet",
+  "Components": "V, S, M (A bundle of white marbles)",
+  "Duration": "Up to one minute. (Concentration)",
+  "Description": "You conjure a handful bright pearls around you, all glowing with an aura of serenity all around them. You may choose up to three willing creatures within range to bestow these pearls to, for the duration, they heal for 2d8 hit points at the start of their turns as the pearl attaches to their armor, clothing or weapon as if it were always there, and the creatures feel a calm upon their shoulders, additionally granting them advantage on saving throws against becoming frightened. If a creature would leave the range of this spell, the pearl cracks as its connection is betrayed, having the creature take an amount of d8 of psychic damage equal to how many were used for their healing so far. When this spells duration is finished or you dismiss it as a bonus action, the pearls slowly turn to a sugary tasting dust.",
+  "At Higher Levels": "When this spell is cast at a level higher than 2nd, it heals an additional 1d8 hit points per turn per spell slot above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Wingweight",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "300 feet",
+  "Components": "V",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "Choose up to three creatures you can see within range. An arcane symbol appears above each target that is only visible while the creature is flying through the air. Each target must succeed on a Strength saving throw. On a failed save, any fly or fly (hover) speeds the target has become belabored flight speeds instead. This effect takes place at the start of the target's next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, it can target up to two additional creatures for each slot level above 2nd.",
+  "Classes": [
+    "Bard",
+    "Ranger",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

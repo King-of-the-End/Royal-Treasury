@@ -1,0 +1,18 @@
+{
+  "Name": "Explosive Dive",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (5-foot radius)",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You cause a massive geyser of water to erupt below your feet. All willing creatures in a 5 feet radius centered on you (yourself included) are propelled 100 feet in a direction of your choice. Upon landing the water disperses, dampening the fall, and reducing any fall damage to 0.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the distance travelled increases by 70 feet for each slot level.",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Abyssal Depths",
+  "Tags": []
+}

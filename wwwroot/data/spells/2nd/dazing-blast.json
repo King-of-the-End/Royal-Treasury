@@ -1,0 +1,20 @@
+{
+  "Name": "Dazing Blast",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "A wave of forceful energy leaves your palms and travels towards your target. Make a spell attack against a creature. If you hit the target, they take 2d6 force damage and must succeed at a Constitution saving throw or become dazed until the end of their next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each spell slot above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Grim Hollow",
+  "Tags": []
+}

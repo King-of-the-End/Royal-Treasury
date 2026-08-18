@@ -1,0 +1,16 @@
+{
+  "Name": "Metalboom",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "M, S (a metal orb)",
+  "Duration": "Instantaneous",
+  "Description": "You touch a metallic orb to infuse it with entropic energy and turn it into a grenade. As part of casting this spell you toss it to a point within reach, forcing all targets within reach to pass a Dexterity saving throw or suffer 3d6 bludgeoning damage and 2 Tremor, or half on a success. When you toss the orb you may also choose to have it inflict Tremor Burst after all other effects have resolved.",
+  "At Higher Levels": "For each 2 spell slot levels spent above 2nd, the damage of this spell increases by 2d6 and it inflicts an additional Tremor.",
+  "Classes": [
+    "Artificer"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

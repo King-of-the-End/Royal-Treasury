@@ -1,0 +1,23 @@
+{
+  "Name": "Jackal’s Luck",
+  "Spell School": "Divination",
+  "Spell Group(s)": [
+    "Arts of Value"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (a peridot worth 50 gp or more, which the spell consumes)",
+  "Duration": "10 minutes",
+  "Description": "You grant a moment of luck to one willing creature you can see within range. When that creature makes an attack roll, ability check, or saving throw, they can spend this boon and roll one additional d20, then choose which of the d20 results they want to use to determine their result. Alternatively, when that creature is targeted by an attack, they can use this boon to roll one additional d20 and choose to use either their roll or the attacker’s d20 result for the attack. Once used the spell ends.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, your target gains one additional use of this boon before the spell ends for every two slot levels above 1st.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Druid",
+    "Paladin",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

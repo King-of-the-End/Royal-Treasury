@@ -1,0 +1,23 @@
+{
+  "Name": "Foxfire",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Skulker’s Grimoire"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "A flurry of psychic flames sprouts up around three creatures you can see within the spell’s range. Those creatures must make a Dexterity saving throw, taking 1d8 fire damage and 1d8 psychic damage on a failed save, or half as much on a successful one. The burning creatures who fail their saving throw continue to burn, and on subsequent turns you can use your action to force those remaining creatures to make the save again, following the same damage rules. On a success, the flames are extinguished.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd-level or higher, you can choose one of the following effects for each slot level above 2nd:\n● You may choose one additional target.\n● The fire and psychic damage dealt each increases by 1d8.",
+  "Classes": [
+    "Cleric",
+    "Dusksworn",
+    "Paladin",
+    "Petal Knight",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

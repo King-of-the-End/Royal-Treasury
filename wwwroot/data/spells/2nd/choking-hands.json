@@ -1,0 +1,20 @@
+{
+  "Name": "Choking Hands",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S, M (a silk handkerchief, tied in a knot)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You create a pair of spectral hands that appear around the throat of a Large or smaller creature you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d12 necrotic damage, is grappled, and is unable to speak until the end of their next turn. On a successful save, the target takes half damage, isn't grappled, and can speak normally. Constructs, Undead, and creatures that do not need to breathe are immune to this spell. If the target moves, the hands remain wrapped around its throat, moving with it. On each of your turns after casting this spell, you can use your action to tighten the hands again, forcing the target to make another Constitution saving throw or suffer the spell's effects again. Alternatively, you can use an action to move the hands up to 60 feet. If the hands enter another creature's space, you can cause that creature to become the target of the spell instead, forcing it to make a Constitution saving throw against the spell's effects. The spell ends if a creature succeeds on its saving throw against it. If you reduce a creature to 0 hit points with this spell, you can force the creature unconscious for 1 minute instead of killing it.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd.",
+  "Classes": [
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "Bone Cocoon",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 reaction, which you take when you see a creature drop to 0 hit points",
+  "Range": "30 feet",
+  "Components": "V, M (a shrunk and gilded rib cage, worth at least 50 gp)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You conjure a cocoon made of cartilage and bones, which protects a creature of your choice. While inside the cocoon, the creature can't be damaged by attacks or effects originating from outside, has total cover, is considered restrained, and makes death saving throws with advantage. The cocoon has 25 hit points and an AC of 11 + your spellcasting modifier. It has resistance to cold, fire, and necrotic damage, and immunity to poison and psychic damage. If you lose concentration or the cocoon is reduced to 0 hit points, it is destroyed.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Druid",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Steinhardt's Guide to the Eldritch Hunt",
+  "Tags": []
+}

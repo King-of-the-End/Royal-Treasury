@@ -1,0 +1,18 @@
+{
+  "Name": "Shield of Blades",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [
+    "Zanjen"
+  ],
+  "Casting Time": "1 reaction, which you take when you are hit by an attack",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "1 round",
+  "Description": "A barrier of sharp blades appears, and protects you from attacks. Until the start of your next turn, you gain a +5 bonus to your AC, including against the triggering attack, and each time a creature makes a melee attack against you while within 10 feet they take slashing damage equal to twice the level you cast this spell at. If a creature hits you in spite of this bonus while within 60 feet, you may choose to end this spell early to unleash the blades against them and force them to make a Dexterity saving throw. On a failure, they take slashing damage equal to 2d6 × the level this spell was cast at. Sword Saint Bonus. This spell is treated as being on the class spell list(s) of any creature who has at least three levels in sword saint.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Warlock"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

@@ -1,0 +1,24 @@
+{
+  "Name": "Parallel Processes",
+  "Spell School": "Divination",
+  "Spell Group(s)": [
+    "Sealed Words",
+    "Sinful Codex"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You use fundamental divination to allow your brain to fully process various trains of thought at once, amplifying your mental processing abilities. For the spell’s duration, you gain a bonus to your saving throws, ability checks, and attack rolls, equal to half the level this spell was cast at. Consequently, due to the strain caused by this effect, at the end of each turn where you made any of these types of rolls, you must make a Constitution check with a DC equal to 10 + the level this spell was cast at, ending the spell on a failure.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Inscriptor",
+    "Petal Knight",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

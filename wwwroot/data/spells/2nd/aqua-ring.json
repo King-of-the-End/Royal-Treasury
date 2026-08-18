@@ -1,0 +1,21 @@
+{
+  "Name": "Aqua Ring",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 5 rounds",
+  "Description": "You summon healing waters around the target which protects them from harm. For the duration of the spell they have resistance to fire damage and regain 2d4 hit points at the start of each of their turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d4 for each slot level.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Abyssal Depths",
+  "Tags": []
+}

@@ -1,0 +1,22 @@
+{
+  "Name": "Amanuensis",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "30 feet",
+  "Components": "V, S, M (fine ink worth at least 1 gp)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You cause writing from one source (such as a book) to be copied onto parchment you provide. This spell copies 250 words per minute, creating a perfect transcription of the original. The spell only copies nonmagical text, ignoring illustrations and magical writing, leaving empty space where those items appear in the original. Alternatively, you can also use this spell to dictate verbally, and have your dictation transcribed onto a page. The spell automatically turns to the next blank page and continues its transcription until it completes the transcription, or it runs out of available pages.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": [
+    "Ritual"
+  ]
+}

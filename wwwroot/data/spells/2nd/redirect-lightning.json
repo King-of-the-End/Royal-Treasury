@@ -1,0 +1,20 @@
+{
+  "Name": "Redirect Lightning",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 reaction, which you take when you are targeted by a spell that deals lightning damage with an attack roll or in a line",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You attempt to capture and redirect lightning. Make an Arcana check using your spellcasting ability, with a DC equal to half the lightning damage dealt. On a failure, you have resistance to lightning damage until the end of the turn. On a success, the spell’s area stops at you if it is a line, you have immunity to lightning damage until the end of the turn, and you can reflect the lightning back at the caster as though it originated from you, turning the caster into a target.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

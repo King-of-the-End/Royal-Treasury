@@ -1,0 +1,18 @@
+{
+  "Name": "Acidic Exudation",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S, M (a pinch of saltpeter)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Your palm secretes a volatile gel, which you can use as a weapon. For the duration, you can use a bonus action to throw a globule of the substance up to 30 feet. The globule explodes on impact, creating a shower of hissing acid in a 5-foot-radius sphere. Creatures in the area must make a Dexterity saving throw, taking 2d6 acid damage on a failed save, or half as much damage on a successful one.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

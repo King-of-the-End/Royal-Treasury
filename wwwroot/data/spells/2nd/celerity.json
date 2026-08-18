@@ -1,0 +1,20 @@
+{
+  "Name": "Celerity",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Pieces of your body moves at a rapid rate. For the duration, your movement speed doubles, and you can use your bonus action to perform one of the following:\n● Extricate. You take the Disengage action, and add half your spellcasting ability modifier, rounded up (minimum of 1) to your Armor Class and Dexterity saving throws until the start of your next turn.\n● Swift Hands. You make a number of object interactions or Dexterity (Acrobatics, Sleight of Hand) checks equal to half your spellcasting ability modifier (minimum of 1).\n● Quickened Senses. You make a number of ability checks equal to half your spellcasting ability modifier (minimum of 1), choosing from Intelligence (Arcana, Investigation, Nature), and Wisdom (Insight, Perception, Survival). When your turn ends, roll a 1d20 and add your spellcasting ability modifier. On a roll of 11 or higher, you maintain your celerity. On a failure, the spell ends.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Petal Knight",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

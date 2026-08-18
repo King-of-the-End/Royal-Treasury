@@ -1,0 +1,23 @@
+{
+  "Name": "Read Blood",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S, M (a drop of blood, ichor or other fluid that left a creature in the last 24 hours, suspended in an inscribed vial worth at least 10gp)",
+  "Duration": "Instantaneous",
+  "Description": "You focus your mind on the fluid, gaining mystical insight into the magics connecting it to the creature it came from, revealing certain information about the creature. The DM tells you information in regard to two choices from the following list:\n●​ The creature’s surface thoughts at the time the fluid was spilled.\n●​ The creature’s type and Constitution score.\n●​ The highest level of spell (if any) the creature had cast, up to a month before the fluid was spilled.\n●​ If the creature was diseased or poisoned.\n●​ How closely another creature you can see within 60 feet of you is related to the creature the fluid came from (for example, they might be the same creature, or a close relative, or the same species)",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can request one additional piece of information for each slot level above 1st.",
+  "Classes": [
+    "Artificer",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": [
+    "Ritual"
+  ]
+}

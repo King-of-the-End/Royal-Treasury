@@ -1,0 +1,16 @@
+{
+  "Name": "Writ Bombardment",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You write a line of arcane text that describes projectiles appearing and hurtling towards up to 3 targets you can see within 60 feet. The projectiles fire toward them, and the targets must each make a Dexterity saving throw. On a failed save they each take 4d6 bludgeoning damage, or half as much on a success. Any creature who fails by 5 points or more is sluggish until the end of their next turn.",
+  "At Higher Levels": "When you cast this spell at 3rd level or higher you may choose one of the following two options: the spell’s damage increases by 1d6, or choose one additional target within range. You make this choice for each slot level above 2nd.",
+  "Classes": [
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

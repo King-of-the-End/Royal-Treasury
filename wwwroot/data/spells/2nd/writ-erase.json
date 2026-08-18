@@ -1,0 +1,16 @@
+{
+  "Name": "Writ Erase",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You copy down a passage describing the exact health of a creature you can see within 60 feet, and that passage attempts to enforce that state. The target must make an Intelligence saving throw. If they fail, they lose all temporary hit points they currently have and take 2d8 psychic damage.",
+  "At Higher Levels": "When you cast this spell at 3rd level or higher, the spell’s psychic damage increases by 1d8 and you can target one additional creature for each slot level above 2nd.",
+  "Classes": [
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

@@ -1,0 +1,22 @@
+{
+  "Name": "Weapon of Domination",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Legacy of Gold"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "One melee weapon that you are wielding is briefly turned into a gargantuan golden version of itself made of arcane force. It is many times larger than yourself, and you may use it to make a single weapon attack (ignoring the usual considerations for weapon size) against one creature within twice the weapon's reach. If you hit, you deal the weapon's normal damage dice, then roll those damage dice again and add that result as force damage. This extra force damage does not benefit from critical hits. The weapon then returns to its regular state.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, for each slot level above 2nd you roll the weapon's damage dice one additional time and add the result to the force damage dealt. For every two slot levels above 2nd, the weapon's size and reach double again. If cast using a 9th-level spell slot, the extra force damage is doubled.",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Dusksworn",
+    "Paladin",
+    "Petal Knight"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

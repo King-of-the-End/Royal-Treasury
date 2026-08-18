@@ -1,0 +1,21 @@
+{
+  "Name": "Cutting Gale",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (a feather dippened in sharpening oil)",
+  "Duration": "Instantaneous",
+  "Description": "You summon currents of wind around your warm and lash out as if swinging a sword, sending a sharpened airslash foward. A creature of your choice within range must pass a Dexterity Saving Throw or suffer 3d6 slashing damage and be flung 30-ft into the air or down toward the ground. You may instead choose to shove them 15-ft in a direction while they remain grounded. A creature who passes this Saving Throw instead takes half the damage and is only moved 5-ft in any direction, but doesn't trip over or otherwise fall from any height if they are near a border such as a cliff.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you deal an additional 1d6 for each slot level above 1st.",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Druid",
+    "Inscriptor",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

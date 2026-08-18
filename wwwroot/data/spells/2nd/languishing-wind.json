@@ -1,0 +1,21 @@
+{
+  "Name": "Languishing Wind",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [
+    "Sinful Codex",
+    "Unbound Moralisms"
+  ],
+  "Casting Time": "1 action",
+  "Range": "30-foot cone",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You breathe out a cone of sinister, wind-like energy in a 30-foot cone originating from you. All mundane living matter (including magical plant matter from spells such as entangle) in this cone (that is not part of a creature) dies and withers away immediately, and any other creature caught within it must make a Constitution saving throw, taking 4d6 necrotic damage on a failed save, or half as much on a successful one. Creatures who fail by 5 points or more are made sluggish for 1 minute, and may repeat the saving throw at the end of each of their turns, ending the effect early on a success.",
+  "At Higher Levels": "When you cast this spell at 3rd level or higher, you can choose one of the following effects for each level above 2nd:\n● The cone extends by 30 feet.\n● The cone deals an additional 2d6 necrotic damage.\n● (2 slot levels) Creatures who fail the saving throw are made sluggish, as described above, even if they don’t fail by 5 points or more.",
+  "Classes": [
+    "Druid",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

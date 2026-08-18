@@ -1,0 +1,20 @@
+{
+  "Name": "Glamoured Majesty",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S, M (faerie dust)",
+  "Duration": "Instantaneous",
+  "Description": "You create an awe-inspiring, majestic appearance that forces others to avert their gaze from you. Choose up to three creatures of your choice within 30 feet of you that can see you. They must succeed on a Charisma saving throw or become charmed by you. A charmed creature has disadvantage on attack rolls they make against other creatures within 30 feet of you until the end of their next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+  "Classes": [
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul Inscriptor",
+    "Paladin",
+    "Warlock"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

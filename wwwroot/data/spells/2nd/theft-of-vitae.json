@@ -1,0 +1,18 @@
+{
+  "Name": "Theft of Vitae",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Sangromancy"
+  ],
+  "Casting Time": "1 reaction, which you take when a creature you can see within 30 feet takes damage",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "As part of casting this spell, you must expend two Hit Dice or the spell automatically fails. If you do, roll the Hit Dice, and the creature takes necrotic damage equal to the result. You then gain a number of temporary hit points equal to the triggering damage plus this necrotic damage dealt, to a maximum of 15.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the maximum number of temporary hit points you can gain from casting it increases by 10 for each slot level above 2nd.",
+  "Classes": [
+    "Druid"
+  ],
+  "Sourcebook": "Grim Hollow",
+  "Tags": []
+}

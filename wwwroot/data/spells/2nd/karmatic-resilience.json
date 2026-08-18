@@ -1,0 +1,22 @@
+{
+  "Name": "Karmatic Resilience",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [
+    "Daemoturgy"
+  ],
+  "Casting Time": "1 reaction, taken when failing a saving throw",
+  "Range": "Self",
+  "Components": "V",
+  "Duration": "1 minute",
+  "Description": "When you fail a saving throw that triggers this effect, you may reroll the save with advantage (even if you had disadvantage before) and keep the new result. If this would cause you to succeed, you roll all subsequent saving throws using that same ability score with disadvantage for the spell's duration. The effect ends if you roll such a saving throw where all d20 results would have failed if taken individually. For example, if you roll a Dexterity saving throw against DC 15 with a +3 bonus and your d20 results are 11 and 9, the effect ends; if the results were 14 and 9, it continues.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

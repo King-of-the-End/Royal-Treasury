@@ -1,0 +1,20 @@
+{
+  "Name": "Frost Blast",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "S, M (a fistful of snow)",
+  "Duration": "Instantaneous",
+  "Description": "You put your arms together, with your palms stretching backward as a flash of ice blasts from your palms, threatening to freeze others in place. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 5d4 cold damage on a failed save, also having their Movement Speed reduced to 0 until the start of their next turn, or half as much damage on a successful one, with their Movement Speed being reduced only to half it's total until the start of their next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d4 for each slot level above 2nd.",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

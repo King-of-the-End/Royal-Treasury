@@ -1,0 +1,21 @@
+{
+  "Name": "Gravity Bind",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "300 feet",
+  "Components": "V",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. Choose one of the following effects: Plummet. The target's high jump and long jump distances are reduced to half (rounded down), and any falling damage it takes is doubled. Tether. If the target is in a zero-gravity environment, it is drawn to the nearest surface it can stand on, which it can walk across as though it were under normal gravity. While this effect is active, the creature can activate or deactivate it at will while moving. Wingbind. The target must succeed on a Strength saving throw or have its flying speed and zero-gravity acceleration speed (if any) reduced to 0 for the spell's duration. An airborne creature affected by this spell safely descends 60 feet per round until it reaches the ground or the spell ends. If the creature is also affected by the Plummet effect, it instead falls at a normal rate.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you can choose one of the following effects for each slot level above 2nd:\n● Apply two of the spell's effects to the target.\n● Target one additional creature. Your choice of effect may differ between targets.\n● Increase the duration to 10 minutes (1 slot level), 1 hour (2 slot levels), 24 hours (3 slot levels), or until dispelled (4 slot levels). If the spell lasts 24 hours or longer, it no longer requires concentration.",
+  "Classes": [
+    "Artificer",
+    "Druid",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

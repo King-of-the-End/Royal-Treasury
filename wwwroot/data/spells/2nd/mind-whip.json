@@ -1,0 +1,16 @@
+{
+  "Name": "Mind Whip",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "90 feet",
+  "Components": "V",
+  "Duration": "1 round",
+  "Description": "You psychically lash out at one creature you can see within range, forcing them to make an Intelligence saving throw. On a failed save, the target takes 3d6 psychic damage, and they can’t take a reaction until the end of their next turn. Moreover, on their next turn, they must choose whether they get movement, an action, or a bonus action (they get only one of the three). On a successful save, the target takes half as much damage and suffers none of the spell’s other effects.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, choose one of the following effects for each slot level above 2nd:\n● The spell’s psychic damage increases by 1d6.\n● You can target one additional creature. The creatures must be within 30 feet of each other when you target them.",
+  "Classes": [
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

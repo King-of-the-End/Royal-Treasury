@@ -1,0 +1,20 @@
+{
+  "Name": "Blade of Resonance",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "S, M (a melee weapon made of metal worth at least 10 gp)",
+  "Duration": "Instantaneous",
+  "Description": "You clang your weapon on a nearby surface, causing it to vibrate, and swing it with blinding speed, releasing a thundering shockwave in its wake. As part of the action used to cast this spell, you must make a melee attack with a weapon, otherwise the spell fails. All creatures in a 30-foot-long, 5-foot-wide line whose AC is less than your attack roll suffer the attack's normal damage and take an additional 3d6 thunder damage. Additionally, the spell emits a thunderous boom audible out to 300 feet.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the thunder damage increases by 1d6 for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

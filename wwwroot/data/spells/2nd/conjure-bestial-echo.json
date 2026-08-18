@@ -1,0 +1,115 @@
+{
+  "Name": "Conjure Bestial Echo",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "90 feet",
+  "Components": "V, S, M (a feather, tuft of fur, and fish tail inside a gilded acorn worth at least 200 gp)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You call forth a bestial echo, which manifests in an unoccupied space that you can see within range. This corporeal form uses the Bestial Echo stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends. The creature is an ally to you and your companions. In combat, it shares your initiative count, but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any commands, it takes the Dodge action and uses its movement to avoid danger. If the echo is killed while outside your range of vision, you see through its senses briefly and get a momentary glimpse of what happened when it died (unless you are unconscious).",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, use the higher-level version wherever the spell's level appears in the Bestial Echo stat block.",
+  "Classes": [
+    "Druid"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": [],
+  "Special Notes": [
+    {
+      "type": "stat_block",
+      "stat_block_id": "bestial_echo_template",
+      "placement": "After Spell",
+      "marker": "{{STAT_BLOCK:bestial_echo_template}}",
+      "section_label": "Stat Block",
+      "instruction": "Render the matching Stat Blocks object as a dedicated Stat Block section after the spell."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "bestial_echo_template",
+      "section_type": "Stat Block",
+      "title": "Bestial Echo Template",
+      "placement": "After Spell",
+      "marker": "{{STAT_BLOCK:bestial_echo_template}}",
+      "creature": {
+        "size": "Small",
+        "type": "beast",
+        "alignment": "unaligned"
+      },
+      "armor_class": "11 + the spell level",
+      "hit_points": "30 (plus 5 for each spell level above 2nd)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft. (land only)",
+        "fly": "60 ft. (air only)",
+        "swim": "30 ft. (water only)"
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "check": "+4",
+          "save": "-"
+        },
+        "DEX": {
+          "score": 11,
+          "check": "-",
+          "save": "-"
+        },
+        "CON": {
+          "score": 16,
+          "check": "+3",
+          "save": "-"
+        },
+        "INT": {
+          "score": 4,
+          "check": "-3",
+          "save": "-"
+        },
+        "WIS": {
+          "score": 14,
+          "check": "+2",
+          "save": "-"
+        },
+        "CHA": {
+          "score": 5,
+          "check": "-3",
+          "save": "-"
+        }
+      },
+      "skills": [],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 12"
+      ],
+      "languages": "understands the languages you speak",
+      "proficiency_bonus": "equal to caster’s",
+      "traits": [
+        {
+          "name": "Flyby (Air Only)",
+          "description": "The beast doesn’t provoke opportunity attacks when it flies out of an enemy’s reach."
+        },
+        {
+          "name": "Pack Tactics (Land and Water Only)",
+          "description": "The beast has advantage on an attack roll against a creature if at least one of the beast’s allies is within 5 feet of the creature and the ally isn’t incapacitated."
+        },
+        {
+          "name": "Water Breathing (Water Only)",
+          "description": "The beast can breathe only underwater."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "description": "The beast makes a number of attacks equal to half this spell’s level (rounded down)."
+        },
+        {
+          "name": "Maul",
+          "description": "Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + 4 + the spell’s level piercing damage."
+        }
+      ],
+      "raw_text": "BESTIAL ECHO TEMPLATE\nSmall beast, unaligned\nAC 11 + the spell level\nHP 30 (plus 5 for each spell level above 2nd)\nSpeed 30 ft., climb 30 ft. (land only), fly 60 ft. (air only), swim 30 ft. (water only)\nSTR 18 | Check +4 | Save -; DEX 11 | Check - | Save -; CON 16 | Check +3 | Save -; INT 4 | Check -3 | Save -; WIS 14 | Check +2 | Save -; CHA 5 | Check -3 | Save -\nSkills: none listed\nResistances: none listed\nVulnerabilities: none listed\nImmunities: none listed\nSenses: darkvision 60 ft., passive Perception 12\nLanguages: understands the languages you speak\nProficiency Bonus: equal to caster’s\nTRAITS\nFlyby (Air Only). The beast doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.\nPack Tactics (Land and Water Only). The beast has advantage on an attack roll against a creature if at least one of the beast’s allies is within 5 feet of the creature and the ally isn’t incapacitated.\nWater Breathing (Water Only). The beast can breathe only underwater.\nACTIONS\nMultiattack. The beast makes a number of attacks equal to half this spell’s level (rounded down).\nMaul. Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + 4 + the spell’s level piercing damage."
+    }
+  ]
+}

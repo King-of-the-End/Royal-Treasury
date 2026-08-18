@@ -1,0 +1,27 @@
+{
+  "Name": "Skim Wounds",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "Action",
+  "Range": "Melee",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You transform your right arm into a long, sharp and green blade. Make a melee attack against one creature within 5 feet of you. If it hits, you deal 2d12 piercing damage and the creature suffers 2 counts of Bleed. Until the start of your next turn, any creature has disadvantage on Wisdom (Medicine) ability checks made to stop the Bleeding of target creature.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 and they suffer an additional count of Bleed for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

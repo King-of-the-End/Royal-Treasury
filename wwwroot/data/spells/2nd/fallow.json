@@ -1,0 +1,77 @@
+{
+  "Name": "Fallow",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Up to 1000 years",
+  "Description": "You deposit your essence within a plant or a stone large enough to contain your body. You can also deposit yourself into a stone. For the duration, you are blinded. As you lie fallow, other effects set over time as noted on the following table. You can rest comfortably in your hiding place, and can complete short or long rests. If you continue to remain undisturbed, you can remain in a fallow state for as long as your body is able to live. You can exit your hiding place using your action. If your host plant or stone is uprooted, damaged, or disturbed, you are immediately expelled from your hiding place and fallow state, and take double the damage done to your host plant or stone. You then must succeed on a Wisdom saving throw against your own spell save DC or gain the effects of the confusion spell. You can make a new saving throw on each of your turns to end the effect.",
+  "At Higher Levels": "You can immediately immerse yourself into a deeper fallow state by casting the spell using a higher-level spell slot as noted on the following table. {{TABLE:fallow_state}}",
+  "Classes": [
+    "Druid"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": [
+    "Ritual"
+  ],
+  "Special Notes": [
+    {
+      "type": "table",
+      "table_id": "fallow_state",
+      "placement": "At Higher Levels",
+      "marker": "{{TABLE:fallow_state}}",
+      "instruction": "Replace this marker with the table whose id matches table_id when rendering the spell."
+    }
+  ],
+  "Tables": [
+    {
+      "id": "fallow_state",
+      "title": "Fallow State",
+      "placement": "At Higher Levels",
+      "marker": "{{TABLE:fallow_state}}",
+      "columns": [
+        "Spell Slot",
+        "Duration",
+        "Effects"
+      ],
+      "rows": [
+        {
+          "Spell Slot": "3",
+          "Duration": "1 minute",
+          "Effects": "Your body doesn't need food or air."
+        },
+        {
+          "Spell Slot": "4",
+          "Duration": "1 hour",
+          "Effects": "You can still hear muffled noises, and make any Wisdom (Perception) checks to hear words with disadvantage."
+        },
+        {
+          "Spell Slot": "5",
+          "Duration": "24 hours",
+          "Effects": "You are deafened, but remain aware of the passage of time."
+        },
+        {
+          "Spell Slot": "6",
+          "Duration": "1 month",
+          "Effects": "Your essence is invisible to the detect magic spell, and you age at half your normal rate."
+        },
+        {
+          "Spell Slot": "7",
+          "Duration": "1 year",
+          "Effects": "You can cast the dream spell once each month, even if you don't know it. You age at one quarter of the normal rate."
+        },
+        {
+          "Spell Slot": "8",
+          "Duration": "10 years",
+          "Effects": "Your essence is invisible to the scrying spell, and you age at one tenth of the normal rate. Waking up from your fallow state is now difficult, and you must make a Wisdom saving throw against your own spell save DC to do so. If you fail, you must wait six months to try again."
+        },
+        {
+          "Spell Slot": "9",
+          "Duration": "100 years",
+          "Effects": "You can cast the astral projection spell on yourself once a year. Your Wisdom saving throws to wake up are made at disadvantage."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "Wind Drake",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S, M (a dandelion seedhead)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You conjure a tempestuous drake of spiralling wind that moves with you, wielding it as an extension of your body for the duration. When you conjure the drake and as a bonus action on your subsequent turns, you can cause one of the following effects with it:\n●​ Thunder Strike. The drake slams into a creature or object within 20 feet of you with a deafening boom. Make a melee spell attack against the target. On a hit, the target takes 1d6 thunder damage.\n●​ Vortex Grapple. The drake billows towards a Large or smaller creature within 20 feet of you, attempting to encase it in a vortex of air. The target must succeed on a Dexterity saving throw or be restrained for the duration, or until you use another effect of the wind drake. A target can use an action to repeat this saving throw, escaping the drake on a success and ending the spell.\n●​ Windstrider. The drake forms a whirling eddy at your feet, increasing your speed by 10 feet, and preventing your movement from provoking opportunity attacks. This effect lasts until the start of your next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage from the Thunder Strike option increases by 1d6, and the Windstrider option’s bonus to your speed increases by 10 feet, for each slot level above 1st.",
+  "Classes": [
+    "Bladebearer",
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

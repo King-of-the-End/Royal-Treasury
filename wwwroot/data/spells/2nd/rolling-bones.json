@@ -1,0 +1,22 @@
+{
+  "Name": "Rolling Bones",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "Self",
+  "Components": "V, S, M (the bones of a small mammal worth at least 1 gp)",
+  "Duration": "Instantaneous",
+  "Description": "You roll bones, allowing fate to give you an omen of the future. Roll 1d6.\n● On a roll of 5 or 6, you know if you are not likely, likely, or very likely to encounter hostile creatures within the next hour, and the type of enemy you're most likely to encounter.\n● On a roll of 2, 3, or 4, you learn if you are not likely, likely, or very likely to encounter hostile creatures within the next hour.\n● On a roll of 1, the material components of the spell are consumed, and you take 1 psychic damage as fate rebels. You don't learn any information and you can't cast this spell again until you finish a short rest. If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a false reading. The GM makes this roll in secret.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Cleric",
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Steinhardt's Guide to the Eldritch Hunt",
+  "Tags": [
+    "Ritual"
+  ]
+}

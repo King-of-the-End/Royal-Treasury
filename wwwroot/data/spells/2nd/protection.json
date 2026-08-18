@@ -1,0 +1,24 @@
+{
+  "Name": "Protection",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S, M (a miniature silver shield worth 10 gp, which the spell consumes)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You trace a warding sigil in the air, sending it to slowly circle a willing creature you can see for the next hour. Immediately before the target next takes damage, except psychic damage, the ward triggers. Until the end of the target’s next turn, it has resistance to all damage excluding psychic, including the triggering damage. The warding sigil then disappears, and the spell ends on the target.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you may target one additional creature for each slot level above 2nd.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Helianas Guide to Monster Hunting",
+  "Tags": []
+}

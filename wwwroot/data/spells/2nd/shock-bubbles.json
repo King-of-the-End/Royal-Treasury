@@ -1,0 +1,29 @@
+{
+  "Name": "Shock Bubbles",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 Action",
+  "Range": "90 ft.",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You conjure three spheres of pure vibrating energy that bend and break the shape of space around them. You perform three ranged attacks against one target creature within range, or divide each attack towards different targets. On a hit, the target creature suffers 3 Tremor counts and takes 2d6 thunder damage. If all three spheres hit the same target, it suffers from Tremor Burst.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you create an additional sphere for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

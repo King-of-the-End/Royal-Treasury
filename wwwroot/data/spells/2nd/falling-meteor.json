@@ -1,0 +1,23 @@
+{
+  "Name": "Falling Meteor",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Legacy of Gold"
+  ],
+  "Casting Time": "1 reaction, taken when you fall 10 feet or more",
+  "Range": "Self (15-foot radius)",
+  "Components": "S",
+  "Duration": "1 minute",
+  "Description": "When falling from a height greater than 10 feet, you conjure a fiery ward around yourself and become a meteor of pure force that plummets downward. You can choose to land in an unoccupied space by controlling your fall (falling twice as quickly as you normally would). This space can be any distance away from where you would normally land, up to half the number of feet you will descend (rounded down) away. When you land, you unleash a wave of energy that hits everything within 15 feet of you, including you. Creatures in range must make a Constitution saving throw, taking the amount of falling damage you would have taken from the fall on a failed save as force damage instead, or half as much on a successful one. Any creature that fails the save, including you, is knocked prone. The spell then ends. The damage this spell deals cannot exceed your maximum hit points. If a creature casts feather fall on you while falling under this effect, you must make a Concentration check against their spell save DC. On a failure, this spell’s effects end. On a success you ignore feather fall.",
+  "At Higher Levels": "If you cast this spell at 3rd level or higher, the range of the blast increases by 10 feet for each slot level above 2nd. If you cast this spell at 5th level or higher, you automatically succeed your Constitution save.",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul",
+    "Paladin",
+    "Petal Knight"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

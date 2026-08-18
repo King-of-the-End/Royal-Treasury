@@ -1,0 +1,16 @@
+{
+  "Name": "Writ Slumber",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You write a line of arcane text and choose one creature within 120 feet that you can see. That creature must make an Intelligence saving throw. On a failed save, they are Incapacitated for 1 minute, during which time they fall into a waking slumber. While under this effect all attacks made against them have advantage, and they automatically fail all Dexterity saves and Perception checks. The creature is not unconscious and does not fall, but they become unfocused and weary. They can be communicated with, but are capable only of short sentences which are mostly incoherent. At the end of the target’s turn, they can repeat the Intelligence save, ending the effect on a success. If the creature takes damage or is shaken as an action, this effect ends immediately. When the creature recovers from this effect they remember everything they witnessed.",
+  "At Higher Levels": "When casting this spell at 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+  "Classes": [
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

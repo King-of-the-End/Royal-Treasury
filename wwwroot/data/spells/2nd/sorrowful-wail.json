@@ -1,0 +1,22 @@
+{
+  "Name": "Sorrowful Wail",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 Action.",
+  "Range": "30 ft.",
+  "Components": "V, S, M ( A very tearful eyeball )",
+  "Duration": "Instantaneous",
+  "Description": "You bellow out a sorrowful wail from the depths of your soul, it’s sound waves echoing with raw arcane energy that cling to anyone within your path. All hostile creatures within a 30-ft radius of you must pass a Charisma Saving Throw or suffer 4d4 psychic damage and 3 Sinking count, or half that damage and count on a success, rounded down.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d4, you inflict additional 1 Sinking count and this spell’s reach increases by 5-ft for each slot level above 2nd.",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

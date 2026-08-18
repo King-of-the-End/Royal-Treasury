@@ -1,0 +1,21 @@
+{
+  "Name": "Lifesap Aura",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "1 minute",
+  "Description": "You create a barrier of tempestuous necrotic energy that spirals around you for the duration. Your current hit points and hit point maximum are reduced by an amount equal to the spell’s level at the start of each of your turns. When this spell ends, your hit point maximum returns to normal. If a creature hits you with a melee attack roll, that creature takes 3d8 necrotic damage. In addition, you are immune to being frightened and you have advantage on Intimidation (Charisma) checks. You can dismiss the spell as an action.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+  "Classes": [
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Paladin",
+    "Petal Knight"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

@@ -1,0 +1,22 @@
+{
+  "Name": "Hungering Vortex",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Daemoturgy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S, M (a glove soaked in fiendish blood)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "A mote of purple haze appears at a point within range, then expands out to become a twisting 10-foot radius sphere filled with the ghostly echoes of lesser yokai from the Realm of Shadow. All creatures within this radius must make a Charisma saving throw, taking 2d10 psychic damage on a failed save or half as much on a successful one. This sphere is considered difficult terrain, and all Strength and Dexterity saving throws made by creatures within it suffer a penalty equal to half your proficiency bonus (rounded down). When a creature enters this space for the first time on a turn or starts their turn there, they must make a saving throw against the same damage. On each of your turns after you cast this spell, you can use a bonus action to move the sphere to another point up to 30 feet away from where it is. When this spell ends, the area within its sphere stirs with yokai echoes and remains difficult terrain until the start of your next turn.",
+  "At Higher Levels": "If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each spell slot above 2nd, and the sphere’s radius increases by 5 feet for every two slot levels above 1st.",
+  "Classes": [
+    "Dusksworn",
+    "Petal Knight",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

@@ -1,0 +1,24 @@
+{
+  "Name": "Acceleration",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Sky-Keeper’s Arcana"
+  ],
+  "Casting Time": "1 action",
+  "Range": "15 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "Choose one creature within range. Their movement speed increases by 30 feet. This increase is considered separately from any effects that multiply or divide a creature’s movement speed.",
+  "At Higher Levels": "When this spell is cast at 3rd level or higher, you may choose one of the following effects for each slot level above 2nd:\n● You may choose one additional target.\n● The movement speed of your targets increases by an extra 5 feet.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Inscriptor",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

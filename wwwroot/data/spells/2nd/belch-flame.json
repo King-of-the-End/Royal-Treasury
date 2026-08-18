@@ -1,0 +1,18 @@
+{
+  "Name": "Belch Flame",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 Action.",
+  "Range": "Self.",
+  "Components": "V, M (Charcoal to bite into)",
+  "Duration": "Instantaneous",
+  "Description": "You bite into a piece of charcoal as if it were an apple, bursting the material components in your mouth and then spitting out a blazing inferno into a 30-ft long cone in front of you, forcing all creatures inside to pass a Dexterity Saving Throw or suffer 2d4 fire damage and 3 Burn count, or half that fire damage on a success and no Condition inflicted. If there are more than four creatures within that reach the heat spreads more intensely, dealing an additional d4 of fire damage and 2 Burn Count.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you deal an additional d4 fire damage and inflict 1 Burn count for each second slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Druid",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

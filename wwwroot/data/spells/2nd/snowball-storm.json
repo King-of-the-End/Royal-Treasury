@@ -1,0 +1,19 @@
+{
+  "Name": "Snowball Storm",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Torrential Arcanics"
+  ],
+  "Casting Time": "1 action",
+  "Range": "90 feet",
+  "Components": "V, S, M (a piece of ice or a small white rock chip)",
+  "Duration": "Instantaneous",
+  "Description": "A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot radius sphere centered on that point must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one.",
+  "At Higher Levels": "When you cast this spell at 3rd level or higher, you may choose one of the following effects for each slot level above 2nd:\n● The spell’s radius increases by 5 feet.\n● The cold damage increases by 1d6.\n● (3 slot levels) Each creature who fails the save has their movement reduced by half until the end of their next turn.",
+  "Classes": [
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

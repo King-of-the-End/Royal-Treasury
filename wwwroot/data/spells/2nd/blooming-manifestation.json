@@ -1,0 +1,21 @@
+{
+  "Name": "Blooming Manifestation",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 Action",
+  "Range": "60 ft.",
+  "Components": "V, M (a handful of petals or leaves)",
+  "Duration": "",
+  "Description": "You toss three petals into the air and have the winds guide them to be buried in different unoccupied spots in the ground, causing them to quickly bloom into small branches that twitch and grow with unstable magic. Whenever a hostile creature moves into or around 5 ft. of one of these branches, the branch quickly moves to whip and grab them, absorbing their willpower for sustenance. That creature must make a Dexterity saving throw or fall prone, take 2d6 bludgeoning damage, and gain 3 Sinking count. On a success, the branch simply whiffs and remains in place. Upon hitting a creature, a branch blooms and becomes a regular, yet beautiful plant. All others that have not bloomed simply shrivel up and die after the spell’s duration passes or your concentration is broken.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you create an additional branch for each slot level above 2nd.",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

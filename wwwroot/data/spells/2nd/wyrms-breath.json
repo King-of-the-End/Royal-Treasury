@@ -1,0 +1,19 @@
+{
+  "Name": "Wyrm’s Breath",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Elemental Confluence"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Touch",
+  "Components": "V, S, M (a hot pepper)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You touch one willing creature and imbue it with the power to spew magical energy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an action to exhale energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save, or half as much damage on a successful one.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you can choose one of the following effects for each slot level above 2nd:\n● The damage increases by 1d6.\n● The cone’s length increases by 10 feet.\n● (2 slot levels) the target may use the breath weapon as an action or bonus action, but only once each turn. The creature granted this breath weapon also becomes resistant to the breath weapon’s damage type.",
+  "Classes": [
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

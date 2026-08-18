@@ -1,0 +1,19 @@
+{
+  "Name": "La Sangre",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S, M (a crumpled drawing of something you love)",
+  "Duration": "Instantaneous",
+  "Description": "You coalesce blood in your palm to form a hardblood lance, hungry for blood. You then move up to your movement speed in any direction, performing a melee spell attack against a creature within range, dealing 2d8 piercing damage and inflicting 2 Bleed on a hit. You have a +1 bonus for the Lance’s attack and damage rolls and inflict an additional Bleed Count for each 10-ft travelled, to a maximum of +4.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 by each level above 2nd.",
+  "Classes": [
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul",
+    "Paladin"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

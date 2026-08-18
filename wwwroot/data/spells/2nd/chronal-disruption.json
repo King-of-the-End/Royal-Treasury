@@ -1,0 +1,24 @@
+{
+  "Name": "Chronal Disruption",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Chronurgy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "M, S (metal dust from a cog)",
+  "Duration": "Instantaneous",
+  "Description": "You target a target creature within range to plunge outside their timestream for a moment, causing them to feel like they were prickled by pins. The target must pass a Constitution Saving Throw or suffer 3d6 bludgeoning damage, 4 Tremor and lose your choice between their next Bonus Action or Reaction, or only suffering half that damage and Tremor count on a success.",
+  "At Higher Levels": "For each Spell Slot Level spent above 2nd you deal an additional 1d6 of Bludgeoning damage and an additional count of Tremor, which is rounded down on a successful Saving Throw.",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Druid",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

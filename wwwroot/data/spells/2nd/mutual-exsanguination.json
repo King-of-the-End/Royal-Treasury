@@ -1,0 +1,26 @@
+{
+  "Name": "Mutual Exsanguination",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30-feet",
+  "Components": "S, M (The blood of your own body)",
+  "Duration": "Instantaneous",
+  "Description": "You either deliver a nasty cut to one of your palms that soon closes as blood seeps out to the floor, or you simply sacrifice your blood magically to summon two gangly pale arms around you, reaching around to grasp at one creature of your choice within range. When you cast this spell, you take an amount of your hit die in slashing damage equal to the level you cast it on, and the target creature must pass a Constitution Saving Throw or take double the amount of die in slashing damage, as slices and gashes start being formed as the hands hold them, then crumbling to dust in the end of the spell. The amount of Hit Die spendable at once is equal to the spell slot level this spell is cast on.",
+  "At Higher Levels": "For every second spell slot level spent above 2nd level, starting at 4th, you may choose an additional target for this spell.",
+  "Classes": [
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

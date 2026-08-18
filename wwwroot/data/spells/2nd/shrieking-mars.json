@@ -1,0 +1,21 @@
+{
+  "Name": "Shrieking Mars",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You call up an intimidating war cry and can target all creatures within 30 feet of you. Those creatures must make a Wisdom saving throw. On a failed save they are frightened for 1 minute, and while frightened this way they cannot make more than a single weapon attack on any turn regardless of features, magic items, or spell effects. A restrained target may reattempt the saving throw at the end of each of their turns. Each time they take fire damage they may also reattempt the save with advantage. Succeeding either save ends both effects early.",
+  "At Higher Levels": "When you cast this spell at 5th level or higher, you can exclude any creatures you choose from this spell’s effect when you cast it.",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Inscriptor",
+    "Petal Knight",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

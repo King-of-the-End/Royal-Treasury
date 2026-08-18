@@ -1,0 +1,21 @@
+{
+  "Name": "Mauling Skull",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S, V, M (A jawbone cracked in half)",
+  "Duration": "Instantaneous",
+  "Description": "You beckon forth the vertebral spine and skull of a giant skeleton formed from thick black mist, having it whip out to target another creature within reach and sink it’s teeth into that poor soul. You gain 3 Poise and then perform a ranged spell attack against a creature within reach, dealing 2d8 piercing damage and an additional 3d6 necrotic damage if you trigger a Posture Critical with this spell. Furthermore, if you trigger a Posture Critical with this spell the Critical’s damage is necrotic and the target creature gains 2 Poise count.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the piercing damage increases by 1d8 and necrotic damage increases by 1d6 for each slot level above 2nd. It also generates 1 additional Poise count for each level above 2nd.",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

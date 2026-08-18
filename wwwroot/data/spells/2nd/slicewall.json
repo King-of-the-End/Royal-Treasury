@@ -1,0 +1,26 @@
+{
+  "Name": "Slicewall",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 Reaction.",
+  "Range": "Self.",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You swing your hand in a slicing pattern around you, causing the same slice to be repeated cleanly in several arcs around you, cutting the air and anything that would dare come close. Until the start of your next turn any time you would suffer damage from a ranged attack or projectile ( Such as a magic missile), you reduce the damage taken by 1d8.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage reduction increases by 1d8 for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

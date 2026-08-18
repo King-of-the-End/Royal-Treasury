@@ -1,0 +1,20 @@
+{
+  "Name": "Dread Note",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "Action.",
+  "Range": "60 ft.",
+  "Components": "V",
+  "Duration": "Up to One Minute (Concentration).",
+  "Description": "You whistle a special note infused with your magic to cause dread and fear into the heart of one foe within reach. The target must succeed on a Wisdom saving throw or become Frightened of you until the spell ends. The Frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. While Frightened in this way, if the target ends their turn while having you in their possible line of sight or within 15-ft. of you they instantly suffer 2d8 psychic damage.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you deal an additional 1d8 psychic damage per spell slot above 2nd. When you cast this spell using a spell slot of 5th level or higher, you may target creatures who don’t rely on sight and trigger this spells damage if they end their turn within 30-ft. of you instead.",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

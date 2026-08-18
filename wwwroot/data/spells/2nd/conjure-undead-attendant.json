@@ -1,0 +1,158 @@
+{
+  "Name": "Conjure Undead Attendant",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [
+    "Sinful Codex",
+    "Unbound Moralisms"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (a skull inset with a carnelian in each eye, which must collectively be worth 200 gp)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You band together natural elements to form the body of a Large undead beast, which appears in an unoccupied space within the spell’s range. This undead uses the Undead Attendant template below, which is adjusted based on the level at which this spell is cast. The spirit disappears when it drops to 0 hit points or when the spell ends. The creature is an ally to you and your companions. In combat, it shares your initiative count, but takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it will take the Dodge action and use its movement to avoid danger. If the Attendant is killed while outside of your range of vision, you see the final glimpses of what it saw, allowing you to know the circumstances of its destruction. Necromancy Bonus. When you cast this spell as a warlock, or as a wizard who specializes in the Unbound Moralisms spell group according to any feature you have, the level you cast it at is treated as one level higher than it otherwise would be (up to a maximum of 9th).",
+  "At Higher Levels": "When you cast the spell at 3rd level or higher, you can choose one of the Attendants Upcast Features for every 2 levels above 1st (one each at 3rd, 5th, 7th, and 9th), and the Undead Attendant gains those features. You may only take each feature once.",
+  "Classes": [
+    "Artificer",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": [],
+  "Special Notes": [
+    {
+      "type": "stat_block",
+      "stat_block_id": "undead_attendant_template",
+      "placement": "After Spell",
+      "marker": "{{STAT_BLOCK:undead_attendant_template}}",
+      "section_label": "Stat Block",
+      "instruction": "Render the matching Stat Blocks object as a dedicated Stat Block section after the spell."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "undead_attendant_template",
+      "section_type": "Stat Block",
+      "title": "Undead Attendant Template",
+      "placement": "After Spell",
+      "marker": "{{STAT_BLOCK:undead_attendant_template}}",
+      "creature": {
+        "size": "Large",
+        "type": "undead",
+        "alignment": ""
+      },
+      "armor_class": "12 (natural armor; 10 + spell level)",
+      "hit_points": "30 (plus 10 for each spell level above 2nd)",
+      "speed": {
+        "walk": "25 ft.",
+        "climb": "25 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "check": "+3",
+          "save": "+3"
+        },
+        "DEX": {
+          "score": 7,
+          "check": "-2",
+          "save": "-2"
+        },
+        "CON": {
+          "score": 19,
+          "check": "+4",
+          "save": "+4"
+        },
+        "INT": {
+          "score": 3,
+          "check": "-4",
+          "save": "-4"
+        },
+        "WIS": {
+          "score": 7,
+          "check": "-2",
+          "save": "-2"
+        },
+        "CHA": {
+          "score": 8,
+          "check": "-1",
+          "save": "-1"
+        }
+      },
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 8"
+      ],
+      "languages": "understands the languages you speak",
+      "proficiency_bonus": "equal to yours",
+      "traits": [
+        {
+          "name": "Spellbound Fortitude",
+          "description": "When the Attendant is reduced to 0 hit points, you must roll a spellcasting ability check with a DC equal to 5 + the damage taken that reduced it to 0 hit points. If that damage was radiant damage or a critical hit, you have disadvantage on this check. On a success, the undead is reduced to 1 hit point instead, and on a failure it is destroyed."
+        },
+        {
+          "name": "Turn Resistance",
+          "description": "The undead has advantage on saving throws made to resist being turned."
+        },
+        {
+          "name": "Undead Traits",
+          "description": "The undead does not need to eat, drink, or breathe."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "description": "The undead makes a number of attacks equal to half the level of the spell that created it (one at 2nd, two at 4th, three at 6th, and four at 8th)."
+        },
+        {
+          "name": "Bone Claws",
+          "description": "Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d10 + 3 + the spell’s level slashing damage."
+        }
+      ],
+      "upcast_features": [
+        {
+          "name": "Dark Weapons",
+          "description": "The undead’s attacks deal an additional weapon damage die of necrotic damage."
+        },
+        {
+          "name": "Hasted Summon",
+          "description": "The undead’s movement speed doubles."
+        },
+        {
+          "name": "Huge Summon",
+          "description": "The undead is summoned as a Huge creature. Its reach with its melee weapon attacks increases by 5 feet, and its armor class increases by 3."
+        },
+        {
+          "name": "Limited Improved Critical",
+          "description": "The undead scores a critical hit on a d20 result of 19 or 20, but only once per turn. After the first instance it requires a result of 20."
+        },
+        {
+          "name": "Poison Blood Vapors",
+          "description": "The undead is surrounded by a poisonous aura. Each creature who starts its turn within 5 feet (10 feet if it is Huge) of the undead must make a Constitution saving throw against your spell save DC, or become poisoned until the start of their next turn. You are immune to this effect."
+        },
+        {
+          "name": "Regeneration",
+          "description": "If the undead is below half of its maximum hit points, it regenerates a number of hit points on its turn equal to the level this spell was cast at."
+        },
+        {
+          "name": "Spider Climb",
+          "description": "The undead can adhere to and move across walls and ceilings without requiring an ability check, and without taking up the use of its limbs."
+        },
+        {
+          "name": "Threshold",
+          "description": "The undead gains a damage threshold equal to the level this spell was cast at plus 6."
+        }
+      ],
+      "raw_text": "UNDEAD ATTENDANT TEMPLATE\nLarge undead\nArmor Class 12 (natural armor; 10 + spell level)\nHit Points 30 (plus 10 for each spell level above 2nd)\nSpeed 25 ft., climb 25 ft.\nSTR 16 | Check +3 | Save +3; DEX 7 | Check -2 | Save -2; CON 19 | Check +4 | Save +4; INT 3 | Check -4 | Save -4; WIS 7 | Check -2 | Save -2; CHA 8 | Check -1 | Save -1\nResistances: necrotic\nImmunities: poison; poisoned\nSenses: darkvision 60 ft., passive Perception 8\nLanguages: understands the languages you speak\nProficiency Bonus: equal to yours\nTRAITS\nSpellbound Fortitude. When the Attendant is reduced to 0 hit points, you must roll a spellcasting ability check with a DC equal to 5 + the damage taken that reduced it to 0 hit points. If that damage was radiant damage or a critical hit, you have disadvantage on this check. On a success, the undead is reduced to 1 hit point instead, and on a failure it is destroyed.\nTurn Resistance. The undead has advantage on saving throws made to resist being turned.\nUndead Traits. The undead does not need to eat, drink, or breathe.\nACTIONS\nMultiattack. The undead makes a number of attacks equal to half the level of the spell that created it (one at 2nd, two at 4th, three at 6th, and four at 8th).\nBone Claws. Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d10 + 3 + the spell’s level slashing damage.\nUPCAST FEATURES\nDark Weapons. The undead’s attacks deal an additional weapon damage die of necrotic damage.\nHasted Summon. The undead’s movement speed doubles.\nHuge Summon. The undead is summoned as a Huge creature. Its reach with its melee weapon attacks increases by 5 feet, and its armor class increases by 3.\nLimited Improved Critical. The undead scores a critical hit on a d20 result of 19 or 20, but only once per turn. After the first instance it requires a result of 20.\nPoison Blood Vapors. The undead is surrounded by a poisonous aura. Each creature who starts its turn within 5 feet (10 feet if it is Huge) of the undead must make a Constitution saving throw against your spell save DC, or become poisoned until the start of their next turn. You are immune to this effect.\nRegeneration. If the undead is below half of its maximum hit points, it regenerates a number of hit points on its turn equal to the level this spell was cast at.\nSpider Climb. The undead can adhere to and move across walls and ceilings without requiring an ability check, and without taking up the use of its limbs.\nThreshold. The undead gains a damage threshold equal to the level this spell was cast at plus 6."
+    }
+  ]
+}

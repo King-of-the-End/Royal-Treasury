@@ -1,0 +1,22 @@
+{
+  "Name": "Skin of Stone",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Biomancy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S, M (a carved stone figurine)",
+  "Duration": "1 minute",
+  "Description": "At your touch, the skin of a willing creature hardens with stone-like fortification. Its speed is reduced by 5 feet and, when you cast this spell and at the start of each of the target’s turns, it gains temporary hit points equal to 1d4 plus your spellcasting modifier. When the spell ends, the target loses any remaining temporary hit points granted by this spell.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

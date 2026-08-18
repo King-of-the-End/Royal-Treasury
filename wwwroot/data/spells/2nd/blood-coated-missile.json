@@ -1,0 +1,24 @@
+{
+  "Name": "Blood Coated Missile",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You draw a line with two fingers from your outstretched arm, from the wrist to the elbow, focusing mana and blood to form a magical string and a bloody arrow. The arrow hits a creature of your choice that you can see within range. The arrow deals 4d12 force damage to its target, and you take a third of the damage dealt, rounded down, as you use your own blood to fuel this spell.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Dimensional Rift",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "1 round",
+  "Description": "You create an invisible, immobile rift 5 feet in diameter. The rift bridges the distance between its space and any point within 30 feet of it that you can see or specify by distance and direction (such as \"30 feet straight up\"). While next to the rift, you are considered to be next to the destination as well, and anything you put through it (including any portion of your body) emerges at the destination. No sound passes through the rift, and only you can see or move through it. The rift lasts until the end of your next turn. You cannot emerge from the rift if the destination space is occupied, though you may be able to move the creature or object blocking your path through other means.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the maximum distance at which you can place the rift increases by 30 feet for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

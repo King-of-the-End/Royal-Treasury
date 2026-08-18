@@ -1,0 +1,22 @@
+{
+  "Name": "Throw Image",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [
+    "Epic of Duality"
+  ],
+  "Casting Time": "Special",
+  "Range": "120 feet",
+  "Components": "Special",
+  "Duration": "Special",
+  "Description": "When you cast another spell, you can choose to also cast this spell on top of it. When you do, a projection of you appears within this spell's range in an unoccupied space you can see, and can act as the caster of the spell with regard to its range and effects. If the spell would normally affect the area around you, it instead centers on that projection. If it has a range, that range treats the projection as though the spell originated from it. Your senses do not project into the image, so if the spell requires line of sight or that you see the target, you must still be able to see them. At the start of your next turn, the projection vanishes, and the spell switches back to considering you the caster or center of its effects again. If it cannot continue due to your new proximity to its effects, they end. If you are unable to perform somatic components but are conscious, you may use this spell to have your projection perform the verbal and/or somatic components of the spell in your place.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Inscriptor",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

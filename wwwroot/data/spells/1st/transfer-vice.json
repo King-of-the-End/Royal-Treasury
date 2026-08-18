@@ -1,0 +1,28 @@
+{
+  "Name": "Transfer Vice",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [
+    "Daemoturgy",
+    "Unbound Moralisms"
+  ],
+  "Casting Time": "1 reaction to a creature being killed or reduced to 0 hit points",
+  "Range": "120 feet",
+  "Components": "V, S, M (a wicker figurine)",
+  "Duration": "Instantaneous",
+  "Description": "When one creature within range is killed or reduced to 0 hit points while suffering from a detrimental effect (such as being poisoned, suffering from ongoing damage from a spell, etc.), you may choose one other creature within range to try to transfer those effects to. The new target must make a Charisma saving throw. On a failure, all of the detrimental effects you choose from the first target are moved to the second, including their remaining durations. Effects with an indefinite duration that can last longer than 1 hour cannot be transferred this way, nor can effects that are unable to target the new creature.",
+  "At Higher Levels": "If you cast this spell using a spell slot of 3rd level or higher, the effects are copied instead of transferred, and both creatures still suffer from them. If any require concentration from another creature or can only target one creature at a time, you must choose which is targeted.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Inscriptor",
+    "Petal Knight",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

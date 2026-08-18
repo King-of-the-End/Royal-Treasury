@@ -1,0 +1,18 @@
+{
+  "Name": "Curse",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Sealed Words"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "90 feet",
+  "Components": "V, S, M (the petrified eye of a newt)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You place a curse on a creature that you can see within range, who is cursed for the spell’s duration. While cursed this way you deal an extra 1d6 necrotic damage to the target whenever you hit them with an attack. Also, choose one of the following debilitation options when you cast the spell:\n●​ Choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability.\n●​ Choose one ability score when you cast the spell. The first time a target makes a saving throw of that type after being targeted by the spell they have disadvantage on the roll.\n●​ Choose melee or ranged attacks. The target has disadvantage on the first instance they make an attack of your chosen type each turn. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.",
+  "At Higher Levels": "When you cast this spell at 2nd level or higher, choose one of the following effects for each slot level above 2nd:\n●​ You may choose one additional debilitation option. All targets suffer the same debilitation option choices.\n●​ (2 slot levels) You may choose one additional target within range to be affected by this spell. The bonus action used to move the curse to a new creature can reassign any instances of the curse not currently targeting a creature.\n●​ (2 slot levels) The spell’s duration increases to 8 hours.\n●​ (4 slot levels) The spell’s duration increases to 24 hours.",
+  "Classes": [
+    "Warlock"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

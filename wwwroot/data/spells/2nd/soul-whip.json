@@ -1,0 +1,20 @@
+{
+  "Name": "Soul Whip",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You weave together threads of wrathful thought to create a whip of solidified enmity in your hand. This magic whip lasts until the spell ends. It counts as a martial melee weapon with which you are proficient. It deals 2d4 + your spellcasting ability modifier psychic damage on a hit and has the finesse, light, and reach properties. In addition, when you use the whip to attack a target that charmed or frightened by you, you make the attack roll with advantage. If you drop the weapon or throw it, it dissipates as it leaves your hand. Thereafter, while the spell persists, you can use a bonus action to cause the whip to reappear in your hand.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd or 4th level, the damage increases to 3d4 + your spellcasting ability modifier. When you cast it using a spell slot of 5th or 6th level, the damage increases to 4d4 + your spellcasting ability modifier. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d4 + your spellcasting ability modifier.",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

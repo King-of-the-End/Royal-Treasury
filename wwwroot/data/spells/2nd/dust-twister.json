@@ -1,0 +1,20 @@
+{
+  "Name": "Dust Twister",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [
+    "Harvest Tradition"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (a pinch of dust)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a twister of dust and debris in the relative shape of a swirling fiend appears in the cube and lasts for the spell’s duration. Any creature that ends its turn within 5 feet of the twister must make a Strength saving throw. On a failed save, the creature takes 1d8 bludgeoning damage and is pushed 10 feet away from the twister. On a successful save, the creature takes half as much damage and isn’t pushed. As a bonus action, you can move the twister up to 30 feet in any direction. If the twister moves over sand, dust, loose dirt, or light gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscures its area.",
+  "At Higher Levels": "When you cast this spell at 3rd level or higher, you can choose one of the following effects for each level above 2nd:\n● The spell’s damage increases by 1d8.\n● The target is pushed an additional 10 feet away.\n● The cube’s size doubles.\n● (2 levels) Once on each of your turns, you can move the twister without using your bonus action as long as you aren’t incapacitated).\n● (3 levels) You do not need to concentrate on this spell, and can end it as a bonus action.",
+  "Classes": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Paraprismatic Tempest",
+  "Tags": []
+}
