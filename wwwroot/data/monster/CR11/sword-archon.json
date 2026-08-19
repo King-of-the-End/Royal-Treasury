@@ -1,0 +1,186 @@
+{
+  "Name": "Sword Archon",
+  "Group": "Archons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Scholars with massive bodies and huge platinum wings. These angelic humanoids are rarely dispatched to deal with anything except the most heinous of threats, and when they are they act as commanders of archons of lower ranks. They have bodies resembling well-built humans, but their limbs can transform into large blades drenched in radiant flame. Their strength and speed are well-known in the upper planes, but what is little spoken of is their advanced intelligence and spellcasting ability. Their bodies are imbued with a natural aversion to magical effects, and charmed to resist weapons that aren’t made of superior materials like adamantine.\n\nSword archons live by a strict code of ethics. They are not willing to attack weak or unfortunate opponents, and only turn their blades against the most evil of creatures. They enjoy combat but know to hold back. They will not strike down a creature that has surrendered unless circumstances force them to. Even when faced by a disrespectful or dishonorable opponent, a sword archon holds itself to a higher calling and refuses to sink to their level.\n\nThe Eidolons all command at least a handful of sword archons, but less than 50 exist across the upper planes. Harros and Vadreem take the greatest interest in them and are proud of the sword archons under their employ.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Reference%20-%20Sword%20Archon.png",
+  "Stat Blocks": [
+    {
+      "id": "sword_archon",
+      "section_type": "Stat Block",
+      "title": "Sword Archon",
+      "creature": {
+        "size": "Large",
+        "type": "celestial (archon)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "16",
+      "hit_points": "153 (18d10 + 54)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft.",
+        "teleport": "60 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "fly-by",
+        "magic immunity 5th"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 19,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Str +7",
+        "Wis +7",
+        "Cha +8"
+      ],
+      "skills": [
+        "Athletics +7",
+        "Perception +7"
+      ],
+      "resistances": [
+        "B/S/P (adamantine)"
+      ],
+      "immunities": [
+        "lightning",
+        "poison",
+        "radiant",
+        "B/S/P (magical or adamantine)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "all",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "11 (7200 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Aura of Pacification",
+          "name_format": "bold_italic",
+          "description": "A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 16 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 11 or lower for 24 hours."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "continual flame",
+                  "protection from evil and good",
+                  "true strike",
+                  "weapon of domination"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "flame strike",
+                  "gate",
+                  "heal",
+                  "immolation"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "golden spiral",
+                  "slash wind"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The archon makes two Holy Armblade attacks, then uses its Radiant Wingbeat."
+        },
+        {
+          "name": "Holy Armblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 6 (1d10) fire damage plus 6 (1d10) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Radiant Wingbeat",
+          "name_format": "bold_italic",
+          "description": "All creatures within 10 feet of the archon are struck with a wave of radiant fire, released from the archon’s beating wings. Each creature must succeed on a DC 15 Dexterity saving throw or take 7 (1d12) bludgeoning damage plus 7 (2d6) radiant damage."
+        },
+        {
+          "name": "Judgement Dive (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The archon turns all of its limbs into fiery blades and dives at a creature within 30 feet of it, unleashing a vortex of radiant slashes on them. The target must make a DC 18 Dexterity saving throw, taking 33 (6d10) slashing damage plus 18 (4d8) fire damage plus 18 (4d8) radiant damage on a failed save, or half as much on a successful one. If a creature is reduced to 0 hit points by this damage, their body is severed and reduced to glittering dust, effectively destroying it (leaving their magical equipment and artifacts behind). The archon ends this attack in an unoccupied space adjacent to its target."
+        },
+        {
+          "name": "Summon Archon (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The archon summons 2d4 hound archons and 1d10+2 lantern archons, which appear in unoccupied spaces within 30 feet of the archon. These archons return from whence they came after 1 minute has passed."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Parry",
+          "name_format": "bold_italic",
+          "description": "The archon gains a +4 bonus to AC against a single attack targeting it."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**SWORD ARCHON**\n*Large celestial (archon), lawful good*\n**Armor Class** 16\n**Hit Points** 153 (18d10 + 54)\n**Speed** 30 ft., fly 60 ft., teleport 60 ft.\n**Quality Traits** Anchored, fly-by, magic immunity 5th\n**STR** 16 (+3) | **DEX** 22 (+6) | **CON** 17 (+3) | **INT** 20 (+5) | **WIS** 16 (+3) | **CHA** 19 (+4)\n**Saving Throws** Str +7, Wis +7, Cha +8\n**Skills** Athletics +7, Perception +7\n**Resistances** B/S/P (adamantine)\n**Immunities** lightning, poison, radiant; B/S/P (magical or adamantine)\n**Condition Immunities** exhaustion, paralyzed, petrified, poisoned\n**Senses** darkvision 120 ft., passive Perception 17\n**Languages** all, telepathy 60 ft.\n**Challenge Rating** 11 (7200 XP) **Prof Bonus** +4\n\n***Aura of Pacification.*** A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 16 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 11 or lower for 24 hours.\n\n***Innate Spellcasting.*** The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** continual flame, protection from evil and good, true strike, weapon of domination\n• ***1/Day each:*** flame strike, gate, heal, immolation\n• ***2/Day each:*** golden spiral, slash wind\n\n**ACTIONS**\n***Multiattack.*** The archon makes two Holy Armblade attacks, then uses its Radiant Wingbeat.\n\n***Holy Armblade.*** *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 13 (2d6 + 6) slashing damage plus 6 (1d10) fire damage plus 6 (1d10) radiant damage.\n\n***Radiant Wingbeat.*** All creatures within 10 feet of the archon are struck with a wave of radiant fire, released from the archon’s beating wings. Each creature must succeed on a DC 15 Dexterity saving throw or take 7 (1d12) bludgeoning damage plus 7 (2d6) radiant damage.\n\n***Judgement Dive (Recharge 5-6).*** The archon turns all of its limbs into fiery blades and dives at a creature within 30 feet of it, unleashing a vortex of radiant slashes on them. The target must make a DC 18 Dexterity saving throw, taking 33 (6d10) slashing damage plus 18 (4d8) fire damage plus 18 (4d8) radiant damage on a failed save, or half as much on a successful one. If a creature is reduced to 0 hit points by this damage, their body is severed and reduced to glittering dust, effectively destroying it (leaving their magical equipment and artifacts behind). The archon ends this attack in an unoccupied space adjacent to its target.\n\n***Summon Archon (1/Rest).*** The archon summons 2d4 hound archons and 1d10+2 lantern archons, which appear in unoccupied spaces within 30 feet of the archon. These archons return from whence they came after 1 minute has passed.\n\n**Reactions**\n***Parry.*** The archon gains a +4 bonus to AC against a single attack targeting it."
+    }
+  ]
+}

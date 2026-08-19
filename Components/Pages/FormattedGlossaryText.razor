@@ -1,0 +1,982 @@
+@using Microsoft.AspNetCore.Components
+@using Website_of_Everything.Models
+@using Website_of_Everything.Services
+
+@inject GlossaryService GlossaryService
+
+
+@foreach (
+    var piece
+    in pieces)
+{
+    @if (
+        piece.Bold
+        &&
+        piece.Italic)
+    {
+        <strong>
+            <em>
+                @RenderPieceContent(piece)
+            </em>
+        </strong>
+    }
+    else if (piece.Bold)
+    {
+        <strong>
+            @RenderPieceContent(piece)
+        </strong>
+    }
+    else if (piece.Italic)
+    {
+        <em>
+            @RenderPieceContent(piece)
+        </em>
+    }
+    else
+    {
+        @RenderPieceContent(piece)
+    }
+}
+
+
+@code {
+
+    // =====================================
+    // FORMATTED SOURCE SPANS
+    // =====================================
+
+    [Parameter]
+    public IReadOnlyList<MonsterGroupLoreSpan>
+        Spans { get; set; } =
+            Array.Empty<MonsterGroupLoreSpan>();
+
+
+    // =====================================
+    // OPTIONAL PLAIN TEXT
+    //
+    // This allows the same renderer to be
+    // used for monster Information, notes,
+    // refinement text, and other lore that
+    // is stored as a single string instead
+    // of pre-split formatting spans.
+    // =====================================
+
+    [Parameter]
+    public string Text { get; set; } =
+        string.Empty;
+
+
+    // =====================================
+    // GLOSSARY CONTEXT
+    // =====================================
+
+    [Parameter]
+    public GlossaryContext Context { get; set; } =
+        GlossaryContext.General;
+
+
+    // =====================================
+    // GENERATED PIECES
+    //
+    // Each source formatting span may be
+    // split into smaller pieces when a
+    // NoOverlay phrase begins or ends.
+    //
+    // This lets a protected phrase cross
+    // formatting boundaries.
+    //
+    // Example source spans:
+    //
+    // italic: "teleport"
+    // normal: " spell without error"
+    //
+    // glossary:
+    //
+    // Teleport Spell -> NoOverlay = true
+    // Teleport       -> NoOverlay = false
+    //
+    // The full paragraph is examined first,
+    // so "Teleport Spell" protects both
+    // source spans before the shorter
+    // "Teleport" entry is allowed to render.
+    // =====================================
+
+    private List<FormattedLorePiece> pieces =
+        new();
+
+
+    // =====================================
+    // PROCESS WHEN PARAMETERS CHANGE
+    // =====================================
+
+    protected override async Task
+        OnParametersSetAsync()
+    {
+        var entries =
+            await GlossaryService
+                .GetEntriesAsync(
+                    Context);
+
+
+        var noOverlayEntries =
+            entries
+                .Where(
+                    entry =>
+                        entry.NoOverlay)
+                .ToList();
+
+
+        // =================================
+        // PARSE MARKDOWN-LIKE EMPHASIS
+        //
+        // Some lore files contain formatting
+        // directly in their text, for example:
+        //
+        // **Celestial Possession**
+        //
+        // rather than setting:
+        //
+        // "bold": true
+        //
+        // Parse those markers first so the
+        // literal asterisks disappear and the
+        // intended formatting is preserved.
+        // =================================
+
+        var sourceSpans =
+            Spans is not null
+            &&
+            Spans.Count > 0
+
+            ? Spans
+
+            : string.IsNullOrEmpty(
+                Text)
+
+                ? Array.Empty<MonsterGroupLoreSpan>()
+
+                : new[]
+                {
+                    new MonsterGroupLoreSpan
+                    {
+                        Text =
+                            Text
+                    }
+                };
+
+
+        var parsedSpans =
+            ParseMarkdownSpans(
+                sourceSpans);
+
+
+        pieces =
+            BuildPieces(
+                parsedSpans,
+                noOverlayEntries);
+    }
+
+
+    // =====================================
+    // PARSE MARKDOWN-LIKE FORMATTING
+    //
+    // Supports:
+    //
+    // *italic*
+    // **bold**
+    // ***bold italic***
+    //
+    // The explicit JSON bold / italic flags
+    // are preserved and combined with the
+    // inline markers.
+    //
+    // Markdown state is allowed to continue
+    // across adjacent source spans so a
+    // formatting marker does not have to be
+    // contained inside one JSON span.
+    // =====================================
+
+    private static List<MonsterGroupLoreSpan>
+        ParseMarkdownSpans(
+            IReadOnlyList<MonsterGroupLoreSpan> spans)
+    {
+        var result =
+            new List<MonsterGroupLoreSpan>();
+
+
+        if (
+            spans is null
+            ||
+            spans.Count == 0)
+        {
+            return result;
+        }
+
+
+        var markdownBold =
+            false;
+
+
+        var markdownItalic =
+            false;
+
+
+        foreach (
+            var sourceSpan
+            in spans)
+        {
+            var text =
+                sourceSpan.Text
+                ??
+                string.Empty;
+
+
+            if (
+                text.Length == 0)
+            {
+                continue;
+            }
+
+
+            var buffer =
+                new System.Text.StringBuilder();
+
+
+            void Flush()
+            {
+                if (
+                    buffer.Length == 0)
+                {
+                    return;
+                }
+
+
+                AddParsedSpan(
+                    result,
+                    buffer.ToString(),
+                    sourceSpan.Bold
+                    ||
+                    markdownBold,
+                    sourceSpan.Italic
+                    ||
+                    markdownItalic);
+
+
+                buffer.Clear();
+            }
+
+
+            for (
+                var index = 0;
+                index < text.Length;)
+            {
+                // =============================
+                // ESCAPED ASTERISK
+                //
+                // \* renders as a literal *.
+                // =============================
+
+                if (
+                    text[index] == '\\'
+                    &&
+                    index + 1 < text.Length
+                    &&
+                    text[index + 1] == '*')
+                {
+                    buffer.Append('*');
+
+                    index +=
+                        2;
+
+                    continue;
+                }
+
+
+                // =============================
+                // BOLD + ITALIC
+                // ***text***
+                // =============================
+
+                if (
+                    index + 2 < text.Length
+                    &&
+                    text[index] == '*'
+                    &&
+                    text[index + 1] == '*'
+                    &&
+                    text[index + 2] == '*')
+                {
+                    Flush();
+
+
+                    markdownBold =
+                        !markdownBold;
+
+
+                    markdownItalic =
+                        !markdownItalic;
+
+
+                    index +=
+                        3;
+
+                    continue;
+                }
+
+
+                // =============================
+                // BOLD
+                // **text**
+                // =============================
+
+                if (
+                    index + 1 < text.Length
+                    &&
+                    text[index] == '*'
+                    &&
+                    text[index + 1] == '*')
+                {
+                    Flush();
+
+
+                    markdownBold =
+                        !markdownBold;
+
+
+                    index +=
+                        2;
+
+                    continue;
+                }
+
+
+                // =============================
+                // ITALIC
+                // *text*
+                // =============================
+
+                if (
+                    text[index] == '*')
+                {
+                    Flush();
+
+
+                    markdownItalic =
+                        !markdownItalic;
+
+
+                    index++;
+
+                    continue;
+                }
+
+
+                // =============================
+                // NORMAL CHARACTER
+                // =============================
+
+                buffer.Append(
+                    text[index]);
+
+
+                index++;
+            }
+
+
+            Flush();
+        }
+
+
+        return result;
+    }
+
+
+    // =====================================
+    // ADD / MERGE PARSED SPAN
+    //
+    // Adjacent pieces with identical
+    // formatting are merged so the resulting
+    // render tree stays compact.
+    // =====================================
+
+    private static void AddParsedSpan(
+        List<MonsterGroupLoreSpan> result,
+        string text,
+        bool bold,
+        bool italic)
+    {
+        if (
+            string.IsNullOrEmpty(
+                text))
+        {
+            return;
+        }
+
+
+        if (
+            result.Count > 0)
+        {
+            var previous =
+                result[^1];
+
+
+            if (
+                previous.Bold == bold
+                &&
+                previous.Italic == italic)
+            {
+                previous.Text +=
+                    text;
+
+                return;
+            }
+        }
+
+
+        result.Add(
+            new MonsterGroupLoreSpan
+            {
+                Text =
+                    text,
+
+                Bold =
+                    bold,
+
+                Italic =
+                    italic
+            });
+    }
+
+
+    // =====================================
+    // BUILD FORMATTED PIECES
+    // =====================================
+
+    private static List<FormattedLorePiece>
+        BuildPieces(
+            IReadOnlyList<MonsterGroupLoreSpan> spans,
+            IReadOnlyList<GlossaryEntry> noOverlayEntries)
+    {
+        var result =
+            new List<FormattedLorePiece>();
+
+
+        if (
+            spans is null
+            ||
+            spans.Count == 0)
+        {
+            return result;
+        }
+
+
+        // =================================
+        // BUILD THE COMPLETE PARAGRAPH
+        //
+        // Glossary protection must operate
+        // on this continuous string rather
+        // than on each formatting span.
+        // =================================
+
+        var fullText =
+            string.Concat(
+                spans.Select(
+                    span =>
+                        span.Text
+                        ??
+                        string.Empty));
+
+
+        if (
+            fullText.Length == 0)
+        {
+            return result;
+        }
+
+
+        // =================================
+        // MARK EVERY CHARACTER COVERED BY A
+        // NO-OVERLAY PHRASE
+        // =================================
+
+        var suppressed =
+            new bool[fullText.Length];
+
+
+        MarkNoOverlayRanges(
+            fullText,
+            noOverlayEntries,
+            suppressed);
+
+
+        // =================================
+        // RE-SPLIT THE ORIGINAL FORMATTING
+        // SPANS AROUND PROTECTED RANGES
+        // =================================
+
+        var globalIndex =
+            0;
+
+
+        foreach (
+            var span
+            in spans)
+        {
+            var text =
+                span.Text
+                ??
+                string.Empty;
+
+
+            if (
+                text.Length == 0)
+            {
+                continue;
+            }
+
+
+            var localStart =
+                0;
+
+
+            var currentSuppressed =
+                suppressed[globalIndex];
+
+
+            for (
+                var localIndex = 1;
+                localIndex < text.Length;
+                localIndex++)
+            {
+                var nextSuppressed =
+                    suppressed[
+                        globalIndex
+                        +
+                        localIndex];
+
+
+                if (
+                    nextSuppressed
+                    ==
+                    currentSuppressed)
+                {
+                    continue;
+                }
+
+
+                result.Add(
+                    new FormattedLorePiece
+                    {
+                        Text =
+                            text.Substring(
+                                localStart,
+                                localIndex
+                                -
+                                localStart),
+
+                        Bold =
+                            span.Bold,
+
+                        Italic =
+                            span.Italic,
+
+                        SuppressGlossary =
+                            currentSuppressed
+                    });
+
+
+                localStart =
+                    localIndex;
+
+
+                currentSuppressed =
+                    nextSuppressed;
+            }
+
+
+            // =================================
+            // REMAINDER OF THIS SOURCE SPAN
+            // =================================
+
+            result.Add(
+                new FormattedLorePiece
+                {
+                    Text =
+                        text.Substring(
+                            localStart),
+
+                    Bold =
+                        span.Bold,
+
+                    Italic =
+                        span.Italic,
+
+                    SuppressGlossary =
+                        currentSuppressed
+                });
+
+
+            globalIndex +=
+                text.Length;
+        }
+
+
+        return result;
+    }
+
+
+    // =====================================
+    // MARK NO-OVERLAY PHRASES
+    //
+    // GlossaryService already returns terms
+    // longest-first. That means a phrase like:
+    //
+    // Teleport Spell
+    //
+    // is tested before:
+    //
+    // Teleport
+    // =====================================
+
+    private static void MarkNoOverlayRanges(
+        string text,
+        IReadOnlyList<GlossaryEntry> entries,
+        bool[] suppressed)
+    {
+        if (
+            entries.Count == 0)
+        {
+            return;
+        }
+
+
+        var index =
+            0;
+
+
+        while (
+            index < text.Length)
+        {
+            GlossaryEntry? matchedEntry =
+                null;
+
+
+            foreach (
+                var entry
+                in entries)
+            {
+                if (
+                    IsMatchAt(
+                        text,
+                        index,
+                        entry))
+                {
+                    matchedEntry =
+                        entry;
+
+                    break;
+                }
+            }
+
+
+            if (
+                matchedEntry is null)
+            {
+                index++;
+
+                continue;
+            }
+
+
+            var end =
+                Math.Min(
+                    text.Length,
+                    index
+                    +
+                    matchedEntry.Term.Length);
+
+
+            for (
+                var markIndex = index;
+                markIndex < end;
+                markIndex++)
+            {
+                suppressed[markIndex] =
+                    true;
+            }
+
+
+            index =
+                end;
+        }
+    }
+
+
+    // =====================================
+    // CHECK FOR A GLOSSARY TERM AT POSITION
+    //
+    // This intentionally mirrors the term
+    // matching behavior in GlossaryText.
+    // =====================================
+
+    private static bool IsMatchAt(
+        string text,
+        int index,
+        GlossaryEntry entry)
+    {
+        var term =
+            entry.Term;
+
+
+        if (
+            string.IsNullOrEmpty(
+                term))
+        {
+            return false;
+        }
+
+
+        if (
+            index
+            +
+            term.Length
+            >
+            text.Length)
+        {
+            return false;
+        }
+
+
+        var comparison =
+            entry.CaseSensitive
+
+            ? StringComparison.Ordinal
+
+            : StringComparison.OrdinalIgnoreCase;
+
+
+        if (
+            !text.AsSpan(
+                    index,
+                    term.Length)
+                .Equals(
+                    term.AsSpan(),
+                    comparison))
+        {
+            return false;
+        }
+
+
+        // =================================
+        // LEFT WORD BOUNDARY
+        // =================================
+
+        if (
+            NeedsLeftBoundary(
+                term)
+            &&
+            index > 0
+            &&
+            IsWordCharacter(
+                text[index - 1]))
+        {
+            return false;
+        }
+
+
+        // =================================
+        // RIGHT WORD BOUNDARY
+        // =================================
+
+        var end =
+            index
+            +
+            term.Length;
+
+
+        if (
+            NeedsRightBoundary(
+                term)
+            &&
+            end < text.Length
+            &&
+            IsWordCharacter(
+                text[end]))
+        {
+            return false;
+        }
+
+
+        return true;
+    }
+
+
+    // =====================================
+    // WORD-BOUNDARY HELPERS
+    // =====================================
+
+    private static bool NeedsLeftBoundary(
+        string term)
+    {
+        return
+            term.Length > 0
+            &&
+            IsWordCharacter(
+                term[0]);
+    }
+
+
+    private static bool NeedsRightBoundary(
+        string term)
+    {
+        return
+            term.Length > 0
+            &&
+            IsWordCharacter(
+                term[^1]);
+    }
+
+
+    private static bool IsWordCharacter(
+        char value)
+    {
+        return
+            char.IsLetterOrDigit(
+                value)
+            ||
+            value == '_';
+    }
+
+
+    // =====================================
+    // RENDER A GENERATED PIECE
+    // =====================================
+
+    private RenderFragment RenderPieceContent(
+        FormattedLorePiece piece)
+    {
+        return builder =>
+        {
+            // =================================
+            // NO-OVERLAY TEXT
+            //
+            // Render it directly. Do NOT pass
+            // it into GlossaryText, otherwise
+            // a shorter term could activate
+            // inside the protected phrase.
+            // =================================
+
+            if (
+                piece.SuppressGlossary)
+            {
+                RenderPlainText(
+                    builder,
+                    piece.Text);
+
+                return;
+            }
+
+
+            // =================================
+            // NORMAL TEXT
+            //
+            // Existing GlossaryText continues
+            // to handle all ordinary glossary
+            // matching and tooltip rendering.
+            // =================================
+
+            builder.OpenComponent<GlossaryText>(
+                0);
+
+
+            builder.AddAttribute(
+                1,
+                nameof(GlossaryText.Text),
+                piece.Text);
+
+
+            builder.AddAttribute(
+                2,
+                nameof(GlossaryText.Context),
+                Context);
+
+
+            builder.CloseComponent();
+        };
+    }
+
+
+    // =====================================
+    // RENDER PLAIN TEXT WITH LINE BREAKS
+    // =====================================
+
+    private static void RenderPlainText(
+        Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder builder,
+        string text)
+    {
+        if (
+            string.IsNullOrEmpty(
+                text))
+        {
+            return;
+        }
+
+
+        var normalized =
+            text
+                .Replace(
+                    "\r\n",
+                    "\n")
+                .Replace(
+                    '\r',
+                    '\n');
+
+
+        var lines =
+            normalized.Split(
+                '\n');
+
+
+        for (
+            var index = 0;
+            index < lines.Length;
+            index++)
+        {
+            if (
+                index > 0)
+            {
+                builder.OpenElement(
+                    index * 2,
+                    "br");
+
+                builder.CloseElement();
+            }
+
+
+            builder.AddContent(
+                index * 2 + 1,
+                lines[index]);
+        }
+    }
+
+
+    // =====================================
+    // GENERATED PIECE MODEL
+    // =====================================
+
+    private sealed class FormattedLorePiece
+    {
+        public string Text { get; set; } =
+            string.Empty;
+
+
+        public bool Bold { get; set; }
+
+
+        public bool Italic { get; set; }
+
+
+        public bool SuppressGlossary { get; set; }
+    }
+
+}

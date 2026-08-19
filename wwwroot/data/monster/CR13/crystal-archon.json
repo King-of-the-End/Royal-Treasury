@@ -1,0 +1,248 @@
+{
+  "Name": "Crystal Archon",
+  "Group": "Archons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A rarity among their kind, the crystal archon is seldom emotional. Though it is dedicated to the forces of good it is a stoic entity, concerned more with the forces of order and law in the universe. Their bodies are humanoid, but are made of a crystal substance resembling ammolite. Behind them float golden arches in place of wings. The crystal archon is a prolific spellcaster, well-versed in the arcane and most capable of dispatching other mages.\n\nThe archon’s duties involve staying abreast of advancements in various schools of arcana among mortals, and is dispatched to the Material Plane when their expertise might be necessary. Many are employed under Vestias, and among those numbers there are various crystal archons with joint leadership: they serve Vestias, but also report to other Eidolons if Vestias’ pursuits seem untoward.\n\nThanks to the crystal bodies they possess, these archons are naturally resistant to physical damage. They often arrogantly deem there to be no need to avoid the weapons of mortals, which clatter helplessly against their skin.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Crystal%20Archon.jpg",
+  "Stat Blocks": [
+    {
+      "id": "crystal_archon",
+      "section_type": "Stat Block",
+      "title": "Crystal Archon",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial (archon)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "117 (18d8 + 36)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)",
+        "teleport": "60 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "magic immunity 5th"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 21,
+          "modifier": "+5"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Int +10",
+        "Wis +6",
+        "Cha +8"
+      ],
+      "skills": [
+        "Arcana +10",
+        "Insight +5",
+        "History +10"
+      ],
+      "resistances": [
+        "piercing",
+        "slashing",
+        "bludgeoning"
+      ],
+      "immunities": [
+        "lightning",
+        "radiant",
+        "poison",
+        "necrotic",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "truesight 30 ft.",
+        "blindsight 60 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "13 (10,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Aura of Pacification",
+          "name_format": "bold_italic",
+          "description": "A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 16 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 13 or lower for 24 hours."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "detect magic",
+                  "dispel magic",
+                  "continual flame",
+                  "protection from evil and good",
+                  "sacred flame"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon is a 15th-level spellcaster. Their spellcasting ability is Intelligence. They have the following spells prepared:",
+          "spellcasting": {
+            "caster_level": "15th-level",
+            "spellcasting_ability": "Intelligence",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dancing lights",
+                  "toll the dead"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "absorb energy",
+                  "disguise self",
+                  "magic missile"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "detect thoughts",
+                  "hold person",
+                  "mental tether"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "hypnotic pattern",
+                  "major image"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "eidomantic feedback",
+                  "psychic lance"
+                ]
+              },
+              {
+                "frequency": "5th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "mislead",
+                  "modify memory",
+                  "power word forget",
+                  "synaptic static"
+                ]
+              },
+              {
+                "frequency": "6th level (1 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "arcane gate",
+                  "nightmare cell"
+                ]
+              },
+              {
+                "frequency": "7th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "reverse gravity",
+                  "sequester"
+                ]
+              },
+              {
+                "frequency": "8th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "maze",
+                  "power word truth"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The archon uses its Spiral Contortion twice, then its Gravity Well once."
+        },
+        {
+          "name": "Spiral Contortion",
+          "name_format": "bold_italic",
+          "description": "A creature within 60 feet is subjected to a blast of arcane energy, and must succeed on a DC 18 Dexterity saving throw against this magic effect, taking 33 (5d12) fire, cold, lightning or radiant damage on a failure (the archon chooses which)."
+        },
+        {
+          "name": "Gravity Well",
+          "name_format": "bold_italic",
+          "description": "The archon increases the force of gravity around one creature within 60 feet, which must succeed a DC 18 Strength saving throw. On a failure their movement speed is reduced to 0 until the start of the archon’s next turn."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Counterspell",
+          "name_format": "bold_italic",
+          "description": "The archon casts counterspell, requiring no spell slot or components. It uses Intelligence as its spellcasting ability."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**CRYSTAL ARCHON**\n*Medium celestial (archon), lawful good*\n**Armor Class** 16 (natural armor)\n**Hit Points** 117 (18d8 + 36)\n**Speed** 30 ft., fly 60 ft. (hover), teleport 60 ft.\n**Quality Traits** Anchored, magic immunity 5th\n**STR** 13 (+1) | **DEX** 16 (+3) | **CON** 14 (+2) | **INT** 21 (+5) | **WIS** 12 (+1) | **CHA** 16 (+3)\n**Saving Throws** Int +10, Wis +6, Cha +8\n**Skills** Arcana +10, Insight +5, History +10\n**Resistances** piercing, slashing, bludgeoning\n**Immunities** lightning, radiant, poison, necrotic; B/S/P (magical)\n**Condition Immunities** blinded, charmed, exhaustion, paralyzed, petrified, poisoned\n**Senses** truesight 30 ft., blindsight 60 ft., passive Perception 11\n**Languages** all, telepathy 120 ft.\n**Challenge Rating** 13 (10,000 XP) **Prof Bonus** +5\n\n***Aura of Pacification.*** A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 16 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 13 or lower for 24 hours.\n\n***Innate Spellcasting.*** The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n\n• ***At will:*** detect magic, dispel magic, continual flame, protection from evil and good, sacred flame\n\n***Spellcasting.*** The archon is a 15th-level spellcaster. Their spellcasting ability is Intelligence. They have the following spells prepared:\n\n• ***Cantrips (at will):*** dancing lights, toll the dead\n• ***1st level (4 slots):*** absorb energy, disguise self, magic missile\n• ***2nd level (3 slots):*** detect thoughts, hold person, mental tether\n• ***3rd level (3 slots):*** hypnotic pattern, major image\n• ***4th level (3 slots):*** eidomantic feedback, psychic lance\n• ***5th level (2 slots):*** mislead, modify memory, power word forget, synaptic static\n• ***6th level (1 slots):*** arcane gate, nightmare cell\n• ***7th level (1 slot):*** reverse gravity, sequester\n• ***8th level (1 slot):*** maze, power word truth\n\n**ACTIONS**\n***Multiattack.*** The archon uses its Spiral Contortion twice, then its Gravity Well once.\n\n***Spiral Contortion.*** A creature within 60 feet is subjected to a blast of arcane energy, and must succeed on a DC 18 Dexterity saving throw against this magic effect, taking 33 (5d12) fire, cold, lightning or radiant damage on a failure (the archon chooses which).\n\n***Gravity Well.*** The archon increases the force of gravity around one creature within 60 feet, which must succeed a DC 18 Strength saving throw. On a failure their movement speed is reduced to 0 until the start of the archon’s next turn.\n\n**Reactions**\n***Counterspell.*** The archon casts counterspell, requiring no spell slot or components. It uses Intelligence as its spellcasting ability."
+    }
+  ]
+}

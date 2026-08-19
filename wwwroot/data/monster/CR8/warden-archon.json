@@ -1,0 +1,175 @@
+{
+  "Name": "Warden Archon",
+  "Group": "Archons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Bear-like archons that stand nearly ten feet tall, with fur, a head, and claws that resemble black or polar bears, though sometimes have red, gold or silver fur, and otherwise have humanoid appearances. They wear plate armor that covers their entire body, and stand watch over the entrances to the upper planes and divine realms therein. Warden archons are acutely intelligent, but their distaste for conflict leads to them playing dumb or allowing themselves to seem less sharp than they truly are. They are prone to telepathic communication above all others.\n\nWarden archons equally serve the Eidolons of the upper planes, but those who require jailors, judges and record-keepers find them the most useful. Despite existing on a lower plane, Vestias’ Crossroads and Tower of Binding have various archons who work for them, though they are notably more sinister due to the influence of the Gloomlush.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference%20-%20Warden%20Archon.jpg",
+  "Stat Blocks": [
+    {
+      "id": "warden_archon",
+      "section_type": "Stat Block",
+      "title": "Warden Archon",
+      "creature": {
+        "size": "Large",
+        "type": "celestial (archon)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "18 (plate)",
+      "hit_points": "114 (12d10 + 48)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft.",
+        "teleport": "30 ft."
+      },
+      "quality_traits": [
+        "Anchored"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "CON": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Con +7",
+        "Wis +5",
+        "Cha +5"
+      ],
+      "skills": [
+        "Athletics +9",
+        "Insight +10",
+        "Perception +5"
+      ],
+      "immunities": [
+        "lightning",
+        "poison",
+        "radiant",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 15 (20 w/scent or hearing)"
+      ],
+      "languages": [
+        "all",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "8 (3900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Aura of Pacification",
+          "name_format": "bold_italic",
+          "description": "A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 13 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 8 or lower for 24 hours."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "clairvoyance",
+                  "continual flame",
+                  "protection from evil and good",
+                  "sacred flame",
+                  "sending"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "banishment",
+                  "scrying"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "guiding bolt"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Keen Awareness",
+          "name_format": "bold_italic",
+          "description": "The archon has advantage on Wisdom (Perception) and Intelligence (Investigation) checks that rely on hearing or scent. Furthermore they are always aware of their surroundings, and cannot be surprised. If unconscious when initiative is rolled they awaken immediately, even if their slumber is magically induced."
+        },
+        {
+          "name": "Unbroken Gaze",
+          "name_format": "bold_italic",
+          "description": "When an archon casts any divination spell, it always acts as if it has first-hand knowledge of its target, the most optimal conditions for detecting them, and its spells cannot be deterred by spells or effects that interfere with divination or alter a creature’s nature."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The archon makes two Claw attacks and one Bite attack."
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage. If the target is Medium or smaller they must succeed on a DC 17 Dexterity saving throw or be restrained and grappled (escape DC 19). At the start of the archon’s turn, if it is grappling a creature this way, that creature takes 11 (2d10) bludgeoning damage from the archon’s crushing grip.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**WARDEN ARCHON**\n*Large celestial (archon), lawful good*\n**Armor Class** 18 (plate)\n**Hit Points** 114 (12d10 + 48)\n**Speed** 30 ft., climb 30 ft., teleport 30 ft.\n**Quality Traits** Anchored\n**STR** 22 (+6) | **DEX** 11 (-) | **CON** 19 (+4) | **INT** 19 (+4) | **WIS** 14 (+2) | **CHA** 14 (+2)\n**Saving Throws** Con +7, Wis +5, Cha +5\n**Skills** Athletics +9, Insight +10, Perception +5\n**Immunities** lightning, poison, radiant; B/S/P (magical)\n**Condition Immunities** paralyzed, petrified, poisoned\n**Senses** darkvision 120 ft., passive Perception 15 (20 w/scent or hearing)\n**Languages** all, telepathy 60 ft.\n**Challenge Rating** 8 (3900 XP) **Prof Bonus** +3\n\n***Aura of Pacification.*** A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 13 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 8 or lower for 24 hours.\n\n***Innate Spellcasting.*** The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** clairvoyance, continual flame, protection from evil and good, sacred flame, sending\n• ***1/Day each:*** banishment, scrying\n• ***2/Day each:*** guiding bolt\n\n***Keen Awareness.*** The archon has advantage on Wisdom (Perception) and Intelligence (Investigation) checks that rely on hearing or scent. Furthermore they are always aware of their surroundings, and cannot be surprised. If unconscious when initiative is rolled they awaken immediately, even if their slumber is magically induced.\n\n***Unbroken Gaze.*** When an archon casts any divination spell, it always acts as if it has first-hand knowledge of its target, the most optimal conditions for detecting them, and its spells cannot be deterred by spells or effects that interfere with divination or alter a creature’s nature.\n\n**ACTIONS**\n***Multiattack.*** The archon makes two Claw attacks and one Bite attack.\n\n***Claw.*** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 15 (2d8 + 6) slashing damage.\n\n***Bite.*** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 17 (2d10 + 6) piercing damage. If the target is Medium or smaller they must succeed on a DC 17 Dexterity saving throw or be restrained and grappled (escape DC 19). At the start of the archon’s turn, if it is grappling a creature this way, that creature takes 11 (2d10) bludgeoning damage from the archon’s crushing grip."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "Name": "Hound Archon",
+  "Group": "Archons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Large humanoid beasts with brightly colored skin, imposing muscular bodies, and heads like canines. They are swift and versatile warriors, who are the most common type of archon soldier found in the upper planes. They have the ability to transform into any canine creature to blend in within the Material Plane, including assuming the large form of dangerous dogs the size of horses. They are often sent to other planes, not the least of which is the Material Plane, to perform their duties.\n\nHound archons are found in the service of many of the eidolons inhabiting the upper planes, but in particular they would be found in the service of Harros. His hound archons possess brilliant swords with red iron blades and manes of golden hair, setting them apart from hounds that serve other divine beings.\n\nHound archons are often accompanied by blink dogs with lantern archons assigned to them, which the blink dog has a telepathic bond with.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Hound%20Archon.jpg",
+  "Stat Blocks": [
+    {
+      "id": "hound_archon",
+      "section_type": "Stat Block",
+      "title": "Hound Archon",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial (archon)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "75 (10d8 + 30)",
+      "speed": {
+        "walk": "30 ft.",
+        "hound_form": "50 ft.",
+        "teleport": "30 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +5"
+      ],
+      "skills": [
+        "Athletics +6",
+        "Insight +7",
+        "Perception +7"
+      ],
+      "immunities": [
+        "lightning",
+        "poison",
+        "radiant",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "4 (1100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Aura of Pacification",
+          "name_format": "bold_italic",
+          "description": "A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 13 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 4 or lower for 24 hours."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "aid",
+                  "continual flame",
+                  "protection from evil and good",
+                  "sacred flame"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "bless",
+                  "dimension door",
+                  "thunderous leap"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "weapon of domination"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The archon makes two Greatsword attacks, or it makes one Bite attack and two Claw attacks."
+        },
+        {
+          "name": "Greatsword (Humanoid Form)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 4 (1d6) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bite (Hound or Humanoid Form)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 4) piercing damage. If the target is as large or smaller than the archon it is grappled and restrained (escape DC 16).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw (Hound or Humanoid Form)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The archon magically assumes the form of a Small, Medium or Large canine, or returns to its true form. While in the form of a canine it has advantage on Dexterity (stealth) checks and its movement speed becomes 50 ft., but otherwise its statistics remain the same. When in hound form its equipment and items meld into its new form. The archon returns to its true form when killed."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**HOUND ARCHON**\n*Medium celestial (archon), lawful good*\n**Armor Class** 16 (natural armor)\n**Hit Points** 75 (10d8 + 30)\n**Speed** 30 ft., 50 ft. (hound form), teleport 30 ft.\n**Quality Traits** Anchored, magic resist\n**STR** 19 (+4) | **DEX** 16 (+3) | **CON** 16 (+3) | **INT** 13 (+1) | **WIS** 16 (+3) | **CHA** 15 (+2)\n**Saving Throws** Dex +5\n**Skills** Athletics +6, Insight +7, Perception +7\n**Immunities** lightning, poison, radiant; B/S/P (magical)\n**Condition Immunities** exhaustion, paralyzed, petrified, poisoned\n**Senses** darkvision 60 ft., passive Perception 17\n**Languages** all\n**Challenge Rating** 4 (1100 XP) **Proficiency Bonus** +2\n\n***Aura of Pacification.*** A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 13 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 4 or lower for 24 hours.\n\n***Innate Spellcasting.*** The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** aid, continual flame, protection from evil and good, sacred flame\n• ***1/Day each:*** bless, dimension door, thunderous leap\n• ***2/Day each:*** weapon of domination\n\n**ACTIONS**\n***Multiattack.*** The archon makes two Greatsword attacks, or it makes one Bite attack and two Claw attacks.\n\n***Greatsword (Humanoid Form).*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6 + 4) slashing damage plus 4 (1d6) radiant damage.\n\n***Bite (Hound or Humanoid Form).*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (1d10 + 4) piercing damage. If the target is as large or smaller than the archon it is grappled and restrained (escape DC 16).\n\n***Claw (Hound or Humanoid Form).*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (1d8 + 4) slashing damage.\n\n**Bonus Actions**\n***Change Shape.*** The archon magically assumes the form of a Small, Medium or Large canine, or returns to its true form. While in the form of a canine it has advantage on Dexterity (stealth) checks and its movement speed becomes 50 ft., but otherwise its statistics remain the same. When in hound form its equipment and items meld into its new form. The archon returns to its true form when killed."
+    }
+  ]
+}

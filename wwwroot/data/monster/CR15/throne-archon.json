@@ -1,0 +1,227 @@
+{
+  "Name": "Throne Archon",
+  "Group": "Archons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The rulers of archons within the upper planes. These archons are massive humanoids of the utmost wisdom and conviction, featuring flawless appearances, gold skin, beautiful hair and pure blue eyes. They are beings embodying comfort and love, but feel to evil-doers like endless voids of anger and unfeeling judgment. Their gaze could unsettle and exhaust the evilest of creatures, and the swords they carry could instantly sever the life of its prey.\n\nThrone archons rule many of the cities and settlements in the upper planes that Eidolons and other divine beings can not directly watch over. They are non-violent, preferring to avoid combat to an even greater degree than their fellow archons. Their authority is only outmatched by gods, the few existing tome archons, and greater celestial beings.\n\nThese guardians of the domain of gods see no need to enter the Material Plane, and dislike leaving their posts for any reason. They are beings of duty and reason, and so act as judges and arbitrators when deliberation between celestial beings of high standing is required.\n\n**Celestial Possession**\n\nOnce per day, a throne archon can grant its powers to a willing humanoid it wishes to, requiring an action to do so. The humanoid acquires the powers of the archon for a brief period of time. The creature must be lawful in alignment, and for the period of possession gains the following traits from the archon:\n\n- The creature gains a fly (hover) speed of 60 feet.\n- The archon’s Innate Spellcasting feature, with whatever spells the archon has remaining at the time. Spells cast by either the mortal or the archon are consumed by the other.\n- Temporary hit points equal to half of the archon’s current hit points.\n- Their AC becomes 18 if it wasn’t already.\n- Truesight out to 30 feet.\n- The archon’s vorpal greatsword, adjusting its attack and damage modifiers based on their own ability scores, as well as the effect DC (8 + Strength modifier + proficiency bonus). They can summon or dispel this sword at will.\n- The archon’s Magic Resistance.\n- The creature’s proficiency bonus becomes equal to the Archons unless it was higher already.\n- The archon’s Alignment Discernment.\n\nWhen the creature’s temporary hit points are lost, the archon chooses to end the effect, or the archon is killed or destroyed, the effect ends. A creature who had a proficiency bonus lower than the archon’s suffers a level of exhaustion when the effect ends.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Reference%20-%20Throne%20Archon.jpg",
+  "Stat Blocks": [
+    {
+      "id": "throne_archon",
+      "section_type": "Stat Block",
+      "title": "Throne Archon",
+      "creature": {
+        "size": "Large",
+        "type": "celestial (archon)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "20 (plate, natural armor)",
+      "hit_points": "189 (18d10 + 90)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft. (hover)",
+        "teleport": "60 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "critical 18",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 25,
+          "modifier": "+7"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 23,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Wis +7",
+        "Cha +11"
+      ],
+      "skills": [
+        "Athletics +11",
+        "Intimidation +11",
+        "History +12",
+        "Perception +7"
+      ],
+      "immunities": [
+        "lightning",
+        "poison",
+        "radiant",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "truesight 30 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "all",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "15 (13,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Aura of Pacification",
+          "name_format": "bold_italic",
+          "description": "A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 19 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 15 or lower for 24 hours."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "continual flame",
+                  "protection from evil and good",
+                  "sacred flame",
+                  "zone of truth"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "divine word",
+                  "gate",
+                  "sunburst",
+                  "resurrection",
+                  "whirlwind"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The archon uses its Penitentiary Gaze, then makes three Vorpal Greatsword attacks."
+        },
+        {
+          "name": "Vorpal Greatsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) slashing damage plus 9 (2d8) force damage. If this weapon attack rolls a d20 result of 20 and the target has a head or other vital organ that can be severed, they must succeed on a DC 19 Constitution saving throw or suffer a slashing wound that kills them instantly. On a success, they take 10d8 force damage instead (though still suffer the weapon damage in addition to this). Creatures resistant to slashing damage have advantage on this save, and creatures immune to slashing damage succeed automatically. If the target has Legendary Actions, they are reduced to half their current health or take 100 force damage (whichever is higher) on a success instead of being killed instantly.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Penitentiary Gaze",
+          "name_format": "bold_italic",
+          "description": "One creature of the Archon’s choice that it can see within 60 feet and who can also see the archon must succeed on a DC 19 Charisma saving throw, or suffer one level of exhaustion. A lawful good creature automatically succeeds. Any creature that succeeds their save against this effect is unaffected by it for 24 hours. Additionally, the consequences of failure may be greater based on their alignment, for instance:",
+          "options": [
+            {
+              "name": "Evil",
+              "name_format": "bold_italic",
+              "description": "The creature takes 14 (3d8) poison damage and is poisoned for 1 minute. They make a DC 19 Constitution saving throw at the end of each of their turns, ending the effect on a success."
+            },
+            {
+              "name": "Neutral",
+              "name_format": "bold_italic",
+              "description": "The creature is blinded. They make a DC 19 Constitution saving throw at the end of each of their turns, ending the effect on a success."
+            },
+            {
+              "name": "Chaotic",
+              "name_format": "bold_italic",
+              "description": "The creature takes 14 (3d8) psychic damage and is stunned until the start of the archon’s next turn."
+            }
+          ]
+        },
+        {
+          "name": "Summon Archons (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The archon summons 1d4 sword archons, 1d6 hound archons and 2d6 lantern archons, which all appear in unoccupied spaces within 60 feet of the archon. These archons cannot themselves summon other archons, and return from whence they came after 1 minute has passed."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Aura of Menace",
+          "name_format": "bold_italic",
+          "description": "The archon forces all creatures within 60 feet that can see or hear it to make a DC 19 Wisdom saving throw. Each creature that fails is frightened for 1 minute, and may repeat the save at the end of each of their turns, ending the effect on a success. Creatures who succeed either save are unaffected by this effect or the Pacifying Aura of any CR 15 or lower archon for 24 hours."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "Teleport",
+            "name_format": "bold_italic",
+            "description": "The archon magically teleports to an unoccupied space within 120 feet."
+          },
+          {
+            "name": "Command Subordinate",
+            "name_format": "bold_italic",
+            "description": "An archon under the throne archon’s command may use their reaction to move up to half their movement speed and make a single weapon attack with advantage."
+          },
+          {
+            "name": "Cast Spell (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "An archon under the throne archon’s command may use their reaction to move up to half their movement speed and make a single weapon attack with advantage."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold",
+          "Legendary Reactions": "bold"
+        }
+      },
+      "raw_text": "**THRONE ARCHON**\n*Large celestial (archon), lawful good*\n**Armor Class** 20 (plate, natural armor)\n**Hit Points** 189 (18d10 + 90)\n**Speed** 30 ft., fly 90 ft. (hover), teleport 60 ft.\n**Quality Traits** Anchored, critical 18, magic resist\n**STR** 22 (+6) | **DEX** 14 (+2) | **CON** 20 (+5) | **INT** 25 (+7) | **WIS** 15 (+2) | **CHA** 23 (+6)\n**Saving Throws** Dex +7, Wis +7, Cha +11\n**Skills** Athletics +11, Intimidation +11, History +12, Perception +7\n**Immunities** lightning, poison, radiant; B/S/P (magical)\n**Condition Immunities** exhaustion, frightened, paralyzed, petrified, poisoned\n**Senses** truesight 30 ft., darkvision 120 ft., passive Perception 17\n**Languages** all, telepathy 60 ft.\n**Challenge Rating** 15 (13,000 XP) **Prof Bonus** +5\n\n***Aura of Pacification.*** A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 19 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 15 or lower for 24 hours.\n\n***Innate Spellcasting.*** The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** continual flame, protection from evil and good, sacred flame, zone of truth\n• ***1/Day each:*** divine word, gate, sunburst, resurrection, whirlwind\n\n**ACTIONS**\n***Multiattack.*** The archon uses its Penitentiary Gaze, then makes three Vorpal Greatsword attacks.\n\n***Vorpal Greatsword.*** *Melee Weapon Attack:* +11 to hit, reach 5 ft., one target. *Hit:* 20 (4d6 + 6) slashing damage plus 9 (2d8) force damage. If this weapon attack rolls a d20 result of 20 and the target has a head or other vital organ that can be severed, they must succeed on a DC 19 Constitution saving throw or suffer a slashing wound that kills them instantly. On a success, they take 10d8 force damage instead (though still suffer the weapon damage in addition to this). Creatures resistant to slashing damage have advantage on this save, and creatures immune to slashing damage succeed automatically. If the target has Legendary Actions, they are reduced to half their current health or take 100 force damage (whichever is higher) on a success instead of being killed instantly.\n\n***Penitentiary Gaze.*** One creature of the Archon’s choice that it can see within 60 feet and who can also see the archon must succeed on a DC 19 Charisma saving throw, or suffer one level of exhaustion. A lawful good creature automatically succeeds. Any creature that succeeds their save against this effect is unaffected by it for 24 hours. Additionally, the consequences of failure may be greater based on their alignment, for instance:\n• ***Evil.*** The creature takes 14 (3d8) poison damage and is poisoned for 1 minute. They make a DC 19 Constitution saving throw at the end of each of their turns, ending the effect on a success.\n• ***Neutral.*** The creature is blinded. They make a DC 19 Constitution saving throw at the end of each of their turns, ending the effect on a success.\n• ***Chaotic.*** The creature takes 14 (3d8) psychic damage and is stunned until the start of the archon’s next turn.\n\n***Summon Archons (1/Rest).*** The archon summons 1d4 sword archons, 1d6 hound archons and 2d6 lantern archons, which all appear in unoccupied spaces within 60 feet of the archon. These archons cannot themselves summon other archons, and return from whence they came after 1 minute has passed.\n\n**Bonus Actions**\n***Aura of Menace.*** The archon forces all creatures within 60 feet that can see or hear it to make a DC 19 Wisdom saving throw. Each creature that fails is frightened for 1 minute, and may repeat the save at the end of each of their turns, ending the effect on a success. Creatures who succeed either save are unaffected by this effect or the Pacifying Aura of any CR 15 or lower archon for 24 hours.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Teleport.*** The archon magically teleports to an unoccupied space within 120 feet.\n\n***Command Subordinate.*** An archon under the throne archon’s command may use their reaction to move up to half their movement speed and make a single weapon attack with advantage.\n\n***Cast Spell (Costs 2 Actions).*** An archon under the throne archon’s command may use their reaction to move up to half their movement speed and make a single weapon attack with advantage.\n\n**LEGENDARY REACTIONS (3 REACTIONS)**\nTBA"
+    }
+  ]
+}

@@ -234,7 +234,7 @@ else
                         {
                             <p class="monster-detail-information">
 
-                                <GlossaryText
+                                <FormattedGlossaryText
                                     Text="@monster.Information"
                                     Context="GlossaryContext.General" />
 
@@ -272,7 +272,7 @@ else
                                 monster.Refinement.Description))
                         {
                             <p>
-                                <GlossaryText
+                                <FormattedGlossaryText
                                     Text="@monster.Refinement.Description"
                                     Context="GlossaryContext.General" />
                             </p>
@@ -289,7 +289,7 @@ else
                                     in monster.Refinement.Notes)
                                 {
                                     <li>
-                                        <GlossaryText
+                                        <FormattedGlossaryText
                                             Text="@note"
                                             Context="GlossaryContext.General" />
                                     </li>
@@ -391,46 +391,9 @@ else
                             {
                                 <p>
 
-                                    @foreach (
-                                        var span
-                                        in paragraph.Spans)
-                                    {
-                                        @if (
-                                            span.Bold
-                                            &&
-                                            span.Italic)
-                                        {
-                                            <strong>
-                                                <em>
-                                                    <GlossaryText
-                                                        Text="@span.Text"
-                                                        Context="GlossaryContext.General" />
-                                                </em>
-                                            </strong>
-                                        }
-                                        else if (span.Bold)
-                                        {
-                                            <strong>
-                                                <GlossaryText
-                                                    Text="@span.Text"
-                                                    Context="GlossaryContext.General" />
-                                            </strong>
-                                        }
-                                        else if (span.Italic)
-                                        {
-                                            <em>
-                                                <GlossaryText
-                                                    Text="@span.Text"
-                                                    Context="GlossaryContext.General" />
-                                            </em>
-                                        }
-                                        else
-                                        {
-                                            <GlossaryText
-                                                Text="@span.Text"
-                                                Context="GlossaryContext.General" />
-                                        }
-                                    }
+                                    <FormattedGlossaryText
+                                        Spans="@paragraph.Spans"
+                                        Context="GlossaryContext.General" />
 
                                 </p>
                             }
@@ -446,7 +409,7 @@ else
                                         in loreSection.Bullets)
                                     {
                                         <li>
-                                            <GlossaryText
+                                            <FormattedGlossaryText
                                                 Text="@bullet.Text"
                                                 Context="GlossaryContext.General" />
                                         </li>

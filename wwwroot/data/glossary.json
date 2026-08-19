@@ -614,5 +614,19 @@
     "CaseSensitive": false,
     "NoOverlay": false,
     "Contexts": ["CreatureLine"]
-  }
+  },
+  {
+  "Term": "Teleport without Error",
+  "Definition": "",
+  "CaseSensitive": false,
+  "NoOverlay": true,
+  "Contexts": []
+},
+{
+  "Term": "Teleport Spell",
+  "Definition": "",
+  "CaseSensitive": false,
+  "NoOverlay": true,
+  "Contexts": []
+}
 ]

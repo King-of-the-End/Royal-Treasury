@@ -1,0 +1,177 @@
+{
+  "Name": "Justice Archon",
+  "Group": "Archons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Humanoid archons that resemble elves or humans, standing on average at 6 feet. These heavily armored warriors are quick to judge, seeking out fiends and evil-doers to enact retribution for their crimes. They are the most common archon to see charging into battle with the forces of evil, but their tendency to act quickly leads to them considering their own justice to be superior to their allies, and their vanity leads them to fall more often than other archons. It is not uncommon for a justice archon to accidentally harm innocents in their pursuit of justice.\n\nThey are resistant to magic, can evoke many radiant powers to smite their enemies, and fly about in a glorious manner that helps them seize control of a battlefield quickly. They can summon golden spears of radiant power to hurl at a distance, which fly with unnatural accuracy.\n\nThere are many of these archons in service to Vadreem, who considers their zealous nature to be a worthwhile attribute.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference%20%20-%20Justice%20Archon.jpg",
+  "Stat Blocks": [
+    {
+      "id": "justice_archon",
+      "section_type": "Stat Block",
+      "title": "Justice Archon",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial (archon)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "18 (plate)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft.",
+        "teleport": "30 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Cha +5"
+      ],
+      "skills": [
+        "Intimidation +5"
+      ],
+      "immunities": [
+        "lightning",
+        "radiant",
+        "poison",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "all",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "6 (2300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Aura of Pacification",
+          "name_format": "bold_italic",
+          "description": "A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 13 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 6 or lower for 24 hours."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "continual flame",
+                  "protection from evil and good",
+                  "sacred flame"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "banishing smite",
+                  "blinding smite",
+                  "harm"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "searing smite",
+                  "thunderous smite"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Zealous Rage (3/Day)",
+          "name_format": "bold_italic",
+          "description": "When the archon makes its first attack on its turn, it can choose to ignite its weapon with radiant power and swing wildly. Until the end of its turn, its attacks have advantage and deal an extra 1d10 radiant damage on a successful hit."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The archon makes two weapon attacks."
+        },
+        {
+          "name": "Glaive",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Radiant Spear",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 120 ft., one target. Hit: 13 (2d8 + 4) radiant damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Reflective Armament",
+          "name_format": "bold_italic",
+          "description": "If the archon is dealt damage of a type apart from piercing, slashing or bludgeoning, it can enchant its own weapon with that element, causing that weapon to deal 2d6 extra damage of that type (and change the radiant damage from Zealous Rage to that type as well, should they wish). This effect ends after 1 minute, or when this feature is used again."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**JUSTICE ARCHON**\n*Medium celestial (archon), lawful good*\n**Armor Class** 18 (plate)\n**Hit Points** 65 (10d8 + 20)\n**Speed** 30 ft., fly 60 ft., teleport 30 ft.\n**Quality Traits** Anchored, magic resist\n**STR** 18 (+4) | **DEX** 12 (+1) | **CON** 15 (+2) | **INT** 13 (+1) | **WIS** 15 (+2) | **CHA** 15 (+2)\n**Saving Throws** Dex +5, Cha +5\n**Skills** Intimidation +5\n**Immunities** lightning, radiant, poison; B/S/P (magical)\n**Condition Immunities** exhaustion, paralyzed, petrified, poisoned\n**Senses** darkvision 60 ft., passive Perception 12\n**Languages** all, telepathy 60 ft.\n**Challenge Rating** 6 (2300 XP) **Proficiency Bonus** +3\n\n***Aura of Pacification.*** A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 13 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 6 or lower for 24 hours.\n\n***Innate Spellcasting.*** The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** continual flame, protection from evil and good, sacred flame\n• ***1/Day each:*** banishing smite, blinding smite, harm\n• ***2/Day each:*** searing smite, thunderous smite\n\n***Zealous Rage (3/Day).*** When the archon makes its first attack on its turn, it can choose to ignite its weapon with radiant power and swing wildly. Until the end of its turn, its attacks have advantage and deal an extra 1d10 radiant damage on a successful hit.\n\n**ACTIONS**\n***Multiattack.*** The archon makes two weapon attacks.\n\n***Glaive.*** *Melee Weapon Attack:* +7 to hit, reach 10 ft., one target. *Hit:* 15 (2d10 + 4) piercing damage.\n\n***Radiant Spear.*** *Ranged Weapon Attack:* +7 to hit, range 120 ft., one target. *Hit:* 13 (2d8 + 4) radiant damage.\n\n**Reactions**\n***Reflective Armament.*** If the archon is dealt damage of a type apart from piercing, slashing or bludgeoning, it can enchant its own weapon with that element, causing that weapon to deal 2d6 extra damage of that type (and change the radiant damage from Zealous Rage to that type as well, should they wish). This effect ends after 1 minute, or when this feature is used again."
+    }
+  ]
+}

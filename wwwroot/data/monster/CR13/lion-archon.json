@@ -1,0 +1,173 @@
+{
+  "Name": "Lion Archon",
+  "Group": "Archons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Lion archons are huge warriors with brilliant gold or red lion heads, but with bodies like humanoids. They wear striking red and gold breastplates that cover their body, and carry huge intimidating greatshields. These archons are servants of Harros in particular, and embody the tenants of protecting the weak. When they take to the battlefield beside other archons they are always on the front lines, striking with their greathammers and providing defense to their allies. Despite having no wings they can fly readily through the air, albeit at a slower pace than many of their fellow archons.\n\nLion archons are employed within the upper planes as guardians of important people and places, often working with warden archons to accomplish their goals. Despite their intimidating presence and overwhelming strength, they rarely take a leadership role out of choice, preferring to defend others and follow their commands.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Lion%20Archon.jpg",
+  "Stat Blocks": [
+    {
+      "id": "lion_archon",
+      "section_type": "Stat Block",
+      "title": "Lion Archon",
+      "creature": {
+        "size": "Large",
+        "type": "celestial (archon)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "20 (breastplate, greatshield)",
+      "threshold": "15",
+      "hit_points": "150 (20d10 + 40)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft. (hover)",
+        "teleport": "30 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Con +9",
+        "Wis +7"
+      ],
+      "skills": [
+        "Athletics +10",
+        "Intimidation +9",
+        "Perception +7"
+      ],
+      "immunities": [
+        "lightning",
+        "poison",
+        "radiant",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "all",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "13 (10,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Aura of Pacification",
+          "name_format": "bold_italic",
+          "description": "A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 17 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 13 or lower for 24 hours."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "continual flame",
+                  "protection from evil and good",
+                  "sacred flame"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "fear",
+                  "sunbeam",
+                  "wall of fire",
+                  "wall of radiance"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "daylight",
+                  "shield"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The archon makes two Golden Greathammer attacks."
+        },
+        {
+          "name": "Golden Greathammer",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 11 (2d10) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Earthquake (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The archon slams their hammer into the ground, causing a shockwave that spreads out in a 20-foot-radius sphere centered on them. Each creature in that space must succeed on a DC 18 Strength saving throw, taking 26 (4d12) force damage on a failed save, and if they are standing on the ground they are knocked prone."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Blinding Rebuke",
+          "name_format": "bold_italic",
+          "description": "When a creature attacks the archon with a melee attack from within 5 feet, the archon can cause their shield to flash brightly, forcing the attacker to make a DC 17 Constitution saving throw. On a failure, the attacker is blinded until the start of their next turn."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**LION ARCHON**\n*Large celestial (archon), lawful good*\n**Armor Class** 20 (breastplate, greatshield) **Threshold** 15\n**Hit Points** 150 (20d10 + 40)\n**Speed** 30 ft., fly 40 ft. (hover), teleport 30 ft.\n**Quality Traits** Anchored, magic resist\n**STR** 20 (+5) | **DEX** 13 (+1) | **CON** 18 (+4) | **INT** 13 (+1) | **WIS** 14 (+2) | **CHA** 18 (+4)\n**Saving Throws** Con +9, Wis +7\n**Skills** Athletics +10, Intimidation +9, Perception +7\n**Immunities** lightning, poison, radiant; B/S/P (magical)\n**Condition Immunities** charmed, exhaustion, paralyzed, petrified, poisoned\n**Senses** darkvision 60 ft., passive Perception 17\n**Languages** all, telepathy 60 ft.\n**Challenge Rating** 13 (10,000 XP) **Prof Bonus** +5\n\n***Aura of Pacification.*** A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 17 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 13 or lower for 24 hours.\n\n***Innate Spellcasting.*** The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** continual flame, protection from evil and good, sacred flame\n• ***1/Day each:*** fear, sunbeam, wall of fire, wall of radiance\n• ***2/Day each:*** daylight, shield\n\n**ACTIONS**\n***Multiattack.*** The archon makes two Golden Greathammer attacks.\n\n***Golden Greathammer.*** *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 14 (2d8 + 5) bludgeoning damage plus 11 (2d10) radiant damage.\n\n***Earthquake (Recharge 5-6).*** The archon slams their hammer into the ground, causing a shockwave that spreads out in a 20-foot-radius sphere centered on them. Each creature in that space must succeed on a DC 18 Strength saving throw, taking 26 (4d12) force damage on a failed save, and if they are standing on the ground they are knocked prone.\n\n**Reactions**\n***Blinding Rebuke.*** When a creature attacks the archon with a melee attack from within 5 feet, the archon can cause their shield to flash brightly, forcing the attacker to make a DC 17 Constitution saving throw. On a failure, the attacker is blinded until the start of their next turn."
+    }
+  ]
+}

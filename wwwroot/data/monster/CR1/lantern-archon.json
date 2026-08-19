@@ -1,0 +1,155 @@
+{
+  "Name": "Lantern Archon",
+  "Group": "Archons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The lowest form of archon, formed from the souls of recently deceased lawful good creatures that pledged their service in death to a being that could grant them this form. These illuminated beings resemble a point of glowing light surrounded by gold rings. Due to their status as new archons they primarily inhabit their plane of origin, helping to aid petitioners and guide newly arrived souls in the various afterlifes. They are as children among the archons, and have a single-minded love for helping other creatures to thrive.\n\nLantern archons exist in all of the upper planes, serving the good deities of Somnus Domina. There are an abundance in service to T’quinn in particular, who enjoys their kindness and purity.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Lantern%20Archon.jpg",
+  "Stat Blocks": [
+    {
+      "id": "lantern_archon",
+      "section_type": "Stat Block",
+      "title": "Lantern Archon",
+      "creature": {
+        "size": "Small",
+        "type": "celestial (archon)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "13 (natural armor)",
+      "hit_points": "28 (8d6)",
+      "speed": {
+        "walk": "5 ft.",
+        "fly": "40 ft. (hover)",
+        "teleport": "30 ft."
+      },
+      "quality_traits": [
+        "Anchored"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "skills": [
+        "Insight +3"
+      ],
+      "resistances": [],
+      "immunities": [
+        "lightning",
+        "poison",
+        "radiant",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 9"
+      ],
+      "languages": [
+        "all",
+        "telepathy 30 ft."
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Aura of Pacification",
+          "name_format": "bold_italic",
+          "description": "A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 13 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 1 or lower for 24 hours."
+        },
+        {
+          "name": "Illuminated Body",
+          "name_format": "bold_italic",
+          "description": "The archon’s body magically gives off 20 feet of bright light around it, with another 20 feet of dim light extending beyond that. This light cannot be suppressed by magical darkness of 4th level or lower."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "calm emotions",
+                  "sacred flame",
+                  "true strike"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dimension door",
+                  "protection from good and evil"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "healing word"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Radiant Rays",
+          "name_format": "bold_italic",
+          "description": "Two creatures the archon chooses within 30 feet of itself are assailed by radiant light and must succeed on a DC 13 Dexterity saving throw, taking 11 (2d10) radiant damage on a failure. If a lawful good creature fails this saving throw they take half as much damage."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Gentle Inspiration",
+          "name_format": "bold_italic",
+          "description": "The archon chooses one creature within 30 feet of it that is not evil, and grants them a temporary blessing for 1 minute. While they have this blessing, any time they make an attack roll, saving throw, or ability check they can spend it to roll 1d6 and add it to the result. A creature can only benefit from or carry one of these blessings at a time."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**LANTERN ARCHON**\n*Small celestial (archon), lawful good*\n**Armor Class** 13 (natural armor)\n**Hit Points** 28 (8d6)\n**Speed** 5 ft., fly 40 ft. (hover), teleport 30 ft.\n**Quality Traits** Anchored\n**STR** 7 (-2) | **DEX** 12 (+1) | **CON** 10 (-) | **INT** 6 (-2) | **WIS** 8 (-1) | **CHA** 16 (+3)\n**Skills** Insight +3\n**Resistances**\n**Immunities** lightning, poison, radiant; B/S/P (magical)\n**Condition Immunities** blinded, charmed, paralyzed, petrified, poisoned, prone\n**Senses** blindsight 60 ft., passive Perception 9\n**Languages** all, telepathy 30 ft.\n**Challenge Rating** 1 (200 XP) **Proficiency Bonus** +2\n\n***Aura of Pacification.*** A hostile creature that starts its turn within 30 feet of the archon or moves there for the first time on its turn must make a DC 13 Charisma saving throw. On a failure, the creature is frightened of the archon until the start of their next turn. A creature that succeeds this save is immune to the Aura of Pacification of all archons with a CR of 1 or lower for 24 hours.\n\n***Illuminated Body.*** The archon’s body magically gives off 20 feet of bright light around it, with another 20 feet of dim light extending beyond that. This light cannot be suppressed by magical darkness of 4th level or lower.\n\n***Innate Spellcasting.*** The archon’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** calm emotions, sacred flame, true strike\n• ***1/Day each:*** dimension door, protection from good and evil\n• ***2/Day each:*** healing word\n\n**ACTIONS**\n***Radiant Rays.*** Two creatures the archon chooses within 30 feet of itself are assailed by radiant light and must succeed on a DC 13 Dexterity saving throw, taking 11 (2d10) radiant damage on a failure. If a lawful good creature fails this saving throw they take half as much damage.\n\n**Bonus Actions**\n***Gentle Inspiration.*** The archon chooses one creature within 30 feet of it that is not evil, and grants them a temporary blessing for 1 minute. While they have this blessing, any time they make an attack roll, saving throw, or ability check they can spend it to roll 1d6 and add it to the result. A creature can only benefit from or carry one of these blessings at a time."
+    }
+  ]
+}
