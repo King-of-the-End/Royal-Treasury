@@ -1,9 +1,12 @@
 # ==========================================
 # ROYAL TREASURY
-# RENDER / .NET 10
+# RENDER DEPLOYMENT
 #
-# Versions are deliberately pinned instead
-# of using the floating "10.0" tags.
+# .NET SDK 10.0.301 is deliberately pinned.
+#
+# SDK 10.0.302 currently has a container
+# regression that can cause dotnet commands
+# to fail during Docker builds.
 # ==========================================
 
 
@@ -11,7 +14,7 @@
 # BUILD STAGE
 # ==========================================
 
-FROM mcr.microsoft.com/dotnet/sdk:10.0.302-noble AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0.301 AS build
 
 
 WORKDIR /src
@@ -19,9 +22,6 @@ WORKDIR /src
 
 # ==========================================
 # COPY PROJECT FILE FIRST
-#
-# This lets Docker cache NuGet restore when
-# only source files change.
 # ==========================================
 
 COPY ["Website of Everything.csproj", "./"]
@@ -35,7 +35,7 @@ RUN dotnet restore "./Website of Everything.csproj"
 
 
 # ==========================================
-# COPY PROJECT
+# COPY THE REST OF THE PROJECT
 # ==========================================
 
 COPY . .
@@ -46,39 +46,39 @@ COPY . .
 # ==========================================
 
 RUN dotnet publish "./Website of Everything.csproj" \
-    --configuration Release \
-    --output /app/publish \
-    --no-restore \
-    --use-current-runtime false
+    -c Release \
+    -o /app/publish \
+    --no-restore
 
 
 # ==========================================
 # RUNTIME STAGE
+#
+# SDK 10.0.301 ships with the .NET 10.0.9
+# runtime, so use the matching runtime here.
 # ==========================================
 
-FROM mcr.microsoft.com/dotnet/aspnet:10.0.10-noble AS final
+FROM mcr.microsoft.com/dotnet/aspnet:10.0.9 AS final
 
 
 WORKDIR /app
 
 
 # ==========================================
-# COPY PUBLISHED APP
+# COPY PUBLISHED APPLICATION
 # ==========================================
 
 COPY --from=build /app/publish .
 
 
 # ==========================================
-# RENDER
+# RENDER NETWORK CONFIGURATION
 #
-# Render's standard web-service port is
-# 10000.
+# Render expects the application to listen
+# on all interfaces.
 # ==========================================
 
 ENV ASPNETCORE_URLS=http://0.0.0.0:10000
-
-ENV ASPNETCORE_ENVIRONMENT=Production
 
 
 EXPOSE 10000
