@@ -106,7 +106,6 @@
             "spells": [
               {
                 "frequency": "Cantrips (at will)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "guidance",
                   "true strike"
@@ -114,7 +113,6 @@
               },
               {
                 "frequency": "1st level (4 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "charm person",
                   "command"
@@ -122,7 +120,6 @@
               },
               {
                 "frequency": "2nd level (3 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "scorching ray",
                   "hold person",
@@ -131,7 +128,6 @@
               },
               {
                 "frequency": "3rd level (3 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "deadly target",
                   "fear",
@@ -141,7 +137,6 @@
               },
               {
                 "frequency": "4th level (2 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "dimension door",
                   "greater invisibility"

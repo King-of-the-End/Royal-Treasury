@@ -96,7 +96,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "acceleration",
                   "fire whip (5th level)",
@@ -106,7 +105,6 @@
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "grand aspect of flames",
                   "greater invisibility",
@@ -117,7 +115,6 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "acceleration",
                   "burning web",
@@ -127,7 +124,6 @@
               },
               {
                 "frequency": "3/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "counterspell",
                   "shield"
@@ -136,7 +132,8 @@
             ],
             "notes": [
               "The elf does not make eidomancy checks."
-            ]
+            ],
+            "components": "none"
           }
         }
       ],

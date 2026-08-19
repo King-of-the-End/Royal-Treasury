@@ -99,7 +99,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "calm emotions",
                   "sacred flame",
@@ -108,7 +107,6 @@
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "dimension door",
                   "protection from good and evil"
@@ -116,12 +114,12 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "healing word"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         }
       ],

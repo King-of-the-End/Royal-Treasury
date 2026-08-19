@@ -100,7 +100,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "continual flame",
                   "protection from evil and good",
@@ -109,7 +108,6 @@
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "fear",
                   "sunbeam",
@@ -119,13 +117,13 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "daylight",
                   "shield"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         }
       ],

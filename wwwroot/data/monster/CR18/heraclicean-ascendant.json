@@ -91,7 +91,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "commune",
                   "enlarge/reduce"
@@ -99,7 +98,6 @@
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "conjure major steed",
                   "fear",
@@ -109,7 +107,6 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "golden spiral (6th level)",
                   "thunderous leap"
@@ -117,14 +114,14 @@
               },
               {
                 "frequency": "3/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "healing word (6th level)",
                   "shield",
                   "weapon of domination"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         },
         {

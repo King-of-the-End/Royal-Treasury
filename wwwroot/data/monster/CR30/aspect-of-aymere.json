@@ -98,7 +98,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "gravity bind",
                   "greater restoration",
@@ -108,7 +107,6 @@
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "earthquake",
                   "lashing willow",
@@ -118,14 +116,12 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "heal"
                 ]
               },
               {
                 "frequency": "3/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "corrosive smite",
                   "flash cure",

@@ -95,7 +95,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "biting curse",
                   "curse"
@@ -103,7 +102,6 @@
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "catastrophic shield",
                   "dread surge",
@@ -115,7 +113,6 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "greater invisibility",
                   "mass burdened blood",
@@ -123,7 +120,8 @@
                 ]
               }
             ],
-            "casting_level_note": "Their spells are cast as though at 4th level, unless their base level is higher."
+            "casting_level_note": "Their spells are cast as though at 4th level, unless their base level is higher.",
+            "components": "none"
           }
         }
       ],

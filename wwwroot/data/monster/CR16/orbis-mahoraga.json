@@ -1,0 +1,156 @@
+{
+  "Name": "Orbis Mahoraga",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Orbis Mahoraga**\n\n**Title** Serpent of Storm\n**Gemstone** Zircon\n**Type** Pleromael\n**Originator** Vestias\n\nAn Eidolos who was granted their cosmic shard by Vestias. It was charged thousands of years prior to seek out and guard sepherite containing cosmogonies of seraphael quality or higher, and eventually was reassigned to protect the sepherite containing the divine essence of the Queen of Dragons. It remained in a nephilim vault with the sepherite for thousands of years, until a group of adventurers destroyed the sepherite. Now freed from its duties, it freely indulges in its bestial impulses in Retia’s subterranean landscape. It has a natural distaste for dragon-kind, and has become a threat to the territory of dragons it stumbles upon. Its immortal nature makes it dangerous to even those with greater power than itself, and earning its unrestrained ire has meant a perpetual onslaught from the beast, forcing members of dragon-kind it has encountered since to flee or creatively remove it from their territory rather than simply beat it into submission.\n\n“I saw this eidolos myself! In my quest to retrieve a stolen violin, I joined a guild that chased a bandit lord into an old dungeon-like vault below Summergrass. We battled them for a time until the serpentine eidolos who protected it, Orbiis Mahoraga, revealed themselves. We defeated it, but the ruins (and sepherite protected within) were lost. Curiously, Orbiis Mahoraga split into a piece of zircon sepherite and an armament. The former went with the bandit lord we battled and the weapon to one of my allies. Orbiis Mahoraga remained with both until they clashed again, though it didn’t have to. I’ve often thought about why and have come to a conclusion... well, a guess: Orbis Mahoraga latched onto two people who were lost and overvalued their strength. Perhaps it wanted to see where those ideals would lead them. Maybe, having gained its freedom, it was grasping at inspiration for what direction to take?”",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Reference_BG%20-%20Orbis%20Mahoraga_Lightning.jpg",
+  "Stat Blocks": [
+    {
+      "id": "orbis_mahoraga",
+      "title": "Orbis Mahoraga",
+      "creature": {
+        "size": "Huge",
+        "type": "monstrosity (eidolos)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "19 (natural armor, cosmogony)",
+      "hit_points": "252 (24d12 + 96)",
+      "speed": "50 ft., climb 40 ft., burrow 40 ft.",
+      "quality_traits": [
+        "Eidolos (pleromael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "+7",
+          "save": "+7"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+4",
+          "save": "+4"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+5",
+          "save": "+5"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-1",
+          "save": "-1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+3",
+          "save": "+3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+2",
+          "save": "+2"
+        }
+      },
+      "skills": [
+        "Perception +8",
+        "Stealth +9"
+      ],
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "lightning",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "petrified"
+      ],
+      "senses": [
+        "darkvision 90 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Draconic",
+        "Primordial"
+      ],
+      "challenge_rating": "16 (15,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Cosmogony Bonus (+2)",
+          "name_format": "bold_italic",
+          "description": "Half of Orbis Mahoraga’s Cosmogony Bonus is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Orbis Mahoraga either makes one Bite attack and uses Constrict, or it makes three Zircon Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 6 (1d10) lightning damage."
+        },
+        {
+          "name": "Constrict",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one Large or smaller creature. Hit: 18 (2d10 + 7) bludgeoning damage + 17 (2d10 + 6) slashing damage. The target is grappled (escape DC 17) if Orbis Mahoraga isn’t already constricting a creature, and the target is restrained until this grapple ends."
+        },
+        {
+          "name": "Zircon Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (1d12 + 7) slashing damage plus 7 (1d12) lightning damage. A creature hit by two or more Zircon Claw attacks in the same turn must make a DC 18 Dexterity saving throw or be surged with electrical energy. On a failure the target is paralyzed until the start of Orbis Mahoraga’s next turn."
+        },
+        {
+          "name": "Swallow",
+          "name_format": "bold_italic",
+          "description": "Orbis Mahoraga makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside of Orbis Mahoraga, and it takes 21 (6d6) acid damage at the start of each of the behir’s turns. Orbis Mahoraga can have only one creature swallowed at a time. If Orbis takes 30 damage or more on a single turn from the swallowed creature, it must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of Orbis Mahoraga. If Orbis Mahoraga dies, the swallowed creature is released from its body into any space Orbis Mahoraga was occupying, as Orbis Mahoraga’s body vanishes."
+        },
+        {
+          "name": "Cosmic Shard - Lightning Cage (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Orbis Mahoraga unleashes a ball of lightning centered on a point it can see within 60 feet of it. Each creature within a 15-foot-radius sphere centered there must make a DC 18 Dexterity saving throw, taking 77 (14d10) lightning damage on a failed save, or half as much damage on a successful one. Any creature who fails the save by 5 points or more is stunned until the start of Orbis Mahoraga’s next turn."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (2 Actions)",
+        "entries": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Orbis Mahoraga makes a Bite attack."
+          },
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "Orbis Mahoraga moves up to half its movement speed without provoking opportunity attacks."
+          },
+          {
+            "name": "Lightning Snap (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Orbis Mahoraga breathes a 15-foot-cone of lightning. Each creature caught in it must make a DC 18 Dexterity saving throw, taking 16 (2d10 + 5) lightning damage on a failed save."
+          }
+        ]
+      }
+    }
+  ]
+}

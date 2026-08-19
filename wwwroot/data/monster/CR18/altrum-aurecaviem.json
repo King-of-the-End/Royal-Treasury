@@ -130,16 +130,42 @@
           "description": "Half of Altrum Aurecaviem’s Cosmogony Bonus is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
         },
         {
-          "name": "Innate Spellcasting",
-          "name_format": "bold_italic",
-          "description": "Altrum Aurecaviem’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
-          "bullets": [
-            "At will: control weather",
-            "1/Day each: cone of cold, power word stillness",
-            "2/Day each: ice storm, investiture of ice",
-            "3/Day each: etherealness"
-          ]
-        },
+  "name": "Innate Spellcasting",
+  "name_format": "bold_italic",
+  "description": "Altrum Aurecaviem’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+  "spellcasting": {
+    "spellcasting_ability": "Charisma",
+    "components": "none",
+    "spells": [
+      {
+        "frequency": "At will",
+        "spells": [
+          "control weather"
+        ]
+      },
+      {
+        "frequency": "1/Day each",
+        "spells": [
+          "cone of cold",
+          "power word stillness"
+        ]
+      },
+      {
+        "frequency": "2/Day each",
+        "spells": [
+          "ice storm",
+          "investiture of ice"
+        ]
+      },
+      {
+        "frequency": "3/Day each",
+        "spells": [
+          "etherealness"
+        ]
+      }
+    ]
+  }
+},
         {
           "name": "Glacial Reign (Mythic Awakening)",
           "name_format": "bold_italic",

@@ -104,7 +104,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "command",
                   "continual flame",
@@ -114,7 +113,6 @@
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "compulsion",
                   "confusion",
@@ -122,7 +120,8 @@
                   "mass suggestion"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         },
         {

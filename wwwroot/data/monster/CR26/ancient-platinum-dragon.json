@@ -143,7 +143,6 @@
             "spells": [
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "prismatic wall",
                   "sunburst"
@@ -151,7 +150,6 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "power word break",
                   "sickening radiant"
@@ -159,13 +157,13 @@
               },
               {
                 "frequency": "3/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "solar implosion",
                   "sunlight"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         },
         {

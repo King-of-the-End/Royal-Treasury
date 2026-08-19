@@ -108,7 +108,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "detect magic",
                   "dispel magic",
@@ -117,7 +116,8 @@
                   "sacred flame"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         },
         {
@@ -130,7 +130,6 @@
             "spells": [
               {
                 "frequency": "Cantrips (at will)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "dancing lights",
                   "toll the dead"
@@ -138,7 +137,6 @@
               },
               {
                 "frequency": "1st level (4 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "absorb energy",
                   "disguise self",
@@ -147,7 +145,6 @@
               },
               {
                 "frequency": "2nd level (3 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "detect thoughts",
                   "hold person",
@@ -156,7 +153,6 @@
               },
               {
                 "frequency": "3rd level (3 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "hypnotic pattern",
                   "major image"
@@ -164,7 +160,6 @@
               },
               {
                 "frequency": "4th level (3 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "eidomantic feedback",
                   "psychic lance"
@@ -172,7 +167,6 @@
               },
               {
                 "frequency": "5th level (2 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "mislead",
                   "modify memory",
@@ -182,7 +176,6 @@
               },
               {
                 "frequency": "6th level (1 slots)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "arcane gate",
                   "nightmare cell"
@@ -190,7 +183,6 @@
               },
               {
                 "frequency": "7th level (1 slot)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "reverse gravity",
                   "sequester"
@@ -198,7 +190,6 @@
               },
               {
                 "frequency": "8th level (1 slot)",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "maze",
                   "power word truth"

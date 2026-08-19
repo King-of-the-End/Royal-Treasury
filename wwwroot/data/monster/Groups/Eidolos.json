@@ -105,6 +105,372 @@
           ]
         }
       ]
+    },
+    {
+      "name": {
+        "text": "Creating an Eidolos",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Eidolos generally begin conceptually as an exiting creature - a basilisk, a red dragon, a gladiator, etc. It is then turned into a unique lifeform by the eidolic deity elevating it, and takes on a new series of abilites/traits along with being assigned a task or responsibility by the eidolic deity that did so. Eidolos possess the following traits and features; when any of the effects below refer to a cosmogony bonus, refer to the table below:",
+              "bold": false
+            }
+          ]
+        }
+      ],
+      "table": {
+        "headers": [
+          {
+            "text": "Cosmogony Type",
+            "bold": true,
+            "italic": true
+          },
+          {
+            "text": "Bonus",
+            "bold": true,
+            "italic": true
+          },
+          {
+            "text": "CR Range",
+            "bold": true,
+            "italic": true
+          },
+          {
+            "text": "Cosmic Shard?",
+            "bold": true,
+            "italic": true
+          },
+          {
+            "text": "Level Equivalent",
+            "bold": true,
+            "italic": true
+          },
+          {
+            "text": "Seraphic Authority?",
+            "bold": true,
+            "italic": true
+          }
+        ],
+        "rows": [
+          [
+            "Oucumenael",
+            "+1",
+            "1-10",
+            "Yes",
+            "3rd",
+            "No"
+          ],
+          [
+            "Pleromael",
+            "+2",
+            "11-17",
+            "Yes",
+            "5th",
+            "No"
+          ],
+          [
+            "Seraphael",
+            "+3",
+            "18-24",
+            "Yes",
+            "7th",
+            "Yes"
+          ],
+          [
+            "Hypuranael",
+            "+4",
+            "25-30",
+            "Yes",
+            "9th",
+            "Yes"
+          ]
+        ]
+      },
+      "ending_paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "The CR range listed is in reference to the original CR of the creature being created: the CR of a creature becoming an eidolos automatically increases by at least 3, possibly raising its proficiency bonus and statistics. An eidolos must be at least CR 10 by the time they are fully adjusted.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Aesthetics",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "An eidolos will generally resemble a deific/empowered version of its original species, but take on certain specific descriptors. They become associated with a gemstone (their sepherite), which many of the natural minerals in their body are replaced with. Horns, nails, teeth, etc., might be replaced with this gemstone. In many cases the creature’s body may cease being entirely organic, and sections would become an ancient stone-like material, causing an eidolos to resemble an ancient statue or effigy.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Despite this they still exist as they once did: if they could be poisoned before, they can still be. Though they cannot suffocate, if they breathed before they do so now. An eidolos’ body is only a projection of their ideal form from within their sepherite, but the feeling of what they once were causes their body to react the same way it always did.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Eidolos do not age, and can exist forever.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Cosmic Shard",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "A cosmic shard is a spell-like ability that represents an eidolos’ nature - often it is an offensive ability. When creating them, they should have roughly the same damage or healing potential as the “Creating a Spell” section of the DMG, with effects roughly equivalent to the levels listed on the cosmogony table.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Their Cosmic Shard ability can recharge like features normally would: at the start of an eidolos’ turn, roll a d6. On a result of 4, 5 or 6 the feature is recharged and can be used again. If you want to make a cosmic shard more powerful, you can increase its equivalent spell level in exchange for making the recharge more difficult: one level higher recharges on a 5 or 6, two levels higher recharges on a 6, and three levels higher can only be used once per Long Rest. You may also choose to have a limited number of uses for the ability per Short or Long Rest, and in that case give it three uses per Short or Long Rest, and minus one usage for each spell level higher it is.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "In its most basic form, you can choose a spell and appropriate its effects to serve in place of their cosmic shard. Also, if a creature already has a recharging ability such as a breath weapon, you might consider adding effects equivalent to a Cosmic Shard to that instead.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "When creating the eidolos Cosmic Shard and/or Seraphic Authority, you should have an equivalent in mind for their eidolic armament if it is produced.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Cosmogony Bonus",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Half of the eidolos’ cosmogony bonus (rounded up) is added to all of their attack rolls, ability checks, initiative checks, damage rolls and saving throws. It gains its full cosmogony bonus as natural armor, adding the bonus on top of its existing armor class.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Cosmogony Damage",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "An eidolos becomes associated with a type of damage, which applies both to it and to the eidolic armaments that come from it. Choose one damage type apart from piercing, slashing or bludgeoning (likely one it could already deal). It becomes immune to that damage type. Its cosmic shard should deal this damage type.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "An eidolos’ weapon attacks deal at least one additional damage die, the damage of which is their Cosmogony Damage.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Creature Type",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "An eidolos’ creature type is the same as its original type, but they also gain the “eidolos (type)” Quality Trait, which is listed in the Quality Trait index. The “type” is its cosmogony type.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Eidolic Damage",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "An eidolos’ attacks and damage are considered magical and eidolic.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Experience",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "It isn’t marked in their stat blocks, but the resistances, immunities and benefits from their Cosmogony Bonus make eidolos much stronger than their CR would often imply. When an eidolos is defeated in combat, the party defeating them is awarded an extra 50% XP on top of the amount(s) listed in their stat block.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Hit Dice",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "An eidolos has an additional number of hit dice equal to half its normal amount (rounded down). Its hit points are adjusted accordingly.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Languages",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "The eidolos speaks its original languages, as well as Primordial.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Legendary Actions",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "An eidolos has at least as many Legendary Resistances as its cosmogony bonus.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Legendary Resistances",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "If the eidolos fails a saving throw, they can choose to succeed instead. Eidolos possess a number of Legendary Resistances per Long Rest equal to their cosmogony bonus.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Magic Resistance",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Eidolos have advantage on saving throws made against magical effects.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Eidolic Resistance",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "An eidolos is immune to nonmagical piercing, slashing and bludgeoning damage that isn’t eidolic, and resistance to all damage that isn’t eidolic.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Seraphic Authority",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Seraphael and hypuranael eidolos gain a seraphic authority: a natural effect the eidolos produces that alters the environment around them, or changes how they interact with it. These effects are passive.",
+              "bold": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }

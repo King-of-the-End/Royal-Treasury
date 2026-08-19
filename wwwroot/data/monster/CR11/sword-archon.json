@@ -102,7 +102,6 @@
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "continual flame",
                   "protection from evil and good",
@@ -112,7 +111,6 @@
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "flame strike",
                   "gate",
@@ -122,13 +120,13 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "golden spiral",
                   "slash wind"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         }
       ],

@@ -1,0 +1,156 @@
+{
+  "Name": "Seavus Interitia",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Seavus Interitia**\n\n**Title** The Towering Furnace\n**Gemstone** Tungsten\n**Type** Pleromael\n**Originator** Harros\n\nA lonesome fire giant who was known during the First Age as a master swordsman who had reached the end of their ability to learn, and secluded themselves while waiting to die. While slowly starving themselves they were approached by Harros, who took note of their exceptional spirit and ability, and offered them the chance to step into the realm of immortality to forever quest to hone their skills. They accepted and became the Towering Furnace, and the only role assigned to them by Harros was that when a destined moment to change the world with their mastery of the blade presented itself, they should seize it and give back to the world they would live in eternally. Since then, Seavus Interitia has wandered Somnus Domina as a mythological being, allowing itself to be challenged by those who wish to prove themselves against it, searching for its ultimate purpose.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Reference_BG%20-%20Seavus%20Interitia.jpg",
+  "Stat Blocks": [
+    {
+      "id": "seavus_interitia",
+      "title": "Seavus Interitia",
+      "creature": {
+        "size": "Huge",
+        "type": "giant (eidolos)",
+        "alignment": "true neutral"
+      },
+      "armor_class": "20 (plate, cosmogony)",
+      "hit_points": "250 (20d12 + 120)",
+      "speed": "40 ft.",
+      "quality_traits": [
+        "Eidolos (pleromael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 25,
+          "modifier": "+8",
+          "save": "+8"
+        },
+        "DEX": {
+          "score": 9,
+          "modifier": "+0",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 23,
+          "modifier": "+7",
+          "save": "+12"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "+1",
+          "save": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+3",
+          "save": "+3"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+2",
+          "save": "+7"
+        }
+      },
+      "skills": [
+        "Athletics +13",
+        "Perception +8"
+      ],
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "immunities": [
+        "fire",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "petrified"
+      ],
+      "senses": [
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Giant",
+        "Primordial"
+      ],
+      "challenge_rating": "15 (13,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Cosmic Shard: Availing Furnace",
+          "name_format": "bold_italic",
+          "description": "When Seavus hits a creature with a weapon attack that deals fire damage and its d20 result was 15 or higher, the target must make a DC 20 Dexterity saving throw. On a failure, one piece of nonmagical equipment they are carrying is destroyed - this can be shields, armor or weapons. If Seavus picks a piece of magical equipment, it is not destroyed, and instead the target takes 2d8 fire damage and has disadvantage on attack rolls with that weapon for 1 minute (if it is a weapon), or attacks against them have advantage until the end of Seavus Interitia’s next turn (if the item is armor or a shield)."
+        },
+        {
+          "name": "Cosmogony Bonus (+2)",
+          "name_format": "bold_italic",
+          "description": "Half of Seavus Interitia’s Cosmogony Bonus is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Seavus Interitia makes four weapon attacks: two Tungsten Flameblade attacks and two Tungsten Firespear attacks."
+        },
+        {
+          "name": "Tungsten Flameblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 27 (4d8 + 9) slashing damage plus 7 (2d6) fire damage."
+        },
+        {
+          "name": "Tungsten Firespear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target or Ranged Weapon Attack: +14 to hit, range 60/180 ft., one target. Hit: 20 (2d10) + 9 piercing damage plus 7 (2d6) fire damage."
+        },
+        {
+          "name": "Fireblade Cyclone (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Seavus Interitia swings their weapons downward together, unleashing a cone of burning flame blades in a 60-foot-long cone originating from them. Each creature in range must make a DC 19 Dexterity saving throw, taking 36 (8d8) fire damage and 27 (6d8) slashing damage on a failed save, or half as much on a successful one."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Burning Parry",
+          "name_format": "bold_italic",
+          "description": "Seavus Interitia, in response to a single weapon attack made against it, increases its armor class by 5 against that attack only. If this causes the attack to miss, that weapon is affected by their Availing Furnace feature as though Seavus has made a qualifying attack against them, and must target that weapon."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (2 Actions)",
+        "entries": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Seavus Interitia makes one weapon attack."
+          },
+          {
+            "name": "Designated Challenge",
+            "name_format": "bold_italic",
+            "description": "Seavus Interitia challenges one creature who can see it within 60 feet, who must succeed a DC 14 Wisdom saving throw. On a failure, Seavus has advantage on attack rolls it makes against that target until the end of its next turn."
+          },
+          {
+            "name": "Ring of Fire (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Seavus Interitia surrounds itself in a ring of flames that remains until the start of its next turn. While it is present, any creature who makes a melee attack against Seavus Interitia from within 5 feet of it takes 8 (1d10 + 2) fire damage. This does not trigger Availing Furnace."
+          }
+        ]
+      }
+    }
+  ]
+}

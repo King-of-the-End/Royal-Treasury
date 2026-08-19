@@ -1,0 +1,182 @@
+{
+  "Name": "Ieren Funtamell",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Ieren Funtamell**\n\n**Title** The Shimmering Prismallite\n**Gemstone** Beryl\n**Type** Pleromael\n**Originator** Aymere\n\nAfter a joint invasion of the Material Plane by forces from each of the Elemental Planes, Aymere deemed it a wise idea to create an elemental guardian who could stand against the forces of elementals of the basic types (and also, a ward against misbehavior by the Paraprismatic gods). They gave life to natural elements of the Material Plane, bound them together, and gave them shape as an eidolos that was able to repel basic elemental enemies. They released them into nature with the goal of standing against abuses of elemental power and preventing gates to the Elemental Planes from being held open in places where they would be dangerous. Ieren Funtamell is prone to long periods of hibernation between bouts of aggressive activity.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Ieren%20Funtamell.jpg",
+  "Stat Blocks": [
+    {
+      "id": "ieren_funtamell",
+      "title": "Ieren Funtamell",
+      "creature": {
+        "size": "Large",
+        "type": "elemental (eidolos)",
+        "alignment": "neutral"
+      },
+      "armor_class": "18 (natural armor, cosmogony)",
+      "hit_points": "255 (30d10 + 90)",
+      "speed": "30 ft., burrow 30 ft., climb 30 ft., fly (hover) 30 ft., swim 30 ft.",
+      "quality_traits": [
+        "Avoidance",
+        "Eidolos (pleromael)",
+        "siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+5",
+          "save": "+5"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+5",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+4",
+          "save": "+4"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+3",
+          "save": "+3"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+4",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+1",
+          "save": "+6"
+        }
+      },
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "immunities": [
+        "bludgeoning",
+        "cold",
+        "fire",
+        "lightning",
+        "poison",
+        "P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Primordial"
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Cosmogony Bonus (+2)",
+          "name_format": "bold_italic",
+          "description": "Half of Ieren Funtamell’s Cosmogony Bonus (rounded up) is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        },
+        {
+          "name": "Illumination",
+          "name_format": "bold_italic",
+          "description": "The confluence of elemental forces that make up Ieren Funtamell shed light in a 30-foot radius centered on it, and a dim radius twice as far. On its turn it can choose to dispel this sphere of illumination, or to return it. This can be done at will as long as it is not incapacitated."
+        },
+        {
+          "name": "Shard Damage",
+          "name_format": "bold_italic",
+          "description": "Anywhere on Ieren Funtamell’s stat block that it states “shard damage” is called for, this can be Ieren Funtamell’s choice of fire, cold, bludgeoning or lightning damage."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Ieren Funtamell makes three Shard Strike attacks."
+        },
+        {
+          "name": "Shard Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 28 (5d8 + 5) shard damage."
+        },
+        {
+          "name": "Cosmic Shard: Chaotic Planar Confluence (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Ieren Funtamell chooses four points it can see within range, where a burst of energy corresponding to one of the elemental planes of energy appears - these bursts are distorted gates leading to those planes, which erupt in 10-foot-radius spheres of energy centered on each of those points. Ieren Funtamell chooses a shard damage type for each of these blasts. Creatures caught in one or more of these spheres must make a DC 16 Constitution saving throw against the one they are closest to the center of. Any creature that fails their saving throw takes 39 (6d12) damage of that sphere’s shard damage type, and also suffer consequences based on each of the spheres they are in (they can suffer multiple if multiple spheres are overlapping them):",
+          "bullets": [
+            {
+              "name": "Bludgeoning",
+              "description": "Earth binds them and holds them in place, restraining them for 1 minute. The target (or another creature adjacent to them) can free themselves by using an action to attempt a DC 16 Strength check, ending the effect on a success."
+            },
+            {
+              "name": "Cold",
+              "description": "Frost covers their body and slows the target, causing them to be sluggish for 1 minute. The target makes a DC 16 Constitution saving throw at the end of each of their turns, ending the effect on a success. They also make this saving throw (with advantage) each time they take fire damage."
+            },
+            {
+              "name": "Fire",
+              "description": "The target is ignited for 1 minute, during which time the condition deals 2d10 fire damage to them each turn. If they use an action to attempt to douse the flames they must succeed a DC 16 Constitution saving throw, otherwise it persists."
+            },
+            {
+              "name": "Lightning",
+              "description": "The target is paralyzed for 1 minute, during which time they make a DC 16 Constitution saving throw at the end of each of their turns and the first time they take damage each turn, ending the effect on a success."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Alter Size",
+          "name_format": "bold_italic",
+          "description": "Ieren Funtamell changes its size, becoming any size between Tiny and Colossal, as long as there is enough unoccupied space around it to do so.\n\nFor every size category below Large it becomes, its attack range decreases by 5 feet (minimum 5 feet) and it deals one d8 less damage with its Shard Strike attack, it suffers a -1 penalty to its attack rolls, its saving throws gain a +1 bonus, and its armor class increases by 1. For every two size categories below Large it is, it makes one extra Shard Strike when using its Multiattack.\n\nFor every two size category larger than Large it becomes (Gargantuan & Tremendous), its attack range increases by 5 feet (maximum 20 feet), its movement speeds decrease by 5 feet, its Shard Strike deals an additional 1d8 damage, and its armor class lowers by 2 points."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (2 Actions)",
+        "entries": [
+          {
+            "name": "Shard Strike",
+            "name_format": "bold_italic",
+            "description": "Ieren Funtamell makes one Shard Strike attack."
+          },
+          {
+            "name": "Elemental Screech",
+            "name_format": "bold_italic",
+            "description": "Various elements smash together and create an energy distortion targeting one creature Ieren Funtamell chooses that it can see within 60 feet. That creature must make a DC 16 Constitution saving throw, taking 1d8 damage each of bludgeoning, cold, fire and lightning. If they were concentrating on an effect and fail this save, they lose concentration."
+          },
+          {
+            "name": "Flare up (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Ieren Funtamell causes a burst of shard damage energy to explode from its body, forcing all creatures within 20 feet of it to make a DC 16 Constitution saving throw. On a failure, they take 11 (2d10) points of that shard damage type and are pushed back 10 feet."
+          }
+        ]
+      }
+    }
+  ]
+}

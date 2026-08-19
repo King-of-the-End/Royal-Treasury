@@ -136,7 +136,6 @@
             "spells": [
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "aura of returning bravery",
                   "power word break",
@@ -146,14 +145,14 @@
               },
               {
                 "frequency": "2/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "daylight",
                   "punishing gleam",
                   "solar implosion"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         },
         {

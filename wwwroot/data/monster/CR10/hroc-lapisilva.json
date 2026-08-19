@@ -1,0 +1,158 @@
+{
+  "Name": "Hroc Lapisilva",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Hroc Lapisilva**\n\n**Title** The Erosive Gourmandizer\n**Gemstone** Ammolite\n**Type** Oucumenael\n**Originator** Aymere\n\nHroc Lapisilva, the Erosive Gourmandizer, is an eidolos of Aymere that was elevated to its status so that it might hunt and consume anything that encroached on the peace of the Material Plane. It perpetually hunts, searching out outsiders and aberrant beings that don’t belong within the logic of the mortal world, including fiends, errant celestials, aberrations, and lesser divine beings. Once it finds them it petrifies its prey and consumes them, breaking them down within it (or storing them until they can be taken to Aymere). It has an innate sixth sense that allows it to know the direction of such beasts within 10,000 feet of itself. Despite being an eidolos, it is gripped by a bestial level of intelligence that forces it to perform its duties through instinct rather than intelligent decision-making.\n\nHroc Lapisilva was recently defeated by a group of adventurers while hunting for a nonsensical being called the Silver Esper, and its sepherite core was taken and sealed away. Despite this, it is likely to resurface in the Material Plane at some point as eidolos often do when sealed away.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Hroc%20Lapisilva.jpg",
+  "Stat Blocks": [
+    {
+      "id": "hroc_lapisilva",
+      "title": "Hroc Lapisilva",
+      "creature": {
+        "size": "Huge",
+        "type": "monstrosity (eidolos)",
+        "alignment": "unaligned"
+      },
+      "armor_class": "16 (natural armor, cosmogony)",
+      "hit_points": "105 (10d12 + 40)",
+      "threshold": "10",
+      "speed": "30 ft., burrow 30 ft., climb 30 ft., swim 30 ft.",
+      "quality_traits": [
+        "Adamant hide",
+        "Eidolos (oucumenael)",
+        "regen 1d10 + 5"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+6",
+          "save": "+6"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "+0",
+          "save": "+0"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+5",
+          "save": "+9"
+        },
+        "INT": {
+          "score": 2,
+          "modifier": "-3",
+          "save": "+1"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+3",
+          "save": "+3"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-1",
+          "save": "-1"
+        }
+      },
+      "skills": [
+        "Investigation +7",
+        "Survival +7"
+      ],
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "immunities": [
+        "psychic",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "petrified"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "tremorsense 240 ft.",
+        "passive Perception 10"
+      ],
+      "languages": [
+        "Primordial"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Cosmogony Bonus (+1)",
+          "name_format": "bold_italic",
+          "description": "Half of Hroc Lapisilva’s Cosmogony Bonus (rounded up) is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        },
+        {
+          "name": "Petrifying Gaze",
+          "name_format": "bold_italic",
+          "description": "If a creature starts its turn within 50 feet of Hroc Lapisilva and they can see one another, Hroc Lapisilva can force the creature to make a DC 16 Constitution saving throw if Hroc Lapisilva isn’t incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic. A creature that isn’t surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can’t see Hroc Lapisilva until the start of its next turn, when it can avert its eyes again. If it looks at Hroc Lapisilva in the meantime, it must immediately make the save."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 1,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Hroc Lapisilva makes one Bite attack and one Ammolite Spiked Trail attack."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 29 (2d12 + 6) piercing damage plus 7 (1d12) psychic damage."
+        },
+        {
+          "name": "Ammolite Spiked Trail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 11 (1d10 + 6) bludgeoning damage plus 6 (1d10) psychic damage."
+        },
+        {
+          "name": "Toxic Breath (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Hroc Lapisilva breathes neurotoxins in a 30-foot cone originating from itself, forcing each creature in that space to make a DC 17 Constitution saving throw. On a failure, a creature takes 17 (3d10) poison damage and is poisoned for 1 minute, or half as much damage and isn’t poisoned on a success. A creature poisoned this way repeats the save at the end of each of their turns, ending the effect on a success."
+        },
+        {
+          "name": "Cosmic Shard: Forest of Stone (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Hroc Lapisilva causes spear-like spines of ammolite to erupt from every surface within 30 feet of it, forcing all creatures it chooses within that range to make a DC 17 Dexterity saving throw. Any creature that fails takes 16 (2d10 + 5) piercing damage and 13 (2d12) psychic damage, and becomes sluggish for 1 minute. Creatures made sluggish this way repeat a DC 17 Constitution saving throw at the end of each of their turns, ending the effect on a success. Any creature that fails this save by 5 points or more is petrified for the minute instead (but must still make the Constitution saving throw to end the effect), and if they do not end the effect by succeeding the saving throw after 1 minute they remain petrified permanently.\n\nFor 1 hour after this effect is used, the area of its effect becomes difficult terrain to all creatures except Hroc Lapisilva."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (1 Action)",
+        "entries": [
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "Hroc Lapisilva moves up to its movement speed."
+          },
+          {
+            "name": "Curl",
+            "name_format": "bold_italic",
+            "description": "Hroc Lapisilva curls into a defensive ball, giving all attacks made against it disadvantage until the start of its next turn."
+          },
+          {
+            "name": "Petrify",
+            "name_format": "bold_italic",
+            "description": "Hroc Lapisilva forces one creature who can see it and it can see to make a save against its Petrifying Gaze, as though they had started their turn looking at it."
+          }
+        ]
+      }
+    }
+  ]
+}

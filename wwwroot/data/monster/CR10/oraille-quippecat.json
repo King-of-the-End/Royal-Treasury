@@ -1,0 +1,159 @@
+{
+  "Name": "Oraille Quippecat",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Oraille Quippecat**\n\n**Title** Burgeoning Invader\n**Gemstone** Cinnabar\n**Type** Oucumenael\n**Originator** Harros\n\nElevated to the power of an eidolos by Harros, this beast was originally a persistent feral beast that hunted Harros over several years of him wandering the mortal world in disguise. They battled many times, but Harros always left the beast alive - only for it to return stronger and more persistent. Out of grim respect, Harros communed with it and offered it the power of an eidolos in exchange for serving as his personal watchdog. It accepted, gained greater power and intelligence, and it was told to guard specific lands Harros deemed important. Harros occasionally sends it to aid his agents and clergy, or to attack monstrosities that endanger mankind.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Oraille%20Quippecat.jpg",
+  "Stat Blocks": [
+    {
+      "id": "oraille_quippecat",
+      "title": "Oraille Quippecat",
+      "creature": {
+        "size": "Large",
+        "type": "monstrosity (eidolos)",
+        "alignment": "unaligned"
+      },
+      "armor_class": "17 (natural armor, cosmogony)",
+      "hit_points": "158 (15d10 + 75)",
+      "threshold": "10",
+      "speed": "40 ft., burrow 40 ft.",
+      "quality_traits": [
+        "Avoidance",
+        "Eidolos (oucumenael)",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+5",
+          "save": "+5"
+        },
+        "DEX": {
+          "score": 11,
+          "modifier": "+1",
+          "save": "+1"
+        },
+        "CON": {
+          "score": 21,
+          "modifier": "+6",
+          "save": "+6"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "+0",
+          "save": "+0"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "+1",
+          "save": "+1"
+        },
+        "CHA": {
+          "score": 9,
+          "modifier": "+1",
+          "save": "+1"
+        }
+      },
+      "skills": [
+        "Perception +5"
+      ],
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "immunities": [
+        "force",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "petrified"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "tremorsense 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Primordial"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Cosmogony Bonus (+1)",
+          "name_format": "bold_italic",
+          "description": "Half of Oraille Quippecat’s Cosmogony Bonus (rounded up) is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        },
+        {
+          "name": "Standing Leap",
+          "name_format": "bold_italic",
+          "description": "Oraille Quippecat’s long jump distance is equal to its movement speed, and its high jump is half that much. It can take a long or high jump without a running start."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 1,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Oraille Quippecat makes one Bite attack and two Cinnabar Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 31 (4d12 + 5) piercing damage plus 9 (2d8) force damage."
+        },
+        {
+          "name": "Cinnabar Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage plus 6 (1d10) force damage."
+        },
+        {
+          "name": "Cosmic Shard: Slipstream Vault (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "After leaping at least 10 feet, Oraille Quippecat surrounds itself in a veil of energy and fires itself in a line that is between 20 and 60 feet long, and as wide as Oraille Quippecat. It ends this effect on its feet in an unoccupied space at the end of the line. Each creature in the line it moves through must succeed a DC 16 Dexterity saving throw or be knocked prone and take 33 (5d10 + 5) force damage. This movement does not provoke opportunity attacks, and when Oraille Quippecat ends its movement it can immediately make a Bite attack against a creature within range.\n\nOraille Quippecat cannot use Death Leap and Slipstream Vault in the same turn."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Death Leap",
+          "name_format": "bold_italic",
+          "description": "When Oraille Quippecat leaps at least 15 feet, it can use this bonus action to land on its feet in the space(s) it is leaping into, and any falling damage it would take is reduced by 100 points. Each creature who is occupying those spaces must succeed a DC 17 Strength saving throw or DC 18 Dexterity saving throw (the target chooses) or be knocked prone and take 18 (3d8 + 4) bludgeoning damage plus 18 (3d8 + 4) slashing damage. On a success the creature takes half as much damage, isn’t knocked prone, and is pushed 5 feet out of Oraille Quippecat’s space into an unoccupied space of their choice. If none within range are unoccupied, they fall prone in Oraille Quippecat’s space."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (1 Action)",
+        "entries": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Oraille Quippecat makes a Bite attack."
+          },
+          {
+            "name": "Burrow",
+            "name_format": "bold_italic",
+            "description": "Oraille Quippecat moves up to its movement speed, but must burrow while doing so."
+          },
+          {
+            "name": "Harden Shell",
+            "name_format": "bold_italic",
+            "description": "The next attack that hits Oraille Quippecat before the start of its next turn deals half as much damage."
+          }
+        ]
+      }
+    }
+  ]
+}
