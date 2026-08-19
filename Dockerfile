@@ -1,22 +1,19 @@
 # ==========================================
 # ROYAL TREASURY
-# RENDER DIAGNOSTIC / DEPLOYMENT DOCKERFILE
+# RENDER DIAGNOSTIC DOCKERFILE
+#
+# This version is intentionally diagnostic.
+# It prints .NET runtime information before
+# starting Royal Treasury so that we can see
+# exactly where the status 139 crash occurs.
 # ==========================================
 
 
 # ==========================================
 # BUILD STAGE
-#
-# Render requires Linux AMD64 images.
-#
-# .NET SDK 10.0.302 contains:
-# .NET Runtime 10.0.10
-# ASP.NET Core 10.0.10
 # ==========================================
 
-FROM --platform=linux/amd64 \
-    mcr.microsoft.com/dotnet/sdk:10.0.302-noble \
-    AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0.301 AS build
 
 
 WORKDIR /src
@@ -24,6 +21,10 @@ WORKDIR /src
 
 # ==========================================
 # COPY PROJECT FILE
+#
+# Copying the .csproj first allows Docker to
+# cache the restore step independently from
+# changes to the rest of the source code.
 # ==========================================
 
 COPY ["Website of Everything.csproj", "./"]
@@ -31,19 +32,13 @@ COPY ["Website of Everything.csproj", "./"]
 
 # ==========================================
 # RESTORE
-#
-# -m:1 keeps MSBuild single-process.
-# This also avoids unnecessary parallelism
-# while diagnosing the Render environment.
 # ==========================================
 
-RUN dotnet restore \
-    "./Website of Everything.csproj" \
-    -m:1
+RUN dotnet restore "./Website of Everything.csproj"
 
 
 # ==========================================
-# COPY PROJECT
+# COPY THE REST OF ROYAL TREASURY
 # ==========================================
 
 COPY . .
@@ -53,28 +48,27 @@ COPY . .
 # PUBLISH
 # ==========================================
 
-RUN dotnet publish \
-    "./Website of Everything.csproj" \
-    --configuration Release \
-    --output /app/publish \
-    --no-restore \
-    -m:1
+RUN dotnet publish "./Website of Everything.csproj" \
+    -c Release \
+    -o /app/publish \
+    --no-restore
 
 
 # ==========================================
 # RUNTIME STAGE
+#
+# SDK 10.0.301 corresponds to the
+# .NET / ASP.NET Core 10.0.9 runtime.
 # ==========================================
 
-FROM --platform=linux/amd64 \
-    mcr.microsoft.com/dotnet/aspnet:10.0.10-noble \
-    AS final
+FROM mcr.microsoft.com/dotnet/aspnet:10.0.9 AS final
 
 
 WORKDIR /app
 
 
 # ==========================================
-# COPY PUBLISHED APP
+# COPY PUBLISHED APPLICATION
 # ==========================================
 
 COPY --from=build /app/publish .
@@ -83,58 +77,37 @@ COPY --from=build /app/publish .
 # ==========================================
 # RENDER NETWORKING
 #
-# Render recommends binding to 0.0.0.0 and
-# the PORT environment variable.
+# Render routes traffic to the application
+# through port 10000 by default.
 #
-# PORT defaults to 10000 on Render.
+# ASP.NET Core must listen on all network
+# interfaces rather than localhost.
 # ==========================================
 
 ENV ASPNETCORE_URLS=http://0.0.0.0:10000
-
-
-# ==========================================
-# TEMPORARY CORECLR DIAGNOSTIC
-#
-# We are disabling tiered compilation while
-# diagnosing the immediate SIGSEGV.
-#
-# If the application becomes stable, we can
-# later test turning this back on.
-# ==========================================
-
-ENV DOTNET_TieredCompilation=0
-
-ENV DOTNET_TieredPGO=0
-
-
-# ==========================================
-# NORMAL PRODUCTION ENVIRONMENT
-# ==========================================
-
-ENV ASPNETCORE_ENVIRONMENT=Production
 
 
 EXPOSE 10000
 
 
 # ==========================================
-# STARTUP DIAGNOSTICS
+# DIAGNOSTIC STARTUP
 #
-# This deliberately prints dotnet --info
-# before starting Royal Treasury.
+# IMPORTANT:
 #
-# That tells us whether:
+# Keep this ENTRYPOINT on ONE LINE.
 #
-# 1. The .NET runtime itself crashes
+# It will:
 #
-# OR
+# 1. print a marker
+# 2. run dotnet --info
+# 3. print another marker
+# 4. start Royal Treasury normally
 #
-# 2. .NET starts successfully and the crash
-#    occurs while Royal Treasury launches.
+# This allows us to determine whether the
+# .NET runtime itself is crashing or whether
+# the crash happens when the application
+# begins running.
 # ==========================================
 
-ENTRYPOINT [
-    "/bin/sh",
-    "-c",
-    "echo '===== DOTNET INFO =====' && dotnet --info && echo '===== STARTING ROYAL TREASURY =====' && exec dotnet Website_of_Everything.dll"
-]
+ENTRYPOINT ["/bin/sh", "-c", "echo '===== DOTNET INFO =====' && dotnet --info && echo '===== STARTING ROYAL TREASURY =====' && exec dotnet Website_of_Everything.dll"]
