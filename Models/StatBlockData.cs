@@ -486,6 +486,47 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // LEGENDARY REACTION
+    //
+    // A small number of monster files use
+    // the singular property name:
+    //
+    // "legendary_reaction": { ... }
+    //
+    // Keep it as an alias of the plural
+    // runtime property so both JSON forms
+    // render through the same section.
+    // =====================================
+
+    [JsonPropertyName("legendary_reaction")]
+    public StatBlockLegendaryActions
+        LegendaryReaction
+    {
+        get =>
+            LegendaryReactions;
+
+        set
+        {
+            if (value is not null)
+            {
+                LegendaryReactions =
+                    value;
+            }
+        }
+    }
+
+
+    // =====================================
+    // MYTHIC ACTIONS
+    // =====================================
+
+    [JsonPropertyName("mythic_actions")]
+    public StatBlockLegendaryActions
+        MythicActions { get; set; } =
+            new();
+
+
+    // =====================================
     // RAW TEXT
     // =====================================
 
@@ -739,43 +780,314 @@ public sealed class StatBlockEntry
         InlineFormatting { get; set; } =
             new(
                 StringComparer.OrdinalIgnoreCase);
+
+
+    // =====================================
+    // SPELLCASTING DETAILS
+    //
+    // Monster JSON stores spell lists as a
+    // nested object beneath the Spellcasting
+    // or Innate Spellcasting trait.
+    // =====================================
+
+    [JsonPropertyName("spellcasting")]
+    public StatBlockSpellcasting?
+        Spellcasting { get; set; }
+
+
+    // =====================================
+    // NESTED OPTIONS
+    //
+    // Several monster abilities contain
+    // follow-up options. The options array
+    // can contain either strings or normal
+    // entry-shaped objects.
+    // =====================================
+
+    [JsonPropertyName("options")]
+    [JsonConverter(
+        typeof(
+            StatBlockEntryOptionsConverter))]
+    public List<StatBlockEntry>
+        Options { get; set; } =
+            new();
 }
+
+
 // =========================================
-// LEGENDARY ACTIONS
+// SPELLCASTING DETAILS
+// =========================================
+
+public sealed class StatBlockSpellcasting
+{
+    [JsonPropertyName("spellcasting_level")]
+    public JsonElement SpellcastingLevel { get; set; }
+
+
+    [JsonPropertyName("caster_level")]
+    public JsonElement CasterLevel { get; set; }
+
+
+    [JsonPropertyName("spellcasting_ability")]
+    public string SpellcastingAbility { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("material_components_required")]
+    public bool? MaterialComponentsRequired { get; set; }
+
+
+    [JsonPropertyName("components")]
+    public string Components { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("spells")]
+    public List<StatBlockSpellFrequency>
+        Spells { get; set; } =
+            new();
+
+
+    [JsonPropertyName("prepared_spells")]
+    public List<StatBlockPreparedSpellLevel>
+        PreparedSpells { get; set; } =
+            new();
+
+
+    [JsonPropertyName("additional_text")]
+    public string AdditionalText { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("casting_level_note")]
+    public string CastingLevelNote { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("notes")]
+    public List<string> Notes { get; set; } =
+        new();
+}
+
+
+// =========================================
+// SPELLCASTING FREQUENCY
+// =========================================
+
+public sealed class StatBlockSpellFrequency
+{
+    [JsonPropertyName("frequency")]
+    public string Frequency { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("frequency_format")]
+    public string FrequencyFormat { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("spells")]
+    public List<string> Spells { get; set; } =
+        new();
+}
+
+
+// =========================================
+// PREPARED SPELL LEVEL
+// =========================================
+
+public sealed class StatBlockPreparedSpellLevel
+{
+    [JsonPropertyName("level")]
+    public string Level { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("slots")]
+    public JsonElement Slots { get; set; }
+
+
+    [JsonPropertyName("spells")]
+    public List<string> Spells { get; set; } =
+        new();
+}
+
+
+// =========================================
+// NESTED ENTRY OPTIONS JSON CONVERTER
 //
-// Supports both of these JSON shapes:
+// Accepts both:
 //
-// Older/simple shape:
+// "options": [
+//   "Plain text option"
+// ]
 //
-// "legendary_actions": [
+// and:
+//
+// "options": [
 //   {
-//     "name": "Detect",
+//     "name": "Option Name",
 //     "description": "..."
 //   }
 // ]
 //
-// New/full shape:
+// Nested options are supported recursively.
+// =========================================
+
+public sealed class
+    StatBlockEntryOptionsConverter
+    : JsonConverter<List<StatBlockEntry>>
+{
+    public override List<StatBlockEntry>
+        Read(
+            ref Utf8JsonReader reader,
+            Type typeToConvert,
+            JsonSerializerOptions options)
+    {
+        var result =
+            new List<StatBlockEntry>();
+
+
+        if (
+            reader.TokenType
+            ==
+            JsonTokenType.Null)
+        {
+            return result;
+        }
+
+
+        if (
+            reader.TokenType
+            !=
+            JsonTokenType.StartArray)
+        {
+            throw new JsonException(
+                "Entry options must be an array.");
+        }
+
+
+        while (reader.Read())
+        {
+            if (
+                reader.TokenType
+                ==
+                JsonTokenType.EndArray)
+            {
+                return result;
+            }
+
+
+            if (
+                reader.TokenType
+                ==
+                JsonTokenType.String)
+            {
+                result.Add(
+                    new StatBlockEntry
+                    {
+                        Description =
+                            reader.GetString()
+                            ??
+                            string.Empty
+                    });
+
+
+                continue;
+            }
+
+
+            if (
+                reader.TokenType
+                ==
+                JsonTokenType.StartObject)
+            {
+                var entry =
+                    JsonSerializer
+                        .Deserialize<StatBlockEntry>(
+                            ref reader,
+                            options);
+
+
+                if (entry is not null)
+                {
+                    result.Add(
+                        entry);
+                }
+
+
+                continue;
+            }
+
+
+            using var ignored =
+                JsonDocument.ParseValue(
+                    ref reader);
+        }
+
+
+        throw new JsonException(
+            "Entry options array was not closed.");
+    }
+
+
+    public override void
+        Write(
+            Utf8JsonWriter writer,
+            List<StatBlockEntry> value,
+            JsonSerializerOptions options)
+    {
+        writer.WriteStartArray();
+
+
+        foreach (
+            var entry
+            in value)
+        {
+            JsonSerializer.Serialize(
+                writer,
+                entry,
+                options);
+        }
+
+
+        writer.WriteEndArray();
+    }
+}
+
+
+// =========================================
+// LEGENDARY / MYTHIC ACTION COLLECTION
+//
+// This shared model supports all action
+// collection shapes currently used by the
+// monster library:
+//
+// Legacy array:
+//
+// "legendary_actions": [ ... ]
+//
+// Header / uses / entries:
 //
 // "legendary_actions": {
 //   "header": "Legendary Actions",
 //   "uses": 3,
-//   "entries": [
-//     {
-//       "name": "Detect",
-//       "description": "..."
-//     }
-//   ]
+//   "entries": [ ... ]
 // }
 //
-// The class implements IReadOnlyList so the
-// existing StatBlock rendering can continue
-// to use:
+// Actions-per-round / options:
 //
-// Data.LegendaryActions.Count
+// "legendary_actions": {
+//   "actions_per_round": 3,
+//   "options": [ ... ]
+// }
 //
-// and:
+// Mythic actions:
 //
-// foreach (var entry in Data.LegendaryActions)
+// "mythic_actions": {
+//   "intro": "...",
+//   "options": [ ... ]
+// }
 // =========================================
 
 [JsonConverter(
@@ -794,11 +1106,50 @@ public sealed class StatBlockLegendaryActions
 
 
     // =====================================
+    // INTRO
+    //
+    // Used by mythic action sections.
+    // =====================================
+
+    [JsonPropertyName("intro")]
+    public string Intro { get; set; } =
+        string.Empty;
+
+
+    // =====================================
     // USES
+    //
+    // Numeric uses such as:
+    //
+    // "uses": 3
     // =====================================
 
     [JsonPropertyName("uses")]
     public int Uses { get; set; }
+
+
+    // =====================================
+    // USE TEXT
+    //
+    // Non-numeric uses such as:
+    //
+    // "uses": "2/Day"
+    // =====================================
+
+    [JsonIgnore]
+    public string UsesText { get; set; } =
+        string.Empty;
+
+
+    // =====================================
+    // ACTIONS PER ROUND
+    //
+    // Used by Embered Avatar-style
+    // legendary action objects.
+    // =====================================
+
+    [JsonPropertyName("actions_per_round")]
+    public int ActionsPerRound { get; set; }
 
 
     // =====================================
@@ -842,20 +1193,11 @@ public sealed class StatBlockLegendaryActions
 
 
 // =========================================
-// LEGENDARY ACTIONS JSON CONVERTER
+// LEGENDARY / MYTHIC ACTION JSON CONVERTER
 //
-// The monster library already contains
-// legendary_actions as a simple array.
-//
-// Newer monster files, such as the
-// Amniatic Dragon, use an object containing:
-//
-// header
-// uses
-// entries
-//
-// This converter accepts BOTH shapes so
-// older monsters do not need to be edited.
+// Accepts every collection shape described
+// above so individual monster JSON files do
+// not need one-off rewrites.
 // =========================================
 
 public sealed class
@@ -872,10 +1214,6 @@ public sealed class
             Type typeToConvert,
             JsonSerializerOptions options)
     {
-        // =================================
-        // NULL
-        // =================================
-
         if (
             reader.TokenType
             ==
@@ -888,10 +1226,6 @@ public sealed class
 
         // =================================
         // LEGACY ARRAY SHAPE
-        //
-        // "legendary_actions": [
-        //   ...
-        // ]
         // =================================
 
         if (
@@ -919,15 +1253,7 @@ public sealed class
 
 
         // =================================
-        // OBJECT SHAPE
-        //
-        // "legendary_actions": {
-        //   "header": "...",
-        //   "uses": 3,
-        //   "entries": [
-        //     ...
-        //   ]
-        // }
+        // OBJECT SHAPES
         // =================================
 
         if (
@@ -950,35 +1276,52 @@ public sealed class
 
             // =============================
             // HEADER
+            //
+            // Accept either:
+            //
+            // "header"
+            // "title"
             // =============================
 
             if (
-                TryGetProperty(
+                TryReadString(
                     root,
                     "header",
-                    out var headerElement)
-                &&
-                headerElement.ValueKind
-                ==
-                JsonValueKind.String)
+                    out var header)
+                ||
+                TryReadString(
+                    root,
+                    "title",
+                    out header))
             {
                 result.Header =
-                    headerElement.GetString()
-                    ??
-                    string.Empty;
+                    header;
+            }
+
+
+            // =============================
+            // INTRO
+            // =============================
+
+            if (
+                TryReadString(
+                    root,
+                    "intro",
+                    out var intro))
+            {
+                result.Intro =
+                    intro;
             }
 
 
             // =============================
             // USES
             //
-            // Accept either:
+            // Accept:
             //
-            // "uses": 3
-            //
-            // or:
-            //
-            // "uses": "3"
+            // 3
+            // "3"
+            // "2/Day"
             // =============================
 
             if (
@@ -988,11 +1331,8 @@ public sealed class
                     out var usesElement))
             {
                 if (
-                    usesElement.ValueKind
-                    ==
-                    JsonValueKind.Number
-                    &&
-                    usesElement.TryGetInt32(
+                    TryReadInt(
+                        usesElement,
                         out var uses))
                 {
                     result.Uses =
@@ -1001,27 +1341,54 @@ public sealed class
                 else if (
                     usesElement.ValueKind
                     ==
-                    JsonValueKind.String
-                    &&
-                    int.TryParse(
-                        usesElement.GetString(),
-                        out uses))
+                    JsonValueKind.String)
                 {
-                    result.Uses =
-                        uses;
+                    result.UsesText =
+                        usesElement.GetString()
+                        ??
+                        string.Empty;
                 }
             }
 
 
             // =============================
-            // ENTRIES
+            // ACTIONS PER ROUND
             // =============================
 
             if (
                 TryGetProperty(
                     root,
-                    "entries",
-                    out var entriesElement)
+                    "actions_per_round",
+                    out var roundElement)
+                &&
+                TryReadInt(
+                    roundElement,
+                    out var actionsPerRound))
+            {
+                result.ActionsPerRound =
+                    actionsPerRound;
+            }
+
+
+            // =============================
+            // ENTRIES / OPTIONS
+            //
+            // Both names are used by current
+            // monster files.
+            // =============================
+
+            if (
+                (
+                    TryGetProperty(
+                        root,
+                        "entries",
+                        out var entriesElement)
+                    ||
+                    TryGetProperty(
+                        root,
+                        "options",
+                        out entriesElement)
+                )
                 &&
                 entriesElement.ValueKind
                 ==
@@ -1044,21 +1411,13 @@ public sealed class
         }
 
 
-        // =================================
-        // INVALID SHAPE
-        // =================================
-
         throw new JsonException(
-            "legendary_actions must be either an array or an object.");
+            "Legendary/Mythic actions must be either an array or an object.");
     }
 
 
     // =====================================
     // WRITE
-    //
-    // When serialized, use the richer
-    // object form so header / uses are not
-    // discarded.
     // =====================================
 
     public override void
@@ -1070,10 +1429,6 @@ public sealed class
         writer.WriteStartObject();
 
 
-        // =================================
-        // HEADER
-        // =================================
-
         if (
             !string.IsNullOrWhiteSpace(
                 value.Header))
@@ -1084,11 +1439,32 @@ public sealed class
         }
 
 
-        // =================================
-        // USES
-        // =================================
+        if (
+            !string.IsNullOrWhiteSpace(
+                value.Intro))
+        {
+            writer.WriteString(
+                "intro",
+                value.Intro);
+        }
+
 
         if (
+            value.ActionsPerRound > 0)
+        {
+            writer.WriteNumber(
+                "actions_per_round",
+                value.ActionsPerRound);
+        }
+        else if (
+            !string.IsNullOrWhiteSpace(
+                value.UsesText))
+        {
+            writer.WriteString(
+                "uses",
+                value.UsesText);
+        }
+        else if (
             value.Uses > 0)
         {
             writer.WriteNumber(
@@ -1096,10 +1472,6 @@ public sealed class
                 value.Uses);
         }
 
-
-        // =================================
-        // ENTRIES
-        // =================================
 
         writer.WritePropertyName(
             "entries");
@@ -1112,6 +1484,86 @@ public sealed class
 
 
         writer.WriteEndObject();
+    }
+
+
+    // =====================================
+    // READ STRING
+    // =====================================
+
+    private static bool
+        TryReadString(
+            JsonElement element,
+            string propertyName,
+            out string value)
+    {
+        if (
+            TryGetProperty(
+                element,
+                propertyName,
+                out var property)
+            &&
+            property.ValueKind
+            ==
+            JsonValueKind.String)
+        {
+            value =
+                property.GetString()
+                ??
+                string.Empty;
+
+
+            return true;
+        }
+
+
+        value =
+            string.Empty;
+
+
+        return false;
+    }
+
+
+    // =====================================
+    // READ INTEGER
+    // =====================================
+
+    private static bool
+        TryReadInt(
+            JsonElement element,
+            out int value)
+    {
+        if (
+            element.ValueKind
+            ==
+            JsonValueKind.Number
+            &&
+            element.TryGetInt32(
+                out value))
+        {
+            return true;
+        }
+
+
+        if (
+            element.ValueKind
+            ==
+            JsonValueKind.String
+            &&
+            int.TryParse(
+                element.GetString(),
+                out value))
+        {
+            return true;
+        }
+
+
+        value =
+            0;
+
+
+        return false;
     }
 
 
@@ -1138,8 +1590,7 @@ public sealed class
                     property.Value;
 
 
-                return
-                    true;
+                return true;
             }
         }
 
@@ -1148,7 +1599,6 @@ public sealed class
             default;
 
 
-        return
-            false;
+        return false;
     }
 }

@@ -548,9 +548,8 @@
                                 </em>
                             </strong>
 
-                            <GlossaryText
-                                Text="@entry.Description"
-                                Context="GlossaryContext.StatBlock" />
+                            <StatBlockEntryDetails
+                                Entry="@entry" />
 
                         </p>
                     }
@@ -599,9 +598,8 @@
                                     </em>
                                 </strong>
 
-                                <GlossaryText
-                                    Text="@entry.Description"
-                                    Context="GlossaryContext.StatBlock" />
+                                <StatBlockEntryDetails
+                                    Entry="@entry" />
 
                             </p>
                         }
@@ -639,9 +637,8 @@
                                     </em>
                                 </strong>
 
-                                <GlossaryText
-                                    Text="@entry.Description"
-                                    Context="GlossaryContext.StatBlock" />
+                                <StatBlockEntryDetails
+                                    Entry="@entry" />
 
                             </p>
                         }
@@ -679,9 +676,8 @@
                                     </em>
                                 </strong>
 
-                                <GlossaryText
-                                    Text="@entry.Description"
-                                    Context="GlossaryContext.StatBlock" />
+                                <StatBlockEntryDetails
+                                    Entry="@entry" />
 
                             </p>
                         }
@@ -720,9 +716,65 @@
                                     </em>
                                 </strong>
 
+                                <StatBlockEntryDetails
+                                    Entry="@entry" />
+
+                            </p>
+                        }
+
+                    </section>
+                }
+
+
+                <!-- =================================
+                     MYTHIC ACTIONS
+                     ================================= -->
+
+                @if (
+                    Data.MythicActions.Count > 0
+                    ||
+                    !string.IsNullOrWhiteSpace(
+                        Data.MythicActions.Intro))
+                {
+                    <section class="rt-stat-section">
+
+                        <div class="rt-stat-section-bar">
+                            @MythicActionsHeading
+                        </div>
+
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                Data.MythicActions.Intro))
+                        {
+                            <p class="rt-stat-entry">
+
                                 <GlossaryText
-                                    Text="@entry.Description"
+                                    Text="@Data.MythicActions.Intro"
                                     Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
+
+
+                        @foreach (
+                            var entry
+                            in Data.MythicActions)
+                        {
+                            <p class="rt-stat-entry">
+
+                                <strong>
+                                    <em>
+
+                                        <GlossaryText
+                                            Text="@entry.Name"
+                                            Context="GlossaryContext.StatBlock" />.
+
+                                    </em>
+                                </strong>
+
+                                <StatBlockEntryDetails
+                                    Entry="@entry" />
 
                             </p>
                         }
@@ -761,14 +813,8 @@
                                     </em>
                                 </strong>
 
-                                @if (
-                                    !string.IsNullOrWhiteSpace(
-                                        entry.Description))
-                                {
-                                    <GlossaryText
-                                        Text="@entry.Description"
-                                        Context="GlossaryContext.StatBlock" />
-                                }
+                                <StatBlockEntryDetails
+                                    Entry="@entry" />
 
                             </p>
                         }
@@ -1037,6 +1083,11 @@
         ||
         Data.LegendaryActions.Count > 0
         ||
+        Data.MythicActions.Count > 0
+        ||
+        !string.IsNullOrWhiteSpace(
+            Data.MythicActions.Intro)
+        ||
         Data.LegendaryReactions.Count > 0;
 
 
@@ -1048,6 +1099,16 @@
         LegendarySectionHeading(
             Data.LegendaryActions,
             "Legendary Actions");
+
+
+    // =====================================
+    // MYTHIC ACTIONS HEADING
+    // =====================================
+
+    private string MythicActionsHeading =>
+        LegendarySectionHeading(
+            Data.MythicActions,
+            "Mythic Actions");
 
 
     // =====================================
@@ -1076,6 +1137,34 @@
             ? fallbackHeader
 
             : section.Header.Trim();
+
+
+        if (
+            section.ActionsPerRound > 0)
+        {
+            var actionLabel =
+                section.ActionsPerRound == 1
+
+                ? "Action/Round"
+
+                : "Actions/Round";
+
+
+            return
+                $"{header} " +
+                $"({section.ActionsPerRound} " +
+                $"{actionLabel})";
+        }
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                section.UsesText))
+        {
+            return
+                $"{header} " +
+                $"({section.UsesText.Trim()})";
+        }
 
 
         if (

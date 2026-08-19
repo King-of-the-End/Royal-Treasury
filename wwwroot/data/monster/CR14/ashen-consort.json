@@ -1,0 +1,193 @@
+{
+  "Name": "Ashen Consort",
+  "Group": "Congression of Cineris Clade",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The consorts of the Congression Matrons are chosen to be their defenders, advisors, and lovers. Selected from their subordinates as those who show the most potential, they are trained to leap through shadows, to conjure powerful burning spheres of darkness, and to summon up daggers of bloody flame that detonate violently. To be chosen as an ashen consort gives a dark elf authority above most of their kin, but also assures that they will one day offer themselves to Cineris Clade in hopes of becoming an Avatar.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference_BG%20-%20Ashen%20Consort.jpg",
+  "Stat Blocks": [
+    {
+      "id": "ashen_consort",
+      "section_type": "Stat Block",
+      "title": "Ashen Consort",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "18 (studded leather)",
+      "hit_points": "171 (18d8 + 90)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "fey ancestry"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Dex +11",
+        "Con +10",
+        "Cha +9"
+      ],
+      "skills": [
+        "Acrobatics +11",
+        "Athletics +7",
+        "Perception +7",
+        "Stealth +11"
+      ],
+      "resistances": [
+        "fire",
+        "psychic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Elvish",
+        "Undercommon"
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The elf’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "components": "none",
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "blood of cineris",
+                  "faerie fire"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "arbitrary adaptation",
+                  "circle of inverse evolution",
+                  "dimension door",
+                  "fire shield",
+                  "wall of fire"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "fireball"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Fireborne",
+          "name_format": "bold_italic",
+          "description": "The elf’s weapon attacks deal an extra 2d8 fire damage (represented already in this stat block)."
+        }
+      ],
+      "legendary_reaction": {
+        "title": "Legendary Reaction",
+        "uses": "2/Day",
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "bold_italic",
+            "description": ""
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elf makes two weapon attacks, and if one of them was made with their Separating Twinblade it can attack with its Separating Twinblade again as a bonus action."
+        },
+        {
+          "name": "Separating Twinblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) slashing damage plus 9 (2d8) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dagger of Bursting Cinders",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +11 to hit, range 100/300 ft., one target. Hit: 10 (1d6 + 6) piercing damage plus 9 (2d8) fire damage. If this weapon scores a critical hit against a target, it deals an extra 22 (4d10) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Darkblood Sphere (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "An eruption of darkness erupts in the shape of flames from a point the elf chooses within 120 feet, filling a 20-foot-radius sphere. Each creature in range must make a DC 17 Dexterity saving throw, taking 28 (5d8) fire damage and 28 (5d8) psychic damage on a failed save, or half as much on a successful one. Then, for 1 minute following (or until this feature is used again), that radius is filled with magical darkness. The elf and other members of the Congression can see through this darkness as if they had devilsight."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Ash Tendril",
+          "name_format": "bold_italic",
+          "description": "If a source of fire or ash is within 60 feet of the elf, they cause tendrils of black ash to lash out at a creature within 30 feet of it. The target must make a DC 17 Strength saving throw. On a failure, the target is restrained. They can attempt a DC 17 Strength check as an action, escaping and ending the effect on a success.\n\nThe elf carries a single satchel of black ash at all times that they can throw up to 30 feet as part of the same bonus action, which is enough material to allow one use of this action."
+        },
+        {
+          "name": "Shadow Jump",
+          "name_format": "bold_italic",
+          "description": "The elf steps into a shadow or area of darkness adjacent to them and emerges from another within 60 feet."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Reaction": "bold"
+        }
+      },
+      "raw_text": "**ASHEN CONSORT**\n*Medium humanoid (elf), lawful evil*\n**Armor Class** 18 (studded leather)\n**Hit Points** 171 (18d8 + 90)\n**Speed** 30 ft.\n**Quality Traits** Critical 19, fey ancestry\n**STR** 18 (+4) | **DEX** 22 (+6) | **CON** 20 (+5) | **INT** 18 (+4) | **WIS** 15 (+2) | **CHA** 18 (+4)\n**Saving Throws** Dex +11, Con +10, Cha +9\n**Skills** Acrobatics +11, Athletics +7, Perception +7, Stealth +11\n**Resistances** fire, psychic, poison\n**Condition Immunities** charmed, poisoned\n**Senses** darkvision 120 ft., passive Perception 17\n**Languages** Elvish, Undercommon\n**Challenge Rating** 14 (11,500 XP) **Prof Bonus** +5\n\n***Innate Spellcasting.*** The elf’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** blood of cineris, faerie fire\n• ***1/Day each:*** arbitrary adaptation, circle of inverse evolution, dimension door, fire shield, wall of fire\n• ***2/Day each:*** fireball\n\n***Fireborne.*** The elf’s weapon attacks deal an extra 2d8 fire damage (represented already in this stat block).\n\n**LEGENDARY REACTION (2/DAY)**\n***TBA***\n\n**ACTIONS**\n***Multiattack.*** The elf makes two weapon attacks, and if one of them was made with their Separating Twinblade it can attack with its Separating Twinblade again as a bonus action.\n\n***Separating Twinblade.*** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 9 (1d8 + 4) slashing damage plus 9 (2d8) fire damage.\n\n***Dagger of Bursting Cinders.*** *Ranged Weapon Attack:* +11 to hit, range 100/300 ft., one target. *Hit:* 10 (1d6 + 6) piercing damage plus 9 (2d8) fire damage. If this weapon scores a critical hit against a target, it deals an extra 22 (4d10) fire damage.\n\n***Darkblood Sphere (Recharge 6).*** An eruption of darkness erupts in the shape of flames from a point the elf chooses within 120 feet, filling a 20-foot-radius sphere. Each creature in range must make a DC 17 Dexterity saving throw, taking 28 (5d8) fire damage and 28 (5d8) psychic damage on a failed save, or half as much on a successful one. Then, for 1 minute following (or until this feature is used again), that radius is filled with magical darkness. The elf and other members of the Congression can see through this darkness as if they had devilsight.\n\n**Bonus Actions**\n***Ash Tendril.*** If a source of fire or ash is within 60 feet of the elf, they cause tendrils of black ash to lash out at a creature within 30 feet of it. The target must make a DC 17 Strength saving throw. On a failure, the target is restrained. They can attempt a DC 17 Strength check as an action, escaping and ending the effect on a success.\n\nThe elf carries a single satchel of black ash at all times that they can throw up to 30 feet as part of the same bonus action, which is enough material to allow one use of this action.\n\n***Shadow Jump.*** The elf steps into a shadow or area of darkness adjacent to them and emerges from another within 60 feet."
+    }
+  ]
+}

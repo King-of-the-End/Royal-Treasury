@@ -1,0 +1,266 @@
+@using System.Text.Json
+@using Website_of_Everything.Models
+@using Website_of_Everything.Components.Pages
+
+
+@if (
+    !string.IsNullOrWhiteSpace(
+        Entry.Description))
+{
+    <GlossaryText
+        Text="@Entry.Description"
+        Context="GlossaryContext.StatBlock" />
+}
+
+
+@if (Entry.Spellcasting is not null)
+{
+    @foreach (
+        var spellGroup
+        in Entry.Spellcasting.Spells)
+    {
+        <br />
+
+        <span>
+            •
+        </span>
+
+        <strong>
+            <em>
+
+                <GlossaryText
+                    Text="@spellGroup.Frequency"
+                    Context="GlossaryContext.StatBlock" />:
+
+            </em>
+        </strong>
+
+        <span>
+            @(" ")
+        </span>
+
+        @for (
+            var index = 0;
+            index < spellGroup.Spells.Count;
+            index++)
+        {
+            if (index > 0)
+            {
+                <span>, </span>
+            }
+
+            <GlossaryText
+                Text="@spellGroup.Spells[index]"
+                Context="GlossaryContext.StatBlock" />
+        }
+    }
+
+
+    @foreach (
+        var preparedGroup
+        in Entry.Spellcasting.PreparedSpells)
+    {
+        <br />
+
+        <span>
+            •
+        </span>
+
+        <strong>
+            <em>
+                @PreparedSpellHeading(
+                    preparedGroup):
+            </em>
+        </strong>
+
+        <span>
+            @(" ")
+        </span>
+
+        @for (
+            var index = 0;
+            index < preparedGroup.Spells.Count;
+            index++)
+        {
+            if (index > 0)
+            {
+                <span>, </span>
+            }
+
+            <GlossaryText
+                Text="@preparedGroup.Spells[index]"
+                Context="GlossaryContext.StatBlock" />
+        }
+    }
+
+
+    @if (
+        !string.IsNullOrWhiteSpace(
+            Entry.Spellcasting.AdditionalText))
+    {
+        <br />
+        <br />
+
+        <GlossaryText
+            Text="@Entry.Spellcasting.AdditionalText"
+            Context="GlossaryContext.StatBlock" />
+    }
+
+
+    @if (
+        !string.IsNullOrWhiteSpace(
+            Entry.Spellcasting.CastingLevelNote))
+    {
+        <br />
+        <br />
+
+        <GlossaryText
+            Text="@Entry.Spellcasting.CastingLevelNote"
+            Context="GlossaryContext.StatBlock" />
+    }
+
+
+    @foreach (
+        var note
+        in Entry.Spellcasting.Notes)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                note))
+        {
+            <br />
+            <br />
+
+            <GlossaryText
+                Text="@note"
+                Context="GlossaryContext.StatBlock" />
+        }
+    }
+}
+
+
+@if (Entry.Options.Count > 0)
+{
+    @foreach (
+        var option
+        in Entry.Options)
+    {
+        <br />
+
+        <span>
+            •
+        </span>
+
+        @if (
+            !string.IsNullOrWhiteSpace(
+                option.Name))
+        {
+            <strong>
+                <em>
+
+                    <GlossaryText
+                        Text="@option.Name"
+                        Context="GlossaryContext.StatBlock" />.
+
+                </em>
+            </strong>
+
+            <span>
+                @(" ")
+            </span>
+        }
+
+        <StatBlockEntryDetails
+            Entry="@option" />
+    }
+}
+
+
+@code {
+
+    [Parameter]
+    [EditorRequired]
+    public StatBlockEntry Entry { get; set; } =
+        new();
+
+
+    // =====================================
+    // PREPARED SPELL HEADING
+    //
+    // Example:
+    //
+    // 1st level (4 slots)
+    // =====================================
+
+    private static string
+        PreparedSpellHeading(
+            StatBlockPreparedSpellLevel group)
+    {
+        var level =
+            group.Level?.Trim()
+            ??
+            string.Empty;
+
+
+        var slots =
+            JsonValue(
+                group.Slots);
+
+
+        if (
+            string.IsNullOrWhiteSpace(
+                slots))
+        {
+            return
+                string.IsNullOrWhiteSpace(
+                    level)
+
+                ? "Prepared"
+
+                : $"{level} level";
+        }
+
+
+        var slotLabel =
+            slots == "1"
+
+            ? "slot"
+
+            : "slots";
+
+
+        return
+            string.IsNullOrWhiteSpace(
+                level)
+
+            ? $"{slots} {slotLabel}"
+
+            : $"{level} level " +
+              $"({slots} {slotLabel})";
+    }
+
+
+    // =====================================
+    // JSON VALUE
+    // =====================================
+
+    private static string
+        JsonValue(
+            JsonElement value)
+    {
+        return value.ValueKind switch
+        {
+            JsonValueKind.String =>
+                value.GetString()
+                ??
+                string.Empty,
+
+            JsonValueKind.Number =>
+                value.ToString(),
+
+            _ =>
+                string.Empty
+        };
+    }
+
+}

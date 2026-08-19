@@ -1,0 +1,237 @@
+{
+  "Name": "Cineris Matron",
+  "Group": "Congression of Cineris Clade",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "There are three Cineris matrons among the lesser houses, not counting Shiryandra, the matron-prophet. These matrons are skilled fighters, priestesses, strategists, and are trained in sorcerous arts. They wield dangerous dragonbone whips and can conjure daggers made of burning shadow.\n\nThough currently unnecessary, if a new matron would be selected for a noble house, they would be chosen from the consorts and priestesses of the house who displayed arcane talent and dextrous acuity beyond their station, respectively. The matrons have tattoos that contain trace elements of Cineris’ blood which was cooled, powdered, and mixed with the ink used.\n\nThe existing Cineris matrons are Liante Elgloven Alussfaen and Felacath Olmes Sistress. The fallen house Murrpaque was led by matron Colthe Theresis Murrpaque, but she was assassinated before being survived by the current matron, Nea Theresis Murrpaque. Despite holding the title of matron, Nea does not possess the talents of a matron of Cineris.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Cineris%20Matron.png",
+  "Stat Blocks": [
+    {
+      "id": "cineris_matron",
+      "section_type": "Stat Block",
+      "title": "Cineris Matron",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "17 (medium endarwool)",
+      "hit_points": "170 (20d8 + 80)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Fey ancestry",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 23,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +9",
+        "Con +9",
+        "Wis +7"
+      ],
+      "skills": [
+        "Athletics +7",
+        "History +8",
+        "Perception +7",
+        "Religion +8",
+        "Stealth +9"
+      ],
+      "resistances": [
+        "fire",
+        "psychic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Elvish",
+        "Primordial",
+        "Undercommon"
+      ],
+      "challenge_rating": "16 (15,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Endarwool Cloth Armor",
+          "name_format": "bold_italic",
+          "description": "Any piercing, slashing and bludgeoning damage the elf takes is reduced by 5 (before resistances are applied), unless the damage originates from an adamantine weapon."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The elf’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "acceleration",
+                  "fire whip (5th level)",
+                  "magic missile",
+                  "web"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "grand aspect of flames",
+                  "greater invisibility",
+                  "incineration tower",
+                  "minor gate",
+                  "orbs of spelljamming (6th level)"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "acceleration",
+                  "burning web",
+                  "silencing smite",
+                  "vorpal flames (7th level)"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "counterspell",
+                  "shield"
+                ]
+              }
+            ],
+            "notes": [
+              "The elf does not make eidomancy checks."
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The matron makes three attacks, choosing between its Dragonbone Whip and Shadowflare Dagger for each."
+        },
+        {
+          "name": "Dragonbone Whip (+2 Whip)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 11 (2d4 + 6) piercing, magic damage plus 11 (3d6) fire damage.\n\nThis whip can be used to attempt grapple checks up to its reach. If the whip successfully grapples a creature, it cannot be used to make attacks against creatures other than the grappled target who is restrained until the grapple ends.\n\nIn place of one attack with the Dragonbone Whip, the elf can use it to latch onto a surface or creature within its range and pull themselves to the space or one adjacent to it within the whip’s range. If targeting a creature, they must succeed on an attack roll against them using the whip.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shadowflare Dagger",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) psychic damage plus 7 (2d6) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dragonbone Whip: Ancient Firestrom (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The power of the whip’s origin is invoked, creating four columns of flame each centered on a point within 60 feet of the elf. Each column is 60 feet tall and has a 10-foot radius. Each creature within range must make a DC 19 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Blessing of Cineris (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The elf grants a blessing of Cineris to herself or a creature within 30 feet. That creature’s weapons become magical until the end of their next turn (or the current one, if targeting herself), and during this time they roll 1d4 each time they make an attack roll, and add it to the result."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Whip Slide",
+          "name_format": "bold_italic",
+          "description": "When the elf is targeted by a weapon attack, they use their Dragonbone Whip to latch onto a surface or creature within its range, and pull themselves away to a space within 15 feet of that point. This movement happens after the triggering attack resolves, but the movement does not provoke opportunity attacks. This reaction cannot be used if the Dragonbone Whip is being used to grapple a creature."
+        }
+      ],
+      "legendary_actions": {
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The elf makes a Dragonbone Whip attack."
+          },
+          {
+            "name": "Dash",
+            "name_format": "bold_italic",
+            "description": "The elf moves up to its movement speed."
+          },
+          {
+            "name": "Light Pulse",
+            "name_format": "bold_italic",
+            "description": "The elf creates a flash of light originating from their fingertip that spreads out like a radar pulse, relaying everything it touches within 60 feet to the elf. Creatures within range who are invisible or hidden are revealed to the elf, who also gains blindsight out to that range until the end of their next turn."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Actions (2 Actions)": "bold",
+          "Legendary Reaction": "bold",
+          "Legendary Reaction (2/Day)": "bold"
+        }
+      },
+      "raw_text": "**CINERIS MATRON**\n*Medium humanoid (elf), lawful evil*\n**Armor Class** 17 (medium endarwool)\n**Hit Points** 170 (20d8 + 80)\n**Speed** 40 ft., climb 30 ft.\n**Quality Traits** Fey ancestry, magic resist\n**STR** 15 (+2) | **DEX** 19 (+4) | **CON** 18 (+4) | **INT** 16 (+3) | **WIS** 15 (+2) | **CHA** 23 (+6)\n**Saving Throws** Dex +9, Con +9, Wis +7\n**Skills** Athletics +7, History +8, Perception +7, Religion +8, Stealth +9\n**Resistances** fire, psychic, poison\n**Condition Immunities** charmed\n**Senses** darkvision 120 ft., passive Perception 17\n**Languages** Elvish, Primordial, Undercommon\n**Challenge Rating** 16 (15,000 XP) **Prof Bonus** +5\n\n***Endarwool Cloth Armor.*** Any piercing, slashing and bludgeoning damage the elf takes is reduced by 5 (before resistances are applied), unless the damage originates from an adamantine weapon.\n\n***Innate Spellcasting.*** The elf’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** acceleration, fire whip (5th level), magic missile, web\n• ***1/Day each:*** grand aspect of flames, greater invisibility, incineration tower, minor gate, orbs of spelljamming (6th level)\n• ***2/Day each:*** acceleration, burning web, silencing smite, vorpal flames (7th level)\n• ***3/Day each:*** counterspell, shield\n\nThe elf does not make eidomancy checks.\n\n\n**LEGENDARY REACTION (2/DAY)**\n***TBA***\n\n**ACTIONS**\n***Multiattack.*** The matron makes three attacks, choosing between its Dragonbone Whip and Shadowflare Dagger for each.\n\n***Dragonbone Whip (+2 Whip).*** *Melee Weapon Attack:* +11 to hit, reach 15 ft., one target. *Hit:* 11 (2d4 + 6) piercing, magic damage plus 11 (3d6) fire damage. This whip can be used to attempt grapple checks up to its reach. If the whip successfully grapples a creature, it cannot be used to make attacks against creatures other than the grappled target who is restrained until the grapple ends.\n\nIn place of one attack with the Dragonbone Whip, the elf can use it to latch onto a surface or creature within its range and pull themselves to the space or one adjacent to it within the whip’s range. If targeting a creature, they must succeed on an attack roll against them using the whip.\n\n***Shadowflare Dagger.*** *Melee Weapon Attack:* +11 to hit, reach 5 ft., one target. *Hit:* 13 (2d6 + 6) psychic damage plus 7 (2d6) fire damage.\n\n***Dragonbone Whip: Ancient Firestrom (Recharge 6).*** The power of the whip’s origin is invoked, creating four columns of flame each centered on a point within 60 feet of the elf. Each column is 60 feet tall and has a 10-foot radius. Each creature within range must make a DC 19 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.\n\n**Bonus Actions**\n***Blessing of Cineris (3/Day).*** The elf grants a blessing of Cineris to herself or a creature within 30 feet. That creature’s weapons become magical until the end of their next turn (or the current one, if targeting herself), and during this time they roll 1d4 each time they make an attack roll, and add it to the result.\n\n**Reactions**\n***Whip Slide.*** When the elf is targeted by a weapon attack, they use their Dragonbone Whip to latch onto a surface or creature within its range, and pull themselves away to a space within 15 feet of that point. This movement happens after the triggering attack resolves, but the movement does not provoke opportunity attacks. This reaction cannot be used if the Dragonbone Whip is being used to grapple a creature.\n\n**LEGENDARY ACTIONS (2 ACTIONS)**\n***Attack.*** The elf makes a Dragonbone Whip attack.\n\n***Dash.*** The elf moves up to its movement speed.\n\n***Light Pulse.*** The elf creates a flash of light originating from their fingertip that spreads out like a radar pulse, relaying everything it touches within 60 feet to the elf. Creatures within range who are invisible or hidden are revealed to the elf, who also gains blindsight out to that range until the end of their next turn.",
+      
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

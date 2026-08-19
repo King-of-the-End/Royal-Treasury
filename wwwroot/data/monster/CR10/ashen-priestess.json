@@ -1,0 +1,213 @@
+{
+  "Name": "Ashen Priestess",
+  "Group": "Congression of Cineris Clade",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "These powerful priestesses are the prophets, confidants, and trusted protectors of the Congression’s matrons. Dark Elves who show an aptitude for the arcane on their own undergo trials to become a priestess that take a lifetime compared to the lifespan of more short-lived humanoids. Over the course of their training they form a bond with the cinderbite spider elementals that spawn near Cineris Clade’s body, and use the blood of Cineris to paint burned runes into their skin. Should they complete their training, these wounds and their resulting scars vanish as the magic becomes part of them.\n\nThe priestesses of Cineris Clade have a fanatic reverence for their matrons and their matron-prophet, who they would give their lives for at a moment’s notice. They command the respect and obedience of all below them, including the rank-and-file Dark Elves of their house, their matron consorts, and even their elite warriors. By unspoken tradition, the ashen priestesses treat their matron’s consorts harshly to keep them in line, speaking blunt truths that their “loving” partner wishes not to.\n\n***Dragonbone Staff.*** In the Congression’s early years, a great and ancient red dragon attacked them, and in a feat of divine providence, Shiryanda invoked Cineris Clade to destroy it. A collapse in the caves caused a waterfall of its molten blood to pour onto the creature, destroying all except its bones and petrified scales. From its corpse, the Congression made a fleet of bone staffs that channel Cineris Clade’s energy. These dragonbone staffs are wielded by the priestesses, and matching dragonbone equipment is wielded by the matrons.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BGT%20-%20Ashen%20Priestess.jpg",
+  "Stat Blocks": [
+    {
+      "id": "ashen_priestess",
+      "section_type": "Stat Block",
+      "title": "Ashen Priestess",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "1-4 (16d8 + 32)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Fey ancestry"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 19,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Con +6",
+        "Wis +7",
+        "Cha +8"
+      ],
+      "skills": [
+        "Insight +9",
+        "Perception +8",
+        "Religion +5",
+        "Stealth +8"
+      ],
+      "resistances": [
+        "poison",
+        "psychic"
+      ],
+      "immunities": [
+        "fire"
+      ],
+      "senses": [
+        "devilsight 30 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Elvish",
+        "Primordial",
+        "Undercommon"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Endarwool Cloth Armor",
+          "name_format": "bold_italic",
+          "description": "Any piercing, slashing and bludgeoning damage the elf takes is reduced by 5 (before resistances are applied), unless the damage originates from an adamantine weapon."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The elf is a 12th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 12,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "sacred flame",
+                  "thaumaturgy",
+                  "true strike"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "bless",
+                  "blood of cineris",
+                  "cure wounds",
+                  "inflict wounds"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "blindness/deafness",
+                  "continual flame",
+                  "spiritual weapon"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dispel magic",
+                  "counterspell",
+                  "fireball",
+                  "fly"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "banishment",
+                  "divination",
+                  "tamamo’s arrowfall"
+                ]
+              },
+              {
+                "frequency": "5th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "burning web",
+                  "immolation",
+                  "mass cure wounds",
+                  "volcanic ash"
+                ]
+              },
+              {
+                "frequency": "6th level (1 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "nightmare cell"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Ash Catalyst (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The elf paints runes of arcane flame in the air, and targets two creatures it can see within 30 feet. Those creatures must succeed on a DC 16 Charisma saving throw or be marked by fire ash for 1 minute. Creatures marked this way become vulnerable to fire damage unless they were immune or resistant to fire damage, in which case they lose any resistance to fire damage they had instead. Once they take fire damage the fire ash’s effects end for them."
+        },
+        {
+          "name": "Dragonbone Staff (+2 Quarterstaff)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 5) bludgeoning damage plus 23 (5d8) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dragonfire Burst",
+          "name_format": "bold_italic",
+          "description": "Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 18 (4d8) acid damage plus 18 (4d8) fire damage.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Summon Fire Elemental (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The elf summons a fire elemental with a CR equal to or less than the elf’s own, which appears in an unoccupied space within 60 feet. The elemental acts as an ally to the elf and its allies, and neither the elf nor the elemental can summon another creature while the elemental remains. It remains for 10 minutes, until the elf dies, or until they dismiss it as an action.\n\nThe elf’s preferred elemental to summon is a Cinderbite Spider, which it can conjure into its own space and immediately mount, riding it as an independent mount."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Fire Step",
+          "name_format": "bold_italic",
+          "description": "The elf vanishes in a burst of flames, and reappears in an unoccupied space up to 60 feet away, or adjacent from another source of flame they can see within 120 feet. Spaces that were subject to fire damage within the last minute count as a source of flame for this purpose."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**ASHEN PRIESTESS**\n*Medium humanoid (elf), lawful evil*\n**Armor Class** 15 (natural armor)\n**Hit Points** 1-4 (16d8 + 32)\n**Speed** 30 ft.\n**Quality Traits** Fey ancestry\n**STR** 8 (-1) | **DEX** 16 (+3) | **CON** 14 (+2) | **INT** 12 (+1) | **WIS** 18 (+4) | **CHA** 19 (+4)\n**Saving Throws** Con +6, Wis +7, Cha +8\n**Skills** Insight +9, Perception +8, Religion +5, Stealth +8\n**Resistances** poison, psychic\n**Immunities** fire\n**Senses** devilsight 30 ft., darkvision 120 ft., passive Perception 18\n**Languages** Elvish, Primordial, Undercommon\n**Challenge Rating** 10 (5,900 XP) **Prof Bonus** +4\n\n***Endarwool Cloth Armor.*** Any piercing, slashing and bludgeoning damage the elf takes is reduced by 5 (before resistances are applied), unless the damage originates from an adamantine weapon.\n\n***Spellcasting.*** The elf is a 12th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:\n• ***Cantrips (at will):*** sacred flame, thaumaturgy, true strike\n• ***1st level (4 slots):*** bless, blood of cineris, cure wounds, inflict wounds\n• ***2nd level (3 slots):*** blindness/deafness, continual flame, spiritual weapon\n• ***3rd level (3 slots):*** dispel magic, counterspell, fireball, fly\n• ***4th level (3 slots):*** banishment, divination, tamamo’s arrowfall\n• ***5th level (2 slots):*** burning web, immolation, mass cure wounds, volcanic ash\n• ***6th level (1 slots):*** nightmare cell\n\n**ACTIONS**\n***Ash Catalyst (Recharge 5-6).*** The elf paints runes of arcane flame in the air, and targets two creatures it can see within 30 feet. Those creatures must succeed on a DC 16 Charisma saving throw or be marked by fire ash for 1 minute. Creatures marked this way become vulnerable to fire damage unless they were immune or resistant to fire damage, in which case they lose any resistance to fire damage they had instead. Once they take fire damage the fire ash’s effects end for them.\n\n***Dragonbone Staff (+2 Quarterstaff).*** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 10 (1d8 + 5) bludgeoning damage plus 23 (5d8) fire damage.\n\n***Dragonfire Burst.*** *Ranged Spell Attack:* +8 to hit, range 60 ft., one target. *Hit:* 18 (4d8) acid damage plus 18 (4d8) fire damage.\n\n***Summon Fire Elemental (1/Day).*** The elf summons a fire elemental with a CR equal to or less than the elf’s own, which appears in an unoccupied space within 60 feet. The elemental acts as an ally to the elf and its allies, and neither the elf nor the elemental can summon another creature while the elemental remains. It remains for 10 minutes, until the elf dies, or until they dismiss it as an action.\n\nThe elf’s preferred elemental to summon is a Cinderbite Spider, which it can conjure into its own space and immediately mount, riding it as an independent mount.\n\n**Bonus Actions**\n***Fire Step.*** The elf vanishes in a burst of flames, and reappears in an unoccupied space up to 60 feet away, or adjacent from another source of flame they can see within 120 feet. Spaces that were subject to fire damage within the last minute count as a source of flame for this purpose."
+    }
+  ]
+}

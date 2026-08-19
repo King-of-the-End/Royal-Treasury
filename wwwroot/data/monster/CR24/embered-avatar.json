@@ -1,0 +1,206 @@
+{
+  "Name": "Embered Avatar",
+  "Group": "Congression of Cineris Clade",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The pinnacle of what the Congression seeks is this form of life, infused with the blood of Cineris Clade. Embered Avatars, as of yet unseen in Somnus Domina, are agents of their god’s will. They inherit an element of Cineris Clade’s Primeval Order (only a small fragment of it), and gain an unmatched affinity for fire and heat. This avatar combines psychic energy and primordial flames to create weapons that seem solid, but are just fiery expressions of their ability. When pushed to their limit they undergo a primevil awakening that grants them grotesque wings and tendrils of flame, and pushes them to indulge the urge to burn everything around them.\n\nOrdained. Like other beings who come close to the mystery of the Grand Primaries, the embered avatar is Ordained, subconsciously learning of the Truth and sensing that something exists beyond the world before them. This awareness mixed with their cultish adherence to what they believe Cineris Clade’s desires are can detach them from the perspective of a mortal and lead them to seeing themselves as a higher being.\n\nPrimeval Fire. Fire elementals recognize the avatar as a primordial expression of flame, and bend to their will. Elementals of flame with a CR of 20 or lower act as if charmed by the avatar, and are more than likely to obey its commands. Elementals beyond that rating may do the same, but are more than likely to do so by choice.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Reference_BG%20-%20Embered%20Avatar.jpg",
+  "Stat Blocks": [
+    {
+      "id": "embered_avatar",
+      "section_type": "Stat Block",
+      "title": "Embered Avatar",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "383 (45d8 + 180)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "fey ancestry",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +13",
+        "Int +9",
+        "Cha +10"
+      ],
+      "skills": [
+        "Athletics +9",
+        "History +9",
+        "Perception +11"
+      ],
+      "resistances": [
+        "psychic",
+        "poison",
+        "B/S/P (eidolic)"
+      ],
+      "immunities": [
+        "fire",
+        "B/S/P (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "exhaustion"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "Elvish",
+        "Undercommon"
+      ],
+      "challenge_rating": "24 (62,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Primeval Awakening (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When the elf would be reduced to 1 hit points or killed outright, they are not killed and instead their hit points are reset to 250, they regain expended uses of their Legendary Reactions, and for 1 hour they can use their Mythic Actions and gain the following benefits: they gain a fly (hover) speed equal to their movement speed; their fire damage ignores resistances, and treats immunity to it as resistance instead (so dealing half damage); the elf gains truesight out to 60 feet; any creature that hits the elf with a weapon attack from within 10 feet takes 1d12 fire damage; the elf absorbs fire damage it would have taken that does not originate from itself as hit points it regains; when this feature awakens, it can choose to immediately use its Primeval Catastrophe (consuming its daily use).\n\nIf a party defeats the elf after it has used its Primeval Awakening, award them an additional 62,000 XP (for a total of 128,000 XP)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elf makes three weapon attacks."
+        },
+        {
+          "name": "Primal Firesteel",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target or Ranged Weapon Attack: +13 to hit, range 40/120 ft., one target. Hit: 18 (3d8 + 4) psychic damage plus 14 (3d8) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Scorched Earth",
+          "name_format": "bold_italic",
+          "description": "In place of one of its weapon attacks, the elf unleashes a wave of heat and light that burns everything within 30 feet of it. Each target in range must succeed on a DC 19 Constitution saving throw or take 9 (2d8) psychic damage and 9 (2d8) fire damage. Creatures in spaces adjacent to the elf that fail the save are pushed 5 feet away."
+        },
+        {
+          "name": "Mythic Action: Primeval Catastrophe (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The elf conjures four colossal orbs of fire and psychic energy, each of which is sent hurtling at different points the elf can see within 5000 feet. Each orb explodes in a 40-foot-radius sphere, forcing each creature within range of one or more of the spheres to make a DC 19 Dexterity saving throw. The spheres spread around corners and through cracks as small as 1 inch. Each target takes 70 (20d6) psychic damage and 70 (20d6) fire damage on a failed save, or half as much on a successful one."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Psychic Step",
+          "name_format": "bold_italic",
+          "description": "The avatar teleports to an unoccupied space it can see within a distance equal to their base movement speed."
+        }
+      ],
+      "legendary_actions": {
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Psychic Step",
+            "name_format": "bold_italic",
+            "description": "The elf uses its Psychic Step."
+          },
+          {
+            "name": "Fire Lash (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elf makes two Primal Firesteel attacks, each against a different target within range."
+          },
+          {
+            "name": "Adapt and Evolve (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elf gains proficiency in one type of saving throw it chooses, and retains that proficiency for 1 minute or until they use this Legendary Action again."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "intro": "The aspect can use the following as Legendary Action options for 1 hour after activating its Primeval Awakening.",
+        "options": [
+          {
+            "name": "Fire Cage",
+            "name_format": "bold_italic",
+            "description": "One creature the elf chooses within 120 feet has a ring of fire erupt around it and form a sphere, trapping it within unless they succeed a DC 19 Dexterity saving throw. This sphere lasts until the end of the elf’s next turn. While trapped in the sphere a creature has disadvantage on attack rolls and Dexterity saving throws, and has cover against all attacks except those made by the elf. If they take any movement the cage detonates, knocking the creature prone and dealing 13 (2d12) fire damage to them."
+          },
+          {
+            "name": "Obsidian Steel (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The flames of the elf condense into a black steel in the form of armor, a weapon, or weave into their body, and this metal remains until the end of the elf’s next turn. During that time they gain one of the following benefits:",
+            "options": [
+              {
+                "name": "Weapon",
+                "description": "The elf gains advantage on weapon attacks, which deal an extra 1d12 fire damage."
+              },
+              {
+                "name": "Armor",
+                "description": "The elf gains 20 (3d12) temporary hit points, and as long as they have them they gain a +5 bonus to their armor class."
+              },
+              {
+                "name": "Muscle Fibers",
+                "description": "The elf gains advantage on saving throws and their movement speed doubles."
+              }
+            ]
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold",
+          "Legendary Reaction": "bold",
+          "Legendary Reaction (2/Day)": "bold"
+        }
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "raw_text": "**LEGENDARY REACTION (2/DAY)**\n***TBA***"
+    }
+  ]
+}
