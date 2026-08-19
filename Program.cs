@@ -63,17 +63,28 @@ app.UseStatusCodePagesWithReExecute(
 // =========================================
 // HTTPS
 //
-// Render terminates HTTPS at its proxy.
+// IMPORTANT FOR RENDER:
 //
-// Keep this Render environment variable:
+// Render terminates public HTTPS at its load
+// balancer and forwards the request to this
+// container over HTTP.
 //
-// ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
+// Render already redirects public HTTP
+// requests to HTTPS before they reach the
+// container.
 //
-// ASP.NET Core will use the forwarded scheme
-// supplied by Render.
+// Calling UseHttpsRedirection() in Production
+// can therefore interfere with the Blazor
+// Interactive Server WebSocket handshake.
+//
+// Keep HTTPS redirection only for local
+// development.
 // =========================================
 
-app.UseHttpsRedirection();
+if (app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
 
 
 // =========================================
@@ -92,10 +103,23 @@ app.MapStaticAssets();
 
 // =========================================
 // BLAZOR INTERACTIVE SERVER
+//
+// WebSocket compression is disabled here
+// deliberately for deployment behind
+// Render's reverse proxy.
+//
+// Interactive Server still uses WebSockets
+// normally; the frames are simply not
+// compressed.
 // =========================================
 
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+    .AddInteractiveServerRenderMode(
+        options =>
+        {
+            options.DisableWebSocketCompression =
+                true;
+        });
 
 
 // =========================================
