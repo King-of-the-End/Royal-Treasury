@@ -1,0 +1,203 @@
+{
+  "Name": "Decay’s Equerry",
+  "Group": "Court of Decay",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The Equerrys are the highest ranking members of the Court of Decay, serving as Gotham’s mouthpieces and apostles. They are a cult within a cult, who operate under layers of secrecy that even their own lower cult members are not privileged enough to know. They carry large scythes made of refined giant’s bones that pay homage to the legendary artifact of their lord, Gotham’s Hook.\n\nIt is not uncommon for Equerrys to be more than just a regular humanoid: vampires, sapient undead and abominations that wish to manipulate Gotham’s influence while doing his bidding are commonly among them.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Reference%20-%20Decay's%20Equerry%2C%20Ethicus.jpg",
+  "Stat Blocks": [
+    {
+      "id": "decays_equerry",
+      "section_type": "Stat Block",
+      "title": "Decay’s Equerry",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any, usually human)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "18 (plate)",
+      "hit_points": "188 (25d8 + 75)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic Resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "+5"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +6",
+        "Cha +9"
+      ],
+      "skills": [
+        "Arcana +6",
+        "Insight +9",
+        "Perception +6",
+        "Religion +9"
+      ],
+      "resistances": [
+        "necrotic",
+        "poison",
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "two other languages"
+      ],
+      "challenge_rating": "12 (8,400 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Aura of Turn Resistance",
+          "name_format": "bold_italic",
+          "description": "Undead within 40 feet of the equerry have advantage on saving throws against being turned."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The equerry’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Intelligence",
+            "components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "biting curse",
+                  "curse"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "catastrophic shield",
+                  "dread surge",
+                  "circle of death",
+                  "fly",
+                  "nightmare cell",
+                  "raise dead"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "greater invisibility",
+                  "mass burdened blood",
+                  "phantom step"
+                ]
+              }
+            ],
+            "casting_level_note": "Their spells are cast as though at 4th level, unless their base level is higher."
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The equerry makes two attacks with their Gravescythe, then either uses their Necrotic Pulse, Command Undead, or casts a spell using their Innate Spellcasting."
+        },
+        {
+          "name": "Gravescythe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (1d12 + 4) slashing damage plus 9 (2d8) necrotic damage. If this attack reduces a creature to 0 hit points, that creature is paralyzed until they regain at least 1 hit point.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Necrotic Pulse",
+          "name_format": "bold_italic",
+          "description": "Each non-undead creature within 10 feet of a point the equerry can see within 60 feet is assailed by a pulse of necrotic magic, and is forced to make a DC 17 Dexterity saving throw against this magical effect. Targets take 18 (2d12 + 5) necrotic damage on a failed save, or half as much on a successful one.\n\nAny undead caught in the same pulse are not damaged, and are healed by the amount of necrotic damage they would have taken instead. If there are any non-undead corpses in that range, they become Decaying Menials with hit points equal to what undead would have regained, and they immediately roll initiative. This can only create up to one Decaying Menial per unoccupied space."
+        },
+        {
+          "name": "Command Undead",
+          "name_format": "bold_italic",
+          "description": "The equerry commands up to three undead that itself or one of their allies controls, which may use their reaction to move up to half their movement speed (if only one undead is commanded this way, they can move up to their full speed), and collectively make up to three weapon attacks against targets the equerry decides. Multiple of these attacks can be taken by the same undead, but they cannot take more attacks than their own stat block would allow them to take in one action (including using Multiattack)."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The equerry makes a Gravescythe attack."
+          },
+          {
+            "name": "Shadow of Decay (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Until the start of its next turn, the equerry’s body is empowered with a powerful regenerative curse. It is immune to the first instance of piercing, slashing, or bludgeoning damage it takes each turn, as its body instantly regenerates from whatever damage is done from these sources."
+          },
+          {
+            "name": "Absorb Essence (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The equerry reduces the hit points of any undead under its thrall it chooses (singular or multiple) within 30 feet to 0, and gains temporary hit points equal to the amount of hit points reduced this way. It loses these temporary hit points after 1 minute, and while it has them it is vulnerable to radiant damage."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Legendary Actions": "bold",
+          "Legendary Reactions": "bold"
+        }
+      },
+      "raw_text": "**DECAY’S EQUERRY**\n*Medium humanoid (any, usually human), neutral evil*\n**Armor Class** 18 (plate)\n**Hit Points** 188 (25d8 + 75)\n**Speed** 30 ft.\n**Quality Traits** Magic resist\n**STR** 18 (+4) | **DEX** 12 (+1) | **CON** 16 (+3) | **INT** 20 (+5) | **WIS** 14 (+2) | **CHA** 20 (+5)\n**Saving Throws** Dex +5, Wis +6, Cha +9\n**Skills** Arcana +6, Insight +9, Perception +6, Religion +9\n**Resistances** necrotic, poison, psychic\n**Condition Immunities** charmed, exhaustion\n**Senses** darkvision 120 ft., passive Perception 16\n**Languages** Common, Elvish, two other languages\n**Challenge Rating** 12 (8,400 XP) **Prof Bonus** +4\n\n***Aura of Turn Resistance.*** Undead within 40 feet of the equerry have advantage on saving throws against being turned.\n\n***Innate Spellcasting.*** The equerry’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:\n• ***At will:*** biting curse, curse\n• ***1/Day each:*** catastrophic shield, dread surge, circle of death, fly, nightmare cell, raise dead\n• ***2/Day each:*** greater invisibility, mass burdened blood, phantom step\n\nTheir spells are cast as though at 4th level, unless their base level is higher.\n\n**ACTIONS**\n***Multiattack.*** The equerry makes two attacks with their Gravescythe, then either uses their Necrotic Pulse, Command Undead, or casts a spell using their Innate Spellcasting.\n\n***Gravescythe.*** *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 11 (1d12 + 4) slashing damage plus 9 (2d8) necrotic damage. If this attack reduces a creature to 0 hit points, that creature is paralyzed until they regain at least 1 hit point.\n\n***Necrotic Pulse.*** Each non-undead creature within 10 feet of a point the equerry can see within 60 feet is assailed by a pulse of necrotic magic, and is forced to make a DC 17 Dexterity saving throw against this magical effect. Targets take 18 (2d12 + 5) necrotic damage on a failed save, or half as much on a successful one.\n\nAny undead caught in the same pulse are not damaged, and are healed by the amount of necrotic damage they would have taken instead. If there are any non-undead corpses in that range, they become Decaying Menials with hit points equal to what undead would have regained, and they immediately roll initiative. This can only create up to one Decaying Menial per unoccupied space.\n\n***Command Undead.*** The equerry commands up to three undead that itself or one of their allies controls, which may use their reaction to move up to half their movement speed (if only one undead is commanded this way, they can move up to their full speed), and collectively make up to three weapon attacks against targets the equerry decides. Multiple of these attacks can be taken by the same undead, but they cannot take more attacks than their own stat block would allow them to take in one action (including using Multiattack).\n\n**LEGENDARY REACTIONS (2 USES)**\nTBA.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Attack.*** The equerry makes a Gravescythe attack.\n\n***Shadow of Decay (Costs 2 Actions).*** Until the start of its next turn, the equerry’s body is empowered with a powerful regenerative curse. It is immune to the first instance of piercing, slashing, or bludgeoning damage it takes each turn, as its body instantly regenerates from whatever damage is done from these sources.\n\n***Absorb Essence (Costs 2 Actions).*** The equerry reduces the hit points of any undead under its thrall it chooses (singular or multiple) within 30 feet to 0, and gains temporary hit points equal to the amount of hit points reduced this way. It loses these temporary hit points after 1 minute, and while it has them it is vulnerable to radiant damage.",
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

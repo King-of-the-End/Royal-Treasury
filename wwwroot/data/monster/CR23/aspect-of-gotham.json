@@ -1,0 +1,303 @@
+{
+  "Name": "Aspect of Gotham",
+  "Group": "Deific Aspects",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The incarnation of Gotham is the goal of the Court of Decay, which Gotham considers to be a worthwhile venture. Ever since his apotheosis, he has been unable to return to the Material Plane due to the Divine Curtain, but has continued to message and organize his followers and dark network of necromancers to prepare for his return. He has managed to incarnate several times, but only by occupying a false body that rots and falls apart over time.\n\nA large contributing factor to Gotham’s inability to properly incarnate is the delight he takes in the suffering of his followers: those who retain the spark of life in his service are toyed with, sometimes to Gotham’s own disadvantage. Several times a well-prepared ritual to incarnate the Deadland Count has gone awry because he allowed it to fail or for outsiders to involve themselves, so that Gotham may claim his followers in his realm of death.\n\nThese habits are borderline intentional, however - to regain his place in the Material Plane is a desire Gotham holds, but not something he feels is critical so long as he has servants there to do his bidding. The accumulation of more dead under his thrall and the amusement he gains from tormenting the foolish living souls that follow the god of undeath outweighs any need he has to properly revive.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR23/Lesser%20God%20-%20Gotham.jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR23/Lesser%20Deity%20Emblem%20-%20Gotham.png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_gotham",
+      "section_type": "Stat Block",
+      "title": "Aspect of Gotham",
+      "creature": {
+        "size": "Medium",
+        "type": "undead",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "213 (25d8 + 100)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "30 ft. (hover)"
+      },
+      "quality_traits": [
+        "Deific",
+        "Magic Resist",
+        "Regen 20 (radiant)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +9",
+        "Con +11",
+        "Wis +11"
+      ],
+      "skills": [
+        "Arcana +14",
+        "Deception +13",
+        "Medicine +14",
+        "Perception +11"
+      ],
+      "resistances": [
+        "cold",
+        "lightning",
+        "poison",
+        "B/S/P (silvered)"
+      ],
+      "immunities": [
+        "necrotic",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "turned"
+      ],
+      "senses": [
+        "truesight 120 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "23 (50,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Dread Restoration (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If Gotham is reduced to 0 hit points or killed outright, his current hit point total resets to 150, he ends any magical effects targeting him that he wishes to escape, and he teleports to an unoccupied space within 60 feet. He regains his Legendary Resistances, regains one of each level of his spell slots, and can use his mythic actions for 1 hour. A party that defeats him after using his Dread Restoration is awarded an additional 50,000 XP (100,000 XP total)."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Gotham is a 20th-level spellcaster. His spellcasting ability is Intelligence. He has the following spells prepared:",
+          "spellcasting": {
+            "caster_level": 20,
+            "spellcasting_ability": "Intelligence",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "manipulate ego",
+                  "necrosis",
+                  "true strike"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "curse",
+                  "inflict terror"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "binding madness",
+                  "darkness",
+                  "shatter"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "biting curse",
+                  "eviscerate",
+                  "phantasmal shroud"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "blight",
+                  "hallucinatory terrain",
+                  "writ horror"
+                ]
+              },
+              {
+                "frequency": "5th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "discombobulate",
+                  "dread surge",
+                  "shockwave"
+                ]
+              },
+              {
+                "frequency": "6th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "disintegrate",
+                  "harm",
+                  "minor gate"
+                ]
+              },
+              {
+                "frequency": "7th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "finger of death",
+                  "power word suffer"
+                ]
+              },
+              {
+                "frequency": "8th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "feeblemind",
+                  "power word lethargy"
+                ]
+              },
+              {
+                "frequency": "9th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "power word kill",
+                  "weird"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Gotham makes one attack, choosing between his Touch of Undeath and Bonecraft Greatscythe, then casts a spell with a casting time of 1 action."
+        },
+        {
+          "name": "Touch of Undeath",
+          "name_format": "bold_italic",
+          "description": "Melee Spell Attack: +14 to hit, reach 5 ft., one target. Hit: 34 (6d8 + 7) necrotic damage. Unless the target is a construct or undead, Gotham regains hit points equal to half the damage this attack deals to a creature.",
+          "inline_formatting": {
+            "Melee Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bonecraft Greatscythe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) slashing damage plus 14 (3d8) necrotic damage. The first time a creature is hit by this weapon each turn, they must succeed a DC 21 Constitution saving throw. On a failure, their maximum hit points are reduced by the necrotic damage they take from it. If their maximum hit points are reduced to 0 by this effect they die immediately.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cleaving Scythe",
+          "name_format": "bold_italic",
+          "description": "If Gotham reduces a creature to 0 hit points using his Bonecraft Greatscythe attack, he makes one additional attack with it against a different creature within range."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Gotham makes a single Touch of Undeath attack against a target within range."
+          },
+          {
+            "name": "Shadow Teleport",
+            "name_format": "bold_italic",
+            "description": "Gotham disappears from where he is and reappears in another unoccupied point within 60 feet. He cannot appear in spaces illuminated by bright magical light."
+          },
+          {
+            "name": "Animate Menials (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "All dead humanoid bodies Gotham chooses in a 30-foot-radius surrounding a point he chooses within 60 feet of him are immediately raised as undead Decaying Menials, except that their melee attack bonuses are +11, they have 1 hit point, 9 temporary hit points, and gain a +3 bonus to any saving throw they make. If they are destroyed as Decaying Menials they cannot be revived by Gotham again in this manner."
+          },
+          {
+            "name": "Drain Life (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Gotham forces all creatures within 30 feet of him to make a DC 19 Constitution saving throw, taking 9 (2d8) necrotic damage on a failure. Gotham gains all damage dealt in this way as temporary hit points."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "Gotham can use the following as Legendary Action options for 1 hour after activating his Mythic Awakening.",
+        "options": [
+          {
+            "name": "Terrifying Gaze",
+            "name_format": "bold_italic",
+            "description": "Gotham extends his intimidating presence in a 60-foot-cone originating from him. Each non-undead creature in range must succeed a DC 21 Wisdom saving throw or be frightened of Gotham until the start of his next turn."
+          },
+          {
+            "name": "Wave of Styx’s Murk (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Gotham conjures up a wave of bloody water from Styx, and pours it down in a cylinder that is 40 feet high and has a 15-foot-radius. This cylinder is centered on a point he can see within 60 feet. Each non-undead creature in range must succeed a DC 21 Constitution saving throw. On a failure their maximum hit points are reduced by 3d10, and on their next turn they can take an action or a bonus action, but not both."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**ASPECT OF GOTHAM**\n*Medium undead, lawful evil*\n**Armor Class** 18 (natural armor)\n**Hit Points** 213 (25d8 + 100)\n**Speed** 30 ft., fly (hover) 30 ft.\n**Quality Traits** Deific, magic resist, regen 20 (radiant)\n**STR** 18 (+4) | **DEX** 15 (+2) | **CON** 18 (+4) | **INT** 24 (+7) | **WIS** 18 (+4) | **CHA** 22 (+6)\n**Saving Throws** Dex +9, Con +11, Wis +11\n**Skills** Arcana +14, Deception +13, Medicine +14, Perception +11\n**Resistances** cold, lightning, poison; B/S/P (silvered)\n**Immunities** necrotic; B/S/P (magical)\n**Condition Immunities** charmed, enraged, exhaustion, frightened, paralyzed, poisoned, turned\n**Senses** truesight 120 ft., darkvision 240 ft., passive Perception 21\n**Languages** all\n**Challenge Rating** 23 (50,000 XP) **Prof Bonus** +7\n\n***Dread Restoration (Mythic Awakening).*** If Gotham is reduced to 0 hit points or killed outright, his current hit point total resets to 150, he ends any magical effects targeting him that he wishes to escape, and he teleports to an unoccupied space within 60 feet. He regains his Legendary Resistances, regains one of each level of his spell slots, and can use his mythic actions for 1 hour. A party that defeats him after using his Dread Restoration is awarded an additional 50,000 XP (100,000 XP total).\n\n**LEGENDARY REACTIONS (3 USES)**\nTBA.\n\n***Spellcasting.*** Gotham is a 20th-level spellcaster. His spellcasting ability is Intelligence. He has the following spells prepared:\n• ***Cantrips (at will):*** manipulate ego, necrosis, true strike\n• ***1st level (4 slots):*** curse, inflict terror\n• ***2nd level (3 slots):*** binding madness, darkness, shatter\n• ***3rd level (3 slots):*** biting curse, eviscerate, phantasmal shroud\n• ***4th level (3 slots):*** blight, hallucinatory terrain, writ horror\n• ***5th level (3 slots):*** discombobulate, dread surge, shockwave\n• ***6th level (2 slots):*** disintegrate, harm, minor gate\n• ***7th level (1 slot):*** finger of death, power word suffer\n• ***8th level (1 slot):*** feeblemind, power word lethargy\n• ***9th level (1 slot):*** power word kill, weird\n\n**ACTIONS**\n***Multiattack.*** Gotham makes one attack, choosing between his Touch of Undeath and Bonecraft Greatscythe, then casts a spell with a casting time of 1 action.\n\n***Touch of Undeath.*** *Melee Spell Attack:* +14 to hit, reach 5 ft., one target. *Hit:* 34 (6d8 + 7) necrotic damage. Unless the target is a construct or undead, Gotham regains hit points equal to half the damage this attack deals to a creature.\n\n***Bonecraft Greatscythe.*** *Melee Weapon Attack:* +11 to hit, reach 10 ft., one target. *Hit:* 15 (2d10 + 4) slashing damage plus 14 (3d8) necrotic damage. The first time a creature is hit by this weapon each turn, they must succeed a DC 21 Constitution saving throw. On a failure, their maximum hit points are reduced by the necrotic damage they take from it. If their maximum hit points are reduced to 0 by this effect they die immediately.\n\n**BONUS ACTIONS**\n***Cleaving Scythe.*** If Gotham reduces a creature to 0 hit points using his Bonecraft Greatscythe attack, he makes one additional attack with it against a different creature within range.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Attack.*** Gotham makes a single Touch of Undeath attack against a target within range.\n\n***Shadow Teleport.*** Gotham disappears from where he is and reappears in another unoccupied point within 60 feet. He cannot appear in spaces illuminated by bright magical light.\n\n***Animate Menials (Costs 2 Actions).*** All dead humanoid bodies Gotham chooses in a 30-foot-radius surrounding a point he chooses within 60 feet of him are immediately raised as undead Decaying Menials, except that their melee attack bonuses are +11, they have 1 hit point, 9 temporary hit points, and gain a +3 bonus to any saving throw they make. If they are destroyed as Decaying Menials they cannot be revived by Gotham again in this manner.\n\n***Drain Life (Costs 2 Actions).*** Gotham forces all creatures within 30 feet of him to make a DC 19 Constitution saving throw, taking 9 (2d8) necrotic damage on a failure. Gotham gains all damage dealt in this way as temporary hit points.\n\n**MYTHIC ACTIONS**\nGotham can use the following as Legendary Action options for 1 hour after activating his Mythic Awakening.\n\n***Terrifying Gaze.*** Gotham extends his intimidating presence in a 60-foot-cone originating from him. Each non-undead creature in range must succeed a DC 21 Wisdom saving throw or be frightened of Gotham until the start of his next turn.\n\n***Wave of Styx’s Murk (Costs 2 Actions).*** Gotham conjures up a wave of bloody water from Styx, and pours it down in a cylinder that is 40 feet high and has a 15-foot-radius. This cylinder is centered on a point he can see within 60 feet. Each non-undead creature in range must succeed a DC 21 Constitution saving throw. On a failure their maximum hit points are reduced by 3d10, and on their next turn they can take an action or a bonus action, but not both."
+    }
+  ]
+}

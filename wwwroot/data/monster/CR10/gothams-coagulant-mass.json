@@ -1,0 +1,138 @@
+{
+  "Name": "Gotham’s Coagulant Mass",
+  "Group": "Court of Decay",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "These terrifying monstrosities are a favorite creature of the Court of Decay, who would often construct a ritualistic pit to throw bodies into to feed them to these beasts. Dead flesh, undead who have become too damaged to be of use, followers too ill or incapable to serve Gotham, and other sources of “wasted flesh” are sacrificed and thrown together into this ever-hungry mass of bone, flesh and blood. It begins its existence as a mere “pool” of necromantic mass, but once it grows to sufficient size it can move, restructure the cadavers comprising its body, and serve its creators… or, more likely, be unleashed on an unsuspecting public. The mass can recycle flesh into smaller undead, making it an efficient servant of Gotham that allows the weak to be rebuilt.\n\nMany would-be necromancers have created these terrifying mounds of ravenous corpses in an attempt to get Gotham’s attention and earn his favor, only to be devoured by their own creation. Though it is not impossible that one might be created by others, only the Court of Decay knows the precise rituals that give flesh to this unholy life.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Gotham's%20Coagulant%20Mass.jpg",
+  "Stat Blocks": [
+    {
+      "id": "gothams_coagulant_mass",
+      "section_type": "Stat Block",
+      "title": "Gotham’s Coagulant Mass",
+      "creature": {
+        "size": "Huge",
+        "type": "undead, ooze",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "13 (natural armor)",
+      "hit_points": "189 (18d12 + 72)",
+      "speed": {
+        "walk": "20 ft.",
+        "climb": "20 ft.",
+        "swim": "40 ft."
+      },
+      "quality_traits": [
+        "Amorphous (1 foot)",
+        "Magic Resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "WIS": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [
+        "Dex +2",
+        "Int +0"
+      ],
+      "skills": [
+        "Perception +2"
+      ],
+      "resistances": [
+        "poison",
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "understands Common and Elvish, as well as the languages of the creatures that comprise it, but doesn’t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Critical Spew Reflex",
+          "name_format": "bold_italic",
+          "description": "If the mass suffers a critical hit, roll 1d100. On a result of 61 or higher it automatically uses its Menial Vomit feature (even if it is recharging) - the flesh ripped from it by the attack reforms into the menials the feature creates."
+        },
+        {
+          "name": "Psychic Death Throes",
+          "name_format": "bold_italic",
+          "description": "When killed, the agony of the creatures constituting the mass is unleashed in a wave of psychic trauma. All non-undead creatures within 20 feet of the mass must succeed a DC 16 Intelligence saving throw, taking 28 (5d10) psychic damage on a failure."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The mass makes three Coagulated Blood Tendril attacks."
+        },
+        {
+          "name": "Coagulated Blood Tendril",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 10 feet, one target. Hit: 18 (2d10 + 7) piercing damage plus 7 (1d12) poison damage. If the target is Medium or smaller and the mass’s attack roll exceeds their armor class by 5 points or more, they are grappled (escape DC 19).\n\nIf the mass is grappling a creature, it can forgo one of its Coagulated Blood Tendril attacks to attempt to force its target inside its shifting body mass, forcing them to make a DC 16 Strength saving throw. On a failure they are plunged inside its body where they remain grappled and are restrained until their grapple ends, cannot breathe, are blinded, have total cover against outside effects, and at the start of each of their turns they automatically take 11 (2d10) bludgeoning damage from being crushed inside it. If they succeed, the mass cannot attempt to do so again to them that turn.\n\nThe mass has 6 units of space inside it. Creatures occupy the following number of units: Tiny (1/16), Small (1/4), Medium (1), Large (4).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Noxious Miasma",
+          "name_format": "bold_italic",
+          "description": "The mass releases a cloud of rot and poison, filling all spaces within 10 feet of it - this cloud completely obscures anything within them, blinding creatures inside who rely only on sight. Creatures making attacks while inside of or against anything inside the cloud are treated as blinded. Any creature that starts its turn in the cloud or enters it for the first time on their turn must make a DC 16 Constitution saving throw, taking 3d10 poison damage on a failed save, or half as much damage on a successful one.\n\nA strong wind can blow away the cloud early, but otherwise it remains until the end of the mass’s next turn."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Menial Vomit (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The mass regurgitates enough physical mass to create 1d4+1 decaying menials, which appear in unoccupied spaces adjacent to it. These menials each have 13 (2d12) hit points instead of their usual amount."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**GOTHAM’S COAGULANT MASS**\n*Huge undead, ooze, neutral evil*\n**Armor Class** 13 (natural armor)\n**Hit Points** 189 (18d12 + 72)\n**Speed** 20 ft., climb 20 ft., swim 40 ft.\n**Quality Traits** Amorphous (1 foot), magic resist\n**STR** 24 (+7) | **DEX** 6 (-2) | **CON** 18 (+4) | **INT** 3 (-4) | **WIS** 7 (-2) | **CHA** 7 (-2)\n**Saving Throws** Dex +2, Int +0\n**Skills** Perception +2\n**Resistances** poison; B/S/P (magical)\n**Immunities** necrotic\n**Condition Immunities** charmed, enraged, frightened, grappled, paralyzed, poisoned\n**Senses** blindsight 60 ft., passive Perception 12\n**Languages** understands Common and Elvish, as well as the languages of the creatures that comprise it, but doesn’t speak\n**Challenge Rating** 10 (5,900 XP) **Prof Bonus** +4\n\n***Critical Spew Reflex.*** If the mass suffers a critical hit, roll 1d100. On a result of 61 or higher it automatically uses its Menial Vomit feature (even if it is recharging) - the flesh ripped from it by the attack reforms into the menials the feature creates.\n\n***Psychic Death Throes.*** When killed, the agony of the creatures constituting the mass is unleashed in a wave of psychic trauma. All non-undead creatures within 20 feet of the mass must succeed a DC 16 Intelligence saving throw, taking 28 (5d10) psychic damage on a failure.\n\n**ACTIONS**\n***Multiattack.*** The mass makes three Coagulated Blood Tendril attacks.\n\n***Coagulated Blood Tendril.*** *Melee Weapon Attack:* +11 to hit, reach 10 feet, one target. *Hit:* 18 (2d10 + 7) piercing damage plus 7 (1d12) poison damage. If the target is Medium or smaller and the mass’s attack roll exceeds their armor class by 5 points or more, they are grappled (escape DC 19).\n\nIf the mass is grappling a creature, it can forgo one of its Coagulated Blood Tendril attacks to attempt to force its target inside its shifting body mass, forcing them to make a DC 16 Strength saving throw. On a failure they are plunged inside its body where they remain grappled and are restrained until their grapple ends, cannot breathe, are blinded, have total cover against outside effects, and at the start of each of their turns they automatically take 11 (2d10) bludgeoning damage from being crushed inside it. If they succeed, the mass cannot attempt to do so again to them that turn.\n\nThe mass has 6 units of space inside it. Creatures occupy the following number of units: Tiny (1/16), Small (1/4), Medium (1), Large (4).\n\n***Noxious Miasma.*** The mass releases a cloud of rot and poison, filling all spaces within 10 feet of it - this cloud completely obscures anything within them, blinding creatures inside who rely only on sight. Creatures making attacks while inside of or against anything inside the cloud are treated as blinded. Any creature that starts its turn in the cloud or enters it for the first time on their turn must make a DC 16 Constitution saving throw, taking 3d10 poison damage on a failed save, or half as much damage on a successful one.\n\nA strong wind can blow away the cloud early, but otherwise it remains until the end of the mass’s next turn.\n\n**BONUS ACTIONS**\n***Menial Vomit (Recharge 6).*** The mass regurgitates enough physical mass to create 1d4+1 decaying menials, which appear in unoccupied spaces adjacent to it. These menials each have 13 (2d12) hit points instead of their usual amount."
+    }
+  ]
+}

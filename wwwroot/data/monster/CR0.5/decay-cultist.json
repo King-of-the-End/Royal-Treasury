@@ -1,0 +1,116 @@
+{
+  "Name": "Decay Cultist",
+  "Group": "Court of Decay",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The cultists who follow the Court of Decay seek an escape from the prison of mortal life. They turn to Gotham to escape the cycle of death and reincarnation that binds Somnus Domina, and seek a permanent existence in Gotham’s embrace. They willingly allow themselves to be cursed by Gotham and bound to be restored under their control after death.",
+  "Stat Blocks": [
+    {
+      "id": "decay_cultist",
+      "section_type": "Stat Block",
+      "title": "Decay Cultist",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any, usually human)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "13 (leather armor)",
+      "hit_points": "14 (3d8)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "skills": [
+        "Deception +2",
+        "Religion +3"
+      ],
+      "resistances": [
+        "necrotic",
+        "poisoned"
+      ],
+      "senses": [
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "1/2 (100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Devoted to Death",
+          "name_format": "bold_italic",
+          "description": "The cultist’s body has been numbed, giving them advantage on saving throws made against being charmed, paralyzed, or poisoned."
+        },
+        {
+          "name": "Undead Salvation",
+          "name_format": "bold_italic",
+          "description": "If damage reduces the cultist to 0 hit points or an effect kills them outright, roll 1d100. On a result of 71 or higher, the cultist is immediately restored as a Decaying Menial with 3d8 hit points. If this occurs, xp is not awarded for the cultist, but is awarded for the Decaying Menial if it is defeated. This effect is a curse, and if it is removed before it triggers then this does not occur."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Sickle",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 2) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Death Touch",
+          "name_format": "bold_italic",
+          "description": "Melee Spell Attack: +4 to hit, reach 10 ft., one target. Hit: 7 (1d8 + 2) necrotic damage, and the cultist regains hit points equal to half the damage they deal.",
+          "inline_formatting": {
+            "Melee Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Off-Hand Sickle",
+          "name_format": "bold_italic",
+          "description": "If the cultist uses their action to Attack with their Sickle, they can make one additional attack using it."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DECAY CULTIST**\n*Medium humanoid (any, usually human), neutral evil*\n**Armor Class** 13 (leather armor)\n**Hit Points** 14 (3d8)\n**Speed** 30 ft.\n**STR** 12 (+1) | **DEX** 14 (+2) | **CON** 10 (-) | **INT** 14 (+2) | **WIS** 12 (+1) | **CHA** 10 (-)\n**Skills** Deception +2, Religion +3\n**Resistances** necrotic, poisoned\n**Senses** passive Perception 11\n**Languages** Common, Elvish\n**Challenge Rating** 1/2 (100 XP) **Prof Bonus** +2\n\n***Devoted to Death.*** The cultist’s body has been numbed, giving them advantage on saving throws made against being charmed, paralyzed, or poisoned.\n\n***Undead Salvation.*** If damage reduces the cultist to 0 hit points or an effect kills them outright, roll 1d100. On a result of 71 or higher, the cultist is immediately restored as a Decaying Menial with 3d8 hit points. If this occurs, xp is not awarded for the cultist, but is awarded for the Decaying Menial if it is defeated. This effect is a curse, and if it is removed before it triggers then this does not occur.\n\n**ACTIONS**\n***Sickle.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d4 + 2) slashing damage.\n\n***Death Touch.*** *Melee Spell Attack:* +4 to hit, reach 10 ft., one target. *Hit:* 7 (1d8 + 2) necrotic damage, and the cultist regains hit points equal to half the damage they deal.\n\n**BONUS ACTIONS**\n***Off-Hand Sickle.*** If the cultist uses their action to Attack with their Sickle, they can make one additional attack using it."
+    }
+  ]
+}

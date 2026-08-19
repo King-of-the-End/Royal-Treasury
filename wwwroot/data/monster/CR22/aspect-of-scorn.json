@@ -1,0 +1,249 @@
+{
+  "Name": "Aspect of Scorn",
+  "Group": "Deific Aspects",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Most commonly depicted in its monstrous form, Scorn is an inhuman beast who once might have held a humanoid persona; Scorn will occasionally be depicted as a blood-red orc wearing armor made of bone, but more often it is depicted as a huge mass of muscle and bone arranged in a horrific, unnatural series of skulls, claws and horns. It can be beckoned to incarnate in the Material Plane by means of rituals involving the unjust slaughter of innocents, which pleases the violence-driven god.\n\nWhen incarnated, Scorn almost always does so with a very specific intention in mind. Despite taking bliss in the suffering of others, it is driven by a hidden intelligence and rarely seeks to indulge in a mere rampage. To Scorn, murder and death are decadent. Their followers, the Withering Order, arrange sacrifices to Scorn as though throwing it a banquet. Once manifested they will turn their attention to the surgical infliction of pain - the killing of a city’s firstborn children, destruction of a religious order, or occasionally the elimination of an entire settlement. It seeks to leave scars on the people and societies it touches, and ensures they always know it’s them.\n\nScorn’s attention on mortals has a tendency to erode their mind - even when it merely whispers to them in the dark, its formless presence can amplify the violent desires of its victims and followers. Scorn enjoys turning innocent mortals to the path of violence. If this path breaks them, it enjoys their despair; if they embrace it, they are welcomed among Scorn’s followers.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Scorn%20the%20Viceking.jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Lesser%20Deity%20Emblem%20-%20Scorn%2C%20the%20Viceking.png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_scorn",
+      "section_type": "Stat Block",
+      "title": "Aspect of Scorn",
+      "creature": {
+        "size": "Huge",
+        "type": "monstrosity",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "322 (28d12 + 140)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Deific",
+        "Magic Resist",
+        "Resist B/S/P (magical)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 26,
+          "modifier": "+8"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Int +7",
+        "Wis +9",
+        "Cha +10"
+      ],
+      "skills": [
+        "Athletics +15",
+        "Intimidation +10",
+        "Perception +9",
+        "Survival +7"
+      ],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "all",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "22 (41,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Age of Massacre (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Scorn would be reduced to 0 hit points or killed outright, its hit points reset to 250, Scorn regains its used spells through Innate Spellcasting and its Legendary Resistances, and for 1 hour it gains access to its Mythic Action options. During that hour, all slashing damage Scorn deals is also subtracted from the hit point maximum of the creature suffering it. Their hit point maximum returns to normal when they complete a Long Rest. If a party defeats Scorn after using its Age of Massacre, they are awarded an additional 41,000 XP (for a total of 82,000 XP)."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Scorn’s spellcasting ability is Constitution. They can cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spellcasting_ability": "Constitution",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "eviscerate",
+                  "necrosis",
+                  "misty step"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "black tentacles",
+                  "circle of death",
+                  "finger of death",
+                  "vampiric mist"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "deadly target",
+                  "nightmare cell",
+                  "power word suffer"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "inflict wounds"
+                ]
+              }
+            ],
+            "casting_level_note": "Scorn’s spells are cast at 6th level unless their base level would be higher."
+          }
+        },
+        {
+          "name": "Slaughter King",
+          "name_format": "bold_italic",
+          "description": "When Scorn reduces a creature to 0 hit points, they must immediately make a death saving throw. If they succeed, the result is ignored; if they fail it they automatically fail one saving throw, and have disadvantage on further saving throws until they stop dying."
+        },
+        {
+          "name": "Uncanny Dissection",
+          "name_format": "bold_italic",
+          "description": "Slashing damage from Scorn ignores a target’s resistance to it, and treats immunity to slashing damage as resistance instead."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Scorn uses its Bloody Rend twice and its Gore once. It can replace its Gore with taking the Dash action."
+        },
+        {
+          "name": "Bloody Rend",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 17 (2d8 + 8) slashing damage plus 6 (1d10) necrotic damage. The first time a creature is hit by this attack each turn, they must succeed a DC 23 Constitution saving throw or suffer a slashed wound for 1 minute. While suffering from one or more of these wounds, they take 1d10 slashing damage at the start of each of their turns (for each wound). The target repeats the saving throw at the end of each of their turns, closing all of their wounds on a success. If a creature is magically healed, 5 points are deducted from how much they heal for each wound, and that number of wounds close.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Gore",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 30 (4d10 + 8) piercing damage. If Scorn moves 10 feet or more in a straight line toward a target before making this attack, it is made with advantage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Deathly Impulses (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Scorn chooses any number of creatures it can see within 60 feet, and it begins whispering in their ears to encourage them to attack others. Each target must make a DC 18 Charisma saving throw, and on a failure must use their reaction to move toward any creature Scorn chooses and make an attack against them using any weapon they possess that Scorn chooses. Scorn cannot force them to use secondary abilities such as Action Surge or casting spells, but if they fail by 5 points or more it can cause them to perform actions that can be triggered on a weapon attack (such as Divine Smite, magical weapon effects, Stunning Strike, etc.). The creatures move and take these actions in any order Scorn chooses."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Mythic Action: Open Dissection (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Scorn unleashes a wave of psychic claws and blades around it, forcing each creature within 15 feet of it that it chooses to make a DC 23 Dexterity saving throw. Creatures take 29 (4d10 + 8) slashing damage, or half as much on a success. Creatures who fail by 5 points or more gain a slashed wound, as per Scorn’s Bloody Rend attack."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Charge and Rend",
+            "name_format": "bold_italic",
+            "description": "Scorn moves up to half its movement speed and makes a single Bloody Rend against a target within range."
+          },
+          {
+            "name": "Blood Curdling (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Scorn forces each creature within 60 feet of that is suffering from one of its slashed wounds to make a DC 18 Constitution saving throw. On a failure, they are cured of a single slashed wound but their blood is poisoned, sending them into momentary shock and the creature is stunned until the end of Scorn’s next turn."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "Scorn can use the following as Legendary Action options for 1 hour after activating its Mythic Awakening.",
+        "options": [
+          {
+            "name": "Cast Spell (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Scorn casts a spell using its Innate Spellcasting which has a casting time of 1 action or 1 bonus action."
+          },
+          {
+            "name": "Visceral Steep (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Until the start of its next turn, each time a creature hits Scorn with a weapon attack from within 10 feet, they must succeed a DC 21 Constitution saving throw. On a failure, Scorn’s necrotic blood spills forth as a miasma and poisoned that creature for 1 minute, and they take 2d8 poison damage. Creatures poisoned this way must reattempt the save at the end of each of their turns, ending the effect on a success."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**ASPECT OF SCORN**\n*Huge monstrosity, chaotic evil*\n**Armor Class** 18 (natural armor)\n**Hit Points** 322 (28d12 + 140)\n**Speed** 30 ft., climb 30 ft.\n**Quality Traits** Deific, magic resist, resist B/S/P (magical)\n**STR** 26 (+8) | **DEX** 16 (+3) | **CON** 20 (+5) | **INT** 17 (+3) | **WIS** 15 (+2) | **CHA** 17 (+3)\n**Saving Throws** Dex +10, Int +7, Wis +9, Cha +10\n**Skills** Athletics +15, Intimidation +10, Perception +9, Survival +7\n**Immunities** necrotic\n**Condition Immunities** charmed, enraged, exhaustion, frightened\n**Senses** darkvision 240 ft., passive Perception 19\n**Languages** all, telepathy 60 ft.\n**Challenge Rating** 22 (41,000 XP) **Proficiency Bonus** +7\n\n***Age of Massacre (Mythic Awakening).*** When Scorn would be reduced to 0 hit points or killed outright, its hit points reset to 250, Scorn regains its used spells through Innate Spellcasting and its Legendary Resistances, and for 1 hour it gains access to its Mythic Action options. During that hour, all slashing damage Scorn deals is also subtracted from the hit point maximum of the creature suffering it. Their hit point maximum returns to normal when they complete a Long Rest. If a party defeats Scorn after using its Age of Massacre, they are awarded an additional 41,000 XP (for a total of 82,000 XP).\n\n***Innate Spellcasting.*** Scorn’s spellcasting ability is Constitution. They can cast the following spells, requiring no material components:\n• ***At will:*** eviscerate, necrosis, misty step\n• ***1/Day each:*** black tentacles, circle of death, finger of death, vampiric mist\n• ***2/Day each:*** deadly target, nightmare cell, power word suffer\n• ***3/Day each:*** inflict wounds\n\nScorn’s spells are cast at 6th level unless their base level would be higher.\n\n**LEGENDARY REACTIONS (3 USES)**\nTBA.\n\n***Slaughter King.*** When Scorn reduces a creature to 0 hit points, they must immediately make a death saving throw. If they succeed, the result is ignored; if they fail it they automatically fail one saving throw, and have disadvantage on further saving throws until they stop dying.\n\n***Uncanny Dissection.*** Slashing damage from Scorn ignores a target’s resistance to it, and treats immunity to slashing damage as resistance instead.\n\n**ACTIONS**\n***Multiattack.*** Scorn uses its Bloody Rend twice and its Gore once. It can replace its Gore with taking the Dash action.\n\n***Bloody Rend.*** *Melee Weapon Attack:* +15 to hit, reach 5 ft., one target. *Hit:* 17 (2d8 + 8) slashing damage plus 6 (1d10) necrotic damage. The first time a creature is hit by this attack each turn, they must succeed a DC 23 Constitution saving throw or suffer a slashed wound for 1 minute. While suffering from one or more of these wounds, they take 1d10 slashing damage at the start of each of their turns (for each wound). The target repeats the saving throw at the end of each of their turns, closing all of their wounds on a success. If a creature is magically healed, 5 points are deducted from how much they heal for each wound, and that number of wounds close.\n\n***Gore.*** *Melee Weapon Attack:* +15 to hit, reach 5 ft., one target. *Hit:* 30 (4d10 + 8) piercing damage. If Scorn moves 10 feet or more in a straight line toward a target before making this attack, it is made with advantage.\n\n***Deathly Impulses (Recharge 5-6).*** Scorn chooses any number of creatures it can see within 60 feet, and it begins whispering in their ears to encourage them to attack others. Each target must make a DC 18 Charisma saving throw, and on a failure must use their reaction to move toward any creature Scorn chooses and make an attack against them using any weapon they possess that Scorn chooses. Scorn cannot force them to use secondary abilities such as Action Surge or casting spells, but if they fail by 5 points or more it can cause them to perform actions that can be triggered on a weapon attack (such as Divine Smite, magical weapon effects, Stunning Strike, etc.). The creatures move and take these actions in any order Scorn chooses.\n\n**BONUS ACTIONS**\n***Mythic Action: Open Dissection (Recharge 5-6).*** Scorn unleashes a wave of psychic claws and blades around it, forcing each creature within 15 feet of it that it chooses to make a DC 23 Dexterity saving throw. Creatures take 29 (4d10 + 8) slashing damage, or half as much on a success. Creatures who fail by 5 points or more gain a slashed wound, as per Scorn’s Bloody Rend attack.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Charge and Rend.*** Scorn moves up to half its movement speed and makes a single Bloody Rend against a target within range.\n\n***Blood Curdling (Costs 2 Actions).*** Scorn forces each creature within 60 feet of that is suffering from one of its slashed wounds to make a DC 18 Constitution saving throw. On a failure, they are cured of a single slashed wound but their blood is poisoned, sending them into momentary shock and the creature is stunned until the end of Scorn’s next turn.\n\n**MYTHIC ACTIONS**\nScorn can use the following as Legendary Action options for 1 hour after activating its Mythic Awakening.\n\n***Cast Spell (Costs 2 Actions).*** Scorn casts a spell using its Innate Spellcasting which has a casting time of 1 action or 1 bonus action.\n\n***Visceral Steep (Costs 3 Actions).*** Until the start of its next turn, each time a creature hits Scorn with a weapon attack from within 10 feet, they must succeed a DC 21 Constitution saving throw. On a failure, Scorn’s necrotic blood spills forth as a miasma and poisoned that creature for 1 minute, and they take 2d8 poison damage. Creatures poisoned this way must reattempt the save at the end of each of their turns, ending the effect on a success."
+    }
+  ]
+}

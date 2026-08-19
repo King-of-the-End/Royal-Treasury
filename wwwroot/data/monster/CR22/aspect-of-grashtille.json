@@ -1,0 +1,225 @@
+{
+  "Name": "Aspect of Grashtille",
+  "Group": "Deific Aspects",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Grashtille is a monstrous embodiment of unchecked evolution. According to legend, they are the source of all lycanthropy (an allocation initially wiped out during the Age of Sunderance, only to re-emerge with Grashtille). Grashtille’s origins aren’t well known even to the gods. Old tales of the beast speak of it as a primordial force that emerged from the Outer Planes, already a fully formed god. Its divine realm is an eternally darkened otherworldly civilization, reduced to ruins by time and Grashtille’s own hunts, where the full moon always hangs overhead. Grashtille grows stronger as creatures of the night grow more prominent, and its followers treat it as an oncoming storm waiting to be unleashed on the mortal world.\n\nGrashtille rarely attempts to incarnate. It is satisfied with individuals being thrown into its realm as tribute, and the rituals performed by its followers serve to populate its world with innocent souls to hunt. They respond to the prayers of followers, however, granting them power and purpose under its chaotic portfolio. When Grashtille is incarnated as an aspect, it is usually its followers pulling it into the world to feed and hunt, hoping to trigger a foretold “Age of Primal Hunger”. Grashtille then hunts, killing and mauling everything it comes across, until it is stopped. Grashtille’s rampages are one of the few godly incursions by an evil god that can provoke immediate action by other gods.\n\nIn the wake of each of its appearances in the Material Plane, the amount of lycanthropes surges, making even momentary manifestations a dangerous thing.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Reference_BG%20-%20Grashtille%20the%20Maw.jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Lesser%20Deity%20Emblem%20-%20Grashtille%20the%20Maw.png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_grashtille",
+      "section_type": "Stat Block",
+      "title": "Aspect of Grashtille",
+      "creature": {
+        "size": "Huge",
+        "type": "monstrosity",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "300 (24d12 + 144)",
+      "speed": {
+        "walk": "50 ft."
+      },
+      "quality_traits": [
+        "Deific",
+        "Critical 18",
+        "Magic Resist",
+        "Regen 6d6 + 10"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "INT": {
+          "score": 9,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Int +6",
+        "Wis +8",
+        "Cha +8"
+      ],
+      "skills": [
+        "Athletics +14",
+        "Perception +16",
+        "Survival +6"
+      ],
+      "resistances": [
+        "thunder",
+        "B/S/P (silvered)"
+      ],
+      "immunities": [
+        "psychic",
+        "B/S/P (magical or silvered)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 26"
+      ],
+      "languages": [
+        "all",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "22 (41,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Nightmares Made Real (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Grashtille would be reduced to 0 hit points or killed outright, its hit points are reset to 250. It regains all uses of Legendary Resistance, and immediately moves up to 60 feet without provoking opportunity attacks. For the next hour it can use its Mythic Actions, and the first attack it makes each turn has advantage. Also during this time, deathly spikes of bone burst from its body like blades, allowing it to use its Deathknell Spine attack. A party who defeats Grashtille after using Nightmares Made Real gains an additional 41,000 XP (for a total of 82,000 XP)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Grashtille makes two Bite attacks and two Rend attacks. If its Nightmares Made Real was activated in the last hour, it also makes one Deathknell Spine attack."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 9 (2d8) acid damage. If Grashtille scores a critical hit on a Bite attack, it regains hit points equal to half the piercing damage it deals.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Rend",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 21 (3d8 + 7) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Pounce",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 21 (3d8 + 7) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Summon Dread Pack (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Grashtille summons 2d8 werewolves, which appear anywhere within 60 feet of it. They remain either until reduced to 0 hit points or they are dismissed, at which point they vanish. These werewolves follow Grashtille’s mental commands."
+        },
+        {
+          "name": "Mythic Action: Deathknell Spine",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 18 (4d8) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Pandemonious Storm (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Grashtille conjures a sphere of planar energy, composed of the wails of their native plane and psychic energy, and hurls it at a point it can see within 120 feet. The sphere explodes, unleashing its energy in a 20-foot-radius sphere. Each creature in that space must make a DC 21 Constitution saving throw, taking 28 (5d10) thunder damage and 33 (5d12) psychic damage on a failure, or half as much on a success. Any creature who fails by 5 points or more is also deafened for 1 hour."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Frightful Intention",
+          "name_format": "bold_italic",
+          "description": "Grashtille chooses three creatures that can see and hear it within 120 feet - those three creatures and each creature within 10 feet of it must succeed a DC 21 Wisdom saving throw or be frightened of Grashtille until the start of its next turn. Creatures who succeed become immune to this effect for 24 hours."
+        },
+        {
+          "name": "Horrific Reconstruction",
+          "name_format": "bold_italic",
+          "description": "Grashtille’s body twists and contorts to take on any size between Small and Colossal, and he can gain a climb, fly, swim, or burrow movement speed equal to its base movement speed, which it retains until it uses this feature again. Its Bite and Rend reach increases by 5 feet for each size category above Huge it becomes."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Grashtille makes one Rend attack against a creature within range."
+          },
+          {
+            "name": "Force Howl (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Grashtille unleashes a wave of sound, forcing each creature within 10 feet of it to make a DC 21 Strength saving throw. Creatures who fail are pushed back 10 feet and knocked prone. Creatures who fail by 5 points or more also take 11 (2d10) thunder damage."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "Grashtille can use the following as Legendary Action options for 1 hour after activating its Mythic Awakening.",
+        "options": [
+          {
+            "name": "Blackened Mutation",
+            "name_format": "bold_italic",
+            "description": "Grashtille gains resistance to any damage type of its choice until the end of its next turn, and immediately gains 20 (3d12) temporary hit points."
+          },
+          {
+            "name": "Nightmarish Landscape (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Grashtille chooses three points it can see within 60 feet, around which matter contorts and mutates, twisting into grasping claws and animalistic appendages. Any non-evil, non-beast creature who starts its turn within 10 feet of one of these points must succeed on a DC 21 Strength saving throw or be restrained there until the end of Grashtille’s following turn."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**ASPECT OF GRASHTILLE**\n*Huge monstrosity, chaotic evil*\n**Armor Class** 18 (natural armor)\n**Hit Points** 300 (24d12 + 144)\n**Speed** 50 ft.\n**Quality Traits** Deific, critical 18, magic resist, regen 6d6 + 10\n**STR** 24 (+7) | **DEX** 16 (+3) | **CON** 22 (+6) | **INT** 9 (-1) | **WIS** 14 (+2) | **CHA** 13 (+1)\n**Saving Throws** Int +6, Wis +8, Cha +8\n**Skills** Athletics +14, Perception +16, Survival +6\n**Resistances** thunder; B/S/P (silvered)\n**Immunities** psychic; B/S/P (magical or silvered)\n**Condition Immunities** charmed, deafened, exhaustion, frightened, poisoned\n**Senses** blindsight 30 ft., darkvision 240 ft., passive Perception 26\n**Languages** all, telepathy 60 ft.\n**Challenge Rating** 22 (41,000 XP) **Prof Bonus** +7\n\n**LEGENDARY REACTIONS (3 USES)**\nTBA.\n\n***Nightmares Made Real (Mythic Awakening).*** When Grashtille would be reduced to 0 hit points or killed outright, its hit points are reset to 250. It regains all uses of Legendary Resistance, and immediately moves up to 60 feet without provoking opportunity attacks. For the next hour it can use its Mythic Actions, and the first attack it makes each turn has advantage. Also during this time, deathly spikes of bone burst from its body like blades, allowing it to use its Deathknell Spine attack. A party who defeats Grashtille after using Nightmares Made Real gains an additional 41,000 XP (for a total of 82,000 XP).\n\n**ACTIONS**\n***Multiattack.*** Grashtille makes two Bite attacks and two Rend attacks. If its Nightmares Made Real was activated in the last hour, it also makes one Deathknell Spine attack.\n\n***Bite.*** *Melee Weapon Attack:* +14 to hit, reach 5 ft., one target. *Hit:* 18 (2d10 + 7) piercing damage plus 9 (2d8) acid damage. If Grashtille scores a critical hit on a Bite attack, it regains hit points equal to half the piercing damage it deals.\n\n***Rend.*** *Melee Weapon Attack:* +14 to hit, reach 5 ft., one target. *Hit:* 21 (3d8 + 7) slashing damage.\n\n***Pounce.*** *Melee Weapon Attack:* +14 to hit, reach 5 ft., one target. *Hit:* 21 (3d8 + 7) slashing damage.\n\n***Summon Dread Pack (1/Day).*** Grashtille summons 2d8 werewolves, which appear anywhere within 60 feet of it. They remain either until reduced to 0 hit points or they are dismissed, at which point they vanish. These werewolves follow Grashtille’s mental commands.\n\n***Mythic Action: Deathknell Spine.*** *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 18 (2d10 + 7) piercing damage plus 18 (4d8) necrotic damage.\n\n***Mythic Action: Pandemonious Storm (Recharge 6).*** Grashtille conjures a sphere of planar energy, composed of the wails of their native plane and psychic energy, and hurls it at a point it can see within 120 feet. The sphere explodes, unleashing its energy in a 20-foot-radius sphere. Each creature in that space must make a DC 21 Constitution saving throw, taking 28 (5d10) thunder damage and 33 (5d12) psychic damage on a failure, or half as much on a success. Any creature who fails by 5 points or more is also deafened for 1 hour.\n\n**BONUS ACTIONS**\n***Frightful Intention.*** Grashtille chooses three creatures that can see and hear it within 120 feet - those three creatures and each creature within 10 feet of it must succeed a DC 21 Wisdom saving throw or be frightened of Grashtille until the start of its next turn. Creatures who succeed become immune to this effect for 24 hours.\n\n***Horrific Reconstruction.*** Grashtille’s body twists and contorts to take on any size between Small and Colossal, and he can gain a climb, fly, swim, or burrow movement speed equal to its base movement speed, which it retains until it uses this feature again. Its Bite and Rend reach increases by 5 feet for each size category above Huge it becomes.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Attack.*** Grashtille makes one Rend attack against a creature within range.\n\n***Force Howl (Costs 2 Actions).*** Grashtille unleashes a wave of sound, forcing each creature within 10 feet of it to make a DC 21 Strength saving throw. Creatures who fail are pushed back 10 feet and knocked prone. Creatures who fail by 5 points or more also take 11 (2d10) thunder damage.\n\n**MYTHIC ACTIONS**\nGrashtille can use the following as Legendary Action options for 1 hour after activating its Mythic Awakening.\n\n***Blackened Mutation.*** Grashtille gains resistance to any damage type of its choice until the end of its next turn, and immediately gains 20 (3d12) temporary hit points.\n\n***Nightmarish Landscape (Costs 2 Actions).*** Grashtille chooses three points it can see within 60 feet, around which matter contorts and mutates, twisting into grasping claws and animalistic appendages. Any non-evil, non-beast creature who starts its turn within 10 feet of one of these points must succeed on a DC 21 Strength saving throw or be restrained there until the end of Grashtille’s following turn."
+    }
+  ]
+}

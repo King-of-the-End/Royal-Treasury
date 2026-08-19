@@ -1,0 +1,110 @@
+{
+  "Name": "Decaying Menial",
+  "Group": "Court of Decay",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Those who are made victims of the Court of Decay or raised among their ranks become Decaying Menials, a zombie unique to the Court. These zombies twist their appearance and are covered in a special illusion with two purposes: to make them appear as regular humanoids when traveling in public with their masters, and to give them a horrifying appearance that strikes terror into others when in combat.\n\nThe menials retain a mild sense of sapience, but it is incorrect to say they retain their original personality. They are imbued with a sliver of sense by their masters, which allows them to make slightly more intelligent decisions than regular undead. However, this intelligence isn’t enough for them to communicate or fight their base instincts when left to their own devices.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Decaying%20Menial.jpg",
+  "Stat Blocks": [
+    {
+      "id": "decaying_menial",
+      "section_type": "Stat Block",
+      "title": "Decaying Menial",
+      "creature": {
+        "size": "Medium",
+        "type": "undead",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "8",
+      "hit_points": "23 (3d8 + 12)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Pack Tactics",
+        "Undead Fortitude"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 4,
+          "modifier": "-3"
+        },
+        "WIS": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "CHA": {
+          "score": 5,
+          "modifier": "-3"
+        }
+      },
+      "saving_throws": [
+        "Int -1",
+        "Wis +0"
+      ],
+      "resistances": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 8"
+      ],
+      "languages": [
+        "understands Common and Elvish but doesn’t speak"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The undead makes two Rake attacks."
+        },
+        {
+          "name": "Rake",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage plus 4 (1d6) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dead Chase",
+          "name_format": "bold_italic",
+          "description": "The undead takes the Dash action and moves toward one creature it can see, who it makes one Rake attack against."
+        },
+        {
+          "name": "Nightmare Visage",
+          "name_format": "bold_italic",
+          "description": "Until the start of its next turn, all non-undead creatures who aren’t followers of Gotham within 30 feet of the undead are terrorized by its twisting horrific illusory appearance. At the start of their turn they can choose to do one of the following: close their eyes and block out what they see until the start of their next turn, during which time they are blinded; make a DC 13 Wisdom saving throw, taking 2d8 psychic damage and becoming sluggish until the start of their next turn on a failed save, or half as much damage and aren’t sluggish on a successful one.\n\nA creature who has averted their eyes or been rendered sluggish by this effect remains that way until the start of their turn even if this undead is killed or removed from their sight."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**DECAYING MENIAL**\n*Medium undead, neutral evil*\n**Armor Class** 8\n**Hit Points** 23 (3d8 + 12)\n**Speed** 30 ft.\n**Quality Traits** Pack tactics, undead fortitude\n**STR** 17 (+3) | **DEX** 10 (-) | **CON** 16 (+3) | **INT** 4 (-3) | **WIS** 6 (-2) | **CHA** 5 (-3)\n**Saving Throws** Int -1, Wis +0\n**Resistances** necrotic, poison\n**Condition Immunities** poisoned\n**Senses** darkvision 60 ft., passive Perception 8\n**Languages** understands Common and Elvish but doesn’t speak\n**Challenge Rating** 2 (450 XP) **Proficiency Bonus** +2\n\n**ACTIONS**\n***Multiattack.*** The undead makes two Rake attacks.\n\n***Rake.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (1d8 + 3) slashing damage plus 4 (1d6) necrotic damage.\n\n***Dead Chase.*** The undead takes the Dash action and moves toward one creature it can see, who it makes one Rake attack against.\n\n***Nightmare Visage.*** Until the start of its next turn, all non-undead creatures who aren’t followers of Gotham within 30 feet of the undead are terrorized by its twisting horrific illusory appearance. At the start of their turn they can choose to do one of the following: close their eyes and block out what they see until the start of their next turn, during which time they are blinded; make a DC 13 Wisdom saving throw, taking 2d8 psychic damage and becoming sluggish until the start of their next turn on a failed save, or half as much damage and aren’t sluggish on a successful one.\n\nA creature who has averted their eyes or been rendered sluggish by this effect remains that way until the start of their turn even if this undead is killed or removed from their sight."
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "Name": "Aspect of T’quinn",
+  "Group": "Deific Aspects",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Thw twin aspects of T’quinn will almost always appear together, though one will usually be the “dominant” twin depending on the purpose of their appearance. The two sides are one, sharing the same life force and presence, even when they are operating far from one another. They often take advantage of their rare split nature by having one twin setting up traps, investigating or causing distractions while the other forces focus onto themselves.\n\nThe two sides express themselves seperately, and are not interchangeable: the protective impulses of the guardian half are deeply ingrained in their behavior, and the celebratory, performative nature of the bard is ingrained in them. They may even go as far as to disagree with one another on certain subjects, in the same sense that one might argue with themselves internally about the best course of action to take. despite these differences however, they are resolute of the same mind and purpose, and to treat them as different individual for the purposes of turning them against one another, tricking them or seperating them is all but pointless.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Reference_BG%20-%20T'quinn%20(Twin).jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/T'quinn%20Portrait.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Eidolic%20Deity%20Emblem%20-%20T'quinn%2C%20the%20Resonant.png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_tquinn",
+      "section_type": "Stat Block",
+      "title": "Aspect of T’quinn",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (human, elf)",
+        "alignment": "neutral good"
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "510 (60d8 + 240)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Deific"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "WIS": {
+          "score": 26,
+          "modifier": "+8"
+        },
+        "CHA": {
+          "score": 30,
+          "modifier": "+10"
+        }
+      },
+      "saving_throws": [
+        "Str +12",
+        "Dex +11",
+        "Con +8",
+        "Int +14",
+        "Cha +19"
+      ],
+      "skills": [
+        "Arcana +14",
+        "History +23",
+        "Perception +17",
+        "Persuasion +19"
+      ],
+      "resistances": [
+        "B/S/P (eidolic)"
+      ],
+      "immunities": [
+        "thunder",
+        "B/S/P (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "deafened",
+        "grappled",
+        "incapacitated",
+        "restrained"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "passive Perception 27"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "+9",
+      "traits": [
+        {
+          "name": "Double Soul",
+          "name_format": "bold_italic",
+          "description": "T’quinn can maintain two bodies at the same time, which mirror one another’s statistics, conditions, resources, and are otherwise treated as the same creature, except for those which would incapacitate them, which only affect one of the two bodies. On her turn each body can move up to their movement speed, and each can take an action separately (but share a single reaction and bonus action). Both can be targeted independently, but any effect that can target both or catch both in their area of effect must choose which to target and ignore the other. Any attack that one body makes against a target within 5 feet of the other has advantage. She can summon or dismiss her second body as a bonus action. When the body appears it does so within 240 feet of her, in an unoccupied space she chooses.\n\nWhen her Song of Ignition is activated, the body that suffered the damage that activated the feature remains, and her second body disappears until resummoned."
+        },
+        {
+          "name": "Master of Most Trades",
+          "name_format": "bold_italic",
+          "description": "When T’quinn makes a saving throw, ability check, or attack roll that does not already add her proficiency bonus, she adds half her proficiency bonus (rounded down) to the roll."
+        },
+        {
+          "name": "Song of Ignition (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If T’quinn would be reduced to 0 hit points or killed outright, her current hit point total instead resets to 400 hit points, she teleports to an unoccupied space within 120 feet, recharges her Emeraldfire Flame, regains spent uses of her Legendary Resistance, and for 1 hour can use the options in the Mythic Actions section as well as concentrate on two spells as if they were one. A party that defeats her after using her Song of Ignition is awarded an additional 155,000 XP (310,000 XP total)."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "T’quinn is a 20th-level spellcaster. Her spellcasting ability is Charisma. She has the following spells prepared:",
+          "spellcasting": {
+            "caster_level": 20,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dancing lights",
+                  "manipulate ego",
+                  "thunderclap"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "faerie fire",
+                  "inflict terror",
+                  "heroism",
+                  "hideous laughter"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "blur",
+                  "hold person",
+                  "lesser restoration",
+                  "song of inspiration"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "disorienting scatter",
+                  "dispel magic",
+                  "hypnotic pattern",
+                  "major image",
+                  "twin talent",
+                  "vortex quiver"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "compulsion",
+                  "confusion",
+                  "perfect silence"
+                ]
+              },
+              {
+                "frequency": "5th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "discombobulation",
+                  "greater restoration",
+                  "power word forget",
+                  "resonant weapon",
+                  "slash wind"
+                ]
+              },
+              {
+                "frequency": "6th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "mass suggestion",
+                  "irresistible dance"
+                ]
+              },
+              {
+                "frequency": "7th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "mirage arcane",
+                  "song of harmony",
+                  "teleport"
+                ]
+              },
+              {
+                "frequency": "8th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "mythical double",
+                  "power word truth"
+                ]
+              },
+              {
+                "frequency": "9th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "tormented scream"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "T’quinn makes three weapons attacks."
+        },
+        {
+          "name": "Vox Victoria (Shortswords)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +16 to hit, reach 5 ft., 1 target, or as a Ranged Weapon Attack: +16 to hit, range 300 ft., 1 target. Hit: 13 (2d6 + 7) piercing damage plus 6 (2d6) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Weightless Cross (Greatsword)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 14 (4d6) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Emerald Flash (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "A flash of light and sound erupts from a point within 120 feet of T’quinn, dispersing in a 30-foot-radius sphere centered there. All creatures within that area must make a DC 24 Constitution saving throw, taking 50 (10d10) thunder damage and are deafened on a failed save, or half as much damage and aren’t deafened on a success. A creature deafened by this effect can repeat the saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cross Command Melody",
+          "name_format": "bold_italic",
+          "description": "T’quinn makes two weapon attacks using the Weightless Cross. When used this way it floats to attack targets up to 30 feet away, then returns."
+        },
+        {
+          "name": "Inspiring Ballad (5/Rest)",
+          "name_format": "bold_italic",
+          "description": "T’quinn causes an inspired melody to erupt from her surroundings. Up to six creatures she chooses within 30 feet of her gain a deific inspiration, which they retain for 1 minute, until they use it, or until they gain another. When those creatures make an ability check, saving throw, or attack roll, they can use their deific inspiration to roll 1d10 and add it to the result, then do the same for every ability check, saving throw, or attack roll they make until the end of T’quinn’s next turn, possibly changing the result.\n\nIf a creature with a deific inspiration is reduced to 0 hit points, they can spend it to roll 1d10 and are reduced to that amount instead."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Second Self",
+          "name_format": "bold_italic",
+          "description": "When T’quinn is targeted by an effect that only targets her, she can teleport one of her bodies up to 60 feet away into an unoccupied space she can see, possibly leaving the area or range of the effect. She has advantage on saves made against the triggering effect."
+        },
+        {
+          "name": "Words of Unwinding",
+          "name_format": "bold_italic",
+          "description": "When a creature makes a saving throw, ability check, or attack roll within 120 feet of T’quinn, she can roll 2d6 and subtract the result from their roll."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "T’quinn makes two attacks with Vox Victoria."
+          },
+          {
+            "name": "Inspire Ally",
+            "name_format": "bold_italic",
+            "description": "T’quinn plays an inspiring melody, granting one creature she chooses who can see or hear her a d10 they can use any time before the end of their next turn, rolling it and adding the result to any one attack roll, ability check, or saving throw they make. They can use this d10 after they miss or fail, possibly changing the result."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "T’quinn can use the following as Legendary Action options for 1 hour after activating her Mythic Awakening.",
+        "options": [
+          {
+            "name": "Orchestra Arcane",
+            "name_format": "bold_italic",
+            "description": "T’quinn casts a spell with a casting time of 1 action or bonus action. She can only use this option once each round."
+          },
+          {
+            "name": "Discordant Melody",
+            "name_format": "bold_italic",
+            "description": "All creatures T’quinn chooses within 60 feet of her must make a DC 28 Constitution saving throw, taking 17 (3d10) thunder damage on a failed save."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**ASPECT OF T’QUINN**\n*Medium humanoid (human, elf), neutral good*\n**Armor Class** 20 (natural armor)\n**Hit Points** 510 (60d8 + 240)\n**Speed** 40 ft.\n**Quality Traits** Deific\n**STR** 16 (+3) | **DEX** 24 (+7) | **CON** 18 (+4) | **INT** 20 (+5) | **WIS** 26 (+8) | **CHA** 30 (+10)\n**Saving Throws** Str +12, Dex +11, Con +8, Int +14, Cha +19\n**Skills** Arcana +14, History +23, Perception +17, Persuasion +19\n**Resistances** B/S/P (eidolic)\n**Immunities** thunder; B/S/P (eidolic or magical)\n**Condition Immunities** charmed, deafened, grappled, incapacitated, restrained\n**Senses** truesight 60 ft., passive Perception 27\n**Languages** all\n**Challenge Rating** 30 (155,000 XP) **Prof Bonus** +9\n\n***Double Soul.*** T’quinn can maintain two bodies at the same time, which mirror one another’s statistics, conditions, resources, and are otherwise treated as the same creature, except for those which would incapacitate them, which only affect one of the two bodies. On her turn each body can move up to their movement speed, and each can take an action separately (but share a single reaction and bonus action). Both can be targeted independently, but any effect that can target both or catch both in their area of effect must choose which to target and ignore the other. Any attack that one body makes against a target within 5 feet of the other has advantage. She can summon or dismiss her second body as a bonus action. When the body appears it does so within 240 feet of her, in an unoccupied space she chooses.\n\nWhen her Song of Ignition is activated, the body that suffered the damage that activated the feature remains, and her second body disappears until resummoned.\n\n**LEGENDARY REACTIONS (3 USES)**\nTBA.\n\n***Master of Most Trades.*** When T’quinn makes a saving throw, ability check, or attack roll that does not already add her proficiency bonus, she adds half her proficiency bonus (rounded down) to the roll.\n\n***Song of Ignition (Mythic Awakening).*** If T’quinn would be reduced to 0 hit points or killed outright, her current hit point total instead resets to 400 hit points, she teleports to an unoccupied space within 120 feet, recharges her Emeraldfire Flame, regains spent uses of her Legendary Resistance, and for 1 hour can use the options in the Mythic Actions section as well as concentrate on two spells as if they were one. A party that defeats her after using her Song of Ignition is awarded an additional 155,000 XP (310,000 XP total).\n\n***Spellcasting.*** T’quinn is a 20th-level spellcaster. Her spellcasting ability is Charisma. She has the following spells prepared:\n• ***Cantrips (at will):*** dancing lights, manipulate ego, thunderclap\n• ***1st level (4 slots):*** faerie fire, inflict terror, heroism, hideous laughter\n• ***2nd level (3 slots):*** blur, hold person, lesser restoration, song of inspiration\n• ***3rd level (3 slots):*** disorienting scatter, dispel magic, hypnotic pattern, major image, twin talent, vortex quiver\n• ***4th level (3 slots):*** compulsion, confusion, perfect silence\n• ***5th level (3 slots):*** discombobulation, greater restoration, power word forget, resonant weapon, slash wind\n• ***6th level (2 slots):*** mass suggestion, irresistible dance\n• ***7th level (1 slot):*** mirage arcane, song of harmony, teleport\n• ***8th level (1 slot):*** mythical double, power word truth\n• ***9th level (1 slot):*** tormented scream\n\n**ACTIONS**\n***Multiattack.*** T’quinn makes three weapons attacks.\n\n***Vox Victoria (Shortswords).*** *Melee Weapon Attack:* +16 to hit, reach 5 ft., 1 target, or as a *Ranged Weapon Attack:* +16 to hit, range 300 ft., 1 target. *Hit:* 13 (2d6 + 7) piercing damage plus 6 (2d6) thunder damage.\n\n***Weightless Cross (Greatsword).*** *Melee Weapon Attack:* +12 to hit, reach 5 ft., one target. *Hit:* 10 (2d6 + 3) slashing damage plus 14 (4d6) thunder damage.\n\n***Emerald Flash (Recharge 5-6).*** A flash of light and sound erupts from a point within 120 feet of T’quinn, dispersing in a 30-foot-radius sphere centered there. All creatures within that area must make a DC 24 Constitution saving throw, taking 50 (10d10) thunder damage and are deafened on a failed save, or half as much damage and aren’t deafened on a success. A creature deafened by this effect can repeat the saving throw at the end of each of their turns, ending the effect on a success.\n\n**BONUS ACTIONS**\n***Cross Command Melody.*** T’quinn makes two weapon attacks using the Weightless Cross. When used this way it floats to attack targets up to 30 feet away, then returns.\n\n***Inspiring Ballad (5/Rest).*** T’quinn causes an inspired melody to erupt from her surroundings. Up to six creatures she chooses within 30 feet of her gain a deific inspiration, which they retain for 1 minute, until they use it, or until they gain another. When those creatures make an ability check, saving throw, or attack roll, they can use their deific inspiration to roll 1d10 and add it to the result, then do the same for every ability check, saving throw, or attack roll they make until the end of T’quinn’s next turn, possibly changing the result.\n\nIf a creature with a deific inspiration is reduced to 0 hit points, they can spend it to roll 1d10 and are reduced to that amount instead.\n\n**REACTIONS**\n***Second Self.*** When T’quinn is targeted by an effect that only targets her, she can teleport one of her bodies up to 60 feet away into an unoccupied space she can see, possibly leaving the area or range of the effect. She has advantage on saves made against the triggering effect.\n\n***Words of Unwinding.*** When a creature makes a saving throw, ability check, or attack roll within 120 feet of T’quinn, she can roll 2d6 and subtract the result from their roll.\n\n**LEGENDARY ACTIONS (4 ACTIONS)**\n***Attack.*** T’quinn makes two attacks with Vox Victoria.\n\n***Inspire Ally.*** T’quinn plays an inspiring melody, granting one creature she chooses who can see or hear her a d10 they can use any time before the end of their next turn, rolling it and adding the result to any one attack roll, ability check, or saving throw they make. They can use this d10 after they miss or fail, possibly changing the result.\n\n**MYTHIC ACTIONS**\nT’quinn can use the following as Legendary Action options for 1 hour after activating her Mythic Awakening.\n\n***Orchestra Arcane.*** T’quinn casts a spell with a casting time of 1 action or bonus action. She can only use this option once each round.\n\n***Discordant Melody.*** All creatures T’quinn chooses within 60 feet of her must make a DC 28 Constitution saving throw, taking 17 (3d10) thunder damage on a failed save."
+    }
+  ]
+}

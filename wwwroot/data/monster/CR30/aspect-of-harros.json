@@ -1,0 +1,249 @@
+{
+  "Name": "Aspect of Harros",
+  "Group": "Deific Aspects",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A truly bombastic god who cares greatly for inspiring mortals to be better than they are, Harros will generally only appear in the world in a celebratory or inspirational fashion. He has appeared to those he takes interest in to in the past to show them that they are on a path he deems worthwhile, but usually these are in the form of visions or momentary glimpses. The Divine Curtain largely exists due to him: his heroic nature and desire to protect mankind was seen as a possible contradiction to the non-interference policy the Eidolons wanted to establish, so for the sake of keeping Harros from trying to single-handedly solve all of mankind’s problems, safe-guards where put in place to keep the Eidolons on one side of the curtain, and control of the curtain was relegated to a select few who would say no to him in times of duress. This is far from the true purpose of the Curtain, but it was one of the major considerations behind it.\n\n***The Beast of Celthan.*** An eternal expression of Harros wanders the wilds in the northern reaches of The Land Away. This aspect of Harros takes the form of the Beast of Celthan, who Harros slayed and bathed in the blood of during his mortal life. He has a sense of eternal respect for this lion-like beast, and so wants it to live on through his own iconography and symbols. This aspect of him acts as though they are a feral beast in the wild, but only exists to hunt and attack major interplanar threats. Harros intentionally divested it of his full personality to appease the other Eidolons who felt it existing was a trick to keep himself in the Material Plane, but it still holds his morals and desire for mankind to rise beyond itself.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Reference_BG%20-%20Harros%2C%20the%20Golden%20Sun.jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Eidolic%20Deity%20Emblem%20-%20Harros%2C%20the%20Golden%20Sun.png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_harros",
+      "section_type": "Stat Block",
+      "title": "Aspect of Harros",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (orc, shapechanger)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "25 (natural armor)",
+      "hit_points": "625 (50d8 + 400)",
+      "speed": {
+        "walk": "60 ft."
+      },
+      "quality_traits": [
+        "Adamant Hide",
+        "Critical 19",
+        "Deific"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 28,
+          "modifier": "+9"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 26,
+          "modifier": "+8"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "+5"
+        }
+      },
+      "saving_throws": [
+        "Str +18",
+        "Con +17",
+        "Int +12",
+        "Cha +14"
+      ],
+      "skills": [
+        "Athletics +18",
+        "Intimidation +14",
+        "Survival +12"
+      ],
+      "resistances": [
+        "B/S/P (eidolic)"
+      ],
+      "immunities": [
+        "force",
+        "B/S/P (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "+9",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Harros’ spellcasting ability is Wisdom. He can innately cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spellcasting_ability": "Wisdom",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "command",
+                  "falling meteor",
+                  "weapon of domination"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "reverse gravity",
+                  "earthquake"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "aura of returning glory",
+                  "golden spiral",
+                  "sunburst"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "solar implosion",
+                  "weapon of domination"
+                ]
+              }
+            ],
+            "casting_level_note": "When Harros casts any spell from the golden lineage with limited uses, he can spend two of his Legendary Actions for that round to cast it at 9th level."
+          }
+        },
+        {
+          "name": "Raging Evolution (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Harros is reduced to 0 hit points or killed outright, he instead resets to 500 hit points, regains all uses of his spells and Legendary Resistance, and immediately changes shape to become his beast form, assuming a size at least as large as Gargantuan (unless the space cannot fit it). For 1 hour, he can use the actions in his Mythic Actions section, and any spell he casts that has limited uses is cast at 9th level. A party that defeats Harros after using his Raging Evolution is awarded an additional 155,000 XP (310,000 XP total)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "In his humanoid form, Harros makes three weapon attacks. In his beast form, he makes one Bite and two Claw attacks, then uses his Frightful Aura."
+        },
+        {
+          "name": "Germanicus (Greataxe, Humanoid Form Only)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +18 to hit, reach 5 ft., one target. Hit: 21 (3d8 + 9) slashing damage plus 8 (2d8) force damage. When this weapon strikes a creature for the first time on a turn, Harros can force them to make a DC 26 Strength saving throw. If they fail they are knocked back 2d4 × 5 feet and/or are knocked prone (if they strike a solid wall they do not fall prone, but do take 1d6 bludgeoning damage for every 10 feet they stop short).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bite (Beast Form Only)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +18 to hit, reach 5 ft., one target. Hit: 33 (4d12 + 9) piercing damage plus 8 (2d8) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw (Beast Form Only)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +18 to hit, reach 10 ft., one target. Hit: 21 (2d12 + 9) slashing damage plus 8 (2d8) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Frightful Aura",
+          "name_format": "bold_italic",
+          "description": "Any creature within 60 feet that can see or hear Harros must make a DC 22 Wisdom saving throw. On a failed save, a creature is frightened of Harros for 24 hours, then may reattempt the saving throw at the end of each of their turns, ending the effect on a success. A creature that succeeds either save becomes immune to this feature for 24 hours."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Beast Shape",
+          "name_format": "bold_italic",
+          "description": "Harros changes into his golden lion form, changes his lion form’s size, or back to his true form. His lion form can be any size between Large and Supermassive. When in his lion form his movement speed doubles, the range of his attacks, spells and frightful aura doubles for every two size categories larger than Medium he becomes, and his creature type also counts as a beast. Otherwise, his statistics remain the same."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Feral Strike",
+            "name_format": "bold_italic",
+            "description": "Harros makes a single weapon attack with Germanicus or his Claws. This attack is made with advantage."
+          },
+          {
+            "name": "Inspiring Boast",
+            "name_format": "bold_italic",
+            "description": "Harros and up to six creatures of his choice that can see or hear him gain 4d12 temporary hit points."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "The aspect can use the following as Legendary Action options for 1 hour after activating its Mythic Awakening.",
+        "options": [
+          {
+            "name": "Lunging Strike (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The Aspect moves up to its movement speed toward a creature, then makes a weapon attack against them using either its Bite or Germanicus."
+          },
+          {
+            "name": "Earthsplitting Wave (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Harros strikes the earth. All creatures within 60 feet of him who are standing on the ground must succeed a DC 26 Dexterity saving throw or be knocked prone. The range multiplies as per his Beast Shape feature, as if it were a spell."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**ASPECT OF HARROS**\n*Medium humanoid (orc, shapechanger), lawful good*\n**Armor Class** 25 (natural armor)\n**Hit Points** 625 (50d8 + 400)\n**Speed** 60 ft.\n**Quality Traits** Adamant hide, critical 19, deific\n**STR** 28 (+9) | **DEX** 18 (+4) | **CON** 26 (+8) | **INT** 16 (+3) | **WIS** 24 (+7) | **CHA** 20 (+5)\n**Saving Throws** Str +18, Con +17, Int +12, Cha +14\n**Skills** Athletics +18, Intimidation +14, Survival +12\n**Resistances** B/S/P (eidolic)\n**Immunities** force; B/S/P (eidolic or magical)\n**Condition Immunities** charmed, exhaustion, frightened, unconscious\n**Senses** truesight 60 ft., darkvision 240 ft., passive Perception 17\n**Languages** all\n**Challenge Rating** 30 (155,000 XP) **Proficiency Bonus** +9\n\n***Innate Spellcasting.*** Harros’ spellcasting ability is Wisdom. He can innately cast the following spells, requiring no material components:\n• ***At will:*** command, falling meteor, weapon of domination\n• ***1/Day each:*** reverse gravity, earthquake\n• ***2/Day each:*** aura of returning glory, golden spiral, sunburst\n• ***3/Day each:*** solar implosion, weapon of domination\n\nWhen Harros casts any spell from the golden lineage with limited uses, he can spend two of his Legendary Actions for that round to cast it at 9th level.\n\n**LEGENDARY REACTIONS (4 USES)**\nTBA.\n\n***Raging Evolution (Mythic Awakening).*** When Harros is reduced to 0 hit points or killed outright, he instead resets to 500 hit points, regains all uses of his spells and Legendary Resistance, and immediately changes shape to become his beast form, assuming a size at least as large as Gargantuan (unless the space cannot fit it). For 1 hour, he can use the actions in his Mythic Actions section, and any spell he casts that has limited uses is cast at 9th level. A party that defeats Harros after using his Raging Evolution is awarded an additional 155,000 XP (310,000 XP total).\n\n**ACTIONS**\n***Multiattack.*** In his humanoid form, Harros makes three weapon attacks. In his beast form, he makes one Bite and two Claw attacks, then uses his Frightful Aura.\n\n***Germanicus (Greataxe, Humanoid Form Only).*** *Melee Weapon Attack:* +18 to hit, reach 5 ft., one target. *Hit:* 21 (3d8 + 9) slashing damage plus 8 (2d8) force damage. When this weapon strikes a creature for the first time on a turn, Harros can force them to make a DC 26 Strength saving throw. If they fail they are knocked back 2d4 × 5 feet and/or are knocked prone (if they strike a solid wall they do not fall prone, but do take 1d6 bludgeoning damage for every 10 feet they stop short).\n\n***Bite (Beast Form Only).*** *Melee Weapon Attack:* +18 to hit, reach 5 ft., one target. *Hit:* 33 (4d12 + 9) piercing damage plus 8 (2d8) force damage.\n\n***Claw (Beast Form Only).*** *Melee Weapon Attack:* +18 to hit, reach 10 ft., one target. *Hit:* 21 (2d12 + 9) slashing damage plus 8 (2d8) force damage.\n\n***Frightful Aura.*** Any creature within 60 feet that can see or hear Harros must make a DC 22 Wisdom saving throw. On a failed save, a creature is frightened of Harros for 24 hours, then may reattempt the saving throw at the end of each of their turns, ending the effect on a success. A creature that succeeds either save becomes immune to this feature for 24 hours.\n\n**BONUS ACTIONS**\n***Beast Shape.*** Harros changes into his golden lion form, changes his lion form’s size, or back to his true form. His lion form can be any size between Large and Supermassive. When in his lion form his movement speed doubles, the range of his attacks, spells and frightful aura doubles for every two size categories larger than Medium he becomes, and his creature type also counts as a beast. Otherwise, his statistics remain the same.\n\n**LEGENDARY ACTIONS (4 ACTIONS)**\n***Feral Strike.*** Harros makes a single weapon attack with Germanicus or his Claws. This attack is made with advantage.\n\n***Inspiring Boast.*** Harros and up to six creatures of his choice that can see or hear him gain 4d12 temporary hit points.\n\n**MYTHIC ACTIONS**\nThe aspect can use the following as Legendary Action options for 1 hour after activating its Mythic Awakening.\n\n***Lunging Strike (Costs 2 Actions).*** The Aspect moves up to its movement speed toward a creature, then makes a weapon attack against them using either its Bite or Germanicus.\n\n***Earthsplitting Wave (Costs 2 Actions).*** Harros strikes the earth. All creatures within 60 feet of him who are standing on the ground must succeed a DC 26 Dexterity saving throw or be knocked prone. The range multiplies as per his Beast Shape feature, as if it were a spell."
+    }
+  ]
+}

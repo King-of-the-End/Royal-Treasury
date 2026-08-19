@@ -1,0 +1,232 @@
+{
+  "Name": "Aspect of Chan Karegosh",
+  "Group": "Deific Aspects",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The guardian of the night sky is subservient to Vestias, who they are often seen as a foil of. Despite Chan Karegosh’s inviting, soft appearance, she is known to be a powerful warrior who trained as a cleric during her mortal life. She stood on the boundary between elves and flooflin, which she carries the blood of within her. Where Vestias is charged with protecting Lycrothemia for its role in the eidomantic web, Chan Karegosh protects both moons by regulating their lunar phases, monitoring the space surrounding them, and ensuring that the night sky is illuminated with their guiding light.\n\nIn the few instances that Karegosh has been called to combat as a god, she has appeared in an aspect wearing robes bound in armor “forged from silver that holds the moonlight”. This armor exists as an artifact in the world (the Moonlight Plate). Between this and her iconic Lunar Scythe - a scythe with no blade, which instead channels moonlight into a crescent to strike distant targets - she is feared by those who would try to conquer the night as a champion of the moonlight’s guiding purpose.\n\nShe rarely incarnates in the Material Plane, except to speak with or aid her followers on special occasions. She is seen as a motherly influence among her followers, and though she speaks cryptically (as most gods do), she is more present in the lives of her followers than most deities of her station. She primarily acts through the highest circle of her clergy, the Holy Knights of the stargazing Lunetharium.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Chan%20Karegosh%2C%20the%20Moon%20Rabbit.jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Lesser%20Deity%20Emblem%20-%20Chan%20Karegosh%2C%20the%20Moon%20Rabbit.png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_chan_karegosh",
+      "section_type": "Stat Block",
+      "title": "Aspect of Chan Karegosh",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "225 (30d8 + 90)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Deific",
+        "Magic Resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Dex +11",
+        "Int +8",
+        "Wis +13"
+      ],
+      "skills": [
+        "Acrobatics +11",
+        "Medicine +13",
+        "Nature +13",
+        "Perception +19"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "radiant"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "stunned"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "blindsight 120 ft.",
+        "darkvision 480 ft.",
+        "passive Perception 29"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "19 (22,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Chan Karegosh’s spellcasting ability is Wisdom. She can cast the following spells innately, requiring no material components:",
+          "spellcasting": {
+            "spellcasting_ability": "Wisdom",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "death ward",
+                  "phantasmal shroud",
+                  "shockwave",
+                  "true resurrection"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "banishment",
+                  "dispel magic",
+                  "radiant smite",
+                  "shield of faith"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "cure wounds",
+                  "guiding bolt",
+                  "mass healing word",
+                  "moonbeam"
+                ]
+              }
+            ],
+            "casting_level_note": "All of Chan Karegosh’s spells are cast at 5th level, unless its base level is already higher."
+          }
+        },
+        {
+          "name": "Moonlight Dance (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Chan Karegosh is reduced to 0 hit points or killed outright, her hit points are instead reset to 200, she ends any effects causing her to be restrained or incapacitated, and she teleports to an unoccupied space within 60 feet. She regains her Legendary Resistances, all spells she has already used through Innate Spellcasting, and can use her Mythic Actions for 1 hour. During that hour, she dons vibrant plate armor that increases her AC to 22, summons her bladeless Lunar Scythe which can strike from afar, and gains a fly (hover) speed equal to her base movement speed. A party that defeats her after using her Moonlight Dance is awarded an additional 22,000 XP (for a total of 44,000 XP)."
+        },
+        {
+          "name": "Moonlit Goddess",
+          "name_format": "bold_italic",
+          "description": "When Chan Karegosh stands in direct moonlight, attacks made against her have disadvantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Chan Karegosh makes three Celestial Claw attacks, one of which can be replaced with their Lunar Scythe if it is available. She can cast a spell with a casting time of one action in place of her Lunar Scythe if her Moonlight Dance has activated."
+        },
+        {
+          "name": "Celestial Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage plus 13 (3d12) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Radiant Moonbeam",
+          "name_format": "bold_italic",
+          "description": "Chan Karegosh chooses up to four creatures she can see within 60 feet, and a beam of radiant energy falls upon them from above. Each must make a DC 21 Constitution saving throw, taking 28 (5d10) radiant damage on a failure. A creature who fails by 5 points or more is also blinded until the start of Chan Karegosh’s next turn."
+        },
+        {
+          "name": "Lunar Scythe (Mythic Action)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 30 ft., one target. Hit: 44 (8d10) radiant damage. A creature hit by this attack must succeed a DC 21 Constitution saving throw or be blinded for 1 minute, then can reattempt the saving throw at the start of each of their turns, ending the effect on a success. If a creature succeeds either save, they automatically succeed these saves for 24 hours.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Leap",
+            "name_format": "bold_italic",
+            "description": "Chan Karegosh leaps to an unoccupied space she can see within 60 feet. Opportunity attacks made against her when she moves this way have disadvantage."
+          },
+          {
+            "name": "Moonlight Slumber (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Chan Karegosh produces the effects of the sleep spell, as though cast at 5th level. Creatures that are targeted attempt a DC 21 Wisdom saving throw: on a success they are unaffected and the hit points allocated to them for the sleep spell are still spent."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "Chan Karegosh can use the following as Legendary Action options for 1 hour after activating her Mythic Awakening.",
+        "options": [
+          {
+            "name": "Moonlight Curtain",
+            "name_format": "bold_italic",
+            "description": "Chan Karegosh conjures a bright veil of bright moonlight that fills a 50-foot-tall cylinder with a 30-foot-radius, which is centered horizontally on a point she chooses within 60 feet. Chan Karegosh has advantage on attacks made against creatures within this moonlight, which remains until the end of her next turn."
+          },
+          {
+            "name": "Celestial Confinement (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Chan Karegosh chooses three points she can see within 60 feet, where magic seals resembling full moons appear until the end of her next turn. Each seal is a 10-foot-radius circle, the effects of which reach up to 50 feet above it. Each circle is filled with bright moonlight, with 10 feet of dim moonlight beyond it, and any creature who attempts to leave these circles must succeed on a DC 21 Charisma saving throw. On a failure their movement speed is reduced to 0 and they are unable to increase it again that turn. Creatures who end their turn within one of these circles takes 9 (2d8) radiant damage."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**ASPECT OF CHAN KAREGOSH**\n*Medium celestial, lawful good*\n**Armor Class** 18 (natural armor)\n**Hit Points** 225 (30d8 + 90)\n**Speed** 40 ft.\n**Quality Traits** Deific, magic resist\n**STR** 16 (+3) | **DEX** 20 (+5) | **CON** 16 (+3) | **INT** 13 (+1) | **WIS** 24 (+7) | **CHA** 18 (+4)\n**Saving Throws** Dex +11, Int +8, Wisdom +13\n**Skills** Acrobatics +11, Medicine +13, Nature +13, Perception +19\n**Resistances** B/S/P (magical)\n**Immunities** radiant\n**Condition Immunities** blinded, charmed, exhaustion, stunned\n**Senses** truesight 60 ft., blindsight 120 ft., darkvision 480 ft., passive Perception 29\n**Languages** all\n**Challenge Rating** 19 (22,000 XP) **Proficiency Bonus** +6\n\n***Innate Spellcasting.*** Chan Karegosh’s spellcasting ability is Wisdom. She can cast the following spells innately, requiring no material components:\n• ***1/Day each:*** death ward, phantasmal shroud, shockwave, true resurrection\n• ***2/Day each:*** banishment, dispel magic, radiant smite, shield of faith\n• ***3/Day each:*** cure wounds, guiding bolt, mass healing word, moonbeam\n\nAll of Chan Karegosh’s spells are cast at 5th level, unless its base level is already higher.\n\n**LEGENDARY REACTIONS (3 USES)**\nTBA.\n\n***Moonlight Dance (Mythic Awakening).*** When Chan Karegosh is reduced to 0 hit points or killed outright, her hit points are instead reset to 200, she ends any effects causing her to be restrained or incapacitated, and she teleports to an unoccupied space within 60 feet. She regains her Legendary Resistances, all spells she has already used through Innate Spellcasting, and can use her Mythic Actions for 1 hour. During that hour, she dons vibrant plate armor that increases her AC to 22, summons her bladeless Lunar Scythe which can strike from afar, and gains a fly (hover) speed equal to her base movement speed. A party that defeats her after using her Moonlight Dance is awarded an additional 22,000 XP (for a total of 44,000 XP).\n\n***Moonlit Goddess.*** When Chan Karegosh stands in direct moonlight, attacks made against her have disadvantage.\n\n**ACTIONS**\n***Multiattack.*** Chan Karegosh makes three Celestial Claw attacks, one of which can be replaced with their Lunar Scythe if it is available. She can cast a spell with a casting time of one action in place of her Lunar Scythe if her Moonlight Dance has activated.\n\n***Celestial Claw.*** *Melee Weapon Attack:* +11 to hit, reach 5 ft., one target. *Hit:* 14 (2d8 + 5) slashing damage plus 13 (3d12) radiant damage.\n\n***Radiant Moonbeam.*** Chan Karegosh chooses up to four creatures she can see within 60 feet, and a beam of radiant energy falls upon them from above. Each must make a DC 21 Constitution saving throw, taking 28 (5d10) radiant damage on a failure. A creature who fails by 5 points or more is also blinded until the start of Chan Karegosh’s next turn.\n\n***Lunar Scythe (Mythic Action).*** *Melee Weapon Attack:* +11 to hit, reach 30 ft., one target. *Hit:* 44 (8d10) radiant damage. A creature hit by this attack must succeed a DC 21 Constitution saving throw or be blinded for 1 minute, then can reattempt the saving throw at the start of each of their turns, ending the effect on a success. If a creature succeeds either save, they automatically succeed these saves for 24 hours.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Leap.*** Chan Karegosh leaps to an unoccupied space she can see within 60 feet. Opportunity attacks made against her when she moves this way have disadvantage.\n\n***Moonlight Slumber (Costs 2 Actions).*** Chan Karegosh produces the effects of the sleep spell, as though cast at 5th level. Creatures that are targeted attempt a DC 21 Wisdom saving throw: on a success they are unaffected and the hit points allocated to them for the sleep spell are still spent.\n\n**MYTHIC ACTIONS**\nChan Karegosh can use the following as Legendary Action options for 1 hour after activating her Mythic Awakening.\n\n***Moonlight Curtain.*** Chan Karegosh conjures a bright veil of bright moonlight that fills a 50-foot-tall cylinder with a 30-foot-radius, which is centered horizontally on a point she chooses within 60 feet. Chan Karegosh has advantage on attacks made against creatures within this moonlight, which remains until the end of her next turn.\n\n***Celestial Confinement (Costs 2 Actions).*** Chan Karegosh chooses three points she can see within 60 feet, where magic seals resembling full moons appear until the end of her next turn. Each seal is a 10-foot-radius circle, the effects of which reach up to 50 feet above it. Each circle is filled with bright moonlight, with 10 feet of dim moonlight beyond it, and any creature who attempts to leave these circles must succeed on a DC 21 Charisma saving throw. On a failure their movement speed is reduced to 0 and they are unable to increase it again that turn. Creatures who end their turn within one of these circles takes 9 (2d8) radiant damage."
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "Name": "Aspect of Vestias",
+  "Group": "Deific Aspects",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The goddess of temptation and magic will often choose to send a proxy in their place rather than appear on their own in the mortal realm. Since they are one of the keepers of the Divine Curtain they feel it is appropriate that they remain on her own side of it. Her lesser aspects, agents such as the valkyries or lunar gatekeeper, or other representatives of hers will often convey her will. The most certain way to draw out Vestias’s own aspect is to appeal to ceremony or to pose some threat to her station or purpose: she is a goddess who values setting precedents (to a dangerous degree, some feel) and so is not above appearing to make a point of a task, hoping it will be taken as a warning to all those who would walk the same path as the poor fools who earned her attention.\n\nAll-Knowing Archmage. Vestias is considered to have every spell available to arcane spellcasters prepared. Those listed in her spellcasting section are spells she prefers and is immediately familiar with, but not all of the spells she knows. This includes, but is not limited to, the spell lists of bards, inscriptors, sorcerers, warlocks and wizards. Furthermore, she knows the effects and properties of any spell she sees cast, and if she was unable to cast the spell before, she prepares it after seeing it.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Reference_BG%20-%20Vestias%20the%20Sky-Keeper%20(Magus).jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Vestias%20Portrait.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Eidolic%20Deity%20Emblem%20-%20Vestias%2C%20the%20Sky-Keeper.png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_vestias",
+      "section_type": "Stat Block",
+      "title": "Aspect of Vestias",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (Hádislin)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "450 (60d8 + 180)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "80 ft. (hover)"
+      },
+      "quality_traits": [
+        "Deific",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 30,
+          "modifier": "+10"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 26,
+          "modifier": "+8"
+        }
+      },
+      "saving_throws": [
+        "Str +13",
+        "Dex +12",
+        "Con +12",
+        "Int +19",
+        "Wis +14"
+      ],
+      "skills": [
+        "Arcana +19",
+        "History +28",
+        "Investigation +19",
+        "Perception +14",
+        "Religion +19"
+      ],
+      "resistances": [
+        "damage from spells",
+        "B/S/P (eidolic)"
+      ],
+      "immunities": [
+        "lightning",
+        "B/S/P (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "blinded",
+        "deafened",
+        "incapacitated"
+      ],
+      "senses": [
+        "truesight 480 ft.",
+        "passive Perception 24"
+      ],
+      "languages": [
+        "all",
+        "telepathy 5 miles"
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "+9",
+      "traits": [
+        {
+          "name": "Ancient Contingency (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If Vestias is reduced to 0 hit points or killed outright, her current hit point total is instead reset to 300, she teleports to an unoccupied space within 120 feet, regains one used spell slot of each level and her legendary resistances, recharges her Spellburst, and for 1 hour can use the options in the Mythic Actions section of her sheet. For that hour she can also concentrate on one additional spell of 6th level or lower. A party that defeats her after using her Ancient Contingency is awarded an additional 155,000 XP (310,000 XP total)."
+        },
+        {
+          "name": "Concentration Master",
+          "name_format": "bold_italic",
+          "description": "Vestias can concentrate on two spells at once. All spells she is concentrating on make a single concentration check when required, either succeeding or failing at the same time."
+        },
+        {
+          "name": "Spellburst (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When Vestias casts a spell, she can roll 1d6 and increase the level it is cast at by the result, up to a maximum of 10th level."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Vestias is a 30th-level spellcaster. Her spellcasting ability is Charisma. She has the following spells prepared:",
+          "spellcasting": {
+            "caster_level": 30,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "fire bolt",
+                  "minor illusion",
+                  "shocking grasp",
+                  "true strike"
+                ]
+              },
+              {
+                "frequency": "1st level (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "chromatic arrow",
+                  "shield",
+                  "seizing bolt",
+                  "transfer vice"
+                ]
+              },
+              {
+                "frequency": "2nd level (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "blur",
+                  "hold person",
+                  "scorching ray"
+                ]
+              },
+              {
+                "frequency": "3rd level (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "counterspell",
+                  "deadly target",
+                  "dispel magic",
+                  "eviscerate",
+                  "fly",
+                  "lightning bolt",
+                  "slow"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "banishment",
+                  "eidomantic feedback"
+                ]
+              },
+              {
+                "frequency": "5th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "anger of the sky-keeper",
+                  "cone of cold",
+                  "telekinesis",
+                  "vanquish magic"
+                ]
+              },
+              {
+                "frequency": "6th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "chain lightning",
+                  "circle of death",
+                  "mass suggestion"
+                ]
+              },
+              {
+                "frequency": "7th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "finger of death",
+                  "investiture of lightning",
+                  "reverse gravity",
+                  "teleport"
+                ]
+              },
+              {
+                "frequency": "8th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "demiplane",
+                  "earthquake",
+                  "gatestep"
+                ]
+              },
+              {
+                "frequency": "9th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "gate",
+                  "meteor swarm",
+                  "lycrothemia’s lunar devastation",
+                  "prismatic wall"
+                ]
+              }
+            ],
+            "notes": [
+              "Vestias does not make eidomantic checks."
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Vestias makes one weapon attack and casts one spell."
+        },
+        {
+          "name": "Pillar of Jackson (Whip)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 15 ft., 1 target. Hit: 9 (2d6 + 3) slashing damage plus 6 (2d6) lightning damage. When this weapon hits a target, they must make a DC 20 Dexterity saving throw as the whip severs and attempts to bind them in place. On a failure, the creature is grappled and restrained, and takes 2d8 lightning damage at the start of each of their turns, ending the effect if they break the grapple (escape DC 20).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Lightning Surge (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When Vestias hits a creature with the Pillar of Jackson, she can expend a spell slot and force the target to make a DC 20 Constitution saving throw. On a failure, they take an extra 1d8 lightning damage for each level of the expended spell slot, or half as much on a success."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Ignition",
+            "name_format": "bold_italic",
+            "description": "Vestias uses any effect from one of her ongoing spells that would normally require an action or bonus action on her turn."
+          },
+          {
+            "name": "Regain Spell Slot (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Vestias rolls 1d6+3, regaining an expended spell slot of that level or lower."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "Vestias can use the following as Legendary Action options for 1 hour after activating her Mythic Awakening.",
+        "options": [
+          {
+            "name": "Cast Spell (1/Round)",
+            "name_format": "bold_italic",
+            "description": "Vestias casts any spell with a casting time of 1 action."
+          },
+          {
+            "name": "Mind of Steel",
+            "name_format": "bold_italic",
+            "description": "Vestias automatically succeeds the next concentration check she makes before the start of her next turn."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**ASPECT OF VESTIAS**\n*Medium humanoid (Hádislin), lawful evil*\n**Armor Class** 18 (natural armor)\n**Hit Points** 450 (60d8 + 180)\n**Speed** 40 ft., fly (hover) 80 ft.\n**Quality Traits** Deific, magic resist\n**STR** 18 (+4) | **DEX** 16 (+3) | **CON** 16 (+3) | **INT** 30 (+10) | **WIS** 20 (+5) | **CHA** 26 (+8)\n**Saving Throws** Str +13, Dex +12, Con +12, Int +19, Wis +14\n**Skills** Arcana +19, History +28, Investigation +19, Perception +14, Religion +19\n**Resistances** damage from spells; B/S/P (eidolic)\n**Immunities** lightning; B/S/P (eidolic or magical)\n**Condition Immunities** charmed, blinded, deafened, incapacitated\n**Senses** truesight 480 ft., passive Perception 24\n**Languages** all, telepathy 5 miles\n**Challenge Rating** 30 (155,000 XP) **Prof Bonus** +9\n\n***Ancient Contingency (Mythic Awakening).*** If Vestias is reduced to 0 hit points or killed outright, her current hit point total is instead reset to 300, she teleports to an unoccupied space within 120 feet, regains one used spell slot of each level and her legendary resistances, recharges her Spellburst, and for 1 hour can use the options in the Mythic Actions section of her sheet. For that hour she can also concentrate on one additional spell of 6th level or lower. A party that defeats her after using her Ancient Contingency is awarded an additional 155,000 XP (310,000 XP total).\n\n***Concentration Master.*** Vestias can concentrate on two spells at once. All spells she is concentrating on make a single concentration check when required, either succeeding or failing at the same time.\n\n**LEGENDARY REACTIONS (4 USES)**\nTBA.\n\n***Spellburst (Recharge 5-6).*** When Vestias casts a spell, she can roll 1d6 and increase the level it is cast at by the result, up to a maximum of 10th level.\n\n***Spellcasting.*** Vestias is a 30th-level spellcaster. Her spellcasting ability is Charisma. She has the following spells prepared:\n• ***Cantrips (at will):*** fire bolt, minor illusion, shocking grasp, true strike\n• ***1st level (at will):*** chromatic arrow, shield, seizing bolt, transfer vice\n• ***2nd level (at will):*** blur, hold person, scorching ray\n• ***3rd level (at will):*** counterspell, deadly target, dispel magic, eviscerate, fly, lightning bolt, slow\n• ***4th level (3 slots):*** banishment, eidomantic feedback\n• ***5th level (3 slots):*** anger of the sky-keeper, cone of cold, telekinesis, vanquish magic\n• ***6th level (3 slots):*** chain lightning, circle of death, mass suggestion\n• ***7th level (2 slots):*** finger of death, investiture of lightning, reverse gravity, teleport\n• ***8th level (2 slots):*** demiplane, earthquake, gatestep\n• ***9th level (2 slots):*** gate, meteor swarm, lycrothemia’s lunar devastation, prismatic wall\n\nVestias does not make eidomantic checks.\n\n**ACTIONS**\n***Multiattack.*** Vestias makes one weapon attack and casts one spell.\n\n***Pillar of Jackson (Whip).*** *Melee Weapon Attack:* +12 to hit, reach 15 ft., 1 target. *Hit:* 9 (2d6 + 3) slashing damage plus 6 (2d6) lightning damage. When this weapon hits a target, they must make a DC 20 Dexterity saving throw as the whip severs and attempts to bind them in place. On a failure, the creature is grappled and restrained, and takes 2d8 lightning damage at the start of each of their turns, ending the effect if they break the grapple (escape DC 20).\n\n***Lightning Surge (Recharge 5-6).*** When Vestias hits a creature with the Pillar of Jackson, she can expend a spell slot and force the target to make a DC 20 Constitution saving throw. On a failure, they take an extra 1d8 lightning damage for each level of the expended spell slot, or half as much on a success.\n\n**LEGENDARY ACTIONS (4 ACTIONS)**\n***Ignition.*** Vestias uses any effect from one of her ongoing spells that would normally require an action or bonus action on her turn.\n\n***Regain Spell Slot (Costs 3 Actions).*** Vestias rolls 1d6+3, regaining an expended spell slot of that level or lower.\n\n**MYTHIC ACTIONS**\nVestias can use the following as Legendary Action options for 1 hour after activating her Mythic Awakening.\n\n***Cast Spell (1/Round).*** Vestias casts any spell with a casting time of 1 action.\n\n***Mind of Steel.*** Vestias automatically succeeds the next concentration check she makes before the start of her next turn."
+    }
+  ]
+}
