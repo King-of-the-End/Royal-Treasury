@@ -1,0 +1,178 @@
+{
+  "Name": "Subcosmos Attaché",
+  "Group": "Devas",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "These astral devas are servants of Vestias, created from her own twisted nature. Though they are born from her, they exist to quell and restrict magic to prevent its abuse. They are beings with shapes that resemble the more fiendish appearance of Vestias, but their skin has no proper texture - where there would be skin is a void filled with stars and galaxies, as if their bodies are gateways into another realm. Their golden wings and horns are the only solid matter upon them. Some subcosmos emissaries assume an illusory humanoid form to not frighten others, but their dislike of clothing and disguises (like all devas) often renders the point moot.\n\nIn the Tower of Binding, these emissaries act as both jailors and patrons to the residents there. They keep those studying dangerous magic in check, while also running programs and guilds that support their efforts. Most notably powerful individuals in the Tower are assigned an emissary as an assistant and watchdog - some even from the moment they arrive, if they were an arcanist of particular esteem during life. \n\n**Subcosmos Attaché**\n\nThe attaché are of the highest rank among the subcosmos emissaries. They form an administrative board that is responsible for judging the actions of mortal beings who have abused the arcane arts, and are Vestias’s advisors when making critical decisions regarding actions in the Material Plane. There are not many of them in existence at a time, but should one be destroyed more can be created by elevating regular emissaries, who inherit the knowledge of their predecessor.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Subcosmos%20Emissary.jpg",
+  "Stat Blocks": [
+    {
+      "id": "subcosmos_attache",
+      "section_type": "Stat Block",
+      "title": "Subcosmos Attaché",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "213 (25d8 + 100)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft. (hover)",
+        "teleport": "60 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "Angelic (4d8)",
+        "Magic Immunity 5th"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Int +10",
+        "Wis +10",
+        "Cha +12"
+      ],
+      "skills": [
+        "Arcana +10",
+        "Insight +10",
+        "Perception +10"
+      ],
+      "resistances": [
+        "damage from spells",
+        "radiant"
+      ],
+      "immunities": [
+        "psychic",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "all",
+        "telepathy 240 ft."
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "commune",
+                  "detect magic",
+                  "detect thoughts",
+                  "gate",
+                  "sacred flame"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "banishment (7th level)",
+                  "imprisonment",
+                  "luciel’s grandbolt",
+                  "mass command",
+                  "time stop"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Unbindable",
+          "name_format": "bold_italic",
+          "description": "The deva is immune to any spell or effect that would restrain or paralyze it, or would trap its body or soul in a suspended state against its will."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes three weapon attacks, one of which it can replace with casting a spell using its Innate Spellcasting, Gravitation Blast, or Vanquish Magic."
+        },
+        {
+          "name": "Bladestaff of Disruption",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage plus 18 (4d8) radiant damage. A creature hit by this attack has disadvantage on concentration checks resulting from its damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Gravitation Blast",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +12 to hit, range 120 ft., one target. Hit: 35 (10d6) psychic damage. The target must succeed a DC 20 Strength saving throw or have their movement speed reduced and be unable to exceed 10 feet until the end of their next turn.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Vanquish Magic (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The deva chooses one creature it can see within 60 feet and makes a Charisma check. Any magical effects on the target that result from a spell of a level equal to the deva’s check minus 10 immediately end."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Refractive Counterspell",
+          "name_format": "bold_italic",
+          "description": "The deva casts counterspell, requiring no spell slot or components. It uses Charisma as its spellcasting ability. If it successfully prevents a spell from being cast, the deva can use its bonus action on its next turn to cast the same spell, at the same spell level, requiring no components or spell slots. When it does so it uses its own spellcasting ability to determine the attack roll and/or DC (+12 to hit/DC 20)."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**SUBCOSMOS ATTACHÉ**\n*Medium celestial, lawful good*\n**Armor Class** 20 (natural armor)\n**Hit Points** 213 (25d8 + 100)\n**Speed** 30 ft., fly 90 ft. (hover), teleport 60 ft.\n**Quality Traits** Anchored, angelic (4d8), magic immunity 5th\n**STR** 16 (+3) | **DEX** 22 (+6) | **CON** 18 (+4) | **INT** 18 (+4) | **WIS** 18 (+4) | **CHA** 22 (+6)\n**Saving Throws** Int +10, Wis +10, Cha +12\n**Skills** Arcana +10, Insight +10, Perception +10\n**Resistances** damage from spells; radiant\n**Immunities** psychic; B/S/P (magical)\n**Condition Immunities** charmed, exhaustion, frightened\n**Senses** blindsight 120 ft., passive Perception 20\n**Languages** all, telepathy 240 ft.\n**Challenge Rating** 18 (20,000 XP) **Prof Bonus** +6\n\n***Innate Spellcasting.*** The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** commune, detect magic, detect thoughts, gate, sacred flame\n• ***1/Day each:*** banishment (7th level), imprisonment, luciel’s grandbolt, mass command, time stop\n\n***Unbindable.*** The deva is immune to any spell or effect that would restrain or paralyze it, or would trap its body or soul in a suspended state against its will.\n\n**ACTIONS**\n***Multiattack.*** The deva makes three weapon attacks, one of which it can replace with casting a spell using its Innate Spellcasting, Gravitation Blast, or Vanquish Magic.\n\n***Bladestaff of Disruption.*** *Melee Weapon Attack:* +12 to hit, reach 5 ft., one target. *Hit:* 15 (2d8 + 6) slashing damage plus 18 (4d8) radiant damage. A creature hit by this attack has disadvantage on concentration checks resulting from its damage.\n\n***Gravitation Blast.*** *Ranged Weapon Attack:* +12 to hit, range 120 ft., one target. *Hit:* 35 (10d6) psychic damage. The target must succeed a DC 20 Strength saving throw or have their movement speed reduced and be unable to exceed 10 feet until the end of their next turn.\n\n***Vanquish Magic (Recharge 4-6).*** The deva chooses one creature it can see within 60 feet and makes a Charisma check. Any magical effects on the target that result from a spell of a level equal to the deva’s check minus 10 immediately end.\n\n**REACTIONS**\n***Refractive Counterspell.*** The deva casts *counterspell*, requiring no spell slot or components. It uses Charisma as its spellcasting ability. If it successfully prevents a spell from being cast, the deva can use its bonus action on its next turn to cast the same spell, at the same spell level, requiring no components or spell slots. When it does so it uses its own spellcasting ability to determine the attack roll and/or DC (+12 to hit/DC 20)."
+    }
+  ]
+}

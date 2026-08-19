@@ -1,0 +1,173 @@
+{
+  "Name": "Subcosmos Emissary",
+  "Group": "Devas",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "These astral devas are servants of Vestias, created from her own twisted nature. Though they are born from her, they exist to quell and restrict magic to prevent its abuse. They are beings with shapes that resemble the more fiendish appearance of Vestias, but their skin has no proper texture - where there would be skin is a void filled with stars and galaxies, as if their bodies are gateways into another realm. Their golden wings and horns are the only solid matter upon them. Some subcosmos emissaries assume an illusory humanoid form to not frighten others, but their dislike of clothing and disguises (like all devas) often renders the point moot.\n\nIn the Tower of Binding, these emissaries act as both jailors and patrons to the residents there. They keep those studying dangerous magic in check, while also running programs and guilds that support their efforts. Most notably powerful individuals in the Tower are assigned an emissary as an assistant and watchdog - some even from the moment they arrive, if they were an arcanist of particular esteem during life.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Subcosmos%20Emissary.jpg",
+  "Stat Blocks": [
+    {
+      "id": "subcosmos_emissary",
+      "section_type": "Stat Block",
+      "title": "Subcosmos Emissary",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "150 (20d8 + 60)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft. (hover)",
+        "teleport": "30 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "Angelic (4d8)",
+        "Magic Resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "+5"
+        }
+      },
+      "saving_throws": [
+        "Int +10",
+        "Wis +8",
+        "Cha +10"
+      ],
+      "skills": [
+        "Arcana +7",
+        "Insight +8",
+        "Perception +8"
+      ],
+      "resistances": [
+        "radiant"
+      ],
+      "immunities": [
+        "psychic",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "all",
+        "telepathy 240 ft."
+      ],
+      "challenge_rating": "13 (10,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "commune",
+                  "detect magic",
+                  "detect thoughts",
+                  "sacred flame"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "banishment",
+                  "cure mass wounds (6th level)",
+                  "gate",
+                  "greater invisibility"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "plane shift"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Unbindable",
+          "name_format": "bold_italic",
+          "description": "The deva is immune to any spell or effect that would restrain or paralyze it, or would trap its body or soul in a suspended state against its will."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes two weapon attacks, one of which it can replace with casting a spell using its Innate Spellcasting or using its Vanquish Magic."
+        },
+        {
+          "name": "Staff of Disruption",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) bludgeoning damage plus 18 (4d8) radiant damage. A creature hit by this attack has disadvantage on concentration checks resulting from its damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Vanquish Magic (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The deva chooses one creature it can see within 60 feet and makes a Charisma check. Any magical effects on the target that result from a spell of a level equal to the deva’s check minus 10 immediately end."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Counterspell",
+          "name_format": "bold_italic",
+          "description": "The deva casts counterspell, requiring no spell slot or components. It uses Charisma as its spellcasting ability."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**SUBCOSMOS EMISSARY**\n*Medium celestial, lawful good*\n**Armor Class** 16 (natural armor)\n**Hit Points** 150 (20d8 + 60)\n**Speed** 30 ft., fly 90 ft. (hover), teleport 30 ft.\n**Quality Traits** Anchored, angelic (4d8), magic resist\n**STR** 16 (+3) | **DEX** 20 (+5) | **CON** 16 (+3) | **INT** 20 (+5) | **WIS** 16 (+3) | **CHA** 20 (+5)\n**Saving Throws** Int +10, Wis +8, Cha +10\n**Skills** Arcana +7, Insight +8, Perception +8\n**Resistances** radiant\n**Immunities** psychic; B/S/P (magical)\n**Condition Immunities** charmed, exhaustion, frightened\n**Senses** blindsight 120 ft., passive Perception 18\n**Languages** all, telepathy 240 ft.\n**Challenge Rating** 13 (10,000 XP) **Prof Bonus** +5\n\n***Innate Spellcasting.*** The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** commune, detect magic, detect thoughts, sacred flame\n• ***1/Day each:*** banishment, cure mass wounds (6th level), gate, greater invisibility\n• ***2/Day each:*** plane shift\n\n***Unbindable.*** The deva is immune to any spell or effect that would restrain or paralyze it, or would trap its body or soul in a suspended state against its will.\n\n**ACTIONS**\n***Multiattack.*** The deva makes two weapon attacks, one of which it can replace with casting a spell using its Innate Spellcasting or using its Vanquish Magic.\n\n***Staff of Disruption.*** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 8 (1d8 + 3) bludgeoning damage plus 18 (4d8) radiant damage. A creature hit by this attack has disadvantage on concentration checks resulting from its damage.\n\n***Vanquish Magic (Recharge 5-6).*** The deva chooses one creature it can see within 60 feet and makes a Charisma check. Any magical effects on the target that result from a spell of a level equal to the deva’s check minus 10 immediately end.\n\n**BONUS ACTIONS**\n***Counterspell.*** The deva casts *counterspell*, requiring no spell slot or components. It uses Charisma as its spellcasting ability."
+    }
+  ]
+}
