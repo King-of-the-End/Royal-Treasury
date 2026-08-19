@@ -1,0 +1,562 @@
+{
+  "Name": "Belzers",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Belzers are autonomous constructs built to support DGR units in combat. They are fast units that scan the environment constantly for threats, and have a series of devices built into them to help a DGR unit adapt on the battlefield. They can also be deployed as autonomous watch-dogs and scouts, since Belzers are capable of instantly relaying information to any DGR within its telepathy range.\n\n**Ambush Belzer.** A support unit built to be used in conjunction with long-range or scout-class DGR units. Ambush belzers are autonomous satellite units that propel themselves into combat and scan enemy units for weaknesses while providing a distraction. They are armed with explosives in case they are destroyed while engaging with enemy units.\n\n**Defense Belzer.** This unit is designed to protect nearby DGR units by projecting protective barriers and cleansing their systems of unwanted imperative effects. They are capable of self-repair to keep up with the threats a DGR unit may face in combat.\n\n**Shielding Belzer.** This unit is designed to project an energy barrier over nearby DGRs, fortifying their armor in a compounding manner. They are also capable of tracking a DGR’s movements and sacrificing their own hull to protect a DGR from critical damage.\n\n**Shift Belzer.** The unit can aid a DGR in moving across a battlefield, teleporting it short distances while protecting it from enemy units that do the same. By manipulating light around them it can render itself and its DGR allies invisible briefly.\n\n**Targeting Belzer.** This unit is designed to aid DGRs in locking on to invisible or long-distance targets and help them accurately attack them.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Belzer.jpg",
+  "Stat Blocks": [
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": "unaligned"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "44 (8d6 + 16)",
+      "speed": {
+        "fly": "50 ft.",
+        "0-G acceleration": "150 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "resist B/S/P (magical)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +2"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "poisoned",
+        "prone",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "understands all but doesn’t speak",
+        "telepathy 240 ft. (DGRs only)"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Reactions": "bold",
+          "Actions": "bold"
+        }
+      },
+      "id": "ambush_belzer",
+      "title": "Ambush Belzer",
+      "tag": "Ambush",
+      "traits": [
+        {
+          "name": "DGR Targeting Aid",
+          "name_format": "bold_italic",
+          "description": "When a DGR ally of this construct attacks a creature that is within 20 feet of this construct, they make that attack with advantage. This trait does not function if this construct is incapacitated."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Burst",
+          "name_format": "bold_italic",
+          "description": "The construct forces all creatures within 15 feet of it that don’t have a 0-G acceleration speed to make a DC 15 Strength saving throw. On a failure they take 2d8 thunder damage and are knocked prone."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 5) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Self-Destruct",
+          "name_format": "bold_italic",
+          "description": "When the construct is reduced to 0 hit points, it immediately moves up to half its movement speed and explodes. Each creature within 20 feet when it explodes must attempt a DC 15 Dexterity saving throw, taking 11 (3d6) thunder damage and 11 (3d6) fire damage on a failure, or half as much damage on a success. If the construct takes any damage while moving this way, it detonates in the space it was damaged instead."
+        }
+      ],
+      "raw_text": "**AMBUSH BELZER**\n\n*Medium construct, unaligned*\n**Armor Class** 19 (natural armor)\n**Hit Points** 44 (8d6 + 16)\n**Speed** fly 50 ft., 0-G acceleration 150 ft.\n**Quality Traits** Avoidance, resist B/S/P (magical)\n**STR** 12 (+1) | **DEX** 20 (+5) | **CON** 14 (+2) | **INT** 6 (-2) | **WIS** 10 (-) | **CHA** 6 (-2)\n**Saving Throws**\n**Skills** Perception +2\n**Resistances** necrotic\n**Immunities** poison\n**Condition Immunities** blinded, charmed, deafened, poisoned, prone, unconscious\n**Senses** blindsight 120 ft., passive Perception 12\n**Languages** understands all but doesn’t speak, telepathy 240 ft. (DGRs only)\n**Challenge Rating** 2 (450 XP) **Prof Bonus** +2\n\n***DGR Targeting Aid.*** When a DGR ally of this construct attacks a creature that is within 20 feet of this construct, they make that attack with advantage. This trait does not function if this construct is incapacitated.\n\n**ACTIONS**\n\n***Burst.*** The construct forces all creatures within 15 feet of it that don’t have a 0-G acceleration speed to make a DC 15 Strength saving throw. On a failure they take 2d8 thunder damage and are knocked prone.\n\n***Slam.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 19 (3d8 + 5) bludgeoning damage.\n\n**Reactions**\n\n***Self-Destruct.*** When the construct is reduced to 0 hit points, it immediately moves up to half its movement speed and explodes. Each creature within 20 feet when it explodes must attempt a DC 15 Dexterity saving throw, taking 11 (3d6) thunder damage and 11 (3d6) fire damage on a failure, or half as much damage on a success. If the construct takes any damage while moving this way, it detonates in the space it was damaged instead."
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": "unaligned"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "44 (8d6 + 16)",
+      "speed": {
+        "fly": "50 ft.",
+        "0-G acceleration": "150 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "resist B/S/P (magical)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +2"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "poisoned",
+        "prone",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "understands all but doesn’t speak",
+        "telepathy 240 ft. (DGRs only)"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Reactions": "bold",
+          "Actions": "bold"
+        }
+      },
+      "id": "defense_belzer",
+      "title": "Defense Belzer",
+      "tag": "Defense",
+      "traits": [
+        {
+          "name": "DGR Shielding Aid",
+          "name_format": "bold_italic",
+          "description": "Any non-hostile DGR unit that is within 15 feet of the construct is treated as if it has half cover, as long as the construct is not incapacitated."
+        }
+      ],
+      "actions": [
+        {
+          "name": "System Reload",
+          "name_format": "bold_italic",
+          "description": "The construct regains 2d10 + 10 hit points."
+        },
+        {
+          "name": "System Swap",
+          "name_format": "bold_italic",
+          "description": "The construct chooses an effect that is targeting a DGR unit within 10 feet of it. This effect must be one that is not affecting everything in a set area or environment. The construct becomes the new target of the effect, and/or removes the effect from the DGR and places it on itself instead. The construct is then affected as though it was the DGR."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Cross Guard",
+          "name_format": "bold_italic",
+          "description": "When a DGR unit would take damage within 30 feet of the construct, it can take the damage in its place. If the damage was the result of an effect that designated a target, the belzer becomes the new target of the effect.\n\nAlternatively, if a DGR in range is targeted by an effect the construct is aware of, the construct may use its reaction to become the effect’s target instead."
+        }
+      ],
+      "raw_text": "**DEFENSE BELZER**\n\n*Medium construct, unaligned*\n**Armor Class** 19 (natural armor)\n**Hit Points** 44 (8d6 + 16)\n**Speed** fly 50 ft., 0-G acceleration 150 ft.\n**Quality Traits** Avoidance, resist B/S/P (magical)\n**STR** 12 (+1) | **DEX** 20 (+5) | **CON** 14 (+2) | **INT** 6 (-2) | **WIS** 10 (-) | **CHA** 6 (-2)\n**Saving Throws**\n**Skills** Perception +2\n**Resistances** necrotic\n**Immunities** poison\n**Condition Immunities** blinded, charmed, deafened, poisoned, prone, unconscious\n**Senses** blindsight 120 ft., passive Perception 12\n**Languages** understands all but doesn’t speak, telepathy 240 ft. (DGRs only)\n**Challenge Rating** 2 (450 XP) **Prof Bonus** +2\n\n***DGR Shielding Aid.*** Any non-hostile DGR unit that is within 15 feet of the construct is treated as if it has half cover, as long as the construct is not incapacitated.\n\n**ACTIONS**\n\n***System Reload.*** The construct regains 2d10 + 10 hit points.\n\n***System Swap.*** The construct chooses an effect that is targeting a DGR unit within 10 feet of it. This effect must be one that is not affecting everything in a set area or environment. The construct becomes the new target of the effect, and/or removes the effect from the DGR and places it on itself instead. The construct is then affected as though it was the DGR.\n\n**Reactions**\n\n***Cross Guard.*** When a DGR unit would take damage within 30 feet of the construct, it can take the damage in its place. If the damage was the result of an effect that designated a target, the belzer becomes the new target of the effect.\n\nAlternatively, if a DGR in range is targeted by an effect the construct is aware of, the construct may use its reaction to become the effect’s target instead."
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": "unaligned"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "44 (8d6 + 16)",
+      "speed": {
+        "fly": "50 ft.",
+        "0-G acceleration": "150 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "resist B/S/P (magical)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +2"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "poisoned",
+        "prone",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "understands all but doesn’t speak",
+        "telepathy 240 ft. (DGRs only)"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Reactions": "bold",
+          "Actions": "bold"
+        }
+      },
+      "id": "shielding_belzer",
+      "title": "Shielding Belzer",
+      "tag": "Shielding",
+      "traits": [
+        {
+          "name": "DGR Barrier Aura",
+          "name_format": "bold_italic",
+          "description": "Any non-hostile DGR unit that is within 15 feet of the construct gains a +2 bonus to their armor class. If multiple shielding belzers have their DGR Barrier Aura overlapping the same DGR, their armor class increases by +1 for each shielding belzer accounted for after the first. This feature cannot increase a DGR’s armor class by an amount greater than the DGR’s proficiency bonus. This trait does not function if the construct is incapacitated."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Barrier Pulse",
+          "name_format": "bold_italic",
+          "description": "One construct or DGR of the construct’s choice who is within its DGR Barrier Aura gains 2d10 + 10 temporary hit points."
+        },
+        {
+          "name": "Tracking Indicator",
+          "name_format": "bold_italic",
+          "description": "The construct chooses one non-hostile DGR unit within 15 feet of it. Until the start of its next turn, each time the DGR moves, the construct moves with it and remains the same distance away, even if this movement would exceed its own movement speed. It cannot move this way if it is incapacitated or its movement speed is reduced to 0. If the target DGR uses a teleportation speed or teleports through any effect, the construct moves with them as though it has the same teleportation speed or is under the same effect."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Emergency Repairs",
+          "name_format": "bold_italic",
+          "description": "When a DGR unit is reduced to 0 hit points while within the construct’s DGR Barrier Aura, the construct can immediately destroy itself and perform slapdash repairs to the DGR by magnetizing its own wreckage to the DGR, causing the damage the DGR takes to be reduced by the construct’s remaining hit points instead."
+        }
+      ],
+      "raw_text": "**SHIELDING BELZER**\n\n*Medium construct, unaligned*\n**Armor Class** 19 (natural armor)\n**Hit Points** 44 (8d6 + 16)\n**Speed** fly 50 ft., 0-G acceleration 150 ft.\n**Quality Traits** Avoidance, resist B/S/P (magical)\n**STR** 12 (+1) | **DEX** 20 (+5) | **CON** 14 (+2) | **INT** 6 (-2) | **WIS** 10 (-) | **CHA** 6 (-2)\n**Saving Throws**\n**Skills** Perception +2\n**Resistances** necrotic\n**Immunities** poison\n**Condition Immunities** blinded, charmed, deafened, poisoned, prone, unconscious\n**Senses** blindsight 120 ft., passive Perception 12\n**Languages** understands all but doesn’t speak, telepathy 240 ft. (DGRs only)\n**Challenge Rating** 2 (450 XP) **Prof Bonus** +2\n\n***DGR Barrier Aura.*** Any non-hostile DGR unit that is within 15 feet of the construct gains a +2 bonus to their armor class. If multiple shielding belzers have their DGR Barrier Aura overlapping the same DGR, their armor class increases by +1 for each shielding belzer accounted for after the first. This feature cannot increase a DGR’s armor class by an amount greater than the DGR’s proficiency bonus. This trait does not function if the construct is incapacitated.\n\n**ACTIONS**\n\n***Barrier Pulse.*** One construct or DGR of the construct’s choice who is within its DGR Barrier Aura gains 2d10 + 10 temporary hit points.\n\n***Tracking Indicator.*** The construct chooses one non-hostile DGR unit within 15 feet of it. Until the start of its next turn, each time the DGR moves, the construct moves with it and remains the same distance away, even if this movement would exceed its own movement speed. It cannot move this way if it is incapacitated or its movement speed is reduced to 0. If the target DGR uses a teleportation speed or teleports through any effect, the construct moves with them as though it has the same teleportation speed or is under the same effect.\n\n**Reactions**\n\n***Emergency Repairs.*** When a DGR unit is reduced to 0 hit points while within the construct’s DGR Barrier Aura, the construct can immediately destroy itself and perform slapdash repairs to the DGR by magnetizing its own wreckage to the DGR, causing the damage the DGR takes to be reduced by the construct’s remaining hit points instead."
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": "unaligned"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "44 (8d6 + 16)",
+      "speed": {
+        "fly": "50 ft.",
+        "0-G acceleration": "150 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "resist B/S/P (magical)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +2"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "poisoned",
+        "prone",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "understands all but doesn’t speak",
+        "telepathy 240 ft. (DGRs only)"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Bonus Actions": "bold",
+          "Actions": "bold"
+        }
+      },
+      "id": "shift_belzer",
+      "title": "Shift Belzer",
+      "tag": "Shift",
+      "traits": [
+        {
+          "name": "Anti-Teleportation Sphere",
+          "name_format": "bold_italic",
+          "description": "Except for non-hostile DGR and non-hostile constructs, any creature that attempts to teleport into a space within 30 feet of the construct is instead shunted to the nearest unoccupied space outside that range. When a DGR or construct teleports into this range the belzer automatically becomes aware of them and can decide if they are hostile or not. This trait does not function if the construct is incapacitated, or if the creature teleporting into this range is doing so from another plane."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Phase Chain",
+          "name_format": "bold_italic",
+          "description": "The construct causes itself and one willing DGR unit within 15 feet of it to teleport to two unoccupied spaces that the construct can see within 60 feet of it. Both must be within 30 feet of one another when they appear. If there are other belzers within 15 feet of the target DGR, they are also teleported in this way using the same mechanics."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Visibility Shroud (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The construct and one DGR it chooses within 30 feet become invisible until the start of the construct’s next turn. If other belzers are within 30 feet of the targeted DGR, they can use their reactions to do so as well (which counts as using their Visibility Shroud feature if they are shift belzers, causing them to have to recharge)."
+        }
+      ],
+      "raw_text": "**SHIFT BELZER**\n\n*Medium construct, unaligned*\n**Armor Class** 19 (natural armor)\n**Hit Points** 44 (8d6 + 16)\n**Speed** fly 50 ft., 0-G acceleration 150 ft.\n**Quality Traits** Avoidance, resist B/S/P (magical)\n**STR** 12 (+1) | **DEX** 20 (+5) | **CON** 14 (+2) | **INT** 6 (-2) | **WIS** 10 (-) | **CHA** 6 (-2)\n**Saving Throws**\n**Skills** Perception +2\n**Resistances** necrotic\n**Immunities** poison\n**Condition Immunities** blinded, charmed, deafened, poisoned, prone, unconscious\n**Senses** blindsight 120 ft., passive Perception 12\n**Languages** understands all but doesn’t speak, telepathy 240 ft. (DGRs only)\n**Challenge Rating** 2 (450 XP) **Prof Bonus** +2\n\n***Anti-Teleportation Sphere.*** Except for non-hostile DGR and non-hostile constructs, any creature that attempts to teleport into a space within 30 feet of the construct is instead shunted to the nearest unoccupied space outside that range. When a DGR or construct teleports into this range the belzer automatically becomes aware of them and can decide if they are hostile or not. This trait does not function if the construct is incapacitated, or if the creature teleporting into this range is doing so from another plane.\n\n**ACTIONS**\n\n***Phase Chain.*** The construct causes itself and one willing DGR unit within 15 feet of it to teleport to two unoccupied spaces that the construct can see within 60 feet of it. Both must be within 30 feet of one another when they appear. If there are other belzers within 15 feet of the target DGR, they are also teleported in this way using the same mechanics.\n\n**Bonus Actions**\n\n***Visibility Shroud (Recharge 5-6).*** The construct and one DGR it chooses within 30 feet become invisible until the start of the construct’s next turn. If other belzers are within 30 feet of the targeted DGR, they can use their reactions to do so as well (which counts as using their Visibility Shroud feature if they are shift belzers, causing them to have to recharge)."
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": "unaligned"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "44 (8d6 + 16)",
+      "speed": {
+        "fly": "50 ft.",
+        "0-G acceleration": "150 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "resist B/S/P (magical)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +2"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "poisoned",
+        "prone",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "understands all but doesn’t speak",
+        "telepathy 240 ft. (DGRs only)"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Reactions": "bold",
+          "Actions": "bold"
+        }
+      },
+      "id": "targeting_belzer",
+      "title": "Targeting Belzer",
+      "tag": "Targeting",
+      "traits": [
+        {
+          "name": "DGR Targeting Enhancements",
+          "name_format": "bold_italic",
+          "description": "Any non-hostile DGR unit that is within 15 feet of the construct ignores any cover that isn’t total cover when making ranged attacks. Furthermore, when they make a ranged attack against any creature who is not protected by any kind of cover, the DGR gains a +2 bonus to their attack roll. If the DGR is within the range of multiple DGR Targeting Enhancements radiuses, they gain a +1 bonus for each accounted for after the first. This cannot give them a bonus higher than the DGR’s proficiency bonus. This feature does not function if the construct is incapacitated."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Scan Pulse",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a pulse that spreads out in a 60-foot-radius sphere centered on itself. It makes a Perception check to detect hidden creatures, and if any are detected then that information and their location are passed on to any DGRs within range of its DGR Targeting Enhancements. Furthermore, any creatures that are invisible must attempt a DC 12 Dexterity saving throw. On a failure they are highlighted and their invisible form gains a glowing outline, causing them to be treated as though they weren’t invisible until the start of the construct’s next turn."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Firing Aid",
+          "name_format": "bold_italic",
+          "description": "When a construct within 20 feet of the belzer makes a ranged weapon attack that would have disadvantage due to firing at their long range, the belzer can use its reaction to prevent them from having disadvantage for this reason. This effect then persists for that target construct’s remaining attacks until the end of their turn."
+        }
+      ],
+      "raw_text": "**TARGETING BELZER**\n\n*Medium construct, unaligned*\n**Armor Class** 19 (natural armor)\n**Hit Points** 44 (8d6 + 16)\n**Speed** fly 50 ft., 0-G acceleration 150 ft.\n**Quality Traits** Avoidance, resist B/S/P (magical)\n**STR** 12 (+1) | **DEX** 20 (+5) | **CON** 14 (+2) | **INT** 6 (-2) | **WIS** 10 (-) | **CHA** 6 (-2)\n**Saving Throws**\n**Skills** Perception +2\n**Resistances** necrotic\n**Immunities** poison\n**Condition Immunities** blinded, charmed, deafened, poisoned, prone, unconscious\n**Senses** blindsight 120 ft., passive Perception 12\n**Languages** understands all but doesn’t speak, telepathy 240 ft. (DGRs only)\n**Challenge Rating** 2 (450 XP) **Prof Bonus** +2\n\n***DGR Targeting Enhancements.*** Any non-hostile DGR unit that is within 15 feet of the construct ignores any cover that isn’t total cover when making ranged attacks. Furthermore, when they make a ranged attack against any creature who is not protected by any kind of cover, the DGR gains a +2 bonus to their attack roll. If the DGR is within the range of multiple DGR Targeting Enhancements radiuses, they gain a +1 bonus for each accounted for after the first. This cannot give them a bonus higher than the DGR’s proficiency bonus. This feature does not function if the construct is incapacitated.\n\n**ACTIONS**\n\n***Scan Pulse.*** The DGR unleashes a pulse that spreads out in a 60-foot-radius sphere centered on itself. It makes a Perception check to detect hidden creatures, and if any are detected then that information and their location are passed on to any DGRs within range of its DGR Targeting Enhancements. Furthermore, any creatures that are invisible must attempt a DC 12 Dexterity saving throw. On a failure they are highlighted and their invisible form gains a glowing outline, causing them to be treated as though they weren’t invisible until the start of the construct’s next turn.\n\n**Reactions**\n\n***Firing Aid.*** When a construct within 20 feet of the belzer makes a ranged weapon attack that would have disadvantage due to firing at their long range, the belzer can use its reaction to prevent them from having disadvantage for this reason. This effect then persists for that target construct’s remaining attacks until the end of their turn."
+    }
+  ]
+}

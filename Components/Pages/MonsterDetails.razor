@@ -10,9 +10,7 @@
 
 
 <PageTitle>
-    @(monster is null
-        ? "Monster"
-        : monster.Title)
+    @MonsterPageTitle
     - Royal Treasury
 </PageTitle>
 
@@ -147,7 +145,7 @@ else
 
                         <h2 class="monster-lore-title">
 
-                            @monster.Title
+                            @MonsterPageTitle
 
                         </h2>
 
@@ -569,14 +567,53 @@ else
 
 
                 <!-- =============================
-                     FULL STAT BLOCK
+                     STAT-BLOCK VARIANT TABS
 
-                     Artwork is intentionally NOT
-                     rendered in this tab.
+                     Shown only when the outer
+                     monster document contains
+                     more than one stat block.
                      ============================= -->
 
-                <StatBlock
-                    Data="@monster" />
+                @if (monsterVariants.Count > 1)
+                {
+                    <div
+                        class="monster-variant-tabs"
+                        role="tablist"
+                        aria-label="@($"{MonsterPageTitle} stat block versions")">
+
+                        @foreach (
+                            var variant
+                            in monsterVariants)
+                        {
+                            <button
+                                type="button"
+                                role="tab"
+                                aria-selected="@IsSelectedMonsterVariant(variant)"
+                                class="@MonsterVariantTabClass(variant)"
+                                @onclick="() => SetMonsterVariant(variant)">
+
+                                @MonsterVariantLabel(variant)
+
+                            </button>
+                        }
+
+                    </div>
+                }
+
+
+                <!-- =============================
+                     SELECTED FULL STAT BLOCK
+                     ============================= -->
+
+                @if (selectedMonsterVariant is not null)
+                {
+                    <div class="monster-variant-statblock">
+
+                        <StatBlock
+                            Data="@selectedMonsterVariant" />
+
+                    </div>
+                }
 
             </section>
         }
@@ -617,6 +654,15 @@ else
     // =====================================
 
     private StatBlockData? monster;
+
+
+    private IReadOnlyList<StatBlockData>
+        monsterVariants =
+            Array.Empty<StatBlockData>();
+
+
+    private StatBlockData?
+        selectedMonsterVariant;
 
 
     private IReadOnlyList<MonsterGroupLoreData>
@@ -672,6 +718,14 @@ else
 
         if (monster is null)
         {
+            monsterVariants =
+                Array.Empty<StatBlockData>();
+
+
+            selectedMonsterVariant =
+                null;
+
+
             groupLores =
                 Array.Empty<MonsterGroupLoreData>();
 
@@ -682,6 +736,38 @@ else
 
             return;
         }
+
+
+        // =================================
+        // LOAD STAT-BLOCK VARIANTS
+        // =================================
+
+        monsterVariants =
+            await MonsterService
+                .GetMonsterVariantsAsync(
+                    ChallengeRating,
+                    Slug);
+
+
+        if (monsterVariants.Count == 0)
+        {
+            monsterVariants =
+                new[]
+                {
+                    monster
+                };
+        }
+
+
+        selectedMonsterVariant =
+            monsterVariants
+                .FirstOrDefault(
+                    variant =>
+                        SameMonster(
+                            variant,
+                            monster))
+            ??
+            monsterVariants[0];
 
 
         // =================================
@@ -737,6 +823,210 @@ else
             ? "monster-detail-tab active"
 
             : "monster-detail-tab";
+    }
+
+
+    // =====================================
+    // MONSTER PAGE TITLE
+    // =====================================
+
+    private string MonsterPageTitle
+    {
+        get
+        {
+            if (monster is null)
+            {
+                return
+                    "Monster";
+            }
+
+
+            if (
+                monsterVariants.Count > 1
+                &&
+                !string.IsNullOrWhiteSpace(
+                    monster.MonsterSetName))
+            {
+                return
+                    monster.MonsterSetName.Trim();
+            }
+
+
+            return
+                monster.Title;
+        }
+    }
+
+
+    // =====================================
+    // SELECT MONSTER VARIANT
+    // =====================================
+
+    private void SetMonsterVariant(
+        StatBlockData variant)
+    {
+        selectedMonsterVariant =
+            variant;
+    }
+
+
+    // =====================================
+    // VARIANT ACTIVE STATE
+    // =====================================
+
+    private bool IsSelectedMonsterVariant(
+        StatBlockData variant)
+    {
+        if (
+            selectedMonsterVariant is null)
+        {
+            return
+                false;
+        }
+
+
+        return
+            SameMonster(
+                selectedMonsterVariant,
+                variant);
+    }
+
+
+    // =====================================
+    // VARIANT TAB CLASS
+    // =====================================
+
+    private string MonsterVariantTabClass(
+        StatBlockData variant)
+    {
+        return
+            IsSelectedMonsterVariant(
+                variant)
+
+            ? "monster-variant-tab active"
+
+            : "monster-variant-tab";
+    }
+
+
+    // =====================================
+    // VARIANT TAB LABEL
+    //
+    // Uses an explicit JSON "tag" when one
+    // is supplied. Otherwise it derives a
+    // short label from the outer monster set
+    // name where possible.
+    //
+    // Belzers + Ambush Belzer -> Ambush
+    // =====================================
+
+    private string MonsterVariantLabel(
+        StatBlockData variant)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                variant.Tag))
+        {
+            return
+                variant.Tag.Trim();
+        }
+
+
+        var title =
+            variant.Title?.Trim()
+            ??
+            string.Empty;
+
+
+        if (
+            string.IsNullOrWhiteSpace(
+                title))
+        {
+            return
+                "Version";
+        }
+
+
+        var setName =
+            monster?.MonsterSetName
+                ?.Trim()
+            ??
+            string.Empty;
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                setName)
+            &&
+            setName.EndsWith(
+                "s",
+                StringComparison.OrdinalIgnoreCase)
+            &&
+            setName.Length > 1)
+        {
+            var singularSetName =
+                setName[..^1];
+
+
+            var suffix =
+                $" {singularSetName}";
+
+
+            if (
+                title.EndsWith(
+                    suffix,
+                    StringComparison.OrdinalIgnoreCase)
+                &&
+                title.Length > suffix.Length)
+            {
+                var shortLabel =
+                    title[
+                        ..^suffix.Length]
+                        .Trim();
+
+
+                if (
+                    !string.IsNullOrWhiteSpace(
+                        shortLabel))
+                {
+                    return
+                        shortLabel;
+                }
+            }
+        }
+
+
+        return
+            title;
+    }
+
+
+    // =====================================
+    // SAME STAT BLOCK
+    // =====================================
+
+    private static bool SameMonster(
+        StatBlockData left,
+        StatBlockData right)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                left.Id)
+            &&
+            !string.IsNullOrWhiteSpace(
+                right.Id))
+        {
+            return
+                left.Id.Equals(
+                    right.Id,
+                    StringComparison.OrdinalIgnoreCase);
+        }
+
+
+        return
+            left.Title.Equals(
+                right.Title,
+                StringComparison.OrdinalIgnoreCase);
     }
 
 

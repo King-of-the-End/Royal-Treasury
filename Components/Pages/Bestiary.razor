@@ -433,8 +433,8 @@
                                 class="bestiary-table-row"
                                 role="link"
                                 tabindex="0"
-                                aria-label="View @monster.Title"
-                                title="View @monster.Title"
+                                aria-label="View @BestiaryMonsterName(monster)"
+                                title="View @BestiaryMonsterName(monster)"
                                 @onclick="() =>
                                     OpenMonster(monster)"
                                 @onkeydown="args =>
@@ -454,7 +454,7 @@
                                         href="@MonsterDetailsUrl(monster)"
                                         @onclick:stopPropagation="true">
 
-                                        @monster.Title
+                                        @BestiaryMonsterName(monster)
 
                                     </a>
 
@@ -880,10 +880,151 @@
 
 
     // =====================================
+    // BESTIARY MONSTERS
+    //
+    // A monster JSON file can contain
+    // several stat blocks that represent
+    // variants of one Bestiary entry.
+    //
+    // Example:
+    //
+    // "Name": "Belzers"
+    //
+    // "Stat Blocks": [
+    //   Ambush Belzer,
+    //   Defense Belzer,
+    //   Shielding Belzer,
+    //   Shift Belzer,
+    //   Targeting Belzer
+    // ]
+    //
+    // Those variants should appear as ONE
+    // Bestiary row. The detail page then
+    // exposes the individual stat blocks as
+    // Monster sub-tabs.
+    // =====================================
+
+    private IEnumerable<StatBlockData>
+        BestiaryMonsters =>
+            monsters
+                .GroupBy(
+                    BestiaryMonsterIdentity,
+                    StringComparer.OrdinalIgnoreCase)
+                .Select(
+                    group =>
+                        group.First());
+
+
+    // =====================================
+    // BESTIARY MONSTER IDENTITY
+    //
+    // Multi-stat-block documents inherit the
+    // same MonsterSetName from their outer
+    // JSON "Name" property.
+    //
+    // Single-stat-block monsters also have a
+    // MonsterSetName, normally equal to their
+    // own title, so they remain one row.
+    // =====================================
+
+    private static string
+        BestiaryMonsterIdentity(
+            StatBlockData monster)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                monster.MonsterSetName))
+        {
+            return
+                monster.MonsterSetName.Trim();
+        }
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                monster.Id))
+        {
+            return
+                monster.Id.Trim();
+        }
+
+
+        return
+            monster.Title.Trim();
+    }
+
+
+    // =====================================
+    // BESTIARY DISPLAY NAME
+    //
+    // For a variant collection such as the
+    // Belzers, use the outer monster name
+    // rather than the first stat-block title.
+    //
+    // Belzers
+    //
+    // instead of:
+    //
+    // Ambush Belzer
+    // =====================================
+
+    private static string
+        BestiaryMonsterName(
+            StatBlockData monster)
+    {
+        return
+            !string.IsNullOrWhiteSpace(
+                monster.MonsterSetName)
+
+            ? monster.MonsterSetName.Trim()
+
+            : monster.Title;
+    }
+
+
+    // =====================================
+    // VARIANTS FOR ONE BESTIARY ENTRY
+    // =====================================
+
+    private IEnumerable<StatBlockData>
+        BestiaryMonsterVariants(
+            StatBlockData monster)
+    {
+        var identity =
+            BestiaryMonsterIdentity(
+                monster);
+
+
+        return
+            monsters.Where(
+                candidate =>
+                    string.Equals(
+                        BestiaryMonsterIdentity(
+                            candidate),
+                        identity,
+                        StringComparison.OrdinalIgnoreCase));
+    }
+
+
+    // =====================================
     // FILTERED MONSTERS
     //
     // Search, Type, Group, and Source all
     // stack with one another.
+    //
+    // Filtering is performed against the
+    // complete variant set while only ONE
+    // representative row is returned.
+    //
+    // This means searching for:
+    //
+    // Defense Belzer
+    //
+    // still finds the single:
+    //
+    // Belzers
+    //
+    // Bestiary entry.
     // =====================================
 
     private IEnumerable<StatBlockData>
@@ -893,7 +1034,7 @@
         {
             IEnumerable<StatBlockData>
                 result =
-                    monsters;
+                    BestiaryMonsters;
 
 
             // =================================
@@ -911,47 +1052,58 @@
                 result =
                     result.Where(
                         monster =>
-                            ContainsSearch(
-                                monster.Title,
-                                search)
-
-                            ||
-
-                            ContainsSearch(
-                                monster.Creature?.Type,
-                                search)
-
-                            ||
-
-                            ContainsSearch(
-                                monster.Creature?.Alignment,
-                                search)
-
-                            ||
-
-                            ContainsSearch(
-                                monster.Creature?.Size,
-                                search)
-
-                            ||
-
-                            MonsterGroups(
+                            BestiaryMonsterVariants(
                                 monster)
                                 .Any(
-                                    group =>
+                                    variant =>
                                         ContainsSearch(
-                                            group,
-                                            search))
+                                            BestiaryMonsterName(
+                                                variant),
+                                            search)
 
-                            ||
+                                        ||
 
-                            MonsterSources(
-                                monster)
-                                .Any(
-                                    source =>
                                         ContainsSearch(
-                                            source,
-                                            search)));
+                                            variant.Title,
+                                            search)
+
+                                        ||
+
+                                        ContainsSearch(
+                                            variant.Creature?.Type,
+                                            search)
+
+                                        ||
+
+                                        ContainsSearch(
+                                            variant.Creature?.Alignment,
+                                            search)
+
+                                        ||
+
+                                        ContainsSearch(
+                                            variant.Creature?.Size,
+                                            search)
+
+                                        ||
+
+                                        MonsterGroups(
+                                            variant)
+                                            .Any(
+                                                group =>
+                                                    ContainsSearch(
+                                                        group,
+                                                        search))
+
+                                        ||
+
+                                        MonsterSources(
+                                            variant)
+                                            .Any(
+                                                source =>
+                                                    ContainsSearch(
+                                                        source,
+                                                        search))));
             }
 
 
@@ -966,9 +1118,13 @@
                 result =
                     result.Where(
                         monster =>
-                            MonsterMatchesType(
-                                monster,
-                                selectedCreatureType));
+                            BestiaryMonsterVariants(
+                                monster)
+                                .Any(
+                                    variant =>
+                                        MonsterMatchesType(
+                                            variant,
+                                            selectedCreatureType)));
             }
 
 
@@ -983,14 +1139,18 @@
                 result =
                     result.Where(
                         monster =>
-                            MonsterGroups(
+                            BestiaryMonsterVariants(
                                 monster)
                                 .Any(
-                                    group =>
-                                        string.Equals(
-                                            group,
-                                            selectedGroup,
-                                            StringComparison.OrdinalIgnoreCase)));
+                                    variant =>
+                                        MonsterGroups(
+                                            variant)
+                                            .Any(
+                                                group =>
+                                                    string.Equals(
+                                                        group,
+                                                        selectedGroup,
+                                                        StringComparison.OrdinalIgnoreCase))));
             }
 
 
@@ -1005,14 +1165,18 @@
                 result =
                     result.Where(
                         monster =>
-                            MonsterSources(
+                            BestiaryMonsterVariants(
                                 monster)
                                 .Any(
-                                    source =>
-                                        string.Equals(
-                                            source,
-                                            selectedSource,
-                                            StringComparison.OrdinalIgnoreCase)));
+                                    variant =>
+                                        MonsterSources(
+                                            variant)
+                                            .Any(
+                                                source =>
+                                                    string.Equals(
+                                                        source,
+                                                        selectedSource,
+                                                        StringComparison.OrdinalIgnoreCase))));
             }
 
 
@@ -1023,7 +1187,8 @@
             return
                 result.OrderBy(
                     monster =>
-                        monster.Title,
+                        BestiaryMonsterName(
+                            monster),
                     StringComparer.OrdinalIgnoreCase);
         }
     }
@@ -1251,11 +1416,16 @@
     {
         var value =
             !string.IsNullOrWhiteSpace(
+                monster.MonsterSetName)
+
+            ? monster.MonsterSetName
+
+            : !string.IsNullOrWhiteSpace(
                 monster.Id)
 
-            ? monster.Id
+                ? monster.Id
 
-            : monster.Title;
+                : monster.Title;
 
 
         var result =

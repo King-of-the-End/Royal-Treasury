@@ -372,7 +372,136 @@ public sealed class MonsterService
                         monster.Title)
                         .Equals(
                             normalizedSlug,
+                            StringComparison.Ordinal)
+                    ||
+                    NormalizeSlug(
+                        monster.MonsterSetName)
+                        .Equals(
+                            normalizedSlug,
                             StringComparison.Ordinal));
+    }
+
+
+    // =====================================
+    // GET MONSTER STAT-BLOCK VARIANTS
+    //
+    // Monster documents can contain several
+    // entries in their "Stat Blocks" array.
+    //
+    // Entries inherited from the same outer
+    // document receive the same
+    // MonsterSetName. This method returns the
+    // complete set for the detail page's
+    // Monster sub-tabs.
+    // =====================================
+
+    public async Task<
+        IReadOnlyList<StatBlockData>>
+        GetMonsterVariantsAsync(
+            string challengeRating,
+            string slug)
+    {
+        if (
+            string.IsNullOrWhiteSpace(
+                challengeRating)
+            ||
+            string.IsNullOrWhiteSpace(
+                slug))
+        {
+            return
+                Array.Empty<StatBlockData>();
+        }
+
+
+        var monsters =
+            await GetMonstersForChallengeRatingAsync(
+                challengeRating);
+
+
+        var normalizedSlug =
+            NormalizeSlug(
+                slug);
+
+
+        var selected =
+            monsters.FirstOrDefault(
+                monster =>
+                    NormalizeSlug(
+                        monster.Id)
+                        .Equals(
+                            normalizedSlug,
+                            StringComparison.Ordinal)
+                    ||
+                    NormalizeSlug(
+                        monster.Title)
+                        .Equals(
+                            normalizedSlug,
+                            StringComparison.Ordinal)
+                    ||
+                    NormalizeSlug(
+                        monster.MonsterSetName)
+                        .Equals(
+                            normalizedSlug,
+                            StringComparison.Ordinal));
+
+
+        if (selected is null)
+        {
+            return
+                Array.Empty<StatBlockData>();
+        }
+
+
+        var setName =
+            string.IsNullOrWhiteSpace(
+                selected.MonsterSetName)
+
+            ? selected.Title
+
+            : selected.MonsterSetName;
+
+
+        var normalizedSetName =
+            NormalizeSlug(
+                setName);
+
+
+        if (
+            string.IsNullOrWhiteSpace(
+                normalizedSetName))
+        {
+            return
+                new[]
+                {
+                    selected
+                };
+        }
+
+
+        var variants =
+            monsters
+                .Where(
+                    monster =>
+                        NormalizeSlug(
+                            string.IsNullOrWhiteSpace(
+                                monster.MonsterSetName)
+                            ? monster.Title
+                            : monster.MonsterSetName)
+                            .Equals(
+                                normalizedSetName,
+                                StringComparison.Ordinal))
+                .ToList();
+
+
+        if (variants.Count == 0)
+        {
+            variants.Add(
+                selected);
+        }
+
+
+        return
+            variants;
     }
 
 
@@ -1280,6 +1409,25 @@ public sealed class MonsterService
             {
                 return;
             }
+
+
+            // =================================
+            // MONSTER SET NAME
+            //
+            // Preserve the outer monster
+            // document name so several stat
+            // blocks from the same JSON file
+            // can be presented as variants on
+            // one Monster detail page.
+            // =================================
+
+            monster.MonsterSetName =
+                !string.IsNullOrWhiteSpace(
+                    metadata.Name)
+
+                ? metadata.Name.Trim()
+
+                : monster.Title.Trim();
 
 
             // =================================

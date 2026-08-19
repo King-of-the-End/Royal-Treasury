@@ -38,6 +38,47 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // VARIANT TAG
+    //
+    // Optional short label for a stat-block
+    // variant tab.
+    //
+    // Example:
+    //
+    // "tag": "Ambush"
+    //
+    // If omitted, MonsterDetails derives a
+    // short label from the stat block title.
+    // =====================================
+
+    [JsonPropertyName("tag")]
+    public string Tag { get; set; } =
+        string.Empty;
+
+
+    // =====================================
+    // MONSTER SET NAME
+    //
+    // Runtime-only name inherited from the
+    // outer monster document.
+    //
+    // Example:
+    //
+    // "Name": "Belzers"
+    //
+    // with several objects in "Stat Blocks"
+    // causes those stat blocks to share the
+    // same MonsterSetName.
+    //
+    // It is not written to / read from JSON.
+    // =====================================
+
+    [JsonIgnore]
+    public string MonsterSetName { get; set; } =
+        string.Empty;
+
+
+    // =====================================
     // INFORMATION
     //
     // This is normally inherited from the

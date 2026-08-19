@@ -1123,6 +1123,274 @@
 
 
 /* =========================================
+   MONSTER STAT-BLOCK VARIANT TABS
+   ========================================= */
+
+.monster-variant-tabs {
+
+    display:
+        flex;
+
+
+    flex-wrap:
+        wrap;
+
+
+    gap:
+        0.55rem;
+
+
+    margin:
+        0
+        0
+        1rem;
+
+
+    padding:
+        0.65rem;
+
+
+    border:
+        1px solid
+        #65412b;
+
+
+    border-radius:
+        5px;
+
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(
+                38,
+                27,
+                22,
+                0.96
+            ),
+            rgba(
+                14,
+                12,
+                11,
+                0.98
+            )
+        );
+
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.025
+        ),
+
+        0 4px 12px
+        rgba(
+            0,
+            0,
+            0,
+            0.20
+        );
+}
+
+
+
+.monster-variant-tab {
+
+    flex:
+        1
+        1
+        9rem;
+
+
+    min-height:
+        2.8rem;
+
+
+    padding:
+        0.55rem
+        0.9rem;
+
+
+    border:
+        1px solid
+        #784732;
+
+
+    border-radius:
+        5px;
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #543729,
+            #33231d
+        );
+
+
+    color:
+        #f4ebe4;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        0.98rem;
+
+
+    font-weight:
+        800;
+
+
+    line-height:
+        1.15;
+
+
+    cursor:
+        pointer;
+
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.035
+        ),
+
+        0 2px 5px
+        rgba(
+            0,
+            0,
+            0,
+            0.22
+        );
+
+
+    transition:
+
+        border-color
+        120ms ease,
+
+        background
+        120ms ease,
+
+        color
+        120ms ease,
+
+        transform
+        120ms ease;
+}
+
+
+
+.monster-variant-tab:hover {
+
+    border-color:
+        #a45a35;
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #69432e,
+            #422b21
+        );
+
+
+    color:
+        var(--gold-light);
+
+
+    transform:
+        translateY(-1px);
+}
+
+
+
+.monster-variant-tab.active {
+
+    border-color:
+        var(--gold);
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #815334,
+            #56341f
+        );
+
+
+    color:
+        var(--gold-light);
+
+
+    box-shadow:
+
+        inset 0 -3px 0
+        rgba(
+            211,
+            169,
+            0,
+            0.48
+        ),
+
+        0 0 0 1px
+        rgba(
+            211,
+            169,
+            0,
+            0.13
+        ),
+
+        0 3px 7px
+        rgba(
+            0,
+            0,
+            0,
+            0.24
+        );
+}
+
+
+
+.monster-variant-tab:focus-visible {
+
+    outline:
+        2px solid
+        var(--gold-light);
+
+
+    outline-offset:
+        2px;
+}
+
+
+
+.monster-variant-statblock {
+
+    overflow:
+        visible;
+}
+
+
+
+/* =========================================
    STAT BLOCK TAB
    ========================================= */
 
@@ -1237,6 +1505,38 @@
 
         padding:
             0.95rem;
+    }
+
+
+    .monster-variant-tabs {
+
+        flex-wrap:
+            nowrap;
+
+
+        overflow-x:
+            auto;
+
+
+        padding-bottom:
+            0.75rem;
+
+
+        scrollbar-width:
+            thin;
+    }
+
+
+    .monster-variant-tab {
+
+        flex:
+            0
+            0
+            auto;
+
+
+        min-width:
+            8.5rem;
     }
 
 }
