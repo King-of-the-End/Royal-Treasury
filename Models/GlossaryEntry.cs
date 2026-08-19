@@ -25,6 +25,23 @@ public enum GlossaryContext
      */
     StatBlockCreatureLine,
 
+    /*
+     * Special context used ONLY for the
+     * Quality Traits field inside a
+     * creature stat block.
+     *
+     * Example:
+     *
+     * Quality Traits  Anchored, Magic Resist
+     *
+     * This lets glossary terms such as
+     * Anchored and Magic Resist activate in
+     * the Quality Traits row without turning
+     * those same words into glossary links in
+     * actions, lore, spells, or other fields.
+     */
+    StatBlockQualityTrait,
+
     Subclass
 }
 
@@ -102,4 +119,28 @@ public sealed class GlossaryEntry
      */
     public List<string> Contexts { get; set; } =
         new();
+
+    /*
+     * Optional alternate match patterns.
+     *
+     * The popup title still uses Term.
+     *
+     * This is useful when the source data has
+     * more than one spelling/form for the same
+     * quality trait.
+     *
+     * Example:
+     *
+     * Term:
+     * Keen Senses (X)
+     *
+     * Alias:
+     * Keen Sense (X)
+     *
+     * Both open a tooltip titled:
+     * Keen Senses (X)
+     */
+    public List<string> Aliases { get; set; } =
+        new();
+
 }

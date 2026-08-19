@@ -97,7 +97,8 @@
         segments =
             BuildSegments(
                 Text,
-                entries);
+                entries,
+                Context);
     }
 
 
@@ -125,7 +126,8 @@
     private static List<GlossarySegment>
         BuildSegments(
             string text,
-            IReadOnlyList<GlossaryEntry> entries)
+            IReadOnlyList<GlossaryEntry> entries,
+            GlossaryContext context)
     {
         var result =
             new List<GlossarySegment>();
@@ -176,45 +178,55 @@
                 null;
 
 
+            var matchedLength =
+                0;
+
+
             /*
-             * GlossaryService returns entries
-             * longest-first.
+             * Find the longest ACTUAL source
+             * match at this character.
              *
-             * This allows:
+             * This matters for quality-trait
+             * patterns because the source text
+             * can be longer or shorter than the
+             * glossary title.
              *
-             * Eidomancy Burn
+             * Example title:
              *
-             * to be matched before:
+             * Regen X (Y)
              *
-             * Eidomancy
+             * Source:
              *
-             *
-             * It also allows:
-             *
-             * Tremor - Scorch
-             *
-             * and:
-             *
-             * Tremor Burst
-             *
-             * to be matched before:
-             *
-             * Tremor
+             * Regen 10 (radiant, eidolic)
              */
             foreach (
                 var entry
                 in entries)
             {
-                if (
-                    IsMatchAt(
-                        text,
-                        index,
+                foreach (
+                    var matchPattern
+                    in GetMatchPatterns(
                         entry))
                 {
-                    matchedEntry =
-                        entry;
+                    if (
+                        TryMatchAt(
+                            text,
+                            index,
+                            matchPattern,
+                            entry.CaseSensitive,
+                            context,
+                            out var candidateLength)
+                        &&
+                        candidateLength >
+                        matchedLength)
+                    {
+                        matchedEntry =
+                            entry;
 
-                    break;
+
+                        matchedLength =
+                            candidateLength;
+                    }
                 }
             }
 
@@ -225,7 +237,9 @@
 
             if (
                 matchedEntry
-                is null)
+                is null
+                ||
+                matchedLength <= 0)
             {
                 index++;
 
@@ -256,21 +270,17 @@
             // =================================
             // ADD GLOSSARY MATCH
             //
-            // Copy the exact source text.
-            //
-            // This preserves capitalization
-            // when CaseSensitive = false.
+            // The exact source text is kept as
+            // the visible text, while the popup
+            // title remains matchedEntry.Term.
             //
             // Example:
             //
-            // glossary:
-            // Burn
+            // visible:
+            // Amorphous (1 inch)
             //
-            // page:
-            // burn
-            //
-            // displayed:
-            // burn
+            // popup title:
+            // Amorphous (X)
             // =================================
 
             result.Add(
@@ -279,9 +289,7 @@
                     Text =
                         text.Substring(
                             index,
-                            matchedEntry
-                                .Term
-                                .Length),
+                            matchedLength),
 
                     Entry =
                         matchedEntry
@@ -293,9 +301,7 @@
             // =================================
 
             index +=
-                matchedEntry
-                    .Term
-                    .Length;
+                matchedLength;
 
 
             plainStart =
@@ -326,92 +332,146 @@
 
 
     // =====================================
-    // CHECK FOR TERM AT POSITION
+    // MATCH PATTERNS FOR AN ENTRY
+    //
+    // Term is always the popup title.
+    // Aliases are only alternate ways to
+    // recognise the same glossary entry.
     // =====================================
 
-    private static bool IsMatchAt(
+    private static IEnumerable<string>
+        GetMatchPatterns(
+            GlossaryEntry entry)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                entry.Term))
+        {
+            yield return
+                entry.Term;
+        }
+
+
+        if (
+            entry.Aliases is null)
+        {
+            yield break;
+        }
+
+
+        foreach (
+            var alias
+            in entry.Aliases)
+        {
+            if (
+                string.IsNullOrWhiteSpace(
+                    alias)
+                ||
+                string.Equals(
+                    alias,
+                    entry.Term,
+                    StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+
+            yield return
+                alias;
+        }
+    }
+
+
+    // =====================================
+    // CHECK FOR A MATCH AT POSITION
+    // =====================================
+
+    private static bool TryMatchAt(
         string text,
         int index,
-        GlossaryEntry entry)
+        string pattern,
+        bool caseSensitive,
+        GlossaryContext context,
+        out int matchLength)
     {
-        var term =
-            entry.Term;
+        matchLength =
+            0;
 
-
-        // =================================
-        // EMPTY TERM
-        // =================================
 
         if (
             string.IsNullOrEmpty(
-                term))
+                pattern))
         {
             return false;
         }
 
 
-        // =================================
-        // TERM WOULD GO PAST END OF TEXT
-        // =================================
+        /*
+         * Placeholder matching is deliberately
+         * restricted to Quality Traits.
+         *
+         * This prevents an ordinary glossary
+         * term containing a literal X, Y, or
+         * Type from unexpectedly becoming a
+         * wildcard elsewhere on the site.
+         */
+        var usePlaceholders =
+            context ==
+            GlossaryContext
+                .StatBlockQualityTrait;
+
 
         if (
-            index +
-            term.Length >
-            text.Length)
+            usePlaceholders
+            &&
+            ContainsPlaceholder(
+                pattern))
         {
-            return false;
-        }
-
-
-        // =================================
-        // PER-TERM CASE HANDLING
-        // =================================
-
-        var comparison =
-            entry.CaseSensitive
-
-            ? StringComparison.Ordinal
-
-            : StringComparison.OrdinalIgnoreCase;
-
-
-        // =================================
-        // ACTUAL TEXT COMPARISON
-        // =================================
-
-        if (
-            !text.AsSpan(
+            if (
+                !TryMatchPlaceholderPattern(
+                    text,
                     index,
-                    term.Length)
-                .Equals(
-                    term.AsSpan(),
-                    comparison))
+                    pattern,
+                    caseSensitive,
+                    out matchLength))
+            {
+                return false;
+            }
+        }
+        else
         {
-            return false;
+            if (
+                !TryMatchLiteral(
+                    text,
+                    index,
+                    pattern,
+                    caseSensitive))
+            {
+                return false;
+            }
+
+
+            matchLength =
+                pattern.Length;
         }
 
 
         // =================================
         // LEFT WORD BOUNDARY
-        //
-        // Prevent:
-        //
-        // Burn
-        //
-        // matching inside:
-        //
-        // Burnished
         // =================================
 
         if (
             NeedsLeftBoundary(
-                term)
+                pattern)
             &&
             index > 0
             &&
             IsWordCharacter(
                 text[index - 1]))
         {
+            matchLength =
+                0;
+
             return false;
         }
 
@@ -422,12 +482,12 @@
 
         var end =
             index +
-            term.Length;
+            matchLength;
 
 
         if (
             NeedsRightBoundary(
-                term)
+                pattern)
             &&
             end <
             text.Length
@@ -435,6 +495,9 @@
             IsWordCharacter(
                 text[end]))
         {
+            matchLength =
+                0;
+
             return false;
         }
 
@@ -444,17 +507,537 @@
 
 
     // =====================================
+    // LITERAL MATCH
+    // =====================================
+
+    private static bool TryMatchLiteral(
+        string text,
+        int index,
+        string literal,
+        bool caseSensitive)
+    {
+        if (
+            index < 0
+            ||
+            index +
+            literal.Length >
+            text.Length)
+        {
+            return false;
+        }
+
+
+        var comparison =
+            caseSensitive
+
+            ? StringComparison.Ordinal
+
+            : StringComparison.OrdinalIgnoreCase;
+
+
+        return
+            text.AsSpan(
+                    index,
+                    literal.Length)
+                .Equals(
+                    literal.AsSpan(),
+                    comparison);
+    }
+
+
+    // =====================================
+    // PLACEHOLDER PATTERN MATCHING
+    //
+    // Recognised placeholders:
+    //
+    // X
+    // Y
+    // Type
+    //
+    // Examples:
+    //
+    // Amorphous (X)
+    // -> Amorphous (1 inch)
+    //
+    // Angelic (X)
+    // -> Angelic (2d8)
+    //
+    // Critical X
+    // -> Critical 19
+    //
+    // Regen X (Y)
+    // -> Regen 10 (radiant, eidolic)
+    //
+    // Eidolos (Type)
+    // -> Eidolos (Seraphael)
+    // =====================================
+
+    private static bool TryMatchPlaceholderPattern(
+        string text,
+        int index,
+        string pattern,
+        bool caseSensitive,
+        out int matchLength)
+    {
+        matchLength =
+            0;
+
+
+        var tokens =
+            ParsePatternTokens(
+                pattern);
+
+
+        if (
+            tokens.Count == 0)
+        {
+            return false;
+        }
+
+
+        var comparison =
+            caseSensitive
+
+            ? StringComparison.Ordinal
+
+            : StringComparison.OrdinalIgnoreCase;
+
+
+        var textIndex =
+            index;
+
+
+        for (
+            var tokenIndex = 0;
+            tokenIndex < tokens.Count;
+            tokenIndex++)
+        {
+            var token =
+                tokens[tokenIndex];
+
+
+            // =============================
+            // LITERAL TOKEN
+            // =============================
+
+            if (!token.IsPlaceholder)
+            {
+                if (
+                    !TryMatchLiteral(
+                        text,
+                        textIndex,
+                        token.Text,
+                        caseSensitive))
+                {
+                    return false;
+                }
+
+
+                textIndex +=
+                    token.Text.Length;
+
+
+                continue;
+            }
+
+
+            // =============================
+            // PLACEHOLDER TOKEN
+            //
+            // It must consume at least one
+            // non-whitespace character.
+            // =============================
+
+            var nextLiteral =
+                string.Empty;
+
+
+            for (
+                var nextIndex =
+                    tokenIndex + 1;
+                nextIndex <
+                    tokens.Count;
+                nextIndex++)
+            {
+                if (
+                    !tokens[nextIndex]
+                        .IsPlaceholder
+                    &&
+                    tokens[nextIndex]
+                        .Text.Length > 0)
+                {
+                    nextLiteral =
+                        tokens[nextIndex]
+                            .Text;
+
+                    break;
+                }
+            }
+
+
+            int placeholderEnd;
+
+
+            if (
+                !string.IsNullOrEmpty(
+                    nextLiteral))
+            {
+                placeholderEnd =
+                    text.IndexOf(
+                        nextLiteral,
+                        textIndex,
+                        comparison);
+
+
+                if (
+                    placeholderEnd < 0)
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                placeholderEnd =
+                    FindQualityTraitValueEnd(
+                        text,
+                        textIndex);
+            }
+
+
+            if (
+                placeholderEnd <=
+                textIndex)
+            {
+                return false;
+            }
+
+
+            var placeholderValue =
+                text.Substring(
+                        textIndex,
+                        placeholderEnd -
+                        textIndex)
+                    .Trim();
+
+
+            if (
+                placeholderValue.Length == 0)
+            {
+                return false;
+            }
+
+
+            textIndex =
+                placeholderEnd;
+        }
+
+
+        matchLength =
+            textIndex -
+            index;
+
+
+        return
+            matchLength > 0;
+    }
+
+
+    // =====================================
+    // END OF A FINAL QUALITY-TRAIT VALUE
+    //
+    // Quality traits are rendered as a
+    // comma-separated list. A comma inside
+    // parentheses belongs to the current
+    // value, so only a top-level comma ends
+    // the trait.
+    // =====================================
+
+    private static int FindQualityTraitValueEnd(
+        string text,
+        int startIndex)
+    {
+        var parenthesisDepth =
+            0;
+
+
+        for (
+            var index = startIndex;
+            index < text.Length;
+            index++)
+        {
+            var value =
+                text[index];
+
+
+            if (value == '(')
+            {
+                parenthesisDepth++;
+
+                continue;
+            }
+
+
+            if (
+                value == ')'
+                &&
+                parenthesisDepth > 0)
+            {
+                parenthesisDepth--;
+
+                continue;
+            }
+
+
+            if (
+                parenthesisDepth == 0
+                &&
+                (
+                    value == ','
+                    ||
+                    value == ';'
+                    ||
+                    value == '\n'
+                    ||
+                    value == '\r'
+                ))
+            {
+                return index;
+            }
+        }
+
+
+        return
+            text.Length;
+    }
+
+
+    // =====================================
+    // PATTERN TOKENISATION
+    // =====================================
+
+    private static List<GlossaryPatternToken>
+        ParsePatternTokens(
+            string pattern)
+    {
+        var result =
+            new List<GlossaryPatternToken>();
+
+
+        var literalStart =
+            0;
+
+
+        var index =
+            0;
+
+
+        while (
+            index <
+            pattern.Length)
+        {
+            if (
+                TryReadPlaceholder(
+                    pattern,
+                    index,
+                    out var placeholderLength))
+            {
+                if (
+                    index >
+                    literalStart)
+                {
+                    result.Add(
+                        new GlossaryPatternToken
+                        {
+                            Text =
+                                pattern.Substring(
+                                    literalStart,
+                                    index -
+                                    literalStart)
+                        });
+                }
+
+
+                result.Add(
+                    new GlossaryPatternToken
+                    {
+                        Text =
+                            pattern.Substring(
+                                index,
+                                placeholderLength),
+
+                        IsPlaceholder =
+                            true
+                    });
+
+
+                index +=
+                    placeholderLength;
+
+
+                literalStart =
+                    index;
+
+
+                continue;
+            }
+
+
+            index++;
+        }
+
+
+        if (
+            literalStart <
+            pattern.Length)
+        {
+            result.Add(
+                new GlossaryPatternToken
+                {
+                    Text =
+                        pattern.Substring(
+                            literalStart)
+                });
+        }
+
+
+        return result;
+    }
+
+
+    // =====================================
+    // DOES PATTERN CONTAIN A PLACEHOLDER?
+    // =====================================
+
+    private static bool ContainsPlaceholder(
+        string pattern)
+    {
+        for (
+            var index = 0;
+            index < pattern.Length;
+            index++)
+        {
+            if (
+                TryReadPlaceholder(
+                    pattern,
+                    index,
+                    out _))
+            {
+                return true;
+            }
+        }
+
+
+        return false;
+    }
+
+
+    // =====================================
+    // READ PLACEHOLDER
+    //
+    // A placeholder must be a standalone
+    // word in the glossary title/pattern.
+    // =====================================
+
+    private static bool TryReadPlaceholder(
+        string pattern,
+        int index,
+        out int length)
+    {
+        length =
+            0;
+
+
+        foreach (
+            var placeholder
+            in PlaceholderNames)
+        {
+            if (
+                index +
+                placeholder.Length >
+                pattern.Length)
+            {
+                continue;
+            }
+
+
+            if (
+                !pattern.AsSpan(
+                        index,
+                        placeholder.Length)
+                    .Equals(
+                        placeholder.AsSpan(),
+                        StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+
+            var leftIsWord =
+                index > 0
+                &&
+                IsWordCharacter(
+                    pattern[index - 1]);
+
+
+            var rightIndex =
+                index +
+                placeholder.Length;
+
+
+            var rightIsWord =
+                rightIndex <
+                pattern.Length
+                &&
+                IsWordCharacter(
+                    pattern[rightIndex]);
+
+
+            if (
+                leftIsWord
+                ||
+                rightIsWord)
+            {
+                continue;
+            }
+
+
+            length =
+                placeholder.Length;
+
+
+            return true;
+        }
+
+
+        return false;
+    }
+
+
+    // =====================================
+    // PLACEHOLDER NAMES
+    // =====================================
+
+    private static readonly string[]
+        PlaceholderNames =
+        {
+            "Type",
+            "X",
+            "Y"
+        };
+
+
+    // =====================================
     // LEFT BOUNDARY REQUIRED?
     // =====================================
 
     private static bool NeedsLeftBoundary(
-        string term)
+        string pattern)
     {
         return
-            term.Length > 0
+            pattern.Length > 0
             &&
             IsWordCharacter(
-                term[0]);
+                pattern[0]);
     }
 
 
@@ -463,13 +1046,78 @@
     // =====================================
 
     private static bool NeedsRightBoundary(
-        string term)
+        string pattern)
     {
-        return
-            term.Length > 0
-            &&
-            IsWordCharacter(
-                term[^1]);
+        if (
+            pattern.Length == 0)
+        {
+            return false;
+        }
+
+
+        if (
+            TryGetLastMeaningfulPatternCharacter(
+                pattern,
+                out var value))
+        {
+            return
+                IsWordCharacter(
+                    value);
+        }
+
+
+        return false;
+    }
+
+
+    // =====================================
+    // LAST MEANINGFUL PATTERN CHARACTER
+    //
+    // If the pattern ends in a placeholder,
+    // treat it as word-like because the
+    // substituted source value normally ends
+    // in a word/number.
+    // =====================================
+
+    private static bool
+        TryGetLastMeaningfulPatternCharacter(
+            string pattern,
+            out char value)
+    {
+        value =
+            default;
+
+
+        if (
+            pattern.Length == 0)
+        {
+            return false;
+        }
+
+
+        for (
+            var index =
+                pattern.Length - 1;
+            index >= 0;
+            index--)
+        {
+            if (
+                char.IsWhiteSpace(
+                    pattern[index]))
+            {
+                continue;
+            }
+
+
+            value =
+                pattern[index];
+
+
+            return true;
+        }
+
+
+        return false;
     }
 
 
@@ -485,6 +1133,20 @@
                 value)
             ||
             value == '_';
+    }
+
+
+    // =====================================
+    // INTERNAL PATTERN TOKEN
+    // =====================================
+
+    private sealed class GlossaryPatternToken
+    {
+        public string Text { get; set; } =
+            string.Empty;
+
+
+        public bool IsPlaceholder { get; set; }
     }
 
 

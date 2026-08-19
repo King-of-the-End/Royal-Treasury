@@ -153,13 +153,13 @@
     "NoOverlay": false,
     "Contexts": []
   },
- {
-  "Term": "Enraged",
-  "Definition": "A creature that has become enraged is unable to control their fury, or have had their mind suppressed in such a way that they can only comprehend blind violence. A creature that is enraged is subjected to the following effects:\n\n• Their melee attacks have advantage, as do attacks against them.\n• If concentrating on a spell, they must succeed a DC 12 concentration check at the start of each of their turns.\n• If the creature starts their turn with a hostile creature within sight they roll a d20. On a result of 11 or higher they must use all of their movement and actions to move toward and attack the nearest one.\n• They must use their reaction to attack any creature that leaves their reach, regardless of whether they are an ally or foe.\n• The creature is unwilling to be targeted by any effect or use any item offered to them by another creature.\n• The creature cannot be charmed unless the effect enraging them is also the source of the charm. In this case, they will treat the commands and suggestions of the creature charming them as beneficial orders, following them in the most favorable way possible.\n\nAny effect that prevents a creature from being frightened also prevents them from being enraged, and effects that can remove the frightened or charmed condition can also remove this condition.\n\nThe DCs for enraged effects may change depending on the effect inflicting it.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": []
-},
+  {
+    "Term": "Enraged",
+    "Definition": "A creature that has become enraged is unable to control their fury, or have had their mind suppressed in such a way that they can only comprehend blind violence. A creature that is enraged is subjected to the following effects:\n\n• Their melee attacks have advantage, as do attacks against them.\n• If concentrating on a spell, they must succeed a DC 12 concentration check at the start of each of their turns.\n• If the creature starts their turn with a hostile creature within sight they roll a d20. On a result of 11 or higher they must use all of their movement and actions to move toward and attack the nearest one.\n• They must use their reaction to attack any creature that leaves their reach, regardless of whether they are an ally or foe.\n• The creature is unwilling to be targeted by any effect or use any item offered to them by another creature.\n• The creature cannot be charmed unless the effect enraging them is also the source of the charm. In this case, they will treat the commands and suggestions of the creature charming them as beneficial orders, following them in the most favorable way possible.\n\nAny effect that prevents a creature from being frightened also prevents them from being enraged, and effects that can remove the frightened or charmed condition can also remove this condition.\n\nThe DCs for enraged effects may change depending on the effect inflicting it.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": []
+  },
   {
     "Term": "Epic of Duality",
     "Definition": "The spells granted by T’quinn to her subjects, as well as many that were reverse engineered from the songs and stories she passed on to mankind. These spells are like songs, spoken and performed by those who serve her dogma and follow her ways. They are prominently featured in many stories about the Eidolons and some are named after special stories or chapters in these narratives. The Epic of Duality is also the name of the scripture followed by T’quinn’s devout; it is rumored that these spells are written into the pages of the first copies of that story.",
@@ -209,13 +209,13 @@
     "NoOverlay": false,
     "Contexts": []
   },
-{
-  "Term": "Ignited",
-  "Definition": "A creature (or object) that is ignited has been set on fire and continues to burn for the duration of the effect. A creature who is ignited takes fire damage at the start of each of their turns (1d10 unless otherwise stated) and has disadvantage on Wisdom checks. If multiple sources are igniting a creature, the damage they deal doesn’t stack: the damage taken is equal to the highest among the sources.\n\nA creature who comes into physical contact with an ignited creature (except through use of a weapon) for the first time on their turn or starts their turn in contact with them takes the same damage that creature would. Creatures attempting to grapple or maintain a grapple on an ignited creature have disadvantage unless they are resistant or immune to fire damage.\n\nAn ignited creature can use their action to douse the flame. The flame is also doused if they take cold damage or are covered in liquid that isn’t flammable.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": []
-},
+  {
+    "Term": "Ignited",
+    "Definition": "A creature (or object) that is ignited has been set on fire and continues to burn for the duration of the effect. A creature who is ignited takes fire damage at the start of each of their turns (1d10 unless otherwise stated) and has disadvantage on Wisdom checks. If multiple sources are igniting a creature, the damage they deal doesn’t stack: the damage taken is equal to the highest among the sources.\n\nA creature who comes into physical contact with an ignited creature (except through use of a weapon) for the first time on their turn or starts their turn in contact with them takes the same damage that creature would. Creatures attempting to grapple or maintain a grapple on an ignited creature have disadvantage unless they are resistant or immune to fire damage.\n\nAn ignited creature can use their action to douse the flame. The flame is also doused if they take cold damage or are covered in liquid that isn’t flammable.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": []
+  },
   {
     "Term": "Immobilized",
     "Definition": "A creature suffering from Immobilized is one who's suffering to move their stiffening limbs and joints. While enduring Immobilized, they take a penalty equal to the count of Immobilized they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All Immobilized stacks are removed at the end of the creature’s turn or after a minute has passed outside of combat.",
@@ -468,27 +468,33 @@
     "NoOverlay": false,
     "Contexts": []
   },
-{
-  "Term": "Eidolos",
-  "Definition": "Creatures that have the “eidolos” tag, which are usually but not always deities themselves, can be permanently killed by eidolic damage, but only if that damage is dealt to their sepherite after they are destroyed, and only if the creature dealing the damage has a higher CR or total level than the CR of the eidolos. Otherwise, they return to life shortly after being destroyed (as described in their stat block or description). The eidolos creature type is always listed as a subtype.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": ["CreatureLine"]
-},
-{
-  "Term": "Petitioner",
-  "Definition": "A petitioner is a being that completed its mortal life and found itself in one of many afterlives determined by the means and methods they lived by. They are not dead: merely in a different phase of life before they move on to the next. Some beings that were petitioners can move on from it, such as archons and icons, but the majority were (and are) humanoids living in a Divine Realm under the protection and guidance of a god.\n\nThis tag is generally only present to be informative, and will rarely have any mechanical effect, except that petitioners are unable to be banished from their realm of origin, they cannot make any sort of deal that indebts their soul to a being like a devil without their god’s permission, and if their soul is bound or trapped by any means without consent outside their plane of origin they will return to that plane in 24 hours (unless what is binding them is on the level of a wish spell or divine intervention by another godly being).",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": ["CreatureLine"]
-},
-{
-  "Term": "Yokai",
-  "Definition": "Within Somnus Domina, the unique state of the world and various forces within it often grants stories, emotions, and history itself shape in various forms. One of these are yokai, a subtype of fiend that finds itself bound to the Realm of Shadows. Yokai come into being when an individual or community/culture feels some collective sorrow or intense emotion, which comes to be a psychic phenomenon known as a yokai. These yokai seek the type of emotion and distress that created them, and they feed on both the psychological torment and physical bodies of mortals. In the base 5th Edition rules, many spells specifically target devils and demons. When they do include both, you can treat yokai as among those targets/options. The creature type is always expressed as “fiend (yokai)”.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": ["CreatureLine"]
-},
+  {
+    "Term": "Eidolos",
+    "Definition": "Creatures that have the “eidolos” tag, which are usually but not always deities themselves, can be permanently killed by eidolic damage, but only if that damage is dealt to their sepherite after they are destroyed, and only if the creature dealing the damage has a higher CR or total level than the CR of the eidolos. Otherwise, they return to life shortly after being destroyed (as described in their stat block or description). The eidolos creature type is always listed as a subtype.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "CreatureLine"
+    ]
+  },
+  {
+    "Term": "Petitioner",
+    "Definition": "A petitioner is a being that completed its mortal life and found itself in one of many afterlives determined by the means and methods they lived by. They are not dead: merely in a different phase of life before they move on to the next. Some beings that were petitioners can move on from it, such as archons and icons, but the majority were (and are) humanoids living in a Divine Realm under the protection and guidance of a god.\n\nThis tag is generally only present to be informative, and will rarely have any mechanical effect, except that petitioners are unable to be banished from their realm of origin, they cannot make any sort of deal that indebts their soul to a being like a devil without their god’s permission, and if their soul is bound or trapped by any means without consent outside their plane of origin they will return to that plane in 24 hours (unless what is binding them is on the level of a wish spell or divine intervention by another godly being).",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "CreatureLine"
+    ]
+  },
+  {
+    "Term": "Yokai",
+    "Definition": "Within Somnus Domina, the unique state of the world and various forces within it often grants stories, emotions, and history itself shape in various forms. One of these are yokai, a subtype of fiend that finds itself bound to the Realm of Shadows. Yokai come into being when an individual or community/culture feels some collective sorrow or intense emotion, which comes to be a psychic phenomenon known as a yokai. These yokai seek the type of emotion and distress that created them, and they feed on both the psychological torment and physical bodies of mortals. In the base 5th Edition rules, many spells specifically target devils and demons. When they do include both, you can treat yokai as among those targets/options. The creature type is always expressed as “fiend (yokai)”.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "CreatureLine"
+    ]
+  },
   {
     "Term": "Darkvision",
     "Definition": "A monster with darkvision can see in the dark within a specific radius. The monster can see in dim light within the radius as if it were bright light, and in darkness as if it were dim light. The monster can’t discern color in darkness, only shades of gray. Many creatures that live underground have this special sense.",
@@ -517,116 +523,458 @@
     "NoOverlay": false,
     "Contexts": []
   },
-    {
+  {
     "Term": "Aberration",
     "Definition": "Aberrations are utterly alien beings. Many of them have innate magical abilities drawn from the creature’s alien mind rather than the mystical forces of the world. The quintessential aberrations are aboleths, beholders, mind flayers, and slaadi.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
-    {
+  {
     "Term": "Beast",
     "Definition": "Beasts are nonhumanoid creatures that are a natural part of the fantasy ecology. Some of them have magical powers, but most are unintelligent and lack any society or language. Beasts include all varieties of ordinary animals, dinosaurs, and giant versions of animals.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Celestial",
     "Definition": "Celestials are creatures native to the Upper Planes. Many of them are the servants of deities, employed as messengers or agents in the mortal realm and throughout the planes. Celestials are good by nature, so the exceptional celestial who strays from a good alignment is a horrifying rarity. Celestials include angels, couatls, and pegasi.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Construct",
     "Definition": "Constructs are made, not born. Some are programmed by their creators to follow a simple set of instructions, while others are imbued with sentience and capable of independent thought. Golems are the iconic constructs. Many creatures native to the outer plane of Mechanus, such as modrons, are constructs shaped from the raw material of the plane by the will of more powerful creatures.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Dragon",
     "Definition": "Dragons are large reptilian creatures of ancient origin and tremendous power. True dragons, including the good metallic dragons and the evil chromatic dragons, are highly intelligent and have innate magic. Also in this category are creatures distantly related to true dragons, but less powerful, less intelligent, and less magical, such as wyverns and pseudodragons.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Elemental",
     "Definition": "Elementals are creatures native to the elemental planes. Some creatures of this type are little more than animate masses of their respective elements, including the creatures simply called elementals. Others have biological forms infused with elemental energy. The races of genies, including djinn and efreet, form the most important civilizations on the elemental planes. Other elemental creatures include azers, invisible stalkers, and water weirds.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
-    {
+  {
     "Term": "Fey",
     "Definition": "Fey are magical creatures closely tied to the forces of nature. They dwell in twilight groves and misty forests. In some worlds, they are closely tied to the Feywild, also called the Plane of Faerie. Some are also found in the Outer Planes, particularly the planes of Arborea and the Beastlands. Fey include dryads, pixies, and satyrs.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Fiend",
     "Definition": "Fiends are creatures of wickedness that are native to the Lower Planes. A few are the servants of deities, but many more labor under the leadership of archdevils and demon princes. Evil priests and mages sometimes summon fiends to the material world to do their bidding. If an evil celestial is a rarity, a good fiend is almost inconceivable. Fiends include demons, devils, hell hounds, rakshasas, and yugoloths.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Giant",
     "Definition": "Giants tower over humans and their kind. They are humanlike in shape, though some have multiple heads (ettins) or deformities (fomorians). The six varieties of true giant are hill giants, stone giants, frost giants, fire giants, cloud giants, and storm giants. Besides these, creatures such as ogres and trolls are giants.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Humanoid",
     "Definition": "Humanoids are the main peoples of the D&D world, both civilized and savage, including humans and a tremendous variety of other species. They have language and culture, few if any innate magical abilities (though most humanoids can learn spellcasting), and a bipedal form. The most common humanoid races are the ones most suitable as player characters: humans, dwarves, elves, and halflings. Almost as numerous but far more savage and brutal, and almost uniformly evil, are the races of goblinoids (goblins, hobgoblins, and bugbears), orcs, gnolls, lizardfolk, and kobolds.\n\nA variety of humanoids appear throughout this book, but the races detailed in the Player’s Handbook—with the exception of drow—are dealt with in appendix B. That appendix gives you a number of stat blocks that you can use to make various members of those races.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Monstrosity",
     "Definition": "Monstrosities are monsters in the strictest sense—frightening creatures that are not ordinary, not truly natural, and almost never benign. Some are the results of magical experimentation gone awry (such as owlbears), and others are the product of terrible curses (including minotaurs and yuan-ti). They defy categorization, and in some sense serve as a catch-all category for creatures that don’t fit into any other type.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Ooze",
     "Definition": "Oozes are gelatinous creatures that rarely have a fixed shape. They are mostly subterranean, dwelling in caves and dungeons and feeding on refuse, carrion, or creatures unlucky enough to get in their way. Black puddings and gelatinous cubes are among the most recognizable oozes.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Plant",
     "Definition": "Plants in this context are vegetable creatures, not ordinary flora. Most of them are ambulatory, and some are carnivorous. The quintessential plants are the shambling mound and the treant. Fungal creatures such as the gas spore and the myconid also fall into this category.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
     "Term": "Undead",
     "Definition": "Undead are once-living creatures brought to a horrifying state of undeath through the practice of necromantic magic or some unholy curse. Undead include walking corpses, such as vampires and zombies, as well as bodiless spirits, such as ghosts and specters.",
     "CaseSensitive": false,
     "NoOverlay": false,
-    "Contexts": ["CreatureLine"]
+    "Contexts": [
+      "CreatureLine"
+    ]
   },
   {
-  "Term": "Teleport without Error",
-  "Definition": "",
+    "Term": "Teleport without Error",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Teleport Spell",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": []
+  },
+  {
+    "Term": "Adamant Hide",
+    "Definition": "When the creature is hit by a critical hit, it becomes a normal hit instead. It is still treated as an automatic hit on a d20 result of 20.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Adamantine",
+    "Definition": "This creature’s weapons are considered to be made of adamantine.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Amorphous (X)",
+    "Definition": "The creature’s body can alter its shape to squeeze through spaces as narrow as whatever is listed as X.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Amphibious",
+    "Definition": "This creature can breathe both air and water.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Anchored",
+    "Definition": "This creature is tethered to another plane - the plane of its origin. If it is reduced to 0 hit points or killed outright while on another plane, the creature will be restored after some time on the plane of its origin. If destroyed or killed on their plane of origin, the creature is killed as usual and does not revive in this way.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Angelic (X)",
+    "Definition": "This creature’s attacks are magical, and their weapon attacks deal X radiant damage (if another damage type is listed, it is that type instead). This extra damage is factored into relevant attacks in their stat block already.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Avoidance",
+    "Definition": "When this creature makes a saving throw to take half damage from an effect, it takes no damage on a successful save and half damage on a failure.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Capacity (X)",
+    "Definition": "This creature is a vehicle with space available to house passengers inside itself, who move with the creature. These creatures are not considered pilots/operators (if there are pilots or operators, they will have their own spaces (stations)). A creature must spend 10 feet to enter or exit the vehicle. If enclosed inside the creature, the passengers have total cover against effects and attacks originating from outside. If only partially enclosed or “on” the vehicle, the passengers have half-cover against effects and attacks from outside the vehicle.\n\nThis vehicle has a number of units of space inside it, listed as X. Each passenger occupies as many of these spaces as they fill 5-foot spaces (Medium creatures take 1, Large creatures take 4, Huge creatures take 9, etc.,).\n\nA creature with this quality can carry additional weight equal in passengers equal to 100 lbs x the number of units of space they have available. This carrying capacity only applies to passengers, and not to their carry weight otherwise.\n\nThough this quality refers to the creature as a vehicle, it only counts as one for the purposes of effects if it also has the “Vehicle” quality trait. The word vehicle for this effect is used descriptively, not mechanically.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Critical X (Y)",
+    "Aliases": [
+      "Critical X"
+    ],
+    "Definition": "This creature scores a critical hit on any d20 result between X and 20. If they would only score these critical hits on specific attack types or at certain ranges (such as “weapon”, “spell”, “melee” or “ranged”) they will be listed as Y.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Deific",
+    "Definition": "This creature either is a deity, or is on par with one in all mechanical ways. Their spells and magic effects cannot be negated outright by effects such as Magic Immunity. Having this trait means the creature also implicitly has the Anchored, Eidolic, & Unique Quality Traits as well.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Eidolic",
+    "Definition": "This creature’s attacks and damage are eidolic and magical for the purposes of overcoming damage resistances and immunities.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Eidolos (Type)",
+    "Definition": "The creature is an eidolos, and so has eidolic perseverance as described in this book’s eidolos section. The type listed is their cosmogony type (oucumenael, pleromael, seraphael, hypuranael) - this is included entirely for reference purposes, and its bonuses are included in the stat block already.\n\nA creature with this Quality Trait is also considered to have the Immutable, Eidolic, Magic Resist and Unique traits. More information about eidolos can be found in their dedicated section.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Evasion",
+    "Definition": "When this creature makes a Dexterity saving throw to take half damage from an effect, it takes no damage on a successful save and half damage on a failure.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Fey Ancestry",
+    "Definition": "The creature has advantage on saving throws against being charmed, and magic can’t put them to sleep against their will.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Fly-By",
+    "Definition": "When this creature uses their fly or fly (hover) speed to move out of another creature’s reach, they do not provoke opportunity attacks.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Immutable",
+    "Definition": "Spells and magical effects, including effects such as polymorph, cannot change this creature’s form.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Jack of all Trades",
+    "Definition": "When this creature would make an ability check or saving throw that it is not already adding its proficiency bonus to (including through a similar feature to this), they may add half their proficiency bonus (rounded down) to the result.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Keen Senses (X)",
+    "Aliases": [
+      "Keen Sense (X)",
+      "Keen Senses",
+      "Keen Sense"
+    ],
+    "Definition": "The creature has advantage on Perception checks involving whatever is listed as X. If there is nothing, they have advantage on Perception checks at all times. This advantage is not factored into their passive Perception, which would have a +5 bonus in cases this advantage should apply.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Magic Resist",
+    "Definition": "This creature has advantage on saving throws against magical effects (including spells).",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Magic Immunity X",
+    "Aliases": [
+      "Magic Immunity"
+    ],
+    "Definition": "This creature is immune to spells of Xth level or lower unless they choose to be affected by them, or if the spell originates from a deity, artifact, or deity-like source. The creature also has advantage on saving throws against magical effects (including spells).\n\nIf no level is listed, the creature is immune to all spells and magical effects, apart from the exceptions listed above.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Magical",
+    "Definition": "This creature’s attacks and damage are considered magical for the purposes of overcoming damage resistances and immunities.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Pack Tactics",
+    "Definition": "The creature has an advantage on attacks made against targets when they have an ally adjacent to them, as long as the target is within the ally’s melee attack range and the ally is not incapacitated.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Regen X (Y)",
+    "Aliases": [
+      "Regen X"
+    ],
+    "Definition": "The creature regains hit points at the start of their turns as long as they have at least 1 hit point.\n\nX is the number of hit points recovered. Y is any damage type that, if taken, prevents them from regaining their hit points on their next turn.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Siege",
+    "Definition": "This creature does double damage against structures, siege weapons, and vehicles.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Silvered",
+    "Definition": "This creature’s weapons are considered silvered.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Small Stature",
+    "Definition": "The creature can move through the spaces of its allies without costing extra movement as long as they are smaller than the ally. They can also move through the space of hostile creatures larger than them as though they were difficult terrain.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Spider Climb",
+    "Definition": "The creature can move up, down, and across vertical and horizontal surfaces (as well as upside down along ceilings) while leaving its appendages free to use.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Swarm (X)",
+    "Definition": "This stat block represents many creatures of a smaller size, and so can occupy the spaces of other creatures and vice versa. The swarm can move through any space large enough for a creature listed as X, which is the size of the individual members of the swarm. The swarm cannot regain hit points or gain temporary hit points.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Undead Fortitude",
+    "Definition": "When this creature is reduced to 0 hit points (except by damage that is radiant or from a critical hit) and not outright killed by massive damage, it must make a Constitution saving throw with a DC of 5 + the damage taken. On a success, the creature drops to 1 hit point instead.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+  "Term": "Massive (X/Y/DC Z)",
+  "Definition": "Due to this creature’s large size, it takes half the damage from creatures of a certain size category or smaller. Additionally, when they attack a creature of that size category or smaller, each creature within a certain distance of that creature must succeed a Dexterity saving throw or be targeted by that attack. The same attack roll is used for each creature, but each is treated as being targeted by an independent version of that attack.\n\n• X is the size category.\n• Y is the space surrounding their target.\n• Z is the Dexterity save DC.\n\nThe following notations are used for X above.\n\n• Tiny - T\n• Small - S\n• Medium - M\n• Large - L\n• Huge - H\n• Gargantuan - G\n• Titanic - Ti\n• Tremendous - Tr\n• Colossal - Co\n• Supermassive - Su\n• Planetary - Pl",
   "CaseSensitive": false,
-  "NoOverlay": true,
-  "Contexts": []
+  "NoOverlay": false,
+  "Contexts": [
+    "StatBlockQualityTrait"
+  ]
 },
 {
-  "Term": "Teleport Spell",
-  "Definition": "",
+  "Term": "Yokai Nourishment",
+  "Definition": "When this creature scores a critical hit against another creature, it regains hit points equal to the damage that the attack deals.",
   "CaseSensitive": false,
-  "NoOverlay": true,
-  "Contexts": []
+  "NoOverlay": false,
+  "Contexts": [
+    "StatBlockQualityTrait"
+  ]
+},
+{
+  "Term": "Unique",
+  "Definition": "This creature is a unique individual or beast (as opposed to a generic member of their race), or is complex in nature in such a way that spells such as shape change or polymorph cannot turn a creature into them for the purposes of assuming their statistics. They are considered a unique individual, not a broad type of creature.",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "StatBlockQualityTrait"
+  ]
+},
+{
+  "Term": "Vehicle",
+  "Aliases": [
+    "Vehicle (Auto)"
+  ],
+  "Definition": "This creature serves as a vehicle, which can either house one or more creatures internally or have them ride it from the outside. While a creature who knows how to operate the vehicle is in a position to pilot it (or operate it, drive it, etc.,) they can assume control of the creature.\n\nActions. A creature piloting a vehicle can determine what the vehicle does on their turn as long as it isn’t incapacitated. On their own turn they can have the vehicle take any action it is capable of taking using their own equivalent action (except the vehicle’s Multiattack, if they have it).\n\nCover. A creature serving as the pilot for another with this quality tag is protected by it, granting them half cover and allowing them to redirect attacks from themselves to the vehicle as long as they are aware of them. If the creature is housed inside the vehicle, it has total cover and can’t be targeted by effects originating from outside.\n\nEntering & Exiting. Unless otherwise stated, entering the piloting position or leaving the creature requires 5 feet of movement on the part of the pilot. To pilot a vehicle a creature must occupy a number of spaces equal to half or fewer the number the vehicle occupies, and they must have both the anatomical features and knowledge needed to direct or control the vehicle. A creature exiting a vehicle emerges in an unoccupied space adjacent to the vehicle.\n\nMounted Combat. In most cases, operating a vehicle also counts as mounting it, granting bonuses associated with doing so. A GM may decide this is not the case based on context.\n\nProficiency Adjustment. When piloted by a creature with a higher proficiency bonus than its own, the vehicle’s proficiency bonus becomes its pilot’s.\n\nVehicle (Auto). If the quality is listed with this variant, it means the vehicle is capable of acting on its own without a pilot/operator. Its decisions will be influenced by whatever it was programmed or created to do, often simplistically and single-mindedly pursuing the last directive of its pilot or following their orders. Vehicles with this tag do not cease operating if their pilot is unable to act.\n\nSome creatures, like DGRs, have unique handling rules that supersede the vehicle quality.",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "StatBlockQualityTrait"
+  ]
 }
 ]

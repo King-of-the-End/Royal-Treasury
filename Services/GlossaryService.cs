@@ -199,6 +199,10 @@ public sealed class GlossaryService
         /*
          * Everything else uses the normal
          * glossary context system.
+         *
+         * This includes the dedicated
+         * StatBlockQualityTrait context used
+         * by quality-trait glossary entries.
          */
         return
             IsApplicable(
