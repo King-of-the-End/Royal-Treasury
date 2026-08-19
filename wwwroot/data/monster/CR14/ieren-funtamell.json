@@ -18,7 +18,13 @@
       },
       "armor_class": "18 (natural armor, cosmogony)",
       "hit_points": "255 (30d10 + 90)",
-      "speed": "30 ft., burrow 30 ft., climb 30 ft., fly (hover) 30 ft., swim 30 ft.",
+      "speed": {
+        "walk": "30 ft.",
+        "burrow": "30 ft.",
+        "climb": "30 ft.",
+        "fly": "30 ft. (hover)",
+        "swim": "30 ft."
+      },
       "quality_traits": [
         "Avoidance",
         "Eidolos (pleromael)",

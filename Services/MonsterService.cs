@@ -1632,7 +1632,22 @@ public sealed class MonsterService
             DistinctValues(
                 ReadStringOrArrayProperty(
                     element,
-                    "Image Variants"));
+                    "Image Variants")
+                .Concat(
+                    ReadStringOrArrayProperty(
+                        element,
+                        "Images"))
+                .Concat(
+                    ReadImageTabUrls(
+                        element))
+                .Where(
+                    candidate =>
+                        !string.IsNullOrWhiteSpace(
+                            candidate)
+                        &&
+                        !candidate.Equals(
+                            image,
+                            StringComparison.OrdinalIgnoreCase)));
 
 
         var refinement =
@@ -2181,6 +2196,87 @@ public sealed class MonsterService
                 ?.Trim()
             ??
             string.Empty;
+    }
+
+
+    // =====================================
+    // READ IMAGE TAB URLS
+    //
+    // Supports outer monster documents that
+    // store image variants as:
+    //
+    // "Image Tabs": [
+    //   { "Label": "Image 1", "Url": "..." },
+    //   { "Label": "Image 2", "Url": "..." }
+    // ]
+    //
+    // Labels are intentionally ignored here;
+    // MonsterDetails currently labels the tabs
+    // in image order as Image 1, Image 2, etc.
+    // =====================================
+
+    private static IReadOnlyList<string>
+        ReadImageTabUrls(
+            JsonElement element)
+    {
+        if (
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    "Image Tabs"),
+                out var tabs)
+            ||
+            tabs.ValueKind !=
+            JsonValueKind.Array)
+        {
+            return
+                Array.Empty<string>();
+        }
+
+
+        var results =
+            new List<string>();
+
+
+        foreach (
+            var tab
+            in tabs.EnumerateArray())
+        {
+            if (
+                tab.ValueKind !=
+                JsonValueKind.Object)
+            {
+                continue;
+            }
+
+
+            var url =
+                ReadStringProperty(
+                    tab,
+                    "Url");
+
+
+            if (
+                string.IsNullOrWhiteSpace(
+                    url)
+                ||
+                results.Any(
+                    existing =>
+                        existing.Equals(
+                            url,
+                            StringComparison.OrdinalIgnoreCase)))
+            {
+                continue;
+            }
+
+
+            results.Add(
+                url);
+        }
+
+
+        return
+            results;
     }
 
 

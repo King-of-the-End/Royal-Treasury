@@ -18,7 +18,11 @@
       },
       "armor_class": "19 (natural armor, cosmogony)",
       "hit_points": "252 (24d12 + 96)",
-      "speed": "50 ft., climb 40 ft., burrow 40 ft.",
+      "speed": {
+        "walk": "50 ft.",
+        "climb": "40 ft.",
+        "burrow": "40 ft."
+      },
       "quality_traits": [
         "Eidolos (pleromael)"
       ],

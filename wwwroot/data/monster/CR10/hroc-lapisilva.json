@@ -19,7 +19,12 @@
       "armor_class": "16 (natural armor, cosmogony)",
       "hit_points": "105 (10d12 + 40)",
       "threshold": "10",
-      "speed": "30 ft., burrow 30 ft., climb 30 ft., swim 30 ft.",
+      "speed": {
+        "walk": "30 ft.",
+        "burrow": "30 ft.",
+        "climb": "30 ft.",
+        "swim": "30 ft."
+      },
       "quality_traits": [
         "Adamant hide",
         "Eidolos (oucumenael)",

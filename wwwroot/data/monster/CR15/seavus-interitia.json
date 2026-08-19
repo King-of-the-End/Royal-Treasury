@@ -18,7 +18,9 @@
       },
       "armor_class": "20 (plate, cosmogony)",
       "hit_points": "250 (20d12 + 120)",
-      "speed": "40 ft.",
+      "speed": {
+        "walk": "40 ft."
+      },
       "quality_traits": [
         "Eidolos (pleromael)"
       ],

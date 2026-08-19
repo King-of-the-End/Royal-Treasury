@@ -19,7 +19,10 @@
       "armor_class": "17 (natural armor, cosmogony)",
       "hit_points": "158 (15d10 + 75)",
       "threshold": "10",
-      "speed": "40 ft., burrow 40 ft.",
+      "speed": {
+        "walk": "40 ft.",
+        "burrow": "40 ft."
+      },
       "quality_traits": [
         "Avoidance",
         "Eidolos (oucumenael)",
