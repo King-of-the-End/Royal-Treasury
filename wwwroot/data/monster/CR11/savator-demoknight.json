@@ -1,0 +1,168 @@
+{
+  "Name": "Savator Demoknight",
+  "Group": "Demoknights",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A great demoknight construct, which is made of higher quality souls and stands above lesser constructs of the same kind. They wield lances made of pure light and energy, which can fire and extend toward their targets to strike from afar. Their most striking feature is the massive shield they carry on their person, which is highly durable - unless it is struck with absolute precision.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Reference_BG%20-%20Savator%20Angelo.jpg",
+  "Stat Blocks": [
+    {
+      "id": "savator_demoknight",
+      "section_type": "Stat Block",
+      "title": "Savator Demoknight",
+      "creature": {
+        "size": "Large",
+        "type": "fiend, construct",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "20 (natural armor, shield)",
+      "hit_points": "150 (20d10 + 40)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Immutable"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "CHA": {
+          "score": 4,
+          "modifier": "-3"
+        }
+      },
+      "saving_throws": [
+        "Str +8",
+        "Con +6"
+      ],
+      "skills": [
+        "Athletics +8",
+        "Perception +8"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison",
+        "psychic"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "cannot speak, but understands the languages of its creator"
+      ],
+      "challenge_rating": "11 (7,200 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Critical Vulnerability",
+          "name_format": "bold_italic",
+          "description": "The fiend’s body is made of a versatile but brittle metal substance, which shatters if hit with precision. The fiend is vulnerable to the extra damage caused by critical hits, and if hit with one it’s shield breaks, reducing its AC by 2 and preventing it from using its Shield Bash attack or Grand Shield reaction."
+        },
+        {
+          "name": "Wicked Boost (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The fiend has several reserves of negative energy, which it can use for the following effects when appropriate:",
+          "options": [
+            {
+              "name": "",
+              "name_format": "plain",
+              "description": "Once per turn, when it hits a Large or smaller creature with a weapon attack, the fiend deals an additional 3d12 force damage to them."
+            },
+            {
+              "name": "",
+              "name_format": "plain",
+              "description": "The fiend may double its movement speed until the end of its turn."
+            },
+            {
+              "name": "",
+              "name_format": "plain",
+              "description": "The fiend gains a fly (hover) speed equal to its movement speed until the end of its next turn. When this effect ends they descend 60 feet safely before beginning to plummet."
+            },
+            {
+              "name": "",
+              "name_format": "plain",
+              "description": "The fiend’s attacks have advantage until the end of the current turn."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes three attacks, choosing between its Focus Lance and its Shield Bash."
+        },
+        {
+          "name": "Focus Lance",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 22 (4d8 + 4) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shield Bash",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage, and a Huge or smaller creature hit by this attack for the first time each turn must succeed a DC 16 Strength saving throw or be knocked prone and flung back 10 feet.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Wicked Charge (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The fiend regains one of its spent uses of Wicked Boost."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Grand Shield",
+          "name_format": "bold_italic",
+          "description": "When hit by an attack the fiend can see, they can interpose their shield between themselves and the attacker to reduce the damage they take by half (rounded down)."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**SAVATOR DEMOKNIGHT**\n*Large fiend, construct, neutral evil*\n**Armor Class** 20 (natural armor, shield)\n**Hit Points** 150 (20d10 + 40)\n**Speed** 30 ft.\n**Quality Traits** Immutable\n**STR** 18 (+4) | **DEX** 14 (+2) | **CON** 15 (+2) | **INT** 3 (-4) | **WIS** 10 (+0) | **CHA** 4 (-3)\n**Saving Throws** Str +8, Con +6\n**Skills** Athletics +8, Perception +8\n**Resistances** necrotic\n**Immunities** poison, psychic\n**Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, petrified, poisoned\n**Senses** blindsight 120 ft., passive Perception 18\n**Languages** cannot speak, but understands the languages of its creator\n**Challenge Rating** 11 (7,200 XP) **Prof Bonus** +4\n\n***Critical Vulnerability.*** The fiend’s body is made of a versatile but brittle metal substance, which shatters if hit with precision. The fiend is vulnerable to the extra damage caused by critical hits, and if hit with one it’s shield breaks, reducing its AC by 2 and preventing it from using its Shield Bash attack or Grand Shield reaction.\n\n***Wicked Boost (3/Day).*** The fiend has several reserves of negative energy, which it can use for the following effects when appropriate:\n• Once per turn, when it hits a Large or smaller creature with a weapon attack, the fiend deals an additional 3d12 force damage to them.\n• The fiend may double its movement speed until the end of its turn.\n• The fiend gains a fly (hover) speed equal to its movement speed until the end of its next turn. When this effect ends they descend 60 feet safely before beginning to plummet.\n• The fiend’s attacks have advantage until the end of the current turn.\n\n**ACTIONS**\n***Multiattack.*** The fiend makes three attacks, choosing between its Focus Lance and its Shield Bash.\n\n***Focus Lance.*** *Melee Weapon Attack:* +8 to hit, reach 15 ft., one target. *Hit:* 22 (4d8 + 4) force damage.\n\n***Shield Bash.*** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 15 (2d10 + 4) bludgeoning damage, and a Huge or smaller creature hit by this attack for the first time each turn must succeed a DC 16 Strength saving throw or be knocked prone and flung back 10 feet.\n\n***Wicked Charge (Recharge 5-6).*** The fiend regains one of its spent uses of Wicked Boost.\n\n**REACTIONS**\n***Grand Shield.*** When hit by an attack the fiend can see, they can interpose their shield between themselves and the attacker to reduce the damage they take by half (rounded down)."
+    }
+  ]
+}

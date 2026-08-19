@@ -1,0 +1,191 @@
+{
+  "Name": "Demoknight Lord",
+  "Group": "Demoknights",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A nearly unstoppable engine of destruction, forged by desperate devils using the remaining essence of fallen archfiends who perished during the Age of Sunderance. Its body is made of a thesite alloy, and this titanic fiend only knows to destroy whatever it is pointed toward. When it was created it initially flew wildly out of control, and so was put into stasis and sealed away in some remote part of the world where both fiends and celestials refuse to disturb it. If it were to be reawakened, it is thought it would express control over all demoknights that exist, uniting them under its destructive impulses.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Reference_BG%20-%20Gilgamesh%20Angelo.jpg",
+  "Stat Blocks": [
+    {
+      "id": "demoknight_lord",
+      "section_type": "Stat Block",
+      "title": "Demoknight Lord",
+      "creature": {
+        "size": "Colossal",
+        "type": "fiend, construct",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "24 (natural armor)",
+      "threshold": "15",
+      "hit_points": "585 (30d20 + 370)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "Magical",
+        "Massive (Large/10 feet/DC 25)",
+        "Siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 30,
+          "modifier": "+10"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 28,
+          "modifier": "+9"
+        },
+        "INT": {
+          "score": 5,
+          "modifier": "-3"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Wis +12",
+        "Cha +7"
+      ],
+      "skills": [
+        "Athletics +18",
+        "Perception +12"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison",
+        "psychic",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 240 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "cannot speak, but understands the languages of its creator",
+        "telepathy 480 feet, but only to constructs"
+      ],
+      "challenge_rating": "25 (75,000 XP)",
+      "proficiency_bonus": "+8",
+      "traits": [
+        {
+          "name": "Thesite Alloy Plating",
+          "name_format": "bold_italic",
+          "description": "The fiend adds its Constitution modifier to its armor class."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes two Piercing Slam attacks and two Pile Driver attacks. If it is available it can then use its Overdrive Shockwave. It can exchange one each of its Piercing Slam and Pile Drive attacks to use Gravity Overturn."
+        },
+        {
+          "name": "Piercing Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +18 to hit, reach 15 ft., one target. Hit: 23 (2d12 + 10) bludgeoning damage and 11 (2d10) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Pile Driver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +10 to hit, range 80/240 ft., one target. Hit: 19 (3d10 + 2) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Gravity Recharge",
+          "name_format": "bold_italic",
+          "description": "The fiend unleashes a downpour of energy that forces all creatures within 120 feet of it to make a DC 26 Strength saving throw. Creatures who fail take 11 (2d10) force damage and are knocked prone. If creatures fall from the air as a result of this effect, their falling damage is doubled."
+        },
+        {
+          "name": "Overdrive Shockwave (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The fiend targets one creature within 580 feet and fires a pile driver spike toward them. The target must succeed on a DC 25 Dexterity saving throw or be stunned for 1 minute, dazzled by the impact. The pile driver then detonates, forcing the target and all creatures within 120 feet of it (including the fiend itself) to make a DC 22 Dexterity saving throw, taking 66 (12d10) fire damage plus 39 (6d12) force damage on a failed save, or half as much damage on a successful one.\n\nA creature stunned by this effect makes a DC 20 Constitution saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Internal Engine (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The fiend’s next attack has advantage, and if it hits it deals an additional 28 (5d10) force damage. If it misses, this effect is wasted."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The fiend makes one Piercing Slam attack against a target within range."
+          },
+          {
+            "name": "Grasping Claws (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The fiend attempts to grapple one creature within 15 feet of it, making a grapple attempt as usual. A creature grappled this way that is Large or smaller is both grappled and restrained (escape DC 22), and takes 1d10 bludgeoning damage at the start of each of their turns. The fiend can move normally while carrying a creature grappled like this, but loses one of its Piercing Slam attacks from its Multiattack for each creature grappled."
+          },
+          {
+            "name": "Zealous Overcharge (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The fiend stores energy, raising its armor class by 2 until the start of its next turn. On that turn, it releases this energy and all of its attacks that turn have advantage. Then, following that round until the start of its following turn, attacks against the fiend have advantage. The fiend cannot use this Legendary Action if the effects of Zealous Overcharge are still affecting it."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "raw_text": "**DEMOKNIGHT LORD**\n*Colossal fiend, construct, neutral evil*\n**Armor Class** 24 (natural armor) **Threshold** 15\n**Hit Points** 585 (30d20 + 370)\n**Speed** 40 ft., climb 30 ft.\n**Quality Traits** Avoidance, magical, massive (Large/10 feet/DC 25), siege\n**STR** 30 (+10) | **DEX** 14 (+2) | **CON** 28 (+9) | **INT** 5 (-3) | **WIS** 18 (+4) | **CHA** 8 (-1)\n**Saving Throws** Dex +10, Wis +12, Cha +7\n**Skills** Athletics +18, Perception +12\n**Resistances** necrotic\n**Immunities** poison, psychic; B/S/P (magical)\n**Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, unconscious\n**Senses** blindsight 240 ft., passive Perception 22\n**Languages** cannot speak, but understands the languages of its creator; telepathy 480 feet, but only to constructs\n**Challenge Rating** 25 (75,000 XP) **Prof Bonus** +8\n\n**LEGENDARY REACTIONS (4 USES)**\nTBA.\n\n***Thesite Alloy Plating.*** The fiend adds its Constitution modifier to its armor class.\n\n**ACTIONS**\n***Multiattack.*** The fiend makes two Piercing Slam attacks and two Pile Driver attacks. If it is available it can then use its Overdrive Shockwave. It can exchange one each of its Piercing Slam and Pile Drive attacks to use Gravity Overturn.\n\n***Piercing Slam.*** *Melee Weapon Attack:* +18 to hit, reach 15 ft., one target. *Hit:* 23 (2d12 + 10) bludgeoning damage and 11 (2d10) piercing damage.\n\n***Pile Driver.*** *Ranged Weapon Attack:* +10 to hit, range 80/240 ft., one target. *Hit:* 19 (3d10 + 2) piercing damage.\n\n***Gravity Recharge.*** The fiend unleashes a downpour of energy that forces all creatures within 120 feet of it to make a DC 26 Strength saving throw. Creatures who fail take 11 (2d10) force damage and are knocked prone. If creatures fall from the air as a result of this effect, their falling damage is doubled.\n\n***Overdrive Shockwave (Recharge 6).*** The fiend targets one creature within 580 feet and fires a pile driver spike toward them. The target must succeed on a DC 25 Dexterity saving throw or be stunned for 1 minute, dazzled by the impact. The pile driver then detonates, forcing the target and all creatures within 120 feet of it (including the fiend itself) to make a DC 22 Dexterity saving throw, taking 66 (12d10) fire damage plus 39 (6d12) force damage on a failed save, or half as much damage on a successful one.\n\nA creature stunned by this effect makes a DC 20 Constitution saving throw at the end of each of their turns, ending the effect on a success.\n\n**BONUS ACTIONS**\n***Internal Engine (Recharge 4-6).*** The fiend’s next attack has advantage, and if it hits it deals an additional 28 (5d10) force damage. If it misses, this effect is wasted.\n\n**LEGENDARY ACTIONS (4 ACTIONS)**\n***Attack.*** The fiend makes one Piercing Slam attack against a target within range.\n\n***Grasping Claws (Costs 2 Actions).*** The fiend attempts to grapple one creature within 15 feet of it, making a grapple attempt as usual. A creature grappled this way that is Large or smaller is both grappled and restrained (escape DC 22), and takes 1d10 bludgeoning damage at the start of each of their turns. The fiend can move normally while carrying a creature grappled like this, but loses one of its Piercing Slam attacks from its Multiattack for each creature grappled.\n\n***Zealous Overcharge (Costs 3 Actions).*** The fiend stores energy, raising its armor class by 2 until the start of its next turn. On that turn, it releases this energy and all of its attacks that turn have advantage. Then, following that round until the start of its following turn, attacks against the fiend have advantage. The fiend cannot use this Legendary Action if the effects of Zealous Overcharge are still affecting it."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "Name": "Heraclicean",
+  "Group": "Devas",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The heroic heraclicean are monadic devas that appear as proxies for Harros himself. They represent the greatest peaks of valor of heroism, and among mortals who worship the Eight Remain they are often idolized as the ideal concept of a legendary hero. When they crash down onto a battlefield they fight like a wild beast, shocking their enemies with waves of celestial power and inhuman feats of strength.\n\nHeracliceans follow in the suit of other devas in that they wear no clothing or armor, but their golden bodies have seams present that give them a metallic golden appearance. Their eyes are blinding lights that burn like the sun, and their wings feature gold and blue feathers. They often have wild red or white hair that either flows freely about them or worn in a valiant mane. They are rarely depicted without their diamond gauntlets, weapons said to contain a small fragment of the sun within.\n\nThe heracliceans guard the boundaries of Harros’ Valley of Setting Dreams, as well as watch the walls and fields of the Monument. They train constantly, fighting in eternal gladiatorial tournaments within their plane until deployed. They are known to appear when a pure heroic spirit might be broken, or when mankind needs to be reminded of the virtues of comradery and honor.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference_BG%20-%20Monadic%20Deva%20-%20Heraclecian.jpg",
+  "Stat Blocks": [
+    {
+      "id": "heraclicean",
+      "section_type": "Stat Block",
+      "title": "Heraclicean",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "171 (18d8 + 90)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "120 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "Angelic (4d8)",
+        "Magic Resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Str +11",
+        "Wis +11",
+        "Cha +9"
+      ],
+      "skills": [
+        "Athletics +11",
+        "Intimidation +9",
+        "Perception +11"
+      ],
+      "immunities": [
+        "radiant",
+        "B/S/P (magical or adamantine)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "commune",
+                  "enlarge/reduce"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "conjure major steed",
+                  "fear",
+                  "gate",
+                  "sunbeam"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "thunderous leap"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "healing word (6th level)",
+                  "shield",
+                  "weapon of domination"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Strength of the Gods",
+          "name_format": "bold_italic",
+          "description": "The deva has advantage on strength checks and saving throws."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes two weapon attacks, one of which it can replace with its Fist of Judgement."
+        },
+        {
+          "name": "Diamond Gauntlets",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 18 (4d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "First of Judgement",
+          "name_format": "bold_italic",
+          "description": "The deva summons a massive fist of golden energy that strikes a creature it can see within 60 feet. The target must succeed on a DC 17 Dexterity saving throw, taking 44 (8d10) radiant damage and is knocked prone on a failure."
+        },
+        {
+          "name": "Blinding Sunstorm (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "A swirling vortex of radiant flames arcs upward around the deva, forming into a sun above it and detonating. Each creature the deva chooses within 20 feet of it must make a DC 18 Constitution saving throw, taking 36 (8d8) radiant damage and is blinded until the end of their next turn on a failed save, or takes half as much damage and isn’t blinded on a successful one."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Dash",
+          "name_format": "bold_italic",
+          "description": "The deva takes the Dash action."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**HERACLICEAN**\n*Medium celestial, lawful good*\n**Armor Class** 16 (natural armor)\n**Hit Points** 171 (18d8 + 90)\n**Speed** 30 ft., fly 120 ft.\n**Quality Traits** Anchored, angelic (4d8), magic resist\n**STR** 22 (+6) | **DEX** 14 (+2) | **CON** 20 (+5) | **INT** 16 (+3) | **WIS** 22 (+6) | **CHA** 18 (+4)\n**Saving Throws** Str +11, Wis +11, Cha +9\n**Skills** Athletics +11, Intimidation +9, Perception +11\n**Immunities** radiant; B/S/P (magical or adamantine)\n**Condition Immunities** charmed, exhaustion, frightened\n**Senses** darkvision 120 ft., passive Perception 21\n**Languages** all, telepathy 120 ft.\n**Challenge Rating** 14 (11,500 XP) **Prof Bonus** +5\n\n***Innate Spellcasting.*** The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:\n• ***At will:*** commune, enlarge/reduce\n• ***1/Day each:*** conjure major steed, fear, gate, sunbeam\n• ***2/Day each:*** thunderous leap\n• ***3/Day each:*** healing word (6th level), shield, weapon of domination\n\n***Strength of the Gods.*** The deva has advantage on strength checks and saving throws.\n\n**ACTIONS**\n***Multiattack.*** The deva makes two weapon attacks, one of which it can replace with its Fist of Judgement.\n\n***Diamond Gauntlets.*** *Melee Weapon Attack:* +11 to hit, reach 5 ft., one target. *Hit:* 15 (2d8 + 6) piercing damage plus 18 (4d8) radiant damage.\n\n***First of Judgement.*** The deva summons a massive fist of golden energy that strikes a creature it can see within 60 feet. The target must succeed on a DC 17 Dexterity saving throw, taking 44 (8d10) radiant damage and is knocked prone on a failure.\n\n***Blinding Sunstorm (Recharge 5-6).*** A swirling vortex of radiant flames arcs upward around the deva, forming into a sun above it and detonating. Each creature the deva chooses within 20 feet of it must make a DC 18 Constitution saving throw, taking 36 (8d8) radiant damage and is blinded until the end of their next turn on a failed save, or takes half as much damage and isn’t blinded on a successful one.\n\n**BONUS ACTIONS**\n***Dash.*** The deva takes the Dash action."
+    }
+  ]
+}

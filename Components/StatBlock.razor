@@ -234,8 +234,9 @@
                                             </small>
 
                                             <strong>
-                                                @DisplayRoll(
-                                                    ability.Save)
+                                                @DisplayAbilitySave(
+                                                    abilityName,
+                                                    ability)
                                             </strong>
 
                                         </div>
@@ -283,28 +284,6 @@
                                     <GlossaryText
                                         Text="@string.Join(", ", Data.QualityTraits)"
                                         Context="GlossaryContext.StatBlockQualityTrait" />
-
-                                </dd>
-
-                            </div>
-                        }
-
-
-                        <!-- SAVING THROWS -->
-
-                        @if (Data.SavingThrows.Count > 0)
-                        {
-                            <div>
-
-                                <dt>
-                                    Saving Throws
-                                </dt>
-
-                                <dd>
-
-                                    <GlossaryText
-                                        Text="@string.Join(", ", Data.SavingThrows)"
-                                        Context="GlossaryContext.StatBlock" />
 
                                 </dd>
 
@@ -1046,8 +1025,6 @@
     private bool HasInfo =>
         Data.QualityTraits.Count > 0
         ||
-        Data.SavingThrows.Count > 0
-        ||
         Data.Skills.Count > 0
         ||
         Data.Resistances.Count > 0
@@ -1304,6 +1281,221 @@
 
 
         return "—";
+    }
+
+
+    // =====================================
+    // DISPLAY ABILITY SAVE
+    //
+    // Priority:
+    //
+    // 1. A save stored directly on the
+    //    ability-score object.
+    //
+    // 2. A matching value from the top-level
+    //    saving_throws array.
+    //
+    // 3. If the creature is not specifically
+    //    proficient in that save, use the same
+    //    value as its normal ability check.
+    // =====================================
+
+    private string DisplayAbilitySave(
+        string abilityName,
+        StatBlockAbilityScore ability)
+    {
+        var directSave =
+            DisplayRoll(
+                ability.Save);
+
+
+        if (directSave != "—")
+        {
+            return directSave;
+        }
+
+
+        if (
+            TryGetExplicitSavingThrow(
+                abilityName,
+                out var explicitSave))
+        {
+            return explicitSave;
+        }
+
+
+        return
+            DisplayAbilityCheck(
+                ability);
+    }
+
+
+    // =====================================
+    // FIND TOP-LEVEL SAVING THROW
+    //
+    // Supports both abbreviated and full
+    // ability names, for example:
+    //
+    // Dex +10
+    // Dexterity +10
+    //
+    // It also tolerates older files that put
+    // several saves in one comma-separated
+    // string.
+    // =====================================
+
+    private bool TryGetExplicitSavingThrow(
+        string abilityName,
+        out string value)
+    {
+        value =
+            string.Empty;
+
+
+        var aliases =
+            abilityName
+                .ToUpperInvariant()
+            switch
+            {
+                "STR" =>
+                    new[]
+                    {
+                        "Str",
+                        "Strength"
+                    },
+
+                "DEX" =>
+                    new[]
+                    {
+                        "Dex",
+                        "Dexterity"
+                    },
+
+                "CON" =>
+                    new[]
+                    {
+                        "Con",
+                        "Constitution"
+                    },
+
+                "INT" =>
+                    new[]
+                    {
+                        "Int",
+                        "Intelligence"
+                    },
+
+                "WIS" =>
+                    new[]
+                    {
+                        "Wis",
+                        "Wisdom"
+                    },
+
+                "CHA" =>
+                    new[]
+                    {
+                        "Cha",
+                        "Charisma"
+                    },
+
+                _ =>
+                    Array.Empty<string>()
+            };
+
+
+        foreach (
+            var rawSavingThrow
+            in Data.SavingThrows)
+        {
+            if (
+                string.IsNullOrWhiteSpace(
+                    rawSavingThrow))
+            {
+                continue;
+            }
+
+
+            var candidates =
+                rawSavingThrow
+                    .Split(
+                        new[]
+                        {
+                            ',',
+                            ';'
+                        },
+                        StringSplitOptions
+                            .RemoveEmptyEntries
+                        |
+                        StringSplitOptions
+                            .TrimEntries);
+
+
+            foreach (
+                var candidate
+                in candidates)
+            {
+                foreach (
+                    var alias
+                    in aliases)
+                {
+                    if (
+                        candidate.Length <=
+                            alias.Length
+                        ||
+                        !candidate.StartsWith(
+                            alias,
+                            StringComparison
+                                .OrdinalIgnoreCase))
+                    {
+                        continue;
+                    }
+
+
+                    var boundary =
+                        candidate[
+                            alias.Length];
+
+
+                    if (
+                        !char.IsWhiteSpace(
+                            boundary)
+                        &&
+                        boundary != ':')
+                    {
+                        continue;
+                    }
+
+
+                    var parsedValue =
+                        candidate[
+                                alias.Length..]
+                            .Trim()
+                            .TrimStart(':')
+                            .Trim();
+
+
+                    if (
+                        string.IsNullOrWhiteSpace(
+                            parsedValue)
+                        ||
+                        parsedValue == "-")
+                    {
+                        continue;
+                    }
+
+
+                    value =
+                        parsedValue;
+
+
+                    return true;
+                }
+            }
+        }
+
+
+        return false;
     }
 
 

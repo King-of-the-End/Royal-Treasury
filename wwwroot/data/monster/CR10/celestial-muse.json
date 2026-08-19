@@ -1,0 +1,185 @@
+{
+  "Name": "Celestial Muse",
+  "Group": "Devas",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The muses are embodiments of T’quinn’s celebration of freedom and expression, tailored to bring happiness and peaceful rest to those who encounter them. They are movanic devas that are responsible for easing the spirits of inhabitants of Aiónia Skiní. They also appear with relative frequency to followers of T’quinn (as well as prominent actors, musicians and writers) to offer them guidance, directly or otherwise. Each temple of T’quinn is accepted to have one or more muses as patrons who are thought to have appeared to them from time to time, though generally they are unseen and possibly fictional. The primary temple of T’quinn is considered to be aligned with the muses of T’quinn’s personal orchestra. The muses take a particularly keen interest in the talents of mortal beings, and they also spend their time in Aiónia Skiní honing their acting, singing and instrumental skills. They can be found readily interacting with the inhabitants of T’quinn’s realm as if they themselves were petitioners, and are known to be one of the most openly warm and inviting sort of deva.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Movanic%20Deva%20-%20Celestial%20Muse.jpg",
+  "Stat Blocks": [
+    {
+      "id": "celestial_muse",
+      "section_type": "Stat Block",
+      "title": "Celestial Muse",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "128 (15d8 + 60)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "Angelic (4d8)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +8",
+        "Wis +9",
+        "Cha +9"
+      ],
+      "skills": [
+        "Insight +10",
+        "History +11",
+        "Perception +9",
+        "Performance +10"
+      ],
+      "resistances": [
+        "psychic",
+        "radiant"
+      ],
+      "immunities": [
+        "thunder",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "commune",
+                  "sacred flame",
+                  "sending",
+                  "song of inspiration"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dominate monster",
+                  "gate",
+                  "heal",
+                  "song of harmony"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "healing word (5th level)",
+                  "twin talent"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Magic Resistance",
+          "name_format": "bold_italic",
+          "description": "The deva has advantage on saving throws made against magical effects."
+        },
+        {
+          "name": "Unrelenting Voice",
+          "name_format": "bold_italic",
+          "description": "The deva’s voice and musical performances cannot be silenced magically, and if the deva wishes to be heard by any creature within 60 feet of it it will be, even if there is solid material blocking their voice or performances between them and their listener, and regardless of the volume of the sounds/words they produce."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes two weapons attacks and uses its Angel Score."
+        },
+        {
+          "name": "Scimitar",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage plus 18 (4d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Angel Score",
+          "name_format": "bold_italic",
+          "description": "The deva chooses one other creature within 60 feet and fills their mind with inspirational words and guidance. Each time that creature fails an attack roll, saving throw, or ability check before the start of the deva’s next turn, they can roll a d20 and replace their existing d20 result with it. They must keep this new result."
+        },
+        {
+          "name": "Swelling Orchestration (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The deva generates a bubble of harmonious sound centered on a point it chooses within 60 feet, which expands out in a 20-foot-radius sphere. All creatures (except celestials) within that sphere must succeed a DC 17 Charisma saving throw, taking 28 (5d10) thunder damage on a failure. Any creature that fails this save by 5 points or more is also deafened for 1 minute. A creature deafened this way repeats the save at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Counterblessing",
+          "name_format": "bold_italic",
+          "description": "When one or more creatures make a saving throw against the same effect, the deva can allow each of them that can see or hear it and are within 60 feet of it to roll 1d8 and add it to the result of the save."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**CELESTIAL MUSE**\n*Medium celestial, lawful good*\n**Armor Class** 17 (natural armor)\n**Hit Points** 128 (15d8 + 60)\n**Speed** 30 ft., fly 90 ft.\n**Quality Traits** Anchored, angelic (4d8)\n**STR** 14 (+2) | **DEX** 18 (+4) | **CON** 18 (+4) | **INT** 16 (+3) | **WIS** 20 (+5) | **CHA** 22 (+6)\n**Saving Throws** Dex +8, Wis +9, Cha +9\n**Skills** Insight +10, History +11, Perception +9, Performance +10\n**Resistances** psychic, radiant\n**Immunities** thunder; B/S/P (magical)\n**Condition Immunities** charmed, deafened, exhaustion, frightened\n**Senses** darkvision 120 ft., passive Perception 19\n**Languages** all, telepathy 120 ft.\n**Challenge Rating** 10 (5,900 XP) **Proficiency Bonus** +4\n\n***Innate Spellcasting.*** The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:\n• ***At will:*** commune, sacred flame, sending, song of inspiration\n• ***1/Day each:*** dominate monster, gate, heal, song of harmony\n• ***3/Day each:*** healing word (5th level), twin talent\n\n***Magic Resistance.*** The deva has advantage on saving throws made against magical effects.\n\n***Unrelenting Voice.*** The deva’s voice and musical performances cannot be silenced magically, and if the deva wishes to be heard by any creature within 60 feet of it it will be, even if there is solid material blocking their voice or performances between them and their listener, and regardless of the volume of the sounds/words they produce.\n\n**ACTIONS**\n***Multiattack.*** The deva makes two weapons attacks and uses its Angel Score.\n\n***Scimitar.*** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 4) slashing damage plus 18 (4d8) radiant damage.\n\n***Angel Score.*** The deva chooses one other creature within 60 feet and fills their mind with inspirational words and guidance. Each time that creature fails an attack roll, saving throw, or ability check before the start of the deva’s next turn, they can roll a d20 and replace their existing d20 result with it. They must keep this new result.\n\n***Swelling Orchestration (Recharge 5-6).*** The deva generates a bubble of harmonious sound centered on a point it chooses within 60 feet, which expands out in a 20-foot-radius sphere. All creatures (except celestials) within that sphere must succeed a DC 17 Charisma saving throw, taking 28 (5d10) thunder damage on a failure. Any creature that fails this save by 5 points or more is also deafened for 1 minute. A creature deafened this way repeats the save at the end of each of their turns, ending the effect on a success.\n\n**REACTIONS**\n***Counterblessing.*** When one or more creatures make a saving throw against the same effect, the deva can allow each of them that can see or hear it and are within 60 feet of it to roll 1d8 and add it to the result of the save."
+    }
+  ]
+}

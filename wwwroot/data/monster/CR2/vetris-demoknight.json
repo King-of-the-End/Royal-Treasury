@@ -1,0 +1,134 @@
+{
+  "Name": "Vetris Demoknight",
+  "Group": "Demoknights",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The most basic form of demoknight, which serves as a foot soldier and disposable grunt when paired with their stronger alternatives.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference_BG%20-%20%20Vetris%20Angelo.jpg",
+  "Stat Blocks": [
+    {
+      "id": "vetris_demoknight",
+      "section_type": "Stat Block",
+      "title": "Vetris Demoknight",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend, construct",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "31 (5d8 + 8)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 11,
+          "modifier": "+0"
+        },
+        "CON": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "CHA": {
+          "score": 4,
+          "modifier": "-3"
+        }
+      },
+      "skills": [
+        "Athletics +5",
+        "Perception +2"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison",
+        "psychic"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "cannot speak, but understands the languages of its creator"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Critical Vulnerability",
+          "name_format": "bold_italic",
+          "description": "The fiend’s body is made of a versatile but brittle metal substance, which shatters if hit with precision. The fiend is vulnerable to the extra damage caused by critical hits, and if hit with one it loses its Multiattack feature until it completes a Short or Long Rest."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes attacks twice: once with its Slam, and once with its Fiendish Straight Sword."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) bludgeoning damage. A Medium or smaller creature hit by this attack must succeed a DC 13 Strength saving throw or be knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Fiendish Straight Sword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Chain Lash",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +4 to hit, reach 30 ft., one target. Hit: 6 (1d4 + 3) slashing damage. A Large or smaller creature hit by this attack must succeed a DC 13 Strength saving throw or be pulled 10 feet toward the fiend and is knocked prone.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**VETRIS DEMOKNIGHT**\n*Medium fiend, construct, neutral evil*\n**Armor Class** 18 (natural armor)\n**Hit Points** 31 (5d8 + 8)\n**Speed** 30 ft.\n**STR** 16 (+3) | **DEX** 11 (+0) | **CON** 13 (+1) | **INT** 3 (-4) | **WIS** 10 (+0) | **CHA** 4 (-3)\n**Skills** Athletics +5, Perception +2\n**Resistances** necrotic\n**Immunities** poison, psychic\n**Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned\n**Senses** blindsight 60 ft., passive Perception 12\n**Languages** cannot speak, but understands the languages of its creator\n**Challenge Rating** 2 (450 XP) **Proficiency Bonus** +2\n\n***Critical Vulnerability.*** The fiend’s body is made of a versatile but brittle metal substance, which shatters if hit with precision. The fiend is vulnerable to the extra damage caused by critical hits, and if hit with one it loses its Multiattack feature until it completes a Short or Long Rest.\n\n**ACTIONS**\n***Multiattack.*** The fiend makes attacks twice: once with its Slam, and once with its Fiendish Straight Sword.\n\n***Slam.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 3) bludgeoning damage. A Medium or smaller creature hit by this attack must succeed a DC 13 Strength saving throw or be knocked prone.\n\n***Fiendish Straight Sword.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (1d8 + 3) slashing damage.\n\n**BONUS ACTIONS**\n***Chain Lash.*** *Ranged Weapon Attack:* +4 to hit, reach 30 ft., one target. *Hit:* 6 (1d4 + 3) slashing damage. A Large or smaller creature hit by this attack must succeed a DC 13 Strength saving throw or be pulled 10 feet toward the fiend and is knocked prone."
+    }
+  ]
+}

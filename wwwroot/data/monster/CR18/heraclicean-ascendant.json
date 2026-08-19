@@ -1,0 +1,190 @@
+{
+  "Name": "Heraclicean Ascendant",
+  "Group": "Devas",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The heroic heraclicean are monadic devas that appear as proxies for Harros himself. They represent the greatest peaks of valor of heroism, and among mortals who worship the Eight Remain they are often idolized as the ideal concept of a legendary hero. When they crash down onto a battlefield they fight like a wild beast, shocking their enemies with waves of celestial power and inhuman feats of strength.\n\nHeracliceans follow in the suit of other devas in that they wear no clothing or armor, but their golden bodies have seams present that give them a metallic golden appearance. Their eyes are blinding lights that burn like the sun, and their wings feature gold and blue feathers. They often have wild red or white hair that either flows freely about them or worn in a valiant mane. They are rarely depicted without their diamond gauntlets, weapons said to contain a small fragment of the sun within.\n\nThe heracliceans guard the boundaries of Harros’ Valley of Setting Dreams, as well as watch the walls and fields of the Monument. They train constantly, fighting in eternal gladiatorial tournaments within their plane until deployed. They are known to appear when a pure heroic spirit might be broken, or when mankind needs to be reminded of the virtues of comradery and honor.\n\n**Heraclicean Ascendant.** \n\nThe champion of Harros’ devas - the ascendant is the strongest among Harros angelic servants, earning their status by proving themselves in the constant gladiatorial bouts the heracliceans have. This soldier is considered the leader of their kind (though no formal social structure supports this), and so great is their might that a concentrated punch from one can shatter dimensional boundaries and cast their targets into a prison plane.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference_BG%20-%20Monadic%20Deva%20-%20Heraclecian.jpg",
+  "Stat Blocks": [
+    {
+      "id": "heraclicean_ascendant",
+      "section_type": "Stat Block",
+      "title": "Heraclicean Ascendant",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "210 (20d8 + 120)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "120 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "Angelic (4d8)",
+        "Magic Resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 26,
+          "modifier": "+8"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Str +14",
+        "Wis +12",
+        "Cha +10"
+      ],
+      "skills": [
+        "Athletics +14",
+        "Intimidation +10",
+        "Perception +12"
+      ],
+      "immunities": [
+        "radiant",
+        "B/S/P (magical or adamantine)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "commune",
+                  "enlarge/reduce"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "conjure major steed",
+                  "fear",
+                  "gate",
+                  "sunburst"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "golden spiral (6th level)",
+                  "thunderous leap"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "healing word (6th level)",
+                  "shield",
+                  "weapon of domination"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Strength of the Gods",
+          "name_format": "bold_italic",
+          "description": "The deva has advantage on strength checks and saving throws."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes three weapon attacks, one of which it can replace with its Fist of Judgement or casting a spell using its Innate Spellcasting."
+        },
+        {
+          "name": "Diamond Gauntlets",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 17 (2d8 + 8) piercing damage plus 18 (4d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Fist of Judgement",
+          "name_format": "bold_italic",
+          "description": "The deva summons a massive fist of golden energy that strikes a creature it can see within 60 feet. The target must succeed on a DC 18 Dexterity saving throw, taking 44 (8d10) radiant damage and being knocked prone on a failure."
+        },
+        {
+          "name": "Solar Demise (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The deva creates a gate to the heart of Arco, and unleashes its heat in a 60-foot long, 15-foot wide line originating from it. Every creature in this line must make a DC 20 Dexterity saving throw, taking 66 (12d10) radiant damage on a failed save, or half as much on a successful one. A creature that fails this save is also blinded for 1 hour, and at the end of each of their turns can make a DC 20 Constitution saving throw, ending the effect on a success."
+        },
+        {
+          "name": "Dimension-Shattering Strike (3/Day)",
+          "name_format": "bold_italic",
+          "description": "When the deva hits a creature with the first attack it makes on its turn, it can forgo all remaining attacks to break the seams of reality to punch its target into another plane. The target must succeed a DC 18 Charisma saving throw or crash through planar boundaries like shattered glass and become trapped in a prison plane as though by the banishment spell (requiring no concentration). If the target does not escape the dimension within 1 minute they cease making saving throws and are trapped in that plane until the deva dies or uses the gate spell to retrieve them (emerging from where they entered in the first case, and emerging where the gate appears in the latter). If they succeed they emerge from where they entered. The deva can only have 1 creature trapped in a prison dimension this way at a time.",
+          "inline_formatting": {
+            "banishment": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Dash",
+          "name_format": "bold_italic",
+          "description": "The deva takes the Dash action."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**HERACLICEAN ASCENDANT**\n*Medium celestial, lawful good*\n**Armor Class** 17 (natural armor)\n**Hit Points** 210 (20d8 + 120)\n**Speed** 30 ft., fly 120 ft.\n**Quality Traits** Anchored, angelic (4d8), magic resist\n**STR** 26 (+8) | **DEX** 16 (+3) | **CON** 22 (+6) | **INT** 16 (+3) | **WIS** 22 (+6) | **CHA** 18 (+4)\n**Saving Throws** Str +14, Wis +12, Cha +10\n**Skills** Athletics +14, Intimidation +10, Perception +12\n**Immunities** radiant; B/S/P (magical or adamantine)\n**Condition Immunities** charmed, exhaustion, frightened\n**Senses** darkvision 120 ft., passive Perception 22\n**Languages** all, telepathy 120 ft.\n**Challenge Rating** 18 (20,000 XP) **Prof Bonus** +6\n\n***Innate Spellcasting.*** The deva’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** commune, enlarge/reduce\n• ***1/Day each:*** conjure major steed, fear, gate, sunburst\n• ***2/Day each:*** golden spiral (6th level), thunderous leap\n• ***3/Day each:*** healing word (6th level), shield, weapon of domination\n\n***Strength of the Gods.*** The deva has advantage on strength checks and saving throws.\n\n**ACTIONS**\n***Multiattack.*** The deva makes three weapon attacks, one of which it can replace with its Fist of Judgement or casting a spell using its Innate Spellcasting.\n\n***Diamond Gauntlets.*** *Melee Weapon Attack:* +14 to hit, reach 5 ft., one target. *Hit:* 17 (2d8 + 8) piercing damage plus 18 (4d8) radiant damage.\n\n***Fist of Judgement.*** The deva summons a massive fist of golden energy that strikes a creature it can see within 60 feet. The target must succeed on a DC 18 Dexterity saving throw, taking 44 (8d10) radiant damage and being knocked prone on a failure.\n\n***Solar Demise (Recharge 6).*** The deva creates a gate to the heart of Arco, and unleashes its heat in a 60-foot long, 15-foot wide line originating from it. Every creature in this line must make a DC 20 Dexterity saving throw, taking 66 (12d10) radiant damage on a failed save, or half as much on a successful one. A creature that fails this save is also blinded for 1 hour, and at the end of each of their turns can make a DC 20 Constitution saving throw, ending the effect on a success.\n\n***Dimension-Shattering Strike (3/Day).*** When the deva hits a creature with the first attack it makes on its turn, it can forgo all remaining attacks to break the seams of reality to punch its target into another plane. The target must succeed a DC 18 Charisma saving throw or crash through planar boundaries like shattered glass and become trapped in a prison plane as though by the *banishment* spell (requiring no concentration). If the target does not escape the dimension within 1 minute they cease making saving throws and are trapped in that plane until the deva dies or uses the gate spell to retrieve them (emerging from where they entered in the first case, and emerging where the gate appears in the latter). If they succeed they emerge from where they entered. The deva can only have 1 creature trapped in a prison dimension this way at a time.\n\n**BONUS ACTIONS**\n***Dash.*** The deva takes the Dash action."
+    }
+  ]
+}
