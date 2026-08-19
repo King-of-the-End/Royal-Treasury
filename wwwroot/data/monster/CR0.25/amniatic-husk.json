@@ -1,0 +1,97 @@
+{
+  "Name": "Amniatic Husk",
+  "Group": "The Amniatic",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The most pathetic state of a drudge; an amniatic husk is a humanoid that has remained a drudge so long that their sense of self has completely drained away, and their movements are more like a shambling undead than a proper humanoid. Their skin is drained of color and takes on burn-like patches of silver and light blue, and their eyes become the color of rusting gold. They are incapable of much except lashing out at other creatures.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "amniatic_husk",
+      "section_type": "Stat Block",
+      "title": "Amniatic Husk",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "unaligned"
+      },
+      "armor_class": "8",
+      "hit_points": "14 (3d8)",
+      "speed": {
+        "walk": "20 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+"
+        },
+        "DEX": {
+          "score": 7,
+          "modifier": "+"
+        },
+        "CON": {
+          "score": 10,
+          "modifier": "+"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "+"
+        },
+        "WIS": {
+          "score": 3,
+          "modifier": "+"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "+"
+        }
+      },
+      "resistances": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 30 ft.",
+        "passive Perception 6"
+      ],
+      "languages": "understands the languages they spoke in life, but does not speak coherently",
+      "challenge_rating": "1/4 (100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Contagious Blood",
+          "name_format": "bold_italic",
+          "description": "When the husk scores a critical hit against a creature or is dealt slashing damage by a creature within 5 feet for the first time on their turn, that creature must make a DC 10 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1."
+        },
+        {
+          "name": "Desperate Pursuit",
+          "name_format": "bold_italic",
+          "description": "When the husk makes an opportunity attack, it does so with advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Rake",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6) slashing damage plus 4 (1d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**AMNIATIC HUSK**\n*Medium humanoid (any), unaligned*\n**Armor Class** 8\n**Hit Points** 14 (3d8)\n**Speed** 20 ft.\n**STR** 12 (+) | **DEX** 7 (+) | **CON** 10 (+) | **INT** 7 (+) | **WIS** 3 (+) | **CHA** 7 (+)\n**Resistances** psychic\n**Condition Immunities** charmed, frightened\n**Senses** darkvision 30 ft., passive Perception 6\n**Languages** understands the languages they spoke in life, but does not speak coherently\n**Challenge Rating** 1/4 (100 XP) **Prof Bonus** +2\n\n***Contagious Blood.*** When the husk scores a critical hit against a creature or is dealt slashing damage by a creature within 5 feet for the first time on their turn, that creature must make a DC 10 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1.\n\n***Desperate Pursuit.*** When the husk makes an opportunity attack, it does so with advantage.\n\n**ACTIONS**\n***Rake.*** *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6) slashing damage plus 4 (1d6) psychic damage."
+    }
+  ]
+}

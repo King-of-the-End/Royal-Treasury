@@ -1,0 +1,117 @@
+{
+  "Name": "Amniatic Feral Spreader",
+  "Group": "The Amniatic",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "An amniatic drudge that has lost their sense of self in such a way as to reduce them to an instinct-driven hunter. They are aggressive, skittish, and prone to hurling themselves at other creatures and tearing into them. They are considered a sub-human mutation that has been drained of everything that makes them an intelligent creature, leaving only their most violent impulses.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Amniatic%20Feral%20Spreader.jpg",
+  "Stat Blocks": [
+    {
+      "id": "amniatic_feral_spreader",
+      "section_type": "Stat Block",
+      "title": "Amniatic Feral Spreader",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "unaligned"
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "45 (6d8 + 18)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 9,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1"
+        }
+      },
+      "saving_throws": [
+        "Dex +5"
+      ],
+      "skills": [
+        "Perception +0",
+        "Survival +2"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 10"
+      ],
+      "languages": "understands Common and Draconic but doesn’t speak coherently",
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Contagious Blood",
+          "name_format": "bold_italic",
+          "description": "When the spreader hits a single creature with its Rake attack or a creature within 5 feet of it deals slashing damage to it for the first time on their turn, that creature must succeed on a DC 13 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The spreader uses its Leap, then makes two Rake attacks."
+        },
+        {
+          "name": "Rake",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage plus 4 (1d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Leap",
+          "name_format": "bold_italic",
+          "description": "The spreader leaps at a Medium or smaller creature within 10 feet of it, forcing them to succeed on a DC 13 Strength saving throw or be grappled and knocked prone (escape DC 13). The spreader ends its movement adjacent to the creature if it fails, or moves into its target’s space until the grapple is broken if it succeeds."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Pursuit",
+          "name_format": "bold_italic",
+          "description": "The feral spreader takes the Dash action, and if it moves at least 20 feet in a straight line toward a creature it can make an extra Rake attack against them with advantage."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**AMNIATIC FERAL SPREADER**\n*Medium humanoid (any), unaligned*\n**Armor Class** 15 (natural armor)\n**Hit Points** 45 (6d8 + 18)\n**Speed** 30 ft.\n**STR** 14 (+2) | **DEX** 16 (+3) | **CON** 17 (+3) | **INT** 9 (-1) | **WIS** 3 (-4) | **CHA** 8 (-1)\n**Saving Throws** Dex +5\n**Skills** Perception +0, Survival +2\n**Resistances** psychic\n**Condition Immunities** charmed, frightened\n**Senses** darkvision 60 ft., passive Perception 10\n**Languages** understands Common and Draconic but doesn’t speak coherently\n**Challenge Rating** 3 (700 XP) **Prof Bonus** +2\n\n***Contagious Blood.*** When the spreader hits a single creature with its Rake attack or a creature within 5 feet of it deals slashing damage to it for the first time on their turn, that creature must succeed on a DC 13 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1.\n\n**ACTIONS**\n***Multiattack.*** The spreader uses its Leap, then makes two Rake attacks.\n\n***Rake.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (1d8 + 3) slashing damage plus 4 (1d6) psychic damage.\n\n***Leap.*** The spreader leaps at a Medium or smaller creature within 10 feet of it, forcing them to succeed on a DC 13 Strength saving throw or be grappled and knocked prone (escape DC 13). The spreader ends its movement adjacent to the creature if it fails, or moves into its target’s space until the grapple is broken if it succeeds.\n\n**Bonus Actions**\n***Pursuit.*** The feral spreader takes the Dash action, and if it moves at least 20 feet in a straight line toward a creature it can make an extra Rake attack against them with advantage."
+    }
+  ]
+}

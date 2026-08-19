@@ -78,6 +78,18 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // REFINEMENT
+    //
+    // Some monster files include additional
+    // lore/reference data outside the inner
+    // Stat Blocks array.
+    // =====================================
+
+    [JsonPropertyName("refinement")]
+    public MonsterRefinementData? Refinement { get; set; }
+
+
+    // =====================================
     // MONSTER GROUP
     //
     // Supports:
@@ -376,8 +388,18 @@ public sealed class StatBlockData
     // =====================================
 
     [JsonPropertyName("legendary_actions")]
-    public List<StatBlockEntry>
+    public StatBlockLegendaryActions
         LegendaryActions { get; set; } =
+            new();
+
+
+    // =====================================
+    // LEGENDARY REACTIONS
+    // =====================================
+
+    [JsonPropertyName("legendary_reactions")]
+    public StatBlockLegendaryActions
+        LegendaryReactions { get; set; } =
             new();
 
 
@@ -494,6 +516,86 @@ public sealed class StatBlockAbilityScore
 
 
 // =========================================
+// MONSTER REFINEMENT DATA
+// =========================================
+
+public sealed class MonsterRefinementData
+{
+    [JsonPropertyName("title")]
+    public string Title { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("description")]
+    public string Description { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("notes")]
+    public List<string> Notes { get; set; } =
+        new();
+
+
+    [JsonPropertyName("table")]
+    public List<MonsterRefinementRow> Table { get; set; } =
+        new();
+}
+
+
+// =========================================
+// MONSTER REFINEMENT TABLE ROW
+// =========================================
+
+public sealed class MonsterRefinementRow
+{
+    [JsonPropertyName("color")]
+    public string Color { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("ability_scores")]
+    public Dictionary<string, int> AbilityScores { get; set; } =
+        new(
+            StringComparer.OrdinalIgnoreCase);
+
+
+    [JsonPropertyName("hit_points")]
+    public string HitPoints { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("movement")]
+    public List<string> Movement { get; set; } =
+        new();
+
+
+    [JsonPropertyName("immunities")]
+    public List<string> Immunities { get; set; } =
+        new();
+
+
+    [JsonPropertyName("attack_modifier")]
+    public string AttackModifier { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("breath_and_blood_dc")]
+    public string BreathAndBloodDc { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("wing_dc")]
+    public string WingDc { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("breath_damage")]
+    public string BreathDamage { get; set; } =
+        string.Empty;
+}
+
+
+// =========================================
 // STAT BLOCK ENTRY
 //
 // Used for:
@@ -555,4 +657,416 @@ public sealed class StatBlockEntry
         InlineFormatting { get; set; } =
             new(
                 StringComparer.OrdinalIgnoreCase);
+}
+// =========================================
+// LEGENDARY ACTIONS
+//
+// Supports both of these JSON shapes:
+//
+// Older/simple shape:
+//
+// "legendary_actions": [
+//   {
+//     "name": "Detect",
+//     "description": "..."
+//   }
+// ]
+//
+// New/full shape:
+//
+// "legendary_actions": {
+//   "header": "Legendary Actions",
+//   "uses": 3,
+//   "entries": [
+//     {
+//       "name": "Detect",
+//       "description": "..."
+//     }
+//   ]
+// }
+//
+// The class implements IReadOnlyList so the
+// existing StatBlock rendering can continue
+// to use:
+//
+// Data.LegendaryActions.Count
+//
+// and:
+//
+// foreach (var entry in Data.LegendaryActions)
+// =========================================
+
+[JsonConverter(
+    typeof(
+        StatBlockLegendaryActionsConverter))]
+public sealed class StatBlockLegendaryActions
+    : IReadOnlyList<StatBlockEntry>
+{
+    // =====================================
+    // HEADER
+    // =====================================
+
+    [JsonPropertyName("header")]
+    public string Header { get; set; } =
+        string.Empty;
+
+
+    // =====================================
+    // USES
+    // =====================================
+
+    [JsonPropertyName("uses")]
+    public int Uses { get; set; }
+
+
+    // =====================================
+    // ENTRIES
+    // =====================================
+
+    [JsonPropertyName("entries")]
+    public List<StatBlockEntry> Entries { get; set; } =
+        new();
+
+
+    // =====================================
+    // READ-ONLY LIST SUPPORT
+    // =====================================
+
+    [JsonIgnore]
+    public int Count =>
+        Entries.Count;
+
+
+    public StatBlockEntry this[int index] =>
+        Entries[index];
+
+
+    public IEnumerator<StatBlockEntry>
+        GetEnumerator()
+    {
+        return
+            Entries.GetEnumerator();
+    }
+
+
+    System.Collections.IEnumerator
+        System.Collections.IEnumerable
+            .GetEnumerator()
+    {
+        return
+            GetEnumerator();
+    }
+}
+
+
+// =========================================
+// LEGENDARY ACTIONS JSON CONVERTER
+//
+// The monster library already contains
+// legendary_actions as a simple array.
+//
+// Newer monster files, such as the
+// Amniatic Dragon, use an object containing:
+//
+// header
+// uses
+// entries
+//
+// This converter accepts BOTH shapes so
+// older monsters do not need to be edited.
+// =========================================
+
+public sealed class
+    StatBlockLegendaryActionsConverter
+    : JsonConverter<StatBlockLegendaryActions>
+{
+    // =====================================
+    // READ
+    // =====================================
+
+    public override StatBlockLegendaryActions
+        Read(
+            ref Utf8JsonReader reader,
+            Type typeToConvert,
+            JsonSerializerOptions options)
+    {
+        // =================================
+        // NULL
+        // =================================
+
+        if (
+            reader.TokenType
+            ==
+            JsonTokenType.Null)
+        {
+            return
+                new StatBlockLegendaryActions();
+        }
+
+
+        // =================================
+        // LEGACY ARRAY SHAPE
+        //
+        // "legendary_actions": [
+        //   ...
+        // ]
+        // =================================
+
+        if (
+            reader.TokenType
+            ==
+            JsonTokenType.StartArray)
+        {
+            var entries =
+                JsonSerializer
+                    .Deserialize<
+                        List<StatBlockEntry>>(
+                            ref reader,
+                            options)
+                ??
+                new List<StatBlockEntry>();
+
+
+            return
+                new StatBlockLegendaryActions
+                {
+                    Entries =
+                        entries
+                };
+        }
+
+
+        // =================================
+        // OBJECT SHAPE
+        //
+        // "legendary_actions": {
+        //   "header": "...",
+        //   "uses": 3,
+        //   "entries": [
+        //     ...
+        //   ]
+        // }
+        // =================================
+
+        if (
+            reader.TokenType
+            ==
+            JsonTokenType.StartObject)
+        {
+            using var document =
+                JsonDocument.ParseValue(
+                    ref reader);
+
+
+            var root =
+                document.RootElement;
+
+
+            var result =
+                new StatBlockLegendaryActions();
+
+
+            // =============================
+            // HEADER
+            // =============================
+
+            if (
+                TryGetProperty(
+                    root,
+                    "header",
+                    out var headerElement)
+                &&
+                headerElement.ValueKind
+                ==
+                JsonValueKind.String)
+            {
+                result.Header =
+                    headerElement.GetString()
+                    ??
+                    string.Empty;
+            }
+
+
+            // =============================
+            // USES
+            //
+            // Accept either:
+            //
+            // "uses": 3
+            //
+            // or:
+            //
+            // "uses": "3"
+            // =============================
+
+            if (
+                TryGetProperty(
+                    root,
+                    "uses",
+                    out var usesElement))
+            {
+                if (
+                    usesElement.ValueKind
+                    ==
+                    JsonValueKind.Number
+                    &&
+                    usesElement.TryGetInt32(
+                        out var uses))
+                {
+                    result.Uses =
+                        uses;
+                }
+                else if (
+                    usesElement.ValueKind
+                    ==
+                    JsonValueKind.String
+                    &&
+                    int.TryParse(
+                        usesElement.GetString(),
+                        out uses))
+                {
+                    result.Uses =
+                        uses;
+                }
+            }
+
+
+            // =============================
+            // ENTRIES
+            // =============================
+
+            if (
+                TryGetProperty(
+                    root,
+                    "entries",
+                    out var entriesElement)
+                &&
+                entriesElement.ValueKind
+                ==
+                JsonValueKind.Array)
+            {
+                result.Entries =
+                    JsonSerializer
+                        .Deserialize<
+                            List<StatBlockEntry>>(
+                                entriesElement
+                                    .GetRawText(),
+                                options)
+                    ??
+                    new List<StatBlockEntry>();
+            }
+
+
+            return
+                result;
+        }
+
+
+        // =================================
+        // INVALID SHAPE
+        // =================================
+
+        throw new JsonException(
+            "legendary_actions must be either an array or an object.");
+    }
+
+
+    // =====================================
+    // WRITE
+    //
+    // When serialized, use the richer
+    // object form so header / uses are not
+    // discarded.
+    // =====================================
+
+    public override void
+        Write(
+            Utf8JsonWriter writer,
+            StatBlockLegendaryActions value,
+            JsonSerializerOptions options)
+    {
+        writer.WriteStartObject();
+
+
+        // =================================
+        // HEADER
+        // =================================
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                value.Header))
+        {
+            writer.WriteString(
+                "header",
+                value.Header);
+        }
+
+
+        // =================================
+        // USES
+        // =================================
+
+        if (
+            value.Uses > 0)
+        {
+            writer.WriteNumber(
+                "uses",
+                value.Uses);
+        }
+
+
+        // =================================
+        // ENTRIES
+        // =================================
+
+        writer.WritePropertyName(
+            "entries");
+
+
+        JsonSerializer.Serialize(
+            writer,
+            value.Entries,
+            options);
+
+
+        writer.WriteEndObject();
+    }
+
+
+    // =====================================
+    // CASE-INSENSITIVE PROPERTY LOOKUP
+    // =====================================
+
+    private static bool
+        TryGetProperty(
+            JsonElement element,
+            string propertyName,
+            out JsonElement value)
+    {
+        foreach (
+            var property
+            in element.EnumerateObject())
+        {
+            if (
+                property.Name.Equals(
+                    propertyName,
+                    StringComparison.OrdinalIgnoreCase))
+            {
+                value =
+                    property.Value;
+
+
+                return
+                    true;
+            }
+        }
+
+
+        value =
+            default;
+
+
+        return
+            false;
+    }
 }

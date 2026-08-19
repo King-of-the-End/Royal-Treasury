@@ -474,10 +474,10 @@ public sealed class MonsterService
                 results.Any(
                     existing =>
                         NormalizeSlug(
-                            existing.Title.Text)
+                            existing.DisplayTitle.Text)
                             .Equals(
                                 NormalizeSlug(
-                                    lore.Title.Text),
+                                    lore.DisplayTitle.Text),
                                 StringComparison.Ordinal)))
             {
                 continue;
@@ -587,7 +587,7 @@ public sealed class MonsterService
 
             var normalizedTitle =
                 NormalizeSlug(
-                    lore.Title.Text);
+                    lore.DisplayTitle.Text);
 
 
             /*
@@ -659,7 +659,7 @@ public sealed class MonsterService
                 lore is null
                 ||
                 string.IsNullOrWhiteSpace(
-                    lore.Title.Text))
+                    lore.DisplayTitle.Text))
             {
                 return null;
             }
@@ -1321,6 +1321,20 @@ public sealed class MonsterService
 
 
             // =================================
+            // OUTER REFINEMENT
+            // =================================
+
+            if (
+                monster.Refinement is null
+                &&
+                metadata.Refinement is not null)
+            {
+                monster.Refinement =
+                    metadata.Refinement;
+            }
+
+
+            // =================================
             // OUTER GROUP / SOURCE
             //
             // These values live outside the
@@ -1354,7 +1368,7 @@ public sealed class MonsterService
     // READ OUTER MONSTER METADATA
     // =====================================
 
-    private static MonsterMetadata
+    private MonsterMetadata
         ReadMetadata(
             JsonElement element)
     {
@@ -1374,6 +1388,11 @@ public sealed class MonsterService
             ReadStringProperty(
                 element,
                 "Image");
+
+
+        var refinement =
+            ReadRefinementProperty(
+                element);
 
 
         var groups =
@@ -1403,6 +1422,7 @@ public sealed class MonsterService
                 name,
                 information,
                 image,
+                refinement,
                 groups,
                 sources);
     }
@@ -1444,6 +1464,12 @@ public sealed class MonsterService
             : inherited.Image;
 
 
+        var refinement =
+            local.Refinement
+            ??
+            inherited.Refinement;
+
+
         var groups =
             DistinctValues(
                 inherited.Groups
@@ -1463,6 +1489,7 @@ public sealed class MonsterService
                 name,
                 information,
                 image,
+                refinement,
                 groups,
                 sources);
     }
@@ -1598,6 +1625,43 @@ public sealed class MonsterService
 
             monster.Sources.Add(
                 source);
+        }
+    }
+
+
+    // =====================================
+    // READ REFINEMENT PROPERTY
+    // =====================================
+
+    private MonsterRefinementData?
+        ReadRefinementProperty(
+            JsonElement element)
+    {
+        if (
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    "Refinement"),
+                out var value)
+            ||
+            value.ValueKind !=
+            JsonValueKind.Object)
+        {
+            return null;
+        }
+
+
+        try
+        {
+            return
+                JsonSerializer.Deserialize<
+                    MonsterRefinementData>(
+                        value.GetRawText(),
+                        jsonOptions);
+        }
+        catch (JsonException)
+        {
+            return null;
         }
     }
 
@@ -1925,6 +1989,7 @@ public sealed class MonsterService
         string Name,
         string Information,
         string Image,
+        MonsterRefinementData? Refinement,
         IReadOnlyList<string> Groups,
         IReadOnlyList<string> Sources)
     {
@@ -1933,6 +1998,7 @@ public sealed class MonsterService
                 string.Empty,
                 string.Empty,
                 string.Empty,
+                null,
                 Array.Empty<string>(),
                 Array.Empty<string>());
     }

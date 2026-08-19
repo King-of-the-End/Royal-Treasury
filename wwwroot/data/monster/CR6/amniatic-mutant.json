@@ -1,0 +1,140 @@
+{
+  "Name": "Amniatic Mutant",
+  "Group": "The Amniatic",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "When a drudge manages to live for a long period of time or is exposed to extreme amounts of amniatic miasma, it begins to mutate from the ambient psychic energy that it absorbs. Growing in size and contorting into a more monstrous form, these mutants are bloodthirsty beasts that seek to kill as much as possible to spread their plague.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference%20-%20Amniatic%20Mutant.jpg",
+  "Stat Blocks": [
+    {
+      "id": "amniatic_mutant",
+      "section_type": "Stat Block",
+      "title": "Amniatic Mutant",
+      "creature": {
+        "size": "Large",
+        "type": "humanoid (any)",
+        "alignment": "unaligned"
+      },
+      "armor_class": "14 (natural armor)",
+      "hit_points": "128 (15d10 + 45)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Regen 10 (radiant, eidolic)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [
+        "Dex +4",
+        "Int +2",
+        "Cha +1"
+      ],
+      "skills": [
+        "Perception -1"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 9"
+      ],
+      "languages": "understands the languages they spoke in life, but doesn’t speak coherently",
+      "challenge_rating": "6 (2300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Amniatic Miasma",
+          "name_format": "bold_italic",
+          "description": "When a creature starts their turn within 5 feet of the mutant or deals slashing damage to it for the first time on a turn, that creature must succeed a DC 14 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1."
+        },
+        {
+          "name": "Blood Frenzy",
+          "name_format": "bold_italic",
+          "description": "When the mutant either reduces a creature to 0 hit points or scores a critical hit for the first time on its turn, it gains 10 temporary hit points, and as long as it is not incapacitated can immediately Dash and use its Multiattack (even if it already did this turn)."
+        },
+        {
+          "name": "Regeneration",
+          "name_format": "bold_italic",
+          "description": "The mutant dies only if it starts its turn with 0 hit points and doesn’t regenerate."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The mutant makes two Rake attacks, then uses its Miasma Hurl if it is available."
+        },
+        {
+          "name": "Rake",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage plus 4 (1d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Miasma Hurl (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The mutant throws a condensed ball of freezing mist at a point it can see within 30 feet, which expands out into a sphere with a 10-foot-radius. Each creature in that space must make a DC 14 Constitution saving throw, taking 3d10 cold damage and 3d10 psychic damage on a failed save, or half as much on a successful one. Any creature that fails by 5 points or more is afflicted with weak amniasis, immediately reducing their Wisdom score by 1."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Leap",
+          "name_format": "bold_italic",
+          "description": "The mutant uses its remaining movement to hurl itself through the air, landing in an unoccupied space within the amount of movement it spent. It can leap up to 15 feet into the air, provoking no opportunity attacks when doing so. It does not suffer falling damage for any fall taken within its leaping range."
+        },
+        {
+          "name": "Sprint",
+          "name_format": "bold_italic",
+          "description": "The mutant takes the Dash action and has advantage on the next attack it makes this turn."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**AMNIATIC MUTANT**\n*Large humanoid (any), unaligned*\n**Armor Class** 14 (natural armor)\n**Hit Points** 128 (15d10 + 45)\n**Speed** 30 ft., climb 30 ft.\n**Quality Traits** Regen 10 (radiant, eidolic)\n**STR** 19 (+4) | **DEX** 13 (+1) | **CON** 16 (+3) | **INT** 8 (-1) | **WIS** 3 (-4) | **CHA** 7 (-2)\n**Saving Throws** Dex +4, Int +2, Cha +1\n**Skills** Perception -1\n**Resistances** B/S/P (magical)\n**Immunities** psychic\n**Condition Immunities** charmed, frightened\n**Senses** darkvision 60 ft., passive Perception 9\n**Languages** understands the languages they spoke in life, but doesn’t speak coherently\n**Challenge Rating** 6 (2300 XP) **Prof Bonus** +3\n\n***Amniatic Miasma.*** When a creature starts their turn within 5 feet of the mutant or deals slashing damage to it for the first time on a turn, that creature must succeed a DC 14 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1.\n\n***Blood Frenzy.*** When the mutant either reduces a creature to 0 hit points or scores a critical hit for the first time on its turn, it gains 10 temporary hit points, and as long as it is not incapacitated can immediately Dash and use its Multiattack (even if it already did this turn).\n\n***Regeneration.*** The mutant dies only if it starts its turn with 0 hit points and doesn’t regenerate.\n\n**ACTIONS**\n***Multiattack.*** The mutant makes two Rake attacks, then uses its Miasma Hurl if it is available.\n\n***Rake.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8 + 4) slashing damage plus 4 (1d6) psychic damage.\n\n***Miasma Hurl (Recharge 5-6).*** The mutant throws a condensed ball of freezing mist at a point it can see within 30 feet, which expands out into a sphere with a 10-foot-radius. Each creature in that space must make a DC 14 Constitution saving throw, taking 3d10 cold damage and 3d10 psychic damage on a failed save, or half as much on a successful one. Any creature that fails by 5 points or more is afflicted with weak amniasis, immediately reducing their Wisdom score by 1.\n\n**Bonus Actions**\n***Leap.*** The mutant uses its remaining movement to hurl itself through the air, landing in an unoccupied space within the amount of movement it spent. It can leap up to 15 feet into the air, provoking no opportunity attacks when doing so. It does not suffer falling damage for any fall taken within its leaping range.\n\n***Sprint.*** The mutant takes the Dash action and has advantage on the next attack it makes this turn."
+    }
+  ]
+}

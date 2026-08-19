@@ -1,0 +1,103 @@
+{
+  "Name": "Amniatic Ogre",
+  "Group": "The Amniatic",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A hulking ogre that has lost its already vacant mind to amniasis, and wanders about in search of other creatures to assault and attack. The amniatic disease has caused a mutation within these ogres, toughening their skin to the point of deflecting common weaponry and shallow blows.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "amniatic_ogre",
+      "section_type": "Stat Block",
+      "title": "Amniatic Ogre",
+      "creature": {
+        "size": "Large",
+        "type": "giant",
+        "alignment": "unaligned"
+      },
+      "armor_class": "14 (natural armor)",
+      "threshold": "10",
+      "hit_points": "85 (10d10 + 30)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 5,
+          "modifier": "-3"
+        },
+        "WIS": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2"
+        }
+      },
+      "resistances": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 6"
+      ],
+      "languages": "understands Common and Giant but doesn’t speak coherently",
+      "challenge_rating": "4 (1100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Contagious Blood",
+          "name_format": "bold_italic",
+          "description": "When the ogre hits a single creature with both of its greatclub attacks on the same turn or is dealt slashing damage by a creature within 5 feet for the first time on a turn, that creature must succeed on a DC 13 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The ogre makes two greatclub attacks."
+        },
+        {
+          "name": "Greatclub",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 4 (1d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Lost Roar (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The ogre unleashes a feral cry that assails all creatures within 15 feet of it with a wave of physical force. Each creature in range must succeed on a DC 13 Constitution saving throw, taking 23 (5d8) force damage on a failure."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**AMNIATIC OGRE**\n*Large giant, unaligned*\n**Armor Class** 14 (natural armor) **Threshold** 10\n**Hit Points** 85 (10d10 + 30)\n**Speed** 40 ft.\n**STR** 19 (+4) | **DEX** 8 (-1) | **CON** 16 (+3) | **INT** 5 (-3) | **WIS** 3 (-4) | **CHA** 7 (-2)\n**Resistances** psychic\n**Condition Immunities** charmed, frightened\n**Senses** darkvision 60 ft., passive Perception 6\n**Languages** understands Common and Giant but doesn’t speak coherently\n**Challenge Rating** 4 (1100 XP) **Prof Bonus** +2\n\n***Contagious Blood.*** When the ogre hits a single creature with both of its greatclub attacks on the same turn or is dealt slashing damage by a creature within 5 feet for the first time on a turn, that creature must succeed on a DC 13 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1.\n\n**ACTIONS**\n***Multiattack.*** The ogre makes two greatclub attacks.\n\n***Greatclub.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8 + 4) bludgeoning damage plus 4 (1d6) psychic damage.\n\n***Lost Roar (Recharge 5-6).*** The ogre unleashes a feral cry that assails all creatures within 15 feet of it with a wave of physical force. Each creature in range must succeed on a DC 13 Constitution saving throw, taking 23 (5d8) force damage on a failure."
+    }
+  ]
+}

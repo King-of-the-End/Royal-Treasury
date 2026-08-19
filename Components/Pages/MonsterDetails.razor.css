@@ -769,6 +769,360 @@
 
 
 /* =========================================
+   GROUP SECTION HEADINGS
+   ========================================= */
+
+.monster-group-lore h3 {
+
+    margin:
+        1.25rem
+        0
+        0.65rem;
+
+
+    color:
+        var(--gold-light);
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        1.15rem;
+
+
+    font-weight:
+        800;
+
+
+    line-height:
+        1.25;
+}
+
+
+
+/* =========================================
+   GROUP BULLETS / REFINEMENT NOTES
+   ========================================= */
+
+.monster-group-lore-list,
+.monster-refinement-notes {
+
+    margin:
+        0.25rem
+        0
+        1rem;
+
+
+    padding-left:
+        1.4rem;
+}
+
+
+
+.monster-group-lore-list li,
+.monster-refinement-notes li {
+
+    margin-bottom:
+        0.45rem;
+
+
+    line-height:
+        1.55;
+}
+
+
+
+/* =========================================
+   LORE TABLES
+   ========================================= */
+
+.monster-lore-table-wrap,
+.monster-refinement-table-wrap {
+
+    width:
+        100%;
+
+
+    margin:
+        0.85rem
+        0
+        1.15rem;
+
+
+    overflow-x:
+        auto;
+
+
+    border:
+        1px solid
+        #65412b;
+
+
+    border-radius:
+        4px;
+}
+
+
+
+.monster-lore-table,
+.monster-refinement-table {
+
+    width:
+        100%;
+
+
+    border-collapse:
+        collapse;
+
+
+    color:
+        #eee5dd;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+
+
+.monster-lore-table th,
+.monster-lore-table td,
+.monster-refinement-table th,
+.monster-refinement-table td {
+
+    padding:
+        0.55rem
+        0.65rem;
+
+
+    border-right:
+        1px solid
+        rgba(
+            113,
+            67,
+            45,
+            0.72
+        );
+
+
+    border-bottom:
+        1px solid
+        rgba(
+            113,
+            67,
+            45,
+            0.72
+        );
+
+
+    text-align:
+        left;
+
+
+    vertical-align:
+        top;
+}
+
+
+
+.monster-lore-table th:last-child,
+.monster-lore-table td:last-child,
+.monster-refinement-table th:last-child,
+.monster-refinement-table td:last-child {
+
+    border-right:
+        0;
+}
+
+
+
+.monster-lore-table tbody tr:last-child td,
+.monster-refinement-table tbody tr:last-child td {
+
+    border-bottom:
+        0;
+}
+
+
+
+.monster-lore-table th,
+.monster-refinement-table th {
+
+    background:
+        rgba(
+            83,
+            48,
+            31,
+            0.70
+        );
+
+
+    color:
+        var(--gold-light);
+
+
+    font-weight:
+        800;
+
+
+    white-space:
+        nowrap;
+}
+
+
+
+.monster-lore-table td,
+.monster-refinement-table td {
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.18
+        );
+}
+
+
+
+/* =========================================
+   MONSTER REFINEMENT
+   ========================================= */
+
+.monster-refinement {
+
+    margin-bottom:
+        1.25rem;
+
+
+    padding:
+        1.15rem
+        1.25rem;
+
+
+    border:
+        1px solid
+        #65412b;
+
+
+    border-radius:
+        5px;
+
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(
+                31,
+                24,
+                20,
+                0.95
+            ),
+            rgba(
+                12,
+                10,
+                9,
+                0.98
+            )
+        );
+
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.025
+        ),
+
+        0 6px 18px
+        rgba(
+            0,
+            0,
+            0,
+            0.22
+        );
+
+
+    color:
+        #eee5dd;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+
+
+.monster-refinement h2 {
+
+    margin:
+        0
+        0
+        0.85rem;
+
+
+    padding-bottom:
+        0.45rem;
+
+
+    border-bottom:
+        1px solid
+        #71432d;
+
+
+    color:
+        var(--gold-light);
+
+
+    font-size:
+        clamp(
+            1.45rem,
+            2.6vw,
+            2rem
+        );
+
+
+    font-weight:
+        800;
+
+
+    line-height:
+        1.15;
+}
+
+
+
+.monster-refinement p {
+
+    margin:
+        0
+        0
+        0.95rem;
+
+
+    font-size:
+        1rem;
+
+
+    line-height:
+        1.65;
+}
+
+
+
+/* =========================================
    STAT BLOCK TAB
    ========================================= */
 

@@ -700,7 +700,7 @@
                     <section class="rt-stat-section">
 
                         <div class="rt-stat-section-bar">
-                            Legendary Actions
+                            @LegendaryActionsHeading
                         </div>
 
 
@@ -723,6 +723,52 @@
                                 <GlossaryText
                                     Text="@entry.Description"
                                     Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
+
+                    </section>
+                }
+
+
+                <!-- =================================
+                     LEGENDARY REACTIONS
+                     ================================= -->
+
+                @if (
+                    Data.LegendaryReactions.Count > 0)
+                {
+                    <section class="rt-stat-section">
+
+                        <div class="rt-stat-section-bar">
+                            @LegendaryReactionsHeading
+                        </div>
+
+
+                        @foreach (
+                            var entry
+                            in Data.LegendaryReactions)
+                        {
+                            <p class="rt-stat-entry">
+
+                                <strong>
+                                    <em>
+
+                                        <GlossaryText
+                                            Text="@entry.Name"
+                                            Context="GlossaryContext.StatBlock" />.
+
+                                    </em>
+                                </strong>
+
+                                @if (
+                                    !string.IsNullOrWhiteSpace(
+                                        entry.Description))
+                                {
+                                    <GlossaryText
+                                        Text="@entry.Description"
+                                        Context="GlossaryContext.StatBlock" />
+                                }
 
                             </p>
                         }
@@ -989,7 +1035,70 @@
         ||
         Data.Reactions.Count > 0
         ||
-        Data.LegendaryActions.Count > 0;
+        Data.LegendaryActions.Count > 0
+        ||
+        Data.LegendaryReactions.Count > 0;
+
+
+    // =====================================
+    // LEGENDARY ACTIONS HEADING
+    // =====================================
+
+    private string LegendaryActionsHeading =>
+        LegendarySectionHeading(
+            Data.LegendaryActions,
+            "Legendary Actions");
+
+
+    // =====================================
+    // LEGENDARY REACTIONS HEADING
+    // =====================================
+
+    private string LegendaryReactionsHeading =>
+        LegendarySectionHeading(
+            Data.LegendaryReactions,
+            "Legendary Reactions");
+
+
+    // =====================================
+    // LEGENDARY SECTION HEADING
+    // =====================================
+
+    private static string
+        LegendarySectionHeading(
+            StatBlockLegendaryActions section,
+            string fallbackHeader)
+    {
+        var header =
+            string.IsNullOrWhiteSpace(
+                section.Header)
+
+            ? fallbackHeader
+
+            : section.Header.Trim();
+
+
+        if (
+            section.Uses <= 0)
+        {
+            return
+                header;
+        }
+
+
+        var useLabel =
+            section.Uses == 1
+
+            ? "Use"
+
+            : "Uses";
+
+
+        return
+            $"{header} " +
+            $"({section.Uses} " +
+            $"{useLabel})";
+    }
 
 
     // =====================================

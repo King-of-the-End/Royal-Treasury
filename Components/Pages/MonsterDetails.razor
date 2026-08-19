@@ -75,6 +75,7 @@ else
              - Group
              - Challenge Rating
              - Monster-specific lore
+             - Monster-specific refinement
              - Group lore
              - Monster image
 
@@ -245,16 +246,116 @@ else
 
 
                 <!-- =============================
+                     MONSTER REFINEMENT
+
+                     Loaded from the outer
+                     "Refinement" object.
+                     ============================= -->
+
+                @if (
+                    monster.Refinement is not null)
+                {
+                    <section class="monster-refinement">
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                monster.Refinement.Title))
+                        {
+                            <h2>
+                                @monster.Refinement.Title
+                            </h2>
+                        }
+
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                monster.Refinement.Description))
+                        {
+                            <p>
+                                <GlossaryText
+                                    Text="@monster.Refinement.Description"
+                                    Context="GlossaryContext.General" />
+                            </p>
+                        }
+
+
+                        @if (
+                            monster.Refinement.Notes.Count > 0)
+                        {
+                            <ul class="monster-refinement-notes">
+
+                                @foreach (
+                                    var note
+                                    in monster.Refinement.Notes)
+                                {
+                                    <li>
+                                        <GlossaryText
+                                            Text="@note"
+                                            Context="GlossaryContext.General" />
+                                    </li>
+                                }
+
+                            </ul>
+                        }
+
+
+                        @if (
+                            monster.Refinement.Table.Count > 0)
+                        {
+                            <div class="monster-refinement-table-wrap">
+
+                                <table class="monster-refinement-table">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Dragon</th>
+                                            <th>Ability Scores</th>
+                                            <th>Hit Points</th>
+                                            <th>Movement</th>
+                                            <th>Immunities</th>
+                                            <th>Attack</th>
+                                            <th>Breath / Blood DC</th>
+                                            <th>Wing DC</th>
+                                            <th>Breath Damage</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        @foreach (
+                                            var row
+                                            in monster.Refinement.Table)
+                                        {
+                                            <tr>
+                                                <td>@row.Color</td>
+                                                <td>@FormatRefinementAbilityScores(row)</td>
+                                                <td>@row.HitPoints</td>
+                                                <td>@DisplayValues(row.Movement)</td>
+                                                <td>@DisplayValues(row.Immunities)</td>
+                                                <td>@row.AttackModifier</td>
+                                                <td>@row.BreathAndBloodDc</td>
+                                                <td>@row.WingDc</td>
+                                                <td>@row.BreathDamage</td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+                        }
+
+                    </section>
+                }
+
+
+                <!-- =============================
                      GROUP LORE
 
-                     Example:
-
-                     Group = Abishai
-
-                     Loads:
-
-                     wwwroot/data/monster/
-                     Groups/Abishai.json
+                     Supports "title" or "name",
+                     section headings, paragraphs,
+                     bullets and tables.
                      ============================= -->
 
                 @foreach (
@@ -263,20 +364,27 @@ else
                 {
                     <section class="monster-group-lore">
 
-
-                        <!-- GROUP NAME -->
-
                         <h2>
-                            @groupLore.Title.Text
+                            @groupLore.DisplayTitle.Text
                         </h2>
 
-
-                        <!-- GROUP LORE SECTIONS -->
 
                         @foreach (
                             var loreSection
                             in groupLore.Sections)
                         {
+                            @if (
+                                !string.IsNullOrWhiteSpace(
+                                    loreSection.Name.Text))
+                            {
+                                <h3>
+                                    <GlossaryText
+                                        Text="@loreSection.Name.Text"
+                                        Context="GlossaryContext.General" />
+                                </h3>
+                            }
+
+
                             @foreach (
                                 var paragraph
                                 in loreSection.Paragraphs)
@@ -287,65 +395,35 @@ else
                                         var span
                                         in paragraph.Spans)
                                     {
-                                        <!-- =================
-                                             BOLD + ITALIC
-                                             ================= -->
-
                                         @if (
                                             span.Bold
                                             &&
                                             span.Italic)
                                         {
                                             <strong>
-
                                                 <em>
-
                                                     <GlossaryText
                                                         Text="@span.Text"
                                                         Context="GlossaryContext.General" />
-
                                                 </em>
-
                                             </strong>
                                         }
-
-
-                                        <!-- =================
-                                             BOLD
-                                             ================= -->
-
                                         else if (span.Bold)
                                         {
                                             <strong>
-
                                                 <GlossaryText
                                                     Text="@span.Text"
                                                     Context="GlossaryContext.General" />
-
                                             </strong>
                                         }
-
-
-                                        <!-- =================
-                                             ITALIC
-                                             ================= -->
-
                                         else if (span.Italic)
                                         {
                                             <em>
-
                                                 <GlossaryText
                                                     Text="@span.Text"
                                                     Context="GlossaryContext.General" />
-
                                             </em>
                                         }
-
-
-                                        <!-- =================
-                                             NORMAL
-                                             ================= -->
-
                                         else
                                         {
                                             <GlossaryText
@@ -355,6 +433,90 @@ else
                                     }
 
                                 </p>
+                            }
+
+
+                            @if (
+                                loreSection.Bullets.Count > 0)
+                            {
+                                <ul class="monster-group-lore-list">
+
+                                    @foreach (
+                                        var bullet
+                                        in loreSection.Bullets)
+                                    {
+                                        <li>
+                                            <GlossaryText
+                                                Text="@bullet.Text"
+                                                Context="GlossaryContext.General" />
+                                        </li>
+                                    }
+
+                                </ul>
+                            }
+
+
+                            @if (
+                                loreSection.Table is not null
+                                &&
+                                (
+                                    loreSection.Table.Headers.Count > 0
+                                    ||
+                                    loreSection.Table.Rows.Count > 0
+                                ))
+                            {
+                                <div class="monster-lore-table-wrap">
+
+                                    <table class="monster-lore-table">
+
+                                        @if (
+                                            loreSection.Table.Headers.Count > 0)
+                                        {
+                                            <thead>
+                                                <tr>
+
+                                                    @foreach (
+                                                        var header
+                                                        in loreSection.Table.Headers)
+                                                    {
+                                                        <th>
+                                                            <GlossaryText
+                                                                Text="@header.Text"
+                                                                Context="GlossaryContext.General" />
+                                                        </th>
+                                                    }
+
+                                                </tr>
+                                            </thead>
+                                        }
+
+                                        <tbody>
+
+                                            @foreach (
+                                                var row
+                                                in loreSection.Table.Rows)
+                                            {
+                                                <tr>
+
+                                                    @foreach (
+                                                        var cell
+                                                        in row)
+                                                    {
+                                                        <td>
+                                                            <GlossaryText
+                                                                Text="@cell"
+                                                                Context="GlossaryContext.General" />
+                                                        </td>
+                                                    }
+
+                                                </tr>
+                                            }
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
                             }
                         }
 
@@ -415,6 +577,8 @@ else
                     !HasAnyLore
                     &&
                     groupLores.Count == 0
+                    &&
+                    monster.Refinement is null
                     &&
                     string.IsNullOrWhiteSpace(
                         monster.Image))
@@ -783,8 +947,10 @@ else
     // =====================================
     // HAS MONSTER-SPECIFIC LORE
     //
+    // Refinement counts as monster-specific
+    // lore and is rendered before group lore.
     // The image is handled separately so it
-    // can sit after the group lore.
+    // can remain at the bottom of the Lore tab.
     // =====================================
 
     private bool HasAnyLore =>
@@ -795,6 +961,8 @@ else
             ||
             !string.IsNullOrWhiteSpace(
                 monster.Information)
+            ||
+            monster.Refinement is not null
         );
 
 
@@ -897,6 +1065,42 @@ else
                     source.Trim();
             }
         }
+    }
+
+
+    // =====================================
+    // FORMAT REFINEMENT ABILITY SCORES
+    // =====================================
+
+    private static string
+        FormatRefinementAbilityScores(
+            MonsterRefinementRow row)
+    {
+        var order =
+            new[]
+            {
+                "STR",
+                "DEX",
+                "CON",
+                "INT",
+                "WIS",
+                "CHA"
+            };
+
+
+        return
+            string.Join(
+                " | ",
+                order
+                    .Where(
+                        ability =>
+                            row.AbilityScores
+                                .ContainsKey(
+                                    ability))
+                    .Select(
+                        ability =>
+                            $"{ability} " +
+                            $"{row.AbilityScores[ability]}"));
     }
 
 

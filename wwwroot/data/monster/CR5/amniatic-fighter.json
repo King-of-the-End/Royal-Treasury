@@ -1,0 +1,135 @@
+{
+  "Name": "Amniatic Fighter",
+  "Group": "The Amniatic",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A talented fighter who was claimed by the amniatic plague. Though their senses have dulled and their mind is clouded, their skills remain intact. Through pure instinct, when an amniatic fighter is among other drudges, it can wordlessly coordinate with its allies to act more tactically.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "amniatic_fighter",
+      "section_type": "Stat Block",
+      "title": "Amniatic Fighter",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "unaligned"
+      },
+      "armor_class": "16 (chain shirt)",
+      "hit_points": "119 (14d8 + 56)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "CHA": {
+          "score": 11,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Int +4"
+      ],
+      "skills": [
+        "Athletics +7",
+        "Perception +2"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "passive Perception 12"
+      ],
+      "languages": "understands Common and Draconic but doesn’t speak coherently",
+      "challenge_rating": "5 (1,100 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Contagious Blood",
+          "name_format": "bold_italic",
+          "description": "When the fighter hits a single creature with two of its weapon attacks in the same turn, or a creature within 5 feet of it deals it slashing damage for the first time on a turn, that creature must succeed on a DC 15 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1."
+        },
+        {
+          "name": "Reckless Attacker",
+          "name_format": "bold_italic",
+          "description": "When the fighter takes the first attack on their turn, they can choose to gain advantage on all attacks they make until the start of their next turn, but during this time all attacks made against them also have advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fighter makes two weapon attacks."
+        },
+        {
+          "name": "Longsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) slashing damage plus 4 (1d6) psychic damage, or 10 (1d10 + 4) slashing damage plus 4 (1d6) psychic damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shortspear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) piercing damage plus 4 (1d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shortspear (Thrown)",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 6 (1d6 + 2) piercing damage plus 4 (1d6) psychic damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Second Wind (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The fighter regains 16 (1d10 + 10) hit points."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**AMNIATIC FIGHTER**\n*Medium humanoid (any), unaligned*\n**Armor Class** 16 (chain shirt)\n**Hit Points** 119 (14d8 + 56)\n**Speed** 30 ft.\n**STR** 19 (+4) | **DEX** 15 (+2) | **CON** 18 (+4) | **INT** 12 (+1) | **WIS** 3 (-4) | **CHA** 11 (-)\n**Saving Throws** Dex +5, Int +4\n**Skills** Athletics +7, Perception +2\n**Resistances** psychic\n**Condition Immunities** charmed, frightened\n**Senses** passive Perception 12\n**Languages** understands Common and Draconic but doesn’t speak coherently\n**Challenge Rating** 5 (1,100 XP) **Prof Bonus** +3\n\n***Contagious Blood.*** When the fighter hits a single creature with two of its weapon attacks in the same turn, or a creature within 5 feet of it deals it slashing damage for the first time on a turn, that creature must succeed on a DC 15 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1.\n\n***Reckless Attacker.*** When the fighter takes the first attack on their turn, they can choose to gain advantage on all attacks they make until the start of their next turn, but during this time all attacks made against them also have advantage.\n\n**ACTIONS**\n***Multiattack.*** The fighter makes two weapon attacks.\n\n***Longsword.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 9 (1d8 + 4) slashing damage plus 4 (1d6) psychic damage, or 10 (1d10 + 4) slashing damage plus 4 (1d6) psychic damage if wielded with two hands.\n\n***Shortspear.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6 + 2) piercing damage plus 4 (1d6) psychic damage.\n\n***Shortspear (Thrown).*** *Ranged Weapon Attack:* +5 to hit, range 20/60 ft., one target. *Hit:* 6 (1d6 + 2) piercing damage plus 4 (1d6) psychic damage.\n\n**Bonus Actions**\n***Second Wind (Recharge 6).*** The fighter regains 16 (1d10 + 10) hit points."
+    }
+  ]
+}

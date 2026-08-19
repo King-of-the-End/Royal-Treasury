@@ -1,0 +1,97 @@
+{
+  "Name": "Amniatic Drudge",
+  "Group": "The Amniatic",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The most basic form of drudge, born from the common folk trying to live their lives and getting caught up in the amniatic plague.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "amniatic_drudge",
+      "section_type": "Stat Block",
+      "title": "Amniatic Drudge",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "unaligned"
+      },
+      "armor_class": "13 (natural armor)",
+      "hit_points": "17 (3d8 + 3)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "resistances": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 6"
+      ],
+      "languages": "understands the languages they spoke in life, but does not speak coherently",
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Contagious Blood",
+          "name_format": "bold_italic",
+          "description": "When the drudge hits a single creature with both of its Rake attacks on the same turn or a creature deals it slashing damage for the first time on a turn from within 5 feet of the drudge, that creature must succeed on a DC 11 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The drudge makes two Rake attacks."
+        },
+        {
+          "name": "Rake",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) slashing damage plus 4 (1d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**AMNIATIC DRUDGE**\n*Medium humanoid (any), unaligned*\n**Armor Class** 13 (natural armor)\n**Hit Points** 17 (3d8 + 3)\n**Speed** 30 ft.\n**STR** 14 (+2) | **DEX** 12 (+1) | **CON** 12 (+1) | **INT** 13 (+1) | **WIS** 3 (-4) | **CHA** 10 (-)\n**Resistances** psychic\n**Condition Immunities** charmed, frightened\n**Senses** darkvision 60 ft., passive Perception 6\n**Languages** understands the languages they spoke in life, but does not speak coherently\n**Challenge Rating** 1 (200 XP) **Prof Bonus** +2\n\n***Contagious Blood.*** When the drudge hits a single creature with both of its Rake attacks on the same turn or a creature deals it slashing damage for the first time on a turn from within 5 feet of the drudge, that creature must succeed on a DC 11 Constitution saving throw or be afflicted with weak amniasis, immediately reducing their Wisdom score by 1.\n\n**ACTIONS**\n***Multiattack.*** The drudge makes two Rake attacks.\n\n***Rake.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d6 + 2) slashing damage plus 4 (1d6) psychic damage."
+    }
+  ]
+}
