@@ -1,0 +1,197 @@
+{
+  "Name": "Academy Warden",
+  "Group": "The Academy",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The wardens are high-ranking soldiers trained to hunt down and bring in arcanists. They usually serve as the leaders of groups of academy clerics, and hold a rank similar to a commander in their military structure. Wardens care less about the laws of the land when it doesn’t suit their mission, but know not to make waves when they don’t have to.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20Academy%20Warden.jpg",
+  "Stat Blocks": [
+    {
+      "id": "academy_warden",
+      "section_type": "Stat Block",
+      "title": "Academy Warden",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any, usually human)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "17 (studded leather)",
+      "hit_points": "104 (16d8 + 32)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic Resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Wis +8",
+        "Cha +6"
+      ],
+      "skills": [
+        "Athletics +7",
+        "Arcana +7",
+        "History +7",
+        "Investigation +7"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Common",
+        "Dwarvish",
+        "Elvish"
+      ],
+      "challenge_rating": "8 (3900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Arcane Burst (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "When the agent hits with a weapon attack, they can cause their weapon to erupt with energy and cause one of the following two effects:",
+          "options": [
+            {
+              "name": "Burst Pulse",
+              "name_format": "bold_italic",
+              "description": "The target must succeed a DC 16 Constitution saving throw or be stunned until the end of their next turn."
+            },
+            {
+              "name": "Energy Smite",
+              "name_format": "bold_italic",
+              "description": "The target takes an additional 3d10 force damage, separate from the weapon’s damage."
+            }
+          ]
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The agent’s spellcasting ability is Wisdom. They can cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spellcasting_ability": "Wisdom",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "detect magic"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "hold person"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "counterspell",
+                  "enhance ability",
+                  "hold attacker",
+                  "hunter’s mark"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dispel magic"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Major Disruption Aura",
+          "name_format": "bold_italic",
+          "description": "If the agent hits a creature within 30 feet of them with a weapon attack while they are concentrating on a spell or magical effect, their attack deals an additional 2d8 force damage to them. Furthermore, they have disadvantage on their resulting concentration check."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The agent attacks three times with its Longsword or twice with its Rifle."
+        },
+        {
+          "name": "Longsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 1d8 + 4 slashing damage or 10 (1d10 + 4) slashing damage if wielded two-handed.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 40/120 ft., reload 1, one target. Hit: 13 (2d8 + 4) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Counter Magic",
+          "name_format": "bold_italic",
+          "description": "The agent casts dispel magic or hold person using their Innate Spellcasting.",
+          "inline_formatting": {
+            "dispel magic": "italic",
+            "hold person": "italic"
+          }
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Deflection Flurry",
+          "name_format": "bold_italic",
+          "description": "In response to an attack they can see targeting them, the agent increases their armor class by their proficiency bonus until the end of the turn."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**ACADEMY WARDEN**\n*Medium humanoid (any, usually human), lawful neutral*\n**Armor Class** 17 (studded leather)\n**Hit Points** 104 (16d8 + 32)\n**Speed** 30 ft.\n**Quality Traits** Magic Resist, magical\n**STR** 18 (+4) | **DEX** 18 (+4) | **CON** 14 (+2) | **INT** 19 (+4) | **WIS** 20 (+5) | **CHA** 16 (+3)\n**Saving Throws** Dex +7, Wis +8, Cha +6\n**Skills** Athletics +7, Arcana +7, History +7, Investigation +7\n**Senses** blindsight 30 ft., passive Perception 15\n**Languages** Common, Dwarvish, Elvish\n**Challenge Rating** 8 (3900 XP) **Prof Bonus** +3\n\n***Arcane Burst (Recharge 4-6).*** When the agent hits with a weapon attack, they can cause their weapon to erupt with energy and cause one of the following two effects:\n• ***Burst Pulse.*** The target must succeed a DC 16 Constitution saving throw or be stunned until the end of their next turn.\n• ***Energy Smite.*** The target takes an additional 3d10 force damage, separate from the weapon’s damage.\n\n***Innate Spellcasting.*** The agent’s spellcasting ability is Wisdom. They can cast the following spells, requiring no material components:\n• ***At will:*** detect magic\n• ***1/Day each:*** hold person\n• ***2/Day each:*** counterspell, enhance ability, hold attacker, hunter’s mark\n• ***3/Day each:*** dispel magic\n\n***Major Disruption Aura.*** If the agent hits a creature within 30 feet of them with a weapon attack while they are concentrating on a spell or magical effect, their attack deals an additional 2d8 force damage to them. Furthermore, they have disadvantage on their resulting concentration check.\n\n**ACTIONS**\n***Multiattack.*** The agent attacks three times with its Longsword or twice with its Rifle.\n\n***Longsword.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 1d8 + 4 slashing damage or 10 (1d10 + 4) slashing damage if wielded two-handed.\n\n***Rifle.*** *Ranged Weapon Attack:* +7 to hit, range 40/120 ft., reload 1, one target. *Hit:* 13 (2d8 + 4) piercing damage.\n\n**Bonus Actions**\n***Counter Magic.*** The agent casts *dispel magic* or *hold person* using their Innate Spellcasting.\n\n**Reactions**\n***Deflection Flurry.*** In response to an attack they can see targeting them, the agent increases their armor class by their proficiency bonus until the end of the turn."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "Name": "White Unrighteous Knight",
+  "Group": "Abishai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Holding true to the old ways, the unrighteous knights are, for all intents and purposes, paladins of the Queen of Evil Dragons. They channel the power of her divine realm into their spells and actions, and can invoke a small spark of her ancient glory to heal allies and burn away opponents with chromatic might. They are held in high regard among the ranks of the abishai, but some consider them old-fashioned.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Reference_BG%20-%20Abishai%20(White%20-%20Unrightous%20Knight).jpg",
+  "Stat Blocks": [
+    {
+      "id": "white_unrighteous_knight",
+      "section_type": "Stat Block",
+      "title": "White Unrighteous Knight",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "170 (20d8 + 80)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "+5"
+        }
+      },
+      "saving_throws": [
+        "Str +7",
+        "Wis +5"
+      ],
+      "skills": [
+        "Religion +4"
+      ],
+      "resistances": [
+        "B/S/P (magical or silvered)"
+      ],
+      "immunities": [
+        "cold",
+        "fire",
+        "poison"
+      ],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "devilsight 60 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "12 (8,400 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Divine Weapon",
+          "name_format": "bold_italic",
+          "description": "The fiend adds its Charisma modifier to the damage result of weapon attacks (included already in the damage rolls of this stat block)."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The fiend is a 10th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "caster_level": 10,
+            "spellcasting_ability": "Charisma",
+            "prepared_spells": [
+              {
+                "level": "1st",
+                "slots": 4,
+                "spells": [
+                  "command",
+                  "cure wounds",
+                  "shield of faith",
+                  "wrathful smite"
+                ]
+              },
+              {
+                "level": "2nd",
+                "slots": 3,
+                "spells": [
+                  "aid",
+                  "boomerang weapon"
+                ]
+              },
+              {
+                "level": "3rd",
+                "slots": 2,
+                "spells": [
+                  "corrosive smite",
+                  "dispel magic"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes two War Pick attacks and one Bite attack. It can replace its Bite with casting a spell through its Spellcasting feature."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (1d10 + 3 + 5) piercing damage plus 14 (4d6) cold damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "War Pick",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (2d8 + 3 + 5) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Channel Divinity: Queen’s Glory (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The fiend invokes the divine power of the queen of dragons, bathing everything within 30 feet of it in chromatic light. Each creature the fiend chooses in that range must do one of the following (the fiend chooses):",
+          "options": [
+            "Regain 3d10 hit points and gain 2d10 temporary hit points. Until the start of the fiend’s next turn, all attacks against these targets have disadvantage.",
+            "The creature must succeed a DC 17 Dexterity saving throw, and on a failure must take 9 (2d8) points of damage for each of fire, cold, acid, lightning and poison (for a total of 10d8 damage), or half as much damage on a successful save."
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Aura Burst",
+          "name_format": "bold_italic",
+          "description": "When the fiend or one of its allies within 30 feet makes a saving throw, they can add the fiend’s Charisma modifier to the result of their roll."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**WHITE UNRIGHTEOUS KNIGHT**\n*Medium fiend (devil), lawful evil*\n**Armor Class** 15 (natural armor)\n**Hit Points** 170 (20d8 + 80)\n**Speed** 30 ft., fly 40 ft.\n**Quality Traits** Magic resist, magical\n**STR** 16 (+3) | **DEX** 11 (-) | **CON** 18 (+4) | **INT** 11 (-) | **WIS** 12 (+1) | **CHA** 20 (+5)\n**Saving Throws** Str +7, Wis +5\n**Skills** Religion +4\n**Resistances** B/S/P (magical or silvered)\n**Immunities** cold, fire, poison\n**Condition Immunities** poisoned\n**Senses** darkvision 120 ft., devilsight 60 ft., passive Perception 11\n**Languages** Draconic, Infernal, telepathy 120 ft.\n**Challenge Rating** 12 (8,400 XP) **Prof Bonus** +3\n\n***Divine Weapon.*** The fiend adds its Charisma modifier to the damage result of weapon attacks (included already in the damage rolls of this stat block).\n\n***Spellcasting.*** The fiend is a 10th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:\n• ***1st level (4 slots):*** command, cure wounds, shield of faith, wrathful smite\n• ***2nd level (3 slots):*** aid, boomerang weapon\n• ***3rd level (2 slots):*** corrosive smite, dispel magic\n\n**ACTIONS**\n***Multiattack.*** The fiend makes two War Pick attacks and one Bite attack. It can replace its Bite with casting a spell through its Spellcasting feature.\n\n***Bite.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (1d10 + 3 + 5) piercing damage plus 14 (4d6) cold damage.\n\n***War Pick.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 17 (2d8 + 3 + 5) piercing damage.\n\n***Channel Divinity: Queen’s Glory (1/Rest).*** The fiend invokes the divine power of the queen of dragons, bathing everything within 30 feet of it in chromatic light. Each creature the fiend chooses in that range must do one of the following (the fiend chooses):\n\n• Regain 3d10 hit points and gain 2d10 temporary hit points. Until the start of the fiend’s next turn, all attacks against these targets have disadvantage.\n• The creature must succeed a DC 17 Dexterity saving throw, and on a failure must take 9 (2d8) points of damage for each of fire, cold, acid, lightning and poison (for a total of 10d8 damage), or half as much damage on a successful save.\n\n**Bonus Actions**\n***Aura Burst.*** When the fiend or one of its allies within 30 feet makes a saving throw, they can add the fiend’s Charisma modifier to the result of their roll."
+    }
+  ]
+}

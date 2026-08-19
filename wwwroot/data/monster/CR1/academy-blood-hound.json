@@ -1,0 +1,92 @@
+{
+  "Name": "Academy Blood Hound",
+  "Group": "The Academy",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The blood hounds of the Academy are trained to detect signs of magic on others, as well as thrash and bite in such a way as to disrupt the focus of magic users.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Academy%20Blood%20Hound.jpg",
+  "Stat Blocks": [
+    {
+      "id": "academy_blood_hound",
+      "section_type": "Stat Block",
+      "title": "Academy Blood Hound",
+      "creature": {
+        "size": "Medium",
+        "type": "beast",
+        "alignment": "neutral"
+      },
+      "armor_class": "13",
+      "hit_points": "33 (5d8 + 10)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Keen Sense (Hearing & Smell)",
+        "Magic Resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "skills": [
+        "Investigation +2",
+        "Perception +4"
+      ],
+      "senses": [
+        "passive Perception 14"
+      ],
+      "languages": "understands commands in Common but can’t speak",
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Magic Sleuth",
+          "name_format": "bold_italic",
+          "description": "The hound has been trained to track down active spells and magical effects. It can add its proficiency bonus a second time to Wisdom (Perception) checks made to try to observe the source of magical effects (including spells). The dog can sense spells as though it was under the effects of detect magic, and has been trained to relay basic information about spells to its handler through body language."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) piercing damage. If this attack triggers a Concentration check, that check has disadvantage. If the hound has half its hit points or fewer, it has advantage on this attack and it deals an additional d6 of damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**ACADEMY BLOOD HOUND**\n*Medium beast, neutral*\n**Armor Class** 13\n**Hit Points** 33 (5d8 + 10)\n**Speed** 40 ft.\n**Quality Traits** Keen Sense (Hearing & Smell), Magic Resist\n**STR** 14 (+2) | **DEX** 16 (+3) | **CON** 14 (+2) | **INT** 3 (-4) | **WIS** 14 (+2) | **CHA** 6 (-2)\n**Skills** Investigation +2, Perception +4\n**Senses** passive Perception 14\n**Languages** understands commands in Common but can’t speak\n**Challenge Rating** 1 (200 XP) **Prof Bonus** +2\n\n***Magic Sleuth.*** The hound has been trained to track down active spells and magical effects. It can add its proficiency bonus a second time to Wisdom (Perception) checks made to try to observe the source of magical effects (including spells). The dog can sense spells as though it was under the effects of detect magic, and has been trained to relay basic information about spells to its handler through body language.\n\n**ACTIONS**\n***Bite.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d6 + 2) piercing damage. If this attack triggers a Concentration check, that check has disadvantage. If the hound has half its hit points or fewer, it has advantage on this attack and it deals an additional d6 of damage."
+    }
+  ]
+}

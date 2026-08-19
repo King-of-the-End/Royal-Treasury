@@ -67,97 +67,363 @@ else
 
 
         <!-- =================================
-             MONSTER DOCUMENT INFORMATION
+             DETAIL TABS
 
-             Source, Group, and Information
-             live outside "Stat Blocks" in
-             monster JSON files. The service
-             carries those values onto the
-             loaded StatBlockData.
+             LORE:
+             - Monster name
+             - Source
+             - Group
+             - Challenge Rating
+             - Monster-specific lore
+             - Group lore
+             - Monster image
+
+             MONSTER:
+             - Full stat block
              ================================= -->
 
-        @if (
-            HasMetadata
-            ||
-            !string.IsNullOrWhiteSpace(
-                monster.Information))
+        <div
+            class="monster-detail-tabs"
+            role="tablist"
+            aria-label="Monster details">
+
+            <button
+                type="button"
+                role="tab"
+                aria-selected="@(activeTab == DetailTab.Lore)"
+                class="@DetailTabClass(DetailTab.Lore)"
+                @onclick="() => SetTab(DetailTab.Lore)">
+
+                Lore
+
+            </button>
+
+
+            <button
+                type="button"
+                role="tab"
+                aria-selected="@(activeTab == DetailTab.Monster)"
+                class="@DetailTabClass(DetailTab.Monster)"
+                @onclick="() => SetTab(DetailTab.Monster)">
+
+                Monster
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================
+             LORE TAB
+             ================================= -->
+
+        @if (activeTab == DetailTab.Lore)
         {
-            <section class="monster-detail-intro">
+            <section
+                class="monster-detail-tab-panel monster-lore-panel"
+                role="tabpanel">
 
 
-                @if (HasMetadata)
+                <!-- =============================
+                     MONSTER-SPECIFIC LORE
+                     ============================= -->
+
+                @if (
+                    HasMetadata
+                    ||
+                    !string.IsNullOrWhiteSpace(
+                        monster.Information))
                 {
-                    <div class="monster-detail-meta">
+                    <section class="monster-detail-intro">
 
 
-                        @if (
-                            !string.IsNullOrWhiteSpace(
-                                DisplaySource))
+                        <!-- =============================
+                             MONSTER NAME
+
+                             Uses the same heading style
+                             as the group lore title.
+                             ============================= -->
+
+                        <h2 class="monster-lore-title">
+
+                            @monster.Title
+
+                        </h2>
+
+
+                        <!-- =============================
+                             SOURCE / GROUP / CR
+                             ============================= -->
+
+                        @if (HasMetadata)
                         {
-                            <div>
+                            <div class="monster-detail-meta">
 
-                                <strong>
-                                    Source
-                                </strong>
 
-                                <span>
-                                    @DisplaySource
-                                </span>
+                                <!-- SOURCE -->
+
+                                @if (
+                                    !string.IsNullOrWhiteSpace(
+                                        DisplaySource))
+                                {
+                                    <div>
+
+                                        <strong>
+                                            Source
+                                        </strong>
+
+                                        <span>
+                                            @DisplaySource
+                                        </span>
+
+                                    </div>
+                                }
+
+
+                                <!-- GROUP -->
+
+                                @if (
+                                    !string.IsNullOrWhiteSpace(
+                                        DisplayGroup))
+                                {
+                                    <div>
+
+                                        <strong>
+                                            Group
+                                        </strong>
+
+                                        <span>
+                                            @DisplayGroup
+                                        </span>
+
+                                    </div>
+                                }
+
+
+                                <!-- CHALLENGE RATING -->
+
+                                @if (
+                                    !string.IsNullOrWhiteSpace(
+                                        monster.ChallengeRating))
+                                {
+                                    <div>
+
+                                        <strong>
+                                            Challenge Rating
+                                        </strong>
+
+                                        <span>
+                                            @monster.ChallengeRating
+                                        </span>
+
+                                    </div>
+                                }
 
                             </div>
                         }
 
 
-                        @if (
-                            !string.IsNullOrWhiteSpace(
-                                DisplayGroup))
-                        {
-                            <div>
-
-                                <strong>
-                                    Group
-                                </strong>
-
-                                <span>
-                                    @DisplayGroup
-                                </span>
-
-                            </div>
-                        }
-
+                        <!-- =============================
+                             MONSTER INFORMATION
+                             ============================= -->
 
                         @if (
                             !string.IsNullOrWhiteSpace(
-                                monster.ChallengeRating))
+                                monster.Information))
                         {
-                            <div>
+                            <p class="monster-detail-information">
 
-                                <strong>
-                                    Challenge Rating
-                                </strong>
+                                <GlossaryText
+                                    Text="@monster.Information"
+                                    Context="GlossaryContext.General" />
 
-                                <span>
-                                    @monster.ChallengeRating
-                                </span>
-
-                            </div>
+                            </p>
                         }
+
+                    </section>
+                }
+
+
+                <!-- =============================
+                     GROUP LORE
+
+                     Example:
+
+                     Group = Abishai
+
+                     Loads:
+
+                     wwwroot/data/monster/
+                     Groups/Abishai.json
+                     ============================= -->
+
+                @foreach (
+                    var groupLore
+                    in groupLores)
+                {
+                    <section class="monster-group-lore">
+
+
+                        <!-- GROUP NAME -->
+
+                        <h2>
+                            @groupLore.Title.Text
+                        </h2>
+
+
+                        <!-- GROUP LORE SECTIONS -->
+
+                        @foreach (
+                            var loreSection
+                            in groupLore.Sections)
+                        {
+                            @foreach (
+                                var paragraph
+                                in loreSection.Paragraphs)
+                            {
+                                <p>
+
+                                    @foreach (
+                                        var span
+                                        in paragraph.Spans)
+                                    {
+                                        <!-- =================
+                                             BOLD + ITALIC
+                                             ================= -->
+
+                                        @if (
+                                            span.Bold
+                                            &&
+                                            span.Italic)
+                                        {
+                                            <strong>
+
+                                                <em>
+
+                                                    <GlossaryText
+                                                        Text="@span.Text"
+                                                        Context="GlossaryContext.General" />
+
+                                                </em>
+
+                                            </strong>
+                                        }
+
+
+                                        <!-- =================
+                                             BOLD
+                                             ================= -->
+
+                                        else if (span.Bold)
+                                        {
+                                            <strong>
+
+                                                <GlossaryText
+                                                    Text="@span.Text"
+                                                    Context="GlossaryContext.General" />
+
+                                            </strong>
+                                        }
+
+
+                                        <!-- =================
+                                             ITALIC
+                                             ================= -->
+
+                                        else if (span.Italic)
+                                        {
+                                            <em>
+
+                                                <GlossaryText
+                                                    Text="@span.Text"
+                                                    Context="GlossaryContext.General" />
+
+                                            </em>
+                                        }
+
+
+                                        <!-- =================
+                                             NORMAL
+                                             ================= -->
+
+                                        else
+                                        {
+                                            <GlossaryText
+                                                Text="@span.Text"
+                                                Context="GlossaryContext.General" />
+                                        }
+                                    }
+
+                                </p>
+                            }
+                        }
+
+                    </section>
+                }
+
+
+                <!-- =============================
+                     MONSTER IMAGE
+
+                     The value of monster.Image
+                     may be:
+
+                     - a local wwwroot path
+
+                     OR
+
+                     - a complete external URL,
+                       such as a Cloudflare R2
+                       custom-domain URL.
+
+                     Example JSON:
+
+                     "image":
+                     "https://images.example.com/
+                     monsters/
+                     black-bloated-horker.webp"
+
+                     This is deliberately placed
+                     at the very bottom of Lore.
+                     ============================= -->
+
+                @if (
+                    !string.IsNullOrWhiteSpace(
+                        monster.Image))
+                {
+                    <div class="monster-detail-image-wrap">
+
+                        <img
+                            src="@monster.Image"
+                            alt="@monster.Title"
+                            loading="lazy"
+                            decoding="async" />
 
                     </div>
                 }
 
 
+                <!-- =============================
+                     NO LORE AVAILABLE
+
+                     An image counts as Lore-page
+                     content, so this message does
+                     not appear when an image exists.
+                     ============================= -->
+
                 @if (
-                    !string.IsNullOrWhiteSpace(
-                        monster.Information))
+                    !HasAnyLore
+                    &&
+                    groupLores.Count == 0
+                    &&
+                    string.IsNullOrWhiteSpace(
+                        monster.Image))
                 {
-                    <p class="monster-detail-information">
+                    <div class="spell-empty-state">
 
-                        <GlossaryText
-                            Text="@monster.Information"
-                            Context="GlossaryContext.StatBlock" />
+                        No lore is available for this monster yet.
 
-                    </p>
+                    </div>
                 }
 
             </section>
@@ -165,28 +431,27 @@ else
 
 
         <!-- =================================
-             FULL EXISTING STAT BLOCK
+             MONSTER TAB
              ================================= -->
 
-        <StatBlock
-            Data="@monster" />
-
-
-        <!-- =================================
-             OPTIONAL IMAGE
-             ================================= -->
-
-        @if (
-            !string.IsNullOrWhiteSpace(
-                monster.Image))
+        @if (activeTab == DetailTab.Monster)
         {
-            <div class="monster-detail-image-wrap">
+            <section
+                class="monster-detail-tab-panel monster-statblock-panel"
+                role="tabpanel">
 
-                <img
-                    src="@monster.Image"
-                    alt="@monster.Title" />
 
-            </div>
+                <!-- =============================
+                     FULL STAT BLOCK
+
+                     Artwork is intentionally NOT
+                     rendered in this tab.
+                     ============================= -->
+
+                <StatBlock
+                    Data="@monster" />
+
+            </section>
         }
 
     </article>
@@ -194,6 +459,17 @@ else
 
 
 @code {
+
+    // =====================================
+    // DETAIL TABS
+    // =====================================
+
+    private enum DetailTab
+    {
+        Lore,
+        Monster
+    }
+
 
     // =====================================
     // ROUTE PARAMETERS
@@ -216,8 +492,17 @@ else
     private StatBlockData? monster;
 
 
+    private IReadOnlyList<MonsterGroupLoreData>
+        groupLores =
+            Array.Empty<MonsterGroupLoreData>();
+
+
     private bool isLoading =
         true;
+
+
+    private DetailTab activeTab =
+        DetailTab.Lore;
 
 
     // =====================================
@@ -227,9 +512,25 @@ else
     protected override async Task
         OnParametersSetAsync()
     {
+        // =================================
+        // BEGIN LOADING
+        // =================================
+
         isLoading =
             true;
 
+
+        // =================================
+        // DEFAULT TO LORE
+        // =================================
+
+        activeTab =
+            DetailTab.Lore;
+
+
+        // =================================
+        // LOAD MONSTER
+        // =================================
 
         monster =
             await MonsterService
@@ -238,22 +539,115 @@ else
                     Slug);
 
 
+        // =================================
+        // MONSTER NOT FOUND
+        // =================================
+
+        if (monster is null)
+        {
+            groupLores =
+                Array.Empty<MonsterGroupLoreData>();
+
+
+            isLoading =
+                false;
+
+
+            return;
+        }
+
+
+        // =================================
+        // LOAD GROUP LORE
+        //
+        // For example:
+        //
+        // monster.Group = "Abishai"
+        //
+        // loads:
+        //
+        // data/monster/Groups/Abishai.json
+        // =================================
+
+        groupLores =
+            await MonsterService
+                .GetMonsterGroupLoreAsync(
+                    MonsterGroups(
+                        monster));
+
+
+        // =================================
+        // FINISHED
+        // =================================
+
         isLoading =
             false;
     }
 
 
     // =====================================
+    // SET ACTIVE TAB
+    // =====================================
+
+    private void SetTab(
+        DetailTab tab)
+    {
+        activeTab =
+            tab;
+    }
+
+
+    // =====================================
+    // TAB CLASS
+    // =====================================
+
+    private string DetailTabClass(
+        DetailTab tab)
+    {
+        return
+            activeTab == tab
+
+            ? "monster-detail-tab active"
+
+            : "monster-detail-tab";
+    }
+
+
+    // =====================================
     // BACK URL
     //
-    // CR3       -> /bestiary?cr=3
-    // CR0.125   -> /bestiary?cr=0.125
+    // When the user entered the monster
+    // page from the Bestiary, preserve the
+    // Bestiary's:
+    //
+    // - CR
+    // - search
+    // - type
+    // - group
+    // - source
+    //
+    // through returnUrl.
+    //
+    //
+    // Direct URLs fall back to:
+    //
+    // CR3
+    // ->
+    // /bestiary?cr=3
+    //
+    // CR0.125
+    // ->
+    // /bestiary?cr=0.125
     // =====================================
 
     private string BackUrl
     {
         get
         {
+            // =================================
+            // CURRENT URL
+            // =================================
+
             var uri =
                 Navigation.ToAbsoluteUri(
                     Navigation.Uri);
@@ -264,11 +658,10 @@ else
                     uri.Query);
 
 
-            /*
-             * Bestiary.razor passes its
-             * current CR/search/filter state
-             * through returnUrl.
-             */
+            // =================================
+            // PRESERVED BESTIARY URL
+            // =================================
+
             if (
                 query.TryGetValue(
                     "returnUrl",
@@ -280,8 +673,10 @@ else
 
 
                 /*
-                 * Only permit an internal
-                 * Bestiary URL.
+                 * Security/sanity check:
+                 *
+                 * only allow an internal
+                 * Bestiary path.
                  */
                 if (
                     !string.IsNullOrWhiteSpace(
@@ -291,21 +686,26 @@ else
                         "/bestiary",
                         StringComparison.OrdinalIgnoreCase))
                 {
-                    return returnUrl;
+                    return
+                        returnUrl;
                 }
             }
 
 
-            /*
-             * Fallback when someone opens a
-             * monster detail URL directly.
-             */
+            // =================================
+            // FALLBACK
+            // =================================
+
             var cr =
                 ChallengeRating
                     ?.Trim()
                 ??
                 string.Empty;
 
+
+            // =================================
+            // REMOVE "CR"
+            // =================================
 
             if (
                 cr.StartsWith(
@@ -316,6 +716,10 @@ else
                     cr[2..];
             }
 
+
+            // =================================
+            // BUILD BESTIARY URL
+            // =================================
 
             return
                 string.IsNullOrWhiteSpace(
@@ -339,12 +743,8 @@ else
         ? string.Empty
 
         : DisplayValues(
-            new[]
-            {
-                monster.Group
-            }
-            .Concat(
-                monster.Groups));
+            MonsterGroups(
+                monster));
 
 
     // =====================================
@@ -357,12 +757,8 @@ else
         ? string.Empty
 
         : DisplayValues(
-            new[]
-            {
-                monster.Source
-            }
-            .Concat(
-                monster.Sources));
+            MonsterSources(
+                monster));
 
 
     // =====================================
@@ -382,6 +778,126 @@ else
             !string.IsNullOrWhiteSpace(
                 monster.ChallengeRating)
         );
+
+
+    // =====================================
+    // HAS MONSTER-SPECIFIC LORE
+    //
+    // The image is handled separately so it
+    // can sit after the group lore.
+    // =====================================
+
+    private bool HasAnyLore =>
+        monster is not null
+        &&
+        (
+            HasMetadata
+            ||
+            !string.IsNullOrWhiteSpace(
+                monster.Information)
+        );
+
+
+    // =====================================
+    // MONSTER GROUPS
+    //
+    // Supports both:
+    //
+    // "group": "Abishai"
+    //
+    // and:
+    //
+    // "groups": [
+    //   "Abishai",
+    //   "Devils"
+    // ]
+    // =====================================
+
+    private static IEnumerable<string>
+        MonsterGroups(
+            StatBlockData data)
+    {
+        // =================================
+        // PRIMARY GROUP
+        // =================================
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                data.Group))
+        {
+            yield return
+                data.Group.Trim();
+        }
+
+
+        // =================================
+        // ADDITIONAL GROUPS
+        // =================================
+
+        foreach (
+            var group
+            in data.Groups)
+        {
+            if (
+                !string.IsNullOrWhiteSpace(
+                    group))
+            {
+                yield return
+                    group.Trim();
+            }
+        }
+    }
+
+
+    // =====================================
+    // MONSTER SOURCES
+    //
+    // Supports both:
+    //
+    // "source": "..."
+    //
+    // and:
+    //
+    // "sources": [
+    //   "...",
+    //   "..."
+    // ]
+    // =====================================
+
+    private static IEnumerable<string>
+        MonsterSources(
+            StatBlockData data)
+    {
+        // =================================
+        // PRIMARY SOURCE
+        // =================================
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                data.Source))
+        {
+            yield return
+                data.Source.Trim();
+        }
+
+
+        // =================================
+        // ADDITIONAL SOURCES
+        // =================================
+
+        foreach (
+            var source
+            in data.Sources)
+        {
+            if (
+                !string.IsNullOrWhiteSpace(
+                    source))
+            {
+                yield return
+                    source.Trim();
+            }
+        }
+    }
 
 
     // =====================================

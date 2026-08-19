@@ -1,0 +1,525 @@
+{
+  "Name": "Amniatic Dragon",
+  "Group": "The Amniatic",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Though difficult to wear down, an amniatic dragon is a dangerous beast that has had its wits stripped away. It becomes territorial and abrasive, lashing out at anything that comes within its area. The presence of an amniatic dragon spreads the miasma quickly, causing what would otherwise be its lair to slowly be encroached upon by the leeching mists. The scales of an amniatic dragon are discolored and faded over time, leaving them stained with pale blue and white patches.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Reference%20-%20Amniatic%20Dragon.jpg",
+  "Refinement": {
+    "title": "Amniatic Dragon Refinement",
+    "description": "The following table outlines the statistics and energy types associated with various dragons, which can be used to run more specifically colored amniatic dragons.",
+    "notes": [
+      "The Movement and Immunities are in addition to the base stat block’s own (except the platinum amniatic dragon’s fly (hover) speed, which replaces their fly speed).",
+      "The dragon’s skill modifiers should be changed to match their ability scores, and the modifier on the Claw, Bite, Tail and Wing Attack should be replaced by their new Strength modifier.",
+      "The first DC under Breath and Blood / Wing DC column is for their Contagious Blood and Breath Weapon DCs, and the second is for their Wing Attack."
+    ],
+    "table": [
+      {
+        "color": "Black",
+        "ability_scores": {
+          "STR": 23,
+          "DEX": 14,
+          "CON": 21,
+          "INT": 14,
+          "WIS": 3,
+          "CHA": 17
+        },
+        "hit_points": "230 (20d12 + 100)",
+        "movement": [],
+        "immunities": [
+          "Acid"
+        ],
+        "attack_modifier": "+12 to hit",
+        "breath_and_blood_dc": "DC 19",
+        "wing_dc": "DC 20",
+        "breath_damage": "Acid"
+      },
+      {
+        "color": "Blue",
+        "ability_scores": {
+          "STR": 25,
+          "DEX": 10,
+          "CON": 23,
+          "INT": 16,
+          "WIS": 3,
+          "CHA": 19
+        },
+        "hit_points": "250 (20d12 + 120)",
+        "movement": [
+          "Burrow 30 ft."
+        ],
+        "immunities": [
+          "Lightning"
+        ],
+        "attack_modifier": "+13 to hit",
+        "breath_and_blood_dc": "DC 20",
+        "wing_dc": "DC 21",
+        "breath_damage": "Lightning"
+      },
+      {
+        "color": "Brass",
+        "ability_scores": {
+          "STR": 23,
+          "DEX": 10,
+          "CON": 21,
+          "INT": 14,
+          "WIS": 3,
+          "CHA": 17
+        },
+        "hit_points": "230 (20d12 + 100)",
+        "movement": [
+          "Burrow 30 ft."
+        ],
+        "immunities": [
+          "Fire"
+        ],
+        "attack_modifier": "+12 to hit",
+        "breath_and_blood_dc": "DC 19",
+        "wing_dc": "DC 20",
+        "breath_damage": "Fire"
+      },
+      {
+        "color": "Bronze",
+        "ability_scores": {
+          "STR": 25,
+          "DEX": 10,
+          "CON": 23,
+          "INT": 16,
+          "WIS": 3,
+          "CHA": 19
+        },
+        "hit_points": "250 (20d12 + 120)",
+        "movement": [
+          "Swim 40 ft."
+        ],
+        "immunities": [
+          "Lightning"
+        ],
+        "attack_modifier": "+13 to hit",
+        "breath_and_blood_dc": "DC 20",
+        "wing_dc": "DC 21",
+        "breath_damage": "Lightning"
+      },
+      {
+        "color": "Copper",
+        "ability_scores": {
+          "STR": 23,
+          "DEX": 12,
+          "CON": 21,
+          "INT": 18,
+          "WIS": 3,
+          "CHA": 17
+        },
+        "hit_points": "270 (20d12 + 140)",
+        "movement": [],
+        "immunities": [
+          "Acid"
+        ],
+        "attack_modifier": "+12 to hit",
+        "breath_and_blood_dc": "DC 19",
+        "wing_dc": "DC 20",
+        "breath_damage": "Acid"
+      },
+      {
+        "color": "Crystal",
+        "ability_scores": {
+          "STR": 21,
+          "DEX": 12,
+          "CON": 21,
+          "INT": 18,
+          "WIS": 3,
+          "CHA": 19
+        },
+        "hit_points": "230 (20d12 + 100)",
+        "movement": [
+          "Burrow 40 ft."
+        ],
+        "immunities": [
+          "Cold",
+          "radiant"
+        ],
+        "attack_modifier": "+11 to hit",
+        "breath_and_blood_dc": "DC 19",
+        "wing_dc": "DC 19",
+        "breath_damage": "Radiant"
+      },
+      {
+        "color": "Emerald",
+        "ability_scores": {
+          "STR": 23,
+          "DEX": 12,
+          "CON": 21,
+          "INT": 18,
+          "WIS": 3,
+          "CHA": 18
+        },
+        "hit_points": "230 (20d12 + 100)",
+        "movement": [
+          "Burrow 30 ft."
+        ],
+        "immunities": [],
+        "attack_modifier": "+12 to hit",
+        "breath_and_blood_dc": "DC 19",
+        "wing_dc": "DC 20",
+        "breath_damage": "Psychic"
+      },
+      {
+        "color": "Gold",
+        "ability_scores": {
+          "STR": 27,
+          "DEX": 14,
+          "CON": 25,
+          "INT": 16,
+          "WIS": 3,
+          "CHA": 24
+        },
+        "hit_points": "270 (20d12 + 140)",
+        "movement": [],
+        "immunities": [
+          "Fire"
+        ],
+        "attack_modifier": "+14 to hit",
+        "breath_and_blood_dc": "DC 21",
+        "wing_dc": "DC 22",
+        "breath_damage": "Fire"
+      },
+      {
+        "color": "Green",
+        "ability_scores": {
+          "STR": 23,
+          "DEX": 12,
+          "CON": 21,
+          "INT": 18,
+          "WIS": 3,
+          "CHA": 17
+        },
+        "hit_points": "270 (20d12 + 140)",
+        "movement": [
+          "Swim 40 ft."
+        ],
+        "immunities": [
+          "Poison"
+        ],
+        "attack_modifier": "+12 to hit",
+        "breath_and_blood_dc": "DC 19",
+        "wing_dc": "DC 20",
+        "breath_damage": "Poison"
+      },
+      {
+        "color": "Platinum",
+        "ability_scores": {
+          "STR": 26,
+          "DEX": 16,
+          "CON": 24,
+          "INT": 14,
+          "WIS": 3,
+          "CHA": 27
+        },
+        "hit_points": "270 (20d12 + 140)",
+        "movement": [
+          "Fly 80 ft. (hover)",
+          "swim 40 ft."
+        ],
+        "immunities": [
+          "Radiant"
+        ],
+        "attack_modifier": "+14 to hit",
+        "breath_and_blood_dc": "DC 21",
+        "wing_dc": "DC 22",
+        "breath_damage": "Radiant"
+      },
+      {
+        "color": "Red",
+        "ability_scores": {
+          "STR": 27,
+          "DEX": 10,
+          "CON": 25,
+          "INT": 16,
+          "WIS": 3,
+          "CHA": 19
+        },
+        "hit_points": "270 (20d12 + 140)",
+        "movement": [],
+        "immunities": [
+          "Fire"
+        ],
+        "attack_modifier": "+14 to hit",
+        "breath_and_blood_dc": "DC 21",
+        "wing_dc": "DC 22",
+        "breath_damage": "Fire"
+      },
+      {
+        "color": "Sapphire",
+        "ability_scores": {
+          "STR": 23,
+          "DEX": 14,
+          "CON": 22,
+          "INT": 22,
+          "WIS": 3,
+          "CHA": 18
+        },
+        "hit_points": "250 (20d12 + 120)",
+        "movement": [
+          "Burrow 30 ft."
+        ],
+        "immunities": [
+          "Lightning",
+          "thunder"
+        ],
+        "attack_modifier": "+12 to hit",
+        "breath_and_blood_dc": "DC 20",
+        "wing_dc": "DC 20",
+        "breath_damage": "Thunder"
+      },
+      {
+        "color": "Skull",
+        "ability_scores": {
+          "STR": 23,
+          "DEX": 13,
+          "CON": 22,
+          "INT": 13,
+          "WIS": 3,
+          "CHA": 16
+        },
+        "hit_points": "250 (20d12 + 120)",
+        "movement": [
+          "Burrow 40 ft."
+        ],
+        "immunities": [
+          "Necrotic"
+        ],
+        "attack_modifier": "+12 to hit",
+        "breath_and_blood_dc": "DC 20",
+        "wing_dc": "DC 20",
+        "breath_damage": "Necrotic"
+      },
+      {
+        "color": "Silver",
+        "ability_scores": {
+          "STR": 27,
+          "DEX": 10,
+          "CON": 25,
+          "INT": 16,
+          "WIS": 3,
+          "CHA": 21
+        },
+        "hit_points": "270 (20d12 + 140)",
+        "movement": [],
+        "immunities": [
+          "Cold"
+        ],
+        "attack_modifier": "+14 to hit",
+        "breath_and_blood_dc": "DC 21",
+        "wing_dc": "DC 22",
+        "breath_damage": "Cold"
+      },
+      {
+        "color": "Topaz",
+        "ability_scores": {
+          "STR": 19,
+          "DEX": 12,
+          "CON": 19,
+          "INT": 18,
+          "WIS": 3,
+          "CHA": 18
+        },
+        "hit_points": "210 (20d12 + 80)",
+        "movement": [
+          "Swim 40 ft."
+        ],
+        "immunities": [
+          "Cold",
+          "necrotic"
+        ],
+        "attack_modifier": "+10 to hit",
+        "breath_and_blood_dc": "DC 18",
+        "wing_dc": "DC 18",
+        "breath_damage": "Necrotic"
+      },
+      {
+        "color": "White",
+        "ability_scores": {
+          "STR": 22,
+          "DEX": 10,
+          "CON": 20,
+          "INT": 16,
+          "WIS": 3,
+          "CHA": 13
+        },
+        "hit_points": "270 (20d12 + 140)",
+        "movement": [],
+        "immunities": [
+          "Cold"
+        ],
+        "attack_modifier": "+12 to hit",
+        "breath_and_blood_dc": "DC 20",
+        "wing_dc": "DC 20",
+        "breath_damage": "Cold"
+      }
+    ]
+  },
+  "Stat Blocks": [
+    {
+      "id": "amniatic_dragon",
+      "section_type": "Stat Block",
+      "title": "Amniatic Dragon",
+      "creature": {
+        "size": "Huge",
+        "type": "dragon",
+        "alignment": "unaligned"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "270 (20d12 + 140)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "fly": "80 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 27,
+          "modifier": "+8"
+        },
+        "DEX": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CON": {
+          "score": 25,
+          "modifier": "+7"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "CHA": {
+          "score": 19,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Dex +6",
+        "Con +12",
+        "Wis +2",
+        "Cha +10"
+      ],
+      "skills": [
+        "Perception +8",
+        "Stealth +6"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "psychic",
+        "the dragon’s original immunities"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 18"
+      ],
+      "languages": "understands Common and Draconic but doesn’t speak coherently",
+      "challenge_rating": "19 (41,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Contagious Blood",
+          "name_format": "bold_italic",
+          "description": "When the dragon hits a single creature with its Bite attack or a creature within 5 feet of it deals slashing damage to it for the first time on a turn, that creature must succeed on a DC 21 Constitution saving throw or be afflicted with strong amniasis, and their Wisdom score is immediately reduced by 1d4."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes three attacks: one with its bite, and two with its claws."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 11 (3d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage plus 11 (3d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage plus 11 (3d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Miasmatic Breath (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon exhales miasmatic mist in a 60-foot-cone. Each creature in that area must make a DC 21 Constitution saving throw, taking 9d6 psychic damage and 9d6 damage of the dragon’s original breath weapon damage type on a failed save, or half as much on a successful one. Creatures that are reduced to 0 hit points by this damage or who fail by 5 points or more are afflicted with strong amniasis, and their Wisdom score is immediately reduced by 1d4."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "Detect",
+            "name_format": "bold_italic",
+            "description": "The dragon makes a Wisdom (Perception) check."
+          },
+          {
+            "name": "Tail Attack",
+            "name_format": "bold_italic",
+            "description": "The dragon makes a Tail attack."
+          },
+          {
+            "name": "Wing Attack",
+            "name_format": "bold_italic",
+            "description": "The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage plus 11 (3d6) psychic damage and be knocked prone. The dragon can then fly up to half its flying speed."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Legendary Actions": "bold",
+          "Legendary Reactions": "bold"
+        }
+      },
+      "raw_text": "**AMNIATIC DRAGON**\n*Huge dragon, unaligned*\n**Armor Class** 19 (natural armor)\n**Hit Points** 270 (20d12 + 140)\n**Speed** 40 ft., climb 40 ft., fly 80 ft.\n**STR** 27 (+8) | **DEX** 10 (-) | **CON** 25 (+7) | **INT** 16 (+3) | **WIS** 3 (-4) | **CHA** 19 (+4)\n**Saving Throws** Dex +6, Con +12, Wis +2, Cha +10\n**Skills** Perception +8, Stealth +6\n**Resistances** B/S/P (magical)\n**Immunities** psychic; the dragon’s original immunities\n**Condition Immunities** charmed, frightened\n**Senses** blindsight 60 ft., darkvision 120 ft., passive Perception 18\n**Languages** understands Common and Draconic but doesn’t speak coherently\n**Challenge Rating** 19 (41,000 XP) **Prof Bonus** +6\n\n***Contagious Blood.*** When the dragon hits a single creature with its Bite attack or a creature within 5 feet of it deals slashing damage to it for the first time on a turn, that creature must succeed on a DC 21 Constitution saving throw or be afflicted with strong amniasis, and their Wisdom score is immediately reduced by 1d4.\n\n**ACTIONS**\n***Multiattack.*** The dragon makes three attacks: one with its bite, and two with its claws.\n\n***Bite.*** *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 19 (2d10 + 8) piercing damage plus 11 (3d6) psychic damage.\n\n***Claw.*** *Melee Weapon Attack:* +14 to hit, reach 5 ft., one target. *Hit:* 15 (2d6 + 8) slashing damage plus 11 (3d6) psychic damage.\n\n***Tail.*** *Melee Weapon Attack:* +14 to hit, reach 15 ft., one target. *Hit:* 17 (2d8 + 8) bludgeoning damage plus 11 (3d6) psychic damage.\n\n***Miasmatic Breath (Recharge 5-6).*** The dragon exhales miasmatic mist in a 60-foot-cone. Each creature in that area must make a DC 21 Constitution saving throw, taking 9d6 psychic damage and 9d6 damage of the dragon’s original breath weapon damage type on a failed save, or half as much on a successful one. Creatures that are reduced to 0 hit points by this damage or who fail by 5 points or more are afflicted with strong amniasis, and their Wisdom score is immediately reduced by 1d4.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Detect.*** The dragon makes a Wisdom (Perception) check.\n\n***Tail Attack.*** The dragon makes a Tail attack.\n\n***Wing Attack.*** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage plus 11 (3d6) psychic damage and be knocked prone. The dragon can then fly up to half its flying speed.\n\n**LEGENDARY REACTIONS (3 REACTIONS)**\nTBA"
+    }
+  ]
+}

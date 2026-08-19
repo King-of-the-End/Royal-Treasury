@@ -1,0 +1,163 @@
+{
+  "Name": "Academy Cleric",
+  "Group": "The Academy",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Though not a cleric in the sense most use, the clerics of the Academy are the basic attendants and soldiers who survey and hunt criminals on behalf of the Academy. They are trained to be highly respectful of local laws and traditions since the Academy is aware that their presence isn’t always welcome, but are known to be abrupt and single-minded when on the trail of a suspected illegal arcanist.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "academy_cleric",
+      "section_type": "Stat Block",
+      "title": "Academy Cleric",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any, usually human)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "15 (studded leather)",
+      "hit_points": "52 (8d8 + 16)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic Resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Wis +5",
+        "Cha +4"
+      ],
+      "skills": [
+        "Athletics +5",
+        "Arcana +4",
+        "History +4",
+        "Investigation +4"
+      ],
+      "senses": [
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "Dwarvish",
+        "Elvish"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Disruption Aura",
+          "name_format": "bold_italic",
+          "description": "If the agent hits a creature within 30 feet of them with a weapon attack while they are concentrating on a spell or benefiting from a magical effect, their attack deals an additional d8 of force damage to them. Furthermore, they have disadvantage on their resulting concentration check."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The agent’s spellcasting ability is Wisdom. They can cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spellcasting_ability": "Wisdom",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "detect magic"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "hold attacker",
+                  "hold person"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dispel magic",
+                  "counterspell",
+                  "cure wounds"
+                ]
+              }
+            ],
+            "additional_text": "All of the agent’s spells are cast at 2nd level unless their base level is higher."
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The agent makes two weapon attacks, choosing between their Shortsword and Revolver."
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., reload 6, one target. Hit: 10 (2d6 + 3) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Counter Magic",
+          "name_format": "bold_italic",
+          "description": "The agent casts dispel magic or hold person using their Innate Spellcasting.",
+          "inline_formatting": {
+            "dispel magic": "italic",
+            "hold person": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**ACADEMY CLERIC**\n*Medium humanoid (any, usually human), lawful neutral*\n**Armor Class** 15 (studded leather)\n**Hit Points** 52 (8d8 + 16)\n**Speed** 30 ft.\n**Quality Traits** Magic Resist\n**STR** 16 (+4) | **DEX** 16 (+4) | **CON** 14 (+2) | **INT** 15 (+2) | **WIS** 16 (+3) | **CHA** 14 (+2)\n**Saving Throws** Wis +5, Cha +4\n**Skills** Athletics +5, Arcana +4, History +4, Investigation +4\n**Senses** passive Perception 14\n**Languages** Common, Dwarvish, Elvish\n**Challenge Rating** 2 (450 XP) **Prof Bonus** +2\n\n***Disruption Aura.*** If the agent hits a creature within 30 feet of them with a weapon attack while they are concentrating on a spell or benefiting from a magical effect, their attack deals an additional d8 of force damage to them. Furthermore, they have disadvantage on their resulting concentration check.\n\n***Innate Spellcasting.*** The agent’s spellcasting ability is Wisdom. They can cast the following spells, requiring no material components:\n\n• ***At will:*** detect magic\n• ***1/Day each:*** hold attacker, hold person\n• ***2/Day each:*** dispel magic, counterspell, cure wounds\n\nAll of the agent’s spells are cast at 2nd level unless their base level is higher.\n\n**ACTIONS**\n***Multiattack.*** The agent makes two weapon attacks, choosing between their Shortsword and Revolver.\n\n***Shortsword.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 3) piercing damage.\n\n***Revolver.*** *Ranged Weapon Attack:* +5 to hit, range 20/60 ft., reload 6, one target. *Hit:* 10 (2d6 + 3) piercing damage.\n\n**Bonus Actions**\n***Counter Magic.*** The agent casts *dispel magic* or *hold person* using their Innate Spellcasting."
+    }
+  ]
+}

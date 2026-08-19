@@ -84,6 +84,221 @@
 
 
 /* =========================================
+   LORE / MONSTER TABS
+   ========================================= */
+
+.monster-detail-tabs {
+
+    display:
+        grid;
+
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+
+    gap:
+        0.65rem;
+
+
+    margin-bottom:
+        1rem;
+}
+
+
+
+.monster-detail-tab {
+
+    min-height:
+        3.25rem;
+
+
+    padding:
+        0.7rem
+        1rem;
+
+
+    border:
+        1px solid
+        #704431;
+
+
+    border-radius:
+        6px;
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #493126,
+            #30211b
+        );
+
+
+    color:
+        #ffffff;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        1.05rem;
+
+
+    font-weight:
+        800;
+
+
+    cursor:
+        pointer;
+
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.04
+        ),
+
+        0 2px 6px
+        rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+
+
+    transition:
+
+        background
+        120ms ease,
+
+        border-color
+        120ms ease,
+
+        color
+        120ms ease,
+
+        transform
+        120ms ease;
+}
+
+
+
+.monster-detail-tab:hover {
+
+    border-color:
+        var(--red-bright);
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #68422c,
+            #422a20
+        );
+
+
+    color:
+        var(--gold-light);
+
+
+    transform:
+        translateY(-1px);
+}
+
+
+
+.monster-detail-tab.active {
+
+    border-color:
+        var(--gold);
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #815334,
+            #56341f
+        );
+
+
+    color:
+        var(--gold-light);
+
+
+    box-shadow:
+
+        inset 0 -3px 0
+        rgba(
+            211,
+            169,
+            0,
+            0.42
+        ),
+
+        0 0 0 1px
+        rgba(
+            211,
+            169,
+            0,
+            0.12
+        ),
+
+        0 3px 8px
+        rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+
+
+.monster-detail-tab:focus-visible {
+
+    outline:
+        2px solid
+        var(--gold-light);
+
+
+    outline-offset:
+        2px;
+}
+
+
+
+/* =========================================
+   TAB PANEL
+   ========================================= */
+
+.monster-detail-tab-panel {
+
+    overflow:
+        visible;
+}
+
+
+
+/* =========================================
    OUTER MONSTER INFORMATION
    ========================================= */
 
@@ -152,6 +367,65 @@
 
 
 /* =========================================
+   MONSTER LORE TITLE
+
+   This deliberately matches the group lore
+   heading below.
+
+   Example:
+
+   Black Bloated Horker
+   ─────────────────────
+
+   Source | Group | Challenge Rating
+   ========================================= */
+
+.monster-lore-title {
+
+    margin:
+        0
+        0
+        0.85rem;
+
+
+    padding-bottom:
+        0.45rem;
+
+
+    border-bottom:
+        1px solid
+        #71432d;
+
+
+    color:
+        var(--gold-light);
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        clamp(
+            1.45rem,
+            2.6vw,
+            2rem
+        );
+
+
+    font-weight:
+        800;
+
+
+    line-height:
+        1.15;
+}
+
+
+
+/* =========================================
    METADATA
    ========================================= */
 
@@ -169,7 +443,9 @@
         0.7rem;
 
 
-    margin-bottom:
+    margin:
+        0
+        0
         0.85rem;
 }
 
@@ -237,7 +513,7 @@
 
 
 /* =========================================
-   INFORMATION
+   MONSTER-SPECIFIC INFORMATION
    ========================================= */
 
 .monster-detail-information {
@@ -270,10 +546,6 @@
 
 
 
-/* =========================================
-   GLOSSARY TEXT IN INTRO
-   ========================================= */
-
 .monster-detail-information
 ::deep .glossary-text {
 
@@ -291,6 +563,219 @@
 
     line-height:
         inherit;
+}
+
+
+
+/* =========================================
+   MONSTER GROUP LORE
+
+   Loaded dynamically from files such as:
+
+   wwwroot/data/monster/Groups/Abishai.json
+   ========================================= */
+
+.monster-group-lore {
+
+    margin-bottom:
+        1.25rem;
+
+
+    padding:
+        1.15rem
+        1.25rem;
+
+
+    border:
+        1px solid
+        #65412b;
+
+
+    border-radius:
+        5px;
+
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(
+                31,
+                24,
+                20,
+                0.95
+            ),
+            rgba(
+                12,
+                10,
+                9,
+                0.98
+            )
+        );
+
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.025
+        ),
+
+        0 6px 18px
+        rgba(
+            0,
+            0,
+            0,
+            0.22
+        );
+
+
+    color:
+        #eee5dd;
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    overflow:
+        visible;
+}
+
+
+
+/* =========================================
+   GROUP LORE TITLE
+
+   Uses the same visual treatment as the
+   monster lore title.
+   ========================================= */
+
+.monster-group-lore h2 {
+
+    margin:
+        0
+        0
+        0.85rem;
+
+
+    padding-bottom:
+        0.45rem;
+
+
+    border-bottom:
+        1px solid
+        #71432d;
+
+
+    color:
+        var(--gold-light);
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        clamp(
+            1.45rem,
+            2.6vw,
+            2rem
+        );
+
+
+    font-weight:
+        800;
+
+
+    line-height:
+        1.15;
+}
+
+
+
+.monster-group-lore p {
+
+    margin:
+        0
+        0
+        0.95rem;
+
+
+    font-size:
+        1rem;
+
+
+    line-height:
+        1.65;
+}
+
+
+
+.monster-group-lore p:last-child {
+
+    margin-bottom:
+        0;
+}
+
+
+
+.monster-group-lore strong {
+
+    color:
+        #ffffff;
+}
+
+
+
+.monster-group-lore em {
+
+    color:
+        #fff1d7;
+}
+
+
+
+.monster-group-lore
+::deep .glossary-text,
+.monster-group-lore
+::deep .glossary-term,
+.monster-group-lore
+::deep .glossary-term-text {
+
+    color:
+        inherit;
+
+
+    font-family:
+        inherit;
+
+
+    font-size:
+        inherit;
+
+
+    line-height:
+        inherit;
+}
+
+
+
+/* =========================================
+   STAT BLOCK TAB
+   ========================================= */
+
+.monster-statblock-panel {
+
+    overflow:
+        visible;
 }
 
 
@@ -354,6 +839,32 @@
         700px
 ) {
 
+    .monster-detail-tabs {
+
+        gap:
+            0.45rem;
+    }
+
+
+    .monster-detail-tab {
+
+        min-height:
+            2.9rem;
+
+
+        font-size:
+            0.95rem;
+    }
+
+
+    .monster-lore-title,
+    .monster-group-lore h2 {
+
+        font-size:
+            1.45rem;
+    }
+
+
     .monster-detail-meta {
 
         flex-direction:
@@ -365,6 +876,13 @@
 
         width:
             100%;
+    }
+
+
+    .monster-group-lore {
+
+        padding:
+            0.95rem;
     }
 
 }

@@ -1,0 +1,138 @@
+{
+  "Name": "Red Ignatos",
+  "Group": "Abishai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The ignatos are scouts and guards who summon hellish flames to mend their wounds and form burning arrows that they unleash upon enemies. They are in a state of bliss when setting fire to the landscape, and detest a calm, lush environment more than anything. The ignatos wish to see the red aspect of their queen return, if for no reason other than to set fire to the world and leave obsidian fields in their wake.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Abishai%20(Red%20-%20Ignatos).jpg",
+  "Stat Blocks": [
+    {
+      "id": "red_ignatos",
+      "section_type": "Stat Block",
+      "title": "Red Ignatos",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "38 (4d8 + 12)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "50 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Str +6",
+        "Con +5"
+      ],
+      "skills": [
+        "Perception +5"
+      ],
+      "resistances": [
+        "cold",
+        "B/S/P (magical or silvered)"
+      ],
+      "immunities": [
+        "fire",
+        "poison"
+      ],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "devilsight 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend attacks once each with its Morningstar and its Claws, or makes two attacks with its Burning Shortbow."
+        },
+        {
+          "name": "Morningstar",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 5) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Burning Shortbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +5 to hit, range 60/180 ft., one target. Hit: 7 (1d6 + 3) piercing damage and 5 (1d8) fire damage. If a creature is hit by this attack twice in the same turn, they must make a DC 13 Dexterity saving throw. On a failure they are ignited.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Hellish Restoration (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The fiend ignites its body with magical energy, seals its wounds and regains 13 (2d8 + 4) hit points and gains 5 (1d8) temporary hit points."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**RED IGNATOS**\n*Medium fiend (devil), lawful evil*\n**Armor Class** 16 (natural armor)\n**Hit Points** 38 (4d8 + 12)\n**Speed** 30 ft., fly 50 ft.\n**Quality Traits** Magic resist, magical\n**STR** 20 (+5) | **DEX** 16 (+3) | **CON** 17 (+3) | **INT** 14 (+2) | **WIS** 17 (+3) | **CHA** 15 (+2)\n**Saving Throws** Str +6, Con +5\n**Skills** Perception +5\n**Resistances** cold; B/S/P (magical or silvered)\n**Immunities** fire, poison\n**Condition Immunities** poisoned\n**Senses** darkvision 120 ft., devilsight 60 ft., passive Perception 15\n**Languages** Draconic, Infernal, telepathy 120 ft.\n**Challenge Rating** 3 (700 XP) **Proficiency Bonus** +2\n\n**ACTIONS**\n***Multiattack.*** The fiend attacks once each with its Morningstar and its Claws, or makes two attacks with its Burning Shortbow.\n\n***Morningstar.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 10 (1d8 + 5) piercing damage.\n\n***Claw.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 16 (2d10 + 5) slashing damage.\n\n***Burning Shortbow.*** *Ranged Weapon Attack:* +5 to hit, range 60/180 ft., one target. *Hit:* 7 (1d6 + 3) piercing damage and 5 (1d8) fire damage. If a creature is hit by this attack twice in the same turn, they must make a DC 13 Dexterity saving throw. On a failure they are ignited.\n\n**Bonus Actions**\n***Hellish Restoration (Recharge 5-6).*** The fiend ignites its body with magical energy, seals its wounds and regains 13 (2d8 + 4) hit points and gains 5 (1d8) temporary hit points."
+    }
+  ]
+}

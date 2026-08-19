@@ -43,6 +43,28 @@ public sealed class MonsterService
 
 
     // =====================================
+    // MONSTER GROUP LORE CACHE
+    //
+    // Keyed by a normalized group name.
+    //
+    // Example:
+    //
+    // Abishai
+    //
+    // reads:
+    //
+    // wwwroot/data/monster/Groups/Abishai.json
+    // =====================================
+
+    private readonly Dictionary<
+        string,
+        MonsterGroupLoreData?>
+        groupLoreCache =
+            new(
+                StringComparer.OrdinalIgnoreCase);
+
+
+    // =====================================
     // CONSTRUCTOR
     // =====================================
 
@@ -351,6 +373,312 @@ public sealed class MonsterService
                         .Equals(
                             normalizedSlug,
                             StringComparison.Ordinal));
+    }
+
+
+    // =====================================
+    // GET MONSTER GROUP LORE
+    //
+    // Reads the group lore files stored in:
+    //
+    // wwwroot/data/monster/Groups/
+    //
+    // The monster document's Group / Groups
+    // values are matched against group JSON
+    // filenames first, then against the
+    // group's title inside the JSON.
+    // =====================================
+
+    public async Task<
+        IReadOnlyList<MonsterGroupLoreData>>
+        GetMonsterGroupLoreAsync(
+            IEnumerable<string> groupNames)
+    {
+        if (groupNames is null)
+        {
+            return
+                Array.Empty<MonsterGroupLoreData>();
+        }
+
+
+        var requestedGroups =
+            groupNames
+                .Where(
+                    group =>
+                        !string.IsNullOrWhiteSpace(
+                            group))
+                .Select(
+                    group =>
+                        group.Trim())
+                .Distinct(
+                    StringComparer.OrdinalIgnoreCase)
+                .ToList();
+
+
+        if (requestedGroups.Count == 0)
+        {
+            return
+                Array.Empty<MonsterGroupLoreData>();
+        }
+
+
+        var monsterRoot =
+            FindMonsterRoot();
+
+
+        if (monsterRoot is null)
+        {
+            return
+                Array.Empty<MonsterGroupLoreData>();
+        }
+
+
+        var groupsRoot =
+            FindDirectoryIgnoreCase(
+                monsterRoot,
+                "Groups")
+            ??
+            FindDirectoryIgnoreCase(
+                monsterRoot,
+                "Group");
+
+
+        if (groupsRoot is null)
+        {
+            return
+                Array.Empty<MonsterGroupLoreData>();
+        }
+
+
+        var results =
+            new List<MonsterGroupLoreData>();
+
+
+        foreach (
+            var groupName
+            in requestedGroups)
+        {
+            var lore =
+                await GetMonsterGroupLoreEntryAsync(
+                    groupsRoot,
+                    groupName);
+
+
+            if (lore is null)
+            {
+                continue;
+            }
+
+
+            if (
+                results.Any(
+                    existing =>
+                        NormalizeSlug(
+                            existing.Title.Text)
+                            .Equals(
+                                NormalizeSlug(
+                                    lore.Title.Text),
+                                StringComparison.Ordinal)))
+            {
+                continue;
+            }
+
+
+            results.Add(
+                lore);
+        }
+
+
+        return
+            results;
+    }
+
+
+    // =====================================
+    // GET ONE GROUP LORE ENTRY
+    // =====================================
+
+    private async Task<MonsterGroupLoreData?>
+        GetMonsterGroupLoreEntryAsync(
+            string groupsRoot,
+            string groupName)
+    {
+        var normalizedGroup =
+            NormalizeSlug(
+                groupName);
+
+
+        if (
+            string.IsNullOrWhiteSpace(
+                normalizedGroup))
+        {
+            return null;
+        }
+
+
+        if (
+            groupLoreCache.TryGetValue(
+                normalizedGroup,
+                out var cachedLore))
+        {
+            return cachedLore;
+        }
+
+
+        // =================================
+        // FIRST:
+        // MATCH THE JSON FILENAME.
+        //
+        // Abishai -> Abishai.json
+        // =================================
+
+        var matchingFile =
+            EnumerateJsonFiles(
+                groupsRoot)
+                .FirstOrDefault(
+                    file =>
+                        NormalizeSlug(
+                            Path.GetFileNameWithoutExtension(
+                                file))
+                            .Equals(
+                                normalizedGroup,
+                                StringComparison.Ordinal));
+
+
+        if (matchingFile is not null)
+        {
+            var lore =
+                await ReadMonsterGroupLoreFileAsync(
+                    matchingFile);
+
+
+            groupLoreCache[normalizedGroup] =
+                lore;
+
+
+            return lore;
+        }
+
+
+        // =================================
+        // FALLBACK:
+        // MATCH THE TITLE STORED INSIDE
+        // EACH GROUP FILE.
+        //
+        // This means the file itself can use
+        // a slightly different filename.
+        // =================================
+
+        foreach (
+            var file
+            in EnumerateJsonFiles(
+                groupsRoot))
+        {
+            var lore =
+                await ReadMonsterGroupLoreFileAsync(
+                    file);
+
+
+            if (lore is null)
+            {
+                continue;
+            }
+
+
+            var normalizedTitle =
+                NormalizeSlug(
+                    lore.Title.Text);
+
+
+            /*
+             * Cache every group title we
+             * discover while searching.
+             */
+            if (
+                !string.IsNullOrWhiteSpace(
+                    normalizedTitle))
+            {
+                groupLoreCache[normalizedTitle] =
+                    lore;
+            }
+
+
+            if (
+                normalizedTitle.Equals(
+                    normalizedGroup,
+                    StringComparison.Ordinal))
+            {
+                groupLoreCache[normalizedGroup] =
+                    lore;
+
+
+                return lore;
+            }
+        }
+
+
+        groupLoreCache[normalizedGroup] =
+            null;
+
+
+        return null;
+    }
+
+
+    // =====================================
+    // READ MONSTER GROUP LORE FILE
+    // =====================================
+
+    private async Task<MonsterGroupLoreData?>
+        ReadMonsterGroupLoreFileAsync(
+            string path)
+    {
+        try
+        {
+            var json =
+                await File.ReadAllTextAsync(
+                    path);
+
+
+            if (
+                string.IsNullOrWhiteSpace(
+                    json))
+            {
+                return null;
+            }
+
+
+            var lore =
+                JsonSerializer.Deserialize<
+                    MonsterGroupLoreData>(
+                    json,
+                    jsonOptions);
+
+
+            if (
+                lore is null
+                ||
+                string.IsNullOrWhiteSpace(
+                    lore.Title.Text))
+            {
+                return null;
+            }
+
+
+            return lore;
+        }
+        catch (JsonException)
+        {
+            return null;
+        }
+        catch (IOException)
+        {
+            return null;
+        }
+        catch (UnauthorizedAccessException)
+        {
+            return null;
+        }
     }
 
 
@@ -971,6 +1299,28 @@ public sealed class MonsterService
 
 
             // =================================
+            // OUTER IMAGE
+            //
+            // Monster files such as
+            // black-bloated-horker.json store
+            // Image beside Name / Group /
+            // Source rather than inside the
+            // Stat Blocks array.
+            // =================================
+
+            if (
+                string.IsNullOrWhiteSpace(
+                    monster.Image)
+                &&
+                !string.IsNullOrWhiteSpace(
+                    metadata.Image))
+            {
+                monster.Image =
+                    metadata.Image;
+            }
+
+
+            // =================================
             // OUTER GROUP / SOURCE
             //
             // These values live outside the
@@ -1020,6 +1370,12 @@ public sealed class MonsterService
                 "Information");
 
 
+        var image =
+            ReadStringProperty(
+                element,
+                "Image");
+
+
         var groups =
             DistinctValues(
                 ReadStringOrArrayProperty(
@@ -1046,6 +1402,7 @@ public sealed class MonsterService
             new MonsterMetadata(
                 name,
                 information,
+                image,
                 groups,
                 sources);
     }
@@ -1078,6 +1435,15 @@ public sealed class MonsterService
             : inherited.Information;
 
 
+        var image =
+            !string.IsNullOrWhiteSpace(
+                local.Image)
+
+            ? local.Image
+
+            : inherited.Image;
+
+
         var groups =
             DistinctValues(
                 inherited.Groups
@@ -1096,6 +1462,7 @@ public sealed class MonsterService
             new MonsterMetadata(
                 name,
                 information,
+                image,
                 groups,
                 sources);
     }
@@ -1557,11 +1924,13 @@ public sealed class MonsterService
     private sealed record MonsterMetadata(
         string Name,
         string Information,
+        string Image,
         IReadOnlyList<string> Groups,
         IReadOnlyList<string> Sources)
     {
         public static MonsterMetadata Empty { get; } =
             new(
+                string.Empty,
                 string.Empty,
                 string.Empty,
                 Array.Empty<string>(),

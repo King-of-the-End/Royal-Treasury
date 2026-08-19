@@ -1,0 +1,134 @@
+{
+  "Name": "Blue Surging Hunter",
+  "Group": "Abishai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The lightning-infused surging hunter is a huge, imposing abishai that chooses to engage targets from a distance. They serve as incredible guards and sentinels, and are the best at keeping watch for enemies. They carry massive greatbows made for their particularly huge size, which feature bones grafted into blades so they might use them in melee combat. They can channel lightning into a nerve-overloading current that stuns their targets.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Abishai%20(Blue%20-%20Surging%20Hunter).jpg",
+  "Stat Blocks": [
+    {
+      "id": "blue_surging_hunter",
+      "section_type": "Stat Block",
+      "title": "Blue Surging Hunter",
+      "creature": {
+        "size": "Large",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "136 (16d10 + 48)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "50 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Int +9",
+        "Wis +10"
+      ],
+      "skills": [
+        "Arcana +9",
+        "Perception +10"
+      ],
+      "resistances": [
+        "cold",
+        "B/S/P (magical or silvered)"
+      ],
+      "immunities": [
+        "fire",
+        "lightning",
+        "poison"
+      ],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "devilsight 120 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Perceptive Archer",
+          "name_format": "bold_italic",
+          "description": "The fiend uses its Wisdom modifier for ranged attack and damage rolls. When they make a ranged weapon attack they add 2d6 lightning damage to the weapon’s damage (already accounted for in this stat block)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes two Bladed Greatbow attacks (choosing between melee or ranged), then makes one Bite attack. It can replace its Bite with its Stunning Surge."
+        },
+        {
+          "name": "Bladed Greatbow.*",
+          "name_format": "bold",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) slashing damage or Ranged Weapon Attack +10 to hit, range 150/600 ft., one target. Hit: 17 (2d10 + 6) piercing damage and 7 (2d6) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) plus 18 (4d8) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Stunning Surge (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The fiend creates a bolt of magical lightning that it hurls at a point it can see within 120 feet, where it explodes in a surge of paralyzing lightning. Each creature in a 20-foot-radius sphere centered on that point must succeed on a DC 14 Constitution saving throw or be stunned until the start of the fiend’s next turn."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**BLUE SURGING HUNTER**\n*Large fiend (devil), lawful evil*\n**Armor Class** 16 (natural armor)\n**Hit Points** 136 (16d10 + 48)\n**Speed** 30 ft., fly 50 ft.\n**Quality Traits** Magic resist, magical\n**STR** 17 (+3) | **DEX** 14 (+2) | **CON** 16 (+3) | **INT** 20 (+5) | **WIS** 22 (+6) | **CHA** 17 (+3)\n**Saving Throws** Int +9, Wis +10\n**Skills** Arcana +9, Perception +10\n**Resistances** cold; B/S/P (magical or silvered)\n**Immunities** fire, lightning, poison\n**Condition Immunities** poisoned\n**Senses** darkvision 240 ft., devilsight 120 ft., passive Perception 20\n**Languages** Draconic, Infernal, telepathy 120 ft.\n**Challenge Rating** 10 (5,900 XP) **Prof Bonus** +4\n\n***Perceptive Archer.*** The fiend uses its Wisdom modifier for ranged attack and damage rolls. When they make a ranged weapon attack they add 2d6 lightning damage to the weapon’s damage (already accounted for in this stat block).\n\n**ACTIONS**\n***Multiattack.*** The fiend makes two Bladed Greatbow attacks (choosing between melee or ranged), then makes one Bite attack. It can replace its Bite with its Stunning Surge.\n\n**Bladed Greatbow.**\\* *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d10 + 3) slashing damage or Ranged Weapon Attack +10 to hit, range 150/600 ft., one target. *Hit:* 17 (2d10 + 6) piercing damage and 7 (2d6) lightning damage.\n\n***Bite.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d10 + 3) plus 18 (4d8) lightning damage.\n\n***Stunning Surge (Recharge 5-6).*** The fiend creates a bolt of magical lightning that it hurls at a point it can see within 120 feet, where it explodes in a surge of paralyzing lightning. Each creature in a 20-foot-radius sphere centered on that point must succeed on a DC 14 Constitution saving throw or be stunned until the start of the fiend’s next turn."
+    }
+  ]
+}

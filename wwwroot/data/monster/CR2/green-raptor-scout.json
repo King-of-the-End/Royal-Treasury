@@ -1,0 +1,138 @@
+{
+  "Name": "Green Raptor Scout",
+  "Group": "Abishai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "These diminutive abishai have a unique feature: a scorpion-like tail that can inject a vicious toxin into targets. They are quick, and can dart between combatants, deliver their poison, then flee quickly. They’re hard to pin down and make fantastic scouts and spies, and in some cases can even play themselves off as kobolds or small deformed dragons when necessary.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference_BG%20-%20Abishia%20(Green%20-%20Raptor%20Scout).jpg",
+  "Stat Blocks": [
+    {
+      "id": "green_raptor_scout",
+      "section_type": "Stat Block",
+      "title": "Green Raptor Scout",
+      "creature": {
+        "size": "Small",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "44 (8d6 + 16)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical",
+        "small stature"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "DEX": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Dex +6",
+        "Int +5"
+      ],
+      "skills": [
+        "Deception +6",
+        "Insight +4",
+        "Stealth +8"
+      ],
+      "resistances": [
+        "cold",
+        "B/S/P (magical or silvered)"
+      ],
+      "immunities": [
+        "fire",
+        "poison"
+      ],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "devilsight 60 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Mobile",
+          "name_format": "bold_italic",
+          "description": "When the fiend hits a creature with a weapon attack, it does not provoke opportunity attacks from that creature for the rest of that turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes one attack each with its Toxic Bite and its Stinger."
+        },
+        {
+          "name": "Toxic Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) piercing damage plus 7 (2d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Stinger",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) piercing damage. If the target is a creature, it must succeed a DC 12 Constitution saving throw or take 11 (3d6) poison damage and be poisoned for 1 minute. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cunning Action",
+          "name_format": "bold_italic",
+          "description": "The fiend takes the Dash, Disengage or Hide action."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**GREEN RAPTOR SCOUT**\n*Small fiend (devil), lawful evil*\n**Armor Class** 16 (natural armor)\n**Hit Points** 44 (8d6 + 16)\n**Speed** 40 ft., fly 60 ft.\n**Quality Traits** Magic resist, magical, small stature\n**STR** 10 (-) | **DEX** 19 (+4) | **CON** 14 (+2) | **INT** 17 (+3) | **WIS** 14 (+2) | **CHA** 18 (+4)\n**Saving Throws** Dex +6, Int +5\n**Skills** Deception +6, Insight +4, Stealth +8\n**Resistances** cold; B/S/P (magical or silvered)\n**Immunities** fire, poison\n**Condition Immunities** poisoned\n**Senses** darkvision 120 ft., devilsight 60 ft., passive Perception 12\n**Languages** Draconic, Infernal, telepathy 120 ft.\n**Challenge Rating** 2 (450 XP) **Prof Bonus** +2\n\n***Mobile.*** When the fiend hits a creature with a weapon attack, it does not provoke opportunity attacks from that creature for the rest of that turn.\n\n**ACTIONS**\n***Multiattack.*** The fiend makes one attack each with its Toxic Bite and its Stinger.\n\n***Toxic Bite.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (2d4 + 4) piercing damage plus 7 (2d6) poison damage.\n\n***Stinger.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (1d8 + 4) piercing damage. If the target is a creature, it must succeed a DC 12 Constitution saving throw or take 11 (3d6) poison damage and be poisoned for 1 minute. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on a success.\n\n**Bonus Actions**\n***Cunning Action.*** The fiend takes the Dash, Disengage or Hide action."
+    }
+  ]
+}

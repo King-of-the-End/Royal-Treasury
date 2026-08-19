@@ -1,0 +1,136 @@
+{
+  "Name": "Black Vile Harvester",
+  "Group": "Abishai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A murderous striker who carries a large scythe, and mercilessly hacks into others. Their black scales and scythe give the impression of an aspect of death itself, and these abishai are not above lending their services to other cults and organizations (such as the Cult of Gentle Sins) if it benefits them. They are experts in laying waste to unsuspecting enemies.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "black_vile_harvester",
+      "section_type": "Stat Block",
+      "title": "Black Vile Harvester",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "130 (20d8 + 40)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +8",
+        "Wis +8"
+      ],
+      "skills": [
+        "Perception +12",
+        "Stealth +8",
+        "Survival +8"
+      ],
+      "resistances": [
+        "cold",
+        "B/S/P (magical or silvered)"
+      ],
+      "immunities": [
+        "acid",
+        "fire",
+        "poison"
+      ],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "devilsight 60 ft.",
+        "passive Perception x"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Deadly Precision",
+          "name_format": "bold_italic",
+          "description": "If the fiend hits a creature with an attack that it had advantage on, the fiend deals an additional 2d8 damage to its target."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend attacks twice with its Combat Scythe, and once with its Bite. It can replace its Bite with its Sightless Curse."
+        },
+        {
+          "name": "Combat Scythe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., cleaving, one target. Hit: 12 (2d8 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 3) piercing damage plus 11 (2d10) acid damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Sightless Curse (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The fiend chooses three creatures it can see within 60 feet, who it attempts to curse. Each creature must attempt a DC 16 Wisdom saving throw, taking 36 (8d8) psychic damage and becoming cursed for 1 hour on a failed save, or half as much damage and not cursed on a successful one. A creature cursed this way is blinded, and reattempts the saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**BLACK VILE HARVESTER**\n*Medium fiend (devil), lawful evil*\n**Armor Class** 18 (natural armor)\n**Hit Points** 130 (20d8 + 40)\n**Speed** 30 ft., fly 40 ft.\n**Quality Traits** Critical 19, magic resist, magical\n**STR** 16 (+3) | **DEX** 20 (+5) | **CON** 14 (+2) | **INT** 13 (+1) | **WIS** 18 (+4) | **CHA** 15 (+2)\n**Saving Throws** Dex +8, Wis +8\n**Skills** Perception +12, Stealth +8, Survival +8\n**Resistances** cold; B/S/P (magical or silvered)\n**Immunities** acid, fire, poison\n**Condition Immunities** poisoned\n**Senses** darkvision 120 ft., devilsight 60 ft., passive Perception x\n**Languages** Draconic, Infernal, telepathy 120 ft.\n**Challenge Rating** 10 (5,900 XP) **Proficiency Bonus** +4\n\n***Deadly Precision.*** If the fiend hits a creature with an attack that it had advantage on, the fiend deals an additional 2d8 damage to its target.\n\n**ACTIONS**\n***Multiattack.*** The fiend attacks twice with its Combat Scythe, and once with its Bite. It can replace its Bite with its Sightless Curse.\n\n***Combat Scythe.*** *Melee Weapon Attack:* +7 to hit, reach 10 ft., cleaving, one target. *Hit:* 12 (2d8 + 3) slashing damage.\n\n***Bite.*** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 9 (1d10 + 3) piercing damage plus 11 (2d10) acid damage.\n\n***Sightless Curse (Recharge 6).*** The fiend chooses three creatures it can see within 60 feet, who it attempts to curse. Each creature must attempt a DC 16 Wisdom saving throw, taking 36 (8d8) psychic damage and becoming cursed for 1 hour on a failed save, or half as much damage and not cursed on a successful one. A creature cursed this way is blinded, and reattempts the saving throw at the end of each of their turns, ending the effect on a success."
+    }
+  ]
+}

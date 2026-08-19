@@ -1,0 +1,185 @@
+{
+  "name": {
+    "text": "The Amniatic",
+    "bold": true
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Creatures that have completely lost their sense of self to amniasis are known as amniatic drudges. This phrase was coined by a doctor during the first amniasis outbreak in times long since past, which at the time referred to small crystallized light blue fragments of mineral that form in the blood of the amniatic before the term gained a broader use.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Creatures reduced to drudges act on their base instincts. Their blood naturally gives off amniatic miasma, infecting those who come into contact with it and their biological components. Those infected act as if feral, with brief moments of near-lucidity that show similarity to their regular selves, but even so lack an awareness of where they are or what they’re doing. From their mutterings it can be extrapolated that amniatic drudges believe that other creatures have stolen their missing mental faculties, and so seek to tear others’ minds away from them. This line of thought makes little sense, but such is the rationale of drudges.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Drudges have the uncanny ability to retain the skills they had in life, as if their abilities were maintained as muscle memory. Though they fight sluggishly, their combat abilities are not eroded, however it does not always occur to them to take the most optimal or technical course of action. For example, a master thief reduced to a drudge may not immediately remember to apply their ability to pick locks, or an archmage may not always remember the optimal spell for the situation.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "All mortal creatures can become drudges, and it is believed that even godlike beings can as well. There are stories of an amniatic eidolos in a mecite vein, but these were never properly substantiated.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Consequential Selection.",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Small creatures that have fewer than 5 hit points or less than 5 Wisdom tend to not survive the transformation into an amniatic drudge, and die rather than convert into one.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Creating An Amniatic Drudge",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "When a creature is turned into an amniatic drudge, they can be quickly converted via the following:",
+              "bold": false
+            }
+          ]
+        }
+      ],
+      "bullets": [
+        {
+          "text": "The creature’s Wisdom score becomes 3.",
+          "bold": false
+        },
+        {
+          "text": "The creature becomes immune to being frightened or charmed.",
+          "bold": false
+        },
+        {
+          "text": "The creature becomes resistant to psychic damage.",
+          "bold": false
+        },
+        {
+          "text": "If they did not have a Multiattack feature that allowed for at least two attacks, they now have it.",
+          "bold": false
+        },
+        {
+          "text": "If the creature’s spellcasting ability (or abilities) was Wisdom, it becomes Charisma.",
+          "bold": false
+        },
+        {
+          "text": "The creature gains the Mind Ripper and Contagious Blood features, as listed below.",
+          "bold": false
+        },
+        {
+          "text": "Natural energy damage caused by the creature (such as breath weapons, natural enhancements to weapons, etc., changes to become at least half psychic damage).",
+          "bold": false
+        },
+        {
+          "text": "They understand the languages they spoke before but cannot speak coherently. This does not affect their verbal components.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Contagious Blood.",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " When the drudge hits a target with two or more weapon attacks in the same turn, or a creature hits them with a slashing weapon from within 5 feet, that creature/target must make a Constitution saving throw (DC equal to 8 + their Constitution modifier + their proficiency bonus). On a failure, the creature is afflicted with amniasis and loses an amount of their Wisdom score to the disease immediately. The severity of their affliction and reduction of Wisdom are based on their CR.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Contagious Blood Factors",
+        "bold": true
+      },
+      "table": {
+        "headers": [
+          {
+            "text": "CR",
+            "bold": true
+          },
+          {
+            "text": "Severity",
+            "bold": true
+          },
+          {
+            "text": "Wisdom Damage",
+            "bold": true
+          }
+        ],
+        "rows": [
+          [
+            "1-6",
+            "Weak",
+            "1"
+          ],
+          [
+            "7-11",
+            "Mild",
+            "1d3"
+          ],
+          [
+            "12-19",
+            "Strong",
+            "1d4"
+          ],
+          [
+            "20+",
+            "Aggressive",
+            "1d4+1"
+          ]
+        ]
+      }
+    },
+    {
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Mind Ripper.",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " The drudge’s attacks deal an extra amount of psychic damage due to the amniatic plague assaulting the mind of creatures they touch. The amount of extra damage is equal to Xd6, where X is half their proficiency bonus (rounded down). This damage is already factored into the stat blocks below.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "Name": "Green Fury Seeker",
+  "Group": "Abishai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Holding a massive hammer forged from stone and bone, these green abishai ripple with muscle and rage. Their bodies sweat out a substance that can be aerosolized to poison those around them, and their lack of care for their own lives or coming to harm makes them tremendously barbaric opponents. They are the brutal shock troopers of the abishai.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "green_fury_seeker",
+      "section_type": "Stat Block",
+      "title": "Green Fury Seeker",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (devil)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "105 (14d8 + 42)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 19,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Str +8",
+        "Int +6"
+      ],
+      "skills": [
+        "Athletics +8",
+        "Intimidation +7",
+        "Perception +4"
+      ],
+      "resistances": [
+        "cold",
+        "B/S/P (magical or silvered)"
+      ],
+      "immunities": [
+        "fire",
+        "poison"
+      ],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "devilsight 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Draconic",
+        "Infernal",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Brutal Critical",
+          "name_format": "bold_italic",
+          "description": "When the fiend scores a critical hit, it deals an additional 2d10 damage to its target."
+        },
+        {
+          "name": "Reckless Attacker",
+          "name_format": "bold_italic",
+          "description": "When the fiend misses with a melee attack on its turn, it can roll an additional d20 and use it in place of the d20 result of their attack. Until the end of their turn their remaining melee attacks have advantage, and until the start of their next turn all attacks made against them have advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes two Greathammer attacks and one Bite attack. It can replace its Bite with its Poison Sweep."
+        },
+        {
+          "name": "Greathammer",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (2d12 + 5) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 14 (4d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Poison Sweep (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The fiend releases poison spores from its body and spreads them using its wings, forcing all creatures within a 15 foot radius to make a DC 14 Constitution saving throw. Creatures who fail are poisoned for 1 minute, and may reattempt the saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**GREEN FURY SEEKER**\n*Medium fiend (devil), lawful evil*\n**Armor Class** 16 (natural armor)\n**Hit Points** 105 (14d8 + 42)\n**Speed** 30 ft., fly 40 ft.\n**Quality Traits** Magic resist, magical\n**STR** 20 (+5) | **DEX** 13 (+1) | **CON** 16 (+3) | **INT** 17 (+3) | **WIS** 12 (+1) | **CHA** 19 (+4)\n**Saving Throws** Str +8, Int +6\n**Skills** Athletics +8, Intimidation +7, Perception +4\n**Resistances** cold; B/S/P (magical or silvered)\n**Immunities** fire, poison\n**Condition Immunities** poisoned\n**Senses** darkvision 120 ft., devilsight 60 ft., passive Perception 14\n**Languages** Draconic, Infernal, telepathy 120 ft.\n**Challenge Rating** 8 (3,900 XP) **Prof Bonus** +3\n\n***Brutal Critical.*** When the fiend scores a critical hit, it deals an additional 2d10 damage to its target.\n\n***Reckless Attacker.*** When the fiend misses with a melee attack on its turn, it can roll an additional d20 and use it in place of the d20 result of their attack. Until the end of their turn their remaining melee attacks have advantage, and until the start of their next turn all attacks made against them have advantage.\n\n**ACTIONS**\n***Multiattack.*** The fiend makes two Greathammer attacks and one Bite attack. It can replace its Bite with its Poison Sweep.\n\n***Greathammer.*** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 18 (2d12 + 5) bludgeoning damage.\n\n***Bite.*** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 16 (2d10 + 5) piercing damage plus 14 (4d6) poison damage.\n\n***Poison Sweep (Recharge 5-6).*** The fiend releases poison spores from its body and spreads them using its wings, forcing all creatures within a 15 foot radius to make a DC 14 Constitution saving throw. Creatures who fail are poisoned for 1 minute, and may reattempt the saving throw at the end of each of their turns, ending the effect on a success."
+    }
+  ]
+}
