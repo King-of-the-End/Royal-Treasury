@@ -1,11 +1,11 @@
 # ==========================================
 # ROYAL TREASURY
-# RENDER DIAGNOSTIC DOCKERFILE
+# RENDER DOCKERFILE
 #
-# This version is intentionally diagnostic.
-# It prints .NET runtime information before
-# starting Royal Treasury so that we can see
-# exactly where the status 139 crash occurs.
+# Uses the current .NET 10 servicing release
+# and forces single-node MSBuild during restore/
+# publish to avoid the .NET 10.0.9 Linux
+# multi-process MSBuild/CoreCLR crash path.
 # ==========================================
 
 
@@ -13,18 +13,13 @@
 # BUILD STAGE
 # ==========================================
 
-FROM mcr.microsoft.com/dotnet/sdk:10.0.301 AS build
-
+FROM mcr.microsoft.com/dotnet/sdk:10.0.302 AS build
 
 WORKDIR /src
 
 
 # ==========================================
 # COPY PROJECT FILE
-#
-# Copying the .csproj first allows Docker to
-# cache the restore step independently from
-# changes to the rest of the source code.
 # ==========================================
 
 COPY ["Website of Everything.csproj", "./"]
@@ -32,13 +27,15 @@ COPY ["Website of Everything.csproj", "./"]
 
 # ==========================================
 # RESTORE
+#
+# -m:1 keeps MSBuild in a single node.
 # ==========================================
 
-RUN dotnet restore "./Website of Everything.csproj"
+RUN dotnet restore "./Website of Everything.csproj" -m:1
 
 
 # ==========================================
-# COPY THE REST OF ROYAL TREASURY
+# COPY PROJECT
 # ==========================================
 
 COPY . .
@@ -46,68 +43,47 @@ COPY . .
 
 # ==========================================
 # PUBLISH
+#
+# Again use one MSBuild node so the Linux
+# build does not enter the multiprocess node
+# IPC path implicated in the 10.0.9 crash.
 # ==========================================
 
 RUN dotnet publish "./Website of Everything.csproj" \
     -c Release \
     -o /app/publish \
-    --no-restore
+    --no-restore \
+    -m:1
 
 
 # ==========================================
 # RUNTIME STAGE
-#
-# SDK 10.0.301 corresponds to the
-# .NET / ASP.NET Core 10.0.9 runtime.
 # ==========================================
 
-FROM mcr.microsoft.com/dotnet/aspnet:10.0.9 AS final
-
+FROM mcr.microsoft.com/dotnet/aspnet:10.0.10 AS final
 
 WORKDIR /app
-
-
-# ==========================================
-# COPY PUBLISHED APPLICATION
-# ==========================================
 
 COPY --from=build /app/publish .
 
 
 # ==========================================
 # RENDER NETWORKING
-#
-# Render routes traffic to the application
-# through port 10000 by default.
-#
-# ASP.NET Core must listen on all network
-# interfaces rather than localhost.
 # ==========================================
 
 ENV ASPNETCORE_URLS=http://0.0.0.0:10000
-
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
+ENV DOTNET_NOLOGO=1
 
 EXPOSE 10000
 
 
 # ==========================================
-# DIAGNOSTIC STARTUP
+# STARTUP DIAGNOSTICS
 #
-# IMPORTANT:
-#
-# Keep this ENTRYPOINT on ONE LINE.
-#
-# It will:
-#
-# 1. print a marker
-# 2. run dotnet --info
-# 3. print another marker
-# 4. start Royal Treasury normally
-#
-# This allows us to determine whether the
-# .NET runtime itself is crashing or whether
-# the crash happens when the application
-# begins running.
+# These markers make it obvious in Render's
+# logs whether the runtime itself starts and
+# whether the application process is reached.
 # ==========================================
 
 ENTRYPOINT ["/bin/sh", "-c", "echo '===== DOTNET INFO =====' && dotnet --info && echo '===== STARTING ROYAL TREASURY =====' && exec dotnet Website_of_Everything.dll"]
