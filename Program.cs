@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.HttpOverrides;
 using Website_of_Everything.Components;
 using Website_of_Everything.Services;
 
@@ -13,6 +14,61 @@ var builder =
 builder.Services
     .AddRazorComponents()
     .AddInteractiveServerComponents();
+
+
+// =========================================
+// FORWARDED HEADERS
+//
+// Render terminates HTTPS at its proxy and
+// forwards the request to this application.
+//
+// Blazor Interactive Server needs ASP.NET
+// Core to understand the original request
+// scheme correctly so that SignalR / Blazor
+// can negotiate its secure connection.
+//
+// Render does not provide a single fixed
+// proxy address for an individual service,
+// so this configuration accepts forwarded
+// headers from Render's upstream proxy.
+//
+// IMPORTANT:
+// Because this is configured here in code,
+// remove the Render environment variable:
+//
+// ASPNETCORE_FORWARDEDHEADERS_ENABLED
+//
+// Keep:
+//
+// ASPNETCORE_ENVIRONMENT=Production
+// =========================================
+
+builder.Services
+    .Configure<ForwardedHeadersOptions>(
+        options =>
+        {
+            options.ForwardedHeaders =
+                ForwardedHeaders.XForwardedFor
+                |
+                ForwardedHeaders.XForwardedProto;
+
+
+            // =================================
+            // RENDER PROXY TRUST
+            //
+            // Render's proxy addresses are not
+            // fixed per application.
+            //
+            // Clearing these collections gives
+            // the same cloud-style behavior as
+            // ASPNETCORE_FORWARDEDHEADERS_ENABLED
+            // while keeping the middleware
+            // placement explicit in this file.
+            // =================================
+
+            options.KnownIPNetworks.Clear();
+            options.KnownProxies.Clear();
+        });
 
 
 // =========================================
@@ -90,6 +146,17 @@ var app =
 
 
 // =========================================
+// FORWARDED HEADERS MUST RUN FIRST
+//
+// This must happen before HSTS and HTTPS
+// redirection so ASP.NET Core sees the
+// original HTTPS request from Render.
+// =========================================
+
+app.UseForwardedHeaders();
+
+
+// =========================================
 // PRODUCTION ERROR HANDLING
 // =========================================
 
@@ -149,6 +216,10 @@ app.MapStaticAssets();
 
 // =========================================
 // BLAZOR
+//
+// AddInteractiveServerRenderMode maps the
+// Interactive Server endpoints used by the
+// Blazor circuit / SignalR connection.
 // =========================================
 
 app.MapRazorComponents<App>()
