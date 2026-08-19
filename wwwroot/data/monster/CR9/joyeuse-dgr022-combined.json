@@ -1,0 +1,306 @@
+{
+  "Name": "DGR-022 - JOYEUSE",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A combat unit designed to analyze opponents and work out the most efficient method of attack. If left to fight a single target for long enough, the JOYEUSE unit is entirely overwhelming: within a minute of combat it can discern the weaknesses of a target and cause explosive damage, as well as debilitate their target. However, in order to achieve the combat mastery JOYEUSE benefits from, it had to be made of an especially light-weight alloy, leaving its resistance to damage lacking compared to other DGR units.\n\n**JOYEUSE ALT-H.** This variant of the JOYEUSE unit returns some defensive ability by converting its right arm into a thicker shield unit, and replacing its jeweled blades with large variants intended to store kinetic energy caused by impacts. When they strike a target in a critical position, they can unleash the kinetic energy to blast the target from the inside. Furthermore, it is designed to be able to track the movement and vulnerabilities of multiple targets at once, instead of only one.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Reference%20-%20DGR%20022%20-%20JOYEUSE.jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Reference_BG%20-%20DGR%20022%20-%20JOYEUSE%20%5BALT-H%5D.jpg"
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Reference%20-%20DGR%20022%20-%20JOYEUSE.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Reference_BG%20-%20DGR%20022%20-%20JOYEUSE%20%5BALT-H%5D.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Reference%20-%20DGR%20022%20-%20JOYEUSE.jpg",
+      "Stat Block Tag": "Standard"
+    },
+    {
+      "Label": "Image 2",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Reference_BG%20-%20DGR%20022%20-%20JOYEUSE%20%5BALT-H%5D.jpg",
+      "Stat Block Tag": "ALT-H"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_022_joyeuse",
+      "section_type": "Stat Block",
+      "title": "DGR-022 - JOYEUSE",
+      "tag": "Standard",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "threshold": "10",
+      "hit_points": "145 (17d12 + 34)",
+      "speed": {
+        "walk": "45 ft.",
+        "fly": "100 ft. (hover)",
+        "other": "0-G acceleration 300 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 23,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Int +5"
+      ],
+      "skills": [
+        "Acrobatics +10",
+        "Deception +6",
+        "Insight +11"
+      ],
+      "resistances": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "armor_class": "18 (natural armor)",
+      "traits": [
+        {
+          "name": "Critical Judgment",
+          "name_format": "bold_italic",
+          "description": "When the DGR scores a critical hit on a melee attack, it can forgo the damage that attack would deal to force its target to make a DC 18 Constitution saving throw. On a failure, the target is seemingly cut by a dozen slashes at once, taking 26 (3d12 + 6) slashing damage and is made sluggish for 1 minute. At the end of each turn the creature is sluggish, they can repeat the saving throw, ending the effect on a success."
+        },
+        {
+          "name": "Momentous Technique",
+          "name_format": "bold_italic",
+          "description": "Each time the DGR scores a critical hit against a target, its subsequent damage rolls gain a +2 cumulative bonus against that target for 1 minute. This bonus only applies to their melee weapon attacks, and when they use Critical Judgment the damage from this bonus is tripled, after which the bonus against that target ends."
+        },
+        {
+          "name": "Rolling Critical Strikes",
+          "name_format": "bold_italic",
+          "description": "Each time the DGR hits with a weapon attack without scoring a critical hit, the d20 result they need to score a critical hit against that target is reduced by 1 (from 20 to 19, from 19 to 18, etc.). When they score a critical hit or make no weapon attack on their turn, this effect resets their critical range to its default. If this effect is turned toward a new target, the critical range against the first target is reset."
+        },
+        {
+          "name": "Thrashing Blade",
+          "name_format": "bold_italic",
+          "description": "The DGR’s slashing damage ignores damage thresholds and resistances. Also, once per attack, if a creature the DGR would have hit uses a reaction to increase their armor class, the DGR rolls a d8 and adds it to their own attack roll."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes four DGR Jewel Blade attacks or two DGR Blade Wave attacks."
+        },
+        {
+          "name": "DGR Jewel Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "DGR Blade Wave",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +10 to hit, range 60/240 ft., one target. Hit: 19 (2d12 + 6) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Future Calculation (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The DGR begins to run calculations that encroach on the realm of futuresight. Until the start of its next turn, the DGR has advantage on attack rolls, ability checks, and saving throws."
+        }
+      ]
+    },
+    {
+      "id": "dgr_022_joyeuse_alt_h",
+      "section_type": "Stat Block",
+      "title": "DGR-022 - JOYEUSE [ALT-H]",
+      "tag": "ALT-H",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "threshold": "10",
+      "hit_points": "145 (17d12 + 34)",
+      "speed": {
+        "walk": "45 ft.",
+        "fly": "100 ft. (hover)",
+        "other": "0-G acceleration 300 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 23,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Int +5"
+      ],
+      "skills": [
+        "Acrobatics +10",
+        "Deception +6",
+        "Insight +11"
+      ],
+      "resistances": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "armor_class": "21 (natural armor, shield)",
+      "traits": [
+        {
+          "name": "Critical Energy Bank",
+          "name_format": "bold_italic",
+          "description": "When the DGR scores a critical hit on a melee attack, it can forgo the damage that attack would deal to unleash a sphere of force, dispersing the energy contained within their weapons. Each creature (except the DGR) within 30 feet of the target must succeed a DC 18 Dexterity saving throw, taking 33 (6d10) force damage on a failed save, or half as much damage on a successful one."
+        },
+        {
+          "name": "Momentous Technique",
+          "name_format": "bold_italic",
+          "description": "Each time the DGR scores a critical hit against a target, its subsequent damage rolls gain a +2 cumulative bonus against that target for 1 minute. This bonus only applies to their melee weapon attacks, and when they use Critical Energy Bank the damage from this bonus is tripled, after which the bonus against that target ends."
+        },
+        {
+          "name": "Rolling Critical Accumulation",
+          "name_format": "bold_italic",
+          "description": "Each time the DGR hits with a weapon attack without scoring a critical hit, the d20 result they need to score a critical hit against a target is reduced by 1 (from 20 to 19, from 19 to 18, etc.). When they score a critical hit or make no weapon attack on their turn, this effect resets their critical range to its default."
+        },
+        {
+          "name": "Thrashing Blade",
+          "name_format": "bold_italic",
+          "description": "The DGR’s slashing damage ignores damage thresholds and resistances. Also, once per attack, if a creature the DGR would have hit uses a reaction to increase their armor class, the DGR rolls a d8 and adds it to their own attack roll."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two weapon attacks."
+        },
+        {
+          "name": "DGRE Jewel Blade (Ext)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 26 (3d12 + 6) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "DGR Shatter Cannon",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +10 to hit, range 50/200 ft., one target. Hit: 23 (3d10 + 6) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Future Calculation (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The DGR begins to run calculations that encroach on the realm of futuresight. Until the start of its next turn, the DGR has advantage on attack rolls, ability checks, and saving throws."
+        }
+      ]
+    }
+  ]
+}

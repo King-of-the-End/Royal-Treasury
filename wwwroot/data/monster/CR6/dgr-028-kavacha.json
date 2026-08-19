@@ -1,0 +1,336 @@
+{
+  "Name": "DGR-028 - KAVACHA",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Considered a “mobile battle armor” among the DGRs, the KAVACHA unit was an admission that further units after 027 should be equipped for smaller, more intimate battlefields. They do not feature a cockpit cavity, rather they have a roughly humanoid-shaped hollow that allows the pilot to project their senses and muscle control into the unit. They are equipped for intense interpersonal combat at ground level, and are built to be fast, efficient with their extended DGR blades, and capable of intense bursts of activity.\n\nThe creation of this unit led to “nesting” experiments with particularly large DGR units, wherein placing smaller manned DGRs within larger units as pilots was considered for the purposes of combining their strengths and abilities. Alas, without the ability to junction reliably this became a difficult matter and was not mastered by the time the DGRs were taken out of commission.\n\n**KAVACHA ALT.** Redesigned for sentinel work and long-range combat, the KAVACHA ALT is equipped with a large greatbow instead of a blade, and its capabilities have been geared toward suppressing threats from a distance.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference%20-%20DGR%20028%20-%20KAVACHA.jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference_BG%20-%20DGR%20028%20-%20KAVACHA%20%5BALT-H%5D.jpg"
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference%20-%20DGR%20028%20-%20KAVACHA.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference_BG%20-%20DGR%20028%20-%20KAVACHA%20%5BALT-H%5D.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference%20-%20DGR%20028%20-%20KAVACHA.jpg",
+      "Stat Block Tag": "Standard"
+    },
+    {
+      "Label": "Image 2",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference_BG%20-%20DGR%20028%20-%20KAVACHA%20%5BALT-H%5D.jpg",
+      "Stat Block Tag": "ALT-R"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_028_kavacha",
+      "section_type": "Stat Block",
+      "title": "DGR-028 - KAVACHA",
+      "tag": "Standard",
+      "creature": {
+        "size": "Large",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "18 (natural armor)",
+      "threshold": "10",
+      "hit_points": "85 (10d10 + 30)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "other": "0-G acceleration 120 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Str +7",
+        "Wis +6"
+      ],
+      "skills": [
+        "Athletics +7",
+        "Investigation +11",
+        "Perception +7"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Minor Excel Reactor (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR can invoke one of the following effects as applicable so long as it isn’t incapacitated:",
+          "subentries": [
+            {
+              "name": "",
+              "description": "Until the start of its next turn, the DGR makes its attack rolls, ability checks, or saving throws with advantage."
+            },
+            {
+              "name": "",
+              "description": "When the DGR would take damage from an attack it can see, it erects a barrier and takes 20 fewer points of damage instead."
+            },
+            {
+              "name": "",
+              "description": "When the DGR is reduced to 0 hit points it may roll 1d100 - on a result of 61 or higher it is reduced to 1 hit point instead."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two weapon attacks. If the unit’s pilot is capable of making more than two attacks through a feature such as Multiattack or Extra Attack, the DGR can make as many weapon attacks as the pilot would be able to."
+        },
+        {
+          "name": "DGR Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage. If the target is Medium or smaller they are knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "DGR Blitz Greatsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 13 (1d12 + 6) slashing damage plus 7 (1d12) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tether Bow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 10 (1d12 + 4) piercing damage, and if the target is Large or smaller the DGR may pull them up to 15 feet toward itself. If this would leave them within 5 feet of the DGR they can make a single Slam attack against the target as a bonus action.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "DGR Blade Envelope (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "All creatures that DGR chooses within 15 feet of it are assailed by a high-speed series of energy blade strikes, and must make a DC 15 Dexterity saving throw, taking 23 (2d12 + 10) lightning damage on a failed save. Alternatively the DGR can force only one creature within 60 feet to make the saving throw - if they do so, the target takes 49 (6d12 + 10) lightning damage on a failed save, or half as much damage on a successful one (and in either case the DGR moves to an unoccupied space within 5 feet of the target. This movement functions as a teleport speed)."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Burst Engine",
+          "name_format": "bold_italic",
+          "description": "The DGR takes the Dash action."
+        }
+      ]
+    },
+    {
+      "id": "dgr_028_kavacha_alt_r",
+      "section_type": "Stat Block",
+      "title": "DGR-028 - KAVACHA [ALT-R]",
+      "tag": "ALT-R",
+      "creature": {
+        "size": "Large",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "20 (natural armor, shield)",
+      "threshold": "10",
+      "hit_points": "85 (10d10 + 30)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft.",
+        "other": "0-G acceleration 180 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Wis +7"
+      ],
+      "skills": [
+        "Acrobatics +7",
+        "Investigation +7",
+        "Perception +11"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Minor Excel Reactor (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR can invoke one of the following effects as applicable so long as it isn’t incapacitated:",
+          "subentries": [
+            {
+              "name": "",
+              "description": "Until the start of its next turn, the DGR makes ranged attacks at its long range with advantage instead of disadvantage."
+            },
+            {
+              "name": "",
+              "description": "When the DGR would take damage from an attack it can see, it erects a barrier and takes 20 fewer points of damage instead."
+            },
+            {
+              "name": "",
+              "description": "In response to an attack it can see targeting it, the DGR increases its armor class by its proficiency bonus until the end of the turn. It can stack this effect multiple times."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two weapon attacks. If the unit’s pilot is capable of making more than two attacks through a feature such as Multiattack or Extra Attack, the DGR can make as many weapon attacks as the pilot would be able to."
+        },
+        {
+          "name": "DGR Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage. If the target is Medium or smaller they are knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "DGR Blitz Greatbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 15 (2d10 + 4) lightning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Enhanced Tether Bow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 60 ft., one target. Hit: 11 (1d12 + 4) piercing damage, and if the target is Large or smaller the DGR may pull them up to 30 feet toward itself. If this would leave them within 5 feet of the DGR, they can make a single Slam attack against the target as a bonus action.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "DGR Pinning Strike (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The DGR loads up to three arcane arrows into its DGR Blitz Bow and fires them each at a different target the DGR can see within 150 feet. Each target must make a DC 15 Dexterity saving throw, and on a failure the arrow sends an electric current through their bodies that causes them to be paralyzed until the end of their next turn."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Burst Engine",
+          "name_format": "bold_italic",
+          "description": "The DGR takes the Dash action."
+        }
+      ]
+    }
+  ]
+}

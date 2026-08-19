@@ -1,0 +1,175 @@
+{
+  "Name": "DGR-008 - AME-NO-NUHOKO",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "DGR-008 AME-NO-NUHOKO was once operated by the greater archer and sentry among the rebel framebilt. It is a unit built for speed and versatility, able to summon and fight with two eidotech naginatas that can alter their frequency to adopt energy types that might give them an edge over their opponents. It was also called the Warp Dragoon by other DGR pilots as an observation on its speed and ability to teleport short distances.\n\nWhen the DGRs were lost and blasted from the sky, the pilot of AME-NO-NUHOKO and the DGR were elsewhere, investigating a possible flaw in their plan. The unit is known to have briefly confronted and battled Huunde when their betrayal was discovered, but their battle was inconclusive and DGR-008 was unable to return to the battlefield before Lycrothemia’s Lunar Devastation blasted the DGR forces from the sky. What became of AME-NO-NUHOKO afterwards is unknown.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20DGR-008%20-%20AME-NO-NUHOKO.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_008_ame_no_nuhoko",
+      "section_type": "Stat Block",
+      "title": "DGR-008 - AME-NO-NUHOKO",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "22 (natural armor)",
+      "threshold": "15",
+      "hit_points": "190 (20d12 + 60)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "80 ft. (hover)",
+        "other": "0-G acceleration 220 ft."
+      },
+      "quality_traits": [
+        "Magical",
+        "Immutable",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Dex +12",
+        "Int +9"
+      ],
+      "skills": [
+        "Acrobatics +12",
+        "Perception +15"
+      ],
+      "resistances": [
+        "thunder",
+        "lightning",
+        "cold",
+        "fire",
+        "piercing, slashing and bludgeoning from nonmagical weapons"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 25"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "+6",
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "traits": [
+        {
+          "name": "Thesite Alloy Plating",
+          "name_format": "bold_italic",
+          "description": "The DGR is resistant to all damage originating from Medium and smaller creatures."
+        },
+        {
+          "name": "Thoughtless Advance",
+          "name_format": "bold_italic",
+          "description": "The DGR has advantage on initiative checks."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three weapon attacks."
+        },
+        {
+          "name": "Heavenly Naginata",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 13 (1d12 + 6) slashing damage. Each time the DGR hits with this weapon they can choose a damage type between thunder, lightning, cold and fire - that attack deals an additional 13 (2d12) damage of that type.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Severance of Land and Heaven (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR charges its Heavenly Naginata with a vortex of energy and hurls it at a target it can see within 480 feet. That target must succeed a DC 20 Dexterity saving throw or take 20 (3d12) piercing damage plus 17 (3d10) fire damage plus 17 (3d10) lightning damage plus 17 (3d10) thunder damage plus 17 (3d10) cold damage. If the target fails by 5 points or more their movement speed is reduced to 0 until the end of their next turn. This damage is eidolic."
+        },
+        {
+          "name": "Localized Phase Shift",
+          "name_format": "bold_italic",
+          "description": "The DGR teleports to an unoccupied space it can see within 120 feet."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Mach Thrust",
+          "name_format": "bold_italic",
+          "description": "The DGR’s movement speed doubles until the start of its next turn."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Deflect",
+          "name_format": "bold_italic",
+          "description": "When the DGR is hit with a weapon attack it is aware of, it can increase its armor class by half its proficiency bonus (rounded down) until the end of this turn, including against the triggering attack."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Legendary Reactions": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**DGR-008 - AME-NO-NUHOKO**\n*Huge construct (DGR), unaligned [footprint 3]*\n**Armor Class** 22 (natural armor) **Threshold** 15\n**Hit Points** 190 (20d12 + 60)\n**Speed** 40 ft., fly 80 ft. (hover), 0-G acceleration 220 ft.\n**Quality Traits** Magical, immutable, unique\n**STR** 20 (+5) | **DEX** 22 (+6) | **CON** 17 (+3) | **INT** 18 (+4) | **WIS** 20 (+5) | **CHA** 10 (+0)\n**Saving Throws** Dex +12, Int +9\n**Skills** Acrobatics +12, Perception +15\n**Resistances** thunder, lightning, cold, fire; piercing, slashing and bludgeoning from nonmagical weapons\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 120 ft., passive Perception 25\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 17 (18,000 XP) **Prof Bonus** +6\n\n**LEGENDARY REACTIONS (2 USES)**\nTBA.\n\n***Thesite Alloy Plating.*** The DGR is resistant to all damage originating from Medium and smaller creatures.\n\n***Thoughtless Advance.*** The DGR has advantage on initiative checks.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three weapon attacks.\n\n***Heavenly Naginata.*** *Melee Weapon Attack:* +12 to hit, reach 10 ft., one target. *Hit:* 13 (1d12 + 6) slashing damage. Each time the DGR hits with this weapon they can choose a damage type between thunder, lightning, cold and fire - that attack deals an additional 13 (2d12) damage of that type.\n\n***Severance of Land and Heaven (Recharge 6).*** The DGR charges its Heavenly Naginata with a vortex of energy and hurls it at a target it can see within 480 feet. That target must succeed a DC 20 Dexterity saving throw or take 20 (3d12) piercing damage plus 17 (3d10) fire damage plus 17 (3d10) lightning damage plus 17 (3d10) thunder damage plus 17 (3d10) cold damage. If the target fails by 5 points or more their movement speed is reduced to 0 until the end of their next turn. This damage is eidolic.\n\n***Localized Phase Shift.*** The DGR teleports to an unoccupied space it can see within 120 feet.\n\n**BONUS ACTIONS**\n***Mach Thrust.*** The DGR’s movement speed doubles until the start of its next turn.\n\n**REACTIONS**\n***Deflect.*** When the DGR is hit with a weapon attack it is aware of, it can increase its armor class by half its proficiency bonus (rounded down) until the end of this turn, including against the triggering attack."
+    }
+  ]
+}

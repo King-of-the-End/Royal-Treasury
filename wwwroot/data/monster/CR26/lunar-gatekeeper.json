@@ -1,0 +1,188 @@
+{
+  "Name": "Lunar Gatekeeper",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "This construct is arguably the most powerful known construct currently active in the cosmos. It was designed to support and mirror the Sword of Damocles, but neither were completed in time to deploy against the Grand Primaries. After Mnemosyne’s rebellion against the gods and the events of the War in One Moment, Copehtor’s use of the Sword of Damocles to target Vestias gave her pause, and she deemed it necessary to put protections in place against such a thing happening again. Though not as powerful, this construct was completed by the framebilt who remained after the war, with the intent of a specific framebilt being chosen to act as its operating core. This project was dubbed “the Plate”, meant to serve as a shield in contrast to the Sword of Damocles.\n\nShortly afterwards, the framebilt’s ability to build weapons of this nature was spoken of among the remaining Eidolons. The One with Chaos agreed to have his memory of their inspiration mentally blocked, and the framebilt who remained were placed in a stasis that they would one day awaken from, but only once their memories of this work was thoroughly purged. Lacking the operator she would need to properly regulate the Plate, Vestias placed a fragment of herself within it and gave it life as an aspect of divine power, as well as assigning it the role of protector of Lycrothemia. Though the moon has a massive sphere of abjurative interference that prevents teleportation within 18,000 km of it, this construct can teleport there freely. Once assigned this role and made into an aspect of the goddess, its name was changed from the Plate to the Lunar Gatekeeper.\n\n**Construct Nature.** The Lunar Gatekeeper doesn’t require food, drink or air.\n\n**Guardian of the Gloomlush.** When not needed in space, this construct guards Vestias’ divine realm, the Tower of Binding, where it hangs from the rocky, unseen ceilings of the Gloomlush and keeps watch over the Tower, the Crossroads below, and the area of the realm surrounding it. It is Vestias’ guard dog, and she has taken great care to make sure that records of it within mortal hands are expunged. The Eidolons strictly police the knowledge required to create such superweapons, and any who begin such a search soon find their work sealed within Vulta de Congenio.\n\n**Conditional Use.** Due to the level of power it possesses, the Eidolons allow Vestias to keep this construct in operation under one condition: it is subject to the same restrictions by the Divine Curtain as all of the Eidolons, and only with the collective approval of all of them can it appear in Somnus Domina. This only refers to a terrestrial appearance, however, and it is capable of appearing in space without issue.\n\n**Armaments.** The Lunar Gatekeeper possesses some of the most advanced weaponry in Somnus Domina and its adjacent planes, outfitted and maintained both by Vestias and the workers who constructed it.\n\n**The Storm Cylinder Railgun.** Built into the Gatekeeper is a special eidolic resonator that perpetually absorbs and stores eidomantic radiation from the atmosphere and pressurises it into charges that it can fire at extreme distances, firing either as a localized beam or a distant explosive charge. This was named the Storm Cylinder Railgun by Vestias, who compares it to unleashing the full power of a natural disaster all at once. Though its maximum operative range is 12 km, this can be extended if it spends an hour calculating its target and uses all of its charges, in which case it can fire at any target it has direct line of sight to, and the blast radius of its detonation increases to up to 25 square kilometers. If used this way it cannot recharge again for another week, during which time it must recreate new cylinder charges.\n\n**HR Arcane Spears.** The Gatekeeper can conjure large pointed projectiles made of eidomantic energy, and either hurl them from afar or simply launch them. These high-range missiles resemble massive spears of light, and are the primary means by which the Gatekeeper repels targets within the Gloomlush.\n\n**Thesite Alloy Plating.** Though not as pure as the pure thesite used to construct the Sword of Damocles, the Lunar Gatekeeper’s body is a thesite alloy that grants it resistance to most environmental factors and from mundane weapons. It would be able to survive a fall from any distance and the extreme conditions of atmospheric re-entry without any trouble, and by expelling energy through its conductive alloy plating it can move through space and zero-gravity environments with ease.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR26/Lunar%20Gatekeeper%20(Blur).jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR26/Lunar%20Gatekeeper%20(Blur).jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR26/Lunar%20Gatekeeper%20(Blur).jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lunar_gatekeeper",
+      "section_type": "Stat Block",
+      "title": "Lunar Gatekeeper",
+      "creature": {
+        "size": "Supermassive",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 5"
+        ]
+      },
+      "armor_class": "23 (natural armor)",
+      "threshold": "20",
+      "hit_points": "546 (28d20 + 252)",
+      "speed": {
+        "walk": "100 ft.",
+        "climb": "100 ft.",
+        "other": "0-G acceleration 320 ft."
+      },
+      "quality_traits": [
+        "Deific",
+        "Immutable",
+        "Massive (H/15 feet/DC 22)",
+        "Magic Immunity",
+        "Siege",
+        "Spider Climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 28,
+          "modifier": "+9"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Con +17",
+        "Int +9",
+        "Wis +13",
+        "Cha +12"
+      ],
+      "skills": [
+        "Athletics +16",
+        "Perception +21"
+      ],
+      "resistances": [
+        "B/S/P (eidolic)"
+      ],
+      "immunities": [
+        "necrotic",
+        "psychic",
+        "poison",
+        "B/S/P (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "petrified",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 480 ft.",
+        "passive Perception 31"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "26 (90,000 XP)",
+      "proficiency_bonus": "+8",
+      "traits": [
+        {
+          "name": "Astra-Lunar Transmission Drive",
+          "name_format": "bold_italic",
+          "description": "If the Gatekeeper spends at least 1 minute concentrating on doing so, it can open a gate that cuts through the Astral Sea, emerging in any space the gatekeeper chooses and in a plane it is familiar with. This teleportation is capable of bypassing Lycrothemia’s sphere of abjurative interference."
+        },
+        {
+          "name": "Legendary Resistance (2/Day)",
+          "name_format": "bold_italic",
+          "description": "When the Gatekeeper fails a saving throw, it can choose to succeed instead."
+        },
+        {
+          "name": "Lunar Guardian",
+          "name_format": "bold_italic",
+          "description": "If the Gatekeeper is within Lycrothemia’s sphere of abjurative interference, it is empowered by the moon’s ambient eidomantic radiation and adds a bonus to its AC and attack rolls equal to its proficiency bonus, as well as regaining 100 hit points at the start of each of its turns as long as it starts that turn with at least 1 hit point. When appearing to engage a threat on Lycrothemia it can also alter its size to match anything that is Planetary in size or smaller, as needed."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The Gatekeeper makes two attacks, choosing from its HR Arcane Spear or its Thesite Claw for either."
+        },
+        {
+          "name": "Thesite Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +15 to hit, reach 30 ft., one target. Hit: 18 (2d10 + 7) slashing damage plus 13 (2d12) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "HR Arcane Spear",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +11 to hit, range 2400/7200 ft., one target. Hit: 33 (6d10) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Storm Cylinder Railgun (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The Gatekeeper charges and fires a high-density burst of electrical and eidomantic energy in a 15-foot-wide line that can extend up to 1200 feet. All creatures in that space must succeed on a DC 25 Dexterity saving throw or take 44 (8d10) lightning damage and 39 (6d12) force damage.\n\nAlternatively, it is capable of targeting a space up to 12,000 ft. away that the Gatekeeper can see, but in this case causes a detonation in a 50-foot-radius sphere. This forces all targets within range to make the same DC 25 Dexterity saving throw, taking 28 (5d10) lightning damage and 26 (4d12) force damage and are stunned until the end of the Gatekeeper’s next turn on a failed save, or half as much on a success."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Sentinel Strike (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "The first opportunity attack made by Gatekeeper each turn does not cost or require its reaction, and if it hits a creature their remaining movement is reduced to 0 until the end of the turn."
+        },
+        {
+          "name": "Spell Reflection",
+          "name_format": "bold_italic",
+          "description": "When the Gatekeeper negates a spell targeting it, or succeeds a saving throw against a spell that results in it avoiding that spell’s effects entirely, it briefly stores that spell’s effects. While it has the spell stored, it can use its bonus action to cast that spell with the same effects, at the same level, requiring no spell slot or components and using its own spell attack bonus (+14) or spell save DC (22), both of which are Charisma-based. It loses its stored spell when it stores a new one, or after 1 minute passes."
+        }
+      ],
+      "legendary_action_count": 3,
+      "legendary_actions": [
+        {
+          "name": "Move",
+          "name_format": "bold_italic",
+          "description": "The Gatekeeper moves up to its movement speed."
+        },
+        {
+          "name": "Shockwave (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The Gatekeeper fires a burst of kinetic energy at a point it can see within 120 feet, which strikes all creatures in a 20-foot-radius centered there. Each creature in range must succeed on a DC 23 Strength saving throw or be knocked prone and pushed 10 feet away from the center of the blast."
+        },
+        {
+          "name": "HR Spear Prison (Costs 3 Actions)",
+          "name_format": "bold_italic",
+          "description": "The Gatekeeper fires a series of its HR Arcane Spears at up to three targets within 240 feet. Each target must succeed a DC 23 Dexterity saving throw or take 33 (6d10) force damage and have their movement speed reduced to 0 until the end of their next turn."
+        }
+      ]
+    }
+  ]
+}

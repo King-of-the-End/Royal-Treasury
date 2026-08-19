@@ -1,0 +1,166 @@
+{
+  "Name": "DGR-005 - JÁRNGREIPR",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Like all units between 04 and 09, the JÁRNGREIPR is a unique command unit designed for a specific framebilt general or eidolos. These units, referred to as General-Class DGRs, are a step above the regular class of DGR, but are not as powerful as the ProtoDGRs. JÁRNGREIPR was created to deal devastating damage, with physical strength only matched by the ProtoDGRs themselves.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20DGR-005%20-%20JA%CC%81RNGREIPR.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_005_jarngreipr",
+      "section_type": "Stat Block",
+      "title": "DGR-005 - JÁRNGREIPR",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "20 (natural armor)",
+      "threshold": "15",
+      "hit_points": "230 (20d12 + 100)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "other": "0-G acceleration 180 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "Immutable",
+        "Magical",
+        "Siege",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Wis +10"
+      ],
+      "skills": [
+        "Athletics +13",
+        "Perception +10"
+      ],
+      "resistances": [
+        "lightning",
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "+6",
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "traits": [
+        {
+          "name": "Thesite Alloy Plating",
+          "name_format": "bold_italic",
+          "description": "The DGR is resistant to all damage originating from Medium and smaller creatures."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three weapon attacks."
+        },
+        {
+          "name": "Buster Arm",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 24 (3d10 + 7) piercing damage. The first time a target is hit by the DGR’s Buster Arm each turn they must succeed a DC 21 Strength saving throw or be knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Missile Pod",
+          "name_format": "bold_italic",
+          "description": "The DGR fires a series of missiles at up to 6 creatures it chooses within 60 feet. Each target must succeed a DC 18 Dexterity saving throw or take 26 (4d12) fire damage."
+        },
+        {
+          "name": "Eidomantic Arrow Rail (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR charges a burst of eidomantic energy and fires it at a point it can see within 120 feet. The burst explodes in a 20-foot-radius sphere, forcing all targets within it to make a DC 19 Dexterity saving throw, dealing 65 (10d10 + 10) eidolic lightning damage on a failed save, or half as much on a successful one."
+        },
+        {
+          "name": "Mach Boost",
+          "name_format": "bold_italic",
+          "description": "The DGR’s movement speed doubles until the start of its next turn and it immediately takes the Dash action."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Buster Anchor",
+          "name_format": "bold_italic",
+          "description": "The DGR fires one of its arms at a target within 60 feet, which magically connects back to the DGR by an eidomantic tether. The DGR makes an attack against that target using its Buster Arm attack bonus. If it hits, the target is dragged up to 40 feet toward the DGR, including being pulled into the air if the DGR is above them. If they are pulled into a space adjacent to the DGR, the creature is grappled. This does not affect targets the DGR cannot grapple."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Legendary Reactions": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-005 - JÁRNGREIPR**\n*Huge construct (DGR), unaligned [footprint 3]*\n**Armor Class** 20 (natural armor) **Threshold** 15\n**Hit Points** 230 (20d12 + 100)\n**Speed** 40 ft., fly 60 ft. (hover), 0-G acceleration 180 ft.\n**Quality Traits** Critical 19, immutable, magical, siege, unique\n**STR** 24 (+7) | **DEX** 18 (+4) | **CON** 20 (+5) | **INT** 14 (+2) | **WIS** 18 (+4) | **CHA** 10 (+0)\n**Saving Throws** Dex +10, Wis +10\n**Skills** Athletics +13, Perception +10\n**Resistances** lightning; B/S/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 120 ft., passive Perception 20\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 18 (20,000 XP) **Proficiency Bonus** +6\n\n**LEGENDARY REACTIONS (2 USES)**\nTBA.\n\n***Thesite Alloy Plating.*** The DGR is resistant to all damage originating from Medium and smaller creatures.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three weapon attacks.\n\n***Buster Arm.*** *Melee Weapon Attack:* +13 to hit, reach 5 ft., one target. *Hit:* 24 (3d10 + 7) piercing damage. The first time a target is hit by the DGR’s Buster Arm each turn they must succeed a DC 21 Strength saving throw or be knocked prone.\n\n***Missile Pod.*** The DGR fires a series of missiles at up to 6 creatures it chooses within 60 feet. Each target must succeed a DC 18 Dexterity saving throw or take 26 (4d12) fire damage.\n\n***Eidomantic Arrow Rail (Recharge 6).*** The DGR charges a burst of eidomantic energy and fires it at a point it can see within 120 feet. The burst explodes in a 20-foot-radius sphere, forcing all targets within it to make a DC 19 Dexterity saving throw, dealing 65 (10d10 + 10) eidolic lightning damage on a failed save, or half as much on a successful one.\n\n***Mach Boost.*** The DGR’s movement speed doubles until the start of its next turn and it immediately takes the Dash action.\n\n**BONUS ACTIONS**\n***Buster Anchor.*** The DGR fires one of its arms at a target within 60 feet, which magically connects back to the DGR by an eidomantic tether. The DGR makes an attack against that target using its Buster Arm attack bonus. If it hits, the target is dragged up to 40 feet toward the DGR, including being pulled into the air if the DGR is above them. If they are pulled into a space adjacent to the DGR, the creature is grappled. This does not affect targets the DGR cannot grapple."
+    }
+  ]
+}

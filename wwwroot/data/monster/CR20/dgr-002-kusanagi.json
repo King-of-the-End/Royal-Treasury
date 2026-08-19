@@ -1,0 +1,204 @@
+{
+  "Name": "DGR-002 - KUSANAGI",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The KUSANAGI unit is based upon the high-speed capabilities of the Sword of Damocles. This draconian construct distorts air and gravity around it, allowing it to accelerate quickly - much faster than any other DGR unit. It can generate high amounts of electricity that it unleashes in its offensive assaults.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Reference_BG%20-%20DGR%20002%20-%20KUSANAGI.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_002_kusanagi",
+      "section_type": "Stat Block",
+      "title": "DGR-002 - KUSANAGI",
+      "creature": {
+        "size": "Colossal",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 4"
+        ]
+      },
+      "armor_class": "24 (natural armor)",
+      "threshold": "15",
+      "hit_points": "290 (20d20 + 80)",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "120 ft. (hover)",
+        "other": "0-G acceleration 240 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "Immutable",
+        "Massive (L/15 feet/DC 20)",
+        "Siege",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +14",
+        "Int +8",
+        "Cha +8"
+      ],
+      "skills": [
+        "Perception +11"
+      ],
+      "resistances": [
+        "B/S/P (eidolic)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/S/P (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "petrified",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 240 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Emergency Activation (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When the DGR would be reduced to 0 hit points or killed outright, its current hit point total resets to 150 hit points, it recovers from any conditions affecting it, and it gains access to its Mythic Actions and options in the “Mythic Actions” section for 1 hour. During this time it also becomes immune to lightning damage and gains truesight out to 120 feet. Award a party an additional 25,000 XP (for 50,000 XP total) for defeating the DGR after using its Emergency Activation."
+        },
+        {
+          "name": "Warp Transmission",
+          "name_format": "bold_italic",
+          "description": "By concentrating for 1 minute, the DGR is able to initiate its malfunctioning astral transmission drive to open a fissure between two points on the same plane it is on, emerging in any space it chooses that it is familiar with. Unlike how this ability would work with a functioning drive, this does not pass through the astral sea."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three weapon attacks, choosing between its Claw and Thunder Arrow. If its Eidomantic Glaive is available, it can make one of those attacks using it instead."
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +13 to hit, reach 20 ft., one target. Hit: 23 (3d10 + 6) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Thunder Arrow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +12 to hit, range 600 feet, one target. Hit: 14 (3d8) piercing damage plus 14 (3d8) lightning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Eidomantic Glaive (Mythic Action)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +13 to hit, reach 40 ft., one target. Hit: 41 (6d10 + 8) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mach Boost",
+          "name_format": "bold_italic",
+          "description": "The DGR doubles its movement speed until the start of its next turn and immediately takes the Dash action."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "The DGR moves up to its movement speed."
+          },
+          {
+            "name": "Recoil Wave (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The DGR releases a burst of force that strikes all creatures within 30 feet of it, forcing them to make a DC 20 Strength saving throw. On a failure they are pushed back 120 feet and are knocked prone. Creatures that strike a solid surface which stops their movement short take 1d6 bludgeoning damage for every 10 feet they were successfully moved, as if they had fallen that distance."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "If the DGR’s Emergency Activation trait has activated in the last hour, it can use the options below as Legendary Actions.",
+        "options": [
+          {
+            "name": "Hurl Glaive",
+            "name_format": "bold_italic",
+            "description": "The DGR hurls its Eidomantic Glaive at a target within 640 feet as a Ranged Weapon Attack: +13 to hit. It then returns to the DGR’s hand.",
+            "inline_formatting": {
+              "Ranged Weapon Attack": "italic"
+            }
+          },
+          {
+            "name": "Sky God Bombardment",
+            "name_format": "bold_italic",
+            "description": "The DGR fires a burst of energy at a point it can see within 480 feet, where a 30-foot-radius sphere of energy erupts. Each creature in range must make a DC 18 Dexterity saving throw, taking 36 (8d8) lightning damage on a failed save."
+          },
+          {
+            "name": "Helix Barrier",
+            "name_format": "bold_italic",
+            "description": "The DGR chooses one point within 120 feet of itself, from which a circular 60-foot-radius pane of energy made of hexagonal panels forms, which remains until the start of the DGR’s next turn. It can be oriented any way the DGR wishes. This pane has the same properties as the wall of force spell. If a creature attempts to see or target anything on one side from the other, the pane heavily obscures the subject.",
+            "inline_formatting": {
+              "wall of force": "italic"
+            }
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-002 - KUSANAGI**\n*Colossal construct (DGR), unaligned [footprint 4]*\n**Armor Class** 24 (natural armor) **Threshold** 15\n**Hit Points** 290 (20d20 + 80)\n**Speed** 60 ft., fly 120 ft. (hover), 0-G acceleration 240 ft.\n**Quality Traits** Eidolic, immutable, massive (L/15 feet/20), siege, unique\n**STR** 24 (+7) | **DEX** 22 (+6) | **CON** 18 (+4) | **INT** 14 (+2) | **WIS** 20 (+5) | **CHA** 14 (+2)\n**Saving Throws** Dex +14, Int +8, Cha +8\n**Skills** Perception +11\n**Resistances** B/S/P (eidolic)\n**Immunities** necrotic, poison; B/S/P (eidolic or magical)\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, petrified, poisoned, unconscious\n**Senses** blindsight 240 ft., passive Perception 21\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 20 (25,000 XP) **Proficiency Bonus** +6\n\n***Emergency Activation (Mythic Awakening).*** When the DGR would be reduced to 0 hit points or killed outright, its current hit point total resets to 150 hit points, it recovers from any conditions affecting it, and it gains access to its Mythic Actions and options in the “Mythic Actions” section for 1 hour. During this time it also becomes immune to lightning damage and gains truesight out to 120 feet. Award a party an additional 25,000 XP (for 50,000 XP total) for defeating the DGR after using its Emergency Activation.\n\n***Warp Transmission.*** By concentrating for 1 minute, the DGR is able to initiate its malfunctioning astral transmission drive to open a fissure between two points on the same plane it is on, emerging in any space it chooses that it is familiar with. Unlike how this ability would work with a functioning drive, this does not pass through the astral sea.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three weapon attacks, choosing between its Claw and Thunder Arrow. If its Eidomantic Glaive is available, it can make one of those attacks using it instead.\n\n***Claw.*** *Melee Weapon Attack:* +13 to hit, reach 20 ft., one target. *Hit:* 23 (3d10 + 6) slashing damage.\n\n***Thunder Arrow.*** *Ranged Weapon Attack:* +12 to hit, range 600 feet, one target. *Hit:* 14 (3d8) piercing damage plus 14 (3d8) lightning damage.\n\n***Eidomantic Glaive (Mythic Action).*** *Melee Weapon Attack:* +13 to hit, reach 40 ft., one target. *Hit:* 41 (6d10 + 8) lightning damage.\n\n***Mach Boost.*** The DGR doubles its movement speed until the start of its next turn and immediately takes the Dash action.\n\n**LEGENDARY ACTIONS (2 ACTIONS)**\n***Move.*** The DGR moves up to its movement speed.\n\n***Recoil Wave (Costs 2 Actions).*** The DGR releases a burst of force that strikes all creatures within 30 feet of it, forcing them to make a DC 20 Strength saving throw. On a failure they are pushed back 120 feet and are knocked prone. Creatures that strike a solid surface which stops their movement short take 1d6 bludgeoning damage for every 10 feet they were successfully moved, as if they had fallen that distance.\n\n**MYTHIC ACTIONS**\nIf the DGR’s Emergency Activation trait has activated in the last hour, it can use the options below as Legendary Actions.\n\n***Hurl Glaive.*** The DGR hurls its Eidomantic Glaive at a target within 640 feet as a *Ranged Weapon Attack:* +13 to hit. It then returns to the DGR’s hand.\n\n***Sky God Bombardment.*** The DGR fires a burst of energy at a point it can see within 480 feet, where a 30-foot-radius sphere of energy erupts. Each creature in range must make a DC 18 Dexterity saving throw, taking 36 (8d8) lightning damage on a failed save.\n\n***Helix Barrier.*** The DGR chooses one point within 120 feet of itself, from which a circular 60-foot-radius pane of energy made of hexagonal panels forms, which remains until the start of the DGR’s next turn. It can be oriented any way the DGR wishes. This pane has the same properties as the *wall of force* spell. If a creature attempts to see or target anything on one side from the other, the pane heavily obscures the subject."
+    }
+  ]
+}

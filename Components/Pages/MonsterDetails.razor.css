@@ -837,6 +837,48 @@
 
 
 /* =========================================
+   MONSTER-SPECIFIC LORE TABLE TITLE
+   ========================================= */
+
+.monster-specific-lore-table {
+
+    margin-top:
+        1.25rem;
+}
+
+
+.monster-specific-lore-table h3 {
+
+    margin:
+        0
+        0
+        0.65rem;
+
+
+    color:
+        var(--gold-light);
+
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+        1.2rem;
+
+
+    font-weight:
+        800;
+
+
+    line-height:
+        1.25;
+}
+
+
+/* =========================================
    LORE TABLES
    ========================================= */
 

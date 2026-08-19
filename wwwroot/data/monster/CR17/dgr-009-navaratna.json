@@ -1,0 +1,250 @@
+{
+  "Name": "DGR-009 - NAVARATNA",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Created to be the vessel for a pilot who was a naturally talented eidomancer and believed to be an exarch, this unit was imbued with a soul unlike any other DGR. The creature who was used as its foundation was close to death, and was close to its pilot - it is believed that he allowed himself to become the operating system of the unit to remain with the pilot forever. Due to this, the unit is capable of communication (though only through the system of DGR units) and is able to speak and reason with others. It is also unique in that no PML unit can seize control of it, and it must allow its pilot to control it regardless of the grade of the PML. The DGR’s strengths lie in using an advanced eidomantic resonator to alter the world around it via its Ring of Nine Punishments. Many Framebilt at the time of its creation believed this to be the last true success after the ProtoDGRs.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20DGR-009%20-%20NAVARATNA.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_009_navaratna",
+      "section_type": "Stat Block",
+      "title": "DGR-009 - NAVARATNA",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "neutral good",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "18 (natural armor)",
+      "threshold": "15",
+      "hit_points": "150 (20d12 + 20)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)",
+        "other": "0-G acceleration 180 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magic Immunity 5th",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +8",
+        "Wis +10",
+        "Cha +8"
+      ],
+      "skills": [
+        "Arcana +12",
+        "Insight +10"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "blindsight 120 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "understands all but doesn’t speak",
+        "telepathy 30 ft. (DGR pilots only)"
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "+6",
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "traits": [
+        {
+          "name": "Spell Reflection",
+          "name_format": "bold_italic",
+          "description": "When the DGR succeeds on the first saving throw against a spell where it is the only target and beats the DC by at least 5 points, it can choose a target within 90 feet of it to become the spell’s new target."
+        },
+        {
+          "name": "Thesite Alloy Plating",
+          "name_format": "bold_italic",
+          "description": "The DGR is resistant to all damage originating from Medium and smaller creatures."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two DGR Strike attacks, then uses its Ring of Nine Punishments if it is available."
+        },
+        {
+          "name": "DGR Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Ring of Nine Punishments (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The DGR is accompanied by a semicircle composed of nine eidomantic resonators, each fitted with a different gemstone. When activated, the DGR rolls a d10 four times, and compares the result to the options below. They can then have each of the four results target a creature of their choice within 90 feet, using the listed effect. The same creature can only be targeted by up to two results at one time.",
+          "subentries": [
+            {
+              "name": "1 - Hellfire Beam",
+              "name_format": "bold_italic",
+              "description": "A burst of fiery energy strikes the target. The target must succeed on a DC 20 Dexterity saving throw or take 43 (6d10 + 10) fire damage."
+            },
+            {
+              "name": "2 - Warp Strike",
+              "name_format": "bold_italic",
+              "description": "The DGR teleports into a space adjacent to the target and makes two DGR Strike attacks against them."
+            },
+            {
+              "name": "3 - Frozen Burial",
+              "name_format": "bold_italic",
+              "description": "The target is blasted with a hail of frost and is coated in ice. They must succeed a DC 20 Strength saving throw or be restrained for 1 minute, during which time they can use an action to make a DC 20 Strength (Athletics) check, ending the effect on a success."
+            },
+            {
+              "name": "4 - Thunder Shock",
+              "name_format": "bold_italic",
+              "description": "The target is struck by a sudden eruption of thunderous force. They must succeed a DC 20 Constitution saving throw, taking 32 (4d10 + 10) thunder damage and are knocked prone on a failed save."
+            },
+            {
+              "name": "5 - Time Phase",
+              "name_format": "bold_italic",
+              "description": "Relative time is slowed around the target. They must succeed a DC 20 Wisdom saving throw or become sluggish for 1 minute. They repeat the saving throw at the end of each of their turns, ending the effect on a success."
+            },
+            {
+              "name": "6 - Gravity Bubble",
+              "name_format": "bold_italic",
+              "description": "The target is caught in a gravity bubble that disrupts their movement. They must succeed a DC 20 Strength saving throw, losing all movement speeds except their base movement speed (which is halved) for 1 minute on a failure. They repeat the saving throw at the end of each of their turns, ending the effect on a success."
+            },
+            {
+              "name": "7 - Force Shunt",
+              "name_format": "bold_italic",
+              "description": "The target is gripped by psychic force, and must succeed a DC 20 Strength saving throw. On a failure, the DGR can shunt them into any space it can see within 90 feet, then choose either to drop them or leave them restrained in that space until the start of the DGR’s next turn."
+            },
+            {
+              "name": "8 - Restorative Light",
+              "name_format": "bold_italic",
+              "description": "The target is bathed in restorative energy, causing them to regain 43 (5d12 + 10) hit points."
+            },
+            {
+              "name": "9 - Disintegrate",
+              "name_format": "bold_italic",
+              "description": "The target is assailed by a burst of energy threatening to rip them apart on a molecular level. The target must succeed a DC 20 Constitution saving throw, taking 55 (10d10) fire damage on a failure. If this reduces a creature’s hit points to 0, they are reduced to dust as though by the disintegrate spell.",
+              "inline_formatting": {
+                "disintegrate": "italic"
+              }
+            },
+            {
+              "name": "10 - Overcharge",
+              "name_format": "bold_italic",
+              "description": "Roll again twice, ignoring a result of 10 - both effects can target one creature and are counted as one result."
+            }
+          ]
+        },
+        {
+          "name": "Teleport",
+          "name_format": "bold_italic",
+          "description": "The DGR teleports to an unoccupied space it can see within 120 feet, then makes a single DGR Strike attack or rolls an additional time to recharge its Ring of Nine Punishments."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Blackwell Reactor (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR can benefit from one of the following effects:",
+          "subentries": [
+            {
+              "name": "",
+              "description": "It becomes resistant to two damage types it chooses for 1 minute, ending previous Blackwell Reactor effects."
+            },
+            {
+              "name": "",
+              "description": "It immediately recharges its use of Ring of Nine Punishments."
+            },
+            {
+              "name": "",
+              "description": "The DGR can take an extra reaction each round for 1 minute, ending previous Blackwell Reactor effects."
+            }
+          ]
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Repulsion Shift",
+          "name_format": "bold_italic",
+          "description": "When the DGR takes any damage of a type except piercing, slashing or bludgeoning, it can gain resistance to that damage type for 1 hour (including against the triggering source). If they already have resistance to that damage type (including from a previous use of this reaction) they become immune instead. This resistance/immunity ends if this reaction is used in response to a different type of damage."
+        },
+        {
+          "name": "Oversight Singularity",
+          "name_format": "bold_italic",
+          "description": "When the DGR takes damage from an attack or effect it can see, it can choose to roll any number of its hit dice and reduce the damage it takes by the combined result. If it wishes to spend more hit dice after seeing the result it may do so."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Legendary Reactions": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**DGR-009 - NAVARATNA**\n*Huge construct (DGR), neutral good [footprint 3]*\n**Armor Class** 18 (natural armor) **Threshold** 15\n**Hit Points** 150 (20d12 + 20)\n**Speed** 30 ft., fly (hover) 60 ft., 0-G acceleration 180 ft.\n**Quality Traits** Immutable, magic immunity 5th, magical, unique\n**STR** 16 (+3) | **DEX** 14 (+2) | **CON** 13 (+1) | **INT** 22 (+6) | **WIS** 18 (+4) | **CHA** 15 (+2)\n**Saving Throws** Dex +8, Wis +10, Cha +8\n**Skills** Arcana +12, Insight +10\n**Resistances** psychic\n**Immunities** necrotic, poison; B/S/P (magical)\n**Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, poisoned, unconscious\n**Senses** truesight 60 ft., blindsight 120 ft., passive Perception 14\n**Languages** understands all but doesn’t speak, telepathy 30 ft. (DGR pilots only)\n**Challenge Rating** 17 (18,000 XP) **Prof Bonus** +6\n\n**LEGENDARY REACTIONS (2 USES)**\nTBA.\n\n***Spell Reflection.*** When the DGR succeeds on the first saving throw against a spell where it is the only target and beats the DC by at least 5 points, it can choose a target within 90 feet of it to become the spell’s new target.\n\n***Thesite Alloy Plating.*** The DGR is resistant to all damage originating from Medium and smaller creatures.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes two DGR Strike attacks, then uses its Ring of Nine Punishments if it is available.\n\n***DGR Strike.*** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 14 (2d10 + 3) bludgeoning damage.\n\n***Ring of Nine Punishments (Recharge 4-6).*** The DGR is accompanied by a semicircle composed of nine eidomantic resonators, each fitted with a different gemstone. When activated, the DGR rolls a d10 four times, and compares the result to the options below. They can then have each of the four results target a creature of their choice within 90 feet, using the listed effect. The same creature can only be targeted by up to two results at one time.\n• ***1 - Hellfire Beam.*** A burst of fiery energy strikes the target. The target must succeed on a DC 20 Dexterity saving throw or take 43 (6d10 + 10) fire damage.\n• ***2 - Warp Strike.*** The DGR teleports into a space adjacent to the target and makes two DGR Strike attacks against them.\n• ***3 - Frozen Burial.*** The target is blasted with a hail of frost and is coated in ice. They must succeed a DC 20 Strength saving throw or be restrained for 1 minute, during which time they can use an action to make a DC 20 Strength (Athletics) check, ending the effect on a success.\n• ***4 - Thunder Shock.*** The target is struck by a sudden eruption of thunderous force. They must succeed a DC 20 Constitution saving throw, taking 32 (4d10 + 10) thunder damage and are knocked prone on a failed save.\n• ***5 - Time Phase.*** Relative time is slowed around the target. They must succeed a DC 20 Wisdom saving throw or become sluggish for 1 minute. They repeat the saving throw at the end of each of their turns, ending the effect on a success.\n• ***6 - Gravity Bubble.*** The target is caught in a gravity bubble that disrupts their movement. They must succeed a DC 20 Strength saving throw, losing all movement speeds except their base movement speed (which is halved) for 1 minute on a failure. They repeat the saving throw at the end of each of their turns, ending the effect on a success.\n• ***7 - Force Shunt.*** The target is gripped by psychic force, and must succeed a DC 20 Strength saving throw. On a failure, the DGR can shunt them into any space it can see within 90 feet, then choose either to drop them or leave them restrained in that space until the start of the DGR’s next turn.\n• ***8 - Restorative Light.*** The target is bathed in restorative energy, causing them to regain 43 (5d12 + 10) hit points.\n• ***9 - Disintegrate.*** The target is assailed by a burst of energy threatening to rip them apart on a molecular level. The target must succeed a DC 20 Constitution saving throw, taking 55 (10d10) fire damage on a failure. If this reduces a creature’s hit points to 0, they are reduced to dust as though by the *disintegrate* spell.\n• ***10 - Overcharge.*** Roll again twice, ignoring a result of 10 - both effects can target one creature and are counted as one result.\n\n***Teleport.*** The DGR teleports to an unoccupied space it can see within 120 feet, then makes a single DGR Strike attack or rolls an additional time to recharge its Ring of Nine Punishments.\n\n**BONUS ACTIONS**\n***Blackwell Reactor (3/Day).*** The DGR can benefit from one of the following effects:\n• It becomes resistant to two damage types it chooses for 1 minute, ending previous Blackwell Reactor effects.\n• It immediately recharges its use of Ring of Nine Punishments.\n• The DGR can take an extra reaction each round for 1 minute, ending previous Blackwell Reactor effects.\n\n**REACTIONS**\n***Repulsion Shift.*** When the DGR takes any damage of a type except piercing, slashing or bludgeoning, it can gain resistance to that damage type for 1 hour (including against the triggering source). If they already have resistance to that damage type (including from a previous use of this reaction) they become immune instead. This resistance/immunity ends if this reaction is used in response to a different type of damage.\n\n***Oversight Singularity.*** When the DGR takes damage from an attack or effect it can see, it can choose to roll any number of its hit dice and reduce the damage it takes by the combined result. If it wishes to spend more hit dice after seeing the result it may do so."
+    }
+  ]
+}

@@ -172,6 +172,21 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // GENERIC LORE TABLES
+    //
+    // Outer monster JSON can contain one or
+    // more ordinary lore/reference tables.
+    // MonsterService copies those tables into
+    // this collection for MonsterDetails to
+    // render on the Lore page.
+    // =====================================
+
+    [JsonPropertyName("lore_tables")]
+    public List<MonsterLoreTableData> LoreTables { get; set; } =
+        new();
+
+
+    // =====================================
     // MONSTER GROUP
     //
     // Supports:
@@ -582,6 +597,26 @@ public sealed class StatBlockCreature
     [JsonPropertyName("alignment")]
     public string Alignment { get; set; } =
         string.Empty;
+
+
+    // =====================================
+    // CREATURE-LINE TAGS
+    //
+    // Examples:
+    //
+    // footprint 1
+    // footprint 4
+    //
+    // These are displayed in square
+    // brackets after the alignment:
+    //
+    // Colossal construct (DGR), unaligned
+    // [footprint 4]
+    // =====================================
+
+    [JsonPropertyName("tags")]
+    public List<string> Tags { get; set; } =
+        new();
 }
 
 
@@ -715,6 +750,30 @@ public sealed class MonsterRefinementRow
     [JsonPropertyName("breath_damage")]
     public string BreathDamage { get; set; } =
         string.Empty;
+}
+
+
+
+
+// =========================================
+// GENERIC MONSTER LORE TABLE
+// =========================================
+
+public sealed class MonsterLoreTableData
+{
+    [JsonPropertyName("title")]
+    public string Title { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("columns")]
+    public List<string> Columns { get; set; } =
+        new();
+
+
+    [JsonPropertyName("rows")]
+    public List<List<string>> Rows { get; set; } =
+        new();
 }
 
 

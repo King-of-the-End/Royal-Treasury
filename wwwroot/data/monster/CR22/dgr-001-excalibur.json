@@ -1,0 +1,229 @@
+{
+  "Name": "DGR-001 - EXCALIBUR",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "This DGR unit was the first attempt to replicate the Sword of Damocles’ general functions, though it ended up being redesigned when it became obvious this might be impossible. Its primary weapons are eidomantic missiles and a massive lance-like blade of eidomantic energy. Notably the most heroic of the DGR units, it was constructed with a knight-like appearance in mind, and is capable of creating a burning sun above it to rain down radiant energy on its enemies.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Reference%20-%20DGR%20001%20-%20EXCALIBUR_Wings.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_001_excalibur",
+      "section_type": "Stat Block",
+      "title": "DGR-001 - EXCALIBUR",
+      "creature": {
+        "size": "Colossal",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 4"
+        ]
+      },
+      "armor_class": "22 (natural armor)",
+      "threshold": "15",
+      "hit_points": "387 (25d20 + 125)",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "120 ft.",
+        "other": "0-G acceleration 240 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "Immutable",
+        "Massive (L/15/DC 22)",
+        "Siege",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +9",
+        "Wis +8",
+        "Cha +9"
+      ],
+      "skills": [
+        "Perception +11"
+      ],
+      "resistances": [
+        "B/S/P (eidolic)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/S/P (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "petrified",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 240 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "22 (41,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Emergency Activation (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When the DGR would be reduced to 0 hit points or killed outright, its current hit point total resets to 150 hit points, it recovers from any conditions affecting it, and it gains access to its Mythic Actions and options in the “Mythic Actions” section for 1 hour. During this time it also becomes immune to radiant damage and gains truesight out to 120 feet. Award a party an additional 41,000 XP (for 82,000 XP total) for defeating the DGR after using its Emergency Activation."
+        },
+        {
+          "name": "Warp Transmission",
+          "name_format": "bold_italic",
+          "description": "By concentrating for 1 minute, the DGR is able to initiate its malfunctioning astral transmission drive to open a fissure between two points on the same plane it is on, emerging in any space it chooses that it is familiar with. Unlike how this ability would work with a functioning drive, this does not pass through the astral sea."
+        },
+        {
+          "name": "Thesite Alloy Plating",
+          "name_format": "bold_italic",
+          "description": "The fiend adds its Constitution modifier to its armor class."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three weapon attacks, choosing between its Slam and Eidomantic Missile Pod for each. If its Eidomantic Blade is available, it can make one of those attacks using it instead."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 17 (3d10 + 7) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Eidomantic Missile Pod",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +10 to hit, range 300/1200 ft., one target. Hit: 26 (4d12) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Eidomantic Blade (Mythic Action)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 30 ft., one target. Hit: 40 (6d10 + 7) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Rain of Light (Mythic Action) (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR raises its Eidomantic Blade into the sky, and a beam of radiant eidomantic energy surges upward, becoming a massive ball of energy, which proceeds to remain in place and rain down beams of radiant energy for 1 minute. During this time, each creature who starts their turn within 160 feet of the DGR (except it and other DGRs or framebilt of its choice) must succeed a DC 18 Dexterity saving throw, taking 18 (4d8) radiant damage on a failed save. While this effect is in progress, the Eidomantic Blade does not restore its edge, and so it and the Lightquake action cannot be taken. The DGR must concentrate on this effect as if it were a spell, ending it on a failed concentration check."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Eidomantic Shield",
+          "name_format": "bold_italic",
+          "description": "The DGR chooses one damage type, and adjusts the barrier surrounding its body to give it resistance to that damage type until the start of its next turn."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      },
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "The DGR moves up to half its movement speed."
+          },
+          {
+            "name": "Slam",
+            "name_format": "bold_italic",
+            "description": "The DGR makes a Slam attack."
+          },
+          {
+            "name": "Quickspin",
+            "name_format": "bold_italic",
+            "description": "The DGR quickly spins, pummeling each creature within reach of its Slam attack (or Eidomantic Lance if it is available). Each target must succeed on a DC 22 Strength saving throw or be knocked prone."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "If the DGR’s Emergency Activation trait has activated in the last hour, it can use the options below as Legendary Actions.",
+        "options": [
+          {
+            "name": "Warp Cut",
+            "name_format": "bold_italic",
+            "description": "The DGR makes an Eidomantic Blade attack through a momentary tear in space, allowing it to target any creature within 600 feet of it. This still counts as a melee weapon attack."
+          },
+          {
+            "name": "Lightquake (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The DGR pierces the earth with its Eidomantic Blade, causing radiant beams to erupt from six points it can see within 600 feet. Creatures within 20 feet of each of those points must succeed on a DC 22 Dexterity saving throw, taking 28 (5d10) radiant damage on a failed save."
+          },
+          {
+            "name": "Warp Burst (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The DGR performs an emergency activation of its malfunctioning astral transmission drive, teleporting to an unoccupied space within 1000 feet."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-001 - EXCALIBUR**\n*Colossal construct (DGR), unaligned [footprint 4]*\n**Armor Class** 22 (natural armor) **Threshold** 15\n**Hit Points** 387 (25d20 + 125)\n**Speed** 60 ft., fly 120 ft., 0-G acceleration 240 ft.\n**Quality Traits** Eidolic, immutable, massive (L/15/DC 22), siege, unique\n**STR** 24 (+7) | **DEX** 17 (+3) | **CON** 20 (+5) | **INT** 18 (+4) | **WIS** 18 (+4) | **CHA** 14 (+2)\n**Saving Throws** Dex +9, Wis +8, Cha +9\n**Skills** Perception +11\n**Resistances** B/S/P (eidolic)\n**Immunities** necrotic, poison; B/S/P (eidolic or magical)\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, petrified, poisoned, unconscious\n**Senses** blindsight 240 ft., passive Perception 21\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 22 (41,000 XP) **Prof Bonus** +7\n\n***Emergency Activation (Mythic Awakening).*** When the DGR would be reduced to 0 hit points or killed outright, its current hit point total resets to 150 hit points, it recovers from any conditions affecting it, and it gains access to its Mythic Actions and options in the “Mythic Actions” section for 1 hour. During this time it also becomes immune to radiant damage and gains truesight out to 120 feet. Award a party an additional 41,000 XP (for 82,000 XP total) for defeating the DGR after using its Emergency Activation.\n\n***Warp Transmission.*** By concentrating for 1 minute, the DGR is able to initiate its malfunctioning astral transmission drive to open a fissure between two points on the same plane it is on, emerging in any space it chooses that it is familiar with. Unlike how this ability would work with a functioning drive, this does not pass through the astral sea.\n\n**LEGENDARY REACTIONS (4 USES)**\nTBA.\n\n***Thesite Alloy Plating.*** The fiend adds its Constitution modifier to its armor class.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three weapon attacks, choosing between its Slam and Eidomantic Missile Pod for each. If its Eidomantic Blade is available, it can make one of those attacks using it instead.\n\n***Slam.*** *Melee Weapon Attack:* +14 to hit, reach 20 ft., one target. *Hit:* 17 (3d10 + 7) bludgeoning damage.\n\n***Eidomantic Missile Pod.*** *Ranged Weapon Attack:* +10 to hit, range 300/1200 ft., one target. *Hit:* 26 (4d12) fire damage.\n\n***Eidomantic Blade (Mythic Action).*** *Melee Weapon Attack:* +14 to hit, reach 30 ft., one target. *Hit:* 40 (6d10 + 7) radiant damage.\n\n***Rain of Light (Mythic Action) (1/Rest).*** The DGR raises its Eidomantic Blade into the sky, and a beam of radiant eidomantic energy surges upward, becoming a massive ball of energy, which proceeds to remain in place and rain down beams of radiant energy for 1 minute. During this time, each creature who starts their turn within 160 feet of the DGR (except it and other DGRs or framebilt of its choice) must succeed a DC 18 Dexterity saving throw, taking 18 (4d8) radiant damage on a failed save. While this effect is in progress, the Eidomantic Blade does not restore its edge, and so it and the Lightquake action cannot be taken. The DGR must concentrate on this effect as if it were a spell, ending it on a failed concentration check.\n\n**BONUS ACTIONS**\n***Eidomantic Shield.*** The DGR chooses one damage type, and adjusts the barrier surrounding its body to give it resistance to that damage type until the start of its next turn.\n\n**LEGENDARY ACTIONS (2 ACTIONS)**\n***Move.*** The DGR moves up to half its movement speed.\n\n***Slam.*** The DGR makes a Slam attack.\n\n***Quickspin.*** The DGR quickly spins, pummeling each creature within reach of its Slam attack (or Eidomantic Lance if it is available). Each target must succeed on a DC 22 Strength saving throw or be knocked prone.\n\n**MYTHIC ACTIONS**\nIf the DGR’s Emergency Activation trait has activated in the last hour, it can use the options below as Legendary Actions.\n\n***Warp Cut.*** The DGR makes an Eidomantic Blade attack through a momentary tear in space, allowing it to target any creature within 600 feet of it. This still counts as a melee weapon attack.\n\n***Lightquake (Costs 2 Actions).*** The DGR pierces the earth with its Eidomantic Blade, causing radiant beams to erupt from six points it can see within 600 feet. Creatures within 20 feet of each of those points must succeed on a DC 22 Dexterity saving throw, taking 28 (5d10) radiant damage on a failed save.\n\n***Warp Burst (Costs 2 Actions).*** The DGR performs an emergency activation of its malfunctioning astral transmission drive, teleporting to an unoccupied space within 1000 feet."
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "Name": "DGR-033 SY CHRONUS",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "An assassination unit built for solider-to-solider combat. The DGR was not built to fight other DGR units or similar constructs, and instead exists to sow chaos within the more diminutive enemy ranks.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20DGR%20033%20-%20SY%20CHRONUS.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20DGR%20033%20-%20SY%20CHRONUS.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20DGR%20033%20-%20SY%20CHRONUS.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_033_sy_chronus",
+      "section_type": "Stat Block",
+      "title": "DGR-033 SY CHRONUS",
+      "creature": {
+        "size": "Large",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "17 (natural armor)",
+      "threshold": "7",
+      "hit_points": "75 (10d10 + 20)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "40 ft. (belabored flight)",
+        "other": "0-G acceleration 90 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +4",
+        "Int +1",
+        "Cha +5"
+      ],
+      "skills": [
+        "Athletics +6",
+        "Perception +7",
+        "Stealth +4"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "devilsight 30 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Panic Hunter",
+          "name_format": "bold_italic",
+          "description": "When the DGR hits a creature that is frightened of it with a weapon attack, it deals an additional d8 of psychic damage to them."
+        },
+        {
+          "name": "Shadow Jump",
+          "name_format": "bold_italic",
+          "description": "The DGR is considered to have a teleport speed equal to 60 feet, but it can only teleport into or out of spaces that are at least half covered in darkness or dim light."
+        },
+        {
+          "name": "Slaughtering Attacks",
+          "name_format": "bold_italic",
+          "description": "If the DGR hits a target with a melee attack on its turn, its remaining attacks against that target have advantage until the end of that turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three Eidoscythe attacks or one Mounted Revolver attack."
+        },
+        {
+          "name": "Eidoscythe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 4) slashing damage plus 4 (1d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mounted Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 9 (2d8) piercing damage plus 4 (1d6) poison damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Frightening Assault",
+          "name_format": "bold_italic",
+          "description": "If the DGR hits a Large or smaller target twice or more in the same turn, the target must make a DC 13 Wisdom saving throw or become frightened of the DGR for 1 minute. While frightened, the target repeats the save at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Wide Sweep",
+          "name_format": "bold_italic",
+          "description": "When the DGR misses with a melee weapon attack, it can make an additional weapon attack using the same weapon against a different target within range."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**DGR-033 SY CHRONUS**\n*Large construct (DGR), unaligned [footprint 2]*\n**Armor Class** 17 (natural armor) **Threshold** 7\n**Hit Points** 75 (10d10 + 20)\n**Speed** 40 ft., belabored flight 40 ft., 0-G acceleration 90 ft.\n**Quality Traits** Immutable, magical, unique\n**STR** 18 (+4) | **DEX** 14 (+2) | **CON** 14 (+2) | **INT** 8 (-1) | **WIS** 17 (+3) | **CHA** 17 (+3)\n**Saving Throws** Dex +4, Int +1, Cha +5\n**Skills** Athletics +6, Perception +7, Stealth +4\n**Resistances** B/S/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 60 ft., devilsight 30 ft., passive Perception 17\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 4 (1,100 XP) **Proficiency Bonus** +2\n\n***Panic Hunter.*** When the DGR hits a creature that is frightened of it with a weapon attack, it deals an additional d8 of psychic damage to them.\n\n***Shadow Jump.*** The DGR is considered to have a teleport speed equal to 60 feet, but it can only teleport into or out of spaces that are at least half covered in darkness or dim light.\n\n***Slaughtering Attacks.*** If the DGR hits a target with a melee attack on its turn, its remaining attacks against that target have advantage until the end of that turn.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three Eidoscythe attacks or one Mounted Revolver attack.\n\n***Eidoscythe.*** *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 9 (1d8 + 4) slashing damage plus 4 (1d6) poison damage.\n\n***Mounted Revolver.*** *Ranged Weapon Attack:* +4 to hit, range 20/60 ft., one target. *Hit:* 9 (2d8) piercing damage plus 4 (1d6) poison damage.\n\n***Frightening Assault.*** If the DGR hits a Large or smaller target twice or more in the same turn, the target must make a DC 13 Wisdom saving throw or become frightened of the DGR for 1 minute. While frightened, the target repeats the save at the end of each of their turns, ending the effect on a success.\n\n**REACTIONS**\n***Wide Sweep.*** When the DGR misses with a melee weapon attack, it can make an additional weapon attack using the same weapon against a different target within range."
+    }
+  ]
+}

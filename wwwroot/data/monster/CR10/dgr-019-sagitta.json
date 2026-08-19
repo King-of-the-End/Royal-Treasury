@@ -1,0 +1,353 @@
+{
+  "Name": "DGR-019 - SAGITTA",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The SAGITTA, one of the mass-produced DGR units, was created after the ProtoDGRs to act as supporting soldiers. Though still huge and imposing in scale, they are considerably smaller than their ancestors. Standing at 12 meters tall, the SAGITTA is armed with an “eidotech” greatbow that can fire at extreme ranges, and a collapsable sword it can use in close-quarters combat. These units in particular were constructed for long-range combat to support the ProtoDGR units.\n\n**SAGITTA ALT-S.** \n\nSAGITTA units can be outfitted with defensive equipment meant to shield other SAGITTA units while providing long-range support. Their reactors are geared to give boosts to their defensive capabilities rather than speed or destructive output. They are capable of deploying a large eidotech shield to defend themselves and those around them from attacks.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/DGR19%20final.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_019_sagitta",
+      "section_type": "Stat Block",
+      "title": "DGR-019 - SAGITTA",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "20 (natural armor)",
+      "threshold": "10",
+      "hit_points": "170 (20d12 + 40)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "other": "0-G acceleration 180 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "+0"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Wis +9"
+      ],
+      "skills": [
+        "Acrobatics +10",
+        "Perception +8"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Blitz (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR takes an extra action, bonus action or reaction."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three melee weapon attacks or two ranged weapon attacks."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "DGR Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Artillery Greatbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +10 to hit, range 150/600 ft., one target. Hit: 23 (3d10 + 6) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mach Boost",
+          "name_format": "bold_italic",
+          "description": "The DGR’s movement speed doubles until the start of its next turn and it immediately takes the Dash action."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Enhanced Targeting",
+          "name_format": "bold_italic",
+          "description": "The DGR cannot take movement for the remainder of its turn, but all ranged weapon attacks it makes up to its weapon’s long range are made without disadvantage."
+        },
+        {
+          "name": "Excel Reactor (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR chooses and benefits from one of the following effects:",
+          "subentries": [
+            {
+              "name": "",
+              "description": "The DGR takes the Dash action."
+            },
+            {
+              "name": "",
+              "description": "Each time the DGR makes an attack this turn, they roll 1d8 and add it to the result."
+            },
+            {
+              "name": "",
+              "description": "The DGR gains resistance to all damage until the start of its next turn."
+            }
+          ]
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-019 - SAGITTA**\n*Huge construct (DGR), unaligned [footprint 3]*\n**Armor Class** 20 (natural armor) **Threshold** 10\n**Hit Points** 170 (20d12 + 40)\n**Speed** 40 ft., fly 60 ft. (hover), 0-G acceleration 180 ft.\n**Quality Traits** Immutable, magical, unique\n**STR** 20 (+5) | **DEX** 22 (+6) | **CON** 15 (+2) | **INT** 11 (+0) | **WIS** 18 (+4) | **CHA** 10 (+0)\n**Saving Throws** Dex +10, Wis +9\n**Skills** Acrobatics +10, Perception +8\n**Resistances** B/S/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 120 ft., passive Perception 18\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 10 (5,900 XP) **Prof Bonus** +4\n\n***Blitz (Recharge 6).*** The DGR takes an extra action, bonus action or reaction.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three melee weapon attacks or two ranged weapon attacks.\n\n***Slam.*** *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 17 (2d10 + 6) bludgeoning damage.\n\n***DGR Blade.*** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 22 (3d10 + 5) slashing damage.\n\n***Artillery Greatbow.*** *Ranged Weapon Attack:* +10 to hit, range 150/600 ft., one target. *Hit:* 23 (3d10 + 6) piercing damage.\n\n***Mach Boost.*** The DGR’s movement speed doubles until the start of its next turn and it immediately takes the Dash action.\n\n**BONUS ACTIONS**\n***Enhanced Targeting.*** The DGR cannot take movement for the remainder of its turn, but all ranged weapon attacks it makes up to its weapon’s long range are made without disadvantage.\n\n***Excel Reactor (3/Day).*** The DGR chooses and benefits from one of the following effects:\n• The DGR takes the Dash action.\n• Each time the DGR makes an attack this turn, they roll 1d8 and add it to the result.\n• The DGR gains resistance to all damage until the start of its next turn.",
+      "tag": "Standard"
+    },
+    {
+      "id": "dgr_019_sagitta_alt_s",
+      "section_type": "Stat Block",
+      "title": "DGR-019 - SAGITTA [ALT-S]",
+      "tag": "ALT-S",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "22 (natural armor, shield)",
+      "threshold": "10",
+      "hit_points": "170 (20d12 + 40)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "other": "0-G acceleration 180 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "+0"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Int +4",
+        "Wis +8"
+      ],
+      "skills": [
+        "Athletics +9",
+        "Perception +12"
+      ],
+      "resistances": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/S/P (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Range Deterant",
+          "name_format": "bold_italic",
+          "description": "Ranged attacks targeting the DGR from further away than 30 feet have disadvantage."
+        },
+        {
+          "name": "Reactor Overclock",
+          "name_format": "bold_italic",
+          "description": "The DGR can spend a use of its Excel Reactor to take an extra reaction, provided its reaction has already been used."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR uses its Eidoshield Bash and its DGR Lance once each."
+        },
+        {
+          "name": "Eidoshield Bash",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage. A Large or smaller creature hit by this attack must succeed a DC 17 Strength saving throw or be knocked back 10 feet and fall prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "DGR Lance",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 16 (2d10 + 5) lightning damage and 11 (2d10) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Eidomissile Pod (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a series of small missiles that fire from their shoulder units, targeting up to six creatures the DGR can see within 240 feet of them. Each target must make a DC 18 Dexterity saving throw, taking 20 (3d12) lightning damage and 20 (3d12) fire damage on a failed save, or half as much damage on a successful one."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Excel Reactor (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR chooses and benefits from one of the following effects:",
+          "subentries": [
+            {
+              "name": "",
+              "description": "The DGR’s armor class increases by 5 until the start of its next turn."
+            },
+            {
+              "name": "",
+              "description": "The DGR gains resistance to all damage until the start of its next turn."
+            },
+            {
+              "name": "",
+              "description": "The DGR extends a barrier out to all of its allies within 30 feet of it, reducing all damage they take by 10 until the start of its next turn."
+            }
+          ]
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Defensive Redirect",
+          "name_format": "bold_italic",
+          "description": "If an attack is made against a creature while the DGR is within that attack’s reach or range and the initial target is within 30 feet of the DGR, the DGR can move into a space adjacent to the initial target (without provoking opportunity attacks) and change the attack’s target to itself. Until the end of the turn, all attacks made against the same target are also redirected to the DGR."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**DGR-019 - SAGITTA [ALT-S]**\n*Huge construct (DGR), unaligned [footprint 3]*\n**Armor Class** 22 (natural armor, shield) **Threshold** 10\n**Hit Points** 170 (20d12 + 40)\n**Speed** 40 ft., fly (hover) 60 ft., 0-G acceleration 180 ft.\n**Quality Traits** Immutable, magical, unique\n**STR** 20 (+5) | **DEX** 22 (+6) | **CON** 15 (+2) | **INT** 11 (+0) | **WIS** 18 (+4) | **CHA** 10 (+0)\n**Saving Throws** Dex +10, Int +4, Wis +8\n**Skills** Athletics +9, Perception +12\n**Immunities** necrotic, poison; B/S/P (magical)\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 120 ft., passive Perception 22\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 10 (5,900 XP) **Prof Bonus** +4\n\n***Range Deterant.*** Ranged attacks targeting the DGR from further away than 30 feet have disadvantage.\n\n***Reactor Overclock.*** The DGR can spend a use of its Excel Reactor to take an extra reaction, provided its reaction has already been used.\n\n**ACTIONS**\n***Multiattack.*** The DGR uses its Eidoshield Bash and its DGR Lance once each.\n\n***Eidoshield Bash.*** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 14 (2d8 + 5) bludgeoning damage. A Large or smaller creature hit by this attack must succeed a DC 17 Strength saving throw or be knocked back 10 feet and fall prone.\n\n***DGR Lance.*** *Melee Weapon Attack:* +9 to hit, reach 15 ft., one target. *Hit:* 16 (2d10 + 5) lightning damage and 11 (2d10) force damage.\n\n***Eidomissile Pod (Recharge 6).*** The DGR unleashes a series of small missiles that fire from their shoulder units, targeting up to six creatures the DGR can see within 240 feet of them. Each target must make a DC 18 Dexterity saving throw, taking 20 (3d12) lightning damage and 20 (3d12) fire damage on a failed save, or half as much damage on a successful one.\n\n**BONUS ACTIONS**\n***Excel Reactor (3/Day).*** The DGR chooses and benefits from one of the following effects:\n• The DGR’s armor class increases by 5 until the start of its next turn.\n• The DGR gains resistance to all damage until the start of its next turn.\n• The DGR extends a barrier out to all of its allies within 30 feet of it, reducing all damage they take by 10 until the start of its next turn.\n\n**REACTIONS**\n***Defensive Redirect.*** If an attack is made against a creature while the DGR is within that attack’s reach or range and the initial target is within 30 feet of the DGR, the DGR can move into a space adjacent to the initial target (without provoking opportunity attacks) and change the attack’s target to itself. Until the end of the turn, all attacks made against the same target are also redirected to the DGR."
+    }
+  ],
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20DGR%20019%20-%20SAGITTA%20%5BALT-S%5D.jpg"
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/DGR%20019%20-%20SAGITTA%20(ISO).png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20DGR%20019%20-%20SAGITTA%20%5BALT-S%5D.jpg"
+  ]
+}

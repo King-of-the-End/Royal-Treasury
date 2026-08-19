@@ -1,0 +1,154 @@
+{
+  "Name": "DGR-025 - LAEVATEINN",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A DGR unit made for stealth missions. It is capable of turning invisible at will, and can broadcast sounds into the environment to disorient those tracking it. The unit is armed with weapons called Blindwave Blades, which disrupt the optic nerves of creatures they strike to blind them by altering the flow of electrical signals in their body.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20DGR%20025%20-%20LAEVATEINN.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20DGR%20025%20-%20LAEVATEINN.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20DGR%20025%20-%20LAEVATEINN.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_025_laevateinn",
+      "section_type": "Stat Block",
+      "title": "DGR-025 - LAEVATEINN",
+      "creature": {
+        "size": "Large",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "18 (natural armor)",
+      "threshold": "10",
+      "hit_points": "90 (12d10 + 24)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "30 ft. (hover)",
+        "other": "teleport 10 ft.; 0-G acceleration 90 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Int +6"
+      ],
+      "skills": [
+        "Acrobatics +7",
+        "Survival +8"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Echo Broadcaster",
+          "name_format": "bold_italic",
+          "description": "When the DGR moves or its pilot speaks through it, the sounds seem to originate from random locations in the environment around them. Due to this, Wisdom (Perception) checks made to locate them through hearing or sound have disadvantage."
+        },
+        {
+          "name": "Weak Point Exploit (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "When the DGR has advantage on an attack roll and it hits with the attack, it deals an additional 18 (4d8) damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two Blindwave Blade attacks. If both miss, they can use Shock Charge."
+        },
+        {
+          "name": "Blindwave Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage. If this attack hits the same creature twice in a single turn, they must succeed a DC 13 Constitution saving throw. On a failure they are blinded for 1 hour, and repeat the saving throw at the end of each of their turns, ending the effect on a success.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shock Charge",
+          "name_format": "bold_italic",
+          "description": "One creature the DGR can see is blasted with an arc of lightning, and must make a DC 14 Dexterity saving throw. If the DGR is invisible, the target has disadvantage on this saving throw. On a failure, the target takes 26 (2d12 + 6) lightning damage and cannot make opportunity attacks until the start of their next turn."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Shimmer",
+          "name_format": "bold_italic",
+          "description": "The DGR becomes invisible for 1 minute, during which time it cannot be detected by the blindsight of other DGR units. This invisibility ends at the end of any turn where the DGR has made an attack roll, taken damage, or forced another creature to make a saving throw to avoid taking damage."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-025 - LAEVATEINN**\n*Large construct (DGR), unaligned [footprint 2]*\n**Armor Class** 18 (natural armor) **Threshold** 10\n**Hit Points** 90 (12d10 + 24)\n**Speed** 40 ft., teleport 10 ft., fly (hover) 30 ft., 0-G acceleration 90 ft.\n**Quality Traits** Immutable, magical, unique\n**STR** 15 (+2) | **DEX** 18 (+4) | **CON** 14 (+2) | **INT** 17 (+3) | **WIS** 20 (+5) | **CHA** 12 (+1)\n**Saving Throws** Dex +7, Int +6\n**Skills** Acrobatics +7, Survival +8\n**Resistances** B/S/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, poisoned, unconscious\n**Senses** darkvision 120 ft., passive Perception 15\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 7 (2,900 XP) **Proficiency Bonus** +3\n\n***Echo Broadcaster.*** When the DGR moves or its pilot speaks through it, the sounds seem to originate from random locations in the environment around them. Due to this, Wisdom (Perception) checks made to locate them through hearing or sound have disadvantage.\n\n***Weak Point Exploit (1/Turn).*** When the DGR has advantage on an attack roll and it hits with the attack, it deals an additional 18 (4d8) damage.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes two Blindwave Blade attacks. If both miss, they can use Shock Charge.\n\n***Blindwave Blade.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8 + 4) slashing damage. If this attack hits the same creature twice in a single turn, they must succeed a DC 13 Constitution saving throw. On a failure they are blinded for 1 hour, and repeat the saving throw at the end of each of their turns, ending the effect on a success.\n\n***Shock Charge.*** One creature the DGR can see is blasted with an arc of lightning, and must make a DC 14 Dexterity saving throw. If the DGR is invisible, the target has disadvantage on this saving throw. On a failure, the target takes 26 (2d12 + 6) lightning damage and cannot make opportunity attacks until the start of their next turn.\n\n**BONUS ACTIONS**\n***Shimmer.*** The DGR becomes invisible for 1 minute, during which time it cannot be detected by the blindsight of other DGR units. This invisibility ends at the end of any turn where the DGR has made an attack roll, taken damage, or forced another creature to make a saving throw to avoid taking damage."
+    }
+  ]
+}

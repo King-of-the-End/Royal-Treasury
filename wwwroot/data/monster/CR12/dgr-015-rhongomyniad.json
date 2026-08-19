@@ -1,0 +1,164 @@
+{
+  "Name": "DGR-015 - RHONGOMYNIAD",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "An angelic DGR unit that was built to evoke the image of a celestial being. The RHONGOMYNIAD carries a huge, intricately forced lance that generates radiant power, and its wings give it an angelic appearance. It is a defensive unit that specializes in protecting units it’s partnered with, and excels in mid-range combat situations. Among the initial mass-production DGR units it is the most proficient in holding back enemy forces as they advance.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Reference_BG%20-%20DGR%20015%20-%20RHONGOMYNIAD.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_015_rhongomyniad",
+      "section_type": "Stat Block",
+      "title": "DGR-015 - RHONGOMYNIAD",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "18 (natural armor)",
+      "threshold": "10",
+      "hit_points": "143 (15d12 + 45)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)",
+        "other": "0-G acceleration 180 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Str +10",
+        "Con +7"
+      ],
+      "skills": [
+        "Athletics +10",
+        "Insight +9",
+        "Perception +9"
+      ],
+      "resistances": [
+        "radiant",
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "12 (8,400 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Reinforced Alloy Plating",
+          "name_format": "bold_italic",
+          "description": "The DGR is resistant to damage from Medium or smaller creatures."
+        },
+        {
+          "name": "Sentinel Strike",
+          "name_format": "bold_italic",
+          "description": "When the DGR hits a creature with an opportunity attack, that target’s speed is reduced to 0 until the end of the turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three weapon attacks, choosing between its Divine Eidolance and Lance Beam."
+        },
+        {
+          "name": "Divine Eidolance",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 6) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Lance Beam",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +10 to hit, range 30/120 ft., one target. The first time this attack hits a creature each turn, each creature in a 15-foot-radius sphere centered on its target must succeed a DC 16 Dexterity saving throw or be hit by the attack as well. Hit: 20 (3d12) radiant damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Guardian’s Ward (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR creates a link between itself and another construct it can see within 60 feet. This link remains for 1 minute, until the DGR or its target are on different planes for more than one round, or the two move further than 1200 feet from one another. While the link is active, if the DGR’s target takes damage, the damage is reduced by half and the DGR takes the same (reduced) amount of damage. If the target has a damage threshold, the resulting halved damage must be reapplied against it and may be reduced to 0. However, the half of the damage the DGR takes ignores its damage threshold entirely. The DGR’s Reinforced Alloy Plating is not considered against this damage. Also, while the link is active, the DGR’s target deals an additional weapon die of radiant damage on their weapon attacks (using the highest damage die they have). The DGR must concentrate on this effect as though it was a spell."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Gallant Charge",
+          "name_format": "bold_italic",
+          "description": "If the DGR moves at least 30 feet in a straight line toward a target, the next attack it makes on this turn has advantage."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Lance Defender",
+          "name_format": "bold_italic",
+          "description": "The DGR can make an opportunity attack against any creature who enters the reach of its Divine Eidolance."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**DGR-015 - RHONGOMYNIAD**\n*Huge construct (DGR), unaligned [footprint 3]*\n**Armor Class** 18 (natural armor) **Threshold** 10\n**Hit Points** 143 (15d12 + 45)\n**Speed** 30 ft., fly (hover) 60 ft., 0-G acceleration 180 ft.\n**Quality Traits** Avoidance, immutable, magical, unique\n**STR** 22 (+6) | **DEX** 19 (+4) | **CON** 16 (+3) | **INT** 15 (+2) | **WIS** 20 (+5) | **CHA** 14 (+2)\n**Saving Throws** Str +10, Con +7\n**Skills** Athletics +10, Insight +9, Perception +9\n**Resistances** radiant; B/S/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, charmed, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 60 ft., passive Perception 19\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 12 (8,400 XP) **Prof Bonus** +4\n\n***Reinforced Alloy Plating.*** The DGR is resistant to damage from Medium or smaller creatures.\n\n***Sentinel Strike.*** When the DGR hits a creature with an opportunity attack, that target’s speed is reduced to 0 until the end of the turn.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three weapon attacks, choosing between its Divine Eidolance and Lance Beam.\n\n***Divine Eidolance.*** *Melee Weapon Attack:* +10 to hit, reach 15 ft., one target. *Hit:* 26 (3d12 + 6) radiant damage.\n\n***Lance Beam.*** *Ranged Weapon Attack:* +10 to hit, range 30/120 ft., one target. The first time this attack hits a creature each turn, each creature in a 15-foot-radius sphere centered on its target must succeed a DC 16 Dexterity saving throw or be hit by the attack as well. *Hit:* 20 (3d12) radiant damage.\n\n***Guardian’s Ward (1/Rest).*** The DGR creates a link between itself and another construct it can see within 60 feet. This link remains for 1 minute, until the DGR or its target are on different planes for more than one round, or the two move further than 1200 feet from one another. While the link is active, if the DGR’s target takes damage, the damage is reduced by half and the DGR takes the same (reduced) amount of damage. If the target has a damage threshold, the resulting halved damage must be reapplied against it and may be reduced to 0. However, the half of the damage the DGR takes ignores its damage threshold entirely. The DGR’s Reinforced Alloy Plating is not considered against this damage. Also, while the link is active, the DGR’s target deals an additional weapon die of radiant damage on their weapon attacks (using the highest damage die they have). The DGR must concentrate on this effect as though it was a spell.\n\n**BONUS ACTIONS**\n***Gallant Charge.*** If the DGR moves at least 30 feet in a straight line toward a target, the next attack it makes on this turn has advantage.\n\n**REACTIONS**\n***Lance Defender.*** The DGR can make an opportunity attack against any creature who enters the reach of its Divine Eidolance."
+    }
+  ]
+}

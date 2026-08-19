@@ -1539,6 +1539,40 @@ public sealed class MonsterService
 
 
             // =================================
+            // OUTER GENERIC LORE TABLES
+            //
+            // These are displayed on the Lore
+            // tab by MonsterDetails. This keeps
+            // reference material such as the
+            // Sword of Damocles Godfall Cannon
+            // table out of the stat block.
+            // =================================
+
+            monster.LoreTables ??=
+                new List<MonsterLoreTableData>();
+
+
+            foreach (
+                var loreTable
+                in metadata.LoreTables)
+            {
+                if (
+                    monster.LoreTables.Any(
+                        existing =>
+                            SameLoreTable(
+                                existing,
+                                loreTable)))
+                {
+                    continue;
+                }
+
+
+                monster.LoreTables.Add(
+                    loreTable);
+            }
+
+
+            // =================================
             // OUTER GROUP / SOURCE
             //
             // These values live outside the
@@ -1612,6 +1646,11 @@ public sealed class MonsterService
                 "Barding");
 
 
+        var loreTables =
+            ReadLoreTablesProperty(
+                element);
+
+
         var groups =
             DistinctValues(
                 ReadStringOrArrayProperty(
@@ -1642,6 +1681,7 @@ public sealed class MonsterService
                 imageVariants,
                 refinement,
                 barding,
+                loreTables,
                 groups,
                 sources);
     }
@@ -1702,6 +1742,12 @@ public sealed class MonsterService
             inherited.Barding;
 
 
+        var loreTables =
+            MergeLoreTables(
+                inherited.LoreTables,
+                local.LoreTables);
+
+
         var groups =
             DistinctValues(
                 inherited.Groups
@@ -1724,6 +1770,7 @@ public sealed class MonsterService
                 imageVariants,
                 refinement,
                 barding,
+                loreTables,
                 groups,
                 sources);
     }
@@ -1938,6 +1985,165 @@ public sealed class MonsterService
         {
             return null;
         }
+    }
+
+
+    // =====================================
+    // READ GENERIC LORE TABLES
+    //
+    // Supported outer property names:
+    //
+    // "Tables"
+    // "Lore Tables"
+    // "LoreTables"
+    // "lore_tables"
+    //
+    // A single object is also accepted for
+    // convenience, though an array is the
+    // preferred representation.
+    // =====================================
+
+    private IReadOnlyList<MonsterLoreTableData>
+        ReadLoreTablesProperty(
+            JsonElement element)
+    {
+        JsonElement value;
+
+
+        if (
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    "Tables"),
+                out value)
+            &&
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    "Lore Tables"),
+                out value))
+        {
+            return
+                Array.Empty<MonsterLoreTableData>();
+        }
+
+
+        try
+        {
+            if (
+                value.ValueKind ==
+                JsonValueKind.Array)
+            {
+                return
+                    JsonSerializer.Deserialize<
+                        List<MonsterLoreTableData>>(
+                            value.GetRawText(),
+                            jsonOptions)
+                    ??
+                    new List<MonsterLoreTableData>();
+            }
+
+
+            if (
+                value.ValueKind ==
+                JsonValueKind.Object)
+            {
+                var single =
+                    JsonSerializer.Deserialize<
+                        MonsterLoreTableData>(
+                            value.GetRawText(),
+                            jsonOptions);
+
+
+                return
+                    single is null
+
+                    ? Array.Empty<MonsterLoreTableData>()
+
+                    : new[]
+                    {
+                        single
+                    };
+            }
+        }
+        catch (JsonException)
+        {
+            // Ignore malformed optional lore tables.
+        }
+
+
+        return
+            Array.Empty<MonsterLoreTableData>();
+    }
+
+
+    // =====================================
+    // MERGE GENERIC LORE TABLES
+    // =====================================
+
+    private static IReadOnlyList<MonsterLoreTableData>
+        MergeLoreTables(
+            IEnumerable<MonsterLoreTableData> inherited,
+            IEnumerable<MonsterLoreTableData> local)
+    {
+        var result =
+            new List<MonsterLoreTableData>();
+
+
+        foreach (
+            var table
+            in inherited.Concat(local))
+        {
+            if (
+                result.Any(
+                    existing =>
+                        SameLoreTable(
+                            existing,
+                            table)))
+            {
+                continue;
+            }
+
+
+            result.Add(
+                table);
+        }
+
+
+        return
+            result;
+    }
+
+
+    // =====================================
+    // SAME GENERIC LORE TABLE
+    // =====================================
+
+    private static bool SameLoreTable(
+        MonsterLoreTableData left,
+        MonsterLoreTableData right)
+    {
+        if (
+            !string.IsNullOrWhiteSpace(
+                left.Title)
+            ||
+            !string.IsNullOrWhiteSpace(
+                right.Title))
+        {
+            return
+                left.Title.Trim().Equals(
+                    right.Title.Trim(),
+                    StringComparison.OrdinalIgnoreCase);
+        }
+
+
+        return
+            left.Columns.SequenceEqual(
+                right.Columns,
+                StringComparer.OrdinalIgnoreCase)
+            &&
+            left.Rows.Count ==
+            right.Rows.Count;
     }
 
 
@@ -2267,6 +2473,7 @@ public sealed class MonsterService
         IReadOnlyList<string> ImageVariants,
         MonsterRefinementData? Refinement,
         MonsterGroupLoreTable? Barding,
+        IReadOnlyList<MonsterLoreTableData> LoreTables,
         IReadOnlyList<string> Groups,
         IReadOnlyList<string> Sources)
     {
@@ -2278,6 +2485,7 @@ public sealed class MonsterService
                 Array.Empty<string>(),
                 null,
                 null,
+                Array.Empty<MonsterLoreTableData>(),
                 Array.Empty<string>(),
                 Array.Empty<string>());
     }

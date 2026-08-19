@@ -1,0 +1,302 @@
+{
+  "Name": "DGR-023 - HYDRAL",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "HYDRAL was designed as a ground unit meant to provide cover fire and air support for airborne DGR units. It does not possess the same aerial mastery that larger DGR units often do, but its mobility on the ground is unmatched within its size class. It is capable of navigating the water, rocky terrain, and areas with heavy mists without issue.\n\n**HYDRAL ALT-A.** An alternate version of HYDRAL is equipped for closer anti-personnel combat. Its ranged weapons have been modified to fire more rapidly, but they must be fired from a shorter distance, and the unit is capable of moving much more quickly to close in on its targets. Unlike the usual HYDRAL configuration, it is equipped with flight equipment. Rather than being armed with a huge rail cannon, this unit has several smaller weapons equipped. To give it increased speed, some of its armor was sacrificed.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20DGR%20023%20-%20HYDRAL.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20DGR%20023%20-%20HYDRAL.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20DGR%20023%20-%20HYDRAL.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_023_hydral",
+      "section_type": "Stat Block",
+      "title": "DGR-023 - HYDRAL",
+      "tag": "Standard",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "threshold": "10",
+      "hit_points": "114 (12d12 + 36)",
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "skills": [
+        "Athletics +7",
+        "Perception +10"
+      ],
+      "resistances": [
+        "thunder",
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "armor_class": "19 (natural armor)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft.",
+        "swim": "30 ft.",
+        "other": "0-G acceleration 90 ft."
+      },
+      "saving_throws": [
+        "Int +3",
+        "Wis +7"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 20"
+      ],
+      "traits": [
+        {
+          "name": "Blast Collider (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When the DGR makes a weapon attack it can choose to do so with advantage, even if it would have disadvantage. On a hit, this attack deals an extra 2d10 force damage and its target is pushed back 15 feet (stopping if they collide with a solid surface). If they are more than one size category larger than the DGR they are not pushed back."
+        },
+        {
+          "name": "Lay in Wait",
+          "name_format": "bold_italic",
+          "description": "The DGR does not suffer disadvantage on ranged attack rolls caused by being prone."
+        },
+        {
+          "name": "Sensorsight",
+          "name_format": "bold_italic",
+          "description": "The DGR can see thermal and electromagnetic signatures within 300 feet. Within that range it ignores any effect that would obscure its targets, and it automatically sees through visual illusions (including invisibility). Though they can target creatures up to this range, they cannot tell fine details or characteristics of creatures unless they have a regular unobstructed line of sight to them or they are within the DGR’s blindsight radius."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two weapon attacks."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 feet, one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "High-Range Rail Cannon",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +8 to hit, range 300/900 ft., one target. Hit: 16 (2d10 + 5) force damage. When attacking creatures that are flying/elevated more than 20 feet above the nearest surface with no cover, this weapon has advantage on its attack roll and can fire up to its long range without disadvantage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Sonic Rail Charge",
+          "name_format": "bold_italic",
+          "description": "The DGR fires a high-yield sonic explosive using its Rail Cannon at a point it can see within the weapon’s long range. Every creature in a 10-foot-radius sphere centered on that point must succeed a DC 16 Constitution saving throw, taking 12 (1d12 + 5) force damage and 7 (1d12 thunder) damage on a failed save, or half as much on a successful one."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Reposition",
+          "name_format": "bold_italic",
+          "description": "The DGR’s movement speed increases by 10 feet (its 0-G acceleration increases by 30 feet instead) until the end of the turn, then it takes the Dash or Disengage action."
+        }
+      ]
+    },
+    {
+      "id": "dgr_023_hydral_alt_a",
+      "section_type": "Stat Block",
+      "title": "DGR-023 - HYDRAL [ALT-A]",
+      "tag": "ALT-A",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "threshold": "10",
+      "hit_points": "114 (12d12 + 36)",
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "skills": [
+        "Athletics +7",
+        "Perception +10"
+      ],
+      "resistances": [
+        "thunder",
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "armor_class": "16 (natural armor)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "30 ft. (hover)",
+        "swim": "60 ft.",
+        "other": "0-G acceleration 90 ft."
+      },
+      "saving_throws": [
+        "Dex +8",
+        "Wis +7"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 20"
+      ],
+      "traits": [
+        {
+          "name": "Combat Gunner",
+          "name_format": "bold_italic",
+          "description": "The DGR does not suffer disadvantage to its ranged weapon attacks caused by them being prone or it being within 5 feet of a hostile creature."
+        },
+        {
+          "name": "Sensorsight",
+          "name_format": "bold_italic",
+          "description": "The DGR can see thermal and electromagnetic signatures within 300 feet. Within that range it ignores any effect that would obscure its targets, and it automatically sees through visual illusions (including invisibility). Though they can target creatures up to this range, they cannot tell fine details or characteristics of creatures unless they have a regular unobstructed line of sight to them or they are within the DGR’s blindsight radius."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three weapon attacks."
+        },
+        {
+          "name": "Claw Swipe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Anti-Personnel Rail Gun",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +8 to hit, range 40/160 ft., one target. Hit: 16 (2d10 + 5) force damage. When attacking creatures that are flying/elevated more than 20 feet above the nearest surface with no cover, this attack has advantage (unless it is firing outside its normal range).",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Explosive Buster Shell",
+          "name_format": "bold_italic",
+          "description": "The DGR fires an explosive shell at a point it can see within 120 feet, where it explodes in a 15-foot-radius sphere centered on that point. Each creature within that sphere must make a DC 14 Dexterity saving throw, taking 9 (2d8) fire damage and 11 (2d10) thunder damage on a failed save, or half as much damage on a successful one."
+        },
+        {
+          "name": "Assault Rush",
+          "name_format": "bold_italic",
+          "description": "The DGR’s movement speed doubles until the end of its turn, and before its turn ends it can make one Claw Swipe attack with advantage."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Aggressive Reposition",
+          "name_format": "bold_italic",
+          "description": "The DGR takes the Dash or Disengage action."
+        }
+      ]
+    }
+  ]
+}

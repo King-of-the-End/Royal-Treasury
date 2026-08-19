@@ -60,7 +60,10 @@ public sealed class GlossaryService
                 // Creature subtypes / tags
                 "Eidolos",
                 "Petitioner",
-                "Yokai"
+                "Yokai",
+
+                // DGR creature-line notation
+                "Footprint"
             };
 
 

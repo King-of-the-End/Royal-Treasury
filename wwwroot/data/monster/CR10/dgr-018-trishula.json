@@ -1,0 +1,164 @@
+{
+  "Name": "DGR-018 - TRISHULA",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "TRISHULA is a support unit designed with a cycling reactor that processes through three subroutines that manipulate matter surrounding it. It is capable of eroding or repairing materials around them. As a secondary function, they were also designed to be able to move underwater more efficiently than most other DGRs.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20DGR-018%20-%20TRISHULA.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_018_trishula",
+      "section_type": "Stat Block",
+      "title": "DGR-018 - TRISHULA",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "16 (natural armor)",
+      "threshold": "10",
+      "hit_points": "128 (15d12 + 30)",
+      "speed": {
+        "walk": "20 ft.",
+        "swim": "90 ft.",
+        "fly": "60 ft. (hover)",
+        "other": "0-G acceleration 180 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magic Resist",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Str +5",
+        "Dex +6",
+        "Con +5",
+        "Int +5",
+        "Wis +9",
+        "Cha +6"
+      ],
+      "skills": [
+        "Nature +7",
+        "Perception +11"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Advanced Processing",
+          "name_format": "bold_italic",
+          "description": "The DGR adds half its proficiency bonus to any saving throw it makes that does not already add it (factored into this stat block)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiaction",
+          "name_format": "bold_italic",
+          "description": "The DGR uses two of its Routine actions, as below. It cannot use the same action twice as part of the same Multiaction."
+        },
+        {
+          "name": "1st Routine: Creation",
+          "name_format": "bold_italic",
+          "description": "One creature the DGR chooses within 30 feet regains 33 (6d10) hit points. If that creature is a DGR, it regains 55 (10d10) hit points instead. That creature must then succeed on a DC 16 Constitution saving throw or become sluggish until the start of the DGR’s next turn."
+        },
+        {
+          "name": "2nd Routine: Consolidation",
+          "name_format": "bold_italic",
+          "description": "One creature the DGR chooses within 60 feet has their armor class increased by the DGR’s proficiency bonus until the start of the DGR’s next turn."
+        },
+        {
+          "name": "3rd Routine: Destruction",
+          "name_format": "bold_italic",
+          "description": "Four creatures the DGR chooses within 60 feet are assailed by arrows made of fire and divine energy, and each must make a DC 16 Dexterity saving throw, taking 17 (3d10) fire damage and 13 (2d12) radiant damage on a failure, or half as much damage on a success. Creatures who fail by 5 points or more become sluggish until the start of the DGR’s next turn."
+        },
+        {
+          "name": "Threefold Routine: Cycle of Rebirth (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR uses all three of its Routine actions, in order. When it does so, the die rolls associated with damage or healing made as part of it always roll their maximum results."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Strageneration Reactor (2/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR uses one of the following effects:",
+          "subentries": [
+            {
+              "name": "",
+              "description": "Three creatures the DGR chooses within 60 feet gain a Strageneration die each, which are a d6. At any time during the next minute, when they make an attack roll, saving throw or ability check, those constructs can spend that Strageneration die and add it to the result. If added to an attack roll, the result is added to the damage roll as well. If a Strageneration die is given to a DGR, it becomes a d10 instead."
+            },
+            {
+              "name": "",
+              "description": "One creature the DGR chooses within 30 feet becomes resistant to all damage until the start of the DGR’s next turn."
+            },
+            {
+              "name": "",
+              "description": "The DGR creates an illusory clone of itself, which then moves up to the DGR’s remaining movement speed to another space the DGR chooses. This hard-light clone has the same AC as the DGR and reacts to damage the same way it would (such as if it is attacked while moving), and vanishes at the start of the DGR’s next turn. A creature can see through the illusion with a DC 16 Wisdom (Insight) check, which can be made before attacking or targeting it if the creature suspects it isn’t real."
+            }
+          ]
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-018 - TRISHULA**\n*Huge construct (DGR), unaligned [footprint 3]*\n**Armor Class** 16 (natural armor) **Threshold** 10\n**Hit Points** 128 (15d12 + 30)\n**Speed** 20 ft., swim 90 ft., fly (hover) 60 ft., 0-G acceleration 180 ft.\n**Quality Traits** Immutable, magic resist, unique\n**STR** 17 (+3) | **DEX** 14 (+2) | **CON** 12 (+1) | **INT** 16 (+3) | **WIS** 24 (+7) | **CHA** 18 (+4)\n**Saving Throws** Str +5, Dex +6, Con +5, Int +5, Wis +9, Cha +6\n**Skills** Nature +7, Perception +11\n**Resistances** B/S/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, charmed, deafened, exhaustion, poisoned, unconscious\n**Senses** blindsight 60 ft., passive Perception 21\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 10 (5,900 XP) **Prof Bonus** +4\n\n***Advanced Processing.*** The DGR adds half its proficiency bonus to any saving throw it makes that does not already add it (factored into this stat block).\n\n**ACTIONS**\n***Multiaction.*** The DGR uses two of its Routine actions, as below. It cannot use the same action twice as part of the same Multiaction.\n\n***1st Routine: Creation.*** One creature the DGR chooses within 30 feet regains 33 (6d10) hit points. If that creature is a DGR, it regains 55 (10d10) hit points instead. That creature must then succeed on a DC 16 Constitution saving throw or become sluggish until the start of the DGR’s next turn.\n\n***2nd Routine: Consolidation.*** One creature the DGR chooses within 60 feet has their armor class increased by the DGR’s proficiency bonus until the start of the DGR’s next turn.\n\n***3rd Routine: Destruction.*** Four creatures the DGR chooses within 60 feet are assailed by arrows made of fire and divine energy, and each must make a DC 16 Dexterity saving throw, taking 17 (3d10) fire damage and 13 (2d12) radiant damage on a failure, or half as much damage on a success. Creatures who fail by 5 points or more become sluggish until the start of the DGR’s next turn.\n\n***Threefold Routine: Cycle of Rebirth (Recharge 6).*** The DGR uses all three of its Routine actions, in order. When it does so, the die rolls associated with damage or healing made as part of it always roll their maximum results.\n\n**BONUS ACTIONS**\n***Strageneration Reactor (2/Day).*** The DGR uses one of the following effects:\n• Three creatures the DGR chooses within 60 feet gain a Strageneration die each, which are a d6. At any time during the next minute, when they make an attack roll, saving throw or ability check, those constructs can spend that Strageneration die and add it to the result. If added to an attack roll, the result is added to the damage roll as well. If a Strageneration die is given to a DGR, it becomes a d10 instead.\n• One creature the DGR chooses within 30 feet becomes resistant to all damage until the start of the DGR’s next turn.\n• The DGR creates an illusory clone of itself, which then moves up to the DGR’s remaining movement speed to another space the DGR chooses. This hard-light clone has the same AC as the DGR and reacts to damage the same way it would (such as if it is attacked while moving), and vanishes at the start of the DGR’s next turn. A creature can see through the illusion with a DC 16 Wisdom (Insight) check, which can be made before attacking or targeting it if the creature suspects it isn’t real."
+    }
+  ]
+}

@@ -131,7 +131,9 @@ else
                     HasMetadata
                     ||
                     !string.IsNullOrWhiteSpace(
-                        monster.Information))
+                        monster.Information)
+                    ||
+                    monster.LoreTables.Count > 0)
                 {
                     <section class="monster-detail-intro">
 
@@ -249,6 +251,105 @@ else
                                     Context="GlossaryContext.General" />
 
                             </p>
+                        }
+
+
+                        <!-- =========================
+                             GENERIC MONSTER LORE TABLES
+
+                             Loaded from outer JSON:
+
+                             "Tables": [
+                               {
+                                 "Title": "...",
+                                 "Columns": [ ... ],
+                                 "Rows": [ ... ]
+                               }
+                             ]
+
+                             These belong to Lore and
+                             are deliberately not part
+                             of the rendered stat block.
+                             ========================= -->
+
+                        @foreach (
+                            var loreTable
+                            in monster.LoreTables)
+                        {
+                            @if (
+                                loreTable.Columns.Count > 0
+                                ||
+                                loreTable.Rows.Count > 0)
+                            {
+                                <section class="monster-specific-lore-table">
+
+                                    @if (
+                                        !string.IsNullOrWhiteSpace(
+                                            loreTable.Title))
+                                    {
+                                        <h3>
+                                            <GlossaryText
+                                                Text="@loreTable.Title"
+                                                Context="GlossaryContext.General" />
+                                        </h3>
+                                    }
+
+
+                                    <div class="monster-lore-table-wrap">
+
+                                        <table class="monster-lore-table">
+
+                                            @if (
+                                                loreTable.Columns.Count > 0)
+                                            {
+                                                <thead>
+                                                    <tr>
+
+                                                        @foreach (
+                                                            var column
+                                                            in loreTable.Columns)
+                                                        {
+                                                            <th>
+                                                                <GlossaryText
+                                                                    Text="@column"
+                                                                    Context="GlossaryContext.General" />
+                                                            </th>
+                                                        }
+
+                                                    </tr>
+                                                </thead>
+                                            }
+
+                                            <tbody>
+
+                                                @foreach (
+                                                    var row
+                                                    in loreTable.Rows)
+                                                {
+                                                    <tr>
+
+                                                        @foreach (
+                                                            var cell
+                                                            in row)
+                                                        {
+                                                            <td>
+                                                                <GlossaryText
+                                                                    Text="@cell"
+                                                                    Context="GlossaryContext.General" />
+                                                            </td>
+                                                        }
+
+                                                    </tr>
+                                                }
+
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                </section>
+                            }
                         }
 
                     </section>
@@ -1538,6 +1639,8 @@ else
             ||
             !string.IsNullOrWhiteSpace(
                 monster.Information)
+            ||
+            monster.LoreTables.Count > 0
             ||
             monster.Refinement is not null
         );

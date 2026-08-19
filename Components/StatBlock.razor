@@ -932,17 +932,52 @@
                     Data.Creature.Type);
 
 
-            return string.Join(
-                ", ",
-                new[]
-                {
-                    creatureType,
-                    Data.Creature.Alignment
-                }
-                .Where(
-                    value =>
-                        !string.IsNullOrWhiteSpace(
-                            value)));
+            var mainLine =
+                string.Join(
+                    ", ",
+                    new[]
+                    {
+                        creatureType,
+                        Data.Creature.Alignment
+                    }
+                    .Where(
+                        value =>
+                            !string.IsNullOrWhiteSpace(
+                                value)));
+
+
+            var creatureTags =
+                Data.Creature.Tags?
+                    .Where(
+                        tag =>
+                            !string.IsNullOrWhiteSpace(
+                                tag))
+                    .Select(
+                        tag =>
+                            $"[{tag.Trim()}]")
+                    .ToList()
+                ??
+                new List<string>();
+
+
+            var tagText =
+                string.Join(
+                    " ",
+                    creatureTags);
+
+
+            return
+                string.Join(
+                    " ",
+                    new[]
+                    {
+                        mainLine,
+                        tagText
+                    }
+                    .Where(
+                        value =>
+                            !string.IsNullOrWhiteSpace(
+                                value)));
         }
     }
 

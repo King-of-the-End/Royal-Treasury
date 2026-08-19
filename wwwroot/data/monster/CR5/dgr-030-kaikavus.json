@@ -1,0 +1,159 @@
+{
+  "Name": "DGR-030 - KAIKAVUS",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Following trends established by the KAVACHA unit, this is one of the final DGRs designed by the framebuilt in preparation for the War in One Moment. The KAIKAVUS was meant to allow soldiers to keep up with DGR units by donning this miniature DGR unit as power armor. They are the smallest unit, and possess the least remarkable computational aptitude (functionally being armor with limited self-awareness). The shielded arms, small size and propulsion systems equipped to KAIKAVUS allow it to move swiftly and engage in spaces regular DGRs might have difficulty.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20DGR%20030%20-%20KAIKAVUS.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20DGR%20030%20-%20KAIKAVUS.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20DGR%20030%20-%20KAIKAVUS.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_030_kaikavus",
+      "section_type": "Stat Block",
+      "title": "DGR-030 - KAIKAVUS",
+      "creature": {
+        "size": "Medium",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 1"
+        ]
+      },
+      "armor_class": "19 (natural armor)",
+      "threshold": "10",
+      "hit_points": "85 (10d8 + 40)",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "40 ft. (belabored flight)",
+        "other": "0-G acceleration 90 ft."
+      },
+      "quality_traits": [
+        "Critical 19 (melee)",
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Con +7",
+        "Wis +5"
+      ],
+      "skills": [
+        "Acrobatics +8",
+        "Athletics +7",
+        "Perception +5"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two Slam attacks or uses its Mounted Revolver once. If it rolls a d20 result of 20 on any of its Slam attack rolls, it can immediately use its Anchor Reign as part of the same Multiattack."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 4) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mounted Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +8 to hit, range 20/60 ft., one target. Hit: 14 (2d8 + 5) piercing damage plus 7 (2d6) thunder damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Anchor Reign",
+          "name_format": "bold_italic",
+          "description": "The DGR clasps an anchoring bracer to its target, then fires metal spikes into the ground to anchor them in place. The target must make a DC 15 Strength saving throw. On a failure they are restrained (escape DC 15). A creature restrained this way can escape by succeeding on a DC 15 Strength (Athletics) check, taken as though resisting a grapple."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Heel Burst",
+          "name_format": "bold_italic",
+          "description": "The DGR moves up to its movement speed without provoking opportunity attacks."
+        },
+        {
+          "name": "Shield Deploy (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When the DGR is hit by a weapon attack it can see, it can increase its armor class by its proficiency bonus until the start of its next turn by deploying its arm-mounted shields, including against the triggering attack. If it uses this reaction and is not hit by any attacks until the start of its turn, the first melee attack it makes that turn unleashes stored kinetic energy and is made with advantage."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-030 - KAIKAVUS**\n*Medium construct (DGR), unaligned [footprint 1]*\n**Armor Class** 19 (natural armor) **Threshold** 10\n**Hit Points** 85 (10d8 + 40)\n**Speed** 60 ft., belabored flight 40 ft., 0-G acceleration 90 ft.\n**Quality Traits** Critical 19 (melee), immutable, magical, unique\n**STR** 18 (+4) | **DEX** 20 (+5) | **CON** 18 (+4) | **INT** 17 (+3) | **WIS** 14 (+2) | **CHA** 10 (+0)\n**Saving Throws** Con +7, Wis +5\n**Skills** Acrobatics +8, Athletics +7, Perception +5\n**Resistances** B/S/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, poisoned, unconscious\n**Senses** darkvision 60 ft., passive Perception 15\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 5 (1,800 XP) **Proficiency Bonus** +3\n\n**ACTIONS**\n***Multiattack.*** The DGR makes two Slam attacks or uses its Mounted Revolver once. If it rolls a d20 result of 20 on any of its Slam attack rolls, it can immediately use its Anchor Reign as part of the same Multiattack.\n\n***Slam.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8 + 4) bludgeoning damage.\n\n***Mounted Revolver.*** *Ranged Weapon Attack:* +8 to hit, range 20/60 ft., one target. *Hit:* 14 (2d8 + 5) piercing damage plus 7 (2d6) thunder damage.\n\n***Anchor Reign.*** The DGR clasps an anchoring bracer to its target, then fires metal spikes into the ground to anchor them in place. The target must make a DC 15 Strength saving throw. On a failure they are restrained (escape DC 15). A creature restrained this way can escape by succeeding on a DC 15 Strength (Athletics) check, taken as though resisting a grapple.\n\n**BONUS ACTIONS**\n***Heel Burst.*** The DGR moves up to its movement speed without provoking opportunity attacks.\n\n***Shield Deploy (Recharge 5-6).*** When the DGR is hit by a weapon attack it can see, it can increase its armor class by its proficiency bonus until the start of its next turn by deploying its arm-mounted shields, including against the triggering attack. If it uses this reaction and is not hit by any attacks until the start of its turn, the first melee attack it makes that turn unleashes stored kinetic energy and is made with advantage."
+    }
+  ]
+}

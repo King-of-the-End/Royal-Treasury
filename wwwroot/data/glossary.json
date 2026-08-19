@@ -939,42 +939,51 @@
     ]
   },
   {
-  "Term": "Massive (X/Y/DC Z)",
-  "Definition": "Due to this creature’s large size, it takes half the damage from creatures of a certain size category or smaller. Additionally, when they attack a creature of that size category or smaller, each creature within a certain distance of that creature must succeed a Dexterity saving throw or be targeted by that attack. The same attack roll is used for each creature, but each is treated as being targeted by an independent version of that attack.\n\n• X is the size category.\n• Y is the space surrounding their target.\n• Z is the Dexterity save DC.\n\nThe following notations are used for X above.\n\n• Tiny - T\n• Small - S\n• Medium - M\n• Large - L\n• Huge - H\n• Gargantuan - G\n• Titanic - Ti\n• Tremendous - Tr\n• Colossal - Co\n• Supermassive - Su\n• Planetary - Pl",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "StatBlockQualityTrait"
-  ]
-},
-{
-  "Term": "Yokai Nourishment",
-  "Definition": "When this creature scores a critical hit against another creature, it regains hit points equal to the damage that the attack deals.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "StatBlockQualityTrait"
-  ]
-},
-{
-  "Term": "Unique",
-  "Definition": "This creature is a unique individual or beast (as opposed to a generic member of their race), or is complex in nature in such a way that spells such as shape change or polymorph cannot turn a creature into them for the purposes of assuming their statistics. They are considered a unique individual, not a broad type of creature.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "StatBlockQualityTrait"
-  ]
-},
-{
-  "Term": "Vehicle",
-  "Aliases": [
-    "Vehicle (Auto)"
-  ],
-  "Definition": "This creature serves as a vehicle, which can either house one or more creatures internally or have them ride it from the outside. While a creature who knows how to operate the vehicle is in a position to pilot it (or operate it, drive it, etc.,) they can assume control of the creature.\n\nActions. A creature piloting a vehicle can determine what the vehicle does on their turn as long as it isn’t incapacitated. On their own turn they can have the vehicle take any action it is capable of taking using their own equivalent action (except the vehicle’s Multiattack, if they have it).\n\nCover. A creature serving as the pilot for another with this quality tag is protected by it, granting them half cover and allowing them to redirect attacks from themselves to the vehicle as long as they are aware of them. If the creature is housed inside the vehicle, it has total cover and can’t be targeted by effects originating from outside.\n\nEntering & Exiting. Unless otherwise stated, entering the piloting position or leaving the creature requires 5 feet of movement on the part of the pilot. To pilot a vehicle a creature must occupy a number of spaces equal to half or fewer the number the vehicle occupies, and they must have both the anatomical features and knowledge needed to direct or control the vehicle. A creature exiting a vehicle emerges in an unoccupied space adjacent to the vehicle.\n\nMounted Combat. In most cases, operating a vehicle also counts as mounting it, granting bonuses associated with doing so. A GM may decide this is not the case based on context.\n\nProficiency Adjustment. When piloted by a creature with a higher proficiency bonus than its own, the vehicle’s proficiency bonus becomes its pilot’s.\n\nVehicle (Auto). If the quality is listed with this variant, it means the vehicle is capable of acting on its own without a pilot/operator. Its decisions will be influenced by whatever it was programmed or created to do, often simplistically and single-mindedly pursuing the last directive of its pilot or following their orders. Vehicles with this tag do not cease operating if their pilot is unable to act.\n\nSome creatures, like DGRs, have unique handling rules that supersede the vehicle quality.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "StatBlockQualityTrait"
-  ]
-}
+    "Term": "Massive (X/Y/DC Z)",
+    "Definition": "Due to this creature’s large size, it takes half the damage from creatures of a certain size category or smaller. Additionally, when they attack a creature of that size category or smaller, each creature within a certain distance of that creature must succeed a Dexterity saving throw or be targeted by that attack. The same attack roll is used for each creature, but each is treated as being targeted by an independent version of that attack.\n\n• X is the size category.\n• Y is the space surrounding their target.\n• Z is the Dexterity save DC.\n\nThe following notations are used for X above.\n\n• Tiny - T\n• Small - S\n• Medium - M\n• Large - L\n• Huge - H\n• Gargantuan - G\n• Titanic - Ti\n• Tremendous - Tr\n• Colossal - Co\n• Supermassive - Su\n• Planetary - Pl",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Yokai Nourishment",
+    "Definition": "When this creature scores a critical hit against another creature, it regains hit points equal to the damage that the attack deals.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Unique",
+    "Definition": "This creature is a unique individual or beast (as opposed to a generic member of their race), or is complex in nature in such a way that spells such as shape change or polymorph cannot turn a creature into them for the purposes of assuming their statistics. They are considered a unique individual, not a broad type of creature.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Vehicle",
+    "Aliases": [
+      "Vehicle (Auto)"
+    ],
+    "Definition": "This creature serves as a vehicle, which can either house one or more creatures internally or have them ride it from the outside. While a creature who knows how to operate the vehicle is in a position to pilot it (or operate it, drive it, etc.,) they can assume control of the creature.\n\nActions. A creature piloting a vehicle can determine what the vehicle does on their turn as long as it isn’t incapacitated. On their own turn they can have the vehicle take any action it is capable of taking using their own equivalent action (except the vehicle’s Multiattack, if they have it).\n\nCover. A creature serving as the pilot for another with this quality tag is protected by it, granting them half cover and allowing them to redirect attacks from themselves to the vehicle as long as they are aware of them. If the creature is housed inside the vehicle, it has total cover and can’t be targeted by effects originating from outside.\n\nEntering & Exiting. Unless otherwise stated, entering the piloting position or leaving the creature requires 5 feet of movement on the part of the pilot. To pilot a vehicle a creature must occupy a number of spaces equal to half or fewer the number the vehicle occupies, and they must have both the anatomical features and knowledge needed to direct or control the vehicle. A creature exiting a vehicle emerges in an unoccupied space adjacent to the vehicle.\n\nMounted Combat. In most cases, operating a vehicle also counts as mounting it, granting bonuses associated with doing so. A GM may decide this is not the case based on context.\n\nProficiency Adjustment. When piloted by a creature with a higher proficiency bonus than its own, the vehicle’s proficiency bonus becomes its pilot’s.\n\nVehicle (Auto). If the quality is listed with this variant, it means the vehicle is capable of acting on its own without a pilot/operator. Its decisions will be influenced by whatever it was programmed or created to do, often simplistically and single-mindedly pursuing the last directive of its pilot or following their orders. Vehicles with this tag do not cease operating if their pilot is unable to act.\n\nSome creatures, like DGRs, have unique handling rules that supersede the vehicle quality.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Footprint",
+    "Definition": "A DGR unit is categorized by a scale referred to as its Footprint. This number is used to determine certain adjustments. Their Footprint is listed on their stat block beside their creature type, size and alignment.\n\nFootprint scale:\n\n• Superplanetary creatures — 7\n• Planetary creatures — 6\n• Supermassive creatures — 5\n• Colossal creatures — 4\n• Tremendous creatures — 3\n• Titanic creatures — 3\n• Gargantuan and Huge creatures — 2\n• Large and smaller creatures — 1",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  }
 ]

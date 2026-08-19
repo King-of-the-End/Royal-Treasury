@@ -1,0 +1,181 @@
+{
+  "Name": "DGR-010 - SKOFNUNG",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "DGR-10 SKOFNUNG was created in an attempt to imbue fiendish qualities into a DGR unit, constructing a DGR that many at the time considered to be cursed. These attempts were made to try and compensate for the diminishing materials required to make the General-Class DGRs. Once the unit was created, it was found that it had dark intentions of its own: the devilish magic imbued into it and its remarkable greatsword led to it seizing control from its pilots, as well as turning against other DGR units who showed great combat proficiency. It was deemed to be a lustful machine that desired strong opponents, and so it was retired and sealed away rather than be deployed during the War in One Moment. However, while the other DGRs were blown from the sky and as many as possible were salvaged, SKOFNUNG was unsealed by an unknown faction and was either stolen or escaped. Its location was never discovered after this.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Reference%20-%20DGR-010%20-%20SKOFNUNG.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_010_skofnung",
+      "section_type": "Stat Block",
+      "title": "DGR-010 - SKOFNUNG",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "neutral evil",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "20 (natural armor)",
+      "threshold": "15",
+      "hit_points": "210 (20d12 + 80)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)",
+        "other": "0-G acceleration 180 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "Eidolic",
+        "Immutable",
+        "Magic Resist",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 26,
+          "modifier": "+8"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Str +13",
+        "Int +6",
+        "Cha +5"
+      ],
+      "skills": [
+        "Athletics +13"
+      ],
+      "resistances": [
+        "slashing",
+        "B/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "devilsight 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "16 (15,000 XP)",
+      "proficiency_bonus": "+5",
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "traits": [
+        {
+          "name": "Darkness Dweller",
+          "name_format": "bold_italic",
+          "description": "When the DGR attacks a creature that is in darkness or dim light, it has advantage on its attack rolls."
+        },
+        {
+          "name": "Peerless Edge",
+          "name_format": "bold_italic",
+          "description": "Attacks made by the DGR ignore the damage thresholds of targets as long as they hit, and when the DGR scores a critical hit it rolls 33 (6d10) and adds the result to their damage roll as force damage. The DGR has advantage on opportunity attacks."
+        },
+        {
+          "name": "Thesite Alloy Plating",
+          "name_format": "bold_italic",
+          "description": "The DGR is resistant to all damage originating from Large and smaller creatures."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three weapon attacks."
+        },
+        {
+          "name": "Eidotech Greatsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 34 (4d12 + 8) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bolt Launcher",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +8 to hit, range 40/160 feet, one target. Hit: 14 (2d10 + 3) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Thousand Screams Silence (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a series of cursed slashes against each creature it chooses within 40 feet of it, making all of these attacks in a flash. Each target must make a DC 21 Dexterity saving throw, taking 6d10 necrotic damage on a failed save, or half as much damage on a successful one. Any creature that fails the save by 5 points or more is also cursed for 1 minute, and while cursed this way they become sluggish. If the targets are DGRs, their pilots are also cursed while the DGR is. At the end of each target’s turn they make a DC 21 Wisdom saving throw, ending the curse on themselves on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cursed Blade (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The DGR curses itself to empower its Eidotech Greatsword. Until the end of its next turn, all attacks made against it have advantage. During this time, however, when it makes an attack or damage roll using its Eidotech Greatsword it cannot have disadvantage, and it rolls 1d10 and adds the result to those rolls. Furthermore, if it uses its Multiattack it can make one additional attack using its Eidotech Greatsword as part of it."
+        },
+        {
+          "name": "Dark Shroud (2/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR chooses a point or creature it can see within 240 feet, and creates a light-refracting veil around that point or creature that causes a 30-foot-radius sphere of darkness to appear, centered on them. If targeting a creature, the target must make a DC 16 Dexterity saving throw or have the veil pinned to them, causing it to move with them. The veil remains for 1 minute, until the DGR dispels it as a bonus action, or until the DGR is incapacitated."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Legendary Reactions": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-010 - SKOFNUNG**\n*Huge construct (DGR), neutral evil [footprint 3]*\n**Armor Class** 20 (natural armor) **Threshold** 15\n**Hit Points** 210 (20d12 + 80)\n**Speed** 30 ft., fly (hover) 60 ft., 0-G acceleration 180 ft.\n**Quality Traits** Critical 19, eidolic, immutable, magic resist, unique\n**STR** 26 (+8) | **DEX** 16 (+3) | **CON** 18 (+4) | **INT** 12 (+1) | **WIS** 17 (+3) | **CHA** 10 (+0)\n**Saving Throws** Str +13, Int +6, Cha +5\n**Skills** Athletics +13\n**Resistances** slashing; B/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 60 ft., devilsight 60 ft., passive Perception 13\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 16 (15,000 XP) **Proficiency Bonus** +5\n\n***Darkness Dweller.*** When the DGR attacks a creature that is in darkness or dim light, it has advantage on its attack rolls.\n\n**LEGENDARY REACTIONS (2 USES)**\nTBA.\n\n***Peerless Edge.*** Attacks made by the DGR ignore the damage thresholds of targets as long as they hit, and when the DGR scores a critical hit it rolls 33 (6d10) and adds the result to their damage roll as force damage. The DGR has advantage on opportunity attacks.\n\n***Thesite Alloy Plating.*** The DGR is resistant to all damage originating from Large and smaller creatures.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three weapon attacks.\n\n***Eidotech Greatsword.*** *Melee Weapon Attack:* +13 to hit, reach 15 ft., one target. *Hit:* 34 (4d12 + 8) slashing damage.\n\n***Bolt Launcher.*** *Ranged Weapon Attack:* +8 to hit, range 40/160 feet, one target. *Hit:* 14 (2d10 + 3) piercing damage.\n\n***Thousand Screams Silence (Recharge 6).*** The DGR unleashes a series of cursed slashes against each creature it chooses within 40 feet of it, making all of these attacks in a flash. Each target must make a DC 21 Dexterity saving throw, taking 6d10 necrotic damage on a failed save, or half as much damage on a successful one. Any creature that fails the save by 5 points or more is also cursed for 1 minute, and while cursed this way they become sluggish. If the targets are DGRs, their pilots are also cursed while the DGR is. At the end of each target’s turn they make a DC 21 Wisdom saving throw, ending the curse on themselves on a success.\n\n**BONUS ACTIONS**\n***Cursed Blade (Recharge 5-6).*** The DGR curses itself to empower its Eidotech Greatsword. Until the end of its next turn, all attacks made against it have advantage. During this time, however, when it makes an attack or damage roll using its Eidotech Greatsword it cannot have disadvantage, and it rolls 1d10 and adds the result to those rolls. Furthermore, if it uses its Multiattack it can make one additional attack using its Eidotech Greatsword as part of it.\n\n***Dark Shroud (2/Day).*** The DGR chooses a point or creature it can see within 240 feet, and creates a light-refracting veil around that point or creature that causes a 30-foot-radius sphere of darkness to appear, centered on them. If targeting a creature, the target must make a DC 16 Dexterity saving throw or have the veil pinned to them, causing it to move with them. The veil remains for 1 minute, until the DGR dispels it as a bonus action, or until the DGR is incapacitated."
+    }
+  ]
+}

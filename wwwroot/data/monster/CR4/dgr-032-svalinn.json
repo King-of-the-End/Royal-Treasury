@@ -1,0 +1,156 @@
+{
+  "Name": "DGR-032 SVALINN",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A defense unit that is highly capable when performing in high or low-temperature environments. SVALINN uses its advanced shield and shield units to protect itself and others in the battlefield. It has a multitude of internal energy stores that activate when it’s in critical condition, releasing bursts of energy across its body to deflect fatal sources of damage. The unit was created in an effort to make a defensive anti-personnel unit, but during the War in One Moment it (like most anti-personnel units) wasn’t deployed, as its viability in a direct battle wasn’t considered fair. Due to this, it and other anti-personnel units had a higher survival rate than other DGRs.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20DGR%20032%20-%20SVALINN.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20DGR%20032%20-%20SVALINN.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20DGR%20032%20-%20SVALINN.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_032_svalinn",
+      "section_type": "Stat Block",
+      "title": "DGR-032 SVALINN",
+      "creature": {
+        "size": "Medium",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 1"
+        ]
+      },
+      "armor_class": "17 (natural armor, shield)",
+      "threshold": "10",
+      "hit_points": "60 (8d8 + 24)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft. (hover)",
+        "other": "0-G acceleration 120 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Str +6",
+        "Wis +7"
+      ],
+      "skills": [
+        "Insight +7",
+        "Perception +7"
+      ],
+      "resistances": [
+        "cold",
+        "fire",
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Final Guardian",
+          "name_format": "bold_italic",
+          "description": "When the DGR would be reduced to 0 hit points by damage, it rolls 1d100 and subtracts the damage that reduced it to 0 hit points (the full damage, not just what exceeded its hit points). If the result is 71 or higher, it either takes no damage or the DGR is reduced to 10 hit points instead (whichever result would leave it with fewer hit points)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three Shield Edge attacks."
+        },
+        {
+          "name": "Shield Edge",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Arm of Broken Fiends",
+          "name_format": "bold_italic",
+          "description": "The DGR propels itself up to 30 feet using thrusters attached to its shield, moving into a space it can see within 30 feet without provoking opportunity attacks. It can then make one Shield Edge attack against a creature within reach, and that attack deals an additional 11 (2d10) fire damage or 11 (2d10) cold damage (the DGR chooses) if it hits."
+        },
+        {
+          "name": "Shield Unit Deployment (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR launches a shield unit that has 15 AC, 30 hit points, and orbits around one creature the DGR chooses within 30 feet. While the unit orbits them, it projects arcane shields that have three purposes: they raise the armor class of the target creature by 3, the target’s saving throws gain a +1 bonus, and they grant the target resistance to all damage. Each time the target is damaged, the damage they take is instead received by the shield unit. After 1 hour the shield unit automatically deactivates if it is still standing."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Shield Parry",
+          "name_format": "bold_italic",
+          "description": "The DGR’s armor class increases by 5 against a single weapon attack made against it that it can see. If this causes the attack to miss and the attacker is within reach, the DGR can immediately make a Shield Edge attack against them."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**DGR-032 SVALINN**\n*Medium construct (DGR), unaligned [footprint 1]*\n**Armor Class** 17 (natural armor, shield) **Threshold** 10\n**Hit Points** 60 (8d8 + 24)\n**Speed** 30 ft., fly (hover) 40 ft., 0-G acceleration 120 ft.\n**Quality Traits** Immutable, magical, unique\n**STR** 18 (+4) | **DEX** 12 (+1) | **CON** 16 (+3) | **INT** 12 (+1) | **WIS** 20 (+5) | **CHA** 10 (+0)\n**Saving Throws** Str +6, Wis +7\n**Skills** Insight +7, Perception +7\n**Resistances** cold, fire; B/S/P (magical)\n**Immunities** necrotic, poison\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 30 ft., passive Perception 17\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 4 (1,100 XP) **Proficiency Bonus** +2\n\n***Final Guardian.*** When the DGR would be reduced to 0 hit points by damage, it rolls 1d100 and subtracts the damage that reduced it to 0 hit points (the full damage, not just what exceeded its hit points). If the result is 71 or higher, it either takes no damage or the DGR is reduced to 10 hit points instead (whichever result would leave it with fewer hit points).\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three Shield Edge attacks.\n\n***Shield Edge.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (1d8 + 4) bludgeoning damage.\n\n***Arm of Broken Fiends.*** The DGR propels itself up to 30 feet using thrusters attached to its shield, moving into a space it can see within 30 feet without provoking opportunity attacks. It can then make one Shield Edge attack against a creature within reach, and that attack deals an additional 11 (2d10) fire damage or 11 (2d10) cold damage (the DGR chooses) if it hits.\n\n***Shield Unit Deployment (2/Rest).*** The DGR launches a shield unit that has 15 AC, 30 hit points, and orbits around one creature the DGR chooses within 30 feet. While the unit orbits them, it projects arcane shields that have three purposes: they raise the armor class of the target creature by 3, the target’s saving throws gain a +1 bonus, and they grant the target resistance to all damage. Each time the target is damaged, the damage they take is instead received by the shield unit. After 1 hour the shield unit automatically deactivates if it is still standing.\n\n**REACTIONS**\n***Shield Parry.*** The DGR’s armor class increases by 5 against a single weapon attack made against it that it can see. If this causes the attack to miss and the attacker is within reach, the DGR can immediately make a Shield Edge attack against them."
+    }
+  ]
+}

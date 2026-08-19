@@ -1,0 +1,201 @@
+{
+  "Name": "DGR-003 - GANDIVA",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The final attempt at creating a DGR unit that was comparable to the Sword of Damocles. The GANDIVA focuses on defensive capabilities and countermeasures. It seizes control of the flow of gravity around it to slow and disorient its targets, which it snipes from the air using a rail gun that heavily compresses and releases sonic waves. Once GANDIVA was completed, production of further DGRs would not include the use of thecite, a now dwindling resource - to this end, much of it that remained was used to reinforce GANDIVA.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Reference%20-%20DGR%20003%20-%20GANDIVA.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dgr_003_gandiva",
+      "section_type": "Stat Block",
+      "title": "DGR-003 - GANDIVA",
+      "creature": {
+        "size": "Colossal",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 4"
+        ]
+      },
+      "armor_class": "23 (natural armor)",
+      "threshold": "20",
+      "hit_points": "370 (20d20 + 160)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "100 ft. (hover)",
+        "other": "0-G acceleration 240 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "Immutable",
+        "Massive (L/15 feet/DC 20)",
+        "Siege",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 27,
+          "modifier": "+8"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Con +14"
+      ],
+      "skills": [
+        "Perception +11"
+      ],
+      "resistances": [
+        "force",
+        "B/S/P (eidolic)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/S/P (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "petrified",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 240 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Emergency Activation (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When the DGR would be reduced to 0 hit points or killed outright, its current hit point total resets to 150 hit points, it recovers from any conditions affecting it, and it gains access to its Mythic Actions and options in the “Mythic Actions” section for 1 hour. During this time it also becomes immune to lightning and force damage and gains truesight out to 120 feet. Award a party an additional 25,000 XP (for 50,000 XP total) for defeating the DGR after using its Emergency Activation."
+        },
+        {
+          "name": "Warp Transmission",
+          "name_format": "bold_italic",
+          "description": "By concentrating for 1 minute, the DGR is able to initiate its malfunctioning astral transmission drive to open a fissure between two points on the same plane it is on, emerging in any space it chooses that it is familiar with. Unlike it would with a functioning drive, this does not pass through the astral sea."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three weapon attacks, choosing from its Slam or Wave Rail Cannon for each. It can then use its Gravity Crunch, if it is available."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 20 ft., one target. Hit: (3d10 + 5) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Wave Rail Cannon",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +11 to hit, range 500/1500 feet, one target. Hit: 31 (4d12 + 5) thunder damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Gravity Crunch (Mythic Action)",
+          "name_format": "bold_italic",
+          "description": "At any point within the DGR’s Gravity Field, it can cause gravity in a 30-foot-radius sphere to condense and collapse in on itself. Each creature in that range must make a DC 19 Constitution saving throw. Creatures that fail take 39 (6d12) force damage and are moved as close to the center of the sphere as possible without occupying another creature’s space."
+        },
+        {
+          "name": "Grand Wave Spiral (Mythic Action) (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a 480-foot-cone of thunderous energy, forcing all creatures in range to make a DC 19 Constitution saving throw, taking 66 (12d10) thunder damage on a failed save, or half as much on a successful one. Creatures that fail are also pushed back 10 feet for every point they fail by, and if they hit a solid surface which stops their movement short, they take 1d6 bludgeoning damage for every 10 feet they were successfully pushed."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Gravity Field",
+          "name_format": "bold_italic",
+          "description": "The DGR creates or dismisses an aura of anti-gravity with a 500-foot radius centered on itself. This area is treated as a zero-gravity environment. This anti-gravity field causes all ranged weapon attacks that use ammunition to only fire half as far as they normally would, as the field tries to hold them in place. When this field is extinguished, creatures fall harmlessly up to 120 feet toward the ground, then plummet."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The DGR makes one Slam attack. If its Emergency Activation is in effect, it can make two Wave Rail Cannon attacks against different targets instead."
+          },
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "The DGR moves up to half its movement speed."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "If the DGR’s Emergency Activation trait has activated in the last hour, it can use the options below as Legendary Actions.",
+        "options": [
+          {
+            "name": "Field Manipulation",
+            "name_format": "bold_italic",
+            "description": "The DGR can forcibly move one Huge or smaller creature within its Gravity Field to another unoccupied space within the field and within 60 feet of where the creature was standing, provided there is space to move them through to get there. If the target is holding onto something anchored to the ground or capable of 0-G acceleration they can attempt a DC 24 Strength saving throw, resisting the effect on a success."
+          },
+          {
+            "name": "Point Hold (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The DGR chooses three creatures within 240 feet of itself, who must make a DC 19 Strength saving throw. On a failure they are paralyzed until the start of the DGR’s next turn, as gravitational forces press in on them from all sides."
+          },
+          {
+            "name": "Absolute Barrier (Cost 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The DGR surrounds itself in a protective barrier that causes it to gain 105 (10d20) temporary hit points until the start of its next turn."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-003 - GANDIVA**\n*Colossal construct (DGR), unaligned [footprint 4]*\n**Armor Class** 23 (natural armor) **Threshold** 20\n**Hit Points** 370 (20d20 + 160)\n**Speed** 40 ft., fly 100 ft. (hover), 0-G acceleration 240 ft.\n**Quality Traits** Eidolic, immutable, massive (L/15 feet/20), siege, unique\n**STR** 20 (+5) | **DEX** 14 (+2) | **CON** 27 (+8) | **INT** 14 (+2) | **WIS** 20 (+5) | **CHA** 13 (+1)\n**Saving Throws** Con +14\n**Skills** Perception +11\n**Resistances** force; B/S/P (eidolic)\n**Immunities** necrotic, poison; B/S/P (eidolic or magical)\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, petrified, poisoned, unconscious\n**Senses** blindsight 240 ft., passive Perception 21\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 20 (25,000 XP) **Prof Bonus** +6\n\n***Emergency Activation (Mythic Awakening).*** When the DGR would be reduced to 0 hit points or killed outright, its current hit point total resets to 150 hit points, it recovers from any conditions affecting it, and it gains access to its Mythic Actions and options in the “Mythic Actions” section for 1 hour. During this time it also becomes immune to lightning and force damage and gains truesight out to 120 feet. Award a party an additional 25,000 XP (for 50,000 XP total) for defeating the DGR after using its Emergency Activation.\n\n***Warp Transmission.*** By concentrating for 1 minute, the DGR is able to initiate its malfunctioning astral transmission drive to open a fissure between two points on the same plane it is on, emerging in any space it chooses that it is familiar with. Unlike it would with a functioning drive, this does not pass through the astral sea.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes three weapon attacks, choosing from its Slam or Wave Rail Cannon for each. It can then use its Gravity Crunch, if it is available.\n\n***Slam.*** *Melee Weapon Attack:* +11 to hit, reach 20 ft., one target. *Hit:* (3d10 + 5) bludgeoning damage.\n\n***Wave Rail Cannon.*** *Ranged Weapon Attack:* +11 to hit, range 500/1500 feet, one target. *Hit:* 31 (4d12 + 5) thunder damage.\n\n***Gravity Crunch (Mythic Action).*** At any point within the DGR’s Gravity Field, it can cause gravity in a 30-foot-radius sphere to condense and collapse in on itself. Each creature in that range must make a DC 19 Constitution saving throw. Creatures that fail take 39 (6d12) force damage and are moved as close to the center of the sphere as possible without occupying another creature’s space.\n\n***Grand Wave Spiral (Mythic Action) (Recharge 6).*** The DGR unleashes a 480-foot-cone of thunderous energy, forcing all creatures in range to make a DC 19 Constitution saving throw, taking 66 (12d10) thunder damage on a failed save, or half as much on a successful one. Creatures that fail are also pushed back 10 feet for every point they fail by, and if they hit a solid surface which stops their movement short, they take 1d6 bludgeoning damage for every 10 feet they were successfully pushed.\n\n**BONUS ACTIONS**\n***Gravity Field.*** The DGR creates or dismisses an aura of anti-gravity with a 500-foot radius centered on itself. This area is treated as a zero-gravity environment. This anti-gravity field causes all ranged weapon attacks that use ammunition to only fire half as far as they normally would, as the field tries to hold them in place. When this field is extinguished, creatures fall harmlessly up to 120 feet toward the ground, then plummet.\n\n**LEGENDARY ACTIONS (2 ACTIONS)**\n***Attack.*** The DGR makes one Slam attack. If its Emergency Activation is in effect, it can make two Wave Rail Cannon attacks against different targets instead.\n\n***Move.*** The DGR moves up to half its movement speed.\n\n**MYTHIC ACTIONS**\nIf the DGR’s Emergency Activation trait has activated in the last hour, it can use the options below as Legendary Actions.\n\n***Field Manipulation.*** The DGR can forcibly move one Huge or smaller creature within its Gravity Field to another unoccupied space within the field and within 60 feet of where the creature was standing, provided there is space to move them through to get there. If the target is holding onto something anchored to the ground or capable of 0-G acceleration they can attempt a DC 24 Strength saving throw, resisting the effect on a success.\n\n***Point Hold (Costs 2 Actions).*** The DGR chooses three creatures within 240 feet of itself, who must make a DC 19 Strength saving throw. On a failure they are paralyzed until the start of the DGR’s next turn, as gravitational forces press in on them from all sides.\n\n***Absolute Barrier (Cost 2 Actions).*** The DGR surrounds itself in a protective barrier that causes it to gain 105 (10d20) temporary hit points until the start of its next turn."
+    }
+  ]
+}

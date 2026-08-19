@@ -1,0 +1,167 @@
+{
+  "Name": "DGR-026 - MEGINGJÖRÐ",
+  "Group": "DGR Frame Units",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A powerful DGR meant to cause collateral damage among enemy units. It was designed with only destructive power in mind, though compared to many of the earlier unit models it ranks lower in tactical ability. The unit’s arms are equipped with sonic engines that can unleash powerful waves of force and sound as they move, designed to vibrate and destroy constructs and confuse targets.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20DGR%20026%20-%20MEGINJORD.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20DGR%20026%20-%20MEGINJORD.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20DGR%20026%20-%20MEGINJORD.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_026_megingjord",
+      "section_type": "Stat Block",
+      "title": "DGR-026 - MEGINGJÖRÐ",
+      "creature": {
+        "size": "Large",
+        "type": "construct (DGR)",
+        "alignment": "unaligned",
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "15 (natural armor)",
+      "threshold": "10",
+      "hit_points": "105 (10d10 + 50)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft.",
+        "fly": "40 ft. (belabored flight)",
+        "other": "0-G acceleration 80 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "Magical",
+        "Unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1"
+        }
+      },
+      "saving_throws": [
+        "Dex +4",
+        "Int +1",
+        "Wis +1"
+      ],
+      "skills": [
+        "Athletics +10"
+      ],
+      "resistances": [
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "thunder"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 9"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "7 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Rage Reactor (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR can use the following effects, one at a time, when they would be applicable:",
+          "subentries": [
+            {
+              "name": "",
+              "description": "When it takes damage, the DGR can roll 1d10 and add the result to its damage threshold until the end of that turn. This cannot stack."
+            },
+            {
+              "name": "",
+              "description": "If the DGR rolls a d20 result of 10 or lower on an attack roll, it can roll a d10 and add it to the result."
+            },
+            {
+              "name": "",
+              "description": "The DGR can use its Reckless Attacker feature this turn without giving attackers advantage against it."
+            }
+          ]
+        },
+        {
+          "name": "Reckless Attacker",
+          "name_format": "bold_italic",
+          "description": "When the DGR makes its first attack on its turn, it can choose to attack recklessly and gain advantage on it and all subsequent melee attacks it makes until the end of its turn. When it does, until the start of its next turn, all attacks made against it have advantage. When the DGR’s damage causes a concentration check to be made, it is made with disadvantage."
+        },
+        {
+          "name": "Sonic Siege Engine",
+          "name_format": "bold_italic",
+          "description": "The DGR deals double damage to vehicles, structures, and objects. It also deals double damage to constructs it hits with weapon attacks."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two Thunder Strike attacks."
+        },
+        {
+          "name": "Thunder Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage plus 6 (1d10) thunder damage. If this attack scores a critical hit against a Huge or smaller creature, it is stunned until the start of its next turn.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Roundquake Wave (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The DGR strikes its fists together, unleashing a wave of thunderous energy that fills a 30-foot-radius sphere centered on itself. Each creature within that sphere (except itself) must make a DC 17 Constitution saving throw, taking 22 (3d10 + 5) thunder damage on a failed save, or half as much on a success. Any creature that fails by 5 points or more is knocked prone and pushed back a number of feet equal to the number they failed by (rounded up to the nearest multiple of 5).\n\nIf this action is taken in a zero-gravity environment, the radius of the sphere becomes 60 feet instead."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**DGR-026 - MEGINGJÖRÐ**\n*Large construct (DGR), unaligned [footprint 2]*\n**Armor Class** 15 (natural armor) **Threshold** 10\n**Hit Points** 105 (10d10 + 50)\n**Speed** 30 ft., belabored flight 40 ft., climb 30 ft., 0-G acceleration 80 ft.\n**Quality Traits** Immutable, magical, unique\n**STR** 24 (+6) | **DEX** 12 (+1) | **CON** 20 (+5) | **INT** 7 (-2) | **WIS** 8 (-1) | **CHA** 8 (-1)\n**Saving Throws** Dex +4, Int +1, Wis +1\n**Skills** Athletics +10\n**Resistances** B/S/P (magical)\n**Immunities** necrotic, poison, thunder\n**Condition Immunities** blinded, deafened, charmed, exhaustion, frightened, poisoned, unconscious\n**Senses** blindsight 60 ft., passive Perception 9\n**Languages** understands all, but doesn’t speak\n**Challenge Rating** 7 (2,300 XP) **Proficiency Bonus** +3\n\n***Rage Reactor (3/Day).*** The DGR can use the following effects, one at a time, when they would be applicable:\n• When it takes damage, the DGR can roll 1d10 and add the result to its damage threshold until the end of that turn. This cannot stack.\n• If the DGR rolls a d20 result of 10 or lower on an attack roll, it can roll a d10 and add it to the result.\n• The DGR can use its Reckless Attacker feature this turn without giving attackers advantage against it.\n\n***Reckless Attacker.*** When the DGR makes its first attack on its turn, it can choose to attack recklessly and gain advantage on it and all subsequent melee attacks it makes until the end of its turn. When it does, until the start of its next turn, all attacks made against it have advantage. When the DGR’s damage causes a concentration check to be made, it is made with disadvantage.\n\n***Sonic Siege Engine.*** The DGR deals double damage to vehicles, structures, and objects. It also deals double damage to constructs it hits with weapon attacks.\n\n**ACTIONS**\n***Multiattack.*** The DGR makes two Thunder Strike attacks.\n\n***Thunder Strike.*** *Melee Weapon Attack:* +10 to hit, reach 10 ft., one target. *Hit:* 16 (2d8 + 7) bludgeoning damage plus 6 (1d10) thunder damage. If this attack scores a critical hit against a Huge or smaller creature, it is stunned until the start of its next turn.\n\n***Roundquake Wave (Recharge 5-6).*** The DGR strikes its fists together, unleashing a wave of thunderous energy that fills a 30-foot-radius sphere centered on itself. Each creature within that sphere (except itself) must make a DC 17 Constitution saving throw, taking 22 (3d10 + 5) thunder damage on a failed save, or half as much on a success. Any creature that fails by 5 points or more is knocked prone and pushed back a number of feet equal to the number they failed by (rounded up to the nearest multiple of 5).\n\nIf this action is taken in a zero-gravity environment, the radius of the sphere becomes 60 feet instead."
+    }
+  ]
+}
