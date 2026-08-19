@@ -1,0 +1,116 @@
+{
+  "Name": "Giant Capybara",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A colossal beast compared to its lesser counterpart, the giant capybara is a strong and versatile yet gentle animal. It is large enough to be ridden by many humanoids, and its surprising speed and ability to move quickly through water make it an idea companion in combat. Though somewhat silly to behold, this beast is one of the most reliable and trusted mounts to be found.\n\nGiant capybaras in the wild have been known to see their smaller relatives as the same as their own, and often a giant capybara will adopt a small herd of regular ones, which rely on its protection and sometimes ride around on its back.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "giant_capybara",
+      "section_type": "Stat Block",
+      "title": "Giant Capybara",
+      "creature": {
+        "size": "Large",
+        "type": "beast",
+        "alignment": "unaligned"
+      },
+      "armor_class": "13 (natural armor)",
+      "hit_points": "85 (10d10 + 30)",
+      "speed": {
+        "walk": "50 ft.",
+        "swim": "50 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Con +6"
+      ],
+      "skills": [
+        "Athletics +6",
+        "Survival +1"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 13"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Herd Bravery",
+          "name_format": "bold_italic",
+          "description": "If the capybara has an ally within 10 feet of it, it has advantage on saving throws against being frightened or charmed."
+        },
+        {
+          "name": "Strong Lung Capacity",
+          "name_format": "bold_italic",
+          "description": "The capybara can hold its breath for an additional 10 minutes, for a total of 14 minutes."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The capybara makes three attacks: one with its Bite, and two Claw Strikes."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., 1 target. Hit: 14 (2d10 + 3) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., 1 target. Hit: 8 (1d8 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Hefty Barrel Charge",
+          "name_format": "bold_italic",
+          "description": "The capybara moves up to its movement speed toward a creature, and once it reaches them slams into them, forcing them to make a DC 14 Strength saving throw. On a failure, the creature takes 36 (6d10 + 3) bludgeoning damage and is knocked prone."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**GIANT CAPYBARA**\n*Large beast, unaligned*\n**Armor Class** 13 (natural armor)\n**Hit Points** 85 (10d10 + 30)\n**Speed** 50 ft., swim 50 ft.\n**Quality Traits**\n**STR** 16 (+3) | **DEX** 12 (+1) | **CON** 16 (+3) | **INT** 7 (-2) | **WIS** 16 (+3) | **CHA** 12 (+1)\n**Saving Throws** Con +6\n**Skills** Athletics +6, Survival +1\n**Senses** darkvision 60 ft., passive Perception 13\n**Challenge Rating** 5 (1,800 XP) **Prof Bonus** +3\n\n***Herd Bravery.*** If the capybara has an ally within 10 feet of it, it has advantage on saving throws against being frightened or charmed.\n\n***Strong Lung Capacity.*** The capybara can hold its breath for an additional 10 minutes, for a total of 14 minutes.\n\n**ACTIONS**\n***Multiattack.*** The capybara makes three attacks: one with its Bite, and two Claw Strikes.\n\n***Bite.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., 1 target. *Hit:* 14 (2d10 + 3) piercing damage.\n\n***Claw Strike.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., 1 target. *Hit:* 8 (1d8 + 3) slashing damage.\n\n***Hefty Barrel Charge.*** The capybara moves up to its movement speed toward a creature, and once it reaches them slams into them, forcing them to make a DC 14 Strength saving throw. On a failure, the creature takes 36 (6d10 + 3) bludgeoning damage and is knocked prone."
+    }
+  ]
+}

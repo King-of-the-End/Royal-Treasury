@@ -1,0 +1,114 @@
+{
+  "Name": "Spellborne Acolyte",
+  "Group": [
+    "Spellborne Clergy",
+    "The Red Hand"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Acolytes of Vestias are rarely known to share the good motives that her clerics and paladins often have. With no properly regulated church to guide these worshippers, they almost exclusively come to be the result of cults and criminal sects that want to achieve magical power without the talent or heritage required. They can often be identified by an ornament worn on their forehead that resembles a third eye, through which they channel the magical talents they gain. The source of their power is often unknown, but as they are usually guided by a cleric or horncrown it is likely they share some of the power of their leader. More often than not their magical powers vanish shortly after the death of their leader, somewhat confirming this.",
+  "Image": "",
+  "Stat Blocks": [
+    {
+      "id": "spellborne_acolyte",
+      "section_type": "Stat Block",
+      "title": "Spellborne Acolyte",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "14 (studded leather)",
+      "hit_points": "22 (4d8 + 4)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Int +2",
+        "Cha +4"
+      ],
+      "skills": [
+        "Perception +2",
+        "Religion +2"
+      ],
+      "senses": [
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Identification Rite",
+          "name_format": "bold_italic",
+          "description": "The acolyte can cast the identify spell, requiring no spell slots or components, by spending 10 minutes concentrating on casting it.",
+          "inline_formatting": {
+            "identify": "italic"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Arcane Eye",
+          "name_format": "bold_italic",
+          "description": "One target the acolyte can see within 30 feet must make a DC 12 Charisma saving throw against this magical effect, taking 11 (2d8 + 2) psychic damage on a failure. A creature that fails by 5 points or more is incapacitated until the start of their next turn."
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 2) piercing damage plus 3 (1d4) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Infiltration Rite (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The acolyte teleports to an unoccupied space it can see within 30 feet, then makes one Shortsword attack with advantage against a creature within range. If the acolyte ever reduces a creature to 0 hit points with their weapon attacks or Arcane Eye attack, they recharge this action immediately."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**SPELLBORNE ACOLYTE**\n*Medium humanoid (any), lawful evil*\n**Armor Class** 14 (studded leather)\n**Hit Points** 22 (4d8 + 4)\n**Speed** 30 ft.\n**Quality Traits** Magic resist\n**STR** 13 (+1) | **DEX** 14 (+2) | **CON** 12 (+1) | **INT** 10 (-) | **WIS** 10 (-) | **CHA** 14 (+2)\n**Saving Throws** Int +2, Cha +4\n**Skills** Perception +2, Religion +2\n**Senses** passive Perception 12\n**Languages** Common, one other language\n**Challenge Rating** 1 (200 XP) **Proficiency Bonus** +2\n\n***Identification Rite.*** The acolyte can cast the *identify* spell, requiring no spell slots or components, by spending 10 minutes concentrating on casting it.\n\n**ACTIONS**\n***Arcane Eye.*** One target the acolyte can see within 30 feet must make a DC 12 Charisma saving throw against this magical effect, taking 11 (2d8 + 2) psychic damage on a failure. A creature that fails by 5 points or more is incapacitated until the start of their next turn.\n\n***Shortsword.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 6 (1d6 + 2) piercing damage plus 3 (1d4) poison damage.\n\n***Infiltration Rite (1/Day).*** The acolyte teleports to an unoccupied space it can see within 30 feet, then makes one Shortsword attack with advantage against a creature within range. If the acolyte ever reduces a creature to 0 hit points with their weapon attacks or Arcane Eye attack, they recharge this action immediately."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "Name": "Black-Footed Cat",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A small feline hunter who is shockingly dangerous given their small stature. This tiny adorable hunter is commonly disregarded by large creatures, but when it comes to hunting prey of a size roughly equal in stature to it, this cat is one of the most efficient hunters in the animal kingdom. It hides in tall grass and foliage waiting to strike, then swiftly kills its prey and drags them away to deal with them safely.\n\nThey are usually solo hunters, but small packs of black-footed cats may hunt together in particularly dangerous environments where prey is larger and more dangerous than normal.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Black-Footed%20Cat.png",
+  "Stat Blocks": [
+    {
+      "id": "black_footed_cat",
+      "section_type": "Stat Block",
+      "title": "Black-Footed Cat",
+      "creature": {
+        "size": "Tiny",
+        "type": "beast",
+        "alignment": "unaligned"
+      },
+      "armor_class": "14",
+      "hit_points": "14 (4d4 + 4)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Keen senses (hearing, smell)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "DEX": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1"
+        }
+      },
+      "skills": [
+        "Perception +2",
+        "Stealth +6",
+        "Survival +4"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 12"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Surprise Hunter",
+          "name_format": "bold_italic",
+          "description": "The black-footed cat has advantage on the first attack it makes in combat, and the first time each turn it hits a creature that is surprised it automatically scores a critical hit on that attack."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., 1 target. Hit: 8 (1d6 + 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claws",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., 1 target. Hit: 7 (1d4 + 4) slashing damage, and the cat can use its Pounce against its target.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Pounce",
+          "name_format": "bold_italic",
+          "description": "The cat attempts to leap on a creature within 5 feet, forcing the creature to make a DC 14 Dexterity saving throw. On a failure, the cat succeeds, with a different result based on the target’s size:",
+          "options": [
+            {
+              "name": "Small or smaller",
+              "name_format": "bold_italic",
+              "description": "The target is grappled and restrained (escape DC 12), and each turn the cat is grappling its target it can make a Bite attack against them as a bonus action."
+            },
+            {
+              "name": "Medium or larger",
+              "name_format": "bold_italic",
+              "description": "The cat latches onto the creature, entering its space and moving with it if it moves. Each turn the cat can make a Bite attack with advantage as a bonus action against the creature it’s latched onto. The cat can be removed by succeeding an Athletics check against it, made as if the cat is grappling its target."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cunning Action",
+          "name_format": "bold_italic",
+          "description": "The cat takes the Hide, Dash or Disengage action."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**BLACK-FOOTED CAT**\n*Tiny beast, unaligned*\n**Armor Class** 14\n**Hit Points** 14 (4d4 + 4)\n**Speed** 40 ft., climb 30 ft.\n**Quality Traits** Keen senses (hearing, smell)\n**STR** 10 (-) | **DEX** 19 (+4) | **CON** 13 (+1) | **INT** 8 (-1) | **WIS** 14 (+2) | **CHA** 8 (-1)\n**Skills** Perception +2, Stealth +6, Survival +4\n**Senses** darkvision 60 ft., passive Perception 12\n**Challenge Rating** 1 (200 XP) **Prof Bonus** +2\n\n***Surprise Hunter.*** The black-footed cat has advantage on the first attack it makes in combat, and the first time each turn it hits a creature that is surprised it automatically scores a critical hit on that attack.\n\n**ACTIONS**\n***Bite.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., 1 target. *Hit:* 8 (1d6 + 4) piercing damage.\n\n***Claws.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., 1 target. *Hit:* 7 (1d4 + 4) slashing damage, and the cat can use its Pounce against its target.\n\n***Pounce.*** The cat attempts to leap on a creature within 5 feet, forcing the creature to make a DC 14 Dexterity saving throw. On a failure, the cat succeeds, with a different result based on the target’s size:\n• ***Small or smaller.*** The target is grappled and restrained (escape DC 12), and each turn the cat is grappling its target it can make a Bite attack against them as a bonus action.\n• ***Medium or larger.*** The cat latches onto the creature, entering its space and moving with it if it moves. Each turn the cat can make a Bite attack with advantage as a bonus action against the creature it’s latched onto. The cat can be removed by succeeding an Athletics check against it, made as if the cat is grappling its target.\n\n**Bonus Actions**\n***Cunning Action.*** The cat takes the Hide, Dash or Disengage action."
+    }
+  ]
+}

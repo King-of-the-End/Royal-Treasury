@@ -1,0 +1,175 @@
+{
+  "Name": "Fairy Panther",
+  "Group": "Celestial Brothel",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Shapeshifting bestial fey who wander the Fey Realm, hunting fairies and smaller fey in the same manner a panther would hunt other animals. These colorful panthers are capable of feats of magic to confuse both predators and prey. These panthers are found in abundance in service to the goddess Lussuria, assigned to her followers under the guise of regular cats, tigers or panthers. They wander her divine realm when not deployed to protect the servants of the Celestial Brothel, indulging in a lazy lifestyle when they can afford to.\n\nThough fairy panthers are capable of mortal speech, they prefer not to converse when they can help it. They see the conversational conventions of mortals to be tedious and brutal, so speaking on their terms irritates them.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20Fairy%20Panther%20(Glow).jpg",
+  "Stat Blocks": [
+    {
+      "id": "fairy_panther",
+      "section_type": "Stat Block",
+      "title": "Fairy Panther",
+      "creature": {
+        "size": "Medium",
+        "type": "fey (shapechanger)",
+        "alignment": "unaligned"
+      },
+      "armor_class": "15",
+      "hit_points": "77 (14d8 + 14)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical",
+        "pack tactics"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +6"
+      ],
+      "skills": [
+        "Perception +6"
+      ],
+      "resistances": [
+        "psychic",
+        "B/S/P (magical)"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "senses": [
+        "blindsight 10 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "telepathy 15 ft."
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The panther’s spellcasting ability is Charisma. They can cast the following spells, requiring only verbal components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "components": "verbal only",
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dancing lights",
+                  "mage hand"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "enlarge/reduce",
+                  "faerie fire",
+                  "hypnotic pattern",
+                  "slow"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "invisibility (self only)",
+                  "ray of enfeeblement"
+                ]
+              }
+            ],
+            "casting_level_note": "The panther’s spells are cast at 4th level, unless their base level would be higher."
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The panther uses its Claw and Bite once each."
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 4) piercing damage plus 3 (1d4) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Dash",
+          "name_format": "bold_italic",
+          "description": "The panther takes the Dash action."
+        },
+        {
+          "name": "Fey Step",
+          "name_format": "bold_italic",
+          "description": "The panther gains a teleport speed equal to its base movement speed until the start of its next turn."
+        },
+        {
+          "name": "Shapechange",
+          "name_format": "bold_italic",
+          "description": "The panther magically shapeshifts into either a regular panther (or tiger), a Tiny cat, its true form, or a Large iteration of its true form. Its statistics stay the same in any of its forms (except its size). If it is reduced to 0 hit points it returns to its true form."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**FAIRY PANTHER**\n*Medium fey (shapechanger), unaligned*\n**Armor Class** 15\n**Hit Points** 77 (14d8 + 14)\n**Speed** 40 ft., climb 30 ft.\n**Quality Traits** Magic resist, magical, pack tactics\n**STR** 18 (+4) | **DEX** 16 (+3) | **CON** 12 (+1) | **INT** 7 (-2) | **WIS** 18 (+4) | **CHA** 14 (+2)\n**Saving Throws** Dex +5, Wis +6\n**Skills** Perception +6\n**Resistances** psychic; B/S/P (magical)\n**Immunities** poison\n**Senses** blindsight 10 ft., darkvision 60 ft., passive Perception 16\n**Languages** Common, Elvish, telepathy 15 ft.\n**Challenge Rating** 4 (1,100 XP) **Prof Bonus** +2\n\n***Innate Spellcasting.*** The panther’s spellcasting ability is Charisma. They can cast the following spells, requiring only verbal components:\n• ***At will:*** dancing lights, mage hand\n• ***1/Day each:*** enlarge/reduce, faerie fire, hypnotic pattern, slow\n• ***2/Day each:*** invisibility (self only), ray of enfeeblement\n\nThe panther’s spells are cast at 4th level, unless their base level would be higher.\n\n**ACTIONS**\n***Multiattack.*** The panther uses its Claw and Bite once each.\n\n***Claw.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d6+4) slashing damage.\n\n***Bite.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (1d10 + 4) piercing damage plus 3 (1d4) poison damage.\n\n**Bonus Actions**\n***Dash.*** The panther takes the Dash action.\n\n***Fey Step.*** The panther gains a teleport speed equal to its base movement speed until the start of its next turn.\n\n***Shapechange.*** The panther magically shapeshifts into either a regular panther (or tiger), a Tiny cat, its true form, or a Large iteration of its true form. Its statistics stay the same in any of its forms (except its size). If it is reduced to 0 hit points it returns to its true form."
+    }
+  ]
+}

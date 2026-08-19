@@ -390,3 +390,72 @@
 
 }
 
+/* =========================================
+   DESKTOP SMART GLOSSARY POSITIONING
+
+   Two desktop rules:
+
+   1. The tooltip stays beside the glossary
+      word that opened it.
+
+   2. The tooltip is clamped to the visible
+      browser viewport so no edge can clip.
+
+   JavaScript calculates the final top/left
+   coordinates when the term is hovered or
+   keyboard-focused.
+   ========================================= */
+
+@media (min-width: 601px) {
+
+    .glossary-tooltip {
+        z-index: 30000;
+
+        width: max-content;
+
+        min-width:
+            min(
+                280px,
+                calc(100vw - 2rem)
+            );
+
+        max-width:
+            min(
+                520px,
+                calc(100vw - 2rem)
+            );
+
+        max-height:
+            calc(100vh - 2rem);
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
+
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
+
+    .glossary-term:hover
+    .glossary-tooltip:not([data-positioned="true"]),
+
+    .glossary-term:focus
+    .glossary-tooltip:not([data-positioned="true"]),
+
+    .glossary-term:focus-visible
+    .glossary-tooltip:not([data-positioned="true"]) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+    .glossary-tooltip::before {
+        display: none;
+    }
+
+}
+

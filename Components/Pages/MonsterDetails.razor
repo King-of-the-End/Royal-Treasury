@@ -179,11 +179,23 @@ else
                                 }
 
 
-                                <!-- GROUP -->
+                                <!-- GROUPS
 
-                                @if (
-                                    !string.IsNullOrWhiteSpace(
-                                        DisplayGroup))
+                                     A monster can belong to more than
+                                     one group.
+
+                                     Each group gets its own metadata
+                                     field instead of combining every
+                                     group into one comma-separated box.
+
+                                     The same group collection is also
+                                     used below to load one lore section
+                                     for every group.
+                                     -->
+
+                                @foreach (
+                                    var group
+                                    in DistinctMonsterGroups)
                                 {
                                     <div>
 
@@ -192,7 +204,7 @@ else
                                         </strong>
 
                                         <span>
-                                            @DisplayGroup
+                                            @group
                                         </span>
 
                                     </div>
@@ -240,6 +252,85 @@ else
                         }
 
                     </section>
+                }
+
+
+                <!-- =============================
+                     GENERIC BARDING TABLE
+
+                     Loaded from the outer:
+
+                     "Barding": {
+                       "headers": [ ... ],
+                       "rows": [ ... ]
+                     }
+
+                     It appears directly after the
+                     monster-specific lore that
+                     explains the barding options.
+                     ============================= -->
+
+                @if (
+                    monster.Barding is not null
+                    &&
+                    (
+                        monster.Barding.Headers.Count > 0
+                        ||
+                        monster.Barding.Rows.Count > 0
+                    ))
+                {
+                    <div class="monster-lore-table-wrap">
+
+                        <table class="monster-lore-table">
+
+                            @if (
+                                monster.Barding.Headers.Count > 0)
+                            {
+                                <thead>
+                                    <tr>
+
+                                        @foreach (
+                                            var header
+                                            in monster.Barding.Headers)
+                                        {
+                                            <th>
+                                                <GlossaryText
+                                                    Text="@header.Text"
+                                                    Context="GlossaryContext.General" />
+                                            </th>
+                                        }
+
+                                    </tr>
+                                </thead>
+                            }
+
+                            <tbody>
+
+                                @foreach (
+                                    var row
+                                    in monster.Barding.Rows)
+                                {
+                                    <tr>
+
+                                        @foreach (
+                                            var cell
+                                            in row)
+                                        {
+                                            <td>
+                                                <GlossaryText
+                                                    Text="@cell"
+                                                    Context="GlossaryContext.General" />
+                                            </td>
+                                        }
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
                 }
 
 
@@ -510,15 +601,56 @@ else
                      at the very bottom of Lore.
                      ============================= -->
 
-                @if (
-                    !string.IsNullOrWhiteSpace(
-                        monster.Image))
+                @if (MonsterImages.Count > 0)
                 {
+                    <!-- =========================
+                         IMAGE VARIANT TABS
+
+                         Image 1 is always the
+                         standard "Image" URL.
+
+                         Image 2 onward come from
+                         "Image Variants".
+                         ========================= -->
+
+                    @if (MonsterImages.Count > 1)
+                    {
+                        <div
+                            class="monster-variant-tabs monster-image-tabs"
+                            role="tablist"
+                            aria-label="@($"{MonsterPageTitle} images")">
+
+                            @for (
+                                var imageIndex = 0;
+                                imageIndex < MonsterImages.Count;
+                                imageIndex++)
+                            {
+                                var capturedImageIndex =
+                                    imageIndex;
+
+
+                                <button
+                                    type="button"
+                                    role="tab"
+                                    aria-selected="@(selectedImageIndex == capturedImageIndex)"
+                                    class="@ImageTabClass(capturedImageIndex)"
+                                    @onclick="() => SetImage(capturedImageIndex)">
+
+                                    Image @(capturedImageIndex + 1)
+
+                                </button>
+                            }
+
+                        </div>
+                    }
+
+
                     <div class="monster-detail-image-wrap">
 
                         <img
-                            src="@monster.Image"
-                            alt="@monster.Title"
+                            @key="SelectedMonsterImage"
+                            src="@SelectedMonsterImage"
+                            alt="@($"{MonsterPageTitle} image {selectedImageIndex + 1}")"
                             loading="lazy"
                             decoding="async" />
 
@@ -541,8 +673,7 @@ else
                     &&
                     monster.Refinement is null
                     &&
-                    string.IsNullOrWhiteSpace(
-                        monster.Image))
+                    MonsterImages.Count == 0)
                 {
                     <div class="spell-empty-state">
 
@@ -678,6 +809,10 @@ else
         DetailTab.Lore;
 
 
+    private int selectedImageIndex =
+        0;
+
+
     // =====================================
     // LOAD MONSTER WHEN ROUTE CHANGES
     // =====================================
@@ -699,6 +834,10 @@ else
 
         activeTab =
             DetailTab.Lore;
+
+
+        selectedImageIndex =
+            0;
 
 
         // =================================
@@ -785,8 +924,7 @@ else
         groupLores =
             await MonsterService
                 .GetMonsterGroupLoreAsync(
-                    MonsterGroups(
-                        monster));
+                    DistinctMonsterGroups);
 
 
         // =================================
@@ -1031,6 +1169,151 @@ else
 
 
     // =====================================
+    // MONSTER IMAGES
+    //
+    // Image 1 is always the standard Image.
+    // Image Variants are appended in JSON
+    // order and become Image 2, Image 3, etc.
+    // Duplicate URLs are removed.
+    // =====================================
+
+    private IReadOnlyList<string> MonsterImages
+    {
+        get
+        {
+            if (monster is null)
+            {
+                return
+                    Array.Empty<string>();
+            }
+
+
+            var images =
+                new List<string>();
+
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    monster.Image))
+            {
+                images.Add(
+                    monster.Image.Trim());
+            }
+
+
+            foreach (
+                var image
+                in monster.ImageVariants
+                ??
+                new List<string>())
+            {
+                if (
+                    string.IsNullOrWhiteSpace(
+                        image))
+                {
+                    continue;
+                }
+
+
+                var cleaned =
+                    image.Trim();
+
+
+                if (
+                    images.Any(
+                        existing =>
+                            existing.Equals(
+                                cleaned,
+                                StringComparison.OrdinalIgnoreCase)))
+                {
+                    continue;
+                }
+
+
+                images.Add(
+                    cleaned);
+            }
+
+
+            return
+                images;
+        }
+    }
+
+
+    // =====================================
+    // SELECTED MONSTER IMAGE
+    // =====================================
+
+    private string SelectedMonsterImage
+    {
+        get
+        {
+            var images =
+                MonsterImages;
+
+
+            if (images.Count == 0)
+            {
+                return
+                    string.Empty;
+            }
+
+
+            if (
+                selectedImageIndex < 0
+                ||
+                selectedImageIndex >= images.Count)
+            {
+                selectedImageIndex =
+                    0;
+            }
+
+
+            return
+                images[selectedImageIndex];
+        }
+    }
+
+
+    // =====================================
+    // SELECT IMAGE
+    // =====================================
+
+    private void SetImage(
+        int imageIndex)
+    {
+        if (
+            imageIndex < 0
+            ||
+            imageIndex >= MonsterImages.Count)
+        {
+            return;
+        }
+
+
+        selectedImageIndex =
+            imageIndex;
+    }
+
+
+    // =====================================
+    // IMAGE TAB CLASS
+    // =====================================
+
+    private string ImageTabClass(
+        int imageIndex)
+    {
+        return
+            selectedImageIndex == imageIndex
+
+            ? "monster-variant-tab monster-image-tab active"
+
+            : "monster-variant-tab monster-image-tab";
+    }
+
+
+    // =====================================
     // BACK URL
     //
     // When the user entered the monster
@@ -1155,13 +1438,54 @@ else
     // =====================================
 
     private string DisplayGroup =>
-        monster is null
+        DisplayValues(
+            DistinctMonsterGroups);
 
-        ? string.Empty
 
-        : DisplayValues(
-            MonsterGroups(
-                monster));
+    // =====================================
+    // DISTINCT MONSTER GROUPS
+    //
+    // A monster can belong to any number of
+    // groups.
+    //
+    // Supported outer JSON forms include:
+    //
+    // "Group": "Abishai"
+    //
+    // "Groups": [
+    //   "Abishai",
+    //   "Devils"
+    // ]
+    //
+    // and MonsterService also accepts an
+    // array directly in the outer "Group"
+    // property.
+    //
+    // This normalized collection drives:
+    //
+    // - the separate Group metadata boxes
+    // - all group-lore file loading
+    // - the combined DisplayGroup string
+    // =====================================
+
+    private IReadOnlyList<string>
+        DistinctMonsterGroups =>
+            monster is null
+
+            ? Array.Empty<string>()
+
+            : MonsterGroups(
+                    monster)
+                .Where(
+                    group =>
+                        !string.IsNullOrWhiteSpace(
+                            group))
+                .Select(
+                    group =>
+                        group.Trim())
+                .Distinct(
+                    StringComparer.OrdinalIgnoreCase)
+                .ToList();
 
 
     // =====================================

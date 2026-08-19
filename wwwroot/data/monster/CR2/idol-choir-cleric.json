@@ -1,0 +1,163 @@
+{
+  "Name": "Idol Choir Cleric",
+  "Group": [
+    "Clergy of the Four",
+    "The Idol Choir"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "“T’quinn’s clergy have always been a sight for sore eyes. They are the most giving and graceful of the Clergy of the Four as I’ve met them, and their sense of fashion and poise has always been impeccable. Furthermore, their tradition is to travel in pairs, almost always including one member who is concerned with keeping track of the stories they experience together. If I had ever been a religious woman, I like to think I would have been drawn to the Divine Minstrel’s ranks.”",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Idol%20Choir%20Bard%20Beloved.jpg",
+  "Stat Blocks": [
+    {
+      "id": "idol_choir_cleric",
+      "section_type": "Stat Block",
+      "title": "Idol Choir Cleric",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral good"
+      },
+      "armor_class": "15 (studded leather)",
+      "hit_points": "44 (8d8 + 8)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Cha +5"
+      ],
+      "skills": [
+        "Insight +5",
+        "Performance +5",
+        "Religion +2"
+      ],
+      "senses": [
+        "passive Perception 13"
+      ],
+      "languages": [
+        "any one language, usually Common or Elvish"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Beloved Inspiration (2/Day)",
+          "name_format": "bold_italic",
+          "description": "When the acolyte fails a weapon attack, ability check, or saving throw, they can roll 1d6 and add it to the result, possibly changing the result."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The acolyte is a 5th-level spellcaster. Their spellcasting ability is Wisdom. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 5,
+            "spellcasting_ability": "Wisdom",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "minor illusion",
+                  "true strike",
+                  "vicious mockery"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "cure wounds",
+                  "dissonant whispers",
+                  "shield of faith"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "acceleration",
+                  "shatter",
+                  "throw image"
+                ]
+              },
+              {
+                "frequency": "3rd level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "spirit guardians",
+                  "twin talent",
+                  "vortex quiver"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sound of Silence (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The acolyte strikes their shortswords together and produces a deafening ringing sound, which can only be heard by up to four creatures of their choice within 30 feet. Each target must succeed on a DC 13 Constitution saving throw, taking 18 (4d8) thunder damage and are deafened for 1 minute on a failed save, or half as much damage and are not deafened on a success. Creatures deafened this way have disadvantage on concentration checks, and can repeat the saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The acolyte makes two weapon attacks."
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 4 (1d6) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Longbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 10 (1d10 + 4) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**IDOL CHOIR CLERIC**\n*Medium humanoid (any), neutral good*\n**Armor Class** 15 (studded leather)\n**Hit Points** 44 (8d8 + 8)\n**Speed** 30 ft.\n**STR** 15 (+2) | **DEX** 18 (+4) | **CON** 12 (+1) | **INT** 10 (-) | **WIS** 16 (+3) | **CHA** 16 (+3)\n**Saving Throws** Cha +5\n**Skills** Insight +5, Performance +5, Religion +2\n**Senses** passive Perception 13\n**Languages** any one language, usually Common or Elvish\n**Challenge Rating** 2 (450 XP) **Prof Bonus** +2\n\n***Beloved Inspiration (2/Day).*** When the acolyte fails a weapon attack, ability check, or saving throw, they can roll 1d6 and add it to the result, possibly changing the result.\n\n***Spellcasting.*** The acolyte is a 5th-level spellcaster. Their spellcasting ability is Wisdom. They have the following spells prepared:\n• ***Cantrips (at will):*** minor illusion, true strike, vicious mockery\n• ***1st level (4 slots):*** cure wounds, dissonant whispers, shield of faith\n• ***2nd level (3 slots):*** acceleration, shatter, throw image\n• ***3rd level (2 slots):*** spirit guardians, twin talent, vortex quiver\n\n***Sound of Silence (1/Rest).*** The acolyte strikes their shortswords together and produces a deafening ringing sound, which can only be heard by up to four creatures of their choice within 30 feet. Each target must succeed on a DC 13 Constitution saving throw, taking 18 (4d8) thunder damage and are deafened for 1 minute on a failed save, or half as much damage and are not deafened on a success. Creatures deafened this way have disadvantage on concentration checks, and can repeat the saving throw at the end of each of their turns, ending the effect on a success.\n\n**ACTIONS**\n***Multiattack.*** The acolyte makes two weapon attacks.\n\n***Shortsword.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 4) piercing damage plus 4 (1d6) thunder damage.\n\n***Longbow.*** *Ranged Weapon Attack:* +6 to hit, range 150/600 ft., one target. *Hit:* 10 (1d10 + 4) piercing damage."
+    }
+  ]
+}

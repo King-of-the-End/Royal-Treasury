@@ -1469,6 +1469,44 @@ public sealed class MonsterService
 
 
             // =================================
+            // OUTER IMAGE VARIANTS
+            //
+            // The standard Image remains Image 1.
+            // These URLs become Image 2 onward.
+            // =================================
+
+            monster.ImageVariants ??=
+                new List<string>();
+
+
+            foreach (
+                var imageVariant
+                in metadata.ImageVariants)
+            {
+                if (
+                    string.IsNullOrWhiteSpace(
+                        imageVariant)
+                    ||
+                    imageVariant.Equals(
+                        monster.Image,
+                        StringComparison.OrdinalIgnoreCase)
+                    ||
+                    monster.ImageVariants.Any(
+                        existing =>
+                            existing.Equals(
+                                imageVariant,
+                                StringComparison.OrdinalIgnoreCase)))
+                {
+                    continue;
+                }
+
+
+                monster.ImageVariants.Add(
+                    imageVariant);
+            }
+
+
+            // =================================
             // OUTER REFINEMENT
             // =================================
 
@@ -1479,6 +1517,24 @@ public sealed class MonsterService
             {
                 monster.Refinement =
                     metadata.Refinement;
+            }
+
+
+            // =================================
+            // OUTER BARDING TABLE
+            //
+            // Some monster files keep a generic
+            // lore table beside Information,
+            // Image, Source, etc.
+            // =================================
+
+            if (
+                monster.Barding is null
+                &&
+                metadata.Barding is not null)
+            {
+                monster.Barding =
+                    metadata.Barding;
             }
 
 
@@ -1538,9 +1594,22 @@ public sealed class MonsterService
                 "Image");
 
 
+        var imageVariants =
+            DistinctValues(
+                ReadStringOrArrayProperty(
+                    element,
+                    "Image Variants"));
+
+
         var refinement =
             ReadRefinementProperty(
                 element);
+
+
+        var barding =
+            ReadLoreTableProperty(
+                element,
+                "Barding");
 
 
         var groups =
@@ -1570,7 +1639,9 @@ public sealed class MonsterService
                 name,
                 information,
                 image,
+                imageVariants,
                 refinement,
+                barding,
                 groups,
                 sources);
     }
@@ -1612,10 +1683,23 @@ public sealed class MonsterService
             : inherited.Image;
 
 
+        var imageVariants =
+            DistinctValues(
+                inherited.ImageVariants
+                    .Concat(
+                        local.ImageVariants));
+
+
         var refinement =
             local.Refinement
             ??
             inherited.Refinement;
+
+
+        var barding =
+            local.Barding
+            ??
+            inherited.Barding;
 
 
         var groups =
@@ -1637,7 +1721,9 @@ public sealed class MonsterService
                 name,
                 information,
                 image,
+                imageVariants,
                 refinement,
+                barding,
                 groups,
                 sources);
     }
@@ -1804,6 +1890,47 @@ public sealed class MonsterService
             return
                 JsonSerializer.Deserialize<
                     MonsterRefinementData>(
+                        value.GetRawText(),
+                        jsonOptions);
+        }
+        catch (JsonException)
+        {
+            return null;
+        }
+    }
+
+
+    // =====================================
+    // READ GENERIC LORE TABLE PROPERTY
+    //
+    // Reuses MonsterGroupLoreTable for
+    // outer monster tables such as Barding.
+    // =====================================
+
+    private MonsterGroupLoreTable?
+        ReadLoreTableProperty(
+            JsonElement element,
+            string propertyName)
+    {
+        if (
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    propertyName),
+                out var value)
+            ||
+            value.ValueKind !=
+            JsonValueKind.Object)
+        {
+            return null;
+        }
+
+
+        try
+        {
+            return
+                JsonSerializer.Deserialize<
+                    MonsterGroupLoreTable>(
                         value.GetRawText(),
                         jsonOptions);
         }
@@ -2137,7 +2264,9 @@ public sealed class MonsterService
         string Name,
         string Information,
         string Image,
+        IReadOnlyList<string> ImageVariants,
         MonsterRefinementData? Refinement,
+        MonsterGroupLoreTable? Barding,
         IReadOnlyList<string> Groups,
         IReadOnlyList<string> Sources)
     {
@@ -2146,6 +2275,8 @@ public sealed class MonsterService
                 string.Empty,
                 string.Empty,
                 string.Empty,
+                Array.Empty<string>(),
+                null,
                 null,
                 Array.Empty<string>(),
                 Array.Empty<string>());

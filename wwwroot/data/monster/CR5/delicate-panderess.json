@@ -1,0 +1,156 @@
+{
+  "Name": "Delicate Panderess",
+  "Group": "Celestial Brothel",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Their higher ranking members also serve as the caretakers of these establishments. They might be known as high-priests of Lussuria behind closed doors, but more often are called Delicate Panderers/Panderesses. Lussuria has a fondness for possessing her own followers to experience the establishments they’ve built, and so it’s more common for women to hold these titles.\n\nPanderesses are highly protective of those under their charge; their priests, employees, escorts and servants are all comfortable under their protection. Panderesses are trained to wield psychic energy that disrupts the thoughts of those they fight with, and are given basic combat training that makes them capable guardians of themselves and their establishments.\n\nBecause Lussuria often preys on high-profile individuals through means of seduction and temptation, panderesses often keep their association with her to themselves, and their establishments are not publicly affiliated with the goddess.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Delicate%20Pandress.jpg",
+  "Stat Blocks": [
+    {
+      "id": "delicate_pandress",
+      "section_type": "Stat Block",
+      "title": "Delicate Pandress",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "17 (leather, robes)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Con +5",
+        "Wis +5"
+      ],
+      "skills": [
+        "Athletics +8",
+        "Insight +6",
+        "Perception +5",
+        "Persuasion +9"
+      ],
+      "senses": [
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Caretaker of the Celestial Brothel",
+          "name_format": "bold_italic",
+          "description": "The panderess has Expertise in the Athletics and Persuasion skills."
+        },
+        {
+          "name": "Pack Protector",
+          "name_format": "bold_italic",
+          "description": "When a creature within 5 feet of the panderess makes an attack against one of their allies or targets them with an effect, that ally is treated as having half cover against that attack or effect."
+        },
+        {
+          "name": "Mistress’s Gifts",
+          "name_format": "bold_italic",
+          "description": "The panderess has advantage on saving throws made against being charmed or enraged."
+        },
+        {
+          "name": "Robes of Binding Love",
+          "name_format": "bold_italic",
+          "description": "The panderess wears robes enchanted by Lussuria, which allows them to add their Charisma modifier to their armor class."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The panderess makes two attacks, choosing between their Hemlock Shortsword and Psychic Severance. A target hit with one of these attacks twice or more in one turn must make the save associated with that attack."
+        },
+        {
+          "name": "Hemlock Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) piercing damage plus 5 (2d4) poison damage. On two or more hits, the target must succeed a DC 13 Constitution saving throw, taking 14 (4d6) poison damage on a failure, and no damage on a success.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Psychic Severance",
+          "name_format": "bold_italic",
+          "description": "Ranged Spell Attack: +6 to hit, range 20/60 ft., one target. Hit: 12 (2d8 + 3) psychic damage. On two or more hits, the target must succeed a DC 14 Wisdom saving throw or become sluggish for 1 minute. While sluggish they repeat the saving throw at the end of each of their turns, ending the effect on a success.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Lussuria’s Gift of Stamina (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Channeling Lussuria’s protective energies, the panderess can restore the bodies of any creatures they choose within 10 feet of them (including themselves). Each target is subjected to one of the following effects; the panderess must select the same effect for all targets:",
+          "options": [
+            {
+              "description": "Each target regains 20 (3d12) hit points."
+            },
+            {
+              "description": "Each target is cured of any effect that lesser restoration could remove.",
+              "inline_formatting": {
+                "lesser restoration": "italic"
+              }
+            },
+            {
+              "description": "All Combat Fatigue and 1d4+1 levels of exhaustion are removed from them."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Fey Step",
+          "name_format": "bold_italic",
+          "description": "The panderess gains a teleport speed equal to their movement speed until the start of their next turn."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DELICATE PANDRESS**\n*Medium humanoid (any), lawful neutral*\n**Armor Class** 17 (leather, robes)\n**Hit Points** 65 (10d8 + 20)\n**Speed** 30 ft.\n**Quality Traits** Magic resist\n**STR** 14 (+2) | **DEX** 16 (+3) | **CON** 14 (+2) | **INT** 12 (+1) | **WIS** 14 (+2) | **CHA** 16 (+3)\n**Saving Throws** Con +5, Wis +5\n**Skills** Athletics +8, Insight +6, Perception +5, Persuasion +9\n**Senses** passive Perception 15\n**Languages** Common and one other language\n**Challenge Rating** 5 (1,800 XP) **Prof Bonus** +3\n\n***Caretaker of the Celestial Brothel.*** The panderess has Expertise in the Athletics and Persuasion skills.\n\n***Pack Protector.*** When a creature within 5 feet of the panderess makes an attack against one of their allies or targets them with an effect, that ally is treated as having half cover against that attack or effect.\n\n***Mistress’s Gifts.*** The panderess has advantage on saving throws made against being charmed or enraged.\n\n***Robes of Binding Love.*** The panderess wears robes enchanted by Lussuria, which allows them to add their Charisma modifier to their armor class.\n\n**ACTIONS**\n***Multiattack.*** The panderess makes two attacks, choosing between their Hemlock Shortsword and Psychic Severance. A target hit with one of these attacks twice or more in one turn must make the save associated with that attack.\n\n***Hemlock Shortsword.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 3) piercing damage plus 5 (2d4) poison damage. On two or more hits, the target must succeed a DC 13 Constitution saving throw, taking 14 (4d6) poison damage on a failure, and no damage on a success.\n\n***Psychic Severance.*** *Ranged Spell Attack:* +6 to hit, range 20/60 ft., one target. *Hit:* 12 (2d8 + 3) psychic damage. On two or more hits, the target must succeed a DC 14 Wisdom saving throw or become sluggish for 1 minute. While sluggish they repeat the saving throw at the end of each of their turns, ending the effect on a success.\n\n***Lussuria’s Gift of Stamina (Recharge 5-6).*** Channeling Lussuria’s protective energies, the panderess can restore the bodies of any creatures they choose within 10 feet of them (including themselves). Each target is subjected to one of the following effects; the panderess must select the same effect for all targets:\n• Each target regains 20 (3d12) hit points.\n• Each target is cured of any effect that *lesser restoration* could remove.\n• All Combat Fatigue and 1d4+1 levels of exhaustion are removed from them.\n\n**Bonus Actions**\n***Fey Step.*** The panderess gains a teleport speed equal to their movement speed until the start of their next turn."
+    }
+  ]
+}

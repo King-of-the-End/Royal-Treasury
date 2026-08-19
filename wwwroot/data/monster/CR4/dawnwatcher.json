@@ -1,0 +1,169 @@
+{
+  "Name": "Dawnwatcher",
+  "Group": [
+    "Clergy of the Four",
+    "The Red Hand"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The clerics of the Red Hand Clergy are known commonly as Dawnwatchers, though the term is broadly used for all of their clerics and paladins. They are more heroic and aggressive than most clerics, preferring to throw themselves onto the front lines to strike at enemies. They seek to protect those incapable of protecting themselves, and bear the sunlight of Harros to illuminate the deepest darkness.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20Dawnwatcher%20Cleric.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dawnwatcher",
+      "section_type": "Stat Block",
+      "title": "Dawnwatcher",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "19 (half plate, shield)",
+      "hit_points": "90 (12d8 + 36)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Int +4",
+        "Wis +5"
+      ],
+      "skills": [
+        "Insight +5",
+        "Persuasion +4",
+        "Religion +4"
+      ],
+      "senses": [
+        "passive Perception 13"
+      ],
+      "languages": [
+        "any one language (usually Common)"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Audacious Stand",
+          "name_format": "bold_italic",
+          "description": "The cleric has advantage on saving throws made against being frightened, and cannot be forced to take actions against their will by hostile effects."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The cleric is a 6th-level spellcaster. Their spellcasting ability is Wisdom. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 6,
+            "spellcasting_ability": "Wisdom",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "light",
+                  "sacred flame"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "inflict wounds",
+                  "sanctuary",
+                  "shield of faith"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "hold person",
+                  "spiritual weapon"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "daylight",
+                  "spirit guardians"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sunborn Strikes",
+          "name_format": "bold_italic",
+          "description": "The cleric’s melee attacks deal an additional 1d6 of radiant damage (already factored into this stat block)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The cleric makes three weapon attacks."
+        },
+        {
+          "name": "Sanctified Broadsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage plus 4 (1d6) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Longbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 2) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dawncrest Radial (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The cleric chooses a point they can see within 60 feet, from which a 20-foot-radius sphere of sunlight shines. Any ally of the cleric who starts their turn within that sphere or is within it when it appears gains 2d8 + 3 temporary hit points, and allied creatures who make death saving throws within it have advantage on them. The sphere remains for 1 minute, at any time during which the cleric can use a bonus action to gather the light into three spears of radiant power and hurl them each at any two separate creatures they choose within 60 feet of the sphere as a Ranged Spell Attack: +5 to hit. On a hit, a target takes 27 (6d8) radiant damage and is blinded until the end of the cleric’s next turn. The sphere of light is consumed in doing so.\n\nThis feature does not roll to recharge until its effects have ended.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**DAWNWATCHER**\n*Medium humanoid (any), lawful good*\n**Armor Class** 19 (half plate, shield)\n**Hit Points** 90 (12d8 + 36)\n**Speed** 30 ft.\n**STR** 17 (+3) | **DEX** 14 (+2) | **CON** 17 (+3) | **INT** 14 (+2) | **WIS** 16 (+3) | **CHA** 14 (+2)\n**Saving Throws** Int +4, Wis +5\n**Skills** Insight +5, Persuasion +4, Religion +4\n**Senses** passive Perception 13\n**Languages** any one language (usually Common)\n**Challenge Rating** 4 (1,100 XP) **Prof Bonus** +2\n\n***Audacious Stand.*** The cleric has advantage on saving throws made against being frightened, and cannot be forced to take actions against their will by hostile effects.\n\n***Spellcasting.*** The cleric is a 6th-level spellcaster. Their spellcasting ability is Wisdom. They have the following spells prepared:\n• ***Cantrips (at will):*** light, sacred flame\n• ***1st level (4 slots):*** inflict wounds, sanctuary, shield of faith\n• ***2nd level (3 slots):*** hold person, spiritual weapon\n• ***3rd level (3 slots):*** daylight, spirit guardians\n\n***Sunborn Strikes.*** The cleric’s melee attacks deal an additional 1d6 of radiant damage (already factored into this stat block).\n\n**ACTIONS**\n***Multiattack.*** The cleric makes three weapon attacks.\n\n***Sanctified Broadsword.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (1d8 + 3) slashing damage plus 4 (1d6) radiant damage.\n\n***Longbow.*** *Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 7 (1d8 + 2) piercing damage.\n\n***Dawncrest Radial (Recharge 4-6).*** The cleric chooses a point they can see within 60 feet, from which a 20-foot-radius sphere of sunlight shines. Any ally of the cleric who starts their turn within that sphere or is within it when it appears gains 2d8 + 3 temporary hit points, and allied creatures who make death saving throws within it have advantage on them. The sphere remains for 1 minute, at any time during which the cleric can use a bonus action to gather the light into three spears of radiant power and hurl them each at any two separate creatures they choose within 60 feet of the sphere as a *Ranged Spell Attack:* +5 to hit. On a hit, a target takes 27 (6d8) radiant damage and is blinded until the end of the cleric’s next turn. The sphere of light is consumed in doing so.\n\nThis feature does not roll to recharge until its effects have ended."
+    }
+  ]
+}

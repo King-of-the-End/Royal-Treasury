@@ -1,0 +1,132 @@
+{
+  "Name": "Beloved Tribute",
+  "Group": [
+    "Clergy of the Four",
+    "The Idol Choir"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The Beloved Tributes are fighters trained to protect T’quinn’s temples and his faithful servants, as well as to perform in and host ceremonies and proceedings. They are enticing dancers, musicians and, often-times, performers who wear flowing outfits and charm those around them. Their grace and beauty is known to ease and focus the minds of those who observe it willingly. One of their most famous duties is to officiate weddings in T’quinn’s name.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference_BG%20-%20Idol%20Choir%20Beloved%20Tribute%20(Mantle).jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference_BG%20-%20Idol%20Choir%20Beloved%20Tribute.jpg"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "beloved_tribute",
+      "section_type": "Stat Block",
+      "title": "Beloved Tribute",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral good"
+      },
+      "armor_class": "17 (unarmored defense)",
+      "hit_points": "75 (10d8 + 30)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +7"
+      ],
+      "skills": [
+        "Acrobatics +7",
+        "Performance +6",
+        "Persuasion +6"
+      ],
+      "condition_immunities": [
+        "charmed"
+      ],
+      "senses": [
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "5 (1800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Divine Guidance",
+          "name_format": "bold_italic",
+          "description": "When the beloved has fewer than half of their hit points remaining, each time they roll an attack roll or saving throw they roll 1d4 and add it to the result."
+        },
+        {
+          "name": "Unarmored Defense",
+          "name_format": "bold_italic",
+          "description": "If they aren’t wearing armor, the beloved adds their Constitution modifier to their armor class, and their movement speed increases by 10 feet (already represented in this stat block)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The beloved makes two weapon attacks, then uses their Charming Conduct."
+        },
+        {
+          "name": "Twinblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Charming Conduct",
+          "name_format": "bold_italic",
+          "description": "The beloved’s behavior and practiced movements entice and hypnotize one creature within 15 feet of them. The target must succeed on a DC 14 Wisdom saving throw, taking 18 (4d8) psychic damage and is charmed until the end of the beloved’s next turn on a failure. If the beloved hits a creature charmed this way with a weapon attack, they take an extra 11 (2d10) psychic damage and the effect ends."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Flowing Action",
+          "name_format": "bold_italic",
+          "description": "The beloved takes the Dash or Disengage action."
+        },
+        {
+          "name": "Soothing Diva",
+          "name_format": "bold_italic",
+          "description": "The beloved charms a willing creature that can see or hear it within 60 feet for 1 minute. Each time that creature takes damage, they must succeed a DC 10 Charisma saving throw or cease being charmed by them. A creature charmed this way cannot be charmed or frightened by another effect."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**BELOVED TRIBUTE**\n*Medium humanoid (any), neutral good*\n**Armor Class** 17 (unarmored defense)\n**Hit Points** 75 (10d8 + 30)\n**Speed** 40 ft.\n**STR** 14 (+2) | **DEX** 18 (+4) | **CON** 17 (+3) | **INT** 13 (+1) | **WIS** 15 (+2) | **CHA** 17 (+3)\n**Saving Throws** Dex +7\n**Skills** Acrobatics +7, Performance +6, Persuasion +6\n**Condition Immunities** charmed\n**Senses** passive Perception 12\n**Languages** Common, Elvish\n**Challenge Rating** 5 (1800 XP) **Prof Bonus** +3\n\n***Divine Guidance.*** When the beloved has fewer than half of their hit points remaining, each time they roll an attack roll or saving throw they roll 1d4 and add it to the result.\n\n***Unarmored Defense.*** If they aren’t wearing armor, the beloved adds their Constitution modifier to their armor class, and their movement speed increases by 10 feet (already represented in this stat block).\n\n**ACTIONS**\n***Multiattack.*** The beloved makes two weapon attacks, then uses their Charming Conduct.\n\n***Twinblade.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8 + 4) slashing damage.\n\n***Charming Conduct.*** The beloved’s behavior and practiced movements entice and hypnotize one creature within 15 feet of them. The target must succeed on a DC 14 Wisdom saving throw, taking 18 (4d8) psychic damage and is charmed until the end of the beloved’s next turn on a failure. If the beloved hits a creature charmed this way with a weapon attack, they take an extra 11 (2d10) psychic damage and the effect ends.\n\n**Bonus Actions**\n***Flowing Action.*** The beloved takes the Dash or Disengage action.\n\n***Soothing Diva.*** The beloved charms a willing creature that can see or hear it within 60 feet for 1 minute. Each time that creature takes damage, they must succeed a DC 10 Charisma saving throw or cease being charmed by them. A creature charmed this way cannot be charmed or frightened by another effect."
+    }
+  ]
+}

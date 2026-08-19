@@ -1,0 +1,179 @@
+{
+  "Name": "Hadoscrambler",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Hadoscramblers are a rare and uniquely trained giant capybara, usually trained by the Capyhado who can relate to the beasts and more easily earn their trust. They are outfitted with armor that allows their rider to closely strap on to the beast to prevent them from falling.\n\n**Barding.** The stat block here represents a hadoscrambler with half-plate armor, but their barding comes in various types. The various types of barding give the capybara the following AC values; when noted, their Dexterity modifier is +2 and their natural armor is +2.",
+  "Barding": {
+    "headers": [
+      {
+        "text": "Barding",
+        "bold": true
+      },
+      {
+        "text": "Armor Class",
+        "bold": true
+      }
+    ],
+    "rows": [
+      [
+        "Leather",
+        "15 (11 + Dex Modifier + natural armor)"
+      ],
+      [
+        "Hide, Studded Leather",
+        "16 (12 + Dex Modifier + natural armor)"
+      ],
+      [
+        "Scale Mail",
+        "18 (14 + Dex modifier + natural armor)"
+      ],
+      [
+        "Breastplate",
+        "18 (14 + Dex modifier + natural armor)"
+      ],
+      [
+        "Half-Plate",
+        "19 (15 + Dex Modifier + natural armor)"
+      ],
+      [
+        "Chain",
+        "18 (16 + natural armor)"
+      ],
+      [
+        "Splint",
+        "19 (17 + natural armor)"
+      ],
+      [
+        "Plate",
+        "20 (18 + natural armor)"
+      ]
+    ]
+  },
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference%20-%20Capybara%20Hadoscrambler.jpg",
+  "Stat Blocks": [
+    {
+      "id": "hadoscrambler",
+      "section_type": "Stat Block",
+      "title": "Hadoscrambler",
+      "creature": {
+        "size": "Large",
+        "type": "beast",
+        "alignment": "unaligned"
+      },
+      "armor_class": "19 (half-plate, natural armor)",
+      "hit_points": "85 (10d10 + 30)",
+      "speed": {
+        "walk": "50 ft.",
+        "swim": "50 ft.",
+        "climb": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +6"
+      ],
+      "skills": [
+        "Athletics +6",
+        "Perception +6"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 16"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Secure Barding",
+          "name_format": "bold_italic",
+          "description": "The plate barding of the capybara latches its rider to it, provided they took 1 minute to secure themselves. The latches and straps can be easily undone as an action, but while in place the rider cannot fall from the capybara, even if one of them is knocked prone. A creature can attempt to break the straps by aiming an attack at them (using the rider’s AC) and taking 10 piercing or slashing damage, only half of which is dealt to the rider."
+        },
+        {
+          "name": "Strong Lung Capacity",
+          "name_format": "bold_italic",
+          "description": "The capybara can hold its breath for an additional 10 minutes, for a total of 14 minutes."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The capybara makes three attacks: one with its Bite, and two Claw Strikes."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., 1 target. Hit: 14 (2d10 + 3) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw Strikes",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., 1 target. Hit: 8 (1d8 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Leap",
+          "name_format": "bold_italic",
+          "description": "The capybara leaps up to half its movement speed, landing in an unoccupied space within range. This movement does not provoke opportunity attacks. The capybara can leap up to 10 feet in the air to avoid creatures and obstacles."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Hurry Up",
+          "name_format": "bold_italic",
+          "description": "The capybara takes the Dash action."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Redirect",
+          "name_format": "bold_italic",
+          "description": "When an attack targets the capybara’s rider but not itself, it can redirect that attack to target it instead. If its rider wishes to, they can at any time use their own reaction to do the reverse, and redirect an attack from the capybara to itself."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**HADOSCRAMBLER**\n*Large beast, unaligned*\n**Armor Class** 19 (half-plate, natural armor)\n**Hit Points** 85 (10d10 + 30)\n**Speed** 50 ft., swim 50 ft., climb 30 ft.\n**STR** 16 (+3) | **DEX** 14 (+2) | **CON** 16 (+3) | **INT** 7 (-2) | **WIS** 16 (+3) | **CHA** 13 (+1)\n**Saving Throws** Dex +5, Wis +6\n**Skills** Athletics +6, Perception +6\n**Senses** darkvision 60 ft., passive Perception 16\n**Challenge Rating** 6 (2,300 XP) **Prof Bonus** +3\n\n***Secure Barding.*** The plate barding of the capybara latches its rider to it, provided they took 1 minute to secure themselves. The latches and straps can be easily undone as an action, but while in place the rider cannot fall from the capybara, even if one of them is knocked prone. A creature can attempt to break the straps by aiming an attack at them (using the rider’s AC) and taking 10 piercing or slashing damage, only half of which is dealt to the rider.\n\n***Strong Lung Capacity.*** The capybara can hold its breath for an additional 10 minutes, for a total of 14 minutes.\n\n**ACTIONS**\n***Multiattack.*** The capybara makes three attacks: one with its Bite, and two Claw Strikes.\n\n***Bite.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., 1 target. *Hit:* 14 (2d10 + 3) piercing damage.\n\n***Claw Strikes.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., 1 target. *Hit:* 8 (1d8 + 3) slashing damage.\n\n***Leap.*** The capybara leaps up to half its movement speed, landing in an unoccupied space within range. This movement does not provoke opportunity attacks. The capybara can leap up to 10 feet in the air to avoid creatures and obstacles.\n\n**Bonus Actions**\n***Hurry Up.*** The capybara takes the Dash action.\n\n**Reactions**\n***Redirect.*** When an attack targets the capybara’s rider but not itself, it can redirect that attack to target it instead. If its rider wishes to, they can at any time use their own reaction to do the reverse, and redirect an attack from the capybara to itself."
+    }
+  ]
+}

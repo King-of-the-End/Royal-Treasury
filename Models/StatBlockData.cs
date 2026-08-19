@@ -119,6 +119,26 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // IMAGE VARIANTS
+    //
+    // The outer monster document can contain:
+    //
+    // "Image Variants": [
+    //   "https://...",
+    //   "https://..."
+    // ]
+    //
+    // MonsterService normalizes the outer
+    // property name and copies the URLs into
+    // this list.
+    // =====================================
+
+    [JsonPropertyName("image_variants")]
+    public List<string> ImageVariants { get; set; } =
+        new();
+
+
+    // =====================================
     // REFINEMENT
     //
     // Some monster files include additional
@@ -128,6 +148,27 @@ public sealed class StatBlockData
 
     [JsonPropertyName("refinement")]
     public MonsterRefinementData? Refinement { get; set; }
+
+
+    // =====================================
+    // BARDING TABLE
+    //
+    // Reuses the same generic lore-table
+    // structure used by group lore:
+    //
+    // "Barding": {
+    //   "headers": [
+    //     { "text": "Barding", "bold": true },
+    //     { "text": "Armor Class", "bold": true }
+    //   ],
+    //   "rows": [
+    //     [ "Leather", "15 (...)" ]
+    //   ]
+    // }
+    // =====================================
+
+    [JsonPropertyName("barding")]
+    public MonsterGroupLoreTable? Barding { get; set; }
 
 
     // =====================================

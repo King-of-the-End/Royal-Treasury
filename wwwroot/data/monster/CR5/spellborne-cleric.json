@@ -1,0 +1,193 @@
+{
+  "Name": "Spellborne Cleric",
+  "Group": [
+    "Clergy of the Four",
+    "Spellborne Clergy"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Clerics of Vestias are often more moderate than the Horncrowns and Acolytes. Like most followers of Vestias they have a mindset that might be better suited to a sorcerer or wizard than to an agent of the divine. Clerics of Vestias are able to perform their divine spells while applying the principles of sorcery to them, modifying and empowering them in the process.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Spellborne%20Clergy%20Cleric.jpg",
+  "Stat Blocks": [
+    {
+      "id": "spellborne_cleric",
+      "section_type": "Stat Block",
+      "title": "Spellborne Cleric",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "15 (breastplate)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Wis +6",
+        "Cha +7"
+      ],
+      "skills": [
+        "Arcana +5",
+        "Deception +7",
+        "Religion +5"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common",
+        "Infernal",
+        "one other language"
+      ],
+      "challenge_rating": "5 (1800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Divine Charge",
+          "name_format": "bold_italic",
+          "description": "The cleric’s weapon attacks deal an additional 1d8 lightning damage (included in this stat block)."
+        },
+        {
+          "name": "Divine Sorcery",
+          "name_format": "bold_italic",
+          "description": "When the cleric casts a spell they can choose to invoke one of the following effects:",
+          "options": [
+            {
+              "description": "If the spell requires a saving throw, one of the spell’s targets has disadvantage on their first saving throw against it on this turn."
+            },
+            {
+              "description": "The spell’s attack rolls cannot suffer from disadvantage and its targets cannot gain advantage against it - this spell ignores the effects of Magic Resistance and Limited Magic Immunity traits/effects."
+            },
+            {
+              "description": "If the spell requires one or more attack rolls, the cleric adds their Charisma modified to each attack roll made as part of the spell this turn."
+            },
+            {
+              "description": "If the spell could only target one creature (including further effects produced by the spell), the cleric can choose to target one additional creature within range with it."
+            },
+            {
+              "description": "The cleric can cast the spell as if it was cast one level higher than the spell slot they use to cast it (though they cannot raise it above the highest level of spell slots they have access to)."
+            }
+          ]
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The cleric is an 8th-level spellcaster. Their spellcasting ability is Wisdom. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 8,
+            "spellcasting_ability": "Wisdom",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "guidance",
+                  "true strike"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "charm person",
+                  "command"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "scorching ray",
+                  "hold person",
+                  "locate object"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "deadly target",
+                  "fear",
+                  "fly",
+                  "lightning bolt"
+                ]
+              },
+              {
+                "frequency": "4th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dimension door",
+                  "greater invisibility"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The cleric makes one weapon attack, then either casts a spell with a casting time of 1 action/1 bonus action, or makes a second weapon attack."
+        },
+        {
+          "name": "Quarterstaff",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) bludgeoning damage plus 5 (1d8) lightning damage, or 8 (1d8 + 3) bludgeoning damage plus 5 (1d8) lightning damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Discharge Magic (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The cleric invokes the effects of the dispel magic spell, using Charisma as their spellcasting ability. This does not count as a spell.",
+          "inline_formatting": {
+            "dispel magic": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**SPELLBORNE CLERIC**\n*Medium humanoid (any), lawful evil*\n**Armor Class** 15 (breastplate)\n**Hit Points** 65 (10d8 + 20)\n**Speed** 30 ft.\n**STR** 16 (+3) | **DEX** 12 (+1) | **CON** 14 (+2) | **INT** 14 (+2) | **WIS** 17 (+3) | **CHA** 18 (+4)\n**Saving Throws** Wis +6, Cha +7\n**Skills** Arcana +5, Deception +7, Religion +5\n**Senses** darkvision 60 ft., passive Perception 13\n**Languages** Common, Infernal, one other language\n**Challenge Rating** 5 (1800 XP) **Proficiency Bonus** +3\n\n***Divine Charge.*** The cleric’s weapon attacks deal an additional 1d8 lightning damage (included in this stat block).\n\n***Divine Sorcery.*** When the cleric casts a spell they can choose to invoke one of the following effects:\n• If the spell requires a saving throw, one of the spell’s targets has disadvantage on their first saving throw against it on this turn.\n• The spell’s attack rolls cannot suffer from disadvantage and its targets cannot gain advantage against it - this spell ignores the effects of Magic Resistance and Limited Magic Immunity traits/effects.\n• If the spell requires one or more attack rolls, the cleric adds their Charisma modified to each attack roll made as part of the spell this turn.\n• If the spell could only target one creature (including further effects produced by the spell), the cleric can choose to target one additional creature within range with it.\n• The cleric can cast the spell as if it was cast one level higher than the spell slot they use to cast it (though they cannot raise it above the highest level of spell slots they have access to).\n\n***Spellcasting.*** The cleric is an 8th-level spellcaster. Their spellcasting ability is Wisdom. They have the following spells prepared:\n• ***Cantrips (at will):*** guidance, true strike\n• ***1st level (4 slots):*** charm person, command\n• ***2nd level (3 slots):*** scorching ray, hold person, locate object\n• ***3rd level (3 slots):*** deadly target, fear, fly, lightning bolt\n• ***4th level (2 slots):*** dimension door, greater invisibility\n\n**ACTIONS**\n***Multiattack.*** The cleric makes one weapon attack, then either casts a spell with a casting time of 1 action/1 bonus action, or makes a second weapon attack.\n\n***Quarterstaff.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 3) bludgeoning damage plus 5 (1d8) lightning damage, or 8 (1d8 + 3) bludgeoning damage plus 5 (1d8) lightning damage if wielded with two hands.\n\n**Bonus Actions**\n***Discharge Magic (Recharge 5-6).*** The cleric invokes the effects of the *dispel magic* spell, using Charisma as their spellcasting ability. This does not count as a spell."
+    }
+  ]
+}

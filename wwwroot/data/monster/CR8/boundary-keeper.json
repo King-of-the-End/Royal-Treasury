@@ -1,0 +1,164 @@
+{
+  "Name": "Boundary Keeper",
+  "Group": [
+    "Clergy of the Four",
+    "The Idol Choir"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The Boundary Keepers are the guardians of the Idol Choir, serving as their champions and paladins. They are among their strongest individuals. The temples of T’quinn that are guarded by a Boundary Keeper are considered blessed by the faith, and when the Boundary Keeps travel they are often greeted as if they are a cause for celebrations. Taverns, inns, and social establishments happily welcome them as a sign of T’quinn’s blessing, which most believe means good commerce, good company, and lasting luck. Like most members of the Idol Choir, they are often trained performers who learn one or more instruments.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20Idol%20Choir%20Boundary%20Keeper.jpg",
+  "Stat Blocks": [
+    {
+      "id": "boundary_keeper",
+      "section_type": "Stat Block",
+      "title": "Boundary Keeper",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral good"
+      },
+      "armor_class": "18 (scale mail, shield)",
+      "hit_points": "113 (15d8 + 45)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +5"
+      ],
+      "skills": [
+        "Athletics +7",
+        "Perception +5",
+        "Performance +7"
+      ],
+      "senses": [
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Common",
+        "one other language (usually Elvish)"
+      ],
+      "challenge_rating": "8 (3900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Blessing of Resonance",
+          "name_format": "bold_italic",
+          "description": "The keeper’s weapon attacks deal an extra 1d8 thunder damage (already factored into this stat block)."
+        },
+        {
+          "name": "Divine Smite",
+          "name_format": "bold_italic",
+          "description": "When the keeper hits with a weapon attack, they can expend one of their spell slots to deal an extra 1d8 thunder damage, plus another 1d8 thunder damage per level of that spell slot."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The keeper is an 8th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 8,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "shield of faith",
+                  "searing smite",
+                  "thunderous smite"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "boomerang weapon",
+                  "find steed",
+                  "song of inspiration"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The keeper makes three weapon attacks."
+        },
+        {
+          "name": "Longsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) slashing damage plus 5 (1d8) thunder damage, or 10 (1d10 + 4) slashing damage plus 5 (1d8) thunder damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Javelin (Carries 4)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target, or thrown as a Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 8 (1d6 + 4) piercing damage plus 4 (1d6) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Heroic Melody (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The keeper invokes T’quinn to produce a heroic melody that affects all creatures within 30 feet that can see or hear them. Allies and non-hostile creatures the keeper chooses gain 18 (2d12 + 5) temporary hit points, and all hostile creatures of their choice within that range must succeed a DC 14 Constitution saving throw or take 25 (3d12 +5) thunder damage."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Thunderous Opportunity",
+          "name_format": "bold_italic",
+          "description": "When a creature leaves the keeper’s reach, the keeper can make a weapon attack against them. If they hit they deal damage as usual, and if the target is Large or smaller they are knocked prone."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**BOUNDARY KEEPER**\n*Medium humanoid (any), neutral good*\n**Armor Class** 18 (scale mail, shield)\n**Hit Points** 113 (15d8 + 45)\n**Speed** 30 ft.\n**Quality Traits** Magical\n**STR** 18 (+4) | **DEX** 14 (+2) | **CON** 16 (+3) | **INT** 12 (+1) | **WIS** 15 (+2) | **CHA** 16 (+3)\n**Saving Throws** Dex +5, Wis +5\n**Skills** Athletics +7, Perception +5, Performance +7\n**Senses** passive Perception 15\n**Languages** Common, one other language (usually Elvish)\n**Challenge Rating** 8 (3900 XP) **Prof Bonus** +3\n\n***Blessing of Resonance.*** The keeper’s weapon attacks deal an extra 1d8 thunder damage (already factored into this stat block).\n\n***Divine Smite.*** When the keeper hits with a weapon attack, they can expend one of their spell slots to deal an extra 1d8 thunder damage, plus another 1d8 thunder damage per level of that spell slot.\n\n***Spellcasting.*** The keeper is an 8th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:\n• ***1st level (4 slots):*** shield of faith, searing smite, thunderous smite\n• ***2nd level (3 slots):*** boomerang weapon, find steed, song of inspiration\n\n**ACTIONS**\n***Multiattack.*** The keeper makes three weapon attacks.\n\n***Longsword.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 9 (1d8 + 4) slashing damage plus 5 (1d8) thunder damage, or 10 (1d10 + 4) slashing damage plus 5 (1d8) thunder damage if wielded with two hands.\n\n***Javelin (Carries 4).*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target, or thrown as a *Ranged Weapon Attack:* +7 to hit, range 30/120 ft., one target. *Hit:* 8 (1d6 + 4) piercing damage plus 4 (1d6) thunder damage.\n\n***Heroic Melody (Recharge 6).*** The keeper invokes T’quinn to produce a heroic melody that affects all creatures within 30 feet that can see or hear them. Allies and non-hostile creatures the keeper chooses gain 18 (2d12 + 5) temporary hit points, and all hostile creatures of their choice within that range must succeed a DC 14 Constitution saving throw or take 25 (3d12 +5) thunder damage.\n\n**Bonus Actions**\n***Thunderous Opportunity.*** When a creature leaves the keeper’s reach, the keeper can make a weapon attack against them. If they hit they deal damage as usual, and if the target is Large or smaller they are knocked prone."
+    }
+  ]
+}

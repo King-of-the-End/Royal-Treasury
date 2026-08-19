@@ -1,0 +1,148 @@
+{
+  "Name": "Acolyte of Cineris",
+  "Group": "Congression of Cineris Clade",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Though not directly empowered by Cineris, the base servants of the Congression are trained to use basic arcane arts derived from it. They are more ruthless than the common dark elf, armed with exploding ashen bolts and an enhanced constitution.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Acolyte%20of%20Cineris.jpg",
+  "Stat Blocks": [
+    {
+      "id": "acolyte_of_cineris",
+      "section_type": "Stat Block",
+      "title": "Acolyte of Cineris",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "16 (chain shirt)",
+      "hit_points": "27 (6d8)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Fey ancestry"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 11,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Con +2",
+        "Cha +2"
+      ],
+      "skills": [
+        "Perception +4",
+        "Stealth +5"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Elvish",
+        "Undercommon"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Ash Bolt (2/Day)",
+          "name_format": "bold_italic",
+          "description": "As part of a Hand Crossbow attack, the elf fires a bolt coated in explosive ash. If it hits its target, the bolt digs into them, and at the start of the elf’s next turn it explodes, forcing the target to take 11 (3d6) fire damage. A creature that notices the bolt can remove it as an action or in place of a weapon attack."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The elf’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "components": "none",
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "ash coat",
+                  "dancing lights"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "hellish rebuke",
+                  "faerie fire",
+                  "scorching ray"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "blood of cineris"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elf makes two Shortsword attacks or one Hand Crossbow attack."
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 4) piercing damage plus 5 (1d8) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Hand Crossbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 8 (1d6 + 4) piercing damage plus 5 (1d8) poison damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**ACOLYTE OF CINERIS**\n*Medium humanoid (elf), neutral evil*\n**Armor Class** 16 (chain shirt)\n**Hit Points** 27 (6d8)\n**Speed** 30 ft.\n**Quality Traits** Fey ancestry\n**STR** 12 (+1) | **DEX** 18 (+4) | **CON** 10 (-) | **INT** 11 (-) | **WIS** 15 (+2) | **CHA** 11 (-)\n**Saving Throws** Con +2, Cha +2\n**Skills** Perception +4, Stealth +5\n**Senses** darkvision 120 ft., passive Perception 14\n**Languages** Elvish, Undercommon\n**Challenge Rating** 1 (200 XP) **Prof Bonus** +2\n\n***Ash Bolt (2/Day).*** As part of a Hand Crossbow attack, the elf fires a bolt coated in explosive ash. If it hits its target, the bolt digs into them, and at the start of the elf’s next turn it explodes, forcing the target to take 11 (3d6) fire damage. A creature that notices the bolt can remove it as an action or in place of a weapon attack.\n\n***Innate Spellcasting.*** The elf’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** ash coat, dancing lights\n• ***1/Day each:*** hellish rebuke, faerie fire, scorching ray\n• ***2/Day each:*** blood of cineris\n\n**ACTIONS**\n***Multiattack.*** The elf makes two Shortsword attacks or one Hand Crossbow attack.\n\n***Shortsword.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 8 (1d6 + 4) piercing damage plus 5 (1d8) poison damage.\n\n***Hand Crossbow.*** *Ranged Weapon Attack:* +6 to hit, range 30/120 ft., one target. *Hit:* 8 (1d6 + 4) piercing damage plus 5 (1d8) poison damage."
+    }
+  ]
+}

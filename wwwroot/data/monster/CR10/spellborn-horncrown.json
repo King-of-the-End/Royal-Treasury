@@ -1,0 +1,179 @@
+{
+  "Name": "Spellborn Horncrown",
+  "Group": [
+    "Clergy of the Four",
+    "Spellborne Clergy"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The Horncrown are paladins of the Spellborne Clergy. They carry weapons that have arcane runes carved into them, which grant them greater range and might. These paladins often resemble mages of high standing, and true to their names they wear helmets or head ornaments that resemble the horns of Vestias. Horncrown are often protectors of ancient lore - or defilers of it.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Spellborne%20Clergy%20Horncrown.jpg",
+  "Stat Blocks": [
+    {
+      "id": "spellborn_horncrown",
+      "section_type": "Stat Block",
+      "title": "Spellborn Horncrown",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "18 (breastplate, shield)",
+      "hit_points": "128 (15d8 + 60)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic immunity 3rd",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Str +8",
+        "Dex +6",
+        "Con +7",
+        "Int +5",
+        "Wis +7",
+        "Cha +7"
+      ],
+      "skills": [
+        "Arcana +5",
+        "Intimidation +7",
+        "Perception +7"
+      ],
+      "resistances": [
+        "lightning"
+      ],
+      "senses": [
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Common",
+        "Infernal",
+        "one other language"
+      ],
+      "challenge_rating": "10 (5900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Arcane Disruption",
+          "name_format": "bold_italic",
+          "description": "The paladin’s weapon attacks have advantage against creatures who are concentrating on any spells (or other effects)."
+        },
+        {
+          "name": "Divine Smite",
+          "name_format": "bold_italic",
+          "description": "When the paladin hits with a weapon attack, they can expend one of their spell slots to deal an extra 1d8 lightning damage, plus another 1d8 lightning damage per level of that spell slot."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The paladin is a 10th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 10,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "hellish rebuke",
+                  "silencing smite",
+                  "shield of faith"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "lesser restoration",
+                  "shatter",
+                  "orbs of spelljamming"
+                ]
+              },
+              {
+                "frequency": "3rd level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "arcana abjurative",
+                  "fireball",
+                  "haste",
+                  "lightning bolt"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The paladin makes two weapon attacks, then uses one of the following: it casts a spell with a casting time of 1 action, uses its Seal of the Fiend Empress, or uses its Torment."
+        },
+        {
+          "name": "Runic Longsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) slashing damage plus 5 (1d8) force damage, or 10 (1d10 + 4) slashing damage plus 6 (1d10) force damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Runic Longsword Projection",
+          "name_format": "bold_italic",
+          "description": "The paladin projects a wave of force from their Runic Longsword as a Ranged Weapon Attack: +7 to hit, range 30 ft., one target. Hit: 12 (2d8 + 3) force damage, or 14 (2d10 + 3) force damage if wielded two-handed. This attack also deals any extra damage the Runic Longsword would deal as a result of spells or effects enhancing it, and ignores all except for total cover.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Seal of the Fiend Empress (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The paladin creates a magical orb of black abjurative energy around one creature within 60 feet, who must make a DC 15 Charisma saving throw. On a failure, the sealing orb becomes opaque and covered in fiendish runes, and the creature within is restrained and incapacitated for 1 minute. Creatures trapped within cannot be targeted by spells or magical effects from outside the sea, and nothing can teleport into or out of the seal. At the end of each of the target’s turns they can repeat the Charisma saving throw, ending the effect on a success."
+        },
+        {
+          "name": "Torment",
+          "name_format": "bold_italic",
+          "description": "A creature trapped within the paladin’s Seal of the Fiend Empress must make a DC 15 Charisma saving throw, taking 18 (4d8) lightning damage and 18 (4d8) psychic damage on a failure, and half as much on a success."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**SPELLBORN HORNCROWN**\n*Medium humanoid (any), lawful evil*\n**Armor Class** 18 (breastplate, shield)\n**Hit Points** 128 (15d8 + 60)\n**Speed** 30 ft.\n**Quality Traits** Magic immunity 3rd, magical\n**STR** 18 (+4) | **DEX** 14 (+2) | **CON** 18 (+4) | **INT** 13 (+1) | **WIS** 16 (+3) | **CHA** 17 (+3)\n**Saving Throws** Str +8, Dex +6, Con +7, Int +5, Wis +7, Cha +7\n**Skills** Arcana +5, Intimidation +7, Perception +7\n**Resistances** lightning\n**Senses** passive Perception 17\n**Languages** Common, Infernal, one other language\n**Challenge Rating** 10 (5900 XP) **Prof Bonus** +4\n\n***Arcane Disruption.*** The paladin’s weapon attacks have advantage against creatures who are concentrating on any spells (or other effects).\n\n***Divine Smite.*** When the paladin hits with a weapon attack, they can expend one of their spell slots to deal an extra 1d8 lightning damage, plus another 1d8 lightning damage per level of that spell slot.\n\n***Spellcasting.*** The paladin is a 10th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:\n• ***1st level (4 slots):*** hellish rebuke, silencing smite, shield of faith\n• ***2nd level (3 slots):*** lesser restoration, shatter, orbs of spelljamming\n• ***3rd level (2 slots):*** arcana abjurative, fireball, haste, lightning bolt\n\n**ACTIONS**\n***Multiattack.*** The paladin makes two weapon attacks, then uses one of the following: it casts a spell with a casting time of 1 action, uses its Seal of the Fiend Empress, or uses its Torment.\n\n***Runic Longsword.*** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 9 (1d8 + 4) slashing damage plus 5 (1d8) force damage, or 10 (1d10 + 4) slashing damage plus 6 (1d10) force damage if wielded with two hands.\n\n***Runic Longsword Projection.*** The paladin projects a wave of force from their Runic Longsword as a *Ranged Weapon Attack:* +7 to hit, range 30 ft., one target. *Hit:* 12 (2d8 + 3) force damage, or 14 (2d10 + 3) force damage if wielded two-handed. This attack also deals any extra damage the Runic Longsword would deal as a result of spells or effects enhancing it, and ignores all except for total cover.\n\n***Seal of the Fiend Empress (Recharge 6).*** The paladin creates a magical orb of black abjurative energy around one creature within 60 feet, who must make a DC 15 Charisma saving throw. On a failure, the sealing orb becomes opaque and covered in fiendish runes, and the creature within is restrained and incapacitated for 1 minute. Creatures trapped within cannot be targeted by spells or magical effects from outside the sea, and nothing can teleport into or out of the seal. At the end of each of the target’s turns they can repeat the Charisma saving throw, ending the effect on a success.\n\n***Torment.*** A creature trapped within the paladin’s Seal of the Fiend Empress must make a DC 15 Charisma saving throw, taking 18 (4d8) lightning damage and 18 (4d8) psychic damage on a failure, and half as much on a success."
+    }
+  ]
+}

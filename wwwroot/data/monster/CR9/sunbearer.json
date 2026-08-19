@@ -1,0 +1,175 @@
+{
+  "Name": "Sunbearer",
+  "Group": [
+    "Clergy of the Four",
+    "The Red Hand"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The paladins of Harros are referred to as Sunbearers, called as such due to their weapons that glow with the light of the sun. Among the Clergy of the Four, they are the most heroic in appearance by far, often wearing golden armor and proudly wearing the red arm of Harros’. They hold great authority among knights and servants of good, who are known to seek their counsel when it is available.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Reference%20-%20Red%20Hand%20Sunbearer.jpg",
+  "Stat Blocks": [
+    {
+      "id": "sunbearer",
+      "section_type": "Stat Block",
+      "title": "Sunbearer",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "18 (plate)",
+      "hit_points": "128 (15d8 + 60)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Str +8",
+        "Wis +6",
+        "Cha +8"
+      ],
+      "skills": [
+        "Insight +6",
+        "Persuasion +8",
+        "Riding +6"
+      ],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Common",
+        "one other language (usually Draconic)"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Aura of Sealing Harm",
+          "name_format": "bold_italic",
+          "description": "When allied creatures within 15 feet of the paladin would take piercing, slashing, or bludgeoning damage, the damage is reduced by the paladin’s proficiency bonus."
+        },
+        {
+          "name": "Divine Smite",
+          "name_format": "bold_italic",
+          "description": "When the paladin hits with a weapon attack, they can expend one of their spell slots to deal an extra 1d8 of radiant damage, plus an additional 1d8 for each level of the expended spell slot."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The paladin is a 10th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 10,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "1st level (4 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "bless",
+                  "command",
+                  "cure wounds",
+                  "infused weapon"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "falling meteor",
+                  "find steed",
+                  "weapon of domination"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "daylight",
+                  "radiant smite",
+                  "solar implosion"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sunlight Weapons",
+          "name_format": "bold_italic",
+          "description": "The paladin’s weapon attacks deal an extra 1d8 of radiant damage (factored already into this stat block). Also, creatures attacked by weapons benefitting from this effect are treated as being exposed to direct sunlight, causing them to gain the benefits or detriments of traits associated with sunlight for the purposes of those attacks."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The paladin makes three weapon attacks."
+        },
+        {
+          "name": "Greataxe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 4) slashing damage plus 5 (1d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Javelin",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target, or Ranged Weapon Attack: +8 to hit, range 30/120 ft., one target. Hit: 8 (1d6 + 4) piercing damage plus 5 (1d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Channel Divinity: Sunstrike (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Four pillars of sunlight strike down, each targeting a point the paladin can see within 60 feet of them. Any creatures within 5 feet of those points must make a DC 16 Dexterity saving throw, taking 36 (8d8) radiant damage on a failed save, or half as much damage on a successful one. If a creature making the saving throw has sunlight sensitivity or is weak to sunlight, they have disadvantage on the save.\n\nAny creature who fails their save by 5 points or more is blinded for 1 minute, during which time they make a DC 16 Constitution saving throw at the end of each of their turns, ending the effect early on a success."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**SUNBEARER**\n*Medium humanoid (any), lawful good*\n**Armor Class** 18 (plate)\n**Hit Points** 128 (15d8 + 60)\n**Speed** 30 ft.\n**Quality Traits** Magical\n**STR** 18 (+4) | **DEX** 13 (+1) | **CON** 18 (+4) | **INT** 12 (+1) | **WIS** 15 (+2) | **CHA** 18 (+4)\n**Saving Throws** Str +8, Wis +6, Cha +8\n**Skills** Insight +6, Persuasion +8, Riding +6\n**Condition Immunities** frightened\n**Senses** passive Perception 12\n**Languages** Common, one other language (usually Draconic)\n**Challenge Rating** 9 (5,000 XP) **Prof Bonus** +4\n\n***Aura of Sealing Harm.*** When allied creatures within 15 feet of the paladin would take piercing, slashing, or bludgeoning damage, the damage is reduced by the paladin’s proficiency bonus.\n\n***Divine Smite.*** When the paladin hits with a weapon attack, they can expend one of their spell slots to deal an extra 1d8 of radiant damage, plus an additional 1d8 for each level of the expended spell slot.\n\n***Spellcasting.*** The paladin is a 10th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:\n• ***1st level (4 slots):*** bless, command, cure wounds, infused weapon\n• ***2nd level (3 slots):*** falling meteor, find steed, weapon of domination\n• ***3rd level (3 slots):*** daylight, radiant smite, solar implosion\n\n***Sunlight Weapons.*** The paladin’s weapon attacks deal an extra 1d8 of radiant damage (factored already into this stat block). Also, creatures attacked by weapons benefitting from this effect are treated as being exposed to direct sunlight, causing them to gain the benefits or detriments of traits associated with sunlight for the purposes of those attacks.\n\n**ACTIONS**\n***Multiattack.*** The paladin makes three weapon attacks.\n\n***Greataxe.*** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 11 (1d12 + 4) slashing damage plus 5 (1d8) radiant damage.\n\n***Javelin.*** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target, or *Ranged Weapon Attack:* +8 to hit, range 30/120 ft., one target. *Hit:* 8 (1d6 + 4) piercing damage plus 5 (1d8) radiant damage.\n\n***Channel Divinity: Sunstrike (Recharge 5-6).*** Four pillars of sunlight strike down, each targeting a point the paladin can see within 60 feet of them. Any creatures within 5 feet of those points must make a DC 16 Dexterity saving throw, taking 36 (8d8) radiant damage on a failed save, or half as much damage on a successful one. If a creature making the saving throw has sunlight sensitivity or is weak to sunlight, they have disadvantage on the save.\n\nAny creature who fails their save by 5 points or more is blinded for 1 minute, during which time they make a DC 16 Constitution saving throw at the end of each of their turns, ending the effect early on a success."
+    }
+  ]
+}

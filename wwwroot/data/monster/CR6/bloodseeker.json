@@ -1,0 +1,142 @@
+{
+  "Name": "Bloodseeker",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The bloodseekers are the signature military force who serve under Acria of Bloodnett, and are considered by many in Sermonway to be a symbol of Acria’s vaguely tyrannical rule as High-Lord. To some they represent peace and civility, and to others they are the hand of the Federal Alliance tightening around the necks of provinces that don’t comply. These drake-riding soldiers are trained killers, and carry lances infused with arcane powers that allow them to fire a missile-like burst of force from afar. It is rare to find a bloodseeker apart from their bloodwood drake mount, except in the cases of their elite units - those who are permitted to ride one of the few blue dragons in Acria’s employ.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference_BG%20-%20Bloodseeker.jpg",
+  "Stat Blocks": [
+    {
+      "id": "bloodseeker",
+      "section_type": "Stat Block",
+      "title": "Bloodseeker",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (usually elf or goliath)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "18 (scale mail, shield)",
+      "hit_points": "105 (14d8 + 42)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Evasion"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Str +7",
+        "Wis +8"
+      ],
+      "skills": [
+        "Intimidation +5",
+        "Investigation +4",
+        "Perception +8",
+        "Riding +8"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Giant"
+      ],
+      "challenge_rating": "6 (2300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Determined Sentinel",
+          "name_format": "bold_italic",
+          "description": "The bloodseeker can take opportunity attacks against creatures who are both leaving or entering their attack range, and do so with advantage. They can make opportunity attacks against creatures who take the Disengage action, but do so without advantage. If a bloodseeker hits a creature with an opportunity attack, the creature’s movement speed is reduced to half until the end of the turn."
+        },
+        {
+          "name": "Mounted Expert",
+          "name_format": "bold_italic",
+          "description": "While the bloodseeker is mounted, their weapon attacks and saving throws have advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The bloodseeker makes three Drake Lance attacks or two Lance Force Burst attacks."
+        },
+        {
+          "name": "Drake Lance",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (1d12 + 4) piercing damage plus 4 (1d6) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Lance Force Burst",
+          "name_format": "bold_italic",
+          "description": "Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 15 (2d10 + 4) force damage.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Chase",
+          "name_format": "bold_italic",
+          "description": "The bloodseeker commands its mount to take the Dash action, which they can do using their reaction. If they do, opportunity attacks made against their mount this turn have disadvantage."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Zealous Rushdown",
+          "name_format": "bold_italic",
+          "description": "When the bloodseeker’s mount takes the Dash action on the mount’s turn, the bloodseeker can make a single Drake Lance attack against a creature that comes within their range before the end of the turn. If it hits, the target takes the attack’s damage and is knocked prone."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**BLOODSEEKER**\n*Medium humanoid (usually elf or goliath), lawful neutral*\n**Armor Class** 18 (scale mail, shield)\n**Hit Points** 105 (14d8 + 42)\n**Speed** 30 ft.\n**Quality Traits** Evasion\n**STR** 18 (+4) | **DEX** 14 (+2) | **CON** 16 (+3) | **INT** 13 (+1) | **WIS** 20 (+5) | **CHA** 15 (+2)\n**Saving Throws** Str +7, Wis +8\n**Skills** Intimidation +5, Investigation +4, Perception +8, Riding +8\n**Resistances** poison\n**Condition Immunities** frightened\n**Senses** blindsight 30 ft., passive Perception 18\n**Languages** Common, Elvish, Giant\n**Challenge Rating** 6 (2300 XP) **Prof Bonus** +3\n\n***Determined Sentinel.*** The bloodseeker can take opportunity attacks against creatures who are both leaving or entering their attack range, and do so with advantage. They can make opportunity attacks against creatures who take the Disengage action, but do so without advantage. If a bloodseeker hits a creature with an opportunity attack, the creature’s movement speed is reduced to half until the end of the turn.\n\n***Mounted Expert.*** While the bloodseeker is mounted, their weapon attacks and saving throws have advantage.\n\n**ACTIONS**\n***Multiattack.*** The bloodseeker makes three Drake Lance attacks or two Lance Force Burst attacks.\n\n***Drake Lance.*** *Melee Weapon Attack:* +7 to hit, reach 10 ft., one target. *Hit:* 11 (1d12 + 4) piercing damage plus 4 (1d6) force damage.\n\n***Lance Force Burst.*** *Ranged Spell Attack:* +7 to hit, range 60 ft., one target. *Hit:* 15 (2d10 + 4) force damage.\n\n**Bonus Actions**\n***Chase.*** The bloodseeker commands its mount to take the Dash action, which they can do using their reaction. If they do, opportunity attacks made against their mount this turn have disadvantage.\n\n**Reactions**\n***Zealous Rushdown.*** When the bloodseeker’s mount takes the Dash action on the mount’s turn, the bloodseeker can make a single Drake Lance attack against a creature that comes within their range before the end of the turn. If it hits, the target takes the attack’s damage and is knocked prone."
+    }
+  ]
+}
