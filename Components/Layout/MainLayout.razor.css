@@ -86,3 +86,48 @@
         padding: 2rem 1rem 3rem;
     }
 }
+
+/* =========================================
+   VIEWPORT WIDTH SAFETY
+
+   Prevent any page content from enlarging
+   the document horizontally. Individual
+   list/table wrappers may still scroll.
+   ========================================= */
+
+.site-shell,
+.site-main,
+.site-content {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.site-shell,
+.site-main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.site-content {
+    overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+    .site-content {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 800px) {
+    .site-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding:
+            2rem
+            1rem
+            3rem;
+    }
+}
+

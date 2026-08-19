@@ -1924,3 +1924,96 @@
     }
 
 }
+
+/* =========================================
+   MOBILE STAT BLOCK WIDTH SAFETY
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .rt-statblock,
+    .rt-statblock-columns,
+    .rt-statblock-column,
+    .rt-stat-card,
+    .rt-stat-section,
+    .rt-stat-entry,
+    .rt-core-stats,
+    .rt-details {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+
+    .rt-stat-entry,
+    .rt-core-stats dd,
+    .rt-details dd {
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+
+    /*
+     * Override the desktop left/right tooltip
+     * anchoring. Glossary boxes on phones are
+     * viewport-contained bottom panels.
+     */
+
+    .rt-statblock
+    ::deep .glossary-tooltip {
+        position: fixed !important;
+
+        top: auto !important;
+
+        left: 0.75rem !important;
+        right: 0.75rem !important;
+        bottom:
+            calc(
+                0.75rem +
+                env(safe-area-inset-bottom, 0px)
+            ) !important;
+
+        z-index: 20000 !important;
+
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        max-height: min(60vh, 32rem) !important;
+
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+
+        white-space: normal !important;
+        overflow-wrap: break-word;
+        word-break: normal;
+
+        transform:
+            translateY(0.5rem) !important;
+
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
+
+    .rt-statblock
+    ::deep .glossary-tooltip::before {
+        display: none !important;
+    }
+
+
+    .rt-statblock
+    ::deep .glossary-term:hover
+    .glossary-tooltip,
+
+    .rt-statblock
+    ::deep .glossary-term:focus
+    .glossary-tooltip,
+
+    .rt-statblock
+    ::deep .glossary-term:focus-visible
+    .glossary-tooltip {
+        transform: none !important;
+        pointer-events: auto;
+    }
+
+}
+

@@ -1263,3 +1263,147 @@
     }
 
 }
+
+/* =========================================
+   MOBILE BESTIARY TABLE OVERRIDES
+
+   Keep the Bestiary readable on phones by
+   restoring a real table width and scrolling
+   only inside the table box. This replaces
+   the earlier narrow-screen behavior that
+   compressed six columns until words broke
+   into individual letters.
+   ========================================= */
+
+.bestiary-table-wrap {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x pan-y;
+
+    scrollbar-width: thin;
+    scrollbar-color:
+        var(--gold)
+        #211916;
+}
+
+
+.bestiary-table-wrap::-webkit-scrollbar {
+    height: 8px;
+}
+
+
+.bestiary-table-wrap::-webkit-scrollbar-track {
+    background: #211916;
+}
+
+
+.bestiary-table-wrap::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: #765f2d;
+}
+
+
+.bestiary-table {
+    width: 100%;
+    min-width: 900px;
+    table-layout: fixed;
+}
+
+
+.bestiary-table th,
+.bestiary-table td {
+    position: relative;
+
+    overflow: visible;
+
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+}
+
+
+.bestiary-table th {
+    white-space: nowrap;
+}
+
+
+.bestiary-table .spell-name-cell,
+.bestiary-monster-link {
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+}
+
+
+/* =========================================
+   TABLET / MOBILE BESTIARY LIST
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .bestiary-table {
+        min-width: 900px;
+        font-size: 0.9rem;
+    }
+
+
+    .bestiary-table th,
+    .bestiary-table td {
+        padding:
+            0.78rem
+            0.7rem;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .bestiary-table {
+        min-width: 880px;
+        font-size: 0.9rem;
+    }
+
+
+    .bestiary-table th,
+    .bestiary-table td {
+        padding:
+            0.75rem
+            0.65rem;
+    }
+
+
+    .bestiary-table
+    .spell-name-cell {
+        font-size: 1rem;
+    }
+
+
+    .bestiary-cr-tab {
+        min-width: 78px;
+        min-height: 3rem;
+
+        padding:
+            0.72rem
+            0.7rem;
+
+        font-size: 0.82rem;
+    }
+
+
+    .bestiary-cr-tab.active {
+        padding-bottom:
+            calc(
+                0.72rem + 5px
+            );
+    }
+
+}
+

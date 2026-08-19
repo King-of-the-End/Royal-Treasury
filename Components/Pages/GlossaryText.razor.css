@@ -301,3 +301,92 @@
     }
 
 }
+
+/* =========================================
+   MOBILE GLOSSARY SAFETY
+
+   Desktop tooltips stay anchored under the
+   term. On phones the tooltip becomes a
+   viewport-contained bottom panel so it can
+   never extend off the left or right edge.
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .glossary-term {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+
+    .glossary-tooltip {
+        position: fixed;
+
+        top: auto;
+
+        left: 0.75rem;
+        right: 0.75rem;
+        bottom:
+            calc(
+                0.75rem +
+                env(safe-area-inset-bottom, 0px)
+            );
+
+        z-index: 20000;
+
+        width: auto;
+        min-width: 0;
+        max-width: none;
+        max-height: min(60vh, 32rem);
+
+        padding:
+            0.8rem
+            0.9rem;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
+
+        transform:
+            translateY(0.5rem);
+
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
+
+    .glossary-tooltip::before {
+        display: none;
+    }
+
+
+    .glossary-term:hover
+    .glossary-tooltip,
+
+    .glossary-term:focus
+    .glossary-tooltip,
+
+    .glossary-term:focus-visible
+    .glossary-tooltip {
+        transform: none;
+        pointer-events: auto;
+    }
+
+
+    .glossary-tooltip-title {
+        font-size: 1.05rem;
+    }
+
+
+    .glossary-tooltip-definition {
+        font-size: 0.9rem;
+        line-height: 1.45;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+}
+
