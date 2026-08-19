@@ -180,11 +180,6 @@
           "name": "Astral Transmission Drive",
           "name_format": "bold_italic",
           "description": "If the Sword spends at least 1 minute concentrating on doing so, it can open a gate that cuts through the astral sea, emerging in any space the Sword chooses in a plane it is familiar with."
-        },
-        {
-          "name": "Legendary Resistance (3/Day)",
-          "name_format": "bold_italic",
-          "description": "When the Sword fails a saving throw, it can choose to succeed instead."
         }
       ],
       "actions": [
@@ -251,7 +246,18 @@
           "name_format": "bold_italic",
           "description": "The Sword fires a burst of energy from its mouth at a creature within 240 feet, which must succeed on a DC 24 Dexterity saving throw or take 39 (6d12) force damage. A creature who fails this save by 5 points or more is stunned until the start of their next turn."
         }
-      ]
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      }
     }
   ]
 }

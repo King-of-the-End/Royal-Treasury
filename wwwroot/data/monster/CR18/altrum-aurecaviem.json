@@ -1,0 +1,248 @@
+{
+  "Name": "Altrum Aurecaviem",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Altrum Aurecaviem**\n\n**Title** The Living North\n**Gemstone** Labradorite\n**Type** Seraphael\n**Originator** Vestias\n\nAn eidolos who once existed as a lesser evil deity. Originally a vain and destructive deity who ruled through fear, she lost much of her power when her domain was destroyed by the Grand Primaries, and the loss of those who venerated her caused her to fall from her position as a lesser god entirely. When the Primary Gods took hold and achieved peace, all the remaining withered form of this god was found and sealed away by Mnemosyne to prevent her from regaining her station when the world healed.\n\nAn untold number of years later she was unsealed by Vestias, who planned to make use of her during the War in One Moment. Knowing that Copehtor was constructing something within the Skywall that was meant to be turned upon Vestias, she wanted to sabotage his efforts. She offered the fallen lesser goddess a new role as an eidolos, forever preventing her from regaining true divinity, but offering her a place in the world nonetheless. Accepting her new name and form, Altrum Aurecaviem accepted begrudgingly.\n\n**Released from Her Role.** Altrum Aurecaviem was previously charged with sealing the White Steel Grave in the Cauldron, and remained there to freeze it into ice - such was the role assigned to her by Vestias. However, agents of the Family invaded the facility, defeated her, and made use of her eidolic armaments. When her body was finally restored, the target she was sent to hold there - the Sword of Damocles - had escaped, and she no longer had to remain. Liberated from her mission, she is now free in the world and is outside the control of the Eidolons.\n\n**Varied Forms.** Altrum Aurecaviem possessed a huge monstrous form resembling an owl-like creature with a humanoid body, and twisting labradorite goat horns, talons on its hands and feet, a long feathery tail and spanning owl wings it curls into a mantle when not flying. However, when its first form is destroyed it finds itself breaking into ice and reforming into a beautiful large humanoid form, which resembles a blue-skinned woman who manifests labradorite weapons, and has armor and clothes made of fur, silk and ice.\n\nWhen she assumes her humanoid form she becomes the embodiment of winter, freezing everything around her merely by existing. She returns to her monstrous form 1 hour after assuming her humanoid one, unless she is killed.",
+  "Information Sections": [
+    {
+      "Title": "Altrum Aurecaviem",
+      "Text": "**Title** The Living North\n**Gemstone** Labradorite\n**Type** Seraphael\n**Originator** Vestias\n\nAn eidolos who once existed as a lesser evil deity. Originally a vain and destructive deity who ruled through fear, she lost much of her power when her domain was destroyed by the Grand Primaries, and the loss of those who venerated her caused her to fall from her position as a lesser god entirely. When the Primary Gods took hold and achieved peace, all the remaining withered form of this god was found and sealed away by Mnemosyne to prevent her from regaining her station when the world healed.\n\nAn untold number of years later she was unsealed by Vestias, who planned to make use of her during the War in One Moment. Knowing that Copehtor was constructing something within the Skywall that was meant to be turned upon Vestias, she wanted to sabotage his efforts. She offered the fallen lesser goddess a new role as an eidolos, forever preventing her from regaining true divinity, but offering her a place in the world nonetheless. Accepting her new name and form, Altrum Aurecaviem accepted begrudgingly.\n\n**Released from Her Role.** Altrum Aurecaviem was previously charged with sealing the White Steel Grave in the Cauldron, and remained there to freeze it into ice - such was the role assigned to her by Vestias. However, agents of the Family invaded the facility, defeated her, and made use of her eidolic armaments. When her body was finally restored, the target she was sent to hold there - the Sword of Damocles - had escaped, and she no longer had to remain. Liberated from her mission, she is now free in the world and is outside the control of the Eidolons.\n\n**Varied Forms.** Altrum Aurecaviem possessed a huge monstrous form resembling an owl-like creature with a humanoid body, and twisting labradorite goat horns, talons on its hands and feet, a long feathery tail and spanning owl wings it curls into a mantle when not flying. However, when its first form is destroyed it finds itself breaking into ice and reforming into a beautiful large humanoid form, which resembles a blue-skinned woman who manifests labradorite weapons, and has armor and clothes made of fur, silk and ice.\n\nWhen she assumes her humanoid form she becomes the embodiment of winter, freezing everything around her merely by existing. She returns to her monstrous form 1 hour after assuming her humanoid one, unless she is killed."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20Altrum%20Aurecaviem%20(Goddess).jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20Altrum%20Aurecaviem%20(Goddess).jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20Altrum%20Aurecaviem%20(Owl).jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20Altrum%20Aurecaviem%20(Goddess).jpg"
+    },
+    {
+      "Label": "Image 2",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20Altrum%20Aurecaviem%20(Owl).jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "altrum_aurecaviem",
+      "section_type": "Stat Block",
+      "title": "Altrum Aurecaviem",
+      "creature": {
+        "size": "Huge",
+        "type": "monstrosity (eidolos)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "22 (natural armor, cosmogony)",
+      "hit_points": "288 (25d12 + 125)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [
+        "Eidolos (seraphael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+4",
+          "save": "+4"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+7",
+          "save": "+7"
+        },
+        "CON": {
+          "score": 21,
+          "modifier": "+7",
+          "save": "+13"
+        },
+        "INT": {
+          "score": 24,
+          "modifier": "+9",
+          "save": "+9"
+        },
+        "WIS": {
+          "score": 26,
+          "modifier": "+9",
+          "save": "+15"
+        },
+        "CHA": {
+          "score": 28,
+          "modifier": "+11",
+          "save": "+11"
+        }
+      },
+      "saving_throws": [
+        "Con +13",
+        "Wis +15"
+      ],
+      "skills": [
+        "Deception +17",
+        "Insight +15",
+        "Intimidation +17",
+        "Perception +21"
+      ],
+      "ability_note": "*checks, saves and skills above include the +2 cosmogony bonus",
+      "resistances": [
+        "fire",
+        "all damage that isn’t eidolic"
+      ],
+      "immunities": [
+        "cold",
+        "poison",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "truesight 120 ft.",
+        "passive Perception 31"
+      ],
+      "languages": [
+        "all",
+        "telepathy 1000 ft."
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Cosmic Shard: Shivering Form",
+          "name_format": "bold_italic",
+          "description": "Cold damage done by Altrum Aurecaviem ignores resistances, and treats immunity as resistance instead. Any creature reduced to 0 hit points by Altrum Aurecaviem has disadvantage on death saving throws, and if healed while dying they regain half as many hit points as they should. If Altrum Aurecaviem takes cold damage from a source except themselves, they instead regain hit points equal to the damage they would have taken."
+        },
+        {
+          "name": "Cosmogony Bonus (+3)",
+          "name_format": "bold_italic",
+          "description": "Half of Altrum Aurecaviem’s Cosmogony Bonus is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Altrum Aurecaviem’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "bullets": [
+            "At will: control weather",
+            "1/Day each: cone of cold, power word stillness",
+            "2/Day each: ice storm, investiture of ice",
+            "3/Day each: etherealness"
+          ]
+        },
+        {
+          "name": "Glacial Reign (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If Altrum Aurecaviem would be reduced to 0 hit points or killed outright, her current hit point total is instead reset to 200, all effects she is suffering from end at her discretion, her body turns to ice and shatters to reform into her Large humanoid form in an unoccupied space within 100 feet of where she was, she regains her used innate spells, Legendary Reactions, and she gains access to her Mythic Actions for 1 hour. The party is awarded an additional 20,000 XP (40,000 XP total) if Altrum Aurecaviem is defeated after Glacial Reign activates."
+        },
+        {
+          "name": "Seraphic Authority: Winter’s Wrath",
+          "name_format": "bold_italic",
+          "description": "This feature only becomes active when Altrum Aurecaviem is in her humanoid form. A blizzard constantly swirls in a 60-foot-radius sphere around Altrum Aurecaviem, generating ice and snow that freezes the area, and grants her half cover. Creatures who enter this space for the first time on their turn or begin their turn within it must make a DC 19 Constitution saving throw, taking 10 (2d10) cold damage on a failed save, or half as much on a successful one. If a creature fails this save by 5 points or more they become sluggish until the end of Altrum’s next turn. Altrum may dismiss or resume this effect as a bonus action on her turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Altrum Aurecaviem makes three attacks, choosing between her Talons or Labradorite Edge. One of these attacks can be replaced with her Touch of Frost or Freezing Orb, and/or two of these attacks can be replaced with casting a spell with a casting time of 1 action."
+        },
+        {
+          "name": "Talons",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 6 (1d10) cold damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Touch of Frost",
+          "name_format": "bold_italic",
+          "description": "Melee Spell Attack: +17 to hit, reach 10 ft., one target. Hit: 24 (3d8 + 11) cold damage, and the target cannot take reactions until the start of their next turn.",
+          "inline_formatting": {
+            "Melee Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Freezing Orb",
+          "name_format": "bold_italic",
+          "description": "Ranged Spell Attack: +17 to hit, range 60/240 ft., one target. Hit: 47 (8d8 + 11) cold damage.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Labradorite Edge",
+          "name_format": "bold_italic",
+          "description": "Altrum Aurecaviem creates a spear, sword, scythe, or similar bladed weapon out of ice and labradorite, and makes a Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 22 (2d10 + 11) slashing damage and 11 (2d10) cold damage.",
+          "inline_formatting": {
+            "Mythic Action": "italic",
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Altrum Aurecaviem makes a Talon or Labradorite Edge attack."
+          },
+          {
+            "name": "Teleport (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Altrum Aurecaviem teleports to an unoccupied space she can see within 60 ft."
+          },
+          {
+            "name": "Cast Spell (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Altrum Aurecaviem casts a spell using her Innate Spellcasting with a casting time of 1 action."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Frost Detention (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Altrum Aurecaviem targets one creature within 20 feet of herself. Her target must make a DC 19 Constitution saving throw, or be frozen in an unbreakable chunk of ice and take 38 (4d12 + 12) cold damage on a failed save. While frozen, the target is restrained until the end of Altrum Aurecaviem’s next turn."
+          },
+          {
+            "name": "Labradorite Tourbillon (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Altrum Aurecaviem creates a thick veil of snow that sweeps around her in a 20-foot-radius sphere. Until the start of her next turn she is completely obscured to other creatures, but her own vision is unimpaired. Any creature who enters the snow treats the space as difficult terrain and is blinded."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

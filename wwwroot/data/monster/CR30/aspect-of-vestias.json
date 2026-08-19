@@ -96,7 +96,7 @@
         {
           "name": "Ancient Contingency (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "If Vestias is reduced to 0 hit points or killed outright, her current hit point total is instead reset to 300, she teleports to an unoccupied space within 120 feet, regains one used spell slot of each level and her legendary resistances, recharges her Spellburst, and for 1 hour can use the options in the Mythic Actions section of her sheet. For that hour she can also concentrate on one additional spell of 6th level or lower. A party that defeats her after using her Ancient Contingency is awarded an additional 155,000 XP (310,000 XP total)."
+          "description": "If Vestias is reduced to 0 hit points or killed outright, her current hit point total is instead reset to 300, she teleports to an unoccupied space within 120 feet, regains one used spell slot of each level and her Legendary Reactions, recharges her Spellburst, and for 1 hour can use the options in the Mythic Actions section of her sheet. For that hour she can also concentrate on one additional spell of 6th level or lower. A party that defeats her after using her Ancient Contingency is awarded an additional 155,000 XP (310,000 XP total)."
         },
         {
           "name": "Concentration Master",
@@ -252,7 +252,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (4/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

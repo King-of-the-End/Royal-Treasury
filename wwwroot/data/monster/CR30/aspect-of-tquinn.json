@@ -102,7 +102,7 @@
         {
           "name": "Song of Ignition (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "If T’quinn would be reduced to 0 hit points or killed outright, her current hit point total instead resets to 400 hit points, she teleports to an unoccupied space within 120 feet, recharges her Emeraldfire Flame, regains spent uses of her Legendary Resistance, and for 1 hour can use the options in the Mythic Actions section as well as concentrate on two spells as if they were one. A party that defeats her after using her Song of Ignition is awarded an additional 155,000 XP (310,000 XP total)."
+          "description": "If T’quinn would be reduced to 0 hit points or killed outright, her current hit point total instead resets to 400 hit points, she teleports to an unoccupied space within 120 feet, recharges her Emeraldfire Flame, regains spent uses of her Legendary Reactions, and for 1 hour can use the options in the Mythic Actions section as well as concentrate on two spells as if they were one. A party that defeats her after using her Song of Ignition is awarded an additional 155,000 XP (310,000 XP total)."
         },
         {
           "name": "Spellcasting",
@@ -274,7 +274,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

@@ -98,7 +98,7 @@
         {
           "name": "Dread Restoration (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "If Gotham is reduced to 0 hit points or killed outright, his current hit point total resets to 150, he ends any magical effects targeting him that he wishes to escape, and he teleports to an unoccupied space within 60 feet. He regains his Legendary Resistances, regains one of each level of his spell slots, and can use his mythic actions for 1 hour. A party that defeats him after using his Dread Restoration is awarded an additional 50,000 XP (100,000 XP total)."
+          "description": "If Gotham is reduced to 0 hit points or killed outright, his current hit point total resets to 150, he ends any magical effects targeting him that he wishes to escape, and he teleports to an unoccupied space within 60 feet. He regains his Legendary Reactions, regains one of each level of his spell slots, and can use his mythic actions for 1 hour. A party that defeats him after using his Dread Restoration is awarded an additional 50,000 XP (100,000 XP total)."
         },
         {
           "name": "Spellcasting",
@@ -240,7 +240,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

@@ -92,7 +92,7 @@
         {
           "name": "Living Storm (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "When Ivsil is reduced to 0 hit points or killed outright, its hit points are instead reset to 300, regains all spent uses of Legendary Resistance, recharges their Unleash Tempest, and can immediately move up to their movement speed without provoking opportunity attacks. For the next hour they can use their Mythic Action options. A party who defeats Ivsil after using Living Storm is awarded an additional 75,000 XP (for a total of 150,000 XP)."
+          "description": "When Ivsil is reduced to 0 hit points or killed outright, its hit points are instead reset to 300, regains all spent uses of Legendary Reactions, recharges their Unleash Tempest, and can immediately move up to their movement speed without provoking opportunity attacks. For the next hour they can use their Mythic Action options. A party who defeats Ivsil after using Living Storm is awarded an additional 75,000 XP (for a total of 150,000 XP)."
         },
         {
           "name": "Shifting Body of Wind",
@@ -164,7 +164,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

@@ -18,6 +18,28 @@
 
     <RequiresAspNetWebAssets>true</RequiresAspNetWebAssets>
 
+    <!--
+      IMPORTANT:
+      .localdev contains its own standalone .NET project, including its own
+      Program.cs. Excluding the folder from this web project's default items
+      prevents that Program.cs from being compiled into Royal Treasury.
+    -->
+    <DefaultItemExcludes>
+      $(DefaultItemExcludes);.localdev/**
+    </DefaultItemExcludes>
+
   </PropertyGroup>
+
+
+  <!--
+    Optional local-only build hook.
+
+    Local.Build.targets is intentionally Git-ignored.
+    If it is not present (for example, on the hosted site),
+    this import does nothing.
+  -->
+  <Import
+      Project="Local.Build.targets"
+      Condition="Exists('Local.Build.targets')" />
 
 </Project>

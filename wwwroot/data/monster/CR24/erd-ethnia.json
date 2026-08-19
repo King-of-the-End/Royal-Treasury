@@ -1,0 +1,190 @@
+{
+  "Name": "Erd Ethnia",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Erd Ethnia**\n\n**Title** The Astral Reckoning\n**Gemstone** Meteor Steel\n**Type** Seraphael\n**Originator** Copehtor\n\nThough elevating creatures of great power to the status of an eidolos is a risk the Eidolons avoid taking, Erd Ethnia, the Astral Reckoning, was created by the Twilight Authority during the War in One Moment in a desperate bid to gain an edge against the agents of other gods. Erd Ethnia allowed themselves to be elevated to the status of an eidolos by Copehtor, who initially had bound very tight restrictions on the dragon: they were bound to act in service to any of the gods of the Twilight Authority. Erd Ethnia was instructed to remain in Somnus Domina’s upper atmosphere and await orders, as it was able to move quickly enough in space to arrive where it was needed to assist in the battle.\n\nHowever, when Lycrothemia’s Lunar Devastation blew the DGR units from the sky and chaos overtook the brief conflict, Erd Ethnia seemed to go AWOL and vanished from the war, never having participated in a direct battle to begin with. Whether it was caught in the Lunar Devastation or not is unknown, but it would resurface later after the war, and with Copehtor unseated it was released from its role as an eidolic servant. It now serves its own purposes, mostly staying under the radar of the remaining Eidolons while amassing power.\n\n“It feels like every other day I hear another legend of something floating in the atmosphere, protecting or terrorizing our planet. Somnus Domina has a distant debris belt that is thought to come from an old, third moon destroyed during the Age of Sunderance, but why are so many creatures preoccupied with fighting over it or protecting it? Why? What’s up there?”",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Reference%20-%20Erd%20Ethnia.jpg",
+  "Stat Blocks": [
+    {
+      "id": "erd_ethnia",
+      "section_type": "Stat Block",
+      "title": "Erd Ethnia",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "dragon (eidolos)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "22 (natural armor, cosmogony)",
+      "hit_points": "473 (27d20 + 189)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "fly": "120 ft.",
+        "other": "0-G acceleration 360 ft."
+      },
+      "quality_traits": [
+        "Eidolos (seraphael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 27,
+          "modifier": "+10",
+          "save": "+10"
+        },
+        "DEX": {
+          "score": 10,
+          "modifier": "+2",
+          "save": "+9"
+        },
+        "CON": {
+          "score": 25,
+          "modifier": "+9",
+          "save": "+16"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+5",
+          "save": "+5"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+3",
+          "save": "+10"
+        },
+        "CHA": {
+          "score": 21,
+          "modifier": "+7",
+          "save": "+14"
+        }
+      },
+      "ability_note": "*checks, saves and skills above include the +2 cosmogony bonus",
+      "skills": [
+        "Perception +17",
+        "Stealth +9"
+      ],
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "immunities": [
+        "fire",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "petrified"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 27"
+      ],
+      "languages": [
+        "Common",
+        "Draconic",
+        "Primordial"
+      ],
+      "challenge_rating": "24 (62,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Cosmogony Bonus (+3)",
+          "name_format": "bold_italic",
+          "description": "Half of Erd Ethnia’s Cosmogony Bonus is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Erd Ethnia makes three attacks: one with its Bite then two with its Meteorite Claws."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 23 (2d12 + 10) piercing damage plus 13 (2d10) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Meteorite Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 19 (2d8 + 10) slashing damage plus 6 (1d10) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Meteorite Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +17 to hit, reach 20 ft., one target. Hit: 30 (3d12 + 10) bludgeoning damage plus 6 (1d10) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tears of Astral Fury",
+          "name_format": "bold_italic",
+          "description": "Erd Ethnia creates up to four spears of astral flame around their body, which each fire like missiles at a different target within 240 feet. Each spear is a Ranged Weapon Attack: +12 to hit, which deals 26 (4d12) fire damage on a hit. Erd Ethnia does not have to see a creature to target them as long as they know they are there, these attacks do not suffer disadvantage due to invisibility, and these spears can shift through the air to ignore any cover less than total cover.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Shard: Astral Meteor (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Erd Ethnia gathers energy together into a massive sphere of eidomantic energy, then imbues it with flames from within its body. This eidomantic meteor crashes down on a point it can see within 240 feet, where it explodes in a 40-foot-radius sphere. Each creature in that area must make a DC 22 Dexterity saving throw, taking 55 (10d10) fire damage and 55 (10d10) force damage on a successful save, or half as much on a successful one. Any creature who fails by 5 points or more is ignited, taking 2d10 fire damage from the condition instead of 1d10."
+        },
+        {
+          "name": "Seraphic Authority: Keeper of Heaven’s Sea",
+          "name_format": "bold_italic",
+          "description": "As an action, Erd Ethnia produces the effects of a 9th-level antigravity zone spell. If they use this effect again, their existing antigravity zone effects end."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "Erd Ethnia moves up to its fly speed (it may use its other modes of movement as well, but cannot exceed its fly speed)."
+          },
+          {
+            "name": "Tail Attack",
+            "name_format": "bold_italic",
+            "description": "Erd Ethnia makes a Meteorite Tail attack."
+          },
+          {
+            "name": "Heatwave",
+            "name_format": "bold_italic",
+            "description": "Erd Ethnia releases a wave of solar energy, forcing each creature within 20 feet of it to make a DC 22 Dexterity saving throw. Each creature that fails takes 13 (2d12) fire damage and is knocked prone."
+          },
+          {
+            "name": "Astral Pull",
+            "name_format": "bold_italic",
+            "description": "Erd Ethnia chooses up to three creatures it is aware of who are within 300 feet and in a zero-gravity environment. Each of those creatures must succeed a DC 18 Strength saving throw or be pulled up to 60 feet away from where Erd Ethnia is, ending in an unoccupied space that Erd Ethnia chooses within the zero-gravity environment, where they are restrained until the start of Erd Ethnia’s next turn."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ]
+}

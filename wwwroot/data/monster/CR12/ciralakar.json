@@ -1,0 +1,165 @@
+{
+  "Name": "Cīralakar",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Cīralakar**\n\n**Title** The Blooming Guardian\n**Gemstone** Jasper\n**Type** Oucumenael\n**Originator** T’quinn\n\nIn a time of dire crisis, a particularly ancient forest ran the risk of being destroyed through deforestation efforts. Not wanting to directly intervene in the efforts of mankind but feeling sorry for the fate of this most ancient glade, T’quinn found a tree so old it predated the reign of the Eidolons and communed with it. She offered it a chance to defend its home, which the awakened tree accepted. It became an eidolos, gaining movement and sapience, and was given the task of pushing back against mankind’s encroachment on history, but must do so without malice or hatred. After protecting its home, Cīralakar vanished and has appeared across Retia to defend ancient sites of natural splendor. Fairy tales are told about Cīralakar, describing it as a wrathful punishment that falls upon any who doesn’t respect the natural world.",
+  "Stat Blocks": [
+    {
+      "id": "ciralakar",
+      "section_type": "Stat Block",
+      "title": "Cīralakar",
+      "creature": {
+        "size": "Huge",
+        "type": "plant (eidolos)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "18 (natural armor, cosmogony)",
+      "hit_points": "207 (18d12 + 90)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "burrow": "30 ft."
+      },
+      "quality_traits": [
+        "Eidolos (oucumenael)",
+        "siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "+7",
+          "save": "+7"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+2",
+          "save": "+2"
+        },
+        "CON": {
+          "score": 21,
+          "modifier": "+6",
+          "save": "+6"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+2",
+          "save": "+2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+4",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+2",
+          "save": "+2"
+        }
+      },
+      "ability_note": "*checks and saves above include the +1 cosmogony bonus",
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "immunities": [
+        "acid",
+        "B/P/S (eidolic)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "petrified"
+      ],
+      "senses": [
+        "tremorsense 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "Druidic",
+        "Elvish",
+        "Sylvan",
+        "Primordial"
+      ],
+      "challenge_rating": "12 (8,400 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Cosmic Shard: Nerve-Burning Mist",
+          "name_format": "bold_italic",
+          "description": "When a creature hits Cīralakar with a weapon attack from within 10 feet for the first time each turn, a burst of choking acidic mist erupts from Cīralakar’s body, forcing the attacker to make a DC 18 Constitution saving throw. On a failure they take 1d10 acid damage and gain one point of Combat Fatigue. Combat Fatigue gained this way disappears after 1 minute.\n\nFurthermore, a bright acidic mist surrounds Cīralakar, causing it to be completely obscured to all creatures more than 30 feet away from it."
+        },
+        {
+          "name": "Cosmogony Bonus (+1)",
+          "name_format": "bold_italic",
+          "description": "Half of Cīralakar’s Cosmogony Bonus is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        },
+        {
+          "name": "Rootweb Tangle",
+          "name_format": "bold_italic",
+          "description": "Moving into or out of a space within 20 feet of the Cīralakar is treated as moving through difficult terrain, as a series of roots connected to it shift through the ground and try to grab at the feet of other creatures. Creatures not in contact with the ground are unaffected by this."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Cīralakar makes three Jasper Slam attacks or two Splinter Arrow attacks."
+        },
+        {
+          "name": "Jasper Bark Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 7) bludgeoning damage plus 6 (1d10) acid damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Splinter Arrow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 30/90 ft., one target. Hit: 27 (4d10 + 5) piercing damage plus 9 (2d8) acid damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 1,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Cīralakar makes a Jasper Bark Strike or Splinter Arrow attack."
+          },
+          {
+            "name": "Grounding Slam",
+            "name_format": "bold_italic",
+            "description": "Cīralakar makes a shove attempt targeting one creature within range of its Jasper Bark Strike."
+          },
+          {
+            "name": "Sunlight Bloom",
+            "name_format": "bold_italic",
+            "description": "Flowers on Cīralakar’s body bloom, releasing stored sunlight. Up to three characters Cīralakar chooses who can see it within 30 feet must make a DC 18 Constitution saving throw. On a failure, they are blinded until the end of Cīralakar’s next turn."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 1,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ]
+}

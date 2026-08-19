@@ -96,7 +96,7 @@
         {
           "name": "Vanishing Desires (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "If Invidiva is reduced to 0 hit points or killed outright, her current hit point total resets to 150, and she ends any magical effects targeting her that she wishes to escape. She then teleports to an unoccupied space within 60 feet, regains her Legendary Resistances, and can use her Mythic Actions for 1 hour. During that hour she adds her Dexterity modifier to her armor class a second time as long as she isn’t wearing medium or heavy armor, and has a second reaction to use each round. A party that defeats her after using her Vanishing Desires is awarded an additional 20,000 XP (40,000 XP total)."
+          "description": "If Invidiva is reduced to 0 hit points or killed outright, her current hit point total resets to 150, and she ends any magical effects targeting her that she wishes to escape. She then teleports to an unoccupied space within 60 feet, regains her Legendary Reactions, and can use her Mythic Actions for 1 hour. During that hour she adds her Dexterity modifier to her armor class a second time as long as she isn’t wearing medium or heavy armor, and has a second reaction to use each round. A party that defeats her after using her Vanishing Desires is awarded an additional 20,000 XP (40,000 XP total)."
         }
       ],
       "actions": [
@@ -154,7 +154,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

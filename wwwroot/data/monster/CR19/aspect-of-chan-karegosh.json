@@ -132,7 +132,7 @@
         {
           "name": "Moonlight Dance (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "When Chan Karegosh is reduced to 0 hit points or killed outright, her hit points are instead reset to 200, she ends any effects causing her to be restrained or incapacitated, and she teleports to an unoccupied space within 60 feet. She regains her Legendary Resistances, all spells she has already used through Innate Spellcasting, and can use her Mythic Actions for 1 hour. During that hour, she dons vibrant plate armor that increases her AC to 22, summons her bladeless Lunar Scythe which can strike from afar, and gains a fly (hover) speed equal to her base movement speed. A party that defeats her after using her Moonlight Dance is awarded an additional 22,000 XP (for a total of 44,000 XP)."
+          "description": "When Chan Karegosh is reduced to 0 hit points or killed outright, her hit points are instead reset to 200, she ends any effects causing her to be restrained or incapacitated, and she teleports to an unoccupied space within 60 feet. She regains her Legendary Reactions, all spells she has already used through Innate Spellcasting, and can use her Mythic Actions for 1 hour. During that hour, she dons vibrant plate armor that increases her AC to 22, summons her bladeless Lunar Scythe which can strike from afar, and gains a fly (hover) speed equal to her base movement speed. A party that defeats her after using her Moonlight Dance is awarded an additional 22,000 XP (for a total of 44,000 XP)."
         },
         {
           "name": "Moonlit Goddess",
@@ -180,7 +180,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

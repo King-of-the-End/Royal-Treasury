@@ -40,6 +40,10 @@ logs/
 appsettings.Local.json
 appsettings.*.Local.json
 
+# Local-only Royal Treasury development build tools
+Local.Build.targets
+.localdev/
+
 # macOS
 .DS_Store
 ._*

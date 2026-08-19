@@ -1,0 +1,206 @@
+{
+  "Name": "Aesanima",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos",
+    "DGR Frame Units"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Aesanima**\n\n**Title** The Coffinborne Frame\n**Gemstone** Apatite\n**Type** Pleromael\n**Originator** Kevek\n\nAs the DGRs of the War in One Moment fell from the sky in pieces, some remained operational (though mostly destroyed). Many were collected and returned to the Cauldron for repairs, but a great number of DGRs were scattered across Retia in various states. Among them, one DGR and its pilot - a SAGITTA with an unbreakable will - survived, in mostly good health. Witnessing the devastation of their comrades, they were found by Kevek. Knowing they had lost the War in One Moment, Kevek elevated the DGR and its pilot into the Twilight Authority’s final eidolos, merging them, and beckoning them to seek vengeance for the obliteration of their comrades and culture. Aesanima then proceeded to leave Somnus Domina, vanishing from history for the remainder of the First Age. However, with the awakening of the Sword of Damocles and return of DGRs to the world, Aesanima has suddenly returned and has served as a figure of worship and inspiration for the framebilt and DGRs who refuse to accept the new order of the world.",
+  "Information Sections": [
+    {
+      "Title": "Aesanima",
+      "Text": "**Title** The Coffinborne Frame\n**Gemstone** Apatite\n**Type** Pleromael\n**Originator** Kevek\n\nAs the DGRs of the War in One Moment fell from the sky in pieces, some remained operational (though mostly destroyed). Many were collected and returned to the Cauldron for repairs, but a great number of DGRs were scattered across Retia in various states. Among them, one DGR and its pilot - a SAGITTA with an unbreakable will - survived, in mostly good health. Witnessing the devastation of their comrades, they were found by Kevek. Knowing they had lost the War in One Moment, Kevek elevated the DGR and its pilot into the Twilight Authority’s final eidolos, merging them, and beckoning them to seek vengeance for the obliteration of their comrades and culture. Aesanima then proceeded to leave Somnus Domina, vanishing from history for the remainder of the First Age. However, with the awakening of the Sword of Damocles and return of DGRs to the world, Aesanima has suddenly returned and has served as a figure of worship and inspiration for the framebilt and DGRs who refuse to accept the new order of the world."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Aesanima.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Aesanima.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Aesanima.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aesanima",
+      "section_type": "Stat Block",
+      "title": "Aesanima",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "construct (eidolos, DGR)",
+        "alignment": "neutral evil"
+      },
+      "footprint": "4",
+      "armor_class": "22 (natural armor, cosmogony)",
+      "hit_points": "250 (20d20 + 40)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "zero_g_acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Eidolos (pleromael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+6",
+          "save": "+6"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "+7",
+          "save": "+13"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+3",
+          "save": "+9"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "+1",
+          "save": "+1"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+5",
+          "save": "+11"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+1",
+          "save": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +13",
+        "Con +9",
+        "Wis +11"
+      ],
+      "skills": [
+        "Acrobatics +13",
+        "Perception +11"
+      ],
+      "ability_note": "*checks, saves and skills above include the +1 cosmogony bonus",
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "immunities": [
+        "thunder",
+        "necrotic",
+        "poison",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all",
+        "speaks Primordial"
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Cosmic Shard: Fractional Blitz (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "On their turn, Aesanima can take an additional action and bonus action in addition to the first of each, and all of their uses of their Eidolic Reactor are restored."
+        },
+        {
+          "name": "Cosmogony Bonus (+2)",
+          "name_format": "bold_italic",
+          "description": "Half of Aesanima’s Cosmogony Bonus (rounded up) is added to their attack rolls, ability checks, damage rolls and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls and armor class is accounted for in this stat block."
+        },
+        {
+          "name": "Deified Alloy Plating",
+          "name_format": "bold_italic",
+          "description": "Aesanima is resistant to all damage originating from Large or smaller creatures."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Aesanima makes four Apatite Strikes or uses its Eidolic Missile Pod twice."
+        },
+        {
+          "name": "Apatite Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 6) slashing damage plus 6 (1d10) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Eidolic Missile Pod",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +13 to hit, range 150/600 ft., one target. Hit: 29 (4d10 + 7) fire damage plus 11 (2d10) thunder damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Eidolic Reactor (3/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR chooses and benefits from one of the following effects:",
+          "bullets": [
+            "The DGR gains a teleport speed equal to their existing movement speeds until the start of their next turn.",
+            "Each time Aesanima makes an attack roll before the start of their next turn, they roll a d8 and add it to the result, as well as to the result of that attack’s potential damage roll.",
+            "Aesanima becomes resistant to all damage until the start of its next turn.",
+            "Aesanima produces the effects of the golden spiral spell. Additional uses of Eidolic Reactor can be spent to increase its effective spell level by 2 for each use."
+          ]
+        },
+        {
+          "name": "Enhanced Targeting",
+          "name_format": "bold_italic",
+          "description": "Aesanima cannot take movement for the remainder of its turn, but all ranged weapon attacks it makes can be fired up to their long range without receiving any penalties from range."
+        },
+        {
+          "name": "Mach Boost",
+          "name_format": "bold_italic",
+          "description": "Aesanima’s movement speed doubles until the start of its next turn."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Teleport",
+            "name_format": "bold_italic",
+            "description": "Aesanima teleports to an unoccupied space it can see within 60 feet."
+          },
+          {
+            "name": "Auto-Repair",
+            "name_format": "bold_italic",
+            "description": "Aesanima and any constructs within 20 feet of it gain 33 (6d10) temporary hit points, which disappear after 1 minute."
+          },
+          {
+            "name": "Thunder Cannon (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Aesanima lets out a roaring burst of energy, forcing each creature within 20 feet of it to make a DC 16 Constitution saving throw. On a failure, targets are stunned until the start of Aesanima’s next turn."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "Name": "Dread Wyvern",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Dread Wyvern**\n\nBorn from the distortions caused by Ivsil’s storms, the dread wyvern is a draconic elemental that resembles a feathered wyvern, instead with skin made of stone and blood charged with lightning. If a storm grows strong enough to connect to the Elemental Plane of Air or is the result of Ivsil’s influence, the storm may give birth to any number of these beasts, the bodies of whom are created from the twisting winds given solid form. Once they come into being they will often hunt until they eventually return to the Plane of Air, and consider any living creature to be a suitable mark. Some arcanists have learned to create and bind these beasts as servants, granting them powerful mounts who can share with them their affinity with the wind.",
+  "Information Sections": [
+    {
+      "Title": "Dread Wyvern",
+      "Text": "Born from the distortions caused by Ivsil’s storms, the dread wyvern is a draconic elemental that resembles a feathered wyvern, instead with skin made of stone and blood charged with lightning. If a storm grows strong enough to connect to the Elemental Plane of Air or is the result of Ivsil’s influence, the storm may give birth to any number of these beasts, the bodies of whom are created from the twisting winds given solid form. Once they come into being they will often hunt until they eventually return to the Plane of Air, and consider any living creature to be a suitable mark. Some arcanists have learned to create and bind these beasts as servants, granting them powerful mounts who can share with them their affinity with the wind."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Dread%20Wyvern.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Dread%20Wyvern.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Dread%20Wyvern.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dread_wyvern",
+      "section_type": "Stat Block",
+      "title": "Dread Wyvern",
+      "creature": {
+        "size": "Large",
+        "type": "elemental, dragon",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "136 (16d10 + 48)",
+      "speed": {
+        "walk": "20 ft.",
+        "fly": "90 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4",
+          "save": "+4"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+7"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+7"
+        },
+        "INT": {
+          "score": 5,
+          "modifier": "-3",
+          "save": "-3"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+2"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "-1"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Con +7"
+      ],
+      "skills": [
+        "Perception +6",
+        "Survival +6"
+      ],
+      "resistances": [
+        "force",
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "lightning",
+        "poison"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "Auran",
+        "Draconic"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Opportunistic Ravager",
+          "name_format": "bold_italic",
+          "description": "If the elemental hits with an attack it had advantage on, it deals an additional die of damage equal to the largest damage die from the attack."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental makes three attacks: one with its Bite, and two with its Claws. If it misses with two or more of these attacks, it can then use its Bursting Winds."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 5 (1d8) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bursting Winds",
+          "name_format": "bold_italic",
+          "description": "The elemental unleashes a burst of wind and lightning, forcing each creature within 10 feet of it to make a DC 15 Dexterity saving throw, taking 7 (2d6) lightning damage and is knocked prone on a failed save."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Body of Air",
+          "name_format": "bold_italic",
+          "description": "The elemental (as well as a willing rider, if they have one) discorporates into a stormlike cloud resembling its original shape, in which it remains until the start of its next turn. While in this form it is immune to nonmagical piercing, slashing, and bludgeoning damage, does not provoke opportunity attacks when moving, and can fit through any space as narrow as 1 inch without squeezing. If it exits this form in a space that cannot fit it, it is shunted into the nearest available space, falls prone, and takes 1d6 damage for every 10 feet it is shunted this way."
+        }
+      ]
+    }
+  ]
+}

@@ -130,7 +130,7 @@
         {
           "name": "Ultimate Entertainment (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "When Mortuous would be reduced to 0 hit points or killed outright, his hit points reset to 300, and he regains all his spent uses of Legendary Resistance and any spells he has used through his Innate Spellcasting. For the next hour he can use his Mythic Actions, his movement speed doubles, and his attacks score a critical hit on a d20 result of 18, 19, or 20. A party who defeats Mortuous after using Ultimate Entertainment is awarded an additional 75,000 XP (for a total of 150,000 XP)."
+          "description": "When Mortuous would be reduced to 0 hit points or killed outright, his hit points reset to 300, and he regains all his spent uses of Legendary Reactions and any spells he has used through his Innate Spellcasting. For the next hour he can use his Mythic Actions, his movement speed doubles, and his attacks score a critical hit on a d20 result of 18, 19, or 20. A party who defeats Mortuous after using Ultimate Entertainment is awarded an additional 75,000 XP (for a total of 150,000 XP)."
         }
       ],
       "actions": [
@@ -188,7 +188,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

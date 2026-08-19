@@ -1,0 +1,237 @@
+{
+  "Name": "Young Adult Platinum Dragon",
+  "Group": "Dragons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Platinum Dragons** \n\nA special, rare breed of metallic dragon that serves as the pinnacle of its kind, and embodies good-aligned dragons.\n\nIn times long since past, Platinum dragons were the rarest of their kind. The Old World worshiped one as a god and mostly believed only one existed, but this proved untrue. With the fall of the first Cosmic Teardrop and reshaping of the world, platinum dragons emerged into the world from their places of eternal hiding.\n\nPlatinum dragons are notable in that they feature no wings. Their bodies are held aloft by supernatural means, floating and twisting through the air majestically without the need for them. When hanging in the air they can achieve an almost unnatural stillness.\n\n***Inheritors of Justice.*** Platinum dragons are born with an innate sense of cosmic justice. Not necessarily aligned with the morals of men, they desire peace and retribution for all those who were done wrong and preyed upon. They protect communities and innocent life surrounding their lairs, and have a soft spot for mortal beings aspiring to just ideals. However, as they see things from the perspective of a dragon with eternal life, their sense of justice sometimes conflicts with the justice of mortal men.\n\n***Platinum Hoards.*** Platinum dragons predictably covet that which matches their scales. They desire platinum coins, art objects, weapons and more. As they don’t believe in theft, they will often take on a mortal disguise and offer their services to others in exchange for the objects and materials they desire, leading to there being many heroes who were secretly platinum dragons satiating their appetite. Given the rarity of their dietary needs, they temper their hunger and eat rarely (apart from consuming meat and regular food).\n\nWhen communities desire the aid of a platinum dragon, they will find that gifts of platinum and silver win them over. However, they will not take tribute that was unlawfully taken from others, and have even been known to give parts of their own hoard to communities devastated by tyranny and greed to get them back on their feet.\n\n***Bound by Morality.*** These dragons are heroic and believe in justice, but due to their adherence to their own morality they can be seen as absolute and unmoving by others. Metallic dragons will often heed their advice, but adventurers and dragon-kind alike will often find a platinum dragon entirely unwilling to budge on their stance if they feel something is important enough to stand up for. They will go as far as to fight dragons and heroes to the death if they believe it is in the interest of balance and justice.\n\n“Old World ruins speak of platinum dragons as truly rare - as though the number alive could be counted on one hand. I wonder if those we know of in our modern world are related to them or if our platinum dragons are a different breed entirely. That’s generous to the ruins, though: the Old World’s records are rarely consistent.”",
+  "Information Sections": [
+    {
+      "Title": "Platinum Dragons",
+      "Text": "A special, rare breed of metallic dragon that serves as the pinnacle of its kind, and embodies good-aligned dragons.\n\nIn times long since past, Platinum dragons were the rarest of their kind. The Old World worshiped one as a god and mostly believed only one existed, but this proved untrue. With the fall of the first Cosmic Teardrop and reshaping of the world, platinum dragons emerged into the world from their places of eternal hiding.\n\nPlatinum dragons are notable in that they feature no wings. Their bodies are held aloft by supernatural means, floating and twisting through the air majestically without the need for them. When hanging in the air they can achieve an almost unnatural stillness."
+    },
+    {
+      "Title": "Inheritors of Justice",
+      "Text": "Platinum dragons are born with an innate sense of cosmic justice. Not necessarily aligned with the morals of men, they desire peace and retribution for all those who were done wrong and preyed upon. They protect communities and innocent life surrounding their lairs, and have a soft spot for mortal beings aspiring to just ideals. However, as they see things from the perspective of a dragon with eternal life, their sense of justice sometimes conflicts with the justice of mortal men."
+    },
+    {
+      "Title": "Platinum Hoards",
+      "Text": "Platinum dragons predictably covet that which matches their scales. They desire platinum coins, art objects, weapons and more. As they don’t believe in theft, they will often take on a mortal disguise and offer their services to others in exchange for the objects and materials they desire, leading to there being many heroes who were secretly platinum dragons satiating their appetite. Given the rarity of their dietary needs, they temper their hunger and eat rarely (apart from consuming meat and regular food).\n\nWhen communities desire the aid of a platinum dragon, they will find that gifts of platinum and silver win them over. However, they will not take tribute that was unlawfully taken from others, and have even been known to give parts of their own hoard to communities devastated by tyranny and greed to get them back on their feet."
+    },
+    {
+      "Title": "Bound by Morality",
+      "Text": "These dragons are heroic and believe in justice, but due to their adherence to their own morality they can be seen as absolute and unmoving by others. Metallic dragons will often heed their advice, but adventurers and dragon-kind alike will often find a platinum dragon entirely unwilling to budge on their stance if they feel something is important enough to stand up for. They will go as far as to fight dragons and heroes to the death if they believe it is in the interest of balance and justice."
+    },
+    {
+      "Title": "",
+      "Text": "“Old World ruins speak of platinum dragons as truly rare - as though the number alive could be counted on one hand. I wonder if those we know of in our modern world are related to them or if our platinum dragons are a different breed entirely. That’s generous to the ruins, though: the Old World’s records are rarely consistent.”",
+      "IsQuote": true
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Reference%20-%20Platinum%20Dragon%20(Adult).jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Reference%20-%20Platinum%20Dragon%20(Adult).jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Reference%20-%20Platinum%20Dragon%20(Adult).jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "young_adult_platinum_dragon",
+      "section_type": "Stat Block",
+      "title": "Young Adult Platinum Dragon",
+      "creature": {
+        "size": "Huge",
+        "type": "dragon (metallic)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "238 (19d12 + 114)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "80 ft. (hover)",
+        "swim": "40 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 25,
+          "modifier": "+7",
+          "save": "+7"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+7"
+        },
+        "CON": {
+          "score": 23,
+          "modifier": "+6",
+          "save": "+11"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+2"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+7"
+        },
+        "CHA": {
+          "score": 24,
+          "modifier": "+7",
+          "save": "+12"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Con +11",
+        "Wis +7",
+        "Cha +12"
+      ],
+      "skills": [
+        "History +7",
+        "Insight +7",
+        "Perception +12",
+        "Persuasion +12"
+      ],
+      "resistances": [],
+      "immunities": [
+        "radiant"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "challenge_rating": "15 (13,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The dragon’s spellcasting ability is Charisma. It can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "material_components_required": false,
+            "spells": [
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "aura of returning bravery",
+                  "power word break"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "punishing gleam",
+                  "solar implosion",
+                  "sunlight"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Unusual Nature",
+          "name_format": "bold_italic",
+          "description": "The dragon does not have to breathe and can live normally in a vacuum."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes three attacks: one with its Bite and two with its Claw."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 7) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Breath Weapon (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon uses one of the following breath weapon options:",
+          "options": [
+            {
+              "name": "Radiant Breath",
+              "name_format": "bold_italic",
+              "description": "The dragon exhales a torrent of radiant rainbow energy in a 45-foot cone. Each creature in the area must make a DC 19 Dexterity saving throw, taking 66 (12d10) radiant damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+              "name": "Blinding Flare",
+              "name_format": "bold_italic",
+              "description": "The dragon charges blinding radiant energy and blasts it at a point it can see within 90 feet, where it explodes in a 20-foot-radius sphere. Each creature in that area must make a DC 19 Constitution saving throw, and on a failed save is blinded for 1 minute and takes 11 (3d6) radiant damage. Creatures blinded this way can reattempt the saving throw at the end of each of their turns, ending the effect on a success."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its Multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": [
+        {
+          "name": "Detect",
+          "name_format": "bold_italic",
+          "description": "The dragon makes a Wisdom (Perception) check."
+        },
+        {
+          "name": "Attack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes a Claw attack."
+        },
+        {
+          "name": "Blinding Gleam",
+          "name_format": "bold_italic",
+          "description": "All creatures within 10 feet of the dragon are subjected to a dazzling flash from the dragon’s scales and must succeed a DC 19 Constitution saving throw, or be blinded until the end of the dragon’s next turn."
+        }
+      ],
+      "legendary_action_count": 2,
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Reactions (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

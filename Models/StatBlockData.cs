@@ -491,6 +491,16 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // LAIR ACTIONS
+    // =====================================
+
+    [JsonPropertyName("lair_actions")]
+    public StatBlockLegendaryActions
+        LairActions { get; set; } =
+            new();
+
+
+    // =====================================
     // LEGENDARY REACTIONS
     // =====================================
 

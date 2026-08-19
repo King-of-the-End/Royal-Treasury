@@ -94,7 +94,7 @@
         {
           "name": "Nightmares Made Real (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "When Grashtille would be reduced to 0 hit points or killed outright, its hit points are reset to 250. It regains all uses of Legendary Resistance, and immediately moves up to 60 feet without provoking opportunity attacks. For the next hour it can use its Mythic Actions, and the first attack it makes each turn has advantage. Also during this time, deathly spikes of bone burst from its body like blades, allowing it to use its Deathknell Spine attack. A party who defeats Grashtille after using Nightmares Made Real gains an additional 41,000 XP (for a total of 82,000 XP)."
+          "description": "When Grashtille would be reduced to 0 hit points or killed outright, its hit points are reset to 250. It regains all uses of Legendary Reactions, and immediately moves up to 60 feet without provoking opportunity attacks. For the next hour it can use its Mythic Actions, and the first attack it makes each turn has advantage. Also during this time, deathly spikes of bone burst from its body like blades, allowing it to use its Deathknell Spine attack. A party who defeats Grashtille after using Nightmares Made Real gains an additional 41,000 XP (for a total of 82,000 XP)."
         }
       ],
       "actions": [
@@ -172,7 +172,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

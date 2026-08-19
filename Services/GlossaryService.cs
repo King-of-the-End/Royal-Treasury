@@ -13,6 +13,11 @@ public sealed class GlossaryService
         cachedEntries;
 
 
+    private DateTime
+        cachedGlossaryLastWriteUtc =
+            DateTime.MinValue;
+
+
     private readonly SemaphoreSlim loadLock =
         new(
             1,
@@ -252,7 +257,34 @@ public sealed class GlossaryService
     private async Task<IReadOnlyList<GlossaryEntry>>
         LoadAsync()
     {
-        if (cachedEntries is not null)
+        var path =
+            Path.Combine(
+                environment.WebRootPath,
+                "data",
+                "glossary.json");
+
+
+        var lastWriteUtc =
+            File.Exists(path)
+
+            ? File.GetLastWriteTimeUtc(path)
+
+            : DateTime.MinValue;
+
+
+        /*
+         * glossary.json is edited frequently
+         * while the site is being built.
+         *
+         * Do not keep serving a stale
+         * singleton cache after the file has
+         * changed on disk.
+         */
+        if (
+            cachedEntries is not null
+            &&
+            cachedGlossaryLastWriteUtc ==
+                lastWriteUtc)
         {
             return cachedEntries;
         }
@@ -263,23 +295,32 @@ public sealed class GlossaryService
 
         try
         {
-            if (cachedEntries is not null)
+            lastWriteUtc =
+                File.Exists(path)
+
+                ? File.GetLastWriteTimeUtc(path)
+
+                : DateTime.MinValue;
+
+
+            if (
+                cachedEntries is not null
+                &&
+                cachedGlossaryLastWriteUtc ==
+                    lastWriteUtc)
             {
                 return cachedEntries;
             }
-
-
-            var path =
-                Path.Combine(
-                    environment.WebRootPath,
-                    "data",
-                    "glossary.json");
 
 
             if (!File.Exists(path))
             {
                 cachedEntries =
                     Array.Empty<GlossaryEntry>();
+
+
+                cachedGlossaryLastWriteUtc =
+                    DateTime.MinValue;
 
 
                 return cachedEntries;
@@ -307,6 +348,10 @@ public sealed class GlossaryService
                 entries
                 ??
                 new List<GlossaryEntry>();
+
+
+            cachedGlossaryLastWriteUtc =
+                lastWriteUtc;
 
 
             return cachedEntries;

@@ -1,0 +1,164 @@
+{
+  "Name": "Skull Dragon Wyrmling",
+  "Group": "Dragons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Skull Dragons**\n\nSkull dragons, perhaps named a bit obviously for their appearance, were originally the result of an insane necromancer’s research. This unhinged researcher, an elven archmage named Satorium, chronicled that he had dreams where a ghastly undead dragon spoke to him, commanding him to create a body for it to inhabit. The beast promised him rule of the Somonian empire - a promise that appealed to the vainglorious elf. He stole dragon eggs and experimented on them, trying to remove their souls before birth to create a suitable body for his master. He failed, however, and instead the dragons born from this process were twisted into dragons that live and breathe undeath. Satorium was killed by his own creations, which went on to pass their newly corrupted genetics to all wyrmlings they would sire.\n\nSkull dragons have dark, oily scales covered in segments of steel-hard chitin that resembles bone, giving them a powerful defensive exoskeleton. Their heads feature twisting horns of many descriptions. They are gluttonous beasts that are endowed with an endless hunger, which their long life becomes centered upon.\n\n***Corpse Eater.*** Skull dragons prefer not to eat meat fresh, if they can help it; they take delight in consuming the flesh and bones of creatures that have been allowed to decay for some time. Their lairs invariably always have chambers devoted to aging meat, where they hang corpses from the walls and ceiling like a butcher.\n\nAs a skull dragon ages, it develops an appetite for corpses that have accumulated greater age. They typically are only truly satisfied when consuming the flesh of something that is roughly as old as they are. This quirk leads them to aim to feed specifically on long-living species such as elves and nephilim, and also makes them the natural enemy of other dragons. All dragons - gem, chromatic, and metallic - understand that a skull dragon’s hunger makes them an eventual enemy: an apex predator among apex predators. So great is their hunger that, like a black widow, they are a threat even to their own mates and wyrmlings if starved. Should they ever reach the status of a greatwyrm, they would set their eyes upon the very gods.\n\n***Undead Defilers.*** The skull dragon can manipulate the forces of death to suit its needs: its breath weapon seeps into every pore of those it kills, raising them as undead beasts under the dragon’s control. Furthermore, when an undead beast dies around it, the dragon can absorb the necromantic energy that holds their being together to satiate its own hunger. For this purpose, skull dragons enjoy consuming undead when possible. They will often keep those they kill as undead pets to be consumed at a later date.",
+  "Information Sections": [
+    {
+      "Title": "Skull Dragons",
+      "Text": "Skull dragons, perhaps named a bit obviously for their appearance, were originally the result of an insane necromancer’s research. This unhinged researcher, an elven archmage named Satorium, chronicled that he had dreams where a ghastly undead dragon spoke to him, commanding him to create a body for it to inhabit. The beast promised him rule of the Somonian empire - a promise that appealed to the vainglorious elf. He stole dragon eggs and experimented on them, trying to remove their souls before birth to create a suitable body for his master. He failed, however, and instead the dragons born from this process were twisted into dragons that live and breathe undeath. Satorium was killed by his own creations, which went on to pass their newly corrupted genetics to all wyrmlings they would sire.\n\nSkull dragons have dark, oily scales covered in segments of steel-hard chitin that resembles bone, giving them a powerful defensive exoskeleton. Their heads feature twisting horns of many descriptions. They are gluttonous beasts that are endowed with an endless hunger, which their long life becomes centered upon."
+    },
+    {
+      "Title": "Corpse Eater",
+      "Text": "Skull dragons prefer not to eat meat fresh, if they can help it; they take delight in consuming the flesh and bones of creatures that have been allowed to decay for some time. Their lairs invariably always have chambers devoted to aging meat, where they hang corpses from the walls and ceiling like a butcher.\n\nAs a skull dragon ages, it develops an appetite for corpses that have accumulated greater age. They typically are only truly satisfied when consuming the flesh of something that is roughly as old as they are. This quirk leads them to aim to feed specifically on long-living species such as elves and nephilim, and also makes them the natural enemy of other dragons. All dragons - gem, chromatic, and metallic - understand that a skull dragon’s hunger makes them an eventual enemy: an apex predator among apex predators. So great is their hunger that, like a black widow, they are a threat even to their own mates and wyrmlings if starved. Should they ever reach the status of a greatwyrm, they would set their eyes upon the very gods."
+    },
+    {
+      "Title": "Undead Defilers",
+      "Text": "The skull dragon can manipulate the forces of death to suit its needs: its breath weapon seeps into every pore of those it kills, raising them as undead beasts under the dragon’s control. Furthermore, when an undead beast dies around it, the dragon can absorb the necromantic energy that holds their being together to satiate its own hunger. For this purpose, skull dragons enjoy consuming undead when possible. They will often keep those they kill as undead pets to be consumed at a later date."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference_BG%20-%20Wyrmling%20Skull%20Dragon.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference_BG%20-%20Wyrmling%20Skull%20Dragon.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference_BG%20-%20Wyrmling%20Skull%20Dragon.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "skull_dragon_wyrmling",
+      "section_type": "Stat Block",
+      "title": "Skull Dragon Wyrmling",
+      "creature": {
+        "size": "Medium",
+        "type": "dragon",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "77 (9d8 + 36)",
+      "speed": {
+        "walk": "30 ft.",
+        "burrow": "30 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [
+        "Adamantine"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+3"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+7"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "+0",
+          "save": "+0"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0",
+          "save": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Con +7",
+        "Wis +5",
+        "Cha +3"
+      ],
+      "skills": [
+        "Perception +5",
+        "Stealth +4"
+      ],
+      "vulnerabilities": [
+        "B/S/P (adamantine)"
+      ],
+      "resistances": [
+        "B/S/P (adamantine)"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 10 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "challenge_rating": "5 (1800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes two attacks: one Bite and one Claw."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 3) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Decay Breath (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon exhales necrotic gas in a 15-foot cone. Each creature in that cone must make a DC 15 Constitution saving throw, taking 28 (5d10) necrotic damage on a failed save, or half as much damage on a successful one. A creature that is killed by this damage raises on initiative count 20 as a zombie or suitable undead creature under the dragon’s control, and rolls a new initiative."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 0,
+        "options": []
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 0,
+        "entries": []
+      },
+      "lair_actions": {
+        "header": "Lair Actions",
+        "intro": "",
+        "options": []
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "options": []
+      }
+    }
+  ]
+}

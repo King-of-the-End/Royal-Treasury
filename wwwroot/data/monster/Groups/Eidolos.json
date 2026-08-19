@@ -1,0 +1,110 @@
+{
+  "name": {
+    "text": "Eidolos",
+    "bold": true
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Eidolos are creatures (and sometimes objects) that have been elevated by the Eidolons, imbued with the ability to act as eidomantic resonators that can channel and bend eidolic radiation. To survive the process of becoming an eidolos a creature must be especially hearty and strong-willed to begin with, so only the most powerful among a species can imagine becoming one. If a creature without the resolve to make the transition is elevated, it is possible they might be destroyed during the process.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Cosmogony",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Eidolos are ranked into categories that describe their eidolic power - these also determine certain benefits and mechanical powers they have. The four categories (in order of least to most powerful) are oucumenael, pleromael, seraphael and hyperuanael. This rank, combined with the unique soul, history, and powers of an eidolos, are called their cosmogony: a sort of short-hand for a spiritual blueprint that defines the creature, and an abstract “record” of their existence. Through their cosmogony they manifest unique powers, referred to as a cosmic shard and a seraphic authority. Only truly powerful eidolos of seraphael power and higher possess seraphic authority.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Cosmic shards are powers eidolos can invoke, similar to powerful spells. Seraphic authorities are passive effects the eidolos produces simply by existing.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Eidolic Perseverance",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "When an eidolos is killed, its body dissolves into nothingness, leaving only an eidolic armament and sepherite behind (see the Eidolic Armament section of this book for more information on them). Sepherite is a special crystal that serves as the core of the eidolos, and is functionally an eidomantic resonator. This sepherite cannot be destroyed except by an eidolic deity, an eidolos of a higher cosmogony rank, or a resplendent constellequary (or by exceptionally powerful beings on par with these things).",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "3d4 hours after an eidolos is reduced to sepherite, it must attempt a Charisma saving throw with a DC equal to half the damage from the source that destroyed it (or 30 if it was an effect that instantly killed them). The DC decreases by 1 each time the eidolos fails it, and they re-attempt the saving throw every hour after failing. On a success, the eidolos regains its physical form with half of its maximum hit points restored.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Sepherite placed with an ",
+              "bold": false
+            },
+            {
+              "text": "antimagic field",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " or similar magic-suppressing effect pauses its countdown until its next attempt, and if ",
+              "bold": false
+            },
+            {
+              "text": "dispel magic",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " is cast on the sepherite then its remaining time between checks is reset to 3d4 hours. The eidolos remains aware of everything happening around it while in sepherite form as though its senses were intact.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "If an eidolos is killed by - but not permanently destroyed by - a constellequary, eidolic armament, or eidolic weapon, it loses its ability to restore itself for 1d10 x 10 years.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "If an eidolos is permanently destroyed, any eidolic armament it left behind also crumbles into dust.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

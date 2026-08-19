@@ -1,0 +1,159 @@
+{
+  "Name": "Platinum Dragon Wyrmling",
+  "Group": "Dragons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Platinum Dragons** \n\nA special, rare breed of metallic dragon that serves as the pinnacle of its kind, and embodies good-aligned dragons.\n\nIn times long since past, Platinum dragons were the rarest of their kind. The Old World worshiped one as a god and mostly believed only one existed, but this proved untrue. With the fall of the first Cosmic Teardrop and reshaping of the world, platinum dragons emerged into the world from their places of eternal hiding.\n\nPlatinum dragons are notable in that they feature no wings. Their bodies are held aloft by supernatural means, floating and twisting through the air majestically without the need for them. When hanging in the air they can achieve an almost unnatural stillness.\n\n***Inheritors of Justice.*** Platinum dragons are born with an innate sense of cosmic justice. Not necessarily aligned with the morals of men, they desire peace and retribution for all those who were done wrong and preyed upon. They protect communities and innocent life surrounding their lairs, and have a soft spot for mortal beings aspiring to just ideals. However, as they see things from the perspective of a dragon with eternal life, their sense of justice sometimes conflicts with the justice of mortal men.\n\n***Platinum Hoards.*** Platinum dragons predictably covet that which matches their scales. They desire platinum coins, art objects, weapons and more. As they don’t believe in theft, they will often take on a mortal disguise and offer their services to others in exchange for the objects and materials they desire, leading to there being many heroes who were secretly platinum dragons satiating their appetite. Given the rarity of their dietary needs, they temper their hunger and eat rarely (apart from consuming meat and regular food).\n\nWhen communities desire the aid of a platinum dragon, they will find that gifts of platinum and silver win them over. However, they will not take tribute that was unlawfully taken from others, and have even been known to give parts of their own hoard to communities devastated by tyranny and greed to get them back on their feet.\n\n***Bound by Morality.*** These dragons are heroic and believe in justice, but due to their adherence to their own morality they can be seen as absolute and unmoving by others. Metallic dragons will often heed their advice, but adventurers and dragon-kind alike will often find a platinum dragon entirely unwilling to budge on their stance if they feel something is important enough to stand up for. They will go as far as to fight dragons and heroes to the death if they believe it is in the interest of balance and justice.",
+  "Information Sections": [
+    {
+      "Title": "Platinum Dragons",
+      "Text": "A special, rare breed of metallic dragon that serves as the pinnacle of its kind, and embodies good-aligned dragons.\n\nIn times long since past, Platinum dragons were the rarest of their kind. The Old World worshiped one as a god and mostly believed only one existed, but this proved untrue. With the fall of the first Cosmic Teardrop and reshaping of the world, platinum dragons emerged into the world from their places of eternal hiding.\n\nPlatinum dragons are notable in that they feature no wings. Their bodies are held aloft by supernatural means, floating and twisting through the air majestically without the need for them. When hanging in the air they can achieve an almost unnatural stillness."
+    },
+    {
+      "Title": "Inheritors of Justice",
+      "Text": "Platinum dragons are born with an innate sense of cosmic justice. Not necessarily aligned with the morals of men, they desire peace and retribution for all those who were done wrong and preyed upon. They protect communities and innocent life surrounding their lairs, and have a soft spot for mortal beings aspiring to just ideals. However, as they see things from the perspective of a dragon with eternal life, their sense of justice sometimes conflicts with the justice of mortal men."
+    },
+    {
+      "Title": "Platinum Hoards",
+      "Text": "Platinum dragons predictably covet that which matches their scales. They desire platinum coins, art objects, weapons and more. As they don’t believe in theft, they will often take on a mortal disguise and offer their services to others in exchange for the objects and materials they desire, leading to there being many heroes who were secretly platinum dragons satiating their appetite. Given the rarity of their dietary needs, they temper their hunger and eat rarely (apart from consuming meat and regular food).\n\nWhen communities desire the aid of a platinum dragon, they will find that gifts of platinum and silver win them over. However, they will not take tribute that was unlawfully taken from others, and have even been known to give parts of their own hoard to communities devastated by tyranny and greed to get them back on their feet."
+    },
+    {
+      "Title": "Bound by Morality",
+      "Text": "These dragons are heroic and believe in justice, but due to their adherence to their own morality they can be seen as absolute and unmoving by others. Metallic dragons will often heed their advice, but adventurers and dragon-kind alike will often find a platinum dragon entirely unwilling to budge on their stance if they feel something is important enough to stand up for. They will go as far as to fight dragons and heroes to the death if they believe it is in the interest of balance and justice."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Platinum%20Dragon%20(Wyrmling).jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Platinum%20Dragon%20(Wyrmling).jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Platinum%20Dragon%20(Wyrmling).jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "platinum_dragon_wyrmling",
+      "section_type": "Stat Block",
+      "title": "Platinum Dragon Wyrmling",
+      "creature": {
+        "size": "Medium",
+        "type": "dragon (metallic)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "85 (10d8 + 40)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)",
+        "swim": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +6",
+        "Con +7",
+        "Wis +4",
+        "Cha +6"
+      ],
+      "skills": [
+        "Insight +5",
+        "Perception +5"
+      ],
+      "resistances": [],
+      "immunities": [
+        "radiant"
+      ],
+      "condition_immunities": [
+        "blinded"
+      ],
+      "senses": [
+        "blindsight 10 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Unusual Nature",
+          "name_format": "bold_italic",
+          "description": "The dragon does not have to breathe and can live normally in a vacuum."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes two attacks: one Bite and one Claw."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Breath Weapon (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon uses one of the following breath weapon options:",
+          "options": [
+            {
+              "name": "Radiant Breath",
+              "name_format": "bold_italic",
+              "description": "The dragon exhales a torrent of radiant rainbow energy in a 15-foot cone. Each creature in the area must make a DC 14 Dexterity saving throw, taking 28 (5d10) radiant damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+              "name": "Blinding Flare",
+              "name_format": "bold_italic",
+              "description": "The dragon charges blinding radiant energy and blasts it at a point it can see within 30 feet, where it explodes in a 10-foot-radius sphere. Each creature in that area must make a DC 14 Constitution saving throw, and on a failed save is blinded for 1 minute and takes 7 (2d6) radiant damage. Creatures blinded this way can reattempt the saving throw at the end of each of their turns, ending the effect on a success."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

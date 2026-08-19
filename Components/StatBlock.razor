@@ -706,6 +706,63 @@
 
 
                 <!-- =================================
+                     LAIR ACTIONS
+                     ================================= -->
+
+                @if (
+                    Data.LairActions.Count > 0
+                    ||
+                    !string.IsNullOrWhiteSpace(
+                        Data.LairActions.Intro))
+                {
+                    <section class="rt-stat-section">
+
+                        <div class="rt-stat-section-bar">
+                            @LairActionsHeading
+                        </div>
+
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                Data.LairActions.Intro))
+                        {
+                            <p class="rt-stat-entry">
+
+                                <GlossaryText
+                                    Text="@Data.LairActions.Intro"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
+
+
+                        @foreach (
+                            var entry
+                            in Data.LairActions)
+                        {
+                            <p class="rt-stat-entry">
+
+                                <strong>
+                                    <em>
+
+                                        <GlossaryText
+                                            Text="@entry.Name"
+                                            Context="GlossaryContext.StatBlock" />.
+
+                                    </em>
+                                </strong>
+
+                                <StatBlockEntryDetails
+                                    Entry="@entry" />
+
+                            </p>
+                        }
+
+                    </section>
+                }
+
+
+                <!-- =================================
                      MYTHIC ACTIONS
                      ================================= -->
 
@@ -1095,6 +1152,11 @@
         ||
         Data.LegendaryActions.Count > 0
         ||
+        Data.LairActions.Count > 0
+        ||
+        !string.IsNullOrWhiteSpace(
+            Data.LairActions.Intro)
+        ||
         Data.MythicActions.Count > 0
         ||
         !string.IsNullOrWhiteSpace(
@@ -1111,6 +1173,16 @@
         LegendarySectionHeading(
             Data.LegendaryActions,
             "Legendary Actions");
+
+
+    // =====================================
+    // LAIR ACTIONS HEADING
+    // =====================================
+
+    private string LairActionsHeading =>
+        LegendarySectionHeading(
+            Data.LairActions,
+            "Lair Actions");
 
 
     // =====================================

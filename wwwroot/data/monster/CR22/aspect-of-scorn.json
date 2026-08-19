@@ -89,7 +89,7 @@
         {
           "name": "Age of Massacre (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "When Scorn would be reduced to 0 hit points or killed outright, its hit points reset to 250, Scorn regains its used spells through Innate Spellcasting and its Legendary Resistances, and for 1 hour it gains access to its Mythic Action options. During that hour, all slashing damage Scorn deals is also subtracted from the hit point maximum of the creature suffering it. Their hit point maximum returns to normal when they complete a Long Rest. If a party defeats Scorn after using its Age of Massacre, they are awarded an additional 41,000 XP (for a total of 82,000 XP)."
+          "description": "When Scorn would be reduced to 0 hit points or killed outright, its hit points reset to 250, Scorn regains its used spells through Innate Spellcasting and its Legendary Reactions, and for 1 hour it gains access to its Mythic Action options. During that hour, all slashing damage Scorn deals is also subtracted from the hit point maximum of the creature suffering it. Their hit point maximum returns to normal when they complete a Long Rest. If a party defeats Scorn after using its Age of Massacre, they are awarded an additional 41,000 XP (for a total of 82,000 XP)."
         },
         {
           "name": "Innate Spellcasting",
@@ -196,7 +196,7 @@
             "description": ""
           }
         ],
-        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+        "source_conversion_note": "Converted from Legendary Reactions (3/Day) per standing formatting rule."
       },
       "legendary_actions": {
         "header": "Legendary Actions",

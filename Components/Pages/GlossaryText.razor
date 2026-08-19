@@ -421,7 +421,44 @@
                 .StatBlockQualityTrait;
 
 
+        /*
+         * Eidolos quality traits use the
+         * source-book notation:
+         *
+         * Eidolos (Type)
+         *
+         * while monster JSON contains:
+         *
+         * Eidolos (pleromael)
+         * Eidolos (seraphael)
+         * Eidolos (oucumenael)
+         * Eidolos (hypuranael)
+         *
+         * Keep an explicit matcher for this
+         * form so it cannot be affected by
+         * other placeholder-pattern changes.
+         */
         if (
+            context ==
+                GlossaryContext
+                    .StatBlockQualityTrait
+            &&
+            string.Equals(
+                pattern,
+                "Eidolos (Type)",
+                StringComparison.OrdinalIgnoreCase))
+        {
+            if (
+                !TryMatchEidolosType(
+                    text,
+                    index,
+                    caseSensitive,
+                    out matchLength))
+            {
+                return false;
+            }
+        }
+        else if (
             usePlaceholders
             &&
             ContainsPlaceholder(
@@ -500,6 +537,88 @@
 
             return false;
         }
+
+
+        return true;
+    }
+
+
+    // =====================================
+    // EIDOLOS (TYPE) QUALITY-TRAIT MATCH
+    // =====================================
+
+    private static bool TryMatchEidolosType(
+        string text,
+        int index,
+        bool caseSensitive,
+        out int matchLength)
+    {
+        matchLength =
+            0;
+
+
+        const string prefix =
+            "Eidolos (";
+
+
+        if (
+            !TryMatchLiteral(
+                text,
+                index,
+                prefix,
+                caseSensitive))
+        {
+            return false;
+        }
+
+
+        var valueStart =
+            index +
+            prefix.Length;
+
+
+        var closingParenthesis =
+            text.IndexOf(
+                ')',
+                valueStart);
+
+
+        if (
+            closingParenthesis <
+                valueStart)
+        {
+            return false;
+        }
+
+
+        var typeValue =
+            text
+                .Substring(
+                    valueStart,
+                    closingParenthesis -
+                    valueStart)
+                .Trim();
+
+
+        if (
+            typeValue.Length == 0
+            ||
+            typeValue.Contains(',')
+            ||
+            typeValue.Contains(';')
+            ||
+            typeValue.Contains('\n')
+            ||
+            typeValue.Contains('\r'))
+        {
+            return false;
+        }
+
+
+        matchLength =
+            closingParenthesis -
+            index +
+            1;
 
 
         return true;

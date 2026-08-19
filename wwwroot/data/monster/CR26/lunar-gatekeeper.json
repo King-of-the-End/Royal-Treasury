@@ -113,11 +113,6 @@
           "description": "If the Gatekeeper spends at least 1 minute concentrating on doing so, it can open a gate that cuts through the Astral Sea, emerging in any space the gatekeeper chooses and in a plane it is familiar with. This teleportation is capable of bypassing Lycrothemia’s sphere of abjurative interference."
         },
         {
-          "name": "Legendary Resistance (2/Day)",
-          "name_format": "bold_italic",
-          "description": "When the Gatekeeper fails a saving throw, it can choose to succeed instead."
-        },
-        {
           "name": "Lunar Guardian",
           "name_format": "bold_italic",
           "description": "If the Gatekeeper is within Lycrothemia’s sphere of abjurative interference, it is empowered by the moon’s ambient eidomantic radiation and adds a bonus to its AC and attack rolls equal to its proficiency bonus, as well as regaining 100 hit points at the start of each of its turns as long as it starts that turn with at least 1 hit point. When appearing to engage a threat on Lycrothemia it can also alter its size to match anything that is Planetary in size or smaller, as needed."
@@ -182,7 +177,18 @@
           "name_format": "bold_italic",
           "description": "The Gatekeeper fires a series of its HR Arcane Spears at up to three targets within 240 feet. Each target must succeed a DC 23 Dexterity saving throw or take 33 (6d10) force damage and have their movement speed reduced to 0 until the end of their next turn."
         }
-      ]
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ]
+      }
     }
   ]
 }
