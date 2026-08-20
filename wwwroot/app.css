@@ -2285,3 +2285,65 @@ canvas {
     text-align: center;
     text-transform: uppercase;
 }
+
+/* =========================================
+   REMOVE BLAZOR PAGE-HEADING FOCUS STYLING
+   ========================================= */
+
+h1:focus,
+h1:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* =========================================
+   CLASS EMBLEMS
+   ========================================= */
+
+.class-emblem-icon {
+    width: 112px;
+    height: 112px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/*
+   Give every emblem the exact same
+   available drawing area.
+
+   object-fit: contain prevents
+   any image from being cropped.
+*/
+
+.class-emblem-icon img {
+    width: 88px;
+    height: 88px;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center;
+
+    transition:
+        transform 150ms ease,
+        filter 150ms ease;
+}
+
+
+/* Card hover */
+
+.landing-card:hover .class-emblem-icon img {
+    transform: scale(1.08);
+
+    filter:
+        drop-shadow(
+            0 0 6px
+            rgba(255, 214, 77, 0.4)
+        );
+}

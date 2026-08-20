@@ -1582,3 +1582,200 @@
     }
 
 }
+
+/* =========================================
+   STRUCTURED MONSTER INFORMATION
+   ========================================= */
+
+.monster-information-sections {
+    display: grid;
+    gap: 1.15rem;
+}
+
+.monster-information-section {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.monster-information-section h3 {
+    margin: 0;
+    color: var(--gold-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.12rem;
+    line-height: 1.25;
+}
+
+
+/* =========================================
+   LORE QUOTES
+   ========================================= */
+
+.monster-lore-quote {
+    position: relative;
+    margin: 0.35rem 0 0.15rem;
+    padding: 1.2rem 1.35rem 1.2rem 3.4rem;
+    overflow: hidden;
+
+    border: 1px solid rgba(232, 199, 102, 0.55);
+    border-left: 4px solid var(--gold);
+    border-radius: 7px;
+
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(232, 199, 102, 0.12),
+            transparent 42%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(82, 50, 36, 0.94),
+            rgba(39, 27, 23, 0.98)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.035),
+        0 5px 16px rgba(0, 0, 0, 0.22);
+}
+
+.monster-lore-quote::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    pointer-events: none;
+    border: 1px solid rgba(232, 199, 102, 0.12);
+    border-radius: 4px;
+}
+
+.monster-lore-quote-mark {
+    position: absolute;
+    top: 0.35rem;
+    left: 0.85rem;
+
+    color: var(--gold);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+
+    opacity: 0.75;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.monster-lore-quote-text {
+    position: relative;
+    z-index: 1;
+
+    color: #f2e8dc;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.03rem;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.monster-lore-quote-text::deep .glossary-text {
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+}
+
+@media (max-width: 640px) {
+    .monster-lore-quote {
+        padding: 1rem 1rem 1rem 2.8rem;
+    }
+
+    .monster-lore-quote-mark {
+        left: 0.6rem;
+        font-size: 3.5rem;
+    }
+}
+
+
+
+/* =========================================
+   GROUP LORE QUOTES
+
+   Used by Groups/*.json entries shaped as:
+
+   "quote": {
+       "spans": [ ... ]
+   }
+   ========================================= */
+
+.monster-group-lore-quote {
+    position: relative;
+    margin: 1.15rem 0 0.35rem;
+    padding: 1.25rem 1.5rem 1.25rem 3.65rem;
+    overflow: hidden;
+
+    border: 1px solid rgba(226, 182, 0, 0.48);
+    border-left: 5px solid var(--gold);
+    border-radius: 7px;
+
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(226, 182, 0, 0.10),
+            transparent 42%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(48, 34, 27, 0.96),
+            rgba(20, 16, 14, 0.99)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.03),
+        0 7px 20px rgba(0, 0, 0, 0.26);
+}
+
+.monster-group-lore-quote::after {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    pointer-events: none;
+    border: 1px solid rgba(226, 182, 0, 0.10);
+    border-radius: 4px;
+}
+
+.monster-group-lore-quote-mark {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.9rem;
+
+    color: var(--gold-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 1;
+
+    opacity: 0.72;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.monster-group-lore-quote-text {
+    position: relative;
+    z-index: 1;
+
+    color: #f3e9dc;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.72;
+}
+
+.monster-group-lore-quote-text::deep .glossary-text {
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+}
+
+@media (max-width: 640px) {
+    .monster-group-lore-quote {
+        padding: 1rem 1rem 1rem 2.9rem;
+    }
+
+    .monster-group-lore-quote-mark {
+        left: 0.6rem;
+        font-size: 3.6rem;
+    }
+}

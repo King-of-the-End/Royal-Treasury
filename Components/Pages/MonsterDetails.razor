@@ -238,19 +238,87 @@ else
 
                         <!-- =============================
                              MONSTER INFORMATION
+
+                             Prefer structured Information
+                             Sections when present. This is
+                             what allows quoted lore to be
+                             rendered as a distinct callout.
                              ============================= -->
 
                         @if (
+                            monster.InformationSections.Count > 0)
+                        {
+                            <div class="monster-information-sections">
+
+                                @foreach (
+                                    var informationSection
+                                    in monster.InformationSections)
+                                {
+                                    @if (informationSection.IsQuote)
+                                    {
+                                        <blockquote class="monster-lore-quote">
+
+                                            <span
+                                                class="monster-lore-quote-mark"
+                                                aria-hidden="true">
+                                                “
+                                            </span>
+
+                                            <div class="monster-lore-quote-text">
+
+                                                <FormattedGlossaryText
+                                                    Text="@informationSection.Text"
+                                                    Context="GlossaryContext.General" />
+
+                                            </div>
+
+                                        </blockquote>
+                                    }
+                                    else
+                                    {
+                                        <section class="monster-information-section">
+
+                                            @if (
+                                                !string.IsNullOrWhiteSpace(
+                                                    informationSection.Title))
+                                            {
+                                                <h3>
+                                                    <GlossaryText
+                                                        Text="@informationSection.Title"
+                                                        Context="GlossaryContext.General" />
+                                                </h3>
+                                            }
+
+                                            @if (
+                                                !string.IsNullOrWhiteSpace(
+                                                    informationSection.Text))
+                                            {
+                                                <div class="monster-detail-information">
+
+                                                    <FormattedGlossaryText
+                                                        Text="@informationSection.Text"
+                                                        Context="GlossaryContext.General" />
+
+                                                </div>
+                                            }
+
+                                        </section>
+                                    }
+                                }
+
+                            </div>
+                        }
+                        else if (
                             !string.IsNullOrWhiteSpace(
                                 monster.Information))
                         {
-                            <p class="monster-detail-information">
+                            <div class="monster-detail-information">
 
                                 <FormattedGlossaryText
                                     Text="@monster.Information"
                                     Context="GlossaryContext.General" />
 
-                            </p>
+                            </div>
                         }
 
 
@@ -586,6 +654,31 @@ else
                                         Context="GlossaryContext.General" />
 
                                 </p>
+                            }
+
+
+                            @if (
+                                loreSection.Quote is not null
+                                &&
+                                loreSection.Quote.Spans.Count > 0)
+                            {
+                                <blockquote class="monster-group-lore-quote">
+
+                                    <span
+                                        class="monster-group-lore-quote-mark"
+                                        aria-hidden="true">
+                                        “
+                                    </span>
+
+                                    <div class="monster-group-lore-quote-text">
+
+                                        <FormattedGlossaryText
+                                            Spans="@loreSection.Quote.Spans"
+                                            Context="GlossaryContext.General" />
+
+                                    </div>
+
+                                </blockquote>
                             }
 
 

@@ -92,6 +92,20 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // INFORMATION SECTIONS
+    //
+    // Optional structured lore from outer
+    // monster JSON. This allows ordinary
+    // sections and quoted sections to render
+    // differently on the Lore tab.
+    // =====================================
+
+    [JsonPropertyName("information_sections")]
+    public List<MonsterInformationSection> InformationSections { get; set; } =
+        new();
+
+
+    // =====================================
     // PLACEMENT
     // =====================================
 
@@ -1670,4 +1684,25 @@ public sealed class
 
         return false;
     }
+}
+
+
+// =========================================
+// MONSTER INFORMATION SECTION
+// =========================================
+
+public sealed class MonsterInformationSection
+{
+    [JsonPropertyName("title")]
+    public string Title { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("text")]
+    public string Text { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("isquote")]
+    public bool IsQuote { get; set; }
 }

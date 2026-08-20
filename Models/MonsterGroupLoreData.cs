@@ -105,6 +105,22 @@ public sealed class MonsterGroupLoreSection
         new();
 
 
+    // =====================================
+    // QUOTE
+    //
+    // Group JSON may contain a dedicated
+    // quote object using the same formatted
+    // span structure as a paragraph:
+    //
+    // "quote": {
+    //   "spans": [ ... ]
+    // }
+    // =====================================
+
+    [JsonPropertyName("quote")]
+    public MonsterGroupLoreParagraph? Quote { get; set; }
+
+
     [JsonPropertyName("bullets")]
     public List<MonsterGroupLoreTitle> Bullets { get; set; } =
         new();

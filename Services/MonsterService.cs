@@ -1447,6 +1447,31 @@ public sealed class MonsterService
 
 
             // =================================
+            // OUTER INFORMATION SECTIONS
+            // =================================
+
+            monster.InformationSections ??=
+                new List<MonsterInformationSection>();
+
+
+            foreach (
+                var informationSection
+                in metadata.InformationSections)
+            {
+                if (
+                    string.IsNullOrWhiteSpace(
+                        informationSection.Text))
+                {
+                    continue;
+                }
+
+
+                monster.InformationSections.Add(
+                    informationSection);
+            }
+
+
+            // =================================
             // OUTER IMAGE
             //
             // Monster files such as
@@ -1622,6 +1647,11 @@ public sealed class MonsterService
                 "Information");
 
 
+        var informationSections =
+            ReadInformationSectionsProperty(
+                element);
+
+
         var image =
             ReadStringProperty(
                 element,
@@ -1692,6 +1722,7 @@ public sealed class MonsterService
             new MonsterMetadata(
                 name,
                 information,
+                informationSections,
                 image,
                 imageVariants,
                 refinement,
@@ -1727,6 +1758,14 @@ public sealed class MonsterService
             ? local.Information
 
             : inherited.Information;
+
+
+        var informationSections =
+            local.InformationSections.Count > 0
+
+            ? local.InformationSections
+
+            : inherited.InformationSections;
 
 
         var image =
@@ -1781,6 +1820,7 @@ public sealed class MonsterService
             new MonsterMetadata(
                 name,
                 information,
+                informationSections,
                 image,
                 imageVariants,
                 refinement,
@@ -1922,6 +1962,140 @@ public sealed class MonsterService
             monster.Sources.Add(
                 source);
         }
+    }
+
+
+    // =====================================
+    // READ INFORMATION SECTIONS
+    //
+    // Supported outer property:
+    //
+    // "Information Sections": [
+    //   {
+    //     "Title": "...",
+    //     "Text": "...",
+    //     "IsQuote": true
+    //   }
+    // ]
+    // =====================================
+
+    private IReadOnlyList<MonsterInformationSection>
+        ReadInformationSectionsProperty(
+            JsonElement element)
+    {
+        if (
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    "Information Sections"),
+                out var value)
+            ||
+            value.ValueKind !=
+            JsonValueKind.Array)
+        {
+            return
+                Array.Empty<MonsterInformationSection>();
+        }
+
+
+        var sections =
+            new List<MonsterInformationSection>();
+
+
+        foreach (
+            var sectionElement
+            in value.EnumerateArray())
+        {
+            if (
+                sectionElement.ValueKind !=
+                JsonValueKind.Object)
+            {
+                continue;
+            }
+
+
+            var title =
+                ReadStringProperty(
+                    sectionElement,
+                    "Title");
+
+
+            var text =
+                ReadStringProperty(
+                    sectionElement,
+                    "Text");
+
+
+            if (
+                string.IsNullOrWhiteSpace(
+                    text))
+            {
+                continue;
+            }
+
+
+            var isQuote = false;
+
+
+            if (
+                TryGetNormalizedProperty(
+                    sectionElement,
+                    NormalizePropertyName(
+                        "IsQuote"),
+                    out var quoteValue))
+            {
+                isQuote =
+                    quoteValue.ValueKind switch
+                    {
+                        JsonValueKind.True =>
+                            true,
+
+                        JsonValueKind.False =>
+                            false,
+
+                        JsonValueKind.String =>
+                            bool.TryParse(
+                                quoteValue.GetString(),
+                                out var parsed)
+                            && parsed,
+
+                        _ =>
+                            false
+                    };
+            }
+
+
+            // Also recognize text that is explicitly wrapped
+            // in quotation marks. This keeps older monster
+            // data working even if IsQuote was omitted.
+            var trimmedText =
+                text.Trim();
+
+
+            if (
+                !isQuote
+                &&
+                ((trimmedText.StartsWith('“')
+                  && trimmedText.EndsWith('”'))
+                 ||
+                 (trimmedText.StartsWith('\"')
+                  && trimmedText.EndsWith('\"'))))
+            {
+                isQuote = true;
+            }
+
+
+            sections.Add(
+                new MonsterInformationSection
+                {
+                    Title = title,
+                    Text = text,
+                    IsQuote = isQuote
+                });
+        }
+
+
+        return sections;
     }
 
 
@@ -2565,6 +2739,7 @@ public sealed class MonsterService
     private sealed record MonsterMetadata(
         string Name,
         string Information,
+        IReadOnlyList<MonsterInformationSection> InformationSections,
         string Image,
         IReadOnlyList<string> ImageVariants,
         MonsterRefinementData? Refinement,
@@ -2577,6 +2752,7 @@ public sealed class MonsterService
             new(
                 string.Empty,
                 string.Empty,
+                Array.Empty<MonsterInformationSection>(),
                 string.Empty,
                 Array.Empty<string>(),
                 null,

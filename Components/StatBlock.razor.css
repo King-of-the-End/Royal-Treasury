@@ -189,21 +189,21 @@
 }
 
 
-/* DRAGON - PINK */
+/* DRAGON - SAPPHIRE BLUE */
 
 .rt-statblock.rt-type-dragon {
 
     --stat-accent:
-        #c44f8a;
+        #2457d6;
 
     --stat-accent-bright:
-        #df6ba6;
+        #4f7cff;
 
     --stat-accent-dark:
-        #7d2e56;
+        #122c73;
 
     --stat-accent-rgb:
-        196, 79, 138;
+        36, 87, 214;
 
     --stat-accent-text:
         #ffffff;
