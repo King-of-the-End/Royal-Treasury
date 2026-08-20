@@ -2236,3 +2236,52 @@ canvas {
 
 }
 
+/* =========================================
+   CLASS CARDS
+   Uses existing landing-card styling
+   ========================================= */
+
+.class-card-icon svg {
+    width: 88%;
+    height: 88%;
+
+    display: block;
+
+    overflow: visible;
+
+    transition:
+        transform 150ms ease,
+        filter 150ms ease;
+}
+
+
+.landing-card:hover .class-card-icon svg {
+    transform:
+        scale(1.08);
+
+    filter:
+        drop-shadow(
+            0 0 6px
+            rgba(255, 214, 77, 0.4)
+        );
+}
+
+
+/* Arbiter "Reviewed Artificer" text */
+
+.class-card-note {
+    display: block;
+
+    margin-top: -0.8rem;
+
+    color: var(--gold);
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+
+    text-align: center;
+    text-transform: uppercase;
+}

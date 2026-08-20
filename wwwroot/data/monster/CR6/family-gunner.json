@@ -1,0 +1,143 @@
+{
+  "Name": "Family Gunner",
+  "Group": "The Family",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Gunners are trained to expertly use firearms at both long and short ranges. They are most commonly employed by the Family as lookouts, assassins, and silent bodyguards.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference_BG%20-%20Family%20Gunner.jpg",
+  "Stat Blocks": [
+    {
+      "id": "family_gunner",
+      "section_type": "Stat Block",
+      "title": "Family Gunner",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "16 (studded leather)",
+      "hit_points": "88 (12d8 + 34)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Critical 19"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Con +5",
+        "Wis +5"
+      ],
+      "skills": [
+        "Perception +8",
+        "Stealth +6"
+      ],
+      "senses": [
+        "passive Perception 18"
+      ],
+      "languages": [
+        "passive Perception 18"
+      ],
+      "challenge_rating": "6 (2300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Hawkeye",
+          "name_format": "bold_italic",
+          "description": "The gunner’s ranged attacks ignore half and two-thirds cover."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The gunner makes two attacks, either making two with its scoped rifle, or making one each with their revolver and shortsword."
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 7 (2d6) poison damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 4) piercing damage plus 7 (2d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Scoped Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +9 to hit, range 60/180, one target. Hit: 17 (2d10 + 6) piercing damage. If the gunner is prone when making this attack they have advantage, and don’t suffer disadvantage when firing up to their long range or at prone targets.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Trick Short (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When the gunner hits a creature with a firearm attack, it can choose one of the following effects, and the target must succeed a DC 15 Dexterity saving throw or be subjected to it:",
+          "options": [
+            {
+              "description": "Their movement speed is reduced to 0 until the end of their next turn."
+            },
+            {
+              "description": "They take an additional 18 (4d8) piercing damage."
+            },
+            {
+              "description": "The target has disadvantage on attack rolls until the end of their next turn."
+            },
+            {
+              "description": "If the target is concentrating on a spell or effect, they must make a DC 15 Constitution saving throw instead, and if they fail they lose concentration."
+            }
+          ]
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**FAMILY GUNNER**\n*Medium humanoid (any), lawful evil*\n**AC** 16 (studded leather)\n**HP** 88 (12d8 + 34)\n**Speed** 30 ft.\n**STR** 14 (+2) | **DEX** 18 (+4) | **CON** 14 (+2) | **INT** 16 (+3) | **WIS** 15 (+2) | **CHA** 13 (+1)\n**Saving Throws** Con +5, Wis +5\n**Skills** Perception +8, Stealth +6\n**Senses** passive Perception 18\n**Languages** passive Perception 18\n**CR** 6 (2300 XP) **Proficiency Bonus** +3\n\n**TRAITS**\n*Critical 19*\n\n***Hawkeye.*** The gunner’s ranged attacks ignore half and two-thirds cover.\n\n**ACTIONS**\n***Multiattack.*** The gunner makes two attacks, either making two with its scoped rifle, or making one each with their revolver and shortsword.\n\n***Revolver.*** *Ranged Weapon Attack:* +7 to hit, range 20/60 ft., one target. *Hit:* 11 (2d6 + 4) piercing damage plus 7 (2d6) poison damage.\n\n***Shortsword.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 8 (1d6 + 4) piercing damage plus 7 (2d6) poison damage.\n\n***Scoped Rifle.*** *Ranged Weapon Attack:* +9 to hit, range 60/180, one target. *Hit:* 17 (2d10 + 6) piercing damage. If the gunner is prone when making this attack they have advantage, and don’t suffer disadvantage when firing up to their long range or at prone targets.\n\n**BONUS ACTIONS**\n***Trick Short (Recharge 5-6).*** When the gunner hits a creature with a firearm attack, it can choose one of the following effects, and the target must succeed a DC 15 Dexterity saving throw or be subjected to it:\n• Their movement speed is reduced to 0 until the end of their next turn.\n• They take an additional 18 (4d8) piercing damage.\n• The target has disadvantage on attack rolls until the end of their next turn.\n• If the target is concentrating on a spell or effect, they must make a DC 15 Constitution saving throw instead, and if they fail they lose concentration."
+    }
+  ]
+}

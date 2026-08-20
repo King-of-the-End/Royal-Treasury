@@ -1,0 +1,112 @@
+{
+  "Name": "Family Thug",
+  "Group": "The Family",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The lowest agents of the Family, who serve as the footsoldiers and expendable agents of their superiors. They are rarely informed on matters that aren’t critical to their work.",
+  "Stat Blocks": [
+    {
+      "id": "family_thug",
+      "section_type": "Stat Block",
+      "title": "Family Thug",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "14 (studded leather)",
+      "hit_points": "22 (4d8 + 4)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Critical 19"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "skills": [
+        "Deception +3",
+        "Intimidation +3",
+        "Stealth +4"
+      ],
+      "senses": [
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Follow Suit",
+          "name_format": "bold_italic",
+          "description": "When the thug is being led by a Family-trained creature with a higher CR than its own, it gains a bonus to attack rolls and ability checks equal to half that leader’s proficiency bonus (rounded up)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) piercing damage plus 4 (1d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Hand Crossbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 6 (1d6 + 2) piercing damage and 4 (1d6) poison damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Opportunist",
+          "name_format": "bold_italic",
+          "description": "When the thug hits a creature with a critical hit, they may immediately make one extra weapon attack against them."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**FAMILY THUG**\n*Medium humanoid (any), lawful evil*\n**AC** 14 (studded leather)\n**HP** 22 (4d8 + 4)\n**Speed** 30 ft.\n**STR** 12 (+1) | **DEX** 16 (+3) | **CON** 12 (+1) | **INT** 11 (-) | **WIS** 15 (+2) | **CHA** 12 (+1)\n**Skills** Deception +3, Intimidation +3, Stealth +4\n**Senses** passive Perception 12\n**Languages** Common, one other language\n**CR** 1 (200 XP) **Proficiency Bonus** +2\n\n**TRAITS**\n*Critical 19*\n\n***Follow Suit.*** When the thug is being led by a Family-trained creature with a higher CR than its own, it gains a bonus to attack rolls and ability checks equal to half that leader’s proficiency bonus (rounded up).\n\n**ACTIONS**\n***Shortsword.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d6 + 2) piercing damage plus 4 (1d6) poison damage.\n\n***Hand Crossbow.*** *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 6 (1d6 + 2) piercing damage and 4 (1d6) poison damage.\n\n**BONUS ACTIONS**\n***Opportunist.*** When the thug hits a creature with a critical hit, they may immediately make one extra weapon attack against them."
+    }
+  ]
+}

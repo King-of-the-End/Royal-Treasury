@@ -1,0 +1,211 @@
+{
+  "Name": "Dead Eye Infiltrator",
+  "Group": [
+    "The Family",
+    "The Dead Order"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Granted the Principle’s gift of the pestis eye, the dead eye infiltrators are the most accomplished marksmen at the Family’s disposal. They are adept at hunting and tracking targets, as well as disguising their appearance. Their pestis eye is generally covered by a mask or cloth band, but even when covered over it grants superhuman awareness of their surroundings.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Shear%2C%20Dead-Eye%20Infiltrator.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dead_eye_infiltrator",
+      "section_type": "Stat Block",
+      "title": "Dead Eye Infiltrator",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "17 (studded leather)",
+      "hit_points": "130 (20d8 + 40)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Critical 18"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Int +8",
+        "Cha +6"
+      ],
+      "skills": [
+        "Deception +6",
+        "Investigation +8",
+        "Perception +16",
+        "Stealth +10"
+      ],
+      "immunities": [
+        "poison",
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "passive Perception 26"
+      ],
+      "languages": [
+        "Common",
+        "plus three others"
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Freerunner",
+          "name_format": "bold_italic",
+          "description": "The infiltrator only has to spend 5 feet to stand from being prone, and the movement gained when they take the Dash action is doubled."
+        },
+        {
+          "name": "Hawkeye",
+          "name_format": "bold_italic",
+          "description": "The infiltrator’s ranged attacks ignore half and two-thirds cover."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The infiltrator’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Intelligence",
+            "components": "none",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "charm person",
+                  "sending",
+                  "suggestion"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "blur",
+                  "disintegrate",
+                  "dominate monster",
+                  "eye of eradication",
+                  "major image",
+                  "scrying",
+                  "seeming",
+                  "hastened quiver"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The infiltrator makes two weapon attacks, then uses its Pestis Eye or casts a spell using Innate Spellcasting."
+        },
+        {
+          "name": "Scimitar",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 9 (2d8) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Pestis Eye",
+          "name_format": "bold_italic",
+          "description": "The infiltrator subjects one creature they can see within 60 feet to a nightmarish surge of psychic energy. That creature must succeed a DC 16 Intelligence saving throw, taking 35 (10d6) psychic damage on a failure."
+        },
+        {
+          "name": "Scoped Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +10 to hit, range 180 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 9 (2d8) poison damage. If the infiltrator is prone when making this attack they have advantage, and don’t suffer disadvantage when firing up to their long range or at prone targets.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Snipe",
+          "name_format": "bold_italic",
+          "description": "The infiltrator makes a single attack with a ranged weapon. The weapon’s long range becomes 120 feet, or twice its original long range (whichever is higher)."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Trick Shot (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "When the infiltrator hits a creature with a firearm attack, they can choose one of the following effects. The target must succeed a DC 18 Dexterity saving throw or be subjected to it:",
+          "options": [
+            {
+              "description": "Their movement speed is reduced to 0 until the end of their next turn."
+            },
+            {
+              "description": "They take an additional 18 (4d8) piercing damage."
+            },
+            {
+              "description": "The target has disadvantage on attack rolls until the end of their next turn."
+            },
+            {
+              "description": "If the target is concentrating on a spell or effect, they make a DC 18 Constitution saving throw instead, and if they fail they lose concentration."
+            }
+          ]
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DEAD EYE INFILTRATOR**\n*Medium humanoid (any), lawful evil*\n**AC** 17 (studded leather)\n**HP** 130 (20d8 + 40)\n**Speed** 30 ft.\n**STR** 14 (+2) | **DEX** 20 (+5) | **CON** 14 (+2) | **INT** 17 (+3) | **WIS** 22 (+6) | **CHA** 12 (+1)\n**Saving Throws** Dex +10, Int +8, Cha +6\n**Skills** Deception +6, Investigation +8, Perception +16, Stealth +10\n**Immunities** poison, necrotic\n**Condition Immunities** blinded, charmed\n**Senses** truesight 60 ft., passive Perception 26\n**Languages** Common, plus three others\n**CR** 14 (11,500 XP) **Proficiency Bonus** +5\n\n**TRAITS**\n*Critical 18*\n\n***Freerunner.*** The infiltrator only has to spend 5 feet to stand from being prone, and the movement gained when they take the Dash action is doubled.\n\n***Hawkeye.*** The infiltrator’s ranged attacks ignore half and two-thirds cover.\n\n***Innate Spellcasting.*** The infiltrator’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:\n• ***At will:*** charm person, sending, suggestion\n• ***1/Day each:*** blur, disintegrate, dominate monster, eye of eradication, major image, scrying, seeming, hastened quiver\n\n**ACTIONS**\n***Multiattack.*** The infiltrator makes two weapon attacks, then uses its Pestis Eye or casts a spell using Innate Spellcasting.\n\n***Scimitar.*** *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 12 (2d6 + 5) slashing damage plus 9 (2d8) poison damage.\n\n***Pestis Eye.*** The infiltrator subjects one creature they can see within 60 feet to a nightmarish surge of psychic energy. That creature must succeed a DC 16 Intelligence saving throw, taking 35 (10d6) psychic damage on a failure.\n\n***Scoped Rifle.*** *Ranged Weapon Attack:* +10 to hit, range 180 ft., one target. *Hit:* 16 (2d10 + 5) piercing damage plus 9 (2d8) poison damage. If the infiltrator is prone when making this attack they have advantage, and don’t suffer disadvantage when firing up to their long range or at prone targets.\n\n***Snipe.*** The infiltrator makes a single attack with a ranged weapon. The weapon’s long range becomes 120 feet, or twice its original long range (whichever is higher).\n\n**BONUS ACTIONS**\n***Trick Shot (Recharge 4-6).*** When the infiltrator hits a creature with a firearm attack, they can choose one of the following effects. The target must succeed a DC 18 Dexterity saving throw or be subjected to it:\n• Their movement speed is reduced to 0 until the end of their next turn.\n• They take an additional 18 (4d8) piercing damage.\n• The target has disadvantage on attack rolls until the end of their next turn.\n• If the target is concentrating on a spell or effect, they make a DC 18 Constitution saving throw instead, and if they fail they lose concentration."
+    }
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Shear%2C%20Dead-Eye%20Infiltrator.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Shear%2C%20Dead-Eye%20Infiltrator%20(Eye).jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Shear%2C%20Dead-Eye%20Infiltrator.jpg"
+    },
+    {
+      "Label": "Image 2",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Shear%2C%20Dead-Eye%20Infiltrator%20(Eye).jpg"
+    }
+  ]
+}

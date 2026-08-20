@@ -1,0 +1,215 @@
+{
+  "name": {
+    "text": "The Dead Order",
+    "bold": true
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "There are those in the Family who specifically serve the Principle, - the head of the organization. These individuals are the most powerful fighters, assassins and spellcasters that the organization has to offer, and are internally known as the Dead Eyes. Rather than work directly for the branches or the Godchildren, they serve only the Principle and are often the go-betweens who deliver their messages. These are the grand infiltrators, assassins, enforcers, etc., and their bodies are marked with an ancient curse that binds them to the service of their master.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "The curse on these individuals causes them to die if they intentionally act against the Principle, allowing the Principle to monitor them and see through their senses wherever they are, preventing them from speaking of the Principle’s desires, plans or revealing any unknown qualities about them unless they have been granted permission or are doing so in service to the Principle. Along with this curse, these servants are trained extensively, and inherit one or more of three special gifts: the dead hand, pestis eye, and the full voice. All effects they produce use Intelligence as their spellcasting ability.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Consequences",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "If a creature accepts one of these gifts it may cause their death. They must make a DC 18 Charisma saving throw, suffering 14d10 unreducible necrotic damage on a failed save, or half as much on a successful one, which is also reduced from the creature’s maximum hit points. If they are not of an evil alignment they have disadvantage on this saving throw, and if they are lawful good then failing the save kills the creature instantly. A creature whose maximum hit points have been reduced regains 1d10 + 10 of these hit points each time they complete a Long Rest, and cannot regain them any other way (except via a ",
+              "bold": false
+            },
+            {
+              "text": "wish",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " spell or 9th-level ",
+              "bold": false
+            },
+            {
+              "text": "greater restoration",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ").",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "The Dead Hand",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "The left hand and forearm of the individual is blackened, and the skin becomes void-like, absorbing light instead of reflecting it. This hand grants the individual a bonus to strength and pulses with necrotic power, suffusing all of their attacks with it.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "A creature granted this gift gains a +4 bonus to their Strength score (up to a maximum of 24), causing all of their weapon attacks to deal an extra 2d12 necrotic damage, and allowing them to cast ",
+              "bold": false
+            },
+            {
+              "text": "finger of death",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ", ",
+              "bold": false
+            },
+            {
+              "text": "circle of death",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ", and ",
+              "bold": false
+            },
+            {
+              "text": "power word suffer",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " once each per Long Rest.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Pestis Eye",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "One of the eyes of the individual is entirely blackened, giving the appearance of a dark hole where it used to be. They gain truesight out to 60 feet and all of their ranged weapon attacks can fire up to their long range with no penalty.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "A creature with this gift gains a +4 bonus to their Wisdom score (to a maximum of 24), and proficiency in Perception (or Expertise if they already have it). The bearer can cast ",
+              "bold": false
+            },
+            {
+              "text": "disintegrate",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ", ",
+              "bold": false
+            },
+            {
+              "text": "dominate monster",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " and ",
+              "bold": false
+            },
+            {
+              "text": "eye of eradication",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " once each per Long Rest, and are also capable of casting counterspell as a reaction without components or requiring a spell slot (recharge 5-6).",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "The Full Voice",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "The vocal cords of the individual are burned out, depriving them of their own voice and speech. Henceforth, they gain telepathy out to 120 feet, and do not need to perform the verbal components of spells and similar effects. They can trick others into thinking they are speaking verbally by moving their mouth to correspond with their telepathic messages, but a DC 16 Wisdom (Insight) check can see through this deception.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "A creature granted this gift gains a +4 bonus to their Charisma (to a maximum of 24), has advantage on saving throws against spells and magical effects, and can cast ",
+              "bold": false
+            },
+            {
+              "text": "command",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " at will. They can also cast any ",
+              "bold": false
+            },
+            {
+              "text": "power word",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " spell of 8th level or lower once per Long Rest (each), as well as ",
+              "bold": false
+            },
+            {
+              "text": "tormented scream",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " once per Long Rest.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

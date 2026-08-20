@@ -1,0 +1,242 @@
+{
+  "Name": "Dead Word Herecaster",
+  "Group": [
+    "The Family",
+    "The Dead Order"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The dead word lose their voice as a sign of devotion, but gain the gift of the full voice from the Principle. They are typically the Family’s speakers and mouth-pieces when necessary, often relaying their thoughts telepathically. They can subjugate others with their words, making the ethereal power that replaces their voice too dangerous to use openly. Despite their lack of vocal cords they can form power words easily, channeling through them as a sorcerer channels magic.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference_BG%20-%20Dead%20Word%20Herecaster.jpg",
+  "Stat Blocks": [
+    {
+      "id": "dead_word_herecaster",
+      "section_type": "Stat Block",
+      "title": "Dead Word Herecaster",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "15 (studded leather)",
+      "hit_points": "130 (20d8 + 40)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +9",
+        "Int +10",
+        "Wis +7"
+      ],
+      "skills": [
+        "Arcana +10",
+        "Deception +12",
+        "Insight +7",
+        "Stealth +9"
+      ],
+      "immunities": [
+        "poison",
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed"
+      ],
+      "senses": [
+        "passive Perception 11"
+      ],
+      "languages": [
+        "understands Common plus three other languages",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Full Voice",
+          "name_format": "bold_italic",
+          "description": "The herecaster does not need to perform the verbal components of spells they cast."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The herecaster’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Intelligence",
+            "components": "none",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "command",
+                  "counterspell",
+                  "self-curse"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "tormented scream"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The herecaster is a 15th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 15,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "spells": [
+                  "eldritch blast",
+                  "literal manifest",
+                  "true strike"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "armor of agathys",
+                  "dissonant whispers",
+                  "shield"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "arcane lock",
+                  "hold person",
+                  "hungering vortex",
+                  "locate object"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "spells": [
+                  "dispel magic",
+                  "counterspell",
+                  "fly",
+                  "hold attacker"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "spells": [
+                  "greater invisibility",
+                  "force missile",
+                  "phantasmal killer"
+                ]
+              },
+              {
+                "frequency": "5th level (3 slots)",
+                "spells": [
+                  "chaghlihn’s ink void",
+                  "synaptic static",
+                  "valm’s irritating question"
+                ]
+              },
+              {
+                "frequency": "6th level (2 slots)",
+                "spells": [
+                  "blade barrier",
+                  "circle of death"
+                ]
+              },
+              {
+                "frequency": "7th level (1 slot)",
+                "spells": [
+                  "force cage",
+                  "teleport"
+                ]
+              },
+              {
+                "frequency": "8th level (1 slot)",
+                "spells": [
+                  "feeblemind",
+                  "gatestep"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The herecaster makes one weapon attack, then either casts a spell, uses a Word of Power, or uses their Voice of Subjugation."
+        },
+        {
+          "name": "Psychic Twinblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) slashing damage plus 11 (2d10) psychic damage. After attacking with this weapon, the herecaster can use their bonus action to attack with it again as a Melee Weapon Attack: +8 to hit, dealing 8 (1d8 + 3) slashing damage plus 11 (2d10) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Word of Power",
+          "name_format": "bold_italic",
+          "description": "The herecaster casts any “power word” spell of 8th level or lower. Once it casts a given power word spell this way it cannot cast that spell this way again until it completes a Long Rest. Power word spells cast this way use their Intelligence as their spellcasting ability."
+        },
+        {
+          "name": "Voice of Subjugation",
+          "name_format": "bold_italic",
+          "description": "One creature within 60 feet who can hear the herecaster is assailed by a wave of psychic energy, and must make a DC 17 Intelligence saving throw. On a failure the creature is stunned until the end of their next turn."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Psychic Smite",
+          "name_format": "bold_italic",
+          "description": "When the herecaster hits a creature with its twinblade attack, they can expend a spell slot to have that attack deal an extra 1d8 psychic damage per level of the spell slot."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**DEAD WORD HERECASTER**\n*Medium humanoid (any), neutral evil*\n**AC** 15 (studded leather)\n**HP** 130 (20d8 + 40)\n**Speed** 30 ft.\n**STR** 14 (+2) | **DEX** 16 (+3) | **CON** 14 (+2) | **INT** 18 (+4) | **WIS** 13 (+1) | **CHA** 22 (+6)\n**Saving Throws** Dex +9, Int +10, Wis +7\n**Skills** Arcana +10, Deception +12, Insight +7, Stealth +9\n**Immunities** poison, psychic\n**Condition Immunities** charmed\n**Senses** passive Perception 11\n**Languages** understands Common plus three other languages, telepathy 120 ft.\n**CR** 17 (18,000 XP) **Proficiency Bonus** +6\n\n**TRAITS**\n*Magic resist*\n\n***Full Voice.*** The herecaster does not need to perform the verbal components of spells they cast.\n\n***Innate Spellcasting.*** The herecaster’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:\n• ***At will:*** command, counterspell, self-curse\n• ***1/Day each:*** tormented scream\n\n***Spellcasting.*** The herecaster is a 15th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:\n• ***Cantrips (at will):*** eldritch blast, literal manifest, true strike\n• ***1st level (4 slots):*** armor of agathys, dissonant whispers, shield\n• ***2nd level (3 slots):*** arcane lock, hold person, hungering vortex, locate object\n• ***3rd level (3 slots):*** dispel magic, counterspell, fly, hold attacker\n• ***4th level (3 slots):*** greater invisibility, force missile, phantasmal killer\n• ***5th level (3 slots):*** chaghlihn’s ink void, synaptic static, valm’s irritating question\n• ***6th level (2 slots):*** blade barrier, circle of death\n• ***7th level (1 slot):*** force cage, teleport\n• ***8th level (1 slot):*** feeblemind, gatestep\n\n**ACTIONS**\n***Multiattack.*** The herecaster makes one weapon attack, then either casts a spell, uses a Word of Power, or uses their Voice of Subjugation.\n\n***Psychic Twinblade.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 7 (1d8 + 2) slashing damage plus 11 (2d10) psychic damage. After attacking with this weapon, the herecaster can use their bonus action to attack with it again as a *Melee Weapon Attack:* +8 to hit, dealing 8 (1d8 + 3) slashing damage plus 11 (2d10) psychic damage.\n\n***Word of Power.*** The herecaster casts any “power word” spell of 8th level or lower. Once it casts a given power word spell this way it cannot cast that spell this way again until it completes a Long Rest. Power word spells cast this way use their Intelligence as their spellcasting ability.\n\n***Voice of Subjugation.*** One creature within 60 feet who can hear the herecaster is assailed by a wave of psychic energy, and must make a DC 17 Intelligence saving throw. On a failure the creature is stunned until the end of their next turn.\n\n**BONUS ACTIONS**\n***Psychic Smite.*** When the herecaster hits a creature with its twinblade attack, they can expend a spell slot to have that attack deal an extra 1d8 psychic damage per level of the spell slot."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "Name": "Family Enforcer",
+  "Group": "The Family",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The muscle is often found under the employment of the Tailers. The enforcers are the most straight-forward hitmen of the Family, sent to intimidate and rough up anyone they see as a problem. They are proficient in direct conflict at close ranges, and specialize in using their glaive and bolas to disorient and debilitate their targets.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Family%20Enforcer%20(ISO).png",
+  "Stat Blocks": [
+    {
+      "id": "family_enforcer",
+      "section_type": "Stat Block",
+      "title": "Family Enforcer",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "15 (breastplate)",
+      "hit_points": "77 (9d8 + 36)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Critical 19"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Str +6",
+        "Wis +4"
+      ],
+      "skills": [
+        "Athletics +6",
+        "Intimidation +3",
+        "Perception +4"
+      ],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "5 (1800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Disarming Strike",
+          "name_format": "bold_italic",
+          "description": "When the enforcer hits with a critical hit against a creature, it can choose one item the target is holding to knock out of their hands. The item is knocked (1d4 + 1) x 5 feet away from them in a randomly determined direction. If they have an item bound to them, such as a shield, it can also be knocked out of its proper adjustment, requiring an action from its wearer to readjust the item and regain its benefits."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The enforcer makes two weapon attacks."
+        },
+        {
+          "name": "Glaive",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) slashing damage plus 7 (2d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Run Down",
+          "name_format": "bold_italic",
+          "description": "The enforcer takes the Dash action, then makes one weapon attack with advantage. If they hit a creature that is Medium or smaller, that creature is knocked prone."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Bolas (Carries Three)",
+          "name_format": "bold_italic",
+          "description": "The enforcer throws a set of bolas at one Small, Medium or Large creature as a Ranged Weapon Attack: +5 to hit, range 10/30 feet. On a hit, the creature is restrained and their speed is reduced to 0. The bound creature can attempt to escape the bolas as if they were being grappled by them (escape DC 14), or by dealing 5 points of damage to them (AC 13). Large or larger creatures have advantage on attempts to escape.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**FAMILY ENFORCER**\n*Medium humanoid (any), lawful evil*\n**AC** 15 (breastplate)\n**HP** 77 (9d8 + 36)\n**Speed** 30 ft.\n**STR** 17 (+3) | **DEX** 15 (+2) | **CON** 18 (+4) | **INT** 12 (+1) | **WIS** 13 (+1) | **CHA** 10 (-)\n**Saving Throws** Str +6, Wis +4\n**Skills** Athletics +6, Intimidation +3, Perception +4\n**Condition Immunities** frightened\n**Senses** passive Perception 14\n**Languages** Common, one other language\n**CR** 5 (1800 XP) **Proficiency Bonus** +3\n\n**TRAITS**\n*Critical 19*\n\n***Disarming Strike.*** When the enforcer hits with a critical hit against a creature, it can choose one item the target is holding to knock out of their hands. The item is knocked (1d4 + 1) x 5 feet away from them in a randomly determined direction. If they have an item bound to them, such as a shield, it can also be knocked out of its proper adjustment, requiring an action from its wearer to readjust the item and regain its benefits.\n\n**ACTIONS**\n***Multiattack.*** The enforcer makes two weapon attacks.\n\n***Glaive.*** *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 14 (2d10 + 3) slashing damage plus 7 (2d6) poison damage.\n\n***Run Down.*** The enforcer takes the Dash action, then makes one weapon attack with advantage. If they hit a creature that is Medium or smaller, that creature is knocked prone.\n\n**BONUS ACTIONS**\n***Bolas (Carries Three).*** The enforcer throws a set of bolas at one Small, Medium or Large creature as a *Ranged Weapon Attack:* +5 to hit, range 10/30 feet. On a hit, the creature is restrained and their speed is reduced to 0. The bound creature can attempt to escape the bolas as if they were being grappled by them (escape DC 14), or by dealing 5 points of damage to them (AC 13). Large or larger creatures have advantage on attempts to escape."
+    }
+  ]
+}

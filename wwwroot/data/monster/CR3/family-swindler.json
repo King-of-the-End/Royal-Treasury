@@ -1,0 +1,122 @@
+{
+  "Name": "Family Swindler",
+  "Group": "The Family",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A more direct combat agent who often accompanies others, and is found primarily among the Tailers. These trained killers are highly coordinated.",
+  "Stat Blocks": [
+    {
+      "id": "family_swindler",
+      "section_type": "Stat Block",
+      "title": "Family Swindler",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "15 (breastplate)",
+      "hit_points": "52 (8d8 + 16)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "pack tactics"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 11,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Dex +3",
+        "Int +3"
+      ],
+      "skills": [
+        "Athletics +5",
+        "Deception +2",
+        "Stealth +3"
+      ],
+      "senses": [
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Common",
+        "any one language"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Explosive Critical",
+          "name_format": "bold_italic",
+          "description": "The first time each turn that the swindler scores a critical hit they deal an extra 2d8 damage of the weapon’s type, then can use their bonus action to make an additional attack."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The swindler makes two weapon attacks."
+        },
+        {
+          "name": "Longsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage plus 4 (1d6) poison damage, or 9 (1d10 + 3) slashing damage plus 4 (1d6) poison damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Longbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 1) piercing damage plus 4 (1d6) poison damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Sentinel Strike",
+          "name_format": "bold_italic",
+          "description": "When the swindler or a creature within 5 feet of them is targeted by an attack, the swindler can interfere with the attack and cause it to be made with disadvantage."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**FAMILY SWINDLER**\n*Medium humanoid (any), neutral evil*\n**AC** 15 (breastplate)\n**HP** 52 (8d8 + 16)\n**Speed** 30 ft.\n**STR** 16 (+3) | **DEX** 12 (+1) | **CON** 14 (+2) | **INT** 12 (+1) | **WIS** 14 (+2) | **CHA** 11 (-)\n**Saving Throws** Dex +3, Int +3\n**Skills** Athletics +5, Deception +2, Stealth +3\n**Senses** passive Perception 12\n**Languages** Common, any one language\n**CR** 3 (700 XP) **Proficiency Bonus** +2\n\n**TRAITS**\n*Critical 19, pack tactics*\n\n***Explosive Critical.*** The first time each turn that the swindler scores a critical hit they deal an extra 2d8 damage of the weapon’s type, then can use their bonus action to make an additional attack.\n\n**ACTIONS**\n***Multiattack.*** The swindler makes two weapon attacks.\n\n***Longsword.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (1d8 + 3) slashing damage plus 4 (1d6) poison damage, or 9 (1d10 + 3) slashing damage plus 4 (1d6) poison damage if wielded with two hands.\n\n***Longbow.*** *Ranged Weapon Attack:* +3 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8 + 1) piercing damage plus 4 (1d6) poison damage.\n\n**REACTIONS**\n***Sentinel Strike.*** When the swindler or a creature within 5 feet of them is targeted by an attack, the swindler can interfere with the attack and cause it to be made with disadvantage."
+    }
+  ]
+}

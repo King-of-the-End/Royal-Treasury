@@ -1,0 +1,203 @@
+{
+  "Name": "Dead Hand Assassin",
+  "Group": [
+    "The Family",
+    "The Dead Order"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The dead hand assassins are the highest tier of assassins available to work within the Family. Serving the Principile directly, they are historically reserved for only the highest difficulty of mission, such as the termination of a high-ranking internal member, political figure, or heroic figure. These assassins are given the gift of the dead hand, which they keep covered in cloth wrappings or ornamental gloves that they remove to use their power. They are trained to use this gift to sap life from others, and can mutate the dead hand into a demonic claw through daemoturgy.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Dead%20Hand%20Assassin%20(Wrap)%20(ISO).png",
+  "Stat Blocks": [
+    {
+      "id": "dead_hand_assassin",
+      "section_type": "Stat Block",
+      "title": "Dead Hand Assassin",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "19 (studded leather)",
+      "hit_points": "150 (20d8 + 60)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Critical 18",
+        "evasion"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Int +9",
+        "Wis +9",
+        "Cha +9"
+      ],
+      "skills": [
+        "Acrobatics +11",
+        "Deception +9",
+        "Stealth +13",
+        "Perception +9"
+      ],
+      "immunities": [
+        "poison",
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "frightened",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "Common",
+        "plus four others"
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The assassin’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Intelligence",
+            "components": "none",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "alter self",
+                  "disguise self"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "dimension door",
+                  "circle of death",
+                  "cursed talon",
+                  "finger of death",
+                  "modify memory",
+                  "power word suffer"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "The assassin deals an extra 28 (8d6) damage when it hits with a weapon attack using a finesse or ranged weapon (including their Dead Hand), as long as it has advantage on the attack roll or one of its allies is within 5 feet of its target and not incapacitated. It cannot benefit from this feature if it has disadvantage on the attack roll."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The assassin makes three attacks with its Gunlance. It can replace one of those attacks with either its Dead Hand or with casting one spell using Innate Spellcasting."
+        },
+        {
+          "name": "Dead Hand",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 30 (4d12 + 7) necrotic damage, and the target’s maximum hit points are reduced by half the necrotic damage dealt. This reduction lasts until restored by a spell or effect such as greater restoration.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic",
+            "greater restoration": "italic"
+          }
+        },
+        {
+          "name": "Gunlance",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 11 (1d10 + 5) piercing damage plus 13 (2d12) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Gunlance (Trigger)",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +13 to hit, range 15/45 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 11 (2d10) poison damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cunning Action",
+          "name_format": "bold_italic",
+          "description": "The assassin takes the Hide, Disengage or Dash action."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Perfect Dodge",
+          "name_format": "bold_italic",
+          "description": "The assassin causes an attack against it that it is aware of to automatically miss. If the attack was an automatic hit for any reason, including due to a critical hit, it hits but is treated as a normal hit instead."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**DEAD HAND ASSASSIN**\n*Medium humanoid (any), lawful evil*\n**AC** 19 (studded leather)\n**HP** 150 (20d8 + 60)\n**Speed** 40 ft.\n**STR** 20 (+5) | **DEX** 24 (+7) | **CON** 16 (+3) | **INT** 17 (+3) | **WIS** 17 (+3) | **CHA** 16 (+3)\n**Saving Throws** Int +9, Wis +9, Cha +9\n**Skills** Acrobatics +11, Deception +9, Stealth +13, Perception +9\n**Immunities** poison, necrotic\n**Condition Immunities** frightened, poisoned\n**Senses** blindsight 30 ft., passive Perception 19\n**Languages** Common, plus four others\n**CR** 17 (18,000 XP) **Proficiency Bonus** +6\n\n**TRAITS**\n*Critical 18, evasion*\n\n***Innate Spellcasting.*** The assassin’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:\n• ***At will:*** alter self, disguise self\n• ***1/Day each:*** dimension door, circle of death, cursed talon, finger of death, modify memory, power word suffer\n\n***Sneak Attack (1/Turn).*** The assassin deals an extra 28 (8d6) damage when it hits with a weapon attack using a finesse or ranged weapon (including their Dead Hand), as long as it has advantage on the attack roll or one of its allies is within 5 feet of its target and not incapacitated. It cannot benefit from this feature if it has disadvantage on the attack roll.\n\n**ACTIONS**\n***Multiattack.*** The assassin makes three attacks with its Gunlance. It can replace one of those attacks with either its Dead Hand or with casting one spell using Innate Spellcasting.\n\n***Dead Hand.*** *Melee Weapon Attack:* +13 to hit, reach 5 ft., one target. *Hit:* 30 (4d12 + 7) necrotic damage, and the target’s maximum hit points are reduced by half the necrotic damage dealt. This reduction lasts until restored by a spell or effect such as *greater restoration*.\n\n***Gunlance.*** *Melee Weapon Attack:* +11 to hit, reach 10 ft., one target. *Hit:* 11 (1d10 + 5) piercing damage plus 13 (2d12) necrotic damage.\n\n***Gunlance (Trigger).*** *Ranged Weapon Attack:* +13 to hit, range 15/45 ft., one target. *Hit:* 18 (2d10 + 7) piercing damage plus 11 (2d10) poison damage.\n\n**BONUS ACTIONS**\n***Cunning Action.*** The assassin takes the Hide, Disengage or Dash action.\n\n**REACTIONS**\n***Perfect Dodge.*** The assassin causes an attack against it that it is aware of to automatically miss. If the attack was an automatic hit for any reason, including due to a critical hit, it hits but is treated as a normal hit instead."
+    }
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Dead%20Hand%20Assassin%20(Wrap)%20(ISO).png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Dead%20Hand%20Assassin%20(Wrap).jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Dead%20Hand%20Assassin.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Dead%20Hand%20Assassin%20(Wrap)%20(ISO).png"
+    },
+    {
+      "Label": "Image 2",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Dead%20Hand%20Assassin%20(Wrap).jpg"
+    },
+    {
+      "Label": "Image 3",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Dead%20Hand%20Assassin.jpg"
+    }
+  ]
+}

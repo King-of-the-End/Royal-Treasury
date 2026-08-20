@@ -1,0 +1,133 @@
+{
+  "Name": "Family Assassin",
+  "Group": "The Family",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Among the most feared of the Family members, these assassins operate quickly and ruthlessly. They use a special artificial toxin called stiffrot to paralyze their targets, then swiftly assassinate them. They are masters of swift, precise combat and are feared across Retia as some of the most well-trained killers to walk anonymously among civilized folk.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Family%20Assassin.jpg",
+  "Stat Blocks": [
+    {
+      "id": "family_assassin",
+      "section_type": "Stat Block",
+      "title": "Family Assassin",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any race)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "17 (studded leather)",
+      "hit_points": "104 (16d8 + 32)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "evasion"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 11,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Dex +9",
+        "Int +6",
+        "Cha +4"
+      ],
+      "skills": [
+        "Acrobatics +9",
+        "Deception +4",
+        "Perception +11",
+        "Stealth +9"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "Common",
+        "thieves’ cant",
+        "plus two others"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "The assassin deals an extra 21 (6d6) damage when it hits with a weapon attack using a finesse or ranged weapon, as long as it has advantage on the attack roll or one of its allies is within 5 feet of its target and not incapacitated. It cannot benefit from this feature if it has disadvantage on the attack roll."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The assassin makes two weapon attacks."
+        },
+        {
+          "name": "Mounted Blades",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d6 + 5) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +9 to hit, range 20/60 ft., one target. Hit: 12 (2d6 + 5) piercing damage, and if the target is within the weapon’s normal range they must succeed a DC 17 Dexterity saving throw, taking an additional 28 (8d6) piercing damage on a failure.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Stiffrot (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The assassin makes a single weapon attack using their mounted blades against a target within range. If they hit and the target fails the Constitution saving throw against the poison damage, the creature is paralyzed for 1 minute in addition to the damage from the attack. The paralyzed creature can repeat the saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Kill Rush",
+          "name_format": "bold_italic",
+          "description": "The assassin moves up to its movement speed and makes a single attack against a creature within range. If this attack hits it qualifies for Sneak Attack as long as it does not have disadvantage."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      }
+    }
+  ]
+}

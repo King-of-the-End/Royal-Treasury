@@ -1,0 +1,166 @@
+{
+  "Name": "Family Crowdmask",
+  "Group": "The Family",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Crowdmasks are trained to blend into crowds and deceive others. They are experts at staying low-key until they are needed to spring into action, as well as using magical talents to avoid direct conflict and combat. They carry collapsible twinblades that can be easily hidden and snapped back together, which they are proficient with.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Family%20Crowdmask%20(ISO).png",
+  "Stat Blocks": [
+    {
+      "id": "family_crowdmask",
+      "section_type": "Stat Block",
+      "title": "Family Crowdmask",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "16 (studded leather)",
+      "hit_points": "52 (8d8 + 16)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Int +6",
+        "Wis +4"
+      ],
+      "skills": [
+        "Deception +5",
+        "Persuasion +5",
+        "Stealth +9"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "senses": [
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Dwarvish",
+        "plus two others"
+      ],
+      "challenge_rating": "5 (1800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The crowdmask’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Intelligence",
+            "components": "none",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "alter self",
+                  "disguise self",
+                  "minor illusion"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "comprehend languages",
+                  "greater invisibility",
+                  "hold person",
+                  "misty step",
+                  "silence"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "command",
+                  "suggestion"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Quick Study",
+          "name_format": "bold_italic",
+          "description": "If the crowdmask spends at least a minute watching the habits, ticks, vocal patterns and duties of an individual, they are capable of mimicking or blending in with them expertly - well enough to fool any casual observer."
+        },
+        {
+          "name": "Sneak Attack",
+          "name_format": "bold_italic",
+          "description": "The crowdmask deals an extra 10 (3d6) damage when it hits with a weapon attack using a finesse or ranged weapon, as long as it has advantage on the attack roll or one of its allies is within 5 feet of its target and not incapacitated. It cannot benefit from this feature if it has disadvantage on the attack roll."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The crowdmask makes two weapon attacks. If both are Twinblade attacks and both hit, the crowdmask can make one additional Twinblade attack."
+        },
+        {
+          "name": "Twinblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage plus 7 (2d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dagger",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) piercing damage plus 4 (1d6) poison damage, or thrown as a Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 7 (1d6 + 3) piercing damage plus 4 (1d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Reposition",
+          "name_format": "bold_italic",
+          "description": "The crowdmask takes the Hide or Disengage action."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**FAMILY CROWDMASK**\n*Medium humanoid (any), neutral evil*\n**AC** 16 (studded leather)\n**HP** 52 (8d8 + 16)\n**Speed** 30 ft.\n**STR** 16 (+3) | **DEX** 17 (+3) | **CON** 14 (+2) | **INT** 16 (+3) | **WIS** 12 (+1) | **CHA** 14 (+2)\n**Saving Throws** Int +6, Wis +4\n**Skills** Deception +5, Persuasion +5, Stealth +9\n**Resistances** poison\n**Senses** passive Perception 11\n**Languages** Common, Elvish, Dwarvish, plus two others\n**CR** 5 (1800 XP) **Proficiency Bonus** +3\n\n**TRAITS**\n***Innate Spellcasting.*** The crowdmask’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:\n• ***At will:*** alter self, disguise self, minor illusion\n• ***1/Day each:*** comprehend languages, greater invisibility, hold person, misty step, silence\n• ***2/Day each:*** command, suggestion\n\n***Quick Study.*** If the crowdmask spends at least a minute watching the habits, ticks, vocal patterns and duties of an individual, they are capable of mimicking or blending in with them expertly - well enough to fool any casual observer.\n\n***Sneak Attack.*** The crowdmask deals an extra 10 (3d6) damage when it hits with a weapon attack using a finesse or ranged weapon, as long as it has advantage on the attack roll or one of its allies is within 5 feet of its target and not incapacitated. It cannot benefit from this feature if it has disadvantage on the attack roll.\n\n**ACTIONS**\n***Multiattack.*** The crowdmask makes two weapon attacks. If both are Twinblade attacks and both hit, the crowdmask can make one additional Twinblade attack.\n\n***Twinblade.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 8 (1d8 + 3) slashing damage plus 7 (2d6) poison damage.\n\n***Dagger.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 3) piercing damage plus 4 (1d6) poison damage, or thrown as a *Ranged Weapon Attack:* +6 to hit, range 20/60 ft., one target. *Hit:* 7 (1d6 + 3) piercing damage plus 4 (1d6) poison damage.\n\n**BONUS ACTIONS**\n***Reposition.*** The crowdmask takes the Hide or Disengage action."
+    }
+  ]
+}

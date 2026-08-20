@@ -1,0 +1,153 @@
+{
+  "Name": "Family Sentinel",
+  "Group": "The Family",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "These members of the family are bodyguards and patrollers, who are well trained in the art of distracting and pushing back opponents. They run interference and draw attention when required. They are more heavily armored than most other Family operatives, carrying a shield alongside a dark gunblade. They are most commonly deployed to guard places or people of importance.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Family%20Sentinel%20(ISO).png",
+  "Stat Blocks": [
+    {
+      "id": "family_sentinel",
+      "section_type": "Stat Block",
+      "title": "Family Sentinel",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "18 (breastplate, shield)",
+      "hit_points": "105 (14d8 + 42)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +5"
+      ],
+      "skills": [
+        "Athletics +7",
+        "Deception +5",
+        "Perception +8"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "senses": [
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "6 (2300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Sentinel Strike",
+          "name_format": "bold_italic",
+          "description": "The sentinel can make opportunity attacks against creatures that leave their attack range even if they don’t provoke them (such as those who use the Disengage action), and if they hit a creature with an opportunity attack that creature’s speed is reduced to 0 feet until the end of their next turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The sentinel makes three attacks: two with its Gunblade and one Shield Bash."
+        },
+        {
+          "name": "Gunblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage plus 9 (2d8) poison damage, or 9 (1d10 + 3) slashing damage plus 9 (2d8) poison damage if wielded two-handed.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Gunblade (Trigger)",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 11 (2d8 + 2) piercing damage plus 9 (2d8) poison damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shield Bash",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) bludgeoning damage, and if the target is a Medium or smaller creature it is knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Challenge",
+          "name_format": "bold_italic",
+          "description": "The sentinel challenges one creature within 30 feet who can see or hear it, who must succeed a DC 14 Charisma saving throw. On a failure, the target is challenged until the end of their next turn, during which time they have disadvantage on all attacks except those made against the sentinel."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Full Defense",
+          "name_format": "bold_italic",
+          "description": "When the sentinel is targeted by a weapon attack and carrying a shield, they can focus on deflecting attacks to gain a +3 bonus to their AC until the end of the turn."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**FAMILY SENTINEL**\n*Medium humanoid (any), neutral evil*\n**AC** 18 (breastplate, shield)\n**HP** 105 (14d8 + 42)\n**Speed** 30 ft.\n**STR** 18 (+4) | **DEX** 14 (+2) | **CON** 16 (+3) | **INT** 12 (+1) | **WIS** 14 (+2) | **CHA** 14 (+2)\n**Saving Throws** Dex +5, Wis +5\n**Skills** Athletics +7, Deception +5, Perception +8\n**Resistances** poison\n**Senses** passive Perception 18\n**Languages** Common, one other language\n**CR** 6 (2300 XP) **Proficiency Bonus** +3\n\n**TRAITS**\n***Sentinel Strike.*** The sentinel can make opportunity attacks against creatures that leave their attack range even if they don’t provoke them (such as those who use the Disengage action), and if they hit a creature with an opportunity attack that creature’s speed is reduced to 0 feet until the end of their next turn.\n\n**ACTIONS**\n***Multiattack.*** The sentinel makes three attacks: two with its Gunblade and one Shield Bash.\n\n***Gunblade.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 7 (1d8 + 3) slashing damage plus 9 (2d8) poison damage, or 9 (1d10 + 3) slashing damage plus 9 (2d8) poison damage if wielded two-handed.\n\n***Gunblade (Trigger).*** *Ranged Weapon Attack:* +5 to hit, range 20/60 ft., one target. *Hit:* 11 (2d8 + 2) piercing damage plus 9 (2d8) poison damage.\n\n***Shield Bash.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 3) bludgeoning damage, and if the target is a Medium or smaller creature it is knocked prone.\n\n**BONUS ACTIONS**\n***Challenge.*** The sentinel challenges one creature within 30 feet who can see or hear it, who must succeed a DC 14 Charisma saving throw. On a failure, the target is challenged until the end of their next turn, during which time they have disadvantage on all attacks except those made against the sentinel.\n\n**REACTIONS**\n***Full Defense.*** When the sentinel is targeted by a weapon attack and carrying a shield, they can focus on deflecting attacks to gain a +3 bonus to their AC until the end of the turn."
+    }
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Family%20Sentinel%20(ISO).png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/sentinel%20post.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Family%20Sentinel%20(ISO).png"
+    },
+    {
+      "Label": "Image 2",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/sentinel%20post.jpg"
+    }
+  ]
+}
