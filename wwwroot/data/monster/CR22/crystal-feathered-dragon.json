@@ -1,0 +1,250 @@
+{
+  "Name": "Crystal Feathered Dragon",
+  "Group": "Feathered Dragons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "",
+  "Stat Blocks": [
+    {
+      "id": "crystal_feathered_dragon",
+      "section_type": "Stat Block",
+      "title": "Crystal Feathered Dragon",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "dragon (gem)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "21 (natural armor)",
+      "hit_points": "333 (18d20 + 144)",
+      "speed": {
+        "walk": "60 ft.",
+        "climb": "60 ft.",
+        "fly": "120 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "regen 2d10 + 10"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 25,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 26,
+          "modifier": "+8"
+        },
+        "INT": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 23,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Con +15",
+        "Wis +12",
+        "Cha +13"
+      ],
+      "skills": [
+        "Perception +19",
+        "Stealth +10",
+        "Survival +12"
+      ],
+      "resistances": [
+        "cold"
+      ],
+      "immunities": [
+        "radiant"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "exhaustion"
+      ],
+      "senses": [
+        "truesight 120 ft.",
+        "passive Perception 29"
+      ],
+      "languages": [
+        "Common",
+        "Draconic",
+        "telepathy 240 ft."
+      ],
+      "challenge_rating": "22 (41,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The dragon’s spellcasting ability is Intelligence. The dragon can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Intelligence",
+            "components": "none",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "command",
+                  "dancing lights",
+                  "divination",
+                  "guidance"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "greater invisibility",
+                  "greater restoration",
+                  "hypnotic pattern",
+                  "power word stillness"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Uncanny Radiance",
+          "name_format": "bold_italic",
+          "description": "Radiant damage from the dragon ignores resistances, and immunity to radiant damage only reduces the damage to half instead. This does not apply to damage the dragon might deal to itself."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes one Bite and two Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 17 (2d10 + 7) piercing damage plus 18 (3d12) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 7) slashing damage. If the target is Huge or smaller, it is restrained and grappled (escape DC 20). While grappling a creature it cannot make Claw attacks except one each turn against the grappled creature.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 19 (2d12 + 7) bludgeoning damage. If the target is a creature, it must succeed a DC 22 Strength saving throw or be knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Breath Weapon (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon uses one of its breath weapon options (Starlight Breath or Blinding Starfall).",
+          "options": [
+            {
+              "name": "Starlight Breath",
+              "name_format": "bold_italic",
+              "description": "The dragon exhales a sphere of radiant starlight at a point it can see within 300 feet, which explodes in a 60-foot-radius sphere of cosmic energy. All creatures within range must make a DC 23 Constitution saving throw, taking 52 (8d12) radiant damage on a failed save, or half as much damage on a successful one. The dragon then regains 22 (4d10) hit points by reabsorbing the expelled energy, and for every creature that is reduced to 0 hit points by this damage, the dragon regains an additional 5 (1d8) hit points."
+            },
+            {
+              "name": "Blinding Starfall",
+              "name_format": "bold_italic",
+              "description": "The dragon breathes a burst of energy above it that breaks apart into ten individual spheres of light, which rain down each at a point the dragon can see within 120 feet of it. Each point explodes in a 10-foot-radius sphere, and each creature within those areas must succeed on a DC 23 Constitution saving throw or be blinded for 1 minute and take 21 (6d6) radiant damage. Creatures who are blinded this way reattempt the save at the end of each of their turns, ending the effect on a success."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its Multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
+        },
+        {
+          "name": "Psychic Step",
+          "name_format": "bold_italic",
+          "description": "The dragon magically teleports to a space it can see within 90 feet of it."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Beyond the Web",
+          "name_format": "bold_italic",
+          "description": "When one or more creatures within 120 feet of the feathered dragon is targeted by the same magical effect or spell (except itself), the feathered dragon may grant them a +5 bonus on the first save they make against it."
+        },
+        {
+          "name": "Blinding Shield",
+          "name_format": "bold_italic",
+          "description": "When the dragon or a creature within 60 feet of it is targeted by a weapon attack, the dragon can surround them in a shield of crystallized radiant energy until the end of the turn. Creatures attacking the shielded creature are blinded by the shield. An attack that hits the creature despite this breaks the shield, but if it was a melee attack made from within 5 feet the attacker takes 11 (2d10) radiant damage."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (3 Actions)",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "cost": 1,
+            "description": "The dragon makes one Claw or Tail attack."
+          },
+          {
+            "name": "Psionics",
+            "name_format": "bold_italic",
+            "cost": 2,
+            "description": "The dragon uses its Psychic Step or casts a spell using Innate Spellcasting."
+          },
+          {
+            "name": "Starlight Strike",
+            "name_format": "bold_italic",
+            "cost": 3,
+            "description": "The dragon releases a burst of light that strikes a point it can see within 120 feet of it. Each creature in a 15-foot-radius centered on that point must succeed a DC 25 Constitution saving throw, taking 24 (6d8) radiant damage and are blinded until the start of the dragon’s next turn on a failed save."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "raw_text": "**CRYSTAL FEATHERED DRAGON**\n*Gargantuan dragon (gem), chaotic neutral*\n**AC** 21 (natural armor)\n**HP** 333 (18d20 + 144)\n**Speed** 60 ft., climb 60 ft., fly 120 ft.\n**STR** 25 (+7) | **DEX** 16 (+3) | **CON** 26 (+8) | **INT** 24 (+7) | **WIS** 20 (+5) | **CHA** 23 (+6)\n**Saving Throws** Dex +10, Con +15, Wis +12, Cha +13\n**Skills** Perception +19, Stealth +10, Survival +12\n**Resistances** cold\n**Immunities** radiant\n**Condition Immunities** charmed, frightened, exhaustion\n**Senses** truesight 120 ft., passive Perception 29\n**Languages** Common, Draconic, telepathy 240 ft.\n**CR** 22 (41,000 XP) **Proficiency Bonus** +7\n\n**TRAITS**\n*Eidolic, regen 2d10 + 10*\n\n***Innate Spellcasting.*** The dragon’s spellcasting ability is Intelligence. The dragon can cast the following spells, requiring no components:\n• ***At will:*** command, dancing lights, divination, guidance\n• ***1/Day each:*** greater invisibility, greater restoration, hypnotic pattern, power word stillness\n\n***Uncanny Radiance.*** Radiant damage from the dragon ignores resistances, and immunity to radiant damage only reduces the damage to half instead. This does not apply to damage the dragon might deal to itself.\n\n**LEGENDARY REACTIONS** (4 uses)\nTBA\n\n**ACTIONS**\n***Multiattack.*** The dragon makes one Bite and two Claw attacks.\n\n***Bite.*** *Melee Weapon Attack:* +14 to hit, reach 15 ft., one target. *Hit:* 17 (2d10 + 7) piercing damage plus 18 (3d12) radiant damage.\n\n***Claw.*** *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 15 (2d8 + 7) slashing damage. If the target is Huge or smaller, it is restrained and grappled (escape DC 20). While grappling a creature it cannot make Claw attacks except one each turn against the grappled creature.\n\n***Tail.*** *Melee Weapon Attack:* +14 to hit, reach 20 ft., one target. *Hit:* 19 (2d12 + 7) bludgeoning damage. If the target is a creature, it must succeed a DC 22 Strength saving throw or be knocked prone.\n\n***Breath Weapon (Recharge 5-6).*** The dragon uses one of its breath weapon options (Starlight Breath or Blinding Starfall).\n• ***Starlight Breath.*** The dragon exhales a sphere of radiant starlight at a point it can see within 300 feet, which explodes in a 60-foot-radius sphere of cosmic energy. All creatures within range must make a DC 23 Constitution saving throw, taking 52 (8d12) radiant damage on a failed save, or half as much damage on a successful one. The dragon then regains 22 (4d10) hit points by reabsorbing the expelled energy, and for every creature that is reduced to 0 hit points by this damage, the dragon regains an additional 5 (1d8) hit points.\n• ***Blinding Starfall.*** The dragon breathes a burst of energy above it that breaks apart into ten individual spheres of light, which rain down each at a point the dragon can see within 120 feet of it. Each point explodes in a 10-foot-radius sphere, and each creature within those areas must succeed on a DC 23 Constitution saving throw or be blinded for 1 minute and take 21 (6d6) radiant damage. Creatures who are blinded this way reattempt the save at the end of each of their turns, ending the effect on a success.\n\n**BONUS ACTIONS**\n***Change Shape.*** The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its Multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it.\n\n***Psychic Step.*** The dragon magically teleports to a space it can see within 90 feet of it.\n\n**REACTIONS**\n***Beyond the Web.*** When one or more creatures within 120 feet of the feathered dragon is targeted by the same magical effect or spell (except itself), the feathered dragon may grant them a +5 bonus on the first save they make against it.\n\n***Blinding Shield.*** When the dragon or a creature within 60 feet of it is targeted by a weapon attack, the dragon can surround them in a shield of crystallized radiant energy until the end of the turn. Creatures attacking the shielded creature are blinded by the shield. An attack that hits the creature despite this breaks the shield, but if it was a melee attack made from within 5 feet the attacker takes 11 (2d10) radiant damage.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Attack.*** The dragon makes one Claw or Tail attack.\n***Psionics (Costs 2 Actions).*** The dragon uses its Psychic Step or casts a spell using Innate Spellcasting.\n***Starlight Strike (Costs 3 Actions).*** The dragon releases a burst of light that strikes a point it can see within 120 feet of it. Each creature in a 15-foot-radius centered on that point must succeed a DC 25 Constitution saving throw, taking 24 (6d8) radiant damage and are blinded until the start of the dragon’s next turn on a failed save."
+    }
+  ]
+}

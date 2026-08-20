@@ -1,0 +1,982 @@
+{
+  "name": "Dusksworn",
+  "slug": "dusksworn",
+  "quote": "“Alas, these poor souls. Damned by the great powers that be, rather than the choices they have made. To wield evil, yet not desire villainy. For each divine that preaches goodness, there is one that is wretched, twisting the unfortunate and shaping them into a force to be reckoned with. Yet, the side that they choose to stand with is a question that I cannot answer.“ — ?",
+  "introduction": [
+    "A human clad in half plate smirks as a band of ruffians mock his foolishness for being unarmed. They approach with malicious grins which contort into horror as smoke coalesces into a shadowy blade in his hands.",
+    "Tracing the contours of the ground with her fingers, an elf watches as a skeleton rises from the gilded coffin in front of her, waiting to command it.",
+    "As black tendrils emerge from his fingertips, a dragonborn watches as gigantic tentacles erupt from the ground and lash out at the guards who stand between him and the gateway to another plane.",
+    "Perhaps their faith in something malicious rewarded them with their powers. No matter who or what the source of their wicked powers is, a dusksworn isn’t naturally predisposed to evil.",
+    "Of those who learn to master their dark powers, not all can take up the mantle of a dusksworn. A dusksworn may spend years learning the skills of combat, becoming familiar with a variety of weapons and armor.",
+    "Moreover, while not every dusksworn is a criminal or dark lord, they don’t have an inclination to be a cause of justice or righteousness either. Scorned for the powers that they wield, dusksworn are often shunned from society, left with no other choice but to lead unsavory lifestyles."
+  ],
+  "lore_sections": [
+    {
+      "title": "Exalted by Darkness",
+      "paragraphs": [
+        "Dusksworn are wielders of dark magic, though not always of their own volition. Some naturally possess their sacrilegious might from birth, while others have this dark fate thrust upon them against their will by an evil god or other being of cosmic power."
+      ]
+    },
+    {
+      "title": "Shadowed Life",
+      "paragraphs": [
+        "Due to their powers, most dusksworn are heavily ostracized and discriminated against. Shunned for their natural gifts, dusksworn tend to gravitate toward adventuring to make a living.",
+        "As such, dusksworn take adventuring seriously. Some seek fortune in treasure hoards so that they can one day live in peace, or take up a life of traveling endlessly to avoid discrimination. Regardless, a dusksworn’s motive for adventuring is rarely to enact a malicious scheme or some world-ending plot."
+      ]
+    },
+    {
+      "title": "Accursed Genesis",
+      "paragraphs": [
+        "The faculty granted to dusksworn can come from a variety of sources. These powers might have been thrust upon you by a god without your say in the matter, or they were awakened by a traumatic event. No matter how you gained them, the might you wield forever tarnishes you in the eyes of others.",
+        "To add some backstory to your dusksworn, roll or pick once from the Dark Origin table, or create your own. It has no game effect, but fleshes out the source of your character’s powers. They’re a great role-playing tool to add character to the game. Then consider why your character was given their newfound powers. Do they have any bearing on your character’s personality and background?"
+      ]
+    },
+    {
+      "title": "Creating a Dusksworn",
+      "paragraphs": [
+        "As you create your dusksworn character, consider how the powers came to be, and how others interact with them. Did you naturally come upon the wicked powers you possess, or was it bestowed upon you by an evil deity?",
+        "Moreover, what goals does your character have? Do they wish to embrace the darkness within them, or do they desire to become a figure of justice despite their malevolent origins?",
+        "Lastly, while the dark powers that dusksworn wield are conflated with evil, they aren’t always of evil alignment. Most use their powers just to make ends meet, or live another day."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "You can quickly create a dusksworn by following these suggestions. Make Charisma your character’s highest ability score, followed by your choice of Charisma or Constitution. Second, choose the criminal or urchin background.",
+    "dark_origin": [
+      {
+        "d6": 1,
+        "origin": "A traumatic event awakened your dark powers."
+      },
+      {
+        "d6": 2,
+        "origin": "Your powers were forced upon you by a deity against your volition."
+      },
+      {
+        "d6": 3,
+        "origin": "You made a deal with some kind of greater evil to obtain your powers."
+      },
+      {
+        "d6": 4,
+        "origin": "An eldritch entity from the Far Realm unknowingly granted you your abilities."
+      },
+      {
+        "d6": 5,
+        "origin": "You were betrayed and left for dead but somehow survived, returning with these newfound powers."
+      },
+      {
+        "d6": 6,
+        "origin": "Your faith in something sacrilegious was rewarded one day with your dusksworn abilities."
+      }
+    ]
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "If your group uses the optional rule on multiclassing in the Player’s Handbook, you must meet the prerequisites listed below in order to multiclass into a dusksworn."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "The prerequisites to multiclass into a dusksworn or take a level in another class if you are already a dusksworn is a Strength or Dexterity score of at least 13 and Charisma score of at least 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "If dusksworn isn’t your initial class, you gain proficiency with light armor, medium armor, shields, simple weapons, and martial weapons."
+        },
+        {
+          "label": "Spell Slots",
+          "value": "You add half your dusksworn levels (rounded down) to your total multiclass spellcaster level to determine your available spell slots when multiclassing as a dusksworn and at least one other class with the spellcasting feature."
+        }
+      ]
+    },
+    "advancement": {
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "ruin_dice",
+          "label": "Ruin Dice"
+        },
+        {
+          "key": "shadow_damage",
+          "label": "Shadow Damage"
+        },
+        {
+          "key": "spells_known",
+          "label": "Spells Known"
+        },
+        {
+          "key": "slot_1",
+          "label": "1st"
+        },
+        {
+          "key": "slot_2",
+          "label": "2nd"
+        },
+        {
+          "key": "slot_3",
+          "label": "3rd"
+        },
+        {
+          "key": "slot_4",
+          "label": "4th"
+        },
+        {
+          "key": "slot_5",
+          "label": "5th"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "+2",
+          "features": [
+            "Ruinous Touch",
+            "Shadowed Weapon",
+            "Sundering Shadow"
+          ],
+          "ruin_dice": "6d4",
+          "shadow_damage": "+1",
+          "spells_known": "—",
+          "slot_1": "—",
+          "slot_2": "—",
+          "slot_3": "—",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "+2",
+          "features": [
+            "Dark Inheritance",
+            "Spellcasting"
+          ],
+          "ruin_dice": "6d4",
+          "shadow_damage": "+1",
+          "spells_known": "3",
+          "slot_1": "2",
+          "slot_2": "—",
+          "slot_3": "—",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "+2",
+          "features": [
+            "Invoke Malice",
+            "Malefic Pledge"
+          ],
+          "ruin_dice": "6d4",
+          "shadow_damage": "+1",
+          "spells_known": "4",
+          "slot_1": "3",
+          "slot_2": "—",
+          "slot_3": "—",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "+2",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "ruin_dice": "7d4",
+          "shadow_damage": "+1",
+          "spells_known": "4",
+          "slot_1": "3",
+          "slot_2": "—",
+          "slot_3": "—",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "+3",
+          "features": [
+            "Extra Attack"
+          ],
+          "ruin_dice": "7d4",
+          "shadow_damage": "+1",
+          "spells_known": "5",
+          "slot_1": "4",
+          "slot_2": "2",
+          "slot_3": "—",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "+3",
+          "features": [
+            "Aura of the Dark Scion"
+          ],
+          "ruin_dice": "7d4",
+          "shadow_damage": "+2",
+          "spells_known": "5",
+          "slot_1": "4",
+          "slot_2": "2",
+          "slot_3": "—",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "+3",
+          "features": [
+            "Malefic Pledge Feature"
+          ],
+          "ruin_dice": "8d4",
+          "shadow_damage": "+2",
+          "spells_known": "6",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "—",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "+3",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "ruin_dice": "8d6",
+          "shadow_damage": "+2",
+          "spells_known": "6",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "—",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "+4",
+          "features": [
+            "Invoke Malice (2/rest)"
+          ],
+          "ruin_dice": "8d6",
+          "shadow_damage": "+2",
+          "spells_known": "7",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "2",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "+4",
+          "features": [
+            "Improved Extra Attack",
+            "Shadow Knight’s Aura"
+          ],
+          "ruin_dice": "9d6",
+          "shadow_damage": "+2",
+          "spells_known": "7",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "2",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "+4",
+          "features": [
+            "Malefic Pledge Feature"
+          ],
+          "ruin_dice": "9d6",
+          "shadow_damage": "+3",
+          "spells_known": "8",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "+4",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "ruin_dice": "9d6",
+          "shadow_damage": "+3",
+          "spells_known": "8",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "—",
+          "slot_5": "—"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "+5",
+          "features": [
+            "Aura Improvements",
+            "Invoke Malice (2nd option)"
+          ],
+          "ruin_dice": "10d6",
+          "shadow_damage": "+3",
+          "spells_known": "9",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "1",
+          "slot_5": "—"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "+5",
+          "features": [
+            "Blasphemous Aegis"
+          ],
+          "ruin_dice": "10d6",
+          "shadow_damage": "+3",
+          "spells_known": "9",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "1",
+          "slot_5": "—"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "+5",
+          "features": [
+            "Malefic Pledge Feature"
+          ],
+          "ruin_dice": "10d8",
+          "shadow_damage": "+3",
+          "spells_known": "10",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "2",
+          "slot_5": "—"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "+5",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "ruin_dice": "11d8",
+          "shadow_damage": "+3",
+          "spells_known": "10",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "2",
+          "slot_5": "—"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "+6",
+          "features": [
+            "Invoke Malice (3rd option)"
+          ],
+          "ruin_dice": "11d8",
+          "shadow_damage": "+4",
+          "spells_known": "11",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "1"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "+6",
+          "features": [
+            "Aura Improvements (2)"
+          ],
+          "ruin_dice": "11d8",
+          "shadow_damage": "+4",
+          "spells_known": "11",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "1"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "+6",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "ruin_dice": "12d8",
+          "shadow_damage": "+4",
+          "spells_known": "12",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "+6",
+          "features": [
+            "Malefic Pledge Feature"
+          ],
+          "ruin_dice": "12d8",
+          "shadow_damage": "+4",
+          "spells_known": "12",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2"
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d10 per dusksworn level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "10 + your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d10 (or 6) + your Constitution modifier per dusksworn level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "All armor, shields"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple weapons, martial weapons"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "None"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Constitution, Charisma"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose two from Athletics, Deception, Insight, Intimidation, Investigation, Perception, and Survival"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Starting Equipment",
+              "blocks": [
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) chain mail or (b) scale mail",
+                    "(a) a greatsword or (b) any martial weapon",
+                    "(a) a shield or (b) any martial weapon that lacks the two-handed property",
+                    "(a) five javelins or (b) any simple melee weapon",
+                    "(a) a dungeoneer’s pack or (b) an explorer’s pack"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "features": [
+      {
+        "name": "Ruinous Touch",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Your touch can harm others. You have a pool of ruin dice that replenishes when you take a long rest. The pool begins as six d4s; the number of dice you have and their size increases as you gain more levels in this class, as shown in the Ruin Dice column of the Dusksworn table."
+          },
+          {
+            "type": "paragraph",
+            "text": "As an action, you can touch a creature and expend any number of remaining ruin dice from your pool, rolling them and dealing necrotic damage to the target equal to the total result of all the dice rolled."
+          }
+        ]
+      },
+      {
+        "name": "Shadowed Weapon",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You learn a ritual that creates a dark, magical bond between yourself and one weapon, which you perform over the course of one hour, and can be done during a short rest. The weapon must be a melee weapon that is within your reach throughout the course of the ritual, at the conclusion of which you touch the weapon and forge the bond, imbuing it with dark energy."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence as you, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand."
+          },
+          {
+            "type": "paragraph",
+            "text": "Additionally, the hand that it is in counts as a free hand for the purpose of casting dusksworn spells when you use it as a spellcasting focus."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can have a single weapon bonded to you at a time with this feature. If you attempt to bond another weapon, you must break your bond with the other one."
+          },
+          {
+            "type": "paragraph",
+            "text": "The weapon stops being your shadowed weapon if you die, perform the 1-hour ritual on another weapon, or you perform the 1-hour ritual to break your bond to it."
+          }
+        ]
+      },
+      {
+        "name": "Sundering Shadow",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The magical bond between you and your shadowed weapon manifests as a vile emanation coming from your weapon. Whenever you score a hit with your shadowed weapon, it deals 1 additional necrotic damage to the target. The necrotic damage dealt increases as you gain more levels in this class, as shown in the Shadow Damage column of the Dusksworn table."
+          },
+          {
+            "type": "paragraph",
+            "text": "Additionally, you gain darkvision out to a range of 60 feet if you don’t already have darkvision from your race."
+          }
+        ]
+      },
+      {
+        "name": "Dark Inheritance",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level, your malevolent will begins to blossom, causing your Sundering Shadow to affect more than just the weapon bonded to you. You gain one of the following features of your choice."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Dusk-Infused Magic",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You weave your infernal strength into your dusksworn spells. Add your Shadow Damage modifier to your dusksworn spell save DC and dusksworn spell attack modifier."
+                  }
+                ]
+              },
+              {
+                "name": "Mantle of the Wicked",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Your Sundering Shadow manifests as a veil of darkness that surrounds you. As long as you are wearing armor and aren’t wielding a shield, your Armor Class increases by an amount equal to your Shadow Damage modifier."
+                  }
+                ]
+              },
+              {
+                "name": "Shadow-Cursed Resilience",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Whenever you take damage, subtract your Shadow Damage modifier from the amount of damage that is dealt to you."
+                  }
+                ]
+              },
+              {
+                "name": "Vile Tenacity",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When you gain this feature, choose one ability score you don’t have proficiency in saving throws with. You add your Shadow Damage modifier to any saving throws you make that use the chosen ability score."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spellcasting",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Also 2nd level, you have learned how to harness the innate magical talent that you possess and channel it to cast spells."
+          },
+          {
+            "type": "subsection",
+            "title": "Spell Slots",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "The Dusksworn table shows how many spell slots you have to cast your dusksworn spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "For example, if you know the 1st-level spell earth tremor and have a 1st-level and a 2nd-level spell slot available, you can cast earth tremor using either slot."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spells Known of 1st Level and Higher",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You know three 1st-level dusksworn spells of your choice."
+              },
+              {
+                "type": "paragraph",
+                "text": "The Spells Known column of the Dusksworn table shows when you learn more dusksworn spells. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level."
+              },
+              {
+                "type": "paragraph",
+                "text": "Moreover, whenever you gain another level in this class, you can choose any number of dusksworn spells you know and replace them with spells from the dusksworn spell list, which also must be of a level for which you have spell slots."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Ability",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Charisma is your spellcasting ability for your dusksworn spells, since the power of your dark magic relies on your ability to project your will onto the rest of the world. You use your Charisma whenever a spell refers to your spellcasting ability. Additionally, you use your Charisma modifier when setting the saving throw DC for a dusksworn spell you cast and when making an attack roll with one."
+              },
+              {
+                "type": "formula",
+                "label": "Spell save DC",
+                "value": "8 + your proficiency bonus + your Charisma modifier"
+              },
+              {
+                "type": "formula",
+                "label": "Spell attack modifier",
+                "value": "your proficiency bonus + your Charisma modifier"
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Focus",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use your shadowed weapon or a cursed item that you’re attuned to as the focus for your dusksworn spells."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Invoke Malice",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 3rd level, you gain the ability to channel your wicked might to fuel magical effects."
+          },
+          {
+            "type": "paragraph",
+            "text": "You start with three such options: one of your choice from the following options, and two additional options granted by your chosen Malefic Pledge. When you reach 13th level, and again at 17th level, you learn one additional Invoke Malice option from this feature."
+          },
+          {
+            "type": "paragraph",
+            "text": "Whenever you use your Invoke Malice, you decide which option you use. You must then finish a short or long rest to use your Invoke Malice again. Starting at 9th level, you can use your Invoke Malice twice between rests, regaining any expended uses when you finish a short or long rest."
+          },
+          {
+            "type": "paragraph",
+            "text": "Some Invoke Malice effects require saving throws. When you use such an effect, the DC equals your dusksworn spell save DC."
+          },
+          {
+            "type": "subsection",
+            "title": "Invoke Malice Options",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you reach 3rd level, choose one of the options shown below to learn. When you gain another level as a dusksworn, you can replace one Invoke Malice option you know with this feature with another option you could learn with this feature."
+              },
+              {
+                "type": "options",
+                "items": [
+                  {
+                    "name": "Aura of Darkness",
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "text": "You can use a bonus action using your Invoke Malice to emanate an aura that eats away at the light around you for 1 minute. For the duration, any dim light that is within 30 feet of you becomes darkness and bright light in the same area becomes dim light instead. You can end this effect on your turn as part of any other action. If you fall unconscious, this effect immediately ends."
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Mortal Deliverance",
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "text": "You utter words of fear as an action, using your Invoke Malice. Each other creature within 30 feet of you that can see or hear you and is a humanoid, other than creatures of your choice, must make a Wisdom saving throw. A creature falls prone as it kneels in terror on a failed save. A creature automatically succeeds if it is immune to being frightened, while a creature that’s blinded, frightened, or that is missing at least half its hit points makes the saving throw with disadvantage."
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Turn Divinity",
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "text": "As an action, you speak a vulgar curse using your Invoke Malice. Each other creature within 30 feet of you that can see or hear you and is a celestial takes 3d10 necrotic damage and must make a Wisdom saving throw. On a failed save, a creature is turned for 1 minute or until its hit points drop to less than half its maximum hit points. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. It can use only the Dash action or try to escape from an effect that prevents it from moving or its action. If there is nowhere to move, the creature can use the Dodge action."
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Withering Command",
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "text": "You utter a word of withering as an action, using your Invoke Malice. Each other creature within 30 feet of you that is a plant must make a Constitution saving throw. On a failed save, a creature has disadvantage on all ability checks, attack rolls, and saving throws it makes for the next minute. In addition, small, nonmagical plants within 30 feet of you that aren’t creatures, such as flowers and shrubs, wither and die instantly."
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Word of Sacrilege",
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "text": "You utter a blasphemous incantation as an action, using your Invoke Malice. Each other creature of your choice that you can see within 30 feet of you, isn’t an undead or construct, and has a current hit points is equal to or less than twice your dusksworn level is rendered unconscious for 1 minute."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Malefic Pledge",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 3rd level, you undertake a pledge that damns you forever as a dusksworn. Until now, you have only tasted a fraction of the power that you wield. Now you must take a Malefic Pledge that’s detailed at the end of the class description. The pledge that you choose grants you features when you first choose it at 3rd level. The pledge you choose also grants you two additional Invoke Malice options, and additional features at 7th, 11th, 15th, and 20th level."
+          },
+          {
+            "type": "subsection",
+            "title": "Pledge Spells",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Each pledge has a list of spells associated with it. You gain access to these spells at the levels specified in the pledge’s description. Pledge spells don’t count towards your known spells. Once you gain access to a pledge spell, you always have that spell memorized."
+              },
+              {
+                "type": "paragraph",
+                "text": "When you gain a pledge spell that doesn’t appear on the dusksworn spell list or a malefic pledge feature teaches you a spell that doesn’t appear on the dusksworn spell list, the spell is nonetheless a dusksworn spell for you."
+              }
+            ]
+          },
+          {
+            "type": "note",
+            "title": "Malefic Pledge Spellcasting",
+            "text": "Some malefic pledge features allow you to cast certain spells without expending spell slots. A spell that’s cast this way doesn’t require material components."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Extra Attack",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, when you take the Attack action on your turn, you can use your Ruinous Touch in place of one of the attacks you make with it."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you reach 10th level, your martial prowess allows you to add your dusksworn spells to any sequence of attacks that you make. Whenever you take the Attack action on your turn, you can use your Ruinous Touch or cast a dusksworn spell you know of 1st level or higher with a casting time of 1 action in place of one of the attacks you make with it."
+          }
+        ]
+      },
+      {
+        "name": "Aura of the Dark Scion",
+        "level": "6",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 6th level, the darkest emotions (despair or hatred, for instance) within yourself manifest as an aura that you emanate and other creatures can sense. You gain one of the following features of your choice."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unless specified otherwise, the range of each aura is 10 feet, and increases to 20 feet at 13th level and to 30 feet at 18th level."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Aura of Contempt",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When a hostile creature that’s within the aura’s range makes an attack roll against a creature other than you, that creature subtracts your Charisma modifier (with a minimum penalty of -1) from the attack roll, provided you’re not incapacitated."
+                  }
+                ]
+              },
+              {
+                "name": "Aura of Despair",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When a hostile creature that’s within the aura’s range must make a saving throw, the creature subtracts your Charisma modifier (with a minimum penalty of -1) from the saving throw. You must be conscious to grant this penalty."
+                  }
+                ]
+              },
+              {
+                "name": "Aura of Hopelessness",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You constantly emanate an aura of terror that drains others of their hope. Willpower, or other positive emotion. It extends 10 feet from you in every direction, but not through total cover. If a creature is frightened, its speed is reduced to 0 while it is in the aura, and that creature takes necrotic damage equal to half your dusksworn level if it starts its turn there. The range of this aura increases to 20 feet at 13th level and 30 feet at 18th level."
+                  }
+                ]
+              },
+              {
+                "name": "Aura of Infirmity",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When a hostile creature that’s within the aura’s range rolls damage dice, the creature subtracts your Charisma modifier (a minimum penalty of -1) and your proficiency bonus from the total rolled, potentially causing them to deal no damage. You must be conscious to grant this penalty."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shadow Knight’s Aura",
+        "level": "10",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 10th level, you manifest another aura as a symbol of your ever-growing dark power. You gain one of the following features of your choice. Alternatively, you can gain an aura from Aura of the Dark Scion that you do not already have instead."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unless specified otherwise, the range of each aura is 10 feet, and increases to 20 feet at 13th level and to 30 feet at 18th level."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Aura of Admonition",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When a hostile creature that’s within the aura’s range misses with an attack roll, that creature can’t make any more attacks for the rest of the turn if you’re conscious."
+                  }
+                ]
+              },
+              {
+                "name": "Aura of Dread",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You radiate an aura of overwhelming negativity while you aren’t incapacitated, which is also strong enough to suppress the emotions of others. The aura extends 10 feet from you in every direction, but not through total cover. At the beginning of each of your turns, you can choose up to one hostile creature in the aura’s area. That creature must succeed on a Wisdom saving throw or it becomes frightened of you till the beginning of your next turn, and it makes the saving throw with advantage if you targeted it with this aura during your previous turn. On a successful save, a creature can’t be targeted with this aura again for the next 24 hours. The save DC of this feature equals your dusksworn spell save DC."
+                  }
+                ]
+              },
+              {
+                "name": "Aura of Scorn",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You emanate an aura of disdain that overwhelms enemies. Whenever a hostile creature that’s within the aura’s range hits you with an attack, that creature takes necrotic damage equal to your Charisma modifier (minimum of 1) if you’re not incapacitated."
+                  }
+                ]
+              },
+              {
+                "name": "Aura of Trepidation",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Whenever a hostile creature that’s within the aura’s range makes an attack roll or subjects one or more creatures to make a saving throw with a spell or effect, it must roll a d6 and subtract the result rolled from the attack roll or the save DC of the spell or effect. You must be conscious to grant this penalty."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Aura Improvements",
+        "level": "13",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 13th level, and again at 18th level, the range of your auras are increased."
+          }
+        ]
+      },
+      {
+        "name": "Blasphemous Aegis",
+        "level": "14",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 14th level, you are so empowered by your vile might that you are immune to disease and poison, cannot be charmed, and have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons."
+          }
+        ]
+      }
+    ]
+  },
+  "notes": [
+    {
+      "title": "Title Terminology",
+      "description": "Dusksworn is the given title of the (unlucky?) people who wield these powers, specific to a particular plane of existence. Setting agnostic titles that you can use in lieu of this are the Doomknight, Forsaken, or Praetorian, for instance."
+    }
+  ]
+}

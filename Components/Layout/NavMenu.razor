@@ -1,93 +1,765 @@
-<nav class="side-nav"
-     aria-label="Main navigation">
+@rendermode InteractiveServer
 
+@using System.Text.Json
+@using Microsoft.AspNetCore.Components.Routing
+@implements IDisposable
 
-    <!-- SITE EMBLEM / LOGO -->
-    <a class="side-brand"
-       href="/">
+@inject NavigationManager Navigation
+@inject IWebHostEnvironment Environment
 
+<nav class="side-nav" aria-label="Site navigation">
+
+    <a class="side-brand" href="/">
         <img class="brand-mark"
              src="/images/site-emblem.png"
              alt="Royal Treasury emblem" />
-
-        <span>
-            Royal Treasury
-        </span>
-
+        <span>Royal Treasury</span>
     </a>
 
-
-    <!-- MAIN -->
     <div class="side-section">
+        <div class="side-heading">Path</div>
 
-        <div class="side-heading">
-            Main
-        </div>
-
-        <NavLink class="side-link"
-                 href=""
-                 Match="NavLinkMatch.All">
-            Home
-        </NavLink>
-
+        @foreach (var crumb in PathItems)
+        {
+            <a class="side-link path-link"
+               href="@crumb.Href">
+                @crumb.Label
+            </a>
+        }
     </div>
 
+    @if (IsClassDetailsPage)
+    {
+        <div class="side-section">
+            <div class="side-heading">Index</div>
 
-    <!-- REFERENCE -->
-    <div class="side-section">
-
-        <div class="side-heading">
-            Reference
+            @foreach (var item in ClassIndexItems)
+            {
+                <a class="side-link index-link"
+                   href="@item.Href">
+                    @item.Label
+                </a>
+            }
         </div>
+    }
+    else if (IsClassesPage)
+    {
+        <div class="side-section">
+            <div class="side-heading">Classes</div>
 
+            @foreach (var classItem in ClassLinks)
+            {
+                <a class="side-link"
+                   href="@classItem.Href">
+                    @classItem.Label
+                </a>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="side-section">
+            <div class="side-heading">Reference</div>
 
-        <NavLink class="side-link"
-                 href="rules">
-            Rules
-        </NavLink>
-
-
-        <NavLink class="side-link"
-                 href="races">
-            Races
-        </NavLink>
-
-
-        <NavLink class="side-link"
-                 href="background">
-            Background
-        </NavLink>
-
-
-        <NavLink class="side-link"
-                 href="classes">
-            Classes
-        </NavLink>
-
-
-        <NavLink class="side-link"
-                 href="spells">
-            Spells
-        </NavLink>
-
-
-        <NavLink class="side-link"
-                 href="feats">
-            Feats
-        </NavLink>
-
-
-        <NavLink class="side-link"
-                 href="items">
-            Items
-        </NavLink>
-
-
-        <NavLink class="side-link"
-                 href="bestiary">
-            Bestiary
-        </NavLink>
-
-    </div>
+            @foreach (var item in ReferenceItems)
+            {
+                <a class="side-link"
+                   href="@item.Href">
+                    @item.Label
+                </a>
+            }
+        </div>
+    }
 
 </nav>
+
+@code {
+    private string currentPath = "/";
+    private string currentQuery = string.Empty;
+
+    private sealed record NavItem(string Label, string Href);
+
+    protected override void OnInitialized()
+    {
+        UpdateLocation();
+        Navigation.LocationChanged += HandleLocationChanged;
+    }
+
+    private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        UpdateLocation();
+        _ = InvokeAsync(StateHasChanged);
+    }
+
+    private void UpdateLocation()
+    {
+        var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+        currentPath = uri.AbsolutePath.TrimEnd('/');
+
+        if (string.IsNullOrWhiteSpace(currentPath))
+            currentPath = "/";
+
+        currentQuery = uri.Query;
+    }
+
+    private bool IsClassesPage =>
+        string.Equals(currentPath, "/classes", StringComparison.OrdinalIgnoreCase);
+
+    private bool IsClassDetailsPage =>
+        currentPath.StartsWith("/classes/", StringComparison.OrdinalIgnoreCase);
+
+    private string? CurrentClassSlug
+    {
+        get
+        {
+            if (!IsClassDetailsPage)
+                return null;
+
+            var parts = currentPath
+                .Split('/', StringSplitOptions.RemoveEmptyEntries);
+
+            return parts.Length >= 2
+                ? parts[1]
+                : null;
+        }
+    }
+
+    private string ActiveClassTab
+    {
+        get
+        {
+            var tab = ReadQueryValue("tab");
+
+            return string.Equals(tab, "mechanics", StringComparison.OrdinalIgnoreCase)
+                ? "mechanics"
+                : "lore";
+        }
+    }
+
+    private string? ReadQueryValue(string key)
+    {
+        if (string.IsNullOrWhiteSpace(currentQuery))
+            return null;
+
+        var query = currentQuery.TrimStart('?');
+
+        foreach (var pair in query.Split(
+            '&',
+            StringSplitOptions.RemoveEmptyEntries))
+        {
+            var parts = pair.Split('=', 2);
+
+            if (!string.Equals(
+                Uri.UnescapeDataString(parts[0]),
+                key,
+                StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
+            return parts.Length == 2
+                ? Uri.UnescapeDataString(parts[1])
+                : string.Empty;
+        }
+
+        return null;
+    }
+
+    private IReadOnlyList<NavItem> PathItems
+    {
+        get
+        {
+            var items = new List<NavItem>
+            {
+                new("Home", "/")
+            };
+
+            if (currentPath == "/")
+                return items;
+
+            if (IsClassDetailsPage)
+            {
+                items.Add(new("Classes", "/classes"));
+
+                var slug = CurrentClassSlug;
+                if (!string.IsNullOrWhiteSpace(slug))
+                    items.Add(new(GetClassDisplayName(slug), $"/classes/{slug}"));
+
+                return items;
+            }
+
+            if (IsClassesPage)
+            {
+                items.Add(new("Classes", "/classes"));
+                return items;
+            }
+
+            if (currentPath.StartsWith("/spells/", StringComparison.OrdinalIgnoreCase))
+            {
+                items.Add(new("Spells", "/spells"));
+                items.Add(new("Spell", currentPath));
+                return items;
+            }
+
+            if (currentPath.StartsWith("/bestiary/", StringComparison.OrdinalIgnoreCase))
+            {
+                items.Add(new("Bestiary", "/bestiary"));
+                items.Add(new("Monster", currentPath));
+                return items;
+            }
+
+            var topLevel = GetTopLevelReferenceItem();
+            if (topLevel is not null)
+                items.Add(topLevel);
+
+            return items;
+        }
+    }
+
+    private NavItem? GetTopLevelReferenceItem()
+    {
+        foreach (var item in AllReferenceItems)
+        {
+            if (string.Equals(
+                currentPath,
+                item.Href,
+                StringComparison.OrdinalIgnoreCase))
+            {
+                return item;
+            }
+        }
+
+        return null;
+    }
+
+    private IReadOnlyList<NavItem> ReferenceItems
+    {
+        get
+        {
+            var hiddenHref = GetCurrentReferenceCategory();
+
+            return AllReferenceItems
+                .Where(item =>
+                    !string.Equals(
+                        item.Href,
+                        hiddenHref,
+                        StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+    }
+
+    private string? GetCurrentReferenceCategory()
+    {
+        if (currentPath.StartsWith("/rules", StringComparison.OrdinalIgnoreCase))
+            return "/rules";
+
+        if (currentPath.StartsWith("/races", StringComparison.OrdinalIgnoreCase))
+            return "/races";
+
+        if (currentPath.StartsWith("/background", StringComparison.OrdinalIgnoreCase))
+            return "/background";
+
+        if (currentPath.StartsWith("/spells", StringComparison.OrdinalIgnoreCase))
+            return "/spells";
+
+        if (currentPath.StartsWith("/feats", StringComparison.OrdinalIgnoreCase))
+            return "/feats";
+
+        if (currentPath.StartsWith("/items", StringComparison.OrdinalIgnoreCase))
+            return "/items";
+
+        if (currentPath.StartsWith("/bestiary", StringComparison.OrdinalIgnoreCase))
+            return "/bestiary";
+
+        return null;
+    }
+
+    private static readonly IReadOnlyList<NavItem> AllReferenceItems =
+        new List<NavItem>
+        {
+            new("Rules", "/rules"),
+            new("Races", "/races"),
+            new("Background", "/background"),
+            new("Classes", "/classes"),
+            new("Spells", "/spells"),
+            new("Feats", "/feats"),
+            new("Items", "/items"),
+            new("Bestiary", "/bestiary")
+        };
+
+    private IReadOnlyList<NavItem> ClassLinks =>
+        LoadClassSummaries()
+            .Select(item =>
+                new NavItem(
+                    item.Name,
+                    $"/classes/{item.Slug}"))
+            .ToList();
+
+    private sealed record ClassSummary(string Name, string Slug);
+
+    private IReadOnlyList<ClassSummary> LoadClassSummaries()
+    {
+        var fallback = new[]
+        {
+            "Arbiter",
+            "Artificer",
+            "Barbarian",
+            "Bard",
+            "Bladebearer",
+            "Blood Minister",
+            "Clergy",
+            "Cleric",
+            "Dragoneer",
+            "Druid",
+            "Dusksworn",
+            "Favored Soul",
+            "Fighter",
+            "Imperator",
+            "Inscriptor",
+            "Jaeger",
+            "Magus",
+            "Paladin",
+            "Petal Knight",
+            "Ranger",
+            "Rogue",
+            "Sorcerer",
+            "Sword Saint",
+            "Warlock",
+            "Wizard"
+        };
+
+        try
+        {
+            var root = Path.Combine(
+                Environment.WebRootPath,
+                "data",
+                "classes");
+
+            if (!Directory.Exists(root))
+            {
+                return fallback
+                    .Select(name =>
+                        new ClassSummary(
+                            name,
+                            ToSlug(name)))
+                    .ToList();
+            }
+
+            var found = new List<ClassSummary>();
+
+            foreach (var folder in Directory.EnumerateDirectories(root))
+            {
+                var folderName = Path.GetFileName(folder);
+                var slug = ToSlug(folderName);
+                var name = folderName;
+
+                var jsonPath = Directory
+                    .EnumerateFiles(
+                        folder,
+                        "*.json",
+                        SearchOption.TopDirectoryOnly)
+                    .OrderBy(path => path)
+                    .FirstOrDefault();
+
+                if (jsonPath is not null)
+                {
+                    try
+                    {
+                        using var document =
+                            JsonDocument.Parse(
+                                File.ReadAllText(jsonPath));
+
+                        if (document.RootElement.TryGetProperty(
+                            "name",
+                            out var nameElement))
+                        {
+                            name =
+                                nameElement.GetString()
+                                ?? name;
+                        }
+
+                        if (document.RootElement.TryGetProperty(
+                            "slug",
+                            out var slugElement))
+                        {
+                            slug =
+                                slugElement.GetString()
+                                ?? slug;
+                        }
+                    }
+                    catch
+                    {
+                        // Keep the folder-derived fallback.
+                    }
+                }
+
+                found.Add(
+                    new ClassSummary(
+                        name,
+                        slug));
+            }
+
+            return found
+                .OrderBy(item => item.Name)
+                .ToList();
+        }
+        catch
+        {
+            return fallback
+                .Select(name =>
+                    new ClassSummary(
+                        name,
+                        ToSlug(name)))
+                .ToList();
+        }
+    }
+
+    private string GetClassDisplayName(string slug)
+    {
+        return LoadClassSummaries()
+            .FirstOrDefault(item =>
+                string.Equals(
+                    item.Slug,
+                    slug,
+                    StringComparison.OrdinalIgnoreCase))
+            ?.Name
+            ?? HumanizeSlug(slug);
+    }
+
+    private IReadOnlyList<NavItem> ClassIndexItems
+    {
+        get
+        {
+            var slug = CurrentClassSlug;
+
+            if (string.IsNullOrWhiteSpace(slug))
+                return Array.Empty<NavItem>();
+
+            var prefix =
+                $"/classes/{slug}?tab={ActiveClassTab}";
+
+            var items = new List<NavItem>();
+
+            if (ActiveClassTab == "lore")
+            {
+                items.Add(
+                    new NavItem(
+                        "Overview",
+                        $"{prefix}#overview"));
+
+                using var document = TryLoadClassDocument(slug);
+
+                if (document is null)
+                    return items;
+
+                var root = document.RootElement;
+
+                if (TryGetArray(
+                    root,
+                    "lore_sections",
+                    out var loreSections))
+                {
+                    foreach (var section in loreSections.EnumerateArray())
+                    {
+                        var title = GetString(section, "title");
+                        if (!string.IsNullOrWhiteSpace(title))
+                        {
+                            items.Add(
+                                new NavItem(
+                                    title,
+                                    $"{prefix}#{AnchorId(title)}"));
+                        }
+                    }
+                }
+
+                if (root.TryGetProperty(
+                    "roleplay",
+                    out var roleplay))
+                {
+                    if (HasString(roleplay, "complexity_note"))
+                    {
+                        items.Add(
+                            new NavItem(
+                                "Complexity",
+                                $"{prefix}#complexity"));
+                    }
+
+                    if (HasString(roleplay, "quick_build"))
+                    {
+                        items.Add(
+                            new NavItem(
+                                "Quick Build",
+                                $"{prefix}#quick-build"));
+                    }
+
+                    if (roleplay.TryGetProperty("quirks", out _))
+                    {
+                        items.Add(
+                            new NavItem(
+                                "Quirks",
+                                $"{prefix}#quirks"));
+                    }
+
+                    if (roleplay.TryGetProperty("dark_origin", out _))
+                    {
+                        items.Add(
+                            new NavItem(
+                                "Dark Origin",
+                                $"{prefix}#dark-origin"));
+                    }
+                }
+
+                return items;
+            }
+
+            items.Add(
+                new NavItem(
+                    "Multiclassing",
+                    $"{prefix}#multiclassing"));
+
+            items.Add(
+                new NavItem(
+                    "Advancement",
+                    $"{prefix}#advancement"));
+
+            items.Add(
+                new NavItem(
+                    "Class Features",
+                    $"{prefix}#class-features"));
+
+            using (var document = TryLoadClassDocument(slug))
+            {
+                if (document is null)
+                    return items;
+
+                var root = document.RootElement;
+
+                if (!root.TryGetProperty(
+                    "mechanics",
+                    out var mechanics))
+                {
+                    return items;
+                }
+
+                if (TryGetArray(
+                    mechanics,
+                    "pre_feature_sections",
+                    out var preSections))
+                {
+                    foreach (var section in preSections.EnumerateArray())
+                    {
+                        var title = GetPreFeatureTitle(section);
+
+                        if (!string.IsNullOrWhiteSpace(title))
+                        {
+                            items.Add(
+                                new NavItem(
+                                    title,
+                                    $"{prefix}#{AnchorId(title)}"));
+                        }
+                    }
+                }
+
+                if (TryGetArray(
+                    mechanics,
+                    "features",
+                    out var features))
+                {
+                    foreach (var feature in features.EnumerateArray())
+                    {
+                        var name = GetString(feature, "name");
+
+                        if (!string.IsNullOrWhiteSpace(name))
+                        {
+                            items.Add(
+                                new NavItem(
+                                    name,
+                                    $"{prefix}#{AnchorId(name)}"));
+                        }
+                    }
+                }
+
+                if (TryGetArray(
+                    mechanics,
+                    "appendices",
+                    out var appendices))
+                {
+                    foreach (var appendix in appendices.EnumerateArray())
+                    {
+                        var title = GetString(appendix, "title");
+
+                        if (!string.IsNullOrWhiteSpace(title))
+                        {
+                            items.Add(
+                                new NavItem(
+                                    title,
+                                    $"{prefix}#{AnchorId(title)}"));
+                        }
+                    }
+                }
+            }
+
+            return items;
+        }
+    }
+
+    private JsonDocument? TryLoadClassDocument(string slug)
+    {
+        try
+        {
+            var root = Path.Combine(
+                Environment.WebRootPath,
+                "data",
+                "classes");
+
+            if (!Directory.Exists(root))
+                return null;
+
+            var folder = Directory
+                .EnumerateDirectories(root)
+                .FirstOrDefault(path =>
+                    string.Equals(
+                        ToSlug(Path.GetFileName(path)),
+                        slug,
+                        StringComparison.OrdinalIgnoreCase));
+
+            if (folder is null)
+                return null;
+
+            var jsonPath = Directory
+                .EnumerateFiles(
+                    folder,
+                    "*.json",
+                    SearchOption.TopDirectoryOnly)
+                .OrderBy(path => path)
+                .FirstOrDefault();
+
+            return jsonPath is null
+                ? null
+                : JsonDocument.Parse(
+                    File.ReadAllText(jsonPath));
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    private static string? GetPreFeatureTitle(JsonElement section)
+    {
+        if (section.TryGetProperty(
+            "content_section",
+            out var contentSection))
+        {
+            return GetString(
+                contentSection,
+                "title");
+        }
+
+        if (section.TryGetProperty(
+            "content",
+            out var content))
+        {
+            return GetString(
+                content,
+                "title");
+        }
+
+        return GetString(
+            section,
+            "title");
+    }
+
+    private static bool TryGetArray(
+        JsonElement element,
+        string propertyName,
+        out JsonElement array)
+    {
+        if (element.TryGetProperty(
+            propertyName,
+            out array)
+            &&
+            array.ValueKind == JsonValueKind.Array)
+        {
+            return true;
+        }
+
+        array = default;
+        return false;
+    }
+
+    private static string? GetString(
+        JsonElement element,
+        string propertyName)
+    {
+        if (element.TryGetProperty(
+            propertyName,
+            out var value)
+            &&
+            value.ValueKind == JsonValueKind.String)
+        {
+            return value.GetString();
+        }
+
+        return null;
+    }
+
+    private static bool HasString(
+        JsonElement element,
+        string propertyName)
+    {
+        return !string.IsNullOrWhiteSpace(
+            GetString(
+                element,
+                propertyName));
+    }
+
+    private static string ToSlug(string value)
+    {
+        return string.Join(
+            "-",
+            value
+                .Trim()
+                .ToLowerInvariant()
+                .Split(
+                    new[] { ' ', '_', '-' },
+                    StringSplitOptions.RemoveEmptyEntries));
+    }
+
+    private static string HumanizeSlug(string slug)
+    {
+        return string.Join(
+            " ",
+            slug
+                .Split(
+                    '-',
+                    StringSplitOptions.RemoveEmptyEntries)
+                .Select(word =>
+                    char.ToUpperInvariant(word[0])
+                    + word[1..]));
+    }
+
+    private static string AnchorId(string value)
+    {
+        var chars = value
+            .ToLowerInvariant()
+            .Select(character =>
+                char.IsLetterOrDigit(character)
+                    ? character
+                    : '-')
+            .ToArray();
+
+        var result =
+            new string(chars);
+
+        while (result.Contains("--"))
+            result = result.Replace("--", "-");
+
+        return result.Trim('-');
+    }
+
+    public void Dispose()
+    {
+        Navigation.LocationChanged -= HandleLocationChanged;
+    }
+}

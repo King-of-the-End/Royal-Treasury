@@ -1,0 +1,1333 @@
+{
+  "name": "Arbiter",
+  "slug": "arbiter",
+  "quote": "“Their moniker does them no justice. When one of their kind arrives on the battlefield, the fates of those they have chosen are sealed in stone - what awaits their quarry is either death, or excruciating pain. They are the hands of judgment and to face one without dread in your heart would be wrong.“ — ?",
+  "introduction": [
+    "Descending the steps to an arena, a human eyes the foe across from her, ready to battle to the death. She waves to them not in greeting, but in preparation for her victory - by the time her hand returns to her side, her prey has already been marked. As they meet and draw weapons, she begins her furious onslaught that astounds her opponent; making quick work of them, all that remains is a grisly spectacle.",
+    "With no option but to retreat from a spellcaster’s arcane barrage, an elf dances in sync with the caster’s spells. But they cannot do it forever; in a desperate act she marks her attacker with a tooth-shaped crest. At the last moment this act gives her the strength she needs to avoid a fireball that streaks past her.",
+    "A dragonborn chuckles as two orcs flank him; with a flick of his wrists, two blades appear before him. Pointing a finger at each orc, the two blades fly in opposite directions, striking their targets.",
+    "No matter their race or upbringing, arbiters are united by the unique ability to mark their prey with a primeval power that allows them to dedicate themselves to a single foe and an unnatural martial prowess, evoking dread in those they’ve marked for defeat. As judges - be it self-proclaimed or chosen - they mete out justice as they see fit, one death or triumph at a time."
+  ],
+  "lore_sections": [
+    {
+      "title": "An Ancient Epithet",
+      "paragraphs": [
+        "Before they could name themselves, those who witnessed the unfathomable might they possessed gave them their title first. With powers beyond comprehending, they are walking myths rumored to slay all who would cross them in their journey for glory or redemption.",
+        "Arbiters build upon the unique ability to brand others with a crest that allows them to focus on a single foe in combat at a time. One marked with their crest knows they are facing the wrath of an executioner who will not yield until either of them falls.",
+        "An arbiter is an anomaly that can occur anywhere - from royalty, to your average soldier, or even folk with nothing in their name; however, an arbiter’s power most often awakens in those with an affinity for martial combat and an insatiable desire for greatness, or some cases, repentance. Such might awakens very rarely, and even those who gain the powers of an arbiter rarely awaken them to their fullest extent."
+      ]
+    },
+    {
+      "title": "The Primordial Crest",
+      "paragraphs": [
+        "Arbiters wield the unique ability to mark creatures with a special crest, whose properties outside of combat are largely unknown. Few know the extent of the origins of arbiters and their powers, and of the few who do know the source of them and the powers they wield, even fewer would part with such wisdom. Was it something so paramount that fanned the fires of their existence, or merely an event that is so insignificant that it wasn’t worth etching their beginnings into the annals of history?",
+        "This unique power, despite its historical insignificance, is one that has been studied with no fruit borne from its efforts. Because of the scarcity of arbiters, it is very difficult to gauge what arbiters are truly capable of. Those born with the spark of an arbiter or inherit it can call upon its powers with a flick of their wrist or with careful practice. Meanwhile, those who attempt to emulate the powers of an arbiter fail spectacularly or produce no results whatsoever."
+      ]
+    },
+    {
+      "title": "Hand of Judgment",
+      "paragraphs": [
+        "The killing gaze of an arbiter is unmistakable. In combat, they exude an aura that none can miss - the shadow of death that’s on the horizon. Due to their prowess in combat (either intended or not) and the tales that follow them, they tend to fall into one of two camps: executioners that act in good will and carry out the words of judges, or renegades who ignore the law and kill and maim as a means to an end.",
+        "Not all arbiters use the power bestowed upon them. Why does yours use the primeval gift they carry? Does it allow them to flaunt their martial prowess, make a living, or wade through life one day at a time? Does your character use this gift to achieve their goals as best as they can? Or do they try to live as monotonously as possible, striving to be better not with this entreatment, but with their own hands?"
+      ]
+    },
+    {
+      "title": "Creating an Arbiter",
+      "paragraphs": [
+        "When you are creating your arbiter, consider these two specific elements: the origin of the spark that has given them their powers and how it has manifested, and how they intend to use this primeval brilliance. Have you accepted this power, or do you resent it for the expectations it has laid upon you?",
+        "Arbiters are known for their martial prowess, but that doesn’t always come naturally. You might’ve enjoyed years of formal training in an army or militia, or perhaps you studied under the tutelage of a mentor keen on sharpening the skills you had at a young age.",
+        "After adventuring for some time, all arbiters must answer the call - to be a hand of judgment, or a renegade with rising ambitions and their own definition of judgment. Is the spark within them a festering curse that will only make you more ruthless as time passes, or is it a blessing that allows them to execute those aligned with forces that would watch the world burn? You may possibly divine it as an instrument that has allowed you to do as you see fit."
+      ]
+    },
+    {
+      "title": "Unfathomable Whimsy",
+      "paragraphs": [
+        "No two arbiters act the same, and rarely do two share the same origin. To add some texture to your arbiter, consider quirks that set them apart from others - for example you may despise the nobility you seek to become, or you try to refrain from saying the names of others. They have no effect on the game, but your character might become irritated or upset if their quirk is bothered. They are a great role-playing tool to add character to the game. You can roll or pick from the Quirks table, or design your own. Try to aim for at least two quirks to give your character, so it is more likely for them to come into play."
+      ]
+    }
+  ],
+  "roleplay": {
+    "complexity_note": "The arbiter is a complex class, further complicated by its many subclasses. Its primary feature requires careful decision making, and several of the arbiter’s subclasses necessitate tracking different resources. You should not play this class if you are looking for a class that is simple and straightforward to play.",
+    "quick_build": "You can create an arbiter by following these suggestions. First, Constitution should be your character’s highest ability score, followed by Strength or Dexterity, depending on what kind of martial character you want. Make Intelligence one of your highest ability scores if you want to become a hand of arrogation, or Wisdom if you decide to become a seneschal. Then choose the soldier background.",
+    "quirks": [
+      {
+        "d20": 1,
+        "quirk": "You refuse to read and write; you’d rather talk."
+      },
+      {
+        "d20": 2,
+        "quirk": "You refuse to eat food given to you by others."
+      },
+      {
+        "d20": 3,
+        "quirk": "You never speak the names of other creatures."
+      },
+      {
+        "d20": 4,
+        "quirk": "You never make direct eye contact with others."
+      },
+      {
+        "d20": 5,
+        "quirk": "You believe you’re the standard for acceptable."
+      },
+      {
+        "d20": 6,
+        "quirk": "Your enemies get no quarter - no foe must live."
+      },
+      {
+        "d20": 7,
+        "quirk": "You prefer fighting with weapons, not speeches."
+      },
+      {
+        "d20": 8,
+        "quirk": "You swear your fealty to no one except yourself."
+      },
+      {
+        "d20": 9,
+        "quirk": "You’re only truly at home in the midst of battle."
+      },
+      {
+        "d20": 10,
+        "quirk": "Any who mock your prowess will be punished."
+      },
+      {
+        "d20": 11,
+        "quirk": "You look down upon casters and magical creatures."
+      },
+      {
+        "d20": 12,
+        "quirk": "You perceive the most minor of slights as offenses worthy of punishment by death. You will be treated as respectably as you should be."
+      },
+      {
+        "d20": 13,
+        "quirk": "A creature that uses psionics is an abomination that must be purged. The only one who doesn’t abide by the rules of the Weave is you."
+      },
+      {
+        "d20": 14,
+        "quirk": "You prefer fighting on even terms."
+      },
+      {
+        "d20": 15,
+        "quirk": "You carry your possessions at all times, letting go of anything you cannot carry, never letting others hold onto what is yours."
+      },
+      {
+        "d20": 16,
+        "quirk": "You prefer holding material wealth instead of coins."
+      },
+      {
+        "d20": 17,
+        "quirk": "You scorn those who appear incompetent in battle."
+      },
+      {
+        "d20": 18,
+        "quirk": "You take too much pride in your martial prowess to admit it’s time to flee when the battle isn’t going in your favor."
+      },
+      {
+        "d20": 19,
+        "quirk": "No matter how seriously you’re wounded, you don’t need your injuries tended to - you will not stop until your quarry is slain."
+      },
+      {
+        "d20": 20,
+        "quirk": "Battle is no place for restraint. You do not make it easy for your enemy to defeat you, no matter who they are and expect them to return the favor in kind."
+      }
+    ]
+  },
+  "mechanics": {
+    "multiclassing": {
+      "title": "Multiclassing",
+      "kicker": "Optional Rule",
+      "paragraphs": [
+        "If your group uses the optional rule on multiclassing in the Player’s Handbook, you must meet the prerequisites listed below in order to multiclass into an arbiter."
+      ],
+      "cards": [
+        {
+          "title": "Hand of Arrogation",
+          "text": "Intelligence score of at least 13."
+        },
+        {
+          "title": "Seneschal",
+          "text": "Wisdom score of at least 13."
+        }
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "The prerequisites to multiclass into an arbiter or take a level in another class if you are already an arbiter is a Strength or Dexterity score of at least 13 and Constitution score of at least 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "If arbiter isn’t your initial class, you gain proficiency with simple weapons, martial weapons, and one skill from the class’s skill list."
+        }
+      ]
+    },
+    "advancement": {
+      "title": null,
+      "kicker": "Advancement",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "marked_bonus",
+          "label": "Marked Bonus"
+        },
+        {
+          "key": "marked_penalty",
+          "label": "Marked Penalty"
+        },
+        {
+          "key": "overrides",
+          "label": "Overrides"
+        },
+        {
+          "key": "birthrights",
+          "label": "Birthrights"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "+2",
+          "features": "Arbiter’s Ascension, Ruincrest",
+          "marked_bonus": "+2",
+          "marked_penalty": "-3",
+          "overrides": "2",
+          "birthrights": "—"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "+2",
+          "features": "Primeval Birthright, Unyielding Preeminence",
+          "marked_bonus": "+2",
+          "marked_penalty": "-3",
+          "overrides": "2",
+          "birthrights": "2"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "+2",
+          "features": "Martial Acumen, Arbiter’s Ascension Feature",
+          "marked_bonus": "+3",
+          "marked_penalty": "-3",
+          "overrides": "3",
+          "birthrights": "2"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "+2",
+          "features": "Ability Score Improvement",
+          "marked_bonus": "+3",
+          "marked_penalty": "-4",
+          "overrides": "3",
+          "birthrights": "2"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "+3",
+          "features": "Extra Attack",
+          "marked_bonus": "+3",
+          "marked_penalty": "-4",
+          "overrides": "3",
+          "birthrights": "3"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "+3",
+          "features": "Arbiter’s Ascension Feature",
+          "marked_bonus": "+3",
+          "marked_penalty": "-4",
+          "overrides": "4",
+          "birthrights": "3"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "+3",
+          "features": "Ruinous Augury",
+          "marked_bonus": "+4",
+          "marked_penalty": "-4",
+          "overrides": "4",
+          "birthrights": "4"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "+3",
+          "features": "Ability Score Improvement",
+          "marked_bonus": "+4",
+          "marked_penalty": "-5",
+          "overrides": "4",
+          "birthrights": "4"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "+4",
+          "features": "Frightful Crest",
+          "marked_bonus": "+4",
+          "marked_penalty": "-5",
+          "overrides": "5",
+          "birthrights": "5"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "+4",
+          "features": "Arbiter’s Ascension Feature",
+          "marked_bonus": "+4",
+          "marked_penalty": "-5",
+          "overrides": "5",
+          "birthrights": "5"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "+4",
+          "features": "Unyielding Preeminence (2)",
+          "marked_bonus": "+5",
+          "marked_penalty": "-5",
+          "overrides": "5",
+          "birthrights": "5"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "+4",
+          "features": "Ability Score Improvement",
+          "marked_bonus": "+5",
+          "marked_penalty": "-5",
+          "overrides": "5",
+          "birthrights": "6"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "+5",
+          "features": "Greater Martial Acumen, Martial Acumen (2)",
+          "marked_bonus": "+5",
+          "marked_penalty": "-5",
+          "overrides": "6",
+          "birthrights": "6"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "+5",
+          "features": "Arbiter’s Ascension Feature",
+          "marked_bonus": "+5",
+          "marked_penalty": "-6",
+          "overrides": "6",
+          "birthrights": "6"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "+5",
+          "features": "Seeker’s Sanction",
+          "marked_bonus": "+6",
+          "marked_penalty": "-6",
+          "overrides": "6",
+          "birthrights": "7"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "+5",
+          "features": "Ability Score Improvement",
+          "marked_bonus": "+6",
+          "marked_penalty": "-6",
+          "overrides": "6",
+          "birthrights": "7"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "+6",
+          "features": "Unyielding Preeminence (3)",
+          "marked_bonus": "+7",
+          "marked_penalty": "-6",
+          "overrides": "6",
+          "birthrights": "8"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "+6",
+          "features": "Arbiter’s Ascension Feature",
+          "marked_bonus": "+7",
+          "marked_penalty": "-6",
+          "overrides": "6",
+          "birthrights": "8"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "+6",
+          "features": "Ability Score Improvement",
+          "marked_bonus": "+7",
+          "marked_penalty": "-6",
+          "overrides": "6",
+          "birthrights": "8"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "+6",
+          "features": "Primordial Deliverance",
+          "marked_bonus": "+7",
+          "marked_penalty": "-6",
+          "overrides": "6",
+          "birthrights": "8"
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "basics",
+        "content": {
+          "title": "Class Basics",
+          "kicker": "Core Statistics",
+          "groups": [
+            {
+              "title": "Hit Points",
+              "stats": [
+                {
+                  "label": "Hit Dice",
+                  "value": "1d10 per arbiter level"
+                },
+                {
+                  "label": "Hit Points at 1st Level",
+                  "value": "10 + your Constitution modifier"
+                },
+                {
+                  "label": "Hit Points at Higher Levels",
+                  "value": "1d10 (or 6) + your Constitution modifier per arbiter level after 1st"
+                }
+              ]
+            },
+            {
+              "title": "Proficiencies",
+              "stats": [
+                {
+                  "label": "Armor",
+                  "value": "Light armor, Medium armor"
+                },
+                {
+                  "label": "Weapons",
+                  "value": "Simple weapons, Martial weapons"
+                },
+                {
+                  "label": "Tools",
+                  "value": "None"
+                },
+                {
+                  "label": "Saving Throws",
+                  "value": "Strength, Constitution"
+                },
+                {
+                  "label": "Skills",
+                  "value": "Choose 2 from Acrobatics, Arcana, Athletics, Insight, Intimidation, Investigation, Perception, Survival"
+                }
+              ]
+            },
+            {
+              "title": "Starting Equipment",
+              "items": [
+                "(a) scale mail or (b) leather armor",
+                "(a) a greatsword or (b) any martial melee weapon",
+                "(a) two handaxes or (b) any simple melee weapon",
+                "(a) a dungeoneer’s pack or (b) an explorer’s pack"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "note",
+        "title": "Ascension Modifications",
+        "paragraphs": [
+          "Some ascensions alter class features such as your hit points, skill proficiencies, or even starting equipment when the arbiter is your starting class. If an ascension does, these changes are noted at the beginning of the description for that ascension."
+        ],
+        "blocks": [
+          {
+            "type": "subsection",
+            "title": "Spellcasting",
+            "paragraphs": [
+              "Some arbiter features and birthrights grant you the ability to cast a spell without expending a spell slot. These spells do not require material components.",
+              "Constitution is your spellcasting ability for any spells you cast with an arbiter feature or birthright, unless it’s specified otherwise."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "content_section": {
+          "title": "Saving Throws",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Some arbiter features, in addition to features granted by your chosen ascension, force you to make an attack roll and/or the target to make a saving throw. Constitution is the modifier for these abilities, as you draw primeval energy from yourself to fuel them. You use your Constitution modifier to set the save DC for your arbiter features or when making an attacking roll with one."
+            },
+            {
+              "type": "formulas",
+              "formula_items": [
+                {
+                  "label": "Save DC",
+                  "value": "8 + your proficiency bonus + your Marked Bonus (if applicable) + your Constitution modifier"
+                },
+                {
+                  "label": "Attack Modifier",
+                  "value": "your proficiency bonus + your Marked Bonus (if applicable) + your Constitution modifier"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "title": "Magic",
+              "paragraphs": [
+                "Due to the occult nature of an arbiter’s powers, they are beyond the scope of the Weave and thus immune to effects that cancel or suppress magic unless stated otherwise (for instance, the ability is explicitly stated to be magical). They are not magical, however; if an arbiter feature deals slashing damage for example, it’s nonmagical unless stated otherwise."
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "features": [
+      {
+        "name": "Arbiter’s Ascension",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Choose an ascension, which details the source of your power and shapes the path you take as an arbiter; a diverse array of ascensions are detailed at the end of the class description. Your chosen ascension grants you features when you choose it at 1st level and again at 3rd, 6th, 10th, 14th, and 18th level."
+          }
+        ]
+      },
+      {
+        "name": "Ruincrest",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In combat, arbiters can brand their foes with ruincrests, brands of primordial power, to hone their focus to inhuman levels. Owing to their nature, ruincrests do not abide by the Weave - antimagic field, dispel magic, and other effects like them have no effect on ruincrests."
+          },
+          {
+            "type": "paragraph",
+            "text": "Each arbiter has their own unique, stylized ruincrest; for example, a dragonborn arbiter may have a claw or wing for their ruincrest, while the crest of one studying magic might be the symbol of a school of magic they use."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can use a bonus action to brand a creature you can see within 60 feet of you with a ruincrest for 1 hour, provided you have a free hand and a creature is not currently branded with your ruincrest. A ruincrest ends when any of these conditions are met."
+          },
+          {
+            "type": "list",
+            "items": [
+              "You finish a rest, roll initiative, or drop to 0 hit points. At the DM’s discretion, you can ignore this condition when you roll initiative, letting you brand a creature with your ruincrest before entering combat.",
+              "An arbiter feature indicates that you brand a creature.",
+              "Divine intervention or a wish spell removes the brand.",
+              "The branded creature dies or moves to another plane of existence, to which you are alerted but have no grasp on their new location."
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Marked Bonus",
+            "paragraphs": [
+              "While a creature is marked with your ruincrest, you gain a +2 bonus to all of the following rolls. The bonus increases as you gain more levels in this class, as shown in the Marked Bonus column of the Arbiter table."
+            ],
+            "list_items": [
+              "Strength and Dexterity checks that you make against that creature.",
+              "Attack rolls that you make against that creature.",
+              "Damage rolls that you make against that creature.",
+              "Saving throws you make against spells and other effects that originate from that creature.",
+              "The save DC for your arbiter features that creature is forced to make saving throws against. If other creatures are forced to make a saving throw for the same feature, only the branded creature rolls against an increased DC.",
+              "Wisdom (Perception) and Wisdom (Survival) checks you make to find that creature."
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Marked Penalty",
+            "paragraphs": [
+              "As a negative effect of branding a creature with your crest, you suffer a -3 penalty to the following rolls you make while that creature is branded with your ruincrest. The penalty to these rolls is increased as you gain more levels as an arbiter, as shown in the Marked Penalty column of the Arbiter table."
+            ],
+            "list_items": [
+              "Saving throws you make for spells and effects that don’t originate from the creature branded with your ruincrest.",
+              "Attack rolls that you make against creatures that are not branded with your ruincrest.",
+              "Wisdom (Perception) checks you make that don’t involve the creature branded with your ruincrest."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "When you engage in two-weapon fighting, the second attack doesn’t gain any benefits on attacks you make against a creature branded with your ruincrest, but still suffers from penalties to attack rolls that you make against creatures that aren’t marked with your ruincrest."
+          },
+          {
+            "type": "section",
+            "title": "Override",
+            "paragraphs": [
+              "Ruincrests are difficult to remove after being branded onto a creature. However, the situation may demand that an arbiter urgently shift their priorities. You can use a bonus action to end a ruincrest early.",
+              "You can use this feature twice, regaining all expended uses when you finish a long rest. The number of overrides that you can use increases as you gain more levels in this class, as shown in the Overrides column of the Arbiter table."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Primeval Birthright",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "As you become stronger as an arbiter, you awaken primeval birthrights, fragments of ancient might that grant you power."
+          },
+          {
+            "type": "paragraph",
+            "text": "At 2nd level, you acquire two primeval birthrights of your choice. The birthright options that you can choose from are detailed at the end of the class description. When you reach certain arbiter levels, you gain additional birthrights of your choice, as shown in the Birthrights column of the Arbiter table."
+          },
+          {
+            "type": "paragraph",
+            "text": "Additionally, when you gain a level in this class, you can choose one of the birthrights you know and replace it with another birthright that you could learn at that level."
+          }
+        ]
+      },
+      {
+        "name": "Unyielding Preeminence",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 2nd level, your Marked Penalty is decreased by 1 as long as you are missing at least half of your hit points."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you reach 11th level, it’s decreased by 2 instead. At 17th level, the penalty instead becomes 0 as long as you are missing at least half of your hit points."
+          }
+        ]
+      },
+      {
+        "name": "Martial Acumen",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 3rd level, you acquire a talent unique to arbiters which bolsters your skills in combat. Choose one of the following. You can’t take a Martial Acumen feature more than once. Upon reaching 13th level, you gain an additional Martial Acumen, then your chosen acumens grant you extra features."
+          },
+          {
+            "type": "options",
+            "options": [
+              {
+                "name": "Critical Mark",
+                "paragraphs": [
+                  "Attacks you make against a creature that’s marked with your ruincrest score a critical hit on a roll of 19 or 20. Starting at 13th level, they instead score a critical hit on a roll of 18–20 against a creature marked with your ruincrest."
+                ]
+              },
+              {
+                "name": "Evasive Duelist",
+                "paragraphs": [
+                  "Your Armor Class is increased by 2. Beginning at 13th level, you can nimbly dodge out of the way of certain area effects, such as an ancient red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take half as much damage, you instead take no damage if you succeed on the saving throw, or half damage if you fail. You don’t gain any of these bonuses if you’re wielding more than one weapon or a shield."
+                ]
+              },
+              {
+                "name": "Great Weapon Fighting",
+                "paragraphs": [
+                  "You don’t make melee weapon attacks with disadvantage when the target is a creature marked with your ruincrest and you’re wielding a weapon with two hands. The weapon must have the two-handed or versatile property for you to gain this benefit. Starting at 13th level, whenever you make a melee weapon attack with a weapon you’re wielding with two hands against a creature that is not branded with your ruincrest, you do not subtract your Marked Penalty from the attack roll. In order to gain this benefit, the weapon must have the two-handed or versatile property."
+                ]
+              },
+              {
+                "name": "Hunter’s Aegis",
+                "paragraphs": [
+                  "Damage dealt to you by a creature that’s marked with your ruincrest is reduced by 1d6, to a minimum of 0. Starting at 13th level, damage dealt to you by a creature that’s marked with your ruincrest is reduced by 2d6 instead."
+                ]
+              },
+              {
+                "name": "Promethean Strength",
+                "paragraphs": [
+                  "You are capable of wielding melee weapons with the two-handed property, as well making attacks with them, with one hand. When doing so, you can’t wield a weapon in your other hand but can use a shield if you’re proficient with them. In addition, whenever you score a hit with a melee weapon that has the two-handed or versatile property and you’re wielding it with two hands, that attack deals 1 additional damage. Beginning at 13th level, you can engage in two-weapon fighting when the melee weapon in one hand has the two-handed property and the melee weapon in your other hand has the light property, and the additional damage from this acumen increases to 2."
+                ]
+              },
+              {
+                "name": "Seeker’s Alacrity",
+                "paragraphs": [
+                  "You gain proficiency with shields when you gain this acumen, as you learn how to perform the somatic components of your arbiter features and spells even as you’re holding a weapon in one hand a shield in the other. Additionally, when a creature that’s branded with your ruincrest hits a creature other than you within 5 feet of you, you can use your reaction to reduce the damage dealt by 1d10 + your proficiency bonus. You must be wielding a shield to use this reaction. Beginning at 13th level, you can’t be knocked prone while you’re wielding a shield, and the damage reduction from the reaction is increased to 2d10 + your proficiency bonus."
+                ]
+              },
+              {
+                "name": "Strider",
+                "paragraphs": [
+                  "As long as a creature that is marked with your ruincrest is at least 30 feet away from you, your movement speed increases by 10 feet. When you reach 13th level, this is increased to 20 feet, and movement you spend to move closer to a creature marked with your ruincrest is unaffected by difficult terrain. This movement doesn’t count towards your movement for the turn when you move within 30 feet of a creature marked with your ruincrest and lose this extra movement."
+                ]
+              },
+              {
+                "name": "Two-Weapon Fighting",
+                "paragraphs": [
+                  "You learn how to perform the somatic components of your arbiter features and spells, even as you’re holding a weapon in both of your hands. Additionally, you learn how to draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+                ],
+                "note": {
+                  "title": "Two-Weapon Fighting",
+                  "paragraphs": [
+                    "You can engage in two-weapon fighting when the melee weapon in one hand has the two-handed property and the melee weapon in your other hand has either the light or versatile property if you meet the prerequisites shown below."
+                  ],
+                  "items": [
+                    "You have at least 13 levels as an arbiter.",
+                    "You have both the Promethean Strength and Two-Weapon Fighting acumens."
+                  ],
+                  "secondary_title": "Variant Rules: Seeker’s Sanction",
+                  "secondary_paragraphs": [
+                    "Alternatively, at the DM’s discretion, you can prevent a creature branded with your ruincrest from teleporting or travelling to another plane. When they attempt to do so, they must make a Constitution saving throw. On a failed save, the attempt fails, and the creature can’t teleport or travel to planes for the next 24 hours."
+                  ]
+                },
+                "after_note_paragraphs": [
+                  "Beginning at 13th level, you can use two-weapon fighting when the one handed melee weapons you’re wielding have either the light or versatile property. Moreover, you can add your ability modifier to the damage of the second attack."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Extra Attack",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+          }
+        ]
+      },
+      {
+        "name": "Ruinous Augury",
+        "level": "7",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 7th level, weapon attacks you make and arbiter features that you use against a creature that is branded with your ruincrest are now treated as magical for the purpose of overcoming resistance and immunity to nonmagical attacks, damage, and effects."
+          }
+        ]
+      },
+      {
+        "name": "Frightful Crest",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 9th level, a creature branded with your ruincrest can’t benefit from being invisible."
+          },
+          {
+            "type": "paragraph",
+            "text": "In addition, when you mark a creature with your ruincrest, you may have them make a Wisdom saving throw. On a failed save, they become frightened of you for the next minute. They can repeat the saving throw at the end of each of their turns, ending the effect early on a success. If the creature succeeds on its saving throw or makes a successful saving throw, you can’t use this feature on that creature again for 24 hours. You can use this feature a number of times equal to proficiency bonus, and regain expended uses when you finish a short or long rest."
+          }
+        ]
+      },
+      {
+        "name": "Seeker’s Sanction",
+        "level": "15",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 15th level, whenever a creature that’s branded with your ruincrest teleports to another plane of existence, the crest stays on it for 24 more hours and you can mark another creature with your ruincrest. Until the 24 hours pass or the creature branded with it dies or removes the crest, the original crest doesn’t count against the number of ruincrests you have."
+          },
+          {
+            "type": "paragraph",
+            "text": "Whenever a creature marked with your ruincrest teleports to another plane of existence, you can use your reaction to chase after it and teleport to the new plane of existence. If you do, you are shunted back to the plane of existence you were on when you first marked it with your ruincrest, in the space you originally occupied before you teleported, or the nearest unoccupied space if that space is already occupied, when any of the following occur."
+          },
+          {
+            "type": "list",
+            "items": [
+              "The branded creature dies or 24 hours pass.",
+              "You drop to 0 hit points or are incapacitated."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Primordial Deliverance",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 20th level, your will is absolute; those you brand shall fall. You can make one weapon attack against a creature branded with your ruincrest on each of your turns (no action required)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Moreover, at the beginning of each of your turns, you can teleport to a random unoccupied space that’s within 15 feet of a creature branded with your ruincrest if it’s on the same plane of existence as you; you can choose the precise space you teleport to instead if you can see the creature."
+          }
+        ]
+      }
+    ],
+    "appendices": [
+      {
+        "title": "Primeval Birthrights",
+        "kicker": "Customization",
+        "intro": [
+          "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+          "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+        ],
+        "features": [
+          {
+            "name": "Abrupt Elusion",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you are dealt damage or are subjected to an effect (at the DM’s discretion), you can use your reaction to teleport to an unoccupied space you can see up to 30 feet away. You can use this birthright a number of times equal to your proficiency bonus, and regain expended uses when you finish a short or long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 5th level"
+          },
+          {
+            "name": "Abyssal Sight",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your benthic origin grants you the same sight that creatures of the deep possess. You gain darkvision out to a range of 90 feet. Moreover, you have advantage on saving throws against being blinded and saving throws you make to end the blinded condition."
+              }
+            ],
+            "subtitle": "Prerequisite: Sovereign of Tides ascension"
+          },
+          {
+            "name": "Adjudicator’s Steed",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can cast the spell find steed at will without expending a spell slot, summoning a steed worthy of your station. When you reach 12th level, you can also cast the spell find greater steed at will without expending a spell slot. Once you restore a steed to its hit point maximum with a spell cast with this birthright, you can’t restore that steed to its maximum hit points again until you finish a long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 7th level"
+          },
+          {
+            "name": "Ancient Connection",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use an action to gain the effects of the spell speak with animals until you dismiss it (no action required) or you die."
+              }
+            ]
+          },
+          {
+            "name": "Arbiter’s Influence",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You gain proficiency in your choice of either Deception or Persuasion and one skill of your choice from the arbiter’s skill list."
+              }
+            ]
+          },
+          {
+            "name": "Ascendant Mind",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use an action to gain the effects of the spell detect thoughts until you dismiss it (no action required) or you die."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Hand of Arrogation ascension"
+          },
+          {
+            "name": "Aspect of Cognizance",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You no longer need to sleep, can’t be forced to sleep by any means, and can choose to remain conscious during a long rest, though you must still refrain from participating in any strenuous activity to gain the benefit of the rest. In addition, you have advantage on saving throws against being incapacitated, stunned, or rendered unconscious. You also have advantage on saving throws you make to end the stunned condition."
+              }
+            ],
+            "subtitle": "Prerequisite: 7th level"
+          },
+          {
+            "name": "Astral Brilliance",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Whenever you use a herrscher ability that deals damage, add your Constitution modifier to the damage dealt."
+              }
+            ],
+            "subtitle": "Prerequisite: Entropic Liège ascension"
+          },
+          {
+            "name": "Blazing Reverie",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Add your proficiency bonus to initiative rolls you make. In addition, whenever you roll initiative, you regain 3 charges."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Vermillion Knight ascension"
+          },
+          {
+            "name": "Celestial Mettle",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you gain this birthright, if you are already proficient in saving throws that use Constitution, your proficiency bonus is doubled for saving throws you make that use it. Otherwise, you gain proficiency in saving throws that use Constitution but your proficiency bonus is not doubled for saving throws that use it."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Entropic Liège ascension"
+          },
+          {
+            "name": "Dauntless Executioner",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your primeval inheritance grants you firmness in the face of a creature that you’ve branded with your ruincrest. You can’t be charmed or frightened while a creature is branded with your ruincrest."
+              }
+            ],
+            "subtitle": "Prerequisite: 7th level"
+          },
+          {
+            "name": "Deathbringer’s Veil",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you kill a creature that’s branded with your ruincrest, you become invisible for 1 minute. It ends early if you attack or cast a spell."
+              }
+            ],
+            "subtitle": "Prerequisite: 12th level"
+          },
+          {
+            "name": "Destructive Exhalation",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can double the number of damage dice rolled for your Dragon Breath once when you use it. You can’t do so again until you finish a short or long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Wyrmscourge ascension"
+          },
+          {
+            "name": "Divine Reach",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Whenever you cast a seneschal spell with a single target, the spell’s range is doubled if it targets a creature that’s branded with your ruincrest and it doesn’t have a range of touch."
+              }
+            ],
+            "subtitle": "Prerequisite: Seneschal ascension"
+          },
+          {
+            "name": "Draconic Infusion",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Whenever you hit a creature with an unarmed strike, you can replace all of the damage dealt by the attack with the damage type that’s associated with your chosen ancestry."
+              }
+            ],
+            "subtitle": "Prerequisite: Wyrmscourge ascension"
+          },
+          {
+            "name": "Empyrean Awareness",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You always know if you hear a lie."
+              }
+            ],
+            "subtitle": "Prerequisite: 17th level"
+          },
+          {
+            "name": "Esoteric Step",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use an action to gain the effects of the spell levitate until you dismiss it (no action required) or you die."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level"
+          },
+          {
+            "name": "Essence Detection",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your primordial inheritance allows you to discern when the living are nearby. You can sense the presence of creatures within 30 feet of you that aren’t undead or constructs. You know the general direction they are in but not their exact locations."
+              }
+            ],
+            "subtitle": "Prerequisite: 7th level"
+          },
+          {
+            "name": "Ethereal Mantle",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your primeval eminence allows you to slough your physical form. As an action, you can turn yourself and any equipment that’s worn or carried by you incorporeal. While incorporeal, you can move through other creatures and objects as if they were difficult terrain, and you take 1d10 force damage if you end your turn inside an object. You and your equipment remain incorporeal until you use an action to become corporeal again or you die. When you become corporeal while part or all of you is inside another creature or object, you are expelled to the unoccupied space closest to that creature or object, taking 6d10 force damage."
+              }
+            ],
+            "subtitle": "Prerequisite: 17th level"
+          },
+          {
+            "name": "Eye of the Adjudicator",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while they’re in your line of sight and within 30 feet of you, or within 120 feet of you instead if they’re branded with your ruincrest."
+              }
+            ],
+            "subtitle": "Prerequisite: 15th level"
+          },
+          {
+            "name": "Fiery Tenacity",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your weapon attacks leave behind streaks of fire that harm your enemies even when you miss. The first time each turn you miss with a weapon attack, the attack’s target takes fire damage equal to your proficiency bonus."
+              }
+            ],
+            "subtitle": "Prerequisite: Vermillion Knight ascension"
+          },
+          {
+            "name": "Form of the Arbiter",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You are immune to any spell or effect that would alter your form or prevent you from teleporting or using planar travel (from your current space or to your destination) unless you choose to be affected."
+              }
+            ],
+            "subtitle": "Prerequisite: 12th level"
+          },
+          {
+            "name": "Ghastly Intrusion",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can cast the spell pass without trace without expending a spell slot, and don’t need to concentrate on it. You must finish a short or long rest before you can do so again."
+              }
+            ],
+            "subtitle": "Prerequisite: Phantasmal Hunter ascension"
+          },
+          {
+            "name": "Guided by Divinity",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You are always under the effects of a guidance spell."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Seneschal ascension"
+          },
+          {
+            "name": "Hunter’s Tongue",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You understand any language spoken by a creature that’s marked with your ruincrest and they can understand any language spoken by you."
+              }
+            ]
+          },
+          {
+            "name": "Imperious Will",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use a bonus action to regain expended uses of your tyrannical flairs, up to half your proficiency bonus, rounded up. Once you use this birthright, you can’t use it again until you finish a short or long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: Fell Tyrant ascension"
+          },
+          {
+            "name": "Malefic Indignation",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Whenever a creature that you can see within 30 feet of you deals damage to you while you are missing at least half of your hit points, that creature takes 1d10 necrotic damage unless you choose not to harm them."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Blood Voivode ascension"
+          },
+          {
+            "name": "Menacing Crest",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You have advantage on Charisma (Intimidation) checks you make against a creature that’s branded with your ruincrest."
+              }
+            ],
+            "subtitle": "Prerequisite: 5th level"
+          },
+          {
+            "name": "Metamorphic Arbiter",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can transform your appearance as you please. As an action, you can transform your appearance, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You can’t appear as a creature of a different size than you, and the basic shape of your body stays the same; if you’re bipedal, you can’t use this birthright to become quadrupedal, for instance. You stay in the new form until you use an action to revert to your true form or until you die."
+              }
+            ],
+            "subtitle": "Prerequisite: 12th level"
+          },
+          {
+            "name": "Murderous Reticence",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can cast the spell silence once without expending a spell slot. When you cast it this way, the sphere that’s created by it is centered on you, moves with you, and doesn’t silence noise that you create. You also don’t need to concentrate on it when it’s cast this way. You can’t do so again until you finish a short or long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 5th level"
+          },
+          {
+            "name": "Otherworldly Ward",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your primeval descent provides you with immunity to lesser spells. You can’t be affected or detected by spells of 2nd level or lower unless you wish to be."
+              }
+            ],
+            "subtitle": "Prerequisite: 15th level"
+          },
+          {
+            "name": "Phantasmal Visitor",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can cast the spell dream at will without expending a spell slot. When you cast it this way, the spell can’t deal damage, and if the target of the spell is a creature that was branded with your ruincrest in the past 24 hours, you can terrify the target while delivering a message of more than ten words. When you cast dream with this birthright and attempt to terrify a creature, you can’t terrify another creature with a dream spell cast with this birthright until you finish a long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 15th level"
+          },
+          {
+            "name": "Phantom Execution",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you deal extra damage to a creature branded with your ruincrest with the Phantasmal Initiation feature, you can deal the maximum damage, instead of rolling for damage. Once you use this feature, you can’t use it again until you finish a short or long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Phantasmal Hunter ascension"
+          },
+          {
+            "name": "Preternatural Prescience",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "The primeval essence that flows through you heightens your senses. You can sense any magic within 30 feet of you at will."
+              }
+            ]
+          },
+          {
+            "name": "Primeval Envoy",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use an action to replicate the effects of the spell sending. In addition, if the recipient of the message sent is a creature that was branded with your ruincrest in the past 24 hours, the message sent can be up to fifty, instead of twenty-five, words long."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level"
+          },
+          {
+            "name": "Primeval Recollection",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use an action to call upon the primeval knowledge locked away within yourself. Choose one skill that you lack proficiency with. You gain proficiency with the chosen skill until your next long rest. You can’t do so again until you finish a long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 5th level"
+          },
+          {
+            "name": "Primordial Glamor",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You have expertise with two skills of your choice from the arbiter’s skill list you are proficient with. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. If you are proficient with Deception or Persuasion, you can gain expertise with one of those skills (your choice, which you must be proficient with) and one arbiter skill you’re proficient with instead."
+              }
+            ],
+            "subtitle": "Prerequisite: 7th level"
+          },
+          {
+            "name": "Primordial Obscura",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You are always under the effects of a nondetection spell. Additionally, divination magic and magical scrying sensors perceive the area centered around you in a 30-foot range as a constantly shifting and wavering blur."
+              }
+            ],
+            "subtitle": "Prerequisite: 12th level"
+          },
+          {
+            "name": "Psychic Strikes",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You empower the attacks made with your psionic weapons using your mind rather than physical strength. You can use Intelligence instead of Strength for the attack and damage rolls of your psionic weapons."
+              }
+            ],
+            "subtitle": "Prerequisite: Hand of Arrogation ascension"
+          },
+          {
+            "name": "Sanguine Protection",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You get a +2 bonus to your Armor Class while you’re missing at least half of your hit points."
+              }
+            ],
+            "subtitle": "Prerequisite: Blood Voivode ascension"
+          },
+          {
+            "name": "Slayer’s Implement",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You learn a ritual that creates a primeval connection between yourself and one melee weapon, which you perform over the course of 1 hour, and can be done during a short rest. The weapon must be within your reach throughout the ritual, at the end of which you touch the weapon and forge the bond. Once you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. You can summon that weapon as a bonus action on your turn due to the primordial bond you share with it, causing it to teleport instantly to your hand regardless of what plane of existence it is on. You can have one weapon bonded to you at a time with this birthright. If you attempt to bond with another weapon, you must break your bond with the other one. The weapon stops being your slayer’s implement if you die, perform the 1-hour ritual on another weapon, or you perform the 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks. Moreover, certain ascensions affect the implement."
+              },
+              {
+                "type": "list",
+                "list_items": [
+                  "If you are a fell tyrant, the implement is treated as a second tyrant’s weapon, it gains the benefits of Tyrannical Escalation if it doesn’t have the corresponding bonus to attack and damage rolls that you make with it, and you can use the implement as the focus for your tyrannical flairs. You can’t change the implement’s form, however.",
+                  "If you are a hand of arrogation, the implement is treated as one of your psionic weapons, and you can have three psionic weapons bonded to you at a time."
+                ]
+              },
+              {
+                "type": "note",
+                "title": "Fell Tyrant Variant",
+                "paragraphs": [
+                  "When you take this primeval birthright as a fell tyrant, you choose whether or not the implement returns to the extradimensional space after making an attack with it, and on a hit with it, you choose if the damage dealt is the weapon’s normal damage type or the damage type that you chose for the ascension’s ruincrest damage type. Whenever you stow the implement (no action required to dismiss it), you can shunt it into an extradimensional space that only you can access instead; thereafter, you can draw it by summoning it from that space."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Sovereign’s Resolve",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this birthright, you can’t use it again until you finish a long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Sovereign of Tides ascension"
+          },
+          {
+            "name": "Steadfast Aegis",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can cast the spell you learned from Arcane Defense one additional time between long rests. At 9th level, you can cast your chosen spell with that feature two more times instead."
+              }
+            ],
+            "subtitle": "Prerequisite: Aegis Knight ascension"
+          },
+          {
+            "name": "Transcendant Stride",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your ascent allows you to move vast distances in the blink of an eye. You can use an action to teleport up to 120 feet to an unoccupied space you can see. You can use this birthright a number of times equal to your proficiency bonus, and regain expended uses when you finish a long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level"
+          },
+          {
+            "name": "Tyrant’s Resolution",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You are immune to being charmed or frightened as long as you are conscious. Additionally, you suffer from exhaustion differently from others, a sign of your primeval endurance."
+              },
+              {
+                "type": "table",
+                "columns": [
+                  {
+                    "key": "level",
+                    "label": "Level"
+                  },
+                  {
+                    "key": "effect",
+                    "label": "Effect"
+                  }
+                ],
+                "rows": [
+                  {
+                    "level": "1",
+                    "effect": "None"
+                  },
+                  {
+                    "level": "2",
+                    "effect": "Disadvantage on ability checks"
+                  },
+                  {
+                    "level": "3",
+                    "effect": "Speed halved"
+                  },
+                  {
+                    "level": "4",
+                    "effect": "Disadvantage on attack rolls and saving throws"
+                  },
+                  {
+                    "level": "5",
+                    "effect": "Hit point maximum halved"
+                  },
+                  {
+                    "level": "6",
+                    "effect": "Speed reduced to 0"
+                  },
+                  {
+                    "level": "7",
+                    "effect": "Death"
+                  }
+                ]
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Fell Tyrant ascension"
+          },
+          {
+            "name": "Unfathomable Interference",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You are capable of divorcing the area around you from the magic infused into the multiverse for a short period of time. As an action, you can create a sphere of antimagic with a radius of 30 feet that surrounds you, moves with you, and is centered on you. The sphere persists for 1 hour or until you dismiss it as an action, remaining even after you die. See the spell antimagic field to understand what the sphere does. Moreover, the primeval might that sustains you is strong enough to cause the sphere created to suppress magic that protrudes into the sphere which is created by an artifact or deity outside of the sphere (but not artifacts or deities inside the sphere). The sphere also doesn’t affect equipment that is being worn or wielded by you. Once you use this birthright, you can’t use it again until you finish a long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 17th level"
+          },
+          {
+            "name": "Unwavering Determination",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can reroll a saving throw that you fail. When you do, you must use the new roll, and add your arbiter level to the result. Once you use this birthright, you can’t use it again until you finish a short or long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level, Aegis Knight ascension"
+          },
+          {
+            "name": "Vicious Advance",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can push yourself beyond your normal limits for a short amount of time to assail a creature that is marked with your ruincrest. On your turn, you can take one additional action. This action must target or affect a creature that is branded with your ruincrest. When you take the Attack action this way and make more than one attack with that action, all of the attacks made as part of that action must target or affect a creature branded with your ruincrest. Once you use this birthright, you can’t use it again until you finish a short or long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 5th level"
+          },
+          {
+            "name": "Whispers of the Branded",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can cast speak with dead at will without expending a spell slot. When you cast the spell this way, it must target a creature that was branded with your ruincrest when it died."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level"
+          },
+          {
+            "name": "Worldbond",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use an action to gain the effects of the spell speak with plants until you dismiss it (no action required) or you die. Once you use this birthright to create difficult terrain, or perform other tasks at the DM’s discretion, you can’t do so again with this birthright until you finish a short or long rest."
+              }
+            ],
+            "subtitle": "Prerequisite: 9th level"
+          }
+        ],
+        "intro_blocks": [
+          {
+            "type": "note",
+            "title": "Unnatural Inheritance",
+            "paragraphs": [
+              "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

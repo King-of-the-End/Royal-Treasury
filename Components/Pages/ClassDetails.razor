@@ -1,0 +1,756 @@
+@page "/classes/{Slug}"
+@rendermode InteractiveServer
+
+@using System.Text.Json
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Rendering
+@implements IDisposable
+
+@inject IWebHostEnvironment Environment
+@inject NavigationManager Navigation
+
+<PageTitle>@DisplayName</PageTitle>
+
+@if (isLoading)
+{
+    <main class="class-page"><div class="class-loading">Loading class...</div></main>
+}
+else if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <main class="class-page">
+        <a href="/classes" class="class-back-link">← Back to Classes</a>
+        <div class="class-error"><h1>Class Not Found</h1><p>@errorMessage</p></div>
+    </main>
+}
+else if (classDocument is not null)
+{
+    var root = classDocument.RootElement;
+
+    <main class="class-page" id="overview">
+        <a href="/classes" class="class-back-link">← Back to Classes</a>
+
+        <header class="class-hero">
+            <div class="class-hero-emblem">
+                <img src="@EmblemPath" alt="@($"{DisplayName} class emblem")" />
+            </div>
+            <div class="class-hero-copy">
+                <div class="class-kicker">Class</div>
+                <h1>@DisplayName</h1>
+            </div>
+        </header>
+
+        @if (GetString(root, "quote") is string quote)
+        {
+            <blockquote class="class-quote">@quote</blockquote>
+        }
+
+        @if (GetProperty(root, "introduction") is JsonElement introduction)
+        {
+            <section class="class-lore-section">
+                @foreach (var paragraph in introduction.EnumerateArray())
+                {
+                    <p>@ValueToText(paragraph)</p>
+                }
+            </section>
+        }
+
+        <div class="class-tabs">
+            <div class="class-tab-buttons">
+                <button type="button"
+                        class="class-tab-button @(activeTab == "lore" ? "active" : "")"
+                        @onclick='() => SetTab("lore")'>
+                    <span class="class-tab-icon">◆</span><span>Lore / Roleplay</span>
+                </button>
+                <button type="button"
+                        class="class-tab-button @(activeTab == "mechanics" ? "active" : "")"
+                        @onclick='() => SetTab("mechanics")'>
+                    <span class="class-tab-icon">⚔</span><span>Mechanics</span>
+                </button>
+            </div>
+
+            @if (activeTab == "lore")
+            {
+                <div class="class-tab-content">
+                    @if (GetProperty(root, "lore_sections") is JsonElement loreSections)
+                    {
+                        <div class="class-lore-grid">
+                            @foreach (var section in loreSections.EnumerateArray())
+                            {
+                                <section class="class-section"
+                                         id="@AnchorId(GetString(section, "title") ?? "section")">
+                                    <h2>@GetString(section, "title")</h2>
+                                    @if (GetProperty(section, "paragraphs") is JsonElement paragraphs)
+                                    {
+                                        @foreach (var paragraph in paragraphs.EnumerateArray())
+                                        {
+                                            <p>@ValueToText(paragraph)</p>
+                                        }
+                                    }
+                                </section>
+                            }
+                        </div>
+                    }
+
+                    @if (GetProperty(root, "roleplay") is JsonElement roleplay)
+                    {
+                        @if (GetString(roleplay, "complexity_note") is string complexity)
+                        {
+                            <aside class="class-note class-note-warning" id="complexity">
+                                <div class="class-note-heading">Complexity</div><p>@complexity</p>
+                            </aside>
+                        }
+
+                        @if (GetString(roleplay, "quick_build") is string quickBuild)
+                        {
+                            <section class="class-section" id="quick-build">
+                                <div class="class-section-kicker">Character Creation</div>
+                                <h2>Quick Build</h2><p>@quickBuild</p>
+                            </section>
+                        }
+
+                        @if (GetProperty(roleplay, "quirks") is JsonElement quirks)
+                        {
+                            <section class="class-section class-table-section" id="quirks">
+                                <div class="class-section-kicker">Roleplaying</div>
+                                <h2>Quirks</h2>
+                                <div class="class-table-scroll">
+                                    <table class="class-table quirks-table">
+                                        <thead><tr><th>d20</th><th>Quirk</th></tr></thead>
+                                        <tbody>
+                                            @foreach (var quirk in quirks.EnumerateArray())
+                                            {
+                                                <tr><td class="table-level">@GetValueText(quirk, "d20")</td><td>@GetString(quirk, "quirk")</td></tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        }
+
+                        @if (GetProperty(roleplay, "dark_origin") is JsonElement darkOrigin)
+                        {
+                            <section class="class-section class-table-section" id="dark-origin">
+                                <div class="class-section-kicker">Roleplaying</div>
+                                <h2>Dark Origin</h2>
+
+                                <div class="class-table-scroll">
+                                    <table class="class-table quirks-table">
+                                        <thead>
+                                            <tr>
+                                                <th>d6</th>
+                                                <th>Origin</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var origin in darkOrigin.EnumerateArray())
+                                            {
+                                                <tr>
+                                                    <td class="table-level">@GetValueText(origin, "d6")</td>
+                                                    <td>@GetString(origin, "origin")</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        }
+                    }
+                </div>
+            }
+
+            @if (activeTab == "mechanics" && GetProperty(root, "mechanics") is JsonElement mechanics)
+            {
+                <div class="class-tab-content">
+                    @if (GetProperty(mechanics, "multiclassing") is JsonElement multiclassing)
+                    {
+                        @RenderMulticlassing(multiclassing)
+                    }
+
+                    @if (GetProperty(mechanics, "advancement") is JsonElement advancement)
+                    {
+                        <section class="class-section class-table-section" id="advancement">
+                            <div class="class-section-kicker">Advancement</div>
+                            <h2>The @DisplayName</h2>
+                            @RenderDynamicTable(advancement, "class-table")
+                        </section>
+                    }
+
+                    <section class="class-feature-chapter" id="class-features">
+                        <header class="class-chapter-heading">
+                            <div class="class-section-kicker">Abilities</div>
+                            <h2>Class Features</h2>
+                        </header>
+
+                        @if (GetProperty(mechanics, "pre_feature_sections") is JsonElement preFeatureSections)
+                        {
+                            @foreach (var section in preFeatureSections.EnumerateArray())
+                            {
+                                @RenderPreFeatureSection(section)
+                            }
+                        }
+
+                        @if (GetProperty(mechanics, "features") is JsonElement features)
+                        {
+                            @foreach (var feature in features.EnumerateArray())
+                            {
+                                @RenderFeatureCard(feature)
+                            }
+                        }
+                    </section>
+
+                    @if (GetProperty(mechanics, "appendices") is JsonElement appendices)
+                    {
+                        @foreach (var appendix in appendices.EnumerateArray())
+                        {
+                            @RenderAppendix(appendix)
+                        }
+                    }
+                </div>
+            }
+        </div>
+    </main>
+}
+
+@code {
+    [Parameter] public string Slug { get; set; } = string.Empty;
+
+    [SupplyParameterFromQuery(Name = "tab")]
+    public string? Tab { get; set; }
+
+    private JsonDocument? classDocument;
+    private bool isLoading = true;
+    private string? errorMessage;
+    private string activeTab = "lore";
+
+    private string DisplayName
+        => classDocument is not null && GetString(classDocument.RootElement, "name") is string name && !string.IsNullOrWhiteSpace(name)
+            ? name
+            : SlugToDisplayName(Slug);
+
+    private string EmblemPath => $"/images/class-emblems/Class Emblem - {DisplayName}.png";
+
+    private void SetTab(string tab)
+    {
+        activeTab = tab;
+
+        var uri = Navigation.GetUriWithQueryParameter(
+            "tab",
+            tab);
+
+        Navigation.NavigateTo(
+            uri,
+            replace: true);
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        isLoading = true;
+        errorMessage = null;
+        activeTab =
+            string.Equals(
+                Tab,
+                "mechanics",
+                StringComparison.OrdinalIgnoreCase)
+                ? "mechanics"
+                : "lore";
+        classDocument?.Dispose();
+        classDocument = null;
+
+        try
+        {
+            var safeSlug = Slug.Trim().ToLowerInvariant();
+            if (!IsSafeSlug(safeSlug))
+            {
+                errorMessage = "The requested class name is invalid.";
+                return;
+            }
+
+            var classesRoot = Path.Combine(Environment.WebRootPath, "data", "classes");
+            if (!Directory.Exists(classesRoot))
+            {
+                errorMessage = "The classes data folder could not be found.";
+                return;
+            }
+
+            // Find the folder case-insensitively so this also works on Linux/Render.
+            var classFolderPath = Directory
+                .EnumerateDirectories(classesRoot, "*", SearchOption.TopDirectoryOnly)
+                .FirstOrDefault(path => string.Equals(Path.GetFileName(path), safeSlug, StringComparison.OrdinalIgnoreCase));
+
+            if (classFolderPath is null)
+            {
+                errorMessage = $"No class folder was found for \"{Slug}\".";
+                return;
+            }
+
+            var preferredNames = new[] { $"{safeSlug}.json", "class.json" };
+            string? jsonFilePath = null;
+
+            foreach (var preferredName in preferredNames)
+            {
+                jsonFilePath = Directory
+                    .EnumerateFiles(classFolderPath, "*.json", SearchOption.TopDirectoryOnly)
+                    .FirstOrDefault(path => string.Equals(Path.GetFileName(path), preferredName, StringComparison.OrdinalIgnoreCase));
+                if (jsonFilePath is not null) break;
+            }
+
+            jsonFilePath ??= Directory
+                .EnumerateFiles(classFolderPath, "*.json", SearchOption.TopDirectoryOnly)
+                .OrderBy(path => path)
+                .FirstOrDefault();
+
+            if (jsonFilePath is null)
+            {
+                errorMessage = $"No class JSON file was found inside the {Path.GetFileName(classFolderPath)} folder.";
+                return;
+            }
+
+            await using var stream = File.OpenRead(jsonFilePath);
+            classDocument = await JsonDocument.ParseAsync(stream);
+        }
+        catch (JsonException ex)
+        {
+            errorMessage = $"The class JSON could not be read: {ex.Message}";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"The class could not be loaded: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private static JsonElement? GetProperty(JsonElement element, string name)
+        => element.ValueKind == JsonValueKind.Object && element.TryGetProperty(name, out var property) ? property : null;
+
+    private static string? GetString(JsonElement element, string name)
+        => GetProperty(element, name) is JsonElement value && value.ValueKind == JsonValueKind.String ? value.GetString() : null;
+
+    private static string GetValueText(JsonElement element, string name)
+        => GetProperty(element, name) is JsonElement value ? ValueToText(value) : string.Empty;
+
+    private static string ValueToText(JsonElement value) => value.ValueKind switch
+    {
+        JsonValueKind.String => value.GetString() ?? string.Empty,
+        JsonValueKind.Number => value.ToString(),
+        JsonValueKind.True => "Yes",
+        JsonValueKind.False => "No",
+        JsonValueKind.Null => "—",
+        JsonValueKind.Array => string.Join(", ", value.EnumerateArray().Select(ValueToText).Where(x => !string.IsNullOrWhiteSpace(x))),
+        _ => value.ToString()
+    };
+
+    private RenderFragment RenderMulticlassing(JsonElement multiclassing) => builder =>
+    {
+        var seq = 0;
+        builder.OpenElement(seq++, "section");
+        builder.AddAttribute(seq++, "class", "class-section");
+        builder.AddAttribute(seq++, "id", "multiclassing");
+        if (GetString(multiclassing, "kicker") is string kicker) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-section-kicker"); builder.AddContent(seq++, kicker); builder.CloseElement(); }
+        builder.OpenElement(seq++, "h2"); builder.AddContent(seq++, GetString(multiclassing, "title") ?? "Multiclassing"); builder.CloseElement();
+
+        if (GetProperty(multiclassing, "paragraphs") is JsonElement paragraphs)
+            builder.AddContent(seq++, RenderParagraphs(paragraphs));
+
+        if (GetProperty(multiclassing, "items") is JsonElement items)
+        {
+            builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-list");
+            foreach (var item in items.EnumerateArray())
+            {
+                builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-row");
+                builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(item, "label")); builder.CloseElement();
+                builder.OpenElement(seq++, "span"); builder.AddContent(seq++, GetValueText(item, "value")); builder.CloseElement();
+                builder.CloseElement();
+            }
+            builder.CloseElement();
+        }
+
+        if (GetProperty(multiclassing, "cards") is JsonElement cards)
+        {
+            builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-mini-grid");
+            foreach (var card in cards.EnumerateArray())
+            {
+                builder.OpenElement(seq++, "article"); builder.AddAttribute(seq++, "class", "class-mini-card");
+                builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(card, "title")); builder.CloseElement();
+                builder.OpenElement(seq++, "p"); builder.AddContent(seq++, GetString(card, "text")); builder.CloseElement();
+                builder.CloseElement();
+            }
+            builder.CloseElement();
+        }
+
+        builder.CloseElement();
+    };
+
+    private RenderFragment RenderPreFeatureSection(JsonElement section) => builder =>
+    {
+        var seq = 0;
+        var type = GetString(section, "type") ?? "section";
+
+        if (type == "basics" && GetProperty(section, "content") is JsonElement basics)
+        {
+            builder.OpenElement(seq++, "section");
+            builder.AddAttribute(seq++, "class", "class-section class-basics");
+            builder.AddAttribute(
+                seq++,
+                "id",
+                AnchorId(GetString(basics, "title") ?? "class-basics"));
+            if (GetString(basics, "kicker") is string kicker) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-section-kicker"); builder.AddContent(seq++, kicker); builder.CloseElement(); }
+            builder.OpenElement(seq++, "h2"); builder.AddContent(seq++, GetString(basics, "title") ?? "Class Basics"); builder.CloseElement();
+
+            if (GetProperty(basics, "groups") is JsonElement groups)
+            {
+                foreach (var group in groups.EnumerateArray())
+                {
+                    builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-subsection");
+                    builder.OpenElement(seq++, "h3"); builder.AddContent(seq++, GetString(group, "title")); builder.CloseElement();
+
+                    if (GetProperty(group, "stats") is JsonElement stats)
+                    {
+                        builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-list");
+                        foreach (var stat in stats.EnumerateArray())
+                        {
+                            builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-row");
+                            builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(stat, "label")); builder.CloseElement();
+                            builder.OpenElement(seq++, "span"); builder.AddContent(seq++, GetValueText(stat, "value")); builder.CloseElement();
+                            builder.CloseElement();
+                        }
+                        builder.CloseElement();
+                    }
+
+                    if (GetProperty(group, "items") is JsonElement items)
+                        builder.AddContent(seq++, RenderList(items));
+
+                    builder.CloseElement();
+                }
+            }
+            builder.CloseElement();
+            return;
+        }
+
+        if (type == "note")
+        {
+            builder.OpenElement(seq++, "aside");
+            builder.AddAttribute(seq++, "class", "class-note");
+            builder.AddAttribute(
+                seq++,
+                "id",
+                AnchorId(GetString(section, "title") ?? "note"));
+
+            if (GetString(section, "title") is string title)
+            {
+                builder.OpenElement(seq++, "div");
+                builder.AddAttribute(seq++, "class", "class-note-heading");
+                builder.AddContent(seq++, title);
+                builder.CloseElement();
+            }
+
+            if (GetProperty(section, "paragraphs") is JsonElement paragraphs)
+                builder.AddContent(seq++, RenderParagraphs(paragraphs));
+
+            if (GetProperty(section, "blocks") is JsonElement noteBlocks)
+            {
+                foreach (var block in noteBlocks.EnumerateArray())
+                    builder.AddContent(seq++, RenderBlock(block));
+            }
+
+            builder.CloseElement();
+            return;
+        }
+
+        var content = GetProperty(section, "content_section") ?? section;
+        builder.OpenElement(seq++, "section");
+        builder.AddAttribute(seq++, "class", "class-section");
+        builder.AddAttribute(
+            seq++,
+            "id",
+            AnchorId(GetString(content, "title") ?? "section"));
+        if (GetString(content, "kicker") is string sectionKicker) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-section-kicker"); builder.AddContent(seq++, sectionKicker); builder.CloseElement(); }
+        if (GetString(content, "title") is string sectionTitle) { builder.OpenElement(seq++, "h2"); builder.AddContent(seq++, sectionTitle); builder.CloseElement(); }
+        if (GetProperty(content, "blocks") is JsonElement blocks)
+            foreach (var block in blocks.EnumerateArray()) builder.AddContent(seq++, RenderBlock(block));
+        builder.CloseElement();
+    };
+
+    private RenderFragment RenderFeatureCard(JsonElement feature) => builder =>
+    {
+        var seq = 0;
+
+        // Native <details> gives every level-tagged feature click-to-collapse
+        // behavior without needing extra Blazor state.
+        builder.OpenElement(seq++, "details");
+        builder.AddAttribute(seq++, "class", "class-feature");
+        builder.AddAttribute(
+            seq++,
+            "id",
+            AnchorId(GetString(feature, "name") ?? "feature"));
+        builder.AddAttribute(seq++, "open", true);
+
+        builder.OpenElement(seq++, "summary");
+        builder.AddAttribute(seq++, "class", "class-feature-header");
+
+        builder.OpenElement(seq++, "h3");
+        builder.AddContent(seq++, GetString(feature, "name"));
+        builder.CloseElement();
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-feature-header-actions");
+
+        if (GetValueText(feature, "level") is string level && !string.IsNullOrWhiteSpace(level))
+        {
+            builder.OpenElement(seq++, "span");
+            builder.AddAttribute(seq++, "class", "class-level-badge");
+            builder.AddContent(seq++, $"Level {level}");
+            builder.CloseElement();
+        }
+
+        builder.OpenElement(seq++, "span");
+        builder.AddAttribute(seq++, "class", "class-feature-chevron");
+        builder.AddAttribute(seq++, "aria-hidden", "true");
+        builder.AddContent(seq++, "⌄");
+        builder.CloseElement();
+
+        builder.CloseElement();
+        builder.CloseElement();
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-feature-body");
+
+        if (GetString(feature, "subtitle") is string subtitle)
+        {
+            builder.OpenElement(seq++, "div");
+            builder.AddAttribute(seq++, "class", "class-prerequisite");
+            builder.AddContent(seq++, subtitle);
+            builder.CloseElement();
+        }
+
+        if (GetProperty(feature, "blocks") is JsonElement blocks)
+        {
+            foreach (var block in blocks.EnumerateArray())
+                builder.AddContent(seq++, RenderBlock(block));
+        }
+
+        builder.CloseElement();
+        builder.CloseElement();
+    };
+
+    private RenderFragment RenderAppendix(JsonElement appendix) => builder =>
+    {
+        var seq = 0;
+        builder.OpenElement(seq++, "section");
+        builder.AddAttribute(seq++, "class", "class-feature-chapter");
+        builder.AddAttribute(
+            seq++,
+            "id",
+            AnchorId(GetString(appendix, "title") ?? "appendix"));
+        builder.OpenElement(seq++, "header"); builder.AddAttribute(seq++, "class", "class-chapter-heading");
+        if (GetString(appendix, "kicker") is string kicker) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-section-kicker"); builder.AddContent(seq++, kicker); builder.CloseElement(); }
+        builder.OpenElement(seq++, "h2"); builder.AddContent(seq++, GetString(appendix, "title")); builder.CloseElement();
+        builder.CloseElement();
+
+        if (GetProperty(appendix, "intro") is JsonElement intro) builder.AddContent(seq++, RenderParagraphs(intro));
+        if (GetProperty(appendix, "intro_blocks") is JsonElement introBlocks)
+            foreach (var block in introBlocks.EnumerateArray()) builder.AddContent(seq++, RenderBlock(block));
+        if (GetProperty(appendix, "blocks") is JsonElement blocks)
+            foreach (var block in blocks.EnumerateArray()) builder.AddContent(seq++, RenderBlock(block));
+        if (GetProperty(appendix, "features") is JsonElement features)
+            foreach (var feature in features.EnumerateArray()) builder.AddContent(seq++, RenderFeatureCard(feature));
+        builder.CloseElement();
+    };
+
+    private RenderFragment RenderBlock(JsonElement block) => builder =>
+    {
+        var seq = 0;
+        var type = GetString(block, "type") ?? "paragraph";
+
+        if (type == "paragraph")
+        {
+            builder.OpenElement(seq++, "p"); builder.AddContent(seq++, GetString(block, "text")); builder.CloseElement(); return;
+        }
+
+        if (type is "section" or "subsection")
+        {
+            builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-feature-subsection");
+            if (GetString(block, "title") is string title) { builder.OpenElement(seq++, "h4"); builder.AddContent(seq++, title); builder.CloseElement(); }
+            if (GetProperty(block, "paragraphs") is JsonElement paragraphs) builder.AddContent(seq++, RenderParagraphs(paragraphs));
+            if (GetProperty(block, "blocks") is JsonElement children) foreach (var child in children.EnumerateArray()) builder.AddContent(seq++, RenderBlock(child));
+            builder.CloseElement(); return;
+        }
+
+        if (type == "heading")
+        {
+            builder.OpenElement(seq++, "h4"); builder.AddContent(seq++, GetString(block, "text")); builder.CloseElement(); return;
+        }
+
+        if (type == "list")
+        {
+            if (GetProperty(block, "items") is JsonElement items) builder.AddContent(seq++, RenderList(items));
+            return;
+        }
+
+        if (type == "note")
+        {
+            builder.OpenElement(seq++, "aside"); builder.AddAttribute(seq++, "class", "class-note");
+            if (GetString(block, "title") is string title) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-note-heading"); builder.AddContent(seq++, title); builder.CloseElement(); }
+            if (GetString(block, "text") is string text) { builder.OpenElement(seq++, "p"); builder.AddContent(seq++, text); builder.CloseElement(); }
+            if (GetProperty(block, "paragraphs") is JsonElement paragraphs) builder.AddContent(seq++, RenderParagraphs(paragraphs));
+            builder.CloseElement(); return;
+        }
+
+        if (type is "formula" or "formulas")
+        {
+            var formulas = GetProperty(block, "formula_items");
+            if (formulas is JsonElement formulaItems)
+            {
+                builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-formula-grid");
+                foreach (var formula in formulaItems.EnumerateArray()) builder.AddContent(seq++, RenderFormula(formula));
+                builder.CloseElement();
+            }
+            else builder.AddContent(seq++, RenderFormula(block));
+            return;
+        }
+
+        if (type == "stats")
+        {
+            if (GetProperty(block, "items") is JsonElement items)
+            {
+                builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-list");
+                foreach (var item in items.EnumerateArray())
+                {
+                    builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-row");
+                    builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(item, "label")); builder.CloseElement();
+                    builder.OpenElement(seq++, "span"); builder.AddContent(seq++, GetValueText(item, "value")); builder.CloseElement();
+                    builder.CloseElement();
+                }
+                builder.CloseElement();
+            }
+            return;
+        }
+
+        if (type == "options")
+        {
+            var options = GetProperty(block, "options") ?? GetProperty(block, "items");
+            if (options is JsonElement optionItems)
+            {
+                builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-options");
+                foreach (var option in optionItems.EnumerateArray())
+                {
+                    builder.OpenElement(seq++, "article"); builder.AddAttribute(seq++, "class", "class-option");
+                    builder.OpenElement(seq++, "h4"); builder.AddContent(seq++, GetString(option, "name")); builder.CloseElement();
+                    if (GetString(option, "prerequisite") is string prereq) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-prerequisite"); builder.AddContent(seq++, $"Prerequisite: {prereq}"); builder.CloseElement(); }
+                    if (GetProperty(option, "paragraphs") is JsonElement paragraphs) builder.AddContent(seq++, RenderParagraphs(paragraphs));
+                    if (GetProperty(option, "items") is JsonElement items) builder.AddContent(seq++, RenderList(items));
+                    if (GetProperty(option, "blocks") is JsonElement optionBlocks) foreach (var child in optionBlocks.EnumerateArray()) builder.AddContent(seq++, RenderBlock(child));
+                    if (GetProperty(option, "note") is JsonElement note)
+                    {
+                        var noteBlock = note;
+                        builder.OpenElement(seq++, "aside"); builder.AddAttribute(seq++, "class", "class-note class-note-variant");
+                        if (GetString(noteBlock, "title") is string noteTitle) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-note-heading"); builder.AddContent(seq++, noteTitle); builder.CloseElement(); }
+                        if (GetProperty(noteBlock, "paragraphs") is JsonElement noteParagraphs) builder.AddContent(seq++, RenderParagraphs(noteParagraphs));
+                        builder.CloseElement();
+                    }
+                    builder.CloseElement();
+                }
+                builder.CloseElement();
+            }
+            return;
+        }
+
+        if (type == "table") builder.AddContent(seq++, RenderDynamicTable(block, "class-table"));
+    };
+
+    private RenderFragment RenderFormula(JsonElement formula) => builder =>
+    {
+        var seq = 0;
+        builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-formula");
+        builder.OpenElement(seq++, "span"); builder.AddContent(seq++, GetString(formula, "label")); builder.CloseElement();
+        builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(formula, "value")); builder.CloseElement();
+        builder.CloseElement();
+    };
+
+    private RenderFragment RenderParagraphs(JsonElement paragraphs) => builder =>
+    {
+        var seq = 0;
+        if (paragraphs.ValueKind == JsonValueKind.String)
+        {
+            builder.OpenElement(seq++, "p"); builder.AddContent(seq++, ValueToText(paragraphs)); builder.CloseElement(); return;
+        }
+        if (paragraphs.ValueKind != JsonValueKind.Array) return;
+        foreach (var paragraph in paragraphs.EnumerateArray())
+        {
+            builder.OpenElement(seq++, "p"); builder.AddContent(seq++, ValueToText(paragraph)); builder.CloseElement();
+        }
+    };
+
+    private RenderFragment RenderList(JsonElement items) => builder =>
+    {
+        var seq = 0;
+        if (items.ValueKind != JsonValueKind.Array) return;
+        builder.OpenElement(seq++, "ul"); builder.AddAttribute(seq++, "class", "class-list");
+        foreach (var item in items.EnumerateArray()) { builder.OpenElement(seq++, "li"); builder.AddContent(seq++, ValueToText(item)); builder.CloseElement(); }
+        builder.CloseElement();
+    };
+
+    private RenderFragment RenderDynamicTable(JsonElement table, string cssClass) => builder =>
+    {
+        var columns = GetProperty(table, "columns");
+        var rows = GetProperty(table, "rows");
+        if (columns is not JsonElement columnArray || rows is not JsonElement rowArray || columnArray.ValueKind != JsonValueKind.Array || rowArray.ValueKind != JsonValueKind.Array) return;
+        var seq = 0;
+        builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-table-scroll");
+        builder.OpenElement(seq++, "table"); builder.AddAttribute(seq++, "class", cssClass);
+        builder.OpenElement(seq++, "thead"); builder.OpenElement(seq++, "tr");
+        foreach (var column in columnArray.EnumerateArray()) { builder.OpenElement(seq++, "th"); builder.AddContent(seq++, GetString(column, "label")); builder.CloseElement(); }
+        builder.CloseElement(); builder.CloseElement();
+        builder.OpenElement(seq++, "tbody");
+        foreach (var row in rowArray.EnumerateArray())
+        {
+            builder.OpenElement(seq++, "tr");
+            foreach (var column in columnArray.EnumerateArray())
+            {
+                var key = GetString(column, "key") ?? string.Empty;
+                builder.OpenElement(seq++, "td");
+                if (key.Equals("level", StringComparison.OrdinalIgnoreCase)) builder.AddAttribute(seq++, "class", "table-level");
+                if (GetProperty(row, key) is JsonElement value) builder.AddContent(seq++, ValueToText(value));
+                builder.CloseElement();
+            }
+            builder.CloseElement();
+        }
+        builder.CloseElement(); builder.CloseElement(); builder.CloseElement();
+    };
+
+    private static string AnchorId(string value)
+    {
+        var chars =
+            value
+                .ToLowerInvariant()
+                .Select(character =>
+                    char.IsLetterOrDigit(character)
+                        ? character
+                        : '-')
+                .ToArray();
+
+        var result =
+            new string(chars);
+
+        while (result.Contains("--"))
+            result =
+                result.Replace(
+                    "--",
+                    "-");
+
+        return result.Trim('-');
+    }
+
+    private static string Humanize(string value)
+        => string.Join(" ", value.Split('_', StringSplitOptions.RemoveEmptyEntries).Select(word => char.ToUpperInvariant(word[0]) + word[1..]));
+
+    private static string SlugToDisplayName(string slug)
+        => string.IsNullOrWhiteSpace(slug) ? "Class" : string.Join(" ", slug.Split('-', StringSplitOptions.RemoveEmptyEntries).Select(word => char.ToUpperInvariant(word[0]) + word[1..]));
+
+    private static bool IsSafeSlug(string slug)
+        => !string.IsNullOrWhiteSpace(slug) && slug.All(character => char.IsLetterOrDigit(character) || character == '-');
+
+    public void Dispose() => classDocument?.Dispose();
+}

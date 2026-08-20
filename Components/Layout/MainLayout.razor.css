@@ -6,14 +6,21 @@
 
 .site-sidebar {
     min-height: 100vh;
+    align-self: stretch;
+
     background:
         linear-gradient(rgba(10, 7, 7, 0.84), rgba(10, 7, 7, 0.96)),
         repeating-linear-gradient(155deg, #240706 0 12px, #4d0b08 12px 15px, #170606 15px 31px);
+
     border-right: 1px solid #8c110c;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
+
+    /*
+       Keep the sidebar BACKGROUND as tall as the page.
+       The inner .side-nav handles the sticky/follow behavior.
+    */
+    position: relative;
+    height: auto;
+    overflow: visible;
 }
 
 .site-main {
@@ -78,6 +85,7 @@
         min-height: auto;
         height: auto;
         position: static;
+        overflow: visible;
         border-right: 0;
         border-bottom: 1px solid #8c110c;
     }
@@ -105,7 +113,21 @@
 .site-shell,
 .site-main {
     width: 100%;
-    overflow-x: hidden;
+}
+
+/*
+   IMPORTANT:
+   Do not put overflow:hidden/auto on .site-shell.
+   That ancestor would become the sticky scroll container and
+   prevent the inner navigation from following the viewport.
+*/
+.site-shell {
+    overflow: visible;
+}
+
+.site-main {
+    min-width: 0;
+    overflow-x: clip;
 }
 
 .site-content {
@@ -113,6 +135,7 @@
 }
 
 @supports not (overflow: clip) {
+    .site-main,
     .site-content {
         overflow-x: hidden;
     }
@@ -130,4 +153,3 @@
             3rem;
     }
 }
-

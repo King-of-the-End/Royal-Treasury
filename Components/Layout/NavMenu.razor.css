@@ -1,174 +1,91 @@
 /* =========================================
-   ROYAL TREASURY
-   SIDE NAVIGATION
-   ========================================= */
-
-
-/* =========================================
-   MAIN NAV CONTAINER
+   ROYAL TREASURY — DYNAMIC SIDE NAV
    ========================================= */
 
 .side-nav {
-    padding:
-        1.25rem
-        1rem
-        2rem;
+    position: fixed;
+    inset: 0 auto 0 0;
+
+    width: 230px;
+    height: 100vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+    z-index: 100;
+
+    padding: 1.25rem 1rem 2rem;
+
+    scrollbar-width: thin;
+    scrollbar-color: rgba(214, 169, 0, 0.45) transparent;
 }
-
-
-/* =========================================
-   BRAND / EMBLEM
-   ========================================= */
 
 .side-brand {
     display: flex;
     flex-direction: column;
-
     align-items: center;
 
     gap: 0.75rem;
 
-    padding:
-        1rem
-        0.6rem
-        1.5rem;
+    padding: 1rem 0.6rem 1.5rem;
 
-    color:
-        #f1ede6;
+    color: #f1ede6;
+    text-align: center;
+    text-decoration: none;
 
-    text-align:
-        center;
-
-    text-decoration:
-        none;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size:
-        1.1rem;
-
-    font-weight:
-        700;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
-
-
-/* =========================================
-   ROYAL TREASURY EMBLEM
-   ========================================= */
 
 .brand-mark {
-    width:
-        112px;
+    width: 112px;
+    height: 112px;
 
-    height:
-        112px;
+    display: block;
+    object-fit: contain;
 
-    display:
-        block;
+    border-radius: 10px;
 
-    object-fit:
-        contain;
-
-    border-radius:
-        10px;
-
-    filter:
-        drop-shadow(
-            0 0 16px
-            rgba(211, 169, 0, 0.18)
-        );
-
-    transition:
-        transform 150ms ease,
-        filter 150ms ease;
+    filter: drop-shadow(0 0 16px rgba(211, 169, 0, 0.18));
 }
-
-
-/* Logo hover */
-
-.side-brand:hover .brand-mark {
-    transform:
-        scale(1.04);
-
-    filter:
-        drop-shadow(
-            0 0 20px
-            rgba(255, 214, 77, 0.28)
-        );
-}
-
-
-/* =========================================
-   NAVIGATION SECTIONS
-   ========================================= */
 
 .side-section {
-    border:
-        1px solid
-        #6f130f;
+    border: 1px solid #6f130f;
+    border-bottom: 0;
 
-    border-bottom:
-        0;
-
-    background:
-        rgba(
-            24,
-            22,
-            21,
-            0.82
-        );
+    background: rgba(24, 22, 21, 0.88);
 }
-
 
 .side-section:last-child {
-    border-bottom:
-        1px solid
-        #6f130f;
+    border-bottom: 1px solid #6f130f;
 }
-
-
-/* =========================================
-   SECTION HEADINGS
-   ========================================= */
 
 .side-heading {
-    padding:
-        0.7rem
-        0.75rem
-        0.45rem;
+    padding: 0.7rem 0.75rem;
 
-    color:
-        #f1ede6;
+    color: #f1ede6;
+    font-weight: 800;
 
-    font-weight:
-        700;
+    background: rgba(78, 20, 15, 0.28);
 
-    border-bottom:
-        1px solid
-        rgba(138, 18, 13, 0.65);
+    border-bottom: 1px solid rgba(138, 18, 13, 0.72);
+
+    letter-spacing: 0.03em;
 }
 
+.side-link {
+    display: block;
 
-/* =========================================
-   NAV LINKS
-   ========================================= */
+    padding: 0.43rem 0.75rem;
 
-.side-section ::deep .side-link {
-    display:
-        block;
+    color: #d6a900;
+    text-decoration: none;
 
-    padding:
-        0.38rem
-        0.75rem;
+    line-height: 1.25;
 
-    color:
-        #d6a900;
-
-    text-decoration:
-        none;
+    border-bottom: 1px solid rgba(111, 19, 15, 0.18);
 
     transition:
         background 140ms ease,
@@ -176,60 +93,54 @@
         padding-left 140ms ease;
 }
 
-
-/* Hover / selected */
-
-.side-section ::deep .side-link:hover,
-.side-section ::deep .side-link.active {
-    background:
-        rgba(
-            126,
-            45,
-            30,
-            0.42
-        );
-
-    color:
-        #fff4cb;
-
-    padding-left:
-        0.95rem;
+.side-link:last-child {
+    border-bottom: 0;
 }
 
+.side-link:hover {
+    background: rgba(126, 45, 30, 0.42);
 
-/* =========================================
-   MOBILE
-   ========================================= */
+    color: #fff4cb;
+
+    padding-left: 0.95rem;
+}
+
+.path-link {
+    color: #f1ede6;
+}
+
+.path-link + .path-link::before {
+    content: "›";
+    margin-right: 0.45rem;
+    color: #d6a900;
+}
+
+.index-link {
+    font-size: 0.92rem;
+}
 
 @media (max-width: 800px) {
+    .side-nav {
+        position: static;
+
+        width: auto;
+        height: auto;
+
+        overflow: visible;
+    }
 
     .side-brand {
-        flex-direction:
-            row;
-
-        justify-content:
-            center;
-
-        padding-bottom:
-            1rem;
+        flex-direction: row;
+        justify-content: center;
     }
-
 
     .brand-mark {
-        width:
-            58px;
-
-        height:
-            58px;
+        width: 58px;
+        height: 58px;
     }
-
 
     .side-section {
-        max-width:
-            680px;
-
-        margin:
-            0 auto;
+        max-width: 680px;
+        margin: 0 auto;
     }
-
 }

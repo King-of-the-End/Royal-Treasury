@@ -1,0 +1,2085 @@
+/* =========================================================
+   CLASS PAGE
+   ========================================================= */
+
+.class-page {
+    width: min(100%, 1380px);
+
+    margin: 0 auto;
+
+    padding:
+        3rem
+        clamp(1.25rem, 4vw, 4rem)
+        6rem;
+}
+
+
+/* =========================================================
+   BACK LINK
+   ========================================================= */
+
+.class-back-link {
+    display: inline-flex;
+
+    margin-bottom: 3rem;
+
+    color: var(--gold-light);
+
+    font-size: 1rem;
+    font-weight: 800;
+
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    transition:
+        transform 150ms ease,
+        filter 150ms ease;
+}
+
+
+.class-back-link:hover {
+    transform: translateX(-4px);
+
+    filter: brightness(1.15);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.class-hero {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+
+    min-height: 240px;
+
+    margin-bottom: 3rem;
+
+    padding:
+        1rem
+        0
+        2.5rem;
+
+    border-bottom:
+        2px solid
+        rgba(165, 17, 24, 0.95);
+}
+
+
+.class-hero::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -2px;
+    left: 0;
+
+    width: 230px;
+    height: 2px;
+
+    background: var(--gold-light);
+}
+
+
+.class-hero-emblem {
+    width: 180px;
+    height: 180px;
+
+    flex:
+        0
+        0
+        180px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(218, 177, 73, 0.08),
+            transparent 68%
+        );
+}
+
+
+.class-hero-emblem img {
+    width: 145px;
+    height: 145px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 8px 14px
+            rgba(0, 0, 0, 0.5)
+        );
+}
+
+
+.class-hero-copy {
+    min-width: 0;
+}
+
+
+.class-kicker,
+.class-section-kicker {
+    margin-bottom: 0.4rem;
+
+    color: var(--gold-light);
+
+    font-size: 0.82rem;
+    font-weight: 900;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+
+.class-hero h1 {
+    margin: 0;
+
+    color: #f4efe8;
+
+    font-size:
+        clamp(
+            4rem,
+            9vw,
+            8rem
+        );
+
+    line-height: 0.9;
+
+    letter-spacing: -0.035em;
+}
+
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.class-quote {
+    position: relative;
+
+    margin:
+        0
+        0
+        3rem;
+
+    padding:
+        1.5rem
+        1.75rem
+        1.5rem
+        2rem;
+
+    border:
+        1px solid
+        rgba(150, 22, 28, 0.38);
+
+    border-left:
+        4px solid
+        var(--gold-light);
+
+    border-radius: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(85, 15, 18, 0.22),
+            rgba(218, 177, 73, 0.025)
+        );
+
+    color:
+        rgba(246, 239, 226, 0.92);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            1.05rem,
+            1.5vw,
+            1.25rem
+        );
+
+    font-style: italic;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   GENERAL TYPOGRAPHY
+   ========================================================= */
+
+.class-page p {
+    margin:
+        0
+        0
+        1rem;
+
+    color:
+        rgba(239, 235, 229, 0.89);
+
+    font-size: 1rem;
+
+    line-height: 1.72;
+}
+
+
+.class-page p:last-child {
+    margin-bottom: 0;
+}
+
+
+.class-page h2,
+.class-page h3,
+.class-page h4 {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.class-lore-section {
+    margin-bottom: 3rem;
+
+    padding:
+        0
+        clamp(0rem, 2vw, 1rem);
+}
+
+
+.class-lore-section p:first-child::first-letter {
+    float: left;
+
+    margin:
+        0.05em
+        0.08em
+        0
+        0;
+
+    color: var(--gold-light);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 4rem;
+
+    font-weight: 800;
+
+    line-height: 0.8;
+}
+
+
+/* =========================================================
+   TABS
+   ========================================================= */
+
+.class-tabs {
+    margin-top: 3.5rem;
+}
+
+
+.class-tab-buttons {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    margin-bottom: 2.5rem;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(150, 24, 30, 0.48);
+
+    border-radius: 5px;
+
+    background:
+        rgba(10, 9, 9, 0.6);
+}
+
+
+.class-tab-button {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.7rem;
+
+    min-height: 68px;
+
+    padding:
+        1rem
+        1.25rem;
+
+    border: none;
+
+    border-right:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+
+    color:
+        rgba(225, 216, 204, 0.68);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(43, 33, 30, 0.42),
+            rgba(18, 15, 15, 0.4)
+        );
+
+    font: inherit;
+
+    font-size: 1.05rem;
+    font-weight: 850;
+
+    letter-spacing: 0.035em;
+
+    cursor: pointer;
+
+    transition:
+        color 150ms ease,
+        background 150ms ease,
+        box-shadow 150ms ease;
+}
+
+
+.class-tab-button:last-child {
+    border-right: none;
+}
+
+
+.class-tab-button:hover {
+    color: #f4e8ce;
+
+    background:
+        rgba(90, 23, 25, 0.25);
+}
+
+
+.class-tab-button.active {
+    color: #fff1cf;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(120, 19, 23, 0.5),
+            rgba(64, 18, 19, 0.45)
+        );
+
+    box-shadow:
+        inset 0 -3px 0
+        var(--gold-light);
+}
+
+
+.class-tab-button.active::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 12%;
+
+    width: 76%;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            rgba(255, 215, 115, 0.65),
+            transparent
+        );
+}
+
+
+.class-tab-icon {
+    color: var(--gold-light);
+
+    font-size: 1rem;
+}
+
+
+.class-tab-content {
+    animation:
+        class-tab-fade
+        160ms ease-out;
+}
+
+
+@keyframes class-tab-fade {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   STANDARD SECTIONS
+   ========================================================= */
+
+.class-section {
+    position: relative;
+
+    margin-bottom: 2rem;
+
+    padding:
+        1.8rem
+        2rem;
+
+    border:
+        1px solid
+        rgba(145, 31, 34, 0.25);
+
+    border-radius: 5px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(45, 31, 27, 0.62),
+            rgba(18, 15, 15, 0.78)
+        );
+
+    box-shadow:
+        0 8px 24px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+.class-section > h2 {
+    position: relative;
+
+    margin:
+        0
+        0
+        1.25rem;
+
+    padding-bottom: 0.65rem;
+
+    color: #f0cc72;
+
+    font-size:
+        clamp(
+            1.8rem,
+            3vw,
+            2.5rem
+        );
+
+    line-height: 1.05;
+}
+
+
+.class-section > h2::after {
+    content: "";
+
+    display: block;
+
+    width: min(460px, 100%);
+    height: 2px;
+
+    margin-top: 0.6rem;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(159, 18, 24, 0.95),
+            rgba(218, 177, 73, 0.65),
+            rgba(218, 177, 73, 0)
+        );
+}
+
+
+/* =========================================================
+   LORE GRID
+   ========================================================= */
+
+.class-lore-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 1.5rem;
+
+    margin-bottom: 2.5rem;
+}
+
+
+.class-lore-grid .class-section {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SUBSECTIONS
+   ========================================================= */
+
+.class-subsection {
+    margin-top: 1.5rem;
+
+    padding-top: 1.35rem;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+}
+
+
+.class-subsection h3 {
+    margin:
+        0
+        0
+        0.85rem;
+
+    color: #efcf7d;
+
+    font-size: 1.35rem;
+}
+
+
+/* =========================================================
+   NOTES
+   ========================================================= */
+
+.class-note {
+    position: relative;
+
+    margin:
+        2rem
+        0;
+
+    padding:
+        1.35rem
+        1.6rem;
+
+    border:
+        1px solid
+        rgba(150, 26, 31, 0.42);
+
+    border-left:
+        5px solid
+        rgb(155, 19, 25);
+
+    border-radius: 4px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(98, 21, 24, 0.24),
+            rgba(30, 24, 19, 0.72)
+        );
+}
+
+
+.class-note::before,
+.class-note::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 28px;
+    height: 4px;
+
+    background: var(--gold-light);
+}
+
+
+.class-note::before {
+    top: 0;
+}
+
+
+.class-note::after {
+    bottom: 0;
+}
+
+
+.class-note-heading {
+    margin-bottom: 0.5rem;
+
+    color: var(--gold-light);
+
+    font-size: 0.8rem;
+    font-weight: 900;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+
+.class-note-warning {
+    border-left-color:
+        rgb(190, 49, 48);
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(110, 30, 28, 0.3),
+            rgba(30, 20, 18, 0.75)
+        );
+}
+
+
+.class-note-warning::before,
+.class-note-warning::after {
+    background:
+        rgb(190, 49, 48);
+}
+
+
+.class-note-variant {
+    border-left-color:
+        rgb(166, 69, 82);
+
+    background:
+        rgba(100, 30, 42, 0.16);
+}
+
+
+/* =========================================================
+   RULE BOXES
+   ========================================================= */
+
+.class-rule-box {
+    margin:
+        1.25rem
+        0;
+
+    padding:
+        1rem
+        1.2rem;
+
+    border-left:
+        3px solid
+        rgba(158, 26, 31, 0.9);
+
+    background:
+        rgba(0, 0, 0, 0.2);
+}
+
+
+.class-rule-box > strong {
+    display: block;
+
+    margin-bottom: 0.45rem;
+
+    color: #efcf7d;
+}
+
+
+/* =========================================================
+   MINI CARDS
+   ========================================================= */
+
+.class-mini-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(240px, 1fr)
+        );
+
+    gap: 0.8rem;
+}
+
+
+.class-mini-card {
+    padding: 1rem;
+
+    border:
+        1px solid
+        rgba(152, 25, 30, 0.28);
+
+    background:
+        rgba(0, 0, 0, 0.16);
+}
+
+
+.class-mini-card strong {
+    display: block;
+
+    margin-bottom: 0.4rem;
+
+    color: #efcf7d;
+}
+
+
+/* =========================================================
+   STAT LIST
+
+   ::deep is required because these rows are created through
+   RenderTreeBuilder inside StatLine().
+   ========================================================= */
+
+.class-stat-list {
+    display: block;
+
+    margin-top: 1rem;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(218, 177, 73, 0.15);
+
+    border-radius: 4px;
+
+    background:
+        rgba(0, 0, 0, 0.16);
+}
+
+
+.class-stat-list ::deep .class-stat-row {
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(250px, 30%)
+        minmax(0, 1fr) !important;
+
+    gap: 0 !important;
+
+    width: 100%;
+
+    padding: 0 !important;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.075);
+}
+
+
+.class-stat-list ::deep .class-stat-row:last-child {
+    border-bottom: none;
+}
+
+
+.class-stat-list ::deep .class-stat-row:nth-child(even) {
+    background:
+        rgba(255, 255, 255, 0.018);
+}
+
+
+.class-stat-list ::deep .class-stat-row > strong {
+    display: flex !important;
+
+    align-items: center;
+
+    min-width: 0;
+
+    padding:
+        0.8rem
+        1rem !important;
+
+    margin: 0 !important;
+
+    border-right:
+        1px solid
+        rgba(218, 177, 73, 0.22);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(112, 16, 21, 0.62),
+            rgba(66, 10, 14, 0.34)
+        );
+
+    color: #efcf7d !important;
+
+    font-weight: 800;
+
+    line-height: 1.35;
+}
+
+
+.class-stat-list ::deep .class-stat-row > span {
+    display: flex !important;
+
+    align-items: center;
+
+    min-width: 0;
+
+    padding:
+        0.8rem
+        1.15rem !important;
+
+    margin: 0 !important;
+
+    color:
+        rgba(241, 236, 230, 0.92) !important;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   LISTS
+
+   ::deep handles lists produced by RenderStringList().
+   ========================================================= */
+
+.class-page ::deep .class-list {
+    margin:
+        0.7rem
+        0
+        0;
+
+    padding-left: 1.35rem;
+
+    color:
+        rgba(239, 235, 229, 0.9);
+}
+
+
+.class-page ::deep .class-list li {
+    margin-bottom: 0.55rem;
+
+    padding-left: 0.2rem;
+
+    line-height: 1.55;
+}
+
+
+.class-page ::deep .class-list li::marker {
+    color: var(--gold-light);
+}
+
+
+/* =========================================================
+   FORMULAS
+   ========================================================= */
+
+.class-formula-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 1rem;
+
+    margin:
+        1.5rem
+        0;
+}
+
+
+.class-formula {
+    padding:
+        1.2rem
+        1.3rem;
+
+    border:
+        1px solid
+        rgba(151, 25, 30, 0.34);
+
+    border-top:
+        3px solid
+        rgba(157, 20, 26, 0.82);
+
+    background:
+        rgba(0, 0, 0, 0.18);
+}
+
+
+.class-formula span {
+    display: block;
+
+    margin-bottom: 0.5rem;
+
+    color:
+        rgba(218, 177, 73, 0.82);
+
+    font-size: 0.72rem;
+    font-weight: 900;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+}
+
+
+.class-formula strong {
+    color: #f4efe8;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.class-table-section {
+    padding:
+        1.8rem
+        1.4rem
+        1.5rem;
+}
+
+
+.class-table-scroll {
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin-top: 1rem;
+
+    border:
+        1px solid
+        rgba(145, 22, 28, 0.46);
+
+    border-radius: 3px;
+}
+
+
+.class-table {
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+
+    background:
+        rgba(8, 7, 7, 0.28);
+}
+
+
+.class-table th {
+    padding:
+        0.85rem
+        0.75rem;
+
+    border-right:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    border-bottom:
+        2px solid
+        rgba(174, 25, 31, 0.9);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(117, 18, 22, 0.92),
+            rgba(76, 11, 14, 0.94)
+        );
+
+    color: #fff5dc;
+
+    font-size: 0.78rem;
+    font-weight: 900;
+
+    line-height: 1.25;
+
+    text-align: left;
+
+    text-transform: uppercase;
+}
+
+
+.class-table td {
+    padding:
+        0.72rem
+        0.75rem;
+
+    border-right:
+        1px solid
+        rgba(139, 24, 29, 0.2);
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+    color:
+        rgba(240, 236, 230, 0.9);
+
+    line-height: 1.4;
+
+    vertical-align: top;
+}
+
+
+.class-table tbody tr:nth-child(even) {
+    background:
+        rgba(111, 30, 30, 0.055);
+}
+
+
+.class-table tbody tr:hover {
+    background:
+        rgba(218, 177, 73, 0.075);
+}
+
+
+.class-table td:not(.table-features),
+.class-table th:not(:nth-child(3)) {
+    white-space: nowrap;
+}
+
+
+.table-level {
+    color: #efcf7d !important;
+
+    font-weight: 900;
+}
+
+
+.table-features {
+    min-width: 250px;
+}
+
+
+.quirks-table {
+    min-width: 600px;
+}
+
+
+.quirks-table th:first-child,
+.quirks-table td:first-child {
+    width: 70px;
+
+    text-align: center;
+}
+
+
+.compact-table {
+    min-width: 420px;
+
+    margin-top: 1rem;
+}
+
+
+/* =========================================================
+   FEATURE CHAPTERS
+   ========================================================= */
+
+.class-feature-chapter {
+    margin:
+        4rem
+        0;
+}
+
+
+.class-chapter-heading {
+    position: relative;
+
+    margin-bottom: 2rem;
+
+    padding:
+        1rem
+        1.2rem;
+
+    border:
+        1px solid
+        rgba(144, 22, 27, 0.42);
+
+    border-bottom:
+        2px solid
+        rgba(174, 21, 28, 0.9);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(94, 15, 18, 0.5),
+            rgba(28, 20, 18, 0.16)
+        );
+}
+
+
+.class-chapter-heading::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -2px;
+    left: 0;
+
+    width: 210px;
+    height: 2px;
+
+    background: var(--gold-light);
+}
+
+
+.class-chapter-heading h2 {
+    margin: 0;
+
+    color: #f4efe8;
+
+    font-size:
+        clamp(
+            2.4rem,
+            5vw,
+            4rem
+        );
+
+    line-height: 1;
+}
+
+
+.class-chapter-intro {
+    max-width: 1000px;
+
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   INDIVIDUAL FEATURES
+   ========================================================= */
+
+.class-feature {
+    margin-bottom: 1.5rem;
+
+    padding:
+        1.5rem
+        1.7rem;
+
+    border:
+        1px solid
+        rgba(143, 22, 28, 0.22);
+
+    border-left:
+        3px solid
+        rgba(164, 24, 30, 0.8);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(100, 21, 24, 0.12),
+            transparent 65%
+        );
+}
+
+
+.class-feature-header {
+    display: flex;
+
+    align-items: baseline;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin-bottom: 0.85rem;
+
+    padding-bottom: 0.55rem;
+
+    border-bottom:
+        1px solid
+        rgba(218, 177, 73, 0.2);
+}
+
+
+.class-feature-header h3 {
+    margin: 0;
+
+    color: #f4efe8;
+
+    font-size:
+        clamp(
+            1.55rem,
+            2.5vw,
+            2.05rem
+        );
+}
+
+
+.class-level-badge {
+    flex: 0 0 auto;
+
+    padding:
+        0.28rem
+        0.6rem;
+
+    border:
+        1px solid
+        rgba(163, 29, 34, 0.55);
+
+    border-radius: 999px;
+
+    color: #efcf7d;
+
+    background:
+        rgba(111, 17, 21, 0.2);
+
+    font-size: 0.72rem;
+    font-weight: 900;
+
+    letter-spacing: 0.07em;
+
+    text-transform: uppercase;
+}
+
+
+.class-feature-subsection {
+    margin-top: 1.2rem;
+
+    padding-top: 1rem;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+}
+
+
+.class-feature-subsection h4 {
+    margin:
+        0
+        0
+        0.7rem;
+
+    color: #efcf7d;
+
+    font-size: 1.25rem;
+}
+
+
+/* =========================================================
+   OPTIONS / BIRTHRIGHTS
+   ========================================================= */
+
+.class-options {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 1rem;
+
+    margin-top: 1.4rem;
+}
+
+
+.class-option {
+    padding:
+        1.25rem
+        1.35rem;
+
+    border:
+        1px solid
+        rgba(145, 23, 28, 0.28);
+
+    border-top:
+        3px solid
+        rgba(160, 21, 27, 0.75);
+
+    background:
+        rgba(0, 0, 0, 0.16);
+}
+
+
+.class-option h3,
+.class-option h4 {
+    margin:
+        0
+        0
+        0.55rem;
+
+    color: #f4efe8;
+
+    font-size: 1.35rem;
+}
+
+
+.class-prerequisite {
+    margin-bottom: 0.8rem;
+
+    color:
+        rgba(222, 189, 118, 0.88);
+
+    font-size: 0.88rem;
+
+    font-style: italic;
+}
+
+
+.class-birthright-grid {
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+}
+
+
+.class-birthright {
+    border-top-color:
+        rgba(178, 28, 35, 0.8);
+}
+
+
+/* =========================================================
+   LOADING / ERROR
+   ========================================================= */
+
+.class-loading,
+.class-error {
+    padding: 2rem;
+
+    border:
+        1px solid
+        rgba(155, 25, 30, 0.4);
+
+    background:
+        rgba(30, 24, 20, 0.85);
+}
+
+
+.class-error {
+    border-left:
+        4px solid
+        rgb(180, 35, 43);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+.class-table-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+
+.class-table-scroll::-webkit-scrollbar-track {
+    background:
+        rgba(0, 0, 0, 0.2);
+}
+
+
+.class-table-scroll::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+
+    background:
+        rgba(167, 31, 36, 0.6);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .class-lore-grid,
+    .class-options,
+    .class-birthright-grid,
+    .class-formula-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .class-hero-emblem {
+        width: 135px;
+        height: 135px;
+
+        flex-basis: 135px;
+    }
+
+
+    .class-hero-emblem img {
+        width: 115px;
+        height: 115px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .class-page {
+        padding:
+            2rem
+            1rem
+            4rem;
+    }
+
+
+    .class-back-link {
+        margin-bottom: 2rem;
+    }
+
+
+    .class-hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        min-height: 0;
+
+        gap: 0.8rem;
+
+        padding-bottom: 1.5rem;
+    }
+
+
+    .class-hero-emblem {
+        width: 100px;
+        height: 100px;
+
+        flex-basis: 100px;
+    }
+
+
+    .class-hero-emblem img {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .class-hero h1 {
+        font-size:
+            clamp(
+                3.5rem,
+                18vw,
+                5.5rem
+            );
+    }
+
+
+    .class-tabs {
+        margin-top: 2.5rem;
+    }
+
+
+    .class-tab-button {
+        min-height: 56px;
+
+        padding:
+            0.75rem
+            0.5rem;
+
+        gap: 0.35rem;
+
+        font-size: 0.88rem;
+    }
+
+
+    .class-tab-icon {
+        font-size: 0.82rem;
+    }
+
+
+    .class-section {
+        padding:
+            1.3rem
+            1.1rem;
+    }
+
+
+    .class-feature {
+        padding:
+            1.25rem
+            1rem;
+    }
+
+
+    .class-feature-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0.5rem;
+    }
+
+
+    .class-stat-list ::deep .class-stat-row {
+        grid-template-columns: 1fr !important;
+    }
+
+
+    .class-stat-list ::deep .class-stat-row > strong {
+        border-right: none;
+
+        border-bottom:
+            1px solid
+            rgba(218, 177, 73, 0.15);
+    }
+
+}
+/* =========================================================
+   DYNAMIC RENDERER / CSS ISOLATION FIX
+
+   Many mechanics elements are created by RenderTreeBuilder.
+   Blazor does not add this component's generated scope attribute
+   to those nodes, so ordinary isolated selectors such as
+   .class-feature { ... } will not match them.
+
+   These ::deep rules deliberately style dynamically-rendered
+   descendants through the scoped .class-page ancestor.
+   ========================================================= */
+
+.class-page ::deep .class-section {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1.8rem 2rem;
+    border: 1px solid rgba(145, 31, 34, 0.25);
+    border-radius: 5px;
+    background: linear-gradient(145deg, rgba(45, 31, 27, 0.62), rgba(18, 15, 15, 0.78));
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.class-page ::deep .class-section > h2 {
+    position: relative;
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.65rem;
+    color: #f0cc72;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.05;
+}
+
+.class-page ::deep .class-section > h2::after {
+    content: "";
+    display: block;
+    width: min(460px, 100%);
+    height: 2px;
+    margin-top: 0.6rem;
+    background: linear-gradient(to right, rgba(159, 18, 24, 0.95), rgba(218, 177, 73, 0.65), rgba(218, 177, 73, 0));
+}
+
+.class-page ::deep .class-section-kicker {
+    margin-bottom: 0.4rem;
+    color: var(--gold-light);
+    font-size: 0.82rem;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.class-page ::deep .class-subsection,
+.class-page ::deep .class-feature-subsection {
+    margin-top: 1.5rem;
+    padding-top: 1.35rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.class-page ::deep .class-subsection h3,
+.class-page ::deep .class-feature-subsection h4 {
+    margin: 0 0 0.85rem;
+    color: #efcf7d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.35rem;
+}
+
+.class-page ::deep .class-note {
+    position: relative;
+    margin: 2rem 0;
+    padding: 1.35rem 1.6rem;
+    border: 1px solid rgba(150, 26, 31, 0.42);
+    border-left: 5px solid rgb(155, 19, 25);
+    border-radius: 4px;
+    background: linear-gradient(120deg, rgba(98, 21, 24, 0.24), rgba(30, 24, 19, 0.72));
+}
+
+.class-page ::deep .class-note::before,
+.class-page ::deep .class-note::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 4px;
+    background: var(--gold-light);
+}
+
+.class-page ::deep .class-note::before { top: 0; }
+.class-page ::deep .class-note::after { bottom: 0; }
+
+.class-page ::deep .class-note-heading {
+    margin-bottom: 0.5rem;
+    color: var(--gold-light);
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.class-page ::deep .class-note-variant {
+    border-left-color: rgb(166, 69, 82);
+    background: rgba(100, 30, 42, 0.16);
+}
+
+.class-page ::deep .class-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.8rem;
+}
+
+.class-page ::deep .class-mini-card {
+    padding: 1rem;
+    border: 1px solid rgba(152, 25, 30, 0.28);
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.class-page ::deep .class-mini-card strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #efcf7d;
+}
+
+.class-page ::deep .class-stat-list {
+    display: block;
+    margin-top: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(218, 177, 73, 0.15);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.class-page ::deep .class-stat-row {
+    display: grid !important;
+    grid-template-columns: minmax(250px, 30%) minmax(0, 1fr) !important;
+    width: 100%;
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.class-page ::deep .class-stat-row:last-child { border-bottom: none; }
+.class-page ::deep .class-stat-row:nth-child(even) { background: rgba(255, 255, 255, 0.018); }
+
+.class-page ::deep .class-stat-row > strong {
+    display: flex !important;
+    align-items: center;
+    min-width: 0;
+    padding: 0.8rem 1rem !important;
+    margin: 0 !important;
+    border-right: 1px solid rgba(158, 26, 31, 0.48);
+    background: linear-gradient(90deg, rgba(112, 16, 21, 0.62), rgba(66, 10, 14, 0.34));
+    color: #efcf7d !important;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.class-page ::deep .class-stat-row > span {
+    display: flex !important;
+    align-items: center;
+    min-width: 0;
+    padding: 0.8rem 1.15rem !important;
+    margin: 0 !important;
+    color: rgba(241, 236, 230, 0.92) !important;
+    line-height: 1.45;
+}
+
+.class-page ::deep .class-list {
+    margin: 0.7rem 0 0;
+    padding-left: 1.35rem;
+    color: rgba(239, 235, 229, 0.9);
+}
+
+.class-page ::deep .class-list li {
+    margin-bottom: 0.55rem;
+    padding-left: 0.2rem;
+    line-height: 1.55;
+}
+
+.class-page ::deep .class-list li::marker { color: var(--gold-light); }
+
+.class-page ::deep .class-formula-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.class-page ::deep .class-formula {
+    padding: 1.2rem 1.3rem;
+    border: 1px solid rgba(151, 25, 30, 0.34);
+    border-top: 3px solid rgba(157, 20, 26, 0.82);
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.class-page ::deep .class-formula span {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: rgba(218, 177, 73, 0.82);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.class-page ::deep .class-formula strong {
+    color: #f4efe8;
+    line-height: 1.5;
+}
+
+.class-page ::deep .class-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+    border: 1px solid rgba(145, 22, 28, 0.46);
+    border-radius: 3px;
+}
+
+.class-page ::deep .class-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    background: rgba(8, 7, 7, 0.28);
+}
+
+.class-page ::deep .class-table th {
+    padding: 0.85rem 0.75rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 2px solid rgba(174, 25, 31, 0.9);
+    background: linear-gradient(180deg, rgba(117, 18, 22, 0.92), rgba(76, 11, 14, 0.94));
+    color: #fff5dc;
+    font-size: 0.78rem;
+    font-weight: 900;
+    line-height: 1.25;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.class-page ::deep .class-table td {
+    padding: 0.72rem 0.75rem;
+    border-right: 1px solid rgba(139, 24, 29, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    color: rgba(240, 236, 230, 0.9);
+    line-height: 1.4;
+    vertical-align: top;
+}
+
+.class-page ::deep .class-table tbody tr:nth-child(even) { background: rgba(111, 30, 30, 0.055); }
+.class-page ::deep .class-table tbody tr:hover { background: rgba(218, 177, 73, 0.075); }
+.class-page ::deep .table-level { color: #efcf7d !important; font-weight: 900; }
+
+.class-page ::deep .class-feature-chapter {
+    margin: 4rem 0;
+}
+
+.class-page ::deep .class-chapter-heading {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(144, 22, 27, 0.42);
+    border-bottom: 2px solid rgba(174, 21, 28, 0.9);
+    background: linear-gradient(90deg, rgba(94, 15, 18, 0.5), rgba(28, 20, 18, 0.16));
+}
+
+.class-page ::deep .class-chapter-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 210px;
+    height: 2px;
+    background: var(--gold-light);
+}
+
+.class-page ::deep .class-chapter-heading h2 {
+    margin: 0;
+    color: #f4efe8;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1;
+}
+
+.class-page ::deep .class-feature {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 1.7rem;
+    border: 1px solid rgba(143, 22, 28, 0.22);
+    border-left: 3px solid rgba(164, 24, 30, 0.8);
+    background: linear-gradient(90deg, rgba(100, 21, 24, 0.12), transparent 65%);
+}
+
+.class-page ::deep .class-feature-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid rgba(218, 177, 73, 0.2);
+}
+
+.class-page ::deep .class-feature-header h3 {
+    margin: 0;
+    color: #f4efe8;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.55rem, 2.5vw, 2.05rem);
+}
+
+.class-page ::deep .class-level-badge {
+    flex: 0 0 auto;
+    padding: 0.28rem 0.6rem;
+    border: 1px solid rgba(163, 29, 34, 0.55);
+    border-radius: 999px;
+    color: #efcf7d;
+    background: rgba(111, 17, 21, 0.2);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.class-page ::deep .class-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.4rem;
+}
+
+.class-page ::deep .class-option {
+    padding: 1.25rem 1.35rem;
+    border: 1px solid rgba(145, 23, 28, 0.28);
+    border-top: 3px solid rgba(160, 21, 27, 0.75);
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.class-page ::deep .class-option h3,
+.class-page ::deep .class-option h4 {
+    margin: 0 0 0.55rem;
+    color: #f4efe8;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.35rem;
+}
+
+.class-page ::deep .class-prerequisite {
+    margin-bottom: 0.8rem;
+    color: rgba(222, 189, 118, 0.88);
+    font-size: 0.88rem;
+    font-style: italic;
+}
+
+.class-page ::deep p {
+    margin: 0 0 1rem;
+    color: rgba(239, 235, 229, 0.89);
+    font-size: 1rem;
+    line-height: 1.72;
+}
+
+.class-page ::deep p:last-child { margin-bottom: 0; }
+
+@media (max-width: 950px) {
+    .class-page ::deep .class-options,
+    .class-page ::deep .class-formula-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .class-page ::deep .class-section { padding: 1.3rem 1.1rem; }
+    .class-page ::deep .class-feature { padding: 1.25rem 1rem; }
+    .class-page ::deep .class-feature-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    .class-page ::deep .class-stat-row { grid-template-columns: 1fr !important; }
+    .class-page ::deep .class-stat-row > strong {
+        border-right: none;
+        border-bottom: 1px solid rgba(218, 177, 73, 0.15);
+    }
+}
+
+
+/* =========================================================
+   MULTI-PART NOTES
+
+   A subsection nested inside a note (for example Arbiter's
+   "Spellcasting" beneath "Ascension Modifications") should
+   look like another note heading, not like a level feature.
+   ========================================================= */
+
+.class-note .class-feature-subsection,
+.class-page ::deep .class-note .class-feature-subsection {
+    margin-top: 1rem;
+    padding-top: 1rem;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+}
+
+.class-note .class-feature-subsection h4,
+.class-page ::deep .class-note .class-feature-subsection h4 {
+    margin:
+        0
+        0
+        0.5rem;
+
+    color:
+        var(--gold-light);
+
+    font-family:
+        inherit;
+
+    font-size:
+        0.8rem;
+
+    font-weight:
+        900;
+
+    line-height:
+        1.2;
+
+    letter-spacing:
+        0.13em;
+
+    text-transform:
+        uppercase;
+}
+
+.class-note .class-feature-subsection p,
+.class-page ::deep .class-note .class-feature-subsection p {
+    margin:
+        0.45rem
+        0
+        0;
+}
+
+
+/* =========================================================
+   LORE GRID — ODD FINAL CARD
+
+   When the lore grid contains an odd number of sections,
+   let the final section use the full available width instead
+   of leaving an empty second-column gap.
+   ========================================================= */
+
+.class-lore-grid > .class-section:last-child:nth-child(odd),
+.class-page ::deep .class-lore-grid > .class-section:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+
+/*
+   A full-width final lore card should not be artificially
+   constrained to a narrow column's text width.
+*/
+.class-lore-grid > .class-section:last-child:nth-child(odd) > p,
+.class-page ::deep .class-lore-grid > .class-section:last-child:nth-child(odd) > p {
+    max-width: none;
+}
+
+
+/* =========================================================
+   COLLAPSIBLE LEVEL FEATURES
+   ========================================================= */
+
+.class-feature > summary,
+.class-page ::deep .class-feature > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.class-feature > summary::-webkit-details-marker,
+.class-page ::deep .class-feature > summary::-webkit-details-marker {
+    display: none;
+}
+
+.class-feature-header h3,
+.class-page ::deep .class-feature-header h3 {
+    color: var(--gold-light);
+}
+
+.class-feature-header-actions,
+.class-page ::deep .class-feature-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex: 0 0 auto;
+}
+
+.class-feature-chevron,
+.class-page ::deep .class-feature-chevron {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.65rem;
+    height: 1.65rem;
+
+    color: var(--gold-light);
+    font-size: 1.35rem;
+    line-height: 1;
+
+    transform: rotate(0deg);
+    transition: transform 160ms ease;
+}
+
+.class-feature[open] .class-feature-chevron,
+.class-page ::deep .class-feature[open] .class-feature-chevron {
+    transform: rotate(180deg);
+}
+
+.class-feature-body,
+.class-page ::deep .class-feature-body {
+    padding-top: 0.1rem;
+}
+
+.class-feature:not([open]) > .class-feature-header,
+.class-page ::deep .class-feature:not([open]) > .class-feature-header {
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+}
+
+.class-feature > summary:hover h3,
+.class-feature > summary:focus-visible h3,
+.class-page ::deep .class-feature > summary:hover h3,
+.class-page ::deep .class-feature > summary:focus-visible h3 {
+    color: #ffe59a;
+}
+
+.class-feature > summary:focus-visible,
+.class-page ::deep .class-feature > summary:focus-visible {
+    outline: 2px solid rgba(239, 207, 125, 0.7);
+    outline-offset: 4px;
+}
