@@ -1,0 +1,303 @@
+{
+  "Name": "False Vestias",
+  "Group": "False Eidolons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A false Eidolon emulating Vestias will consider itself to be the very pinnacle of magic, even though their magical abilities aren’t nearly as refined as the true goddess. They seek to validate their identity by gathering and hoarding ancient knowledge and artifacts of Vestias, and by amassing followers with powerful arcanists under their thrall. They are the most insidious of the false Eidolons, as they are blessed with the knowledge and cunning of one of the most pivotal Eidolons.\n\nOn rare occasions, the false Eidolon of Vestias may use their knowledge of the divine curtain to aid powerful planar beings (like lesser gods) breach it temporarily, in exchange for favors or support. The false Eidolon leans heavily into Vestias’ negative public image, acting in an oft-even manner under the pretense of their actions being “necessary evils”.\n\nTo build a following, a false Eidolon mirroring Vestias may pose as a powerful mage, political official or person of influence so they can gain power over others. Ironically, a yokai of this nature will turn their anger toward the Academy and other anti-magic influences, making them a possible ally to those oppressed by them.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/False%20Eidolon%20-%20Vestias%20(ISO).png",
+  "Stat Blocks": [
+    {
+      "id": "false_vestias",
+      "section_type": "Stat Block",
+      "title": "False Vestias",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "338 (45d8 + 155)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "80 ft. (hover)"
+      },
+      "quality_traits": [
+        "Deific",
+        "magic immunity 5th"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+11"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+11"
+        },
+        "INT": {
+          "score": 30,
+          "modifier": "+10"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 26,
+          "modifier": "+8",
+          "save": "+16"
+        }
+      },
+      "saving_throws": [
+        "Dex +11",
+        "Con +11",
+        "Cha +16"
+      ],
+      "skills": [
+        "Arcana +18",
+        "Deception +16",
+        "History +18",
+        "Perception +13",
+        "Religion +18"
+      ],
+      "resistances": [
+        "damage from spells",
+        "B/P/S (eidolic)"
+      ],
+      "immunities": [
+        "lightning",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "blinded",
+        "deafened",
+        "incapacitated"
+      ],
+      "senses": [
+        "truesight 240 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "all",
+        "telepathy 1 mile"
+      ],
+      "challenge_rating": "25 (75,000 XP)",
+      "proficiency_bonus": "+8",
+      "traits": [
+        {
+          "name": "Concentration Master",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon can concentrate on two spells at once. All spells they are concentrating on make a single concentration check when required, either succeeding or failing all at once."
+        },
+        {
+          "name": "Eidolic Lucubration (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon casts one spell that is not listed in their Spellcasting trait, requiring one of their spell slots and the appropriate action to do so."
+        },
+        {
+          "name": "Siphon the Devout",
+          "name_format": "bold_italic",
+          "description": "When the false Eidolon would be reduced to 0 hit points while worshippers who believe in their dogma exist within 1000 feet of them, they can siphon the souls of any number of those willing worshippers, killing them to reduce the damage they would take by an amount equal to the remaining hit points of the killed individuals."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon is a 20th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 20,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "electric chain",
+                  "necrosis",
+                  "psychic cleaver"
+                ]
+              },
+              {
+                "frequency": "1st level (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "self-curse",
+                  "vibrance sap"
+                ]
+              },
+              {
+                "frequency": "2nd level (at will)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "acceleration",
+                  "hungering vortex"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "deadly target",
+                  "caustic resolution",
+                  "lightning bolt",
+                  "power word misfortune"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "banishment",
+                  "tamamo’s arrowfall",
+                  "trudging circle"
+                ]
+              },
+              {
+                "frequency": "5th level (3 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "chainfield",
+                  "shadow gate",
+                  "vanquish magic"
+                ]
+              },
+              {
+                "frequency": "6th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "chain lightning",
+                  "disintegrate",
+                  "vengeful beckoning"
+                ]
+              },
+              {
+                "frequency": "7th level (2 slots)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "finger of death",
+                  "investiture of lightning",
+                  "unweave"
+                ]
+              },
+              {
+                "frequency": "8th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "cursed talon",
+                  "gatestep"
+                ]
+              },
+              {
+                "frequency": "9th level (1 slot)",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "meteor swarm",
+                  "yokai possession"
+                ]
+              }
+            ],
+            "notes": [
+              "The false Eidolon does not make eidomantic checks."
+            ]
+          }
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon uses its Solopsist Whip or Dread Lightning twice, then casts a spell with a casting time of one action."
+        },
+        {
+          "name": "Solopsist Whip",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 20 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 6 (1d10) lightning damage. If this attack hits a Huge or smaller creature and one of its damage dice roll their maximum result, the false Eidolon can choose to hurl that creature into an unoccupied space within 30 feet of them, where they fall prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dread Lightning",
+          "name_format": "bold_italic",
+          "description": "Ranged Spell Attack: +16 to hit, range 120 feet, one target. Hit: 25 (3d10 + 8) lightning damage.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Crimson Ruby Storm (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon unleashes magical energy in the form of red lightning upon any number of creatures it chooses in a 30-foot-radius sphere centered on a point it can see within 120 feet. Each target must succeed a DC 24 Dexterity saving throw, taking 39 (6d12) lightning damage and 39 (6d12) force damage on a failure, or half as much damage on a success. Each creature that fails their saving throw has all magical effects with a duration that are affecting them abruptly end, as though they were targeted by dispel magic."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Spell Generation (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon rolls a d6, and until the end of its next turn it can add the result to any spell slot it uses to cast a spell as if the slot was that level. They may also treat the result as a new spell slot of an equivalent level."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Countermagic",
+          "name_format": "bold_italic",
+          "description": "In response to a spell it can see being cast within 60 feet, the false Eidolon casts counterspell, requiring no spell slot. She uses Charisma as her spellcasting ability."
+        }
+      ],
+      "legendary_actions": {
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The false Eidolon makes a Solopsist Whip attack against a creature within range."
+          },
+          {
+            "name": "Teleport (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The false Eidolon teleports to an unoccupied space it can see within 60 feet."
+          },
+          {
+            "name": "Regain Spell Slot (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The false Eidolon rolls 1d6 + 3 and regains an expended spell slot of that level or lower."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Legendary Reactions": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Actions (3 Actions)": "bold"
+        }
+      },
+      "raw_text": "**FALSE VESTIAS**\n*Medium fiend (yokai), lawful evil*\n**AC** 20 (natural armor)\n**HP** 338 (45d8 + 155)\n**Speed** 40 ft., fly (hover) 80 ft.\n**Quality Traits** Deific, magic immunity 5th\n**STR** 18 (+4) | **DEX** 16 (+3) | **CON** 16 (+3) | **INT** 30 (+10) | **WIS** 20 (+5) | **CHA** 26 (+8)\n**Saving Throws** Dex +11, Con +11, Cha +16\n**Skills** Arcana +18, Deception +16, History +18, Perception +13, Religion +18\n**Resistances** damage from spells; B/P/S (eidolic)\n**Immunities** lightning; B/P/S (eidolic or magical)\n**Condition Immunities** charmed, blinded, deafened, incapacitated\n**Senses** truesight 240 ft., passive Perception 23\n**Languages** all, telepathy 1 mile\n**CR** 25 (75,000 XP) **Proficiency Bonus** +8\n\n***Concentration Master.*** The false Eidolon can concentrate on two spells at once. All spells they are concentrating on make a single concentration check when required, either succeeding or failing all at once.\n\n***Eidolic Lucubration (3/Day).*** The false Eidolon casts one spell that is not listed in their Spellcasting trait, requiring one of their spell slots and the appropriate action to do so.\n\n**Legendary Reactions** 3 uses. TBA. Converted from Legendary Resistance (3/Day) per standing formatting rule.\n\n***Siphon the Devout.*** When the false Eidolon would be reduced to 0 hit points while worshippers who believe in their dogma exist within 1000 feet of them, they can siphon the souls of any number of those willing worshippers, killing them to reduce the damage they would take by an amount equal to the remaining hit points of the killed individuals.\n\n***Spellcasting.*** The false Eidolon is a 20th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:\n• ***Cantrips (at will):*** electric chain, necrosis, psychic cleaver\n• ***1st level (at will):*** self-curse, vibrance sap\n• ***2nd level (at will):*** acceleration, hungering vortex\n• ***3rd level (3 slots):*** deadly target, caustic resolution, lightning bolt, power word misfortune\n• ***4th level (3 slots):*** banishment, tamamo’s arrowfall, trudging circle\n• ***5th level (3 slots):*** chainfield, shadow gate, vanquish magic\n• ***6th level (2 slots):*** chain lightning, disintegrate, vengeful beckoning\n• ***7th level (2 slots):*** finger of death, investiture of lightning, unweave\n• ***8th level (1 slot):*** cursed talon, gatestep\n• ***9th level (1 slot):*** meteor swarm, yokai possession\nThe false Eidolon does not make eidomantic checks.\n\n**ACTIONS**\n***Multiattack.*** The false Eidolon uses its Solopsist Whip or Dread Lightning twice, then casts a spell with a casting time of one action.\n\n***Solopsist Whip.*** *Melee Weapon Attack:* +11 to hit, reach 20 ft., one target. *Hit:* 10 (2d6 + 3) slashing damage plus 6 (1d10) lightning damage. If this attack hits a Huge or smaller creature and one of its damage dice roll their maximum result, the false Eidolon can choose to hurl that creature into an unoccupied space within 30 feet of them, where they fall prone.\n\n***Dread Lightning.*** *Ranged Spell Attack:* +16 to hit, range 120 feet, one target. *Hit:* 25 (3d10 + 8) lightning damage.\n\n***Crimson Ruby Storm (Recharge 6).*** The false Eidolon unleashes magical energy in the form of red lightning upon any number of creatures it chooses in a 30-foot-radius sphere centered on a point it can see within 120 feet. Each target must succeed a DC 24 Dexterity saving throw, taking 39 (6d12) lightning damage and 39 (6d12) force damage on a failure, or half as much damage on a success. Each creature that fails their saving throw has all magical effects with a duration that are affecting them abruptly end, as though they were targeted by dispel magic.\n\n**BONUS ACTIONS**\n***Spell Generation (Recharge 6).*** The false Eidolon rolls a d6, and until the end of its next turn it can add the result to any spell slot it uses to cast a spell as if the slot was that level. They may also treat the result as a new spell slot of an equivalent level.\n\n**REACTIONS**\n***Countermagic.*** In response to a spell it can see being cast within 60 feet, the false Eidolon casts counterspell, requiring no spell slot. She uses Charisma as her spellcasting ability.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Attack.*** The false Eidolon makes a Solopsist Whip attack against a creature within range.\n\n***Teleport (Costs 2 Actions).*** The false Eidolon teleports to an unoccupied space it can see within 60 feet.\n\n***Regain Spell Slot (Costs 3 Actions).*** The false Eidolon rolls 1d6 + 3 and regains an expended spell slot of that level or lower."
+    }
+  ]
+}

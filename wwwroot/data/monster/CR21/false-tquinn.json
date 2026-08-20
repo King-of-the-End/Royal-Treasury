@@ -1,0 +1,261 @@
+{
+  "Name": "False T'quinn",
+  "Group": "False Eidolons",
+  "Groups": [
+    "False Eidolons"
+  ],
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**False T'quinn**\n\nPerhaps the most desperate for validation among the false Eidolons. The false guardian lacks a critical aspect that T’quinn has: their dual existence. Unlike most Eidolons, they are faced by a constant reminder that they cannot be the god they claim to be, so they will go to great lengths to cover it up — they will use magic to create an illusion of their sister, or abduct a performer and make them play the role. This false Eidolon will often force their followers to construct stages upon which they can perform, then will demand their attention as they try to replicate the grace of the goddess they claim to be.\n\nA false Eidolon of this nature may be prone to greater indulgences than simply acting as the goddess they think they are: one may seek to make a name for themself as a performer or artist, while assuming a disguise. They know intuitively that a love for the arts is a necessary component of T’quinn, and so they chase it. Despite this, they may find themselves frustrated with their work (even if it is remarkable) and may become enraged or vexed when it does not make them feel whole, as it would for T’quinn. As with all other matters of their identity, they would turn this incongruity outward and find an external source to blame.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR21/Reference%20-%20False%20Eidolon%20-%20T'quinn%20(Red).jpg",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR21/False%20Eidolon%20-%20T'quinn%20(Red)%20(ISO).png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "false_tquinn",
+      "title": "False T'quinn",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "260 (40d8 + 80)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Deific",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4",
+          "check": "+7",
+          "save": "+7"
+        },
+        "DEX": {
+          "score": 24,
+          "modifier": "+7",
+          "check": "+10",
+          "save": "+10"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2",
+          "check": "+5",
+          "save": "+9"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4",
+          "check": "+7",
+          "save": "+7"
+        },
+        "WIS": {
+          "score": 23,
+          "modifier": "+6",
+          "check": "+9",
+          "save": "+9"
+        },
+        "CHA": {
+          "score": 24,
+          "modifier": "+7",
+          "check": "+10",
+          "save": "+14"
+        }
+      },
+      "skills": [
+        "Arcana +9",
+        "Deception +14",
+        "History +18",
+        "Perception +13"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "immunities": [
+        "thunder",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "deafened",
+        "incapacitated",
+        "restrained"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "21 (33,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Duplicate Surge (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon can take an additional action or bonus action on their turn, and when they do so they conjure a copy of themself that appears within 60 feet, in an unoccupied space they can see, where the duplicate takes the action as though it was them. At the end of this turn, the false Eidolon must choose which of the two is the original, and the other disappears."
+        },
+        {
+          "name": "Fiendish Inspiration (4/Day)",
+          "name_format": "bold_italic",
+          "description": "When the false Eidolon or a creature friendly to it within 60 feet of it fails an attack roll, saving throw or ability check, the false Eidolon can roll 1d20 and add it to their result, possibly changing the outcome. They can do so as long as they aren’t incapacitated, but only once per turn."
+        },
+        {
+          "name": "Master of Most Trades",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon may add half of its proficiency bonus (rounded down) to any ability check, attack roll or saving throw they are not already adding it to."
+        },
+        {
+          "name": "Siphon the Devout",
+          "name_format": "bold_italic",
+          "description": "When the false Eidolon would be reduced to 0 hit points while worshippers who believe in their dogma exist within 1000 feet of them, they can siphon the souls of any number of those willing worshippers, killing them to reduce the damage they would take by an amount equal to the remaining hit points of the killed individuals."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon is a 14th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "spells": [
+                  "manipulate ego",
+                  "true strike"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "bane",
+                  "inflict terror",
+                  "link spell"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "blindness/deafness",
+                  "throw image"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "spells": [
+                  "major image",
+                  "vortex quiver"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "spells": [
+                  "confusion",
+                  "perfect silence"
+                ]
+              },
+              {
+                "frequency": "5th level (2 slots)",
+                "spells": [
+                  "phantom step",
+                  "resonant weapon"
+                ]
+              },
+              {
+                "frequency": "6th level (1 slot)",
+                "spells": [
+                  "mass suggestion",
+                  "programmed illusion"
+                ]
+              },
+              {
+                "frequency": "7th level (1 slot)",
+                "spells": [
+                  "song of harmony",
+                  "symbol"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Eidomancy",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon does not make eidomancy checks."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "Legendary Resistance",
+            "name_format": "bold_italic",
+            "description": "When the false Eidolon would fail a saving throw, it can succeed instead."
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon makes three attacks, choosing from its Solopsist Greatsword and its Windtracer Longbow."
+        },
+        {
+          "name": "Solopsist Greatsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 9 (2d8) thunder damage."
+        },
+        {
+          "name": "Windtracer Longbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +14 to hit, range 150/600 ft., one target. Hit: 13 (1d10 + 7) piercing damage plus 9 (2d8) thunder damage."
+        },
+        {
+          "name": "Dance of Sauntering Waves (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon vanishes, and replicas of them appear to attack each creature it chooses in a 40-foot-radius sphere centered on itself, accompanied by blaring music and a roaring cheer from an illusory crowd. Each target must succeed a DC 19 Constitution saving throw, taking 26 (4d12) slashing damage and 39 (6d12) thunder damage on a failed save, or half as much on a successful one. Creatures who fail the save are also deafened. Creatures deafened this way can reattempt the Constitution saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Melodic Assault",
+          "name_format": "bold_italic",
+          "description": "The false Eidolon makes two attacks against creatures within 30 feet of itself, using the Solopsist Greatsword. The sword floats to its targets to strike them, then returns to the false Eidolon."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Damning Stinger",
+          "name_format": "bold_italic",
+          "description": "When a creature within 60 feet of the false Eidolon makes an ability check, saving throw or attack roll, they can insult their attempt and roll 2d4, subtracting the result from their roll."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (3 Actions)",
+        "description": "The false Eidolon can take 3 Legendary Actions, choosing from the options below. Only one Legendary Action option can be used at a time, and only at the end of another creature’s turn. The false Eidolon regains spent Legendary Actions at the start of their turn.",
+        "entries": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The false Eidolon makes one Solopsist Greatsword or Windtracer Longbow attack."
+          },
+          {
+            "name": "Orchestra of One (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The false Eidolon conjures a duplicate of itself that tricks the senses of others — each time it is attacked before the start of its next turn, roll a d20. On a result of 11 or higher the attack automatically misses. Creatures who can see through illusions such as by truesight bypass this effect."
+          },
+          {
+            "name": "Dark Inspiration (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The false Eidolon rolls 1d4, and regains that many uses of its Fiendish Inspiration."
+          }
+        ]
+      }
+    }
+  ]
+}
