@@ -1,0 +1,33 @@
+{
+  "name": {
+    "text": "The Family",
+    "bold": true
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "The Family is the largest known crime organization in Retia. They reach out beyond the borders of the continent, but their main interests lie within Retia. Their ranks are swollen with assassins, thugs, information brokers, and mages studying illegal magic.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "Wards of Non-Detection.",
+              "bold": true,
+              "italic": true
+            },
+            {
+              "text": " Though not listed in their stat blocks, all Family members carry a ward on them that aids against any Divination magic that would target them. When a Family member would make a save against such an effect, they do so with advantage.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

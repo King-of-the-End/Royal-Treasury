@@ -1,9 +1,7 @@
 using Website_of_Everything.Components;
 using Website_of_Everything.Services;
 
-
-var builder =
-    WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
 
 // =========================================
@@ -16,29 +14,23 @@ builder.Services
 
 
 // =========================================
-// SERVICES
+// APPLICATION SERVICES
 // =========================================
 
-builder.Services
-    .AddScoped<SpellService>();
-
-builder.Services
-    .AddScoped<MonsterService>();
-
-builder.Services
-    .AddSingleton<GlossaryService>();
+builder.Services.AddScoped<SpellService>();
+builder.Services.AddScoped<MonsterService>();
+builder.Services.AddSingleton<GlossaryService>();
 
 
 // =========================================
-// BUILD APP
+// BUILD
 // =========================================
 
-var app =
-    builder.Build();
+var app = builder.Build();
 
 
 // =========================================
-// PRODUCTION ERROR HANDLING
+// ERROR HANDLING
 // =========================================
 
 if (!app.Environment.IsDevelopment())
@@ -52,39 +44,26 @@ if (!app.Environment.IsDevelopment())
 
 
 // =========================================
-// NOT FOUND
-// =========================================
-
-app.UseStatusCodePagesWithReExecute(
-    "/not-found",
-    createScopeForStatusCodePages: true);
-
-
-// =========================================
 // HTTPS
 //
-// IMPORTANT FOR RENDER:
-//
-// Render terminates public HTTPS at its load
-// balancer and forwards the request to this
-// container over HTTP.
-//
-// Render already redirects public HTTP
-// requests to HTTPS before they reach the
-// container.
-//
-// Calling UseHttpsRedirection() in Production
-// can therefore interfere with the Blazor
-// Interactive Server WebSocket handshake.
-//
-// Keep HTTPS redirection only for local
-// development.
+// Render handles HTTPS outside the container.
+// Do not redirect container traffic to HTTPS
+// in production.
 // =========================================
 
 if (app.Environment.IsDevelopment())
 {
     app.UseHttpsRedirection();
 }
+
+
+// =========================================
+// STATUS PAGES
+// =========================================
+
+app.UseStatusCodePagesWithReExecute(
+    "/not-found",
+    createScopeForStatusCodePages: true);
 
 
 // =========================================
@@ -95,35 +74,25 @@ app.UseAntiforgery();
 
 
 // =========================================
-// STATIC ASSETS
+// STATIC FILES
 // =========================================
 
 app.MapStaticAssets();
 
 
 // =========================================
-// BLAZOR INTERACTIVE SERVER
-//
-// WebSocket compression is disabled here
-// deliberately for deployment behind
-// Render's reverse proxy.
-//
-// Interactive Server still uses WebSockets
-// normally; the frames are simply not
-// compressed.
+// BLAZOR
 // =========================================
 
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode(
-        options =>
-        {
-            options.DisableWebSocketCompression =
-                true;
-        });
+    .AddInteractiveServerRenderMode(options =>
+    {
+        options.DisableWebSocketCompression = true;
+    });
 
 
 // =========================================
-// RUN
+// START
 // =========================================
 
 app.Run();
