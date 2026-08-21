@@ -1,0 +1,669 @@
+{
+  "name": "Petal Knight",
+  "slug": "petal_knight",
+  "summary": "Arcane duelists who draw upon pact magic indirectly through their connections to nature. Their powers manifest based on their personal tendencies and the \u0022shape\u0022 of their soul, which are collectively expressed as a flower embodying their magic. These flowers - their epithets - constitute the basis for their subclasses. They are mid-range support duelists.",
+  "introduction": [
+    "Petal Knights are proud warriors who tow the line between Sorcerers and duelists. Wearing light weaponry and holding themselves to a code of ethics they swear by, these combatants forge a connection with the world that allows them to draw out their own nature in the form of an epithet: a flower that represents their heart and soul. Commonly, they use their natural magical powers to protect nature and those who abide by it, championing justice, order, and coexistence with the land.",
+    "A Petal Knight\u2019s magic is, strictly speaking, of divine origin - \u201Cthe world\u201D as they interact with it is the mysterious will of a divine domain or collection of domains, and sometimes can even be the disguised hand of a god who simply has not revealed themselves. The powers of domains are tied to a Petal Knight as an extension of their true nature, and their divine powers take shape from these domains."
+  ],
+  "lore_sections": [
+    {
+      "title": "Champions of Order",
+      "paragraphs": [
+        "The Petal Knight commonly finds itself pursuing a balance between the whims of mortals and what benefits nature. Putting an end to pollution, an undead scourge, dangerous experimentation, or overforestation may be their goals. Perhaps they seek to expunge chaotic demons from a town or bring order back among those subjugated by a tyrannical dictator. Their goals will almost always be to reinforce order and resist those who abuse their influence.",
+        "Some groups of Petal Knights may gather to form leagues, which act as virtuous councils that try to influence greater areas. Though they are highly individual, these leagues have common goals in mind and can form in the face of a unified threat. Appearing like gentlemanly duelists that see themselves as knights, these well-mannered collaborations attempt to resolve matters in the least destructive way possible.",
+        "A Petal Knight is most often seen as a noble individual, and so may be found in the courts of kings, nobles, and politicians. They can easily be found as advisers for those who wish to stay morally grounded. Temples and political bodies respect the perspective of well-known Petal Knights."
+      ]
+    },
+    {
+      "title": "True Nature Manifested",
+      "paragraphs": [
+        "The Petal Knight\u2019s power is partially taken from the natural magic they receive from the world around them. The world sees a spark of greatness within them, and lends them a fraction of its power which is expressed in the magic they manifest. The truest expression of this power is in the form of their epithet. When they learn to harness enough power, their true nature and temperament is exposed and manifested by an appraisal of their soul. This exposed element becomes their epithet, represented by the emblem of a flower.",
+        "The epithet grants supernatural powers that the Petal Knight may wield. Some learn truths about themselves they had never considered, while others find comfort and reassurance about their nature. As they grow, so too does the flower of their heart, granting them more talents and power to make use of.",
+        "Though there is no explicit contract formed, all Petal Knights know that this appraisal of their soul is not arbitrary and sometimes implies duties in exchange. Some acquire this power because a greater being forces the appraisal upon them, such as those who might have earned the attention of a fey lord or powerful deity. Others align with the world naturally as a Druid might. However, once the appraisal has been made, it is out of the hands of any except the Petal Knight themself as the epithet is theirs to wield."
+      ]
+    },
+    {
+      "title": "Creating a Petal Knight",
+      "paragraphs": [
+        "When you are creating your Petal Knight you must consider their core values and goals. Their epithet must represent something of their true nature, so knowing who they are at heart is important to representing them properly.",
+        "If you wish to put in the time, it could be suggested that you allow your DM to be involved, even going as far as to hear out the Petal Knight\u2019s backstory or goals and offering which epithet seems to suit them. At its most extreme, if you\u2019re playing a 1st-level adventurer, then perhaps you might allow your DM to decide your epithet and tell you which you receive when the time comes.",
+        "Once you know your epithet choice and have committed to it, you should decide what their views on order are. In the battle of man vs nature, where do they sit? They are rarely extreme, but where is the line where they feel chaos has taken root too deeply and they feel the need to step in? You don\u2019t need to know their fleshed-out political views, but it is wise to know how they would respond if asked to advise on the affairs of a noble. If they had power, how would they use their influence? How do they feel about imprisonment or death sentences? To this end, what is their long-term goal?",
+        "Don\u2019t get too caught up in the above, however. Trying to vanquish a particular demon, cure a disease, or fighting as a rebel against a tyrant are all worthwhile ventures for a Petal Knight, and they may have acquired their powers as a result of their nature while pursuing those goals."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "If you wish to create a Petal Knight quickly, take the following to heart: you should be creating a character who uses light weapons and armor, so if you intend on using close combat then focus on Dexterity more than Strength. Your primary spellcasting stat is Wisdom, so be sure that is your first or second highest ability score. Finally, take the folk hero or outlander background. Only take Strength as a higher stat if you prefer one-handed weapons like longswords. Intend for your character to be a midline combatant, who is as much a support caster as they are a fighter."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "The following are the requirements to multiclass into a Petal Knight."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Wisdom 15, and Strength 13 or Dexterity 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "Light and medium armor, simple weapons, and one skill from History, Nature, or Persuasion."
+        },
+        {
+          "label": "Tools",
+          "value": "None."
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d10 per Petal Knight level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "10 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d10 (or 6) \u002B your Constitution modifier per Petal Knight level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light and medium armor"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple and martial weapons, except melee weapons with the two-handed or heavy property"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Dexterity, Charisma"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose two from Animal Handling, Athletics, History, Investigation, Nature, Perception, Persuasion, Religion, and Survival"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "One musical instrument, cartographer\u2019s tools, and one other artisan\u2019s tool"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) a rapier, (b) a longsword, or (c) any weapon with the light or finesse property",
+                    "(a) diplomat\u2019s pack or (b) an explorer\u2019s pack",
+                    "(a) an arcane focus or (b) a pouch of 5 gold",
+                    "Leather armor and three daggers"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Petal Knights begin at level 1 with 5d4 \u00D7 10 (120) gold pieces."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Petal Knight",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "spells_known",
+          "label": "Spells Known"
+        },
+        {
+          "key": "slots",
+          "label": "Spell Slots"
+        },
+        {
+          "key": "slot_level",
+          "label": "Slot Level"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": "Fighting Style, Pact Magic",
+          "spells_known": "2",
+          "slots": "1",
+          "slot_level": "1st"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Epithet",
+          "spells_known": "3",
+          "slots": "2",
+          "slot_level": "1st"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Virtuous Branches",
+          "spells_known": "4",
+          "slots": "2",
+          "slot_level": "2nd"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": "Ability Score Improvement",
+          "spells_known": "5",
+          "slots": "2",
+          "slot_level": "2nd"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Extra Attack",
+          "spells_known": "6",
+          "slots": "2",
+          "slot_level": "3rd"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Epithet Feature",
+          "spells_known": "7",
+          "slots": "2",
+          "slot_level": "3rd"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Virtuous Flora",
+          "spells_known": "8",
+          "slots": "2",
+          "slot_level": "4th"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement",
+          "spells_known": "9",
+          "slots": "2",
+          "slot_level": "4th"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": "\u2014",
+          "spells_known": "10",
+          "slots": "2",
+          "slot_level": "5th"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Blossoming Spell",
+          "spells_known": "10",
+          "slots": "2",
+          "slot_level": "5th"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Epithet Feature",
+          "spells_known": "11",
+          "slots": "2",
+          "slot_level": "5th"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement",
+          "spells_known": "11",
+          "slots": "3",
+          "slot_level": "5th"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Aura of Dignity",
+          "spells_known": "12",
+          "slots": "3",
+          "slot_level": "5th"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": "\u2014",
+          "spells_known": "12",
+          "slots": "3",
+          "slot_level": "5th"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Epithet Feature",
+          "spells_known": "13",
+          "slots": "3",
+          "slot_level": "5th"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement",
+          "spells_known": "13",
+          "slots": "3",
+          "slot_level": "5th"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Resplendence",
+          "spells_known": "14",
+          "slots": "4",
+          "slot_level": "5th"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": "\u2014",
+          "spells_known": "14",
+          "slots": "4",
+          "slot_level": "5th"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement",
+          "spells_known": "15",
+          "slots": "4",
+          "slot_level": "5th"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Paragon of Protection",
+          "spells_known": "15",
+          "slots": "4",
+          "slot_level": "5th"
+        }
+      ]
+    },
+    "notes": [
+      {
+        "title": "Intended Versatility",
+        "text": "Many Petal Knight features rely on wielding one-handed weapons or weapons without the two-handed property. When a Petal Knight wields a weapon with the versatile property, the weapon is counted as two-handed if the last attack they made with it that turn used its higher damage die/dice, and if a feature requiring it be used one-handed is used with it, it cannot be wielded two-handed for the remainder of that turn."
+      }
+    ],
+    "features": [
+      {
+        "name": "Fighting Style",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Arcane Flourisher"
+              },
+              {
+                "name": "Archery"
+              },
+              {
+                "name": "Blind Fighting"
+              },
+              {
+                "name": "Defense"
+              },
+              {
+                "name": "Dueling"
+              },
+              {
+                "name": "Interception"
+              },
+              {
+                "name": "Thrown Weapon Fighter"
+              },
+              {
+                "name": "Two-Weapon Fighting"
+              },
+              {
+                "name": "Unarmed Fighting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pact Magic",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Your seeded power from the world has forged a connection to it that allows you to manifest magical abilities. This knowledge is not something you innately possess, but is granted to you like a sixth sense. See chapter 10 of the Player\u2019s Handbook for the general rules of spellcasting."
+          },
+          {
+            "type": "subsection",
+            "title": "Pact Spell Slots",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "The Petal Knight table shows how many pact spell slots you have, as well as what level those pact spell slots are. To cast one of your Petal Knight spells of 1st level or higher, you must expend a pact spell slot. You regain all expended pact spell slots when you finish a Short or Long Rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "For example, when you are 7th level, you have two spell slots, both of which are 3rd level. To cast the 1st-level spell piercing crystal, you must spend one of those slots, and you cast it at 3rd level. When you reach 9th level your spell slots become 5th level, and so spells cast using them are all cast at 5th level."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spells Known of 1st Level and Higher",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "At 1st level, you know two 1st-level spells of your choice from the Petal Knight spell list."
+              },
+              {
+                "type": "paragraph",
+                "text": "The Spells Known column of the Petal Knight table shows when you learn more Petal Knight spells. A spell you choose to learn must be of a level no higher than the level of the Pact Spell Slot you have access to."
+              },
+              {
+                "type": "paragraph",
+                "text": "Additionally, when you gain a level in this class, you can choose one of the Petal Knight spells you know and replace it with another spell from the Petal Knight spell list, which also must be of a level for which you have spell slots."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Ability",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Wisdom is your spellcasting ability for your Petal Knight spells and features. You use your Wisdom modifier when setting the saving throw DC for your Petal Knight spells and when making an attack roll with one."
+              },
+              {
+                "type": "paragraph",
+                "text": "Any time your Petal Knight features refer to a save DC or spell attack without clarifying how it should be calculated, they use these calculations for them as well."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Focus",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use an arcane focus (found in chapter 5 of the Player\u2019s Handbook) as a spellcasting focus for your Petal Knight spells. Alternatively, you may use a flower or replica of a flower that matches the emblem of your epithet in place of the material components of a spell you are casting as if it were an arcane focus, but when you do so the flower or replica is destroyed. When you possess flowers that match your epithet\u2019s emblem, they never die or wither from natural causes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Epithet",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You must select an epithet and take on its corresponding floral emblem. These epithets represent the Petal Knight\u2019s true nature, appraised by the world and manifested as powers under their control."
+          },
+          {
+            "type": "paragraph",
+            "text": "You gain your epithet\u2019s 2nd-level features, then its other features when you reach the Petal Knight levels listed."
+          }
+        ]
+      },
+      {
+        "name": "Virtuous Branches",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Whenever you cast a spell using a pact spell slot, you can invoke one of the following effects as part of the action of casting it. You can only use each feature once per turn."
+          },
+          {
+            "type": "subsection",
+            "title": "Blossoming Step",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you cast a spell that targets a creature you can see, you can choose to teleport to an unoccupied space adjacent to the target (if the spell affects the space you move into, you are unaffected by the spell on this turn). You can only use this effect if the spell hit the target with an attack roll, or if they failed a saving throw against it."
+              },
+              {
+                "type": "paragraph",
+                "text": "The maximum distance from you that the target can be for this effect to occur is equal to 50 feet multiplied by the level of the pact spell slot used."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Fortify",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Until the end of your next turn, each time you make a weapon or spell attack, roll 1d4 and add it to the result."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Graceful Protection",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You and up to three creatures you choose within 30 feet of you gain a bonus on the next saving throw they make within the next 10 minutes. The bonus is equal to half your proficiency bonus (rounded down)."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Sweep",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You may take the Dash action as a bonus action. Creatures that you targeted with the spell that triggered this effect have disadvantage on opportunity attacks made against you this turn."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Extra Attack",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you take the Attack action you can attack twice instead of once."
+          }
+        ]
+      },
+      {
+        "name": "Virtuous Flora",
+        "level": "7",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "As a bonus action, you can briefly tap into your epithet to gain one of the following effects. When you do so, your actions are punctuated by ethereal flower petals appearing around you from the flower that matches your epithet. You can use virtuous flora to gain one of these benefits a number of times equal to half your proficiency bonus (rounded down) \u002B 1, regaining expended uses when you complete a Short or Long Rest."
+          },
+          {
+            "type": "subsection",
+            "title": "Attack",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You may make one attack with a one-handed weapon."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Charming Soul",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You gain advantage on Charisma checks and saving throws for 1 minute."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Flourish",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Gain advantage on attack rolls you make until the end of this turn. Only attacks made with one-handed weapons benefit from this effect."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Shroud",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Gain resistance against a single damage type of your choosing until the start of your next turn."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Smite",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your next weapon attack this turn deals extra damage of your weapon\u2019s damage type equal to 1d10 \u002B half your Petal Knight level (rounded down)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blossoming Spell",
+        "level": "10",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you take the Attack action, you can forgo one of your weapon attacks to cast a spell with a pact spell slot that has a casting time of 1 action instead of attacking."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can only replace an attack with a spell this way if one of your previous attacks from that action hits a creature, and the spell you cast must be centered on you or the creature you hit. If this spell involves ranged spell attacks you may make them as melee spell attacks instead."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the spell you cast affects a radius around the target point, space, or creature, then you can omit yourself or your target from the spell\u2019s effects."
+          }
+        ]
+      },
+      {
+        "name": "Aura of Dignity",
+        "level": "13",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You project an invisible shroud of protective energy, which reaches 15 feet in all directions from you. All creatures that you consider allies within that space (including you) have advantage on death saving throws and saving throws against being frightened or charmed, as long as you aren\u2019t unconscious."
+          },
+          {
+            "type": "paragraph",
+            "text": "Additionally, when a creature (including you) within the radius of your aura makes a saving throw and fails, you can use your reaction to cause them to succeed instead. You can use this feature a number of times equal to half your proficiency bonus (rounded down), regaining expended uses when you complete a Long Rest."
+          }
+        ]
+      },
+      {
+        "name": "Resplendence",
+        "level": "17",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can absorb natural energy to replenish your mystical reserves. You can spend 1 minute concentrating on your connection to your epithet while in contact with its corresponding flower and present in an area abundant in natural flora (a forest, a meadow, near a healthy tree, etc.). At the end of the minute, the flower dissolves into magical energy and you regain your expended pact spell slots."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can use this feature once, then must complete a Long Rest before using it again."
+          }
+        ]
+      },
+      {
+        "name": "Paragon of Protection",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can channel your influence over others in your protective aura to grant them absolute protection. As a devout protector holding the line, this action empowers and inspires you."
+          },
+          {
+            "type": "paragraph",
+            "text": "Your Aura of Dignity\u2019s radius increases to 30 feet. Whenever you use your reaction as per your Aura of Dignity feature to cause a creature to succeed a saving throw instead of failing, all other creatures within your aura of dignity that failed a saving throw against the same effect also succeed it instead."
+          },
+          {
+            "type": "paragraph",
+            "text": "You gain 10 temporary hit points, plus 5 more for each failure you turn into a success this way, which disappear the next time you complete a Long Rest. As long as you have these temporary hit points, whenever you take the Attack action, you can make one extra weapon attack, and you can choose one of your attacks per turn to have advantage."
+          }
+        ]
+      }
+    ]
+  }
+}

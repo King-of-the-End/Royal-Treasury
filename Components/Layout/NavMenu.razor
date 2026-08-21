@@ -3,11 +3,36 @@
 @using System.Text.Json
 @using Microsoft.AspNetCore.Components.Routing
 @implements IDisposable
+@implements IAsyncDisposable
 
 @inject NavigationManager Navigation
+@inject IJSRuntime JS
 @inject IWebHostEnvironment Environment
 
-<nav class="side-nav" aria-label="Site navigation">
+<nav class="@NavCssClass" aria-label="Site navigation">
+
+    <button class="mobile-nav-bar"
+            type="button"
+            aria-expanded="@mobileMenuOpen"
+            aria-controls="mobile-navigation-content"
+            @onclick="ToggleMobileNav">
+        <span class="mobile-hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+
+        <span class="mobile-nav-context">
+            @MobileBarLabel
+        </span>
+
+        <span class="mobile-nav-chevron" aria-hidden="true">
+            @(mobileMenuOpen ? "▲" : "▼")
+        </span>
+    </button>
+
+    <div id="mobile-navigation-content"
+         class="mobile-navigation-content">
 
     <a class="side-brand" href="/">
         <img class="brand-mark"
@@ -22,7 +47,8 @@
         @foreach (var crumb in PathItems)
         {
             <a class="side-link path-link"
-               href="@crumb.Href">
+               href="@crumb.Href"
+               @onclick="CollapseMobileNav">
                 @crumb.Label
             </a>
         }
@@ -36,7 +62,8 @@
             @foreach (var item in ClassIndexItems)
             {
                 <a class="side-link index-link"
-                   href="@item.Href">
+                   href="@item.Href"
+                   @onclick="CollapseMobileNav">
                     @item.Label
                 </a>
             }
@@ -50,7 +77,8 @@
             @foreach (var classItem in ClassLinks)
             {
                 <a class="side-link"
-                   href="@classItem.Href">
+                   href="@classItem.Href"
+                   @onclick="CollapseMobileNav">
                     @classItem.Label
                 </a>
             }
@@ -64,12 +92,15 @@
             @foreach (var item in ReferenceItems)
             {
                 <a class="side-link"
-                   href="@item.Href">
+                   href="@item.Href"
+                   @onclick="CollapseMobileNav">
                     @item.Label
                 </a>
             }
         </div>
     }
+
+    </div>
 
 </nav>
 
@@ -77,7 +108,15 @@
     private string currentPath = "/";
     private string currentQuery = string.Empty;
 
+    private bool mobileMenuOpen;
+    private string? activeIndexLabel;
+    private bool indexObserverNeedsRefresh = true;
+
+    private IJSObjectReference? navModule;
+    private DotNetObjectReference<NavMenu>? dotNetReference;
+
     private sealed record NavItem(string Label, string Href);
+    private sealed record IndexTrackerItem(string Id, string Label);
 
     protected override void OnInitialized()
     {
@@ -88,6 +127,11 @@
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
     {
         UpdateLocation();
+
+        mobileMenuOpen = false;
+        activeIndexLabel = null;
+        indexObserverNeedsRefresh = true;
+
         _ = InvokeAsync(StateHasChanged);
     }
 
@@ -100,6 +144,128 @@
             currentPath = "/";
 
         currentQuery = uri.Query;
+    }
+
+    private string NavCssClass =>
+        mobileMenuOpen
+            ? "side-nav mobile-open"
+            : "side-nav";
+
+    private string MobileBarLabel
+    {
+        get
+        {
+            if (IsClassDetailsPage)
+            {
+                var className =
+                    CurrentClassSlug is { Length: > 0 } slug
+                        ? GetClassDisplayName(slug)
+                        : "Class";
+
+                if (!string.IsNullOrWhiteSpace(activeIndexLabel))
+                    return $"{className} · {activeIndexLabel}";
+
+                return className;
+            }
+
+            if (IsClassesPage)
+                return "Classes";
+
+            var currentReference = GetTopLevelReferenceItem();
+            if (currentReference is not null)
+                return currentReference.Label;
+
+            if (currentPath.StartsWith("/spells", StringComparison.OrdinalIgnoreCase))
+                return "Spells";
+
+            if (currentPath.StartsWith("/bestiary", StringComparison.OrdinalIgnoreCase))
+                return "Bestiary";
+
+            return "Royal Treasury";
+        }
+    }
+
+    private void ToggleMobileNav()
+    {
+        mobileMenuOpen = !mobileMenuOpen;
+    }
+
+    private void CollapseMobileNav()
+    {
+        mobileMenuOpen = false;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            navModule = await JS.InvokeAsync<IJSObjectReference>(
+                "import",
+                "./Components/Layout/NavMenu.razor.js");
+
+            dotNetReference =
+                DotNetObjectReference.Create(this);
+        }
+
+        if (navModule is null)
+            return;
+
+        if (indexObserverNeedsRefresh)
+        {
+            indexObserverNeedsRefresh = false;
+
+            await navModule.InvokeVoidAsync(
+                "disposeSectionTracking");
+
+            if (IsClassDetailsPage)
+            {
+                var trackerItems =
+                    ClassIndexItems
+                        .Select(item =>
+                        {
+                            var hashIndex =
+                                item.Href.IndexOf('#');
+
+                            if (hashIndex < 0
+                                || hashIndex == item.Href.Length - 1)
+                            {
+                                return null;
+                            }
+
+                            return new IndexTrackerItem(
+                                item.Href[(hashIndex + 1)..],
+                                item.Label);
+                        })
+                        .Where(item => item is not null)
+                        .Cast<IndexTrackerItem>()
+                        .ToArray();
+
+                if (trackerItems.Length > 0
+                    && dotNetReference is not null)
+                {
+                    await navModule.InvokeVoidAsync(
+                        "initializeSectionTracking",
+                        dotNetReference,
+                        trackerItems);
+                }
+            }
+        }
+    }
+
+    [JSInvokable]
+    public Task SetActiveIndexLabel(string label)
+    {
+        if (string.Equals(
+            activeIndexLabel,
+            label,
+            StringComparison.Ordinal))
+        {
+            return Task.CompletedTask;
+        }
+
+        activeIndexLabel = label;
+
+        return InvokeAsync(StateHasChanged);
     }
 
     private bool IsClassesPage =>
@@ -761,5 +927,27 @@
     public void Dispose()
     {
         Navigation.LocationChanged -= HandleLocationChanged;
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        Navigation.LocationChanged -= HandleLocationChanged;
+
+        try
+        {
+            if (navModule is not null)
+            {
+                await navModule.InvokeVoidAsync(
+                    "disposeSectionTracking");
+
+                await navModule.DisposeAsync();
+            }
+        }
+        catch (JSDisconnectedException)
+        {
+            // The circuit may already be gone during navigation/shutdown.
+        }
+
+        dotNetReference?.Dispose();
     }
 }

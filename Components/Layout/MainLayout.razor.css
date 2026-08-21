@@ -153,3 +153,19 @@
             3rem;
     }
 }
+
+/* Space for the fixed mobile hamburger bar. */
+@media (max-width: 800px) {
+    .site-main {
+        padding-top: 58px;
+    }
+
+    /*
+       The desktop top bar is redundant on very small screens once the
+       fixed mobile navigation bar is present.
+    */
+    .site-topbar {
+        min-height: 44px;
+    }
+}
+
