@@ -2326,3 +2326,56 @@
     text-align: left;
 }
 
+
+/* =========================================================
+   MOBILE-ONLY HORIZONTAL TABLE SCROLL
+   Desktop/tablet keeps the adaptive fit-to-width layout.
+   ========================================================= */
+
+@media (max-width: 768px) {
+    #advancement .class-table-scroll,
+    .class-page ::deep #advancement .class-table-scroll {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto !important;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    /*
+       On mobile, don't crush a many-column table down to phone width.
+       Let it keep a readable intrinsic width and scroll horizontally.
+    */
+    #advancement .class-table,
+    .class-page ::deep #advancement .class-table {
+        width: max-content !important;
+        min-width: 100% !important;
+        max-width: none !important;
+        table-layout: auto !important;
+    }
+
+    #advancement .class-table th,
+    #advancement .class-table td,
+    .class-page ::deep #advancement .class-table th,
+    .class-page ::deep #advancement .class-table td {
+        white-space: nowrap !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+    }
+
+    /*
+       Feature text is the one exception: it may wrap normally so the
+       table does not become unnecessarily enormous.
+    */
+    #advancement .class-table th.table-features,
+    #advancement .class-table td.table-features,
+    .class-page ::deep #advancement .class-table th.table-features,
+    .class-page ::deep #advancement .class-table td.table-features {
+        white-space: normal !important;
+        min-width: 14rem;
+        max-width: 22rem;
+    }
+}
+
