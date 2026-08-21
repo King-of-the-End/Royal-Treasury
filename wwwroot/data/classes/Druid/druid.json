@@ -1,0 +1,763 @@
+{
+  "name": "Druid",
+  "slug": "druid",
+  "summary": "A primal spellcaster who draws on the forces of nature, assumes animal forms, and protects the balance of the natural world.",
+  "introduction": [
+    "Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.",
+    "Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists\u2019 activities.",
+    "Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering the unnatural magic that gives the foul creatures the mocking semblance of life.",
+    "Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature\u2019s resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature\u2019s indomitable will."
+  ],
+  "lore_sections": [
+    {
+      "title": "Power of Nature",
+      "paragraphs": [
+        "Druids revere nature above all, gaining their spells and other magical powers either from the force of nature itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.",
+        "Druid spells are oriented toward nature and animals\u2014the power of tooth and claw, of sun and moon, of fire and storm. Druids also gain the ability to take on animal forms, and some druids make a particular study of this practice, even to the point where they prefer animal form to their natural form."
+      ]
+    },
+    {
+      "title": "Preserve the Balance",
+      "paragraphs": [
+        "For druids, nature exists in a precarious balance. The four elements that make up a world\u2014air, earth, fire, and water\u2014must remain in equilibrium. If one element were to gain power over the others, the world could be destroyed, drawn into one of the elemental planes and broken apart into its component elements. Thus, druids oppose cults of Elemental Evil and others who promote one element to the exclusion of others.",
+        "Druids are also concerned with the delicate ecological balance that sustains plant and animal life, and the need for civilized folk to live in harmony with nature, not in opposition to it. Druids accept that which is cruel in nature, and they hate that which is unnatural, including aberrations (such as beholders and mind flayers) and undead (such as zombies and vampires). Druids sometimes lead raids against such creatures, especially when the monsters encroach on the druids\u2019 territory.",
+        "Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant danger arises, threatening nature\u2019s balance or the lands they protect, druids take on a more active role in combating the threat, as adventurers."
+      ]
+    },
+    {
+      "title": "Creating a Druid",
+      "paragraphs": [
+        "When making a druid, consider why your character has such a close bond with nature. Perhaps your character lives in a society where the Old Faith still thrives, or was raised by a druid after being abandoned in the depths of a forest. Perhaps your character had a dramatic encounter with the spirits of nature, coming face to face with a giant eagle or dire wolf and surviving the experience. Maybe your character was born during an epic storm or a volcanic eruption, which was interpreted as a sign that becoming a druid was part of your character\u2019s destiny.",
+        "Have you always been an adventurer as part of your druidic calling, or did you first spend time as a caretaker of a sacred grove or spring? Perhaps your homeland was befouled by evil, and you took up an adventuring life in hopes of finding a new home or purpose."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "You can make a druid quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution. Second, choose the hermit background."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "The following are the requirements to multiclass into a Druid."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Wisdom 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "Light armor, medium armor, and shields (druids will not wear armor or use shields made of metal)."
+        },
+        {
+          "label": "Tools",
+          "value": "None."
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d8 per Druid level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "8 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d8 (or 5) \u002B your Constitution modifier per Druid level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "Herbalism kit"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Intelligence, Wisdom"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) a wooden shield or (b) any simple weapon",
+                    "(a) a scimitar or (b) any simple melee weapon",
+                    "Leather armor, an explorer\u2019s pack, and a druidic focus"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Druid",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "cantrips_known",
+          "label": "Cantrips Known"
+        },
+        {
+          "key": "slot_1",
+          "label": "1st"
+        },
+        {
+          "key": "slot_2",
+          "label": "2nd"
+        },
+        {
+          "key": "slot_3",
+          "label": "3rd"
+        },
+        {
+          "key": "slot_4",
+          "label": "4th"
+        },
+        {
+          "key": "slot_5",
+          "label": "5th"
+        },
+        {
+          "key": "slot_6",
+          "label": "6th"
+        },
+        {
+          "key": "slot_7",
+          "label": "7th"
+        },
+        {
+          "key": "slot_8",
+          "label": "8th"
+        },
+        {
+          "key": "slot_9",
+          "label": "9th"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": "Druidic, Spellcasting",
+          "cantrips_known": "2",
+          "slot_1": "2",
+          "slot_2": "\u2014",
+          "slot_3": "\u2014",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Wild Shape, Druid Circle, Wild Companion (Optional)",
+          "cantrips_known": "2",
+          "slot_1": "3",
+          "slot_2": "\u2014",
+          "slot_3": "\u2014",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": "\u2014",
+          "cantrips_known": "2",
+          "slot_1": "4",
+          "slot_2": "2",
+          "slot_3": "\u2014",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": "Wild Shape improvement, Ability Score Improvement, Cantrip Versatility (Optional)",
+          "cantrips_known": "3",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "\u2014",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": "\u2014",
+          "cantrips_known": "3",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "2",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Druid Circle feature",
+          "cantrips_known": "3",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": "\u2014",
+          "cantrips_known": "3",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "1",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Wild Shape improvement, Ability Score Improvement, Cantrip Versatility (Optional)",
+          "cantrips_known": "3",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "2",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": "\u2014",
+          "cantrips_known": "3",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "1",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Druid Circle feature",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": "\u2014",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement, Cantrip Versatility (Optional)",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": "\u2014",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Druid Circle feature",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": "\u2014",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement, Cantrip Versatility (Optional)",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": "\u2014",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "1"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Timeless Body, Beast Spells",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "3",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "1"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement, Cantrip Versatility (Optional)",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "3",
+          "slot_6": "2",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "1"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Archdruid",
+          "cantrips_known": "4",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "3",
+          "slot_6": "2",
+          "slot_7": "2",
+          "slot_8": "1",
+          "slot_9": "1"
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Druidic",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message\u2019s presence with a successful DC 15 Wisdom (Perception) check but can\u2019t decipher it without magic."
+          }
+        ]
+      },
+      {
+        "name": "Spellcasting",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will."
+          },
+          {
+            "type": "subsection",
+            "title": "Cantrips",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Preparing and Casting Spells",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "The Druid table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell\u2019s level or higher. You regain all expended spell slots when you finish a long rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier \u002B your druid level (minimum of one spell). The spells must be of a level for which you have spell slots."
+              },
+              {
+                "type": "paragraph",
+                "text": "For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn\u2019t remove it from your list of prepared spells."
+              },
+              {
+                "type": "paragraph",
+                "text": "You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Ability",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one."
+              },
+              {
+                "type": "formulas",
+                "formula_items": [
+                  {
+                    "label": "Spell save DC",
+                    "value": "8 \u002B your proficiency bonus \u002B your Wisdom modifier"
+                  },
+                  {
+                    "label": "Spell attack modifier",
+                    "value": "your proficiency bonus \u002B your Wisdom modifier"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Ritual Casting",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Focus",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use a druidic focus as a spellcasting focus for your druid spells."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wild Shape",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest."
+          },
+          {
+            "type": "paragraph",
+            "text": "Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn\u2019t have a flying or swimming speed."
+          },
+          {
+            "type": "table",
+            "title": "Beast Shapes",
+            "columns": [
+              {
+                "key": "level",
+                "label": "Level"
+              },
+              {
+                "key": "max_cr",
+                "label": "Max. CR"
+              },
+              {
+                "key": "limitations",
+                "label": "Limitations"
+              },
+              {
+                "key": "example",
+                "label": "Example"
+              }
+            ],
+            "rows": [
+              {
+                "level": "2nd",
+                "max_cr": "1/4",
+                "limitations": "No flying or swimming speed",
+                "example": "Wolf"
+              },
+              {
+                "level": "4th",
+                "max_cr": "1/2",
+                "limitations": "No flying speed",
+                "example": "Crocodile"
+              },
+              {
+                "level": "8th",
+                "max_cr": "1",
+                "limitations": "\u2014",
+                "example": "Giant eagle"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die."
+          },
+          {
+            "type": "paragraph",
+            "text": "While you are transformed, the following rules apply:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature\u2019s bonus instead of yours. If the creature has any legendary or lair actions, you can\u2019t use them.",
+              "When you transform, you assume the beast\u2019s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn\u2019t reduce your normal form to 0 hit points, you aren\u2019t knocked unconscious.",
+              "You can\u2019t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn\u2019t break your concentration on a spell you\u2019ve already cast, however, or prevent you from taking actions that are part of a spell, such as Call Lightning, that you\u2019ve already cast.",
+              "You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can\u2019t use any of your special senses, such as darkvision, unless your new form also has that sense.",
+              "You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature\u2019s shape and size. Your equipment doesn\u2019t change size or shape to match the new form, and any equipment that the new form can\u2019t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Druid Circle",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level, you choose to identify with a circle of druids. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+          }
+        ]
+      },
+      {
+        "name": "Wild Companion (Optional)",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level, you gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the Find Familiar spell, without material components."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you cast the spell in this way, the familiar is a fey instead of a beast, and the familiar disappears after a number of hours equal to half your druid level."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Cantrip Versatility (Optional)",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class\u2019s Spellcasting feature with another cantrip from the druid spell list."
+          }
+        ]
+      },
+      {
+        "name": "Personal Avatar",
+        "level": "5",
+        "subtitle": "Optional 5th-level Druid feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Choose one creature with a CR equal to or less than your proficiency bonus - this creature must be a beast, dragon, monstrosity, or plant. Once per Long Rest you can use your Wild Shape to turn into that creature, otherwise following the rules of your Wild Shape. Each time you gain a new level as a Druid you can switch the creature you have chosen."
+          }
+        ]
+      },
+      {
+        "name": "Timeless Body",
+        "level": "18",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year."
+          }
+        ]
+      },
+      {
+        "name": "Beast Spells",
+        "level": "18",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren\u2019t able to provide material components."
+          }
+        ]
+      },
+      {
+        "name": "Archdruid",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 20th level, you can use your Wild Shape an unlimited number of times."
+          },
+          {
+            "type": "paragraph",
+            "text": "Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren\u2019t consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape."
+          }
+        ]
+      }
+    ]
+  }
+}

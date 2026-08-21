@@ -2,7 +2,7 @@
   "name": "Favored Soul",
   "slug": "favored-soul",
   "introduction": [
-    "Granted great power by prophecy, destiny, or circumstance, a Favored Soul\u2019s power is never incidental. Within these divine heralds there gestates the authority and expectations of a god: the one who bestowed their power onto them to begin with. A Favored Soul is one who has been given a fragment of divine might by a deity, be it dark, eldritch, lost, or otherwise, though unlike those who form contracts to gain such power or pray for it, the power is entirely theirs once given.",
+    "Granted great power by prophecy, destiny, or circumstance, a Favored Soul’s power is never incidental. Within these divine heralds there gestates the authority and expectations of a god: the one who bestowed their power onto them to begin with. A Favored Soul is one who has been given a fragment of divine might by a deity, be it dark, eldritch, lost, or otherwise, though unlike those who form contracts to gain such power or pray for it, the power is entirely theirs once given.",
     "A god may give them might because they want to walk them down a preset path, or they could receive it because they are part of a foretold alignment of the stars. The Favored Soul need not obey the god, however, and can do what they wish with this power once received. Neither faith nor servitude come with this cosmic burden.",
     "Favored Souls are the rarest of divine advocates. A god is unlikely to have one or more active among mortals at a time, if even that. To grant multiple the power of a Favored Soul could diminish the source of divine power they share, so investing entirely in a single soul is generally considered wise. Some gods can handle the burden of caring for multiple, however. Favored Souls may be the agents of gods representing any number of portfolios, from the most lawful of deities to the darkest of trickster gods to the most alien outer gods."
   ],
@@ -11,8 +11,8 @@
       "title": "Bound to a Higher Power",
       "paragraphs": [
         "Though they might fight against their origins, a Favored Soul carries a compulsion along with their power. Sometimes it is like a nagging feeling in the back of their head, and other times it might overwhelm them. This compulsion is tied to enacting the portfolio of the god their power comes from.",
-        "To fight this calling can feel like turning against one\u2019s own instincts, causing most Favored Souls to gravitate toward service of the god who granted their might.",
-        "In spite of this, a Favored Soul\u2019s growth is not inhibited by turning from this responsibility. Though the burden grows more powerful as their divine power is nurtured, it is not the totality of who they are."
+        "To fight this calling can feel like turning against one’s own instincts, causing most Favored Souls to gravitate toward service of the god who granted their might.",
+        "In spite of this, a Favored Soul’s growth is not inhibited by turning from this responsibility. Though the burden grows more powerful as their divine power is nurtured, it is not the totality of who they are."
       ]
     },
     {
@@ -25,15 +25,15 @@
     {
       "title": "Creating a Favored Soul",
       "paragraphs": [
-        "Favored Souls exist somewhere between Warlocks and Paladins: they don\u2019t have the versatility that invocations grant the former, nor the pure combat ability of the latter, but what they lack in these respects they make up for by having strong focused abilities that develop as they level, and the versatility of pact magic mixed with a prepared spell list.",
+        "Favored Souls exist somewhere between Warlocks and Paladins: they don’t have the versatility that invocations grant the former, nor the pure combat ability of the latter, but what they lack in these respects they make up for by having strong focused abilities that develop as they level, and the versatility of pact magic mixed with a prepared spell list.",
         "The first major consideration when creating your Favored Soul character is how they came to be - a Favored Soul must be favored by some divine or deific being after all. They may never come into being purely by chance, and are always an act of providence or fate. What god do they draw their power from? What plans does the god have in mind for the Favored Soul? Does that Favored Soul believe in the portfolio of that god, do they reject it and any claim that their power comes with responsibility, or do they even know where their power comes from?",
-        "A Favored Soul is not like other divine casters or pact casters in that they don\u2019t owe the source of their power anything, and once they have the power it is theirs - it cannot be taken away for disobedience or for veering off their fated path.",
+        "A Favored Soul is not like other divine casters or pact casters in that they don’t owe the source of their power anything, and once they have the power it is theirs - it cannot be taken away for disobedience or for veering off their fated path.",
         "Second, look over the Favored Soul abilities and decide if they are one who relies more on their magical powers or on their divine strength. They are capable of being mid-range fighters and, if certain features are taken, even gain higher hit dice than other martial classes do. Through investment in their magical powers they gain more pact spell slots and the ability to split them into smaller slots as well, which can make their magic last longer."
       ]
     }
   ],
   "roleplay": {
-    "quick_build": "When creating a Favored Soul there is likely no such thing as \u201Cquick\u201D in the conceptual phase, but the actual build can be fairly straightforward. These builds assume you are devoted to your divine origins: choose Charisma as your highest ability score, followed by Constitution - these ensure you get the most out of your spells, and can concentrate on them more easily. Next, choose the acolyte or folk hero backgrounds. Finally, choose one of the following sets of 1st-level spells to know, depending on your gameplay style.\n\nCombat-Oriented: Absorb energy, igniting smite, inflict wounds, and valkyrie strike. When you reach 2nd level, choose the Essence Armament option.\n\nSupport-Oriented: Bless, feather fall, heroism, and shield of summer. When you reach 2nd level, choose the Essence Flight option.\n\nMagic-Oriented: Color spray, divine favor, inflict wounds, and shield of summer. When you reach 2nd level, choose the Essential Radiance option."
+    "quick_build": "When creating a Favored Soul there is likely no such thing as “quick” in the conceptual phase, but the actual build can be fairly straightforward. These builds assume you are devoted to your divine origins: choose Charisma as your highest ability score, followed by Constitution - these ensure you get the most out of your spells, and can concentrate on them more easily. Next, choose the acolyte or folk hero backgrounds. Finally, choose one of the following sets of 1st-level spells to know, depending on your gameplay style.\n\nCombat-Oriented: Absorb energy, igniting smite, inflict wounds, and valkyrie strike. When you reach 2nd level, choose the Essence Armament option.\n\nSupport-Oriented: Bless, feather fall, heroism, and shield of summer. When you reach 2nd level, choose the Essence Flight option.\n\nMagic-Oriented: Color spray, divine favor, inflict wounds, and shield of summer. When you reach 2nd level, choose the Essential Radiance option."
   },
   "mechanics": {
     "multiclassing": {
@@ -77,11 +77,11 @@
                     },
                     {
                       "label": "Hit Points at 1st Level",
-                      "value": "10 \u002B your Constitution modifier"
+                      "value": "10 + your Constitution modifier"
                     },
                     {
                       "label": "Hit Points at Higher Levels",
-                      "value": "1d10 (or 6) \u002B your Constitution modifier per Favored Soul level after 1st"
+                      "value": "1d10 (or 6) + your Constitution modifier per Favored Soul level after 1st"
                     }
                   ]
                 }
@@ -131,13 +131,13 @@
                   "items": [
                     "(a) two martial weapons: one melee and one ranged",
                     "(a) five javelins or (b) any simple melee weapon",
-                    "(a) a priest\u2019s pack or (b) an explorer\u2019s pack",
+                    "(a) a priest’s pack or (b) an explorer’s pack",
                     "A chain shirt and a backpack"
                   ]
                 },
                 {
                   "type": "paragraph",
-                  "text": "Favored Souls begin at level 1 with 5d4 \u00D7 10 (120) gp."
+                  "text": "Favored Souls begin at level 1 with 5d4 × 10 (120) gp."
                 }
               ]
             }
@@ -180,7 +180,7 @@
       "rows": [
         {
           "level": "1st",
-          "proficiency_bonus": "\u002B2",
+          "proficiency_bonus": "+2",
           "features": "Cosmic Burden, Pact Magic",
           "prepared": "2",
           "known": "4",
@@ -189,7 +189,7 @@
         },
         {
           "level": "2nd",
-          "proficiency_bonus": "\u002B2",
+          "proficiency_bonus": "+2",
           "features": "Divergent Essence, Purification",
           "prepared": "2",
           "known": "5",
@@ -198,7 +198,7 @@
         },
         {
           "level": "3rd",
-          "proficiency_bonus": "\u002B2",
+          "proficiency_bonus": "+2",
           "features": "Fighting Style",
           "prepared": "3",
           "known": "7",
@@ -207,7 +207,7 @@
         },
         {
           "level": "4th",
-          "proficiency_bonus": "\u002B2",
+          "proficiency_bonus": "+2",
           "features": "Ability Score Improvement",
           "prepared": "3",
           "known": "8",
@@ -216,7 +216,7 @@
         },
         {
           "level": "5th",
-          "proficiency_bonus": "\u002B3",
+          "proficiency_bonus": "+3",
           "features": "Extra Attack",
           "prepared": "4",
           "known": "9",
@@ -225,7 +225,7 @@
         },
         {
           "level": "6th",
-          "proficiency_bonus": "\u002B3",
+          "proficiency_bonus": "+3",
           "features": "Burden Feature",
           "prepared": "4",
           "known": "10",
@@ -234,7 +234,7 @@
         },
         {
           "level": "7th",
-          "proficiency_bonus": "\u002B3",
+          "proficiency_bonus": "+3",
           "features": "Fighting Style Advancement",
           "prepared": "5",
           "known": "11",
@@ -243,7 +243,7 @@
         },
         {
           "level": "8th",
-          "proficiency_bonus": "\u002B3",
+          "proficiency_bonus": "+3",
           "features": "Ability Score Improvement",
           "prepared": "5",
           "known": "12",
@@ -252,7 +252,7 @@
         },
         {
           "level": "9th",
-          "proficiency_bonus": "\u002B4",
+          "proficiency_bonus": "+4",
           "features": "Essence Focus",
           "prepared": "5",
           "known": "14",
@@ -261,7 +261,7 @@
         },
         {
           "level": "10th",
-          "proficiency_bonus": "\u002B4",
+          "proficiency_bonus": "+4",
           "features": "Burden Feature",
           "prepared": "6",
           "known": "15",
@@ -270,7 +270,7 @@
         },
         {
           "level": "11th",
-          "proficiency_bonus": "\u002B4",
+          "proficiency_bonus": "+4",
           "features": "Fighting Style Advancement (2nd)",
           "prepared": "6",
           "known": "17",
@@ -279,7 +279,7 @@
         },
         {
           "level": "12th",
-          "proficiency_bonus": "\u002B4",
+          "proficiency_bonus": "+4",
           "features": "Ability Score Improvement",
           "prepared": "6",
           "known": "18",
@@ -288,7 +288,7 @@
         },
         {
           "level": "13th",
-          "proficiency_bonus": "\u002B5",
+          "proficiency_bonus": "+5",
           "features": "Burden Feature",
           "prepared": "7",
           "known": "19",
@@ -297,7 +297,7 @@
         },
         {
           "level": "14th",
-          "proficiency_bonus": "\u002B5",
+          "proficiency_bonus": "+5",
           "features": "Essence Expansion",
           "prepared": "7",
           "known": "20",
@@ -306,7 +306,7 @@
         },
         {
           "level": "15th",
-          "proficiency_bonus": "\u002B5",
+          "proficiency_bonus": "+5",
           "features": "Fighting Style Advancement (3rd)",
           "prepared": "7",
           "known": "21",
@@ -315,7 +315,7 @@
         },
         {
           "level": "16th",
-          "proficiency_bonus": "\u002B5",
+          "proficiency_bonus": "+5",
           "features": "Ability Score Improvement",
           "prepared": "7",
           "known": "22",
@@ -324,7 +324,7 @@
         },
         {
           "level": "17th",
-          "proficiency_bonus": "\u002B6",
+          "proficiency_bonus": "+6",
           "features": "Crown of Splendor",
           "prepared": "8",
           "known": "23",
@@ -333,7 +333,7 @@
         },
         {
           "level": "18th",
-          "proficiency_bonus": "\u002B6",
+          "proficiency_bonus": "+6",
           "features": "Essence Mastery",
           "prepared": "8",
           "known": "24",
@@ -342,7 +342,7 @@
         },
         {
           "level": "19th",
-          "proficiency_bonus": "\u002B6",
+          "proficiency_bonus": "+6",
           "features": "Ability Score Improvement",
           "prepared": "8",
           "known": "25",
@@ -351,7 +351,7 @@
         },
         {
           "level": "20th",
-          "proficiency_bonus": "\u002B6",
+          "proficiency_bonus": "+6",
           "features": "True Divine Mantle",
           "prepared": "8",
           "known": "26",
@@ -367,7 +367,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "You are granted power by the source of your divine power, known as your Cosmic Burden. Choose one during character creation; you gain the 1st-level feature(s) for that Cosmic Burden, then gain the Burden\u2019s abilities at the Favored Soul levels listed."
+            "text": "You are granted power by the source of your divine power, known as your Cosmic Burden. Choose one during character creation; you gain the 1st-level feature(s) for that Cosmic Burden, then gain the Burden’s abilities at the Favored Soul levels listed."
           },
           {
             "type": "paragraph",
@@ -446,48 +446,29 @@
             "text": "The power of your burden becomes more resolute, and is able to be focused into a tangible form. Choose one of the following Essence Options, which you gain immediately."
           },
           {
-            "type": "subsection",
-            "title": "Essence Armament",
-            "blocks": [
+            "type": "options",
+            "options": [
               {
-                "type": "paragraph",
-                "text": "You can conjure up a weapon made of divine power - be it dark or just - that resembles and mechanically functions as the favored weapon of the deity from which your burden originates. This weapon can appear as a solid version of the weapon, or a construct made of energy as you describe it."
+                "name": "Essence Armament",
+                "paragraphs": [
+                  "You can conjure up a weapon made of divine power - be it dark or just - that resembles and mechanically functions as the favored weapon of the deity from which your burden originates. This weapon can appear as a solid version of the weapon, or a construct made of energy as you describe it.",
+                  "You can summon this weapon as a bonus action on your turn, and dispel it as a bonus action as well. If another creature attempts to make an attack using the weapon it vanishes immediately, as it does if it goes more than 100 feet away from you (or further than twice its long range, if it is a thrown weapon). If it is out of your hands you can use your reaction to dispel it or summon it back to your hands.",
+                  "This weapon counts as magical, and when you attack with it you can use your Favored Soul spellcasting ability for your attack and damage rolls using it. If it requires ammunition it can create mundane (but magical) ammunition for it to use, but it still must be reloaded/loaded as it normally would be."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "You can summon this weapon as a bonus action on your turn, and dispel it as a bonus action as well. If another creature attempts to make an attack using the weapon it vanishes immediately, as it does if it goes more than 100 feet away from you (or further than twice its long range, if it is a thrown weapon). If it is out of your hands you can use your reaction to dispel it or summon it back to your hands."
+                "name": "Essence Flight",
+                "paragraphs": [
+                  "You can summon a set of wings that sprout from your back (or a more abstract representation of them), granting you a flight speed equal to your proficiency bonus × 10 feet. If you already have a fly speed, it is increased by half your proficiency bonus (rounded down) × 10 feet instead.",
+                  "If you are knocked prone while flying, you can use your reaction to right yourself from prone immediately without falling."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "This weapon counts as magical, and when you attack with it you can use your Favored Soul spellcasting ability for your attack and damage rolls using it. If it requires ammunition it can create mundane (but magical) ammunition for it to use, but it still must be reloaded/loaded as it normally would be."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Essence Flight",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You can summon a set of wings that sprout from your back (or a more abstract representation of them), granting you a flight speed equal to your proficiency bonus \u00D7 10 feet. If you already have a fly speed, it is increased by half your proficiency bonus (rounded down) \u00D7 10 feet instead."
-              },
-              {
-                "type": "paragraph",
-                "text": "If you are knocked prone while flying, you can use your reaction to right yourself from prone immediately without falling."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Essential Radiance",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You have one additional pact spell slot, which functions identically to and is counted as one of your Favored Soul pact spell slots."
-              },
-              {
-                "type": "paragraph",
-                "text": "Furthermore, you now learn cantrips as you level as a Favored Soul: you learn a number of cantrips from the Cleric spell list (which count as Favored Soul cantrips for you) equal to the level of your Favored Soul pact spell slots. Each time you gain a level as a Favored Soul, when that number increases you gain a new cantrip this way, and each time you level as a Favored Soul at all you can switch one of your current Favored Soul cantrips for another."
+                "name": "Essential Radiance",
+                "paragraphs": [
+                  "You have one additional pact spell slot, which functions identically to and is counted as one of your Favored Soul pact spell slots.",
+                  "Furthermore, you now learn cantrips as you level as a Favored Soul: you learn a number of cantrips from the Cleric spell list (which count as Favored Soul cantrips for you) equal to the level of your Favored Soul pact spell slots. Each time you gain a level as a Favored Soul, when that number increases you gain a new cantrip this way, and each time you level as a Favored Soul at all you can switch one of your current Favored Soul cantrips for another."
+                ]
               }
             ]
           }
@@ -502,56 +483,38 @@
             "text": "A number of times per Long Rest equal to half your proficiency bonus (rounded down), you can invoke the power of your divine nature to produce one of the following effects as an action; you must choose an effect which matches part of your alignment:"
           },
           {
-            "type": "subsection",
-            "title": "Restoration (Good)",
-            "blocks": [
+            "type": "options",
+            "options": [
               {
-                "type": "paragraph",
-                "text": "Choose one creature within 30 feet of you that you can see. A wave of positive energy washes over them, restoring hit points to them equal to 10 \u00D7 the slot level of your pact spell slots."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Destruction (Evil)",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Choose one creature within 30 feet of you that you can see. That creature must succeed on a Constitution saving throw, or else a wave of destructive energy washes over them and deals damage to them equal to 2d8 \u00D7 the level of your pact spell slots. This damage is necrotic, but your GM may allow a different damage type based on the origin of your Cosmic Burden."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Righteous Declaration (Lawful)",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Choose a number of creatures you can see within 60 feet of you equal to half your Favored Soul level (rounded down), at whom you declare a unified command. Each target must succeed a Wisdom saving throw or follow your command. These commands follow the rules of the command spell."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Void Will (Chaos)",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Choose one creature within 60 feet of you that you can see, who you attempt to break the mind of. Your target must succeed a Charisma saving throw or be stunned for 1 minute. During this time they reattempt the saving throw each time they take damage and at the end of each of their turns, ending the effect on a success."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Holy Sanctuary (Neutral)",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You are bathed in divine light, which remains for 1 minute. During this time, each time a creature attempts to target you with an attack or harmful effect they must succeed a Charisma saving throw; on a failure, they cannot target you (and the action is spent), and cannot do so again until the end of that turn. If they succeed they proceed as expected, unaffected by this protection for the remainder of the turn. This effect ends early if you fall unconscious or are incapacitated."
+                "name": "Restoration (Good)",
+                "paragraphs": [
+                  "Choose one creature within 30 feet of you that you can see. A wave of positive energy washes over them, restoring hit points to them equal to 10 × the slot level of your pact spell slots."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "If you are true neutral, attackers who succeed do not become immune to the effects of Holy Sanctuary and must repeat it each time they attempt to target you as described above."
+                "name": "Destruction (Evil)",
+                "paragraphs": [
+                  "Choose one creature within 30 feet of you that you can see. That creature must succeed on a Constitution saving throw, or else a wave of destructive energy washes over them and deals damage to them equal to 2d8 × the level of your pact spell slots. This damage is necrotic, but your GM may allow a different damage type based on the origin of your Cosmic Burden."
+                ]
+              },
+              {
+                "name": "Righteous Declaration (Lawful)",
+                "paragraphs": [
+                  "Choose a number of creatures you can see within 60 feet of you equal to half your Favored Soul level (rounded down), at whom you declare a unified command. Each target must succeed a Wisdom saving throw or follow your command. These commands follow the rules of the command spell."
+                ]
+              },
+              {
+                "name": "Void Will (Chaos)",
+                "paragraphs": [
+                  "Choose one creature within 60 feet of you that you can see, who you attempt to break the mind of. Your target must succeed a Charisma saving throw or be stunned for 1 minute. During this time they reattempt the saving throw each time they take damage and at the end of each of their turns, ending the effect on a success."
+                ]
+              },
+              {
+                "name": "Holy Sanctuary (Neutral)",
+                "paragraphs": [
+                  "You are bathed in divine light, which remains for 1 minute. During this time, each time a creature attempts to target you with an attack or harmful effect they must succeed a Charisma saving throw; on a failure, they cannot target you (and the action is spent), and cannot do so again until the end of that turn. If they succeed they proceed as expected, unaffected by this protection for the remainder of the turn. This effect ends early if you fall unconscious or are incapacitated.",
+                  "If you are true neutral, attackers who succeed do not become immune to the effects of Holy Sanctuary and must repeat it each time they attempt to target you as described above."
+                ]
               }
             ]
           }
@@ -563,7 +526,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+            "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
           },
           {
             "type": "options",
@@ -632,60 +595,77 @@
             "text": "You focus the power of your Cosmic Burden into yet another form, as well as improve upon the first. You gain one additional Essence Option from your 2nd-level Divergent Essence feature, as well as gain one of the Essence Focus choices below for the one you previously selected. When later features grant you additional choices, you cannot pick the same one twice:"
           },
           {
-            "type": "subsection",
-            "title": "Essence Armament",
-            "blocks": [
+            "type": "options",
+            "options": [
               {
-                "type": "paragraph",
-                "text": "Devoted Critical. You score a critical hit with your Armament Weapon on a d20 result of 19 or 20."
+                "name": "Devoted Critical",
+                "prerequisite": "Essence Armament",
+                "paragraphs": [
+                  "You score a critical hit with your Armament Weapon on a d20 result of 19 or 20."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "Energy Surge. Your Essence Armament deals an additional weapon die of damage. The damage is radiant or necrotic (your choice when you gain this feature), or a type deemed appropriate for the source of your Cosmic Burden by your GM."
+                "name": "Energy Surge",
+                "prerequisite": "Essence Armament",
+                "paragraphs": [
+                  "Your Essence Armament deals an additional weapon die of damage. The damage is radiant or necrotic (your choice when you gain this feature), or a type deemed appropriate for the source of your Cosmic Burden by your GM."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "Soul Blade. Your Essence Armament has an enhancement bonus equal to half your proficiency bonus (rounded down), and when you attack with it as part of an Attack action, you can make one attack with it as a bonus action. If your Essence Armament merges with another weapon with an enhancement bonus (such as through Possessed Weapon), the higher of the two is used in place of the other."
+                "name": "Soul Blade",
+                "prerequisite": "Essence Armament",
+                "paragraphs": [
+                  "Your Essence Armament has an enhancement bonus equal to half your proficiency bonus (rounded down), and when you attack with it as part of an Attack action, you can make one attack with it as a bonus action. If your Essence Armament merges with another weapon with an enhancement bonus (such as through Possessed Weapon), the higher of the two is used in place of the other."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "Versatile Essence. Your Essence Armament can be any type of weapon you are proficient with, instead of just your deity\u2019s favored weapon. Changing it after it is already conjured requires a bonus action."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Essence Flight",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Aura of Protected Personage. If you are wearing no armor you can choose to calculate your armor class as 10 \u002B your Dexterity modifier \u002B your Charisma modifier. Furthermore, you can cast the shield spell a number of times per Long Rest equal to half your proficiency bonus, requiring no spell slot to do so."
+                "name": "Versatile Essence",
+                "prerequisite": "Essence Armament",
+                "paragraphs": [
+                  "Your Essence Armament can be any type of weapon you are proficient with, instead of just your deity’s favored weapon. Changing it after it is already conjured requires a bonus action."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "Flight Dash. You can take the Dash action as a bonus action, but when you do so this way you only move up to half your Fly speed instead of your base movement speed."
+                "name": "Aura of Protected Personage",
+                "prerequisite": "Essence Flight",
+                "paragraphs": [
+                  "If you are wearing no armor you can choose to calculate your armor class as 10 + your Dexterity modifier + your Charisma modifier. Furthermore, you can cast the shield spell a number of times per Long Rest equal to half your proficiency bonus, requiring no spell slot to do so."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "Uninhibited Sight. You can see invisible creatures around you as if they were plainly visible, and can see into the Ethereal Realm from the Material Plane and vice versa. If you see a creature on one plane, you can interact with it from the other. This vision extends out to a number of feet equal to your proficiency bonus \u00D7 10."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Essential Radiance",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Body of the Planes. Your maximum hit points increase by 1 for each Favored Soul level you have when gaining this benefit, then it increases by 1 again each time you gain another Favored Soul level."
+                "name": "Flight Dash",
+                "prerequisite": "Essence Flight",
+                "paragraphs": [
+                  "You can take the Dash action as a bonus action, but when you do so this way you only move up to half your Fly speed instead of your base movement speed."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "Providential Caster. When you make a spellcasting ability check for any of your Favored Soul spells, you may add half your proficiency bonus (rounded down) to the result. Furthermore, you may add your Charisma modifier to the result of any damage roll you make for your Favored Soul cantrips."
+                "name": "Uninhibited Sight",
+                "prerequisite": "Essence Flight",
+                "paragraphs": [
+                  "You can see invisible creatures around you as if they were plainly visible, and can see into the Ethereal Realm from the Material Plane and vice versa. If you see a creature on one plane, you can interact with it from the other. This vision extends out to a number of feet equal to your proficiency bonus × 10."
+                ]
               },
               {
-                "type": "paragraph",
-                "text": "Split Soul Spell. When casting a spell using a Favored Soul pact spell slot, you can choose to create two \u201Cminor\u201D pact spell slots, each of a level equal to half your proficiency bonus (rounded up). One of these slots is immediately used to cast the triggering spell, and you retain the other until you use it or you complete a Short or Long Rest. To use this feature, the spell you cast must be of a level the resulting minor pact spell slots are capable of casting. You cannot split a minor pact spell slot using this feature."
+                "name": "Body of the Planes",
+                "prerequisite": "Essential Radiance",
+                "paragraphs": [
+                  "Your maximum hit points increase by 1 for each Favored Soul level you have when gaining this benefit, then it increases by 1 again each time you gain another Favored Soul level."
+                ]
+              },
+              {
+                "name": "Providential Caster",
+                "prerequisite": "Essential Radiance",
+                "paragraphs": [
+                  "When you make a spellcasting ability check for any of your Favored Soul spells, you may add half your proficiency bonus (rounded down) to the result. Furthermore, you may add your Charisma modifier to the result of any damage roll you make for your Favored Soul cantrips."
+                ]
+              },
+              {
+                "name": "Split Soul Spell",
+                "prerequisite": "Essential Radiance",
+                "paragraphs": [
+                  "When casting a spell using a Favored Soul pact spell slot, you can choose to create two “minor” pact spell slots, each of a level equal to half your proficiency bonus (rounded up). One of these slots is immediately used to cast the triggering spell, and you retain the other until you use it or you complete a Short or Long Rest. To use this feature, the spell you cast must be of a level the resulting minor pact spell slots are capable of casting. You cannot split a minor pact spell slot using this feature."
+                ]
               }
             ]
           }
@@ -700,48 +680,53 @@
             "text": "You gain the following bonuses for each Essence Option you have picked so far, and you gain one Essence Focus choice for each of them."
           },
           {
-            "type": "subsection",
-            "title": "Essence Armament: Possessed Weapon",
-            "blocks": [
+            "type": "options",
+            "options": [
               {
-                "type": "paragraph",
-                "text": "As a bonus action, you can now merge your Essence Armament with a regular weapon as long as it meets the following criteria:"
+                "name": "Possessed Weapon",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "As a bonus action, you can now merge your Essence Armament with a regular weapon as long as it meets the following criteria:"
+                  },
+                  {
+                    "type": "list",
+                    "items": [
+                      "If one has either of the light or finesse properties the other cannot have either of the heavy or two-handed properties, and vice versa.",
+                      "Your armament and the weapon must both be ranged weapons or both be melee weapons.",
+                      "You are proficient with both weapons."
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "While merged, the weapon takes on the weapon damage die that is the higher of the two, but you pick which weapon’s properties are used (indicating its physical appearance). Beyond this, both weapons have all of the effects of the possessed weapon and all the benefits of your Essence Armament. However, if you dispel your Armament they cease being merged, as well as if you complete a Short or Long Rest."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "If you merge your Essence Armament with your deity’s favored weapon, the first attack you make with it each turn has advantage."
+                  }
+                ],
+                "prerequisite": "Essence Armament"
               },
               {
-                "type": "list",
-                "items": [
-                  "If one has either of the light or finesse properties the other cannot have either of the heavy or two-handed properties, and vice versa.",
-                  "Your armament and the weapon must both be ranged weapons or both be melee weapons.",
-                  "You are proficient with both weapons."
-                ]
+                "name": "Divine Skirmisher",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You do not provoke opportunity attacks from creatures if you both entered and exited their reach on the same turn."
+                  }
+                ],
+                "prerequisite": "Essence Flight"
               },
               {
-                "type": "paragraph",
-                "text": "While merged, the weapon takes on the weapon damage die that is the higher of the two, but you pick which weapon\u2019s properties are used (indicating its physical appearance). Beyond this, both weapons have all of the effects of the possessed weapon and all the benefits of your Essence Armament. However, if you dispel your Armament they cease being merged, as well as if you complete a Short or Long Rest."
-              },
-              {
-                "type": "paragraph",
-                "text": "If you merge your Essence Armament with your deity\u2019s favored weapon, the first attack you make with it each turn has advantage."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Essence Flight: Divine Skirmisher",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You do not provoke opportunity attacks from creatures if you both entered and exited their reach on the same turn."
-              }
-            ]
-          },
-          {
-            "type": "subsection",
-            "title": "Essential Radiance: Empowered Pact",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "When you cast a spell using a pact spell slot, you can treat its slot level as if it was equal to half your Favored Soul level (rounded down, maximum 9th). You can do so twice per Long Rest."
+                "name": "Empowered Pact",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When you cast a spell using a pact spell slot, you can treat its slot level as if it was equal to half your Favored Soul level (rounded down, maximum 9th). You can do so twice per Long Rest."
+                  }
+                ],
+                "prerequisite": "Essential Radiance"
               }
             ]
           }
@@ -753,7 +738,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "You gain proficiency in one saving throw of your choice that you don\u2019t already have."
+            "text": "You gain proficiency in one saving throw of your choice that you don’t already have."
           }
         ]
       },

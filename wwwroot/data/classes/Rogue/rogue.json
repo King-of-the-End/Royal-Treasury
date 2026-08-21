@@ -1,0 +1,503 @@
+{
+  "name": "Rogue",
+  "slug": "rogue",
+  "summary": "A cunning and precise expert who relies on skill, stealth, mobility, and carefully placed attacks to overcome obstacles and exploit an enemy\u2019s weaknesses.",
+  "introduction": [
+    "Signaling for her companions to wait, a halfling creeps forward through the dungeon hall. She presses an ear to the door, then pulls out a set of tools and picks the lock in the blink of an eye. Then she disappears into the shadows as her fighter friend moves forward to kick the door open.",
+    "A human lurks in the shadows of an alley while his accomplice prepares for her part in the ambush. When their target\u2014a notorious slaver\u2014passes the alleyway, the accomplice cries out, the slaver comes to investigate, and the assassin\u2019s blade cuts his throat before he can make a sound.",
+    "Suppressing a giggle, a gnome waggles her fingers and magically lifts the key ring from the guard\u2019s belt. In a moment, the keys are in her hand, the cell door is open, and she and her companions are free to make their escape.",
+    "Rogues rely on skill, stealth, and their foes\u2019 vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party."
+  ],
+  "lore_sections": [
+    {
+      "title": "Skill and Precision",
+      "paragraphs": [
+        "Rogues devote as much effort to mastering the use of a variety of skills as they do to perfecting their combat abilities, giving them a broad expertise that few other characters can match. Many rogues focus on stealth and deception, while others refine the skills that help them in a dungeon environment, such as climbing, finding and disarming traps, and opening locks.",
+        "When it comes to combat, rogues prioritize cunning over brute strength. A rogue would rather make one precise strike, placing it exactly where the attack will hurt the target most, than wear an opponent down with a barrage of attacks. Rogues have an almost supernatural knack for avoiding danger, and a few learn magical tricks to supplement their other abilities."
+      ]
+    },
+    {
+      "title": "A Shady Living",
+      "paragraphs": [
+        "Every town and city has its share of rogues. Most of them live up to the worst stereotypes of the class, making a living as burglars, assassins, cutpurses, and con artists. Often, these scoundrels are organized into thieves\u2019 guilds or crime families. Plenty of rogues operate independently, but even they sometimes recruit apprentices to help them in their scams and heists.",
+        "A few rogues make an honest living as locksmiths, investigators, or exterminators, which can be a dangerous job in a world where dire rats\u2014and wererats\u2014haunt the sewers.",
+        "As adventurers, rogues fall on both sides of the law. Some are hardened criminals who decide to seek their fortune in treasure hoards, while others take up a life of adventure to escape from the law. Some have learned and perfected their skills with the explicit purpose of infiltrating ancient ruins and hidden crypts in search of treasure."
+      ]
+    },
+    {
+      "title": "Creating a Rogue",
+      "paragraphs": [
+        "As you create your rogue character, consider the character\u2019s relationship to the law. Do you have a criminal past\u2014or present? Are you on the run from the law or from an angry thieves\u2019 guild master? Or did you leave your guild in search of bigger risks and bigger rewards? Is it greed that drives you in your adventures, or some other desire or ideal?",
+        "What was the trigger that led you away from your previous life? Did a great con or heist go terribly wrong and cause you to reevaluate your career? Maybe you were lucky and a successful robbery gave you the coin you needed to escape the squalor of your life. Did wanderlust finally call you away from your home? Perhaps you suddenly found yourself cut off from your family or your mentor, and you had to find a new means of support. Or maybe you made a new friend\u2014another member of your adventuring party\u2014who showed you new possibilities for earning a living and employing your particular talents."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "You can make a rogue quickly by following these suggestions. First, Dexterity should be your highest ability score. Make Intelligence your next-highest if you want to excel at Investigation or plan to take up the Arcane Trickster archetype. Choose Charisma instead if you plan to emphasize deception and social interaction. Second, choose the charlatan background."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "The following are the requirements to multiclass into a Rogue."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Dexterity 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "Light armor, one skill from the class\u2019s skill list, thieves\u2019 tools."
+        },
+        {
+          "label": "Tools",
+          "value": "Thieves\u2019 tools."
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d8 per rogue level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "8 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d8 (or 5) \u002B your Constitution modifier per rogue level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light armor"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple weapons, hand crossbows, longswords, rapiers, shortswords"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "Thieves\u2019 tools"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Dexterity, Intelligence"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) a rapier or (b) a shortsword",
+                    "(a) a shortbow and quiver of 20 arrows or (b) a shortsword",
+                    "(a) a burglar\u2019s pack, (b) a dungeoneer\u2019s pack, or (c) an explorer\u2019s pack",
+                    "Leather armor, two daggers, and thieves\u2019 tools"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Rogue",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "sneak_attack",
+          "label": "Sneak Attack"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "sneak_attack": "1d6",
+          "features": "Expertise, Sneak Attack, Thieves\u2019 Cant, Gun Expertise (Optional)"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "sneak_attack": "1d6",
+          "features": "Cunning Action, Fighting Style (Optional)"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "sneak_attack": "2d6",
+          "features": "Roguish Archetype, Steady Aim (Optional)"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "sneak_attack": "2d6",
+          "features": "Ability Score Improvement"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "sneak_attack": "3d6",
+          "features": "Uncanny Dodge"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "sneak_attack": "3d6",
+          "features": "Expertise"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "sneak_attack": "4d6",
+          "features": "Evasion"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "sneak_attack": "4d6",
+          "features": "Ability Score Improvement"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "sneak_attack": "5d6",
+          "features": "Roguish Archetype feature, Fighting Style advancement"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "sneak_attack": "5d6",
+          "features": "Ability Score Improvement"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "sneak_attack": "6d6",
+          "features": "Reliable Talent"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "sneak_attack": "6d6",
+          "features": "Ability Score Improvement"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "sneak_attack": "7d6",
+          "features": "Roguish Archetype feature"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "sneak_attack": "7d6",
+          "features": "Blindsense"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "sneak_attack": "8d6",
+          "features": "Slippery Mind"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "sneak_attack": "8d6",
+          "features": "Ability Score Improvement"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "sneak_attack": "9d6",
+          "features": "Roguish Archetype feature"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "sneak_attack": "9d6",
+          "features": "Elusive"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "sneak_attack": "10d6",
+          "features": "Ability Score Improvement"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "sneak_attack": "10d6",
+          "features": "Stroke of Luck"
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Expertise",
+        "level": "1 and 6",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves\u2019 tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+          },
+          {
+            "type": "paragraph",
+            "text": "At 6th level, you can choose two more of your proficiencies in skills or with thieves\u2019 tools to gain this benefit."
+          }
+        ]
+      },
+      {
+        "name": "Gun Expertise",
+        "level": "1",
+        "subtitle": "Optional 1st-level Rogue feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you select what tools/skills to gain Expertise in, you can choose to forego one of your choices to gain proficiency in simple and martial firearms (regardless of your prior proficiencies). You can choose to do so at any level you would gain new Expertise options."
+          }
+        ]
+      },
+      {
+        "name": "Sneak Attack",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 1st level, you know how to strike subtly and exploit a foe\u2019s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon."
+          },
+          {
+            "type": "paragraph",
+            "text": "You don\u2019t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn\u2019t incapacitated, and you don\u2019t have disadvantage on the attack roll."
+          },
+          {
+            "type": "paragraph",
+            "text": "The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+          }
+        ]
+      },
+      {
+        "name": "Thieves\u2019 Cant",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "During your rogue training you learned thieves\u2019 cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves\u2019 cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly."
+          },
+          {
+            "type": "paragraph",
+            "text": "In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves\u2019 guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
+          }
+        ]
+      },
+      {
+        "name": "Cunning Action",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+          }
+        ]
+      },
+      {
+        "name": "Fighting Style",
+        "level": "2",
+        "subtitle": "Optional 2nd-level Rogue feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Dueling"
+              },
+              {
+                "name": "Gun Expert"
+              },
+              {
+                "name": "Quickdraw"
+              },
+              {
+                "name": "Thrown Weapon Fighting"
+              },
+              {
+                "name": "Two-Weapon Fighting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Roguish Archetype",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+          }
+        ]
+      },
+      {
+        "name": "Steady Aim (Optional)",
+        "level": "3",
+        "subtitle": "Optional Rogue feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 3rd level, as a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven\u2019t moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4, 8, 10, 12, 16, and 19",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Uncanny Dodge",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack\u2019s damage against you."
+          }
+        ]
+      },
+      {
+        "name": "Evasion",
+        "level": "7",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 7th level, you can nimbly dodge out of the way of certain area effects. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+          }
+        ]
+      },
+      {
+        "name": "Fighting Style Advancement",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You gain an additional Fighting Style each at 9th level as a Rogue. You can choose to advance one of your Fighting Styles instead of gaining a new one. If you ever switch that Fighting Style for another you gain the new Fighting Style at the advancement level of the old one."
+          }
+        ]
+      },
+      {
+        "name": "Reliable Talent",
+        "level": "11",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+          }
+        ]
+      },
+      {
+        "name": "Blindsense",
+        "level": "14",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
+          }
+        ]
+      },
+      {
+        "name": "Slippery Mind",
+        "level": "15",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws."
+          }
+        ]
+      },
+      {
+        "name": "Elusive",
+        "level": "18",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren\u2019t incapacitated."
+          }
+        ]
+      },
+      {
+        "name": "Stroke of Luck",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once you use this feature, you can\u2019t use it again until you finish a short or long rest."
+          }
+        ]
+      }
+    ]
+  }
+}

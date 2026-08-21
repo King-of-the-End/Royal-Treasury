@@ -1,0 +1,557 @@
+{
+  "name": "Fighter",
+  "slug": "fighter",
+  "summary": "A versatile martial combatant whose training, endurance, and battlefield adaptability let them excel with nearly any weapon or fighting style.",
+  "introduction": [
+    "A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.",
+    "A dwarf in chain mail interposes his shield between the ogre\u2019s club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.",
+    "A gladiator fights for sport in an arena, a master with his trident and net, skilled at toppling foes and moving them around for the crowd\u2019s delight\u2014and his own tactical advantage. His opponent\u2019s sword flares with blue light an instant before she sends lightning flashing forth to smite him.",
+    "All of these heroes are fighters, perhaps the most diverse class of characters in the worlds of Dungeons \u0026 Dragons. Questing knights, conquering overlords, royal champions, elite foot soldiers, hardened mercenaries, and bandit kings\u2014as fighters, they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat."
+  ],
+  "lore_sections": [
+    {
+      "title": "Well-Rounded Specialists",
+      "paragraphs": [
+        "Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is adept with shields and every form of armor. Beyond that basic degree of familiarity, each fighter specializes in a certain style of combat.",
+        "Some concentrate on archery, some on fighting with two weapons at once, and some on augmenting their martial skills with magic. This combination of broad general ability and extensive specialization makes fighters superior combatants on battlefields and in dungeons alike."
+      ]
+    },
+    {
+      "title": "Trained for Danger",
+      "paragraphs": [
+        "Not every member of the city watch, the village militia, or the queen\u2019s army is a fighter. Most of these troops are relatively untrained soldiers with only the most basic combat knowledge. Veteran soldiers, military officers, trained bodyguards, dedicated knights, and similar figures are fighters.",
+        "Some fighters feel drawn to use their training as adventurers. The dungeon delving, monster slaying, and other dangerous work common among adventurers is second nature for a fighter, not all that different from the life he or she left behind. There are greater risks, perhaps, but also much greater rewards."
+      ]
+    },
+    {
+      "title": "Creating a Fighter",
+      "paragraphs": [
+        "As you build your fighter, think about two related elements of your character\u2019s background: Where did you get your combat training, and what set you apart from the mundane warriors around you? Were you particularly ruthless? Did you get extra help from a mentor, perhaps because of your exceptional dedication? What drove you to this training in the first place?",
+        "You might have enjoyed formal training in a noble\u2019s army or in a local militia. Perhaps you trained in a war academy, learning strategy, tactics, and military history. Or you might be self-taught\u2014unpolished but well tested. Did you take up the sword as a way to escape the limits of life on a farm, or are you following a proud family tradition? Where did you acquire your weapons and armor?"
+      ]
+    },
+    {
+      "title": "19th Edition Fighter",
+      "paragraphs": [
+        "It is unlikely one would ever identify as a \u201CFighter\u201D, but this class covers a diverse gamut of occupations and lifestyles. A Fighter is a skilled combatant of nearly any martial description, be they an archer, knight, martial artist or tactician. Though they may lack specialized skills in some fields compared to those who train with greater specificity, the Fighter\u2019s place on the battlefield is unquestionably to the advantage of their allies.",
+        "A Fighter\u2019s key skills focus on their ability to get up time and time again, and to push their limits. They are masters at adapting to threats and overpowering them, but invest huge bursts of stamina that can\u2019t be sustained for long periods of time. When a Fighter stops to catch their breath, however, their hearty lifestyle helps them get back up on their feet and strike again while the iron is hot.",
+        "The optional features for the Fighter in this section are considered fundamental to the 19th Edition system. They grant the Fighter a temporarily more energetic and reactive playstyle, setting them apart from other martial classes that can leave them feeling dry. These features expand their existing abilities and lend the Fighter a sense of proactivity that can go unmatched\u2014until they run out of their admittedly limited resources."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "You can make a fighter quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on melee weapons or on archery (or finesse weapons). Your next-highest score should be Constitution, or Intelligence if you plan to adopt the Eldritch Knight martial archetype. Second, choose the soldier background."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "The following are the requirements to multiclass into a Fighter."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Strength 13 or Dexterity 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "Light armor, medium armor, shields, simple weapons, martial weapons."
+        },
+        {
+          "label": "Tools",
+          "value": "None."
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d10 per fighter level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "10 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d10 (or 6) \u002B your Constitution modifier per fighter level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "All armor, shields"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple weapons, martial weapons"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "None"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Strength, Constitution"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) chain mail or (b) leather, longbow, and 20 arrows",
+                    "(a) a martial weapon and a shield or (b) two martial weapons",
+                    "(a) a light crossbow and 20 bolts or (b) two handaxes",
+                    "(a) a dungeoneer\u2019s pack or (b) an explorer\u2019s pack"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Fighter",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": "Fighting Style, Second Wind"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Action Surge (x1), Combat Mastery"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Martial Archetype"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": "Ability Score Improvement, Martial Versatility (Optional), Fighting Style Advancement"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Extra Attack (x1)"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement, Martial Versatility (Optional)"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Martial Archetype feature, Fighting Style Advancement"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement, Martial Versatility (Optional), Adrenaline"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Indomitable (x1)"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Martial Archetype feature"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Extra Attack (x2), Critical Momentum"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement, Martial Versatility (Optional), Fighting Style Advancement"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Indomitable (x2), Greater Stamina"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement, Martial Versatility (Optional)"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Martial Archetype feature"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement, Martial Versatility (Optional), Fighting Style Advancement"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Action Surge (x2), Indomitable (x3)"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Martial Archetype feature"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement, Martial Versatility (Optional)"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Extra Attack (x3)"
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Fighting Style",
+        "level": "1",
+        "subtitle": "1st-level Fighter feature (addendum to Fighting Style feature)",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Archery"
+              },
+              {
+                "name": "Blind Fighting"
+              },
+              {
+                "name": "Defense"
+              },
+              {
+                "name": "Dueling"
+              },
+              {
+                "name": "Great Weapon Fighting"
+              },
+              {
+                "name": "Gun Expert"
+              },
+              {
+                "name": "Interception"
+              },
+              {
+                "name": "Protection"
+              },
+              {
+                "name": "Proficiency (Polearm)"
+              },
+              {
+                "name": "Proficiency (Two-Handed)"
+              },
+              {
+                "name": "Superior Technique"
+              },
+              {
+                "name": "Thrown Weapon Fighting"
+              },
+              {
+                "name": "Two-Weapon Fighting"
+              },
+              {
+                "name": "Unarmed Fighting"
+              },
+              {
+                "name": "Fighting Style Details"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1st-Level Second Wind Feature",
+        "level": "1",
+        "choice_label": "Choose One",
+        "alternatives": [
+          {
+            "name": "Second Wind",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 \u002B your fighter level."
+              },
+              {
+                "type": "paragraph",
+                "text": "Once you use this feature, you must finish a short or long rest before you can use it again."
+              }
+            ]
+          },
+          {
+            "name": "Second Wind (19th Edition)",
+            "subtitle": "Replaces Second Wind",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "As a bonus action you can regain hit points equal to 1d10 \u002B your Fighter level, and recover from any Combat Fatigue you might be suffering from. You can use your Second Wind twice, then gain an additional use each when you reach 5th, 9th, 13th, and 17th level as a Fighter. You regain spent uses of your Second Wind when you complete a Long Rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "When you use your Second Wind you can expend additional uses of it at once, increasing the hit points you regain by 1d10 for each extra use you spend."
+              },
+              {
+                "type": "paragraph",
+                "text": "If you use your Second Wind to regain hit points while you have the dying condition, the dying condition ends immediately."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Action Surge",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."
+          }
+        ]
+      },
+      {
+        "name": "Combat Mastery",
+        "level": "2",
+        "subtitle": "2nd-level Fighter feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You are skilled in managing the field of combat, and as a result can perform under stress in conditions that others cannot. You have a number of points of Combat Mastery equal to your Fighter level divided by 2 (rounded up), which you regain each time you complete a Long Rest. You also regain two spent points each time you use your Action Surge. You can spend them on the following features; each feature requires one point when used, and you cannot use any if you are incapacitated."
+          },
+          {
+            "type": "subsection",
+            "title": "Additional Reaction",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "If you have already used your reaction, you can use it again. You cannot use multiple reactions in response to identical triggers from the same creature on the same turn (for example, making multiple opportunity attacks against the same creature or casting counterspell against the same creature multiple times at once)."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Cleave",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "If you miss with a weapon attack you can roll a d20 and use it in place of the d20 result that missed, retaining any penalties, bonuses, and effects that attack would have on it."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Deflect",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "If you have a shield or two-handed weapon, you can reduce the damage an attack deals to you to half (rounded down). This can only be used once per attack."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Reposition",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can take the Dash action as a bonus action."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Scan",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "On your turn, you may make a Wisdom (Perception) check without requiring an action."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Martial Archetype",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4, 6, 8, 12, 14, 16, and 19",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Martial Versatility (Optional)",
+        "level": "4, 6, 8, 12, 14, 16, and 19",
+        "subtitle": "Optional Fighter feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, as you shift the focus of your martial practice:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Replace a fighting style you know with another fighting style available to fighters.",
+              "If you know any maneuvers from the Battle Master archetype, you can replace one maneuver you know with a different maneuver."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fighting Style Advancement",
+        "level": "4, 7, 12, and 16",
+        "subtitle": "4th/7th/12th/16th-level Fighter feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You gain an additional Fighting Style each at 4th, 7th, 12th, and 16th level as a Fighter. At each of these points you can choose to advance one of your Fighting Styles instead of gaining a new one. If you ever switch that Fighting Style for another you gain the new Fighting Style at the advancement level of the old one."
+          }
+        ]
+      },
+      {
+        "name": "Extra Attack",
+        "level": "5, 11, and 20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+          },
+          {
+            "type": "paragraph",
+            "text": "The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+          }
+        ]
+      },
+      {
+        "name": "Adrenaline",
+        "level": "8",
+        "subtitle": "8th-level Fighter feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you roll initiative in combat you regain enough points of Combat Mastery to have half your total points (rounded down)."
+          }
+        ]
+      },
+      {
+        "name": "Indomitable",
+        "level": "9, 13, and 17",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can\u2019t use this feature again until you finish a long rest."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+          }
+        ]
+      },
+      {
+        "name": "Critical Momentum",
+        "level": "11",
+        "subtitle": "11th-level Fighter feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you roll a result of 20 on an attack roll against a hostile creature you regain a point of Combat Mastery."
+          }
+        ]
+      },
+      {
+        "name": "Greater Stamina",
+        "level": "13",
+        "subtitle": "13th-level Fighter feature",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "If you are running the Baldur\u2019s Rest rule, you can benefit from one additional Short Rest between Long Rests. If you are not running the rule, once per Long Rest you can spend 1 minute in downtime to immediately gain the benefits of a Short Rest."
+          }
+        ]
+      }
+    ]
+  }
+}
