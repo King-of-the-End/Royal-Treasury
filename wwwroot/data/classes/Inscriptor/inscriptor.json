@@ -1,0 +1,970 @@
+{
+  "name": "Inscriptor",
+  "slug": "inscriptor",
+  "introduction": [
+    "Inscriptors use the written word to channel arcane power, bending the world through their writing. It comes in many forms, but these individuals, granted their reality-altering powers through higher beings who take an interest in them, can use their pens to describe the world as they wish to see it, and so the world adheres to that form.",
+    "The combination of the imaginations of the Inscriptors and their ability to alter the fundamental state of the world through these means form this unique art: literary casting."
+  ],
+  "lore_sections": [
+    {
+      "title": "Literary Casters",
+      "paragraphs": [
+        "The power of a literary caster is based on their perception of the world and the extent of their imagination. They either cause the existing world to change to match their specific written interpretation, or they weave a new reality on top of the existing one as their imagination dictates. Inscriptors can incite and invent thoughts or behavior, conjure natural phenomena, change the weather, create energy, and perform feats of great magic by writing with a special arcane ink called expoentrum.",
+        "This ink can translate their words and intentions into a form understood by the Weave and causes the Weave to adjust and change to produce it.",
+        "Because expoentrum writes on the fabric of the Weave itself, it does not have to be applied to a physical object. A literary caster can spell out words in the air and still have them take hold. However, each caster will have a preferred method of writing, and the closer the caster gets to writing in this way the more authentically the Inscriptor can reproduce their craft, increasing the purity of the effect."
+      ]
+    },
+    {
+      "title": "Correfonts",
+      "paragraphs": [
+        "The power of Inscriptors can come from various sources similar to how other casters draw their magic from external patrons. Their magic is not inherent to them, nor is the magical energy they use to pen their imagined constructs into the world. Their arcane ink gains power through the Correfonts, a cabal of demigods who serve as historians and archivists residing in Vulta de Congenio, a demiplane in Mechanus where thorough records are kept of the mortal world, including its stories, legends, and tomes detailing possible futures.",
+        "Employed by the Eidolon So\u0027kess in ancient times, these gods are like muses who have a particular fascination regarding books and records in terms of subject, genre, and factual basis. It is thought that there is a Correfont for each imaginable type of media, gaining power and form as that media becomes better respected and spread among mortals.",
+        "The Correfonts form pacts with authors they feel possess great potential and purpose but whose circumstances have pulled them away from their literary pursuits, offering them power in exchange for some assurance that they will grow their talents and leave stories, records, and lore in their wake by either writing or inspiring it. They also derive a sense of pleasure from granting authors the power to spin their imaginations into reality. When such a pact is formed, the Correfont grants the ability to create special arcane ink that manifests their power, twisting and manipulating the weave through their written words.",
+        "A given Correfont will rarely form a pact with more than one individual. They see their partners as their instruments and wish to devote all of their focus to their success. They may occasionally select multiple, however. Like other otherworldly patrons, a Correfont will sometimes also offer their pacts to those who beseech them and make a deal in exchange for some service."
+      ]
+    },
+    {
+      "title": "Creating an Inscriptor",
+      "paragraphs": [
+        "The critical consideration is determining an Inscriptor\u0027s craft. They must be someone who is familiar with writing as a lifestyle, or at least wishes to be: they could be a playwright, horror novelist, book-keeper, archivist, poet, etc. Their craft and form of writing will determine their method of casting: a novelist might use literary casting to describe events into being, while someone who is used to keeping records or inventory might describe objects officiously to endow them with qualities.",
+        "Second, you must determine what sort of patron you have. The Correfonts represent muses that take interest in talent, but others might exist. The same sort of patrons that make pacts with Warlocks may also aid an Inscriptor. An outer god may grant a writer of eldritch fantasy the power to manifest their material, while an archfey enamored with love stories may grant a novelist the power to influence hearts.",
+        "Finally, what is the nature of your pact? Does your patron desire something from you, or only want to see you grow? Did they give you great power so you could find an ancient book in accordance with their interests, or do they want you to spin a tale to pass on to the next generation, using your own adventures as reference material? Some Inscriptors might think of themselves as Bards.",
+        "On your side, what do you get out of it? If you\u0027re a novelist, what threw you from the life of a writer into one of adventure? Did you hit a dead end and need inspiration? Did tragedy require you to take to the roads unequipped and incapable? Did your patron see greatness in you and convince you to seek out greater pastures? What took you from penning down words on parchment to weaving them into reality?"
+      ]
+    },
+    {
+      "title": "Correfonts \u0026 Fascinations",
+      "paragraphs": [
+        "As described under their heading above, Correfonts are a cabal of demigods who serve So\u0027kess and wander the archives of Vulta de Congenio. This demiplane is a divine realm jointly owned by So\u0027kess and the goddess of magic Vestias, and is a seemingly endless library where art, literature, and secret lore are kept and saved.",
+        "The Correfonts are supernatural beings who track and store knowledge, codifying it in various forms. Their appearances and personalities vary: some are vaguely humanoid in nature, while others are horrific abominations that would challenge the sanity of any who saw them."
+      ],
+      "subsections": [
+        {
+          "title": "Fascinations",
+          "paragraphs": [
+            "Artemina \u2014 Agriculture, hunting, fables",
+            "Aphris \u2014 Romance, longing, personal fiction",
+            "Cernunnos \u2014 Mythology, legends, monsters, artifacts",
+            "Chughlihn \u2014 Outer gods, horror, monstrosities",
+            "Luciel \u2014 Divinity, fantasy, mythology, history",
+            "Mars \u2014 War, heroes, tactics, weaponry",
+            "Okei \u2014 Comedy, tragedy, humanity, performance",
+            "Ossenheimer \u2014 Magic, history, planes, tomes",
+            "Redmane \u2014 Adventure, glory, heroism, defying fate",
+            "Shamwood \u2014 Mystery, conspiracies, subterfuge, blackmail",
+            "Therpientis \u2014 Performance, poetry, music, scripts",
+            "Valm \u2014 Secrets, records, commerce",
+            "Wakefield \u2014 Abstract potential, superstition, the unseen"
+          ]
+        }
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "When creating an Inscriptor quickly, take the following advice: they use Intelligence as a representation of expressing their craft, so take Intelligence as your highest ability score, followed by either Charisma to represent their sense of personality or Wisdom to represent their sense of perception. Choose the Author background, choose the cantrips message and writ seizure, and the 1st-level spells chaos burst and identify."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "The following are the requirements to multiclass into an Inscriptor."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Intelligence 15, and either Charisma 13 or Wisdom 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "Light armor, and one skill from History, Insight, or Perception."
+        },
+        {
+          "label": "Tools",
+          "value": "Writing Implements."
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d8 per Inscriptor level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "8 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d8 (or 5) \u002B your Constitution modifier per Inscriptor level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light armor"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Daggers, darts, slings, quarterstaffs, hand crossbows, short bows, short swords"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "Writing Implements"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Intelligence, Charisma"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose three from Arcana, History, Insight, Investigation, Perception, Persuasion, and Religion"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) two daggers and one shortsword or (b) a quarterstaff, hand crossbow and ten bolts",
+                    "(a) a scholar\u0027s pack or (b) a diplomat\u0027s pack",
+                    "Leather armor, any simple weapon, two daggers, writing implements"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Inscriptors begin at level 1 with 4d4 \u00D7 10 (100) gold pieces."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Inscriptor",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "cantrips",
+          "label": "Cantrips"
+        },
+        {
+          "key": "spells_known",
+          "label": "Spells"
+        },
+        {
+          "key": "slots",
+          "label": "Slots"
+        },
+        {
+          "key": "slot_level",
+          "label": "Level"
+        },
+        {
+          "key": "inscriptions",
+          "label": "Inscriptions"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": "Authorial Intent, Font of Language, Pact Magic",
+          "cantrips": "2",
+          "spells_known": "2",
+          "slots": "1",
+          "slot_level": "1st",
+          "inscriptions": "-"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Inscriptions, Narrative Twist",
+          "cantrips": "2",
+          "spells_known": "3",
+          "slots": "2",
+          "slot_level": "1st",
+          "inscriptions": "1"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": "-",
+          "cantrips": "2",
+          "spells_known": "4",
+          "slots": "2",
+          "slot_level": "2nd",
+          "inscriptions": "1"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": "Ability Score Improvement",
+          "cantrips": "3",
+          "spells_known": "5",
+          "slots": "2",
+          "slot_level": "2nd",
+          "inscriptions": "2"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Intent Feature",
+          "cantrips": "3",
+          "spells_known": "6",
+          "slots": "2",
+          "slot_level": "3rd",
+          "inscriptions": "2"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Consultation (1/rest)",
+          "cantrips": "3",
+          "spells_known": "7",
+          "slots": "2",
+          "slot_level": "3rd",
+          "inscriptions": "2"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": "-",
+          "cantrips": "3",
+          "spells_known": "8",
+          "slots": "2",
+          "slot_level": "4th",
+          "inscriptions": "2"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement, Intent Feature",
+          "cantrips": "3",
+          "spells_known": "9",
+          "slots": "2",
+          "slot_level": "4th",
+          "inscriptions": "3"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Consultation (2/rest), Reference Material",
+          "cantrips": "3",
+          "spells_known": "10",
+          "slots": "2",
+          "slot_level": "5th",
+          "inscriptions": "3"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Draft Spell (6th)",
+          "cantrips": "3",
+          "spells_known": "10",
+          "slots": "2",
+          "slot_level": "5th",
+          "inscriptions": "3"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": "-",
+          "cantrips": "4",
+          "spells_known": "11",
+          "slots": "3",
+          "slot_level": "5th",
+          "inscriptions": "3"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement, Intent Feature",
+          "cantrips": "4",
+          "spells_known": "11",
+          "slots": "3",
+          "slot_level": "5th",
+          "inscriptions": "4"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Draft Spell (7th)",
+          "cantrips": "4",
+          "spells_known": "12",
+          "slots": "3",
+          "slot_level": "5th",
+          "inscriptions": "4"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Consultation (3/rest)",
+          "cantrips": "4",
+          "spells_known": "12",
+          "slots": "3",
+          "slot_level": "5th",
+          "inscriptions": "4"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Draft Spell (8th)",
+          "cantrips": "4",
+          "spells_known": "13",
+          "slots": "3",
+          "slot_level": "5th",
+          "inscriptions": "4"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement",
+          "cantrips": "4",
+          "spells_known": "13",
+          "slots": "3",
+          "slot_level": "5th",
+          "inscriptions": "5"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Draft Spell (9th)",
+          "cantrips": "4",
+          "spells_known": "14",
+          "slots": "4",
+          "slot_level": "5th",
+          "inscriptions": "5"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Consultation (4/rest)",
+          "cantrips": "4",
+          "spells_known": "14",
+          "slots": "4",
+          "slot_level": "5th",
+          "inscriptions": "5"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement",
+          "cantrips": "4",
+          "spells_known": "15",
+          "slots": "4",
+          "slot_level": "5th",
+          "inscriptions": "5"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Intent Feature",
+          "cantrips": "4",
+          "spells_known": "15",
+          "slots": "4",
+          "slot_level": "5th",
+          "inscriptions": "6"
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Authorial Intent",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You must choose an Authorial Intent, which is an expression of your style and integrity as a literary artist and represents your connection to your patron. The list of Authorial Intents you may choose from is listed after the Inscriptor class features. Your choice grants you features at 1st level and then again at 5th, 8th, 12th, and 20th."
+          }
+        ]
+      },
+      {
+        "name": "Font of Language",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Choose a number of languages equal to your proficiency bonus. You learn to write and read these languages, but not speak them. Each time your proficiency bonus increases you gain an additional language you can write and read this way."
+          }
+        ]
+      },
+      {
+        "name": "Pact Magic",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The Inscriptor spell list is listed at the end of the Inscriptor section. You acquire magical and supernatural powers from a patron who nurtures and encourages your imagination and literary talents. This magic takes the form of using a writing utensil to write descriptive phrases into existence through the means of poetry, playwriting, novels, journaling, etc. Your magical power takes the form of arcane ink, which runs dry when you reserve it is depleted."
+          },
+          {
+            "type": "paragraph",
+            "text": "See chapter 10 of the Player\u0027s Handbook for the general rules of spellcasting."
+          },
+          {
+            "type": "subsection",
+            "title": "Pact Spell Slots",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "The Inscriptor table shows how many pact spell slots you have, as well as what level those pact spell slots are. To cast one of your Inscriptor spells of 1st level or higher, you must expend a pact spell slot. You regain all expended pact spell slots when you finish a Short or Long Rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "For example, when you are 7th level, you have two spell slots, both of which are 3rd level. To cast the 1st-level spell piercing crystal, you must spend one of those slots, and you cast it at 3rd level. When you reach 9th level your spell slots become 5th level, and so spells cast using them are all cast at 5th Level."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spells Known of 1st Level and Higher",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "At 1st level, you know two 1st-level spells of your choice from the Inscriptor spell list."
+              },
+              {
+                "type": "paragraph",
+                "text": "The Spells Known column of the Inscriptor table shows when you learn more Inscriptor spells. A spell you choose to learn must be of a level no higher than the level of the pact spell slot you have access to."
+              },
+              {
+                "type": "paragraph",
+                "text": "Additionally, when you gain a level in this class, you can choose one of the Inscriptor spells you know and replace it with another spell from the Inscriptor spell list, which also must be of a level for which you have spell slots."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Ability",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Intelligence is your spellcasting ability for your Inscriptor spells and features. You use your Intelligence modifier when setting the saving throw DC for your Inscriptor spells and when making an attack roll with one."
+              },
+              {
+                "type": "paragraph",
+                "text": "Unless otherwise stated, these calculations are also used for your Inscriptions, Narrative Twists, and subclass features when relevant."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Focus",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You must use writing implements as your spellcasting focus, writing on surfaces or in the air to bring your magical effects into being. When spellcasting you must always have one free hand to write with, even if other features would normally let you cast while your hands are occupied. You do not have to expend ink when casting this way, as your magical power is expressed through arcane ink."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Inscriptions",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You have a number of additional features you can use called Inscriptions. These special lines of script consist of at least a single page of text in a book you must keep on yourself in order to use, serving as an arcane focus for these Inscriptions as if they were spells. You start with 1 Inscription at 2nd level, then gain an additional Inscription each at levels 4, 8, 12, 16, and 20 as an Inscriptor."
+          },
+          {
+            "type": "paragraph",
+            "text": "Each time you gain a level as an Inscriptor that would increase your proficiency bonus, you may switch one of your previous Inscriptions for a new one. When you take an Inscription you must meet its requirements, and if you fail to meet them after taking it you lose the ability to use it."
+          },
+          {
+            "type": "subsection",
+            "title": "Inscription Marks",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You have a number of Inscription Marks equal to half your level as an Inscriptor (rounded down). These marks represent penning addendums and explanations to the text of the Inscription to make it relevant to the situation you are applying it in. If an Inscription lists a number of Inscription Marks in its requirements, it means they are passively consumed when taking this Inscription option, and cannot be regained while you have that Inscription. You must have enough Inscription Marks available to use when taking an option. Inscription Marks that are not committed to Inscriptions you took can be treated as Narrative Twist uses."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Narrative Twist",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can control the world around you by writing narratives into it, influencing the actions of those around you. Using a Narrative Twist requires a bonus action, but can also be performed by any action that would allow you to take the Use an Object action. You have a number of Narrative Twist uses equal to your Intelligence modifier plus a number equal to your uncommitted Inscription Marks, and you regain spent Narrative Twists when you complete a Long Rest."
+          },
+          {
+            "type": "paragraph",
+            "text": "Narrative Twists can be used for the following options:"
+          },
+          {
+            "type": "subsection",
+            "title": "Darkest Hour",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Choose a number of creatures you can see up to your proficiency bonus. They must make an Intelligence saving throw. If they fail, they have disadvantage on all attack rolls they make until the start of your next turn."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Plot Armor",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Choose a number of willing creatures you can see up to your proficiency bonus. The next time they take damage within one minute, that damage is reduced by an amount equal to half your Inscriptor level (rounded down) plus your Intelligence modifier."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Second Draft",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Choose one creature you can see. That creature\u2019s initiative is changed, moving it to one point higher than the creature preceding it, or one point lower than the next creature who would follow it. If that creature is unwilling, it can attempt an Intelligence saving throw, resisting the effect on a successful save."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Consultation",
+        "level": "6",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You gain the ability to invoke your patron for aid in weaving your arcane desires into the world, empowering your spells, and letting you access more potent powers under their guiding hand. You can use your bonus action to request this aid, spending one or more uses of Consultation to produce a new pact spell slot that disappears after 1 minute, which cannot have a slot level above 9th."
+          },
+          {
+            "type": "paragraph",
+            "text": "The level of this new slot is equal to half your proficiency bonus (rounded down), multiplied by the number of uses of Consultation you spent. When creating it you can also expend an existing pact spell slot (except those gained through Consultation), adding that slot\u2019s level to the new one. If you do not use it on the same turn it is created then you must concentrate on it as if it were a spell, and if you lose concentration it returns to being the level of the pact spell slot you expended to create it (or simply vanishes if no spell slot was spent to make it)."
+          },
+          {
+            "type": "paragraph",
+            "text": "When a feature notes the level of your regular pact spell slots, it does not consider the level of spell slots created through Consultation."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can use your Consultation feature once, then cannot use it again until you complete a Long Rest. You can use it twice per Long Rest when you reach 9th level as an Inscriptor, three times when you reach 14th, and four times when you reach 18th."
+          }
+        ]
+      },
+      {
+        "name": "Reference Material",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You study material that includes records, fables, or dramatic renditions of magic performed by others. Choose three spells from the Warlock, Wizard, or Sorcerer spell lists that are of a level you are capable of casting using pact spell slots. You learn those spells and can cast them as Inscriptor spells, and those spells do not count against your Inscriptor spells known."
+          }
+        ]
+      },
+      {
+        "name": "Draft Spell",
+        "level": "10",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You work together with your patron to weave a more complex narrative, deeper story, multi-faceted play, or other form of expression with greater value than those you previously had. In doing so, you learn a spell of 6th level from the Inscriptor spell list, which you are capable of casting using pact spell slots of the appropriate level or higher (such as those created through Consultation) and does not count against your Inscriptor spells known."
+          },
+          {
+            "type": "paragraph",
+            "text": "You gain additional spells this way at higher Inscriptor levels: a 7th-level spell at 13th, an 8th-level spell at 15th, and a 9th-level spell at 17th."
+          }
+        ]
+      }
+    ],
+    "appendices": [
+      {
+        "kicker": "Customization",
+        "title": "Inscriptions",
+        "blocks": [
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Adventurous Fantasy",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 4th-Level Inscriptor, 2 inscription marks"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You gain proficiency in medium armor and simple weapons, and your maximum hit points increase by 1 for every Inscriptor level you have. All of your Inscriptor hit dice (including ones you gain in the future) become d10s. You do not reroll hit points gained through existing hit dice."
+                  }
+                ]
+              },
+              {
+                "name": "Be Still and Silent",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You may spend one narrative twist as an action to place creatures you choose within 30 feet of you under the effects of the invisibility spell, requiring no concentration. You may choose to target a number of creatures equal to or fewer than your proficiency bonus."
+                  }
+                ]
+              },
+              {
+                "name": "Deus Ex Machina",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 12th-level Inscriptor"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Whenever you fail or succeed on a saving throw, you can use your reaction to spend one narrative twist to quickly conjure a means of escape or safety and re-roll it, keeping whichever result you choose. If the save is made against an effect that would deal half damage to you on a successful save, you instead take no damage on a successful save."
+                  }
+                ]
+              },
+              {
+                "name": "Caffeine High",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 8th-Level Inscriptor, 1 Inscription mark"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Once per short or Long Rest, you can cast the haste spell using a pact spell slot, regardless of if you know the spell. While under the effects of your haste spell, the target can use their bonus action to perform any of the additional actions the spell\u2019s special extra action describes."
+                  }
+                ]
+              },
+              {
+                "name": "Evolutionary Envy",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 1 inscription mark"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Choose a Legacy Trait from one race of your choice. You write descriptive text about yourself benefiting from that trait which you then gain. Each time you gain a level as an Inscriptor you can change the trait you selected. If you choose a Mixed-Blood Legacy Trait, this Inscription requires 3 inscription marks instead."
+                  }
+                ]
+              },
+              {
+                "name": "Shamwood\u2019s Coat",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 4th-Level Inscriptor"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Your presence is easy to overlook. You can take the Disengage action as a bonus action, and opportunity attacks made against you have disadvantage."
+                  }
+                ]
+              },
+              {
+                "name": "Free Handle",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 8th-Level Adventure Inscriptor, 2 inscription marks"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You may attune to any weapon you are proficient with, even if it is a mundane item, as if it were a magical item. Any weapon you are proficient with and attuned to gains the properties of a dancing weapon, allowing you to write actions and movements to command it. Unless the weapon was magical to begin with, it is not considered magical. All attacks made with this weapon while it is not in your hands use your spell attack bonus."
+                  }
+                ]
+              },
+              {
+                "name": "Full Stop",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 4th-Level Inscriptor, 1 Inscription mark"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You may spend one narrative twist to cast hold person (requiring no spell slot or components)."
+                  }
+                ]
+              },
+              {
+                "name": "Heroic Fantasy",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: Adventurous Fantasy inscription, 8th-level Inscriptor, 1 inscription mark"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You gain proficiency in heavy armor and martial weapons, and your maximum hit points increase by 1 for every Inscriptor level you have. Every time you gain another level as an Inscriptor, your maximum hit points increase by 1 again. These hit point increases are in addition to those gained through Adventurous Fantasy."
+                  }
+                ]
+              },
+              {
+                "name": "Hotline",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 12th-Level Inscriptor, 1 Inscription mark"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Every time you complete a Short Rest you regain one expended use of consultation."
+                  }
+                ]
+              },
+              {
+                "name": "Icarus",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 8th-Level Mythology Inscriptor, 1 inscription mark"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "As a bonus action on your turn, you can spend one narrative twist to write a short phrase describing yourself flying, and gain a fly (hover) speed equal to your base movement speed for 1 minute. If you fall more than 30 feet you can use your reaction to spend one narrative twist to give yourself this fly (hover) speed, ending your fall immediately."
+                  }
+                ]
+              },
+              {
+                "name": "Life Imitating Art",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 8th-Level Inscriptor"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Once per short or Long Rest, you can cast major image (requiring no spell slot or components)."
+                  }
+                ]
+              },
+              {
+                "name": "Luciel\u2019s Lamp",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 8th-Level Inscriptor"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You can cast the daylight spell at will (requiring no spell slot)."
+                  }
+                ]
+              },
+              {
+                "name": "Man Versus Man",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 8th-Level Inscriptor, 2 inscription marks"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You have advantage on saving throws against spells and magical effects."
+                  }
+                ]
+              },
+              {
+                "name": "Man Versus Nature",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 1 inscription mark"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Choose one damage type (except piercing, slashing, or bludgeoning). You are resistant to that type of damage. If you take this inscription and choose a damage type you are already resistant to, you become immune instead."
+                  }
+                ]
+              },
+              {
+                "name": "Man Versus Self",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 4th-Level Inscriptor, 1 inscription mark"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You gain proficiency in saving throws with one ability score you don\u2019t already have proficiency in."
+                  }
+                ]
+              },
+              {
+                "name": "Man Versus Society",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 4th-Level Inscriptor, 2 inscription marks"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "When you make an ability check that you do not add your proficiency bonus to (either half or full), you may add half of your proficiency bonus (rounded up) to the roll."
+                  }
+                ]
+              },
+              {
+                "name": "Mimesis",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: Mystery Inscriptor"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You can cast the disguise self spell at will (requiring no spell slot)."
+                  }
+                ]
+              },
+              {
+                "name": "Ossenheimer\u2019s Fond Memory",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 12th-level History Inscriptor, 2 inscription marks"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Once per day, you can cast any spell from Ossenheimer\u2019s Memoirs, regardless of if you know the spell or not, as long as you spend an appropriate level of pact spell slot to do so."
+                  }
+                ]
+              },
+              {
+                "name": "Poetry in Motion",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: Adventurous Fantasy inscription, 8th-level Inscriptor"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "When you take the Attack action and make an attack with a weapon you are proficient with, you may attack twice with it instead of once."
+                  }
+                ]
+              },
+              {
+                "name": "Sequel Series",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 12th-level Inscriptor, 3 Inscription marks"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You may use your action to expend a pact spell slot to cast two spells that are on your Inscriptor spell list. The two spells you cast must have a casting time of 1 action or faster, neither can be a cantrip, only one may be a spell that requires concentration, and the level they are cast at must have a combined total equal to or less than the level of the pact spell slot you expended."
+                  }
+                ]
+              },
+              {
+                "name": "Somatic Cursive",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You do not have to perform the verbal components of any spell you cast as long as the spell has somatic components. Instead of speaking, writing the words suffices."
+                  }
+                ]
+              },
+              {
+                "name": "Therpientis\u2019 Command",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: Playwright Inscriptor, 4th-level Inscriptor"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You can cast the command spell (requiring no spell slot) a number of times equal to your proficiency bonus, regaining spent uses when you complete a Long Rest. You can spend one narrative twist when doing so to cast it as a bonus action instead."
+                  }
+                ]
+              },
+              {
+                "name": "Test of Memory",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 2 inscription marks"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "When you cast a spell that requires a Wisdom or Charisma saving throw, you can force the target to make an Intelligence save in place of that spell\u2019s first save instead."
+                  }
+                ]
+              },
+              {
+                "name": "The Chase Begins",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You may spend one narrative twist as a bonus action to place yourself under the effects of the expeditious retreat spell, requiring no concentration."
+                  }
+                ]
+              },
+              {
+                "name": "Writ Punctuation",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Requirements: 8th-level Forbiddance Inscriptor, 2 inscription marks"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You can cast any spell that normally has a casting time of 1 action with \u201CWrit\u201D or \u201CPower Word\u201D in its name as a bonus action, as long as you don\u2019t cast any other spells using a pact spell slot on the same turn."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -2083,3 +2083,246 @@
     outline: 2px solid rgba(239, 207, 125, 0.7);
     outline-offset: 4px;
 }
+
+
+/* Mechanics variant tabs (used by classes such as Clergy). */
+.class-mechanics-tab-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin: 0 0 1.5rem;
+}
+
+.class-mechanics-tab-button {
+    appearance: none;
+    border: 1px solid rgba(170, 24, 30, 0.7);
+    border-radius: 0.35rem;
+    background: rgba(19, 15, 15, 0.92);
+    color: #eee7df;
+    padding: 0.75rem 1rem;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.class-mechanics-tab-button.active {
+    color: #f3cd6b;
+    border-color: #d4af37;
+    background: linear-gradient(135deg, rgba(95, 17, 22, .75), rgba(28, 15, 15, .96));
+    box-shadow: inset 0 -3px 0 #d4af37;
+}
+
+/* Fighting Style deliberately uses the compact book-style list. */
+.class-fighting-style-list,
+.class-page ::deep .class-fighting-style-list {
+    display: block !important;
+    columns: 1 !important;
+    margin: 0.65rem 0 0.25rem !important;
+    padding-left: 2rem !important;
+}
+
+.class-fighting-style-list li,
+.class-page ::deep .class-fighting-style-list li {
+    display: list-item !important;
+    margin: 0.25rem 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: none !important;
+    color: inherit !important;
+    font: inherit !important;
+}
+
+.class-fighting-style-list li::marker,
+.class-page ::deep .class-fighting-style-list li::marker {
+    color: #f3cd6b;
+}
+
+/* =========================================================
+   ADVANCEMENT TABLE — CONTENT-AWARE FIT-TO-WIDTH
+   ========================================================= */
+
+/*
+   Advancement tables are intentionally different from general content tables:
+   - they always use the available page width;
+   - they never force a horizontal scrollbar;
+   - words are never clipped or split in the middle;
+   - feature text may wrap naturally;
+   - short progression values remain on one line;
+   - wide tables reduce typography before they run out of room.
+*/
+#advancement .class-table-scroll,
+.class-page ::deep #advancement .class-table-scroll {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+    container-type: inline-size;
+}
+
+#advancement .class-table,
+.class-page ::deep #advancement .class-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    table-layout: auto;
+}
+
+/* Reset the generic table rules that make ordinary tables scroll. */
+#advancement .class-table th,
+#advancement .class-table td,
+.class-page ::deep #advancement .class-table th,
+.class-page ::deep #advancement .class-table td {
+    min-width: 0 !important;
+    max-width: none;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    vertical-align: middle;
+}
+
+/* Headers can wrap only between complete words. */
+#advancement .class-table th,
+.class-page ::deep #advancement .class-table th {
+    white-space: normal !important;
+    line-height: 1.12;
+    text-align: center;
+}
+
+/* Body values stay compact unless they are feature descriptions. */
+#advancement .class-table td,
+.class-page ::deep #advancement .class-table td {
+    white-space: nowrap !important;
+    line-height: 1.28;
+    text-align: center;
+}
+
+#advancement .class-table .table-features,
+.class-page ::deep #advancement .class-table .table-features {
+    width: 36%;
+    min-width: 0 !important;
+    white-space: normal !important;
+    text-align: left;
+}
+
+/* The browser can grow Features into the spare space, but not starve the rest. */
+#advancement .class-table .table-col-level,
+.class-page ::deep #advancement .class-table .table-col-level {
+    width: 1%;
+    white-space: nowrap !important;
+}
+
+#advancement .class-table .table-col-proficiency-bonus,
+#advancement .class-table .table-col-bonus,
+.class-page ::deep #advancement .class-table .table-col-proficiency-bonus,
+.class-page ::deep #advancement .class-table .table-col-bonus {
+    width: 1%;
+    white-space: nowrap !important;
+}
+
+/* Default tables: roomy, book-like typography. */
+#advancement .class-table th,
+.class-page ::deep #advancement .class-table th {
+    font-size: clamp(0.72rem, 0.60rem + 0.16cqw, 0.86rem);
+    padding: clamp(0.44rem, 0.25rem + 0.24cqw, 0.72rem)
+             clamp(0.34rem, 0.18rem + 0.18cqw, 0.58rem);
+}
+
+#advancement .class-table td,
+.class-page ::deep #advancement .class-table td {
+    font-size: clamp(0.80rem, 0.68rem + 0.16cqw, 0.96rem);
+    padding: clamp(0.48rem, 0.28rem + 0.24cqw, 0.72rem)
+             clamp(0.34rem, 0.18rem + 0.18cqw, 0.58rem);
+}
+
+/* Medium tables (9–11 columns): use slightly tighter type and spacing. */
+#advancement .class-table.table-cols-9 th,
+#advancement .class-table.table-cols-10 th,
+#advancement .class-table.table-cols-11 th,
+.class-page ::deep #advancement .class-table.table-cols-9 th,
+.class-page ::deep #advancement .class-table.table-cols-10 th,
+.class-page ::deep #advancement .class-table.table-cols-11 th {
+    font-size: clamp(0.66rem, 0.55rem + 0.13cqw, 0.78rem);
+    padding-inline: clamp(0.24rem, 0.12rem + 0.14cqw, 0.44rem);
+}
+
+#advancement .class-table.table-cols-9 td,
+#advancement .class-table.table-cols-10 td,
+#advancement .class-table.table-cols-11 td,
+.class-page ::deep #advancement .class-table.table-cols-9 td,
+.class-page ::deep #advancement .class-table.table-cols-10 td,
+.class-page ::deep #advancement .class-table.table-cols-11 td {
+    font-size: clamp(0.76rem, 0.64rem + 0.13cqw, 0.88rem);
+    padding-inline: clamp(0.24rem, 0.12rem + 0.14cqw, 0.44rem);
+}
+
+#advancement .class-table.table-cols-9 .table-features,
+#advancement .class-table.table-cols-10 .table-features,
+#advancement .class-table.table-cols-11 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-9 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-10 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-11 .table-features {
+    width: 32%;
+}
+
+/* Wide caster tables (12+ columns): shrink the whole table uniformly. */
+#advancement .class-table.table-cols-12 th,
+#advancement .class-table.table-cols-13 th,
+#advancement .class-table.table-cols-14 th,
+#advancement .class-table.table-cols-15 th,
+#advancement .class-table.table-cols-16 th,
+#advancement .class-table.table-cols-17 th,
+#advancement .class-table.table-cols-18 th,
+.class-page ::deep #advancement .class-table.table-cols-12 th,
+.class-page ::deep #advancement .class-table.table-cols-13 th,
+.class-page ::deep #advancement .class-table.table-cols-14 th,
+.class-page ::deep #advancement .class-table.table-cols-15 th,
+.class-page ::deep #advancement .class-table.table-cols-16 th,
+.class-page ::deep #advancement .class-table.table-cols-17 th,
+.class-page ::deep #advancement .class-table.table-cols-18 th {
+    font-size: clamp(0.58rem, 0.48rem + 0.10cqw, 0.70rem);
+    padding: clamp(0.34rem, 0.20rem + 0.14cqw, 0.50rem)
+             clamp(0.16rem, 0.08rem + 0.10cqw, 0.30rem);
+}
+
+#advancement .class-table.table-cols-12 td,
+#advancement .class-table.table-cols-13 td,
+#advancement .class-table.table-cols-14 td,
+#advancement .class-table.table-cols-15 td,
+#advancement .class-table.table-cols-16 td,
+#advancement .class-table.table-cols-17 td,
+#advancement .class-table.table-cols-18 td,
+.class-page ::deep #advancement .class-table.table-cols-12 td,
+.class-page ::deep #advancement .class-table.table-cols-13 td,
+.class-page ::deep #advancement .class-table.table-cols-14 td,
+.class-page ::deep #advancement .class-table.table-cols-15 td,
+.class-page ::deep #advancement .class-table.table-cols-16 td,
+.class-page ::deep #advancement .class-table.table-cols-17 td,
+.class-page ::deep #advancement .class-table.table-cols-18 td {
+    font-size: clamp(0.68rem, 0.56rem + 0.10cqw, 0.80rem);
+    padding: clamp(0.38rem, 0.22rem + 0.14cqw, 0.54rem)
+             clamp(0.16rem, 0.08rem + 0.10cqw, 0.30rem);
+}
+
+/* Give wide tables a sensible amount of feature space without fixed-layout clipping. */
+#advancement .class-table.table-cols-12 .table-features,
+#advancement .class-table.table-cols-13 .table-features,
+#advancement .class-table.table-cols-14 .table-features,
+#advancement .class-table.table-cols-15 .table-features,
+#advancement .class-table.table-cols-16 .table-features,
+#advancement .class-table.table-cols-17 .table-features,
+#advancement .class-table.table-cols-18 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-12 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-13 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-14 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-15 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-16 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-17 .table-features,
+.class-page ::deep #advancement .class-table.table-cols-18 .table-features {
+    width: 24%;
+}
+
+/* Level remains visually distinct and aligns like the reference tables. */
+#advancement .class-table .table-level,
+.class-page ::deep #advancement .class-table .table-level {
+    text-align: left;
+}
+

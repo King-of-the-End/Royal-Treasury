@@ -1,0 +1,482 @@
+{
+  "name": "Blood Minister",
+  "slug": "blood-minister",
+  "introduction": [
+    "Where a cleric is given a sacred duty to protect the mortal realms from fiends and undead, a blood minister is a class who takes it upon themselves to fight back against the monsters of the night without a god\u2019s divine magic. The blood of all creatures (and the bodies of even undead) soak up an ambient amount of magical radiation that is stored within them, and can be released in supernatural bursts of energy. This is the underlying power of a blood minister, who weaponizes their blood and the power within to enhance their physical abilities."
+  ],
+  "lore_sections": [
+    {
+      "title": "Untrusted Practices",
+      "paragraphs": [
+        "Drawing power from blood can be rooted in the supernatural or the alchemical, but to onlookers it will always look like blood magic. Even if a blood minister performs their craft with good intentions, it is more than likely going to be seen as a disgraceful or frightening act, and blood ministers need to keep their perception in mind.",
+        "One cannot explain to each onlooker that their craft is based in arcane or scientific principles, and may have to suffer the stinging words of those who look down on their craft."
+      ]
+    },
+    {
+      "title": "Dark Orders",
+      "paragraphs": [
+        "Sanguine ministration - the practices through which a blood minister harnesses the power of blood - are commonly practiced by cults, dark sects, and those with a morbid curiosity in the bodies of the living. It is well within reason to find blood ministers within less savory organizations such as cults, sometimes even leading them.",
+        "Whole organizations of blood ministers usually consist of a handful of members who actually know how to perform sanguine ministration, with several followers or students, and can sometimes disguise themselves as groups of monster slayers, doctors, priests, or similar trustworthy faces."
+      ]
+    },
+    {
+      "title": "Creating a Blood Minister",
+      "paragraphs": [
+        "A blood minister\u2019s most basic concept is that of a monster hunter. They have taken one step into the world of monstrosities so they can fight against them on equal terms. When creating one, this central theme should be considered (or a theme that explains how and why they rely on their blood to perform their grim craft). A blood minister is often a close-range or mid-range combatant, wielding heavy weapons or firearms against their foes.",
+        "Questions you may ask yourself are ones that gesture toward the dark nature of the class: what do they seek that is worth commodifying their own life force? Do they seek revenge against a specific beast or enemy? Where did they learn their craft, and what is their current relationship with that source of knowledge? Perhaps they have a teacher who is not what they appeared to be, or they could have been part of a cult that they saw through the lies of... but only all too late!"
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "To quickly build a blood minister, you may follow these suggestions: Constitution should be your highest stat, followed by Strength or Dexterity depending on the weaponry and armor you wish to use (it can help to think of yourself as being like a fighter, or like a ranger in terms of weaponry). Then take the Acolyte background, using it to describe a dark cult or organization you were part of rather than a temple or upstanding religion."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "To multiclass into the Blood Minister class, a character must have at least a 14 in Constitution and a 12 in Strength or Dexterity."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Constitution 14 and Strength or Dexterity 12."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "The following skills: Investigation, Medicine, or Stealth."
+        }
+      ]
+    },
+    "advancement": {
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Prof"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": [
+            "Hemogenerative",
+            "Sanguine Ministration"
+          ]
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": [
+            "Fighting Style"
+          ]
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": [
+            "Blood Awakening"
+          ]
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": [
+            "Ability Score Improvement"
+          ]
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": [
+            "Extra Attack"
+          ]
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": [
+            "Vile Resonance"
+          ]
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": [
+            "Genetic Sect Feature"
+          ]
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": [
+            "Ability Score Improvement"
+          ]
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": [
+            "Grim Eyeline"
+          ]
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": [
+            "Efficient Ministration",
+            "Hemo-Quantity"
+          ]
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": [
+            "Genetic Sect Feature"
+          ]
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": [
+            "Ability Score Improvement"
+          ]
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": [
+            "Sanguine Replenishment"
+          ]
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": [
+            "Extra Attack Improvement"
+          ]
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": [
+            "Genetic Sect Feature"
+          ]
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": [
+            "Ability Score Improvement"
+          ]
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": [
+            "Dead Man Walking"
+          ]
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": [
+            "\u2014"
+          ]
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": [
+            "Ability Score Improvement"
+          ]
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": [
+            "Hemo-Quality"
+          ]
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "2d4 per Blood Minister level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "8 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "2d4 (or 5) \u002B your Constitution modifier per Blood Minister level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light armor, medium armor"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple weapons, martial weapons, simple firearms"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "None"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Strength, Constitution"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose three from Arcana, Insight, Intimidation, Investigation, Medicine, Stealth, and Survival"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Starting Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background; it is recommended thematically that you take all \u201Ca\u201D options or all \u201Cb\u201D options, but the choice is yours:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) padded leather and two simple weapons, or (b) scale mail",
+                    "(a) a light revolver, 24 light firearm ammunition, and a shortsword, or (b) two martial melee weapons",
+                    "(a) 4 nets or (b) a sling with 30 ammunition",
+                    "(a) a burglar\u2019s pack or (b) an explorer\u2019s pack"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Alternatively, you may begin 1st level with 4d6 \u00D7 10 (150) gold pieces. Any firearms you purchase during character creation cost 40 fewer gold pieces each."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "features": [
+      {
+        "name": "Hemogenerative",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In response to your constant use of blood to enhance your physical performance, you have acquired a natural capacity for regeneration. When you complete a Short Rest and do not spend hit dice, you regain hit points equal to three times your blood minister level."
+          }
+        ]
+      },
+      {
+        "name": "Sanguine Ministration",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Your blood contains an accumulation of supernatural energy that can be applied by trading your personal reserves of vitality and blood for various effects."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once each turn, when you make an attack roll, ability check, or saving throw, you may choose to spend one of your hit dice, roll it (without including your Constitution modifier), and add it to the result. When you do so, that bonus is applied to the triggering type of rolls until the end of that turn."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you use Sanguine Ministration to add a bonus to an attack roll, the same bonus is applied to the resulting damage roll."
+          }
+        ]
+      },
+      {
+        "name": "Fighting Style",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Blind Fighting"
+              },
+              {
+                "name": "Dueling"
+              },
+              {
+                "name": "Gun Expert"
+              },
+              {
+                "name": "Proficiency"
+              },
+              {
+                "name": "Slayer"
+              },
+              {
+                "name": "Superior Technique"
+              },
+              {
+                "name": "Two-Weapon Fighting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blood Awakening",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The true power of your blood is awakened, either through specialized training, guidance by others, or through physical aptitude. Choose one Genetic Sect that represents your powers as a blood minister, as well as your style of combat, and gain its features at the Blood Minister levels listed."
+          },
+          {
+            "type": "paragraph",
+            "text": "You gain features at 3rd, 7th, 11th, and 15th level."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Extra Attack",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you take the Attack action you can attack twice, instead of once. When you reach 14th level as a blood minister you may attack three times instead of once."
+          }
+        ]
+      },
+      {
+        "name": "Vile Resonance",
+        "level": "6",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can cause the blood within your body to resonate with the blood spilt in the heat of combat, and prolong its effects. When you use Sanguine Ministration to add a bonus to attack rolls against a creature and hit with that attack, you may choose to produce the effects of the hunter\u2019s mark spell, targeting that creature. You do not need to concentrate on hunter\u2019s mark when cast this way, and it does not count as a magical effect, but you cannot change its target."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can use this feature a number of times per Short Rest equal to your proficiency bonus."
+          }
+        ]
+      },
+      {
+        "name": "Grim Eyeline",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Your eyes are naturally enhanced and adapted to fighting those who lurk in the dark. You gain darkvision out to 60 feet, or your existing darkvision increases by 60 feet (whichever would be higher). If you have devilsight, it is increased to the same range as well."
+          }
+        ]
+      },
+      {
+        "name": "Efficient Ministration",
+        "level": "10",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you spend your blood to produce the effects of Sanguine Ministration, you can choose one of the following effects as well, which lasts until the end of that turn:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Your movement speed increases by 15 feet.",
+              "You have advantage on the triggering roll.",
+              "You also gain temporary hit points equal to twice the result of the hit die result you roll."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hemo-Quantity",
+        "level": "10",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you use Sanguine Ministration to give a bonus to an attack roll, ability check, or saving throw, after you see the result of the first hit die, you may choose to spend a second one, roll it, and increase the bonus by the result. You must do so before the success or failure of the check is declared."
+          }
+        ]
+      },
+      {
+        "name": "Sanguine Replenishment",
+        "level": "13",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you complete a Short Rest and spend no hit dice, you regain half of your blood minister hit dice (rounded up)."
+          }
+        ]
+      },
+      {
+        "name": "Dead Man Walking",
+        "level": "17",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you are at 0 hit points and would make a death saving throw or fail one automatically due to damage, you can spend one of your hit dice to negate the failure (if there was one), though this does not turn it into a success, and until the next time you would make a death saving throw this way, you do not fall unconscious and do not suffer the penalties of dying, allowing you to act normally while at 0 hit points."
+          }
+        ]
+      },
+      {
+        "name": "Hemo-Quality",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Each turn, in place of the first hit die you would spend as part of Sanguine Ministration, you can roll a d6, instead, as though you had spent a hit die of that size, without actually spending one. All further hit dice spent through Sanguine Ministration that turn must consume hit dice as usual."
+          }
+        ]
+      }
+    ]
+  }
+}

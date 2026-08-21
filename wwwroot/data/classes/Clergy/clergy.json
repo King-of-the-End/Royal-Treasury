@@ -1,0 +1,1502 @@
+{
+  "name": "Clergy",
+  "slug": "clergy",
+  "introduction": [
+    "Members of the clergy represent The Holy Church, enemies of the Mages Association and servants of God. They are a part of the Roman Catholic Church that specializes in reclaiming lost artifacts, exorcising daemons and supernatural entities, and hunting down mages. They are defenders of sacred ground, healers who protect what they consider to be the divine good and, at the same time, executioners who remove anything they consider heretical. They are the natural enemies of vampires and of anything that considers human-kind its enemy or prey.",
+    "Clergy members fall into various categories with different duties. Some remain in monasteries, abbeys, and holy churches to defend that sacred ground. Many, particularly executors, take on the role of murderers and killers that perform any number of sinful and deranged acts in the name of their God, and are ultimately forgiven under the pretense that they are enacting God\u2019s wrath. Those who operate under this exception hold the mentality that beings like vampires and daemons are a contradiction to the will of God, thus the clergy must act contrary to God\u2019s teachings as a means to correct His plan and return His design to its proper state.",
+    "The clergy is directly opposed to the Mages Association; mages tamper with the natural order and look for answers outside the material plane. Seeking the Root means looking beyond God\u2019s realm. While the clergy doesn\u2019t concern itself with what a mage may do if it were to reach the Root (distinctly existing outside the world God watches over) it does take issue with the methods mages take to reach it and the effect they may have on the world. To this end they hunt down heretical mages: ones who threaten the safety of the public and take great efforts to reclaim holy artifacts such as the Holy Grail."
+  ],
+  "lore_sections": [
+    {
+      "title": "Holy Sacraments",
+      "paragraphs": [
+        "The magecraft used by the Holy Church is in the form of its holy sacraments. It is a highly stable form of magecraft that is seen to be fueled by magical energy and the power of miracles. The term refers both to the special magical effects the Church can produce and to its weaponry and special equipment, including items such as ash locks and black keys. All special powers used by members of the Holy Church can be considered sacraments. These special abilities are powered by running magical energy or ki through holy objects that represent their faith, most commonly being run through bible pages bound to the skin. Crosses, bibles, holy artifacts and such also function properly as a focus for this type of magic.",
+        "Though the end result is similar to magecraft, the unique foundation of the magic prevents it from degrading in the same way. However, to keep peace more efficiently and not cause magecraft to become exposed unnecessarily, the Holy Church keeps its sacraments secret as well. Unlike mages, however, they will break their secrecy more commonly if it means accomplishing their goal. As a result, they have a more dogmatic approach to silencing those who see their magic and show comparatively little restraint when weighed against the methods of the Mages Association and similar organizations."
+      ]
+    },
+    {
+      "title": "Creating a Clergy Member",
+      "paragraphs": [
+        "Your main concern when creating a clergy member is deciding what your character considers their responsibilities to the Holy Church to be. You can fill a wide variety of roles in a party depending on the chivalric order you choose, but each one tends to come with a set of goals and outlooks. Is your character someone who hunts down heretics? If so, do you consider those who abuse magic to be your main focus or do you consider creatures like undead and daemons to be your primary concern? Maybe your character\u2019s interest is in investigating or reclaiming a holy relic lost by the church.",
+        "Knowing your place in the organization is a key starting point to determining how you might run your character. It goes without saying, but building upon that you should also consider the nature of your faith. Are you part of the Holy Church because you truly believe in their teachings or does it serve some other end? You do not need to be a devout follower to use holy sacraments as long as you know the prayers and incantations used to unlock them (though members of the clergy would say otherwise)."
+      ]
+    },
+    {
+      "title": "The Clergy in Regular D\u0026D",
+      "paragraphs": [
+        "You can use the clergy relatively easily in the realms by simply using them as a variation of paladins or clerics. The class can be moved to function as members of most religious orders by simply removing the allusions to the Roman Catholic Church and using whatever church or organization you wish. They can follow any god and still function properly. If the church in question does not have any text to use as a spell focus then their black keys and ash locks still work, and you can use a regular religious symbol or focus in their place. Their attitude toward mages can remain the same under the context of being those who hunt down or specifically oppose magic users, but their primary identity can still be daemon hunters. It is also very simple to incorporate those who hunt and reclaim religious artifacts for their gods.",
+        "Rather than having to explain their brutal methods, they can be treated as if they are the darker underbelly of their church, performing deeds that even their leaders may not know about. Since the context of the religion would have changed, you don\u2019t need to do as much legwork to explain away their methods. In regards to secrecy, they may still prefer to operate in the shadows and so do not wish for their order to be discovered by the public."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "There is no obvious quick build strategy for the clergy, as the various orders cause the class to go in different directions. The knight fights similarly to a fighter, and so you should prioritize Strength for them. The executor is similar to a rogue and specializes in dealing damage, and usually benefits from Dexterity. The Exorcist is an undead-hunting class that focuses on durability, so Constitution is key for them. In any case a clergy member should have a high Wisdom stat, preferably your highest, to boost their spellcasting. You can take the acolyte background to quickly throw yourself into the role. In some circumstances, your DM may be willing to use paladin or cleric subclasses in place of the chivalric order."
+  },
+  "mechanics_tabs": [
+    {
+      "id": "progression-a",
+      "label": "Clergy(Full Caster)",
+      "description": "Nine-step spellcasting progression.",
+      "mechanics": {
+        "multiclassing": {
+          "kicker": "Optional Rule",
+          "title": "Multiclassing",
+          "paragraphs": [
+            "There is no obvious quick build strategy for the clergy, as the various orders cause the class to go in different directions."
+          ],
+          "items": []
+        },
+        "pre_feature_sections": [
+          {
+            "type": "section",
+            "content_section": {
+              "kicker": "Core Statistics",
+              "title": "Class Basics",
+              "blocks": [
+                {
+                  "type": "subsection",
+                  "title": "Hit Points",
+                  "blocks": [
+                    {
+                      "type": "stats",
+                      "items": [
+                        {
+                          "label": "Hit Dice",
+                          "value": "1d8 per Clergy level"
+                        },
+                        {
+                          "label": "Hit Points at 1st Level",
+                          "value": "8 \u002B your Constitution modifier"
+                        },
+                        {
+                          "label": "Hit Points at Higher Levels",
+                          "value": "1d8 (or 5) \u002B your Constitution modifier per Clergy level after 1st"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "subsection",
+                  "title": "Proficiencies",
+                  "blocks": [
+                    {
+                      "type": "stats",
+                      "items": [
+                        {
+                          "label": "Armor",
+                          "value": "Light and medium armor, shields"
+                        },
+                        {
+                          "label": "Weapons",
+                          "value": "Simple and martial weapons"
+                        },
+                        {
+                          "label": "Tools",
+                          "value": "None"
+                        },
+                        {
+                          "label": "Saving Throws",
+                          "value": "Wisdom, Charisma"
+                        },
+                        {
+                          "label": "Skills",
+                          "value": "Choose two from Athletics, History, Insight, Medicine, Persuasion, Religion"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "subsection",
+                  "title": "Starting Equipment",
+                  "blocks": [
+                    {
+                      "type": "paragraph",
+                      "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                    },
+                    {
+                      "type": "list",
+                      "items": [
+                        "(a) an Ash Lock shortsword, (b) any ash lock simple weapon, or (c) any martial weapon",
+                        "(a) scale mail, (b) leather armor, or (c) chain mail",
+                        "(a) 20 black keys, (b) a light crossbow with 20 bolts, or (c) any simple weapon",
+                        "A priest\u2019s pack and clergy\u2019s divine focus"
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "text": "You may instead choose to start with gold equal to 80 (4d4 \u00D7 10) gp."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Chivalric Order",
+            "level": "1",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You belong to one of the different orders that make up the Holy Church. Charged with different duties and expressing them through different levels of violence and brutality, they all protect the Holy Church from different heretical elements. The chivalric orders are listed at the end of these class features."
+              }
+            ]
+          },
+          {
+            "name": "Spellcasting",
+            "level": "1",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Clergymen utilize a special thaumaturgical system called the holy sacrament to perform miracles, though they are in effect just another form of magecraft. They use special power found in scripture, sometimes referred to as \u201Cfragments of light\u201D, to manifest the power of God. Some members of the clergy accomplish this by passing magical energy through their holy text."
+              },
+              {
+                "type": "paragraph",
+                "text": "See chapter 10 of the player\u2019s handbook for general spellcasting rules. Clergymen can learn spells from the cleric spell list, but sometimes will borrow spells from the paladin spell list."
+              },
+              {
+                "type": "subsection",
+                "title": "Spell Slots",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "The Clergy table shows how many spell slots you have to cast your cleric spells. To cast one of your cleric spells of 1st level or higher, you must expend a slot of the spell\u2019s level or higher. You regain expended spell slots when you complete a long rest."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Spells Known of 1st Level and Higher",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Starting at 3rd level, you know three 1st-level spells from the cleric spell list. Each time you gain a clergy level you learn one more spell from the cleric spell list. Also, each time you gain a level as a member of the clergy you can choose to switch one of your known spells for another one. All spells you learn must be of a level you are capable of casting."
+                  },
+                  {
+                    "type": "note",
+                    "title": "Restriction",
+                    "text": "You cannot learn the spell raise dead, or spells of 7th level or higher through your spellcasting feature."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Spellcasting Ability",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Wisdom is your spellcasting ability for your cleric and paladin spells, as the power of your holy sacraments is derived from your faith in your order. You use Wisdom whenever a cleric or paladin spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric or paladin spell and when making an attack roll with one."
+                  },
+                  {
+                    "type": "formula",
+                    "label": "Spell save DC",
+                    "value": "8 \u002B your proficiency bonus \u002B your Wisdom modifier"
+                  },
+                  {
+                    "type": "formula",
+                    "label": "Spell attack modifier",
+                    "value": "your proficiency bonus \u002B your Wisdom modifier"
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Ritual Casting",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have learned it."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Spellcasting Focus",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You use a holy symbol, holy text (such as a bible), black keys, or ash lock item as your spellcasting focus for cleric and paladin spells."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fighting Style",
+            "level": "2",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+              },
+              {
+                "type": "options",
+                "items": [
+                  {
+                    "name": "Archery"
+                  },
+                  {
+                    "name": "Defense"
+                  },
+                  {
+                    "name": "Dueling"
+                  },
+                  {
+                    "name": "Fleeting Speed"
+                  },
+                  {
+                    "name": "Throwing Expert"
+                  },
+                  {
+                    "name": "Two-Weapon Fighting"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Monster Slaying Weapons",
+            "level": "2",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 2nd level, your weapon attacks using silvered weapons gain the benefit of your holy sacraments, and are counted as magical for the purposes of overcoming damage resistances."
+              }
+            ]
+          },
+          {
+            "name": "Holy Sacrament",
+            "level": "2",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Apart from their regular divine spellcasting, those of the clergy dedicate specific sacraments to mind. These special prayers are tattoo\u0027d into their skin using either magical materials that renders it invisible except for when in use or, if the clergy member decides, are written visibly. These passages are lines of scripture that they read out to activate and unleash the miracle stored within."
+              },
+              {
+                "type": "paragraph",
+                "text": "At 2nd level you can choose two 1st level spells from the paladin spell list. You gain these spells as sacraments. You can cast each sacrament once without expending a spell slot. You regain expended sacraments when you complete a long rest. Your sacraments are cast as the highest level spell slot you have access to, but cannot be cast at a level above 5th level."
+              },
+              {
+                "type": "paragraph",
+                "text": "You gain another two sacraments when you reach 6th level: one of 2nd level and one of 3rd level. You then gain another sacrament when you reach 10th level which must be a 4th level spell. You gain your final sacrament when you reach 15th level, which must be a 5th level spell."
+              }
+            ]
+          },
+          {
+            "name": "Ability Score Improvement",
+            "level": "4",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+              }
+            ]
+          },
+          {
+            "name": "Extra Attack",
+            "level": "5",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn."
+              }
+            ]
+          },
+          {
+            "name": "Apoptosis Silver",
+            "level": "7",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 7th level, whenever you deal damage using a weapon attack with a silvered weapon to a creature, you may add a number of d4 of damage to the attack equal to your proficiency bonus. This damage is the same type as the weapon\u2019s damage type, or one of your Sacrament Spells, chosen on a short rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "A creature that has the regeneration feature, or is benefiting from an effect that causes it to regain hit points at the start of their turn hit by an attack that deals this extra damage does not regain hit points at the start of their next turn."
+              },
+              {
+                "type": "paragraph",
+                "text": "If your damage reduces the creature to 0 hit points it cannot regain hit points using its regeneration feature until it regains at least 1 hit point by some other means."
+              }
+            ]
+          },
+          {
+            "name": "Miracle of Faith",
+            "level": "10",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 10th level, whenever you complete a short rest you regain your expended 1st and 2nd level sacrament spells."
+              }
+            ]
+          },
+          {
+            "name": "Evasion",
+            "level": "11",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 11th level, you have become quick-witted and learned how to avoid damage when it is possible. When an effect forces you to roll a Dexterity saving throw that would deal half damage on a successful save, you take no damage on a successful save and half damage on a failed one."
+              }
+            ]
+          },
+          {
+            "name": "Archival Sacrament",
+            "level": "20",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Whenever you complete a long rest, you may exchange any number of your Holy Sacrament spells (as per the Holy Sacrament feature) for others from the paladin spell list. You must always have two 1st level sacraments, and one each of 2nd, 3rd, 4th, and 5th level sacraments."
+              }
+            ]
+          }
+        ],
+        "advancement": {
+          "columns": [
+            {
+              "key": "level",
+              "label": "Level"
+            },
+            {
+              "key": "proficiency_bonus",
+              "label": "Proficiency Bonus"
+            },
+            {
+              "key": "features",
+              "label": "Features"
+            },
+            {
+              "key": "sacraments",
+              "label": "Sacraments"
+            },
+            {
+              "key": "spells_known",
+              "label": "Spells Known"
+            },
+            {
+              "key": "slot_1",
+              "label": "1st"
+            },
+            {
+              "key": "slot_2",
+              "label": "2nd"
+            },
+            {
+              "key": "slot_3",
+              "label": "3rd"
+            },
+            {
+              "key": "slot_4",
+              "label": "4th"
+            },
+            {
+              "key": "slot_5",
+              "label": "5th"
+            },
+            {
+              "key": "slot_6",
+              "label": "6th"
+            },
+            {
+              "key": "slot_7",
+              "label": "7th"
+            },
+            {
+              "key": "slot_8",
+              "label": "8th"
+            },
+            {
+              "key": "slot_9",
+              "label": "9th"
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "proficiency_bonus": "\u002B2",
+              "features": [
+                "Chivalric Order"
+              ],
+              "sacraments": "2",
+              "spells_known": 3,
+              "slot_1": 2,
+              "slot_2": "\u2014",
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "2nd",
+              "proficiency_bonus": "\u002B2",
+              "features": [
+                "Fighting Style",
+                "Monster Slaying Weapons",
+                "Holy Sacrament"
+              ],
+              "sacraments": "2",
+              "spells_known": 4,
+              "slot_1": 3,
+              "slot_2": "\u2014",
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "3rd",
+              "proficiency_bonus": "\u002B2",
+              "features": [
+                "\u2014"
+              ],
+              "sacraments": "2",
+              "spells_known": 5,
+              "slot_1": 4,
+              "slot_2": 2,
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "4th",
+              "proficiency_bonus": "\u002B2",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "2",
+              "spells_known": 6,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "5th",
+              "proficiency_bonus": "\u002B3",
+              "features": [
+                "Extra Attack"
+              ],
+              "sacraments": "2",
+              "spells_known": 7,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 2,
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "6th",
+              "proficiency_bonus": "\u002B3",
+              "features": [
+                "Holy Sacrament (2nd, 3rd)",
+                "Order Feature"
+              ],
+              "sacraments": "4",
+              "spells_known": 8,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "7th",
+              "proficiency_bonus": "\u002B3",
+              "features": [
+                "Apoptosis Silver"
+              ],
+              "sacraments": "4",
+              "spells_known": 9,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 1,
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "8th",
+              "proficiency_bonus": "\u002B3",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "4",
+              "spells_known": 10,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 2,
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "9th",
+              "proficiency_bonus": "\u002B4",
+              "features": [
+                "Order Feature"
+              ],
+              "sacraments": "4",
+              "spells_known": 11,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 1,
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "10th",
+              "proficiency_bonus": "\u002B4",
+              "features": [
+                "Holy Sacrament (4th)",
+                "Miracle of Faith"
+              ],
+              "sacraments": "5",
+              "spells_known": 12,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": "\u2014",
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "11th",
+              "proficiency_bonus": "\u002B4",
+              "features": [
+                "Evasion"
+              ],
+              "sacraments": "5",
+              "spells_known": 13,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "12th",
+              "proficiency_bonus": "\u002B4",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "5",
+              "spells_known": 14,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": "\u2014",
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "13th",
+              "proficiency_bonus": "\u002B5",
+              "features": [
+                "\u2014"
+              ],
+              "sacraments": "5",
+              "spells_known": 15,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": 1,
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "14th",
+              "proficiency_bonus": "\u002B5",
+              "features": [
+                "Order Feature"
+              ],
+              "sacraments": "5",
+              "spells_known": 16,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": 1,
+              "slot_8": "\u2014",
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "15th",
+              "proficiency_bonus": "\u002B5",
+              "features": [
+                "Holy Sacrament (5th)"
+              ],
+              "sacraments": "6",
+              "spells_known": 17,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": 1,
+              "slot_8": 1,
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "16th",
+              "proficiency_bonus": "\u002B5",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "6",
+              "spells_known": 18,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": 1,
+              "slot_8": 1,
+              "slot_9": "\u2014"
+            },
+            {
+              "level": "17th",
+              "proficiency_bonus": "\u002B6",
+              "features": [
+                "\u2014"
+              ],
+              "sacraments": "6",
+              "spells_known": 19,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": 1,
+              "slot_8": 1,
+              "slot_9": 1
+            },
+            {
+              "level": "18th",
+              "proficiency_bonus": "\u002B6",
+              "features": [
+                "\u2014"
+              ],
+              "sacraments": "6",
+              "spells_known": 20,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 3,
+              "slot_6": 1,
+              "slot_7": 1,
+              "slot_8": 1,
+              "slot_9": 1
+            },
+            {
+              "level": "19th",
+              "proficiency_bonus": "\u002B6",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "6",
+              "spells_known": 21,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 3,
+              "slot_6": 2,
+              "slot_7": 1,
+              "slot_8": 1,
+              "slot_9": 1
+            },
+            {
+              "level": "20th",
+              "proficiency_bonus": "\u002B6",
+              "features": [
+                "Archival Sacrament"
+              ],
+              "sacraments": "6",
+              "spells_known": 22,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 3,
+              "slot_6": 2,
+              "slot_7": 2,
+              "slot_8": 1,
+              "slot_9": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "progression-b",
+      "label": "Clergy(2/3rd Caster)",
+      "description": "Seven-step / reduced spellcasting progression.",
+      "mechanics": {
+        "multiclassing": {
+          "kicker": "Optional Rule",
+          "title": "Multiclassing",
+          "paragraphs": [
+            "There is no obvious quick build strategy for the clergy, as the various orders cause the class to go in different directions."
+          ],
+          "items": []
+        },
+        "pre_feature_sections": [
+          {
+            "type": "section",
+            "content_section": {
+              "kicker": "Core Statistics",
+              "title": "Class Basics",
+              "blocks": [
+                {
+                  "type": "subsection",
+                  "title": "Hit Points",
+                  "blocks": [
+                    {
+                      "type": "stats",
+                      "items": [
+                        {
+                          "label": "Hit Dice",
+                          "value": "1d8 per Clergy level"
+                        },
+                        {
+                          "label": "Hit Points at 1st Level",
+                          "value": "8 \u002B your Constitution modifier"
+                        },
+                        {
+                          "label": "Hit Points at Higher Levels",
+                          "value": "1d8 (or 5) \u002B your Constitution modifier per Clergy level after 1st"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "subsection",
+                  "title": "Proficiencies",
+                  "blocks": [
+                    {
+                      "type": "stats",
+                      "items": [
+                        {
+                          "label": "Armor",
+                          "value": "Light and medium armor, shields"
+                        },
+                        {
+                          "label": "Weapons",
+                          "value": "Simple and martial weapons"
+                        },
+                        {
+                          "label": "Tools",
+                          "value": "None"
+                        },
+                        {
+                          "label": "Saving Throws",
+                          "value": "Wisdom, Charisma"
+                        },
+                        {
+                          "label": "Skills",
+                          "value": "Choose two from Athletics, History, Insight, Medicine, Persuasion, Religion"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "subsection",
+                  "title": "Starting Equipment",
+                  "blocks": [
+                    {
+                      "type": "paragraph",
+                      "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                    },
+                    {
+                      "type": "list",
+                      "items": [
+                        "(a) an Ash Lock shortsword, (b) any ash lock simple weapon, or (c) any martial weapon",
+                        "(a) scale mail, (b) leather armor, or (c) chain mail",
+                        "(a) 20 black keys, (b) a light crossbow with 20 bolts, or (c) any simple weapon",
+                        "A priest\u2019s pack and clergy\u2019s divine focus"
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "text": "You may instead choose to start with gold equal to 80 (4d4 \u00D7 10) gp."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Chivalric Order",
+            "level": "1",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You belong to one of the different orders that make up the Holy Church. Charged with different duties and expressing them through different levels of violence and brutality, they all protect the Holy Church from different heretical elements. The chivalric orders are listed at the end of these class features."
+              }
+            ]
+          },
+          {
+            "name": "Spellcasting",
+            "level": "1",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Clergymen utilize a special thaumaturgical system called the holy sacrament to perform miracles, though they are in effect just another form of magecraft. They use special power found in scripture, sometimes referred to as \u201Cfragments of light\u201D, to manifest the power of God. Some members of the clergy accomplish this by passing magical energy through their holy text."
+              },
+              {
+                "type": "paragraph",
+                "text": "See chapter 10 of the player\u2019s handbook for general spellcasting rules. Clergymen can learn spells from the cleric spell list, but sometimes will borrow spells from the paladin spell list."
+              },
+              {
+                "type": "subsection",
+                "title": "Spell Slots",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "The Clergy table shows how many spell slots you have to cast your cleric spells. To cast one of your cleric spells of 1st level or higher, you must expend a slot of the spell\u2019s level or higher. You regain expended spell slots when you complete a long rest."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Spells Known of 1st Level and Higher",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Starting at 3rd level, you know three 1st-level spells from the cleric spell list. Each time you gain a clergy level you learn one more spell from the cleric spell list. Also, each time you gain a level as a member of the clergy you can choose to switch one of your known spells for another one. All spells you learn must be of a level you are capable of casting."
+                  },
+                  {
+                    "type": "note",
+                    "title": "Restriction",
+                    "text": "You cannot learn the spell raise dead, or spells of 7th level or higher through your spellcasting feature."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Spellcasting Ability",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Wisdom is your spellcasting ability for your cleric and paladin spells, as the power of your holy sacraments is derived from your faith in your order. You use Wisdom whenever a cleric or paladin spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric or paladin spell and when making an attack roll with one."
+                  },
+                  {
+                    "type": "formula",
+                    "label": "Spell save DC",
+                    "value": "8 \u002B your proficiency bonus \u002B your Wisdom modifier"
+                  },
+                  {
+                    "type": "formula",
+                    "label": "Spell attack modifier",
+                    "value": "your proficiency bonus \u002B your Wisdom modifier"
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Ritual Casting",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have learned it."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Spellcasting Focus",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You use a holy symbol, holy text (such as a bible), black keys, or ash lock item as your spellcasting focus for cleric and paladin spells."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fighting Style",
+            "level": "2",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+              },
+              {
+                "type": "options",
+                "items": [
+                  {
+                    "name": "Archery"
+                  },
+                  {
+                    "name": "Defense"
+                  },
+                  {
+                    "name": "Dueling"
+                  },
+                  {
+                    "name": "Fleeting Speed"
+                  },
+                  {
+                    "name": "Throwing Expert"
+                  },
+                  {
+                    "name": "Two-Weapon Fighting"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Monster Slaying Weapons",
+            "level": "2",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 2nd level, your weapon attacks using silvered weapons gain the benefit of your holy sacraments, and are counted as magical for the purposes of overcoming damage resistances."
+              }
+            ]
+          },
+          {
+            "name": "Holy Sacrament",
+            "level": "2",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Apart from their regular divine spellcasting, those of the clergy dedicate specific sacraments to mind. These special prayers are tattoo\u0027d into their skin using either magical materials that renders it invisible except for when in use or, if the clergy member decides, are written visibly. These passages are lines of scripture that they read out to activate and unleash the miracle stored within."
+              },
+              {
+                "type": "paragraph",
+                "text": "At 2nd level you can choose two 1st level spells from the paladin spell list. You gain these spells as sacraments. You can cast each sacrament once without expending a spell slot. You regain expended sacraments when you complete a long rest. Your sacraments are cast as the highest level spell slot you have access to, but cannot be cast at a level above 5th level."
+              },
+              {
+                "type": "paragraph",
+                "text": "You gain another sacrament when you reach 4th level, which must be a 2nd level spell. You then gain another sacrament when you reach 7th level, which must be a 3rd level spell, and another when you reach 10th level which must be a 4th level spell. You gain your final sacrament when you reach 15th level, which must be a 5th level spell."
+              }
+            ]
+          },
+          {
+            "name": "Ability Score Improvement",
+            "level": "4",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+              }
+            ]
+          },
+          {
+            "name": "Extra Attack",
+            "level": "5",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn."
+              }
+            ]
+          },
+          {
+            "name": "Apoptosis Silver",
+            "level": "7",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 7th level, whenever you deal damage using a weapon attack with a silvered weapon to a creature, you may add a number of d4 of damage to the attack equal to your proficiency bonus. This damage is the same type as the weapon\u2019s damage type, or one of your Sacrament Spells, chosen on a short rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "A creature that has the regeneration feature, or is benefiting from an effect that causes it to regain hit points at the start of their turn hit by an attack that deals this extra damage does not regain hit points at the start of their next turn."
+              },
+              {
+                "type": "paragraph",
+                "text": "If your damage reduces the creature to 0 hit points it cannot regain hit points using its regeneration feature until it regains at least 1 hit point by some other means."
+              }
+            ]
+          },
+          {
+            "name": "Miracle of Faith",
+            "level": "10",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 10th level, whenever you complete a short rest you regain your expended 1st and 2nd level sacrament spells."
+              }
+            ]
+          },
+          {
+            "name": "Evasion",
+            "level": "11",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Starting at 11th level, you have become quick-witted and learned how to avoid damage when it is possible. When an effect forces you to roll a Dexterity saving throw that would deal half damage on a successful save, you take no damage on a successful save and half damage on a failed one."
+              }
+            ]
+          },
+          {
+            "name": "Archival Sacrament",
+            "level": "20",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Whenever you complete a long rest, you may exchange any number of your Holy Sacrament spells (as per the Holy Sacrament feature) for others from the paladin spell list. You must always have two 1st level sacraments, and one each of 2nd, 3rd, 4th, and 5th level sacraments."
+              }
+            ]
+          }
+        ],
+        "advancement": {
+          "columns": [
+            {
+              "key": "level",
+              "label": "Level"
+            },
+            {
+              "key": "proficiency_bonus",
+              "label": "Proficiency Bonus"
+            },
+            {
+              "key": "features",
+              "label": "Features"
+            },
+            {
+              "key": "sacraments",
+              "label": "Sacraments"
+            },
+            {
+              "key": "spells_known",
+              "label": "Spells Known"
+            },
+            {
+              "key": "slot_1",
+              "label": "1st"
+            },
+            {
+              "key": "slot_2",
+              "label": "2nd"
+            },
+            {
+              "key": "slot_3",
+              "label": "3rd"
+            },
+            {
+              "key": "slot_4",
+              "label": "4th"
+            },
+            {
+              "key": "slot_5",
+              "label": "5th"
+            },
+            {
+              "key": "slot_6",
+              "label": "6th"
+            },
+            {
+              "key": "slot_7",
+              "label": "7th"
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "proficiency_bonus": "\u002B2",
+              "features": [
+                "Chivalric Order"
+              ],
+              "sacraments": "2",
+              "spells_known": 3,
+              "slot_1": 2,
+              "slot_2": "\u2014",
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "2nd",
+              "proficiency_bonus": "\u002B2",
+              "features": [
+                "Fighting Style",
+                "Monster Slaying Weapons",
+                "Holy Sacrament"
+              ],
+              "sacraments": "2",
+              "spells_known": 4,
+              "slot_1": 3,
+              "slot_2": "\u2014",
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "3rd",
+              "proficiency_bonus": "\u002B2",
+              "features": [
+                "\u2014"
+              ],
+              "sacraments": "2",
+              "spells_known": 5,
+              "slot_1": 4,
+              "slot_2": "\u2014",
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "4th",
+              "proficiency_bonus": "\u002B2",
+              "features": [
+                "Ability Score Improvement",
+                "Holy Sacrament (2nd)"
+              ],
+              "sacraments": "3",
+              "spells_known": 6,
+              "slot_1": 4,
+              "slot_2": 2,
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "5th",
+              "proficiency_bonus": "\u002B3",
+              "features": [
+                "Extra Attack"
+              ],
+              "sacraments": "3",
+              "spells_known": 7,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "6th",
+              "proficiency_bonus": "\u002B3",
+              "features": [
+                "Order Feature"
+              ],
+              "sacraments": "3",
+              "spells_known": 8,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": "\u2014",
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "7th",
+              "proficiency_bonus": "\u002B3",
+              "features": [
+                "Apoptosis Silver",
+                "Holy Sacrament (3rd)"
+              ],
+              "sacraments": "4",
+              "spells_known": 9,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 2,
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "8th",
+              "proficiency_bonus": "\u002B3",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "4",
+              "spells_known": 10,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "9th",
+              "proficiency_bonus": "\u002B4",
+              "features": [
+                "Order Feature"
+              ],
+              "sacraments": "4",
+              "spells_known": 11,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": "\u2014",
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "10th",
+              "proficiency_bonus": "\u002B4",
+              "features": [
+                "Holy Sacrament (4th)",
+                "Miracle of Faith"
+              ],
+              "sacraments": "5",
+              "spells_known": 12,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 1,
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "11th",
+              "proficiency_bonus": "\u002B4",
+              "features": [
+                "Evasion"
+              ],
+              "sacraments": "5",
+              "spells_known": 13,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 2,
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "12th",
+              "proficiency_bonus": "\u002B4",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "5",
+              "spells_known": 14,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": "\u2014",
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "13th",
+              "proficiency_bonus": "\u002B5",
+              "features": [
+                "\u2014"
+              ],
+              "sacraments": "5",
+              "spells_known": 15,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 1,
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "14th",
+              "proficiency_bonus": "\u002B5",
+              "features": [
+                "Order Feature"
+              ],
+              "sacraments": "5",
+              "spells_known": 16,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "15th",
+              "proficiency_bonus": "\u002B5",
+              "features": [
+                "Holy Sacrament (5th)"
+              ],
+              "sacraments": "6",
+              "spells_known": 17,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": "\u2014",
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "16th",
+              "proficiency_bonus": "\u002B5",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "6",
+              "spells_known": 18,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "17th",
+              "proficiency_bonus": "\u002B6",
+              "features": [
+                "\u2014"
+              ],
+              "sacraments": "6",
+              "spells_known": 19,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "18th",
+              "proficiency_bonus": "\u002B6",
+              "features": [
+                "\u2014"
+              ],
+              "sacraments": "6",
+              "spells_known": 20,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": "\u2014"
+            },
+            {
+              "level": "19th",
+              "proficiency_bonus": "\u002B6",
+              "features": [
+                "Ability Score Improvement"
+              ],
+              "sacraments": "6",
+              "spells_known": 21,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": 1
+            },
+            {
+              "level": "20th",
+              "proficiency_bonus": "\u002B6",
+              "features": [
+                "Archival Sacrament"
+              ],
+              "sacraments": "6",
+              "spells_known": 22,
+              "slot_1": 4,
+              "slot_2": 3,
+              "slot_3": 3,
+              "slot_4": 3,
+              "slot_5": 2,
+              "slot_6": 1,
+              "slot_7": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "title": "Spellcasting Progression",
+      "description": "This class intentionally contains two alternative mechanics progressions. Use only one progression for a character/campaign."
+    }
+  ]
+}

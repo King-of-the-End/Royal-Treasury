@@ -158,52 +158,38 @@ else if (classDocument is not null)
                 </div>
             }
 
-            @if (activeTab == "mechanics" && GetProperty(root, "mechanics") is JsonElement mechanics)
+            @if (activeTab == "mechanics")
             {
                 <div class="class-tab-content">
-                    @if (GetProperty(mechanics, "multiclassing") is JsonElement multiclassing)
+                    @if (GetProperty(root, "mechanics_tabs") is JsonElement mechanicsTabs &&
+                         mechanicsTabs.ValueKind == JsonValueKind.Array &&
+                         mechanicsTabs.GetArrayLength() > 0)
                     {
-                        @RenderMulticlassing(multiclassing)
-                    }
-
-                    @if (GetProperty(mechanics, "advancement") is JsonElement advancement)
-                    {
-                        <section class="class-section class-table-section" id="advancement">
-                            <div class="class-section-kicker">Advancement</div>
-                            <h2>The @DisplayName</h2>
-                            @RenderDynamicTable(advancement, "class-table")
-                        </section>
-                    }
-
-                    <section class="class-feature-chapter" id="class-features">
-                        <header class="class-chapter-heading">
-                            <div class="class-section-kicker">Abilities</div>
-                            <h2>Class Features</h2>
-                        </header>
-
-                        @if (GetProperty(mechanics, "pre_feature_sections") is JsonElement preFeatureSections)
-                        {
-                            @foreach (var section in preFeatureSections.EnumerateArray())
+                        <div class="class-mechanics-tab-buttons">
+                            @for (var i = 0; i < mechanicsTabs.GetArrayLength(); i++)
                             {
-                                @RenderPreFeatureSection(section)
+                                var tabIndex = i;
+                                var mechanicsTab = mechanicsTabs[i];
+                                var label = GetString(mechanicsTab, "label") ?? $"Mechanics {i + 1}";
+                                <button type="button"
+                                        class="class-mechanics-tab-button @(activeMechanicsTabIndex == i ? "active" : "")"
+                                        @onclick="() => SetMechanicsTab(tabIndex)">
+                                    @label
+                                </button>
                             }
-                        }
+                        </div>
 
-                        @if (GetProperty(mechanics, "features") is JsonElement features)
+                        var selectedIndex = Math.Clamp(activeMechanicsTabIndex, 0, mechanicsTabs.GetArrayLength() - 1);
+                        var selectedTab = mechanicsTabs[selectedIndex];
+
+                        @if (GetProperty(selectedTab, "mechanics") is JsonElement selectedMechanics)
                         {
-                            @foreach (var feature in features.EnumerateArray())
-                            {
-                                @RenderFeatureCard(feature)
-                            }
+                            @RenderMechanicsContent(selectedMechanics)
                         }
-                    </section>
-
-                    @if (GetProperty(mechanics, "appendices") is JsonElement appendices)
+                    }
+                    else if (GetProperty(root, "mechanics") is JsonElement mechanics)
                     {
-                        @foreach (var appendix in appendices.EnumerateArray())
-                        {
-                            @RenderAppendix(appendix)
-                        }
+                        @RenderMechanicsContent(mechanics)
                     }
                 </div>
             }
@@ -221,6 +207,7 @@ else if (classDocument is not null)
     private bool isLoading = true;
     private string? errorMessage;
     private string activeTab = "lore";
+    private int activeMechanicsTabIndex = 0;
 
     private string DisplayName
         => classDocument is not null && GetString(classDocument.RootElement, "name") is string name && !string.IsNullOrWhiteSpace(name)
@@ -242,10 +229,68 @@ else if (classDocument is not null)
             replace: true);
     }
 
+    private void SetMechanicsTab(int index)
+    {
+        activeMechanicsTabIndex = index;
+    }
+
+    private RenderFragment RenderMechanicsContent(JsonElement mechanics) => builder =>
+    {
+        var seq = 0;
+
+        if (GetProperty(mechanics, "multiclassing") is JsonElement multiclassing)
+            builder.AddContent(seq++, RenderMulticlassing(multiclassing));
+
+        if (GetProperty(mechanics, "advancement") is JsonElement advancement)
+        {
+            builder.OpenElement(seq++, "section");
+            builder.AddAttribute(seq++, "class", "class-section class-table-section");
+            builder.AddAttribute(seq++, "id", "advancement");
+            builder.OpenElement(seq++, "div");
+            builder.AddAttribute(seq++, "class", "class-section-kicker");
+            builder.AddContent(seq++, "Advancement");
+            builder.CloseElement();
+            builder.OpenElement(seq++, "h2");
+            builder.AddContent(seq++, $"The {DisplayName}");
+            builder.CloseElement();
+            builder.AddContent(seq++, RenderDynamicTable(advancement, "class-table"));
+            builder.CloseElement();
+        }
+
+        builder.OpenElement(seq++, "section");
+        builder.AddAttribute(seq++, "class", "class-feature-chapter");
+        builder.AddAttribute(seq++, "id", "class-features");
+        builder.OpenElement(seq++, "header");
+        builder.AddAttribute(seq++, "class", "class-chapter-heading");
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-section-kicker");
+        builder.AddContent(seq++, "Abilities");
+        builder.CloseElement();
+        builder.OpenElement(seq++, "h2");
+        builder.AddContent(seq++, "Class Features");
+        builder.CloseElement();
+        builder.CloseElement();
+
+        if (GetProperty(mechanics, "pre_feature_sections") is JsonElement preFeatureSections)
+            foreach (var section in preFeatureSections.EnumerateArray())
+                builder.AddContent(seq++, RenderPreFeatureSection(section));
+
+        if (GetProperty(mechanics, "features") is JsonElement features)
+            foreach (var feature in features.EnumerateArray())
+                builder.AddContent(seq++, RenderFeatureCard(feature));
+
+        builder.CloseElement();
+
+        if (GetProperty(mechanics, "appendices") is JsonElement appendices)
+            foreach (var appendix in appendices.EnumerateArray())
+                builder.AddContent(seq++, RenderAppendix(appendix));
+    };
+
     protected override async Task OnParametersSetAsync()
     {
         isLoading = true;
         errorMessage = null;
+        activeMechanicsTabIndex = 0;
         activeTab =
             string.Equals(
                 Tab,
@@ -527,8 +572,17 @@ else if (classDocument is not null)
 
         if (GetProperty(feature, "blocks") is JsonElement blocks)
         {
+            var isFightingStyle = string.Equals(
+                GetString(feature, "name"),
+                "Fighting Style",
+                StringComparison.OrdinalIgnoreCase);
+
             foreach (var block in blocks.EnumerateArray())
-                builder.AddContent(seq++, RenderBlock(block));
+                builder.AddContent(
+                    seq++,
+                    isFightingStyle
+                        ? RenderFightingStyleBlock(block)
+                        : RenderBlock(block));
         }
 
         builder.CloseElement();
@@ -557,6 +611,36 @@ else if (classDocument is not null)
         if (GetProperty(appendix, "features") is JsonElement features)
             foreach (var feature in features.EnumerateArray()) builder.AddContent(seq++, RenderFeatureCard(feature));
         builder.CloseElement();
+    };
+
+    private RenderFragment RenderFightingStyleBlock(JsonElement block) => builder =>
+    {
+        var seq = 0;
+        var type = GetString(block, "type") ?? "paragraph";
+
+        if (type == "options")
+        {
+            var options = GetProperty(block, "options") ?? GetProperty(block, "items");
+            if (options is JsonElement optionItems && optionItems.ValueKind == JsonValueKind.Array)
+            {
+                builder.OpenElement(seq++, "ul");
+                builder.AddAttribute(seq++, "class", "class-list class-fighting-style-list");
+                foreach (var option in optionItems.EnumerateArray())
+                {
+                    var name = option.ValueKind == JsonValueKind.Object
+                        ? GetString(option, "name") ?? GetString(option, "title") ?? ValueToText(option)
+                        : ValueToText(option);
+                    if (string.IsNullOrWhiteSpace(name)) continue;
+                    builder.OpenElement(seq++, "li");
+                    builder.AddContent(seq++, name);
+                    builder.CloseElement();
+                }
+                builder.CloseElement();
+            }
+            return;
+        }
+
+        builder.AddContent(seq++, RenderBlock(block));
     };
 
     private RenderFragment RenderBlock(JsonElement block) => builder =>

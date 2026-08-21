@@ -12,7 +12,7 @@
     {
       "title": "Bound by the Blade",
       "paragraphs": [
-        "While bladebearers seek to perfect their craft, they do not always find someone who can immediately make use of their gift. Thus, bladebearers learn the art of warfare so the sword they’ve chosen is never dull, be it someone else teaches them the basics of fighting, or learning on their own.",
+        "While bladebearers seek to perfect their craft, they do not always find someone who can immediately make use of their gift. Thus, bladebearers learn the art of warfare so the sword they\u2019ve chosen is never dull, be it someone else teaches them the basics of fighting, or learning on their own.",
         "Not every bladebearer strikes out to adventure across the land. Some journey out to learn of mythical weapons, so that they may one day best them with their own weapon that has been enchanted by their hand. Other bladebearers venture forth to find someone worthy of inheriting their finest craft, perhaps etching their name into the records of history."
       ]
     },
@@ -31,14 +31,14 @@
     }
   ],
   "roleplay": {
-    "quick_build": "You can create a bladebearer by following these suggestions. First, Intelligence should be your character’s highest ability score, followed by either Strength or Dexterity, depending on the type of weapon they are consecrating. Make Constitution your next-best score instead if you do not intend to wield your consecrated weapon, bestowing it upon another to use. Then, choose the sage background."
+    "quick_build": "You can create a bladebearer by following these suggestions. First, Intelligence should be your character\u2019s highest ability score, followed by either Strength or Dexterity, depending on the type of weapon they are consecrating. Make Constitution your next-best score instead if you do not intend to wield your consecrated weapon, bestowing it upon another to use. Then, choose the sage background."
   },
   "mechanics": {
     "multiclassing": {
       "title": "Multiclassing",
       "kicker": "Optional Rule",
       "paragraphs": [
-        "If your group uses the optional rule on multiclassing in the Player’s Handbook, you must meet the prerequisites listed below in order to multiclass into a bladebearer."
+        "If your group uses the optional rule on multiclassing in the Player\u2019s Handbook, you must meet the prerequisites listed below in order to multiclass into a bladebearer."
       ],
       "items": [
         {
@@ -47,7 +47,7 @@
         },
         {
           "label": "Proficiencies Gained",
-          "value": "If bladebearer isn’t your initial class, you gain proficiency with simple weapons, three martial melee weapons of your choice that do not have the heavy or two-handed property, and one skill from the class’s skill list."
+          "value": "If bladebearer isn\u2019t your initial class, you gain proficiency with simple weapons, three martial melee weapons of your choice that do not have the heavy or two-handed property, and one skill from the class\u2019s skill list."
         },
         {
           "label": "Spell Slots",
@@ -111,133 +111,133 @@
       "rows": [
         {
           "level": "1st",
-          "proficiency_bonus": "+2",
-          "features": "Consecrated Weapon, Enchanter’s Sense, Spellcasting",
+          "proficiency_bonus": "\u002B2",
+          "features": "Consecrated Weapon, Enchanter\u2019s Sense, Spellcasting",
           "cantrips_known": "2",
           "spells_known": "4",
           "slot:1st": "2",
-          "slot:2nd": "—",
-          "slot:3rd": "—",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:2nd": "\u2014",
+          "slot:3rd": "\u2014",
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "2nd",
-          "proficiency_bonus": "+2",
+          "proficiency_bonus": "\u002B2",
           "features": "Arcane Blade, Archetypal Weapon",
           "cantrips_known": "2",
           "spells_known": "5",
           "slot:1st": "3",
-          "slot:2nd": "—",
-          "slot:3rd": "—",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:2nd": "\u2014",
+          "slot:3rd": "\u2014",
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "3rd",
-          "proficiency_bonus": "+2",
+          "proficiency_bonus": "\u002B2",
           "features": "Arcane Agility, Mystic Infusion",
           "cantrips_known": "2",
           "spells_known": "6",
           "slot:1st": "4",
-          "slot:2nd": "—",
-          "slot:3rd": "—",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:2nd": "\u2014",
+          "slot:3rd": "\u2014",
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "4th",
-          "proficiency_bonus": "+2",
+          "proficiency_bonus": "\u002B2",
           "features": "Ability Score Improvement",
           "cantrips_known": "3",
           "spells_known": "7",
           "slot:1st": "4",
           "slot:2nd": "2",
-          "slot:3rd": "—",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:3rd": "\u2014",
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "5th",
-          "proficiency_bonus": "+3",
-          "features": "Archetypal Weapon Feature, Bladebearer’s Absolution",
+          "proficiency_bonus": "\u002B3",
+          "features": "Archetypal Weapon Feature, Bladebearer\u2019s Absolution",
           "cantrips_known": "3",
           "spells_known": "8",
           "slot:1st": "4",
           "slot:2nd": "3",
-          "slot:3rd": "—",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:3rd": "\u2014",
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "6th",
-          "proficiency_bonus": "+3",
-          "features": "Swordwright’s Initiative",
+          "proficiency_bonus": "\u002B3",
+          "features": "Swordwright\u2019s Initiative",
           "cantrips_known": "3",
           "spells_known": "9",
           "slot:1st": "4",
           "slot:2nd": "3",
-          "slot:3rd": "—",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:3rd": "\u2014",
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "7th",
-          "proficiency_bonus": "+3",
+          "proficiency_bonus": "\u002B3",
           "features": "",
           "cantrips_known": "3",
           "spells_known": "10",
           "slot:1st": "4",
           "slot:2nd": "3",
           "slot:3rd": "2",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "8th",
-          "proficiency_bonus": "+3",
+          "proficiency_bonus": "\u002B3",
           "features": "Ability Score Improvement",
           "cantrips_known": "3",
           "spells_known": "11",
           "slot:1st": "4",
           "slot:2nd": "3",
           "slot:3rd": "3",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "9th",
-          "proficiency_bonus": "+4",
-          "features": "Bladebearer’s Absolution (+2), Magus’s Resilience",
+          "proficiency_bonus": "\u002B4",
+          "features": "Bladebearer\u2019s Absolution (\u002B2), Magus\u2019s Resilience",
           "cantrips_known": "3",
           "spells_known": "12",
           "slot:1st": "4",
           "slot:2nd": "3",
           "slot:3rd": "3",
-          "slot:4th": "—",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:4th": "\u2014",
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "10th",
-          "proficiency_bonus": "+4",
+          "proficiency_bonus": "\u002B4",
           "features": "",
           "cantrips_known": "4",
           "spells_known": "13",
@@ -245,13 +245,13 @@
           "slot:2nd": "3",
           "slot:3rd": "3",
           "slot:4th": "1",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "11th",
-          "proficiency_bonus": "+4",
+          "proficiency_bonus": "\u002B4",
           "features": "Archetypal Weapon Feature, Extraplanar Bond",
           "cantrips_known": "4",
           "spells_known": "13",
@@ -259,13 +259,13 @@
           "slot:2nd": "3",
           "slot:3rd": "3",
           "slot:4th": "2",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "12th",
-          "proficiency_bonus": "+4",
+          "proficiency_bonus": "\u002B4",
           "features": "Ability Score Improvement",
           "cantrips_known": "4",
           "spells_known": "14",
@@ -273,14 +273,14 @@
           "slot:2nd": "3",
           "slot:3rd": "3",
           "slot:4th": "3",
-          "slot:5th": "—",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:5th": "\u2014",
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "13th",
-          "proficiency_bonus": "+5",
-          "features": "Bladebearer’s Absolution (+3)",
+          "proficiency_bonus": "\u002B5",
+          "features": "Bladebearer\u2019s Absolution (\u002B3)",
           "cantrips_known": "4",
           "spells_known": "14",
           "slot:1st": "4",
@@ -288,12 +288,12 @@
           "slot:3rd": "3",
           "slot:4th": "3",
           "slot:5th": "1",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "14th",
-          "proficiency_bonus": "+5",
+          "proficiency_bonus": "\u002B5",
           "features": "Archetypal Weapon Feature",
           "cantrips_known": "4",
           "spells_known": "15",
@@ -302,12 +302,12 @@
           "slot:3rd": "3",
           "slot:4th": "3",
           "slot:5th": "2",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "15th",
-          "proficiency_bonus": "+5",
+          "proficiency_bonus": "\u002B5",
           "features": "",
           "cantrips_known": "4",
           "spells_known": "15",
@@ -316,12 +316,12 @@
           "slot:3rd": "3",
           "slot:4th": "3",
           "slot:5th": "2",
-          "slot:6th": "—",
-          "slot:7th": "—"
+          "slot:6th": "\u2014",
+          "slot:7th": "\u2014"
         },
         {
           "level": "16th",
-          "proficiency_bonus": "+5",
+          "proficiency_bonus": "\u002B5",
           "features": "Ability Score Improvement",
           "cantrips_known": "4",
           "spells_known": "16",
@@ -331,11 +331,11 @@
           "slot:4th": "3",
           "slot:5th": "2",
           "slot:6th": "1",
-          "slot:7th": "—"
+          "slot:7th": "\u2014"
         },
         {
           "level": "17th",
-          "proficiency_bonus": "+6",
+          "proficiency_bonus": "\u002B6",
           "features": "Archetypal Weapon Feature",
           "cantrips_known": "4",
           "spells_known": "16",
@@ -345,11 +345,11 @@
           "slot:4th": "3",
           "slot:5th": "2",
           "slot:6th": "1",
-          "slot:7th": "—"
+          "slot:7th": "\u2014"
         },
         {
           "level": "18th",
-          "proficiency_bonus": "+6",
+          "proficiency_bonus": "\u002B6",
           "features": "",
           "cantrips_known": "4",
           "spells_known": "17",
@@ -359,11 +359,11 @@
           "slot:4th": "3",
           "slot:5th": "2",
           "slot:6th": "1",
-          "slot:7th": "—"
+          "slot:7th": "\u2014"
         },
         {
           "level": "19th",
-          "proficiency_bonus": "+6",
+          "proficiency_bonus": "\u002B6",
           "features": "Ability Score Improvement",
           "cantrips_known": "4",
           "spells_known": "17",
@@ -377,7 +377,7 @@
         },
         {
           "level": "20th",
-          "proficiency_bonus": "+6",
+          "proficiency_bonus": "\u002B6",
           "features": "Enchanter of the Ages",
           "cantrips_known": "4",
           "spells_known": "18",
@@ -407,11 +407,11 @@
                 },
                 {
                   "label": "Hit Points at 1st Level",
-                  "value": "8 + your Constitution modifier"
+                  "value": "8 \u002B your Constitution modifier"
                 },
                 {
                   "label": "Hit Points at Higher Levels",
-                  "value": "1d8 (or 5) + your Constitution modifier per bladebearer level after 1st"
+                  "value": "1d8 (or 5) \u002B your Constitution modifier per bladebearer level after 1st"
                 }
               ]
             },
@@ -428,7 +428,7 @@
                 },
                 {
                   "label": "Tools",
-                  "value": "One type of artisan’s tools of your choice"
+                  "value": "One type of artisan\u2019s tools of your choice"
                 },
                 {
                   "label": "Saving Throws",
@@ -444,8 +444,8 @@
               "title": "Starting Equipment",
               "items": [
                 "(a) scale mail or (b) leather armor",
-                "(a) a longsword or (b) any martial melee weapon that doesn’t have the heavy or two-handed property",
-                "(a) a scholar’s pack or (b) an explorer’s pack",
+                "(a) a longsword or (b) any martial melee weapon that doesn\u2019t have the heavy or two-handed property",
+                "(a) a scholar\u2019s pack or (b) an explorer\u2019s pack",
                 "Any simple weapon and 6 darts"
               ]
             }
@@ -460,26 +460,26 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "All bladebearers learn an ancient ritual that creates a magical bond between themselves and a weapon. There are a couple different methods to carry out the ritual, detailed below. The weapon that is being bonded to you must be a melee weapon that isn’t an artifact or legendary."
+            "text": "All bladebearers learn an ancient ritual that creates a magical bond between themselves and a weapon. There are a couple different methods to carry out the ritual, detailed below. The weapon that is being bonded to you must be a melee weapon that isn\u2019t an artifact or legendary."
           },
           {
             "type": "paragraph",
-            "text": "Once you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence as you, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand."
+            "text": "Once you have bonded a weapon to yourself, you can\u2019t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence as you, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand."
           },
           {
             "type": "paragraph",
-            "text": "As long as you’re on the same plane of existence as your consecrated weapon, you always know if it’s being wielded by another creature, but do not know the location of the weapon. If you know the spell locate object, you can cast it to find the general direction of your consecrated weapon, regardless of how far away it is and you’re both on the same plane."
+            "text": "As long as you\u2019re on the same plane of existence as your consecrated weapon, you always know if it\u2019s being wielded by another creature, but do not know the location of the weapon. If you know the spell locate object, you can cast it to find the general direction of your consecrated weapon, regardless of how far away it is and you\u2019re both on the same plane."
           },
           {
             "type": "paragraph",
-            "text": "You can only have a single consecrated weapon at a time. If you attempt to consecrate a different weapon, you must break the bond with the other weapon, voiding it of all blessings you had bestowed upon it. Additionally, a weapon can’t be bonded with or consecrated twice - the binding of the first ritual stops any further rituals performed by others from affecting it. A consecrated weapon loses its boons if it is not wielded by you or the other creature bonded to it, aside from basic blessings such as bonuses to attack and damage rolls."
+            "text": "You can only have a single consecrated weapon at a time. If you attempt to consecrate a different weapon, you must break the bond with the other weapon, voiding it of all blessings you had bestowed upon it. Additionally, a weapon can\u2019t be bonded with or consecrated twice - the binding of the first ritual stops any further rituals performed by others from affecting it. A consecrated weapon loses its boons if it is not wielded by you or the other creature bonded to it, aside from basic blessings such as bonuses to attack and damage rolls."
           },
           {
             "type": "section",
             "title": "Sacred Bequeathal",
             "paragraphs": [
-              "Should you choose to bestow your weapon upon a creature you deem worthy, they gain the benefits of the consecrated weapon and its properties. As such, they can’t be disarmed of the consecrated weapon unless they’re incapacitated and can summon it to their hand as a bonus action if it’s on the same plane as them.",
-              "Because you have ceded your weapon to another creature, you don’t gain any benefits from being bonded to it. You can’t summon your consecrated weapon to your side unless the other creature bonded to it is on another plane of existence, is dead or incapacitated, or lets you summon it or voluntarily returns it to you. You may force the weapon to return to your side any time you could use a bonus action if the need arises; if it’s in the possession of the other creature bonded to it, the other creature must succeed on an Intelligence saving throw or the weapon is forcibly removed from them and they cannot summon it to their hand again until you give them permission to do so. The DC for this save equals your bladebearer spell save DC.",
+              "Should you choose to bestow your weapon upon a creature you deem worthy, they gain the benefits of the consecrated weapon and its properties. As such, they can\u2019t be disarmed of the consecrated weapon unless they\u2019re incapacitated and can summon it to their hand as a bonus action if it\u2019s on the same plane as them.",
+              "Because you have ceded your weapon to another creature, you don\u2019t gain any benefits from being bonded to it. You can\u2019t summon your consecrated weapon to your side unless the other creature bonded to it is on another plane of existence, is dead or incapacitated, or lets you summon it or voluntarily returns it to you. You may force the weapon to return to your side any time you could use a bonus action if the need arises; if it\u2019s in the possession of the other creature bonded to it, the other creature must succeed on an Intelligence saving throw or the weapon is forcibly removed from them and they cannot summon it to their hand again until you give them permission to do so. The DC for this save equals your bladebearer spell save DC.",
               "Consecrating a weapon, be it a new weapon or the same one, removes the bond between it and the other creature it was previously bonded to."
             ]
           },
@@ -487,16 +487,16 @@
             "type": "section",
             "title": "Primeval Benediction",
             "paragraphs": [
-              "At first, a consecrated weapon simply turns into a magical weapon if it isn’t already magical. The weapon gains more abilities as you gain more levels as a bladebearer.",
-              "The boons imparted on your consecrated weapon are more apparent when it is wielded by the other creature bonded to it rather than you. No matter who, a bladebearer’s magic only unveils its true strength when the consecrated weapon is wielded by the one chosen by the bladebearer."
+              "At first, a consecrated weapon simply turns into a magical weapon if it isn\u2019t already magical. The weapon gains more abilities as you gain more levels as a bladebearer.",
+              "The boons imparted on your consecrated weapon are more apparent when it is wielded by the other creature bonded to it rather than you. No matter who, a bladebearer\u2019s magic only unveils its true strength when the consecrated weapon is wielded by the one chosen by the bladebearer."
             ]
           },
           {
             "type": "section",
             "title": "Performing the Ritual",
             "paragraphs": [
-              "Regardless of how the ritual is carried out, it always takes 1 hour to complete. As a far more archaic and complex rite, it also can’t be done during a short rest.",
-              "The weapon and any others partaking in the rite must be within your reach throughout the ritual, at the end of which you touch the weapon and forge the bond. At the DM’s discretion, a person may participate in the ritual even if they are not within your reach - perhaps you wish to bestow your consecrated weapon upon someone you haven’t met but see fit to eventually wield the newly bonded weapon."
+              "Regardless of how the ritual is carried out, it always takes 1 hour to complete. As a far more archaic and complex rite, it also can\u2019t be done during a short rest.",
+              "The weapon and any others partaking in the rite must be within your reach throughout the ritual, at the end of which you touch the weapon and forge the bond. At the DM\u2019s discretion, a person may participate in the ritual even if they are not within your reach - perhaps you wish to bestow your consecrated weapon upon someone you haven\u2019t met but see fit to eventually wield the newly bonded weapon."
             ]
           },
           {
@@ -517,13 +517,13 @@
               {
                 "name": "Destined Wielder",
                 "paragraphs": [
-                  "The ritual is carried out with you and the weapon, binding it to you. You permanently establish a set of conditions that allow another creature to wield the weapon, or prevent a creature from wielding it if it doesn’t meet those conditions. These conditions persist even beyond your death. While you always have the benefits of wielding and being bonded to it, others must spend a short rest attuning to it in order to gain these benefits or to use a bonus action to summon it."
+                  "The ritual is carried out with you and the weapon, binding it to you. You permanently establish a set of conditions that allow another creature to wield the weapon, or prevent a creature from wielding it if it doesn\u2019t meet those conditions. These conditions persist even beyond your death. While you always have the benefits of wielding and being bonded to it, others must spend a short rest attuning to it in order to gain these benefits or to use a bonus action to summon it."
                 ]
               },
               {
                 "name": "Postmortem",
                 "paragraphs": [
-                  "If you’re dead, the ritual can be carried out by the other creature bonded to the weapon. Finishing the ritual removes their bond from the weapon, bonding the weapon to another creature participating in the ritual. If you’re brought back to life, your consecrated weapon immediately bonds to you again."
+                  "If you\u2019re dead, the ritual can be carried out by the other creature bonded to the weapon. Finishing the ritual removes their bond from the weapon, bonding the weapon to another creature participating in the ritual. If you\u2019re brought back to life, your consecrated weapon immediately bonds to you again."
                 ]
               }
             ]
@@ -539,14 +539,14 @@
             "type": "section",
             "title": "Glory in Death",
             "paragraphs": [
-              "The archaic magic that’s used to enchant a weapon this way can last beyond one’s death, but not forever. Should you die, the magic within your consecrated weapon lasts a number of years equal to your bladebearer level, or permanently instead if you’re 20th level.",
-              "Outside interference can prolong or shorten the duration of the consecration after a bladebearer dies. For example, a god or other being of incredible power might deem a consecrated weapon worthy of being permanently blessed with its current boons, or a wish spell rendered the binding magic inert for all eternity until the bladebearer returns to perform another rite to restore the magic that was stored in the now-inert weapon. Other characters can extend, or shorten, the duration after a bladebearer dies at the DM’s discretion, though doing so isn’t a simple feat."
+              "The archaic magic that\u2019s used to enchant a weapon this way can last beyond one\u2019s death, but not forever. Should you die, the magic within your consecrated weapon lasts a number of years equal to your bladebearer level, or permanently instead if you\u2019re 20th level.",
+              "Outside interference can prolong or shorten the duration of the consecration after a bladebearer dies. For example, a god or other being of incredible power might deem a consecrated weapon worthy of being permanently blessed with its current boons, or a wish spell rendered the binding magic inert for all eternity until the bladebearer returns to perform another rite to restore the magic that was stored in the now-inert weapon. Other characters can extend, or shorten, the duration after a bladebearer dies at the DM\u2019s discretion, though doing so isn\u2019t a simple feat."
             ]
           }
         ]
       },
       {
-        "name": "Enchanter’s Sense",
+        "name": "Enchanter\u2019s Sense",
         "level": "1",
         "blocks": [
           {
@@ -555,11 +555,11 @@
           },
           {
             "type": "paragraph",
-            "text": "As an action, you can expand your magical awareness to detect the presence of magical items. You sense any magical items within 60 feet of you that aren’t behind total cover, but do not know if those items are being worn or carried. Those items are outlined in a faint aura for you for the next minute, regardless of how far away they are from you."
+            "text": "As an action, you can expand your magical awareness to detect the presence of magical items. You sense any magical items within 60 feet of you that aren\u2019t behind total cover, but do not know if those items are being worn or carried. Those items are outlined in a faint aura for you for the next minute, regardless of how far away they are from you."
           },
           {
             "type": "paragraph",
-            "text": "You can use this feature a number of times equal to 1 + your Intelligence modifier, and regain any expended uses when you finish a long rest."
+            "text": "You can use this feature a number of times equal to 1 \u002B your Intelligence modifier, and regain any expended uses when you finish a long rest."
           }
         ]
       },
@@ -582,7 +582,7 @@
             "type": "section",
             "title": "Spell Slots",
             "paragraphs": [
-              "The Bladebearer table shows how many spell slots you have to cast your bladebearer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.",
+              "The Bladebearer table shows how many spell slots you have to cast your bladebearer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell\u2019s level or higher. You regain all expended spell slots when you finish a long rest.",
               "For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot."
             ]
           },
@@ -607,11 +607,11 @@
             "formula_items": [
               {
                 "label": "Spell Save DC",
-                "value": "8 + your proficiency bonus + your Intelligence modifier"
+                "value": "8 \u002B your proficiency bonus \u002B your Intelligence modifier"
               },
               {
                 "label": "Spell Attack Modifier",
-                "value": "your proficiency bonus + your Intelligence modifier"
+                "value": "your proficiency bonus \u002B your Intelligence modifier"
               }
             ]
           },
@@ -626,7 +626,7 @@
             "type": "section",
             "title": "Spellcasting Focus",
             "paragraphs": [
-              "You can use a magical melee weapon that you’re wielding as the focus for your bladebearer spells."
+              "You can use a magical melee weapon that you\u2019re wielding as the focus for your bladebearer spells."
             ]
           }
         ]
@@ -637,11 +637,11 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Beginning at 2nd level, you can augment yourself should you be unarmed or the weapon you consecrated is being wielded by another creature. Using your bonus action, you can create a magical blade of force from one of your hands. While one of your hands is manifesting a blade, you can’t hold anything in that hand. You can dismiss it at any time (no action required)."
+            "text": "Beginning at 2nd level, you can augment yourself should you be unarmed or the weapon you consecrated is being wielded by another creature. Using your bonus action, you can create a magical blade of force from one of your hands. While one of your hands is manifesting a blade, you can\u2019t hold anything in that hand. You can dismiss it at any time (no action required)."
           },
           {
             "type": "paragraph",
-            "text": "The sword is a magical martial melee weapon with the versatile property and deals force damage equal to 1d8 (1d10) + your ability modifier when it hits a creature. It disappears if you’re incapacitated or you let go of it."
+            "text": "The sword is a magical martial melee weapon with the versatile property and deals force damage equal to 1d8 (1d10) \u002B your ability modifier when it hits a creature. It disappears if you\u2019re incapacitated or you let go of it."
           }
         ]
       },
@@ -657,7 +657,7 @@
             "type": "section",
             "title": "Archetype Spells",
             "paragraphs": [
-              "Each archetype has a list of spells that is associated with it. You gain access to these spells at the levels specified in the archetype’s description. Archetype spells don’t count towards your known spells. Once you gain access to an archetype spell, you always have that spell memorized.",
+              "Each archetype has a list of spells that is associated with it. You gain access to these spells at the levels specified in the archetype\u2019s description. Archetype spells don\u2019t count towards your known spells. Once you gain access to an archetype spell, you always have that spell memorized.",
               "If you have an archetype spell that does not appear on the bladebearer spell list, the spell is nonetheless a bladebearer spell for you."
             ]
           }
@@ -693,7 +693,7 @@
               {
                 "name": "Giantesque Extension",
                 "paragraphs": [
-                  "Your expertise with weapons grows, granting you proficiency with all martial melee weapons instead of only martial melee weapons that don’t have the heavy or two-handed property. In addition, when you summon it, your Arcane Blade now takes the shape of a giant sword, gaining the two-handed property and dealing 2d6 force damage on a hit instead of 1d8 (1d10)."
+                  "Your expertise with weapons grows, granting you proficiency with all martial melee weapons instead of only martial melee weapons that don\u2019t have the heavy or two-handed property. In addition, when you summon it, your Arcane Blade now takes the shape of a giant sword, gaining the two-handed property and dealing 2d6 force damage on a hit instead of 1d8 (1d10)."
                 ]
               },
               {
@@ -717,17 +717,17 @@
         ]
       },
       {
-        "name": "Bladebearer’s Absolution",
+        "name": "Bladebearer\u2019s Absolution",
         "level": "5",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Also when you reach 5th level, your consecrated weapon gains a +1 bonus to attack and damage rolls if it already doesn’t have a bonus to those rolls. Your Arcane Blade also gains these bonuses. The bonus increases to +2 at 9th level and +3 at 13th level."
+            "text": "Also when you reach 5th level, your consecrated weapon gains a \u002B1 bonus to attack and damage rolls if it already doesn\u2019t have a bonus to those rolls. Your Arcane Blade also gains these bonuses. The bonus increases to \u002B2 at 9th level and \u002B3 at 13th level."
           }
         ]
       },
       {
-        "name": "Swordwright’s Initiative",
+        "name": "Swordwright\u2019s Initiative",
         "level": "6",
         "blocks": [
           {
@@ -737,7 +737,7 @@
         ]
       },
       {
-        "name": "Magus’s Resilience",
+        "name": "Magus\u2019s Resilience",
         "level": "9",
         "blocks": [
           {
@@ -756,7 +756,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "When you reach 11th level, you can use your bonus action to summon your consecrated weapon even if it isn’t on the same plane of existence as you, or use your bonus action to teleport it from your side to the other creature that’s bonded to it even if they’re on a different plane of existence from you. However, the other creature that is bonded to your consecrated weapon can still only summon it if it’s on the same plane as them."
+            "text": "When you reach 11th level, you can use your bonus action to summon your consecrated weapon even if it isn\u2019t on the same plane of existence as you, or use your bonus action to teleport it from your side to the other creature that\u2019s bonded to it even if they\u2019re on a different plane of existence from you. However, the other creature that is bonded to your consecrated weapon can still only summon it if it\u2019s on the same plane as them."
           },
           {
             "type": "paragraph",
@@ -770,7 +770,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "When you reach 20th level, you have reached the pinnacle of your magic. You can now consecrate artifacts and legendary weapons. Your consecrated weapon becomes an artifact and the bonus to attack and damage rolls with it increases to +4. Moreover, your Intelligence score is also increased by 4, to a maximum of 24."
+            "text": "When you reach 20th level, you have reached the pinnacle of your magic. You can now consecrate artifacts and legendary weapons. Your consecrated weapon becomes an artifact and the bonus to attack and damage rolls with it increases to \u002B4. Moreover, your Intelligence score is also increased by 4, to a maximum of 24."
           }
         ]
       }
@@ -785,7 +785,7 @@
             "blocks": [
               {
                 "type": "paragraph",
-                "text": "Some archetypal weapon features allow you to cast certain spells without expending spell slots, or with your consecrated weapon. A spell that’s cast this way doesn’t require material components."
+                "text": "Some archetypal weapon features allow you to cast certain spells without expending spell slots, or with your consecrated weapon. A spell that\u2019s cast this way doesn\u2019t require material components."
               }
             ]
           }

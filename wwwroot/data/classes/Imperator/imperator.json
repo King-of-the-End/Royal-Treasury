@@ -1,0 +1,828 @@
+{
+  "name": "Imperator",
+  "slug": "imperator",
+  "introduction": [
+    "An elf defending themself against a brutal onslaught deftly dodges attack after attack. When her assaulter is sure that their last attack is bound to land, the elf surprises them by blocking the final blow with the pommel of her sword and begins her counterattack.",
+    "A dragonborn blocks a corridor with their spear in hand, ready to confront any who cross his path. Anyone with the guts to try only meet a flurry of spear strikes and a painful death, or several wounds at best.",
+    "A gladiator in the midst of a heated battle launches a flurry of attacks before taking a moment to catch his breath. Before his foe can create a safe distance between the two of them in this momentary respite, he begins another flurry of attacks in the same amount of time it would normally take somebody to attack once.",
+    "All of these warriors are imperators, martial prodigies that are unparalleled in close quarters combat. Varied as they all may be, they are all united by their extraordinary reflexes and tactical prowess, regardless of the weapons or skills they use."
+  ],
+  "lore_sections": [
+    {
+      "title": "Unparalleled Combatants",
+      "paragraphs": [
+        "Imperators specialize in fighting face to face with their enemies, unlike fighters who carry some degree of familiarity with nearly all weapons. In exchange for forgoing proficiency with such weapons, swordsovreigns learn techniques which allow them to close the distance between themselves and any enemies, or to leave a variety of tactics to gain any advantage possible."
+      ]
+    },
+    {
+      "title": "Grueling Tutelage",
+      "paragraphs": [
+        "The path of an imperator is rife with difficulty. Similar to fighters, they must learn the basics of using a variety of weapons and tactics, alongside the art of warfare. And like monks, they must rigorously train their bodies to maintain their reflexes. However, imperators care little about matters such as spirituality, nor do they tend to fight from a distance like some fighters.",
+        "An imperator\u2019s martial prowess and incredible reflexes naturally makes them an excellent adventurer or companion. Their extensive training is put to use when slaying monsters, delving into dungeons, or exploring areas that are dangerous or filled with traps."
+      ]
+    },
+    {
+      "title": "Creating an Imperator",
+      "paragraphs": [
+        "When creating an imperator, think about what sets them apart from other warriors around them and the extraordinary training that they have gone through. Becoming an imperator is an undertaking that breaks those who cannot withstand the rigorous training and is extremely taxing on your body. Were you exceptionally dedicated, or did you feel that you needed to prove yourself?",
+        "Imperators are regarded for their martial prowess, but that doesn\u2019t always come naturally. You may have enjoyed years of formal training in an army or militia, but that alone is not enough to cover the basics of becoming an imperator. You might have spent a year or years under the tutelage of a mentor willing to train you afterwards, or maybe you\u2019ve spent your childhood and young adult years sharpening your skills and honing your body so that it doesn\u2019t break under pressure.",
+        "Also consider what led your character to turn to a life of adventuring. Did you think adventure was all you of any lingering desires or put your skills to the test? Or perhaps stories of treasure allured you, causing you to leave behind your past or set aside your training."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "You can quickly create an imperator by following these suggestions. First, Strength or Dexterity should be your highest ability score, depending on what kind of melee weapon you want to focus on, followed by Constitution. Second, choose the outlander background."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "If your group uses the optional rule on multiclassing in the Player\u2019s Handbook, you must meet the prerequisites listed below in order to multiclass into an imperator."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Strength score of at least 13 and Dexterity score of at least 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "If imperator isn\u2019t your initial class, you gain proficiency with light armor, medium armor, simple weapons and martial melee weapons."
+        }
+      ]
+    },
+    "advancement": {
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "techniques_known",
+          "label": "Techniques Known"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": [
+            "Martial Ingenuity",
+            "Second Wind"
+          ],
+          "techniques_known": "2"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": [
+            "Fighting Style",
+            "Flourishing Surge"
+          ],
+          "techniques_known": "2"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": [
+            "Exemplary Reflexes",
+            "Imperator Specialization"
+          ],
+          "techniques_known": "3"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "techniques_known": "3"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": [
+            "Extra Attack"
+          ],
+          "techniques_known": "4"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": [
+            "Imperator Specialization Feature"
+          ],
+          "techniques_known": "4"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": [
+            "Warmaster\u2019s Expertise"
+          ],
+          "techniques_known": "5"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "techniques_known": "5"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": [
+            "Unwavering Resolve"
+          ],
+          "techniques_known": "6"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": [
+            "Imperator Specialization Feature"
+          ],
+          "techniques_known": "6"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": [
+            "Exemplary Reflexes (2)"
+          ],
+          "techniques_known": "7"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "techniques_known": "7"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": [
+            "Hypervigilant"
+          ],
+          "techniques_known": "8"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": [
+            "Imperator Specialization Feature"
+          ],
+          "techniques_known": "8"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": [
+            "Extra Attack (2)"
+          ],
+          "techniques_known": "9"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "techniques_known": "9"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": [
+            "Flourishing Surge (2)"
+          ],
+          "techniques_known": "10"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": [
+            "Imperator Specialization Feature"
+          ],
+          "techniques_known": "10"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": [
+            "Ability Score Improvement"
+          ],
+          "techniques_known": "11"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": [
+            "Exemplary Reflexes (3)"
+          ],
+          "techniques_known": "11"
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d10 per imperator level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "10 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d10 (or 6) \u002B your Constitution modifier per imperator level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light armor, medium armor"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple weapons, martial melee weapons"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "Calligrapher\u2019s supplies"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Strength, Dexterity"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose two from Acrobatics, Athletics, Investigation, Perception, Performance, Persuasion, and Sleight of Hand"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Starting Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) scale mail or (b) leather armor",
+                    "(a) a greatsword or (b) any martial melee weapon",
+                    "(a) a shortsword or (b) any simple melee weapon",
+                    "(a) a glaive, (b) a halberd, (c) a lance, or (d) a pike",
+                    "(a) a dungeoneer\u2019s pack or (b) an explorer\u2019s pack",
+                    "Four daggers and calligrapher\u2019s supplies"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "features": [
+      {
+        "name": "Martial Ingenuity",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You know techniques that complement your martial prowess, all of which use a reaction. You know two techniques of your choice at first, and learn more as you gain more levels in this class, as shown in the Techniques Known column of the Imperator table."
+          },
+          {
+            "type": "paragraph",
+            "text": "Whenever you gain another level as an imperator, you can replace one technique you know with another technique that you meet the prerequisite level for."
+          },
+          {
+            "type": "paragraph",
+            "text": "If a technique has prerequisites, you must meet them to learn it. You can learn the technique at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class."
+          },
+          {
+            "type": "paragraph",
+            "text": "The techniques you can learn are detailed at the end of the class description, ordered alphabetically."
+          }
+        ]
+      },
+      {
+        "name": "Second Wind",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You have a limited well of excess stamina that you can draw on to protect yourself from harm. During your turn, you can use a bonus action to regain hit points equal to 1d10 \u002B your swordsovreign level."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once you use this feature, you must finish a short or long rest before you can use it again."
+          }
+        ]
+      },
+      {
+        "name": "Fighting Style",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Blind Fighting"
+              },
+              {
+                "name": "Defense"
+              },
+              {
+                "name": "Dueling"
+              },
+              {
+                "name": "Great Weapon Fighting"
+              },
+              {
+                "name": "Thrown Weapon Fighting"
+              },
+              {
+                "name": "Two-Weapon Fighting"
+              },
+              {
+                "name": "Unarmed Fighting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flourishing Surge",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 2nd level, you are able to push your body beyond its normal limits for a moment. You can take one additional reaction this round."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once you use this feature, you can\u2019t use it again until you finish a short or long rest. At 17th level, you can use it twice before a rest, but only once in a single turn."
+          }
+        ]
+      },
+      {
+        "name": "Imperator Specialization",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 3rd level, you choose a specialization that defines your future endeavors and talents. A handful of specializations are detailed at the end of the class description. The specialization that you choose grants you features when you first choose it at 3rd level and again at 6th, 10th, 14th, and 18th level."
+          }
+        ]
+      },
+      {
+        "name": "Exemplary Reflexes",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 3rd level, you can use two reactions each round, instead of one. You gain a third reaction when you reach 11th level in this class and a fourth reaction at 20th level."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you use a reaction to make an opportunity attack against a creature, you can make one more attack against that creature for each additional reaction that you use."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can only use these extra reactions to make opportunity attacks or use techniques that you know."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Extra Attack",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks you can make increases to three when you reach 15th level in this class."
+          }
+        ]
+      },
+      {
+        "name": "Warmaster\u2019s Expertise",
+        "level": "7",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 7th level, choose one weapon that you are proficient with. You can add your proficiency bonus to any damage rolls you make with that weapon."
+          },
+          {
+            "type": "paragraph",
+            "text": "In addition, choose one skill or tool that you are proficient with. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you gain another level in this class, you can change the weapon that benefits from this feature. The new weapon must also be a weapon which you are proficient with."
+          }
+        ]
+      },
+      {
+        "name": "Unwavering Resolve",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 9th level, you are immune to being frightened."
+          }
+        ]
+      },
+      {
+        "name": "Hypervigilant",
+        "level": "13",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 13th level, you can make an opportunity attack once each round without using your reaction."
+          }
+        ]
+      }
+    ],
+    "appendices": [
+      {
+        "kicker": "Techniques",
+        "title": "Techniques",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The techniques are presented in alphabetical order. You can only use a technique in response to its triggering event once. If a technique can only be used once on each turn or on each round, that limitation is noted in parentheses next to the triggering event of that technique."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Adamantine Will",
+                "prerequisite": "9th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature scores a critical hit against you"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You steel yourself to turn the triggering attack into a normal hit."
+                  }
+                ]
+              },
+              {
+                "name": "Cyclonic Strike",
+                "prerequisite": "9th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a hostile creature moves into your reach while you\u2019re wielding a melee weapon, causing multiple hostile creatures to be within your reach (Once per turn)"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "In response to being surrounded by multiple foes, you lash out at your surroundings with your weapon. Make a melee attack against any number of hostile creatures within your reach, one of which must be the triggering creature, with a separate attack roll for each target."
+                  }
+                ]
+              },
+              {
+                "name": "Deflecting Strike",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When you are hit by a ranged attack and wielding a melee weapon"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You weaken the projectile from the triggering attack with the weapon you\u2019re wielding, reducing the amount of damage you take by 1d10 \u002B your proficiency bonus \u002B your imperator level. If the projectile is a piece of ammunition, it is destroyed and can\u2019t be salvaged if the damage is reduced to 0."
+                  }
+                ]
+              },
+              {
+                "name": "Effortless Recovery",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When you are knocked prone"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You reflexively get back on your feet, standing up immediately after the triggering event."
+                  }
+                ]
+              },
+              {
+                "name": "Evasive Withdrawal",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature misses you with a melee attack"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You gracefully and rapidly move up to 10 feet away from the attacking creature triggering this technique. This movement doesn\u2019t provoke opportunity attacks."
+                  }
+                ]
+              },
+              {
+                "name": "Exact Retribution",
+                "prerequisite": "9th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature you can see misses you with a melee attack (Once per round)"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You swiftly ascertain any weak spots the triggering creature may have as they miss with their attack. The first time you make a weapon attack against them during your next turn, treat the creature\u2019s Armor Class as 15 for that attack."
+                  }
+                ]
+              },
+              {
+                "name": "Merciless Alacrity",
+                "prerequisite": "14th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a hostile creature moves into your reach"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You make one weapon attack against the triggering creature. If that creature moves out of your reach before this turn ends, you can make another weapon attack against it without using another reaction."
+                  }
+                ]
+              },
+              {
+                "name": "Parry",
+                "prerequisite": "9th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When you\u2019re hit by a weapon attack while wielding a martial melee weapon (Once per round)"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You deftly maneuver to dodge the triggering attack, causing it to miss instead."
+                  }
+                ]
+              },
+              {
+                "name": "Partisan\u2019s Reprisal",
+                "prerequisite": "14th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature you can see takes damage from another creature you can see within your weapon\u2019s reach"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You make one weapon attack against the triggering creature that dealt damage, exacting revenge upon them for harming others."
+                  }
+                ]
+              },
+              {
+                "name": "Protective Brace",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When another creature within the reach of a melee weapon you\u2019re wielding is hit by a melee attack"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You intercept an attack meant for another creature with your weapon, reducing the amount of damage they take by 1d10 \u002B your proficiency bonus \u002B your imperator level."
+                  }
+                ]
+              },
+              {
+                "name": "Rapid Obscuration",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a hostile creature you can see moves or takes any kind of action"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You take the Hide action."
+                  }
+                ]
+              },
+              {
+                "name": "Retaliation",
+                "prerequisite": "14th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When you take damage from a creature that you can see within your weapon\u2019s reach"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You retaliate against the triggering creature, making a single weapon attack against them."
+                  }
+                ]
+              },
+              {
+                "name": "Riposte",
+                "prerequisite": "5th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature misses you with a melee attack while you are wielding a melee weapon (Once per turn)"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You respond to an attack that misses you with your own attack in response. Make one weapon attack against the triggering creature."
+                  }
+                ]
+              },
+              {
+                "name": "Sidestep",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: Before an area effect, such as a red dragon\u2019s fiery breath or an ice storm spell, occurs in the space that you are currently occupying"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You hastily move up to 5 feet, potentially moving you out of the area that\u2019s affected by the triggering event and avoiding its effects. This movement doesn\u2019t provoke opportunity attacks."
+                  }
+                ]
+              },
+              {
+                "name": "Sovereign\u2019s Wit",
+                "prerequisite": "5th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When you are forced to make an Intelligence or Wisdom saving throw"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You mentally brace yourself in response to the triggering event, adding your proficiency bonus to the saving throw."
+                  }
+                ]
+              },
+              {
+                "name": "Steady Withdrawal",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a hostile creature you can see moves towards you (Once per turn)"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You move up to 10 feet away from the triggering creature, in an attempt to keep a safe distance from them."
+                  }
+                ]
+              },
+              {
+                "name": "Sudden Shove",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature you can see, that\u2019s no more than one size larger than you, moves in or out of your reach"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You attempt to shove the triggering creature."
+                  }
+                ]
+              },
+              {
+                "name": "Swerving Maneuver",
+                "prerequisite": "14th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature you can see misses you with a melee attack"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You divert the triggering creature\u2019s failed attack, redirecting it to another creature within their weapon\u2019s reach. If able, they must make the same attack against another creature (other than itself) of your choice, making a new attack roll against the target."
+                  }
+                ]
+              },
+              {
+                "name": "Swift Reversal",
+                "prerequisite": "5th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature you can see makes an attack against a creature that\u2019s within 5 feet of you"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You switch places with the creature being attacked if they\u2019re willing, becoming the target of the triggering attack instead."
+                  }
+                ]
+              },
+              {
+                "name": "Unceasing Step",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a hostile creature you can see moves away from you (Once per turn)"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You move up to 10 feet closer to the triggering creature, in an attempt to make sure they can\u2019t escape from you."
+                  }
+                ]
+              },
+              {
+                "name": "Unorthodox Defense",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature you can see makes a melee attack against you while you are wielding a martial melee weapon with one hand and no other weapons or a shield (Once per turn)"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You suddenly block with the weapon that you are wielding to gain a \u002B2 bonus to Armor Class against the triggering attack, potentially causing it to miss."
+                  }
+                ]
+              },
+              {
+                "name": "Urgent Inspection",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: When a creature you can see hides or becomes invisible"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You take the Search action to immediately discern the whereabouts of the triggering creature."
+                  }
+                ]
+              },
+              {
+                "name": "Warrior\u2019s Clarity",
+                "prerequisite": "5th level",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reaction: You are blinded or deafened"
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You focus yourself to end the condition inflicted upon you by the triggering event."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
