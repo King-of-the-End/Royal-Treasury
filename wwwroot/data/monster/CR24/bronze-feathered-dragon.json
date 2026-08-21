@@ -1,0 +1,211 @@
+{
+  "Name": "Bronze Feathered Dragon",
+  "Group": "Feathered Dragons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "",
+  "Stat Blocks": [
+    {
+      "id": "bronze_feathered_dragon",
+      "section_type": "Stat Block",
+      "title": "Bronze Feathered Dragon",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "dragon (metallic)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "22 (natural armor)",
+      "hit_points": "468 (24d20 + 216)",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "120 ft.",
+        "swim": "60 ft."
+      },
+      "quality_traits": [
+        "Eidolic"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 30,
+          "modifier": "+10"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 29,
+          "modifier": "+9"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 24,
+          "modifier": "+7"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Con +16",
+        "Wis +12",
+        "Cha +14"
+      ],
+      "skills": [
+        "Insight +12",
+        "Perception +19",
+        "Stealth +10"
+      ],
+      "immunities": [
+        "lightning"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "exhaustion"
+      ],
+      "senses": [
+        "truesight 120 ft.",
+        "passive Perception 29"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "challenge_rating": "24 (62,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Uncanny Conductivity",
+          "name_format": "bold_italic",
+          "description": "Lightning damage from the dragon ignores resistances, and immunity to lightning damage only reduces the damage to half instead. This does not apply to damage the dragon might deal to itself."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes one Bite and two Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 10) piercing damage plus 18 (3d12) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 18 (2d8 + 10) slashing damage. If the target is Huge or smaller, it is restrained and grappled (escape DC 20). While grappling a creature it cannot make Claw attacks except one each turn against the grappled creature.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +17 to hit, reach 20 ft., one target. Hit: 22 (2d12 + 10) bludgeoning damage. If the target is a creature, it must succeed a DC 25 Strength saving throw or be knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Breath Weapon (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon uses one of its breath weapon options (Antigravity Breath or Vortex Breath).",
+          "options": [
+            {
+              "name": "Antigravity Breath",
+              "name_format": "bold_italic",
+              "description": "Gravity in a 100-foot-high, 50-foot-radius cylinder centered on a point the dragon can see within 300 feet of it is reversed. All creatures and objects that aren’t anchored to the ground in that area fall upward and reach the top of the cylinder, where they are suspended. Creatures near anchored objects can make a DC 24 Dexterity saving throw to grab onto them and avoid the upward fall on a success. Rules for falling apply regarding objects struck as creatures fall upward. Creatures that reach the top of the effect remain there, oscillating slightly, for the duration. The dragon can keep gravity reversed for up to 1 hour, but must concentrate on the effect as if it were a spell and cannot recharge their Breath Weapon unless they choose to drop concentration. Creatures who cast dispel magic on this effect treat it as if it were a 9th-level spell. When it ends, the creatures and objects plummet. The dragon can ignore its own Antigravity Breath."
+            },
+            {
+              "name": "Vortex Breath",
+              "name_format": "bold_italic",
+              "description": "The dragon exhales a burst of condensed lightning that targets a point it can see within 300 feet, which explodes in a 60-foot-radius sphere of violent energy. All creatures within range must make a DC 24 Dexterity saving throw, taking 72 (12d12) lightning damage on a failed save, or half as much damage on a success."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Beyond the Web (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When one or more creatures within 120 feet of the feathered dragon is targeted by the same magical effect or spell (except itself), the feathered dragon may grant them a +5 bonus on the first save they make against it."
+        },
+        {
+          "name": "Electromagnetic Repulsion",
+          "name_format": "bold_italic",
+          "description": "In response to being targeted by an attack from a metal weapon (or one with metal components or ammunition), the dragon unleashes a powerful electromagnetic wave that magnetically repels such weapons until the end of the turn. During this time, weapons affected automatically miss attacks against the dragon."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (3 Actions)",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "cost": 1,
+            "description": "The dragon makes one Claw or Tail attack."
+          },
+          {
+            "name": "Wing Attack",
+            "name_format": "bold_italic",
+            "cost": 2,
+            "description": "The dragon beats its wings, spreading flames from its body. Each creature within 20 feet of it must succeed on a DC 25 Dexterity saving throw or take 16 (1d12 + 10) bludgeoning damage and 6 (1d12) lightning damage and be knocked prone. The dragon can then fly up to half its flying speed."
+          },
+          {
+            "name": "Lightning Strikes",
+            "name_format": "bold_italic",
+            "cost": 3,
+            "description": "The dragon chooses three points within 120 feet of itself, which lightning bolts strike down. Any creature within 10 feet of those points must succeed a DC 25 Dexterity saving throw or take 15 (3d10) lightning damage."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "raw_text": "**BRONZE FEATHERED DRAGON**\n*Gargantuan dragon (metallic), lawful good*\n**AC** 22 (natural armor)\n**HP** 468 (24d20 + 216)\n**Speed** 60 ft., fly 120 ft., swim 60 ft.\n**STR** 30 (+10) | **DEX** 16 (+3) | **CON** 29 (+9) | **INT** 20 (+5) | **WIS** 20 (+5) | **CHA** 24 (+7)\n**Saving Throws** Dex +10, Con +16, Wis +12, Cha +14\n**Skills** Insight +12, Perception +19, Stealth +10\n**Immunities** lightning\n**Condition Immunities** charmed, frightened, exhaustion\n**Senses** truesight 120 ft., passive Perception 29\n**Languages** Common, Draconic\n**CR** 24 (62,000 XP) **Proficiency Bonus** +7\n\n**TRAITS**\n*Eidolic*\n\n**LEGENDARY REACTIONS** (4 uses)\nTBA\n\n***Uncanny Conductivity.*** Lightning damage from the dragon ignores resistances, and immunity to lightning damage only reduces the damage to half instead. This does not apply to damage the dragon might deal to itself.\n\n**ACTIONS**\n***Multiattack.*** The dragon makes one Bite and two Claw attacks.\n\n***Bite.*** *Melee Weapon Attack:* +17 to hit, reach 15 ft., one target. *Hit:* 20 (2d10 + 10) piercing damage plus 18 (3d12) lightning damage.\n\n***Claw.*** *Melee Weapon Attack:* +17 to hit, reach 10 ft., one target. *Hit:* 18 (2d8 + 10) slashing damage. If the target is Huge or smaller, it is restrained and grappled (escape DC 20). While grappling a creature it cannot make Claw attacks except one each turn against the grappled creature.\n\n***Tail.*** *Melee Weapon Attack:* +17 to hit, reach 20 ft., one target. *Hit:* 22 (2d12 + 10) bludgeoning damage. If the target is a creature, it must succeed a DC 25 Strength saving throw or be knocked prone.\n\n***Breath Weapon (Recharge 5-6).*** The dragon uses one of its breath weapon options (Antigravity Breath or Vortex Breath).\n• ***Antigravity Breath.*** Gravity in a 100-foot-high, 50-foot-radius cylinder centered on a point the dragon can see within 300 feet of it is reversed. All creatures and objects that aren’t anchored to the ground in that area fall upward and reach the top of the cylinder, where they are suspended. Creatures near anchored objects can make a DC 24 Dexterity saving throw to grab onto them and avoid the upward fall on a success. Rules for falling apply regarding objects struck as creatures fall upward. Creatures that reach the top of the effect remain there, oscillating slightly, for the duration. The dragon can keep gravity reversed for up to 1 hour, but must concentrate on the effect as if it were a spell and cannot recharge their Breath Weapon unless they choose to drop concentration. Creatures who cast dispel magic on this effect treat it as if it were a 9th-level spell. When it ends, the creatures and objects plummet. The dragon can ignore its own Antigravity Breath.\n• ***Vortex Breath.*** The dragon exhales a burst of condensed lightning that targets a point it can see within 300 feet, which explodes in a 60-foot-radius sphere of violent energy. All creatures within range must make a DC 24 Dexterity saving throw, taking 72 (12d12) lightning damage on a failed save, or half as much damage on a success.\n\n**BONUS ACTIONS**\n***Change Shape.*** The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it.\n\n**REACTIONS**\n***Beyond the Web (Recharge 5-6).*** When one or more creatures within 120 feet of the feathered dragon is targeted by the same magical effect or spell (except itself), the feathered dragon may grant them a +5 bonus on the first save they make against it.\n\n***Electromagnetic Repulsion.*** In response to being targeted by an attack from a metal weapon (or one with metal components or ammunition), the dragon unleashes a powerful electromagnetic wave that magnetically repels such weapons until the end of the turn. During this time, weapons affected automatically miss attacks against the dragon.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Attack.*** The dragon makes one Claw or Tail attack.\n***Wing Attack (Costs 2 Actions).*** The dragon beats its wings, spreading flames from its body. Each creature within 20 feet of it must succeed on a DC 25 Dexterity saving throw or take 16 (1d12 + 10) bludgeoning damage and 6 (1d12) lightning damage and be knocked prone. The dragon can then fly up to half its flying speed.\n***Lightning Strikes (Costs 3 Actions).*** The dragon chooses three points within 120 feet of itself, which lightning bolts strike down. Any creature within 10 feet of those points must succeed a DC 25 Dexterity saving throw or take 15 (3d10) lightning damage."
+    }
+  ]
+}

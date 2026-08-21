@@ -1,0 +1,211 @@
+{
+  "Name": "Copper Feathered Dragon",
+  "Group": "Feathered Dragons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "",
+  "Stat Blocks": [
+    {
+      "id": "copper_feathered_dragon",
+      "section_type": "Stat Block",
+      "title": "Copper Feathered Dragon",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "dragon (metallic)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "22 (natural armor)",
+      "hit_points": "390 (20d20 + 180)",
+      "speed": {
+        "walk": "60 ft.",
+        "climb": "60 ft.",
+        "fly": "120 ft."
+      },
+      "quality_traits": [
+        "Eidolic"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 27,
+          "modifier": "+8"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 28,
+          "modifier": "+9"
+        },
+        "INT": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +11",
+        "Con +16",
+        "Wis +12",
+        "Cha +13"
+      ],
+      "skills": [
+        "Deception +13",
+        "Perception +19",
+        "Stealth +11"
+      ],
+      "immunities": [
+        "acid"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "exhaustion"
+      ],
+      "senses": [
+        "truesight 120 ft.",
+        "passive Perception 29"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "challenge_rating": "23 (50,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Uncanny Corrosion",
+          "name_format": "bold_italic",
+          "description": "Acid damage from the dragon ignores resistances, and immunity to acid damage only reduces the damage to half instead. This does not apply to damage the dragon might deal to itself."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes one Bite and two Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 18 (2d10 + 8) piercing damage plus 18 (3d12) acid damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 8) slashing damage. If the target is Huge or smaller, it is restrained and grappled (escape DC 20). While grappling a creature it cannot make Claw attacks except one each turn against the grappled creature.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 20 (2d12 + 8) bludgeoning damage. If the target is a creature, it must succeed a DC 23 Strength saving throw or be knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Breath Weapon (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon uses one of its breath weapon options (Hallucination Breath or Sphere of Corrosion).",
+          "options": [
+            {
+              "name": "Hallucination Breath",
+              "name_format": "bold_italic",
+              "description": "The dragon exhales hallucinatory paralytic gas in a 240-foot-cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be stunned for 1 minute. Creatures stunned this way can reattempt the saving throw at the end of each of their turns, ending the effect on a success. Each time they take damage while affected, the DC they must beat to end the effect lowers by 1 (to a minimum of 18) and they can reattempt the save, also ending it on a success."
+            },
+            {
+              "name": "Sphere of Corrosion",
+              "name_format": "bold_italic",
+              "description": "The dragon exhales a sphere of corrosive gas at a point it can see within 300 feet, which explodes in a 60-foot-radius sphere of skin-melting vapor. All creatures within range must make a DC 24 Constitution saving throw, taking 72 (12d12) acid damage on a failed save, or half as much damage on a successful one."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its Multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Beyond the Web (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When one or more creatures within 120 feet of the feathered dragon is targeted by the same magical effect or spell (except itself), the feathered dragon may grant them a +5 bonus on the first save they make against it."
+        },
+        {
+          "name": "Optical Shield",
+          "name_format": "bold_italic",
+          "description": "When the dragon or a creature within 60 feet of it is targeted by a weapon attack, the dragon creates a prismatic shield around the target that bends light and distorts their location. Each time a creature attacks the target until the end of the turn they must roll 1d6. On a result of 5 or 6 they attack the creature normally. On a result of 6 the shield breaks. On a result of 1-4 they automatically miss the attack. Creatures with blindsight or who can see through illusions are unaffected."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (3 Actions)",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "cost": 1,
+            "description": "The dragon makes one Claw or Tail attack."
+          },
+          {
+            "name": "Wing Attack",
+            "name_format": "bold_italic",
+            "cost": 2,
+            "description": "The dragon beats its wings, spreading flames from its body. Each creature within 20 feet of it must succeed on a DC 23 Dexterity saving throw or take 14 (1d12 + 8) bludgeoning damage plus 6 (1d12) acid damage and be knocked prone. The dragon can then fly up to half its flying speed."
+          },
+          {
+            "name": "Illusory Dash",
+            "name_format": "bold_italic",
+            "cost": 3,
+            "description": "The dragon creates an illusory clone of itself in its current location and then turns invisible. The dragon then moves up to half its movement speed. The illusion vanishes and the dragon reappears at the start of its next turn."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "raw_text": "**COPPER FEATHERED DRAGON**\n*Gargantuan dragon (metallic), chaotic good*\n**AC** 22 (natural armor)\n**HP** 390 (20d20 + 180)\n**Speed** 60 ft., climb 60 ft., fly 120 ft.\n**STR** 27 (+8) | **DEX** 18 (+4) | **CON** 28 (+9) | **INT** 24 (+7) | **WIS** 20 (+5) | **CHA** 22 (+6)\n**Saving Throws** Dex +11, Con +16, Wis +12, Cha +13\n**Skills** Deception +13, Perception +19, Stealth +11\n**Immunities** acid\n**Condition Immunities** charmed, frightened, exhaustion\n**Senses** truesight 120 ft., passive Perception 29\n**Languages** Common, Draconic\n**CR** 23 (50,000 XP) **Proficiency Bonus** +7\n\n**TRAITS**\n*Eidolic*\n\n**LEGENDARY REACTIONS** (4 uses)\nTBA\n\n***Uncanny Corrosion.*** Acid damage from the dragon ignores resistances, and immunity to acid damage only reduces the damage to half instead. This does not apply to damage the dragon might deal to itself.\n\n**ACTIONS**\n***Multiattack.*** The dragon makes one Bite and two Claw attacks.\n\n***Bite.*** *Melee Weapon Attack:* +15 to hit, reach 15 ft., one target. *Hit:* 18 (2d10 + 8) piercing damage plus 18 (3d12) acid damage.\n\n***Claw.*** *Melee Weapon Attack:* +15 to hit, reach 10 ft., one target. *Hit:* 16 (2d8 + 8) slashing damage. If the target is Huge or smaller, it is restrained and grappled (escape DC 20). While grappling a creature it cannot make Claw attacks except one each turn against the grappled creature.\n\n***Tail.*** *Melee Weapon Attack:* +15 to hit, reach 20 ft., one target. *Hit:* 20 (2d12 + 8) bludgeoning damage. If the target is a creature, it must succeed a DC 23 Strength saving throw or be knocked prone.\n\n***Breath Weapon (Recharge 5-6).*** The dragon uses one of its breath weapon options (Hallucination Breath or Sphere of Corrosion).\n• ***Hallucination Breath.*** The dragon exhales hallucinatory paralytic gas in a 240-foot-cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be stunned for 1 minute. Creatures stunned this way can reattempt the saving throw at the end of each of their turns, ending the effect on a success. Each time they take damage while affected, the DC they must beat to end the effect lowers by 1 (to a minimum of 18) and they can reattempt the save, also ending it on a success.\n• ***Sphere of Corrosion.*** The dragon exhales a sphere of corrosive gas at a point it can see within 300 feet, which explodes in a 60-foot-radius sphere of skin-melting vapor. All creatures within range must make a DC 24 Constitution saving throw, taking 72 (12d12) acid damage on a failed save, or half as much damage on a successful one.\n\n**BONUS ACTIONS**\n***Change Shape.*** The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its Multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it.\n\n**REACTIONS**\n***Beyond the Web (Recharge 5-6).*** When one or more creatures within 120 feet of the feathered dragon is targeted by the same magical effect or spell (except itself), the feathered dragon may grant them a +5 bonus on the first save they make against it.\n\n***Optical Shield.*** When the dragon or a creature within 60 feet of it is targeted by a weapon attack, the dragon creates a prismatic shield around the target that bends light and distorts their location. Each time a creature attacks the target until the end of the turn they must roll 1d6. On a result of 5 or 6 they attack the creature normally. On a result of 6 the shield breaks. On a result of 1-4 they automatically miss the attack. Creatures with blindsight or who can see through illusions are unaffected.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Attack.*** The dragon makes one Claw or Tail attack.\n***Wing Attack (Costs 2 Actions).*** The dragon beats its wings, spreading flames from its body. Each creature within 20 feet of it must succeed on a DC 23 Dexterity saving throw or take 14 (1d12 + 8) bludgeoning damage plus 6 (1d12) acid damage and be knocked prone. The dragon can then fly up to half its flying speed.\n***Illusory Dash (Costs 3 Actions).*** The dragon creates an illusory clone of itself in its current location and then turns invisible. The dragon then moves up to half its movement speed. The illusion vanishes and the dragon reappears at the start of its next turn."
+    }
+  ]
+}

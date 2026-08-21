@@ -1,0 +1,519 @@
+{
+  "name": "Barbarian",
+  "slug": "barbarian",
+  "summary": "A fierce warrior of primal instinct and unthinking fury, drawing extraordinary strength and resilience from rage.",
+  "introduction": [
+    "A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people\u2019s elk herds.",
+    "A half-orc snarls at the latest challenger to her authority over their savage tribe, ready to break his neck with her bare hands as she did to the last six rivals.",
+    "Frothing at the mouth, a dwarf slams his helmet into the face of his drow foe, then turns to drive his armored elbow into the gut of another.",
+    "These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.",
+    "For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength."
+  ],
+  "lore_sections": [
+    {
+      "title": "Primal Instinct",
+      "paragraphs": [
+        "People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one\u2019s own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal nature\u2014keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.",
+        "Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting, but those few rages are usually sufficient to defeat whatever threats arise."
+      ]
+    },
+    {
+      "title": "A Life of Danger",
+      "paragraphs": [
+        "Not every member of the tribes deemed \u201Cbarbarians\u201D by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don\u2019t have to.",
+        "Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed among the members of their adventuring parties."
+      ]
+    },
+    {
+      "title": "Creating a Barbarian",
+      "paragraphs": [
+        "When creating a barbarian character, think about where your character comes from and his or her place in the world. Talk with your DM about an appropriate origin for your barbarian. Did you come from a distant land, making you a stranger in the area of the campaign? Or is the campaign set in a rough-and-tumble frontier where barbarians are common?",
+        "What led you to take up the adventuring life? Were you lured to settled lands by the promise of riches? Did you join forces with soldiers of those lands to face a shared threat? Did monsters or an invading horde drive you out of your homeland, making you a rootless refugee? Perhaps you were a prisoner of war, brought in chains to \u201Ccivilized\u201D lands and only now able to win your freedom. Or you might have been cast out from your people because of a crime you committed, a taboo you violated, or a coup that removed you from a position of authority."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "You can make a barbarian quickly by following these suggestions. First, put your highest ability score in Strength, followed by Constitution. Second, choose the outlander background."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "The following are the requirements to multiclass into a Barbarian."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Strength 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "Shields, simple weapons, and martial weapons."
+        },
+        {
+          "label": "Tools",
+          "value": "None."
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d12 per Barbarian level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "12 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d12 (or 7) \u002B your Constitution modifier per Barbarian level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light armor, medium armor, shields"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple weapons, martial weapons"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "None"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Strength, Constitution"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) a greataxe or (b) any martial melee weapon",
+                    "(a) two handaxes or (b) any simple weapon",
+                    "An explorer\u2019s pack and four javelins"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Barbarian",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "rages",
+          "label": "Rages"
+        },
+        {
+          "key": "rage_damage",
+          "label": "Rage Damage"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": "Rage, Unarmored Defense, Focused Fury",
+          "rages": "2",
+          "rage_damage": "\u002B2"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Reckless Attack, Danger Sense",
+          "rages": "2",
+          "rage_damage": "\u002B2"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Primal Path, Primal Knowledge",
+          "rages": "3",
+          "rage_damage": "\u002B2"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": "Ability Score Improvement",
+          "rages": "3",
+          "rage_damage": "\u002B2"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Extra Attack, Fast Movement",
+          "rages": "3",
+          "rage_damage": "\u002B2"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Path Feature",
+          "rages": "4",
+          "rage_damage": "\u002B2"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Feral Instinct, Instinctive Pounce",
+          "rages": "4",
+          "rage_damage": "\u002B2"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement",
+          "rages": "4",
+          "rage_damage": "\u002B2"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Brutal Critical (1 die)",
+          "rages": "4",
+          "rage_damage": "\u002B3"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Path Feature, Primal Knowledge",
+          "rages": "4",
+          "rage_damage": "\u002B3"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Relentless Rage",
+          "rages": "4",
+          "rage_damage": "\u002B3"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement",
+          "rages": "5",
+          "rage_damage": "\u002B3"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Brutal Critical (2 dice)",
+          "rages": "5",
+          "rage_damage": "\u002B3"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Path Feature",
+          "rages": "5",
+          "rage_damage": "\u002B3"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Persistent Rage",
+          "rages": "5",
+          "rage_damage": "\u002B3"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement",
+          "rages": "5",
+          "rage_damage": "\u002B4"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Brutal Critical (3 dice)",
+          "rages": "6",
+          "rage_damage": "\u002B4"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Indomitable Might",
+          "rages": "6",
+          "rage_damage": "\u002B4"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement",
+          "rages": "6",
+          "rage_damage": "\u002B4"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Primal Champion",
+          "rages": "Unlimited",
+          "rage_damage": "\u002B4"
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Rage",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action."
+          },
+          {
+            "type": "paragraph",
+            "text": "While raging, you gain the following benefits if you aren\u2019t wearing heavy armor:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "You have advantage on Strength checks and Strength saving throws.",
+              "When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.",
+              "You have resistance to bludgeoning, piercing, and slashing damage."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "If you are able to cast spells, you can\u2019t cast them or concentrate on them while raging."
+          },
+          {
+            "type": "paragraph",
+            "text": "Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven\u2019t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
+          }
+        ]
+      },
+      {
+        "name": "Unarmored Defense",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "While you are not wearing any armor, your Armor Class equals 10 \u002B your Dexterity modifier \u002B your Constitution modifier. You can use a shield and still gain this benefit."
+          }
+        ]
+      },
+      {
+        "name": "Focused Fury",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "While you are raging you ignore the effects of Combat Fatigue and exhaustion."
+          }
+        ]
+      },
+      {
+        "name": "Reckless Attack",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
+          }
+        ]
+      },
+      {
+        "name": "Danger Sense",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level, you gain an uncanny sense of when things nearby aren\u2019t as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can\u2019t be blinded, deafened, or incapacitated."
+          }
+        ]
+      },
+      {
+        "name": "Primal Path",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 3rd level, you choose a path that shapes the nature of your rage. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
+          }
+        ]
+      },
+      {
+        "name": "Primal Knowledge",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 3rd level and again at 10th level, you gain proficiency in one skill of your choice from the list of skills available to barbarians at 1st level."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Extra Attack",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+          }
+        ]
+      },
+      {
+        "name": "Fast Movement",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 5th level, your speed increases by 10 feet while you aren\u2019t wearing heavy armor."
+          }
+        ]
+      },
+      {
+        "name": "Feral Instinct",
+        "level": "7",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "By 7th level, your instincts are so honed that you have advantage on initiative rolls."
+          },
+          {
+            "type": "paragraph",
+            "text": "Additionally, if you are surprised at the beginning of combat and aren\u2019t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn."
+          }
+        ]
+      },
+      {
+        "name": "Instinctive Pounce",
+        "level": "7",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 7th level, as part of the bonus action you take to enter your rage, you can move up to half your speed."
+          }
+        ]
+      },
+      {
+        "name": "Brutal Critical",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack."
+          },
+          {
+            "type": "paragraph",
+            "text": "This increases to two additional dice at 13th level and three additional dice at 17th level."
+          }
+        ]
+      },
+      {
+        "name": "Relentless Rage",
+        "level": "11",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you\u2019re raging and don\u2019t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead."
+          },
+          {
+            "type": "paragraph",
+            "text": "Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10."
+          }
+        ]
+      },
+      {
+        "name": "Persistent Rage",
+        "level": "15",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it."
+          }
+        ]
+      },
+      {
+        "name": "Indomitable Might",
+        "level": "18",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total."
+          }
+        ]
+      },
+      {
+        "name": "Primal Champion",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
+          }
+        ]
+      }
+    ]
+  }
+}

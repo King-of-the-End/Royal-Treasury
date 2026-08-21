@@ -1,0 +1,523 @@
+{
+  "name": "Sword Saint",
+  "slug": "sword_saint",
+  "summary": "Front-line fighters who evoke the imagery of samurai and ancient historic warriors. They train under the methods of ancient combatants (the actual Sword Saints) and aim to reach a level of mastery that would allow them to stand beside those figures of legend. They are powerful nova-round fighters who are highly efficient in short bursts, and rely on resource management in sustained strings of encounters.",
+  "introduction": [
+    "Sword Saints are warriors who walk the path already taken by another, looking to achieve such legendary skills that they, too, will be remembered by history. The true Sword Saints of the past were figures who achieved a level of skill beyond mastery in their craft. Though modern practitioners call themselves Sword Saints, this is only to draw a parallel between themselves and these heroes; in practice, they would usually only call themselves warriors, fighters, samurai, or otherwise. It is unbecoming for them to address themselves as Sword Saints unless they are arrogant, but this does not always stop them. \u2018Phantom saint\u2019 is a term they commonly use, describing their emulation of an ancient swordmaster\u2019s lifestyle, combat skills, and practices until they come truly into their own."
+  ],
+  "lore_sections": [
+    {
+      "title": "The Tools of the Swordsman",
+      "paragraphs": [
+        "The Sword Saint relies on special techniques that involve converting mental acuity and focus into short feats of superhuman ability. They utilize their own spiritual energy while performing this technique, enabling them to do everything from summon elemental energy to conjuring up tools and poisons. These techniques are called focus techniques, and each ancient Sword Saint passed down theirs in their stories and teachings. Techniques outside these exist as esoteric techniques, mastered by individual practitioners and stored on scrolls, in temples, etc. Esoteric techniques are difficult to find and often incomplete compared to the mastered techniques passed down by Sword Saints."
+      ]
+    },
+    {
+      "title": "Warriors by a Creed",
+      "paragraphs": [
+        "The Sword Saints seek power for a reason, and not necessarily one based on good intentions. They want to create the perfect version of themselves and turn into a symbol for people to fear, respect, vilify, or honor. Even those that wouldn\u2019t admit this know it must be the result of their final goal since a Sword Saint must, by definition, be the paramount warrior of their generation. Most of them structure themselves as they see fit, setting rules and principles they will always follow: some never kill the innocent, some never draw their weapon first, some protect the weak. These tendencies help to give form to their personal sense of duty, but more importantly can be noted and used when others tell their story.",
+        "Despite their need for historic validation, there is one unifying principle that is always true: the stories told of them must be inspired, not fabricated. A Sword Saint will not embellish or brag of their accomplishments. Any significant deeds they do must be recorded honestly and passed down by those inspired to do so."
+      ]
+    },
+    {
+      "title": "Creating a Sword Saint",
+      "paragraphs": [
+        "When making a Sword Saint you should consider which weapon types you plan to focus on. The various Paths of Devotion focus on different weapon sets, with the fighting styles indicating which is which. Your character can live a variety of lives depending on what their focus might be: some want to be remembered, some look for strength to protect a community or person, and some have a bloodline legacy to live up to. You should consider why your character so deeply dedicates themselves to improving their skills and, if they ever achieve the prowess they seek, what they plan to do with it.",
+        "Perhaps they have a master they serve or served; a mentor may have charged them with aspiring to greatness or carrying on a legacy. The inciting incident for their goals could have been a personal introspective one, or just being inspired by a great warrior they saw or heard about."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "You can quickly make a Sword Saint by following these suggestions: your highest ability score should be Strength or Dexterity depending on the type of weapon you plan to use when you take a Path of Devotion; your Wisdom determines your save DCs, so it should be your next highest; after this, you should focus on Constitution. Finally, take the Inheritor background with the inherited gift being something that helps you learn your path."
+  },
+  "multiclassing": {
+    "kicker": "Optional Rule",
+    "title": "Multiclassing",
+    "paragraphs": [
+      "The following are the requirements to multiclass into a Sword Saint."
+    ],
+    "items": [
+      {
+        "label": "Ability Score Minimum",
+        "value": "Dexterity 15 and Wisdom 13."
+      },
+      {
+        "label": "Proficiencies Gained",
+        "value": "Light and medium armor, shields, simple and martial weapons."
+      },
+      {
+        "label": "Tools",
+        "value": "None."
+      }
+    ]
+  },
+  "mechanics": {
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d10 per Sword Saint level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "10 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d10 (or 6) \u002B your Constitution modifier per Sword Saint level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light armor, medium armor, shields"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple weapons, martial weapons"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Strength, Wisdom"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose three skills from Acrobatics, Athletics, Deception, History, Insight, Intimidation, Medicine, Perception, Survival"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "None"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) chain shirt or (b) studded leather, a longbow, 20 arrows",
+                    "(a) a martial weapon and a shield or (b) two martial weapons",
+                    "(a) a light crossbow and 20 bolts or (b) 4 javelins",
+                    "(a) a scholar\u2019s pack or (b) an explorer\u2019s pack"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Sword Saints begin at level 1 with 5d4 \u00D7 10 (120) gold pieces."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Sword Saint",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "focus_points",
+          "label": "Focus Points"
+        },
+        {
+          "key": "focus_max",
+          "label": "Focus Max"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": "Focus Channeling",
+          "focus_points": "6",
+          "focus_max": "3"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Dragon Surge",
+          "focus_points": "7",
+          "focus_max": "3"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Path of Devotion",
+          "focus_points": "8",
+          "focus_max": "4"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": "Ability Score Improvement",
+          "focus_points": "9",
+          "focus_max": "4"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Extra Attack",
+          "focus_points": "10",
+          "focus_max": "5"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Devotion Feature",
+          "focus_points": "11",
+          "focus_max": "5"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Fighting Style Advancement",
+          "focus_points": "12",
+          "focus_max": "6"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement",
+          "focus_points": "13",
+          "focus_max": "6"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Burgeoning Mastery",
+          "focus_points": "14",
+          "focus_max": "7"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Fighting Style Advancement (2nd)",
+          "focus_points": "15",
+          "focus_max": "7"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Devotion Feature",
+          "focus_points": "16",
+          "focus_max": "8"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement",
+          "focus_points": "17",
+          "focus_max": "8"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Extra Attack",
+          "focus_points": "18",
+          "focus_max": "9"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Saint Weapon Bond, Devotion Feature",
+          "focus_points": "19",
+          "focus_max": "9"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Fighting Style Advancement (3rd)",
+          "focus_points": "20",
+          "focus_max": "10"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement",
+          "focus_points": "21",
+          "focus_max": "10"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Devotion Feature",
+          "focus_points": "22",
+          "focus_max": "11"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Soul of Luxus",
+          "focus_points": "23",
+          "focus_max": "11"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement",
+          "focus_points": "24",
+          "focus_max": "12"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Unwavering Legend",
+          "focus_points": "25",
+          "focus_max": "12"
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Focus Channeling",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You have a number of focus points equal to 5 \u002B your level as a Sword Saint. Focus can be spent on various abilities you gain as a Sword Saint, automatically gaining the abilities listed under Sword Saint focus techniques. You can only use a number of focus points each turn equal to half your Sword Saint level (rounded up) plus two."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unless otherwise stated, the save DC for all of your Sword Saint features and focus techniques is 8 \u002B your proficiency bonus \u002B your Wisdom modifier."
+          },
+          {
+            "type": "paragraph",
+            "text": "You regain your spent focus points whenever you complete a Long Rest, and when you complete a Short Rest you regain half your focus points (rounded up)."
+          },
+          {
+            "type": "subsection",
+            "title": "Sword Saint Focus Techniques",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "As a Sword Saint, you automatically know the following focus techniques:"
+              },
+              {
+                "type": "subsection",
+                "title": "Adept Moment",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When you make a skill check with a skill you have proficiency in, you may spend 1 focus point to add a bonus to that roll equal to your proficiency bonus, unless you would already have added it a second time (such as through Expertise)."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Cunning Vertical",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "On your turn, you may spend 1 focus point to take the Disengage action as a bonus action."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Falcon Wing Deflection",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You may spend 2 focus points as a reaction to a melee weapon attack being made against you to gain a bonus to your Armor Class equal to your proficiency bonus, which applies before resolving the triggering attack. This bonus lasts until the start of your next turn. You must be wielding a weapon you have proficiency to use this reaction. If you are restrained or knocked prone you lose the bonus from this effect."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Falter Fleeting",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "As a bonus action, you can spend 1 focus point to move an additional number of feet equal to 10 \u00D7 your proficiency bonus (as long as your movement speed isn\u2019t 0), which must be taken by the end of this turn and may be used as part of any movement type you have access to. This does not increase your movement speed(s)."
+                  }
+                ]
+              },
+              {
+                "type": "subsection",
+                "title": "Overwhelming Advance",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When you miss a creature with a weapon attack you can spend 1 focus point to roll a d20 and must use the result in place of the d20 of your attack roll, possibly changing the outcome of the attack."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dragon Surge",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can expend 2 focus points on your turn to take an additional action. This feature cannot be used twice on the same turn or during the same turn when you use another feature that allows you to take another action (such as a Fighter\u2019s Action Surge). Each time you use Dragon Surge, the number of focus points it costs increases by 1 until the next time you complete a Short or Long Rest."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you use your Dragon Surge your movement speed increases until the end of your turn by 5 feet \u00D7 the number of focus points it costs."
+          }
+        ]
+      },
+      {
+        "name": "Path of Devotion",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You choose a Path of Devotion. You pledge yourself to a style of combat and lifestyle from the paths of devotion listed, and gain the 3rd-level features listed. You gain that Path\u2019s other features at the Sword Saint levels listed."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Extra Attack",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can attack twice instead of once when you take the Attack action on your turn. When you reach 13th level as a Sword Saint you can attack three times instead."
+          }
+        ]
+      },
+      {
+        "name": "Fighting Style Advancement",
+        "level": "7",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Once at 7th level, then again at 10th and 15th level each, you advance one of your Fighting Styles. If you have none to advance, you may choose a new one to gain instead. If you choose a new one, choose from the following:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Archery",
+              "Blind Fighting",
+              "Defense",
+              "Dueling",
+              "Great Weapon Fighting",
+              "Gun Expert",
+              "Interception",
+              "Proficiency (Polearm)",
+              "Proficiency (Two-Handed)",
+              "Two-Weapon Fighting"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Burgeoning Mastery",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Your personal mastery of your skills develops in a direction unrelated to your Path of Devotion. When you gain this feature, choose one saving throw you are not proficient in. You gain proficiency in that saving throw."
+          }
+        ]
+      },
+      {
+        "name": "Saint Weapon Bond",
+        "level": "14",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You may attune yourself to a specific weapon of your choice and allow your spirit to connect to it. To do so you must perform a ritual over the course of a Short Rest, requiring incense and other materials unique to your traditions that are collectively worth 500 gold pieces."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mixing these materials with a drop of your own blood, you imbue the weapon with a connection to your spirit that marks it as yours. Its hue may change, and the weapon may gain new aesthetic characteristics in response to your spirit. This weapon is now considered to be your Saint Weapon. Creating a new Saint Weapon breaks your connection with the first."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can attune to this Saint Weapon as if it were a magical item, and if you do you gain the following benefits:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "If it is a weapon that requires ammunition, it can now create unremarkable ammunition magically when used (if it must reload, creating new ammunition takes the same action you would take to reload it).",
+              "If it is a thrown weapon, you can use a bonus action to recall it if it is within 100 feet of you, causing it to fly into your hands.",
+              "You gain a \u002B1 bonus to attack and damage rolls made with it.",
+              "Attacks you make with it are magical.",
+              "You no longer have a limit to the number of focus points you can spend each turn, but if you have passed that limit and use a focus technique requiring an attack roll you must use your Saint Weapon for that attack.",
+              "Any benefits that would normally be gained from attuning to that item."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "If you lose this weapon you always know which direction it\u2019s in and the condition of the weapon."
+          }
+        ]
+      },
+      {
+        "name": "Soul of Luxus",
+        "level": "18",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you complete a Short Rest you regain all of your spent focus points."
+          }
+        ]
+      },
+      {
+        "name": "Unwavering Legend",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you are reduced to 0 hit points you do not fall unconscious or begin dying. Instead, you can continue acting as normal while making death saves (as though dying) until you regain hit points, and suffer a death save failure each time you take damage. Each time you would fail a death saving throw you can spend 1 focus point to negate the failure(s). While in this state you cannot regain focus points by any means."
+          }
+        ]
+      }
+    ]
+  }
+}

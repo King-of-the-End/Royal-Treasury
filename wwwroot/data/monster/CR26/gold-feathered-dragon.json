@@ -1,0 +1,212 @@
+{
+  "Name": "Gold Feathered Dragon",
+  "Group": "Feathered Dragons",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "",
+  "Stat Blocks": [
+    {
+      "id": "gold_feathered_dragon",
+      "section_type": "Stat Block",
+      "title": "Gold Feathered Dragon",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "dragon (metallic)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "22 (natural armor)",
+      "hit_points": "574 (28d20 + 280)",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "120 ft.",
+        "swim": "60 ft."
+      },
+      "quality_traits": [
+        "Eidolic"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 30,
+          "modifier": "+10"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 30,
+          "modifier": "+10"
+        },
+        "INT": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "WIS": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 30,
+          "modifier": "+10"
+        }
+      },
+      "saving_throws": [
+        "Dex +12",
+        "Con +18",
+        "Wis +12",
+        "Cha +18"
+      ],
+      "skills": [
+        "Insight +12",
+        "Perception +20",
+        "Persuasion +18",
+        "Stealth +12"
+      ],
+      "immunities": [
+        "fire"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "exhaustion"
+      ],
+      "senses": [
+        "truesight 120 ft.",
+        "passive Perception 30"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "challenge_rating": "26 (90,000 XP)",
+      "proficiency_bonus": "+8",
+      "traits": [
+        {
+          "name": "Uncanny Corrosion",
+          "name_format": "bold_italic",
+          "description": "Fire damage from the dragon ignores resistances, and immunity to fire damage only reduces the damage to half instead. This does not apply to damage the dragon might deal to itself."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      },
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes one Bite and two Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +18 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 10) piercing damage plus 18 (3d12) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +18 to hit, reach 10 ft., one target. Hit: 18 (2d8 + 10) slashing damage. If the target is Huge or smaller, it is restrained and grappled (escape DC 20). While grappling a creature it cannot make Claw attacks except one each turn against the grappled creature.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +18 to hit, reach 20 ft., one target. Hit: 22 (2d12 + 10) bludgeoning damage. If the target is a creature, it must succeed a DC 26 Strength saving throw or be knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Breath Weapon (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon uses one of its breath weapon options (Golden Fire Breath or Seizing Breath).",
+          "options": [
+            {
+              "name": "Golden Fire Breath",
+              "name_format": "bold_italic",
+              "description": "The dragon breathes a radiant burst of fire at a point it can see within 300 feet, which explodes in a 60-foot-radius sphere of radiant fire. All creatures within range must make a DC 26 Dexterity saving throw, taking 88 (16d10) fire damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+              "name": "Seizing Breath",
+              "name_format": "bold_italic",
+              "description": "The dragon breathes a wave of gas in a 300-foot-cone. Each creature in that area must succeed on a DC 26 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature who fails the last save they made against this effect by 10 or more can only take an action or bonus action on their turn, but not both."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its Multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Beyond the Web (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When one or more creatures within 120 feet of the feathered dragon is targeted by the same magical effect or spell (except itself), the feathered dragon may grant them a +5 bonus on the first save they make against it."
+        },
+        {
+          "name": "Reflecting Shield",
+          "name_format": "bold_italic",
+          "description": "When the dragon or a creature within 60 feet of it is targeted by an attack, the dragon can create a radiant shield around them that increases their AC by 5 until the end of the turn. Any melee attack that hits them breaks this shield, but if a ranged attack against them misses while the shield is up, the attack is magically reflected back at the attacker (even if it doesn’t have the remaining range), made as a Ranged Weapon Attack: +12 to hit (or Ranged Spell Attack if it was a spell)."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions (3 Actions)",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "cost": 1,
+            "description": "The dragon makes one Claw or Tail attack."
+          },
+          {
+            "name": "Wing Attack",
+            "name_format": "bold_italic",
+            "cost": 2,
+            "description": "The dragon beats its wings, spreading flames from its body. Each creature within 20 feet of it must succeed on a DC 26 Dexterity saving throw or take 16 (1d12 + 10) bludgeoning damage plus 6 (1d12) fire damage and be knocked prone. The dragon can then fly up to half its flying speed."
+          },
+          {
+            "name": "Infernal Metal",
+            "name_format": "bold_italic",
+            "cost": 3,
+            "description": "All metal within 120 feet of the dragon becomes briefly super-heated, forcing all creatures in contact with metal surfaces, armor, weapons or possessions to make a DC 26 Constitution saving throw, taking 18 (3d12) fire damage on a failed save. A creature holding a metal object can choose to drop the item to avoid the damage."
+          }
+        ]
+      },
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Reactions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "raw_text": "**GOLD FEATHERED DRAGON**\n*Gargantuan dragon (metallic), lawful good*\n**AC** 22 (natural armor)\n**HP** 574 (28d20 + 280)\n**Speed** 60 ft., fly 120 ft., swim 60 ft.\n**STR** 30 (+10) | **DEX** 18 (+4) | **CON** 30 (+10) | **INT** 22 (+6) | **WIS** 19 (+4) | **CHA** 30 (+10)\n**Saving Throws** Dex +12, Con +18, Wis +12, Cha +18\n**Skills** Insight +12, Perception +20, Persuasion +18, Stealth +12\n**Immunities** fire\n**Condition Immunities** charmed, frightened, exhaustion\n**Senses** truesight 120 ft., passive Perception 30\n**Languages** Common, Draconic\n**CR** 26 (90,000 XP) **Proficiency Bonus** +8\n\n**TRAITS**\n*Eidolic*\n\n**LEGENDARY REACTIONS** (4 uses)\nTBA\n\n***Uncanny Corrosion.*** Fire damage from the dragon ignores resistances, and immunity to fire damage only reduces the damage to half instead. This does not apply to damage the dragon might deal to itself.\n\n**ACTIONS**\n***Multiattack.*** The dragon makes one Bite and two Claw attacks.\n\n***Bite.*** *Melee Weapon Attack:* +18 to hit, reach 15 ft., one target. *Hit:* 20 (2d10 + 10) piercing damage plus 18 (3d12) fire damage.\n\n***Claw.*** *Melee Weapon Attack:* +18 to hit, reach 10 ft., one target. *Hit:* 18 (2d8 + 10) slashing damage. If the target is Huge or smaller, it is restrained and grappled (escape DC 20). While grappling a creature it cannot make Claw attacks except one each turn against the grappled creature.\n\n***Tail.*** *Melee Weapon Attack:* +18 to hit, reach 20 ft., one target. *Hit:* 22 (2d12 + 10) bludgeoning damage. If the target is a creature, it must succeed a DC 26 Strength saving throw or be knocked prone.\n\n***Breath Weapon (Recharge 5-6).*** The dragon uses one of its breath weapon options (Golden Fire Breath or Seizing Breath).\n• ***Golden Fire Breath.*** The dragon breathes a radiant burst of fire at a point it can see within 300 feet, which explodes in a 60-foot-radius sphere of radiant fire. All creatures within range must make a DC 26 Dexterity saving throw, taking 88 (16d10) fire damage on a failed save, or half as much damage on a successful one.\n• ***Seizing Breath.*** The dragon breathes a wave of gas in a 300-foot-cone. Each creature in that area must succeed on a DC 26 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature who fails the last save they made against this effect by 10 or more can only take an action or bonus action on their turn, but not both.\n\n**BONUS ACTIONS**\n***Change Shape.*** The dragon transforms into any creature that is Medium, Small or Tiny, while retaining its game statistics (other than its size), though if it is Tiny it cannot use its Multiattack. This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it.\n\n**REACTIONS**\n***Beyond the Web (Recharge 5-6).*** When one or more creatures within 120 feet of the feathered dragon is targeted by the same magical effect or spell (except itself), the feathered dragon may grant them a +5 bonus on the first save they make against it.\n\n***Reflecting Shield.*** When the dragon or a creature within 60 feet of it is targeted by an attack, the dragon can create a radiant shield around them that increases their AC by 5 until the end of the turn. Any melee attack that hits them breaks this shield, but if a ranged attack against them misses while the shield is up, the attack is magically reflected back at the attacker (even if it doesn’t have the remaining range), made as a *Ranged Weapon Attack:* +12 to hit (or *Ranged Spell Attack* if it was a spell).\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Attack.*** The dragon makes one Claw or Tail attack.\n***Wing Attack (Costs 2 Actions).*** The dragon beats its wings, spreading flames from its body. Each creature within 20 feet of it must succeed on a DC 26 Dexterity saving throw or take 16 (1d12 + 10) bludgeoning damage plus 6 (1d12) fire damage and be knocked prone. The dragon can then fly up to half its flying speed.\n***Infernal Metal (Costs 3 Actions).*** All metal within 120 feet of the dragon becomes briefly super-heated, forcing all creatures in contact with metal surfaces, armor, weapons or possessions to make a DC 26 Constitution saving throw, taking 18 (3d12) fire damage on a failed save. A creature holding a metal object can choose to drop the item to avoid the damage."
+    }
+  ]
+}

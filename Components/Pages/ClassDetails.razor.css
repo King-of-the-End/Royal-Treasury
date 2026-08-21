@@ -2163,7 +2163,12 @@
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
-    table-layout: auto;
+
+    /*
+       Fixed layout is deliberate here: the table is never allowed to grow
+       wider than the class content area. Cells wrap vertically instead.
+    */
+    table-layout: fixed;
 }
 
 /* Reset the generic table rules that make ordinary tables scroll. */
@@ -2187,10 +2192,15 @@
     text-align: center;
 }
 
-/* Body values stay compact unless they are feature descriptions. */
+/*
+   Body cells are allowed to wrap, so a wide class progression table grows
+   downward instead of pushing columns off the right side of the page. Short
+   numeric values still naturally remain on one line.
+*/
 #advancement .class-table td,
 .class-page ::deep #advancement .class-table td {
-    white-space: nowrap !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
     line-height: 1.28;
     text-align: center;
 }
@@ -2200,21 +2210,32 @@
     width: 36%;
     min-width: 0 !important;
     white-space: normal !important;
+    overflow-wrap: break-word !important;
     text-align: left;
 }
 
 /* The browser can grow Features into the spare space, but not starve the rest. */
 #advancement .class-table .table-col-level,
 .class-page ::deep #advancement .class-table .table-col-level {
-    width: 1%;
-    white-space: nowrap !important;
+    width: 5%;
 }
 
 #advancement .class-table .table-col-proficiency-bonus,
 #advancement .class-table .table-col-bonus,
 .class-page ::deep #advancement .class-table .table-col-proficiency-bonus,
 .class-page ::deep #advancement .class-table .table-col-bonus {
-    width: 1%;
+    width: 10%;
+}
+
+/* Keep only truly compact progression values on one line. */
+#advancement .class-table td.table-level,
+#advancement .class-table td.table-col-proficiency-bonus,
+#advancement .class-table td.table-col-bonus,
+#advancement .class-table td[class*="table-col-slot-"],
+.class-page ::deep #advancement .class-table td.table-level,
+.class-page ::deep #advancement .class-table td.table-col-proficiency-bonus,
+.class-page ::deep #advancement .class-table td.table-col-bonus,
+.class-page ::deep #advancement .class-table td[class*="table-col-slot-"] {
     white-space: nowrap !important;
 }
 
@@ -2379,3 +2400,506 @@
     }
 }
 
+/* =========================================================
+   SHARED OPTION CARDS
+
+   Used by option-style appendices such as:
+   - Primeval Birthrights
+   - Artificer Infusions
+   - Jaeger Focus Arts
+   - Jaeger Finishers
+   - Imperator Techniques
+   - Magus Magecraft Features
+
+   These rules intentionally leave every other class-page style
+   unchanged and only provide the birthright-style card treatment
+   for the newer option-card renderer.
+   ========================================================= */
+
+.option-card-list,
+.class-page ::deep .option-card-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.4rem;
+}
+
+.option-card,
+.class-page ::deep .option-card {
+    min-width: 0;
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(145, 23, 28, 0.28);
+
+    border-left:
+        3px solid
+        rgba(164, 24, 30, 0.8);
+
+    border-top:
+        3px solid
+        rgba(178, 28, 35, 0.8);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(100, 21, 24, 0.12),
+            rgba(0, 0, 0, 0.16) 65%
+        );
+}
+
+.option-card > summary,
+.class-page ::deep .option-card > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.option-card > summary::-webkit-details-marker,
+.class-page ::deep .option-card > summary::-webkit-details-marker {
+    display: none;
+}
+
+.option-card-header,
+.class-page ::deep .option-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding:
+        1.25rem
+        1.35rem
+        0.95rem;
+
+    border-bottom:
+        1px solid
+        rgba(218, 177, 73, 0.20);
+}
+
+.option-card:not([open]) > .option-card-header,
+.class-page ::deep .option-card:not([open]) > .option-card-header {
+    border-bottom-color: transparent;
+}
+
+.option-card-title,
+.class-page ::deep .option-card-title {
+    min-width: 0;
+
+    color: var(--gold-light);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            1.35rem,
+            2.2vw,
+            1.8rem
+        );
+
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.option-card-chevron,
+.class-page ::deep .option-card-chevron {
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.65rem;
+    height: 1.65rem;
+
+    color: var(--gold-light);
+
+    font-size: 1.35rem;
+    line-height: 1;
+
+    transform: rotate(0deg);
+    transition: transform 160ms ease;
+}
+
+.option-card[open] .option-card-chevron,
+.class-page ::deep .option-card[open] .option-card-chevron {
+    transform: rotate(180deg);
+}
+
+.option-card-body,
+.class-page ::deep .option-card-body {
+    padding:
+        0.15rem
+        1.35rem
+        1.25rem;
+}
+
+.option-card .class-prerequisite,
+.class-page ::deep .option-card .class-prerequisite {
+    margin:
+        0
+        0
+        0.8rem;
+
+    color:
+        rgba(222, 189, 118, 0.88);
+
+    font-size: 0.88rem;
+    font-style: italic;
+}
+
+.option-card > summary:hover .option-card-title,
+.option-card > summary:focus-visible .option-card-title,
+.class-page ::deep .option-card > summary:hover .option-card-title,
+.class-page ::deep .option-card > summary:focus-visible .option-card-title {
+    color: #ffe59a;
+}
+
+.option-card > summary:focus-visible,
+.class-page ::deep .option-card > summary:focus-visible {
+    outline:
+        2px solid
+        rgba(239, 207, 125, 0.7);
+
+    outline-offset: -2px;
+}
+
+@media (max-width: 950px) {
+    .option-card-list,
+    .class-page ::deep .option-card-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .option-card-header,
+    .class-page ::deep .option-card-header {
+        padding:
+            1.1rem
+            1rem
+            0.85rem;
+    }
+
+    .option-card-body,
+    .class-page ::deep .option-card-body {
+        padding:
+            0.1rem
+            1rem
+            1rem;
+    }
+}
+
+/* =========================================================
+   END-OF-FILE OPTION FEATURES
+   =========================================================
+   These cards now use the exact same .class-feature markup as
+   normal mechanics features. This wrapper only controls spacing.
+   All visual styling and collapse behaviour comes from the
+   existing .class-feature / .class-feature-header rules above.
+*/
+
+.class-option-feature-list,
+.class-page ::deep .class-option-feature-list {
+    display: block;
+    margin-top: 1.4rem;
+}
+
+.class-option-feature,
+.class-page ::deep .class-option-feature {
+    width: 100%;
+}
+
+/* =========================================================
+   EITHER / OR CLASS FEATURES
+   Example: Bard Countercharm OR Persistent Inspiration
+   ========================================================= */
+
+.class-choice-label,
+.class-page ::deep .class-choice-label {
+    margin: 0 0 1rem;
+    color: var(--gold-light);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.class-feature-alternatives,
+.class-page ::deep .class-feature-alternatives {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.class-feature-alternative,
+.class-page ::deep .class-feature-alternative {
+    min-width: 0;
+    padding: 1.15rem 1.2rem;
+    border: 1px solid rgba(151, 31, 34, 0.42);
+    border-top: 3px solid rgba(178, 28, 35, 0.78);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(88, 19, 22, 0.12),
+            rgba(0, 0, 0, 0.12)
+        );
+}
+
+.class-feature-alternative h4,
+.class-page ::deep .class-feature-alternative h4 {
+    margin: 0 0 0.8rem;
+    color: var(--gold-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.class-feature-or,
+.class-page ::deep .class-feature-or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+@media (max-width: 800px) {
+    .class-feature-alternatives,
+    .class-page ::deep .class-feature-alternatives {
+        grid-template-columns: 1fr;
+    }
+
+    .class-feature-or,
+    .class-page ::deep .class-feature-or {
+        min-height: 1.5rem;
+    }
+}
+
+/* =========================================================
+   SAFE ADVANCEMENT TABLE WRAPPING
+   Only affects the Advancement table.
+   No Razor/render-tree changes required.
+   ========================================================= */
+
+#advancement .class-table-scroll,
+.class-page ::deep #advancement .class-table-scroll {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+}
+
+#advancement .class-table,
+.class-page ::deep #advancement .class-table {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    font-size: clamp(0.72rem, 0.64rem + 0.12vw, 0.95rem);
+}
+
+#advancement .class-table th,
+#advancement .class-table td,
+.class-page ::deep #advancement .class-table th,
+.class-page ::deep #advancement .class-table td {
+    min-width: 0;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    vertical-align: middle;
+    line-height: 1.22;
+}
+
+/* Give the feature column most of the available room. */
+#advancement .class-table th:nth-child(3),
+#advancement .class-table td:nth-child(3),
+.class-page ::deep #advancement .class-table th:nth-child(3),
+.class-page ::deep #advancement .class-table td:nth-child(3) {
+    width: 42%;
+    text-align: left;
+}
+
+/* Compact the two leading columns. */
+#advancement .class-table th:nth-child(1),
+#advancement .class-table td:nth-child(1),
+.class-page ::deep #advancement .class-table th:nth-child(1),
+.class-page ::deep #advancement .class-table td:nth-child(1) {
+    width: 6%;
+    white-space: nowrap;
+}
+
+#advancement .class-table th:nth-child(2),
+#advancement .class-table td:nth-child(2),
+.class-page ::deep #advancement .class-table th:nth-child(2),
+.class-page ::deep #advancement .class-table td:nth-child(2) {
+    width: 9%;
+}
+
+/* Only mobile may scroll horizontally. */
+@media (max-width: 768px) {
+    #advancement .class-table-scroll,
+    .class-page ::deep #advancement .class-table-scroll {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #advancement .class-table,
+    .class-page ::deep #advancement .class-table {
+        width: max-content;
+        min-width: 900px;
+        max-width: none;
+        table-layout: auto;
+        font-size: 0.8rem;
+    }
+
+    #advancement .class-table th,
+    #advancement .class-table td,
+    .class-page ::deep #advancement .class-table th,
+    .class-page ::deep #advancement .class-table td {
+        word-break: normal;
+        overflow-wrap: normal;
+        hyphens: none;
+    }
+
+    #advancement .class-table th:nth-child(3),
+    #advancement .class-table td:nth-child(3),
+    .class-page ::deep #advancement .class-table th:nth-child(3),
+    .class-page ::deep #advancement .class-table td:nth-child(3) {
+        min-width: 20rem;
+        width: auto;
+    }
+}
+
+/* =========================================================
+   FINAL ADVANCEMENT TABLE LAYOUT OVERRIDE
+   Desktop:
+   - numeric/stat columns stay compact
+   - Features consumes all remaining width
+   - rows grow vertically as feature text wraps
+   - words are NEVER split
+   Mobile:
+   - horizontal scrolling is allowed
+   ========================================================= */
+
+@media (min-width: 769px) {
+    #advancement .class-table,
+    .class-page ::deep #advancement .class-table {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        table-layout: auto !important;
+    }
+
+    /* Every cell may wrap at normal spaces. Never split a word. */
+    #advancement .class-table th,
+    #advancement .class-table td,
+    .class-page ::deep #advancement .class-table th,
+    .class-page ::deep #advancement .class-table td {
+        min-width: 0 !important;
+        max-width: none !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+    }
+
+    /*
+       All non-feature columns shrink to the width of their contents.
+       This leaves the maximum possible horizontal room for Features.
+    */
+    #advancement .class-table th:not(.table-features),
+    #advancement .class-table td:not(.table-features),
+    .class-page ::deep #advancement .class-table th:not(.table-features),
+    .class-page ::deep #advancement .class-table td:not(.table-features) {
+        width: 1% !important;
+        white-space: nowrap !important;
+    }
+
+    /*
+       CRITICAL FIX:
+       Overrides the older table-cols-12/13/14/etc rules that were
+       forcing the Features column down to 24%.
+    */
+    #advancement .class-table .table-features,
+    #advancement .class-table.table-cols-9 .table-features,
+    #advancement .class-table.table-cols-10 .table-features,
+    #advancement .class-table.table-cols-11 .table-features,
+    #advancement .class-table.table-cols-12 .table-features,
+    #advancement .class-table.table-cols-13 .table-features,
+    #advancement .class-table.table-cols-14 .table-features,
+    #advancement .class-table.table-cols-15 .table-features,
+    #advancement .class-table.table-cols-16 .table-features,
+    #advancement .class-table.table-cols-17 .table-features,
+    #advancement .class-table.table-cols-18 .table-features,
+    .class-page ::deep #advancement .class-table .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-9 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-10 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-11 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-12 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-13 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-14 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-15 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-16 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-17 .table-features,
+    .class-page ::deep #advancement .class-table.table-cols-18 .table-features {
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+        text-align: left !important;
+    }
+
+    /*
+       If feature names are wrapped in spans, keep the whole feature
+       together when it fits, but allow it to wrap internally if it is
+       too long for the available feature column.
+    */
+    #advancement .advancement-feature-name,
+    #advancement .table-feature-name,
+    .class-page ::deep #advancement .advancement-feature-name,
+    .class-page ::deep #advancement .table-feature-name {
+        display: inline-block;
+        max-width: 100%;
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+    }
+}
+
+/* Mobile remains horizontally scrollable and readable. */
+@media (max-width: 768px) {
+    #advancement .class-table-scroll,
+    .class-page ::deep #advancement .class-table-scroll {
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #advancement .class-table,
+    .class-page ::deep #advancement .class-table {
+        width: max-content !important;
+        min-width: 900px !important;
+        max-width: none !important;
+        table-layout: auto !important;
+    }
+
+    #advancement .class-table .table-features,
+    .class-page ::deep #advancement .class-table .table-features {
+        min-width: 18rem !important;
+        max-width: 28rem !important;
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+    }
+}

@@ -302,6 +302,17 @@
         }
     }
 
+    private int ActiveMechanicsTabIndex
+    {
+        get
+        {
+            var value = ReadQueryValue("mechanicsTab");
+            return int.TryParse(value, out var index) && index >= 0
+                ? index
+                : 0;
+        }
+    }
+
     private string? ReadQueryValue(string key)
     {
         if (string.IsNullOrWhiteSpace(currentQuery))
@@ -601,8 +612,9 @@
             if (string.IsNullOrWhiteSpace(slug))
                 return Array.Empty<NavItem>();
 
-            var prefix =
-                $"/classes/{slug}?tab={ActiveClassTab}";
+            var prefix = ActiveClassTab == "mechanics"
+                ? $"/classes/{slug}?tab=mechanics&mechanicsTab={ActiveMechanicsTabIndex}"
+                : $"/classes/{slug}?tab=lore";
 
             var items = new List<NavItem>();
 
@@ -700,8 +712,9 @@
 
                 var root = document.RootElement;
 
-                if (!root.TryGetProperty(
-                    "mechanics",
+                if (!TryGetSelectedMechanics(
+                    root,
+                    ActiveMechanicsTabIndex,
                     out var mechanics))
                 {
                     return items;
@@ -809,6 +822,45 @@
         {
             return null;
         }
+    }
+
+    private static bool TryGetSelectedMechanics(
+        JsonElement root,
+        int requestedIndex,
+        out JsonElement mechanics)
+    {
+        if (root.TryGetProperty("mechanics_tabs", out var mechanicsTabs)
+            && mechanicsTabs.ValueKind == JsonValueKind.Array
+            && mechanicsTabs.GetArrayLength() > 0)
+        {
+            var index = Math.Clamp(
+                requestedIndex,
+                0,
+                mechanicsTabs.GetArrayLength() - 1);
+
+            var selectedTab = mechanicsTabs[index];
+
+            if (selectedTab.TryGetProperty("mechanics", out mechanics)
+                && mechanics.ValueKind == JsonValueKind.Object)
+            {
+                return true;
+            }
+
+            if (selectedTab.TryGetProperty("content", out mechanics)
+                && mechanics.ValueKind == JsonValueKind.Object)
+            {
+                return true;
+            }
+        }
+
+        if (root.TryGetProperty("mechanics", out mechanics)
+            && mechanics.ValueKind == JsonValueKind.Object)
+        {
+            return true;
+        }
+
+        mechanics = default;
+        return false;
     }
 
     private static string? GetPreFeatureTitle(JsonElement section)

@@ -203,6 +203,9 @@ else if (classDocument is not null)
     [SupplyParameterFromQuery(Name = "tab")]
     public string? Tab { get; set; }
 
+    [SupplyParameterFromQuery(Name = "mechanicsTab")]
+    public int? MechanicsTab { get; set; }
+
     private JsonDocument? classDocument;
     private bool isLoading = true;
     private string? errorMessage;
@@ -232,6 +235,17 @@ else if (classDocument is not null)
     private void SetMechanicsTab(int index)
     {
         activeMechanicsTabIndex = index;
+
+        var uri = Navigation.GetUriWithQueryParameters(
+            new Dictionary<string, object?>
+            {
+                ["tab"] = "mechanics",
+                ["mechanicsTab"] = index
+            });
+
+        Navigation.NavigateTo(
+            uri,
+            replace: true);
     }
 
     private RenderFragment RenderMechanicsContent(JsonElement mechanics) => builder =>
@@ -276,8 +290,16 @@ else if (classDocument is not null)
                 builder.AddContent(seq++, RenderPreFeatureSection(section));
 
         if (GetProperty(mechanics, "features") is JsonElement features)
+        {
             foreach (var feature in features.EnumerateArray())
-                builder.AddContent(seq++, RenderFeatureCard(feature));
+            {
+                builder.AddContent(
+                    seq++,
+                    GetProperty(feature, "alternatives") is JsonElement
+                        ? RenderEitherOrFeature(feature)
+                        : RenderFeatureCard(feature));
+            }
+        }
 
         builder.CloseElement();
 
@@ -290,7 +312,7 @@ else if (classDocument is not null)
     {
         isLoading = true;
         errorMessage = null;
-        activeMechanicsTabIndex = 0;
+        activeMechanicsTabIndex = Math.Max(0, MechanicsTab ?? 0);
         activeTab =
             string.Equals(
                 Tab,
@@ -318,9 +340,14 @@ else if (classDocument is not null)
             }
 
             // Find the folder case-insensitively so this also works on Linux/Render.
+            // Resolve every class folder through the same slug-normalisation path.
+            // This keeps Arbiter, hyphenated classes, and all other classes on one loader.
             var classFolderPath = Directory
                 .EnumerateDirectories(classesRoot, "*", SearchOption.TopDirectoryOnly)
-                .FirstOrDefault(path => string.Equals(Path.GetFileName(path), safeSlug, StringComparison.OrdinalIgnoreCase));
+                .FirstOrDefault(path => string.Equals(
+                    ToSlug(Path.GetFileName(path)),
+                    safeSlug,
+                    StringComparison.OrdinalIgnoreCase));
 
             if (classFolderPath is null)
             {
@@ -328,7 +355,12 @@ else if (classDocument is not null)
                 return;
             }
 
-            var preferredNames = new[] { $"{safeSlug}.json", "class.json" };
+            var preferredNames = new[]
+            {
+                $"{safeSlug}.json",
+                $"{safeSlug.Replace('-', '_')}.json",
+                "class.json"
+            };
             string? jsonFilePath = null;
 
             foreach (var preferredName in preferredNames)
@@ -589,28 +621,325 @@ else if (classDocument is not null)
         builder.CloseElement();
     };
 
+    private RenderFragment RenderEitherOrFeature(JsonElement feature) => builder =>
+    {
+        var seq = 0;
+        var name = GetString(feature, "name") ?? "Feature Choice";
+
+        builder.OpenElement(seq++, "details");
+        builder.AddAttribute(seq++, "class", "class-feature class-feature-choice");
+        builder.AddAttribute(seq++, "id", AnchorId(name));
+        builder.AddAttribute(seq++, "open", true);
+
+        builder.OpenElement(seq++, "summary");
+        builder.AddAttribute(seq++, "class", "class-feature-header");
+
+        builder.OpenElement(seq++, "h3");
+        builder.AddContent(seq++, name);
+        builder.CloseElement();
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-feature-header-actions");
+
+        if (GetValueText(feature, "level") is string level && !string.IsNullOrWhiteSpace(level))
+        {
+            builder.OpenElement(seq++, "span");
+            builder.AddAttribute(seq++, "class", "class-level-badge");
+            builder.AddContent(seq++, $"Level {level}");
+            builder.CloseElement();
+        }
+
+        builder.OpenElement(seq++, "span");
+        builder.AddAttribute(seq++, "class", "class-feature-chevron");
+        builder.AddAttribute(seq++, "aria-hidden", "true");
+        builder.AddContent(seq++, "⌄");
+        builder.CloseElement();
+
+        builder.CloseElement();
+        builder.CloseElement();
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-feature-body");
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-choice-label");
+        builder.AddContent(seq++, GetString(feature, "choice_label") ?? "Choose One");
+        builder.CloseElement();
+
+        if (GetProperty(feature, "alternatives") is JsonElement alternatives &&
+            alternatives.ValueKind == JsonValueKind.Array)
+        {
+            builder.OpenElement(seq++, "div");
+            builder.AddAttribute(seq++, "class", "class-feature-alternatives");
+
+            var first = true;
+            foreach (var alternative in alternatives.EnumerateArray())
+            {
+                if (!first)
+                {
+                    builder.OpenElement(seq++, "div");
+                    builder.AddAttribute(seq++, "class", "class-feature-or");
+                    builder.AddContent(seq++, "OR");
+                    builder.CloseElement();
+                }
+
+                builder.OpenElement(seq++, "article");
+                builder.AddAttribute(seq++, "class", "class-feature-alternative");
+
+                builder.OpenElement(seq++, "h4");
+                builder.AddContent(seq++, GetString(alternative, "name") ?? "Option");
+                builder.CloseElement();
+
+                if (GetString(alternative, "subtitle") is string subtitle &&
+                    !string.IsNullOrWhiteSpace(subtitle))
+                {
+                    builder.OpenElement(seq++, "div");
+                    builder.AddAttribute(seq++, "class", "class-prerequisite");
+                    builder.AddContent(seq++, subtitle);
+                    builder.CloseElement();
+                }
+
+                if (GetProperty(alternative, "blocks") is JsonElement blocks)
+                {
+                    foreach (var block in blocks.EnumerateArray())
+                        builder.AddContent(seq++, RenderBlock(block));
+                }
+
+                builder.CloseElement();
+                first = false;
+            }
+
+            builder.CloseElement();
+        }
+
+        builder.CloseElement();
+        builder.CloseElement();
+    };
+
     private RenderFragment RenderAppendix(JsonElement appendix) => builder =>
     {
         var seq = 0;
+        var title = GetString(appendix, "title") ?? "Appendix";
+        var optionCards =
+            string.Equals(
+                GetString(appendix, "style"),
+                "option-cards",
+                StringComparison.OrdinalIgnoreCase)
+            || string.Equals(
+                title,
+                "Artificer Infusions",
+                StringComparison.OrdinalIgnoreCase)
+            || GetProperty(appendix, "entries") is JsonElement;
+
         builder.OpenElement(seq++, "section");
-        builder.AddAttribute(seq++, "class", "class-feature-chapter");
-        builder.AddAttribute(
-            seq++,
-            "id",
-            AnchorId(GetString(appendix, "title") ?? "appendix"));
-        builder.OpenElement(seq++, "header"); builder.AddAttribute(seq++, "class", "class-chapter-heading");
-        if (GetString(appendix, "kicker") is string kicker) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-section-kicker"); builder.AddContent(seq++, kicker); builder.CloseElement(); }
-        builder.OpenElement(seq++, "h2"); builder.AddContent(seq++, GetString(appendix, "title")); builder.CloseElement();
+        builder.AddAttribute(seq++, "class", optionCards ? "class-feature-chapter option-card-section" : "class-feature-chapter");
+        builder.AddAttribute(seq++, "id", AnchorId(title));
+
+        builder.OpenElement(seq++, "header");
+        builder.AddAttribute(seq++, "class", "class-chapter-heading");
+        if (GetString(appendix, "kicker") is string kicker)
+        {
+            builder.OpenElement(seq++, "div");
+            builder.AddAttribute(seq++, "class", "class-section-kicker");
+            builder.AddContent(seq++, kicker);
+            builder.CloseElement();
+        }
+        builder.OpenElement(seq++, "h2");
+        builder.AddContent(seq++, title);
+        builder.CloseElement();
         builder.CloseElement();
 
-        if (GetProperty(appendix, "intro") is JsonElement intro) builder.AddContent(seq++, RenderParagraphs(intro));
+        if (GetProperty(appendix, "intro") is JsonElement intro)
+            builder.AddContent(seq++, RenderParagraphs(intro));
+
         if (GetProperty(appendix, "intro_blocks") is JsonElement introBlocks)
-            foreach (var block in introBlocks.EnumerateArray()) builder.AddContent(seq++, RenderBlock(block));
-        if (GetProperty(appendix, "blocks") is JsonElement blocks)
-            foreach (var block in blocks.EnumerateArray()) builder.AddContent(seq++, RenderBlock(block));
-        if (GetProperty(appendix, "features") is JsonElement features)
-            foreach (var feature in features.EnumerateArray()) builder.AddContent(seq++, RenderFeatureCard(feature));
+            foreach (var block in introBlocks.EnumerateArray())
+                builder.AddContent(seq++, RenderBlock(block));
+
+        if (optionCards)
+        {
+            // Introductory/non-option blocks remain full-width above the cards.
+            // Artificer Infusions are stored as ordinary paragraph + subsection
+            // blocks, so paragraphs stay above while each subsection becomes a
+            // collapsible option card.
+            if (GetProperty(appendix, "blocks") is JsonElement leadingBlocks)
+            {
+                foreach (var block in leadingBlocks.EnumerateArray())
+                {
+                    var blockType = GetString(block, "type") ?? "paragraph";
+
+                    if (blockType == "paragraph")
+                    {
+                        builder.AddContent(seq++, RenderBlock(block));
+                        continue;
+                    }
+
+                    if (blockType != "options" && blockType != "subsection")
+                        builder.AddContent(seq++, RenderBlock(block));
+                }
+            }
+
+            builder.OpenElement(seq++, "div");
+            builder.AddAttribute(seq++, "class", "class-option-feature-list");
+
+            if (GetProperty(appendix, "blocks") is JsonElement optionBlocks)
+            {
+                foreach (var block in optionBlocks.EnumerateArray())
+                {
+                    var blockType = GetString(block, "type") ?? "paragraph";
+
+                    if (blockType == "options")
+                    {
+                        var options = GetProperty(block, "options") ?? GetProperty(block, "items");
+                        if (options is JsonElement items && items.ValueKind == JsonValueKind.Array)
+                        {
+                            foreach (var option in items.EnumerateArray())
+                                builder.AddContent(seq++, RenderOptionCard(option));
+                        }
+
+                        continue;
+                    }
+
+                    // Artificer Infusions use subsection blocks instead of an
+                    // options array. Render the subsection itself as the card.
+                    if (blockType == "subsection")
+                        builder.AddContent(seq++, RenderOptionCard(block));
+                }
+            }
+
+            // Alternate Artificer JSON shape: appendices[].entries[]
+            if (GetProperty(appendix, "entries") is JsonElement entries &&
+                entries.ValueKind == JsonValueKind.Array)
+            {
+                foreach (var entry in entries.EnumerateArray())
+                    builder.AddContent(seq++, RenderOptionCard(entry));
+            }
+
+            // Arbiter birthrights historically use appendix.features while the
+            // other option appendices use blocks/options. Render all of them
+            // through the same option-card component.
+            if (GetProperty(appendix, "features") is JsonElement optionFeatures)
+            {
+                foreach (var feature in optionFeatures.EnumerateArray())
+                    builder.AddContent(seq++, RenderOptionCard(feature));
+            }
+
+            builder.CloseElement();
+        }
+        else
+        {
+            if (GetProperty(appendix, "blocks") is JsonElement blocks)
+                foreach (var block in blocks.EnumerateArray())
+                    builder.AddContent(seq++, RenderBlock(block));
+
+            if (GetProperty(appendix, "features") is JsonElement features)
+                foreach (var feature in features.EnumerateArray())
+                    builder.AddContent(seq++, RenderFeatureCard(feature));
+        }
+
         builder.CloseElement();
+    };
+
+    private RenderFragment RenderOptionCard(JsonElement option) => builder =>
+    {
+        var seq = 0;
+        var name = GetString(option, "name") ?? GetString(option, "title") ?? "Option";
+
+        // IMPORTANT:
+        // End-of-file option cards deliberately use the SAME markup/classes
+        // as the normal level-tagged feature cards. This means Birthrights,
+        // Infusions, Focus Arts, Finishers, Techniques, Magecraft Features,
+        // and any future "option-cards" appendix inherit the exact same CSS
+        // and native <details> collapsing behaviour.
+        builder.OpenElement(seq++, "details");
+        builder.AddAttribute(seq++, "class", "class-feature class-option-feature");
+        builder.AddAttribute(seq++, "open", true);
+
+        builder.OpenElement(seq++, "summary");
+        builder.AddAttribute(seq++, "class", "class-feature-header");
+
+        builder.OpenElement(seq++, "h3");
+        builder.AddContent(seq++, name);
+        builder.CloseElement();
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-feature-header-actions");
+
+        builder.OpenElement(seq++, "span");
+        builder.AddAttribute(seq++, "class", "class-feature-chevron");
+        builder.AddAttribute(seq++, "aria-hidden", "true");
+        builder.AddContent(seq++, "⌄");
+        builder.CloseElement();
+
+        builder.CloseElement(); // .class-feature-header-actions
+        builder.CloseElement(); // summary
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-feature-body");
+
+        if (GetString(option, "prerequisite") is string prereq && !string.IsNullOrWhiteSpace(prereq))
+        {
+            builder.OpenElement(seq++, "div");
+            builder.AddAttribute(seq++, "class", "class-prerequisite");
+            builder.AddContent(seq++, $"Prerequisite: {prereq}");
+            builder.CloseElement();
+        }
+        else if (GetString(option, "subtitle") is string subtitle && !string.IsNullOrWhiteSpace(subtitle))
+        {
+            builder.OpenElement(seq++, "div");
+            builder.AddAttribute(seq++, "class", "class-prerequisite");
+            builder.AddContent(seq++, subtitle);
+            builder.CloseElement();
+        }
+
+        if (GetProperty(option, "paragraphs") is JsonElement paragraphs)
+            builder.AddContent(seq++, RenderParagraphs(paragraphs));
+
+        // Artificer entry-shaped JSON stores the infused object separately.
+        if (GetString(option, "item") is string item && !string.IsNullOrWhiteSpace(item))
+        {
+            builder.OpenElement(seq++, "p");
+            builder.OpenElement(seq++, "strong");
+            builder.AddContent(seq++, "Item: ");
+            builder.CloseElement();
+            builder.AddContent(seq++, item);
+            builder.CloseElement();
+        }
+
+        // Artificer entry-shaped JSON stores its body as "description".
+        if (GetProperty(option, "description") is JsonElement description)
+            builder.AddContent(seq++, RenderParagraphs(description));
+
+        if (GetProperty(option, "items") is JsonElement listItems)
+            builder.AddContent(seq++, RenderList(listItems));
+
+        if (GetProperty(option, "blocks") is JsonElement blocks)
+        {
+            foreach (var block in blocks.EnumerateArray())
+                builder.AddContent(seq++, RenderBlock(block));
+        }
+
+        if (GetProperty(option, "note") is JsonElement note)
+        {
+            builder.OpenElement(seq++, "aside");
+            builder.AddAttribute(seq++, "class", "class-note class-note-variant");
+
+            if (GetString(note, "title") is string noteTitle)
+            {
+                builder.OpenElement(seq++, "div");
+                builder.AddAttribute(seq++, "class", "class-note-heading");
+                builder.AddContent(seq++, noteTitle);
+                builder.CloseElement();
+            }
+
+            if (GetProperty(note, "paragraphs") is JsonElement noteParagraphs)
+                builder.AddContent(seq++, RenderParagraphs(noteParagraphs));
+
+            builder.CloseElement();
+        }
+
+        builder.CloseElement(); // .class-feature-body
+        builder.CloseElement(); // details
     };
 
     private RenderFragment RenderFightingStyleBlock(JsonElement block) => builder =>
@@ -782,11 +1111,53 @@ else if (classDocument is not null)
         var rows = GetProperty(table, "rows");
         if (columns is not JsonElement columnArray || rows is not JsonElement rowArray || columnArray.ValueKind != JsonValueKind.Array || rowArray.ValueKind != JsonValueKind.Array) return;
         var seq = 0;
-        builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-table-scroll");
-        builder.OpenElement(seq++, "table"); builder.AddAttribute(seq++, "class", cssClass);
-        builder.OpenElement(seq++, "thead"); builder.OpenElement(seq++, "tr");
-        foreach (var column in columnArray.EnumerateArray()) { builder.OpenElement(seq++, "th"); builder.AddContent(seq++, GetString(column, "label")); builder.CloseElement(); }
-        builder.CloseElement(); builder.CloseElement();
+        var columnCount = columnArray.GetArrayLength();
+
+        static string ColumnClass(string key)
+        {
+            var normalized = new string(
+                key.ToLowerInvariant()
+                    .Select(character => char.IsLetterOrDigit(character) ? character : '-')
+                    .ToArray());
+
+            while (normalized.Contains("--"))
+                normalized = normalized.Replace("--", "-");
+
+            return $"table-col-{normalized.Trim('-')}";
+        }
+
+        static string CellClasses(string key)
+        {
+            var classes = new List<string> { ColumnClass(key) };
+
+            if (key.Equals("level", StringComparison.OrdinalIgnoreCase))
+                classes.Add("table-level");
+
+            if (key.Equals("features", StringComparison.OrdinalIgnoreCase))
+                classes.Add("table-features");
+
+            return string.Join(" ", classes);
+        }
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-table-scroll");
+
+        builder.OpenElement(seq++, "table");
+        builder.AddAttribute(seq++, "class", $"{cssClass} table-cols-{columnCount}");
+
+        builder.OpenElement(seq++, "thead");
+        builder.OpenElement(seq++, "tr");
+        foreach (var column in columnArray.EnumerateArray())
+        {
+            var key = GetString(column, "key") ?? string.Empty;
+            builder.OpenElement(seq++, "th");
+            builder.AddAttribute(seq++, "class", CellClasses(key));
+            builder.AddContent(seq++, GetString(column, "label"));
+            builder.CloseElement();
+        }
+        builder.CloseElement();
+        builder.CloseElement();
+
         builder.OpenElement(seq++, "tbody");
         foreach (var row in rowArray.EnumerateArray())
         {
@@ -795,13 +1166,16 @@ else if (classDocument is not null)
             {
                 var key = GetString(column, "key") ?? string.Empty;
                 builder.OpenElement(seq++, "td");
-                if (key.Equals("level", StringComparison.OrdinalIgnoreCase)) builder.AddAttribute(seq++, "class", "table-level");
-                if (GetProperty(row, key) is JsonElement value) builder.AddContent(seq++, ValueToText(value));
+                builder.AddAttribute(seq++, "class", CellClasses(key));
+                if (GetProperty(row, key) is JsonElement value)
+                    builder.AddContent(seq++, ValueToText(value));
                 builder.CloseElement();
             }
             builder.CloseElement();
         }
-        builder.CloseElement(); builder.CloseElement(); builder.CloseElement();
+        builder.CloseElement();
+        builder.CloseElement();
+        builder.CloseElement();
     };
 
     private static string AnchorId(string value)
@@ -832,6 +1206,18 @@ else if (classDocument is not null)
 
     private static string SlugToDisplayName(string slug)
         => string.IsNullOrWhiteSpace(slug) ? "Class" : string.Join(" ", slug.Split('-', StringSplitOptions.RemoveEmptyEntries).Select(word => char.ToUpperInvariant(word[0]) + word[1..]));
+
+    private static string ToSlug(string value)
+    {
+        return string.Join(
+            "-",
+            value
+                .Trim()
+                .ToLowerInvariant()
+                .Split(
+                    new[] { ' ', '_', '-' },
+                    StringSplitOptions.RemoveEmptyEntries));
+    }
 
     private static bool IsSafeSlug(string slug)
         => !string.IsNullOrWhiteSpace(slug) && slug.All(character => char.IsLetterOrDigit(character) || character == '-');

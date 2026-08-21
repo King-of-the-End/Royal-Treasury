@@ -1,3 +1,9 @@
+/*
+   NavMenu styles intentionally live in wwwroot instead of NavMenu.razor.css.
+   This avoids the .NET 10 Razor/Hot Reload scoped-CSS regression that can
+   inject the generated b-* scope attribute twice and report RZ10007.
+*/
+
 /* =========================================
    ROYAL TREASURY — DYNAMIC SIDE NAV
    ========================================= */

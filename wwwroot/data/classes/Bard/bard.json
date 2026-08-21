@@ -1,0 +1,742 @@
+{
+  "name": "Bard",
+  "slug": "bard",
+  "summary": "A versatile performer and spellcaster who uses music, words, lore, and inspiration to shape magic and support companions.",
+  "introduction": [
+    "Humming as she traces her fingers over an ancient monument in a long-forgotten ruin, a half-elf finds knowledge springing into her mind through the magic of her song.",
+    "A stern human warrior beats a rhythm against his armor, setting the tempo for a war chant that exhorts his companions to bravery and heroism.",
+    "Whether scholar, skald, or scoundrel, a bard weaves magic through words and music to inspire allies, demoralize foes, manipulate minds, create illusions, and heal wounds."
+  ],
+  "lore_sections": [
+    {
+      "title": "Music and Magic",
+      "paragraphs": [
+        "In the worlds of D\u0026D, words and music carry power of their own. The bard is a master of song, speech, and the magic they contain, subtly weaving those forces into spells and other abilities.",
+        "The greatest strength of bards is their versatility. They can inspire and support from a distance, defend themselves when necessary, and draw on a wide-ranging knowledge of many subjects."
+      ]
+    },
+    {
+      "title": "Learning from Experience",
+      "paragraphs": [
+        "True bards are uncommon. Discovering the magic hidden in music requires study and natural talent. A bard\u2019s life is often spent wandering, gathering lore, telling stories, and learning from new places and people.",
+        "Every adventure is an opportunity to learn new skills, discover lost works of magic, decipher old texts, visit strange places, and witness heroic deeds firsthand."
+      ]
+    },
+    {
+      "title": "Creating a Bard",
+      "paragraphs": [
+        "Bards thrive on stories, whether those stories are true or not. Consider the history your bard tells about themself, where their magical music came from, and whether they trained under a master, studied at a college, or learned by wandering.",
+        "Think about the story that pushed your bard into adventure and what they hope to add to the tales they will one day tell."
+      ]
+    }
+  ],
+  "roleplay": {
+    "quick_build": "You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the entertainer background. Third, choose the dancing lights and vicious mockery cantrips, along with charm person, detect magic, healing word, and thunderwave."
+  },
+  "mechanics": {
+    "multiclassing": {
+      "kicker": "Optional Rule",
+      "title": "Multiclassing",
+      "paragraphs": [
+        "The following are the requirements to multiclass into a Bard."
+      ],
+      "items": [
+        {
+          "label": "Ability Score Minimum",
+          "value": "Charisma 13."
+        },
+        {
+          "label": "Proficiencies Gained",
+          "value": "Light armor, one skill of your choice, and one musical instrument of your choice."
+        },
+        {
+          "label": "Tools",
+          "value": "One musical instrument of your choice."
+        }
+      ]
+    },
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Dice",
+                      "value": "1d8 per Bard level"
+                    },
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "8 \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "1d8 (or 5) \u002B your Constitution modifier per Bard level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Proficiencies",
+              "blocks": [
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Armor",
+                      "value": "Light armor"
+                    },
+                    {
+                      "label": "Weapons",
+                      "value": "Simple weapons, hand crossbows, longswords, rapiers, shortswords"
+                    },
+                    {
+                      "label": "Tools",
+                      "value": "Three musical instruments of your choice"
+                    },
+                    {
+                      "label": "Saving Throws",
+                      "value": "Dexterity, Charisma"
+                    },
+                    {
+                      "label": "Skills",
+                      "value": "Choose any three"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You start with the following equipment, in addition to the equipment granted by your background:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) a rapier, (b) a longsword, or (c) any simple weapon",
+                    "(a) a diplomat\u2019s pack or (b) an entertainer\u2019s pack",
+                    "(a) a lute or (b) any other musical instrument",
+                    "Leather armor and a dagger"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Bard",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "cantrips",
+          "label": "Cantrips Known"
+        },
+        {
+          "key": "spells_known",
+          "label": "Spells Known"
+        },
+        {
+          "key": "slot_1",
+          "label": "1st"
+        },
+        {
+          "key": "slot_2",
+          "label": "2nd"
+        },
+        {
+          "key": "slot_3",
+          "label": "3rd"
+        },
+        {
+          "key": "slot_4",
+          "label": "4th"
+        },
+        {
+          "key": "slot_5",
+          "label": "5th"
+        },
+        {
+          "key": "slot_6",
+          "label": "6th"
+        },
+        {
+          "key": "slot_7",
+          "label": "7th"
+        },
+        {
+          "key": "slot_8",
+          "label": "8th"
+        },
+        {
+          "key": "slot_9",
+          "label": "9th"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": "Spellcasting, Bardic Inspiration (d6)",
+          "cantrips": "2",
+          "spells_known": "4",
+          "slot_1": "2",
+          "slot_2": "\u2014",
+          "slot_3": "\u2014",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Jack of All Trades, Song of Rest (d6), Magical Inspiration",
+          "cantrips": "2",
+          "spells_known": "5",
+          "slot_1": "3",
+          "slot_2": "\u2014",
+          "slot_3": "\u2014",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Bard College, Expertise",
+          "cantrips": "2",
+          "spells_known": "6",
+          "slot_1": "4",
+          "slot_2": "2",
+          "slot_3": "\u2014",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": "Ability Score Improvement, Bardic Versatility",
+          "cantrips": "3",
+          "spells_known": "7",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "\u2014",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Bardic Inspiration (d8), Font of Inspiration, Inspiring Sting",
+          "cantrips": "3",
+          "spells_known": "8",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "2",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Bard College feature, Countercharm OR Persistent Inspiration",
+          "cantrips": "3",
+          "spells_known": "9",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "\u2014",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": "\u2014",
+          "cantrips": "3",
+          "spells_known": "10",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "1",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement, Bardic Versatility",
+          "cantrips": "3",
+          "spells_known": "11",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "2",
+          "slot_5": "\u2014",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Song of Rest (d8)",
+          "cantrips": "3",
+          "spells_known": "12",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "1",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Bardic Inspiration (d10), Expertise, Magical Secrets",
+          "cantrips": "4",
+          "spells_known": "14",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "\u2014",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": "\u2014",
+          "cantrips": "4",
+          "spells_known": "15",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement, Bardic Versatility",
+          "cantrips": "4",
+          "spells_known": "15",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "\u2014",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Song of Rest (d10)",
+          "cantrips": "4",
+          "spells_known": "16",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Magical Secrets, Bard College feature",
+          "cantrips": "4",
+          "spells_known": "18",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "\u2014",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Bardic Inspiration (d12)",
+          "cantrips": "4",
+          "spells_known": "19",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement, Bardic Versatility",
+          "cantrips": "4",
+          "spells_known": "19",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "\u2014"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Song of Rest (d12)",
+          "cantrips": "4",
+          "spells_known": "20",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "2",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "1"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Magical Secrets",
+          "cantrips": "4",
+          "spells_known": "22",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "3",
+          "slot_6": "1",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "1"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement, Bardic Versatility",
+          "cantrips": "4",
+          "spells_known": "22",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "3",
+          "slot_6": "2",
+          "slot_7": "1",
+          "slot_8": "1",
+          "slot_9": "1"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Superior Inspiration",
+          "cantrips": "4",
+          "spells_known": "22",
+          "slot_1": "4",
+          "slot_2": "3",
+          "slot_3": "3",
+          "slot_4": "3",
+          "slot_5": "3",
+          "slot_6": "2",
+          "slot_7": "2",
+          "slot_8": "1",
+          "slot_9": "1"
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Spellcasting",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music."
+          },
+          {
+            "type": "subsection",
+            "title": "Cantrips",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips at higher levels, as shown in the Bard table."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spells Known",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You know four 1st-level bard spells of your choice. The Bard table shows when you learn more. When you gain a level in this class, you may replace one bard spell you know with another bard spell of a level for which you have spell slots."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Ability",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Charisma is your spellcasting ability for your bard spells. Spell save DC = 8 \u002B your proficiency bonus \u002B your Charisma modifier. Spell attack modifier = your proficiency bonus \u002B your Charisma modifier."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Ritual Casting",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can cast any bard spell you know as a ritual if that spell has the ritual tag."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Focus",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You can use a musical instrument as a spellcasting focus for your bard spells."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bardic Inspiration",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "As a bonus action, choose one creature other than yourself within 60 feet who can hear you. That creature gains one Bardic Inspiration die, a d6."
+          },
+          {
+            "type": "paragraph",
+            "text": "Within the next 10 minutes, the creature can roll the die and add it to one ability check, attack roll, or saving throw. You can use this feature a number of times equal to your Charisma modifier, regaining expended uses after a long rest."
+          },
+          {
+            "type": "paragraph",
+            "text": "The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+          }
+        ]
+      },
+      {
+        "name": "Jack of All Trades",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check that doesn\u2019t already include your proficiency bonus."
+          }
+        ]
+      },
+      {
+        "name": "Song of Rest",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 2nd level, you can use soothing music or oration during a short rest. Friendly creatures who spend Hit Dice to regain hit points regain an extra 1d6 hit points. The die increases to d8 at 9th level, d10 at 13th, and d12 at 17th."
+          }
+        ]
+      },
+      {
+        "name": "Magical Inspiration",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "If a creature has a Bardic Inspiration die from you and casts a spell that restores hit points or deals damage, it can roll that die and add the result to one healing or damage roll of the spell."
+          }
+        ]
+      },
+      {
+        "name": "Bard College",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 3rd level, you delve into the advanced techniques of a bard college of your choice. Your choice grants features at 3rd level and again at 6th and 14th level."
+          }
+        ]
+      },
+      {
+        "name": "Expertise",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for checks using either proficiency. At 10th level, choose another two skill proficiencies."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Bardic Versatility",
+        "level": "4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Whenever you reach a level that grants Ability Score Improvement, you can replace one Expertise skill with another skill proficiency you have, or replace one bard cantrip you know with another bard cantrip."
+          }
+        ]
+      },
+      {
+        "name": "Font of Inspiration",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Beginning at 5th level, you regain all expended uses of Bardic Inspiration when you finish a short or long rest."
+          }
+        ]
+      },
+      {
+        "name": "Inspiring Sting",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When a creature within 30 feet of you fails an attack roll, ability check, or saving throw, you can use your reaction to have them roll a die equal to your Bardic Inspiration die and add it to the result, possibly changing the outcome. If the roll succeeds because of this, one use of Bardic Inspiration is consumed. You can use this feature a number of times per long rest equal to your proficiency bonus."
+          }
+        ]
+      },
+      {
+        "name": "6th-Level Inspiration Feature",
+        "level": "6",
+        "choice_label": "Choose One",
+        "alternatives": [
+          {
+            "name": "Countercharm",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and friendly creatures within 30 feet who can hear you have advantage on saving throws against being frightened or charmed. The performance ends early if you are incapacitated, silenced, or voluntarily end it."
+              }
+            ]
+          },
+          {
+            "name": "Persistent Inspiration",
+            "subtitle": "Replaces Countercharm",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Your inspiration can carry its listeners through fear and sweet words. When a creature carrying one of your unspent Bardic Inspirations makes a saving throw to resist being frightened or charmed, they do so with advantage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magical Secrets",
+        "level": "10",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. The chosen spells count as bard spells for you and are included in the Spells Known column. You learn two additional spells from any classes at 14th level and again at 18th level."
+          }
+        ]
+      },
+      {
+        "name": "Superior Inspiration",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
+          }
+        ]
+      }
+    ]
+  }
+}
