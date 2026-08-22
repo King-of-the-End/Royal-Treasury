@@ -95,14 +95,17 @@
    ========================================= */
 
 .glossary-tooltip {
-    position: absolute;
-
     /*
-     * Anchor directly beneath the term.
+     * Keep hidden tooltips out of the layout from the first paint.
+     * The positioning script moves them beside the hovered/focused term.
+     * Using fixed positioning here prevents hidden tooltip overflow from
+     * inflating the height of open <details> feature cards.
      */
-    top: calc(100% + 0.65rem);
+    position: fixed;
 
-    left: 50%;
+    top: 0;
+
+    left: 0;
 
     z-index: 5000;
 
@@ -145,9 +148,7 @@
     /*
      * Center tooltip under term.
      */
-    transform:
-        translateX(-50%)
-        translateY(-4px);
+    transform: none;
 
     opacity: 0;
 
@@ -221,9 +222,7 @@
 
     visibility: visible;
 
-    transform:
-        translateX(-50%)
-        translateY(0);
+    transform: none;
 }
 
 
@@ -822,3 +821,4 @@
     }
 
 }
+

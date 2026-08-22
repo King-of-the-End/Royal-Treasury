@@ -1,0 +1,140 @@
+{
+  "Name": "Kaijou Stonescout",
+  "Group": "Kaijou",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Kaijou stonescouts are trackers and ambush fighters who rely on weaving in and out of combat to fight. They prefer to remain out of danger, but if forced to engage they strike and flee, using their nimble movement to quickly escape danger before it catches up with them. Within kaijou settlements they are often hunters and spies.\n\n***Climbing Gear.*** Stonescouts have claws and talons that aid them in climbing naturally, but when a truly difficult climb presents itself, they always carry the necessary gear (ropes, pitons, etc.,) that allows them to climb in most conditions, be they rocky, icy or otherwise.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Kaijou%20Stonescout.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Kaijou%20Stonescout.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Kaijou%20Stonescout.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "kaijou_stonescout",
+      "section_type": "Stat Block",
+      "title": "Kaijou Stonescout",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (kaijou)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "38 (5d8 + 15)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "swim": "40 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 10,
+          "modifier": "-",
+          "save": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "+1"
+        }
+      },
+      "saving_throws": [
+        "Str +2",
+        "Cha +1"
+      ],
+      "skills": [
+        "Athletics +4",
+        "Stealth +6",
+        "Perception +4"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Crissnaw"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Fearless",
+          "name_format": "bold_italic",
+          "description": "The kaijou has advantage on saving throws against being frightened. Even when frightened, no effect can force them to flee from the source of their fear unless they would do so for other purposes."
+        },
+        {
+          "name": "Mobile",
+          "name_format": "bold_italic",
+          "description": "The kaijou does not provoke opportunity attacks from creatures on the same turn that it attempts an attack against them."
+        },
+        {
+          "name": "Surprise Attack (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "When the kaijou makes an attack against a creature that is surprised or it is hidden from and hits, that attack deals an extra 11 (2d10) damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The kaijou makes two melee attacks."
+        },
+        {
+          "name": "Scimitar",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Longbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 9 (1d10 + 4) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cunning Action",
+          "name_format": "bold_italic",
+          "description": "The kaijou takes the Dash, Disengage, or Hide action."
+        },
+        {
+          "name": "White Powder Bomb (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The kaijou hurls a satchel of white powder at a point within 40 feet of it, where the satchel explodes into a sphere of fine mist with a 10-foot radius, which dissipates at the end of the kaijou’s next turn. This powder mist causes all creatures except the kaijou and their allies to be blinded in that space."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

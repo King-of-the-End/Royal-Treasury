@@ -1,0 +1,220 @@
+{
+  "Name": "Lyre Costilla Chandonnet",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Lyre is a traveling musician who harbors a dark secret: she carries the blood of celestials, granting her powerful sorcery that the Academy would see her condemned for. She keeps this a secret, disguising her sorcery as the power of her bardic spells. This understanding from multiple perspectives has left her sympathetic to those the Academy mistreats, and her policy is to take each person based on their own merits without judgment.\n\nWhen Lyre was first learning her craft, two celestials claiming to be her guardians contacted her in a dream and told her she would write the next great epic that would be told for generations and define the age. When she awoke, an enchanted violin had appeared at the foot of her bed. Taking this prophecy seriously, she has taken to the road to experience and learn everything she can - a journey that has taken her far beyond the borders of her hometown in Sermonway.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Lyre%20Costila%20Chandonnet.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Lyre%20Costila%20Chandonnet.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Lyre%20Costila%20Chandonnet.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lyre_costilla_chandonnet",
+      "section_type": "Stat Block",
+      "title": "Lyre Costilla Chandonnet",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (human)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "18 (studded leather, ring of protection)",
+      "hit_points": "120 (16d8 + 48)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Jack of all trades"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+3",
+          "save": "+4"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+6",
+          "save": "+9"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+5",
+          "save": "+8"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+3",
+          "save": "+4"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+4",
+          "save": "+5"
+        },
+        "CHA": {
+          "score": 19,
+          "modifier": "+6",
+          "save": "+9"
+        }
+      },
+      "saving_throws": [
+        "Str +4",
+        "Dex +9",
+        "Con +8",
+        "Int +4",
+        "Wis +5",
+        "Cha +9"
+      ],
+      "skills": [
+        "Acrobatics +11",
+        "Deception +8",
+        "Investigation +5",
+        "Perception +10",
+        "Performance +12"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 20"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Gnomish",
+        "Celestial"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "notes": [
+        "*Checks, saves and skills above include Jack of All Trades, and Ring of Protection."
+      ],
+      "traits": [
+        {
+          "name": "Maiden’s Luck (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When Lyre makes an attack roll, ability check, or saving throw, she may choose to roll an additional d20 after seeing the d20 results of her own roll. She then chooses which d20 result among those rolled to use."
+        },
+        {
+          "name": "Metamagic (4/Day)",
+          "name_format": "bold_italic",
+          "description": "When Lyre casts a spell, she can choose to apply one of the following effects to it:\n\n• Careful Spell. Lyre chooses up to four creatures targeted by the spell’s effects, and they are excluded from its effects and damage for the first turn of the spell’s duration.\n• Empowered Spell. Up to four targets of the spell that Lyre chooses have disadvantage on the first saving throw they make against it.\n• Quickened Spell. The spell (which must be one with a casting time of 1 action) is cast as a bonus action."
+        },
+        {
+          "name": "Ring of Protection",
+          "name_format": "bold_italic",
+          "description": "Lyre wears a ring of protection that grants her a +1 bonus to her saving throws and armor class (already accounted for in this stat block)."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Lyre is a 13th-level spellcaster. Her spellcasting ability is Charisma. She has the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 13,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "spells": [
+                  "deflect",
+                  "prestidigitation",
+                  "vicious mockery"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "charm person",
+                  "cure wounds"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "hold person",
+                  "shaded weapon",
+                  "song of inspiration"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "spells": [
+                  "fireball",
+                  "haste",
+                  "tongues",
+                  "vortex quiver"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "spells": [
+                  "dimension door",
+                  "greater invisibility"
+                ]
+              },
+              {
+                "frequency": "5th level (2 slots)",
+                "spells": [
+                  "hold monster",
+                  "mass cure wounds"
+                ]
+              },
+              {
+                "frequency": "6th level (2 slots)",
+                "spells": [
+                  "irresistible dance",
+                  "true seeing"
+                ]
+              },
+              {
+                "frequency": "7th level (1 slot)",
+                "spells": [
+                  "starfall mantle"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Lyre makes two weapon attacks, choosing between her Resonant Rapier and Revolver. She then casts a spell with a casting time of 1 action using her Spellcasting."
+        },
+        {
+          "name": "Resonant Rapier",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, magical, reach 5 ft., one target. Hit: 11 (1d8 + 6) piercing damage plus 5 (1d8) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +8 to hit, range 20/60 ft., reload 6, one target. Hit: 15 (2d6 + 4) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Bardic Inspiration (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "Lyre inspires one creature who can see or hear her within 60 feet of her. For the next minute, that creature has one Bardic Inspiration. After they make an attack roll, ability check, or saving throw (but before the roll’s success or failure is announced) they can spend it to roll a d10 and add it to the result."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

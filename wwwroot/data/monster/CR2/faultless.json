@@ -1,0 +1,120 @@
+{
+  "Name": "Faultless",
+  "Group": "Nephilim",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Faultless is the term used for most unremarkable nephilim brought into the world with no specific purpose. Not lesser by any means, these nephilim simply don’t carry a distinct divine purpose. They are the common citizens of nephilim society. Despite this, they are still more adept in combat than the average adventurer.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Nephilim%20Faultless.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Nephilim%20Faultless.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Nephilim%20Faultless.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "faultless",
+      "section_type": "Stat Block",
+      "title": "Faultless",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (nephilim)",
+        "alignment": "neutral"
+      },
+      "armor_class": "13 (leather)",
+      "hit_points": "26 (4d8 + 8)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "20 ft. (hover)"
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-",
+          "save": "+2"
+        }
+      },
+      "saving_throws": [
+        "Cha +2"
+      ],
+      "skills": [
+        "Arcana +5",
+        "History +5"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common",
+        "Primordial",
+        "one other language"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Memories of the Heart (2/Day)",
+          "name_format": "bold_italic",
+          "description": "When the nephilim makes an attack roll, ability check, or saving throw, they can roll 1d4 and add it to the result. If added to an attack roll, another 1d4 is added to the damage from that attack as well."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The nephilim makes two weapon attacks, then uses their Psychic Torment."
+        },
+        {
+          "name": "Quarterstaff",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Psychic Torment",
+          "name_format": "bold_italic",
+          "description": "One creature within 30 feet is assailed with a burst of psychic energy, and must make a DC 13 Intelligence saving throw, taking 11 (2d10) psychic damage on a failed save."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Subdermal Illumination",
+          "name_format": "bold_italic",
+          "description": "The nephilim causes its body to magically produce bright light out to 20 feet, with dim light twice as far, or causes this light to be extinguished. This light is treated as a spell with a level equal to the nephilim’s proficiency bonus."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

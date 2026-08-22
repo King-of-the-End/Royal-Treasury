@@ -1,0 +1,156 @@
+{
+  "Name": "Frost Hellbat",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A demon born from entropic cold, usually found in a swarm with others of its kind. Their body is filled with icy cold energy, and when adrenaline rushes through their body they fail to regulate it, causing them to explode violently in a burst of freezing cold viscera and mist.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Frost%20Hellbat.jpg",
+  "Stat Blocks": [
+    {
+      "id": "frost_hellbat",
+      "section_type": "Stat Block",
+      "title": "Frost Hellbat",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (demon)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "52 (8d8 + 16)",
+      "speed": {
+        "walk": "20 ft.",
+        "fly": "40 ft."
+      },
+      "quality_traits": [
+        "Fly-by",
+        "Magic resist",
+        "Magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1"
+        }
+      },
+      "saving_throws": [
+        "Dex +5"
+      ],
+      "skills": [
+        "Perception +5"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "vulnerabilities": [
+        "thunder"
+      ],
+      "immunities": [
+        "cold"
+      ],
+      "condition_immunities": [
+        "blinded"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Bloody Detonation",
+          "name_format": "bold_italic",
+          "description": "If the demon starts its turn with fewer than half its hit points, roll 1d20. On a result of 11 or higher it moves up to its speed into a space adjacent to a hostile creature, uses its Multiattack, then swells with energy and explodes. Each creature within 15 feet of the demon must make a DC 12 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a success."
+        },
+        {
+          "name": "Echolocation",
+          "name_format": "bold_italic",
+          "description": "If deafened, the demon is blinded and loses its blindsight (despite its immunities)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The demon attacks once with its Bite and once with its Talons. If both hit the same target, it can use its Hooked Ice Tail to attack the same target as a bonus action."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) piercing damage plus 4 (1d6) cold damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Talons",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (3d4 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Hooked Ice Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage plus 5 (1d8) cold damage, and if the target is Medium or smaller they are grappled (escape DC 16). The demon can move creatures grappled this way without penalty to its movement speed, transferring them into any space adjacent to them when it finishes moving. While it has a creature grappled this way, the demon can only make its Hooked Ice Tail attacks against that target, but the attack has advantage when made.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**FROST HELLBAT**\n*Medium fiend (demon), chaotic evil*\n**Armor Class** 16 (natural armor)\n**Hit Points** 52 (8d8 + 16)\n**Speed** 20 ft., fly 40 ft.\n**Quality Traits** Fly-by, magic resist, magical\n**STR** 16 (+3) | **DEX** 17 (+3) | **CON** 14 (+2) | **INT** 6 (-2) | **WIS** 12 (+1) | **CHA** 8 (-1)\n**Saving Throws** Dex +5\n**Skills** Perception +5\n**Resistances** necrotic\n**Vulnerabilities** thunder\n**Immunities** cold\n**Condition Immunities** blinded\n**Senses** blindsight 60 ft., darkvision 120 ft., passive Perception 16\n**Challenge Rating** 3 (700 XP) **Proficiency Bonus** +2\n\n***Bloody Detonation.*** If the demon starts its turn with fewer than half its hit points, roll 1d20. On a result of 11 or higher it moves up to its speed into a space adjacent to a hostile creature, uses its Multiattack, then swells with energy and explodes. Each creature within 15 feet of the demon must make a DC 12 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a success.\n\n***Echolocation.*** If deafened, the demon is blinded and loses its blindsight (despite its immunities).\n\n**ACTIONS**\n***Multiattack.*** The demon attacks once with its Bite and once with its Talons. If both hit the same target, it can use its Hooked Ice Tail to attack the same target as a bonus action.\n\n***Bite.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 3) piercing damage plus 4 (1d6) cold damage.\n\n***Talons.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 11 (3d4 + 3) slashing damage.\n\n***Hooked Ice Tail.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 12 (2d8 + 3) piercing damage plus 5 (1d8) cold damage, and if the target is Medium or smaller they are grappled (escape DC 16). The demon can move creatures grappled this way without penalty to its movement speed, transferring them into any space adjacent to them when it finishes moving. While it has a creature grappled this way, the demon can only make its Hooked Ice Tail attacks against that target, but the attack has advantage when made."
+    }
+  ],
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Frost%20Hellbat%20(ISO).png"
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Frost%20Hellbat.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Frost%20Hellbat%20(ISO).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Frost%20Hellbat.jpg"
+    },
+    {
+      "Label": "Image 2",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Frost%20Hellbat%20(ISO).png"
+    }
+  ]
+}

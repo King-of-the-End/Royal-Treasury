@@ -1,0 +1,144 @@
+{
+  "Name": "Conveyant Shell",
+  "Group": "Red Manor",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Made from a combination of red oak wood, glass blades, and crimson iron plating, these constructs are given life by Individa to serve the members of the Red Manor. They are foot soldiers and disposable assassins who can be left behind after a messy assault on a target. Once they aren’t needed or after they’re destroyed, they are reduced to ash and leave no evidence of what might have occurred.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Conveyant%20Shell.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Conveyant%20Shell.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Conveyant%20Shell.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "conveyant_shell",
+      "section_type": "Stat Block",
+      "title": "Conveyant Shell",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": ""
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "38 (5d8 + 15)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Immutable"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +5"
+      ],
+      "skills": [
+        "Athletics +5",
+        "Stealth +5"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "paralyzed",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands Common and Elvish but doesn’t speak"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Compact Form",
+          "name_format": "bold_italic",
+          "description": "The construct can, through a combination of magic and engineering, reduce its body to a form that is not much larger than a suitcase which can be easily transported. It weighs 70 lbs while in this form and is “inert”, functioning as an object and not as a creature until it is damaged or commanded to awaken by a creature with the authority to control it. In this form it can be carried with one hand as if it was a metal case by Medium-sized creatures. A DC 15 Arcana or Investigation can tell it is a compact construct."
+        },
+        {
+          "name": "Critical Vulnerability",
+          "name_format": "bold_italic",
+          "description": "When the construct suffers a critical hit, it takes double damage from the additional damage dice rolled as part of the critical hit, and it becomes sluggish until it completes a Short or Long Rest."
+        },
+        {
+          "name": "Evidence Erasure",
+          "name_format": "bold_italic",
+          "description": "When this construct is reduced to 0 hit points, its body dissolves into a chalky ash that cannot be connected back to its original form. This ash resembles ground charcoal."
+        },
+        {
+          "name": "Unkind Attacker",
+          "name_format": "bold_italic",
+          "description": "When the construct rolls a result of 1 or 2 on any damage die, it rerolls the damage die/dice and must keep the new result."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct makes two attacks, choosing between its Blade Chain and Glass Claw for each. The first of these attacks has advantage."
+        },
+        {
+          "name": "Bladed Chain",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 3) slashing damage. If two of these attacks hit the same Medium or smaller creature in one turn, the construct may pull that creature into an unoccupied space adjacent to them and make a single Glass Claw attack against them.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Glass Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (3d4 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

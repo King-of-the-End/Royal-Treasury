@@ -1,0 +1,176 @@
+{
+  "Name": "Fatewatcher",
+  "Group": "Nephilim",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Serving as leaders and oracles, the fatewatchers are keepers of lore and magic. They are highly proficient spellcasters and mediators, experts in keeping an even temper, and using hushed tongues.",
+  "Image": "",
+  "Images": [],
+  "Image Tabs": [],
+  "Stat Blocks": [
+    {
+      "id": "fatewatcher",
+      "section_type": "Stat Block",
+      "title": "Fatewatcher",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (nephilim)",
+        "alignment": "neutral"
+      },
+      "armor_class": "12 (14 with mage armor)",
+      "hit_points": "54 (12d8)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "30 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 9,
+          "modifier": "-1"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+7"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+5"
+        }
+      },
+      "saving_throws": [
+        "Int +7",
+        "Wis +6",
+        "Cha +5"
+      ],
+      "skills": [
+        "Arcana +7",
+        "History +7",
+        "Insight +6"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common",
+        "Primordial",
+        "one other language"
+      ],
+      "challenge_rating": "8 (2,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Hyperlinear Processing",
+          "name_format": "bold_italic",
+          "description": "The nephilim uses their connection to the Abiding Heart to increase their mental capabilities, allowing them to concentrate on multiple spells at once: as long as their combined level does not add up to 6 or higher, the nephilim can concentrate on any number of different spells (cantrips count as 1st level). They make concentration checks for all of their spells as if they were one, succeeding or failing together."
+        },
+        {
+          "name": "Rite of Calculation (1/Day)",
+          "name_format": "bold_italic",
+          "description": "When the nephilim casts a spell, they can draw knowledge from the Abiding Heart to cast that spell as if the spell slot used for it was 7th level."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The nephilim is a 10th-level spellcaster. Their spellcasting ability is Intelligence. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 10,
+            "spellcasting_ability": "Intelligence",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "spells": [
+                  "fire bolt",
+                  "toll the dead"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "chromatic orb",
+                  "cure wounds",
+                  "shield",
+                  "mage armor"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "detect thoughts",
+                  "hold person",
+                  "blur"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "spells": [
+                  "hypnotic pattern",
+                  "valkyrie’s binding rings"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "spells": [
+                  "greater invisibility",
+                  "force missile"
+                ]
+              },
+              {
+                "frequency": "5th level (2 slots)",
+                "spells": [
+                  "anger of the sky-keeper",
+                  "dominate creature"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Quarterstaff of Mental Shock",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 14 (4d6) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Hypercast (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The nephilim casts two spells with a casting time of one action or faster, as long as their combined spell level does not equal 6 or higher (cantrips count as 1st level)."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Subdermal Illumination",
+          "name_format": "bold_italic",
+          "description": "The nephilim causes its body to magically produce bright light out to 20 feet, with dim light twice as far, or causes this light to be extinguished. This light is treated as a spell with a level equal to the nephilim’s proficiency bonus."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

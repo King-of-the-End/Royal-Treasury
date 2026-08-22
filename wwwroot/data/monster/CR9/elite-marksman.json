@@ -1,0 +1,147 @@
+{
+  "Name": "Elite Marksman",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Marksmen are proficient in the use of firearms. They are hired often as bodyguards, assassins, or lookouts. They are more expensive than regular mercenaries due to their upkeep, but their inclusion in a mercenary band or among a group of raiders grants them a unique edge.",
+  "Image": "",
+  "Images": [],
+  "Image Tabs": [],
+  "Stat Blocks": [
+    {
+      "id": "elite_marksman",
+      "section_type": "Stat Block",
+      "title": "Elite Marksman",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "usually chaotic neutral"
+      },
+      "armor_class": "17 (studded leather)",
+      "hit_points": "102 (14d8 + 42)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+9"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-",
+          "save": "+4"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +9",
+        "Int +4",
+        "Wis +8"
+      ],
+      "skills": [
+        "Acrobatics +9",
+        "Stealth +9",
+        "Perception +12"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 22"
+      ],
+      "languages": [
+        "any one language"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Hawkeye",
+          "name_format": "bold_italic",
+          "description": "The marksman’s ranged attacks ignore half and two-thirds cover."
+        },
+        {
+          "name": "Magic Bullet (3/Day)",
+          "name_format": "bold_italic",
+          "description": "When a marksman fires a ranged weapon they can use one of several magical bullets they carry. The attack becomes magical, and deals an extra d8 of force damage."
+        },
+        {
+          "name": "Point-Blank Accuracy",
+          "name_format": "bold_italic",
+          "description": "The marksman does not suffer disadvantage on attack rolls using firearms caused by hostile creatures being within 5 feet."
+        },
+        {
+          "name": "Uncanny Precision",
+          "name_format": "bold_italic",
+          "description": "The marksman deals one extra weapon die of damage with ranged weapons and firearms (represented already in this stat block)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The marksman makes three attacks with its Shortsword or Revolver, or two with its Scoped Rifle."
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d6 + 5) piercing damage plus 5 (1d8) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +9 to hit, range 20/60 ft., one target. Hit: 16 (3d6 + 5) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Scoped Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +9 to hit, range 40/120 ft., one target. Hit: 22 (3d10 + 5) piercing damage. If the marksman is prone when making this attack they have advantage, and don’t suffer disadvantage when firing up to their long range or at prone targets.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Marksman’s Eye (3/Day)",
+          "name_format": "bold_italic",
+          "description": "When the marksman makes a ranged weapon attack, they can roll a d10 and add the result to their attack roll. If this attack had disadvantage due to firing at the weapon’s long range, the attack uses the higher d20 result of the two rolled, as if it had advantage."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Uncanny Dodge",
+          "name_format": "bold_italic",
+          "description": "The marksman takes half damage from an attack it can see."
+        }
+      ]
+    }
+  ]
+}

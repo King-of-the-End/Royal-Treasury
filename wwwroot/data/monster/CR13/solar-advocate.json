@@ -1,0 +1,222 @@
+{
+  "Name": "Solar Advocate",
+  "Group": "Nephilim",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Nephilim who have studied the arcane arts to such an extent that they earn this title are equivalent to archmages. The title is traditionally held by the leader of Pezodromos Solar Tribunal, but also applies to those who have lived much longer than usual nephilim and earned a station of respect. It is an unspoken rule that none under 500 years of age can wear this title. When in combat, they create weapons made of psychic and radiant energy to strike their opponents which appear like weapon-shaped voids filled with stars and nebulas.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Altius.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Altius.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Altius.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "solar_advocate",
+      "section_type": "Stat Block",
+      "title": "Solar Advocate",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (nephilim)",
+        "alignment": "neutral"
+      },
+      "armor_class": "16 (studded leather armor)",
+      "hit_points": "130 (20d8 + 40)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "50 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+10"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+8"
+        },
+        "CHA": {
+          "score": 19,
+          "modifier": "+4",
+          "save": "+9"
+        }
+      },
+      "saving_throws": [
+        "Int +10",
+        "Wis +8",
+        "Cha +9"
+      ],
+      "skills": [
+        "Arcana +10",
+        "History +10",
+        "Insight +9",
+        "Perception +8"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "immunities": [
+        "radiant"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Common",
+        "Primordial",
+        "Fiendish",
+        "Celestial"
+      ],
+      "challenge_rating": "13 (10,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Hyperlinear Processing",
+          "name_format": "bold_italic",
+          "description": "The nephilim uses their connection to the Abiding Heart to increase their mental capabilities, allowing them to concentrate on multiple spells at once: as long as their combined level does not add up to 6 or higher, the nephilim can concentrate on any number of different spells (cantrips count as 1st level). They make concentration checks for all of their spells as if they were one, succeeding or failing together."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The nephilim is a 16th-level spellcaster. Its spellcasting ability is Intelligence. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 16,
+            "spellcasting_ability": "Intelligence",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "spells": [
+                  "fire bolt",
+                  "gust",
+                  "sacred flame",
+                  "toll the dead"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "chromatic orb",
+                  "cure wounds",
+                  "shield",
+                  "mage armor"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "detect thoughts",
+                  "hold person",
+                  "blur"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "spells": [
+                  "haste",
+                  "hypnotic pattern",
+                  "slow",
+                  "valkyrie’s binding rings"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "spells": [
+                  "mordenkainen’s force missile",
+                  "punishing gleam"
+                ]
+              },
+              {
+                "frequency": "5th level (3 slots)",
+                "spells": [
+                  "anger of the sky-keeper",
+                  "dominate creature",
+                  "sunlight crest"
+                ]
+              },
+              {
+                "frequency": "6th level (2 slots)",
+                "spells": [
+                  "globe of invulnerability"
+                ]
+              },
+              {
+                "frequency": "7th level (1 slot)",
+                "spells": [
+                  "investiture of lightning"
+                ]
+              },
+              {
+                "frequency": "8th level (1 slot)",
+                "spells": [
+                  "gatestep"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The nephilim makes two attacks with its Arcane Strike, one of which it can replace with casting a spell with a casting time of 1 action."
+        },
+        {
+          "name": "Arcane Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Spell Attack: +10 to hit, reach 5 ft., one target or as a Ranged Spell Attack: +10 to hit, range 60 ft., one target. Hit: 21 (6d6) psychic damage or 21 (6d6) radiant damage (the nephilim chooses before attacking).",
+          "inline_formatting": {
+            "Melee Spell Attack": "italic",
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Teleport",
+          "name_format": "bold_italic",
+          "description": "The nephilim magically teleports to an unoccupied space it can see within 60 feet, taking the equipment and possessions it is carrying with it."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Subdermal Illumination",
+          "name_format": "bold_italic",
+          "description": "The nephilim causes its body to magically produce bright light out to 20 feet, with dim light twice as far, or causes this light to be extinguished. This light is treated as a spell with a level equal to the nephilim’s proficiency bonus."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Counterspell (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The nephilim casts counterspell, requiring no spell slot or components."
+        },
+        {
+          "name": "Shield (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The nephilim casts the shield spell, requiring no spell slot or components."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "Name": "Monumental Soldier",
+  "Group": "Monumental",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The soldiers of the Monument, themselves more commonly called Monumentals, are almost all those who served as guardians, guards, knights, and heroes before becoming petitioners. Even if they retain no memory of their life before the Valley of Setting Dreams, their innate combat abilities are restored to them as part of their training.\n\nOnly those with a strong sense of justice are allowed to remain within the ranks, and those who serve faithfully among them have their names permanently carved into the very walls of the Monument - an act referred to as being gilded - and this inscription of their name persists into perpetuity. Even if the wall is damaged or destroyed, when it is restored the name will return or it will appear on another wall within the Monument.",
+  "Image": "",
+  "Images": [],
+  "Image Tabs": [],
+  "Stat Blocks": [
+    {
+      "id": "monumental_soldier",
+      "section_type": "Stat Block",
+      "title": "Monumental Soldier",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any, petitioner)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "16 (breastplate)",
+      "hit_points": "105 (14d8 + 42)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Con +6",
+        "Wis +4"
+      ],
+      "skills": [
+        "Athletics +6",
+        "Insight +4",
+        "Perception +4"
+      ],
+      "resistances": [
+        "B/P/S (adamantine)"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "Celestial"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Adamantine Armor",
+          "name_format": "bold_italic",
+          "description": "Any critical hit against the soldier is treated as a regular hit instead, but is still an automatic hit."
+        },
+        {
+          "name": "Fearless Soldier",
+          "name_format": "bold_italic",
+          "description": "The soldier has advantage on saving throws made to resist being charmed or frightened."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The soldier makes two weapon attacks."
+        },
+        {
+          "name": "Lion’s Cry Glaive",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 7 (1d12) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Lion’s Cry Longbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 9 (1d10 + 3) piercing damage plus 5 (1d8) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Aspect Angelus (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "Until the end of its next turn, the soldier manifests red ethereal wings and gains a fly (hover) speed of 40 feet."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

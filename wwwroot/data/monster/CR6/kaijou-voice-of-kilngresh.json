@@ -1,0 +1,174 @@
+{
+  "Name": "Kaijou Voice of Kilngresh",
+  "Group": "Kaijou",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Among the kaijou are those who listen to the winds to hear the commands of Kilngresh - their deity of light and survival. Those who open their heart and mind to Kilngresh gain the powers of both a sorcerer and a cleric, and wisdom beyond their peers. These kaijou are commonly the most interested in cultures outside their own, and have linguistic skills that make them appropriate advisors to chiefs and leaders among their own. In almost all cases, the kaijou that take up this role are winged, and so considered closer to their sky god.\n\nIn reference to the rainbow feathers of their god, these divine arcanists dress their wings and adornments with feathers of all sorts of colors, which are magically enchanted to shimmer and glow.",
+  "Image": "",
+  "Images": [],
+  "Image Tabs": [],
+  "Stat Blocks": [
+    {
+      "id": "kaijou_voice_of_kilngresh",
+      "section_type": "Stat Block",
+      "title": "Kaijou Voice of Kilngresh",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (kaijou)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "72 (16d8)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Int +6",
+        "Wis +6"
+      ],
+      "skills": [
+        "Arcana +6",
+        "Insight +6",
+        "Persuasion +6"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common",
+        "Crissnaw",
+        "one other language"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Brutal Smite (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When the kaijou hits with a weapon attack it can expend a spell slot to have that attack deal extra thunder damage equal to 7 (2d6) per slot level of the expended slot."
+        },
+        {
+          "name": "Fearless",
+          "name_format": "bold_italic",
+          "description": "The kaijou has advantage on saving throws against being frightened. Even when frightened, no effect can force them to flee from the source of their fear unless they would do so for other purposes."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The kaijou is an 8th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 8,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "spells": [
+                  "create bonfire",
+                  "gust",
+                  "thunderclap"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "comprehend languages",
+                  "cure wounds",
+                  "earthen eruption",
+                  "thunderwave"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "earthen grasp",
+                  "gravity bind",
+                  "web"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "spells": [
+                  "drowning wave",
+                  "hypnotic pattern",
+                  "tongues"
+                ]
+              },
+              {
+                "frequency": "4th level (2 slots)",
+                "spells": [
+                  "blight",
+                  "dominate beast",
+                  "hydro cage"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The kaijou makes two weapon attacks."
+        },
+        {
+          "name": "Rexbone Staff",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., 1 target. Hit: 8 (1d8 + 3) bludgeoning damage plus 7 (2d6) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Brutal Domination",
+          "name_format": "bold_italic",
+          "description": "One creature that kaijou can see within 60 feet of them is overwhelmed by auditory illusions resembling prehistoric forests and beasts. The target must succeed on a DC 14 Charisma saving throw or be subjected to one of the following effects (the kaijou chooses):\n\n• The target becomes frightened until the start of the kaijou’s next turn and takes 18 (4d8) psychic damage.\n• The target is charmed until the start of the kaijou’s next turn, and on the target’s next turn the kaijou can use their reaction to command the creature to move up to its movement speed toward a creature they choose. If possible they must take the Attack action and make as many weapon attacks against that creature as possible."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Summon Earth Elemental (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The kaijou magically summons an earth elemental with a CR equal to or less than its own, which appears in an unoccupied space within 60 feet of it. The elemental obeys the kaijou, takes its turn immediately after them, and remains for 1 hour, until the kaijou dies, or until they dismiss it as a bonus action."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

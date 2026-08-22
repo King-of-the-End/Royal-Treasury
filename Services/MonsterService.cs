@@ -2026,9 +2026,27 @@ public sealed class MonsterService
                     "Text");
 
 
+            var bullets =
+                DistinctValues(
+                    ReadStringOrArrayProperty(
+                        sectionElement,
+                        "Bullets"));
+
+
+            var endingText =
+                ReadStringProperty(
+                    sectionElement,
+                    "EndingText");
+
+
             if (
                 string.IsNullOrWhiteSpace(
-                    text))
+                    text)
+                &&
+                bullets.Count == 0
+                &&
+                string.IsNullOrWhiteSpace(
+                    endingText))
             {
                 continue;
             }
@@ -2090,7 +2108,9 @@ public sealed class MonsterService
                 {
                     Title = title,
                     Text = text,
-                    IsQuote = isQuote
+                    IsQuote = isQuote,
+                    Bullets = bullets.ToList(),
+                    EndingText = endingText
                 });
         }
 

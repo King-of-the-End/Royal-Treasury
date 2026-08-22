@@ -1,0 +1,142 @@
+{
+  "Name": "Kaijou Guardian",
+  "Group": "Kaijou",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A massive and imposing warrior, trained to demolish enemies in front of them and defend those placed under their care. The guardians carry huge clubs made of metal or stone, which can knock around creatures of lesser stature with ease. When working within a group, they are most often found as bodyguards or commanders of strike units.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference%20-%20Kaijou%20Guardian.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference%20-%20Kaijou%20Guardian.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference%20-%20Kaijou%20Guardian.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "kaijou_guardian",
+      "section_type": "Stat Block",
+      "title": "Kaijou Guardian",
+      "creature": {
+        "size": "Large",
+        "type": "humanoid (kaijou)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "18 (natural armor, stone greatshield)",
+      "hit_points": "128 (15d10 + 45)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+8"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Str +8",
+        "Wis +6"
+      ],
+      "skills": [
+        "Athletics +11",
+        "Intimidation +6",
+        "Survival +6"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Crissnaw"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Adrenaline Rush (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "When the kaijou makes a weapon attack on its turn, it can choose to have advantage on it and all subsequent weapon attacks until the start of its next turn, even if another effect would give it disadvantage."
+        },
+        {
+          "name": "Fearless",
+          "name_format": "bold_italic",
+          "description": "The kaijou has advantage on saving throws against being frightened. Even when frightened, no effect can force them to flee from the source of their fear unless they would do so for other purposes."
+        },
+        {
+          "name": "Herculean Brute",
+          "name_format": "bold_italic",
+          "description": "All of the kaijou’s Strength-based weapon attacks deal an extra 2d6 damage (represented already in this statblock). When it strikes a large or smaller target with such a weapon, the kaijou can choose, instead of dealing the weapon’s damage, to deal 7 (2d6) bludgeoning damage and force the target to make a DC 16 Strength saving throw. On a failure, the target is either knocked prone or knocked back 10 feet (the kaijou chooses)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The kaijou makes two Greatclub attacks, or two Hurl Rock attacks. It then attacks once with its Thagomizer."
+        },
+        {
+          "name": "Greatclub",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 7 (2d6) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Hurl Rock",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +8 to hit, range 20/60 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage plus 7 (2d6) bludgeoning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Thagomizer",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (5d6) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Turntable Defense",
+          "name_format": "bold_italic",
+          "description": "If a creature within 5 feet is targeted by an attack that does not also target the kaijou, the kaijou can redirect the attack to themselves and take half damage from it."
+        }
+      ]
+    }
+  ]
+}

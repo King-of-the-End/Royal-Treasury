@@ -1,0 +1,207 @@
+{
+  "Name": "Mecite Goliath",
+  "Group": "Mecite Animations",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The goliath is a massive beast made of crystal and stone, which animates from particularly massive deposits of amniasis that become infused with the stolen memories of a particularly powerful being. These colossal beasts are engines of destruction, with a lower body that resembles a dragon with multiple wings, and a humanoid upper body, like that of a centaur, that bears a striking resemblance to a monstrous version of Mnemosyne herself.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR23/Reference_BG%20-%20Mecite%20Goliath.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR23/Reference_BG%20-%20Mecite%20Goliath.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR23/Mecite%20Goliath%20(ISO).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Reference",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR23/Reference_BG%20-%20Mecite%20Goliath.jpg"
+    },
+    {
+      "Label": "ISO",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR23/Mecite%20Goliath%20(ISO).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "mecite_goliath",
+      "section_type": "Stat Block",
+      "title": "Mecite Goliath",
+      "creature": {
+        "size": "Titanic",
+        "type": "aberration (mecite animation)",
+        "alignment": ""
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "350 (20d20 + 140)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "+6"
+        },
+        "CON": {
+          "score": 25,
+          "modifier": "+7"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "+6"
+        },
+        "WIS": {
+          "score": 23,
+          "modifier": "+6",
+          "save": "+13"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2",
+          "save": "+5"
+        }
+      },
+      "saving_throws": [
+        "Dex +6",
+        "Int +6",
+        "Wis +13",
+        "Cha +5"
+      ],
+      "skills": [
+        "Athletics +13",
+        "Investigation +6",
+        "Perception +13"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "immunities": [
+        "psychic",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "blindsight 60 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "23 (25,000 XP)",
+      "proficiency_bonus": "+7",
+      "traits": [
+        {
+          "name": "Amniatic Miasma",
+          "name_format": "bold_italic",
+          "description": "When a creature starts its turn within 15 feet of the goliath or moves there for the first time on their turn, they must make a DC 18 Wisdom saving throw. On a failure they are afflicted with strong amniasis, and their Wisdom score is immediately reduced by 1d4."
+        },
+        {
+          "name": "Chronos Revelation (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When the goliath is reduced to 0 hit points or killed outright, its hit points instead reset to 200, it regains spent uses of its Legendary Reactions, and for 1 hour it can use its Mythic Actions. If the party defeats the goliath after using its Chronos Revelation, award them an additional 25,000 XP (for a total of 50,000 XP)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The goliath uses its Psychic Burst then attacks once each with its Tail Blade and Psychic Glaive."
+        },
+        {
+          "name": "Psychic Burst",
+          "name_format": "bold_italic",
+          "description": "One creature within 60 feet is blasted by psychic energy, and must succeed a DC 21 Dexterity saving throw or take 27 (6d8) psychic damage and be knocked back 15 feet."
+        },
+        {
+          "name": "Tail Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 35 (5d10 + 7) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Psychic Glaive",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing damage plus 11 (2d10) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Consume History (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The goliath attempts to pull memories from all creatures it chooses within 60 feet of it into itself. All creatures in range must make a DC 21 Wisdom saving throw, taking 77 (14d10) psychic damage and are stunned until the end of their next turn on a failed save, or half as much damage and aren’t stunned on a successful one. The goliath gains temporary hit points equal to half the damage it deals this way. Any creature that fails this saving throw automatically loses concentration on any spell or effect it is concentrating on."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Mythic Action: Psychic Assault",
+          "name_format": "bold_italic",
+          "description": "The goliath targets two creatures with its Psychic Burst, separate from its Multiattack use. It cannot target the same creature more than once with Psychic Burst on the same turn."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The goliath makes a Tail Blade attack."
+          },
+          {
+            "name": "Spell Blaster (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The goliath targets one creature that is concentrating on or benefiting from a spell effect, and affects them as though by the effects of dispel magic, using its Wisdom as its spellcasting ability for the purposes of the effect."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Chronal Stutter (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The goliath flickers through time, teleporting into a space within 120 feet that it can see. It then makes use of its Psychic Burst against two different targets."
+          },
+          {
+            "name": "Eidomantic Undulation (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Three creatures within 60 feet of the goliath are bombarded by a wave of eidomantic energy, overloading their spellcasting abilities and forcing them to make a DC 21 Intelligence saving throw. On a failure, every time they cast a spell for 1 hour they must roll 1d100. On a result of 61 or higher the spell fails, and the spell slot (but not the components of the spell) is wasted. Each target can repeat the saving throw at the end of each of their turns, ending the effect on a success. A creature that succeeds the initial save becomes immune to this effect for 24 hours."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -128,6 +128,41 @@ public sealed class MonsterGroupLoreSection
 
     [JsonPropertyName("table")]
     public MonsterGroupLoreTable? Table { get; set; }
+
+
+    // =====================================
+    // BOXED TEXT
+    //
+    // Some group lore uses a dedicated
+    // boxed callout instead of a quote.
+    // =====================================
+
+    [JsonPropertyName("boxed_text")]
+    public MonsterGroupLoreBoxedText? BoxedText { get; set; }
+
+
+    // =====================================
+    // ENDING PARAGRAPHS
+    //
+    // Used when prose follows a table in
+    // the same section.
+    // =====================================
+
+    [JsonPropertyName("ending_paragraphs")]
+    public List<MonsterGroupLoreParagraph> EndingParagraphs { get; set; } =
+        new();
+}
+
+
+// =========================================
+// BOXED TEXT
+// =========================================
+
+public sealed class MonsterGroupLoreBoxedText
+{
+    [JsonPropertyName("paragraphs")]
+    public List<MonsterGroupLoreParagraph> Paragraphs { get; set; } =
+        new();
 }
 
 

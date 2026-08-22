@@ -1,0 +1,107 @@
+{
+  "Name": "Iron Watch Soldier",
+  "Group": "Iron Watch",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "",
+  "Image": "",
+  "Images": [],
+  "Image Tabs": [],
+  "Stat Blocks": [
+    {
+      "id": "iron_watch_soldier",
+      "section_type": "Stat Block",
+      "title": "Iron Watch Soldier",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "15 (studded leather)",
+      "hit_points": "20 (3d8 + 6)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Pack tactics"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Insight +3",
+        "Perception +3"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common",
+        "one other language (usually Elvish)"
+      ],
+      "challenge_rating": "1/2 (100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Brave Face",
+          "name_format": "bold_italic",
+          "description": "The soldier has advantage on saving throws made to resist being frightened."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Longsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage or 9 (1d10 + 3) slashing damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Heavy Crossbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +4 to hit, range 100/400 ft., one target. Hit: 8 (1d10 + 2) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Manacles (2/Day)",
+          "name_format": "bold_italic",
+          "description": "If the soldier is grappling a humanoid creature, or adjacent to one that is incapacitated or stunned, they can attempt to manacle them. The creature must succeed on a DC 13 Strength saving throw or be manacled."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

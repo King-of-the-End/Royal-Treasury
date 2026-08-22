@@ -1,0 +1,212 @@
+{
+  "Name": "Valkyrie",
+  "Group": "Nephilim",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The Valkyries are special nephilim women who were once created specifically by Mnemosyne as her artificial daughters and leaders of the nephilim. When Mnemosyne was defeated and sealed, the Valkyries were offered a place serving Vestias in exchange for helping to turn control of the nephilim’s Abiding Heart over to her, and they accepted. They are powerful warriors, considered demigods among their kind, but only a handful exist. They reside in the Tower of Binding, with rules placed that permit only three at a time to leave their realm, which is usually to enforce their rule over the nephilim, or to hunt down errant Silvercounters.\n\nThese nephilim are experts in sealing and dispatching magic, and hold sway over the powers of time due to their origin as Mnemosyne’s creations. They carry longswords made of a special silver steel forged in the Gloomlush, the elongated blades of which glow with radiant power. Their silver and gold armor is forged to protect them from flame and frost. The armor of fallen Valkyries has fallen into mortal hands on more than one occasion, often treasured by elves and other Cu Chullian nobles.\n\nEight Daughters of Time\n\nThe eight Valkyries were given shape and named by Mnemosyne to evoke the names of former gods of time and memories, though some are unknown even in the Old World. They are Anunnaki, Skuld, Verðandi, Urðr, Atropos, Hemsut, Alias and Klotho.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Valkyrie%20Anunnaki.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Valkyrie%20Anunnaki.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Valkyrie%20Atropos.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference_BG%20-%20Valkyrie%20Alias%20(Helmet).jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference_BG%20-%20Valkyrie%20Alias.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference_BG%20-%20Valkyrie.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Anunnaki",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Valkyrie%20Anunnaki.jpg"
+    },
+    {
+      "Label": "Atropos",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference%20-%20Valkyrie%20Atropos.jpg"
+    },
+    {
+      "Label": "Alias (Helmet)",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference_BG%20-%20Valkyrie%20Alias%20(Helmet).jpg"
+    },
+    {
+      "Label": "Alias",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference_BG%20-%20Valkyrie%20Alias.jpg"
+    },
+    {
+      "Label": "Valkyrie",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Reference_BG%20-%20Valkyrie.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "valkyrie",
+      "section_type": "Stat Block",
+      "title": "Valkyrie",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (nephilim)",
+        "alignment": "true neutral"
+      },
+      "armor_class": "19 (breastplate, shield)",
+      "hit_points": "213 (25d8 + 100)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic immunity 4th",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+9"
+        },
+        "CON": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+8"
+        },
+        "WIS": {
+          "score": 21,
+          "modifier": "+5",
+          "save": "+11"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +9",
+        "Int +8",
+        "Wis +11"
+      ],
+      "skills": [
+        "Athletics +13",
+        "Insight +11",
+        "Perception +11"
+      ],
+      "resistances": [
+        "fire",
+        "cold",
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "lightning"
+      ],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "Common",
+        "Celestial"
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The nephilim’s spellcasting ability is Wisdom. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Wisdom",
+            "spells": [
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "banishment",
+                  "dimension door",
+                  "flame strike",
+                  "valkyrie’s wrath",
+                  "vanquish magic"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "anger of the sky-keeper",
+                  "gate",
+                  "gatestep",
+                  "haste",
+                  "slow",
+                  "time stop"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Temporal Attunement",
+          "name_format": "bold_italic",
+          "description": "The nephilim is unaffected by slow, the negative effects of the haste spell ending, and can act normally when subjected to the effects of time stop (the nephilim takes turns as if in initiative with its caster). Likewise, they can ignore the negative effects of time manipulating spells and effects."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The nephilim uses its Binding Rings, then makes three weapon attacks."
+        },
+        {
+          "name": "Silverlight Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 18 (2d10 + 7) slashing damage plus 9 (2d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Silverlight Greatbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +13 to hit, range 150/600 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 9 (2d8) radiant damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Binding Rings",
+          "name_format": "bold_italic",
+          "description": "Silver rings of arcane energy lash out at one creature within 60 feet of the nephilim. The creature must succeed a DC 19 Dexterity saving throw or be restrained until the start of the nephilim’s next turn."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Chronocast",
+          "name_format": "bold_italic",
+          "description": "The nephilim casts a spell with a casting time of 1 action using its Innate Spellcasting."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Sealing Counterspell",
+          "name_format": "bold_italic",
+          "description": "The nephilim casts counterspell, requiring no spell slot or components. They use Wisdom as their spellcasting ability. If successful, that spell is sealed for that target, and each time they attempt to cast it they must succeed on a DC 19 Spellcasting ability check or the spell fails, consuming the spell slot (but not the material components). If the creature succeeds the sealing effect ends."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

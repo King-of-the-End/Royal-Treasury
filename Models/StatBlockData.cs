@@ -459,6 +459,30 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // ABILITY NOTE
+    //
+    // Optional note printed immediately
+    // beneath the ability-score grid.
+    // =====================================
+
+    [JsonPropertyName("ability_note")]
+    public string AbilityNote { get; set; } =
+        string.Empty;
+
+
+    // =====================================
+    // FOOTPRINT
+    //
+    // Older DGR/eidolos stat blocks store
+    // their footprint as a top-level number
+    // rather than in creature.tags.
+    // =====================================
+
+    [JsonPropertyName("footprint")]
+    public int Footprint { get; set; }
+
+
+    // =====================================
     // TRAITS
     // =====================================
 
@@ -502,6 +526,18 @@ public sealed class StatBlockData
     public StatBlockLegendaryActions
         LegendaryActions { get; set; } =
             new();
+
+
+    // =====================================
+    // LEGENDARY ACTION COUNT
+    //
+    // Legacy array-shaped legendary action
+    // sections sometimes keep the available
+    // action count beside the section.
+    // =====================================
+
+    [JsonPropertyName("legendary_action_count")]
+    public int LegendaryActionCount { get; set; }
 
 
     // =====================================
@@ -850,6 +886,30 @@ public sealed class StatBlockEntry
 
 
     // =====================================
+    // COST
+    //
+    // Used by legendary/mythic action data
+    // that stores "cost": 2 separately from
+    // the entry name.
+    // =====================================
+
+    [JsonPropertyName("cost")]
+    public int Cost { get; set; }
+
+
+    // =====================================
+    // ADDITIONAL TEXT
+    //
+    // Some entries put a final paragraph
+    // after their options/bullets here.
+    // =====================================
+
+    [JsonPropertyName("additional_text")]
+    public string AdditionalText { get; set; } =
+        string.Empty;
+
+
+    // =====================================
     // INLINE FORMATTING
     //
     // Preserved from monster JSON so the
@@ -894,6 +954,38 @@ public sealed class StatBlockEntry
     public List<StatBlockEntry>
         Options { get; set; } =
             new();
+
+
+    // =====================================
+    // SUBENTRIES
+    //
+    // Same content model as options, but a
+    // number of DGR files use this key.
+    // =====================================
+
+    [JsonPropertyName("subentries")]
+    [JsonConverter(
+        typeof(
+            StatBlockEntryOptionsConverter))]
+    public List<StatBlockEntry>
+        Subentries { get; set; } =
+            new();
+
+
+    // =====================================
+    // BULLETS
+    //
+    // Accepts either strings or entry-shaped
+    // objects through the same converter.
+    // =====================================
+
+    [JsonPropertyName("bullets")]
+    [JsonConverter(
+        typeof(
+            StatBlockEntryOptionsConverter))]
+    public List<StatBlockEntry>
+        Bullets { get; set; } =
+            new();
 }
 
 
@@ -918,6 +1010,16 @@ public sealed class StatBlockSpellcasting
 
     [JsonPropertyName("material_components_required")]
     public bool? MaterialComponentsRequired { get; set; }
+
+
+    // Legacy alias used by a small number of
+    // bestiary files.
+    [JsonPropertyName("components_required")]
+    public bool? ComponentsRequired
+    {
+        get => MaterialComponentsRequired;
+        set => MaterialComponentsRequired = value;
+    }
 
 
     [JsonPropertyName("components")]
@@ -1397,6 +1499,23 @@ public sealed class
             }
 
 
+            // Several current files use
+            // "description" for the section
+            // introduction instead of "intro".
+            if (
+                string.IsNullOrWhiteSpace(
+                    result.Intro)
+                &&
+                TryReadString(
+                    root,
+                    "description",
+                    out var description))
+            {
+                result.Intro =
+                    description;
+            }
+
+
             // =============================
             // USES
             //
@@ -1705,4 +1824,28 @@ public sealed class MonsterInformationSection
 
     [JsonPropertyName("isquote")]
     public bool IsQuote { get; set; }
+
+
+    // =====================================
+    // BULLETS
+    //
+    // Structured lore sections such as
+    // Regional Effects keep their list items
+    // separate from the introductory text.
+    // =====================================
+
+    [JsonPropertyName("bullets")]
+    public List<string> Bullets { get; set; } =
+        new();
+
+
+    // =====================================
+    // ENDING TEXT
+    //
+    // Optional paragraph after the bullets.
+    // =====================================
+
+    [JsonPropertyName("endingtext")]
+    public string EndingText { get; set; } =
+        string.Empty;
 }

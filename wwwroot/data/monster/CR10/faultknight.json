@@ -1,0 +1,165 @@
+{
+  "Name": "Faultknight",
+  "Group": "Nephilim",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The elite warriors among the nephilim, who train themselves to excel at frontline or ranged combat. These warriors lead their fellow nephilim into conflicts when they are unavoidable, and protect their most sacred sites. When knowledge or relics must be protected or kept from mortal hands, they are the greatest force to be deployed.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Nephilim%20Faultknight.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Nephilim%20Faultknight.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Nephilim%20Faultknight.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "faultknight",
+      "section_type": "Stat Block",
+      "title": "Faultknight",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (nephilim)",
+        "alignment": "neutral"
+      },
+      "armor_class": "17 (breastplate)",
+      "hit_points": "128 (15d8 + 60)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft. (hover)"
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+9"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Str +9",
+        "Con +8"
+      ],
+      "skills": [
+        "Athletics +9",
+        "Insight +8",
+        "Perception +8"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Common",
+        "Primordial",
+        "one other language"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The nephilim’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "sacred flame",
+                  "scorching ray"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "acceleration",
+                  "haste",
+                  "valkyrie’s wrath"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "cure wounds (3rd level)",
+                  "guiding bolt"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Memories of the Heart (4/Day)",
+          "name_format": "bold_italic",
+          "description": "When the nephilim makes an attack roll, ability check, or saving throw, they can roll 1d4 and add it to the result. If added to an attack roll, another 1d4 is added to the damage from that attack as well."
+        },
+        {
+          "name": "Rite of the Insistent (1/Day)",
+          "name_format": "bold_italic",
+          "description": "When the nephilim falls to 0 hit points or is killed outright, it is immediately replenished by the Abiding Heart and drops to 1 hit point instead."
+        },
+        {
+          "name": "Rite of Flickering Burden",
+          "name_format": "bold_italic",
+          "description": "When the nephilim has fewer than half of their hit points remaining, their weapon attacks deal an additional 11 (2d10) radiant damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The nephilim makes three melee attacks."
+        },
+        {
+          "name": "Halberd",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Prismatic Circle (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The nephilim causes a 20-foot-radius circle of divine power to form at a point it can see within 60 feet. All non-nephilim creatures that are 30 feet above or below the circle are subjected to a prismatic flash of radiant energy, and have to make a DC 16 Dexterity saving throw. Creatures that fail take 45 (10d8) radiant damage, or half as much damage on a successful save."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Subdermal Illumination",
+          "name_format": "bold_italic",
+          "description": "The nephilim causes its body to magically produce bright light out to 20 feet, with dim light twice as far, or causes this light to be extinguished. This light is treated as a spell with a level equal to the nephilim’s proficiency bonus."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

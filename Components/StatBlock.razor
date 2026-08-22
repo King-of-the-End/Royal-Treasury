@@ -249,6 +249,20 @@
 
                     </div>
 
+
+                    @if (
+                        !string.IsNullOrWhiteSpace(
+                            Data.AbilityNote))
+                    {
+                        <p class="rt-stat-entry rt-ability-note">
+                            <em>
+                                <GlossaryText
+                                    Text="@Data.AbilityNote"
+                                    Context="GlossaryContext.StatBlock" />
+                            </em>
+                        </p>
+                    }
+
                 </section>
             }
 
@@ -521,7 +535,7 @@
                                 <em>
 
                                     <GlossaryText
-                                        Text="@entry.Name"
+                                        Text="@EntryDisplayName(entry)"
                                         Context="GlossaryContext.StatBlock" />.
 
                                 </em>
@@ -571,7 +585,7 @@
                                     <em>
 
                                         <GlossaryText
-                                            Text="@entry.Name"
+                                            Text="@EntryDisplayName(entry)"
                                             Context="GlossaryContext.StatBlock" />.
 
                                     </em>
@@ -610,7 +624,7 @@
                                     <em>
 
                                         <GlossaryText
-                                            Text="@entry.Name"
+                                            Text="@EntryDisplayName(entry)"
                                             Context="GlossaryContext.StatBlock" />.
 
                                     </em>
@@ -649,7 +663,7 @@
                                     <em>
 
                                         <GlossaryText
-                                            Text="@entry.Name"
+                                            Text="@EntryDisplayName(entry)"
                                             Context="GlossaryContext.StatBlock" />.
 
                                     </em>
@@ -670,13 +684,30 @@
                      ================================= -->
 
                 @if (
-                    Data.LegendaryActions.Count > 0)
+                    Data.LegendaryActions.Count > 0
+                    ||
+                    !string.IsNullOrWhiteSpace(
+                        Data.LegendaryActions.Intro))
                 {
                     <section class="rt-stat-section">
 
                         <div class="rt-stat-section-bar">
                             @LegendaryActionsHeading
                         </div>
+
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                Data.LegendaryActions.Intro))
+                        {
+                            <p class="rt-stat-entry">
+
+                                <GlossaryText
+                                    Text="@Data.LegendaryActions.Intro"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
 
 
                         @foreach (
@@ -689,7 +720,7 @@
                                     <em>
 
                                         <GlossaryText
-                                            Text="@entry.Name"
+                                            Text="@EntryDisplayName(entry)"
                                             Context="GlossaryContext.StatBlock" />.
 
                                     </em>
@@ -746,7 +777,7 @@
                                     <em>
 
                                         <GlossaryText
-                                            Text="@entry.Name"
+                                            Text="@EntryDisplayName(entry)"
                                             Context="GlossaryContext.StatBlock" />.
 
                                     </em>
@@ -803,7 +834,7 @@
                                     <em>
 
                                         <GlossaryText
-                                            Text="@entry.Name"
+                                            Text="@EntryDisplayName(entry)"
                                             Context="GlossaryContext.StatBlock" />.
 
                                     </em>
@@ -824,13 +855,30 @@
                      ================================= -->
 
                 @if (
-                    Data.LegendaryReactions.Count > 0)
+                    Data.LegendaryReactions.Count > 0
+                    ||
+                    !string.IsNullOrWhiteSpace(
+                        Data.LegendaryReactions.Intro))
                 {
                     <section class="rt-stat-section">
 
                         <div class="rt-stat-section-bar">
                             @LegendaryReactionsHeading
                         </div>
+
+
+                        @if (
+                            !string.IsNullOrWhiteSpace(
+                                Data.LegendaryReactions.Intro))
+                        {
+                            <p class="rt-stat-entry">
+
+                                <GlossaryText
+                                    Text="@Data.LegendaryReactions.Intro"
+                                    Context="GlossaryContext.StatBlock" />
+
+                            </p>
+                        }
 
 
                         @foreach (
@@ -843,7 +891,7 @@
                                     <em>
 
                                         <GlossaryText
-                                            Text="@entry.Name"
+                                            Text="@EntryDisplayName(entry)"
                                             Context="GlossaryContext.StatBlock" />.
 
                                     </em>
@@ -1017,6 +1065,20 @@
                 new List<string>();
 
 
+            if (
+                Data.Footprint > 0
+                &&
+                !creatureTags.Any(
+                    tag =>
+                        tag.Contains(
+                            "footprint",
+                            StringComparison.OrdinalIgnoreCase)))
+            {
+                creatureTags.Add(
+                    $"[footprint {Data.Footprint}]");
+            }
+
+
             var tagText =
                 string.Join(
                     " ",
@@ -1152,6 +1214,9 @@
         ||
         Data.LegendaryActions.Count > 0
         ||
+        !string.IsNullOrWhiteSpace(
+            Data.LegendaryActions.Intro)
+        ||
         Data.LairActions.Count > 0
         ||
         !string.IsNullOrWhiteSpace(
@@ -1162,7 +1227,10 @@
         !string.IsNullOrWhiteSpace(
             Data.MythicActions.Intro)
         ||
-        Data.LegendaryReactions.Count > 0;
+        Data.LegendaryReactions.Count > 0
+        ||
+        !string.IsNullOrWhiteSpace(
+            Data.LegendaryReactions.Intro);
 
 
     // =====================================
@@ -1170,7 +1238,15 @@
     // =====================================
 
     private string LegendaryActionsHeading =>
-        LegendarySectionHeading(
+        Data.LegendaryActions.ActionsPerRound <= 0
+        &&
+        Data.LegendaryActionCount > 0
+
+        ? $"{(string.IsNullOrWhiteSpace(Data.LegendaryActions.Header) ? "Legendary Actions" : Data.LegendaryActions.Header.Trim())} " +
+          $"({Data.LegendaryActionCount} " +
+          $"{(Data.LegendaryActionCount == 1 ? "Action" : "Actions")})"
+
+        : LegendarySectionHeading(
             Data.LegendaryActions,
             "Legendary Actions");
 
@@ -1203,6 +1279,42 @@
         LegendarySectionHeading(
             Data.LegendaryReactions,
             "Legendary Reactions");
+
+
+    // =====================================
+    // ENTRY DISPLAY NAME
+    //
+    // Some monster files store legendary
+    // action costs separately from the name.
+    // Keep one-action entries uncluttered and
+    // append the cost for entries that spend
+    // two or more actions.
+    // =====================================
+
+    private static string
+        EntryDisplayName(
+            StatBlockEntry entry)
+    {
+        var name =
+            entry.Name?.Trim()
+            ??
+            string.Empty;
+
+
+        if (
+            entry.Cost <= 1
+            ||
+            name.Contains(
+                "cost",
+                StringComparison.OrdinalIgnoreCase))
+        {
+            return name;
+        }
+
+
+        return
+            $"{name} (Costs {entry.Cost} Actions)";
+    }
 
 
     // =====================================

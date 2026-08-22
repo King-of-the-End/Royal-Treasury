@@ -3005,3 +3005,29 @@
         width: 5.5rem;
     }
 }
+
+
+/* =========================================================
+   CONTENT-SIZED CLASS FEATURE CARDS
+   Prevent short features (notably Fighting Style lists) from
+   inheriting/stretching to a large fixed block height.
+   ========================================================= */
+
+.class-feature,
+.class-page ::deep .class-feature {
+    height: auto !important;
+    min-height: 0 !important;
+    align-self: start;
+}
+
+.class-feature-body,
+.class-page ::deep .class-feature-body {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.class-fighting-style-list,
+.class-page ::deep .class-fighting-style-list {
+    height: auto !important;
+    min-height: 0 !important;
+}

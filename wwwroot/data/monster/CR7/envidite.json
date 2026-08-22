@@ -1,0 +1,132 @@
+{
+  "Name": "Envidite",
+  "Group": "Red Manor",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Though most of Individa’s followers use the term envidite to describe themselves, the Red Manor envidites are professional killers who lead the efforts of the Red Manor. They collect payment, organize and perform assassinations, and lead their fellow envidites in rituals to pay tribute to their goddess. They are competent users of various oils and reagents.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20Red%20Manor%20Envidite.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20Red%20Manor%20Envidite.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20Red%20Manor%20Envidite.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "envidite",
+      "section_type": "Stat Block",
+      "title": "Envidite",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "16 (breastplate)",
+      "hit_points": "102 (12d10 + 36)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+4"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Cha +4"
+      ],
+      "skills": [
+        "Intimidation +4",
+        "Survival +3"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Laughing Critical",
+          "name_format": "bold_italic",
+          "description": "The envidite scores a critical hit on a d20 result of 19 or 20, and when they score a critical hit they gain temporary hit points equal to the extra damage dealt by the critical hit."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The envidite makes two weapons attacks, choosing between its Agonizing Greataxe and Revolver for both."
+        },
+        {
+          "name": "Agonizing Greataxe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 4) slashing damage plus 5 (1d8) acid damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., reload 6, one target. Hit: 9 (2d6 + 2) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Flash Advance (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The envidite conjures fey magic to teleport to an unoccupied space it can see within 30 feet, disappearing and reappearing in the blink of an eye. The next attack they make that turn after doing so has advantage."
+        },
+        {
+          "name": "Slayer’s Oils",
+          "name_format": "bold_italic",
+          "description": "Once per each of the oil’s listed, the envidite can choose one of the following effects and apply it to their Agonizing Greataxe; if one is applied while a previous one is still active, the new effect ends the previous one:\n\n• Bloodrot Oil. This corrosive substance causes the axe’s next hit to deal an additional 3d8 acid damage.\n• Lightning Oil. The next time the axe hits a creature, it ignites with magical lightning. That hit, and each the axe takes for the next minute, deals an additional d10 of lightning damage. Each time this extra damage is dealt, roll a d100: on a result of 25 or lower, the effect ends.\n• Paralysis Oil. The next creature the axe hits must succeed a DC 15 Constitution saving throw. On a failure, they are paralyzed for 1 minute, during which time they repeat the save at the end of each of their turns. The effect ends early on a success.\n• Slowing Oil. The next creature the axe hits is coated in a binding agent, and has its movement speeds reduced by 15 feet (the reduction is reduced by 5 feet for each size category above Large they are). The creature can use their action to clear the extract from their body, ending the effect."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

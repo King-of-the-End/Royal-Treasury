@@ -1,0 +1,171 @@
+{
+  "Name": "Monumental Redarm",
+  "Group": "Monumental",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Above the soldiers, various brotherhoods are placed under the gaze and command of a Monumental commander, known as a Redarm, who also serves on Harros’ war council. Only seven of these exist at a time, their ranks composed of the most distinguished soldiers under Harros’ command. They also hold a unique responsibility: each is bound by honor to be a go-between who passes reports from Harros and one of the other seven active Eidolons, offering transparency about his activities. They do not owe their life or service to the other gods of the Eight-Remain, but this duty established Harros’ good will toward his fellow gods.\n\n***Striking Armory.*** The Redarms carry powerful equipment provided by the Monument’s armory, and a blessed red arm that grants access to some of Harros’ divine magic. They can conjure spears of crimson light to hurl at their targets, and wield golden replicas of the antiquated spiral halberds used in the Eidolons ancient wars.\n\n***Replacements.*** If a Redarm is killed, a new one is selected from the leaders of the brotherhoods they were responsible for. They always have a replacement selected, though it is kept secret, and who the new Redarm is becomes known to all Monumentals the moment the responsibility changes hands, as well as to the Eidolon they are assigned to be a delegate to. If for some reason no selection has been made, Harros decides of his own accord, drawing on his exhaustive and supernatural knowledge of all soldiers who pledge themselves to him.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Monumental%20Redarm.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Monumental%20Redarm.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Monumental%20Redarm%20(Isolated).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Reference",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Reference%20-%20Monumental%20Redarm.jpg"
+    },
+    {
+      "Label": "Isolated",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Monumental%20Redarm%20(Isolated).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "monumental_redarm",
+      "section_type": "Stat Block",
+      "title": "Monumental Redarm",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any, petitioner)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "22 (plate, greatshield)",
+      "hit_points": "170 (20d8 + 80)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+10"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+9"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "+6",
+          "save": "+11"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "+5"
+        }
+      },
+      "saving_throws": [
+        "Str +10",
+        "Con +9",
+        "Wis +11"
+      ],
+      "skills": [
+        "Athletics +10",
+        "Intimidation +10",
+        "Perception +11"
+      ],
+      "resistances": [
+        "force",
+        "B/P/S (adamantine)"
+      ],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "stunned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "Common",
+        "Celestial"
+      ],
+      "challenge_rating": "13 (10,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Adamantine Armor",
+          "name_format": "bold_italic",
+          "description": "Any critical hit against the redarm is treated as a regular hit instead, but is still an automatic hit."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The redarm’s spellcasting ability is Charisma. It can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "golden spiral",
+                  "mass command"
+                ]
+              },
+              {
+                "frequency": "3/Days each",
+                "spells": [
+                  "weapon of domination"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The redarm makes three weapon attacks."
+        },
+        {
+          "name": "Golden Spiral Halberd",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 11 (1d8 + 6) piercing damage plus 7 (1d12) radiant damage or 12 (1d10 + 6) piercing damage plus 7 (1d12) radiant damage if wielded two-handed. For each hit made against the same target, this weapon deals an extra damage die (d8 or d10) of piercing damage against that creature until the start of the Redarm’s next turn.\n\nIf they wish to, the redarm can have this weapon’s piercing damage be radiant damage instead.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Redarm Spear",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +11 to hit, range 60/180 ft., one target. Hit: 12 (2d6 + 6) force damage plus 6 (1d10) radiant damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Crimson Spear Hail (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The redarm conjures a volley of radiant crimson spears that rain down in a 20-foot radius centered on a point they can see within 60 feet. Each creature in that space (except the redarm or their allies) must succeed on a DC 18 Dexterity saving throw, or take 21 (6d6) force damage and 22 (4d10) radiant damage."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Aspect Angelus",
+          "name_format": "bold_italic",
+          "description": "Until the end of its next turn, the redarm manifests red ethereal wings and gains a fly (hover) speed of 60 feet."
+        },
+        {
+          "name": "Monumental Command",
+          "name_format": "bold_italic",
+          "description": "The redarm commands and coordinates the actions of up to three of its allies that can see or hear it. Those creatures have advantage on one attack roll, ability check or saving throw they make before the start of the redarm’s next turn."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

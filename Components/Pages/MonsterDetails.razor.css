@@ -835,6 +835,29 @@
 }
 
 
+/* =========================================
+   GROUP BOXED TEXT
+   ========================================= */
+
+.monster-group-lore-boxed-text {
+    margin: 1.15rem 0 0.75rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(226, 182, 0, 0.42);
+    border-left: 4px solid var(--gold);
+    border-radius: 7px;
+    background: rgba(46, 32, 25, 0.68);
+}
+
+.monster-group-lore-boxed-text p {
+    margin: 0;
+    line-height: 1.65;
+}
+
+.monster-group-lore-boxed-text p + p {
+    margin-top: 0.8rem;
+}
+
+
 
 /* =========================================
    MONSTER-SPECIFIC LORE TABLE TITLE

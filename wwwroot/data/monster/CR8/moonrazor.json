@@ -1,0 +1,169 @@
+{
+  "Name": "Moonrazor",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A servant of Chan Karegosh, often one who serves as a bishop or head of a church for her. They are tasked with guiding the unfortunate and watching over those who travel at night in their god’s stead, and they are empowered when exposed directly to moonlight.\n\n***Nocturnal Balance.*** To be sure they can serve their duties both when the moon is high in the night sky and when common followers would approach them during the day, it is customary for moonrazors to adopt an irregular sleep schedule, splitting their rest between the transitional phases of the day. They will usually sleep between 6 AM and 10 AM, then again between 5 PM and 9 PM. As long as they rest for 8 total hours during a single day they gain the benefits of a Long Rest.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Moonrazor.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Moonrazor.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Moonrazor.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "moonrazor",
+      "section_type": "Stat Block",
+      "title": "Moonrazor",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (usually human or flooflin)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "18 (divine protection)",
+      "hit_points": "104 (16d8 + 32)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-",
+          "save": "+3"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+7"
+        }
+      },
+      "saving_throws": [
+        "Str +5",
+        "Int +3",
+        "Cha +7"
+      ],
+      "skills": [
+        "Insight +5",
+        "Perception +5",
+        "Religion +3"
+      ],
+      "resistances": [
+        "poison",
+        "radiant"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Divine Protection",
+          "name_format": "bold_italic",
+          "description": "While they aren’t wearing armor, the moonrazor can add their Charisma modifier to their armor class."
+        },
+        {
+          "name": "Divine Smite",
+          "name_format": "bold_italic",
+          "description": "When the moonrazor hits with a weapon attack, they can expend one of their spell slots to deal an extra d8 of radiant damage, plus another d8 of radiant damage per level of that spell slot."
+        },
+        {
+          "name": "Moonlight Weapons",
+          "name_format": "bold_italic",
+          "description": "The moonrazor’s attacks are magical, and their weapon attacks deal an extra d8 of radiant damage. This bonus becomes 2d8 when they or their target are standing in bright moonlight. The initial d8 is factored into this stat block. The moonrazor uses their Charisma modifier to determine their attack and damage bonuses with their Crescent Scythe."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Moonrazor is a 10th-level spellcaster. Their spellcasting ability is Charisma. They have the following spells prepared:",
+          "spellcasting": {
+            "spellcasting_level": 10,
+            "spellcasting_ability": "Charisma",
+            "spells": [
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "bless",
+                  "cure wounds",
+                  "divine favor"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "branding smite",
+                  "foxfire",
+                  "lesser restoration",
+                  "moonbeam"
+                ]
+              },
+              {
+                "frequency": "3rd level (2 slots)",
+                "spells": [
+                  "radiant smite",
+                  "revivify"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The moonrazor makes two attacks, choosing between its Crescent Scythe and Moonlight Seal for each."
+        },
+        {
+          "name": "Crescent Scythe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 4) slashing damage plus 5 (1d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Moonlight Seal",
+          "name_format": "bold_italic",
+          "description": "One creature the moonrazor can see within 60 feet must succeed a DC 15 Dexterity saving throw or be struck by a burst of radiant moonlight and take 14 (3d8) radiant damage. Shapechangers have disadvantage on their saving throws against this effect."
+        },
+        {
+          "name": "Full Moon’s Radiance (3/Rest)",
+          "name_format": "bold_italic",
+          "description": "The moonrazor touches one willing creature within its reach and causes them to regain 18 (4d8) hit points and gain 14 (4d6) temporary hit points. After they do, the target glows with a cleansing light, projecting a 20-foot-radius sphere of bright moonlight centered on them, with dim moonlight stretching 20 feet beyond that. This light remains for 1 minute, until the moonrazor uses this feature again, or until the target’s temporary hit points are gone."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

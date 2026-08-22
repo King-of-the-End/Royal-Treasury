@@ -197,7 +197,7 @@
                     else
                     {
                         <span class="glossary-tooltip-definition">
-                            @segment.Entry.Definition
+                            @RenderPlainDefinition(segment.Entry.Definition)
                         </span>
                     }
 
@@ -215,6 +215,46 @@
 
 
 @code {
+
+    private static RenderFragment RenderPlainDefinition(string? definition) => builder =>
+    {
+        if (string.IsNullOrWhiteSpace(definition))
+            return;
+
+        var normalized = definition.Replace("\r\n", "\n");
+        var seq = 0;
+        var cursor = 0;
+
+        while (cursor < normalized.Length)
+        {
+            var open = normalized.IndexOf("**", cursor, StringComparison.Ordinal);
+
+            if (open < 0)
+            {
+                builder.AddContent(seq++, normalized[cursor..]);
+                break;
+            }
+
+            if (open > cursor)
+                builder.AddContent(seq++, normalized[cursor..open]);
+
+            var close = normalized.IndexOf("**", open + 2, StringComparison.Ordinal);
+
+            if (close < 0)
+            {
+                builder.AddContent(seq++, normalized[open..]);
+                break;
+            }
+
+            var strongText = normalized[(open + 2)..close];
+
+            builder.OpenElement(seq++, "strong");
+            builder.AddContent(seq++, strongText);
+            builder.CloseElement();
+
+            cursor = close + 2;
+        }
+    };
 
     // =====================================
     // TOOLTIP DISPLAY HELPERS

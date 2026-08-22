@@ -1,0 +1,176 @@
+{
+  "Name": "Avatar of Rott",
+  "Group": "Rott’s Influence",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The final stage of evolution for those trying to become Rott’s chosen. An avatar of Rott is a horrific amalgamation of flesh and vegetation that holds no solid form or identity, and is intent only on consuming living souls and spreading its influence. In its true form it is a huge, unknowable mass of features, but it can warp and mutate into whatever shape it pleases. If it returns to the form of the creature whose mind dominates it, it can use Rott’s illusory magic to assume their appearance again, but even that form can twist and produce horrifying tendrils. While it is not overwhelmed by hunger, an avatar of Rott sees all life as food, and if given the chance will consume anything it feels it can get away with. These beings are the direct servants of their parasitic god, and are the greatest fear of Aymere.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20Avatar%20of%20Rott.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20Avatar%20of%20Rott.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Avatar%20of%20Rott.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Reference",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Reference_BG%20-%20Avatar%20of%20Rott.jpg"
+    },
+    {
+      "Label": "Avatar",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Avatar%20of%20Rott.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "avatar_of_rott",
+      "section_type": "Stat Block",
+      "title": "Avatar of Rott",
+      "creature": {
+        "size": "Huge",
+        "type": "plant",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "250 (20d12 + 120)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft.",
+        "burrow": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical",
+        "regen 3d10 + 5 (radiant)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "+6",
+          "save": "+12"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+7"
+        }
+      },
+      "saving_throws": [
+        "Con +12",
+        "Cha +7"
+      ],
+      "skills": [
+        "Deception +7",
+        "Perception +11"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "poison",
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "blindsight 120 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "speaks the languages of all creatures it has consumed",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "name_format": "bold_italic",
+          "description": "When the avatar fails a saving throw, it can choose to succeed instead."
+        },
+        {
+          "name": "Shifting Mass",
+          "name_format": "bold_italic",
+          "description": "The avatar’s body shifts and changes shape with no certain form. It can grapple any number of creatures, producing new tendrils for each. It has advantage on saving throws made against being restrained."
+        },
+        {
+          "name": "Undying Regeneration",
+          "name_format": "bold_italic",
+          "description": "The avatar only dies if it starts its turn with 0 hit points and doesn’t regenerate (including from its engulfed targets)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The avatar makes four attacks using its Root Tendrils, then uses its Death Eye twice against different targets."
+        },
+        {
+          "name": "Root Tendril",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +13 to hit, reach 20 feet, one target. Hit: 28 (4d10 + 7) piercing damage. If two tendrils target the same creature and both hit, the target is restrained and grappled (escape DC 19). For each creature the avatar has grappled, one of its four Root Tendril attacks each turn can only be made against that grappled creature.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Death Eye",
+          "name_format": "bold_italic",
+          "description": "One target within 60 feet that can see the avatar must succeed on a DC 19 Intelligence saving throw, taking 20 (3d12) psychic damage on a failure. If the avatar is blinded it cannot use its Death Eye."
+        },
+        {
+          "name": "Engulf",
+          "name_format": "bold_italic",
+          "description": "The avatar attempts to consume one creature within reach that it is grappling. It can contain creatures within its body of a size equal to itself, two of one category smaller than itself, four of two categories smaller, and 16 of anything smaller than that. The creature being targeted makes a DC 19 Strength saving throw. On a failure, the grapple ends and the creature is engulfed. On a success, the creature escapes the avatar’s grapple.\n\nAn engulfed creature is restrained and blinded, and takes 6d8 necrotic damage at the start of each of their turns. For each creature the avatar is engulfing, it regains 1d6 hit points at the start of each of its turns. If the seed takes 30 or more damage in a single turn from an engulfed creature, it must succeed a DC 15 Constitution saving throw at the end of that turn to release that creature into a space within 10 feet of it, where they fall prone. If the avatar dies, the effect ends and the creature can escape its body by spending 20 feet of movement. If the avatar has 0 hit points it does not immediately die, but if it takes 30 damage or more in a single turn while at 0 hit points it releases all creatures it has engulfed.\n\nA creature killed by this necrotic damage cannot be restored to life unless this avatar is killed, due to its soul being trapped within it."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Size Mutation",
+          "name_format": "bold_italic",
+          "description": "The avatar changes its size to occupy a space between Medium and Huge in size. If it takes on a size matching its original humanoid form’s size, it can engage an illusory shroud that disguises itself as that humanoid. A DC 19 Intelligence (Investigation) check or Wisdom (Insight) check is required to determine that the form is an illusion."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The avatar can take 3 Legendary Actions, choosing from the options below. It can only take one Legendary Action option at a time, and only at the end of another creature’s turn. It regains spent Legendary Actions at the start of its turn."
+          },
+          {
+            "name": "Suppress",
+            "name_format": "bold_italic",
+            "description": "The avatar gains resistance to all damage dealt to it by one creature it has engulfed until the start of its next turn."
+          },
+          {
+            "name": "Revitalize (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Each creature the avatar has engulfed must succeed a DC 20 Constitution saving throw, taking 18 (4d8) necrotic damage on a failed save. The avatar regains hit points equal to half the damage it deals."
+          }
+        ]
+      }
+    }
+  ]
+}

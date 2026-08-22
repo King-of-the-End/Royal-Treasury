@@ -302,6 +302,40 @@ else
                                                 </div>
                                             }
 
+
+                                            @if (
+                                                informationSection.Bullets.Count > 0)
+                                            {
+                                                <ul class="monster-group-lore-list">
+
+                                                    @foreach (
+                                                        var bullet
+                                                        in informationSection.Bullets)
+                                                    {
+                                                        <li>
+                                                            <FormattedGlossaryText
+                                                                Text="@bullet"
+                                                                Context="GlossaryContext.General" />
+                                                        </li>
+                                                    }
+
+                                                </ul>
+                                            }
+
+
+                                            @if (
+                                                !string.IsNullOrWhiteSpace(
+                                                    informationSection.EndingText))
+                                            {
+                                                <div class="monster-detail-information">
+
+                                                    <FormattedGlossaryText
+                                                        Text="@informationSection.EndingText"
+                                                        Context="GlossaryContext.General" />
+
+                                                </div>
+                                            }
+
                                         </section>
                                     }
                                 }
@@ -683,6 +717,28 @@ else
 
 
                             @if (
+                                loreSection.BoxedText is not null
+                                &&
+                                loreSection.BoxedText.Paragraphs.Count > 0)
+                            {
+                                <aside class="monster-group-lore-boxed-text">
+
+                                    @foreach (
+                                        var paragraph
+                                        in loreSection.BoxedText.Paragraphs)
+                                    {
+                                        <p>
+                                            <FormattedGlossaryText
+                                                Spans="@paragraph.Spans"
+                                                Context="GlossaryContext.General" />
+                                        </p>
+                                    }
+
+                                </aside>
+                            }
+
+
+                            @if (
                                 loreSection.Bullets.Count > 0)
                             {
                                 <ul class="monster-group-lore-list">
@@ -763,6 +819,20 @@ else
                                     </table>
 
                                 </div>
+                            }
+
+
+                            @foreach (
+                                var paragraph
+                                in loreSection.EndingParagraphs)
+                            {
+                                <p>
+
+                                    <FormattedGlossaryText
+                                        Spans="@paragraph.Spans"
+                                        Context="GlossaryContext.General" />
+
+                                </p>
                             }
                         }
 

@@ -1,0 +1,154 @@
+{
+  "Name": "Wall Buster",
+  "Group": "Framebilt",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The massive, hulking Framebilt known as the wall buster was created with heavy lifting and construction in mind. They can carry an astounding amount of weight, and are armed with tools that aid them in excavation, climbing and demolition. These same tools are combat-ready, allowing them to easily switch into engagements with hostile forces.",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Framebilt%20Wallbuster.jpg"
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Framebilt%20Wallbuster.jpg",
+  "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Framebilt%20Wallbuster.jpg",
+  "Stat Blocks": [
+    {
+      "id": "wall_buster",
+      "section_type": "Stat Block",
+      "title": "Wall Buster",
+      "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Framebilt%20Wallbuster.jpg",
+      "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Framebilt%20Wallbuster.jpg",
+      "Images": [
+        "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Framebilt%20Wallbuster.jpg"
+      ],
+      "creature": {
+        "size": "Large",
+        "type": "humanoid (framebilt)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "15 (integrated armor)",
+      "hit_points": "147 (14d10 + 70)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 9,
+          "modifier": "-1"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Int +2",
+        "Cha +3"
+      ],
+      "skills": [
+        "Athletics +10",
+        "Intimidation +3",
+        "Survival +7"
+      ],
+      "resistances": [
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 20 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Constructed Body",
+          "name_format": "bold_italic",
+          "description": "The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned."
+        },
+        {
+          "name": "Multipurpose Tools",
+          "name_format": "bold_italic",
+          "description": "The Hooked Greathammer, Greater Siege Garland, and other tools worn by the framebilt are also suited to mining, climbing, excavating and demolition. It can add its proficiency bonus to any check that might involve the tool’s use for these purposes (unless it is already being added)."
+        },
+        {
+          "name": "Solid Plating",
+          "name_format": "bold_italic",
+          "description": "When the framebilt takes piercing, slashing, or bludgeoning damage it takes 10 fewer points of that damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The framebilt makes three weapon attacks, one of which can be replaced with its Anchoring Hammer."
+        },
+        {
+          "name": "Greathammer",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 26 (3d12 + 6) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Anchoring Hammer",
+          "name_format": "bold_italic",
+          "description": "The framebilt hurls its hammer, to which it is connected by a large chain, toward a Medium or larger creature within 30 feet and attempts to hook them with its reverse end. The target must succeed a DC 18 Dexterity saving throw or be pulled by the hammer into a space adjacent to the framebilt and knocked prone. Regardless of the outcome, the hammer then returns to the framebilt’s hand."
+        },
+        {
+          "name": "Greater Siege Garland (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The framebilt fires an explosive round at a point it can see within 80 feet, where it explodes in a 30-foot-radius sphere of sound and flame. Each target in that sphere must make a DC 17 Dexterity saving throw, taking 36 (5d8) fire damage and 36 (5d8) thunder damage on a failure, or half as much on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Emergency Reserve (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The framebilt gains 45 (10d8) temporary hit points that disappear after 1 minute, and while they have them, all attacks it makes have advantage. For 1 minute after using its Emergency Reserve, all attacks made against the framebilt have advantage."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**WALL BUSTER**\n*Large humanoid (framebilt), any alignment*\n**AC** 15 (integrated armor)\n**HP** 147 (14d10 + 70)\n**Speed** 30 ft., climb 30 ft.\n**STR** 23 (+6) | **DEX** 13 (+1) | **CON** 20 (+5) | **INT** 7 (-2) | **WIS** 17 (+3) | **CHA** 9 (-1)\n**Saving Throws** Dex +5, Int +2, Cha +3\n**Skills** Athletics +10, Intimidation +3, Survival +7\n**Resistances** poison; B/P/S (magical)\n**Condition Immunities** exhaustion, unconscious\n**Senses** blindsight 20 ft., darkvision 60 ft., passive Perception 13\n**Languages** Common, and one other language\n**CR** 10 (5,900 XP) **Proficiency Bonus** +4\n\n**QUALITY TRAITS**\n*Siege*\n\n**TRAITS**\n***Constructed Body.*** The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned.\n\n***Multipurpose Tools.*** The Hooked Greathammer, Greater Siege Garland, and other tools worn by the framebilt are also suited to mining, climbing, excavating and demolition. It can add its proficiency bonus to any check that might involve the tool’s use for these purposes (unless it is already being added).\n\n***Solid Plating.*** When the framebilt takes piercing, slashing, or bludgeoning damage it takes 10 fewer points of that damage.\n\n**ACTIONS**\n***Multiattack.*** The framebilt makes three weapon attacks, one of which can be replaced with its Anchoring Hammer.\n\n***Greathammer.*** *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 26 (3d12 + 6) bludgeoning damage.\n\n***Anchoring Hammer.*** The framebilt hurls its hammer, to which it is connected by a large chain, toward a Medium or larger creature within 30 feet and attempts to hook them with its reverse end. The target must succeed a DC 18 Dexterity saving throw or be pulled by the hammer into a space adjacent to the framebilt and knocked prone. Regardless of the outcome, the hammer then returns to the framebilt’s hand.\n\n***Greater Siege Garland (Recharge 5-6).*** The framebilt fires an explosive round at a point it can see within 80 feet, where it explodes in a 30-foot-radius sphere of sound and flame. Each target in that sphere must make a DC 17 Dexterity saving throw, taking 36 (5d8) fire damage and 36 (5d8) thunder damage on a failure, or half as much on a success.\n\n**BONUS ACTIONS**\n***Emergency Reserve (1/Day).*** The framebilt gains 45 (10d8) temporary hit points that disappear after 1 minute, and while they have them, all attacks it makes have advantage. For 1 minute after using its Emergency Reserve, all attacks made against the framebilt have advantage."
+    }
+  ]
+}

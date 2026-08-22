@@ -1,0 +1,118 @@
+{
+  "Name": "Marksman",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Marksmen are proficient in the use of firearms. They are hired often as bodyguards, assassins, or lookouts. They are more expensive than regular mercenaries due to their upkeep, but their inclusion in a mercenary band or among a group of raiders grants them a unique edge.",
+  "Image": "",
+  "Images": [],
+  "Image Tabs": [],
+  "Stat Blocks": [
+    {
+      "id": "marksman",
+      "section_type": "Stat Block",
+      "title": "Marksman",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "16 (studded leather)",
+      "hit_points": "75 (10d8 + 30)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Acrobatics +6",
+        "Perception +5"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 15"
+      ],
+      "languages": [
+        "any one language"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Point-Blank Accuracy",
+          "name_format": "bold_italic",
+          "description": "The marksman does not suffer disadvantage on attack rolls using firearms caused by hostile creatures being within 5 feet."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The marksman makes two attacks with its Shortsword or Revolver."
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 40/120 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Sniper’s Breath (3/Day)",
+          "name_format": "bold_italic",
+          "description": "When making an attack with a firearm at long range, the marksman does not suffer from disadvantage, and instead rolls 1d6 and adds it to the attack roll."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

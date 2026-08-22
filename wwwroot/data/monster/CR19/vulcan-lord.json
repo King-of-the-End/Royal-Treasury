@@ -1,63 +1,46 @@
 {
   "Name": "Vulcan Lord",
-  "Group": "Fire Giants",
+  "Group": "",
   "Source": "Lyres Guide to Risk and Reward",
-  "Information": "Standing at the top of the chain of command among its kind, a vulcan lord is a fire giant that has undergone a daring trial: to have thrown themselves into the heart of a volcano and remained there until their life was snuffed out. Through forces unknown, those who perform this ritual and are deemed worthy to stand above their kind have their life force reignited, and become avatars for the volcanoes they gave themselves to. These meteoric individuals achieve unnaturally long lifespans, empowered by some ancient forgotten force that is one with Somnis Domina’s molten heart. They rise from the magma bearing wings of pure burning energy, and the knowledge needed to fashion spiral glaives that allow them to channel the new power granted to them.\n\nThese giants are hailed as god-kings among their kind, standing like gods above other fire giants and commanding unquestioned respect. Despite this grand empowerment, however, a vulcan lord is innately aware that their transformation is incomplete in some indescribable way, and this knowledge of an insurmountable shortcoming leaves them resentful toward other beings of great power, such as gods, fiends, and dragons, who they readily steal land and influence from.",
-  "Images": [
-    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Reference%20-%20Fire%20Giant%20Vulcan%20Lord.jpg"
+  "Information": "**Fire Giant Vulcan Lord**\n\nStanding at the top of the chain of command among its kind, a vulcan lord is a fire giant that has undergone a daring trial: to have thrown themselves into the heart of a volcano and remained there until their life was snuffed out. Through forces unknown, those who perform this ritual and are deemed worthy to stand above their kind have their life force reignited, and become avatars for the volcanoes they gave themselves to. These meteoric individuals achieve unnaturally long lifespans, empowered by some ancient forgotten force that is one with Somnis Domina’s molten heart. They rise from the magma bearing wings of pure burning energy, and the knowledge needed to fashion spiral glaives that allow them to channel the new power granted to them.\n\nThese giants are hailed as god-kings among their kind, standing like gods above other fire giants and commanding unquestioned respect. Despite this grand empowerment, however, a vulcan lord is innately aware that their transformation is incomplete in some indescribable way, and this knowledge of an insurmountable shortcoming leaves them resentful toward other beings of great power, such as gods, fiends, and dragons, who they readily steal land and influence from.\n\n**Vulcan Lord’s Lair**\n\nThe lair of a platinum dragon is the volcano that the vulcan lord cast itself into and was reborn from. It has an innate connection with its volcano, able to sense what occurs upon it and exert influence over the land. Though a vulcan lord holds servants, such as those it and its tribe have conquered, it does not tolerate the existence of creatures it deems inferior within its territory, so invaders are often quickly hunted and exterminated.\n\n**Regional Effects**\n\nThe region a vulcan lord calls its lair undergoes some transformations, which represent its rage tainting the volcano that it has claimed. One or more of the following effects occur on and around the volcanic lair:\n\n• Rivers of magma flow even when no eruption has occurred. These rivers of fire burn brightly, making traversing the terrain difficult. Any creature who enters such a river for the first time on their turn or ends their turn within one must make a DC 20 Constitution saving throw or take 10d6 fire damage.\n\n• The sickening heat causes all vegetation to die and wither away. Exposed liquids, such as potions, water, etc., evaporates within 1 minute of being exposed to the air (even if bottled or stored) unless somehow shielded from the heat. The giants have special reservoirs for storing water without it evaporating this way, and can construct special rock containers to shield materials they wish to protect.\n\n• The devastating heat causes light to bend and refract in the air, resulting in difficulty seeing into the distance. Creatures cannot see clearly for more than 60 feet unless they have immunity to fire damage. Everything beyond that distance is considered completely obscured, and ranged attacks have disadvantage as if the attacker was blinded at that range.\n\n• The vulcan lord’s voice carries across its lair should it wish to project it that way, and so when it wishes it can cause its voice to erupt from the walls, peaks, and ground, accompanied by a tectonic rumbling. It can hear the speech of any creature in contact with the ground by reading the vibrations of their voice.\n\nIf the vulcan lord dies, these effects end immediately. Their death would likely be paired with a resounding shift in tectonic plates from the volcano that created them, and possibly an eruption. Creatures present on the volcano when a vulcan lord dies must make a DC 22 Dexterity saving throw, taking 11 (2d10) fire damage and 11 (2d10) bludgeoning damage as well as being knocked prone on a failure.\n\n**Rite of Eruption**\n\nA vulcan lord intending to devastate an entire battlefield may engage in the rite of eruption. By spending 1 minute focusing on gathering together all of the energy within their body, they can unleash it in a 500-foot-radius sphere centered on themselves, which forces all creatures within that range to make a DC 25 Constitution saving throw, taking 10d10 fire damage and 10d10 force damage on a failed save, or half as much on a successful one. This blast of force resembles an erupting volcano, and leaves the vulcan lord tired, reducing their hit points by 150 and giving them four levels of exhaustion. If this kills them outright, it likely causes their Volcanic Awakening to trigger.\n\nWhile gathering this energy, a vulcan lord’s focus can be broken. A creature who strikes the vulcan lord causes it to make a concentration check as if it was focusing on a spell, and if it fails then it must concentrate for 1 round longer than before.\n\nOnce the rite of eruption has been used it cannot be used again for seven days.",
+  "Information Sections": [
+    {
+      "Title": "Fire Giant Vulcan Lord",
+      "Text": "Standing at the top of the chain of command among its kind, a vulcan lord is a fire giant that has undergone a daring trial: to have thrown themselves into the heart of a volcano and remained there until their life was snuffed out. Through forces unknown, those who perform this ritual and are deemed worthy to stand above their kind have their life force reignited, and become avatars for the volcanoes they gave themselves to. These meteoric individuals achieve unnaturally long lifespans, empowered by some ancient forgotten force that is one with Somnis Domina’s molten heart. They rise from the magma bearing wings of pure burning energy, and the knowledge needed to fashion spiral glaives that allow them to channel the new power granted to them.\n\nThese giants are hailed as god-kings among their kind, standing like gods above other fire giants and commanding unquestioned respect. Despite this grand empowerment, however, a vulcan lord is innately aware that their transformation is incomplete in some indescribable way, and this knowledge of an insurmountable shortcoming leaves them resentful toward other beings of great power, such as gods, fiends, and dragons, who they readily steal land and influence from."
+    },
+    {
+      "Title": "Vulcan Lord’s Lair",
+      "Text": "The lair of a platinum dragon is the volcano that the vulcan lord cast itself into and was reborn from. It has an innate connection with its volcano, able to sense what occurs upon it and exert influence over the land. Though a vulcan lord holds servants, such as those it and its tribe have conquered, it does not tolerate the existence of creatures it deems inferior within its territory, so invaders are often quickly hunted and exterminated."
+    },
+    {
+      "Title": "Regional Effects",
+      "Text": "The region a vulcan lord calls its lair undergoes some transformations, which represent its rage tainting the volcano that it has claimed. One or more of the following effects occur on and around the volcanic lair:",
+      "Bullets": [
+        "Rivers of magma flow even when no eruption has occurred. These rivers of fire burn brightly, making traversing the terrain difficult. Any creature who enters such a river for the first time on their turn or ends their turn within one must make a DC 20 Constitution saving throw or take 10d6 fire damage.",
+        "The sickening heat causes all vegetation to die and wither away. Exposed liquids, such as potions, water, etc., evaporates within 1 minute of being exposed to the air (even if bottled or stored) unless somehow shielded from the heat. The giants have special reservoirs for storing water without it evaporating this way, and can construct special rock containers to shield materials they wish to protect.",
+        "The devastating heat causes light to bend and refract in the air, resulting in difficulty seeing into the distance. Creatures cannot see clearly for more than 60 feet unless they have immunity to fire damage. Everything beyond that distance is considered completely obscured, and ranged attacks have disadvantage as if the attacker was blinded at that range.",
+        "The vulcan lord’s voice carries across its lair should it wish to project it that way, and so when it wishes it can cause its voice to erupt from the walls, peaks, and ground, accompanied by a tectonic rumbling. It can hear the speech of any creature in contact with the ground by reading the vibrations of their voice."
+      ],
+      "EndingText": "If the vulcan lord dies, these effects end immediately. Their death would likely be paired with a resounding shift in tectonic plates from the volcano that created them, and possibly an eruption. Creatures present on the volcano when a vulcan lord dies must make a DC 22 Dexterity saving throw, taking 11 (2d10) fire damage and 11 (2d10) bludgeoning damage as well as being knocked prone on a failure."
+    },
+    {
+      "Title": "Rite of Eruption",
+      "Text": "A vulcan lord intending to devastate an entire battlefield may engage in the rite of eruption. By spending 1 minute focusing on gathering together all of the energy within their body, they can unleash it in a 500-foot-radius sphere centered on themselves, which forces all creatures within that range to make a DC 25 Constitution saving throw, taking 10d10 fire damage and 10d10 force damage on a failed save, or half as much on a successful one. This blast of force resembles an erupting volcano, and leaves the vulcan lord tired, reducing their hit points by 150 and giving them four levels of exhaustion. If this kills them outright, it likely causes their Volcanic Awakening to trigger.\n\nWhile gathering this energy, a vulcan lord’s focus can be broken. A creature who strikes the vulcan lord causes it to make a concentration check as if it was focusing on a spell, and if it fails then it must concentrate for 1 round longer than before.\n\nOnce the rite of eruption has been used it cannot be used again for seven days."
+    }
   ],
-  "Image Variants": [
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Reference%20-%20Fire%20Giant%20Vulcan%20Lord.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Reference%20-%20Fire%20Giant%20Vulcan%20Lord.jpg",
     "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Fire%20Giant%20Vulcan%20Lord.png"
   ],
-  "Additional Sections": [
+  "Image Tabs": [
     {
-      "title": "Vulcan Lord’s Lair",
-      "section_type": "Lore",
-      "text": "The lair of a platinum dragon is the volcano that the vulcan lord cast itself into and was reborn from. It has an innate connection with its volcano, able to sense what occurs upon it and exert influence over the land. Though a vulcan lord holds servants, such as those it and its tribe have conquered, it does not tolerate the existence of creatures it deems inferior within its territory, so invaders are often quickly hunted and exterminated."
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Reference%20-%20Fire%20Giant%20Vulcan%20Lord.jpg"
     },
     {
-      "title": "Lair Actions",
-      "section_type": "Lair Actions",
-      "intro": "On initiative count 20 (losing initiative ties), the giant takes a lair action to cause one of the following effects; the giant can’t use the same effect two rounds in a row:",
-      "entries": [
-        {
-          "name": "Magma Geysers",
-          "description": "Geysers of molten rock erupt from three points the giant chooses. All creatures within 10 feet of these geysers must make a DC 18 Dexterity saving throw, taking 36 (8d8) fire damage on a failed save."
-        },
-        {
-          "name": "Scream of Terror",
-          "description": "The volcano lets out a mighty roar, which the giant echoes with a roar to match. All creatures the giant chooses that can see or hear it must succeed on a DC 18 Wisdom saving throw, or be stunned until the end of their next turn."
-        },
-        {
-          "name": "Uneven Footing",
-          "description": "The ground in its lair splits and becomes uneven, shifting and billowing steam until the next time the giant takes a lair action. For this period, the ground and air within its lair are considered difficult terrain to any creature that does not have immunity to fire damage."
-        }
-      ]
-    },
-    {
-      "title": "Regional Effects",
-      "section_type": "Regional Effects",
-      "intro": "The region a vulcan lord calls its lair undergoes some transformations, which represent its rage tainting the volcano that it has claimed. One or more of the following effects occur on and around the volcanic lair:",
-      "entries": [
-        {
-          "description": "Rivers of magma flow even when no eruption has occurred. These rivers of fire burn brightly, making traversing the terrain difficult. Any creature who enters such a river for the first time on their turn or ends their turn within one must make a DC 20 Constitution saving throw or take 10d6 fire damage."
-        },
-        {
-          "description": "The sickening heat causes all vegetation to die and wither away. Exposed liquids, such as potions, water, etc., evaporates within 1 minute of being exposed to the air (even if bottled or stored) unless somehow shielded from the heat. The giants have special reservoirs for storing water without it evaporating this way, and can construct special rock containers to shield materials they wish to protect."
-        },
-        {
-          "description": "The devastating heat causes light to bend and refract in the air, resulting in difficulty seeing into the distance. Creatures cannot see clearly for more than 60 feet unless they have immunity to fire damage. Everything beyond that distance is considered completely obscured, and ranged attacks have disadvantage as if the attacker was blinded at that range."
-        },
-        {
-          "description": "The vulcan lord’s voice carries across its lair should it wish to project it that way, and so when it wishes it can cause its voice to erupt from the walls, peaks, and ground, accompanied by a tectonic rumbling. It can hear the speech of any creature in contact with the ground by reading the vibrations of their voice."
-        }
-      ],
-      "ending": "If the vulcan lord dies, these effects end immediately. Their death would likely be paired with a resounding shift in tectonic plates from the volcano that created them, and possibly an eruption. Creatures present on the volcano when a vulcan lord dies must make a DC 22 Dexterity saving throw, taking 11 (2d10) fire damage and 11 (2d10) bludgeoning damage as well as being knocked prone on a failure."
-    },
-    {
-      "title": "Rite of Eruption",
-      "section_type": "Special Rule",
-      "text": "A vulcan lord intending to devastate an entire battlefield may engage in the rite of eruption. By spending 1 minute focusing on gathering together all of the energy within their body, they can unleash it in a 500-foot-radius sphere centered on themselves, which forces all creatures within that range to make a DC 25 Constitution saving throw, taking 10d10 fire damage and 10d10 force damage on a failed save, or half as much on a successful one. This blast of force resembles an erupting volcano, and leaves the vulcan lord tired, reducing their hit points by 150 and giving them four levels of exhaustion. If this kills them outright, it likely causes their Volcanic Awakening to trigger.\n\nWhile gathering this energy, a vulcan lord’s focus can be broken. A creature who strikes the vulcan lord causes it to make a concentration check as if it was focusing on a spell, and if it fails then it must concentrate for 1 round longer than before.\n\nOnce the rite of eruption has been used it cannot be used again for seven days."
+      "Label": "Image 2",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Fire%20Giant%20Vulcan%20Lord.png"
     }
   ],
   "Stat Blocks": [
@@ -65,12 +48,6 @@
       "id": "vulcan_lord",
       "section_type": "Stat Block",
       "title": "Vulcan Lord",
-      "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Fire%20Giant%20Vulcan%20Lord.png",
-      "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Fire%20Giant%20Vulcan%20Lord.png",
-      "Images": [
-        "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Reference%20-%20Fire%20Giant%20Vulcan%20Lord.jpg",
-        "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR19/Fire%20Giant%20Vulcan%20Lord.png"
-      ],
       "creature": {
         "size": "Huge",
         "type": "giant",
@@ -85,27 +62,33 @@
       "ability_scores": {
         "STR": {
           "score": 27,
-          "modifier": "+8"
+          "modifier": "+8",
+          "save": "+8"
         },
         "DEX": {
           "score": 9,
-          "modifier": "-1"
+          "modifier": "-1",
+          "save": "+5"
         },
         "CON": {
           "score": 23,
-          "modifier": "+6"
+          "modifier": "+6",
+          "save": "+12"
         },
         "INT": {
           "score": 8,
-          "modifier": "-1"
+          "modifier": "-1",
+          "save": "-1"
         },
         "WIS": {
           "score": 14,
-          "modifier": "+2"
+          "modifier": "+2",
+          "save": "+8"
         },
         "CHA": {
           "score": 21,
-          "modifier": "+5"
+          "modifier": "+5",
+          "save": "+5"
         }
       },
       "saving_throws": [
@@ -118,9 +101,11 @@
         "Insight +8",
         "Perception +8"
       ],
+      "resistances": [],
       "immunities": [
         "fire"
       ],
+      "condition_immunities": [],
       "senses": [
         "darkvision 60 ft.",
         "passive Perception 18"
@@ -139,45 +124,32 @@
           "description": "The giant’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:",
           "spellcasting": {
             "spellcasting_ability": "Charisma",
-            "components": "none",
+            "material_components_required": false,
             "spells": [
               {
                 "frequency": "At will",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "daylight"
                 ]
               },
               {
                 "frequency": "1/Day each",
-                "frequency_format": "bold_italic",
                 "spells": [
                   "forgelord’s chains",
                   "sunlight crest",
                   "volcanic ash"
                 ]
               }
-            ]
+            ],
+            "components": "none"
           }
         },
         {
           "name": "Volcanic Awakening (Mythic Awakening)",
           "name_format": "bold_italic",
-          "description": "When the giant is reduced to 0 hit points or killed outright, it instead resets to 200 hit points, regains its used spells and legendary resistances, recovers from any levels of exhaustion it is experiencing, and assumes an awakened form for 1 hour. While in this form it has access to the actions listed in its Mythic Actions sections, and sprouts two massive wings of burning energy that grant it a fly (hover) speed of equal to twice its base movement speed. If the party defeats the giant after using its Volcanic Awakening, award them an extra 22,000 XP (for a total of 44,000 XP)."
+          "description": "When the giant is reduced to 0 hit points or killed outright, it instead resets to 200 hit points, regains its used spells and all uses of its Legendary Reactions, recovers from any levels of exhaustion it is experiencing, and assumes an awakened form for 1 hour. While in this form it has access to the actions listed in its Mythic Actions sections, and sprouts two massive wings of burning energy that grant it a fly (hover) speed of equal to twice its base movement speed. If the party defeats the giant after using its Volcanic Awakening, award them an extra 22,000 XP (for a total of 44,000 XP)."
         }
       ],
-      "legendary_reactions": {
-        "header": "Legendary Reactions",
-        "uses": 2,
-        "entries": [
-          {
-            "name": "TBA",
-            "name_format": "plain",
-            "description": ""
-          }
-        ],
-        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
-      },
       "actions": [
         {
           "name": "Multiattack",
@@ -208,56 +180,73 @@
           "description": "The giant hurls a burst of fire at a point it can see within 120 feet, which erupts in a 20-foot-radius sphere of flame. This sphere spreads around corners, and through cracks as small as 1 inch wide. Each creature within range must make a DC 20 Dexterity saving throw, taking 44 (8d10) fire damage on a failed save, or half as much on a successful one."
         }
       ],
+      "bonus_actions": [],
+      "reactions": [],
       "legendary_actions": {
-        "header": "Legendary Actions (3 Actions)",
-        "uses": 3,
-        "entries": [
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
           {
             "name": "Swat",
             "name_format": "bold_italic",
-            "cost": 1,
             "description": "The giant throws a Rock as per the action, but if it hits a creature that is huge or smaller they are knocked prone instead of taking damage."
           },
           {
-            "name": "Rumble",
+            "name": "Rumble (Costs 2 Actions)",
             "name_format": "bold_italic",
-            "cost": 2,
             "description": "The giant slams the ground under its feet, unleashing a shockwave. All creatures within 20 feet of the giant must make a DC 22 Dexterity saving throw, taking 19 (2d12 + 8) force damage and being knocked prone on a failed save, or half as much damage and aren’t knocked prone on a success."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "entries": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "lair_actions": {
+        "header": "Lair Actions",
+        "intro": "On initiative count 20 (losing initiative ties), the giant takes a lair action to cause one of the following effects; the giant can’t use the same effect two rounds in a row:",
+        "options": [
+          {
+            "name": "Magma Geysers",
+            "name_format": "bold_italic",
+            "description": "Geysers of molten rock erupt from three points the giant chooses. All creatures within 10 feet of these geysers must make a DC 18 Dexterity saving throw, taking 36 (8d8) fire damage on a failed save."
+          },
+          {
+            "name": "Scream of Terror",
+            "name_format": "bold_italic",
+            "description": "The volcano lets out a mighty roar, which the giant echoes with a roar to match. All creatures the giant chooses that can see or hear it must succeed on a DC 18 Wisdom saving throw, or be stunned until the end of their next turn."
+          },
+          {
+            "name": "Uneven Footing",
+            "name_format": "bold_italic",
+            "description": "The ground in its lair splits and becomes uneven, shifting and billowing steam until the next time the giant takes a lair action. For this period, the ground and air within its lair are considered difficult terrain to any creature that does not have immunity to fire damage."
           }
         ]
       },
       "mythic_actions": {
         "header": "Mythic Actions",
         "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
-        "entries": [
+        "options": [
           {
-            "name": "Heaven’s Arrow",
+            "name": "Heaven’s Arrow (Costs 2 Actions)",
             "name_format": "bold_italic",
-            "cost": 2,
             "description": "The giant summons rings of fire that twist around it, forming a colossal drill of radiant flame. The giant then targets a creature it can see within 60 feet, and launches itself at them. The target must succeed on a DC 22 Dexterity saving throw or take 28 (5d10) fire damage and 28 (5d10) piercing damage. The giant then ends its movement in an unoccupied space within 20 feet of the target."
           },
           {
-            "name": "Rain of Fire",
+            "name": "Rain of Fire (Costs 3 Actions)",
             "name_format": "bold_italic",
-            "cost": 3,
             "description": "The giant ignites the skies, targeting all creatures it chooses within 60 feet of it with a hail of meteors and flame. Each target must make a DC 22 Dexterity saving throw, taking 21 (5d6) fire damage and 21 (5d6) force damage on a failed save, or half as much on a successful one."
           }
         ]
-      },
-      "formatting": {
-        "title": "bold",
-        "creature_line": "italic",
-        "field_labels": "bold",
-        "ability_headers": "bold",
-        "section_headers": {
-          "Traits": "bold",
-          "Actions": "bold",
-          "Legendary Reactions": "bold",
-          "Legendary Actions": "bold",
-          "Mythic Actions": "bold"
-        }
-      },
-      "raw_text": "**VULCAN LORD**\n*Huge giant, chaotic evil*\n**AC** 18 (plate)\n**HP** 275 (22d12 + 132)\n**Speed** 30 ft.\n**STR** 27 (+8) | **DEX** 9 (-1) | **CON** 23 (+6) | **INT** 8 (-1) | **WIS** 14 (+2) | **CHA** 21 (+5)\n**Saving Throws** Dex +5, Con +12, Wis +8\n**Skills** Athletics +14, Insight +8, Perception +8\n**Immunities** fire\n**Senses** darkvision 60 ft., passive Perception 18\n**Languages** Common, Giant, Ignan\n**CR** 19 (22,000 XP) **Proficiency Bonus** +6\n\n**TRAITS**\n***Innate Spellcasting.*** The giant’s spellcasting ability is Charisma. They can cast the following spells, requiring no components:\n• ***At will:*** daylight\n• ***1/Day each:*** forgelord’s chains, sunlight crest, volcanic ash\n\n**LEGENDARY REACTIONS** (2 uses)\nTBA\n\n***Volcanic Awakening (Mythic Awakening).*** When the giant is reduced to 0 hit points or killed outright, it instead resets to 200 hit points, regains its used spells and legendary resistances, recovers from any levels of exhaustion it is experiencing, and assumes an awakened form for 1 hour. While in this form it has access to the actions listed in its Mythic Actions sections, and sprouts two massive wings of burning energy that grant it a fly (hover) speed of equal to twice its base movement speed. If the party defeats the giant after using its Volcanic Awakening, award them an extra 22,000 XP (for a total of 44,000 XP).\n\n**ACTIONS**\n***Multiattack.*** The giant makes three Spiral Glaive attacks or two Rock attacks. After activating its Volcanic Awakening, the giant can replace one of its Spiral Glaive attacks with its Molten Fireball.\n\n***Spiral Glaive.*** *Melee Weapon Attack:* +14 to hit, reach 15 ft., one target. *Hit:* 30 (4d10 + 8) piercing damage plus 7 (2d6) fire damage.\n\n***Rock.*** *Ranged Weapon Attack:* +14 to hit, range 60/240 ft., one target. *Hit:* 30 (4d10 + 8) bludgeoning damage plus 11 (2d10) fire damage.\n\n***Molten Fireball (Recharge 5-6).*** The giant hurls a burst of fire at a point it can see within 120 feet, which erupts in a 20-foot-radius sphere of flame. This sphere spreads around corners, and through cracks as small as 1 inch wide. Each creature within range must make a DC 20 Dexterity saving throw, taking 44 (8d10) fire damage on a failed save, or half as much on a successful one.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n***Swat.*** The giant throws a Rock as per the action, but if it hits a creature that is huge or smaller they are knocked prone instead of taking damage.\n***Rumble (Costs 2 Actions).*** The giant slams the ground under its feet, unleashing a shockwave. All creatures within 20 feet of the giant must make a DC 22 Dexterity saving throw, taking 19 (2d12 + 8) force damage and being knocked prone on a failed save, or half as much damage and aren’t knocked prone on a success.\n\n**MYTHIC ACTIONS**\nThe creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.\n***Heaven’s Arrow (Costs 2 Actions).*** The giant summons rings of fire that twist around it, forming a colossal drill of radiant flame. The giant then targets a creature it can see within 60 feet, and launches itself at them. The target must succeed on a DC 22 Dexterity saving throw or take 28 (5d10) fire damage and 28 (5d10) piercing damage. The giant then ends its movement in an unoccupied space within 20 feet of the target.\n***Rain of Fire (Costs 3 Actions).*** The giant ignites the skies, targeting all creatures it chooses within 60 feet of it with a hail of meteors and flame. Each target must make a DC 22 Dexterity saving throw, taking 21 (5d6) fire damage and 21 (5d6) force damage on a failed save, or half as much on a successful one."
+      }
     }
   ]
 }

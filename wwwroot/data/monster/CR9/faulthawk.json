@@ -1,0 +1,134 @@
+{
+  "Name": "Faulthawk",
+  "Group": "Nephilim",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The elite warriors among the nephilim, who train themselves to excel at frontline or ranged combat. These warriors lead their fellow nephilim into conflicts when they are unavoidable, and protect their most sacred sites. When knowledge or relics must be protected or kept from mortal hands, they are the greatest force to be deployed.",
+  "Image": "",
+  "Images": [],
+  "Image Tabs": [],
+  "Stat Blocks": [
+    {
+      "id": "faulthawk",
+      "section_type": "Stat Block",
+      "title": "Faulthawk",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (nephilim)",
+        "alignment": "neutral"
+      },
+      "armor_class": "17 (studded leather)",
+      "hit_points": "98 (13d8 + 39)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft. (hover)"
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+9"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +9",
+        "Wis +8"
+      ],
+      "skills": [
+        "Acrobatics +7",
+        "Perception +8"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Common",
+        "Primordial",
+        "one other language"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Memories of the Heart (4/Day)",
+          "name_format": "bold_italic",
+          "description": "When the nephilim makes an attack roll, ability check, or saving throw they can roll 1d4 and add it to the result. If added to an attack roll, another 1d4 is added to the damage from that attack as well."
+        },
+        {
+          "name": "Prismatic Flash (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "When the nephilim hits with a weapon attack, they can energize the attack with prismatic energy, causing it to deal an extra 27 (6d8) radiant damage, and forcing its target to make a DC 15 Constitution saving throw. On a failure they are blinded for 1 minute, and may repeat the save at the end of each of their turns, ending the effect on a success."
+        },
+        {
+          "name": "Rite of Certain Aim",
+          "name_format": "bold_italic",
+          "description": "When the nephilim makes a ranged weapon attack at their weapon’s long range, they make that attack with neither advantage or disadvantage regardless of if they would have either."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The nephilim makes three melee attacks or two ranged attacks."
+        },
+        {
+          "name": "Scimitar",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Greatbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 16 (2d10 + 5) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cunning Action",
+          "name_format": "bold_italic",
+          "description": "The nephilim takes the Dash, Disengage, or Hide action."
+        },
+        {
+          "name": "Subdermal Illumination",
+          "name_format": "bold_italic",
+          "description": "The nephilim causes its body to magically produce bright light out to 20 feet, with dim light twice as far, or causes this light to be extinguished. This light is treated as a spell with a level equal to the nephilim’s proficiency bonus."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

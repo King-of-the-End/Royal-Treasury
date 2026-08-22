@@ -139,11 +139,11 @@
 }
 
 
-@if (Entry.Options.Count > 0)
+@if (NestedEntries.Count > 0)
 {
     @foreach (
         var option
-        in Entry.Options)
+        in NestedEntries)
     {
         <br />
 
@@ -176,12 +176,35 @@
 }
 
 
+@if (
+    !string.IsNullOrWhiteSpace(
+        Entry.AdditionalText))
+{
+    <br />
+    <br />
+
+    <GlossaryText
+        Text="@Entry.AdditionalText"
+        Context="GlossaryContext.StatBlock" />
+}
+
+
 @code {
 
     [Parameter]
     [EditorRequired]
     public StatBlockEntry Entry { get; set; } =
         new();
+
+
+    private IReadOnlyList<StatBlockEntry>
+        NestedEntries =>
+            Entry.Options
+                .Concat(
+                    Entry.Subentries)
+                .Concat(
+                    Entry.Bullets)
+                .ToList();
 
 
     // =====================================

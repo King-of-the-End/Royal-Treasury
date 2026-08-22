@@ -1,0 +1,118 @@
+{
+  "Name": "Mecite Crystal Seed",
+  "Group": "Mecite Animations",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A floating crystal eye suspended at the end of an amphibious, amoeba-like form. These basic sentries relay what they perceive back to their superiors. They are able to drain the minds of creatures by fracturing their memories and consuming the psychic energy produced by the damage.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference%20-%20Mecite%20Crystal%20Seed.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference%20-%20Mecite%20Crystal%20Seed.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Mecite%20Crystal%20Seed%20(ISO).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Reference",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference%20-%20Mecite%20Crystal%20Seed.jpg"
+    },
+    {
+      "Label": "ISO",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Mecite%20Crystal%20Seed%20(ISO).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "mecite_crystal_seed",
+      "section_type": "Stat Block",
+      "title": "Crystal Seed",
+      "creature": {
+        "size": "Small",
+        "type": "aberration (mecite animation)",
+        "alignment": ""
+      },
+      "armor_class": "13 (natural armor)",
+      "hit_points": "27 (6d6 + 6)",
+      "speed": {
+        "walk": "10 ft.",
+        "fly": "30 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 1,
+          "modifier": "-5"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Investigation +5",
+        "Perception +4"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "understands the languages of creatures it has taken memories from"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Amniatic Miasma",
+          "name_format": "bold_italic",
+          "description": "When a creature starts its turn within 5 feet of the parasite or moves to there for the first time on its turn, they must make a DC 13 Wisdom saving throw. On a failure they are afflicted with weak amniasis, and their Wisdom score is immediately reduced by 1. This damage cannot be restored as long as they have amniasis."
+        },
+        {
+          "name": "Scrying Eye",
+          "name_format": "bold_italic",
+          "description": "The crystal eye relays everything it sees and experiences to all other mecite animations within 500 feet of it. Other seeds within that range relay this information out to other animations the same way."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Mind Drain",
+          "name_format": "bold_italic",
+          "description": "One creature within 10 feet of the seed must make a DC 13 Intelligence saving throw, taking 12 (2d8 + 3) psychic damage on a failed save. A creature reduced to 0 hit points by this effect is afflicted with weak amniasis."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

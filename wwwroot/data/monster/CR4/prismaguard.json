@@ -1,0 +1,161 @@
+{
+  "Name": "Prismaguard",
+  "Group": "Nephilim",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The prismaguards are those with the intention of protecting their communities. Trained to fight with greater purpose than the faultless, they are the soldiers among the nephilim.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20Stosiidrii.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20Stosiidrii.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20Stosiidrii.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "prismaguard",
+      "section_type": "Stat Block",
+      "title": "Prismaguard",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (nephilim)",
+        "alignment": "neutral"
+      },
+      "armor_class": "18 (breastplate, shield)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "30 ft. (hover)"
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +3"
+      ],
+      "skills": [
+        "Athletics +6",
+        "History +5",
+        "Perception +3"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common",
+        "Primordial",
+        "one other language"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The nephilim’s spellcasting ability is Intelligence. It can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Intelligence",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "sacred flame"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "hold person"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "blinding smite",
+                  "shield"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Memories of the Heart (2/Day)",
+          "name_format": "bold_italic",
+          "description": "When the nephilim makes an attack roll, ability check, or saving throw, they can roll 1d4 and add it to the result. If added to an attack roll, another 1d4 is added to the damage from that attack as well."
+        },
+        {
+          "name": "Rite of the Insistent (1/Day)",
+          "name_format": "bold_italic",
+          "description": "When the nephilim falls to 0 hit points or is killed outright, it is immediately replenished by the Abiding Heart and drops to 1 hit point instead."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The nephilim makes two weapon attacks."
+        },
+        {
+          "name": "Longsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage or 15 (2d10 + 4) slashing damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Psychic Bolt",
+          "name_format": "bold_italic",
+          "description": "Ranged Spell Attack: +5 to hit, range 30/90 ft., one target. Hit: 27 (4d10 + 5) psychic damage.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Subdermal Illumination",
+          "name_format": "bold_italic",
+          "description": "The nephilim causes its body to magically produce bright light out to 20 feet, with dim light twice as far, or causes this light to be extinguished. This light is treated as a spell with a level equal to the nephilim’s proficiency bonus."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}
