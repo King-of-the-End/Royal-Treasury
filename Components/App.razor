@@ -11,26 +11,6 @@
 
     <ResourcePreloader />
 
-    <!--
-        Start connecting to the image CDN immediately.
-        This reduces the delay before images begin downloading.
-    -->
-    <link rel="preconnect"
-          href="https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev"
-          crossorigin />
-
-    <link rel="dns-prefetch"
-          href="//pub-bf21913a9572403eaaeb529e5bc42880.r2.dev" />
-
-    <!--
-        The Royal Treasury emblem appears immediately in the navigation,
-        so preload it instead of waiting for the body to be parsed.
-    -->
-    <link rel="preload"
-          href="https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/site-images/site-emblem.png"
-          as="image"
-          fetchpriority="high" />
-
     <link rel="stylesheet"
           href="@Assets["app.css"]" />
 
@@ -43,13 +23,10 @@
 
     <ImportMap />
 
-    <!-- Favicons -->
+    <!-- Royal Treasury favicon -->
     <link rel="icon"
           type="image/png"
-          href="https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/site-images/site-emblem.png" />
-
-    <link rel="apple-touch-icon"
-          href="https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/site-images/site-emblem.png" />
+          href="/images/site-emblem.png" />
 
     <HeadOutlet />
 </head>
@@ -72,4 +49,3 @@
 </body>
 
 </html>
-
