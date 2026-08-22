@@ -33,6 +33,24 @@
 
 <body>
 
+    <div id="site-page-loader"
+         class="site-page-loader site-page-loader-visible"
+         data-permanent
+         role="status"
+         aria-live="polite"
+         aria-label="Loading page"
+         aria-hidden="false">
+        <div class="site-page-loader-panel">
+            <img class="site-page-loader-emblem"
+                 src="https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/site-images/site-emblem.png"
+                 alt=""
+                 aria-hidden="true" />
+            <div class="site-page-loader-spinner" aria-hidden="true"></div>
+            <div class="site-page-loader-title">Opening the Treasury</div>
+            <div class="site-page-loader-copy">Unlocking the Vault</div>
+        </div>
+    </div>
+
     <Routes />
 
     <ReconnectModal />
@@ -43,6 +61,7 @@
         them inside the visible viewport.
     -->
     <script src="/js/glossary-position.js"></script>
+    <script src="/js/page-loading.js"></script>
 
     <script src="@Assets["_framework/blazor.web.js"]"></script>
 

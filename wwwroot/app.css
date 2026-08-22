@@ -2347,3 +2347,136 @@ h1:focus-visible {
             rgba(255, 214, 77, 0.4)
         );
 }
+/* =========================================
+   PAGE LOADING SCREEN
+   Covers full loads + Blazor enhanced nav.
+   ========================================= */
+
+.site-page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+
+    display: grid;
+    place-items: center;
+
+    padding: 1.5rem;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(118, 34, 26, 0.22),
+            transparent 42%
+        ),
+        linear-gradient(
+            180deg,
+            #1d1917 0%,
+            var(--background) 45%,
+            var(--background-dark) 100%
+        );
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 120ms ease,
+        visibility 0s linear 120ms;
+}
+
+.site-page-loader.site-page-loader-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+
+    transition:
+        opacity 90ms ease,
+        visibility 0s linear 0s;
+}
+
+.site-page-loader-panel {
+    width: min(92vw, 360px);
+
+    padding: 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    background: rgba(33, 29, 26, 0.96);
+
+    box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.5),
+        inset 0 0 30px rgba(211, 169, 0, 0.035);
+
+    text-align: center;
+}
+
+.site-page-loader-emblem {
+    width: 88px;
+    height: 88px;
+
+    display: block;
+    object-fit: contain;
+
+    margin-bottom: 1.1rem;
+
+    filter:
+        drop-shadow(0 0 14px rgba(211, 169, 0, 0.2));
+}
+
+.site-page-loader-spinner {
+    width: 34px;
+    height: 34px;
+
+    margin-bottom: 1rem;
+
+    border: 3px solid rgba(211, 169, 0, 0.18);
+    border-top-color: var(--gold-light);
+    border-radius: 50%;
+
+    animation: royal-treasury-loader-spin 700ms linear infinite;
+}
+
+.site-page-loader-title {
+    color: var(--text);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.site-page-loader-copy {
+    margin-top: 0.45rem;
+
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+html.site-page-is-loading,
+html.site-page-is-loading body {
+    overflow: hidden;
+}
+
+@keyframes royal-treasury-loader-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-page-loader,
+    .site-page-loader-spinner {
+        transition: none;
+        animation-duration: 1.6s;
+    }
+}

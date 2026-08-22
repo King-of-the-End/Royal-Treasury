@@ -8,6 +8,7 @@
 
 @inject MonsterService MonsterService
 @inject NavigationManager Navigation
+@inject IJSRuntime JS
 
 
 <PageTitle>
@@ -1352,9 +1353,12 @@
     // OPEN MONSTER
     // =====================================
 
-    private void OpenMonster(
+    private async Task OpenMonster(
         StatBlockData monster)
     {
+        await JS.InvokeVoidAsync(
+            "royalTreasuryLoading.show");
+
         Navigation.NavigateTo(
             MonsterDetailsUrl(
                 monster));
@@ -1378,7 +1382,7 @@
                 " ",
                 StringComparison.Ordinal))
         {
-            OpenMonster(
+            _ = OpenMonster(
                 monster);
         }
     }
