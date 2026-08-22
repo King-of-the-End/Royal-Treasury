@@ -4,8 +4,6 @@
 @using System.Text.Json
 @using Microsoft.AspNetCore.Components
 @using Microsoft.AspNetCore.Components.Rendering
-@using Website_of_Everything.Models
-@using Website_of_Everything.Components
 @implements IDisposable
 
 @inject IWebHostEnvironment Environment
@@ -43,7 +41,7 @@ else if (classDocument is not null)
 
         @if (GetString(root, "quote") is string quote)
         {
-            <blockquote class="class-quote">@RenderGlossaryText(quote)</blockquote>
+            <blockquote class="class-quote">@quote</blockquote>
         }
 
         @if (GetProperty(root, "introduction") is JsonElement introduction)
@@ -51,7 +49,7 @@ else if (classDocument is not null)
             <section class="class-lore-section">
                 @foreach (var paragraph in introduction.EnumerateArray())
                 {
-                    <p>@RenderGlossaryText(ValueToText(paragraph))</p>
+                    <p>@ValueToText(paragraph)</p>
                 }
             </section>
         }
@@ -85,7 +83,7 @@ else if (classDocument is not null)
                                     {
                                         @foreach (var paragraph in paragraphs.EnumerateArray())
                                         {
-                                            <p>@RenderGlossaryText(ValueToText(paragraph))</p>
+                                            <p>@ValueToText(paragraph)</p>
                                         }
                                     }
                                 </section>
@@ -98,7 +96,7 @@ else if (classDocument is not null)
                         @if (GetString(roleplay, "complexity_note") is string complexity)
                         {
                             <aside class="class-note class-note-warning" id="complexity">
-                                <div class="class-note-heading">Complexity</div><p>@RenderGlossaryText(complexity)</p>
+                                <div class="class-note-heading">Complexity</div><p>@complexity</p>
                             </aside>
                         }
 
@@ -106,7 +104,7 @@ else if (classDocument is not null)
                         {
                             <section class="class-section" id="quick-build">
                                 <div class="class-section-kicker">Character Creation</div>
-                                <h2>Quick Build</h2><p>@RenderGlossaryText(quickBuild)</p>
+                                <h2>Quick Build</h2><p>@quickBuild</p>
                             </section>
                         }
 
@@ -121,7 +119,7 @@ else if (classDocument is not null)
                                         <tbody>
                                             @foreach (var quirk in quirks.EnumerateArray())
                                             {
-                                                <tr><td class="table-level">@GetValueText(quirk, "d20")</td><td>@RenderGlossaryText(GetString(quirk, "quirk"))</td></tr>
+                                                <tr><td class="table-level">@GetValueText(quirk, "d20")</td><td>@GetString(quirk, "quirk")</td></tr>
                                             }
                                         </tbody>
                                     </table>
@@ -148,7 +146,7 @@ else if (classDocument is not null)
                                             {
                                                 <tr>
                                                     <td class="table-level">@GetValueText(origin, "d6")</td>
-                                                    <td>@RenderGlossaryText(GetString(origin, "origin"))</td>
+                                                    <td>@GetString(origin, "origin")</td>
                                                 </tr>
                                             }
                                         </tbody>
@@ -200,41 +198,6 @@ else if (classDocument is not null)
 }
 
 @code {
-    private static string GetItemBlockThemeClass(
-    JsonElement block)
-{
-    // Explicit theme always wins.
-    //
-    // Example:
-    // "theme": "blood"
-    //
-    // gives:
-    // item-theme-blood
-
-    var theme =
-        GetString(block, "theme");
-
-    if (!string.IsNullOrWhiteSpace(theme))
-    {
-        return
-            $"item-theme-{ToSlug(theme)}";
-    }
-
-
-    // Otherwise use rarity automatically.
-
-    var rarity =
-        GetString(block, "rarity");
-
-    if (!string.IsNullOrWhiteSpace(rarity))
-    {
-        return
-            $"item-rarity-{ToSlug(rarity)}";
-    }
-
-
-    return "item-theme-default";
-}
     [Parameter] public string Slug { get; set; } = string.Empty;
 
     [SupplyParameterFromQuery(Name = "tab")]
@@ -244,7 +207,6 @@ else if (classDocument is not null)
     public int? MechanicsTab { get; set; }
 
     private JsonDocument? classDocument;
-    private string? loadedClassSlug;
     private bool isLoading = true;
     private string? errorMessage;
     private string activeTab = "lore";
@@ -255,7 +217,11 @@ else if (classDocument is not null)
             ? name
             : SlugToDisplayName(Slug);
 
-    private string EmblemPath => $"/images/class-emblems/Class Emblem - {DisplayName}.png";
+    private const string ClassEmblemBaseUrl =
+        "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/site-images/class-emblems/";
+
+    private string EmblemPath
+        => $"{ClassEmblemBaseUrl}{Uri.EscapeDataString($"Class Emblem - {DisplayName}.png")}";
 
     private void SetTab(string tab)
     {
@@ -342,23 +308,14 @@ else if (classDocument is not null)
         builder.CloseElement();
 
         if (GetProperty(mechanics, "appendices") is JsonElement appendices)
-        {
-            foreach (var appendix in appendices
-                .EnumerateArray()
-                .OrderBy(AppendixSortKey, StringComparer.OrdinalIgnoreCase))
-            {
+            foreach (var appendix in appendices.EnumerateArray())
                 builder.AddContent(seq++, RenderAppendix(appendix));
-            }
-        }
     };
 
     protected override async Task OnParametersSetAsync()
     {
-        /*
-         * Query-string changes switch the visible class tab/mechanics tab,
-         * but they do not change the class JSON itself. Keep the already
-         * parsed document when only ?tab= or ?mechanicsTab= changes.
-         */
+        isLoading = true;
+        errorMessage = null;
         activeMechanicsTabIndex = Math.Max(0, MechanicsTab ?? 0);
         activeTab =
             string.Equals(
@@ -367,37 +324,17 @@ else if (classDocument is not null)
                 StringComparison.OrdinalIgnoreCase)
                 ? "mechanics"
                 : "lore";
-
-        var safeSlug = Slug.Trim().ToLowerInvariant();
-
-        if (!IsSafeSlug(safeSlug))
-        {
-            isLoading = false;
-            errorMessage = "The requested class name is invalid.";
-            return;
-        }
-
-        if (
-            classDocument is not null
-            && string.Equals(
-                loadedClassSlug,
-                safeSlug,
-                StringComparison.OrdinalIgnoreCase))
-        {
-            isLoading = false;
-            errorMessage = null;
-            return;
-        }
-
-        isLoading = true;
-        errorMessage = null;
-
         classDocument?.Dispose();
         classDocument = null;
-        loadedClassSlug = null;
 
         try
         {
+            var safeSlug = Slug.Trim().ToLowerInvariant();
+            if (!IsSafeSlug(safeSlug))
+            {
+                errorMessage = "The requested class name is invalid.";
+                return;
+            }
 
             var classesRoot = Path.Combine(Environment.WebRootPath, "data", "classes");
             if (!Directory.Exists(classesRoot))
@@ -451,7 +388,6 @@ else if (classDocument is not null)
 
             await using var stream = File.OpenRead(jsonFilePath);
             classDocument = await JsonDocument.ParseAsync(stream);
-            loadedClassSlug = safeSlug;
         }
         catch (JsonException ex)
         {
@@ -487,18 +423,6 @@ else if (classDocument is not null)
         _ => value.ToString()
     };
 
-
-    private RenderFragment RenderGlossaryText(string? text) => builder =>
-    {
-        var seq = 0;
-
-        builder.OpenComponent<GlossaryText>(seq++);
-        builder.AddAttribute(seq++, "Text", text ?? string.Empty);
-        builder.AddAttribute(seq++, "Context", GlossaryContext.Class);
-        builder.AddAttribute(seq++, "ClassPage", Slug);
-        builder.CloseComponent();
-    };
-
     private RenderFragment RenderMulticlassing(JsonElement multiclassing) => builder =>
     {
         var seq = 0;
@@ -518,7 +442,7 @@ else if (classDocument is not null)
             {
                 builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-row");
                 builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(item, "label")); builder.CloseElement();
-                builder.OpenElement(seq++, "span"); builder.AddContent(seq++, RenderGlossaryText(GetValueText(item, "value"))); builder.CloseElement();
+                builder.OpenElement(seq++, "span"); builder.AddContent(seq++, GetValueText(item, "value")); builder.CloseElement();
                 builder.CloseElement();
             }
             builder.CloseElement();
@@ -531,7 +455,7 @@ else if (classDocument is not null)
             {
                 builder.OpenElement(seq++, "article"); builder.AddAttribute(seq++, "class", "class-mini-card");
                 builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(card, "title")); builder.CloseElement();
-                builder.OpenElement(seq++, "p"); builder.AddContent(seq++, RenderGlossaryText(GetString(card, "text"))); builder.CloseElement();
+                builder.OpenElement(seq++, "p"); builder.AddContent(seq++, GetString(card, "text")); builder.CloseElement();
                 builder.CloseElement();
             }
             builder.CloseElement();
@@ -570,7 +494,7 @@ else if (classDocument is not null)
                         {
                             builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-row");
                             builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(stat, "label")); builder.CloseElement();
-                            builder.OpenElement(seq++, "span"); builder.AddContent(seq++, RenderGlossaryText(GetValueText(stat, "value"))); builder.CloseElement();
+                            builder.OpenElement(seq++, "span"); builder.AddContent(seq++, GetValueText(stat, "value")); builder.CloseElement();
                             builder.CloseElement();
                         }
                         builder.CloseElement();
@@ -862,14 +786,46 @@ else if (classDocument is not null)
             builder.OpenElement(seq++, "div");
             builder.AddAttribute(seq++, "class", "class-option-feature-list");
 
-            // Collect every supported appendix-card shape first, then sort the
-            // complete set by its displayed name. This keeps Invocations,
-            // Infusions, Magecraft options, Birthrights, and future option-card
-            // appendices alphabetical regardless of their JSON order.
-            foreach (var option in EnumerateAppendixOptionCards(appendix)
-                .OrderBy(AppendixSortKey, StringComparer.OrdinalIgnoreCase))
+            if (GetProperty(appendix, "blocks") is JsonElement optionBlocks)
             {
-                builder.AddContent(seq++, RenderOptionCard(option));
+                foreach (var block in optionBlocks.EnumerateArray())
+                {
+                    var blockType = GetString(block, "type") ?? "paragraph";
+
+                    if (blockType == "options")
+                    {
+                        var options = GetProperty(block, "options") ?? GetProperty(block, "items");
+                        if (options is JsonElement items && items.ValueKind == JsonValueKind.Array)
+                        {
+                            foreach (var option in items.EnumerateArray())
+                                builder.AddContent(seq++, RenderOptionCard(option));
+                        }
+
+                        continue;
+                    }
+
+                    // Artificer Infusions use subsection blocks instead of an
+                    // options array. Render the subsection itself as the card.
+                    if (blockType == "subsection")
+                        builder.AddContent(seq++, RenderOptionCard(block));
+                }
+            }
+
+            // Alternate Artificer JSON shape: appendices[].entries[]
+            if (GetProperty(appendix, "entries") is JsonElement entries &&
+                entries.ValueKind == JsonValueKind.Array)
+            {
+                foreach (var entry in entries.EnumerateArray())
+                    builder.AddContent(seq++, RenderOptionCard(entry));
+            }
+
+            // Arbiter birthrights historically use appendix.features while the
+            // other option appendices use blocks/options. Render all of them
+            // through the same option-card component.
+            if (GetProperty(appendix, "features") is JsonElement optionFeatures)
+            {
+                foreach (var feature in optionFeatures.EnumerateArray())
+                    builder.AddContent(seq++, RenderOptionCard(feature));
             }
 
             builder.CloseElement();
@@ -881,67 +837,12 @@ else if (classDocument is not null)
                     builder.AddContent(seq++, RenderBlock(block));
 
             if (GetProperty(appendix, "features") is JsonElement features)
-            {
-                foreach (var feature in features
-                    .EnumerateArray()
-                    .OrderBy(AppendixSortKey, StringComparer.OrdinalIgnoreCase))
-                {
+                foreach (var feature in features.EnumerateArray())
                     builder.AddContent(seq++, RenderFeatureCard(feature));
-                }
-            }
         }
 
         builder.CloseElement();
     };
-
-    private static string AppendixSortKey(JsonElement element)
-        => GetString(element, "name")
-            ?? GetString(element, "title")
-            ?? string.Empty;
-
-    private static IEnumerable<JsonElement> EnumerateAppendixOptionCards(JsonElement appendix)
-    {
-        if (GetProperty(appendix, "blocks") is JsonElement blocks &&
-            blocks.ValueKind == JsonValueKind.Array)
-        {
-            foreach (var block in blocks.EnumerateArray())
-            {
-                var blockType = GetString(block, "type") ?? "paragraph";
-
-                if (string.Equals(blockType, "options", StringComparison.OrdinalIgnoreCase))
-                {
-                    var options = GetProperty(block, "options") ?? GetProperty(block, "items");
-                    if (options is JsonElement items && items.ValueKind == JsonValueKind.Array)
-                    {
-                        foreach (var option in items.EnumerateArray())
-                            yield return option;
-                    }
-                }
-                else if (string.Equals(blockType, "subsection", StringComparison.OrdinalIgnoreCase))
-                {
-                    // Artificer Infusions and similar appendices store each card
-                    // directly as a subsection rather than inside an options array.
-                    yield return block;
-                }
-            }
-        }
-
-        // Alternate Artificer JSON shape: appendices[].entries[]
-        if (GetProperty(appendix, "entries") is JsonElement entries &&
-            entries.ValueKind == JsonValueKind.Array)
-        {
-            foreach (var entry in entries.EnumerateArray())
-                yield return entry;
-        }
-
-        // Arbiter birthrights historically use appendix.features.
-        if (GetProperty(appendix, "features") is JsonElement features &&
-            features.ValueKind == JsonValueKind.Array)
-        {
-            foreach (var feature in features.EnumerateArray())
-                yield return feature;
-        }
-    }
 
     private RenderFragment RenderOptionCard(JsonElement option) => builder =>
     {
@@ -1005,7 +906,7 @@ else if (classDocument is not null)
             builder.OpenElement(seq++, "strong");
             builder.AddContent(seq++, "Item: ");
             builder.CloseElement();
-            builder.AddContent(seq++, RenderGlossaryText(item));
+            builder.AddContent(seq++, item);
             builder.CloseElement();
         }
 
@@ -1064,7 +965,7 @@ else if (classDocument is not null)
                         : ValueToText(option);
                     if (string.IsNullOrWhiteSpace(name)) continue;
                     builder.OpenElement(seq++, "li");
-                    builder.AddContent(seq++, RenderGlossaryText(name));
+                    builder.AddContent(seq++, name);
                     builder.CloseElement();
                 }
                 builder.CloseElement();
@@ -1075,505 +976,106 @@ else if (classDocument is not null)
         builder.AddContent(seq++, RenderBlock(block));
     };
 
-private RenderFragment RenderBlock(JsonElement block) => builder =>
-{
-    var seq = 0;
-    var type = GetString(block, "type") ?? "paragraph";
-
-    if (type == "paragraph")
+    private RenderFragment RenderBlock(JsonElement block) => builder =>
     {
-        builder.OpenElement(seq++, "p");
-        builder.AddContent(
-            seq++,
-            RenderGlossaryText(
-                GetString(block, "text")));
-        builder.CloseElement();
-        return;
-    }
+        var seq = 0;
+        var type = GetString(block, "type") ?? "paragraph";
 
-    if (type is "item_block" or "itemblock")
-{
-    var title =
-        GetString(block, "title")
-        ?? GetString(block, "name")
-        ?? "Item";
-
-    var itemType =
-        GetString(block, "item_type")
-        ?? GetString(block, "category");
-
-    var rarity =
-        GetString(block, "rarity");
-
-    var theme =
-        GetString(block, "theme");
-
-    var prerequisite =
-        GetString(block, "prerequisite");
-
-
-    var stats =
-        GetProperty(block, "stats")
-        ?? default(JsonElement);
-
-
-    RenderFragment itemContent =
-        childBuilder =>
+        if (type == "paragraph")
         {
-            var childSeq = 0;
+            builder.OpenElement(seq++, "p"); builder.AddContent(seq++, GetString(block, "text")); builder.CloseElement(); return;
+        }
 
+        if (type is "section" or "subsection")
+        {
+            builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-feature-subsection");
+            if (GetString(block, "title") is string title) { builder.OpenElement(seq++, "h4"); builder.AddContent(seq++, title); builder.CloseElement(); }
+            if (GetProperty(block, "paragraphs") is JsonElement paragraphs) builder.AddContent(seq++, RenderParagraphs(paragraphs));
+            if (GetProperty(block, "blocks") is JsonElement children) foreach (var child in children.EnumerateArray()) builder.AddContent(seq++, RenderBlock(child));
+            builder.CloseElement(); return;
+        }
 
-            if (
-                GetProperty(
-                    block,
-                    "paragraphs")
-                is JsonElement paragraphs)
+        if (type == "heading")
+        {
+            builder.OpenElement(seq++, "h4"); builder.AddContent(seq++, GetString(block, "text")); builder.CloseElement(); return;
+        }
+
+        if (type == "list")
+        {
+            if (GetProperty(block, "items") is JsonElement items) builder.AddContent(seq++, RenderList(items));
+            return;
+        }
+
+        if (type == "note")
+        {
+            builder.OpenElement(seq++, "aside"); builder.AddAttribute(seq++, "class", "class-note");
+            if (GetString(block, "title") is string title) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-note-heading"); builder.AddContent(seq++, title); builder.CloseElement(); }
+            if (GetString(block, "text") is string text) { builder.OpenElement(seq++, "p"); builder.AddContent(seq++, text); builder.CloseElement(); }
+            if (GetProperty(block, "paragraphs") is JsonElement paragraphs) builder.AddContent(seq++, RenderParagraphs(paragraphs));
+            builder.CloseElement(); return;
+        }
+
+        if (type is "formula" or "formulas")
+        {
+            var formulas = GetProperty(block, "formula_items");
+            if (formulas is JsonElement formulaItems)
             {
-                childBuilder.AddContent(
-                    childSeq++,
-                    RenderParagraphs(
-                        paragraphs));
+                builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-formula-grid");
+                foreach (var formula in formulaItems.EnumerateArray()) builder.AddContent(seq++, RenderFormula(formula));
+                builder.CloseElement();
             }
+            else builder.AddContent(seq++, RenderFormula(block));
+            return;
+        }
 
-
-            if (
-                GetProperty(
-                    block,
-                    "blocks")
-                is JsonElement blocks
-                && blocks.ValueKind
-                    == JsonValueKind.Array)
+        if (type == "stats")
+        {
+            if (GetProperty(block, "items") is JsonElement items)
             {
-                foreach (
-                    var child
-                    in blocks.EnumerateArray())
+                builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-list");
+                foreach (var item in items.EnumerateArray())
                 {
-                    childBuilder.AddContent(
-                        childSeq++,
-                        RenderBlock(child));
-                }
-            }
-        };
-
-
-    builder.OpenComponent<ItemBlock>(
-        seq++);
-
-
-    builder.AddAttribute(
-        seq++,
-        "Title",
-        title);
-
-
-    builder.AddAttribute(
-        seq++,
-        "ItemType",
-        itemType);
-
-
-    builder.AddAttribute(
-        seq++,
-        "Rarity",
-        rarity);
-
-
-    builder.AddAttribute(
-        seq++,
-        "Theme",
-        theme);
-
-
-    builder.AddAttribute(
-        seq++,
-        "Prerequisite",
-        prerequisite);
-
-
-    builder.AddAttribute(
-        seq++,
-        "Stats",
-        stats);
-
-
-    builder.AddAttribute(
-        seq++,
-        "ChildContent",
-        itemContent);
-
-
-    builder.CloseComponent();
-
-    return;
-}
-
-    if (type is "section" or "subsection")
-    {
-        builder.OpenElement(seq++, "div");
-        builder.AddAttribute(seq++, "class", "class-feature-subsection");
-
-        if (GetString(block, "title") is string title)
-        {
-            builder.OpenElement(seq++, "h4");
-            builder.AddContent(seq++, title);
-            builder.CloseElement();
-        }
-
-        if (GetProperty(block, "paragraphs") is JsonElement paragraphs)
-        {
-            builder.AddContent(
-                seq++,
-                RenderParagraphs(paragraphs));
-        }
-
-        if (GetProperty(block, "blocks") is JsonElement children)
-        {
-            foreach (var child in children.EnumerateArray())
-            {
-                builder.AddContent(
-                    seq++,
-                    RenderBlock(child));
-            }
-        }
-
-        builder.CloseElement();
-        return;
-    }
-
-    if (type == "heading")
-    {
-        builder.OpenElement(seq++, "h4");
-        builder.AddContent(seq++, GetString(block, "text"));
-        builder.CloseElement();
-        return;
-    }
-
-    if (type == "list")
-    {
-        if (GetProperty(block, "items") is JsonElement items)
-        {
-            builder.AddContent(
-                seq++,
-                RenderList(items));
-        }
-
-        return;
-    }
-
-    if (type == "note")
-    {
-        builder.OpenElement(seq++, "aside");
-        builder.AddAttribute(seq++, "class", "class-note");
-
-        if (GetString(block, "title") is string title)
-        {
-            builder.OpenElement(seq++, "div");
-            builder.AddAttribute(
-                seq++,
-                "class",
-                "class-note-heading");
-
-            builder.AddContent(seq++, title);
-            builder.CloseElement();
-        }
-
-        if (GetString(block, "text") is string text)
-        {
-            builder.OpenElement(seq++, "p");
-            builder.AddContent(seq++, RenderGlossaryText(text));
-            builder.CloseElement();
-        }
-
-        if (GetProperty(block, "paragraphs") is JsonElement paragraphs)
-        {
-            builder.AddContent(
-                seq++,
-                RenderParagraphs(paragraphs));
-        }
-
-        builder.CloseElement();
-        return;
-    }
-
-    if (type is "formula" or "formulas")
-    {
-        var formulas =
-            GetProperty(
-                block,
-                "formula_items");
-
-        if (formulas is JsonElement formulaItems)
-        {
-            builder.OpenElement(seq++, "div");
-            builder.AddAttribute(
-                seq++,
-                "class",
-                "class-formula-grid");
-
-            foreach (
-                var formula
-                in formulaItems.EnumerateArray())
-            {
-                builder.AddContent(
-                    seq++,
-                    RenderFormula(formula));
-            }
-
-            builder.CloseElement();
-        }
-        else
-        {
-            builder.AddContent(
-                seq++,
-                RenderFormula(block));
-        }
-
-        return;
-    }
-
-    // =====================================
-    // STAT BLOCK
-    //
-    // Allows class JSON to use the same
-    // StatBlock component as Bestiary
-    // creatures.
-    //
-    // Supported:
-    //
-    // {
-    //   "type": "stat_block",
-    //   "data": { ... }
-    // }
-    //
-    // or:
-    //
-    // {
-    //   "type": "statblock",
-    //   "data": { ... }
-    // }
-    // =====================================
-
-    if (type is "statblock" or "stat_block")
-    {
-        var statBlockElement =
-            GetProperty(block, "data")
-            ?? GetProperty(block, "statblock")
-            ?? block;
-
-        var statBlockData =
-            JsonSerializer.Deserialize<StatBlockData>(
-                statBlockElement.GetRawText());
-
-        if (statBlockData is not null)
-        {
-            builder.OpenComponent<StatBlock>(seq++);
-
-            builder.AddAttribute(
-                seq++,
-                "Data",
-                statBlockData);
-
-            builder.CloseComponent();
-        }
-
-        return;
-    }
-
-    if (type == "stats")
-    {
-        if (GetProperty(block, "items") is JsonElement items)
-        {
-            builder.OpenElement(seq++, "div");
-            builder.AddAttribute(
-                seq++,
-                "class",
-                "class-stat-list");
-
-            foreach (var item in items.EnumerateArray())
-            {
-                builder.OpenElement(seq++, "div");
-                builder.AddAttribute(
-                    seq++,
-                    "class",
-                    "class-stat-row");
-
-                builder.OpenElement(seq++, "strong");
-                builder.AddContent(
-                    seq++,
-                    GetString(item, "label"));
-                builder.CloseElement();
-
-                builder.OpenElement(seq++, "span");
-                builder.AddContent(
-                    seq++,
-                    RenderGlossaryText(
-                        GetValueText(item, "value")));
-                builder.CloseElement();
-
-                builder.CloseElement();
-            }
-
-            builder.CloseElement();
-        }
-
-        return;
-    }
-
-    if (type == "options")
-    {
-        var options =
-            GetProperty(block, "options")
-            ?? GetProperty(block, "items");
-
-        if (options is JsonElement optionItems)
-        {
-            builder.OpenElement(seq++, "div");
-            builder.AddAttribute(
-                seq++,
-                "class",
-                "class-options");
-
-            foreach (
-                var option
-                in optionItems.EnumerateArray())
-            {
-                builder.OpenElement(seq++, "article");
-                builder.AddAttribute(
-                    seq++,
-                    "class",
-                    "class-option");
-
-                builder.OpenElement(seq++, "h4");
-                builder.AddContent(
-                    seq++,
-                    GetString(option, "name"));
-                builder.CloseElement();
-
-                if (
-                    GetString(
-                        option,
-                        "prerequisite")
-                    is string prereq)
-                {
-                    builder.OpenElement(seq++, "div");
-                    builder.AddAttribute(
-                        seq++,
-                        "class",
-                        "class-prerequisite");
-
-                    builder.AddContent(
-                        seq++,
-                        $"Prerequisite: {prereq}");
-
+                    builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-stat-row");
+                    builder.OpenElement(seq++, "strong"); builder.AddContent(seq++, GetString(item, "label")); builder.CloseElement();
+                    builder.OpenElement(seq++, "span"); builder.AddContent(seq++, GetValueText(item, "value")); builder.CloseElement();
                     builder.CloseElement();
                 }
+                builder.CloseElement();
+            }
+            return;
+        }
 
-                if (
-                    GetProperty(
-                        option,
-                        "paragraphs")
-                    is JsonElement paragraphs)
+        if (type == "options")
+        {
+            var options = GetProperty(block, "options") ?? GetProperty(block, "items");
+            if (options is JsonElement optionItems)
+            {
+                builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-options");
+                foreach (var option in optionItems.EnumerateArray())
                 {
-                    builder.AddContent(
-                        seq++,
-                        RenderParagraphs(paragraphs));
-                }
-
-                if (
-                    GetProperty(
-                        option,
-                        "items")
-                    is JsonElement items)
-                {
-                    builder.AddContent(
-                        seq++,
-                        RenderList(items));
-                }
-
-                if (
-                    GetProperty(
-                        option,
-                        "blocks")
-                    is JsonElement optionBlocks)
-                {
-                    foreach (
-                        var child
-                        in optionBlocks.EnumerateArray())
+                    builder.OpenElement(seq++, "article"); builder.AddAttribute(seq++, "class", "class-option");
+                    builder.OpenElement(seq++, "h4"); builder.AddContent(seq++, GetString(option, "name")); builder.CloseElement();
+                    if (GetString(option, "prerequisite") is string prereq) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-prerequisite"); builder.AddContent(seq++, $"Prerequisite: {prereq}"); builder.CloseElement(); }
+                    if (GetProperty(option, "paragraphs") is JsonElement paragraphs) builder.AddContent(seq++, RenderParagraphs(paragraphs));
+                    if (GetProperty(option, "items") is JsonElement items) builder.AddContent(seq++, RenderList(items));
+                    if (GetProperty(option, "blocks") is JsonElement optionBlocks) foreach (var child in optionBlocks.EnumerateArray()) builder.AddContent(seq++, RenderBlock(child));
+                    if (GetProperty(option, "note") is JsonElement note)
                     {
-                        builder.AddContent(
-                            seq++,
-                            RenderBlock(child));
-                    }
-                }
-
-                if (
-                    GetProperty(
-                        option,
-                        "note")
-                    is JsonElement note)
-                {
-                    var noteBlock = note;
-
-                    builder.OpenElement(seq++, "aside");
-                    builder.AddAttribute(
-                        seq++,
-                        "class",
-                        "class-note class-note-variant");
-
-                    if (
-                        GetString(
-                            noteBlock,
-                            "title")
-                        is string noteTitle)
-                    {
-                        builder.OpenElement(seq++, "div");
-                        builder.AddAttribute(
-                            seq++,
-                            "class",
-                            "class-note-heading");
-
-                        builder.AddContent(
-                            seq++,
-                            noteTitle);
-
+                        var noteBlock = note;
+                        builder.OpenElement(seq++, "aside"); builder.AddAttribute(seq++, "class", "class-note class-note-variant");
+                        if (GetString(noteBlock, "title") is string noteTitle) { builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-note-heading"); builder.AddContent(seq++, noteTitle); builder.CloseElement(); }
+                        if (GetProperty(noteBlock, "paragraphs") is JsonElement noteParagraphs) builder.AddContent(seq++, RenderParagraphs(noteParagraphs));
                         builder.CloseElement();
                     }
-
-                    if (
-                        GetProperty(
-                            noteBlock,
-                            "paragraphs")
-                        is JsonElement noteParagraphs)
-                    {
-                        builder.AddContent(
-                            seq++,
-                            RenderParagraphs(
-                                noteParagraphs));
-                    }
-
                     builder.CloseElement();
                 }
-
                 builder.CloseElement();
             }
-
-            builder.CloseElement();
+            return;
         }
 
-        return;
-    }
-
-    if (type == "table")
-    {
-        builder.AddContent(
-            seq++,
-            RenderDynamicTable(
-                block,
-                "class-table"));
-
-        return;
-    }
-};
+        if (type == "table") builder.AddContent(seq++, RenderDynamicTable(block, "class-table"));
+    };
 
     private RenderFragment RenderFormula(JsonElement formula) => builder =>
     {
@@ -1587,52 +1089,23 @@ private RenderFragment RenderBlock(JsonElement block) => builder =>
     private RenderFragment RenderParagraphs(JsonElement paragraphs) => builder =>
     {
         var seq = 0;
-
         if (paragraphs.ValueKind == JsonValueKind.String)
         {
-            builder.OpenElement(seq++, "p");
-            builder.AddContent(
-                seq++,
-                RenderGlossaryText(
-                    ValueToText(paragraphs)));
-            builder.CloseElement();
-            return;
+            builder.OpenElement(seq++, "p"); builder.AddContent(seq++, ValueToText(paragraphs)); builder.CloseElement(); return;
         }
-
-        if (paragraphs.ValueKind != JsonValueKind.Array)
-            return;
-
+        if (paragraphs.ValueKind != JsonValueKind.Array) return;
         foreach (var paragraph in paragraphs.EnumerateArray())
         {
-            builder.OpenElement(seq++, "p");
-            builder.AddContent(
-                seq++,
-                RenderGlossaryText(
-                    ValueToText(paragraph)));
-            builder.CloseElement();
+            builder.OpenElement(seq++, "p"); builder.AddContent(seq++, ValueToText(paragraph)); builder.CloseElement();
         }
     };
 
     private RenderFragment RenderList(JsonElement items) => builder =>
     {
         var seq = 0;
-
-        if (items.ValueKind != JsonValueKind.Array)
-            return;
-
-        builder.OpenElement(seq++, "ul");
-        builder.AddAttribute(seq++, "class", "class-list");
-
-        foreach (var item in items.EnumerateArray())
-        {
-            builder.OpenElement(seq++, "li");
-            builder.AddContent(
-                seq++,
-                RenderGlossaryText(
-                    ValueToText(item)));
-            builder.CloseElement();
-        }
-
+        if (items.ValueKind != JsonValueKind.Array) return;
+        builder.OpenElement(seq++, "ul"); builder.AddAttribute(seq++, "class", "class-list");
+        foreach (var item in items.EnumerateArray()) { builder.OpenElement(seq++, "li"); builder.AddContent(seq++, ValueToText(item)); builder.CloseElement(); }
         builder.CloseElement();
     };
 
@@ -1640,98 +1113,28 @@ private RenderFragment RenderBlock(JsonElement block) => builder =>
     {
         var columns = GetProperty(table, "columns");
         var rows = GetProperty(table, "rows");
-
-        if (
-            columns is not JsonElement columnArray
-            || rows is not JsonElement rowArray
-            || columnArray.ValueKind != JsonValueKind.Array
-            || rowArray.ValueKind != JsonValueKind.Array)
-        {
-            return;
-        }
-
+        if (columns is not JsonElement columnArray || rows is not JsonElement rowArray || columnArray.ValueKind != JsonValueKind.Array || rowArray.ValueKind != JsonValueKind.Array) return;
         var seq = 0;
-        var columnCount = columnArray.GetArrayLength();
-
-        static string ColumnClass(string key)
-        {
-            var normalized = new string(
-                key.ToLowerInvariant()
-                    .Select(character => char.IsLetterOrDigit(character) ? character : '-')
-                    .ToArray());
-
-            while (normalized.Contains("--"))
-                normalized = normalized.Replace("--", "-");
-
-            return $"table-col-{normalized.Trim('-')}";
-        }
-
-        static string CellClasses(string key)
-        {
-            var classes = new List<string> { ColumnClass(key) };
-
-            if (key.Equals("level", StringComparison.OrdinalIgnoreCase))
-                classes.Add("table-level");
-
-            if (key.Equals("features", StringComparison.OrdinalIgnoreCase))
-                classes.Add("table-features");
-
-            return string.Join(" ", classes);
-        }
-
-        builder.OpenElement(seq++, "div");
-        builder.AddAttribute(seq++, "class", "class-table-scroll");
-
-        builder.OpenElement(seq++, "table");
-        builder.AddAttribute(seq++, "class", $"{cssClass} table-cols-{columnCount}");
-
-        builder.OpenElement(seq++, "thead");
-        builder.OpenElement(seq++, "tr");
-
-        foreach (var column in columnArray.EnumerateArray())
-        {
-            var key = GetString(column, "key") ?? string.Empty;
-            var label = GetString(column, "label") ?? string.Empty;
-
-            builder.OpenElement(seq++, "th");
-            builder.AddAttribute(seq++, "class", CellClasses(key));
-            builder.AddContent(seq++, RenderGlossaryText(label));
-            builder.CloseElement();
-        }
-
-        builder.CloseElement();
-        builder.CloseElement();
-
+        builder.OpenElement(seq++, "div"); builder.AddAttribute(seq++, "class", "class-table-scroll");
+        builder.OpenElement(seq++, "table"); builder.AddAttribute(seq++, "class", cssClass);
+        builder.OpenElement(seq++, "thead"); builder.OpenElement(seq++, "tr");
+        foreach (var column in columnArray.EnumerateArray()) { builder.OpenElement(seq++, "th"); builder.AddContent(seq++, GetString(column, "label")); builder.CloseElement(); }
+        builder.CloseElement(); builder.CloseElement();
         builder.OpenElement(seq++, "tbody");
-
         foreach (var row in rowArray.EnumerateArray())
         {
             builder.OpenElement(seq++, "tr");
-
             foreach (var column in columnArray.EnumerateArray())
             {
                 var key = GetString(column, "key") ?? string.Empty;
-
                 builder.OpenElement(seq++, "td");
-                builder.AddAttribute(seq++, "class", CellClasses(key));
-
-                if (GetProperty(row, key) is JsonElement value)
-                {
-                    builder.AddContent(
-                        seq++,
-                        RenderGlossaryText(
-                            ValueToText(value)));
-                }
-
+                if (key.Equals("level", StringComparison.OrdinalIgnoreCase)) builder.AddAttribute(seq++, "class", "table-level");
+                if (GetProperty(row, key) is JsonElement value) builder.AddContent(seq++, ValueToText(value));
                 builder.CloseElement();
             }
-
             builder.CloseElement();
         }
-
-        builder.CloseElement();
-        builder.CloseElement();
-        builder.CloseElement();
+        builder.CloseElement(); builder.CloseElement(); builder.CloseElement();
     };
 
     private static string AnchorId(string value)
