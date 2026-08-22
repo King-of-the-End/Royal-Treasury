@@ -23,10 +23,13 @@
 
     <ImportMap />
 
-    <!-- Royal Treasury favicon -->
+    <!-- Royal Treasury favicon: serve it from wwwroot so it is always available with the app. -->
     <link rel="icon"
           type="image/png"
-          href="https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/site-images/site-emblem.png" />
+          sizes="512x512"
+          href="@Assets["favicon.png"]" />
+    <link rel="apple-touch-icon"
+          href="@Assets["favicon.png"]" />
 
     <HeadOutlet />
 </head>
