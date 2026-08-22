@@ -1,0 +1,956 @@
+/* =========================================
+   ROYAL TREASURY
+   ITEM BLOCK
+
+   Reusable item / equipment presentation.
+
+   Colour system behaves similarly to
+   StatBlock creature-type themes.
+   ========================================= */
+
+
+.rt-itemblock {
+
+    /* =====================================
+       DEFAULT THEME
+       ===================================== */
+
+    --item-accent:
+        #9b1b21;
+
+    --item-accent-bright:
+        #d1454c;
+
+    --item-accent-dark:
+        #530b0f;
+
+    --item-accent-rgb:
+        155, 27, 33;
+
+    --item-title:
+        #efcb69;
+
+    --item-text:
+        #f1ece8;
+
+    --item-muted:
+        #bbb1aa;
+
+    --item-panel:
+        #080707;
+
+    --item-panel-light:
+        #151111;
+
+
+    position:
+        relative;
+
+    isolation:
+        isolate;
+
+
+    width:
+        100%;
+
+    margin:
+        1.5rem
+        0;
+
+
+    overflow:
+        hidden;
+
+
+    border:
+        1px solid
+        rgba(
+            var(--item-accent-rgb),
+            0.55
+        );
+
+    border-top:
+        3px solid
+        var(--item-accent);
+
+
+    border-radius:
+        4px;
+
+
+    color:
+        var(--item-text);
+
+
+    background:
+
+        radial-gradient(
+            circle at 14% 25%,
+            rgba(
+                var(--item-accent-rgb),
+                0.14
+            ),
+            transparent 31%
+        ),
+
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(
+                var(--item-accent-rgb),
+                0.075
+            ),
+            transparent 34%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(
+                var(--item-accent-rgb),
+                0.10
+            ),
+            var(--item-panel-light) 35%,
+            var(--item-panel) 75%
+        );
+
+
+    box-shadow:
+
+        0 14px 34px
+        rgba(
+            0,
+            0,
+            0,
+            0.38
+        ),
+
+        inset 0 1px 0
+        rgba(
+            var(--item-accent-rgb),
+            0.20
+        );
+}
+
+
+
+/* =========================================
+   DECORATIVE ACCENTS
+   ========================================= */
+
+
+.rt-itemblock::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    z-index:
+        0;
+
+    pointer-events:
+        none;
+
+
+    opacity:
+        0.55;
+
+
+    background:
+
+        repeating-linear-gradient(
+            135deg,
+            transparent 0,
+            transparent 48px,
+
+            rgba(
+                var(--item-accent-rgb),
+                0.025
+            ) 49px,
+
+            rgba(
+                var(--item-accent-rgb),
+                0.025
+            ) 50px
+        );
+}
+
+
+.rt-itemblock::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    bottom:
+        0;
+
+    left:
+        0;
+
+    width:
+        4px;
+
+
+    z-index:
+        0;
+
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            var(--item-accent-bright),
+            var(--item-accent),
+            var(--item-accent-dark)
+        );
+
+
+    box-shadow:
+
+        0 0 18px
+        rgba(
+            var(--item-accent-rgb),
+            0.45
+        );
+}
+
+
+.rt-itemblock > * {
+
+    position:
+        relative;
+
+    z-index:
+        1;
+}
+
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+
+.rt-itemblock-header {
+
+    position:
+        relative;
+
+
+    padding:
+
+        1.3rem
+        1.5rem
+        1.1rem;
+
+
+    border-bottom:
+
+        1px solid
+        rgba(
+            var(--item-accent-rgb),
+            0.36
+        );
+
+
+    background:
+
+        linear-gradient(
+            90deg,
+
+            rgba(
+                var(--item-accent-rgb),
+                0.16
+            ),
+
+            transparent 70%
+        );
+}
+
+
+.rt-itemblock-header::after {
+
+    content:
+        "";
+
+    display:
+        block;
+
+
+    width:
+        min(
+            600px,
+            85%
+        );
+
+    height:
+        2px;
+
+
+    margin-top:
+        0.85rem;
+
+
+    background:
+
+        linear-gradient(
+            to right,
+
+            var(--item-accent-bright),
+
+            rgba(
+                var(--item-accent-rgb),
+                0.48
+            ),
+
+            transparent
+        );
+}
+
+
+.rt-itemblock-header h2 {
+
+    margin:
+        0
+        0
+        0.3rem;
+
+
+    color:
+        var(--item-title);
+
+
+    font-family:
+
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    font-size:
+
+        clamp(
+            1.6rem,
+            2.7vw,
+            2.25rem
+        );
+
+
+    line-height:
+        1.08;
+
+
+    text-shadow:
+
+        0 2px 12px
+        rgba(
+            var(--item-accent-rgb),
+            0.22
+        );
+}
+
+
+
+/* =========================================
+   TYPE / RARITY
+   ========================================= */
+
+
+.rt-itemblock-type {
+
+    color:
+        var(--item-accent-bright);
+
+
+    font-size:
+        1rem;
+
+
+    font-style:
+        italic;
+
+
+    font-weight:
+        700;
+}
+
+
+
+/* =========================================
+   PREREQUISITE
+   ========================================= */
+
+
+.rt-itemblock-prerequisite {
+
+    margin-top:
+        0.55rem;
+
+
+    color:
+        var(--item-muted);
+
+
+    font-size:
+        0.92rem;
+
+
+    font-style:
+        italic;
+}
+
+
+.rt-itemblock-prerequisite strong {
+
+    color:
+        var(--item-accent-bright);
+}
+
+
+
+/* =========================================
+   ITEM STATS
+   ========================================= */
+
+
+.rt-itemblock-stats {
+
+    display:
+        grid;
+
+
+    grid-template-columns:
+
+        repeat(
+            auto-fit,
+            minmax(
+                145px,
+                1fr
+            )
+        );
+
+
+    margin:
+
+        0
+        1.5rem;
+
+
+    border-bottom:
+
+        1px solid
+        rgba(
+            var(--item-accent-rgb),
+            0.32
+        );
+}
+
+
+.rt-itemblock-stat {
+
+    min-width:
+        0;
+
+
+    padding:
+
+        0.85rem
+        1rem;
+
+
+    border-right:
+
+        1px solid
+        rgba(
+            var(--item-accent-rgb),
+            0.17
+        );
+}
+
+
+.rt-itemblock-stat:last-child {
+
+    border-right:
+        none;
+}
+
+
+.rt-itemblock-stat span {
+
+    display:
+        block;
+
+
+    margin-bottom:
+        0.18rem;
+
+
+    color:
+        var(--item-muted);
+
+
+    font-size:
+        0.68rem;
+
+
+    font-weight:
+        900;
+
+
+    letter-spacing:
+        0.095em;
+
+
+    text-transform:
+        uppercase;
+}
+
+
+.rt-itemblock-stat strong {
+
+    display:
+        block;
+
+
+    color:
+        var(--item-accent-bright);
+
+
+    font-size:
+        0.97rem;
+
+
+    line-height:
+        1.3;
+}
+
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+
+.rt-itemblock-body {
+
+    padding:
+
+        1.3rem
+        1.5rem
+        1.5rem;
+
+
+    color:
+        var(--item-text);
+}
+
+
+.rt-itemblock-body ::deep p {
+
+    color:
+        var(--item-text);
+
+
+    line-height:
+        1.7;
+}
+
+
+.rt-itemblock-body ::deep p:first-child {
+
+    margin-top:
+        0;
+}
+
+
+.rt-itemblock-body ::deep p:last-child {
+
+    margin-bottom:
+        0;
+}
+
+
+.rt-itemblock-body ::deep ul {
+
+    color:
+        var(--item-text);
+}
+
+
+.rt-itemblock-body ::deep strong {
+
+    color:
+        var(--item-title);
+}
+
+
+
+/* =========================================
+   NESTED SECTIONS
+   ========================================= */
+
+
+.rt-itemblock-body
+::deep
+.class-feature-subsection {
+
+    margin-top:
+        1.25rem;
+
+
+    padding-top:
+        1.05rem;
+
+
+    border-top:
+
+        1px solid
+        rgba(
+            var(--item-accent-rgb),
+            0.23
+        );
+}
+
+
+.rt-itemblock-body
+::deep
+.class-feature-subsection h4 {
+
+    color:
+        var(--item-title);
+}
+
+
+
+/* =========================================
+   EXPLICIT THEMES
+   ========================================= */
+
+
+/* BLOOD */
+
+.rt-itemblock.rt-item-theme-blood {
+
+    --item-accent:
+        #a6141d;
+
+    --item-accent-bright:
+        #ef4651;
+
+    --item-accent-dark:
+        #57070c;
+
+    --item-accent-rgb:
+        166, 20, 29;
+
+    --item-title:
+        #f0c75f;
+}
+
+
+
+/* FORGE */
+
+.rt-itemblock.rt-item-theme-forge {
+
+    --item-accent:
+        #c55d12;
+
+    --item-accent-bright:
+        #ff9138;
+
+    --item-accent-dark:
+        #6b2c06;
+
+    --item-accent-rgb:
+        197, 93, 18;
+
+    --item-title:
+        #ffb45b;
+}
+
+
+
+/* ARCANE */
+
+.rt-itemblock.rt-item-theme-arcane {
+
+    --item-accent:
+        #72408c;
+
+    --item-accent-bright:
+        #b36ed0;
+
+    --item-accent-dark:
+        #3b2049;
+
+    --item-accent-rgb:
+        114, 64, 140;
+
+    --item-title:
+        #d6a0e8;
+}
+
+
+
+/* GOLD */
+
+.rt-itemblock.rt-item-theme-gold {
+
+    --item-accent:
+        #b58725;
+
+    --item-accent-bright:
+        #edc765;
+
+    --item-accent-dark:
+        #67470d;
+
+    --item-accent-rgb:
+        181, 135, 37;
+
+    --item-title:
+        #f5d97f;
+}
+
+
+
+/* FROST */
+
+.rt-itemblock.rt-item-theme-frost {
+
+    --item-accent:
+        #2c8190;
+
+    --item-accent-bright:
+        #67c2ce;
+
+    --item-accent-dark:
+        #16454d;
+
+    --item-accent-rgb:
+        44, 129, 144;
+
+    --item-title:
+        #9ce4eb;
+}
+
+
+
+/* NATURE */
+
+.rt-itemblock.rt-item-theme-nature {
+
+    --item-accent:
+        #527c45;
+
+    --item-accent-bright:
+        #91c77d;
+
+    --item-accent-dark:
+        #294122;
+
+    --item-accent-rgb:
+        82, 124, 69;
+
+    --item-title:
+        #badc98;
+}
+
+
+
+/* VOID */
+
+.rt-itemblock.rt-item-theme-void {
+
+    --item-accent:
+        #58347e;
+
+    --item-accent-bright:
+        #9767c7;
+
+    --item-accent-dark:
+        #2c1942;
+
+    --item-accent-rgb:
+        88, 52, 126;
+
+    --item-title:
+        #c69ae9;
+}
+
+
+
+/* =========================================
+   RARITY THEMES
+
+   Used when no explicit theme is present.
+   ========================================= */
+
+
+/* COMMON */
+
+.rt-itemblock.rt-item-rarity-common {
+
+    --item-accent:
+        #77736f;
+
+    --item-accent-bright:
+        #b9b1aa;
+
+    --item-accent-dark:
+        #403d3a;
+
+    --item-accent-rgb:
+        119, 115, 111;
+
+    --item-title:
+        #ddd5cd;
+}
+
+
+
+/* UNCOMMON */
+
+.rt-itemblock.rt-item-rarity-uncommon {
+
+    --item-accent:
+        #487e55;
+
+    --item-accent-bright:
+        #72b584;
+
+    --item-accent-dark:
+        #25432c;
+
+    --item-accent-rgb:
+        72, 126, 85;
+
+    --item-title:
+        #a7d5ae;
+}
+
+
+
+/* RARE */
+
+.rt-itemblock.rt-item-rarity-rare {
+    --item-accent: #4f9fcf;
+    --item-accent-bright: #8ed3ff;
+    --item-accent-dark: #28546f;
+    --item-accent-rgb: 79, 159, 207;
+    --item-title: #bfe7ff;
+}
+
+
+
+/* VERY RARE */
+
+.rt-itemblock.rt-item-rarity-very-rare {
+    --item-accent: #294f88;
+    --item-accent-bright: #4f79bd;
+    --item-accent-dark: #142a4a;
+    --item-accent-rgb: 41, 79, 136;
+    --item-title: #8fb6ef;
+}
+
+
+
+/* LEGENDARY */
+
+.rt-itemblock.rt-item-rarity-legendary {
+    --item-accent: #7848a3;
+    --item-accent-bright: #b176df;
+    --item-accent-dark: #3e2459;
+    --item-accent-rgb: 120, 72, 163;
+    --item-title: #d4a6f1;
+}
+
+
+
+/* ARTIFACT */
+
+.rt-itemblock.rt-item-rarity-artifact {
+
+    --item-accent:
+        #a4181e;
+
+    --item-accent-bright:
+        #ec4b50;
+
+    --item-accent-dark:
+        #590a0e;
+
+    --item-accent-rgb:
+        164, 24, 30;
+
+    --item-title:
+        #f2ca60;
+}
+
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+
+@media (max-width: 700px) {
+
+    .rt-itemblock-header {
+
+        padding:
+
+            1rem
+            1rem
+            0.85rem;
+    }
+
+
+    .rt-itemblock-stats {
+
+        grid-template-columns:
+
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+
+        margin:
+
+            0
+            1rem;
+    }
+
+
+    .rt-itemblock-stat {
+
+        border-bottom:
+
+            1px solid
+            rgba(
+                var(--item-accent-rgb),
+                0.14
+            );
+    }
+
+
+    .rt-itemblock-body {
+
+        padding:
+            1rem;
+    }
+}

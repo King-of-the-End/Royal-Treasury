@@ -185,7 +185,7 @@
           "martial_arts": "1d4",
           "ki_points": "\u2014",
           "unarmored_movement": "\u2014",
-          "features": "Unarmored Defense, Martial Arts, Monk Training (Optional)"
+          "features": "Unarmored Defense, Martial Arts, Monk Training"
         },
         {
           "level": "2nd",
@@ -193,7 +193,7 @@
           "martial_arts": "1d4",
           "ki_points": "2",
           "unarmored_movement": "\u002B10 ft.",
-          "features": "Ki, Unarmored Movement, Dedicated Weapon (Optional)"
+          "features": "Ki, Unarmored Movement, Dedicated Weapon"
         },
         {
           "level": "3rd",
@@ -201,7 +201,7 @@
           "martial_arts": "1d4",
           "ki_points": "3",
           "unarmored_movement": "\u002B10 ft.",
-          "features": "Monastic Tradition, Deflect Missiles, Ki-Fueled Attack (Optional)"
+          "features": "Monastic Tradition, Deflect Missiles, Ki-Fueled Attack"
         },
         {
           "level": "4th",
@@ -209,7 +209,7 @@
           "martial_arts": "1d4",
           "ki_points": "4",
           "unarmored_movement": "\u002B10 ft.",
-          "features": "Ability Score Improvement, Slow Fall, Quickened Healing (Optional), Ki Endowment (Optional)"
+          "features": "Ability Score Improvement, Slow Fall, Quickened Healing, Ki Endowment"
         },
         {
           "level": "5th",
@@ -217,7 +217,7 @@
           "martial_arts": "1d6",
           "ki_points": "5",
           "unarmored_movement": "\u002B10 ft.",
-          "features": "Extra Attack, Stunning Strike, Focused Aim (Optional)"
+          "features": "Extra Attack, Stunning Strike, Focused Aim"
         },
         {
           "level": "6th",
@@ -381,7 +381,6 @@
       {
         "name": "Monk Training",
         "level": "1",
-        "subtitle": "1st-level optional Monk feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -465,9 +464,8 @@
         ]
       },
       {
-        "name": "Dedicated Weapon (Optional)",
+        "name": "Dedicated Weapon",
         "level": "2",
-        "subtitle": "Optional Monk feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -512,9 +510,8 @@
         ]
       },
       {
-        "name": "Ki-Fueled Attack (Optional)",
+        "name": "Ki-Fueled Attack",
         "level": "3",
-        "subtitle": "Optional Monk feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -543,9 +540,8 @@
         ]
       },
       {
-        "name": "Quickened Healing (Optional)",
+        "name": "Quickened Healing",
         "level": "4",
-        "subtitle": "Optional Monk feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -556,7 +552,6 @@
       {
         "name": "Ki Endowment",
         "level": "4",
-        "subtitle": "4th-level optional Monk feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -585,9 +580,8 @@
         ]
       },
       {
-        "name": "Focused Aim (Optional)",
+        "name": "Focused Aim",
         "level": "5",
-        "subtitle": "Optional Monk feature",
         "blocks": [
           {
             "type": "paragraph",

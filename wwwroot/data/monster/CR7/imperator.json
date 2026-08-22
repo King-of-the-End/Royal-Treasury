@@ -1,0 +1,147 @@
+{
+  "Name": "Imperator",
+  "Group": "Framebilt",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Wielding a greatsword built to conduct electrical energy and prepared to set up a defensive perimeter, the imperators are heavy hitters who can take more punishment than other framebilt soldiers. They carry an effectively inexhaustible supply of field markers that let them set up a defensive perimeter around them and their allies.",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference_BG%20-%20Framebilt%20Imperator.jpg"
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference_BG%20-%20Framebilt%20Imperator.jpg",
+  "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference_BG%20-%20Framebilt%20Imperator.jpg",
+  "Stat Blocks": [
+    {
+      "id": "imperator",
+      "section_type": "Stat Block",
+      "title": "Imperator",
+      "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference_BG%20-%20Framebilt%20Imperator.jpg",
+      "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference_BG%20-%20Framebilt%20Imperator.jpg",
+      "Images": [
+        "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference_BG%20-%20Framebilt%20Imperator.jpg"
+      ],
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (framebilt)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "17 (integrated armor)",
+      "hit_points": "91 (14d8 + 28)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Str +7",
+        "Con +5"
+      ],
+      "skills": [
+        "Athletics +7",
+        "Perception +7"
+      ],
+      "resistances": [
+        "lightning",
+        "poison"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 20 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Constructed Body",
+          "name_format": "bold_italic",
+          "description": "The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned."
+        },
+        {
+          "name": "Core Overclock",
+          "name_format": "bold_italic",
+          "description": "When the framebilt has fewer than half of its total hit points remaining, its melee attacks deal an additional 2d8 lightning damage, and the first attack it makes each turn has advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The framebilt makes three weapon attacks, up to two of which it can replace with a Repulsion Field Marker."
+        },
+        {
+          "name": "Greatsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Conductive Javelin",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 8 (1d6 + 4) piercing damage plus 7 (2d6) lightning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Repulsion Field Marker",
+          "name_format": "bold_italic",
+          "description": "The framebilt generates and throws a spear-like field marker into the ground at a point up to 20 feet away, which remains active for up to 1 minute. It can set up to four of these markers, and setting another one after that requires permanently deactivating one of the previous markers.\n\nEach time a creature starts its turn on a space that intersects with a line between any two markers, or they enter such a space for the first time, the markers generate a wave of force that strikes them. The target must succeed on a DC 15 Strength saving throw or take 6d8 thunder damage and be pushed back 10 feet. A creature that succeeds passes through harmlessly. A given creature only takes this damage the first time they fail the save each turn, and on subsequent failures they are merely pushed back.\n\nEach marker is rooted to the space it is in. Its field of influence extends 30 feet overhead. Each marker has 15 AC and 15 hit points, but is unaffected by any effect that does not specifically target it (such as effects within an area of effect like fireball.)"
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Grappling Line",
+          "name_format": "bold_italic",
+          "description": "The framebilt fires a grappling hook from its arm at a point that is within its remaining movement for the turn, and pulls themselves into a space adjacent to that point (without moving further than their remaining speed). Opportunity attacks made against it while moving this way have disadvantage. After doing so, the framebilt cannot take movement until the end of its turn."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**IMPERATOR**\n*Medium humanoid (framebilt), any alignment*\n**AC** 17 (integrated armor)\n**HP** 91 (14d8 + 28)\n**Speed** 30 ft.\n**STR** 18 (+4) | **DEX** 14 (+2) | **CON** 14 (+2) | **INT** 13 (+1) | **WIS** 18 (+4) | **CHA** 12 (+1)\n**Saving Throws** Str +7, Con +5\n**Skills** Athletics +7, Perception +7\n**Resistances** lightning, poison\n**Condition Immunities** exhaustion, unconscious\n**Senses** blindsight 20 ft., passive Perception 17\n**Languages** Common, and one other language\n**CR** 7 (2,900 XP) **Proficiency Bonus** +3\n\n**TRAITS**\n***Constructed Body.*** The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned.\n\n***Core Overclock.*** When the framebilt has fewer than half of its total hit points remaining, its melee attacks deal an additional 2d8 lightning damage, and the first attack it makes each turn has advantage.\n\n**ACTIONS**\n***Multiattack.*** The framebilt makes three weapon attacks, up to two of which it can replace with a Repulsion Field Marker.\n\n***Greatsword.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6 + 4) slashing damage.\n\n***Conductive Javelin.*** *Ranged Weapon Attack:* +7 to hit, range 20/60 ft., one target. *Hit:* 8 (1d6 + 4) piercing damage plus 7 (2d6) lightning damage.\n\n***Repulsion Field Marker.*** The framebilt generates and throws a spear-like field marker into the ground at a point up to 20 feet away, which remains active for up to 1 minute. It can set up to four of these markers, and setting another one after that requires permanently deactivating one of the previous markers.\n\nEach time a creature starts its turn on a space that intersects with a line between any two markers, or they enter such a space for the first time, the markers generate a wave of force that strikes them. The target must succeed on a DC 15 Strength saving throw or take 6d8 thunder damage and be pushed back 10 feet. A creature that succeeds passes through harmlessly. A given creature only takes this damage the first time they fail the save each turn, and on subsequent failures they are merely pushed back.\n\nEach marker is rooted to the space it is in. Its field of influence extends 30 feet overhead. Each marker has 15 AC and 15 hit points, but is unaffected by any effect that does not specifically target it (such as effects within an area of effect like fireball.)\n\n**BONUS ACTIONS**\n***Grappling Line.*** The framebilt fires a grappling hook from its arm at a point that is within its remaining movement for the turn, and pulls themselves into a space adjacent to that point (without moving further than their remaining speed). Opportunity attacks made against it while moving this way have disadvantage. After doing so, the framebilt cannot take movement until the end of its turn."
+    }
+  ]
+}

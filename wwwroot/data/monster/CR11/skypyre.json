@@ -1,0 +1,118 @@
+{
+  "Name": "Skypyre",
+  "Group": "Fire Giants",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The skypyre giants are trained to use massive obsidian greatbows with startling accuracy. Their arrows are made of refined stone, or are conjured from the air as massive arrows of flame. When facing the walls of an enemy structure they are unrivaled in their destructive ability, toppling their enemies’ defenses with ease.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Reference%20-%20Fire%20Giant%20Skypyre.jpg",
+  "Stat Blocks": [
+    {
+      "id": "skypyre",
+      "section_type": "Stat Block",
+      "title": "Skypyre",
+      "creature": {
+        "size": "Huge",
+        "type": "giant",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "18 (plate)",
+      "hit_points": "163 (13d12 + 78)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 25,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "CON": {
+          "score": 23,
+          "modifier": "+6"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 11,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Dex +4",
+        "Con +10",
+        "Cha +4"
+      ],
+      "skills": [
+        "Athletics +11",
+        "Perception +7"
+      ],
+      "immunities": [
+        "fire"
+      ],
+      "senses": [
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Giant"
+      ],
+      "challenge_rating": "11 (7,200 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The Fire Giant makes two weapon attacks."
+        },
+        {
+          "name": "Longsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 7) slashing damage plus 7 (2d6) fire damage or 24 (3d10 + 7) slashing damage plus 7 (2d6) fire damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Inferno Greatbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +11 to hit, range 150/600 ft., one target. Hit: 29 (4d10 + 7) piercing damage or 29 (4d10 + 7) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Meteor Arrow (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The giant fires a single arrow of twisting flame at a target within 150 feet as Ranged Weapon Attack: +11 to hit, or at a space within that range. This arrow leaves a 15-foot-wide line behind it until it reaches its target. Each creature within that area must succeed on a DC 19 Dexterity saving throw. The primary target (if hit) and any creatures that fail their save take 55 (10d8 + 10) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**SKYPYRE**\n*Huge giant, lawful evil*\n**AC** 18 (plate)\n**HP** 163 (13d12 + 78)\n**Speed** 30 ft.\n**STR** 25 (+7) | **DEX** 11 (-) | **CON** 23 (+6) | **INT** 10 (-) | **WIS** 16 (+3) | **CHA** 11 (-)\n**Saving Throws** Dex +4, Con +10, Cha +4\n**Skills** Athletics +11, Perception +7\n**Immunities** fire\n**Senses** passive Perception 17\n**Languages** Giant\n**CR** 11 (7,200 XP) **Proficiency Bonus** +4\n\n**QUALITY TRAITS**\n*Siege*\n\n**ACTIONS**\n***Multiattack.*** The Fire Giant makes two weapon attacks.\n\n***Longsword.*** *Melee Weapon Attack:* +11 to hit, reach 10 ft., one target. *Hit:* 21 (3d8 + 7) slashing damage plus 7 (2d6) fire damage or 24 (3d10 + 7) slashing damage plus 7 (2d6) fire damage if wielded with two hands.\n\n***Inferno Greatbow.*** *Ranged Weapon Attack:* +11 to hit, range 150/600 ft., one target. *Hit:* 29 (4d10 + 7) piercing damage or 29 (4d10 + 7) fire damage.\n\n***Meteor Arrow (Recharge 6).*** The giant fires a single arrow of twisting flame at a target within 150 feet as *Ranged Weapon Attack:* +11 to hit, or at a space within that range. This arrow leaves a 15-foot-wide line behind it until it reaches its target. Each creature within that area must succeed on a DC 19 Dexterity saving throw. The primary target (if hit) and any creatures that fail their save take 55 (10d8 + 10) fire damage."
+    }
+  ]
+}

@@ -12,8 +12,8 @@
     {
       "title": "Sworn and Beholden",
       "paragraphs": [
-        "A warlock is defined by a pact with an otherworldly being. Sometimes the relationship between warlock and patron is like that of a cleric and a deity, though the beings that serve as patrons for warlocks are not gods. A warlock might lead a cult dedicated to a demon prince, an archdevil, or an utterly alien entity—beings not typically served by clerics.",
-        "More often, the arrangement is similar to that between a master and an apprentice. The warlock learns and grows in power, at the cost of occasional services performed on the patron’s behalf.",
+        "A warlock is defined by a pact with an otherworldly being. Sometimes the relationship between warlock and patron is like that of a cleric and a deity, though the beings that serve as patrons for warlocks are not gods. A warlock might lead a cult dedicated to a demon prince, an archdevil, or an utterly alien entity\u2014beings not typically served by clerics.",
+        "More often, the arrangement is similar to that between a master and an apprentice. The warlock learns and grows in power, at the cost of occasional services performed on the patron\u2019s behalf.",
         "The magic bestowed on a warlock ranges from minor but lasting alterations to access to powerful spells. Unlike bookish wizards, warlocks supplement their magic with some facility at hand-to-hand combat. They are comfortable in light armor and know how to use simple weapons."
       ]
     },
@@ -22,14 +22,14 @@
       "paragraphs": [
         "Warlocks are driven by an insatiable need for knowledge and power, which compels them into their pacts and shapes their lives. This thirst drives warlocks into their pacts and shapes their later careers as well.",
         "Stories of warlocks binding themselves to fiends are widely known, but many warlocks serve patrons that are not fiendish. Sometimes a traveler in the wilds comes to a strangely beautiful tower, meets its fey lord or lady, and stumbles into a pact without being fully aware of it.",
-        "Once a pact is made, a warlock’s thirst for knowledge and power cannot be slaked with mere study and research. The vast majority spend their days in active pursuit of their goals, which typically means some kind of adventuring."
+        "Once a pact is made, a warlock\u2019s thirst for knowledge and power cannot be slaked with mere study and research. The vast majority spend their days in active pursuit of their goals, which typically means some kind of adventuring."
       ]
     },
     {
       "title": "Creating a Warlock",
       "paragraphs": [
         "As you make your warlock character, spend some time thinking about your patron and the obligations that your pact imposes upon you. What led you to make the pact, and how did you make contact with your patron? Were you seduced into summoning a devil, or did you seek out the ritual that would allow you to make contact with an alien elder god?",
-        "Work with your DM to determine how big a part your pact will play in your character’s adventuring career. Your patron’s demands might drive you into adventures, or they might consist entirely of small favors you can do between adventures.",
+        "Work with your DM to determine how big a part your pact will play in your character\u2019s adventuring career. Your patron\u2019s demands might drive you into adventures, or they might consist entirely of small favors you can do between adventures.",
         "What kind of relationship do you have with your patron? Is it friendly, antagonistic, uneasy, or romantic? How important does your patron consider you to be? How does your patron communicate with you?"
       ]
     },
@@ -44,7 +44,7 @@
     {
       "title": "Patron Severance",
       "paragraphs": [
-        "If a pact’s terms are broken, the consequences are entirely up to the nature of the pact. In most cases, a patron will make clear that a Warlock who goes against the terms of their pact will lose their Warlock powers entirely.",
+        "If a pact\u2019s terms are broken, the consequences are entirely up to the nature of the pact. In most cases, a patron will make clear that a Warlock who goes against the terms of their pact will lose their Warlock powers entirely.",
         "This is referred to as eldritch severance: the Warlock loses their subclass features, access to their pact feature such as Pact of the Blade, and cannot gain further levels as a Warlock. They retain their base Warlock spells and features unless the pact stipulates otherwise.",
         "In cases where a pact is loosely defined and founded on mutual good will, either party may sever the relationship without necessarily stripping away already-gained power, though the Warlock still cannot gain further Warlock levels.",
         "If a Warlock later makes a pact with another patron, their subclass features are replaced with those of the new patron immediately. A tightly worded contract may require a condition to be met or consent to be given before the pact can be fully severed."
@@ -92,11 +92,11 @@
                     },
                     {
                       "label": "Hit Points at 1st Level",
-                      "value": "8 + your Constitution modifier"
+                      "value": "8 \u002B your Constitution modifier"
                     },
                     {
                       "label": "Hit Points at Higher Levels",
-                      "value": "1d8 (or 5) + your Constitution modifier per warlock level after 1st"
+                      "value": "1d8 (or 5) \u002B your Constitution modifier per warlock level after 1st"
                     }
                   ]
                 }
@@ -146,7 +146,7 @@
                   "items": [
                     "(a) a light crossbow and 20 bolts or (b) any simple weapon",
                     "(a) a component pouch or (b) an arcane focus",
-                    "(a) a scholar’s pack or (b) a dungeoneer’s pack",
+                    "(a) a scholar\u2019s pack or (b) a dungeoneer\u2019s pack",
                     "Leather armor, any simple weapon, and two daggers"
                   ]
                 }
@@ -195,17 +195,17 @@
       "rows": [
         {
           "level": "1st",
-          "proficiency_bonus": "+2",
+          "proficiency_bonus": "\u002B2",
           "features": "Otherworldly Patron, Pact Magic",
           "cantrips_known": "2",
           "spells_known": "2",
           "spell_slots": "1",
           "slot_level": "1st",
-          "invocations_known": "—"
+          "invocations_known": "\u2014"
         },
         {
           "level": "2nd",
-          "proficiency_bonus": "+2",
+          "proficiency_bonus": "\u002B2",
           "features": "Eldritch Invocations",
           "cantrips_known": "2",
           "spells_known": "3",
@@ -215,7 +215,7 @@
         },
         {
           "level": "3rd",
-          "proficiency_bonus": "+2",
+          "proficiency_bonus": "\u002B2",
           "features": "Pact Boon",
           "cantrips_known": "2",
           "spells_known": "4",
@@ -225,8 +225,8 @@
         },
         {
           "level": "4th",
-          "proficiency_bonus": "+2",
-          "features": "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "proficiency_bonus": "\u002B2",
+          "features": "Ability Score Improvement, Eldritch Versatility ",
           "cantrips_known": "3",
           "spells_known": "5",
           "spell_slots": "2",
@@ -235,8 +235,8 @@
         },
         {
           "level": "5th",
-          "proficiency_bonus": "+3",
-          "features": "—",
+          "proficiency_bonus": "\u002B3",
+          "features": "\u2014",
           "cantrips_known": "3",
           "spells_known": "6",
           "spell_slots": "2",
@@ -245,7 +245,7 @@
         },
         {
           "level": "6th",
-          "proficiency_bonus": "+3",
+          "proficiency_bonus": "\u002B3",
           "features": "Otherworldly Patron feature",
           "cantrips_known": "3",
           "spells_known": "7",
@@ -255,8 +255,8 @@
         },
         {
           "level": "7th",
-          "proficiency_bonus": "+3",
-          "features": "—",
+          "proficiency_bonus": "\u002B3",
+          "features": "\u2014",
           "cantrips_known": "3",
           "spells_known": "8",
           "spell_slots": "2",
@@ -265,8 +265,8 @@
         },
         {
           "level": "8th",
-          "proficiency_bonus": "+3",
-          "features": "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement, Eldritch Versatility ",
           "cantrips_known": "3",
           "spells_known": "9",
           "spell_slots": "2",
@@ -275,8 +275,8 @@
         },
         {
           "level": "9th",
-          "proficiency_bonus": "+4",
-          "features": "—",
+          "proficiency_bonus": "\u002B4",
+          "features": "\u2014",
           "cantrips_known": "3",
           "spells_known": "10",
           "spell_slots": "2",
@@ -285,7 +285,7 @@
         },
         {
           "level": "10th",
-          "proficiency_bonus": "+4",
+          "proficiency_bonus": "\u002B4",
           "features": "Otherworldly Patron feature",
           "cantrips_known": "4",
           "spells_known": "10",
@@ -295,7 +295,7 @@
         },
         {
           "level": "11th",
-          "proficiency_bonus": "+4",
+          "proficiency_bonus": "\u002B4",
           "features": "Mystic Arcanum (6th level)",
           "cantrips_known": "4",
           "spells_known": "11",
@@ -305,8 +305,8 @@
         },
         {
           "level": "12th",
-          "proficiency_bonus": "+4",
-          "features": "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement, Eldritch Versatility ",
           "cantrips_known": "4",
           "spells_known": "11",
           "spell_slots": "3",
@@ -315,7 +315,7 @@
         },
         {
           "level": "13th",
-          "proficiency_bonus": "+5",
+          "proficiency_bonus": "\u002B5",
           "features": "Mystic Arcanum (7th level)",
           "cantrips_known": "4",
           "spells_known": "12",
@@ -325,7 +325,7 @@
         },
         {
           "level": "14th",
-          "proficiency_bonus": "+5",
+          "proficiency_bonus": "\u002B5",
           "features": "Otherworldly Patron feature",
           "cantrips_known": "4",
           "spells_known": "12",
@@ -335,7 +335,7 @@
         },
         {
           "level": "15th",
-          "proficiency_bonus": "+5",
+          "proficiency_bonus": "\u002B5",
           "features": "Mystic Arcanum (8th level)",
           "cantrips_known": "4",
           "spells_known": "13",
@@ -345,8 +345,8 @@
         },
         {
           "level": "16th",
-          "proficiency_bonus": "+5",
-          "features": "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement, Eldritch Versatility ",
           "cantrips_known": "4",
           "spells_known": "13",
           "spell_slots": "3",
@@ -355,7 +355,7 @@
         },
         {
           "level": "17th",
-          "proficiency_bonus": "+6",
+          "proficiency_bonus": "\u002B6",
           "features": "Mystic Arcanum (9th level)",
           "cantrips_known": "4",
           "spells_known": "14",
@@ -365,8 +365,8 @@
         },
         {
           "level": "18th",
-          "proficiency_bonus": "+6",
-          "features": "—",
+          "proficiency_bonus": "\u002B6",
+          "features": "\u2014",
           "cantrips_known": "4",
           "spells_known": "14",
           "spell_slots": "4",
@@ -375,8 +375,8 @@
         },
         {
           "level": "19th",
-          "proficiency_bonus": "+6",
-          "features": "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement, Eldritch Versatility ",
           "cantrips_known": "4",
           "spells_known": "15",
           "spell_slots": "4",
@@ -385,7 +385,7 @@
         },
         {
           "level": "20th",
-          "proficiency_bonus": "+6",
+          "proficiency_bonus": "\u002B6",
           "features": "Eldritch Master",
           "cantrips_known": "4",
           "spells_known": "15",
@@ -461,11 +461,11 @@
                 "formula_items": [
                   {
                     "label": "Spell Save DC",
-                    "value": "8 + your proficiency bonus + your Charisma modifier"
+                    "value": "8 \u002B your proficiency bonus \u002B your Charisma modifier"
                   },
                   {
                     "label": "Spell Attack Modifier",
-                    "value": "your proficiency bonus + your Charisma modifier"
+                    "value": "your proficiency bonus \u002B your Charisma modifier"
                   }
                 ]
               }
@@ -543,19 +543,6 @@
                 ]
               },
               {
-                "name": "Pact of the Tome",
-                "blocks": [
-                  {
-                    "type": "paragraph",
-                    "text": "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class’s spell list. While the book is on your person, you can cast those cantrips at will, and they count as warlock spells for you."
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "If you lose your Book of Shadows, you can perform a ritual to receive a replacement from your patron."
-                  }
-                ]
-              },
-              {
                 "name": "Pact of the Talisman",
                 "blocks": [
                   {
@@ -573,13 +560,12 @@
                   },
                   {
                     "type": "paragraph",
-                    "text": "You can also invoke the Seeker’s power to gain advantage on an Intelligence check while you carry the chain. Once you use this ability, you cannot use it again until you complete a short or long rest."
+                    "text": "You can also invoke the Seeker\u2019s power to gain advantage on an Intelligence check while you carry the chain. Once you use this ability, you cannot use it again until you complete a short or long rest."
                   }
                 ]
               },
-              {
-                "name": "Pact of the Tome — Grimoire Variant",
-                "prerequisite": "Choose this in place of the standard Pact of the Tome",
+              { 
+                "name": "Pact of the Tome",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -625,7 +611,7 @@
                     "blocks": [
                       {
                         "type": "paragraph",
-                        "text": "Choose one Warlock spell from your subclass’s expanded spell list that you could cast using pact spell slots. You can cast it a number of times per Long Rest equal to half your proficiency bonus, rounded down, without expending a spell slot but as though cast using one of your Warlock spell slots. Each time you gain a Warlock level you can switch which spell you picked."
+                        "text": "Choose one Warlock spell from your subclass\u2019s expanded spell list that you could cast using pact spell slots. You can cast it a number of times per Long Rest equal to half your proficiency bonus, rounded down, without expending a spell slot but as though cast using one of your Warlock spell slots. Each time you gain a Warlock level you can switch which spell you picked."
                       }
                     ]
                   },
@@ -635,7 +621,7 @@
                     "blocks": [
                       {
                         "type": "paragraph",
-                        "text": "You have one additional pact spell slot of the same level as your Warlock pact spell slots. It functions identically to them except that you regain it only when you complete a Long Rest, and any spell cast using it is cast at the spell’s base level."
+                        "text": "You have one additional pact spell slot of the same level as your Warlock pact spell slots. It functions identically to them except that you regain it only when you complete a Long Rest, and any spell cast using it is cast at the spell\u2019s base level."
                       }
                     ]
                   }
@@ -651,14 +637,13 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
           }
         ]
       },
       {
-        "name": "Eldritch Versatility (Optional)",
+        "name": "Eldritch Versatility ",
         "level": "4, 8, 12, 16, and 19",
-        "subtitle": "Optional Warlock feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -667,8 +652,8 @@
           {
             "type": "list",
             "items": [
-              "Replace one cantrip you learned from this class’s Pact Magic feature with another cantrip from the warlock spell list.",
-              "Replace the option you chose for the Pact Boon feature with one of that feature’s other options.",
+              "Replace one cantrip you learned from this class\u2019s Pact Magic feature with another cantrip from the warlock spell list.",
+              "Replace the option you chose for the Pact Boon feature with one of that feature\u2019s other options.",
               "If you are 12th level or higher, replace one spell from your Mystic Arcanum feature with another warlock spell of the same level."
             ]
           },
@@ -717,7 +702,7 @@
             "items": [
               {
                 "name": "Agonizing Blast",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "eldritch blast cantrip",
                 "blocks": [
                   {
@@ -728,7 +713,7 @@
               },
               {
                 "name": "Armor of Shadows",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -738,7 +723,7 @@
               },
               {
                 "name": "Ascendant Step",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "9th level",
                 "blocks": [
                   {
@@ -749,18 +734,18 @@
               },
               {
                 "name": "Aspect of the Moon",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "Pact of the Tome feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You no longer need to sleep and can't be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours doing light activity, such as reading your Book of Shadows and keeping watch."
+                    "text": "You no longer need to sleep and can\u0027t be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours doing light activity, such as reading your Book of Shadows and keeping watch."
                   }
                 ]
               },
               {
                 "name": "Beast Speech",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -770,7 +755,7 @@
               },
               {
                 "name": "Beguiling Influence",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -780,18 +765,18 @@
               },
               {
                 "name": "Bewitching Whispers",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "7th level",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast compulsion once using a warlock spell slot. You can't do so again until you finish a long rest."
+                    "text": "You can cast compulsion once using a warlock spell slot. You can\u0027t do so again until you finish a long rest."
                   }
                 ]
               },
               {
                 "name": "Bond of the Talisman",
-                "source": "Tasha's Cauldron of Everything",
+                "source": "Tasha\u0027s Cauldron of Everything",
                 "prerequisite": "12th level, Pact of the Talisman feature",
                 "blocks": [
                   {
@@ -802,38 +787,38 @@
               },
               {
                 "name": "Book of Ancient Secrets",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "Pact of the Tome feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list; the two needn't be from the same list. The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag."
+                    "text": "You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class\u0027s spell list; the two needn\u0027t be from the same list. The spells appear in the book and don\u0027t count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can\u0027t cast the spells except as rituals, unless you\u0027ve learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag."
                   },
                   {
                     "type": "paragraph",
-                    "text": "On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+                    "text": "On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell\u0027s level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
                   }
                 ]
               },
               {
                 "name": "Chains of Carceri",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "15th level, Pact of the Chain feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast hold monster at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
+                    "text": "You can cast hold monster at will\u2014targeting a celestial, fiend, or elemental\u2014without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
                   }
                 ]
               },
               {
                 "name": "Cloak of Flies",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "5th level",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're incapacitated or you dismiss it as a bonus action."
+                    "text": "As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you\u0027re incapacitated or you dismiss it as a bonus action."
                   },
                   {
                     "type": "paragraph",
@@ -841,13 +826,13 @@
                   },
                   {
                     "type": "paragraph",
-                    "text": "Once you use this invocation, you can't use it again until you finish a short or long rest."
+                    "text": "Once you use this invocation, you can\u0027t use it again until you finish a short or long rest."
                   }
                 ]
               },
               {
-                "name": "Devil's Sight",
-                "source": "Player's Handbook",
+                "name": "Devil\u0027s Sight",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -857,18 +842,18 @@
               },
               {
                 "name": "Dreadful Word",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "7th level",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast confusion once using a warlock spell slot. You can't do so again until you finish a long rest."
+                    "text": "You can cast confusion once using a warlock spell slot. You can\u0027t do so again until you finish a long rest."
                   }
                 ]
               },
               {
                 "name": "Eldritch Mind",
-                "source": "Tasha's Cauldron of Everything",
+                "source": "Tasha\u0027s Cauldron of Everything",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -878,7 +863,7 @@
               },
               {
                 "name": "Eldritch Sight",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -888,7 +873,7 @@
               },
               {
                 "name": "Eldritch Smite",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "5th level, Pact of the Blade feature",
                 "blocks": [
                   {
@@ -899,7 +884,7 @@
               },
               {
                 "name": "Eldritch Spear",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "eldritch blast cantrip",
                 "blocks": [
                   {
@@ -910,7 +895,7 @@
               },
               {
                 "name": "Eyes of the Rune Keeper",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -920,7 +905,7 @@
               },
               {
                 "name": "Far Scribe",
-                "source": "Tasha's Cauldron of Everything",
+                "source": "Tasha\u0027s Cauldron of Everything",
                 "prerequisite": "5th level, Pact of the Tome feature",
                 "blocks": [
                   {
@@ -939,7 +924,7 @@
               },
               {
                 "name": "Fiendish Vigor",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -949,32 +934,32 @@
               },
               {
                 "name": "Gaze of Two Minds",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings."
+                    "text": "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature\u0027s senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings."
                   }
                 ]
               },
               {
                 "name": "Ghostly Gaze",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "7th level",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "As an action, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have darkvision if you don't already have it. This special sight lasts for 1 minute or until your concentration ends, as if you were concentrating on a spell. During that time, you perceive objects as ghostly, transparent images."
+                    "text": "As an action, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have darkvision if you don\u0027t already have it. This special sight lasts for 1 minute or until your concentration ends, as if you were concentrating on a spell. During that time, you perceive objects as ghostly, transparent images."
                   },
                   {
                     "type": "paragraph",
-                    "text": "Once you use this invocation, you can't use it again until you finish a short or long rest."
+                    "text": "Once you use this invocation, you can\u0027t use it again until you finish a short or long rest."
                   }
                 ]
               },
               {
                 "name": "Gift of the Depths",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "5th level",
                 "blocks": [
                   {
@@ -989,7 +974,7 @@
               },
               {
                 "name": "Gift of the Ever-Living Ones",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "Pact of the Chain feature",
                 "blocks": [
                   {
@@ -1000,7 +985,7 @@
               },
               {
                 "name": "Gift of the Protectors",
-                "source": "Tasha's Cauldron of Everything",
+                "source": "Tasha\u0027s Cauldron of Everything",
                 "prerequisite": "9th level, Pact of the Tome feature",
                 "blocks": [
                   {
@@ -1019,7 +1004,7 @@
               },
               {
                 "name": "Grasp of Hadar",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "eldritch blast cantrip",
                 "blocks": [
                   {
@@ -1030,7 +1015,7 @@
               },
               {
                 "name": "Improved Pact Weapon",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "Pact of the Blade feature",
                 "blocks": [
                   {
@@ -1039,7 +1024,7 @@
                   },
                   {
                     "type": "paragraph",
-                    "text": "In addition, the weapon gains a +1 bonus to its attack and damage rolls, unless it is a magic weapon that already has a bonus to those rolls."
+                    "text": "In addition, the weapon gains a \u002B1 bonus to its attack and damage rolls, unless it is a magic weapon that already has a bonus to those rolls."
                   },
                   {
                     "type": "paragraph",
@@ -1049,7 +1034,7 @@
               },
               {
                 "name": "Investment of the Chain Master",
-                "source": "Tasha's Cauldron of Everything",
+                "source": "Tasha\u0027s Cauldron of Everything",
                 "prerequisite": "Pact of the Chain feature",
                 "blocks": [
                   {
@@ -1061,7 +1046,7 @@
                     "items": [
                       "The familiar gains either a flying speed or a swimming speed (your choice) of 40 feet.",
                       "As a bonus action, you can command the familiar to take the Attack action.",
-                      "The familiar's weapon attacks are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks.",
+                      "The familiar\u0027s weapon attacks are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks.",
                       "If the familiar forces a creature to make a saving throw, it uses your spell save DC.",
                       "When the familiar takes damage, you can use your reaction to grant it resistance against that damage."
                     ]
@@ -1070,18 +1055,18 @@
               },
               {
                 "name": "Lance of Lethargy",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "eldritch blast cantrip",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "Once on each of your turns when you hit a creature with your eldritch blast, you can reduce that creature's speed by 10 feet until the end of your next turn."
+                    "text": "Once on each of your turns when you hit a creature with your eldritch blast, you can reduce that creature\u0027s speed by 10 feet until the end of your next turn."
                   }
                 ]
               },
               {
                 "name": "Lifedrinker",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "12th level, Pact of the Blade feature",
                 "blocks": [
                   {
@@ -1092,18 +1077,18 @@
               },
               {
                 "name": "Maddening Hex",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "5th level, hex spell or a warlock feature that curses",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
+                    "text": "As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade\u0027s Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
                   }
                 ]
               },
               {
                 "name": "Mask of Many Faces",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -1113,7 +1098,7 @@
               },
               {
                 "name": "Master of Myriad Forms",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "15th level",
                 "blocks": [
                   {
@@ -1124,29 +1109,29 @@
               },
               {
                 "name": "Minions of Chaos",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "9th level",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast conjure elemental once using a warlock spell slot. You can't do so again until you finish a long rest."
+                    "text": "You can cast conjure elemental once using a warlock spell slot. You can\u0027t do so again until you finish a long rest."
                   }
                 ]
               },
               {
                 "name": "Mire the Mind",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "5th level",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast slow once using a warlock spell slot. You can't do so again until you finish a long rest."
+                    "text": "You can cast slow once using a warlock spell slot. You can\u0027t do so again until you finish a long rest."
                   }
                 ]
               },
               {
                 "name": "Misty Visions",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -1156,7 +1141,7 @@
               },
               {
                 "name": "One with Shadows",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "5th level",
                 "blocks": [
                   {
@@ -1167,7 +1152,7 @@
               },
               {
                 "name": "Otherworldly Leap",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "9th level",
                 "blocks": [
                   {
@@ -1178,7 +1163,7 @@
               },
               {
                 "name": "Protection of the Talisman",
-                "source": "Tasha's Cauldron of Everything",
+                "source": "Tasha\u0027s Cauldron of Everything",
                 "prerequisite": "7th level, Pact of the Talisman feature",
                 "blocks": [
                   {
@@ -1189,29 +1174,29 @@
               },
               {
                 "name": "Rebuke of the Talisman",
-                "source": "Tasha's Cauldron of Everything",
+                "source": "Tasha\u0027s Cauldron of Everything",
                 "prerequisite": "Pact of the Talisman feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus and push it up to 10 feet away from the talisman's wearer."
+                    "text": "When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus and push it up to 10 feet away from the talisman\u0027s wearer."
                   }
                 ]
               },
               {
                 "name": "Relentless Hex",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "7th level, hex spell or a warlock feature that curses",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "Your curse creates a temporary bond between you and your target. As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target."
+                    "text": "Your curse creates a temporary bond between you and your target. As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade\u0027s Curse and Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target."
                   }
                 ]
               },
               {
                 "name": "Repelling Blast",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "eldritch blast cantrip",
                 "blocks": [
                   {
@@ -1222,18 +1207,18 @@
               },
               {
                 "name": "Sculptor of Flesh",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "7th level",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast polymorph once using a warlock spell slot. You can't do so again until you finish a long rest."
+                    "text": "You can cast polymorph once using a warlock spell slot. You can\u0027t do so again until you finish a long rest."
                   }
                 ]
               },
               {
                 "name": "Shroud of Shadow",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "15th level",
                 "blocks": [
                   {
@@ -1244,28 +1229,28 @@
               },
               {
                 "name": "Sign of Ill Omen",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "5th level",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast bestow curse once using a warlock spell slot. You can't do so again until you finish a long rest."
+                    "text": "You can cast bestow curse once using a warlock spell slot. You can\u0027t do so again until you finish a long rest."
                   }
                 ]
               },
               {
                 "name": "Thief of Five Fates",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast bane once using a warlock spell slot. You can't do so again until you finish a long rest."
+                    "text": "You can cast bane once using a warlock spell slot. You can\u0027t do so again until you finish a long rest."
                   }
                 ]
               },
               {
                 "name": "Thirsting Blade",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "5th level, Pact of the Blade feature",
                 "blocks": [
                   {
@@ -1276,7 +1261,7 @@
               },
               {
                 "name": "Tomb of Levistus",
-                "source": "Xanathar's Guide to Everything",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "5th level",
                 "blocks": [
                   {
@@ -1285,13 +1270,13 @@
                   },
                   {
                     "type": "paragraph",
-                    "text": "Once you use this invocation, you can't use it again until you finish a short or long rest."
+                    "text": "Once you use this invocation, you can\u0027t use it again until you finish a short or long rest."
                   }
                 ]
               },
               {
-                "name": "Trickster's Escape",
-                "source": "Xanathar's Guide to Everything",
+                "name": "Trickster\u0027s Escape",
+                "source": "Xanathar\u0027s Guide to Everything",
                 "prerequisite": "7th level",
                 "blocks": [
                   {
@@ -1302,18 +1287,18 @@
               },
               {
                 "name": "Undying Servitude",
-                "source": "Tasha's Cauldron of Everything",
+                "source": "Tasha\u0027s Cauldron of Everything",
                 "prerequisite": "5th-level warlock",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can cast animate dead without using a spell slot. Once you do so, you can't cast it in this way again until you finish a long rest."
+                    "text": "You can cast animate dead without using a spell slot. Once you do so, you can\u0027t cast it in this way again until you finish a long rest."
                   }
                 ]
               },
               {
                 "name": "Visions of Distant Realms",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "15th level",
                 "blocks": [
                   {
@@ -1324,18 +1309,18 @@
               },
               {
                 "name": "Voice of the Chain Master",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "Pact of the Chain feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
+                    "text": "You can communicate telepathically with your familiar and perceive through your familiar\u0027s senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar\u0027s senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
                   }
                 ]
               },
               {
                 "name": "Whispers of the Grave",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "9th level",
                 "blocks": [
                   {
@@ -1346,7 +1331,7 @@
               },
               {
                 "name": "Witch Sight",
-                "source": "Player's Handbook",
+                "source": "Player\u0027s Handbook",
                 "prerequisite": "15th level",
                 "blocks": [
                   {
@@ -1369,19 +1354,19 @@
               },
               {
                 "name": "Burning Hex",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Hexblade patron",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "As a bonus action, you cause a target cursed by your Hexblade's Curse to take fire damage equal to your Charisma modifier (minimum of 1)."
+                    "text": "As a bonus action, you cause a target cursed by your Hexblade\u0027s Curse to take fire damage equal to your Charisma modifier (minimum of 1)."
                   }
                 ],
                 "category": "Unearthed Arcana"
               },
               {
-                "name": "Caiphon's Beacon",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "name": "Caiphon\u0027s Beacon",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Great Old One patron",
                 "blocks": [
                   {
@@ -1393,52 +1378,52 @@
               },
               {
                 "name": "Chilling Hex",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Hexblade patron",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "As a bonus action, you cause frost to swirl around a target cursed by your Hexblade's Curse, dealing cold damage to each of your enemies within 5 feet of the target. The cold damage equals your Charisma modifier (minimum of 1)."
+                    "text": "As a bonus action, you cause frost to swirl around a target cursed by your Hexblade\u0027s Curse, dealing cold damage to each of your enemies within 5 feet of the target. The cold damage equals your Charisma modifier (minimum of 1)."
                   }
                 ],
                 "category": "Unearthed Arcana"
               },
               {
                 "name": "Chronicle of the Raven Queen",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "Raven Queen patron, Pact of the Tome feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can place a corpse's hand or similar appendage on your Book of Shadows and ask one question aloud. After 1 minute, the answer appears written in blood in your book. The answer is provided by the dead creature's spirit to the best of its knowledge and is translated into a language of your choice. You must use this ability within 1 minute of a creature's death, and a given creature can only be asked one question in this manner."
+                    "text": "You can place a corpse\u0027s hand or similar appendage on your Book of Shadows and ask one question aloud. After 1 minute, the answer appears written in blood in your book. The answer is provided by the dead creature\u0027s spirit to the best of its knowledge and is translated into a language of your choice. You must use this ability within 1 minute of a creature\u0027s death, and a given creature can only be asked one question in this manner."
                   }
                 ],
                 "category": "Unearthed Arcana"
               },
               {
                 "name": "Claw of Acamar",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Great Old One patron, Pact of the Blade feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can create a black, lead flail using your Pact of the Blade feature. The flail's heads are sculpted to resemble a pair of grasping tentacles. The weapon has the reach property. When you hit a creature with it, you can expend a spell slot to deal an additional 2d8 necrotic damage to the target per spell level, and you can reduce the creature's speed to 0 feet until the end of your next turn."
+                    "text": "You can create a black, lead flail using your Pact of the Blade feature. The flail\u0027s heads are sculpted to resemble a pair of grasping tentacles. The weapon has the reach property. When you hit a creature with it, you can expend a spell slot to deal an additional 2d8 necrotic damage to the target per spell level, and you can reduce the creature\u0027s speed to 0 feet until the end of your next turn."
                   }
                 ],
                 "category": "Unearthed Arcana"
               },
               {
                 "name": "Curse Bringer",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Hexblade patron, Pact of the Blade feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can create a greatsword forged from silver, with black runes etched into its blade, using your Pact of the Blade feature. If you reduce a target cursed by your Hexblade's Curse to 0 hit points with this sword, you can immediately change the target of the curse to a different creature. This change doesn't extend the curse's duration."
+                    "text": "You can create a greatsword forged from silver, with black runes etched into its blade, using your Pact of the Blade feature. If you reduce a target cursed by your Hexblade\u0027s Curse to 0 hit points with this sword, you can immediately change the target of the curse to a different creature. This change doesn\u0027t extend the curse\u0027s duration."
                   },
                   {
                     "type": "paragraph",
-                    "text": "When you hit a creature with this weapon, you can expend a spell slot to deal an additional 2d8 slashing damage to the target per spell level, and you can reduce the creature's speed to 0 feet until the end of your next turn."
+                    "text": "When you hit a creature with this weapon, you can expend a spell slot to deal an additional 2d8 slashing damage to the target per spell level, and you can reduce the creature\u0027s speed to 0 feet until the end of your next turn."
                   }
                 ],
                 "category": "Unearthed Arcana"
@@ -1450,14 +1435,14 @@
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "As an action, you can touch a suit of armor that isn't being worn or carried by anyone and instantly don it, provided you aren't wearing armor already. You are proficient with this suit of armor until it's removed."
+                    "text": "As an action, you can touch a suit of armor that isn\u0027t being worn or carried by anyone and instantly don it, provided you aren\u0027t wearing armor already. You are proficient with this suit of armor until it\u0027s removed."
                   }
                 ],
                 "category": "Unearthed Arcana"
               },
               {
-                "name": "Green Lord's Gift",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "name": "Green Lord\u0027s Gift",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Archfey patron",
                 "blocks": [
                   {
@@ -1481,7 +1466,7 @@
               },
               {
                 "name": "Mace of Dispater",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Fiend patron, Pact of the Blade feature",
                 "blocks": [
                   {
@@ -1498,14 +1483,14 @@
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the target and each creature of your choice within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 0 damage)."
+                    "text": "As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade\u0027s Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the target and each creature of your choice within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 0 damage)."
                   }
                 ],
                 "category": "Unearthed Arcana"
               },
               {
                 "name": "Moonbow",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Archfey patron, Pact of the Blade feature",
                 "blocks": [
                   {
@@ -1517,7 +1502,7 @@
               },
               {
                 "name": "Path of the Seeker",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Seeker patron",
                 "blocks": [
                   {
@@ -1528,20 +1513,20 @@
                 "category": "Unearthed Arcana"
               },
               {
-                "name": "Raven Queen's Blessing",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "name": "Raven Queen\u0027s Blessing",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "Raven Queen patron, eldritch blast cantrip",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "When you score a critical hit with your eldritch blast cantrip, pick yourself or an ally you can see within 30 feet of you. The chosen creature can immediately expend a Hit Die to regain hit points equal to the roll + the creature's Constitution modifier (minimum of 1 hit point)."
+                    "text": "When you score a critical hit with your eldritch blast cantrip, pick yourself or an ally you can see within 30 feet of you. The chosen creature can immediately expend a Hit Die to regain hit points equal to the roll \u002B the creature\u0027s Constitution modifier (minimum of 1 hit point)."
                   }
                 ],
                 "category": "Unearthed Arcana"
               },
               {
-                "name": "Seeker's Speech",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "name": "Seeker\u0027s Speech",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Seeker patron",
                 "blocks": [
                   {
@@ -1553,7 +1538,7 @@
               },
               {
                 "name": "Shroud of Ulban",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "The Great Old One patron",
                 "blocks": [
                   {
@@ -1565,24 +1550,24 @@
               },
               {
                 "name": "Superior Pact Weapon",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "9th level, Pact of the Blade feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your warlock spells. In addition, the weapon counts as a magic weapon with a +2 bonus to its attack and damage rolls, unless it is already a magic weapon that you transformed into your pact weapon."
+                    "text": "You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your warlock spells. In addition, the weapon counts as a magic weapon with a \u002B2 bonus to its attack and damage rolls, unless it is already a magic weapon that you transformed into your pact weapon."
                   }
                 ],
                 "category": "Unearthed Arcana"
               },
               {
                 "name": "Ultimate Pact Weapon",
-                "source": "Unearthed Arcana 29 - Warlock & Wizard",
+                "source": "Unearthed Arcana 29 - Warlock \u0026 Wizard",
                 "prerequisite": "15th level, Pact of the Blade feature",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": "You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your warlock spells. In addition, the weapon counts as a magic weapon with a +3 bonus to its attack and damage rolls, unless it is already a magic weapon that you transformed into your pact weapon."
+                    "text": "You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your warlock spells. In addition, the weapon counts as a magic weapon with a \u002B3 bonus to its attack and damage rolls, unless it is already a magic weapon that you transformed into your pact weapon."
                   }
                 ],
                 "category": "Unearthed Arcana"

@@ -166,19 +166,19 @@
           "level": "1st",
           "proficiency_bonus": "\u002B2",
           "sneak_attack": "1d6",
-          "features": "Expertise, Sneak Attack, Thieves\u2019 Cant, Gun Expertise (Optional)"
+          "features": "Expertise, Sneak Attack, Thieves\u2019 Cant, Gun Expertise"
         },
         {
           "level": "2nd",
           "proficiency_bonus": "\u002B2",
           "sneak_attack": "1d6",
-          "features": "Cunning Action, Fighting Style (Optional)"
+          "features": "Cunning Action, Fighting Style"
         },
         {
           "level": "3rd",
           "proficiency_bonus": "\u002B2",
           "sneak_attack": "2d6",
-          "features": "Roguish Archetype, Steady Aim (Optional)"
+          "features": "Roguish Archetype, Steady Aim"
         },
         {
           "level": "4th",
@@ -302,7 +302,6 @@
       {
         "name": "Gun Expertise",
         "level": "1",
-        "subtitle": "Optional 1st-level Rogue feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -355,7 +354,6 @@
       {
         "name": "Fighting Style",
         "level": "2",
-        "subtitle": "Optional 2nd-level Rogue feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -394,9 +392,8 @@
         ]
       },
       {
-        "name": "Steady Aim (Optional)",
+        "name": "Steady Aim",
         "level": "3",
-        "subtitle": "Optional Rogue feature",
         "blocks": [
           {
             "type": "paragraph",

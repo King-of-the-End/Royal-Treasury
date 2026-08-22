@@ -226,7 +226,7 @@
         {
           "level": "3rd",
           "proficiency_bonus": "\u002B2",
-          "features": "Cantrip Formulas (Optional)",
+          "features": "Cantrip Formulas",
           "cantrips_known": "3",
           "slot_1": "4",
           "slot_2": "2",
@@ -256,7 +256,7 @@
         {
           "level": "5th",
           "proficiency_bonus": "\u002B3",
-          "features": "Junction from Memory (Optional)",
+          "features": "Junction from Memory",
           "cantrips_known": "4",
           "slot_1": "4",
           "slot_2": "3",
@@ -316,7 +316,7 @@
         {
           "level": "9th",
           "proficiency_bonus": "\u002B4",
-          "features": "Complex Incantation (Optional)",
+          "features": "Complex Incantation",
           "cantrips_known": "4",
           "slot_1": "4",
           "slot_2": "3",
@@ -634,9 +634,8 @@
         ]
       },
       {
-        "name": "Cantrip Formulas (Optional)",
+        "name": "Cantrip Formulas",
         "level": "3",
-        "subtitle": "Optional Wizard feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -657,7 +656,6 @@
       {
         "name": "Junction from Memory",
         "level": "5",
-        "subtitle": "Optional 5th-level Wizard feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -668,7 +666,6 @@
       {
         "name": "Complex Incantation",
         "level": "9",
-        "subtitle": "Optional 9th-level Wizard feature",
         "blocks": [
           {
             "type": "paragraph",

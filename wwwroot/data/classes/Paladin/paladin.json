@@ -209,7 +209,7 @@
         {
           "level": "2nd",
           "proficiency_bonus": "\u002B2",
-          "features": "Fighting Style, Spellcasting, Divine Smite, Prismatic Smite (Optional)",
+          "features": "Fighting Style, Spellcasting, Divine Smite, Prismatic Smite",
           "slot_1": "2",
           "slot_2": "\u2014",
           "slot_3": "\u2014",
@@ -219,7 +219,7 @@
         {
           "level": "3rd",
           "proficiency_bonus": "\u002B2",
-          "features": "Divine Health, Sacred Oath, Harness Divine Power (Optional)",
+          "features": "Divine Health, Sacred Oath, Harness Divine Power",
           "slot_1": "3",
           "slot_2": "\u2014",
           "slot_3": "\u2014",
@@ -229,7 +229,7 @@
         {
           "level": "4th",
           "proficiency_bonus": "\u002B2",
-          "features": "Ability Score Improvement, Martial Versatility (Optional)",
+          "features": "Ability Score Improvement, Martial Versatility",
           "slot_1": "3",
           "slot_2": "\u2014",
           "slot_3": "\u2014",
@@ -259,7 +259,7 @@
         {
           "level": "7th",
           "proficiency_bonus": "\u002B3",
-          "features": "Sacred Oath feature, Sacred Hunt (Optional)",
+          "features": "Sacred Oath feature, Sacred Hunt",
           "slot_1": "4",
           "slot_2": "3",
           "slot_3": "\u2014",
@@ -269,7 +269,7 @@
         {
           "level": "8th",
           "proficiency_bonus": "\u002B3",
-          "features": "Ability Score Improvement, Martial Versatility (Optional)",
+          "features": "Ability Score Improvement, Martial Versatility",
           "slot_1": "4",
           "slot_2": "3",
           "slot_3": "\u2014",
@@ -309,7 +309,7 @@
         {
           "level": "12th",
           "proficiency_bonus": "\u002B4",
-          "features": "Ability Score Improvement, Martial Versatility (Optional)",
+          "features": "Ability Score Improvement, Martial Versatility",
           "slot_1": "4",
           "slot_2": "3",
           "slot_3": "3",
@@ -349,7 +349,7 @@
         {
           "level": "16th",
           "proficiency_bonus": "\u002B5",
-          "features": "Ability Score Improvement, Martial Versatility (Optional)",
+          "features": "Ability Score Improvement, Martial Versatility",
           "slot_1": "4",
           "slot_2": "3",
           "slot_3": "3",
@@ -379,7 +379,7 @@
         {
           "level": "19th",
           "proficiency_bonus": "\u002B6",
-          "features": "Ability Score Improvement, Martial Versatility (Optional)",
+          "features": "Ability Score Improvement, Martial Versatility",
           "slot_1": "4",
           "slot_2": "3",
           "slot_3": "3",
@@ -438,7 +438,6 @@
       {
         "name": "Fighting Style",
         "level": "2",
-        "subtitle": "2nd-level Paladin feature (addendum to Fighting Style)",
         "blocks": [
           {
             "type": "paragraph",
@@ -548,7 +547,6 @@
       {
         "name": "Prismatic Smite",
         "level": "2",
-        "subtitle": "Optional 2nd-level Paladin feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -609,9 +607,8 @@
         ]
       },
       {
-        "name": "Harness Divine Power (Optional)",
+        "name": "Harness Divine Power",
         "level": "3",
-        "subtitle": "Optional Paladin feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -634,9 +631,8 @@
         ]
       },
       {
-        "name": "Martial Versatility (Optional)",
+        "name": "Martial Versatility",
         "level": "4, 8, 12, 16, and 19",
-        "subtitle": "Optional Paladin feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -674,7 +670,6 @@
           },
           {
             "name": "Aura of Protection (19th Edition)",
-            "subtitle": "Replaces Aura of Protection",
             "blocks": [
               {
                 "type": "paragraph",
@@ -695,7 +690,6 @@
       {
         "name": "Sacred Hunt",
         "level": "7",
-        "subtitle": "Optional 7th-level Paladin feature",
         "blocks": [
           {
             "type": "paragraph",

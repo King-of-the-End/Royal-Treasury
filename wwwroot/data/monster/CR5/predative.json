@@ -1,0 +1,165 @@
+{
+  "Name": "Predative",
+  "Group": "Framebilt",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Predatives are hunters who are assigned to specifically lock onto and attack designated targets on the battlefield. They have a long-range rifle integrated into their body that they can reload and arm themselves with seamlessly, not interrupting their pursuit.",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Framebilt%20Predative.jpg"
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Framebilt%20Predative.jpg",
+  "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Framebilt%20Predative.jpg",
+  "Stat Blocks": [
+    {
+      "id": "predative",
+      "section_type": "Stat Block",
+      "title": "Predative",
+      "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Framebilt%20Predative.jpg",
+      "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Framebilt%20Predative.jpg",
+      "Images": [
+        "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Reference%20-%20Framebilt%20Predative.jpg"
+      ],
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (framebilt)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "17 (integrated armor)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Quality Traits"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Str +5",
+        "Dex +7"
+      ],
+      "skills": [
+        "Acrobatics +7",
+        "Nature +7",
+        "Perception +10"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "exhaustion"
+      ],
+      "senses": [
+        "blindsight 20 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Constructed Body",
+          "name_format": "bold_italic",
+          "description": "The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned."
+        },
+        {
+          "name": "Designated Target (3/Day)",
+          "name_format": "bold_italic",
+          "description": "When the framebilt makes a weapon attack against a creature, it can designate the creature as its primary target for 1 hour. The framebilt adds a +2 bonus to attack rolls against their target, and when they hit them with a weapon attack they deal an additional 1d6 of the weapon’s damage."
+        },
+        {
+          "name": "Holo Retreat (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "When the framebilt would be reduced to 0 hit points by a target they can see, roll 1d100. On a result of 50 or lower they replace themselves with a holographic hard-light clone that takes the attack for them and seems to be destroyed, causing them to take no damage instead. When they do, they can move into an empty space adjacent to theirs and turn invisible until the next time they attack or until the end of their next turn. This feature does not function if the framebilt is incapacitated."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The framebilt makes three Armblade attacks or two Integrated Rifle attacks."
+        },
+        {
+          "name": "Armblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Integrated Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 40/120, one target. Hit: 13 (2d8 + 4) piercing damage. Once per turn, when the framebilt hits a target with its rifle it can force them to make a DC 14 Constitution saving throw against a chemical solution added to the framebilt’s bullet. On a failure, they are subject to one of the following effects:",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          },
+          "options": [
+            {
+              "description": "The target takes 9 (2d8) acid damage."
+            },
+            {
+              "description": "The target is poisoned for 1 minute, and can reattempt the saving throw at the end of each of their turns, ending the effect on a success."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Collective Target (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The framebilt yells tactical information about their designated target(s) to one of its allies within 30 feet of itself. Until the start of the framebilt’s next turn, that ally gains the bonuses to attack rolls and damage rolls against that target that the framebilt would have gained through its designated target trait."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Subversive Parry",
+          "name_format": "bold_italic",
+          "description": "If the framebilt’s designated target makes an attack roll against them, the framebilt can increase their armor class against attacks from them by 4 until the start of the framebilt’s next turn. If the target hits the framebilt during this time the effect ends."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "raw_text": "**PREDATIVE**\n*Medium humanoid (framebilt), any alignment*\n**AC** 17 (integrated armor)\n**HP** 65 (10d8 + 20)\n**Speed** 40 ft.\n**STR** 14 (+2) | **DEX** 18 (+4) | **CON** 14 (+2) | **INT** 16 (+3) | **WIS** 18 (+4) | **CHA** 15 (+2)\n**Saving Throws** Str +5, Dex +7\n**Skills** Acrobatics +7, Nature +7, Perception +10\n**Resistances** poison\n**Condition Immunities** exhaustion\n**Senses** blindsight 20 ft., darkvision 60 ft., passive Perception 20\n**Languages** Common, and one other language\n**CR** 5 (1,800 XP) **Proficiency Bonus** +3\n\n**TRAITS**\n*Quality Traits*\n\n***Constructed Body.*** The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned.\n\n***Designated Target (3/Day).*** When the framebilt makes a weapon attack against a creature, it can designate the creature as its primary target for 1 hour. The framebilt adds a +2 bonus to attack rolls against their target, and when they hit them with a weapon attack they deal an additional 1d6 of the weapon’s damage.\n\n***Holo Retreat (1/Rest).*** When the framebilt would be reduced to 0 hit points by a target they can see, roll 1d100. On a result of 50 or lower they replace themselves with a holographic hard-light clone that takes the attack for them and seems to be destroyed, causing them to take no damage instead. When they do, they can move into an empty space adjacent to theirs and turn invisible until the next time they attack or until the end of their next turn. This feature does not function if the framebilt is incapacitated.\n\n**ACTIONS**\n***Multiattack.*** The framebilt makes three Armblade attacks or two Integrated Rifle attacks.\n\n***Armblade.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 10 (1d10 + 4) piercing damage.\n\n***Integrated Rifle.*** *Ranged Weapon Attack:* +7 to hit, range 40/120, one target. *Hit:* 13 (2d8 + 4) piercing damage. Once per turn, when the framebilt hits a target with its rifle it can force them to make a DC 14 Constitution saving throw against a chemical solution added to the framebilt’s bullet. On a failure, they are subject to one of the following effects:\n• The target takes 9 (2d8) acid damage.\n• The target is poisoned for 1 minute, and can reattempt the saving throw at the end of each of their turns, ending the effect on a success.\n\n**BONUS ACTIONS**\n***Collective Target (Recharge 4-6).*** The framebilt yells tactical information about their designated target(s) to one of its allies within 30 feet of itself. Until the start of the framebilt’s next turn, that ally gains the bonuses to attack rolls and damage rolls against that target that the framebilt would have gained through its designated target trait.\n\n**REACTIONS**\n***Subversive Parry.*** If the framebilt’s designated target makes an attack roll against them, the framebilt can increase their armor class against attacks from them by 4 until the start of the framebilt’s next turn. If the target hits the framebilt during this time the effect ends."
+    }
+  ]
+}

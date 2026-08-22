@@ -266,7 +266,7 @@
           "level": "4th",
           "proficiency_bonus": "\u002B2",
           "sorcery_points": "4",
-          "features": "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "features": "Ability Score Improvement, Sorcerous Versatility",
           "cantrips_known": "5",
           "spells_known": "5",
           "slot_1": "4",
@@ -283,7 +283,7 @@
           "level": "5th",
           "proficiency_bonus": "\u002B3",
           "sorcery_points": "5",
-          "features": "Magical Guidance (Optional)",
+          "features": "Magical Guidance",
           "cantrips_known": "5",
           "spells_known": "6",
           "slot_1": "4",
@@ -317,7 +317,7 @@
           "level": "7th",
           "proficiency_bonus": "\u002B3",
           "sorcery_points": "7",
-          "features": "Breath of Arcana (Optional)",
+          "features": "Breath of Arcana",
           "cantrips_known": "5",
           "spells_known": "8",
           "slot_1": "4",
@@ -334,7 +334,7 @@
           "level": "8th",
           "proficiency_bonus": "\u002B3",
           "sorcery_points": "8",
-          "features": "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "features": "Ability Score Improvement, Sorcerous Versatility",
           "cantrips_known": "5",
           "spells_known": "9",
           "slot_1": "4",
@@ -402,7 +402,7 @@
           "level": "12th",
           "proficiency_bonus": "\u002B4",
           "sorcery_points": "12",
-          "features": "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "features": "Ability Score Improvement, Sorcerous Versatility",
           "cantrips_known": "6",
           "spells_known": "12",
           "slot_1": "4",
@@ -470,7 +470,7 @@
           "level": "16th",
           "proficiency_bonus": "\u002B5",
           "sorcery_points": "16",
-          "features": "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "features": "Ability Score Improvement, Sorcerous Versatility",
           "cantrips_known": "6",
           "spells_known": "14",
           "slot_1": "4",
@@ -521,7 +521,7 @@
           "level": "19th",
           "proficiency_bonus": "\u002B6",
           "sorcery_points": "19",
-          "features": "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "features": "Ability Score Improvement, Sorcerous Versatility",
           "cantrips_known": "6",
           "spells_known": "15",
           "slot_1": "4",
@@ -748,9 +748,8 @@
         ]
       },
       {
-        "name": "Sorcerous Versatility (Optional)",
+        "name": "Sorcerous Versatility",
         "level": "4, 8, 12, 16, and 19",
-        "subtitle": "Optional Sorcerer feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -766,9 +765,8 @@
         ]
       },
       {
-        "name": "Magical Guidance (Optional)",
+        "name": "Magical Guidance",
         "level": "5",
-        "subtitle": "Optional Sorcerer feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -779,7 +777,6 @@
       {
         "name": "Breath of Arcana",
         "level": "7",
-        "subtitle": "Optional 7th-level Sorcerer feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -843,7 +840,6 @@
               },
               {
                 "name": "Expanded Spell",
-                "subtitle": "Additional Metamagic option",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -871,7 +867,6 @@
               },
               {
                 "name": "Invisible Spell",
-                "subtitle": "Additional Metamagic option",
                 "blocks": [
                   {
                     "type": "paragraph",
@@ -912,7 +907,6 @@
               },
               {
                 "name": "Shielding Spell",
-                "subtitle": "Additional Metamagic option",
                 "blocks": [
                   {
                     "type": "paragraph",

@@ -1,0 +1,177 @@
+@using System.Text.Json
+
+<article class="@($"rt-itemblock {ThemeClass}")">
+
+    <header class="rt-itemblock-header">
+
+        <h2>@Title</h2>
+
+        @if (!string.IsNullOrWhiteSpace(ItemLine))
+        {
+            <div class="rt-itemblock-type">
+                @ItemLine
+            </div>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(Prerequisite))
+        {
+            <div class="rt-itemblock-prerequisite">
+                <strong>Prerequisite:</strong>
+                @Prerequisite
+            </div>
+        }
+
+    </header>
+
+    @if (Stats.ValueKind == JsonValueKind.Array && Stats.GetArrayLength() > 0)
+    {
+        <section class="rt-itemblock-stats">
+
+            @foreach (var stat in Stats.EnumerateArray())
+            {
+                var label = GetString(stat, "label");
+                var value = GetValueText(stat, "value");
+
+                if (!string.IsNullOrWhiteSpace(value))
+                {
+                    <div class="rt-itemblock-stat">
+
+                        @if (!string.IsNullOrWhiteSpace(label))
+                        {
+                            <span>@label</span>
+                        }
+
+                        <strong>@value</strong>
+
+                    </div>
+                }
+            }
+
+        </section>
+    }
+
+    <section class="rt-itemblock-body">
+        @ChildContent
+    </section>
+
+</article>
+
+@code
+{
+    [Parameter]
+    public string Title { get; set; } = "Item";
+
+    [Parameter]
+    public string? ItemType { get; set; }
+
+    [Parameter]
+    public string? Rarity { get; set; }
+
+    [Parameter]
+    public string? Theme { get; set; }
+
+    [Parameter]
+    public string? Prerequisite { get; set; }
+
+    [Parameter]
+    public JsonElement Stats { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    private string ItemLine
+    {
+        get
+        {
+            if (!string.IsNullOrWhiteSpace(ItemType) &&
+                !string.IsNullOrWhiteSpace(Rarity))
+            {
+                return $"{ItemType}, {Rarity}";
+            }
+
+            if (!string.IsNullOrWhiteSpace(ItemType))
+                return ItemType;
+
+            if (!string.IsNullOrWhiteSpace(Rarity))
+                return Rarity;
+
+            return string.Empty;
+        }
+    }
+
+    private string ThemeClass
+    {
+        get
+        {
+            if (!string.IsNullOrWhiteSpace(Theme))
+            {
+                return $"rt-item-theme-{ToSlug(Theme)}";
+            }
+
+            if (!string.IsNullOrWhiteSpace(Rarity))
+            {
+                return $"rt-item-rarity-{ToSlug(Rarity)}";
+            }
+
+            return "rt-item-theme-default";
+        }
+    }
+
+    private static string? GetString(
+        JsonElement element,
+        string propertyName)
+    {
+        if (element.ValueKind != JsonValueKind.Object)
+            return null;
+
+        if (!element.TryGetProperty(propertyName, out var property))
+            return null;
+
+        return property.ValueKind switch
+        {
+            JsonValueKind.String => property.GetString(),
+            JsonValueKind.Number => property.GetRawText(),
+            JsonValueKind.True => "true",
+            JsonValueKind.False => "false",
+            _ => null
+        };
+    }
+
+    private static string? GetValueText(
+        JsonElement element,
+        string propertyName)
+    {
+        if (element.ValueKind != JsonValueKind.Object ||
+            !element.TryGetProperty(propertyName, out var value))
+        {
+            return null;
+        }
+
+        return value.ValueKind switch
+        {
+            JsonValueKind.String => value.GetString(),
+            JsonValueKind.Number => value.GetRawText(),
+            JsonValueKind.True => "Yes",
+            JsonValueKind.False => "No",
+            _ => value.ToString()
+        };
+    }
+
+    private static string ToSlug(string value)
+    {
+        var chars = value
+            .Trim()
+            .ToLowerInvariant()
+            .Select(c => char.IsLetterOrDigit(c) ? c : '-')
+            .ToArray();
+
+        var slug = new string(chars);
+
+        while (slug.Contains("--"))
+        {
+            slug = slug.Replace("--", "-");
+        }
+
+        return slug.Trim('-');
+    }
+}

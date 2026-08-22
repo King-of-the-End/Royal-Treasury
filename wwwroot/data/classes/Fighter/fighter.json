@@ -183,7 +183,7 @@
         {
           "level": "4th",
           "proficiency_bonus": "\u002B2",
-          "features": "Ability Score Improvement, Martial Versatility (Optional), Fighting Style Advancement"
+          "features": "Ability Score Improvement, Martial Versatility, Fighting Style Advancement"
         },
         {
           "level": "5th",
@@ -193,7 +193,7 @@
         {
           "level": "6th",
           "proficiency_bonus": "\u002B3",
-          "features": "Ability Score Improvement, Martial Versatility (Optional)"
+          "features": "Ability Score Improvement, Martial Versatility"
         },
         {
           "level": "7th",
@@ -203,7 +203,7 @@
         {
           "level": "8th",
           "proficiency_bonus": "\u002B3",
-          "features": "Ability Score Improvement, Martial Versatility (Optional), Adrenaline"
+          "features": "Ability Score Improvement, Martial Versatility, Adrenaline"
         },
         {
           "level": "9th",
@@ -223,7 +223,7 @@
         {
           "level": "12th",
           "proficiency_bonus": "\u002B4",
-          "features": "Ability Score Improvement, Martial Versatility (Optional), Fighting Style Advancement"
+          "features": "Ability Score Improvement, Martial Versatility, Fighting Style Advancement"
         },
         {
           "level": "13th",
@@ -233,7 +233,7 @@
         {
           "level": "14th",
           "proficiency_bonus": "\u002B5",
-          "features": "Ability Score Improvement, Martial Versatility (Optional)"
+          "features": "Ability Score Improvement, Martial Versatility"
         },
         {
           "level": "15th",
@@ -243,7 +243,7 @@
         {
           "level": "16th",
           "proficiency_bonus": "\u002B5",
-          "features": "Ability Score Improvement, Martial Versatility (Optional), Fighting Style Advancement"
+          "features": "Ability Score Improvement, Martial Versatility, Fighting Style Advancement"
         },
         {
           "level": "17th",
@@ -258,7 +258,7 @@
         {
           "level": "19th",
           "proficiency_bonus": "\u002B6",
-          "features": "Ability Score Improvement, Martial Versatility (Optional)"
+          "features": "Ability Score Improvement, Martial Versatility"
         },
         {
           "level": "20th",
@@ -271,7 +271,6 @@
       {
         "name": "Fighting Style",
         "level": "1",
-        "subtitle": "1st-level Fighter feature (addendum to Fighting Style feature)",
         "blocks": [
           {
             "type": "paragraph",
@@ -321,49 +320,26 @@
               },
               {
                 "name": "Unarmed Fighting"
-              },
-              {
-                "name": "Fighting Style Details"
               }
             ]
           }
         ]
       },
       {
-        "name": "1st-Level Second Wind Feature",
+        "name": "Second Wind",
         "level": "1",
-        "choice_label": "Choose One",
-        "alternatives": [
+        "blocks": [
           {
-            "name": "Second Wind",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 \u002B your fighter level."
-              },
-              {
-                "type": "paragraph",
-                "text": "Once you use this feature, you must finish a short or long rest before you can use it again."
-              }
-            ]
+            "type": "paragraph",
+            "text": "As a bonus action you can regain hit points equal to 1d10 \u002B your Fighter level, and recover from any Combat Fatigue you might be suffering from. You can use your Second Wind twice, then gain an additional use each when you reach 5th, 9th, 13th, and 17th level as a Fighter. You regain spent uses of your Second Wind when you complete a Long Rest."
           },
           {
-            "name": "Second Wind (19th Edition)",
-            "subtitle": "Replaces Second Wind",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "As a bonus action you can regain hit points equal to 1d10 \u002B your Fighter level, and recover from any Combat Fatigue you might be suffering from. You can use your Second Wind twice, then gain an additional use each when you reach 5th, 9th, 13th, and 17th level as a Fighter. You regain spent uses of your Second Wind when you complete a Long Rest."
-              },
-              {
-                "type": "paragraph",
-                "text": "When you use your Second Wind you can expend additional uses of it at once, increasing the hit points you regain by 1d10 for each extra use you spend."
-              },
-              {
-                "type": "paragraph",
-                "text": "If you use your Second Wind to regain hit points while you have the dying condition, the dying condition ends immediately."
-              }
-            ]
+            "type": "paragraph",
+            "text": "When you use your Second Wind you can expend additional uses of it at once, increasing the hit points you regain by 1d10 for each extra use you spend."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you use your Second Wind to regain hit points while you have the dying condition, the dying condition ends immediately."
           }
         ]
       },
@@ -384,7 +360,6 @@
       {
         "name": "Combat Mastery",
         "level": "2",
-        "subtitle": "2nd-level Fighter feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -463,9 +438,8 @@
         ]
       },
       {
-        "name": "Martial Versatility (Optional)",
+        "name": "Martial Versatility",
         "level": "4, 6, 8, 12, 14, 16, and 19",
-        "subtitle": "Optional Fighter feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -483,7 +457,6 @@
       {
         "name": "Fighting Style Advancement",
         "level": "4, 7, 12, and 16",
-        "subtitle": "4th/7th/12th/16th-level Fighter feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -508,7 +481,6 @@
       {
         "name": "Adrenaline",
         "level": "8",
-        "subtitle": "8th-level Fighter feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -533,7 +505,6 @@
       {
         "name": "Critical Momentum",
         "level": "11",
-        "subtitle": "11th-level Fighter feature",
         "blocks": [
           {
             "type": "paragraph",
@@ -544,7 +515,6 @@
       {
         "name": "Greater Stamina",
         "level": "13",
-        "subtitle": "13th-level Fighter feature",
         "blocks": [
           {
             "type": "paragraph",

@@ -23,17 +23,183 @@
 
 
                 <span
-                    class="glossary-tooltip"
+                    class="@GetTooltipClass(segment.Entry)"
                     role="tooltip">
 
                     <strong class="glossary-tooltip-title">
-                        @segment.Entry.Term
+                        @GetDisplayTitle(segment.Entry)
                     </strong>
 
 
-                    <span class="glossary-tooltip-definition">
-                        @segment.Entry.Definition
-                    </span>
+                    @if (
+                        segment.Entry.Blocks is not null
+                        &&
+                        segment.Entry.Blocks.Count > 0)
+                    {
+                        <span class="glossary-tooltip-blocks">
+
+                            @foreach (
+                                var block
+                                in segment.Entry.Blocks)
+                            {
+                                var blockType =
+                                    (
+                                        block.Type
+                                        ??
+                                        "paragraph"
+                                    )
+                                    .Trim()
+                                    .ToLowerInvariant();
+
+
+                                @switch (blockType)
+                                {
+                                    case "source":
+
+                                        <span class="glossary-block glossary-block-source">
+                                            @block.Text
+                                        </span>
+
+                                        break;
+
+
+                                    case "item":
+
+                                        <span class="glossary-block glossary-block-item">
+                                            @block.Text
+                                        </span>
+
+                                        break;
+
+
+                                    case "list":
+
+                                        @if (
+                                            block.Items is not null
+                                            &&
+                                            block.Items.Count > 0)
+                                        {
+                                            <span
+                                                class="glossary-block glossary-block-list"
+                                                role="list">
+
+                                                @foreach (
+                                                    var item
+                                                    in block.Items)
+                                                {
+                                                    <span
+                                                        class="glossary-block-list-item"
+                                                        role="listitem">
+
+                                                        @item
+
+                                                    </span>
+                                                }
+
+                                            </span>
+                                        }
+
+                                        break;
+
+
+                                    case "table":
+
+                                        @if (
+                                            block.Columns is not null
+                                            &&
+                                            block.Columns.Count > 0
+                                            &&
+                                            block.Rows is not null
+                                            &&
+                                            block.Rows.Count > 0)
+                                        {
+                                            <span
+                                                class="glossary-block glossary-block-table-scroll">
+
+                                                <span
+                                                    class="glossary-block-table"
+                                                    role="table">
+
+                                                    <span
+                                                        class="glossary-block-table-row glossary-block-table-head"
+                                                        role="row"
+                                                        style="@GetTableGridStyle(block.Columns.Count)">
+
+                                                        @foreach (
+                                                            var column
+                                                            in block.Columns)
+                                                        {
+                                                            <span
+                                                                class="glossary-block-table-cell glossary-block-table-heading"
+                                                                role="columnheader">
+
+                                                                @column.Label
+
+                                                            </span>
+                                                        }
+
+                                                    </span>
+
+
+                                                    @foreach (
+                                                        var row
+                                                        in block.Rows)
+                                                    {
+                                                        <span
+                                                            class="glossary-block-table-row"
+                                                            role="row"
+                                                            style="@GetTableGridStyle(block.Columns.Count)">
+
+                                                            @foreach (
+                                                                var column
+                                                                in block.Columns)
+                                                            {
+                                                                <span
+                                                                    class="glossary-block-table-cell"
+                                                                    role="cell">
+
+                                                                    @GetTableCell(
+                                                                        row,
+                                                                        column.Key)
+
+                                                                </span>
+                                                            }
+
+                                                        </span>
+                                                    }
+
+                                                </span>
+
+                                            </span>
+                                        }
+
+                                        break;
+
+
+                                    case "paragraph":
+                                    default:
+
+                                        @if (
+                                            !string.IsNullOrWhiteSpace(
+                                                block.Text))
+                                        {
+                                            <span class="glossary-block glossary-block-paragraph">
+                                                @block.Text
+                                            </span>
+                                        }
+
+                                        break;
+                                }
+                            }
+
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="glossary-tooltip-definition">
+                            @segment.Entry.Definition
+                        </span>
+                    }
 
                 </span>
 
@@ -51,6 +217,102 @@
 @code {
 
     // =====================================
+    // TOOLTIP DISPLAY HELPERS
+    // =====================================
+
+    private static string GetDisplayTitle(
+        GlossaryEntry entry)
+    {
+        return
+            string.IsNullOrWhiteSpace(
+                entry.DisplayTitle)
+
+            ? entry.Term
+
+            : entry.DisplayTitle;
+    }
+
+
+    private static string GetTooltipClass(
+        GlossaryEntry entry)
+    {
+        var hasRichContent =
+            entry.Blocks is not null
+            &&
+            entry.Blocks.Count > 0;
+
+
+        var hasTable =
+            hasRichContent
+            &&
+            entry.Blocks.Any(
+                block =>
+                    string.Equals(
+                        block.Type,
+                        "table",
+                        StringComparison.OrdinalIgnoreCase));
+
+
+        if (hasTable)
+        {
+            return
+                "glossary-tooltip glossary-tooltip-rich glossary-tooltip-has-table";
+        }
+
+
+        if (hasRichContent)
+        {
+            return
+                "glossary-tooltip glossary-tooltip-rich";
+        }
+
+
+        return
+            "glossary-tooltip";
+    }
+
+
+    private static string GetTableGridStyle(
+        int columnCount)
+    {
+        var count =
+            Math.Max(
+                1,
+                columnCount);
+
+
+        return
+            $"grid-template-columns: repeat({count}, minmax(0, 1fr));";
+    }
+
+
+    private static string GetTableCell(
+        Dictionary<string, string> row,
+        string key)
+    {
+        if (
+            row is not null
+            &&
+            !string.IsNullOrWhiteSpace(key)
+            &&
+            row.TryGetValue(
+                key,
+                out var value))
+        {
+            return
+                value
+                ??
+                string.Empty;
+        }
+
+
+        return
+            string.Empty;
+    }
+
+
+
+    // =====================================
     // INPUT TEXT
     // =====================================
 
@@ -66,11 +328,23 @@
     // Spell
     // StatBlock
     // Subclass
+    // Class
     // =====================================
 
     [Parameter]
     public GlossaryContext Context { get; set; } =
         GlossaryContext.General;
+
+
+    /*
+     * Only used when Context == Class.
+     *
+     * Pass the current class slug/name so
+     * GlossaryService can apply ClassPages
+     * and ExcludedClassPages rules.
+     */
+    [Parameter]
+    public string? ClassPage { get; set; }
 
 
     // =====================================
@@ -91,7 +365,8 @@
         var entries =
             await GlossaryService
                 .GetEntriesAsync(
-                    Context);
+                    Context,
+                    ClassPage);
 
 
         segments =
@@ -214,6 +489,7 @@
                             index,
                             matchPattern,
                             entry.CaseSensitive,
+                            entry.Wildcard,
                             context,
                             out var candidateLength)
                         &&
@@ -391,6 +667,7 @@
         int index,
         string pattern,
         bool caseSensitive,
+        bool wildcard,
         GlossaryContext context,
         out int matchLength)
     {
@@ -407,15 +684,26 @@
 
 
         /*
-         * Placeholder matching is deliberately
-         * restricted to Quality Traits.
+         * Quality Traits keep their existing
+         * placeholder behaviour automatically.
          *
-         * This prevents an ordinary glossary
-         * term containing a literal X, Y, or
-         * Type from unexpectedly becoming a
-         * wildcard elsewhere on the site.
+         * Other glossary entries must opt in by
+         * setting:
+         *
+         * "Wildcard": true
+         *
+         * This allows entries such as:
+         *
+         * Hemorrhaging(x-y)
+         *
+         * to match variable values on class and
+         * other glossary-enabled pages without
+         * turning every ordinary X or Y in the
+         * glossary into a wildcard.
          */
         var usePlaceholders =
+            wildcard
+            ||
             context ==
             GlossaryContext
                 .StatBlockQualityTrait;
@@ -1140,9 +1428,13 @@
         PlaceholderNames =
         {
             "Type",
+            "type",
             "X",
             "Y",
-            "Z"
+            "Z",
+            "x",
+            "y",
+            "z"
         };
 
 

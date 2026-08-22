@@ -459,3 +459,366 @@
 
 }
 
+/* =========================================
+   RICH GLOSSARY BLOCKS
+
+   Rich-content entries use the same glossary
+   popup system, but can preserve source lines,
+   item metadata, paragraphs, lists and tables.
+   ========================================= */
+
+.glossary-tooltip-rich {
+    padding:
+        0.9rem
+        1rem;
+}
+
+
+.glossary-tooltip-blocks {
+    display:
+        block;
+
+    color:
+        #f0e1cb;
+
+    font-size:
+        0.95rem;
+
+    font-weight:
+        500;
+
+    line-height:
+        1.48;
+
+    white-space:
+        normal;
+}
+
+
+.glossary-block {
+    display:
+        block;
+}
+
+
+.glossary-block-source {
+    margin:
+        0
+        0
+        0.7rem;
+
+    color:
+        #c8bba8;
+
+    font-size:
+        0.86rem;
+
+    font-weight:
+        650;
+}
+
+
+.glossary-block-item {
+    margin:
+        0
+        0
+        0.75rem;
+
+    color:
+        #d6c5ad;
+
+    font-style:
+        italic;
+
+    font-weight:
+        600;
+}
+
+
+.glossary-block-paragraph {
+    margin:
+        0
+        0
+        0.8rem;
+
+    color:
+        #f0e1cb;
+}
+
+
+.glossary-block-paragraph:last-child {
+    margin-bottom:
+        0;
+}
+
+
+/* =========================================
+   RICH GLOSSARY LIST
+   ========================================= */
+
+.glossary-block-list {
+    margin:
+        0.25rem
+        0
+        0.85rem;
+
+    padding-left:
+        1.15rem;
+}
+
+
+.glossary-block-list-item {
+    position:
+        relative;
+
+    display:
+        block;
+
+    margin:
+        0.35rem
+        0;
+
+    padding-left:
+        0.55rem;
+}
+
+
+.glossary-block-list-item::before {
+    content:
+        "•";
+
+    position:
+        absolute;
+
+    left:
+        -0.75rem;
+
+    color:
+        #d6a74d;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================
+   RICH GLOSSARY TABLE
+   ========================================= */
+
+.glossary-block-table-scroll {
+    display:
+        block;
+
+    width:
+        100%;
+
+    margin:
+        0.5rem
+        0
+        0.15rem;
+
+    overflow-x:
+        auto;
+
+    border:
+        1px solid
+        rgba(
+            214,
+            167,
+            77,
+            0.34
+        );
+
+    border-radius:
+        2px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.018
+        );
+
+    -webkit-overflow-scrolling:
+        touch;
+}
+
+
+.glossary-block-table {
+    display:
+        block;
+
+    min-width:
+        360px;
+}
+
+
+.glossary-block-table-row {
+    display:
+        grid;
+
+    min-width:
+        100%;
+
+    border-bottom:
+        1px solid
+        rgba(
+            214,
+            167,
+            77,
+            0.18
+        );
+}
+
+
+.glossary-block-table-row:last-child {
+    border-bottom:
+        none;
+}
+
+
+.glossary-block-table-head {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(
+                128,
+                85,
+                38,
+                0.9
+            ),
+            rgba(
+                88,
+                57,
+                24,
+                0.9
+            )
+        );
+}
+
+
+.glossary-block-table-cell {
+    display:
+        block;
+
+    min-width:
+        0;
+
+    padding:
+        0.48rem
+        0.58rem;
+
+    border-right:
+        1px solid
+        rgba(
+            214,
+            167,
+            77,
+            0.16
+        );
+
+    color:
+        #eee0c8;
+
+    overflow-wrap:
+        anywhere;
+}
+
+
+.glossary-block-table-cell:last-child {
+    border-right:
+        none;
+}
+
+
+.glossary-block-table-heading {
+    color:
+        #fff2da;
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.035em;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* =========================================
+   RICH TOOLTIP WIDTH
+
+   Tables receive more horizontal room on
+   desktop while still being clamped to the
+   visible browser viewport.
+   ========================================= */
+
+@media (min-width: 601px) {
+
+    .glossary-tooltip.glossary-tooltip-rich {
+        min-width:
+            min(
+                390px,
+                calc(100vw - 2rem)
+            );
+
+        max-width:
+            min(
+                720px,
+                calc(100vw - 2rem)
+            );
+    }
+
+
+    .glossary-tooltip.glossary-tooltip-has-table {
+        width:
+            min(
+                720px,
+                calc(100vw - 2rem)
+            );
+
+        max-width:
+            min(
+                720px,
+                calc(100vw - 2rem)
+            );
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .glossary-tooltip-blocks {
+        font-size:
+            0.9rem;
+
+        line-height:
+            1.45;
+    }
+
+
+    .glossary-block-source {
+        font-size:
+            0.82rem;
+    }
+
+
+    .glossary-block-table {
+        min-width:
+            330px;
+    }
+
+
+    .glossary-block-table-cell {
+        padding:
+            0.44rem
+            0.48rem;
+    }
+
+}

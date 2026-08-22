@@ -215,7 +215,7 @@
         {
           "level": "2nd",
           "proficiency_bonus": "\u002B2",
-          "features": "Wild Shape, Druid Circle, Wild Companion (Optional)",
+          "features": "Wild Shape, Druid Circle, Wild Companion",
           "cantrips_known": "2",
           "slot_1": "3",
           "slot_2": "\u2014",
@@ -245,7 +245,7 @@
         {
           "level": "4th",
           "proficiency_bonus": "\u002B2",
-          "features": "Wild Shape improvement, Ability Score Improvement, Cantrip Versatility (Optional)",
+          "features": "Wild Shape improvement, Ability Score Improvement, Cantrip Versatility",
           "cantrips_known": "3",
           "slot_1": "4",
           "slot_2": "3",
@@ -305,7 +305,7 @@
         {
           "level": "8th",
           "proficiency_bonus": "\u002B3",
-          "features": "Wild Shape improvement, Ability Score Improvement, Cantrip Versatility (Optional)",
+          "features": "Wild Shape improvement, Ability Score Improvement, Cantrip Versatility",
           "cantrips_known": "3",
           "slot_1": "4",
           "slot_2": "3",
@@ -365,7 +365,7 @@
         {
           "level": "12th",
           "proficiency_bonus": "\u002B4",
-          "features": "Ability Score Improvement, Cantrip Versatility (Optional)",
+          "features": "Ability Score Improvement, Cantrip Versatility",
           "cantrips_known": "4",
           "slot_1": "4",
           "slot_2": "3",
@@ -425,7 +425,7 @@
         {
           "level": "16th",
           "proficiency_bonus": "\u002B5",
-          "features": "Ability Score Improvement, Cantrip Versatility (Optional)",
+          "features": "Ability Score Improvement, Cantrip Versatility",
           "cantrips_known": "4",
           "slot_1": "4",
           "slot_2": "3",
@@ -470,7 +470,7 @@
         {
           "level": "19th",
           "proficiency_bonus": "\u002B6",
-          "features": "Ability Score Improvement, Cantrip Versatility (Optional)",
+          "features": "Ability Score Improvement, Cantrip Versatility",
           "cantrips_known": "4",
           "slot_1": "4",
           "slot_2": "3",
@@ -680,7 +680,7 @@
         ]
       },
       {
-        "name": "Wild Companion (Optional)",
+        "name": "Wild Companion",
         "level": "2",
         "blocks": [
           {
@@ -704,7 +704,7 @@
         ]
       },
       {
-        "name": "Cantrip Versatility (Optional)",
+        "name": "Cantrip Versatility",
         "level": "4",
         "blocks": [
           {
@@ -716,7 +716,6 @@
       {
         "name": "Personal Avatar",
         "level": "5",
-        "subtitle": "Optional 5th-level Druid feature",
         "blocks": [
           {
             "type": "paragraph",

@@ -803,7 +803,7 @@
           },
           {
             "type": "subsection",
-            "title": "Armor of Tools (UA)",
+            "title": "Armor of Tools",
             "blocks": [
               {
                 "type": "paragraph",
@@ -922,97 +922,101 @@
                 "text": "The homunculus regains 2d6 hit points if the mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space."
               },
               {
-                "type": "subsection",
-                "title": "Homunculus Servant Stat Block",
-                "blocks": [
-                  {
-                    "type": "stats",
-                    "items": [
-                      {
-                        "label": "Type",
-                        "value": "Tiny construct"
-                      },
-                      {
-                        "label": "Armor Class",
-                        "value": "13 (natural armor)"
-                      },
-                      {
-                        "label": "Hit Points",
-                        "value": "1 \u002B your Intelligence modifier \u002B your artificer level"
-                      },
-                      {
-                        "label": "Speed",
-                        "value": "20 ft., fly 30 ft."
-                      },
-                      {
-                        "label": "Ability Scores",
-                        "value": "STR 4 (-3), DEX 15 (\u002B2), CON 12 (\u002B1), INT 10 (\u002B0), WIS 10 (\u002B0), CHA 7 (-2)"
-                      },
-                      {
-                        "label": "Saving Throws",
-                        "value": "Dex \u002B2 plus PB"
-                      },
-                      {
-                        "label": "Skills",
-                        "value": "Perception \u002B0 plus PB \u00D7 2, Stealth \u002B2 plus PB"
-                      },
-                      {
-                        "label": "Damage Immunities",
-                        "value": "poison"
-                      },
-                      {
-                        "label": "Condition Immunities",
-                        "value": "exhaustion, poisoned"
-                      },
-                      {
-                        "label": "Senses",
-                        "value": "darkvision 60 ft., passive Perception 10 \u002B (PB \u00D7 2)"
-                      },
-                      {
-                        "label": "Languages",
-                        "value": "understands the languages you speak"
-                      },
-                      {
-                        "label": "Challenge",
-                        "value": "\u2014"
-                      },
-                      {
-                        "label": "Proficiency Bonus",
-                        "value": "equals your bonus"
-                      }
-                    ]
+                "type": "stat_block",
+                "data": {
+                  "id": "homunculus_servant",
+                  "section_type": "Stat Block",
+                  "title": "Homunculus Servant",
+                  "creature": {
+                    "size": "Tiny",
+                    "type": "construct",
+                    "alignment": "unaligned"
                   },
-                  {
-                    "type": "subsection",
-                    "title": "Traits",
-                    "blocks": [
-                      {
-                        "type": "paragraph",
-                        "text": "Evasion. If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can\u2019t use this trait if it\u2019s incapacitated."
-                      }
-                    ]
+                  "armor_class": "13 (natural armor)",
+                  "hit_points": "1 \u002B your Intelligence modifier \u002B your artificer level",
+                  "speed": {
+                    "walk": "20 ft.",
+                    "fly": "30 ft."
                   },
-                  {
-                    "type": "subsection",
-                    "title": "Actions",
-                    "blocks": [
-                      {
-                        "type": "paragraph",
-                        "text": "Force Strike. Ranged Weapon Attack: your spell attack modifier to hit, range 30 ft., one target you can see. Hit: 1d4 \u002B PB force damage."
-                      }
-                    ]
+                  "ability_scores": {
+                    "STR": {
+                      "score": 4,
+                      "check": "-3",
+                      "save": "-3"
+                    },
+                    "DEX": {
+                      "score": 15,
+                      "check": "\u002B2",
+                      "save": "\u002B2 plus PB"
+                    },
+                    "CON": {
+                      "score": 12,
+                      "check": "\u002B1",
+                      "save": "\u002B1"
+                    },
+                    "INT": {
+                      "score": 10,
+                      "check": "\u002B0",
+                      "save": "\u002B0"
+                    },
+                    "WIS": {
+                      "score": 10,
+                      "check": "\u002B0",
+                      "save": "\u002B0"
+                    },
+                    "CHA": {
+                      "score": 7,
+                      "check": "-2",
+                      "save": "-2"
+                    }
                   },
-                  {
-                    "type": "subsection",
-                    "title": "Reactions",
-                    "blocks": [
-                      {
-                        "type": "paragraph",
-                        "text": "Channel Magic. The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you."
+                  "saving_throws": [
+                    "Dex \u002B2 plus PB"
+                  ],
+                  "skills": [
+                    "Perception \u002B0 plus PB \u00D7 2",
+                    "Stealth \u002B2 plus PB"
+                  ],
+                  "immunities": [
+                    "poison"
+                  ],
+                  "condition_immunities": [
+                    "exhaustion",
+                    "poisoned"
+                  ],
+                  "senses": [
+                    "darkvision 60 ft.",
+                    "passive Perception 10 \u002B (PB \u00D7 2)"
+                  ],
+                  "languages": "understands the languages you speak",
+                  "challenge_rating": "\u2014",
+                  "proficiency_bonus": "equals your bonus",
+                  "traits": [
+                    {
+                      "name": "Evasion",
+                      "name_format": "bold_italic",
+                      "description": "If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can\u2019t use this trait if it\u2019s incapacitated."
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "name": "Force Strike",
+                      "name_format": "bold_italic",
+                      "description": "Ranged Weapon Attack: your spell attack modifier to hit, range 30 ft., one target you can see. Hit: 1d4 \u002B PB force damage.",
+                      "inline_formatting": {
+                        "Ranged Weapon Attack": "italic",
+                        "Hit": "italic"
                       }
-                    ]
-                  }
-                ]
+                    }
+                  ],
+                  "reactions": [
+                    {
+                      "name": "Channel Magic",
+                      "name_format": "bold_italic",
+                      "description": "The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you."
+                    }
+                  ]
+                }
               }
             ]
           },
@@ -1099,6 +1103,10 @@
                       },
                       {
                         "magic_item": "Cap of Water Breathing",
+                        "attunement": "No"
+                      },
+                      {
+                        "magic_item": "Corpse Bag",
                         "attunement": "No"
                       },
                       {
@@ -1276,7 +1284,7 @@
                         "attunement": "Yes"
                       },
                       {
-                        "magic_item": "Ventilating Lungs (Eberron: Rising from the Last War)",
+                        "magic_item": "Ventilating Lungs",
                         "attunement": "Yes"
                       },
                       {
@@ -1309,7 +1317,7 @@
                         "attunement": "Yes"
                       },
                       {
-                        "magic_item": "Arcane Propulsion Arm (Eberron: Rising from the Last War)",
+                        "magic_item": "Arcane Propulsion Arm",
                         "attunement": "Yes"
                       },
                       {
@@ -1436,41 +1444,382 @@
           },
           {
             "type": "subsection",
-            "title": "Additional Artificer Infusion",
+            "title": "Collective\u2019s Pocket Watch",
             "blocks": [
               {
                 "type": "paragraph",
-                "text": ""
+                "text": "Prerequisite: A pair of pocket watches"
               },
               {
-                "type": "subsection",
-                "title": "Prerequisite",
+                "type": "paragraph",
+                "text": "This pair of magic pocket watches is inscribed with a particular series of runes to track any who match its own. Once per long rest, a creature may spend their action to use their Pocket Watch as an Arcane Focus to cast the Locate Object spell targeting all other watches that match its inscription."
+              },
+              {
+                "type": "paragraph",
+                "text": "You may take this infusion repeatedly, creating another pair of Collective\u2019s Pocket Watches that may also be linked to the first ones."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Cross Stitch Explosives",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: A spool of yarn"
+              },
+              {
+                "type": "paragraph",
+                "text": "You managed to create a densely packed mess of strings and needles that explode when pressed in the wrong way. Once per Long Rest you may create one Stitchwrap Bomb, and a second one upon reaching 12th level in Artificer. You cannot create more than what your level permits at any given time, yet repair them at no additional cost."
+              },
+              {
+                "type": "item_block",
+                "title": "Stitchwrap Bomb",
+                "item_type": "Deployable Tool",
+                "rarity": "Uncommon",
+                "theme": "blood",
+                "stats": [
+                  {
+                    "label": "Price",
+                    "value": "80 gp"
+                  },
+                  {
+                    "label": "Repair",
+                    "value": "40 gp"
+                  },
+                  {
+                    "label": "Weight",
+                    "value": "20 lb. (9 kg.)"
+                  },
+                  {
+                    "label": "Ability",
+                    "value": "Dexterity"
+                  },
+                  {
+                    "label": "DC",
+                    "value": "14"
+                  },
+                  {
+                    "label": "Properties",
+                    "value": "Far-Mount (30 ft.), Contact, Multiple (3)"
+                  }
+                ],
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": ""
+                    "text": "A carefully built bomb wrapped by various spools of red thread that was drenched in blood, forming sharp crystals all around to be used as pins."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "When triggered, the triggering creature must pass a Dexterity saving throw or suffer 3d4 piercing damage and 3 Bleed Count, or half on a success as the pins go off and latch onto the target\u2019s face."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "On a failure, if the triggering creature is Large or smaller, it must roll a d4. On an even roll, its eyes are stitched, becoming Blinded until it suffers slashing damage. On an odd roll, its mouth is stitched, becoming unable to speak until it suffers slashing damage."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Faker\u2019s Grenade",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: 6th level, a stick of dynamite"
+              },
+              {
+                "type": "paragraph",
+                "text": "This adorably adorned bomb resembles a hedgehog, but packs a horrible punch. Once per Long Rest you may produce one of these items and use them to cast the Metalbloom spell as an Action."
+              },
+              {
+                "type": "paragraph",
+                "text": "Due to the nature of this bomb, you have a \u002B5 bonus to rolls pertaining to hiding it within your person as if it were a toy."
+              },
+              {
+                "type": "paragraph",
+                "text": "Upon reaching 10th level you may use this feature twice per long rest."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Friendly Warning",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: 6th level, a flare"
+              },
+              {
+                "type": "paragraph",
+                "text": "This magic item is a magical flare that functions by spending an Action to cast the Skywrite spell, with the changes that it may only vanish after one minute passes and you may choose which creatures are able to see the message as long as you know what they look like. Furthermore, any creature within a mile that can see this gains a bonus to Perception checks equal to half your Intelligence modifier (rounded down) and cannot be Surprised."
+              },
+              {
+                "type": "paragraph",
+                "text": "After casting the spell like this, this infusion disintegrates into dust and you may take a new Artificer Infusion during a Long Rest."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Junk Surprise",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: 6th level, a bear trap"
+              },
+              {
+                "type": "paragraph",
+                "text": "You create one of the following traps during a long rest: (A) a Jawgrind Trap, (B) an Explosive Trap, or (C) a Detector Trap."
+              },
+              {
+                "type": "paragraph",
+                "text": "You set them down by spending an Action to do so, and may spend an Action to retrieve them after they have been used. You may re-prime them during a Long Rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "Upon reaching 10th level you may create two traps."
+              },
+              {
+                "type": "paragraph",
+                "text": "All of the following traps are triggered when a creature walks into their space or ends their turn within it, which is any 5-foot-by-5-foot square. Any saving throw required by these traps is equal to your Artificer Spell Save DC."
+              },
+              {
+                "type": "subsection",
+                "title": "Jawgrind Trap",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "This bear-trap-seeming trap is fitted with additional gears to latch onto and grind down a creature. The creature who triggers this trap must pass a Dexterity saving throw or be Grappled by the trap, taking 3d4 slashing damage and 2 points of Tremor, or half the damage and stacks on a success."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "While Grappled, the creature must spend its Bonus Action to re-attempt the Dexterity saving throw, although it may choose to use Strength to do so. While Grappled, it automatically suffers the damage and Tremor at the end of its turns, up to 3 turns, where the trap then breaks and the creature is freed."
                   }
                 ]
               },
               {
                 "type": "subsection",
-                "title": "Item",
+                "title": "Explosive Trap",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": ""
+                    "text": "The classic, a payload that goes boom the second a creature triggers it\u2014but you\u2019ve put a twist in it, first loading it up with a vibration trigger that shakes up the area before detonating it all. A creature that triggers this trap and all other creatures within 5 feet of it must pass a Dexterity saving throw or suffer 4d8 piercing damage plus 4 stacks of Tremor and then suffer Tremor Burst. On a success, they suffer only half that damage and status infliction."
                   }
                 ]
               },
               {
                 "type": "subsection",
-                "title": "Description",
+                "title": "Detector Trap",
                 "blocks": [
                   {
                     "type": "paragraph",
-                    "text": ""
+                    "text": "A simple tripwire that, unlike others, may be set up to cover a 5-foot-wide line that goes up to 20 feet in length. A creature who comes into its space must pass a Dexterity saving throw, triggering it on a failure or having it remain inactive on a success. Upon triggering, one of the following effects, chosen when you set it down, happens:"
+                  },
+                  {
+                    "type": "list",
+                    "items": [
+                      "It blares a loud noise that can be heard around a 120-foot area. This noise may be a simple sound or a short recording of a voice.",
+                      "You link it to psychically alert you that a creature has passed, having only you know that it was triggered."
+                    ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Mini-Steam Locomotive",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: A heap of junk worth at least 50 gp or a vehicle"
+              },
+              {
+                "type": "paragraph",
+                "text": "You have some knowhow of creating and maintaining vehicles for your purposes, with a particularity for maintaining engines, even making them from scratch. When you take this infusion, you create a small vehicle capable of holding up to two creatures atop it, with a movement speed of 90 feet and that requires both hands to handle. It offers Half-Cover and has a total amount of Hit Points equal to 8 \u00D7 your Artificer level, alongside an AC of 12 and immunity to poison and psychic damage. It counts as a Construct."
+              },
+              {
+                "type": "paragraph",
+                "text": "You may alternatively create an engine and affix it to a Large or smaller vehicle. While it is affixed, that vehicle gains an additional movement speed equal to half its maximum value."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Monocle of Breaking Down",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: 6th level, an ocular aid"
+              },
+              {
+                "type": "paragraph",
+                "text": "This magic item is some form of eyewear that was enchanted to better understand the properties of other objects. You can spend an Action with it to cast the Identify spell at will, and may also spend an Action to determine the main material of an object you can see, such as a barrel being made primarily of wood or a fine suit being made of linen."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Needled Lacing",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: A suit of armor or set of clothes (requires attunement)"
+              },
+              {
+                "type": "paragraph",
+                "text": "With a lining of spikes or other jagged points, this piece of wear has become something that should be handled with care or have someone incur dire consequence."
+              },
+              {
+                "type": "paragraph",
+                "text": "When an attuned creature suffers damage from another creature within 5 feet, they may spend their reaction to have the item\u2019s pointy ends flare out as they are coated by spilled blood. The attacking creature must pass a Dexterity saving throw against your Spell Save DC or suffer 2d4 piercing damage and 2 Bleed Count. On a success, they suffer half the damage and half that Bleed Count, rounded down."
+              },
+              {
+                "type": "paragraph",
+                "text": "This damage increases by 1d4 and you deal an additional Bleed Count when you reach 6th level in Artificer (2d4, 3 Count) and once more when you reach 12th level in Artificer (3d4, 4 Count)."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Overheated Fueling Mechanism",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "You create a gadget you can attach to a melee or ranged weapon to have it coat its edges with a dosage of overheated fuel, which starts blazing when exposed to air."
+              },
+              {
+                "type": "paragraph",
+                "text": "You may spend your Bonus Action to ignite it, causing your weapon attacks to inflict 2 Burn Count on hit until the end of your turn. You can use this a number of times equal to your Intelligence modifier per Long Rest."
+              },
+              {
+                "type": "paragraph",
+                "text": "This infusion can also be used as an item, that being Uncommon and able to be annexed to a weapon by Attuning to it. Instead of the user\u2019s Intelligence modifier, it uses their Proficiency Bonus to determine its maximum uses per Long Rest."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Polished Needles",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: A sheet of metal"
+              },
+              {
+                "type": "paragraph",
+                "text": "Much like the wings of a butterfly, sometimes your projects should be pinned down to truly be observed. This has led to you creating specialized pins that you may craft so you have two at hand at any given time."
+              },
+              {
+                "type": "paragraph",
+                "text": "You create up to two Rusty Iron Stakes during a Long Rest if any are missing, and you gain a \u002B1 bonus modifier to attack and damage rolls using them upon reaching 5th level in Artificer, a \u002B2 upon reaching 12th level, and a \u002B3 upon reaching 18th level."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Sharpened Weapon",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: A simple or martial weapon"
+              },
+              {
+                "type": "paragraph",
+                "text": "This weapon\u2019s been sharpened to a razor\u2019s edge, even being given spikes if there were no edges to sharpen at first. This weapon gains the Hemorrhaging (17\u201320) property. If it already had this property, you may choose between the following:"
+              },
+              {
+                "type": "list",
+                "items": [
+                  "The weapon\u2019s Hemorrhaging threshold is lowered by your Proficiency Bonus.",
+                  "The weapon\u2019s Hemorrhaging threshold is lowered by one and the property inflicts an additional stack of Bleed when triggered."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Steel-Lined Recollection",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: Your own body"
+              },
+              {
+                "type": "paragraph",
+                "text": "Instead of using normal thread and needle to tend to your wounds and cuts, you instead make use of a fine sterilized steel wire, knowing well that these will bind together both your scars and all the terrors that caused them."
+              },
+              {
+                "type": "paragraph",
+                "text": "While you know this infusion, you apply it at every Long Rest, gaining 2d8 \u002B your Intelligence modifier\u2019s worth of Temporary Hit Points until your next Long Rest. This amount increases by 1d8 when you reach 8th level in Artificer, and by a further d8 when you reach 16th level."
+              },
+              {
+                "type": "paragraph",
+                "text": "During a Short Rest, if you have no Temporary Hit Points remaining from this infusion, you may choose to spend up to two Hit Dice and gain their value in Temporary Hit Points."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Vibroweld Morph-Combat Cane",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: A weapon with the Finesse property"
+              },
+              {
+                "type": "paragraph",
+                "text": "You break down a weapon to become a metallic cane that can extend blades to be ready for combat as needed. This magic weapon becomes a Simple weapon with the Finesse and Light properties, deals 1d6 piercing damage, and inflicts one Tremor. When you hit with this weapon, you may choose to trigger Tremor Burst."
+              },
+              {
+                "type": "paragraph",
+                "text": "Furthermore, this item is made to be concealed from any and all authority\u2014or any onlookers. As such, you gain a \u002B5 to skill checks pertaining to disguising this weapon as a plain object."
+              },
+              {
+                "type": "paragraph",
+                "text": "If you use a magic weapon to make this infusion, it inherits its magic properties."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Warmth of a Kind Heart",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: A ball of yarn"
+              },
+              {
+                "type": "paragraph",
+                "text": "You knit a sweater, hand-warmers, scarves, or any other piece of apparel out of wool and other soft fabrics, and it is infused with a certain unconditional love for the \u201Cother\u201D as a whole, be that infusion created by the feelings fluttering in the core of the weaver or such an expertise to create that it penetrates even the coldest of hearts."
+              },
+              {
+                "type": "paragraph",
+                "text": "This piece of clothing does not need to be properly worn, and instead can be Attuned as long as it is within the possession of a creature that has been gifted the piece of apparel. While Attuned, you gain Advantage against suffering the effects of Cold Weather."
+              },
+              {
+                "type": "paragraph",
+                "text": "Once per Long Rest you may also choose to gain Advantage on Wisdom saving throws until the end of your turn as a Free Action you may take whenever you would perform one."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Wind-up Spanner",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Prerequisite: 10th level, a martial weapon that does not have the Two-Handed property (requires attunement)"
+              },
+              {
+                "type": "paragraph",
+                "text": "This magic item must be attached to a suitable weapon to work, gathering vibrations to then unleash them in a flurry of attacks. Once per combat you may spend your Bonus Action to Prime it, having the weapon gain one Wind Up counter for each turn you end without taking the Attack action."
+              },
+              {
+                "type": "paragraph",
+                "text": "On a later turn you may spend your Action to take the Attack action and gain an Extra Attack for each Wind Up counter you have collected, except these attacks do not add your ability modifier to their damage rolls. You may make up to four extra attacks this way."
               }
             ]
           }

@@ -1,0 +1,196 @@
+{
+  "Name": "Peritum",
+  "Group": "Framebilt",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "An expert at their craft, the peritum are framebilt who are well trained in basic magical defenses and quickly analyzing the movements and strategies of their targets. They can offer succinct, easily executable commands to their allies on the battlefield, while also providing their own cover fire. Though their purpose is long since lost, the peritum were once the workers who maintained the framebilt’s ancient machinery and handled the construction of DRG units.",
+  "Stat Blocks": [
+    {
+      "id": "peritum",
+      "section_type": "Stat Block",
+      "title": "Peritum",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (framebilt)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "16 (integrated armor)",
+      "hit_points": "60 (8d8 + 24)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Con +6",
+        "Int +7"
+      ],
+      "skills": [
+        "Acrobatics +6",
+        "Arcana +7",
+        "Insight +4",
+        "Perception +7"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "exhaustion"
+      ],
+      "senses": [
+        "blindsight 20 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Common",
+        "two other languages"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Constructed Body",
+          "name_format": "bold_italic",
+          "description": "The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The framebilt’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Intelligence",
+            "components": "none",
+            "spells": [
+              {
+                "frequency": "At will",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "light",
+                  "thunderwave",
+                  "true strike"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "dimension door",
+                  "expeditious retreat",
+                  "fireball",
+                  "mirror image"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "frequency_format": "bold_italic",
+                "spells": [
+                  "feather fall",
+                  "grease",
+                  "scorching ray",
+                  "shatter"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Stable Mind",
+          "name_format": "bold_italic",
+          "description": "The framebilt has advantage on concentration checks, and its Perception checks use its Intelligence modifier."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Reinforced Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 2) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Rapid Bolt Launcher",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 40/120 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tactical Genius",
+          "name_format": "bold_italic",
+          "description": "The framebilt issues tactical commands to its allies. Up to three of its allies within 30 feet that can see or hear it gain one of the following bonuses for 1 minute; a creature cannot benefit from two of these effects at the same time:",
+          "options": [
+            {
+              "description": "When they make an attack they roll 1d4 and add the result to the total."
+            },
+            {
+              "description": "When they make a saving throw they roll 1d4 and add the result to the total."
+            },
+            {
+              "description": "The first attack they make each turn has advantage."
+            },
+            {
+              "description": "The first time they take damage each turn, they take 10 fewer points of damage."
+            },
+            {
+              "description": "The creatures are instructed on where enemies are so long as the framebilt can be heard, granting them the effects of blindsight out to 20 feet."
+            }
+          ],
+          "additional_text": "The framebilt must concentrate on all of its tactical advice as if it was a spell, ending if they fail a concentration check. It can concentrate on this effect and a spell simultaneously."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Consecutive Shots",
+          "name_format": "bold_italic",
+          "description": "If the framebilt makes an attack with its Rapid Bolt Launcher, it makes two additional attacks with it at the same target."
+        },
+        {
+          "name": "Scan Surroundings",
+          "name_format": "bold_italic",
+          "description": "The framebilt makes an Intelligence (Perception) check in an attempt to locate any hidden creatures or threats within 60 feet of it."
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "raw_text": "**PERITUM**\n*Medium humanoid (framebilt), any alignment*\n**AC** 16 (integrated armor)\n**HP** 60 (8d8 + 24)\n**Speed** 30 ft.\n**STR** 14 (+2) | **DEX** 16 (+3) | **CON** 17 (+3) | **INT** 18 (+4) | **WIS** 13 (+1) | **CHA** 10 (-)\n**Saving Throws** Con +6, Int +7\n**Skills** Acrobatics +6, Arcana +7, Insight +4, Perception +7\n**Resistances** poison\n**Condition Immunities** exhaustion\n**Senses** blindsight 20 ft., darkvision 60 ft., passive Perception 17\n**Languages** Common, and two other languages\n**CR** 6 (2,300 XP) **Proficiency Bonus** +3\n\n**TRAITS**\n***Constructed Body.*** The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned.\n\n***Innate Spellcasting.*** The framebilt’s spellcasting ability is Intelligence. They can cast the following spells, requiring no components:\n• ***At will:*** light, thunderwave, true strike\n• ***1/Day each:*** dimension door, expeditious retreat, fireball, mirror image\n• ***2/Day each:*** feather fall, grease, scorching ray, shatter\n\n***Stable Mind.*** The framebilt has advantage on concentration checks, and its Perception checks use its Intelligence modifier.\n\n**ACTIONS**\n***Reinforced Strike.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (1d10 + 2) bludgeoning damage.\n\n***Rapid Bolt Launcher.*** *Ranged Weapon Attack:* +6 to hit, range 40/120 ft., one target. *Hit:* 10 (2d6 + 3) piercing damage.\n\n***Tactical Genius.*** The framebilt issues tactical commands to its allies. Up to three of its allies within 30 feet that can see or hear it gain one of the following bonuses for 1 minute; a creature cannot benefit from two of these effects at the same time:\n• When they make an attack they roll 1d4 and add the result to the total.\n• When they make a saving throw they roll 1d4 and add the result to the total.\n• The first attack they make each turn has advantage.\n• The first time they take damage each turn, they take 10 fewer points of damage.\n• The creatures are instructed on where enemies are so long as the framebilt can be heard, granting them the effects of blindsight out to 20 feet.\n\nThe framebilt must concentrate on all of its tactical advice as if it was a spell, ending if they fail a concentration check. It can concentrate on this effect and a spell simultaneously.\n\n**BONUS ACTIONS**\n***Consecutive Shots.*** If the framebilt makes an attack with its Rapid Bolt Launcher, it makes two additional attacks with it at the same target.\n\n***Scan Surroundings.*** The framebilt makes an Intelligence (Perception) check in an attempt to locate any hidden creatures or threats within 60 feet of it."
+    }
+  ]
+}

@@ -86,7 +86,8 @@ public sealed class GlossaryService
 
     public async Task<IReadOnlyList<GlossaryEntry>>
         GetEntriesAsync(
-            GlossaryContext context)
+            GlossaryContext context,
+            string? classPage = null)
     {
         var entries =
             await LoadAsync();
@@ -116,6 +117,14 @@ public sealed class GlossaryService
                             entry,
                             context,
                             contextName))
+                .Where(
+                    entry =>
+                        context !=
+                            GlossaryContext.Class
+                        ||
+                        IsAllowedOnClassPage(
+                            entry,
+                            classPage))
                 .ToList();
 
 
@@ -247,6 +256,94 @@ public sealed class GlossaryService
                         value,
                         contextName,
                         StringComparison.OrdinalIgnoreCase));
+    }
+
+
+    // =====================================
+    // CLASS-PAGE INCLUDE / EXCLUDE RULES
+    // =====================================
+
+    private static bool IsAllowedOnClassPage(
+        GlossaryEntry entry,
+        string? classPage)
+    {
+        var included =
+            entry.ClassPages
+            ??
+            new List<string>();
+
+
+        var excluded =
+            entry.ExcludedClassPages
+            ??
+            new List<string>();
+
+
+        /*
+         * A restricted entry should not leak
+         * onto an unknown class page if the
+         * caller forgot to provide its slug.
+         */
+        if (string.IsNullOrWhiteSpace(classPage))
+        {
+            return
+                included.Count == 0
+                &&
+                excluded.Count == 0;
+        }
+
+
+        var normalizedPage =
+            NormalizeClassPage(classPage);
+
+
+        /*
+         * Exclusion always wins.
+         */
+        if (
+            excluded.Any(
+                value =>
+                    !string.IsNullOrWhiteSpace(value)
+                    &&
+                    string.Equals(
+                        NormalizeClassPage(value),
+                        normalizedPage,
+                        StringComparison.Ordinal)))
+        {
+            return false;
+        }
+
+
+        /*
+         * Empty whitelist means all classes.
+         */
+        if (included.Count == 0)
+        {
+            return true;
+        }
+
+
+        return
+            included.Any(
+                value =>
+                    !string.IsNullOrWhiteSpace(value)
+                    &&
+                    string.Equals(
+                        NormalizeClassPage(value),
+                        normalizedPage,
+                        StringComparison.Ordinal));
+    }
+
+
+    private static string NormalizeClassPage(
+        string value)
+    {
+        return
+            new string(
+                value
+                    .Where(char.IsLetterOrDigit)
+                    .Select(char.ToLowerInvariant)
+                    .ToArray());
     }
 
 
