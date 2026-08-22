@@ -1,0 +1,1073 @@
+{
+  "name": "Dragoneer",
+  "slug": "dragoneer",
+  "summary": "A dragon soul knight who channels the power of a draconic spirit through manifested wings, armor, breath, and an embodied draconic form.",
+  "introduction": [
+    "Dragoneers are knights of legend bearing armor, weapons and magic born from the essence of dragons who came before. Some are chosen by dragonkind, while others merely channel the power of dragons long since past. Some are thought to be the reincarnation of dragons or echoes of a dragon\u0027s soul from another timeline. Whatever the case, they manifest the powers of dragons and channel their powers to race through the air, fighting against natural imbalances of power.",
+    "As beings of myth, dragoneers appear almost always as a symbol of prophecy. When fate calls for them, their power manifests and finds itself opposed to those who would perform great acts of evil (or when a dragoneer\u0027s power has manifested in the hands of an evil being). Though not strictly heroic, they often carry a responsibility to keep the world in balance, striking down beasts and tyrants who could threaten the safety of great people."
+  ],
+  "lore_sections": [
+    {
+      "title": "The Dragon Soul",
+      "paragraphs": [
+        "Every dragoneer is imbued with the power of a dragon soul which manifests as a small crystal trinket on their person. These aren\u0027t always the literal soul of a dragon, and can simply be the essence of a dragon or remnants of one\u0027s spirit. From this source of power, they connect to the will of dragonkind and manifest spiritual powers in the form of abstracted wings and armor, as well as magic that produces the power inherent to dragonkind.",
+        "Though dragoneers are seen most commonly as the allies and agents of dragons, they are just as often the regulators against them. Dragoneers have the power to challenge their progenitors when they must, turning back the tide to keep order."
+      ]
+    },
+    {
+      "title": "Ahma, Milarose \u0026 Oyd\u0027s Conflict",
+      "paragraphs": [
+        "The first dragon soul knights (later called dragoneers) were Oyd and Milarose\u2014dragon slayers who were sent from the Arthenearie to the Material Plane to slay a powerful greatwyrm on a distant planet. While there, Oyd turned against the wishes of the greatwyrm the two served and aimed to seize the small, budding world they had been sent to for himself. He turned against Milarose, trapping his more benevolent partner and sapping her power. Eventually, armies would rise against Oyd\u0027s growing influence, and a soldier named Ahma gained the power of the very greatwyrm they had been sent to slay and used it to free a weakened Milarose.",
+        "Needing greater power, Milarose taught a band of soldiers following Ahma the art of the dragon soul knight, creating the first unfettered dragoneers, while struggling with her alliance with the soul of the dragon she was sent to slay. This group would defeat Oyd and free their world from subjugation, but Milarose became darkened by her time in the Material Plane\u2014she felt she had been betrayed by Oyd and exploited by the dragoneers, feeling like she had dishonored the greatwyrm who had a hold on her very soul. Reclaiming her powers from Oyd, she turned the might Oyd had collected (weapons and artifacts forged from the souls of the planet\u0027s dragons) against the dragoneers and intended to wash the planet away completely, but was stopped by the dragoneers she had taught.",
+        "The conflict between these three would serve as the basis for the (albeit rare) future dragoneers, and the artifacts forged by Oyd would be spread throughout the cosmos to prevent their unified use. Wherever they went, the power of the dragoneer followed, and legends tell that dragoneers would naturally come to power wherever bound dragon souls were exploited by evil hands."
+      ]
+    },
+    {
+      "title": "Building a Dragoneer",
+      "paragraphs": [
+        "Unlike many classes, dragoneers lean heavily into their base features. Their Core Concept choice determines the role they will functionally serve in combat, defining them as being closer to a fighter, rogue, barbarian, etc. as these Core Concept choices dictate the overall archetype and playstyle they\u0027re tied to. Similarly, their Embodiment Choice requires they pick a dragon type which determines an extra feature they acquire, resistances they gain, and extra damage they can deal.",
+        "Their greatest bonus is that when they cast spells with the Dragoneer Bonus effect, they are cast as though more potent. These spells emulate the power of dragons, as well as the techniques of the dragon soul knights who originated the dragoneer.",
+        "Functionally, the dragoneer is a high-damage, resource-intensive class that excels in mobility and damage potential, but is lacking in tool, skill, and technical diversity."
+      ]
+    }
+  ],
+  "mechanics": {
+    "pre_feature_sections": [
+      {
+        "type": "section",
+        "content_section": {
+          "kicker": "Core Statistics",
+          "title": "Class Basics",
+          "blocks": [
+            {
+              "type": "subsection",
+              "title": "Hit Points",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "As a dragoneer, your hit dice and proficiencies are determined by the Core Concept you choose. Please refer to the following broad rules:"
+                },
+                {
+                  "type": "stats",
+                  "items": [
+                    {
+                      "label": "Hit Points at 1st Level",
+                      "value": "The maximum result of your dragoneer hit die \u002B your Constitution modifier"
+                    },
+                    {
+                      "label": "Hit Points at Higher Levels",
+                      "value": "One d6, d8, d10 or d12 (or 4, 5, 6 or 7 respectively) \u002B your Constitution modifier per dragoneer level after 1st"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Equipment",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "You begin with the following equipment:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "(a) Leather armor, or (b) chainmail",
+                    "(a) A quarterstaff, or (b) one martial weapon, or (c) simple melee weapon",
+                    "A shortbow and a quiver of 20 arrows",
+                    "An explorer\u0027s pack"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Alternatively, you may start with 5d4 \u00D7 10 gp (120 gp)."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "advancement": {
+      "title": "The Dragoneer",
+      "columns": [
+        {
+          "key": "level",
+          "label": "Level"
+        },
+        {
+          "key": "proficiency_bonus",
+          "label": "Proficiency Bonus"
+        },
+        {
+          "key": "features",
+          "label": "Features"
+        },
+        {
+          "key": "wing_speed",
+          "label": "Wing Speed"
+        },
+        {
+          "key": "spells_known",
+          "label": "Spells Known"
+        }
+      ],
+      "rows": [
+        {
+          "level": "1st",
+          "proficiency_bonus": "\u002B2",
+          "features": "Avatar\u0027s Wings, Core Concept",
+          "wing_speed": "\u002B10 ft.",
+          "spells_known": "2"
+        },
+        {
+          "level": "2nd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Embodiment Choice, Fighting Style",
+          "wing_speed": "\u002B10 ft.",
+          "spells_known": "3"
+        },
+        {
+          "level": "3rd",
+          "proficiency_bonus": "\u002B2",
+          "features": "Armor of the Beast, Concept Feature",
+          "wing_speed": "\u002B10 ft.",
+          "spells_known": "4"
+        },
+        {
+          "level": "4th",
+          "proficiency_bonus": "\u002B2",
+          "features": "Ability Score Improvement",
+          "wing_speed": "\u002B15 ft.",
+          "spells_known": "5"
+        },
+        {
+          "level": "5th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Chain Action",
+          "wing_speed": "\u002B15 ft.",
+          "spells_known": "6"
+        },
+        {
+          "level": "6th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Fighting Style Advancement",
+          "wing_speed": "\u002B20 ft.",
+          "spells_known": "7"
+        },
+        {
+          "level": "7th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Concept Feature, Embodied Strike",
+          "wing_speed": "\u002B20 ft.",
+          "spells_known": "8"
+        },
+        {
+          "level": "8th",
+          "proficiency_bonus": "\u002B3",
+          "features": "Ability Score Improvement",
+          "wing_speed": "\u002B20 ft.",
+          "spells_known": "9"
+        },
+        {
+          "level": "9th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Dragon\u0027s Breath, Embodied Immunity",
+          "wing_speed": "\u002B30 ft.",
+          "spells_known": "10"
+        },
+        {
+          "level": "10th",
+          "proficiency_bonus": "\u002B4",
+          "features": "A Dream of Flight, Fighting Style Advancement (2nd)",
+          "wing_speed": "\u002B30 ft.",
+          "spells_known": "11"
+        },
+        {
+          "level": "11th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Fly-Through",
+          "wing_speed": "\u002B30 ft.",
+          "spells_known": "12"
+        },
+        {
+          "level": "12th",
+          "proficiency_bonus": "\u002B4",
+          "features": "Ability Score Improvement",
+          "wing_speed": "\u002B40 ft.",
+          "spells_known": "12"
+        },
+        {
+          "level": "13th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Concept Feature",
+          "wing_speed": "\u002B40 ft.",
+          "spells_known": "13"
+        },
+        {
+          "level": "14th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Soul Collider",
+          "wing_speed": "\u002B40 ft.",
+          "spells_known": "13"
+        },
+        {
+          "level": "15th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Fighting Style Advancement (3rd)",
+          "wing_speed": "\u002B50 ft.",
+          "spells_known": "14"
+        },
+        {
+          "level": "16th",
+          "proficiency_bonus": "\u002B5",
+          "features": "Ability Score Improvement",
+          "wing_speed": "\u002B50 ft.",
+          "spells_known": "14"
+        },
+        {
+          "level": "17th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Concept Feature",
+          "wing_speed": "\u002B50 ft.",
+          "spells_known": "15"
+        },
+        {
+          "level": "18th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Dragon\u0027s Breath Improvement",
+          "wing_speed": "\u002B60 ft.",
+          "spells_known": "15"
+        },
+        {
+          "level": "19th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ability Score Improvement",
+          "wing_speed": "\u002B60 ft.",
+          "spells_known": "15"
+        },
+        {
+          "level": "20th",
+          "proficiency_bonus": "\u002B6",
+          "features": "Ascended Embodiment",
+          "wing_speed": "\u002B60 ft.",
+          "spells_known": "15"
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Avatar\u0027s Wings",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can conjure relic-like draconic wings, which give you a belabored flight speed equal to your base movement speed plus the bonus in the dragoneer Wing Speed column."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you already have a belabored flight speed from another source that exceeds your base movement speed, you may add your Wing Speed bonus to that source instead."
+          }
+        ]
+      },
+      {
+        "name": "Core Concept",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Upon taking your 1st level as a dragoneer, you must choose your Core Concept from the list provided. These concepts are basic styles of combat or support that are available to a dragoneer, which determine the way you approach enemies, aid allies, and survive adventuring. These concepts define their dragon\u0027s hit dice, capacity for spellcasting, weapon and armor proficiencies, and their second saving throw. You may attune to items with class restrictions as though you were also the class their Core Concept gives access to the spell list of."
+          },
+          {
+            "type": "paragraph",
+            "text": "You immediately gain the 1st-level feature for that Core Concept, then gain the other features at the levels listed."
+          }
+        ]
+      },
+      {
+        "name": "Spellcasting",
+        "level": "1",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Not all dragoneers use magic in the form of spellcasting, and those who do vary. They intuitively produce spells from the power contained in the dragon soul they inherit. Please see the 5th Edition Player\u0027s Handbook for base spellcasting rules, and Lyre\u0027s Guide to Retia for information on spell groups and 19th Edition rules pertaining to spellcasting."
+          },
+          {
+            "type": "subsection",
+            "title": "Casting Spells",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "To cast a dragoneer spell, you must use a Spell Slot equal to its base level or higher to produce its effects. For example, to cast the 1st-level force horn spell, you must use a spell slot of 1st-level or higher, and if you do the Spell Slot is spent. If the slot level was above 1st-level, its effects may change as described by At Higher Level effects listed under the spell."
+              },
+              {
+                "type": "paragraph",
+                "text": "Spell Slot Recovery. You regain your spent Spell Slots when you complete a Long Rest unless your Core Concept designates you a Burn Caster. In this case, you regain your dragoneer Pact Spell Slots when you complete a Rest of any kind."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spells Known at 1st Level \u0026 Higher",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "At 1st-level as a dragoneer, if your Core Concept allows you to cast spells, you learn two 1st-level dragoneer spells from the dragoneer spell list. Each time you gain a new level as a dragoneer you learn new spells as described by the Spells Known column of the dragoneer class table. You may choose from the dragoneer spells listed at the end of this class, but each Core Concept also notes another class (such as ranger for Piercing Hand) which you may learn spells from the spell list of as though they were dragoneer spells."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spells Known",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "The type of caster each of the dragoneer\u0027s Core Concepts are describe how they gain spell slots, or how many they have at each level. You do not gain cantrips regardless of which type they are, unless described by a feature directly. There are four types: Full Caster, Half Caster, Third Caster, and Burn Caster."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Ability",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Wisdom is your spellcasting ability for your dragoneer spells, drawing power from your understanding of the nature of the dragon soul you carry within you. Through understanding and concord with that spiritual force, you produce the magic inherent to a dragoneer. Wisdom is also used to determine any dragoneer save DCs that don\u0027t say otherwise."
+              },
+              {
+                "type": "formulas",
+                "formula_items": [
+                  {
+                    "label": "Spell Save DC",
+                    "value": "8 \u002B your proficiency bonus \u002B your Wisdom modifier"
+                  },
+                  {
+                    "label": "Spell Attack Modifier",
+                    "value": "your proficiency bonus \u002B your Wisdom modifier"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Spellcasting Focus",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "As a dragoneer, you do not require a spell focus. However, you may use any weapon you are proficient with as one for your dragoneer spells. You may also use anything that would qualify as an arcane focus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Embodiment Choice",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You connect with the draconic power that is the core of your abilities, and you attune to the energies and modalities of that draconic spirit. A dragoneer may embody the vestigial power of a dragon left behind, may have been granted their power as a blessing, or may channel the soul of a dragon directly. For each you gain several base traits, as well as one unique effect based on that type."
+          },
+          {
+            "type": "paragraph",
+            "text": "**Embodied Energy.** You are resistant to this type of damage, and some features may reference this as your embodiment damage or embodiment type."
+          },
+          {
+            "type": "paragraph",
+            "text": "**Movement.** You gain the listed movement types, the speed of which are equal to your base movement speed. If an entry says \u0027base,\u0027 then your base movement speed is increased by 10 feet instead of you gaining a new movement speed."
+          },
+          {
+            "type": "paragraph",
+            "text": "You may choose one Embodiment Type from those listed at the end of the dragoneer class section."
+          }
+        ]
+      },
+      {
+        "name": "Fighting Style",
+        "level": "2",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "At 2nd level you adopt a style of fighting as your speciality. Choose one of the following options. You can\u0027t take a Fighting Style option more than once, even if you later get to choose again."
+          },
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Arcane Flourisher"
+              },
+              {
+                "name": "Archery"
+              },
+              {
+                "name": "Blessed Warrior"
+              },
+              {
+                "name": "Blind Fighting"
+              },
+              {
+                "name": "Dueling"
+              },
+              {
+                "name": "Great Weapon Fighting"
+              },
+              {
+                "name": "Proficiency (listed proficiencies)"
+              },
+              {
+                "name": "Reckless Fighter"
+              },
+              {
+                "name": "Superior Technique"
+              },
+              {
+                "name": "Two-Weapon Fighting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Armor of the Beast",
+        "level": "3",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you aren\u0027t wearing armor or wielding a shield, you can manifest a metallic armored shroud that protects you from harm, allowing you to calculate your armor class as 10 \u002B your Dexterity modifier \u002B your Wisdom modifier. The exact form of this shroud varies from user to user, but generally takes the form of stone-like armor matching the color of your embodied dragon."
+          }
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "level": "4, 8, 12, 16, and 19",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1."
+          }
+        ]
+      },
+      {
+        "name": "Chain Action",
+        "level": "5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can make two attacks instead of one when you take the Attack action. If you are capable of casting dragoneer spells, you can replace one of your weapon attacks with casting a spell that has a casting time of 1 action."
+          },
+          {
+            "type": "paragraph",
+            "text": "Effects, traits, and features that interact with the Extra Attack feature may treat this feature as though it was Extra Attack."
+          }
+        ]
+      },
+      {
+        "name": "Fighting Style Advancement",
+        "level": "6, 10, and 15",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Once at 6th level, then again at 10th and 15th level, you advance one of your fighting styles. If you have none to advance, you may choose a new one to gain from the 2nd-level fighting style options."
+          }
+        ]
+      },
+      {
+        "name": "Embodied Strike",
+        "level": "7",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Each time you deal damage to a creature through a weapon or spell attack, you deal an additional die of embodiment damage."
+          }
+        ]
+      },
+      {
+        "name": "Dragon\u0027s Breath",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "As an action, you can manifest the element of your embodied dragon and unleash it upon the environment, choosing one of the following options:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "A 30-foot cone originating from you.",
+              "A 60-foot-long, 5-foot wide line originating from you.",
+              "A 20-foot-radius sphere centered on a point you choose within 60 feet.",
+              "A 45-foot cube centered on you."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Each creature within that space must make a saving throw based on your embodiment damage type (listed under Embodiment Choice), taking embodiment damage equal to 3d8 \u00D7 your proficiency bonus plus your dragoneer level on a failure."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can use this feature once per Rest."
+          }
+        ]
+      },
+      {
+        "name": "Embodied Immunity",
+        "level": "9",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You become immune to damage matching your embodiment type."
+          }
+        ]
+      },
+      {
+        "name": "A Dream of Flight",
+        "level": "10",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Your wings have become more advanced and you are able to utilize them freely. You retain your growing Belabored Flight speed as described by Avatar\u0027s Wings, but you also gain a fly speed equal to half your Belabored Flight speed which doesn\u0027t require your bonus action to use."
+          }
+        ]
+      },
+      {
+        "name": "Fly-Through",
+        "level": "11",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you fly out of another creature\u0027s reach using the fly speed produced by your belabored flight, you do not provoke opportunity attacks."
+          }
+        ]
+      },
+      {
+        "name": "Soul Collider",
+        "level": "14",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "You can choose to channel your dragon\u0027s breath into a more concentrated form. When you make a weapon attack on your turn, you may declare an attempt to use this feature. If you hit, you deal extra damage on that attack equal to your Dragon\u0027s Breath damage, plus an additional d8 per point of your proficiency bonus (this damage is not considered by critical hits). Once you do, your Dragon\u0027s Breath is considered used."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can only declare an attempt to use Soul Collider once per turn. If you miss the declared attack your Dragon\u0027s Breath is not spent, but you cannot use Soul Collider again that turn."
+          }
+        ]
+      },
+      {
+        "name": "Dragon\u0027s Breath Improvement",
+        "level": "18",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "When you use your Dragon\u0027s Breath, you can choose to omit any number of targets you can see within range from its effects."
+          }
+        ]
+      },
+      {
+        "name": "Ascended Embodiment",
+        "level": "20",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Once per Long Rest, you can cast the spell sovereignty (requiring no spell slot), which you cast at 5th level when you do so. The DC for the Eidomancy Burn check when cast this way is always at least 20."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you cast the spell using this feature, you may spend an additional spell slot to cast it at the level of that slot instead."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you transform under the effects of sovereignty, you can use Dragon\u0027s Breath once during your transformation without spending or requiring the feature\u0027s usual limited use."
+          }
+        ]
+      }
+    ],
+    "appendices": [
+      {
+        "title": "Embodiment Types",
+        "style": "option-cards",
+        "blocks": [
+          {
+            "type": "options",
+            "items": [
+              {
+                "name": "Black Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Acid (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Swim"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Feral Strikes. You can summon draconic claws in place of your hands, which you can use to make weapon attacks as though they were martial weapons with the finesse property. You may use your Wisdom in place of Strength or Dexterity for these attacks. These attacks are magical and deal a d8 of slashing damage on a successful hit. When you reach 10th level as a dragoneer they deal an additional d8 of acid damage, then when you reach 17th level both d8s become d10s."
+                  }
+                ]
+              },
+              {
+                "name": "Blue Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Lightning (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Burrow"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Galvan Charge. As a bonus action you can charge an attack you make with energy, allowing you to roll a d4 and add it to the result. You can do so a number of times per Long Rest equal to your proficiency bonus, and regain one spent use each time you complete a Short Rest. When you reach 10th level as a dragoneer the die increases to a d6, then to a d8 at 17th level."
+                  }
+                ]
+              },
+              {
+                "name": "Brass Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Fire (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Burrow"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Heightened Perception. You have Expertise in the Perception skill and cannot be surprised in combat."
+                  }
+                ]
+              },
+              {
+                "name": "Bronze Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Lightning (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Swim"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Expert Wrestler. You are proficient in the Athletics skill and can attempt to Shove or Grapple as a bonus action."
+                  }
+                ]
+              },
+              {
+                "name": "Copper Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Acid (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Climb"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Slowing Influence. Once per Rest, you can produce the effects of the slow spell, requiring no spell slot or components. When you do so, it is cast at a level equal to its base level or your highest level dragoneer spell slot."
+                  }
+                ]
+              },
+              {
+                "name": "Crystal Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Radiant (Constitution)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Climb"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Psychic Absorption. You can absorb mental energy from your targets to shield yourself from harm through two different methods:"
+                  },
+                  {
+                    "type": "list",
+                    "items": [
+                      "When you score a critical hit, you gain temporary hit points equal to the damage you deal.",
+                      "When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to their Constitution score."
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Deep Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Psychic (Wisdom)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Burrow"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Sluggish Resilience. You are immune to being made sluggish, and effects that would reduce your movement speed without automatically setting it to 0 have no effect. You are immune to the effects of the slow spell."
+                  }
+                ]
+              },
+              {
+                "name": "Emerald Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Psychic (Intelligence)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Burrow"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Eye for Illusions. You have advantage on saving throws made against illusion spells, and the DC for illusion-based effects you make saving throws or ability checks against is reduced by 5."
+                  }
+                ]
+              },
+              {
+                "name": "Gold Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Fire (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Swim"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Legendary Nature. A number of times per Rest equal to half your proficiency bonus, when you fail a saving throw against a magical effect you may reattempt the save, possibly changing the result. When you do, you may add your proficiency bonus to the result (even if you already were)."
+                  }
+                ]
+              },
+              {
+                "name": "Green Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Poison (Constitution)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Swim"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Unpoisonable. You cannot be poisoned or intoxicated, and you can consume unsafe food and water without suffering negative effects."
+                  }
+                ]
+              },
+              {
+                "name": "Moonstone Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Radiant (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Base"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Dreamlike Dance. Once per Rest, you may produce the effects of the sleep spell, requiring no spell slot or components. When you do so, the spell is cast at a level equal to your proficiency bonus. When its effects are produced this way, you add half your proficiency bonus to the result of each d8 you roll for the spell."
+                  }
+                ]
+              },
+              {
+                "name": "Platinum Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Radiant (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Base"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Legendary Resilience. A number of times per Long Rest equal to half your proficiency bonus, when you make a saving throw you may choose to make it with advantage. Alternatively, if you fail a saving throw you may spend two uses of this feature to succeed it instead. You regain one spent use of this trait when you complete a Short Rest."
+                  }
+                ]
+              },
+              {
+                "name": "Red Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Fire (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Climb"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Feasting Inferno. Twice per Long Rest, when you hit a creature with an attack you may choose to deal additional fire damage on the attack equal to a d8 \u00D7 your proficiency bonus. You regain one spent use of this feature when you complete a Short Rest."
+                  }
+                ]
+              },
+              {
+                "name": "Sapphire Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Thunder (Constitution)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Climb"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Spider Climb. You can walk on or stick to horizontal or inverted surfaces and ceilings without requiring the use of all of your limbs, leaving them free for other actions and activities."
+                  }
+                ]
+              },
+              {
+                "name": "Silver Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Cold (Constitution)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Base"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Silver Blindsight. You have blindsight out to a distance equal to 10 feet \u00D7 your proficiency bonus. If you have another source of blindsight that would be equal to or higher than this amount, you may increase the other source\u0027s range by half of this feature instead."
+                  }
+                ]
+              },
+              {
+                "name": "Skull Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Necrotic (Constitution)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Burrow"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Undeath Killer. You have advantage on ability checks and saving throws made against undead creatures, and when you hit an undead creature with an attack you deal extra damage equal to your proficiency bonus."
+                  }
+                ]
+              },
+              {
+                "name": "Topaz Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Necrotic (Constitution)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Swim"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Enfeebling Ray. You can produce the effects of ray of enfeeblement (requiring no Spell Slot or components) by spending a use of this trait, which you may use a number of times per Long Rest equal to your proficiency bonus. When you cast it this way, you may do so as a bonus action."
+                  }
+                ]
+              },
+              {
+                "name": "White Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Cold (Constitution)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Burrow"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Rink Skater. Nonmagical difficult terrain imposes no penalties to your movement, and moving across slippery or frozen surfaces does not provoke ability checks or saving throws made to retain your balance."
+                  }
+                ]
+              },
+              {
+                "name": "Wormhole Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Force (Strength)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "0-G acceleration (\u00D72)"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Your 0-G acceleration speed gained through this feature is twice your base movement speed."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Transitioning Step. As a bonus action on your turn, you may teleport from where you stand to another unoccupied space you can see within the range of your remaining movement. The distance between the space you left and the space you arrived in is subtracted from your remaining movement speed."
+                  }
+                ]
+              },
+              {
+                "name": "Blood Dragon Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Necrotic (Dexterity)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Climb"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Dark Bloodburst. When a creature hits you with a melee attack from within 10 feet, you may use your reaction to have blood-like energy burst forth onto them, forcing them to make a Dexterity saving throw. On a failure, they take fire or necrotic damage (your choice) equal to 1d10 \u002B half your dragoneer level (rounded up)."
+                  }
+                ]
+              },
+              {
+                "name": "Lake Serpent Embodied",
+                "blocks": [
+                  {
+                    "type": "stats",
+                    "items": [
+                      {
+                        "label": "Embodied Energy",
+                        "value": "Acid (Constitution)"
+                      },
+                      {
+                        "label": "Movement",
+                        "value": "Swim"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Amphibious Hunter. You can breathe air and water, and you can take the Dash action as a bonus action as long as you are fully submerged in liquid when you do so."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
