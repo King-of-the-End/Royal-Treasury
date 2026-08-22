@@ -244,6 +244,7 @@ else if (classDocument is not null)
     public int? MechanicsTab { get; set; }
 
     private JsonDocument? classDocument;
+    private string? loadedClassSlug;
     private bool isLoading = true;
     private string? errorMessage;
     private string activeTab = "lore";
@@ -353,8 +354,11 @@ else if (classDocument is not null)
 
     protected override async Task OnParametersSetAsync()
     {
-        isLoading = true;
-        errorMessage = null;
+        /*
+         * Query-string changes switch the visible class tab/mechanics tab,
+         * but they do not change the class JSON itself. Keep the already
+         * parsed document when only ?tab= or ?mechanicsTab= changes.
+         */
         activeMechanicsTabIndex = Math.Max(0, MechanicsTab ?? 0);
         activeTab =
             string.Equals(
@@ -363,17 +367,37 @@ else if (classDocument is not null)
                 StringComparison.OrdinalIgnoreCase)
                 ? "mechanics"
                 : "lore";
+
+        var safeSlug = Slug.Trim().ToLowerInvariant();
+
+        if (!IsSafeSlug(safeSlug))
+        {
+            isLoading = false;
+            errorMessage = "The requested class name is invalid.";
+            return;
+        }
+
+        if (
+            classDocument is not null
+            && string.Equals(
+                loadedClassSlug,
+                safeSlug,
+                StringComparison.OrdinalIgnoreCase))
+        {
+            isLoading = false;
+            errorMessage = null;
+            return;
+        }
+
+        isLoading = true;
+        errorMessage = null;
+
         classDocument?.Dispose();
         classDocument = null;
+        loadedClassSlug = null;
 
         try
         {
-            var safeSlug = Slug.Trim().ToLowerInvariant();
-            if (!IsSafeSlug(safeSlug))
-            {
-                errorMessage = "The requested class name is invalid.";
-                return;
-            }
 
             var classesRoot = Path.Combine(Environment.WebRootPath, "data", "classes");
             if (!Directory.Exists(classesRoot))
@@ -427,6 +451,7 @@ else if (classDocument is not null)
 
             await using var stream = File.OpenRead(jsonFilePath);
             classDocument = await JsonDocument.ParseAsync(stream);
+            loadedClassSlug = safeSlug;
         }
         catch (JsonException ex)
         {

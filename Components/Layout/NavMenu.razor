@@ -37,7 +37,8 @@
     <a class="side-brand" href="/">
         <img class="brand-mark"
              src="/images/site-emblem.png"
-             alt="Royal Treasury emblem" />
+             alt="Royal Treasury emblem"
+             decoding="async" />
         <span>Royal Treasury</span>
     </a>
 
@@ -117,6 +118,16 @@
 
     private sealed record NavItem(string Label, string Href);
     private sealed record IndexTrackerItem(string Id, string Label);
+
+    /*
+     * The navigation used to reopen and reparse class JSON files every
+     * time the component rendered. Keep the immutable class catalogue
+     * and any class documents used by the index for this circuit.
+     */
+    private IReadOnlyList<ClassSummary>? classSummaryCache;
+
+    private readonly Dictionary<string, JsonDocument> classDocumentCache =
+        new(StringComparer.OrdinalIgnoreCase);
 
     protected override void OnInitialized()
     {
@@ -476,6 +487,11 @@
 
     private IReadOnlyList<ClassSummary> LoadClassSummaries()
     {
+        if (classSummaryCache is not null)
+        {
+            return classSummaryCache;
+        }
+
         var fallback = new[]
         {
             "Arbiter",
@@ -514,21 +530,30 @@
 
             if (!Directory.Exists(root))
             {
-                return fallback
-                    .Select(name =>
-                        new ClassSummary(
-                            name,
-                            ToSlug(name)))
-                    .ToList();
+                classSummaryCache =
+                    fallback
+                        .Select(name =>
+                            new ClassSummary(
+                                name,
+                                ToSlug(name)))
+                        .ToList();
+
+                return classSummaryCache;
             }
 
-            var found = new List<ClassSummary>();
+            var found =
+                new List<ClassSummary>();
 
             foreach (var folder in Directory.EnumerateDirectories(root))
             {
-                var folderName = Path.GetFileName(folder);
-                var slug = ToSlug(folderName);
-                var name = folderName;
+                var folderName =
+                    Path.GetFileName(folder);
+
+                var slug =
+                    ToSlug(folderName);
+
+                var name =
+                    folderName;
 
                 var jsonPath = Directory
                     .EnumerateFiles(
@@ -542,11 +567,11 @@
                 {
                     try
                     {
-                        using var document =
+                        using var classSummaryDocument =
                             JsonDocument.Parse(
                                 File.ReadAllText(jsonPath));
 
-                        if (document.RootElement.TryGetProperty(
+                        if (classSummaryDocument.RootElement.TryGetProperty(
                             "name",
                             out var nameElement))
                         {
@@ -555,7 +580,7 @@
                                 ?? name;
                         }
 
-                        if (document.RootElement.TryGetProperty(
+                        if (classSummaryDocument.RootElement.TryGetProperty(
                             "slug",
                             out var slugElement))
                         {
@@ -576,18 +601,24 @@
                         slug));
             }
 
-            return found
-                .OrderBy(item => item.Name)
-                .ToList();
+            classSummaryCache =
+                found
+                    .OrderBy(item => item.Name)
+                    .ToList();
+
+            return classSummaryCache;
         }
         catch
         {
-            return fallback
-                .Select(name =>
-                    new ClassSummary(
-                        name,
-                        ToSlug(name)))
-                .ToList();
+            classSummaryCache =
+                fallback
+                    .Select(name =>
+                        new ClassSummary(
+                            name,
+                            ToSlug(name)))
+                    .ToList();
+
+            return classSummaryCache;
         }
     }
 
@@ -625,15 +656,15 @@
                         "Overview",
                         $"{prefix}#overview"));
 
-                using var document = TryLoadClassDocument(slug);
+                var loreDocument = TryLoadClassDocument(slug);
 
-                if (document is null)
+                if (loreDocument is null)
                     return items;
 
-                var root = document.RootElement;
+                var loreRoot = loreDocument.RootElement;
 
                 if (TryGetArray(
-                    root,
+                    loreRoot,
                     "lore_sections",
                     out var loreSections))
                 {
@@ -650,7 +681,7 @@
                     }
                 }
 
-                if (root.TryGetProperty(
+                if (loreRoot.TryGetProperty(
                     "roleplay",
                     out var roleplay))
                 {
@@ -705,75 +736,74 @@
                     "Class Features",
                     $"{prefix}#class-features"));
 
-            using (var document = TryLoadClassDocument(slug))
+            var mechanicsDocument = TryLoadClassDocument(slug);
+
+            if (mechanicsDocument is null)
+                return items;
+
+            var mechanicsRoot = mechanicsDocument.RootElement;
+
+            if (!TryGetSelectedMechanics(
+                mechanicsRoot,
+                ActiveMechanicsTabIndex,
+                out var mechanics))
             {
-                if (document is null)
-                    return items;
+                return items;
+            }
 
-                var root = document.RootElement;
-
-                if (!TryGetSelectedMechanics(
-                    root,
-                    ActiveMechanicsTabIndex,
-                    out var mechanics))
+            if (TryGetArray(
+                mechanics,
+                "pre_feature_sections",
+                out var preSections))
+            {
+                foreach (var section in preSections.EnumerateArray())
                 {
-                    return items;
-                }
+                    var title = GetPreFeatureTitle(section);
 
-                if (TryGetArray(
-                    mechanics,
-                    "pre_feature_sections",
-                    out var preSections))
-                {
-                    foreach (var section in preSections.EnumerateArray())
+                    if (!string.IsNullOrWhiteSpace(title))
                     {
-                        var title = GetPreFeatureTitle(section);
-
-                        if (!string.IsNullOrWhiteSpace(title))
-                        {
-                            items.Add(
-                                new NavItem(
-                                    title,
-                                    $"{prefix}#{AnchorId(title)}"));
-                        }
+                        items.Add(
+                            new NavItem(
+                                title,
+                                $"{prefix}#{AnchorId(title)}"));
                     }
                 }
+            }
 
-                if (TryGetArray(
-                    mechanics,
-                    "features",
-                    out var features))
+            if (TryGetArray(
+                mechanics,
+                "features",
+                out var features))
+            {
+                foreach (var feature in features.EnumerateArray())
                 {
-                    foreach (var feature in features.EnumerateArray())
-                    {
-                        var name = GetString(feature, "name");
+                    var name = GetString(feature, "name");
 
-                        if (!string.IsNullOrWhiteSpace(name))
-                        {
-                            items.Add(
-                                new NavItem(
-                                    name,
-                                    $"{prefix}#{AnchorId(name)}"));
-                        }
+                    if (!string.IsNullOrWhiteSpace(name))
+                    {
+                        items.Add(
+                            new NavItem(
+                                name,
+                                $"{prefix}#{AnchorId(name)}"));
                     }
                 }
+            }
 
-                if (TryGetArray(
-                    mechanics,
-                    "appendices",
-                    out var appendices))
+            if (TryGetArray(
+                mechanics,
+                "appendices",
+                out var appendices))
+            {
+                foreach (var appendix in appendices.EnumerateArray())
                 {
-                    foreach (var appendix in appendices.EnumerateArray())
-                    {
-                        var title = GetString(appendix, "title");
+                    var title = GetString(appendix, "title");
 
-                        if (!string.IsNullOrWhiteSpace(title))
-                        {
-                            items.Add(
-                                new NavItem(
-                                    title,
-                                    $"{prefix}#{AnchorId(title)}"));
-                        }
+                    if (!string.IsNullOrWhiteSpace(title))
+                    {
+                        items.Add(
+                            new NavItem(
+                                title,
+                                $"{prefix}#{AnchorId(title)}"));
                     }
                 }
             }
@@ -784,6 +814,14 @@
 
     private JsonDocument? TryLoadClassDocument(string slug)
     {
+        if (
+            classDocumentCache.TryGetValue(
+                slug,
+                out var cachedDocument))
+        {
+            return cachedDocument;
+        }
+
         try
         {
             var root = Path.Combine(
@@ -813,10 +851,17 @@
                 .OrderBy(path => path)
                 .FirstOrDefault();
 
-            return jsonPath is null
-                ? null
-                : JsonDocument.Parse(
+            if (jsonPath is null)
+                return null;
+
+            var loadedClassDocument =
+                JsonDocument.Parse(
                     File.ReadAllText(jsonPath));
+
+            classDocumentCache[slug] =
+                loadedClassDocument;
+
+            return loadedClassDocument;
         }
         catch
         {
@@ -979,6 +1024,20 @@
     public void Dispose()
     {
         Navigation.LocationChanged -= HandleLocationChanged;
+
+        DisposeCachedClassDocuments();
+    }
+
+    private void DisposeCachedClassDocuments()
+    {
+        foreach (
+            var cachedClassDocument
+            in classDocumentCache.Values)
+        {
+            cachedClassDocument.Dispose();
+        }
+
+        classDocumentCache.Clear();
     }
 
     public async ValueTask DisposeAsync()
@@ -1001,5 +1060,7 @@
         }
 
         dotNetReference?.Dispose();
+
+        DisposeCachedClassDocuments();
     }
 }

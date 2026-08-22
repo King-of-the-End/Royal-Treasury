@@ -398,6 +398,24 @@
     // cannot activate inside it.
     // =====================================
 
+    private sealed record MatchCandidate(
+        GlossaryEntry Entry,
+        string Pattern);
+
+
+    /*
+     * Build a small first-character index once per rendered text block.
+     *
+     * The previous matcher looped over every glossary entry and every alias
+     * at every character in the source text. Large class pages can contain
+     * hundreds of GlossaryText components, so that creates a noticeable
+     * render pause.
+     *
+     * Most terms have a literal first character, so we only test candidates
+     * that could actually begin at the current source character. Wildcard
+     * patterns that begin with a placeholder are kept in a tiny fallback
+     * bucket and still retain the old behaviour.
+     */
     private static List<GlossarySegment>
         BuildSegments(
             string text,
@@ -408,10 +426,6 @@
             new List<GlossarySegment>();
 
 
-        // =================================
-        // NOTHING TO PROCESS
-        // =================================
-
         if (
             string.IsNullOrEmpty(text)
             ||
@@ -420,116 +434,156 @@
             result.Add(
                 new GlossarySegment
                 {
-                    Text =
-                        text
+                    Text = text
                 });
-
 
             return result;
         }
 
 
-        // =================================
-        // POSITION TRACKING
-        // =================================
-
-        var plainStart =
-            0;
+        var candidatesByInitial =
+            new Dictionary<char, List<MatchCandidate>>();
 
 
-        var index =
-            0;
+        var fallbackCandidates =
+            new List<MatchCandidate>();
 
 
-        // =================================
-        // SCAN THROUGH TEXT
-        // =================================
+        foreach (
+            var entry
+            in entries)
+        {
+            foreach (
+                var pattern
+                in GetMatchPatterns(entry))
+            {
+                if (string.IsNullOrEmpty(pattern))
+                {
+                    continue;
+                }
+
+
+                var candidate =
+                    new MatchCandidate(
+                        entry,
+                        pattern);
+
+
+                if (
+                    PatternCanStartWithVariable(
+                        pattern,
+                        entry.Wildcard,
+                        context))
+                {
+                    fallbackCandidates.Add(
+                        candidate);
+
+                    continue;
+                }
+
+
+                var key =
+                    char.ToUpperInvariant(
+                        pattern[0]);
+
+
+                if (
+                    !candidatesByInitial.TryGetValue(
+                        key,
+                        out var bucket))
+                {
+                    bucket =
+                        new List<MatchCandidate>();
+
+                    candidatesByInitial[key] =
+                        bucket;
+                }
+
+
+                bucket.Add(candidate);
+            }
+        }
+
+
+        /*
+         * Longer literal patterns usually win. Sorting once means the most
+         * likely longest match is checked first, while we still keep the
+         * actual matched-length comparison for wildcard patterns.
+         */
+        foreach (
+            var bucket
+            in candidatesByInitial.Values)
+        {
+            bucket.Sort(
+                static (left, right) =>
+                    right.Pattern.Length.CompareTo(
+                        left.Pattern.Length));
+        }
+
+
+        fallbackCandidates.Sort(
+            static (left, right) =>
+                right.Pattern.Length.CompareTo(
+                    left.Pattern.Length));
+
+
+        var plainStart = 0;
+        var index = 0;
+
 
         while (
-            index <
-            text.Length)
+            index < text.Length)
         {
             GlossaryEntry? matchedEntry =
                 null;
 
 
-            var matchedLength =
-                0;
+            var matchedLength = 0;
 
 
-            /*
-             * Find the longest ACTUAL source
-             * match at this character.
-             *
-             * This matters for quality-trait
-             * patterns because the source text
-             * can be longer or shorter than the
-             * glossary title.
-             *
-             * Example title:
-             *
-             * Regen X (Y)
-             *
-             * Source:
-             *
-             * Regen 10 (radiant, eidolic)
-             */
-            foreach (
-                var entry
-                in entries)
+            var sourceKey =
+                char.ToUpperInvariant(
+                    text[index]);
+
+
+            if (
+                candidatesByInitial.TryGetValue(
+                    sourceKey,
+                    out var candidates))
             {
-                foreach (
-                    var matchPattern
-                    in GetMatchPatterns(
-                        entry))
-                {
-                    if (
-                        TryMatchAt(
-                            text,
-                            index,
-                            matchPattern,
-                            entry.CaseSensitive,
-                            entry.Wildcard,
-                            context,
-                            out var candidateLength)
-                        &&
-                        candidateLength >
-                        matchedLength)
-                    {
-                        matchedEntry =
-                            entry;
-
-
-                        matchedLength =
-                            candidateLength;
-                    }
-                }
+                FindBestMatch(
+                    candidates,
+                    text,
+                    index,
+                    context,
+                    ref matchedEntry,
+                    ref matchedLength);
             }
 
 
-            // =================================
-            // NO MATCH AT THIS CHARACTER
-            // =================================
+            if (fallbackCandidates.Count > 0)
+            {
+                FindBestMatch(
+                    fallbackCandidates,
+                    text,
+                    index,
+                    context,
+                    ref matchedEntry,
+                    ref matchedLength);
+            }
+
 
             if (
-                matchedEntry
-                is null
+                matchedEntry is null
                 ||
                 matchedLength <= 0)
             {
                 index++;
-
                 continue;
             }
 
 
-            // =================================
-            // ADD ORDINARY TEXT BEFORE MATCH
-            // =================================
-
-            if (
-                index >
-                plainStart)
+            if (index > plainStart)
             {
                 result.Add(
                     new GlossarySegment
@@ -537,27 +591,10 @@
                         Text =
                             text.Substring(
                                 plainStart,
-                                index -
-                                plainStart)
+                                index - plainStart)
                     });
             }
 
-
-            // =================================
-            // ADD GLOSSARY MATCH
-            //
-            // The exact source text is kept as
-            // the visible text, while the popup
-            // title remains matchedEntry.Term.
-            //
-            // Example:
-            //
-            // visible:
-            // Amorphous (1 inch)
-            //
-            // popup title:
-            // Amorphous (X)
-            // =================================
 
             result.Add(
                 new GlossarySegment
@@ -572,26 +609,12 @@
                 });
 
 
-            // =================================
-            // SKIP PAST MATCH
-            // =================================
-
-            index +=
-                matchedLength;
-
-
-            plainStart =
-                index;
+            index += matchedLength;
+            plainStart = index;
         }
 
 
-        // =================================
-        // ADD REMAINING NORMAL TEXT
-        // =================================
-
-        if (
-            plainStart <
-            text.Length)
+        if (plainStart < text.Length)
         {
             result.Add(
                 new GlossarySegment
@@ -604,6 +627,74 @@
 
 
         return result;
+    }
+
+
+    private static void FindBestMatch(
+        IReadOnlyList<MatchCandidate> candidates,
+        string text,
+        int index,
+        GlossaryContext context,
+        ref GlossaryEntry? matchedEntry,
+        ref int matchedLength)
+    {
+        foreach (
+            var candidate
+            in candidates)
+        {
+            if (
+                TryMatchAt(
+                    text,
+                    index,
+                    candidate.Pattern,
+                    candidate.Entry.CaseSensitive,
+                    candidate.Entry.Wildcard,
+                    context,
+                    out var candidateLength)
+                &&
+                candidateLength > matchedLength)
+            {
+                matchedEntry =
+                    candidate.Entry;
+
+                matchedLength =
+                    candidateLength;
+            }
+        }
+    }
+
+
+    private static bool PatternCanStartWithVariable(
+        string pattern,
+        bool wildcard,
+        GlossaryContext context)
+    {
+        var placeholdersEnabled =
+            wildcard
+            ||
+            context ==
+                GlossaryContext
+                    .StatBlockQualityTrait;
+
+
+        if (!placeholdersEnabled)
+        {
+            return false;
+        }
+
+
+        return
+            pattern.StartsWith(
+                "X",
+                StringComparison.OrdinalIgnoreCase)
+            ||
+            pattern.StartsWith(
+                "Y",
+                StringComparison.OrdinalIgnoreCase)
+            ||
+            pattern.StartsWith(
+                "Type",
+                StringComparison.OrdinalIgnoreCase);
     }
 
 

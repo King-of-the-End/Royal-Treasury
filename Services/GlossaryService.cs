@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Text.Json;
 using Website_of_Everything.Models;
 
@@ -22,6 +23,16 @@ public sealed class GlossaryService
         new(
             1,
             1);
+
+
+    /*
+     * GlossaryText can appear dozens or hundreds of times on one page.
+     * The old service rebuilt the context/class-page filtered list for
+     * every single component. Cache those immutable resolved lists.
+     */
+    private readonly ConcurrentDictionary<string, IReadOnlyList<GlossaryEntry>>
+        resolvedEntriesCache =
+            new(StringComparer.Ordinal);
 
 
     /*
@@ -97,14 +108,29 @@ public sealed class GlossaryService
             context.ToString();
 
 
-        /*
-         * First remove entries that don't
-         * apply to the requested context.
-         *
-         * Creature types are handled by
-         * IsAllowedInContext(), which makes
-         * them creature-line-only.
-         */
+        var normalizedClassPage =
+            context == GlossaryContext.Class
+            &&
+            !string.IsNullOrWhiteSpace(classPage)
+
+            ? NormalizeClassPage(classPage)
+
+            : string.Empty;
+
+
+        var cacheKey =
+            $"{contextName}|{normalizedClassPage}";
+
+
+        if (
+            resolvedEntriesCache.TryGetValue(
+                cacheKey,
+                out var cachedResolvedEntries))
+        {
+            return cachedResolvedEntries;
+        }
+
+
         var applicable =
             entries
                 .Where(
@@ -128,16 +154,6 @@ public sealed class GlossaryService
                 .ToList();
 
 
-        /*
-         * The same exact case-sensitive term
-         * may have:
-         *
-         * 1. a general definition
-         * 2. a context-specific definition
-         *
-         * If that happens, prefer the
-         * context-specific entry.
-         */
         var resolved =
             applicable
                 .GroupBy(
@@ -156,25 +172,6 @@ public sealed class GlossaryService
                                             StringComparison.OrdinalIgnoreCase)))
                         ??
                         group.First())
-                .ToList();
-
-
-        /*
-         * Longest terms first.
-         *
-         * This ensures longer glossary
-         * phrases win over shorter ones.
-         *
-         * Example:
-         *
-         * Eidomancy Burn
-         *
-         * before:
-         *
-         * Eidomancy
-         */
-        return
-            resolved
                 .OrderByDescending(
                     entry =>
                         entry.Term.Length)
@@ -183,6 +180,14 @@ public sealed class GlossaryService
                         entry.Term,
                     StringComparer.Ordinal)
                 .ToList();
+
+
+        resolvedEntriesCache.TryAdd(
+            cacheKey,
+            resolved);
+
+
+        return resolved;
     }
 
 
@@ -361,6 +366,21 @@ public sealed class GlossaryService
                 "glossary.json");
 
 
+        /*
+         * Production data only changes on redeploy, so avoid a filesystem
+         * metadata lookup for every GlossaryText component. Development
+         * keeps the timestamp check so editing glossary.json still updates
+         * without restarting the app.
+         */
+        if (
+            cachedEntries is not null
+            &&
+            !environment.IsDevelopment())
+        {
+            return cachedEntries;
+        }
+
+
         var lastWriteUtc =
             File.Exists(path)
 
@@ -420,6 +440,9 @@ public sealed class GlossaryService
                     DateTime.MinValue;
 
 
+                resolvedEntriesCache.Clear();
+
+
                 return cachedEntries;
             }
 
@@ -449,6 +472,9 @@ public sealed class GlossaryService
 
             cachedGlossaryLastWriteUtc =
                 lastWriteUtc;
+
+
+            resolvedEntriesCache.Clear();
 
 
             return cachedEntries;
