@@ -36,9 +36,8 @@
 
     <a class="side-brand" href="/">
         <img class="brand-mark"
-             src="/images/site-emblem.webp"
-             alt="Royal Treasury emblem"
-             decoding="async" />
+             src="/images/site-emblem.png"
+             alt="Royal Treasury emblem" />
         <span>Royal Treasury</span>
     </a>
 
@@ -118,16 +117,6 @@
 
     private sealed record NavItem(string Label, string Href);
     private sealed record IndexTrackerItem(string Id, string Label);
-
-    /*
-     * The navigation used to reopen and reparse class JSON files every
-     * time the component rendered. Keep the immutable class catalogue
-     * and any class documents used by the index for this circuit.
-     */
-    private IReadOnlyList<ClassSummary>? classSummaryCache;
-
-    private readonly Dictionary<string, JsonDocument> classDocumentCache =
-        new(StringComparer.OrdinalIgnoreCase);
 
     protected override void OnInitialized()
     {
@@ -487,11 +476,6 @@
 
     private IReadOnlyList<ClassSummary> LoadClassSummaries()
     {
-        if (classSummaryCache is not null)
-        {
-            return classSummaryCache;
-        }
-
         var fallback = new[]
         {
             "Arbiter",
@@ -530,30 +514,21 @@
 
             if (!Directory.Exists(root))
             {
-                classSummaryCache =
-                    fallback
-                        .Select(name =>
-                            new ClassSummary(
-                                name,
-                                ToSlug(name)))
-                        .ToList();
-
-                return classSummaryCache;
+                return fallback
+                    .Select(name =>
+                        new ClassSummary(
+                            name,
+                            ToSlug(name)))
+                    .ToList();
             }
 
-            var found =
-                new List<ClassSummary>();
+            var found = new List<ClassSummary>();
 
             foreach (var folder in Directory.EnumerateDirectories(root))
             {
-                var folderName =
-                    Path.GetFileName(folder);
-
-                var slug =
-                    ToSlug(folderName);
-
-                var name =
-                    folderName;
+                var folderName = Path.GetFileName(folder);
+                var slug = ToSlug(folderName);
+                var name = folderName;
 
                 var jsonPath = Directory
                     .EnumerateFiles(
@@ -601,24 +576,18 @@
                         slug));
             }
 
-            classSummaryCache =
-                found
-                    .OrderBy(item => item.Name)
-                    .ToList();
-
-            return classSummaryCache;
+            return found
+                .OrderBy(item => item.Name)
+                .ToList();
         }
         catch
         {
-            classSummaryCache =
-                fallback
-                    .Select(name =>
-                        new ClassSummary(
-                            name,
-                            ToSlug(name)))
-                    .ToList();
-
-            return classSummaryCache;
+            return fallback
+                .Select(name =>
+                    new ClassSummary(
+                        name,
+                        ToSlug(name)))
+                .ToList();
         }
     }
 
@@ -656,12 +625,12 @@
                         "Overview",
                         $"{prefix}#overview"));
 
-                var loreDocument = TryLoadClassDocument(slug);
+                using var document = TryLoadClassDocument(slug);
 
-                if (loreDocument is null)
+                if (document is null)
                     return items;
 
-                var root = loreDocument.RootElement;
+                var root = document.RootElement;
 
                 if (TryGetArray(
                     root,
@@ -736,12 +705,12 @@
                     "Class Features",
                     $"{prefix}#class-features"));
 
-            var mechanicsDocument = TryLoadClassDocument(slug);
+            using (var document = TryLoadClassDocument(slug))
             {
-                if (mechanicsDocument is null)
+                if (document is null)
                     return items;
 
-                var root = mechanicsDocument.RootElement;
+                var root = document.RootElement;
 
                 if (!TryGetSelectedMechanics(
                     root,
@@ -815,14 +784,6 @@
 
     private JsonDocument? TryLoadClassDocument(string slug)
     {
-        if (
-            classDocumentCache.TryGetValue(
-                slug,
-                out var cachedDocument))
-        {
-            return cachedDocument;
-        }
-
         try
         {
             var root = Path.Combine(
@@ -852,17 +813,10 @@
                 .OrderBy(path => path)
                 .FirstOrDefault();
 
-            if (jsonPath is null)
-                return null;
-
-            var document =
-                JsonDocument.Parse(
+            return jsonPath is null
+                ? null
+                : JsonDocument.Parse(
                     File.ReadAllText(jsonPath));
-
-            classDocumentCache[slug] =
-                document;
-
-            return document;
         }
         catch
         {
@@ -1025,20 +979,6 @@
     public void Dispose()
     {
         Navigation.LocationChanged -= HandleLocationChanged;
-
-        DisposeCachedClassDocuments();
-    }
-
-    private void DisposeCachedClassDocuments()
-    {
-        foreach (
-            var document
-            in classDocumentCache.Values)
-        {
-            document.Dispose();
-        }
-
-        classDocumentCache.Clear();
     }
 
     public async ValueTask DisposeAsync()
@@ -1061,7 +1001,5 @@
         }
 
         dotNetReference?.Dispose();
-
-        DisposeCachedClassDocuments();
     }
 }

@@ -14,25 +14,10 @@ builder.Services
 
 
 // =========================================
-// RESPONSE COMPRESSION
-//
-// Compress the initial HTML/CSS/JSON
-// responses sent to the browser. Static
-// images are already compressed separately.
-// =========================================
-
-builder.Services.AddResponseCompression(
-    options =>
-    {
-        options.EnableForHttps = true;
-    });
-
-
-// =========================================
 // APPLICATION SERVICES
 // =========================================
 
-builder.Services.AddSingleton<SpellService>();
+builder.Services.AddScoped<SpellService>();
 builder.Services.AddScoped<MonsterService>();
 builder.Services.AddSingleton<GlossaryService>();
 
@@ -86,13 +71,6 @@ app.UseStatusCodePagesWithReExecute(
 // =========================================
 
 app.UseAntiforgery();
-
-
-// =========================================
-// RESPONSE COMPRESSION
-// =========================================
-
-app.UseResponseCompression();
 
 
 // =========================================
