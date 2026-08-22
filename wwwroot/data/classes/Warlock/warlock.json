@@ -552,19 +552,6 @@
                 ]
               },
               {
-                "name": "Pact of the Star Chain (UA)",
-                "blocks": [
-                  {
-                    "type": "paragraph",
-                    "text": "Prerequisite: Seeker Patron. The Seeker grants you a chain forged from starlight. While it is on your person, you know the augury spell and can cast it as a ritual, and the spell does not count against your number of spells known."
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "You can also invoke the Seeker\u2019s power to gain advantage on an Intelligence check while you carry the chain. Once you use this ability, you cannot use it again until you complete a short or long rest."
-                  }
-                ]
-              },
-              {
                 "name": "Pact of the Tome",
                 "blocks": [
                   {
@@ -577,7 +564,7 @@
                     "blocks": [
                       {
                         "type": "paragraph",
-                        "text": "Choose one spell group, such as Blood of Cenir or the Epic of Duality. Treat spells in that spell group as though they were on the Warlock spell list, allowing you to choose them when learning new spells. You learn two additional spells that do not count against your Warlock spells or cantrips known. When you can switch a Warlock spell for another, you can switch one of these cantrips or spells for another that matches the same description."
+                        "text": "Choose one spell group, such as Blood of Cineris or the Epic of Duality. Treat spells in that spell group as though they were on the Warlock spell list, allowing you to choose them when learning new spells. You learn two additional spells that do not count against your Warlock spells or cantrips known. When you can switch a Warlock spell for another, you can switch one of these cantrips or spells for another that matches the same description."
                       }
                     ]
                   },
@@ -624,6 +611,104 @@
                         "text": "You have one additional pact spell slot of the same level as your Warlock pact spell slots. It functions identically to them except that you regain it only when you complete a Long Rest, and any spell cast using it is cast at the spell\u2019s base level."
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "name": "Pact of the Shroud",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Your patron grants you a veil of otherworldly protection, which is normally invisible on your body except when in use, or when you choose to reveal it. This shroud can appear as a cloak, set of armor, runes upon the skin, or other effect that visually covers most of your body. While you have this Pact Boon, you may calculate your AC as 10 \u002B your Charisma modifier \u002B your proficiency bonus. You may still benefit from a shield while using this calculation, but not from armor. However, you may still wear armor to gain its wondrous or magical effects while ignoring its properties as armor."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Additionally, you may produce the effects of the shield spell a number of times per Rest equal to half your proficiency bonus, requiring no spell slot or components."
+                  }
+                ]
+              },
+              {
+                "name": "Pact of the Trigger",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You can use your action to draw upon the powers of your Patron and create a hex gun in your empty hand. You can choose the form that this spellcasting focus takes each time you create it. It can either be a Sniper or a Revolver (detailed below)."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Your hex gun disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss it (no action required), or if you die."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Your hex gun acts as a spellcasting focus, and when you cast cantrips with it, it channels them as bullets (these still count as spells). Instead of increasing the damage of the cantrip when you reach certain levels, you can cast the cantrip additional times as part of the same action (except for Eldritch Blast, which is cast as normal). To be cast in this way the cantrip must deal damage, it must make a spell attack or require a saving throw, and have a range other than self."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "When you cast a cantrip in this manner, you cast it 2 times at level 5, 3 times at level 11, and 4 times at level 17. The cantrip can deal its damage more than once, but its other effects can\u0027t be applied again."
+                  },
+                  {
+                    "type": "subsection",
+                    "title": "Sniper Form",
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "text": "Your ranged spell attack rolls cast through the hex gun have their range doubled and ignore half-cover. While wielding this weapon you know the ray of frost cantrip."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "subsection",
+                    "title": "Revolver Form",
+                    "blocks": [
+                      {
+                        "type": "paragraph",
+                        "text": "Being within 5 feet of a hostile creature doesn\u0027t impose disadvantage on your ranged spell attack rolls cast through the hex gun. While wielding this weapon you know the shocking grasp cantrip."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Sniper\u0027s Concentration",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Upon choosing this Pact Boon, every turn you don\u0027t deal damage directly through your melee or ranged weapons attacks or spell effects, you gain one level of Sniper\u0027s Concentration, as shown in the level below. Upon dealing or taking damage, your Sniper\u0027s Concentration level returns to zero. You can only trigger Sniper\u0027s Concentration effects when causing damage with a Marksman Weapon."
+                  },
+                  {
+                    "type": "table",
+                    "columns": [
+                      {
+                        "key": "sc_level",
+                        "label": "SC Level"
+                      },
+                      {
+                        "key": "effect",
+                        "label": "Effect"
+                      }
+                    ],
+                    "rows": [
+                      {
+                        "sc_level": "I",
+                        "effect": "You gain a \u002B1 bonus to hit for your next attack and deal an additional damage die of same type and size as your weapon\u0027s damage dice."
+                      },
+                      {
+                        "sc_level": "II",
+                        "effect": "Your bonus to hit becomes a \u002B2 plus your attack is considered a Critical Hit on a 19 or 20."
+                      },
+                      {
+                        "sc_level": "III",
+                        "effect": "Your bonus to hit becomes a \u002B3, you now deal two additional damage die and your attack is considered a Critical Hit on a roll of 18 to 20."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "The effects of each Sniper\u0027s Concentration level remain even if not mentioned directly, such as the additional damage die from level I in level II."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "If you deal damage to a creature while in Sniper\u0027s Concentration and a friendly creature has dealt damage to your target creature while in your turn, you may spend your reaction to enter a perfect timing state, easily aiming for a creature\u0027s weak spot. You gain 8 stacks of Poise for that attack, which are reduced to zero when your turn ends."
                   }
                 ]
               }
@@ -1571,6 +1656,240 @@
                   }
                 ],
                 "category": "Unearthed Arcana"
+              },
+              {
+                "name": "Aetherwalk",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Your shroud can lift and propel you. You can walk freely on the surfaces of liquids as though they were solid by floating just above them, and you gain a belabored flight (hover) speed equal to your base movement speed."
+                  }
+                ],
+                "prerequisite": "5th-level warlock, Pact of the Shroud feature"
+              },
+              {
+                "name": "Dark Immunity",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You have advantage on saving throws made against magical effects, and are unaffected by spells cast at a level equal to half your proficiency bonus or less, unless you wish to be affected by them."
+                  }
+                ],
+                "prerequisite": "Pact of the Shroud feature"
+              },
+              {
+                "name": "Eldritch Shield",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When you are hit by a weapon attack you can see, you can use your reaction to roll a number of d10s equal to the number of beams you would fire through eldritch blast, and reduce the damage by the result."
+                  }
+                ],
+                "prerequisite": "eldritch blast cantrip, Pact of the Shroud feature"
+              },
+              {
+                "name": "Extended Shroud",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Your shroud grants protection to you and all allied creatures within 10 feet of you, as long as you aren\u0027t incapacitated. When you or an ally in that space takes damage, it is reduced by your proficiency bonus."
+                  }
+                ],
+                "prerequisite": "9th-level warlock, Pact of the Shroud feature"
+              },
+              {
+                "name": "Phantom Shimmer",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Once per turn, as long as you aren\u0027t incapacitated, if a creature makes a weapon attack against you and either misses the attack or their damage is reduced to 0, you may vanish like a ghost and reappear in an unoccupied space you can see within 15 feet of where you were."
+                  }
+                ],
+                "prerequisite": "9th-level warlock, Pact of the Shroud feature"
+              },
+              {
+                "name": "Sealing Skin",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Your body is protected by a powerful reflective curse, granting you a Damage Threshold equal to your warlock level."
+                  }
+                ],
+                "prerequisite": "15th-level warlock, Pact of the Shroud feature"
+              },
+              {
+                "name": "Shellspeaker",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You can whisper a protective energy into being. Once per Rest, you may produce the effects of the warding word spell, requiring no spell slot but cast as though using one of your Pact Spell Slots, and when you do so you gain the benefits of the Motivator\u0027s Boon effect. When you learn warlock spells, you may treat warding word as though it is on the warlock spell list."
+                  }
+                ],
+                "prerequisite": "Pact of the Shroud feature"
+              },
+              {
+                "name": "Spiritwalk",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Instead of a belabored flight (hover) speed from the Aetherwalk invocation, you have a fly (hover) speed equal to your base movement speed instead. Additionally, you gain proficiency in Dexterity saving throws."
+                  }
+                ],
+                "prerequisite": "9th-level warlock, Aetherwalk invocation, Pact of the Shroud feature"
+              },
+              {
+                "name": "Titan\u0027s Armor",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You gain proficiency in the Athletics skill, which you can use Charisma for instead of Strength. Furthermore, you can produce the effects of the enhance ability spell once per Rest, requiring no spell slot or components, and it is produced as though cast using one of your Pact Spell Slots."
+                  }
+                ],
+                "prerequisite": "Pact of the Shroud feature"
+              },
+              {
+                "name": "Worldwalker",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Your base movement speed increases by 30 feet, and you gain a teleport speed of 30 feet."
+                  }
+                ],
+                "prerequisite": "18th-level warlock, Spiritwalk invocation, Pact of the Shroud feature"
+              },
+              {
+                "name": "Agonizing Shots",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When you cast a cantrip, add your Charisma modifier to the damage it deals on a hit (if you don\u0027t already add your Charisma modifier to it)."
+                  }
+                ],
+                "prerequisite": "Pact of the Trigger feature"
+              },
+              {
+                "name": "Marksman\u0027s Repositioning",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sometimes what you need isn\u0027t the perfect shot, but something to distract opponents while you make a getaway."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "You learn the Eldritch Blast cantrip and it doesn\u0027t count towards your Warlock Cantrips Known. When you cast Eldritch Blast, you may choose to have it deal 1d4 Force damage and reduce a target\u0027s modifier to hit and damage rolls by 1 per Eldritch Blast Bolt hit. This reduction lasts till the end of the target\u0027s next turn. Furthermore, you gain an additional 5-ft of Movement Speed until the end of your turn per Eldritch Blast Bolt fired."
+                  }
+                ],
+                "source": "Homebrew"
+              },
+              {
+                "name": "Bullet Hell",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "You temporarily duplicate your hex gun to unleash a flurry of bullets as an action. All creatures within a 10 foot cone in front of you must succeed a Dexterity saving throw against your spell save DC or take 2d10 force damage. This damage increases to 3d10 at level 11 and 4d10 at level 17. To use this action you need to be holding your hex gun in one hand and have the other hand free. You can use this action a number of times equal to your Charisma modifier, and regain all expended uses after completing a short or long rest."
+                  }
+                ],
+                "prerequisite": "5th level, Pact of the Trigger feature (revolver form)"
+              },
+              {
+                "name": "Crippling Shot",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Once per turn, when you damage an enemy with an attack made using your hex gun, you can force them to make a Strength saving throw against your spell save DC or fall prone and have their speed reduced to 0 until the start of your next turn. You can use this ability a number of times equal to your Charisma modifier, and regain all expended uses after completing a long rest."
+                  }
+                ],
+                "prerequisite": "Pact of the Trigger feature"
+              },
+              {
+                "name": "Dead Eye",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "If you haven\u0027t moved this turn, you can take aim as a bonus action, reducing your speed to 0 and granting you advantage on all attacks you make using your hex gun until the end of your turn."
+                  }
+                ],
+                "prerequisite": "15th level, Pact of the Trigger feature (sniper form)"
+              },
+              {
+                "name": "Headshots",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Once per long rest, as a bonus action you can enhance your focus to see the weak spots of your foes. For the next minute attacks you make using your hex gun score a critical hit on a roll of 19 or 20 on the dice."
+                  }
+                ],
+                "prerequisite": "9th level, Pact of the Trigger feature (sniper form)"
+              },
+              {
+                "name": "Quickstep",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Your reflexes are honed. As a reaction, when an enemy makes a melee attack against you, before being hit, if your speed isn\u0027t 0, you can move 5ft away from the foe without triggering attacks of opportunity, potentially avoiding the attack if you leave its range. You can use this reaction a number of times equal to your Charisma modifier, and regain all expended uses after a long rest."
+                  }
+                ],
+                "prerequisite": "7th level, Pact of the Trigger feature"
+              },
+              {
+                "name": "Reckless Fire",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "Your shots are like a rain of lead. When you roll a 1 or 2 on a damage die for a cantrip you cast with your hexgun, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
+                  }
+                ],
+                "prerequisite": "Pact of the Trigger feature (revolver form)"
+              },
+              {
+                "name": "Repeating Cantrips",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When you fire a cantrip through your hex gun, its secondary effects (such as the speed reduction from ray of frost) can apply multiple times but not more than once per creature."
+                  }
+                ],
+                "prerequisite": "5th level, Pact of the Trigger feature"
+              },
+              {
+                "name": "Ricochet",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When you hit a creature with a cantrip cast with your hex gun, you can immediately cause the hit to wound a second creature within 15 feet of the original target. The second target takes damage (of the type of the cantrip) equal to your Charisma modifier (minimum of one). You can redirect a hit in this way a number of times equal to your Charisma modifier, and regain all expended uses after a short or long rest."
+                  }
+                ],
+                "prerequisite": "7th level, Pact of the Trigger feature"
+              },
+              {
+                "name": "Riposte",
+                "source": "Homebrew",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "text": "When an enemy attacks you with a melee attack, you can fire a special bullet to counter it as a reaction before being hit. Make a melee or ranged spell attack. On a hit, the enemy takes 1d10 piercing damage, its attack fails and it is stunned until the end of its current turn. Once you\u0027ve used this reaction successfully, you can\u0027t use it again until you complete a short or long rest."
+                  }
+                ],
+                "prerequisite": "7th level, Pact of the Trigger feature"
               }
             ]
           }

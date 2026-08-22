@@ -1,8 +1,162 @@
 @page "/background"
+@rendermode InteractiveServer
 
-<PageTitle>Background</PageTitle>
+@using Website_of_Everything.Models
+@using Website_of_Everything.Services
 
-<section class="page-panel">
-    <h1>Background</h1>
-    <p>This is the Background page. Add your Background content here.</p>
+@inject CompendiumJsonService CompendiumJsonService
+
+<PageTitle>Backgrounds - Royal Treasury</PageTitle>
+
+<section class="spell-browser background-browser">
+    <header class="spell-browser-header">
+        <div class="landing-kicker">Compendium</div>
+        <h1>Backgrounds</h1>
+        <p>Browse backgrounds and filter them by source.</p>
+    </header>
+
+    <SiteSearchBar
+        Id="background-search"
+        Value="@searchQuery"
+        ValueChanged="SearchChanged"
+        Placeholder="Search backgrounds..."
+        AriaLabel="Search backgrounds" />
+
+    <div class="spell-filter-selects background-source-filter">
+        <label class="spell-filter-field">
+            <span>Source</span>
+            <select @bind="selectedSource">
+                <option value="">All Sources</option>
+                @foreach (var source in SourceOptions)
+                {
+                    <option value="@source">@source</option>
+                }
+            </select>
+        </label>
+    </div>
+
+    <section class="spell-results">
+        @if (!string.IsNullOrWhiteSpace(loadError))
+        {
+            <div class="spell-empty-state">@loadError</div>
+        }
+        else if (!FilteredBackgrounds.Any())
+        {
+            <div class="spell-empty-state">
+                No backgrounds match the current search and source filter.
+            </div>
+        }
+        else
+        {
+            <div class="spell-results-heading">
+                <h2>Backgrounds</h2>
+                <span>
+                    @FilteredBackgrounds.Count()
+                    @(FilteredBackgrounds.Count() == 1 ? "background" : "backgrounds")
+                </span>
+            </div>
+
+            <div class="spell-table-wrap">
+                <table class="spell-table background-table">
+                    <thead>
+                        <tr>
+                            <th>Background Name</th>
+                            <th>Ability Scores</th>
+                            <th>Skill Proficiencies</th>
+                            <th>Tool Proficiencies</th>
+                            <th>Languages</th>
+                            <th>Feat</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var background in FilteredBackgrounds)
+                        {
+                            <tr class="spell-table-row">
+                                <td class="spell-name-cell">@background.Name</td>
+                                <td>@DisplayOrDash(background.AbilityScores)</td>
+                                <td>@DisplayOrDash(background.Skills)</td>
+                                <td>@DisplayOrDash(background.Tools)</td>
+                                <td>@DisplayOrDash(background.Languages)</td>
+                                <td>@DisplayOrDash(background.Feat)</td>
+                                <td>@DisplayOrDash(background.Source)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </section>
 </section>
+
+@code {
+    private IReadOnlyList<CompendiumListEntry> backgrounds =
+        Array.Empty<CompendiumListEntry>();
+
+    private string searchQuery = string.Empty;
+    private string selectedSource = string.Empty;
+    private string? loadError;
+
+    private IEnumerable<string> SourceOptions =>
+        backgrounds
+            .Select(background => background.Source)
+            .Where(value => !string.IsNullOrWhiteSpace(value))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderBy(value => value, StringComparer.OrdinalIgnoreCase);
+
+    private IEnumerable<CompendiumListEntry> FilteredBackgrounds
+    {
+        get
+        {
+            IEnumerable<CompendiumListEntry> result = backgrounds;
+
+            if (!string.IsNullOrWhiteSpace(searchQuery))
+            {
+                var search = searchQuery.Trim();
+                result = result.Where(background =>
+                    background.Name.Contains(search, StringComparison.OrdinalIgnoreCase)
+                    || background.Source.Contains(search, StringComparison.OrdinalIgnoreCase)
+                    || background.Skills.Contains(search, StringComparison.OrdinalIgnoreCase)
+                    || background.Feat.Contains(search, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (!string.IsNullOrWhiteSpace(selectedSource))
+            {
+                result = result.Where(background =>
+                    string.Equals(
+                        background.Source,
+                        selectedSource,
+                        StringComparison.OrdinalIgnoreCase));
+            }
+
+            return result.OrderBy(
+                background => background.Name,
+                StringComparer.OrdinalIgnoreCase);
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            backgrounds = await CompendiumJsonService.GetEntriesAsync("backgrounds");
+
+            if (backgrounds.Count == 0)
+            {
+                loadError = "No background JSON files were found in wwwroot/data/backgrounds/.";
+            }
+        }
+        catch (Exception ex)
+        {
+            loadError = $"The background files could not be loaded: {ex.Message}";
+        }
+    }
+
+    private void SearchChanged(string value)
+    {
+        searchQuery = value;
+    }
+
+    private static string DisplayOrDash(string value) =>
+        string.IsNullOrWhiteSpace(value) ? "—" : value;
+}

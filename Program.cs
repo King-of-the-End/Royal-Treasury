@@ -33,6 +33,7 @@ builder.Services.AddResponseCompression(
 // =========================================
 
 builder.Services.AddSingleton<SpellService>();
+builder.Services.AddSingleton<CompendiumJsonService>();
 builder.Services.AddScoped<MonsterService>();
 builder.Services.AddSingleton<GlossaryService>();
 

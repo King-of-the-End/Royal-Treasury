@@ -1,0 +1,13 @@
+.feats-browser .spell-filter-buttons {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feats-table {
+    min-width: 760px;
+}
+
+@media (max-width: 760px) {
+    .feats-browser .spell-filter-buttons {
+        grid-template-columns: 1fr;
+    }
+}

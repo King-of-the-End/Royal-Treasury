@@ -249,6 +249,7 @@ else if (classDocument is not null)
     private string? errorMessage;
     private string activeTab = "lore";
     private int activeMechanicsTabIndex = 0;
+    private string activeInvocationTab = "General";
 
     private string DisplayName
         => classDocument is not null && GetString(classDocument.RootElement, "name") is string name && !string.IsNullOrWhiteSpace(name)
@@ -863,20 +864,27 @@ else if (classDocument is not null)
                 }
             }
 
-            builder.OpenElement(seq++, "div");
-            builder.AddAttribute(seq++, "class", "class-option-feature-list");
-
-            // Collect every supported appendix-card shape first, then sort the
-            // complete set by its displayed name. This keeps Invocations,
-            // Infusions, Magecraft options, Birthrights, and future option-card
-            // appendices alphabetical regardless of their JSON order.
-            foreach (var option in EnumerateAppendixOptionCards(appendix)
-                .OrderBy(AppendixSortKey, StringComparer.OrdinalIgnoreCase))
+            if (string.Equals(title, "Eldritch Invocations", StringComparison.OrdinalIgnoreCase))
             {
-                builder.AddContent(seq++, RenderOptionCard(option));
+                builder.AddContent(seq++, RenderInvocationTabs(appendix));
             }
+            else
+            {
+                builder.OpenElement(seq++, "div");
+                builder.AddAttribute(seq++, "class", "class-option-feature-list");
 
-            builder.CloseElement();
+                // Collect every supported appendix-card shape first, then sort the
+                // complete set by its displayed name. This keeps Infusions,
+                // Magecraft options, Birthrights, and future option-card appendices
+                // alphabetical regardless of their JSON order.
+                foreach (var option in EnumerateAppendixOptionCards(appendix)
+                    .OrderBy(AppendixSortKey, StringComparer.OrdinalIgnoreCase))
+                {
+                    builder.AddContent(seq++, RenderOptionCard(option));
+                }
+
+                builder.CloseElement();
+            }
         }
         else
         {
@@ -897,6 +905,145 @@ else if (classDocument is not null)
 
         builder.CloseElement();
     };
+
+    private RenderFragment RenderInvocationTabs(JsonElement appendix) => builder =>
+    {
+        var seq = 0;
+        var pactBoons = GetPactBoonNames();
+        var options = EnumerateAppendixOptionCards(appendix)
+            .OrderBy(AppendixSortKey, StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        var validTabs = new List<string> { "General" };
+        validTabs.AddRange(pactBoons);
+
+        if (!validTabs.Any(tab => string.Equals(tab, activeInvocationTab, StringComparison.OrdinalIgnoreCase)))
+            activeInvocationTab = "General";
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-invocation-tabs");
+        builder.AddAttribute(seq++, "role", "tablist");
+        builder.AddAttribute(seq++, "aria-label", "Eldritch invocation groups");
+
+        foreach (var tab in validTabs)
+        {
+            var tabName = tab;
+            var isActive = string.Equals(activeInvocationTab, tabName, StringComparison.OrdinalIgnoreCase);
+
+            builder.OpenElement(seq++, "button");
+            builder.AddAttribute(seq++, "type", "button");
+            builder.AddAttribute(seq++, "role", "tab");
+            builder.AddAttribute(seq++, "aria-selected", isActive);
+            builder.AddAttribute(seq++, "class", $"class-invocation-tab-button{(isActive ? " active" : string.Empty)}");
+            builder.AddAttribute(seq++, "onclick", EventCallback.Factory.Create(this, () => activeInvocationTab = tabName));
+            builder.AddContent(seq++, InvocationTabLabel(tabName));
+            builder.CloseElement();
+        }
+
+        builder.CloseElement();
+
+        var visibleOptions = options
+            .Where(option => InvocationBelongsToTab(option, activeInvocationTab, pactBoons))
+            .ToList();
+
+        if (visibleOptions.Count == 0)
+        {
+            builder.OpenElement(seq++, "div");
+            builder.AddAttribute(seq++, "class", "class-invocation-empty");
+            builder.AddContent(seq++, "No eldritch invocations are currently listed for this Pact Boon.");
+            builder.CloseElement();
+            return;
+        }
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-option-feature-list class-invocation-list");
+
+        foreach (var option in visibleOptions)
+            builder.AddContent(seq++, RenderOptionCard(option));
+
+        builder.CloseElement();
+    };
+
+    private List<string> GetPactBoonNames()
+    {
+        var result = new List<string>();
+
+        if (classDocument is null)
+            return result;
+
+        var root = classDocument.RootElement;
+        var mechanics = GetProperty(root, "mechanics");
+
+        if (mechanics is not JsonElement mechanicsElement ||
+            GetProperty(mechanicsElement, "features") is not JsonElement features ||
+            features.ValueKind != JsonValueKind.Array)
+        {
+            return result;
+        }
+
+        foreach (var feature in features.EnumerateArray())
+        {
+            if (!string.Equals(GetString(feature, "name"), "Pact Boon", StringComparison.OrdinalIgnoreCase) ||
+                GetProperty(feature, "blocks") is not JsonElement blocks ||
+                blocks.ValueKind != JsonValueKind.Array)
+            {
+                continue;
+            }
+
+            foreach (var block in blocks.EnumerateArray())
+            {
+                if (!string.Equals(GetString(block, "type"), "options", StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                var options = GetProperty(block, "options") ?? GetProperty(block, "items");
+                if (options is not JsonElement optionArray || optionArray.ValueKind != JsonValueKind.Array)
+                    continue;
+
+                foreach (var option in optionArray.EnumerateArray())
+                {
+                    var name = GetString(option, "name") ?? GetString(option, "title");
+                    if (!string.IsNullOrWhiteSpace(name) && !result.Contains(name, StringComparer.OrdinalIgnoreCase))
+                        result.Add(name);
+                }
+            }
+        }
+
+        return result;
+    }
+
+    private static bool InvocationBelongsToTab(JsonElement option, string tab, IReadOnlyList<string> pactBoons)
+    {
+        var prerequisite = GetString(option, "prerequisite") ?? string.Empty;
+
+        if (string.Equals(tab, "General", StringComparison.OrdinalIgnoreCase))
+            return !pactBoons.Any(boon => PrerequisiteMentionsBoon(prerequisite, boon));
+
+        return PrerequisiteMentionsBoon(prerequisite, tab);
+    }
+
+    private static bool PrerequisiteMentionsBoon(string prerequisite, string boon)
+    {
+        if (string.IsNullOrWhiteSpace(prerequisite) || string.IsNullOrWhiteSpace(boon))
+            return false;
+
+        var normalizedBoon = boon;
+        var parenthesisIndex = normalizedBoon.IndexOf(" (", StringComparison.Ordinal);
+        if (parenthesisIndex >= 0)
+            normalizedBoon = normalizedBoon[..parenthesisIndex];
+
+        return prerequisite.Contains(normalizedBoon, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static string InvocationTabLabel(string tab)
+    {
+        if (string.Equals(tab, "General", StringComparison.OrdinalIgnoreCase))
+            return "General";
+
+        const string prefix = "Pact of the ";
+        return tab.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)
+            ? tab[prefix.Length..]
+            : tab;
+    }
 
     private static string AppendixSortKey(JsonElement element)
         => GetString(element, "name")
@@ -1573,7 +1720,7 @@ private RenderFragment RenderBlock(JsonElement block) => builder =>
             seq++,
             RenderDynamicTable(
                 block,
-                "class-table"));
+                "class-table class-inline-table"));
 
         return;
     }

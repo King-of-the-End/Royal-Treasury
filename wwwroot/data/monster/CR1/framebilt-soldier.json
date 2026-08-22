@@ -1,0 +1,126 @@
+{
+  "Name": "Soldier",
+  "Group": "Framebilt",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The base Framebilt soldiers are about as dangerous as a Lockmind. They rely on their enhanced fists and arm-mounted bolt launchers to fight. In swarms, they can prove to be a daunting force to overcome.",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Framebilt%20Soldier.jpg"
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Framebilt%20Soldier.jpg",
+  "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Framebilt%20Soldier.jpg",
+  "Stat Blocks": [
+    {
+      "id": "soldier",
+      "section_type": "Stat Block",
+      "title": "Soldier",
+      "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Framebilt%20Soldier.jpg",
+      "image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Framebilt%20Soldier.jpg",
+      "Images": [
+        "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Framebilt%20Soldier.jpg"
+      ],
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (framebilt)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "14 (integrated armor)",
+      "hit_points": "26 (4d8 + 8)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Pack tactics"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Athletics +5"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 10 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Common",
+        "one other language"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Constructed Body",
+          "name_format": "bold_italic",
+          "description": "The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The framebilt makes two weapons attacks."
+        },
+        {
+          "name": "Reinforced Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 3) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bolt Launcher",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +3 to hit, range 20/60 ft., one target. Hit: 6 (1d8 + 1) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold"
+        }
+      },
+      "raw_text": "**SOLDIER**\n*Medium humanoid (framebilt), any alignment*\n**AC** 14 (integrated armor)\n**HP** 26 (4d8 + 8)\n**Speed** 30 ft.\n**STR** 17 (+3) | **DEX** 12 (+1) | **CON** 14 (+2) | **INT** 14 (+2) | **WIS** 12 (+1) | **CHA** 7 (-2)\n**Skills** Athletics +5\n**Resistances** poison\n**Condition Immunities** exhaustion, unconscious\n**Senses** blindsight 10 ft., passive Perception 11\n**Languages** Common, one other language\n**CR** 1 (200 XP) **Proficiency Bonus** +2\n\n**QUALITY TRAITS**\n*Pack tactics*\n\n**TRAITS**\n***Constructed Body.*** The framebilt is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws against being poisoned.\n\n**ACTIONS**\n***Multiattack.*** The framebilt makes two weapons attacks.\n\n***Reinforced Strike.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 9 (1d10 + 3) bludgeoning damage.\n\n***Bolt Launcher.*** *Ranged Weapon Attack:* +3 to hit, range 20/60 ft., one target. *Hit:* 6 (1d8 + 1) piercing damage."
+    }
+  ]
+}
