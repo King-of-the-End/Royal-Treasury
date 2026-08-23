@@ -1,0 +1,212 @@
+{
+  "Name": "Hatsume Tsubone",
+  "Group": [
+    "Saint Spirits",
+    "Spirit"
+  ],
+  "Groups": [
+    "Saint Spirits",
+    "Spirit"
+  ],
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Hatsume Tsubone**\n\nHatsume Tsubone was once the leader of a clan of swordswomen in the distant country of Honokuni, known as the Crimson Butterflies. She was a dignified and resolute warrior, but found herself sheltering a would-be despot, Hirohito-no-Minamoto, and the fleeing prince of Honokuni, Semrai Saigo. She offered them shelter and care, but did not intend to become involved in a political struggle the two were involved in (the attempted murder of the prince by his family, and his rescue by Hirohito). Unfortunately, the Crimson Butterflies who followed after Hatsume would be swayed by Hirohito\u2019s claim that the Saigo clan should be laid low for its transgressions against the young prince, and against their leader\u2019s orders the clan followed him to war. They would serve beside Hirohito as he took the throne for Semrai, and plunged their country into bloodshed... and near the end, one conflict saw the Crimson Butterflies wiped out.\n\n**Honokuni\u2019s Fall**\n\nHonokuni would become a cursed land pulled from time and space, stuck in a cycle of violence that Hirohito and Semrai would be at the center of. Hatsume, alone and unable to die from age, stayed in her clan\u2019s mountain stronghold, nurturing the guilt she felt in being unable to stop her followers from marching to their deaths, and knowing that their spirits were now trapped as Hirohito\u2019s servants. She would remain there, alone, until a group of adventurers trapped in the cursed country eventually came to find her, and aimed to break the cycle of violence there. These adventurers, the Highest Standard, would wake her from her doldrum, and in the final hours of their struggle against Hirohito Hatsume would join the fray, sacrificing her life at least to battle the ghostly remnants of the Crimson Butterflies, and finally earn her peace.\n\n**Spiritual Freedom**\n\nHonokuni was overtaken by the sea, but the curse ending for it allowed Hatsume\u2019s spirit to find its own path. She would not pass on to the next life, and instead remains bound in solitude to the home of the Crimson Butterflies, which sits just high enough on its mountain peak to avoid the waters that claimed the country. She remains there, a spirit saint, projecting herself where she must to free the remaining lost souls of the Crimson Butterflies in the Material Plane, as well as passing their teachings on to those wise enough to listen to the winds upon the mountain she haunts.",
+  "Information Sections": [
+    {
+      "Title": "Hatsume Tsubone",
+      "Text": "Hatsume Tsubone was once the leader of a clan of swordswomen in the distant country of Honokuni, known as the Crimson Butterflies. She was a dignified and resolute warrior, but found herself sheltering a would-be despot, Hirohito-no-Minamoto, and the fleeing prince of Honokuni, Semrai Saigo. She offered them shelter and care, but did not intend to become involved in a political struggle the two were involved in (the attempted murder of the prince by his family, and his rescue by Hirohito). Unfortunately, the Crimson Butterflies who followed after Hatsume would be swayed by Hirohito\u2019s claim that the Saigo clan should be laid low for its transgressions against the young prince, and against their leader\u2019s orders the clan followed him to war. They would serve beside Hirohito as he took the throne for Semrai, and plunged their country into bloodshed... and near the end, one conflict saw the Crimson Butterflies wiped out."
+    },
+    {
+      "Title": "Honokuni\u2019s Fall",
+      "Text": "Honokuni would become a cursed land pulled from time and space, stuck in a cycle of violence that Hirohito and Semrai would be at the center of. Hatsume, alone and unable to die from age, stayed in her clan\u2019s mountain stronghold, nurturing the guilt she felt in being unable to stop her followers from marching to their deaths, and knowing that their spirits were now trapped as Hirohito\u2019s servants. She would remain there, alone, until a group of adventurers trapped in the cursed country eventually came to find her, and aimed to break the cycle of violence there. These adventurers, the Highest Standard, would wake her from her doldrum, and in the final hours of their struggle against Hirohito Hatsume would join the fray, sacrificing her life at least to battle the ghostly remnants of the Crimson Butterflies, and finally earn her peace."
+    },
+    {
+      "Title": "Spiritual Freedom",
+      "Text": "Honokuni was overtaken by the sea, but the curse ending for it allowed Hatsume\u2019s spirit to find its own path. She would not pass on to the next life, and instead remains bound in solitude to the home of the Crimson Butterflies, which sits just high enough on its mountain peak to avoid the waters that claimed the country. She remains there, a spirit saint, projecting herself where she must to free the remaining lost souls of the Crimson Butterflies in the Material Plane, as well as passing their teachings on to those wise enough to listen to the winds upon the mountain she haunts."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Saint%20Spirit%2C%20Hatsume%20Tsubone_Ref.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Saint%20Spirit%2C%20Hatsume%20Tsubone_Ref.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Saint%20Spirit%2C%20Hatsume%20Tsubone_Ref.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "hatsume_tsubone",
+      "section_type": "Stat Block",
+      "title": "Hatsume Tsubone",
+      "creature": {
+        "size": "Medium",
+        "type": "spirit (elf)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "18 (studded leather)",
+      "hit_points": "135 (18d8 \u002B 54)",
+      "speed": {
+        "walk": "30 ft.",
+        "teleport": "30 ft.",
+        "fly": "60 ft. (hover)"
+      },
+      "quality_traits": [
+        "Anchored",
+        "ethereal",
+        "magical",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B6"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B10"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B9"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B6",
+        "Dex \u002B10",
+        "Wis \u002B9"
+      ],
+      "skills": [
+        "Athletics \u002B6",
+        "Perception \u002B9",
+        "Stealth \u002B10"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [
+        {
+          "name": "Darkspring",
+          "name_format": "bold_italic",
+          "description": "The first time the spirit hits each of its targets with a weapon attack each turn, they must succeed a DC 18 Constitution saving throw or be blinded until the start of her next turn."
+        },
+        {
+          "name": "Spirit Surge (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The spirit takes a second action on its turn. The second action may be used to perform the Fallen Rank Barrage action, even if it is expended."
+        },
+        {
+          "name": "Unwavering Spirit",
+          "name_format": "bold_italic",
+          "description": "If the spirit is reduced to 0 hit points, the creature who defeated it must roll a d100. On a result equal to or less than twice the damage dealt to the saint that exceeded its hit points, it is successfully reduced to 0 hit points. Otherwise, it is reduced to 1 hit point instead."
+        },
+        {
+          "name": "Wise Weapons",
+          "name_format": "bold_italic",
+          "description": "The spirit can use Wisdom in place of Strength or Dexterity for its weapon attacks and damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The spirit makes three weapons attacks."
+        },
+        {
+          "name": "Butterfly Glaive, \u002B2",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 10 ft., one target. Hit: 13 (1d10 \u002B 7) slashing damage plus 6 (1d10) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Spirit Bow, \u002B2",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B11 to hit, range 150/600 ft., one target. Hit: 13 (1d10 \u002B 7) piercing damage plus 6 (1d10) necrotic damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Fallen Rank Barrage (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The spirit summons the ranks of the fallen Crimson Butterflies, who briefly appear and unleash a flurry of arrows centered on a point the spirit can see within 600 feet. Each creature within 30 feet of that point must make a DC 17 Dexterity saving throw, taking 46 (8d10 \u002B 10) piercing damage on a failure. The spirit herself is immune to damage from this action."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Ghostly Movement (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The spirit produces the effects of greater invisibility, targeting only herself, requiring no spell slot or components. This effect cannot attempt to recharge while she is still under its effects."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The spirit makes one Butterfly Glaive or Spirit Bow attack against a target within range."
+          },
+          {
+            "name": "Ghost Step (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The spirit teleports up to 60 feet to an unoccupied space they can see, then makes one attack with advantage."
+          },
+          {
+            "name": "Spirit Cover (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Spirits of other Crimson Butterflies appear to defend Hatsume, granting her three-quarters cover until the start of her next turn."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}
