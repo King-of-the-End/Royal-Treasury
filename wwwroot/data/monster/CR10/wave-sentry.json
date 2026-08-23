@@ -1,0 +1,143 @@
+{
+  "Name": "Wave Sentry",
+  "Group": "Wave-Sec",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Wave sentries are programmed to respond to the commands of Wave-Sec officers who can produce either specialized command words that activate and subdue specific units, or identification that designates them as a sentry commander. They are used as the protectors of high-ranking members of the government as well as to protect the various Wards of High-Wave. They are often seen patrolling with an assigned Wave-Sec officer.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Wave%20Sentry.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Wave%20Sentry.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference%20-%20Wave%20Sentry.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "wave_sentry",
+      "section_type": "Stat Block",
+      "title": "Wave Sentry",
+      "creature": {
+        "size": "Large",
+        "type": "construct",
+        "alignment": ""
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "168 (16d10 + 80)",
+      "threshold": "8",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 1,
+          "modifier": "-5"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Athletics +9",
+        "Perception +10"
+      ],
+      "resistances": [
+        "B/P/S (adamantine)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison",
+        "B/P/S (adamantine or magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "understands Common and the languages of its creator, but doesn’t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Headlights",
+          "name_format": "bold_italic",
+          "description": "The construct shines bright light in either a 30-foot-cone or a 60-foot-long, 10-feet-wide line originating from its head, which shines in the direction it is looking. It can activate or deactivate this light freely on its turn as long as it isn’t incapacitated."
+        },
+        {
+          "name": "Steady Chase (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "If the construct has used all of its movement speed on its turn but one or more hostile creature(s) remains within 30 feet of it, it can move an additional 10 feet toward the nearest of those creatures."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct makes two Hydraulic Slam attacks."
+        },
+        {
+          "name": "Hydraulic Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 feet, one target. Hit: 22 (3d10 + 5) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Composite Net Launcher (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Each Large or smaller creature in a 5-foot-radius centered on a point the construct targets within 30 feet of it must succeed a DC 15 Dexterity saving throw or be restrained by a net covering the area, the corners of which are driven into the ground by metal stakes. A creature restrained this way (or another adjacent to them) can use their action to make a DC 17 Strength check to remove the net, ending the effect on themself and others it’s binding on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Grid Boost",
+          "name_format": "bold_italic",
+          "description": "The sentry takes the Dash action. At the start of this Dash, it can leap to a space within the extra movement speed it gains from the Dash action, jumping over enemies that are 10 feet tall or smaller, ending its movement in an unoccupied space it can see within range."
+        },
+        {
+          "name": "Electrify Net",
+          "name_format": "bold_italic",
+          "description": "Each creature that is currently being restrained by the construct’s Composite Net Launcher must succeed a DC 17 Constitution saving throw, taking 11 (2d10) lightning damage on a failed save, or half as much damage on a successful one."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

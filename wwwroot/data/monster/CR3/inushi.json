@@ -1,0 +1,122 @@
+{
+  "Name": "Inushi",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Inushi, wolf yokai, manifest in response to the desires of those who prey upon others. The thrill of the hunt a serial killer experiences, or the misery of those preyed upon by a miser they owe their livelihood to may cause wolf yokai to appear. Once they appear they go about hunting wildlife and mortals who stray too far from their communities. They are drawn to those who are victimized already and are known to eat their way up the food chain until they eventually reach the source of the misery and subjugation that birthed them. When they finally consume the predator who brought them into being they move on, searching for more victims.\n\n***Control Over Wolves.*** Inushi can exert supernatural control over regular wolves, causing them to recognize them as their pack leader. Inushi often incorporate regular wolves into their packs to help them hunt, letting them feed on meat that is not soaked in misery and contempt.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Inushi.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Inushi.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Inushi.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "inushi",
+      "section_type": "Stat Block",
+      "title": "Inushi",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "14 (natural armor)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "30 ft. (hover)"
+      },
+      "quality_traits": [
+        "Keen senses (hearing & smell)",
+        "magic resist",
+        "pack tactics",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 11,
+          "modifier": "-",
+          "save": "+2"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Wis +2"
+      ],
+      "skills": [
+        "Perception +2",
+        "Survival +2"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "exhaustion"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "understands Sylvan and Elvish but doesn’t speak"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes two attacks: once each with its Bite and Claws. It can then use its Weary Eye if it is available."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claws",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 2) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Weary Eye (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "One creature the yokai can see within 30 feet of them is overcome with resentment and emotional weight. The target must make a DC 13 Charisma saving throw. On a failed save they are so overcome with negativity they cannot bring themselves to fight properly and becomes sluggish until the end of the yokai’s next turn."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

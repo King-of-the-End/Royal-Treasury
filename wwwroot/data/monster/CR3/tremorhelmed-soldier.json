@@ -1,0 +1,140 @@
+{
+  "Name": "Tremorhelmed Soldier",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The guardians of Greyrock’s City of Steel are the Tremorhelms: soldiers who domesticated shellsharks and ride them around the subterranean Great Hollow to enforce the laws set by the House of Thanes. They are stern, efficient soldiers who have a rigid sense of duty and purpose. Apart from those who are hired as soldiers by the House of Thanes, many tremorhelms also form mercenary groups and work as private military factions, though these soldiers often find it harder to care for the shellshark mounts without the country’s aid to feed and train them.\n\nThere is typically a different legion of Tremorhelm soldiers working in each sector of the City of Steel, who are primarily responsible for its care. They act largely autonomously, though they report back to the city’s defense council and their general, the Master of Earthen Arms.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference%20-%20Tremorhelm%20Soldier.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference%20-%20Tremorhelm%20Soldier.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference%20-%20Tremorhelm%20Soldier.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "tremorhelmed-soldier",
+      "section_type": "Stat Block",
+      "title": "Tremorhelmed Soldier",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (usually dwarf)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "15 (breastplate)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        ""
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Animal Handling +5",
+        "Athletics +5",
+        "Riding +5",
+        "Perception +5"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Common",
+        "Dwarvish"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Earthen Armor",
+          "name_format": "bold_italic",
+          "description": "While mounted on a shellshark, the soldier is protected by a special harness that gives them two-thirds cover."
+        },
+        {
+          "name": "Mounted Expert",
+          "name_format": "bold_italic",
+          "description": "While the soldier is mounted on a shellshark, their own weapon attacks and saving throws have advantage."
+        },
+        {
+          "name": "Riding Reach",
+          "name_format": "bold_italic",
+          "description": "The soldier is treated as being in any space that their mount occupies as is convenient for them. Any time they take an action or movement, they can treat themselves as being in any applicable space they choose."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The soldier makes two weapon attacks."
+        },
+        {
+          "name": "Warhammer",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 3) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Spear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target or Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 8 (1d8 + 3) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Shellshark Command",
+          "name_format": "bold_italic",
+          "description": "The soldier commands their shellshark to move up to half their movement speed and make a Bite attack against a creature within range, which the shellshark can choose to do using their reaction."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Mounted Defense",
+          "name_format": "bold_italic",
+          "description": "When the soldier or their mount are targeted by an attack or effect the soldier can see, the soldier can choose which of the two becomes the actual target."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "Name": "Rott Ghoul",
+  "Group": "Rott’s Influence",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "These ghouls are the drained bodies of the individuals that Rott’s servants have devoured. While connected to whatever harbors their soul, they can act, speak, and convincingly perform as the individual they were before they died, though they act as servants of Rott. In rare cases creatures may retain more than a few of their abilities, weapons, and tactics from life while transformed. The bodies of these ghouls are riddled with vegetation, tree bark, and vines that replace their muscles and organs.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Rott%20Ghoul.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Rott%20Ghoul.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Reference_BG%20-%20Rott%20Ghoul.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "rott_ghoul",
+      "section_type": "Stat Block",
+      "title": "Rott Ghoul",
+      "creature": {
+        "size": "Medium",
+        "type": "plant",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "14 (natural armor)",
+      "hit_points": "28 (5d8 + 5)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+4"
+        }
+      },
+      "saving_throws": [
+        "Cha +4"
+      ],
+      "skills": [
+        "Athletics +3",
+        "Deception +4"
+      ],
+      "resistances": [],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "speaks the languages it spoke in life"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Feral Regression",
+          "name_format": "bold_italic",
+          "description": "While its soul is held within another servant of Rott (such as a Seed of Rott or Tree of Loathsome Nightmares), the ghoul retains its ability to think and act like its former self. If that soul is released, the ghoul is no longer under Rott’s control, and over the next 24 hours the plant elements of its body will dissolve or fall away, leaving it as a regular ghoul instead."
+        },
+        {
+          "name": "Illusory Appearance",
+          "name_format": "bold_italic",
+          "description": "If this ghoul is being controlled by a Tree of Loathsome Nightmares, it benefits from its illusory effects, and can act and appear the same way as when it was alive. It can access its original memories, has the same habits, speech patterns, etc., but acts in accordance with the tree’s will. A DC 18 Intelligence (Investigation) check or DC 18 Wisdom (Insight) check is needed to discern that something about the ghoul is off."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 8 (2d6 + 2) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claws",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) slashing damage plus 4 (1d6) poison damage. If the target creature is not undead, they must succeed a DC 10 Constitution saving throw or be poisoned for 1 minute, during which time they take 1d6 poison damage at the start of each of their turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Servant of Rott",
+          "name_format": "bold_italic",
+          "description": "In reaction to being reduced to 0 hit points while within 120 feet of a Tree of Loathsome Nightmares or an Avatar of Rott, the ghoul takes one of the following actions before dying:\n\n• It makes a claw attack with advantage against a creature within reach, with a DC 15 Constitution saving throw instead of DC 10.\n• It explodes in a sickening mist, forcing all non-undead creatures within 10 feet of it to make a DC 12 Constitution saving throw, taking 10 (1d10 + 4) poison damage on a failed save.\n• The ghoul makes a grapple check with advantage against one creature within reach. If successful, it latches onto them and that creature is restrained until they use their action to attempt a DC 12 Strength check, pushing the dead/dying ghoul off and ending the effect on a success."
+        }
+      ]
+    }
+  ]
+}

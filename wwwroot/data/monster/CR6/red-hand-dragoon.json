@@ -1,0 +1,140 @@
+{
+  "Name": "Red Hand Dragoon",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Warriors who fight on behalf of Harros, but do not restrict themselves to the dogma of a religion or bind themselves to any particular order. The Red Hand Dragoons work in conjunction with the Red Hand clergy, but when their perspectives split on critical matters they have been known to act autonomously. Their numbers aren’t vast, consisting of a fairly small military force, but their individual training and expertise makes them valiant fighters. The Dragoons are known to have an ancient pact to serve beside the Red Lion Knights in times of dire straits, though neither have had to fulfill their obligations to this pact in many generations.\n\nThough they aren’t distinctly religious, the Dragoons do act in Harros’ name, and they have their own traditions and rituals that they use to pay respect to their patron deity. These rituals are often closer to those performed by gladiators and secret societies, however, which the Red Hand Dragoons are better compared to.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference_BG%20-%20Red%20Hand%20Dragoon.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference_BG%20-%20Red%20Hand%20Dragoon.jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Red%20Hand%20Dragoon.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Reference",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Reference_BG%20-%20Red%20Hand%20Dragoon.jpg"
+    },
+    {
+      "Label": "Isolated",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Red%20Hand%20Dragoon.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "red_hand_dragoon",
+      "section_type": "Stat Block",
+      "title": "Red Hand Dragoon",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "lawful good"
+      },
+      "armor_class": "16 (half plate)",
+      "hit_points": "105 (14d8 + 42)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Evasion"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Athletics +10",
+        "Intimidation +5",
+        "Survival +5"
+      ],
+      "resistances": [
+        "bludgeoning damage caused by falling"
+      ],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 10 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Common",
+        "Orcish"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Sanctified Weapons",
+          "name_format": "bold_italic",
+          "description": "The dragoon’s weapon attacks deal an additional 1d10 radiant damage (already accounted for in this stat block)."
+        },
+        {
+          "name": "Sentinel",
+          "name_format": "bold_italic",
+          "description": "When the dragoon hits a creature with an opportunity attack, their movement speed is reduced to 0 until the remainder of the turn. Creatures provoke opportunity attacks from the dragoon even if they take the Disengage action before leaving their reach."
+        },
+        {
+          "name": "Undying Vigor",
+          "name_format": "bold_italic",
+          "description": "When the dragoon is reduced to 0 hit points or killed outright, roll 1d100. On a result of 41 or higher they are instead reduced to half the hit points they had before taking damage/being killed. Each time this effect is used before the Dragoon completes a Short or Long Rest, the d100 roll result suffers a cumulative -5 penalty."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragoon makes three Alloyed Halberd attacks."
+        },
+        {
+          "name": "Alloyed Halberd",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 4) slashing damage plus 6 (1d10) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cataclysmic Meteor",
+          "name_format": "bold_italic",
+          "description": "The dragoon invokes the effects of the falling meteor spell, requiring no spell slot. When cast this way the dragoon takes no falling damage for the first 50 feet they fall, but for the purposes of the spell a d6 is rolled and added to the force damage for each 10 feet they fall in that range. The dragoon automatically succeeds the saving throw for the spell, the DC of which is 18."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Valiant Leap (3/Rest)",
+          "name_format": "bold_italic",
+          "description": "The dragoon leaps through the air to an unoccupied space they can see within 50 feet, leaping above the heads of other creatures to reach that space if necessary. This movement does not provoke opportunity attacks. Any movement the dragoon has taken on this turn is subtracted from the 50 foot range of this action."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Counterattack",
+          "name_format": "bold_italic",
+          "description": "When a creature within the dragoon’s reach makes a weapon attack against another creature, the dragoon can make an attack against them with advantage. This attack resolves after that creature’s attack does. If the creature hits their target, the dragoon rolls a d6 and adds it to the result of this reaction’s attack roll and its resulting damage roll."
+        }
+      ]
+    }
+  ]
+}

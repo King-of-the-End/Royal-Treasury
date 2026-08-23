@@ -602,6 +602,22 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // STATION SECTIONS
+    //
+    // Outer monster documents can provide
+    // structured vehicle / construct stations
+    // through "Additional Sections".
+    // MonsterService copies Station sections
+    // onto each stat-block variant so they can
+    // render directly beneath the stat block.
+    // =====================================
+
+    [JsonPropertyName("station_sections")]
+    public List<MonsterStationSection> StationSections { get; set; } =
+        new();
+
+
+    // =====================================
     // RAW TEXT
     // =====================================
 
@@ -1803,6 +1819,87 @@ public sealed class
 
         return false;
     }
+}
+
+
+// =========================================
+// MONSTER STATION SECTION
+//
+// Used by vehicle/construct station data in:
+//
+// "Additional Sections": [
+//   {
+//     "section_type": "Stations",
+//     ...
+//   }
+// ]
+// =========================================
+
+public sealed class MonsterStationSection
+{
+    [JsonPropertyName("title")]
+    public string Title { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("section_type")]
+    public string SectionType { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("intro")]
+    public string Intro { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("entries")]
+    public List<MonsterStationEntry> Entries { get; set; } =
+        new();
+}
+
+
+public sealed class MonsterStationEntry
+{
+    [JsonPropertyName("name")]
+    public string Name { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("unit_limit")]
+    public string UnitLimit { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("space_available")]
+    public string SpaceAvailable { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("description")]
+    public string Description { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("cover")]
+    public string Cover { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("actions")]
+    public List<MonsterStationAction> Actions { get; set; } =
+        new();
+
+    [JsonPropertyName("bonus_actions")]
+    public List<MonsterStationAction> BonusActions { get; set; } =
+        new();
+
+    [JsonPropertyName("reactions")]
+    public List<MonsterStationAction> Reactions { get; set; } =
+        new();
+}
+
+
+public sealed class MonsterStationAction
+{
+    [JsonPropertyName("name")]
+    public string Name { get; set; } =
+        string.Empty;
+
+    [JsonPropertyName("description")]
+    public string Description { get; set; } =
+        string.Empty;
 }
 
 

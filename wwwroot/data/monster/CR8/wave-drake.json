@@ -1,0 +1,166 @@
+{
+  "Name": "Wave-Drake",
+  "Group": "Wave-Sec",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Wave-Drakes are large mountable machines that have bodies resembling drakes, but feature huge fanned tails with massive pointed stingers, and large flat wings that can encase the unit to create a shield. Both the tail and wings have spiked sections that can lay flat or protrude like a porcupine for self-defense. Their eye is a singular searchlight used by their pilots, mounted magnetically upon their backs, to search the streets from above. They often patrol the skies above the Rising Peak, climbing and leaping from their walls, but will take to the streets to hunt down lawbreakers. These vehicles of homeland security are the most iconic symbol of Wave-Sec.",
+  "Information Sections": [
+    {
+      "Title": "Wave-Drake",
+      "Text": "Wave-Drakes are large mountable machines that have bodies resembling drakes, but feature huge fanned tails with massive pointed stingers, and large flat wings that can encase the unit to create a shield. Both the tail and wings have spiked sections that can lay flat or protrude like a porcupine for self-defense. Their eye is a singular searchlight used by their pilots, mounted magnetically upon their backs, to search the streets from above. They often patrol the skies above the Rising Peak, climbing and leaping from their walls, but will take to the streets to hunt down lawbreakers. These vehicles of homeland security are the most iconic symbol of Wave-Sec."
+    },
+    {
+      "Title": "",
+      "Text": "“I’m glad the framebilt I’ve met have all been good people. If creatures like the wave-drakes were used for more than policing their own settlements, the rest of Retia would have a serious problem.”",
+      "IsQuote": true
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20Wave%20Drake.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20Wave%20Drake.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20Wave%20Drake.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "wave_drake",
+      "section_type": "Stat Block",
+      "title": "Wave-Drake",
+      "creature": {
+        "size": "Large",
+        "type": "construct",
+        "alignment": ""
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "136 (16d10 + 48)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "magic resist",
+        "vehicle (auto)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [
+        "Dex +6"
+      ],
+      "skills": [
+        "Investigation +1",
+        "Perception +5",
+        "Stealth +6"
+      ],
+      "resistances": [
+        "lightning",
+        "B/P/S (adamantine or magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "understands Common and the languages of its creator, but doesn’t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Magnetic Operator",
+          "name_format": "bold_italic",
+          "description": "A magnetic clamp equipped to the construct prevents its pilot from being knocked from it or pulled off of it, even if incapacitated, reduced to 0 movement, or shoved. The pilot can only be removed if they allow it or if the construct ejects them, forcing them into an unoccupied space adjacent to it."
+        },
+        {
+          "name": "Searchlight",
+          "name_format": "bold_italic",
+          "description": "The construct can generate a 60-foot-cone of bright light from its eye, which moves with its field of vision. It can turn this light on or off at will on its turn. It can also focus this cone into a 120-foot-long, 10-foot-wide beam of bright light until the end of its turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct attacks twice with its Claw and once with its Tail. Alternatively, it makes two Arclight Bolt attacks."
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage plus 6 (1d10) lightning damage or 22 (4d8) + 4 piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Arclight Bolt",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +6 to hit, range 40/120 ft., one target. Hit: 17 (3d10) lightning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Interior Control (Pilot Only)",
+          "name_format": "bold_italic",
+          "description": "The pilot either enters an armored chamber inside the construct or exits it. They can remain there, granted total cover and being completely obscured to those from the outside, until they use this action again to exit. While inside they can see through the construct’s senses, are immune to effects originating from outside (even ones that can fit through small gaps, such as fireball), and the air inside is filtered to remove harmful substances from outside. If the construct is reduced to 0 hit points, it opens this chamber to allow the pilot to exit as a safety feature."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

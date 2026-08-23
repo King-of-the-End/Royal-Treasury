@@ -1,0 +1,175 @@
+{
+  "Name": "Tree of Loathsome Nightmares",
+  "Group": "Rott’s Influence",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The beginning of Rott’s infestations. The Tree is a life-devouring monstrosity that disguises itself as a tree, and as it grows it works its root system through all surrounding plants, spreading through a community rapidly. It speaks to others in their dreams and through illusions, as well as disturbing the sleep of creatures within its rapidly growing root system. As creatures become exhausted by the lack of sleep, it influences them to see the Tree as a place of sanctuary, and when able to, will use its roots to pull unsuspecting prey underground to be drained and absorbed by it. Once consumed, it stores their soul as fruit upon its branches, and produces a ghoul that can be disguised with illusions to act as its original self, using the trapped soul to have the ghoul assume its former life as if nothing happened. Once an entire community is consumed it uses it to lure in outsiders until, eventually, the tree has enough souls to produce a Seed of Rott.\n\n***Designated Aid.*** A Tree of Loathsome Nightmares aims to create a Seed of Rott, which acts as an avatar for Rott himself. To this end, as it consumes souls it bargains and interrogates them, hoping to find one that would be willing to act as its agent. It will grant that creature control of its zombified ghoulish body, letting it command its undead kin and lure others to their demise under the promise of becoming Rott’s avatar and gaining eternal life. Though the Ghouls it creates are capable of perfectly emulating their original selves, the self-awareness of a designated puppet helps the tree keep a more natural hold on its infested community.\n\n***Undead Vegetation.*** Plant creatures are capable of sensing the disturbance a Tree of Loathsome Nightmares creates in their environment, as do fey and animals that inhabit that environment. The Tree’s tricks work best on humanoids. Druids or those capable of primal spellcasting have advantage on any checks made to identify the disturbances caused by such a tree.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20Tree%20of%20Loathesome%20Nightmares.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20Tree%20of%20Loathesome%20Nightmares.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Reference%20-%20Tree%20of%20Loathesome%20Nightmares.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "tree_of_loathsome_nightmares",
+      "section_type": "Stat Block",
+      "title": "Tree of Loathsome Nightmares",
+      "creature": {
+        "size": "Huge",
+        "type": "plant",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "14 (natural armor)",
+      "hit_points": "125 (10d12 + 60)",
+      "speed": {
+        "walk": "5 ft."
+      },
+      "quality_traits": [
+        "Regen 10 (radiant, fire)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "+6",
+          "save": "+9"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2",
+          "save": "+1"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Con +9",
+        "Int +1",
+        "Wis +4"
+      ],
+      "skills": [],
+      "resistances": [
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [
+        "fire"
+      ],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "frightened",
+        "paralyzed",
+        "stunned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "tremorsense 240 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "understands the languages that creatures in its root system spoke when alive, but doesn’t speak"
+      ],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Illusory Appearance",
+          "name_format": "bold_italic",
+          "description": "The tree is surrounded by an illusory shimmer that makes it appear like a strong, healthy, ordinary tree of its choice. It gives off a pleasant aroma. A DC 18 Intelligence (Investigation) check can discern this is an illusion if closely inspected, and if dealt damage it acts as if concentrating on this illusion like a spell. If targeted with dispel magic or a similar spell, it loses this feature for 1d4 hours and its appearance is revealed."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The tree’s spellcasting ability is Constitution. It can cast the following spells, requiring no components:",
+          "spellcasting": {
+            "spellcasting_ability": "Constitution",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "fog cloud",
+                  "hex",
+                  "minor illusion"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "dream",
+                  "hallucinatory terrain",
+                  "hold person",
+                  "major illusion"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "spells": [
+                  "entrap",
+                  "hold attacker"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The tree makes two Root Slam attacks, as well as one additional Root Slam for each tentacle it has created."
+        },
+        {
+          "name": "Root Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 10 feet from the root, one target. Hit: 10 (1d10 + 4) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cries of the Ingested",
+          "name_format": "bold_italic",
+          "description": "The spirits consumed by the tree cry out, causing all non-undead creatures within 60 feet of the tree that can see or hear it to make a DC 15 Charisma saving throw. Any creature that fails is frightened for 1 minute, and can reattempt the saving throw at the end of each of their turns, ending the effect on a success. A creature that succeeds either save is immune to this tree’s Cries of the Ingested for 24 hours. Creatures that fail by 5 points or more also take 14 (3d8) psychic damage."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Create Roots (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The tree creates 1d4 root tentacles, each of which springs from the ground within 50 feet of it (or anywhere within its root system). Each root has 10 hit points and the same AC, saving throws, ability scores, vulnerabilities, resistances, immunities, and senses as the tree itself. If there is no earth, dirt, or other material that the root can move through for it to appear from, it instead appears in a space adjacent to the tree. The roots take the space of a Medium creature. The tree can only have up to 8 root tentacles at a time. Each time a root dies, the tree takes 6 (1d10) damage."
+        },
+        {
+          "name": "Move Roots",
+          "name_format": "bold_italic",
+          "description": "Without provoking opportunity attacks, the tree moves up to half of its root tentacles (rounded down), each to a different space where a root tentacle could be created."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

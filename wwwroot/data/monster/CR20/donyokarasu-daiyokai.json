@@ -1,0 +1,228 @@
+{
+  "Name": "Donyokarasu Daiyokai",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Among daiyokai, those of the donyokarasu are a particularly frightening sight to behold. They are the result of massive amounts of death - usually spawned from the trauma of a genocide or bloody war. When one is born, it emerges into the world as an unquenchable avatar of death itself, so much so that any normal amount of death cannot satisfy its appetite. They are cunning predators, who are prone to amassing servants and underlings who can sow the seeds of chaos and distrust, aiming to force entire communities (or even kingdoms) to throw themselves into bloody conflict to satisfy it. Among fiends, their lust for death is the most unstoppable and is shackled only to their cunning sense of self-preservation.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Donyokarasu%20(ISO).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Donyokarasu%20(ISO).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Donyokarasu%20(ISO).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "donyokarasu_daiyokai",
+      "section_type": "Stat Block",
+      "title": "Donyokarasu Daiyokai",
+      "creature": {
+        "size": "Huge",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "22 (natural armor)",
+      "hit_points": "345 (30d12 \u002B 150)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft. (hover)",
+        "fly_special": "120 ft. (yokai form only)"
+      },
+      "quality_traits": [
+        "Keen senses (sight)",
+        "magic resist",
+        "magical",
+        "regen 20",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 26,
+          "modifier": "\u002B8",
+          "save": "\u002B14"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B11"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B12"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B14",
+        "Con \u002B11",
+        "Cha \u002B12"
+      ],
+      "skills": [
+        "Deception \u002B12",
+        "Perception \u002B9",
+        "Stealth \u002B14",
+        "Survival \u002B9"
+      ],
+      "resistances": [
+        "B/P/S (silvered)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "psychic",
+        "B/P/S (magical or silvered)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "exhaustion",
+        "paralyzed"
+      ],
+      "senses": [
+        "truesight 30 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Sylvan",
+        "telepathy 500 ft."
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Deathly Nourishment",
+          "name_format": "bold_italic",
+          "description": "When the yokai reduces a creature to 0 hit points (or a creature it has cursed takes damage), it regains hit points equal to the damage the target took. These hit points stack with those gained from Yokai Nourishment."
+        },
+        {
+          "name": "Ruler in Death (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When the yokai would be reduced to 0 hit points or killed outright, it is instead reset to 250 hit points, assumes its true form (if there is room), ends any conditions affecting it that it does not wish to be affected by, regains its spent Legendary Reactions, and can use its Mythic Actions for 1 hour. If a party defeats the yokai after using its Mythic Awakening, they are awarded an additional 25,000 XP (for a total of 50,000 XP)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes two attacks with its Talons, then one with either its Beak or Feather Blade Armament."
+        },
+        {
+          "name": "Beak (Yokai Form Only)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 5 ft., one target. Hit: 30 (4d12 \u002B 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Talons",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 10 ft., one target. Hit: 19 (2d10 \u002B 8) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Feather Blade Armament (Humanoid Form Only)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 10 ft., one target. Hit: 22 (4d8 \u002B 4) slashing damage plus 6 (1d10) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Eye of Domination (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The yokai produces the effects of the dominate monster spell (using Charisma as their spellcasting ability), requiring no concentration. If the target fails their Wisdom saving throw against the spell they are cursed, and while cursed this way they are charmed (as per the spell) even if they would be immune to being charmed. If the target is immune to the charmed condition they can repeat a DC 20 Wisdom saving throw at the end of each of their turns, ending the effect on a success. A creature charmed by this effect cannot be charmed by any other effect, even if it would ignore immunity. If a charmed creature is reduced to 0 hit points or targeted by a spell such as greater restoration or remove curse, this effect ends for them immediately. A creature this effect ends for (or one who succeeds a saving throw to resist or end its effects) is immune to being affected by it again for 24 hours.\n\nThe yokai can speak and act through the creature it is controlling as long as they are within the range of its telepathy. The yokai immediately learns surface level information about anything the creature sees or is thinking about, including names, relationships, etc., but does not learn fine details, memories, or other more specific information. It can recall information such as passwords, countersigns, combinations, or command words.\n\nThe yokai can control a number of creatures this way who have levels or hit dice that cumulatively add up to its own (hit dice larger than its own count as two, and hit dice lower than its own count as half of one). It can choose to release any creature it wishes at will."
+        },
+        {
+          "name": "Shadow Gate (1/Day)",
+          "name_format": "bold_italic",
+          "description": "As an action, the yokai replicates the effects of the shadow gate spell."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The yokai transforms into a Medium or Small Elven humanoid, a Small bird, or into its true form. It retains its statistics across all forms except for its size. If it dies it returns to its true form."
+        },
+        {
+          "name": "Feather Dance",
+          "name_format": "bold_italic",
+          "description": "The yokai teleports to an unoccupied space within 60 feet and immediately makes one Bladed Feather Scythe attack against a creature within range."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Bloodthirsty Attack",
+            "name_format": "bold_italic",
+            "description": "The yokai makes a Beak or Feather Blade Armament attack. It gains temporary hit points equal to the damage it deals."
+          },
+          {
+            "name": "Psychic Order",
+            "name_format": "bold_italic",
+            "description": "The yokai commands one creature cursed by it to move up to half their movement speed and make a weapon attack against a creature the yokai chooses. The cursed target uses their reaction to do so. If the target has any traits or features the yokai is aware of (such as Divine Smite, Sneak Attack, Combat Mastery, etc.,) it can have them use them to bolster the attack being made or ensure it hits."
+          },
+          {
+            "name": "Glazing Eyes (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Each creature within 60 feet of the yokai must succeed a DC 20 Wisdom saving throw or be blinded until the end of the yokai\u2019s next turn, during which their eyes turn black and glaze over."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Eye of Domination",
+            "name_format": "bold_italic",
+            "description": "The yokai uses its Eye of Domination. If it is not charged, they roll immediately to recharge it and use it if they succeed. If they roll a 4 or less, it is recharged but they can\u2019t use it this turn."
+          },
+          {
+            "name": "Rain of Dread (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The yokai causes psychic bursts in the form of feather-coated black spears to rain down, centered on a point it can see within 120 feet. Every creature in a 30-foot-radius sphere centered on that point must succeed a DC 22 Dexterity saving throw, taking 28 (3d12 \u002B 8) psychic damage on a failure. A creature who fails by 5 points or more becomes sluggish until the end of their next turn."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

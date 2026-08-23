@@ -1,0 +1,143 @@
+{
+  "Name": "Temple Knight",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Not all servants of the divine are given gifts by their gods, nor do they all necessarily follow the teachings of those gods. Temple knights serve as the defenders of holy sanctuaries, churches, individuals, and objects. They are trained to work with clerics, paladins, and other divine warriors, but the powers they hold are basic divine charms rather than gifts from their gods. Most have access to small bursts of divine magic, but these use scripture and arcane techniques mixed with innate magical energy instead of drawing them out in the form of miracles. Temple knights can commonly be found working as uncommonly well-trained protectors, often wearing robes and armor befitting the god their service is aligned to. Unlike many clergy members, however, they see their role as a profession, and are paid in a manner similar to mercenaries.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Temple%20Knight.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Temple%20Knight.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Temple%20Knight.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "temple-knight",
+      "section_type": "Stat Block",
+      "title": "Temple Knight",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "varies"
+      },
+      "armor_class": "15 (medium endarwool armor)",
+      "hit_points": "52 (8d8 + 16)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Athletics +6",
+        "Religion +5",
+        "Persuasion +4"
+      ],
+      "resistances": [
+        "necrotic",
+        "radiant"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Common plus one required for their work"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Boon of Faith",
+          "name_format": "bold_italic",
+          "description": "When the knight makes a saving throw to resist being charmed, enraged, frightened, or paralyzed, they roll a d8 and add it to the result."
+        },
+        {
+          "name": "Greater Thrust (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "When a knight strikes a target with a melee weapon attack, they can put extra power behind it, causing the attack to deal an additional 11 (2d10) damage of the weapon’s type. A target hit by this attack must make a DC 14 Strength saving throw or be knocked prone."
+        },
+        {
+          "name": "Medium Endarwool Armor",
+          "name_format": "bold_italic",
+          "description": "When the soldiers would take piercing, slashing, or bludgeoning damage from attacks that aren’t adamantine, they take 5 fewer points of damage of each type."
+        },
+        {
+          "name": "Rush Attack",
+          "name_format": "bold_italic",
+          "description": "When the knight makes their first attack each turn, as long as it’s taken before they take any movement, they roll a d10 and add it to the attack roll result."
+        },
+        {
+          "name": "Sanctified Weapons",
+          "name_format": "bold_italic",
+          "description": "The knight’s weapon attacks do an additional d10 of radiant damage on a hit (already accounted for in this stat block). If the faith they are in service to has another damage type most closely associated with their deity (such as fire for Burtromet), it becomes that damage type instead."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The knight makes two melee weapon attacks or one ranged weapon attack."
+        },
+        {
+          "name": "Broadsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 4) slashing damage plus 6 (1d10) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, range 20/60 ft., reload 6, one target. Hit: 10 (2d6 + 3) piercing damage plus 6 (1d10) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Single-Use Blessed Charm (1/Day)",
+          "name_format": "bold_italic",
+          "description": "When the knight would fail a saving throw they can roll a d20 and use it in place of their failing d20 result."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "Name": "Dekishikori",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Born from the shame and anger released when ancient dragons, wyverns, drakes, or other proud dragonkin die, are defeated, or put to shame, these yokai resemble wingless dragons. Born from pride and anger, they seek to control their environments and inflict pain and shame upon those who defy their will. Their bodies are made of shadow and psychic energy, allowing them to become ethereal for brief periods of time.\n\nThese creatures subjugate and control lesser yokai. They are revered as if the dragons of their plane, and have a particular hatred for shadow dragons, feeling they are an incomplete version of themselves.\n\nWhen a dekishikori makes it to the Material Plane they have a straight-forward goal: inflict as much death and despair as possible, seeking revenge for the beast that was put to shame and caused their creation. They have no concept of personal responsibility and so will treat all mortal beings as guilty of that crime.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Dekishikori.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Dekishikori.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Reference%20-%20Dekishikori.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dekishikori",
+      "section_type": "Stat Block",
+      "title": "Dekishikori",
+      "creature": {
+        "size": "Huge",
+        "type": "fiend (yokai)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "275 (22d12 \u002B 132)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "swim": "60 ft."
+      },
+      "quality_traits": [
+        "Amphibious",
+        "magic resist",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B7"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B7"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B7"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B7",
+        "Int \u002B7",
+        "Cha \u002B7"
+      ],
+      "skills": [
+        "Insight \u002B9",
+        "Perception \u002B9",
+        "Stealth \u002B15"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic",
+        "B/P/S (magical or silvered)"
+      ],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "understands Draconic and Sylvan but doesn\u2019t speak"
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Restoration",
+          "name_format": "bold_italic",
+          "description": "When the yokai falls under half its maximum hit points its body begins to restore itself. It regains 20 hit points at the start of each of its turns, as long as it has at least 1 hit point, unless it starts its turn with more than half of its maximum hit points."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai uses its Frightful Presence. It then makes three attacks: one with its Bite, and two with its Claws."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 10 ft., one target. Hit: 17 (2d10 \u002B 6) piercing damage plus 6 (1d10) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 5 ft., one target. Hit: 16 (3d6 \u002B 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Frightful Presence",
+          "name_format": "bold_italic",
+          "description": "Each creature that the yokai chooses in a 120 foot range must make a DC 16 Wisdom saving throw or become frightened for 1 minute. The creature must be aware of the yokai\u2019s presence to satisfy the terms of this effect. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature\u2019s saving throw is successful, the creature is immune to the yokai\u2019s Frightful Presence for 24 hours."
+        },
+        {
+          "name": "Breath Weapon (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dekishikori uses one of the following breath weapon options (Screaming Breath or Thunder Breath).",
+          "suboptions": [
+            {
+              "name": "Screaming Breath",
+              "description": "The yokai unleashes a wave of screeching mental torment in a 60-foot-cone. All targets within range must make a DC 19 Intelligence saving throw, taking 63 (14d8) psychic damage on a failed save, or half as much damage on a successful one."
+            },
+            {
+              "name": "Thunder Breath",
+              "description": "Rather than fire its breath weapon ahead, the yokai unleashes a wave of thunderous energy that fills a 30-foot-radius sphere centered on itself. All targets within that range must make a DC 19 Constitution saving throw, taking 36 (8d8) thunder damage on a failed save, or half as much on a successful one. Any creature that fails is knocked 15 feet away from the yokai and falls prone."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Shadow Form (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Until the start of its next turn, the yokai\u2019s body becomes ephemeral, allowing it to escape from anything that is grappling or restraining it, and rendering it resistant to all damage."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Bite",
+            "name_format": "bold_italic",
+            "description": "The yokai makes a Wisdom (Perception) check."
+          },
+          {
+            "name": "Detect",
+            "name_format": "bold_italic",
+            "description": "The yokai makes a Bite attack."
+          },
+          {
+            "name": "Scream Wave (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "A wave of psychic energy erupts in a 30-foot-radius sphere centered on the dekishikori. All creatures within that space must make a DC 19 Intelligence saving throw, taking 17 (3d10) psychic damage on a failure."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "Name": "Kijoni-Aishi",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Kijoni-Aishi**\n\nBorn from overwhelming mortal desires, kijoni-aishi are the embodiment of lust and possessiveness. They come to be when a mortal holds unheard of desire for a single subject or person, even more commonly when these desires are carnal in nature. They are born from a selfish impulse: to become one with the objects of their desires. Once born they take on a bleached humanoid form that can shift to disguise itself as others, often taking on an appealing appearance to get close to others.\n\nTo consume a creature for a kijoni-aishi means to physically make them part of themselves. They trap and magically charm their target, then pull them so close that their physical bodies begin to merge. Through this impossible integration, their target\u2019s body disappears into the kijoni-aishi as their personality and ego becomes a part of the yokai, granting them the memories and desires of the consumed target.\n\n***Mortal Mutation.*** Though rare among yokai, kijoni-aishi are one of the few types of yokai who can result from the transformation of a living mortal. When a mortal with an overwhelming sense of self is consumed by lesser yokai and they harbor the lustful desire to strip others of their autonomy, they can result in a yokai with the same core mind and personality as the mortal being. Once transformed they seek to consume what they coveted as a mortal.\n\n***Soul Spring.*** Within every kijoni-aishi is a demiplane of emotional energy called a soul spring, where the souls of their victims reside. They are subjected to the whims of the yokai, who use them for entertainment when not on the hunt, as well as keep open access to their memories and personas. The yokai can interact with creatures there through meditation, controlling the contents of this plane of emotion like a god. A creature consumed by a kijoni-aishi cannot pass on to an afterlife or be resurrected so long as the kijoni-aishi lives. If killed in the Material Plane the kijoni-aishi will reconstitute in the Realm of Shadows like all yokai, but being destroyed this way frees the inhabitants of its soul spring.",
+  "Information Sections": [
+    {
+      "Title": "Kijoni-Aishi",
+      "Text": "Born from overwhelming mortal desires, kijoni-aishi are the embodiment of lust and possessiveness. They come to be when a mortal holds unheard of desire for a single subject or person, even more commonly when these desires are carnal in nature. They are born from a selfish impulse: to become one with the objects of their desires. Once born they take on a bleached humanoid form that can shift to disguise itself as others, often taking on an appealing appearance to get close to others.\n\nTo consume a creature for a kijoni-aishi means to physically make them part of themselves. They trap and magically charm their target, then pull them so close that their physical bodies begin to merge. Through this impossible integration, their target\u2019s body disappears into the kijoni-aishi as their personality and ego becomes a part of the yokai, granting them the memories and desires of the consumed target."
+    },
+    {
+      "Title": "Mortal Mutation",
+      "Text": "Though rare among yokai, kijoni-aishi are one of the few types of yokai who can result from the transformation of a living mortal. When a mortal with an overwhelming sense of self is consumed by lesser yokai and they harbor the lustful desire to strip others of their autonomy, they can result in a yokai with the same core mind and personality as the mortal being. Once transformed they seek to consume what they coveted as a mortal."
+    },
+    {
+      "Title": "Soul Spring",
+      "Text": "Within every kijoni-aishi is a demiplane of emotional energy called a soul spring, where the souls of their victims reside. They are subjected to the whims of the yokai, who use them for entertainment when not on the hunt, as well as keep open access to their memories and personas. The yokai can interact with creatures there through meditation, controlling the contents of this plane of emotion like a god. A creature consumed by a kijoni-aishi cannot pass on to an afterlife or be resurrected so long as the kijoni-aishi lives. If killed in the Material Plane the kijoni-aishi will reconstitute in the Realm of Shadows like all yokai, but being destroyed this way frees the inhabitants of its soul spring."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Reference%20-%20Kijoni-aishi.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Reference%20-%20Kijoni-aishi.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Reference%20-%20Kijoni-aishi.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "kijoni_aishi",
+      "section_type": "Stat Block",
+      "title": "Kijoni-Aishi",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai, shapechanger)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "152 (16d12 \u002B 48)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B7"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B6"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "\u002B6"
+        }
+      },
+      "saving_throws": [
+        "Con \u002B7",
+        "Wis \u002B6"
+      ],
+      "skills": [
+        "Deception \u002B10",
+        "Insight \u002B6",
+        "Perception \u002B6",
+        "Stealth \u002B9"
+      ],
+      "resistances": [
+        "B/P/S (magical or silvered)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "Common",
+        "Sylvan",
+        "Elvish"
+      ],
+      "challenge_rating": "12 (8,400 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes three Ravenous Claw attacks, one of which it can replace with its Soul Meld."
+        },
+        {
+          "name": "Ravenous Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 5 ft., one target. Hit: 11 (1d10 \u002B 5) slashing damage plus 5 (1d8) psychic damage. If this attack scores a critical hit or two Ravenous Claw attacks hit the same creature on the same turn, the yokai immediately grapples them (as long as the creature is the same size or smaller than it).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Curse of Obedience",
+          "name_format": "bold_italic",
+          "description": "The yokai speaks or gestures affectionately to a creature it can see within 30 feet, forcing them to make a DC 20 Charisma saving throw. On a failure the creature is charmed and cursed, and they form a telepathic link with the yokai that remains as long as they are charmed and on the same plane. Using this link the yokai is aware of everything the charmed creature is, both can speak to one another telepathically, and the charmed creature will perform any commands the yokai suggests unless the command is suicidal or would directly harm it. It also takes actions as if the yokai is a close companion. Each time the target creature takes damage they repeat the Charisma saving throw, ending the charm on a success. If the curse ends, the charm does as well. If the creature is freed from being charmed but not from being cursed they are paralyzed until the curse is lifted.\n\nThe yokai can only curse one creature this way at a time. The previous curse ends if a new one is inflicted."
+        },
+        {
+          "name": "Soul Meld",
+          "name_format": "bold_italic",
+          "description": "If the yokai is grappling a creature that is the same size as it or smaller (or if it is charming the target), it can press the target to its skin and attempt to fuse that creature with itself. The target must make a DC 18 Charisma saving throw (which it automatically fails if it is charmed). On a failure the target takes 45 (6d12 \u002B 6) psychic damage immediately, then is grappled and restrained (escape DC 20) and falls unconscious as their body begins to sink into the yokai\u2019s. The target becomes weightless as this occurs, allowing the yokai to move and fight while absorbing them into itself.\n\nAt the beginning of each of the creature\u2019s turns while restrained this way, they take 28 (4d10 \u002B 6) psychic damage and their maximum hit points are reduced by the same amount. The creature then repeats the Charisma saving throw at the end of its turn, awakening (but still restrained) on a success. They cannot awaken unless they succeed this save.\n\nWhen the target\u2019s hit points are reduced to 0 this way they are stabilized, but continue to suffer the psychic damage to their maximum hit points. If their maximum hit points are reduced to 0 by this effect the creature dies, sinks entirely into the yokai, and becomes part of their soul spring."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The yokai turns into a Small, Medium or Large humanoid, or back into its true form. Other than its size, its statistics stay the same for each form it takes. Any equipment it is carrying or wearing melds into its body or assumes an illusory form the yokai chooses while transformed. It reverts to its true form and drops anything it has melded into itself when it dies. If the yokai assumes the form of a creature another is directly familiar with, it requires a DC 20 Insight check for them to determine their behavior is out of place."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Sudden Betrayal",
+          "name_format": "bold_italic",
+          "description": "When a creature targets the yokai with an attack or spell, it can assume the form of a person they care deeply about or would be shocked to see - but this form is only visible to that creature. The attacker must make a DC 19 Charisma saving throw. On a failure their attack or spell fails, is wasted, and instead the attacker is stunned until the end of the yokai\u2019s next turn."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Precise Strike",
+            "name_format": "bold_italic",
+            "description": "The yokai makes a Ravenous Claw attack with advantage."
+          },
+          {
+            "name": "Vanish",
+            "name_format": "bold_italic",
+            "description": "The yokai teleports to an unoccupied space it can see within 30 feet."
+          },
+          {
+            "name": "Accelerate Consumption (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The yokai forces a creature it is using its Soul Meld on to make a DC 16 Charisma saving throw. On a failure the target takes 17 (3d10) psychic damage, or half as much damage on a success."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "Name": "Shellshark",
+  "Group": "",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The shellshark is a huge subterranean predator that is a scourge on any land it calls home. They glide through the earth, bursting from it only to ambush targets and feed on them. They are fearless, vicious, and seemingly never satisfied with the prey they catch.\n\n***Tremorhelms.*** The guardians of Greyrock’s City of Steel have domesticated shellsharks to use as mounts, fitting them with protective gear that allows a rider to safely ride them while they dig and burrow. These shellsharks are less predatory, but must be kept well fed by their owners in case they turn feral.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Shellshark.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Shellshark.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Shellshark.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "shellshark",
+      "section_type": "Stat Block",
+      "title": "Shellshark",
+      "creature": {
+        "size": "Large",
+        "type": "monstrosity",
+        "alignment": "unaligned"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "94 (9d10 + 45)",
+      "threshold": "8",
+      "speed": {
+        "walk": "40 ft.",
+        "burrow": "40 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "CON": {
+          "score": 21,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 2,
+          "modifier": "-4"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 5,
+          "modifier": "-3"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +6"
+      ],
+      "resistances": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "tremorsense 60 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "- (if domesticated, understands Common but doesn’t speak)"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Standing Leap",
+          "name_format": "bold_italic",
+          "description": "The shellshark’s long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 30 (4d12 + 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Standing Leap",
+          "name_format": "bold_italic",
+          "description": "If the shellshark jumps at least 15 feet as part of its movement, it can use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 15 Strength or Dexterity saving throw (target’s choice) or be knocked prone and take 15 (3d6 + 4) bludgeoning damage plus 15 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn’t knocked prone, and is pushed 5 feet out of the shellshark’s space into an unoccupied space of the creature’s choice. If no unoccupied space is within range, the creature instead falls prone in the shellshark’s space."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

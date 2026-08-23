@@ -1,0 +1,120 @@
+{
+  "Name": "Donyokarasu",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Donyokarasu - gluttonous raven yokai - are born from tragedy and slaughter. They appear in places that have seen great amounts of death, especially if those deaths were the result of senseless violence. Donyokarasu materialize from the regrets of those who lay dying on the battlefield, and exist to consume the flesh of corpses. When they run out of food they turn to create more, using their supernatural abilities to influence mortals into killing each other. They will dig into corpses and inhabit them, puppeteering them to kill others.\n\n***Greater Donyokarasu.*** The greater donyokarasu has grown to a much larger size, matching that of a horse or ox. These beasts are ravenous, with a hunger that is never satiated. No longer content to inhabit the bodies of others, they project an aura of confusion that can cause those around them to act against their allies. Furthermore, they possess the innate ability to enchant the minds of those they fell, keeping their victims alive to turn them against their allies.\n\n***Donyokarasu Daiyokai.*** Among daiyokai, those of the donyokarasu are a particularly frightening sight to behold. They are the result of massive amounts of death - usually spawned from the trauma of a genocide or bloody war. When one is born, it emerges into the world as an unquenchable avatar of death itself, so much so that any normal amount of death cannot satisfy its appetite. They are cunning predators, who are prone to amassing servants and underlings who can sow the seeds of chaos and distrust, aiming to force entire communities (or even kingdoms) to throw themselves into bloody conflict to satisfy it. Among fiends, their lust for death is the most unstoppable and is shackled only to their cunning sense of self-preservation.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Donyokarasu%20(ISO).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Donyokarasu%20(ISO).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Donyokarasu%20(ISO).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "donyokarasu",
+      "section_type": "Stat Block",
+      "title": "Donyokarasu",
+      "creature": {
+        "size": "Small",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "45 (10d6 + 10)",
+      "speed": {
+        "walk": "10 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [
+        "Fly-by",
+        "magic resist",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +5",
+        "Stealth +4"
+      ],
+      "resistances": [],
+      "vulnerabilities": [
+        "radiant"
+      ],
+      "immunities": [],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "understands Sylvan and Elvish but doesn’t speak"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai attacks twice: once with its Beak and once with its Talons."
+        },
+        {
+          "name": "Beak",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 1) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Talons",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Inhabit Corpse (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "As an action, the yokai can inhabit a humanoid corpse in a space adjacent to it, digging its way into the creature’s heart and taking its place. The creature is raised as a zombie under the yokai’s control. The controlled corpse has advantage on saving throws against being turned and can speak falteringly in languages the corpse knew.\n\nThe yokai is immune to all damage except psychic damage while within the corpse. If the zombie suffers a critical hit, the yokai is forced out and the zombie dies immediately. When the zombie dies the yokai can use its reaction to flee from the corpse, immediately moving up to half its movement speed."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

@@ -121,6 +121,18 @@
         80vw
     );
 
+    /*
+     * Long glossary entries (Vehicle is over 2k characters)
+     * must remain usable rather than extending beyond the
+     * viewport. The positioning script may apply a tighter
+     * inline max-height depending on the hovered term.
+     */
+    max-height: min(70vh, 42rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+
     padding:
         0.75rem
         0.9rem;
@@ -155,6 +167,8 @@
     visibility: hidden;
 
     pointer-events: none;
+
+    -webkit-overflow-scrolling: touch;
 
     /*
      * Tooltip text itself should wrap
@@ -223,6 +237,10 @@
     visibility: visible;
 
     transform: none;
+
+    /* Required so a long popup can be scrolled with
+       the pointer while it is open. */
+    pointer-events: auto;
 }
 
 
@@ -233,7 +251,14 @@
 .glossary-tooltip-title {
     display: block;
 
-    margin-bottom: 0.3rem;
+    position: sticky;
+    top: -0.75rem;
+    z-index: 1;
+
+    margin: -0.05rem -0.1rem 0.3rem;
+    padding: 0.05rem 0.1rem 0.25rem;
+
+    background: #050505;
 
     color: #f3d49a;
 

@@ -2017,3 +2017,574 @@
 
 }
 
+
+
+/* =========================================
+   VEHICLE / CONSTRUCT STATIONS
+
+   These deliberately reuse the SAME visual
+   recipes as the normal stat block:
+   - section bars match .rt-stat-section-bar
+   - metadata matches .rt-details
+   - rules text matches .rt-stat-entry
+   - all creature-type colours come from the
+     parent .rt-statblock variables
+   ========================================= */
+
+.rt-stations {
+    padding:
+        0
+        0.8rem
+        0.9rem;
+}
+
+.rt-stations-section {
+    margin-top:
+        0.4rem;
+
+    background:
+        var(--stat-panel);
+}
+
+
+/* MAIN STATIONS HEADER
+   Matches .rt-stat-section-bar exactly. */
+
+.rt-stations-heading {
+    margin:
+        0
+        0
+        0.65rem;
+
+    padding:
+        0.4rem
+        0.8rem;
+
+    border:
+        1px solid
+        var(--stat-accent-bright);
+
+    border-radius:
+        4px;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--stat-accent-bright),
+            var(--stat-accent)
+        );
+
+    color:
+        var(--stat-accent-text);
+
+    font-size:
+        1.05rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.025em;
+
+    line-height:
+        1.2;
+
+    text-align:
+        center;
+
+    text-transform:
+        uppercase;
+
+    text-shadow:
+        0 1px 2px
+        rgba(
+            0,
+            0,
+            0,
+            0.8
+        );
+}
+
+
+/* Intro follows the same tone as normal
+   section introductory text. */
+
+.rt-stations-intro {
+    margin:
+        0.55rem
+        0.8rem
+        0.8rem;
+
+    padding:
+        0;
+
+    color:
+        #d6c7ba;
+
+    background:
+        transparent;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        1rem;
+
+    font-style:
+        italic;
+
+    line-height:
+        1.5;
+}
+
+
+.rt-stations-list {
+    display:
+        grid;
+
+    gap:
+        0.8rem;
+}
+
+
+/* Each station behaves like another normal
+   stat-block section rather than a separate UI. */
+
+.rt-station-card {
+    min-width:
+        0;
+
+    overflow:
+        visible;
+
+    padding:
+        0
+        0
+        0.25rem;
+
+    border:
+        0;
+
+    border-radius:
+        0;
+
+    background:
+        var(--stat-panel);
+
+    box-shadow:
+        none;
+}
+
+
+/* Station name uses the same section-bar colours,
+   but keeps title case rather than uppercase. */
+
+.rt-station-name {
+    display:
+        block;
+
+    margin:
+        0
+        0
+        0.65rem;
+
+    padding:
+        0.4rem
+        0.8rem;
+
+    border:
+        1px solid
+        var(--stat-accent-bright);
+
+    border-radius:
+        4px;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--stat-accent-bright),
+            var(--stat-accent)
+        );
+
+    color:
+        var(--stat-accent-text);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        1.05rem;
+
+    font-weight:
+        900;
+
+    line-height:
+        1.2;
+
+    text-align:
+        left;
+
+    letter-spacing:
+        0.015em;
+
+    text-shadow:
+        0 1px 2px
+        rgba(
+            0,
+            0,
+            0,
+            0.8
+        );
+}
+
+
+/* =========================================
+   STATION METADATA
+
+   Same border/background recipe as .rt-details.
+   ========================================= */
+
+.rt-station-meta {
+    margin:
+        0
+        0
+        0.8rem;
+
+    border:
+        1px solid
+        rgba(
+            var(--stat-accent-rgb),
+            0.26
+        );
+
+    background:
+        transparent;
+}
+
+
+.rt-station-meta > div {
+    display:
+        grid;
+
+    grid-template-columns:
+        12rem
+        minmax(
+            0,
+            1fr
+        );
+
+    min-width:
+        0;
+
+    border-bottom:
+        1px solid
+        rgba(
+            var(--stat-accent-rgb),
+            0.31
+        );
+}
+
+
+.rt-station-meta > div:last-child {
+    border-bottom:
+        0;
+}
+
+
+.rt-station-meta-wide {
+    grid-column:
+        auto;
+}
+
+
+.rt-station-meta dt,
+.rt-station-meta dd {
+    margin:
+        0;
+
+    padding:
+        0.48rem
+        0.65rem;
+}
+
+
+.rt-station-meta dt {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    background:
+        rgba(
+            var(--stat-accent-rgb),
+            0.12
+        );
+
+    color:
+        #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight:
+        900;
+
+    line-height:
+        1.4;
+}
+
+
+.rt-station-meta dd {
+    min-width:
+        0;
+
+    background:
+        #080707;
+
+    color:
+        #e9dfd8;
+
+    line-height:
+        1.4;
+
+    overflow-wrap:
+        anywhere;
+}
+
+
+/* =========================================
+   ACTION / BONUS ACTION / REACTION GROUPS
+
+   These now use the exact normal stat-block
+   section-bar + entry treatment.
+   ========================================= */
+
+.rt-station-action-group {
+    margin:
+        0
+        0
+        0.8rem;
+
+    padding-bottom:
+        0.25rem;
+
+    border:
+        0;
+
+    background:
+        var(--stat-panel);
+}
+
+
+.rt-station-action-group h4 {
+    margin:
+        0
+        0
+        0.65rem;
+
+    padding:
+        0.4rem
+        0.8rem;
+
+    border:
+        1px solid
+        var(--stat-accent-bright);
+
+    border-radius:
+        4px;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--stat-accent-bright),
+            var(--stat-accent)
+        );
+
+    color:
+        var(--stat-accent-text);
+
+    font-size:
+        1.05rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.025em;
+
+    line-height:
+        1.2;
+
+    text-align:
+        center;
+
+    text-transform:
+        uppercase;
+
+    text-shadow:
+        0 1px 2px
+        rgba(
+            0,
+            0,
+            0,
+            0.8
+        );
+}
+
+
+.rt-station-action-group p {
+    margin:
+        0.55rem
+        0.8rem;
+
+    padding:
+        0;
+
+    border:
+        0;
+
+    color:
+        #f0eae5;
+
+    background:
+        transparent;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        1rem;
+
+    line-height:
+        1.5;
+}
+
+
+/* Match ordinary stat-block trait/action names. */
+
+.rt-station-action-group strong {
+    color:
+        #ffffff;
+
+    font-weight:
+        900;
+}
+
+
+.rt-station-action-group em {
+    color:
+        #fff1d7;
+}
+
+
+/* Do NOT force station glossary links to orange.
+   Let the site's normal GlossaryText styling win. */
+
+.rt-station-action-group ::deep .glossary-term {
+    color:
+        inherit;
+}
+
+
+/* =========================================
+   RESPONSIVE STATIONS
+   ========================================= */
+
+@media
+(
+    max-width:
+        900px
+)
+and
+(
+    min-width:
+        701px
+) {
+
+    .rt-station-meta > div {
+        grid-template-columns:
+            10.5rem
+            minmax(
+                0,
+                1fr
+            );
+    }
+
+}
+
+
+@media
+(
+    max-width:
+        700px
+) {
+
+    .rt-stations {
+        padding:
+            0
+            0.45rem
+            0.55rem;
+    }
+
+
+    .rt-stations-heading,
+    .rt-station-name,
+    .rt-station-action-group h4 {
+        padding:
+            0.38rem
+            0.6rem;
+
+        font-size:
+            0.96rem;
+    }
+
+
+    .rt-stations-intro,
+    .rt-station-action-group p {
+        margin-left:
+            0.55rem;
+
+        margin-right:
+            0.55rem;
+
+        font-size:
+            0.92rem;
+    }
+
+
+    .rt-station-meta {
+        margin-left:
+            0;
+
+        margin-right:
+            0;
+    }
+
+
+    .rt-station-meta > div {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .rt-station-meta dt {
+        padding-bottom:
+            0.2rem;
+    }
+
+
+    .rt-station-meta dd {
+        padding-top:
+            0.25rem;
+    }
+
+}

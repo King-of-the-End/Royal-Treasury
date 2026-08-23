@@ -1,0 +1,203 @@
+{
+  "Name": "Echo of Ambition",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "Mortals may live their lives single-mindedly obsessed with reaching the peaks of their skill as a swordsman. Those who follow the path of a sword saint are especially prone to falling into this trap, and become possessed by their own desire for mastery. When such a swordsman dies unable to relinquish this desire, their ambitions force their soul out of the cycle of death and rebirth and they become an echo of their own desires. The mastery they crave takes the form of a sealed weapon they carry, unable to ever draw, and the resulting fiend seeks only to find powerful opponents and challenge them to prove their might.\n\nThough the echo is a yokai, their nature seems to differ from others. Their evolution follows the accumulation of many victories. Should an echo of ambition ever fully unseal the blade of mastery they carry, they may evolve into a unique daiyokai that embodies the mastery they seek.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Echo%20of%20Ambition.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Echo%20of%20Ambition.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Echo%20of%20Ambition.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "echo_of_ambition",
+      "section_type": "Stat Block",
+      "title": "Echo of Ambition",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": ""
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "165 (22d8 + 66)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +8",
+        "Cha +6"
+      ],
+      "skills": [
+        "Athletics +6",
+        "Perception +6",
+        "Stealth +8"
+      ],
+      "resistances": [
+        "slashing",
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [
+        "force"
+      ],
+      "immunities": [
+        "slashing from nonmagical attacks"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "petrified",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsense 60 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "understands Common and Fiendish, but doesn’t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Projectile Aversion",
+          "name_format": "bold_italic",
+          "description": "Unless it is incapacitated, the echo can parry and dodge ranged attacks made against it with ease, causing them to have disadvantage."
+        },
+        {
+          "name": "Saint Technique (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The echo uses one of the following effects:",
+          "suboptions": [
+            {
+              "name": "Dragon Surge",
+              "description": "On its turn, the echo takes an additional action after the first. When it does so, its movement speed increases by 20 feet until the end of its turn."
+            },
+            {
+              "name": "Wind Chain",
+              "description": "On its turn, the echo can make any melee weapon attack as though its reach was 30 feet by projecting a cutting wave of force acting as an extension of the weapon. When it does, that weapon’s reach remains as such until the end of the turn."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The echo makes attacks twice with its Devil Blade and once with its Plasma Tail."
+        },
+        {
+          "name": "Devil Blade (+2 Longsword)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Plasma Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) slashing damage plus 6 (1d10) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Devil Blade Tourbillion (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The echo attempts to unsheath the blade containing their sealed skills. Roll 1d100, then do the following based on the result:",
+          "suboptions": [
+            {
+              "name": "51-100",
+              "description": "The echo is unsuccessful in drawing the blade, and energy erupts from it chaotically. Each creature within 15 feet of the echo (including the echo) must make a DC 16 Dexterity saving throw, taking 17 (3d10) force damage on a failed save, or half as much damage on a successful one. Creatures apart from the echo who fail the save are pushed 15 feet away from it and are knocked prone."
+            },
+            {
+              "name": "1-50",
+              "description": "The echo is successful in drawing the blade, and unleashes a thousand slashes at once. Each creature within 30 feet of it must make a DC 18 Dexterity saving throw, taking 26 (4d12) slashing damage on a failed save, or half as much damage on a successful one. Each creature who fails this save is sluggish until the start of the echo’s next turn. The slashing damage from this attack ignores resistances. After the effect resolves, the sword is sealed again."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Mirage Dash",
+          "name_format": "bold_italic",
+          "description": "The echo takes the Dash action, and each time a creature makes an opportunity attack against it while Dashing this way, the echo makes a weapon attack against them in response, using its Devil Blade. If the echo’s attack roll result is higher than theirs, the creature’s attack misses. This Devil Blade attack does no damage."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Devil Deflection",
+          "name_format": "bold_italic",
+          "description": "When targeted by a melee weapon attack it can see, the echo raises its AC by its proficiency bonus until the end of the current turn."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The echo makes a Devil Sword attack."
+          },
+          {
+            "name": "Cunning Vertical",
+            "name_format": "bold_italic",
+            "description": "The echo moves up to half its movement speed without provoking opportunity attacks."
+          },
+          {
+            "name": "Mirage Variance (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The echo creates several mirage clones of itself that move in close formation with it until the start of its next turn. While they do, it is under the effects of the mirror image spell."
+          },
+          {
+            "name": "Blade Storm (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The echo unleashes a storm of spinning magic blades centered on a point it can see within 30 feet, which fill a 10-foot-radius sphere. Each creature in the sphere at the start of their turn or who enters it for the first time on their turn takes 14 (4d6) slashing damage. This effect remains in place for 1 minute, or until the next time the echo uses a Legendary Action."
+          }
+        ]
+      }
+    }
+  ]
+}

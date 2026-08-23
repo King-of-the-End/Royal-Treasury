@@ -1,0 +1,151 @@
+{
+  "Name": "Seed of Rott",
+  "Group": "Rott\u2019s Influence",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "The Seed of Rott is formed from a Tree of Loathsome Nightmares when it has finished converting living nutrients and souls. This creature was once a willing creature the tree consumed and was since given control over this new body. Its monstrous, twisting form is a combination of flesh and vegetation, still struggling to find its true shape. It can speak falteringly, but until it evolves into a proper avatar it retains its hulking, shifting form. These Seeds are plagued by endless hunger and pain that pushes them to seek self-actualization. When the swirling mass of souls within them finally concedes to its will, it becomes an avatar of Rott.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Reference%20-%20Seed%20of%20Rott.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Reference%20-%20Seed%20of%20Rott.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Reference_BG%20-%20Reference%20-%20Seed%20of%20Rott.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "seed_of_rott",
+      "section_type": "Stat Block",
+      "title": "Seed of Rott",
+      "creature": {
+        "size": "Large",
+        "type": "plant",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "158 (15d10 \u002B 75)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "regen 3d10 \u002B 5 (radiant)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B8"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B6"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B8",
+        "Wis \u002B6"
+      ],
+      "skills": [
+        "Athletics \u002B8",
+        "Nature \u002B4"
+      ],
+      "resistances": [
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "understands and speaks the languages of all creatures it has consumed",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [
+        {
+          "name": "Shroud of Rott",
+          "name_format": "bold_italic",
+          "description": "All plant creatures allied to the seed who are within 30 feet of it have advantage on attack rolls and ability checks (except itself)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The seed makes three melee weapon attacks or two ranged weapon attacks."
+        },
+        {
+          "name": "Rotting Tendril",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B8 to hit, reach 10 ft., one target. Hit: 10 (1d10 \u002B 4) piercing damage plus 11 (2d10) necrotic damage. The seed regains hit points equal to half the necrotic damage it dealt (rounded down).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Splinter Arrow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B6 to hit, range 60/180 ft., one target. Hit: 22 (3d12 \u002B 2) piercing damage. A Huge or smaller target must succeed on a DC 16 Strength saving throw. On a failure, the wooden splinters mutate into tendrils of bark and leaves, and the target is restrained. A creature restrained this way can use an action to attempt a DC 16 Strength check, ending the effect on a success.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Swallow",
+          "name_format": "bold_italic",
+          "description": "The seed consumes one creature within reach that is restrained or being grappled by it. It can hold one creature of a size equal to it, two of one size less, four of two sizes less, or sixteen of any size smaller than that. A creature the seed has swallowed is restrained and blinded while inside it, and has total cover. They take 27 (6d8) necrotic damage at the start of each of their turns. While consuming one or more creatures, the seed regains 1d6 hit points per creature at the start of each of its turns. If the seed takes 30 damage or more in a single turn from a swallowed creature, it must succeed a DC 15 Constitution saving throw at the end of that turn or release that creature into a space within 10 feet of it, where they fall prone. If the seed dies, the effect ends and creatures can escape its body by spending 15 feet of movement.\n\nA creature killed by this necrotic damage cannot be restored to life unless this seed is killed, due to its soul being trapped within it."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Monstrous Mutation (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The seed\u2019s body contorts and twists, adapting to the situation it is in. It gains one of the following effects, which it loses after 1 minute or if it uses this feature again:\n\n\u2022 The seed gains a fly, climb, or burrow speed equal to its base movement speed.\n\u2022 The seed reduces its size to Medium, or increases it to Huge. While Medium it has advantage on Dexterity checks and saves, and while Huge has advantage on Strength checks and saves.\n\u2022 The seed gains resistance to two damage types, or immunity to one (except radiant).\n\u2022 The seed gains 33 (5d12) temporary hit points.\n\u2022 The seed\u2019s melee attacks deal an extra 1d10 damage of one of the following types: acid, necrotic, psychic, poison, or piercing. Additionally, its attacks become magical.\n\u2022 When the seed deals necrotic damage using its Rotting Tendril, the target\u2019s maximum hit points are reduced by the necrotic damage dealt, and the seed regains hit points equal to the necrotic damage dealt (instead of half)."
+        }
+      ],
+      "reactions": [],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

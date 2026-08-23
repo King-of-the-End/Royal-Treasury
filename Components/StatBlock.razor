@@ -911,6 +911,159 @@
 
     </div>
 
+
+    <!-- =================================
+         VEHICLE / CONSTRUCT STATIONS
+
+         These are deliberately inside the
+         rt-statblock article so they inherit
+         the same creature-type CSS variables.
+         ================================= -->
+
+    @if (Data.StationSections.Count > 0)
+    {
+        <div class="rt-stations">
+
+            @foreach (var stationSection in Data.StationSections)
+            {
+                <section class="rt-stations-section">
+
+                    @if (!string.IsNullOrWhiteSpace(stationSection.Title))
+                    {
+                        <div class="rt-stations-heading">
+                            @stationSection.Title
+                        </div>
+                    }
+
+                    @if (!string.IsNullOrWhiteSpace(stationSection.Intro))
+                    {
+                        <p class="rt-stations-intro">
+                            <GlossaryText
+                                Text="@stationSection.Intro"
+                                Context="GlossaryContext.StatBlock" />
+                        </p>
+                    }
+
+                    <div class="rt-stations-list">
+
+                        @foreach (var station in stationSection.Entries)
+                        {
+                            <article class="rt-station-card">
+
+                                <h3 class="rt-station-name">
+                                    @station.Name
+                                </h3>
+
+                                @if (
+                                    !string.IsNullOrWhiteSpace(station.UnitLimit)
+                                    || !string.IsNullOrWhiteSpace(station.SpaceAvailable)
+                                    || !string.IsNullOrWhiteSpace(station.Description)
+                                    || !string.IsNullOrWhiteSpace(station.Cover))
+                                {
+                                    <dl class="rt-station-meta">
+
+                                        @if (!string.IsNullOrWhiteSpace(station.UnitLimit))
+                                        {
+                                            <div>
+                                                <dt>Unit Limit</dt>
+                                                <dd>@station.UnitLimit</dd>
+                                            </div>
+                                        }
+
+                                        @if (!string.IsNullOrWhiteSpace(station.SpaceAvailable))
+                                        {
+                                            <div>
+                                                <dt>Space Available</dt>
+                                                <dd>@station.SpaceAvailable</dd>
+                                            </div>
+                                        }
+
+                                        @if (!string.IsNullOrWhiteSpace(station.Description))
+                                        {
+                                            <div class="rt-station-meta-wide">
+                                                <dt>Description</dt>
+                                                <dd>
+                                                    <GlossaryText
+                                                        Text="@station.Description"
+                                                        Context="GlossaryContext.StatBlock" />
+                                                </dd>
+                                            </div>
+                                        }
+
+                                        @if (!string.IsNullOrWhiteSpace(station.Cover))
+                                        {
+                                            <div>
+                                                <dt>Cover</dt>
+                                                <dd>
+                                                    <GlossaryText
+                                                        Text="@station.Cover"
+                                                        Context="GlossaryContext.StatBlock" />
+                                                </dd>
+                                            </div>
+                                        }
+
+                                    </dl>
+                                }
+
+                                @if (station.Actions.Count > 0)
+                                {
+                                    <section class="rt-station-action-group">
+                                        <h4>Actions</h4>
+                                        @foreach (var action in station.Actions)
+                                        {
+                                            <p>
+                                                <strong><em>@action.Name.</em></strong>
+                                                <GlossaryText
+                                                    Text="@action.Description"
+                                                    Context="GlossaryContext.StatBlock" />
+                                            </p>
+                                        }
+                                    </section>
+                                }
+
+                                @if (station.BonusActions.Count > 0)
+                                {
+                                    <section class="rt-station-action-group">
+                                        <h4>Bonus Actions</h4>
+                                        @foreach (var action in station.BonusActions)
+                                        {
+                                            <p>
+                                                <strong><em>@action.Name.</em></strong>
+                                                <GlossaryText
+                                                    Text="@action.Description"
+                                                    Context="GlossaryContext.StatBlock" />
+                                            </p>
+                                        }
+                                    </section>
+                                }
+
+                                @if (station.Reactions.Count > 0)
+                                {
+                                    <section class="rt-station-action-group">
+                                        <h4>Reactions</h4>
+                                        @foreach (var action in station.Reactions)
+                                        {
+                                            <p>
+                                                <strong><em>@action.Name.</em></strong>
+                                                <GlossaryText
+                                                    Text="@action.Description"
+                                                    Context="GlossaryContext.StatBlock" />
+                                            </p>
+                                        }
+                                    </section>
+                                }
+
+                            </article>
+                        }
+
+                    </div>
+
+                </section>
+            }
+
+        </div>
+    }
+
 </article>
 
 

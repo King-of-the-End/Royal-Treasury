@@ -1,0 +1,115 @@
+{
+  "Name": "Wave-Sec Soldier",
+  "Group": "Wave-Sec",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "",
+  "Stat Blocks": [
+    {
+      "id": "wave_sec_soldier",
+      "section_type": "Stat Block",
+      "title": "Wave-Sec Soldier",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any, usually framebilt)",
+        "alignment": "any lawful alignment"
+      },
+      "armor_class": "16 (chainmail)",
+      "hit_points": "45 (6d8 + 18)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Pack tactics"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Investigation +4",
+        "Perception +6",
+        "Riding +4"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 16"
+      ],
+      "languages": [
+        "Common plus one other language"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Mounted Expert",
+          "name_format": "bold_italic",
+          "description": "When the soldier is mounted on a creature or operating a vehicle, their own weapon attacks and saving throws have advantage."
+        },
+        {
+          "name": "Night Vision Visor",
+          "name_format": "bold_italic",
+          "description": "The soldier is equipped with a mask that allows them to see in darkness within 60 feet as if it was bright light, but colors are all muted to a soft bluish-gray in that range."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The soldier makes two Electric Staff attacks or one Wave Rifle attack."
+        },
+        {
+          "name": "Electric Staff",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 3 (1d4) lightning damage, or 7 (1d8 + 2) bludgeoning damage plus 3 (1d4) lightning damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Wave Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +5 to hit, range 60/180, reload 2, one target. Hit: 14 (2d10 + 3) piercing damage. If the soldier is prone while making this attack, they can fire up to its long range without disadvantage from either being prone or at a distance.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Wave-Sec Operational Training",
+          "name_format": "bold_italic",
+          "description": "When the soldier is operating a Wave-Sec vehicle or is a Station Operator in a vehicle, they can use their bonus action to give one attack roll or ability check the vehicle makes advantage."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

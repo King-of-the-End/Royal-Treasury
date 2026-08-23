@@ -1472,6 +1472,28 @@ public sealed class MonsterService
 
 
             // =================================
+            // OUTER STATION SECTIONS
+            //
+            // Vehicle/construct station data is
+            // stored beside "Stat Blocks" in the
+            // outer monster document. Copy it onto
+            // each stat-block variant for rendering.
+            // =================================
+
+            monster.StationSections ??=
+                new List<MonsterStationSection>();
+
+
+            foreach (
+                var stationSection
+                in metadata.StationSections)
+            {
+                monster.StationSections.Add(
+                    stationSection);
+            }
+
+
+            // =================================
             // OUTER IMAGE
             //
             // Monster files such as
@@ -1652,6 +1674,11 @@ public sealed class MonsterService
                 element);
 
 
+        var stationSections =
+            ReadStationSectionsProperty(
+                element);
+
+
         var image =
             ReadStringProperty(
                 element,
@@ -1723,6 +1750,7 @@ public sealed class MonsterService
                 name,
                 information,
                 informationSections,
+                stationSections,
                 image,
                 imageVariants,
                 refinement,
@@ -1766,6 +1794,14 @@ public sealed class MonsterService
             ? local.InformationSections
 
             : inherited.InformationSections;
+
+
+        var stationSections =
+            local.StationSections.Count > 0
+
+            ? local.StationSections
+
+            : inherited.StationSections;
 
 
         var image =
@@ -1821,6 +1857,7 @@ public sealed class MonsterService
                 name,
                 information,
                 informationSections,
+                stationSections,
                 image,
                 imageVariants,
                 refinement,
@@ -1962,6 +1999,99 @@ public sealed class MonsterService
             monster.Sources.Add(
                 source);
         }
+    }
+
+
+    // =====================================
+    // READ STATION SECTIONS
+    //
+    // Supported outer property:
+    //
+    // "Additional Sections": [
+    //   {
+    //     "section_type": "Stations",
+    //     ...
+    //   }
+    // ]
+    // =====================================
+
+    private IReadOnlyList<MonsterStationSection>
+        ReadStationSectionsProperty(
+            JsonElement element)
+    {
+        if (
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    "Additional Sections"),
+                out var value)
+            ||
+            value.ValueKind !=
+            JsonValueKind.Array)
+        {
+            return
+                Array.Empty<MonsterStationSection>();
+        }
+
+
+        var sections =
+            new List<MonsterStationSection>();
+
+
+        foreach (
+            var sectionElement
+            in value.EnumerateArray())
+        {
+            if (
+                sectionElement.ValueKind !=
+                JsonValueKind.Object)
+            {
+                continue;
+            }
+
+
+            var sectionType =
+                ReadStringProperty(
+                    sectionElement,
+                    "section_type");
+
+
+            if (
+                !string.Equals(
+                    NormalizePropertyName(
+                        sectionType),
+                    "stations",
+                    StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+
+            try
+            {
+                var section =
+                    JsonSerializer.Deserialize<MonsterStationSection>(
+                        sectionElement.GetRawText(),
+                        jsonOptions);
+
+
+                if (
+                    section is not null
+                    &&
+                    section.Entries.Count > 0)
+                {
+                    sections.Add(
+                        section);
+                }
+            }
+            catch (JsonException)
+            {
+                // Skip only the malformed section.
+            }
+        }
+
+
+        return sections;
     }
 
 
@@ -2760,6 +2890,7 @@ public sealed class MonsterService
         string Name,
         string Information,
         IReadOnlyList<MonsterInformationSection> InformationSections,
+        IReadOnlyList<MonsterStationSection> StationSections,
         string Image,
         IReadOnlyList<string> ImageVariants,
         MonsterRefinementData? Refinement,
@@ -2773,6 +2904,7 @@ public sealed class MonsterService
                 string.Empty,
                 string.Empty,
                 Array.Empty<MonsterInformationSection>(),
+                Array.Empty<MonsterStationSection>(),
                 string.Empty,
                 Array.Empty<string>(),
                 null,

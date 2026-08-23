@@ -1,0 +1,133 @@
+{
+  "Name": "Iygarvice",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "A vicious small yokai that resembles a distorted spider with a body that serves as its face. It is created from unresolved disputes and contempt given shape, and so it feeds on conflict between people. When it feels safe, it will hide in households and quietly whisper into the ears of others, disguising its voice as their thoughts to cause them to hate one another. When it is desperate or starving, it will curse others to fly into a violent rage and attack those around them while it hides nearby, consuming the emotional turmoil.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Iygarvice.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Iygarvice.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Reference%20-%20Iygarvice.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "iygarvice",
+      "section_type": "Stat Block",
+      "title": "Iygarvice",
+      "creature": {
+        "size": "Small",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "13",
+      "hit_points": "35 (10d6)",
+      "speed": {
+        "walk": "30 ft.",
+        "climb": "20 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+3"
+        }
+      },
+      "saving_throws": [
+        "Wis +5",
+        "Cha +3"
+      ],
+      "skills": [
+        "Persuasion +3",
+        "Stealth +5"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands Common and Sylvan but doesn’t speak",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Deferred Nourishment",
+          "name_format": "bold_italic",
+          "description": "When the yokai or a creature it has enraged scores a critical hit, the yokai regains hit points equal to the damage they deal. If they have no wounds to heal, they gain the rest as temporary hit points."
+        },
+        {
+          "name": "Passive Presence",
+          "name_format": "bold_italic",
+          "description": "The yokai is invisible to creatures that are enraged, and is not considered among their possible targets to attack. Also, while it remains completely motionless (it hasn’t moved or taken an action since its last turn) it can’t be seen by passive Perception, and the Stealth check result it uses to contest the Perception or Investigation checks of other creatures is treated as 5 points higher."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai either makes two Bite attacks or it uses its Enraging Whispers then Psychic Cover (if it’s available)."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) piercing damage plus 5 (1d8) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Enraging Whispers",
+          "name_format": "bold_italic",
+          "description": "The yokai chooses one creature it can see within 60 feet, and it speaks whispering telepathic lies into their head, causing them to turn against those around them irrationally. The target must make a DC 13 Charisma saving throw. On a failure they are cursed for 1 minute, and while cursed they are enraged (DC 13), and they regard all creatures around them as hostile. A creature enraged this way uses their full Attack action and all available attacks to strike at their targets. A creature cursed this way can repeat the Charisma saving throw each time they take damage and each time they end their turn without making an attack, ending the effect on a success. A creature who succeeds any saving throw against this effect becomes immune to it for 24 hours."
+        },
+        {
+          "name": "Psychic Cover",
+          "name_format": "bold_italic",
+          "description": "The yokai teleports to an unoccupied space it can see within 20 feet and takes the Hide action."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}
