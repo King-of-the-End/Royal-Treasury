@@ -151,6 +151,31 @@
     // Programmatic Navigation.NavigateTo callers (Spells/Bestiary) use this hook.
     window.royalTreasuryLoading = {
         show: showLoader,
-        hideWhenReady: hideLoaderWhenReady
+        hideWhenReady: hideLoaderWhenReady,
+
+        // Update an in-page filter URL without starting Blazor enhanced
+        // navigation. Bestiary CR/search/filter changes use this so the
+        // address bar stays shareable without flashing the page loader.
+        replaceUrl: url => {
+            if (!url) return;
+
+            const destination = new URL(url, window.location.href);
+            const current = new URL(window.location.href);
+
+            // Keep this helper limited to the current document/route.
+            // Real route changes should continue through Blazor and use
+            // the normal loading screen.
+            if (
+                destination.origin !== current.origin ||
+                destination.pathname !== current.pathname
+            ) {
+                return;
+            }
+
+            window.history.replaceState(
+                window.history.state,
+                "",
+                destination.href);
+        }
     };
 })();

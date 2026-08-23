@@ -1958,9 +1958,13 @@
 
     private void SyncUrl()
     {
-        Navigation.NavigateTo(
-            BuildListUrl(),
-            replace: true);
+        // Bestiary search/filter/CR changes are in-page state changes,
+        // not page navigations. Updating the address bar through the
+        // History API prevents Blazor enhanced navigation from firing
+        // the global page loader every time a CR tab or filter changes.
+        _ = JS.InvokeVoidAsync(
+            "royalTreasuryLoading.replaceUrl",
+            BuildListUrl());
     }
 
 
