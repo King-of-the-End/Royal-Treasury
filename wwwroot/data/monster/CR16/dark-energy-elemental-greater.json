@@ -1,0 +1,157 @@
+{
+  "Name": "Dark Energy Elemental, Greater",
+  "Group": "",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Dark Energy Elemental**\n\nDark Energy Elementals, or simply necrotic elementals, are a unique manifestation. Unlike most elementals that are born from the living nature of the Elemental Planes, the Dark Energy Elemental is born from the vacuous entropic nature of the Plane of Negative Energy. It is the void given shape - a need to consume all light and energy given will, which takes the form of a beast made from a writhing, living mass of black sludge and tar, which absorbs even the very light that touches it. These creatures (if they can be called that) can step through solid material as though swimming through it, making them terrifying hunters. They are drawn to any source of energy they encounter, including the souls of living creatures, and their mere presence erodes those sources of energy and steals it, sending it to the plane from whence they came (or, in the case of devious creators, absorbing and gathering it somewhere for their benefit).",
+  "Information Sections": [
+    {
+      "Title": "Dark Energy Elemental",
+      "Text": "Dark Energy Elementals, or simply necrotic elementals, are a unique manifestation. Unlike most elementals that are born from the living nature of the Elemental Planes, the Dark Energy Elemental is born from the vacuous entropic nature of the Plane of Negative Energy. It is the void given shape - a need to consume all light and energy given will, which takes the form of a beast made from a writhing, living mass of black sludge and tar, which absorbs even the very light that touches it. These creatures (if they can be called that) can step through solid material as though swimming through it, making them terrifying hunters. They are drawn to any source of energy they encounter, including the souls of living creatures, and their mere presence erodes those sources of energy and steals it, sending it to the plane from whence they came (or, in the case of devious creators, absorbing and gathering it somewhere for their benefit)."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Dark%20Energy%20Elemental%20(Ancient).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Dark%20Energy%20Elemental%20(Ancient).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Dark%20Energy%20Elemental%20(Ancient).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dark_energy_elemental_greater",
+      "section_type": "Stat Block",
+      "title": "Dark Energy Elemental, Greater",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "elemental",
+        "alignment": ""
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "262 (15d20 \u002B 105)",
+      "threshold": "10",
+      "speed": {
+        "walk": "10 ft.",
+        "fly": "60 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B9"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "\u002B4"
+        },
+        "CON": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-",
+          "save": "\u002B5"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B9",
+        "Dex \u002B4",
+        "Int \u002B5"
+      ],
+      "skills": [
+        "Perception \u002B8"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "cold",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "tremorsense 120 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [],
+      "challenge_rating": "16 (15,000 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Body of Devouring Tar",
+          "name_format": "bold_italic",
+          "description": "A creature who grapples, is grappled by, or starts its turn in physical contact with the elemental takes 11 (2d10) necrotic damage, and the elemental regains hit points equal to the damage they took."
+        },
+        {
+          "name": "Dark Swimmer",
+          "name_format": "bold_italic",
+          "description": "The elemental can freely move through nonmagical material, disappearing into a wave of tar and sludge as it moves through it. It uses its fly (hover) speed when doing so, and does not disturb the material it is moving through unless it wishes to. The first time each turn that the elemental fully enters or emerges from material it is moving through this way, it causes a wave of necrotic muck to burst forth, forcing each creature within 10 feet of where it enters/exits to make a DC 20 Dexterity saving throw. Each creature that fails takes 18 (4d8) necrotic damage and becomes sluggish until the start of the elemental\u2019s next turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental uses its Draining Sludge and Slam once each."
+        },
+        {
+          "name": "Draining Sludge",
+          "name_format": "bold_italic",
+          "description": "The elemental hurls a glob of necrotic tar at a point it can see within 60 feet, where it explodes in a 10-foot radius sphere. Each creature in that sphere must make a DC 17 Dexterity saving throw, taking 17 (2d12 \u002B 4) bludgeoning damage plus 13 (2d12) necrotic damage on a failure. Creatures who fail by 5 points or more have their maximum hit points reduced by the necrotic damage they take until they complete a Long Rest."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 10 ft., one target. Hit: 37 (6d10 \u002B 4) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dark Ocean Wave (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "A wave of necrotic sludge erupts from the elemental, filling a 100-foot radius sphere centered on it. Each non-elemental creature within the sphere must make a DC 20 Constitution saving throw, taking 77 (14d10) necrotic damage on a failed save, or half as much on a successful one. The elemental then gains temporary hit points equal to the highest instance of damage taken among all its targets. For 10 minutes, or until the elemental uses this action again, any ground within the sphere is filled with waist-high necrotic sludge, making it difficult terrain for all non-elementals, and causing any creature who starts their turn inside it to be treated as being in contact with the elemental as per its Body of Devouring Tar trait (except the elemental doesn\u2019t recover hit points through this)."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

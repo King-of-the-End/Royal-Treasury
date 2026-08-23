@@ -1,0 +1,195 @@
+{
+  "Name": "DGR 007 - MASAMUNE",
+  "Group": "DGR Frame Units",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**DGR 007 - MASAMUNE**\n\nMASAMUNE, the space-cutter, is a unique general-class DGR that was piloted initially by a swordmaster of generational talent, then later assigned to an eidolos who could make use of its skills, and was intended to Junction with them to achieve a specific synergistic skillset. The DGR on its own possesses blades that negate planar energies, serving as mobile \u201Cgate blades\u201D that are not physical weapons, but instead are spatial gates to the Astral Sea. They are capable of cleaving through space and opening a rift to a specialized demiplane that MASAMUNE can trap its targets in, where it can freely choose to isolate them with it to battle them, lowering the risk to itself.",
+  "Information Sections": [
+    {
+      "Title": "DGR 007 - MASAMUNE",
+      "Text": "MASAMUNE, the space-cutter, is a unique general-class DGR that was piloted initially by a swordmaster of generational talent, then later assigned to an eidolos who could make use of its skills, and was intended to Junction with them to achieve a specific synergistic skillset. The DGR on its own possesses blades that negate planar energies, serving as mobile \u201Cgate blades\u201D that are not physical weapons, but instead are spatial gates to the Astral Sea. They are capable of cleaving through space and opening a rift to a specialized demiplane that MASAMUNE can trap its targets in, where it can freely choose to isolate them with it to battle them, lowering the risk to itself."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/DGR-007%20-%20MASAMUNE.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/DGR-007%20-%20MASAMUNE.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/DGR-007%20-%20MASAMUNE.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_007_masamune",
+      "section_type": "Stat Block",
+      "title": "DGR 007 - MASAMUNE",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "",
+        "footprint": "3"
+      },
+      "armor_class": "21 (natural armor)",
+      "hit_points": "210 (20d12 \u002B 80)",
+      "threshold": "10",
+      "speed": {
+        "walk": "50 ft.",
+        "fly": "80 ft.",
+        "0-G acceleration": "220 ft."
+      },
+      "quality_traits": [
+        "Alloyed (Medium)",
+        "immutable",
+        "magical",
+        "unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B9"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B9"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B9",
+        "Int \u002B8",
+        "Cha \u002B9"
+      ],
+      "skills": [
+        "Insight \u002B9",
+        "Perception \u002B13"
+      ],
+      "resistances": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Preceptory Engine (4/Day)",
+          "name_format": "bold_italic",
+          "description": "The DGR chooses one of the following effects, when appropriate, and uses it:",
+          "options": [
+            {
+              "name": "Active Blade",
+              "description": "When hit by a weapon attack, the DGR uses its reaction to make a Darkmatter Blade attack in response. If its attack roll is higher than the attacker\u2019s, the attack misses automatically. Then, this effect repeats in response to every weapon attack made against the DGR until the start of its next turn."
+            },
+            {
+              "name": "Blade Beams",
+              "description": "When the DGR would make a weapon attack on its turn using its Darkmatter weapons, it can choose to increase the reach of those weapons to 120 feet until the end of its turn."
+            },
+            {
+              "name": "Perceptive Critical",
+              "description": "When the DGR rolls an attack roll d20 result of 18 or 19, it can treat the result as a 20 instead."
+            },
+            {
+              "name": "Teleportation",
+              "description": "On its turn, once per turn, the DGR teleports to a space it can see within 60 feet as a bonus action."
+            }
+          ]
+        },
+        {
+          "name": "Vorpal Crisis",
+          "name_format": "bold_italic",
+          "description": "When the DGR rolls a d20 result of 20 on an attack using its Darkmatter weapons, its target must make a DC 20 Constitution saving throw, taking an additional 55 (10d10) force damage on a failed save, or only 17 (3d10) force damage on a successful one."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes four weapon attacks: two with its Darkmatter Blade, and two with its Darkmatter Glaive."
+        },
+        {
+          "name": "Darkmatter Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B12 to hit, reach 15 ft., one target. Hit: 20 (4d6 \u002B 6) force damage. If two or more Darkmatter Blade attacks hit the same target on the same turn, they must make a DC 20 Dexterity saving throw. On a failure, they are knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Darkmatter Glaive",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B12 to hit, reach 20 ft., one target. Hit: 23 (3d10 \u002B 6) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tsuih\u014Djutsu (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The DGR uses each of its six Darkmatter weapons to cut a hole in space, allowing it to target up to six Large or smaller creatures it can see within 60 feet of it. Each target must make a DC 21 Charisma saving throw, and on a failure they are pulled into a harmless demiplane through a dark gatewave cut into the space around them, where they and all other targets who fail appear. The DGR may target creatures bigger than Large, reducing the number of creatures it can target by one for each size category all of its targets may be.\n\nThis demiplane, which is a zero-gravity environment with the appearance of infinite, shifting dark psychic energy, can only be escaped in one of four ways:\n\u2022 The DGR may use a bonus action to release any number of targets trapped there, having them reemerge from where they vanished.\n\u2022 At the start of each trapped creature\u2019s turn, they can choose to repeat the saving throw, and if they succeed they can choose to escape and re-appear where they vanished from.\n\u2022 A creature targeted by any conjuration or teleportation spell that allows for interplanar travel is deposited where it vanished.\n\u2022 After 1 minute, or if the DGR is incapacitated, captured targets are returned to where they vanished.\n\nThe DGR may also choose to target itself or willing creatures with this technique. If they do, these creatures do not make the saving throw, and can choose to use their reaction to leave and re-emerge from where they vanished at any time. It can only target a number of willing creatures (including itself) equal to the number of hostile creatures it targets.\n\nIf the DGR is within its own demiplane, it has advantage on weapon attacks, and also has advantage on saving throws against spells within."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Reset Engine (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR regains all spent uses of its Preceptory Engine trait."
+        }
+      ],
+      "reactions": [],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

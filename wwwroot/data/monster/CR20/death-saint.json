@@ -1,0 +1,215 @@
+{
+  "Name": "Death Saint",
+  "Group": "Spirit",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Death Saint**\n\nMany have attempted to seek enlightenment through the paths of self-refinement and introspection, and those who have achieved these states are often hailed as sword saint progenitors, those who have actualized their true self in such a way that others may use them as a template to improve. However, many seek this enlightenment by walking down a destructive path, and their rage taints their progress as they fail. These darkened few can fall into the fate of becoming a death saint - an undying master who once sought enlightenment, but has found purpose only in the act of combat, bloodshed, and seeking valor. A death saint seeks the strong, seeks influence, and seeks the recognition that comes readily to a true progenitor.\n\n***Bound Grave.*** If a death saint has a shrine, grave, or monument erected to them that serves as a place to worship or vilify their existence, they will return to it upon the destruction of their body. They are considered to be anchored there, and will (usually) reappear from their gravesite within 24 hours of their destruction. Also, if this site is threatened, they can sense it and teleport to it to defend this place. A death saint may only have one such site, and if destroyed it takes a week of meditation at a new, suitable one to bind their spirit to it as well. A death saint cannot be truly killed unless it has no such anchor.",
+  "Information Sections": [
+    {
+      "Title": "Death Saint",
+      "Text": "Many have attempted to seek enlightenment through the paths of self-refinement and introspection, and those who have achieved these states are often hailed as sword saint progenitors, those who have actualized their true self in such a way that others may use them as a template to improve. However, many seek this enlightenment by walking down a destructive path, and their rage taints their progress as they fail. These darkened few can fall into the fate of becoming a death saint - an undying master who once sought enlightenment, but has found purpose only in the act of combat, bloodshed, and seeking valor. A death saint seeks the strong, seeks influence, and seeks the recognition that comes readily to a true progenitor."
+    },
+    {
+      "Title": "Bound Grave",
+      "Text": "If a death saint has a shrine, grave, or monument erected to them that serves as a place to worship or vilify their existence, they will return to it upon the destruction of their body. They are considered to be anchored there, and will (usually) reappear from their gravesite within 24 hours of their destruction. Also, if this site is threatened, they can sense it and teleport to it to defend this place. A death saint may only have one such site, and if destroyed it takes a week of meditation at a new, suitable one to bind their spirit to it as well. A death saint cannot be truly killed unless it has no such anchor."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Death%20Saint.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Death%20Saint.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Death%20Saint.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "death_saint",
+      "section_type": "Stat Block",
+      "title": "Death Saint",
+      "creature": {
+        "size": "Medium",
+        "type": "spirit (undead)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "23 (plate)",
+      "hit_points": "190 (20d8 + 100)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "ethereal",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+7"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+11"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+8"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Wis +11",
+        "Cha +8"
+      ],
+      "skills": [
+        "Athletics +11",
+        "Insight +11",
+        "Intimidation +8",
+        "Perception +17"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "frightened",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 15 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 27"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Sylvan"
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Deathblade Aura",
+          "name_format": "bold_italic",
+          "description": "When a creature ends its turn within 5 feet of the death saint, it takes 1d10 points of slashing damage, unless the death saint is incapacitated."
+        },
+        {
+          "name": "Focus Split",
+          "name_format": "bold_italic",
+          "description": "The death saint has 5 focus points, which it regains at the start of each of its turns. Any action it takes that lists a number of Focus Points beside it requires that many points to use, and they cannot use it unless that many remain to use."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The death saint’s spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material components.",
+          "spellcasting": {
+            "ability": "Wisdom",
+            "components": "no material components",
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "command",
+                  "deflect"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "spells": [
+                  "dispel magic",
+                  "infused weapon"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "darkness",
+                  "malevolent flash",
+                  "shield of blades",
+                  "slash wind"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "reversal wave (7th level)",
+                  "slash wind (9th level)"
+                ]
+              }
+            ],
+            "casting_level_note": "All spells above (except “at will” spells) are cast at 5th level unless their base level is higher. The death saint does not gain Sword Saint Bonus features from them."
+          }
+        },
+        {
+          "name": "Wise Defense",
+          "name_format": "bold_italic",
+          "description": "The death saint’s AC includes its Wisdom modifier."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The death saint makes two weapon attacks, then can make additional weapon attacks by spending 2 focus points each to do so. They may also spend 3 focus points to cast a spell with a casting time of 1 action using Innate Spellcasting."
+        },
+        {
+          "name": "Uchigatana",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 11 (2d10) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dead Saint Spear",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +11 to hit, range 30/90 ft., one target. Hit: 23 (4d8 + 5) necrotic damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Death Cleave (1/Rest, 4 Focus Points)",
+          "name_format": "bold_italic",
+          "description": "The death saint makes one targeted, empowered strike at a target within 10 feet. That target must make a DC 19 Dexterity saving throw, taking 55 (10d10) slashing damage and 55 (10d10) necrotic damage on a failure, or half as much damage on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Flash Step (1 Focus Point)",
+          "name_format": "bold_italic",
+          "description": "The death saint teleports to an unoccupied space it can see within 30 feet (or 60 feet if it spends 2 focus points instead of 1)."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Subversive Parry (0 - 1 Focus Points)",
+          "name_format": "bold_italic",
+          "description": "When the death saint is hit by a weapon attack, they can roll a d10 and reduce the result of the attack that hit them by the result, possibly changing the outcome. This can be done as a regular reaction, but by spending 1 focus point the death saint may use it even if their reaction has been spent."
+        }
+      ]
+    }
+  ]
+}

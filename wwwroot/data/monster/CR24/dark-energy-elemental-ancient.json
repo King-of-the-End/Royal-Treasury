@@ -1,0 +1,200 @@
+{
+  "Name": "Dark Energy Elemental, Ancient",
+  "Group": "",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Dark Energy Elemental**\n\nDark Energy Elementals, or simply necrotic elementals, are a unique manifestation. Unlike most elementals that are born from the living nature of the Elemental Planes, the Dark Energy Elemental is born from the vacuous entropic nature of the Plane of Negative Energy. It is the void given shape - a need to consume all light and energy given will, which takes the form of a beast made from a writhing, living mass of black sludge and tar, which absorbs even the very light that touches it. These creatures (if they can be called that) can step through solid material as though swimming through it, making them terrifying hunters. They are drawn to any source of energy they encounter, including the souls of living creatures, and their mere presence erodes those sources of energy and steals it, sending it to the plane from whence they came (or, in the case of devious creators, absorbing and gathering it somewhere for their benefit).",
+  "Information Sections": [
+    {
+      "Title": "Dark Energy Elemental",
+      "Text": "Dark Energy Elementals, or simply necrotic elementals, are a unique manifestation. Unlike most elementals that are born from the living nature of the Elemental Planes, the Dark Energy Elemental is born from the vacuous entropic nature of the Plane of Negative Energy. It is the void given shape - a need to consume all light and energy given will, which takes the form of a beast made from a writhing, living mass of black sludge and tar, which absorbs even the very light that touches it. These creatures (if they can be called that) can step through solid material as though swimming through it, making them terrifying hunters. They are drawn to any source of energy they encounter, including the souls of living creatures, and their mere presence erodes those sources of energy and steals it, sending it to the plane from whence they came (or, in the case of devious creators, absorbing and gathering it somewhere for their benefit)."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Dark%20Energy%20Elemental%20(Ancient).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Dark%20Energy%20Elemental%20(Ancient).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Dark%20Energy%20Elemental%20(Ancient).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dark_energy_elemental_ancient",
+      "section_type": "Stat Block",
+      "title": "Dark Energy Elemental, Ancient",
+      "creature": {
+        "size": "Colossal",
+        "type": "elemental",
+        "alignment": ""
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "468 (24d20 \u002B 216)",
+      "threshold": "10",
+      "speed": {
+        "walk": "15 ft.",
+        "fly": "90 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist",
+        "massive (Large/15 feet/DC 20)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 21,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "\u002B6"
+        },
+        "CON": {
+          "score": 28,
+          "modifier": "\u002B9"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-",
+          "save": "\u002B7"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B12",
+        "Dex \u002B6",
+        "Int \u002B7"
+      ],
+      "skills": [
+        "Perception \u002B11"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "cold",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "tremorsense 240 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [],
+      "challenge_rating": "24 (62,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Dark Swimmer",
+          "name_format": "bold_italic",
+          "description": "The elemental can freely move through nonmagical material, disappearing into a wave of tar and sludge as it moves through it. It uses its fly (hover) speed when doing so, and does not disturb the material it is moving through unless it wishes to. The first time each turn that the elemental fully enters or emerges from material it is moving through this way, it causes a wave of necrotic muck to burst forth, forcing each creature within 10 feet of where it enters/exits to make a DC 20 Dexterity saving throw. Each creature that fails takes 18 (4d8) necrotic damage and becomes sluggish until the start of the elemental\u2019s next turn."
+        },
+        {
+          "name": "Otherworldly Reconstitution (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If the elemental is reduced to 0 hit points or killed outright, its hit points instead reset to 250, it recharges its Dark Tsunami, regains its spent Legendary Reactions, it can use its Mythic Actions for 1 hour, and it can immediately use its World of Darkness action (requiring no action). If a party defeats the elemental after using its Mythic Awakening, they are awarded an additional 62,000 XP (for a total of 124,000 XP)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental uses its Draining Sludge and Slam once each."
+        },
+        {
+          "name": "Draining Sludge",
+          "name_format": "bold_italic",
+          "description": "The elemental hurls a glob of necrotic tar at a point it can see within 60 feet of it, where it explodes in a 20-foot radius sphere. Each creature in that space must make a DC 20 Dexterity saving throw. Creatures who fail take 18 (2d12 \u002B 5) bludgeoning damage plus 13 (2d12) necrotic damage on a failure, and their hit points are reduced by the necrotic damage dealt."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B12 to hit, reach 15 ft., one target. Hit: 44 (6d12 \u002B 5) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dark Tsunami (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The elemental unleashes a wave of necrotic energy that fills the air in a 300-foot radius sphere centered on it. Each non-elemental creature within the sphere must make a DC 24 Constitution saving throw, taking 91 (14d12) necrotic damage on a failed save, or half as much on a successful one. The elemental gains temporary hit points equal to the highest instance of damage taken among all its targets. Then, for 10 minutes or until the elemental uses this action again, all surfaces and materials within that sphere are coated with dark sludge or filled with necrotic particles, making them difficult terrain for any creature not immune to necrotic damage. Any creature who starts their turn within this difficult terrain takes 2d10 necrotic damage."
+        },
+        {
+          "name": "Mythic Action: World of Darkness (1/Day)",
+          "name_format": "bold_italic",
+          "description": "All natural light disappears in a 1-mile radius, as it is suppressed by a living darkness. Only magical light remains in this area for either 1 hour or until the elemental is killed."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "The elemental moves up to half its movement speed."
+          },
+          {
+            "name": "Dark Teleportation (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elemental\u2019s body discorporates, and it teleports to an unoccupied space it can see within 240 feet, where it emerges from the ground as described by its Dark Swimmer trait. It ends this action adjacent to the surface it emerges from, which must have enough surface area for it to exit from it."
+          },
+          {
+            "name": "Necrotic Cloud (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elemental causes a cloud of dark spores to erupt from a point it can see within 120 feet, which fills a 50-foot cube. This cloud causes all creatures within it to be blinded while inside, and vanishes at the start of the elemental\u2019s next turn."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The elemental makes a Slam attack, ignoring its own Massive trait."
+          },
+          {
+            "name": "Black Wail (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elemental lets out a haunting wail, forcing every creature within 90 feet of it to make a DC 20 Constitution saving throw. Each creature that fails takes 33 (6d10) thunder damage, or half as much on a success."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

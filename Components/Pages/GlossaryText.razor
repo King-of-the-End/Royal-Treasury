@@ -283,14 +283,15 @@
 
 
         var hasTable =
-            hasRichContent
-            &&
-            entry.Blocks.Any(
-                block =>
-                    string.Equals(
-                        block.Type,
-                        "table",
-                        StringComparison.OrdinalIgnoreCase));
+    hasRichContent
+    &&
+    entry.Blocks?.Any(
+        block =>
+            string.Equals(
+                block.Type,
+                "table",
+                StringComparison.OrdinalIgnoreCase))
+    == true;
 
 
         if (hasTable)
@@ -1220,6 +1221,32 @@
                 !string.IsNullOrEmpty(
                     nextLiteral))
             {
+                /*
+                 * A placeholder must not skip across a top-level
+                 * quality-trait/list delimiter just to find its next
+                 * literal later in the string.
+                 *
+                 * Example:
+                 *
+                 *   Pattern: Critical X (Y)
+                 *   Text:    critical 18, magic resist, regen 10 (radiant)
+                 *
+                 * The old unrestricted IndexOf found the " (" before
+                 * "radiant", causing X to consume:
+                 *
+                 *   18, magic resist, regen 10
+                 *
+                 * Restrict the search to the current comma/semicolon-
+                 * separated value so the full Critical X (Y) pattern
+                 * fails cleanly and the Critical X alias can match only
+                 * "critical 18".
+                 */
+                var valueBoundary =
+                    FindQualityTraitValueEnd(
+                        text,
+                        textIndex);
+
+
                 placeholderEnd =
                     text.IndexOf(
                         nextLiteral,
@@ -1228,7 +1255,9 @@
 
 
                 if (
-                    placeholderEnd < 0)
+                    placeholderEnd < 0
+                    ||
+                    placeholderEnd > valueBoundary)
                 {
                     return false;
                 }

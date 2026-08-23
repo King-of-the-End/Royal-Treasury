@@ -1,0 +1,142 @@
+{
+  "Name": "Gaimurai",
+  "Group": "",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Gaimurai**\n\nA distinct style of combat taught to soldiers in the greater Cu Chullian military forces, meant to perform assassinations and stealth missions. These roguish combatants seek to create openings, and are trained to counteract archers, gunners, and other ranged combatants, so they themselves can remain effective at a distance to support their allies.",
+  "Information Sections": [
+    {
+      "Title": "Gaimurai",
+      "Text": "A distinct style of combat taught to soldiers in the greater Cu Chullian military forces, meant to perform assassinations and stealth missions. These roguish combatants seek to create openings, and are trained to counteract archers, gunners, and other ranged combatants, so they themselves can remain effective at a distance to support their allies."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Gaimurai.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Gaimurai.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Gaimurai.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "gaimurai",
+      "section_type": "Stat Block",
+      "title": "Gaimurai",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any, usually elf)",
+        "alignment": ""
+      },
+      "armor_class": "15 (studded leather)",
+      "hit_points": "55 (10d8 + 10)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Critical 19"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+3"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +3"
+      ],
+      "skills": [
+        "Acrobatics +5",
+        "Stealth +8"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 5 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Sliding Dodge",
+          "name_format": "bold_italic",
+          "description": "The gaimurai is resistant to damage from ranged weapons if they are aware of them being made."
+        },
+        {
+          "name": "Throwing Master",
+          "name_format": "bold_italic",
+          "description": "When the gaimurai makes a thrown weapon attack, it treats the weapon’s long range as its normal range, and it ignores all except total cover."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The gaimurai makes two weapon attacks."
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) piercing damage. If this attack had advantage, it deals an extra 7 (2d6) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Throwing Star",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +5 to hit, range 60 ft., one target. Hit: 6 (1d4 + 3) slashing damage, and the next melee attack made against the target by the start of their next turn has advantage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Skulker",
+          "name_format": "bold_italic",
+          "description": "The gaimurai either makes a Perception check to find hidden enemies, or takes the Hide action."
+        },
+        {
+          "name": "Grappling Chain",
+          "name_format": "bold_italic",
+          "description": "The gaimurai fires or throws a grappling device into a space within a surface within their remaining movement speed, then pulls themselves into that space and remains there, secured without falling, until they move or the start of their next turn. This distance between these two points is taken from their remaining movement."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

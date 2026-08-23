@@ -1,0 +1,128 @@
+{
+  "Name": "Devotee of the Viceking",
+  "Group": "",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Devotee of the Viceking**\n\nA deranged killer who holds no place within an order, and has merely been touched by the thrill of murder. Scorn reaches out to those who have truly violent impulses and grants them nearly superhuman abilities, turning a serial killer into the image of depravity itself. Those granted this power will find themselves succumbing to the need to kill, and in doing so inadvertently pay respect to the god of murder.",
+  "Information Sections": [
+    {
+      "Title": "Devotee of the Viceking",
+      "Text": "A deranged killer who holds no place within an order, and has merely been touched by the thrill of murder. Scorn reaches out to those who have truly violent impulses and grants them nearly superhuman abilities, turning a serial killer into the image of depravity itself. Those granted this power will find themselves succumbing to the need to kill, and in doing so inadvertently pay respect to the god of murder."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Viceking%20Devotee.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Viceking%20Devotee.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Viceking%20Devotee.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "devotee_of_the_viceking",
+      "section_type": "Stat Block",
+      "title": "Devotee of the Viceking",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "14 (studded leather)",
+      "hit_points": "113 (15d8 + 45)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Critical 18"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-",
+          "save": "+3"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Wis +3"
+      ],
+      "skills": [
+        "Perception +3",
+        "Stealth +5",
+        "Survival +3"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed"
+      ],
+      "senses": [
+        "tremorsense 30 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Deathly Bliss",
+          "name_format": "bold_italic",
+          "description": "When the devotee takes 10 or more damage from a single attack or effect, it causes them to descend into a violent euphoria, and they gain a cumulative +1 bonus to their attack rolls, and a +2 bonus to their damage rolls. It retains this bonus until the end of its next turn."
+        },
+        {
+          "name": "Reckless Savage",
+          "name_format": "bold_italic",
+          "description": "When the devotee makes an attack on their turn, they can choose to make all of their attacks with advantage until the end of it. If they do, attacks against them have advantage until the end of their next turn."
+        },
+        {
+          "name": "Surge of Adrenaline",
+          "name_format": "bold_italic",
+          "description": "When the devotee scores a critical hit, hits with all three of their weapon attacks in a single turn, or reduces a target to 0 hit points, it gains 15 temporary hit points (for each of these conditions it achieved) at the end of that turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The devotee makes three weapon attacks."
+        },
+        {
+          "name": "Eager Cleaver",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target, or thrown as a Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 9 (1d8 + 4) slashing damage plus 7 (2d6) necrotic damage. On a hit or miss, the cleaver returns to the devotee’s hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

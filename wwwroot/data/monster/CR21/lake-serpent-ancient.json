@@ -1,0 +1,197 @@
+{
+  "Name": "Lake Serpent, Ancient",
+  "Group": "",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Lake Serpents**\n\nLake serpents are a wingless form of dragon that are native mostly to Cu Chullis, and spend most of their time sequestering themselves away in their lairs in lakes, rivers, and other large bodies of water. They are not terribly social creatures - in fact, they are highly territorial by nature, and react poorly to any attempt to enter their lairs or hunting grounds. They are not evil creatures, however, and almost never seek violence against other creatures or try to expand their territory into anywhere other civilized creatures have settled.\n\n***Acidic Bodies.*** As they grow ancient, a lake serpent\u2019s body begins to leak an acidic substance that contaminates the areas it lives in. This mild acid is able to poison and exhaust prey they hunt without killing them outright, making hunting easier, but due to it making the water directly around their lairs more dangerous, it also forces the lake serpents to hunt further and further to find healthier prey. This can lead to a forced expansion of their territory, or to a dragon emerging from the water to hunt on land.\n\n***Spiritual Guides.*** In Cu Chullis, older lake serpents are treated as though they were spiritual beings, and many who wished to seek higher wisdom would leave their questions and plights in bottles or other containers and set them adrift near the lairs of these beasts. More courageous individuals might attempt to seek out a lake serpent to speak with it directly, but their disinterest in the Common tongue left this often pointless.",
+  "Information Sections": [
+    {
+      "Title": "Lake Serpents",
+      "Text": "Lake serpents are a wingless form of dragon that are native mostly to Cu Chullis, and spend most of their time sequestering themselves away in their lairs in lakes, rivers, and other large bodies of water. They are not terribly social creatures - in fact, they are highly territorial by nature, and react poorly to any attempt to enter their lairs or hunting grounds. They are not evil creatures, however, and almost never seek violence against other creatures or try to expand their territory into anywhere other civilized creatures have settled."
+    },
+    {
+      "Title": "Acidic Bodies",
+      "Text": "As they grow ancient, a lake serpent\u2019s body begins to leak an acidic substance that contaminates the areas it lives in. This mild acid is able to poison and exhaust prey they hunt without killing them outright, making hunting easier, but due to it making the water directly around their lairs more dangerous, it also forces the lake serpents to hunt further and further to find healthier prey. This can lead to a forced expansion of their territory, or to a dragon emerging from the water to hunt on land."
+    },
+    {
+      "Title": "Spiritual Guides",
+      "Text": "In Cu Chullis, older lake serpents are treated as though they were spiritual beings, and many who wished to seek higher wisdom would leave their questions and plights in bottles or other containers and set them adrift near the lairs of these beasts. More courageous individuals might attempt to seek out a lake serpent to speak with it directly, but their disinterest in the Common tongue left this often pointless."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR21/Lake%20Serpent%2C%20Ancient.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR21/Lake%20Serpent%2C%20Ancient.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR21/Lake%20Serpent%2C%20Ancient.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lake_serpent_ancient",
+      "section_type": "Stat Block",
+      "title": "Lake Serpent, Ancient",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "dragon",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "22 (natural armor)",
+      "hit_points": "363 (22d20 \u002B 132)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "swim": "90 ft."
+      },
+      "quality_traits": [
+        "Amphibious"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 25,
+          "modifier": "\u002B7",
+          "save": "\u002B14"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B13"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B8"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-",
+          "save": "\u002B7"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B14",
+        "Con \u002B13",
+        "Int \u002B8",
+        "Cha \u002B7"
+      ],
+      "skills": [
+        "Athletics \u002B11",
+        "Perception \u002B21",
+        "Stealth \u002B14",
+        "Survival \u002B14"
+      ],
+      "resistances": [
+        "bludgeoning",
+        "fire"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid",
+        "cold"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 31"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "challenge_rating": "21 (33,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Contaminating Acid",
+          "name_format": "bold_italic",
+          "description": "While in combat or engaging with hostile creatures, the dragon produces an acidic substance through its skin that seeps into the area around it. When a creature hits it with a melee attack while within 5 feet of it, they take 1d8 acid damage. If the dragon is submerged in liquid, any creature who begins their turn within 10 feet of the dragon or moves into that range for the first time on their turn takes this damage as well."
+        },
+        {
+          "name": "Wriggler",
+          "name_format": "bold_italic",
+          "description": "The dragon has advantage on ability checks made to resist or escape being grappled."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes three attacks: one with its Bite, and two with its Claws."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 15 ft., one target. Hit: 18 (2d10 \u002B 7) piercing damage plus 9 (2d8) acid damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claws",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 5 ft., one target. Hit: 14 (2d6 \u002B 7) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Aquatic Pulse Breath (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The serpent breathes a 120-foot cone of freezing, yet acidic water originating from itself. Each creature in the cone must make a DC 21 Constitution saving throw, taking 36 (8d8) cold damage and 36 (8d8) acid damage on a failed save, or half as much damage on a success. Creatures who are submerged in liquid when making this saving throw have disadvantage."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Aquatic Evasion",
+          "name_format": "bold_italic",
+          "description": "While submerged in liquid, the dragon takes the Hide action. Its body can shift in hue to match any liquid it is within, allowing it to Hide in plain view while underwater."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The dragon makes a Bite attack."
+          },
+          {
+            "name": "Constrict",
+            "name_format": "bold_italic",
+            "description": "The dragon makes a grapple attempt against one creature within reach of its Bite, pulling them into a space adjacent to it if successful. If grappled this way, the target is also restrained while grappled."
+          },
+          {
+            "name": "Vibrating Roar (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The dragon unleashes a thunderous cry, which forces each creature within 30 feet of it to make a DC 21 Constitution saving throw. On a failure, targets take 17 (2d10 \u002B 6) thunder damage, and any creature who fails by 5 points or more is deafened for 1 minute. If the dragon uses this action underwater, its range doubles as water supernaturally carries the sound further."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

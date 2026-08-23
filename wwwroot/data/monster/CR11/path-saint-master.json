@@ -1,0 +1,272 @@
+{
+  "Name": "Path Saint, Master",
+  "Group": "",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Path Saint**\n\nThose who have taken steps into their journey under the tutelage of an ancient sword saint. Though not masterful, the aspiring have learned the basic fundamentals of their chosen path and may apply them in combat.\n\n**Master Sword Saint**\n\nA master path saint has refined their raw combat skills and spirit to become one of the most dangerous martial combatants one could find, often separating themselves from the common man so they can focus on refining their art. Master path saints stand on the verge of a breakthrough to perfection, but those who fail to reach that point sometimes fall from grace and turn to abuse of their skills for personal gain.",
+  "Information Sections": [
+    {
+      "Title": "Path Saint",
+      "Text": "Those who have taken steps into their journey under the tutelage of an ancient sword saint. Though not masterful, the aspiring have learned the basic fundamentals of their chosen path and may apply them in combat."
+    },
+    {
+      "Title": "Master Sword Saint",
+      "Text": "A master path saint has refined their raw combat skills and spirit to become one of the most dangerous martial combatants one could find, often separating themselves from the common man so they can focus on refining their art. Master path saints stand on the verge of a breakthrough to perfection, but those who fail to reach that point sometimes fall from grace and turn to abuse of their skills for personal gain."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Path%20Saint%20(Master)_Ref.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Path%20Saint%20(Master)_Ref.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Path%20Saint%20(Master)_Ref.png"
+    }
+  ],
+  "Additional Sections": [
+    {
+      "title": "Path Surges",
+      "section_type": "Path Surges",
+      "intro": "The path saint has not fully refined their abilities, but they have a special trick or two based on the Path they walk. They can use their Path Surge to evoke the corresponding Path they’re following:",
+      "entries": [
+        {
+          "name": "Beast Slayer: Feral Hunt",
+          "action_type": "Bonus Action",
+          "description": "The path saint takes the Dash and Disengage action, and all attacks it makes until the end of its turn have advantage."
+        },
+        {
+          "name": "Besheth: Defending Winds",
+          "action_type": "Trait",
+          "description": "When the path saint is targeted by an attack, they can produce a protective gale that gives all attacks made against them (including that one) disadvantage until the end of their next turn."
+        },
+        {
+          "name": "Blue Metal: Refined Aura",
+          "action_type": "Reaction",
+          "description": "The path saint becomes resistant to all damage until the end of their next turn."
+        },
+        {
+          "name": "Butterfly: Lightstep Flight",
+          "action_type": "Bonus Action",
+          "description": "The path saint gains a fly (hover) speed equal to their base movement speed, as they conjure a pair of butterfly wings that help them to fly. They must concentrate on this effect."
+        },
+        {
+          "name": "Dragonfly: Unfaltering Stand",
+          "action_type": "Reaction",
+          "description": "When the path saint would be reduced to 0 hit points, they are reduced to 1 instead, and can immediately make a weapon attack with advantage against whatever reduced them to 0 hit points. If they hit, the attack is an automatic critical hit."
+        },
+        {
+          "name": "Empyreal Order: Swap Pull",
+          "action_type": "Bonus Action",
+          "description": "The path saint makes a grapple attempt against one creature within 60 feet of them. If they succeed, they can pull them into an unoccupied space up to 30 feet closer to them, where the target falls prone."
+        },
+        {
+          "name": "Eroded Lord: Magic Repulse",
+          "action_type": "Reaction",
+          "description": "When the path saint is targeted by a spell or magical effect, it can choose to become immune to that spell’s effects until the end of its next turn."
+        },
+        {
+          "name": "Grim Passenger: Death Mirror",
+          "action_type": "Trait",
+          "description": "When the path saint would be reduced to 0 hit points, they are reduced to 1 instead and the creature who reduced them to 0 hit points takes 2d12 necrotic damage."
+        },
+        {
+          "name": "Heavenbreaker: Crash Out",
+          "action_type": "Trait",
+          "description": "When the path saint fails an attack roll, saving throw, or ability check (or loses an ability contest), they instead treat their d20 result as though it was a 20. This does not cause a critical hit."
+        },
+        {
+          "name": "Kojiro: Crow’s Landing",
+          "action_type": "Trait",
+          "description": "If a creature attempts to leave the path saint’s reach or makes an attack while adjacent to them, the path saint can make an attack against them with advantage (requiring no action, but requiring they be able to take reactions). This attack resolves before they move or complete their attack."
+        },
+        {
+          "name": "Kyuubi: Jack Promotion",
+          "action_type": "Trait",
+          "description": "When the path saint would make an attack roll, ability check, or saving throw, they may add their proficiency bonus to each of these rolls until the end of their turn, as well as to damage rolls."
+        },
+        {
+          "name": "Muramasa: Blood Drinker",
+          "action_type": "Trait",
+          "description": "When the path saint hits a target with a melee weapon attack, it does an additional weapon die of damage, and the path saint gains temporary hit points equal to the total damage they deal."
+        },
+        {
+          "name": "Musashi: Zero Assault",
+          "action_type": "Reaction",
+          "description": "When the path saint takes damage from a weapon attack, it can put up a defense that reduces all bludgeoning, piercing, or slashing damage they take until the end of that turn to 0."
+        },
+        {
+          "name": "Pendragon: Luck Boost",
+          "action_type": "Bonus Action",
+          "description": "The path saint rolls three d20s, the results of which they retain until they spend them or they use this feature again. Each time they make a d20 roll they can substitute the result with one of those results by spending it. Alternatively, when a creature makes an attack against them they can spend a result to replace the attack’s result with it."
+        },
+        {
+          "name": "Progenitor: Spirit Switch",
+          "action_type": "Bonus Action",
+          "description": "The path saint targets one creature it can see within 60 feet, who must make a Charisma saving throw (DC 8 + their proficiency bonus + their Wisdom modifier). On a failure, the path saint and their target switch places (if there is enough space to allow it)."
+        },
+        {
+          "name": "Rust: Poison Blade",
+          "action_type": "Trait",
+          "description": "When the path saint hits a target with a weapon attack and any of the damage dice scored their maximum value, the path saint may deal an additional weapon die of poison damage, and poison that target until the end of the path saint’s next turn."
+        },
+        {
+          "name": "Snow White Sleeve: Snow Step",
+          "action_type": "Bonus Action",
+          "description": "The path saint teleports up to 30 feet to an unoccupied space it can see, and makes a single weapon attack against a target within range."
+        },
+        {
+          "name": "Tomoe: Lightning Slash",
+          "action_type": "Trait",
+          "description": "The path saint charges their weapon with lightning. The reach of one of their melee weapons becomes 60 feet until the end of that turn, and its next hit before then deals an additional 2d10 lightning damage."
+        }
+      ]
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "path_saint_master",
+      "section_type": "Stat Block",
+      "title": "Path Saint, Master",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": ""
+      },
+      "armor_class": "23 (half plate, medium armor master)",
+      "hit_points": "165 (22d8 + 66)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Avoidance"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+7"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+7"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+9"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Con +7",
+        "Wis +9"
+      ],
+      "skills": [
+        "Athletics +9",
+        "Perception +13"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "11 (7,200 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Deflection Master",
+          "name_format": "bold_italic",
+          "description": "As long as they aren’t incapacitated or restrained, the path saint is resistant to bludgeoning, piercing, and slashing damage."
+        },
+        {
+          "name": "Overwhelm (3/Rest)",
+          "name_format": "bold_italic",
+          "description": "When the path saint fails to hit with an attack or fails a saving throw, it may add a +10 bonus to its result, possibly changing it."
+        },
+        {
+          "name": "Path Surge (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The path saint evokes an effect based on their chosen path. If they have no chosen path, they make one extra attack as part of its Multiattack action on their turn instead. This Path Surge may require a different action type (or no action) based on which it is."
+        },
+        {
+          "name": "Wise Defense",
+          "name_format": "bold_italic",
+          "description": "The path saint’s AC includes its Wisdom modifier."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The path saint makes three weapon attacks. When it hits a given creature for the first time each turn, they must make a DC 17 Dexterity saving throw. On a failure, the path saint chooses one of the following Path Technique options and subjects them to it, which lasts until the start of the path saint’s next turn.",
+          "options": [
+            {
+              "name": "Daze",
+              "description": "The target cannot take reactions or bonus actions."
+            },
+            {
+              "name": "Forceful Push",
+              "description": "The path saint’s attack deals an additional two weapon dice of damage."
+            },
+            {
+              "name": "Sever",
+              "description": "The target has disadvantage on attack rolls."
+            },
+            {
+              "name": "Stunt",
+              "description": "The target’s movement speed is reduced to 10 feet."
+            }
+          ]
+        },
+        {
+          "name": "Naginata",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 11 (1d10 + 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 20/60, one target. Hit: 10 (2d6 + 3) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cyclone Strike",
+          "name_format": "bold_italic",
+          "description": "The path saint spins their Naginata, forcing each creature of their choice within 10 feet to make a DC 17 Dexterity saving throw, taking 22 (3d10 + 5) slashing damage on a failure."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "selected_path_surge": ""
+    }
+  ]
+}

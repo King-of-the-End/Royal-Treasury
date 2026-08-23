@@ -1,0 +1,180 @@
+{
+  "Name": "Fallen Hunter, Hodin",
+  "Group": "Progenitors",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Fallen Hunter, Hodin**\n\nHodin was a hunter of legendary status, who was the last member of an ancient order of monster hunters. In their attempts to contest with the terrors of the night, Hodin performed experiments on themselves that slowly led to the erosion of their humanity, and eventually they became no different than the beasts they hunted. Once they had turned into a horrific beast, their own allies turned on them and slayed them, and Hodin’s body erupted into fire, leaving nothing in his wake. However, inexplicably, Hodin would return time and time again, pulling itself up from the earth with a new, horrific body and resume their hunt for any creature they could find.\n\n**Abyssal Connection**\n\nSomething about Hodin’s curse ties them to the Abyss, and divine agents who have hunted him note that his essence has become like that of a demon. It is believed that when he is killed, he returns as a demon would: reconstituting himself from the essence of the Abyssal hivemind connected to all demons. It is certain that he has not become a demon himself, but this may be the result of some of the experimentation he did on himself to become like the demons he once hunted.\n\n**Cursed Beast**\n\nHodin’s curse has been a thing of wonder for hundreds of years, with many monster hunters seeking it out to finally put an end to the beast’s suffering. None have succeeded however, and Hodin hunts anything that breathes that comes near it. The only exceptions are dire beasts who occasionally bend the knee to the monstrosity he has become, who serve as his “pack.”\n\n**Hunter of Hunters**\n\nHodin seems to recognize hunters who use techniques that are similar to his own order’s, and when confronted with them, he has been seen to regain a small amount of his intelligence. This awareness expresses itself in a sudden desire to goad those hunters into a longer combative dance, which some believe is him giving them an opportunity to study and finally end him... or, perhaps, is a sort of mockery.",
+  "Information Sections": [
+    {
+      "Title": "Fallen Hunter, Hodin",
+      "Text": "Hodin was a hunter of legendary status, who was the last member of an ancient order of monster hunters. In their attempts to contest with the terrors of the night, Hodin performed experiments on themselves that slowly led to the erosion of their humanity, and eventually they became no different than the beasts they hunted. Once they had turned into a horrific beast, their own allies turned on them and slayed them, and Hodin’s body erupted into fire, leaving nothing in his wake. However, inexplicably, Hodin would return time and time again, pulling itself up from the earth with a new, horrific body and resume their hunt for any creature they could find."
+    },
+    {
+      "Title": "Abyssal Connection",
+      "Text": "Something about Hodin’s curse ties them to the Abyss, and divine agents who have hunted him note that his essence has become like that of a demon. It is believed that when he is killed, he returns as a demon would: reconstituting himself from the essence of the Abyssal hivemind connected to all demons. It is certain that he has not become a demon himself, but this may be the result of some of the experimentation he did on himself to become like the demons he once hunted."
+    },
+    {
+      "Title": "Cursed Beast",
+      "Text": "Hodin’s curse has been a thing of wonder for hundreds of years, with many monster hunters seeking it out to finally put an end to the beast’s suffering. None have succeeded however, and Hodin hunts anything that breathes that comes near it. The only exceptions are dire beasts who occasionally bend the knee to the monstrosity he has become, who serve as his “pack.”"
+    },
+    {
+      "Title": "Hunter of Hunters",
+      "Text": "Hodin seems to recognize hunters who use techniques that are similar to his own order’s, and when confronted with them, he has been seen to regain a small amount of his intelligence. This awareness expresses itself in a sudden desire to goad those hunters into a longer combative dance, which some believe is him giving them an opportunity to study and finally end him... or, perhaps, is a sort of mockery."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Fallen%20Hunter%2C%20Hodin.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Fallen%20Hunter%2C%20Hodin.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Fallen%20Hunter%2C%20Hodin.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "fallen_hunter_hodin",
+      "section_type": "Stat Block",
+      "title": "Fallen Hunter, Hodin",
+      "creature": {
+        "size": "Large",
+        "type": "monstrosity",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "300 (24d10 + 168)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "battle ready",
+        "keen senses",
+        "magic resist",
+        "regen 20 (fire, radiant)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+8"
+        },
+        "CON": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "INT": {
+          "score": 5,
+          "modifier": "-3",
+          "save": "+3"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+10"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +8",
+        "Int +3",
+        "Wis +10"
+      ],
+      "skills": [
+        "Perception +16",
+        "Survival +10"
+      ],
+      "resistances": [
+        "B/P/S (silvered)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 26 (31 with Keen Senses)"
+      ],
+      "languages": [
+        "Abyssal"
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Death Throes: Cursed Flame",
+          "name_format": "bold_italic",
+          "description": "When Hodin is killed, its body erupts into a vortex of black fire that explodes outward, catching all creatures within 30 feet of it. Each creature in that area must make a DC 21 Dexterity saving throw, taking 22 (4d10) fire damage and 22 (4d10) necrotic damage on a failed save, or half as much on a success. Hodin’s body is then reduced to ash and dust."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Hodin makes two Eldritch Maul attacks, then uses its Bloodburst."
+        },
+        {
+          "name": "Eldritch Maul",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) slashing damage plus 9 (2d8) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Bloodburst",
+          "name_format": "bold_italic",
+          "description": "Hodin unleashes a splash of bestial blood in a 30-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 26 (4d12) necrotic damage on a failure."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Dash",
+          "name_format": "bold_italic",
+          "description": "Hodin takes the Dash action."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Deadly Opportunity Attack",
+          "name_format": "bold_italic",
+          "description": "When Hodin makes an opportunity attack and hits, he deals an additional 2d8 necrotic damage, and if the target is Huge or smaller he can throw them into an unoccupied space of his choice within 30 feet of himself, where they fall prone."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Frighten",
+            "name_format": "bold_italic",
+            "description": "Hodin attempts to frighten one creature who can see or hear it within 60 feet. Their target must succeed on a DC 17 Wisdom saving throw or be frightened of Hodin for 1 minute, during which time they repeat the save at the end of each of their turns, ending the effect on a success. A creature who succeeds either save becomes immune to this effect for 24 hours."
+          },
+          {
+            "name": "Hunt Down (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Hodin moves up to their movement speed and makes an Eldritch Maul attack."
+          },
+          {
+            "name": "Deadmark (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Hodin produces the effects of the hunter’s mark spell, requiring no spell slot. It can concentrate on multiple instances of this effect against multiple targets simultaneously."
+          }
+        ]
+      }
+    }
+  ]
+}

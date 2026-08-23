@@ -1,0 +1,131 @@
+{
+  "Name": "Cult Champion",
+  "Group": "",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Cult Champion**\n\nThe cult champion is an elite warrior among their cult brethren, trained as a combatant rather than to perform their dark purposes. They are blessed with protections and charms that let them resist harm, as well as robes of bloody leather that can suppress physical trauma.\n\nThis stat block may be used as a template. The traits and actions of other cultists may be added to it to make the Cultist Champion more specifically themed, and its necrotic damage may be changed to a more appropriate damage type.",
+  "Information Sections": [
+    {
+      "Title": "Cult Champion",
+      "Text": "The cult champion is an elite warrior among their cult brethren, trained as a combatant rather than to perform their dark purposes. They are blessed with protections and charms that let them resist harm, as well as robes of bloody leather that can suppress physical trauma.\n\nThis stat block may be used as a template. The traits and actions of other cultists may be added to it to make the Cultist Champion more specifically themed, and its necrotic damage may be changed to a more appropriate damage type."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Cult%20Champion.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Cult%20Champion.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Cult%20Champion.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "cult_champion",
+      "section_type": "Stat Block",
+      "title": "Cult Champion",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "varies (usually evil)"
+      },
+      "armor_class": "15 (dread leather)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "magic immunity 3rd"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Str +6",
+        "Con +5",
+        "Wis +4"
+      ],
+      "skills": [
+        "Deception +5",
+        "Perception +4"
+      ],
+      "resistances": [
+        "necrotic",
+        "poison"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 30 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Dread Leather",
+          "name_format": "bold_italic",
+          "description": "The cultist wears specialized armor that was blessed as part of a ritual to their god. The armor, when worn by a follower of their deity, reduces all bludgeoning, piercing, and slashing damage they take by 5 points."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The cultist makes three weapon attacks."
+        },
+        {
+          "name": "Dark Spear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target, or thrown as a Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 7 (1d6 + 3) piercing damage plus (1d8) necrotic damage. After being thrown, the spear vanishes and appears in the cultist’s hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Devotion’s Reward (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The cultist regains 27 (6d8) hit points and becomes resistant to all damage until the start of its next turn."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

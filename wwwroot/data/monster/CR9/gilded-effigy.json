@@ -1,0 +1,134 @@
+{
+  "Name": "Gilded Effigy",
+  "Group": "",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Gilded Effigy**\n\nFortune Elementals - otherwise known as gilded effigies - are born from a confluence of an arcanist’s greed and the energies of the Elemental Plane of Fire merging. These elementals are technically a subset of fire elemental, but their essence has been twisted to seek out items and people of value and aim to collect them. Weapons of great value or that carry a unique, mighty legacy are weak against them as they absorb the weapon’s luck as they’re used against them, while they remain vulnerable to items that might be considered worthless to others. Their golden bodies often resemble a being who is a symbol of adoration or affection.",
+  "Information Sections": [
+    {
+      "Title": "Gilded Effigy",
+      "Text": "Fortune Elementals - otherwise known as gilded effigies - are born from a confluence of an arcanist’s greed and the energies of the Elemental Plane of Fire merging. These elementals are technically a subset of fire elemental, but their essence has been twisted to seek out items and people of value and aim to collect them. Weapons of great value or that carry a unique, mighty legacy are weak against them as they absorb the weapon’s luck as they’re used against them, while they remain vulnerable to items that might be considered worthless to others. Their golden bodies often resemble a being who is a symbol of adoration or affection."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Gilded%20Effigy.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Gilded%20Effigy.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Gilded%20Effigy.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "gilded_effigy",
+      "section_type": "Stat Block",
+      "title": "Gilded Effigy",
+      "creature": {
+        "size": "Large",
+        "type": "elemental",
+        "alignment": "true neutral"
+      },
+      "armor_class": "10 (natural armor)",
+      "hit_points": "128 (15d10 + 45)",
+      "threshold": "5",
+      "speed": {
+        "walk": "20 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 5,
+          "modifier": "-3",
+          "save": "+1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "+5"
+        }
+      },
+      "saving_throws": [
+        "Dex +1",
+        "Wis +4"
+      ],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical)",
+        "damage from Rare and rarer weapons"
+      ],
+      "vulnerabilities": [
+        "damage from broken or improvised weapons (bypasses resistances)"
+      ],
+      "immunities": [
+        "damage from Legendary weapons and artifacts"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 10"
+      ],
+      "languages": [
+        "Terran",
+        "Ignan"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Strength by Rarity",
+          "name_format": "bold_italic",
+          "description": "The strength of the elemental changes based on the wealth of its targets. When it makes an attack against a target carrying a rare item, it gains a +1 bonus to attack and damage rolls. This bonus becomes a +2 if they carry a very rare item, +3 if they carry a Legendary item, and +5 if they carry an artifact."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental makes four Gilded Slam attacks."
+        },
+        {
+          "name": "Gilded Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 11 (1d8 + 6) bludgeoning damage plus 6 (1d10) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Gold Furnace Breath (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The elemental breathes fire and gold dust in a 30-foot cone originating from itself. Each creature in that space must make a DC 15 Constitution saving throw, taking 27 (6d8) fire damage on a failed save, or half as much on a successful one. Any creature who fails this save by 5 points or more or who is reduced to 0 hit points by it begins to petrify into gold, and becomes sluggish for 1 minute. During this time, the creature repeats the saving throw at the end of each of their turns. On three successes or a d20 result of 20, the effect ends. On three failures or a d20 result of 1, the creature becomes completely petrified until the fortune elemental is destroyed, or they are restored by an effect such as greater restoration."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Scent of Luster",
+          "name_format": "bold_italic",
+          "description": "If a creature is carrying more than 100 gold pieces (or some equivalent in another currency) or an item of Legendary/Artifact rarity, the elemental moves up to 40 feet toward them and makes a single Gilded Slam attack against them."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

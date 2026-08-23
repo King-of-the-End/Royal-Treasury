@@ -1,0 +1,132 @@
+{
+  "Name": "DGR 034 - TSURUGI",
+  "Group": "DGR Frame Units",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**DGR 034 - TSURUGI**\n\nThe final original model of DGR that was built in the original 001 through 034 designations. It was designed both as armor for basic soldiers and a means to give those without much combat ability a means to defend themselves, by relying on the DGR’s own combat instincts. It is an electrically charged unit capable of quick speed-blitzes, and would teleport as though in a bolt of lightning.",
+  "Information Sections": [
+    {
+      "Title": "DGR 034 - TSURUGI",
+      "Text": "The final original model of DGR that was built in the original 001 through 034 designations. It was designed both as armor for basic soldiers and a means to give those without much combat ability a means to defend themselves, by relying on the DGR’s own combat instincts. It is an electrically charged unit capable of quick speed-blitzes, and would teleport as though in a bolt of lightning."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/DGR%20034%20-%20TSURUGI.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/DGR%20034%20-%20TSURUGI.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/DGR%20034%20-%20TSURUGI.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_034_tsurugi",
+      "section_type": "Stat Block",
+      "title": "DGR 034 - TSURUGI",
+      "creature": {
+        "size": "Medium",
+        "type": "construct (DGR)",
+        "alignment": "",
+        "footprint": "1"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "60 (8d8 + 24)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "0-G acceleration": "60 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Athletics +5",
+        "Perception +4"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two weapon attacks."
+        },
+        {
+          "name": "Lightning Eidoblades",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 4) slashing damage plus 6 (1d10) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Lightning Blade",
+          "name_format": "bold_italic",
+          "description": "The DGR teleports to an unoccupied space it can see within 30 feet, then makes a single Lightning Eidoblades attack with advantage."
+        },
+        {
+          "name": "Reversal Stance",
+          "name_format": "bold_italic",
+          "description": "The DGR takes a defensive stance until the start of its next turn. During this time, it regains its reaction at the start of every creature’s turn, makes opportunity attacks with advantage, and can use its reaction to make an opportunity attack against any creature who attacks it or another creature from within 5 feet of it."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

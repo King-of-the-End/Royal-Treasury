@@ -1493,6 +1493,16 @@ public sealed class MonsterService
             }
 
 
+            monster.PathSurgeSections ??=
+                new List<MonsterPathSurgeSection>();
+
+            foreach (var pathSurgeSection in metadata.PathSurgeSections)
+            {
+                monster.PathSurgeSections.Add(pathSurgeSection);
+            }
+
+
+
             // =================================
             // OUTER IMAGE
             //
@@ -1679,6 +1689,11 @@ public sealed class MonsterService
                 element);
 
 
+        var pathSurgeSections =
+            ReadPathSurgeSectionsProperty(
+                element);
+
+
         var image =
             ReadStringProperty(
                 element,
@@ -1751,6 +1766,7 @@ public sealed class MonsterService
                 information,
                 informationSections,
                 stationSections,
+                pathSurgeSections,
                 image,
                 imageVariants,
                 refinement,
@@ -1802,6 +1818,14 @@ public sealed class MonsterService
             ? local.StationSections
 
             : inherited.StationSections;
+
+
+        var pathSurgeSections =
+            local.PathSurgeSections.Count > 0
+
+            ? local.PathSurgeSections
+
+            : inherited.PathSurgeSections;
 
 
         var image =
@@ -1858,6 +1882,7 @@ public sealed class MonsterService
                 information,
                 informationSections,
                 stationSections,
+                pathSurgeSections,
                 image,
                 imageVariants,
                 refinement,
@@ -1866,6 +1891,7 @@ public sealed class MonsterService
                 groups,
                 sources);
     }
+
 
 
     // =====================================
@@ -2090,6 +2116,57 @@ public sealed class MonsterService
             }
         }
 
+
+        return sections;
+    }
+
+
+    private IReadOnlyList<MonsterPathSurgeSection>
+        ReadPathSurgeSectionsProperty(JsonElement element)
+    {
+        if (!TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName("Additional Sections"),
+                out var value)
+            || value.ValueKind != JsonValueKind.Array)
+        {
+            return Array.Empty<MonsterPathSurgeSection>();
+        }
+
+        var sections = new List<MonsterPathSurgeSection>();
+
+        foreach (var sectionElement in value.EnumerateArray())
+        {
+            if (sectionElement.ValueKind != JsonValueKind.Object)
+            {
+                continue;
+            }
+
+            var sectionType = ReadStringProperty(sectionElement, "section_type");
+
+            if (!string.Equals(
+                    NormalizePropertyName(sectionType),
+                    "pathsurges",
+                    StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+            try
+            {
+                var section = JsonSerializer.Deserialize<MonsterPathSurgeSection>(
+                    sectionElement.GetRawText(),
+                    jsonOptions);
+
+                if (section is not null && section.Entries.Count > 0)
+                {
+                    sections.Add(section);
+                }
+            }
+            catch (JsonException)
+            {
+            }
+        }
 
         return sections;
     }
@@ -2891,6 +2968,7 @@ public sealed class MonsterService
         string Information,
         IReadOnlyList<MonsterInformationSection> InformationSections,
         IReadOnlyList<MonsterStationSection> StationSections,
+        IReadOnlyList<MonsterPathSurgeSection> PathSurgeSections,
         string Image,
         IReadOnlyList<string> ImageVariants,
         MonsterRefinementData? Refinement,
@@ -2905,6 +2983,7 @@ public sealed class MonsterService
                 string.Empty,
                 Array.Empty<MonsterInformationSection>(),
                 Array.Empty<MonsterStationSection>(),
+                Array.Empty<MonsterPathSurgeSection>(),
                 string.Empty,
                 Array.Empty<string>(),
                 null,

@@ -1,0 +1,152 @@
+{
+  "Name": "DGR 029 - KORYOS",
+  "Group": "DGR Frame Units",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**DGR 029 - KORYOS**\n\nKORYOS is a unit that is much larger than others constructed in its generation - it was created to act as a hunter and sentry, with an alien form that is meant to confuse targets it goes after. KORYOS was originally made with the intention of being mostly unmanned units that would guard strategic areas with predetermined orders, but the limited initial use of DGR units prevented this from ever happening. This insectoid machine is capable of digging below the ground and sensing the locations of other terrestrial enemies with great ease.",
+  "Information Sections": [
+    {
+      "Title": "DGR 029 - KORYOS",
+      "Text": "KORYOS is a unit that is much larger than others constructed in its generation - it was created to act as a hunter and sentry, with an alien form that is meant to confuse targets it goes after. KORYOS was originally made with the intention of being mostly unmanned units that would guard strategic areas with predetermined orders, but the limited initial use of DGR units prevented this from ever happening. This insectoid machine is capable of digging below the ground and sensing the locations of other terrestrial enemies with great ease."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/DGR%20029%20-%20KORYOS.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/DGR%20029%20-%20KORYOS.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/DGR%20029%20-%20KORYOS.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_029_koryos",
+      "section_type": "Stat Block",
+      "title": "DGR 029 - KORYOS",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": "",
+        "footprint": "2"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "119 (14d12 + 28)",
+      "threshold": "10",
+      "speed": {
+        "walk": "45 ft.",
+        "burrow": "30 ft.",
+        "climb": "45 ft.",
+        "0-G acceleration": "80 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "magical",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Con +5",
+        "Int +5"
+      ],
+      "skills": [
+        "Perception +11",
+        "Survival +8"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "tremorsense 90 ft.",
+        "darkvision 90 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "7 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Confusing Strikes",
+          "name_format": "bold_italic",
+          "description": "The many limbs of the DGR strike in a feverish rush, confusing targets. When the DGR misses an attack against a target, the next attack it makes against them on the same turn has advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes four Ferris Claw attacks."
+        },
+        {
+          "name": "Ferris Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 5) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Sonic Scream",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a chittering, sharp scream as an array of sonic energy, targeting one creature it can see within 90 feet, as a Ranged Weapon Attack: +8 to hit. Hit: 33 (5d10 + 5) thunder damage, and if any of the d10s rolls a result of 10, the target is deafened until the end of the DGR’s next turn.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Hunting Check",
+          "name_format": "bold_italic",
+          "description": "The DGR makes a Perception check, attempting to locate all hidden creatures within the range of its tremorsense."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

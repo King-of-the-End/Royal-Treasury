@@ -618,6 +618,19 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // PATH SURGES
+    // =====================================
+
+    [JsonPropertyName("path_surge_sections")]
+    public List<MonsterPathSurgeSection> PathSurgeSections { get; set; } =
+        new();
+
+    [JsonPropertyName("selected_path_surge")]
+    public string SelectedPathSurge { get; set; } =
+        string.Empty;
+
+
+    // =====================================
     // RAW TEXT
     // =====================================
 
@@ -1968,6 +1981,38 @@ public sealed class MonsterStationAction
     [JsonPropertyName("description")]
     public string Description { get; set; } =
         string.Empty;
+}
+
+
+// =========================================
+// MONSTER PATH SURGE SECTION
+// =========================================
+
+public sealed class MonsterPathSurgeSection
+{
+    [JsonPropertyName("title")]
+    public string Title { get; set; } = string.Empty;
+
+    [JsonPropertyName("section_type")]
+    public string SectionType { get; set; } = string.Empty;
+
+    [JsonPropertyName("intro")]
+    public string Intro { get; set; } = string.Empty;
+
+    [JsonPropertyName("entries")]
+    public List<MonsterPathSurgeEntry> Entries { get; set; } = new();
+}
+
+public sealed class MonsterPathSurgeEntry
+{
+    [JsonPropertyName("name")]
+    public string Name { get; set; } = string.Empty;
+
+    [JsonPropertyName("action_type")]
+    public string ActionType { get; set; } = string.Empty;
+
+    [JsonPropertyName("description")]
+    public string Description { get; set; } = string.Empty;
 }
 
 

@@ -1,0 +1,124 @@
+{
+  "Name": "Dark Energy Elemental",
+  "Group": "",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Dark Energy Elemental**\n\nDark Energy Elementals, or simply necrotic elementals, are a unique manifestation. Unlike most elementals that are born from the living nature of the Elemental Planes, the Dark Energy Elemental is born from the vacuous entropic nature of the Plane of Negative Energy. It is the void given shape - a need to consume all light and energy given will, which takes the form of a beast made from a writhing, living mass of black sludge and tar, which absorbs even the very light that touches it. These creatures (if they can be called that) can step through solid material as though swimming through it, making them terrifying hunters. They are drawn to any source of energy they encounter, including the souls of living creatures, and their mere presence erodes those sources of energy and steals it, sending it to the plane from whence they came (or, in the case of devious creators, absorbing and gathering it somewhere for their benefit).",
+  "Information Sections": [
+    {
+      "Title": "Dark Energy Elemental",
+      "Text": "Dark Energy Elementals, or simply necrotic elementals, are a unique manifestation. Unlike most elementals that are born from the living nature of the Elemental Planes, the Dark Energy Elemental is born from the vacuous entropic nature of the Plane of Negative Energy. It is the void given shape - a need to consume all light and energy given will, which takes the form of a beast made from a writhing, living mass of black sludge and tar, which absorbs even the very light that touches it. These creatures (if they can be called that) can step through solid material as though swimming through it, making them terrifying hunters. They are drawn to any source of energy they encounter, including the souls of living creatures, and their mere presence erodes those sources of energy and steals it, sending it to the plane from whence they came (or, in the case of devious creators, absorbing and gathering it somewhere for their benefit)."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Dark%20Energy%20Elemental.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Dark%20Energy%20Elemental.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Dark%20Energy%20Elemental.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dark_energy_elemental",
+      "section_type": "Stat Block",
+      "title": "Dark Energy Elemental",
+      "creature": {
+        "size": "Large",
+        "type": "elemental",
+        "alignment": ""
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "126 (12d8 + 72)",
+      "speed": {
+        "walk": "50 ft.",
+        "burrow": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "cold",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone"
+      ],
+      "senses": [
+        "tremorsense 120 ft.",
+        "passive Perception 10"
+      ],
+      "languages": [],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Body of Devouring Tar",
+          "name_format": "bold_italic",
+          "description": "The body of the elemental is made of an energy-absorbing sludge-like material. When it grapples a creature or a creature begins its turn in contact with the elemental, it must make a DC 17 Constitution saving throw. On a failure, they take 2d10 necrotic damage, and the elemental regains hit points equal to the damage it takes."
+        },
+        {
+          "name": "Dark Tunneler",
+          "name_format": "bold_italic",
+          "description": "The elemental can freely move through nonmagical material, disappearing into a “puddle” of tar and sludge as it moves through it. It uses its burrowing speed when doing so, and does not disturb the material it’s moving through unless it wishes to."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental makes two Tar Collision attacks."
+        },
+        {
+          "name": "Tar Collision",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (1d10 + 6) bludgeoning damage plus 6 (1d10) necrotic damage. The target must make a DC 17 Constitution saving throw. On a failure, their maximum hit points are reduced by the damage they took from this attack until the next time they complete a Long Rest, and the elemental regains that many hit points.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

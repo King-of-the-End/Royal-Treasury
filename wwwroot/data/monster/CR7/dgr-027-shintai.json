@@ -1,0 +1,166 @@
+{
+  "Name": "DGR 027 - SHINTAI",
+  "Group": "DGR Frame Units",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**DGR 027 - SHINTAI**\n\nKnown as “the living shrine,” and meant as a pseudo-medical unit that could protect and repair soldiers by healing them inside it. SHINTAI releases sub-eidomantic particles of energy that can infuse elements and objects around it, to bring out latent qualities in them to suit its needs. The design of the SHINTAI is inspired by golems found only in the Fey Realm.",
+  "Information Sections": [
+    {
+      "Title": "DGR 027 - SHINTAI",
+      "Text": "Known as “the living shrine,” and meant as a pseudo-medical unit that could protect and repair soldiers by healing them inside it. SHINTAI releases sub-eidomantic particles of energy that can infuse elements and objects around it, to bring out latent qualities in them to suit its needs. The design of the SHINTAI is inspired by golems found only in the Fey Realm."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/DGR-027%20-%20SHINTAI.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/DGR-027%20-%20SHINTAI.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/DGR-027%20-%20SHINTAI.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_027_shintai",
+      "section_type": "Stat Block",
+      "title": "DGR 027 - SHINTAI",
+      "creature": {
+        "size": "Large",
+        "type": "construct (DGR)",
+        "alignment": "",
+        "footprint": "2"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "95 (10d10 + 40)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft. (hover)",
+        "0-G acceleration": "80 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Int +4",
+        "Cha +6"
+      ],
+      "skills": [
+        "Nature +4",
+        "Perception +7"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "truesight 10 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "understands all, but doesn’t speak"
+      ],
+      "challenge_rating": "7 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Restorative Shrine",
+          "name_format": "bold_italic",
+          "description": "A creature piloting this DGR is treated by its restorative properties, regaining 10 hit points at the start of each of the DGR’s turns."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two DGR Kanabo attacks, then uses its Sacred Infusion if it is available."
+        },
+        {
+          "name": "DGR Kanabo",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Sacred Infusion (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The DGR uses one of its infusion options to bind sacred energy in one of the particular ways described; each time one of these effects is used, any ongoing effect ends.",
+          "options": [
+            {
+              "name": "Beloved Spirits",
+              "description": "The DGR infuses photons around them with energy, causing them to form illusory celestial spirits that stay around the DGR unit, protecting it from attacks. The DGR takes half damage from all attacks while it is under this effect, except eidolic ones."
+            },
+            {
+              "name": "Burning Wrath",
+              "description": "The DGR infuses spiritual energy into molecules on its Kanabo, forcing them to ignite. While it is ignited this way, the first DGR Kanabo attack it hits with each turn deals an extra 18 (4d8) fire damage. This effect ends if the DGR ends its turn without making a DGR Kanabo attack."
+            },
+            {
+              "name": "Freezing Shell",
+              "description": "The DGR infuses spiritual energy into moisture in the air, then binds it together to form around a point it chooses within 60 feet. A 20-foot radius sphere of freezing water appears there, engulfing anything in that space. Each creature that starts its turn in that sphere must make a DC 15 Constitution saving throw, taking 2d12 cold damage on a failure and their movement speed is reduced to 0 until the start of their next turn, or half as much on a success, and their movement is unaffected."
+            },
+            {
+              "name": "Land’s Grasp",
+              "description": "The DGR chooses three targets within 60 feet of it, and infuses sacred energy into seeds built into its hull to produce grasping roots, which try to bind those targets. Each target must make a DC 15 Strength saving throw or be restrained. The target can attempt a DC 15 Strength check in place of a weapon attack on their turn, breaking free on a success."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Sacred Shelter",
+          "name_format": "bold_italic",
+          "description": "If the DGR has no pilot, it can use its bonus action to quickly open and grab one Large or smaller creature within 10 feet of it, and thrust them inside it. If they are willing, it may allow them to act as its pilot. If they are unwilling, they may attempt a DC 15 Strength saving throw to resist being caught, avoiding it on a success. On a failure they are trapped inside it, blinded and restrained, and can only escape if the DGR is reduced to 0 hit points or if the creature inside deals 20 or more damage to it in a single turn, in which case the DGR must succeed a DC 15 Constitution saving throw or expel the creature into an unoccupied space within 10 feet."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}
