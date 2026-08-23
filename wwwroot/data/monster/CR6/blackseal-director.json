@@ -1,0 +1,142 @@
+{
+  "Name": "Blackseal Director",
+  "Group": "The Blackseal Order",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Director**\n\nDirectors are brought into the Blackseal order either through coercion or by offering themselves to it. They are the secretive, wealthy, and influential individuals who hold sway over those around them, but due to their shortcomings or greed have found themselves drawn to the Pale Word. Directors must perform an unspeakable act to reach this rank, which is decided by their Wordless Master, and that act is held over them as blackmail in case they ever turn against the order.",
+  "Information Sections": [
+    {
+      "Title": "Director",
+      "Text": "Directors are brought into the Blackseal order either through coercion or by offering themselves to it. They are the secretive, wealthy, and influential individuals who hold sway over those around them, but due to their shortcomings or greed have found themselves drawn to the Pale Word. Directors must perform an unspeakable act to reach this rank, which is decided by their Wordless Master, and that act is held over them as blackmail in case they ever turn against the order."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "blackseal_director",
+      "section_type": "Stat Block",
+      "title": "Blackseal Director",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "17 (padded armor +2)",
+      "hit_points": "99 (18d8 + 18)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+7"
+        }
+      },
+      "saving_throws": [
+        "Str +4",
+        "Wis +4",
+        "Cha +7"
+      ],
+      "skills": [
+        "Deception +10",
+        "Insight +4",
+        "Persuasion +7"
+      ],
+      "resistances": [
+        "poison",
+        "psychic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 20 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Common",
+        "telepathy (touch)",
+        "three other languages"
+      ],
+      "challenge_rating": "6 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Directed Dictation",
+          "name_format": "bold_italic",
+          "description": "The director can choose what creatures around it can hear it when it speaks, and those it doesn’t wish to hear it do not hear its words or see it performing verbal components. If it is within another creature’s range for truesight, that creature can hear it regardless."
+        },
+        {
+          "name": "Static Mind",
+          "name_format": "bold_italic",
+          "description": "The director has advantage on Intelligence, Wisdom, and Charisma saving throws."
+        },
+        {
+          "name": "Mask of Personas",
+          "name_format": "bold_italic",
+          "description": "The director wears a mask blessed by Hightrankul. So long as one of Hightrankul’s followers wears it, their voice and mannerisms cannot be discerned by those studying them, and their voice is not recognizable as their own."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The director makes three weapon attacks."
+        },
+        {
+          "name": "Cursed Ink Rapier",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach ft., one target. Hit: 9 (1d8 + 4) piercing damage plus 7 (2d6) poison damage. If any of the damage dice roll their highest possible value, the target is magically silenced and cannot produce vocalizations (including verbal spell components) until the start of the director’s next turn. They can still hear an illusion of their own attempts at speech or components, however.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Exit Stage (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The director produces the effects of the greater invisibility spell, targeting themselves, requiring no spell slot or components."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Hide in Many Faces",
+          "name_format": "bold_italic",
+          "description": "The director secretly teleports and switches places with any willing creature within 30 feet who is also wearing a Mask of Personas. Until the director and creature they switched with take an action or are attacked, the appearance of each switches through an illusory effect, and the voice of each can originate from the other."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Decoding Shield",
+          "name_format": "bold_italic",
+          "description": "If the director is hit by an attack, or it would take damage from a spell, it can use this reaction to cause a barrier of psychic energy to surround itself, which causes two effects: the director’s AC increases by 3 until the start of its next turn, and it takes half damage from the triggering spell."
+        }
+      ]
+    }
+  ]
+}

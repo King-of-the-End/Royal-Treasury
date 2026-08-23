@@ -1,0 +1,222 @@
+.rt-spell-list-switcher {
+    margin: 0.75rem 0 0.65rem;
+    border: 1px solid rgba(var(--stat-accent-rgb), 0.5);
+    background: #050505;
+    overflow: hidden;
+}
+
+.rt-spell-list-switcher-title {
+    padding: 0.32rem 0.7rem;
+    border-bottom: 1px solid var(--stat-accent);
+    background:
+        linear-gradient(
+            180deg,
+            var(--stat-accent-bright),
+            var(--stat-accent)
+        );
+    color: var(--stat-accent-text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 900;
+    letter-spacing: 0.045em;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.rt-spell-list-tabs {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color:
+        var(--stat-accent)
+        transparent;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(var(--stat-accent-rgb), 0.08),
+            rgba(0, 0, 0, 0)
+        );
+}
+
+.rt-spell-list-tab {
+    position: relative;
+    flex: 0 0 auto;
+    min-height: 2.25rem;
+    padding: 0.5rem 0.9rem 0.46rem;
+    border: 0;
+    border-right: 1px solid rgba(var(--stat-accent-rgb), 0.3);
+    border-bottom: 3px solid transparent;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f4f1ed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 800;
+    line-height: 1.1;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+        background 120ms ease,
+        color 120ms ease,
+        border-color 120ms ease;
+}
+
+.rt-spell-list-tab:hover {
+    background: rgba(var(--stat-accent-rgb), 0.28);
+}
+
+.rt-spell-list-tab.is-active {
+    border-bottom-color: var(--stat-accent-bright);
+    background: rgba(var(--stat-accent-rgb), 0.34);
+    color: var(--stat-accent-bright);
+}
+
+.rt-spell-list-tab.is-active::after {
+    content: "";
+    position: absolute;
+    left: 16%;
+    right: 16%;
+    bottom: -3px;
+    height: 2px;
+    background: var(--stat-accent-bright);
+    box-shadow:
+        0 0 8px rgba(var(--stat-accent-rgb), 0.65);
+}
+
+.rt-spell-list-tab:focus-visible {
+    z-index: 1;
+    outline: 2px solid var(--stat-accent-bright);
+    outline-offset: -2px;
+}
+
+
+/* =========================================
+   SPELL LEVEL ROWS
+
+   Compact game-panel rows inspired by the
+   supplied reference rather than book text.
+   ========================================= */
+
+.rt-spell-list-rows {
+    margin: 0.55rem 0 0.2rem;
+    border-top: 1px solid rgba(var(--stat-accent-rgb), 0.35);
+    border-bottom: 1px solid rgba(var(--stat-accent-rgb), 0.35);
+    background: #050505;
+}
+
+.rt-spell-row {
+    display: grid;
+    grid-template-columns: minmax(10rem, 28%) minmax(0, 1fr);
+    min-width: 0;
+    border-bottom: 1px solid rgba(var(--stat-accent-rgb), 0.22);
+}
+
+.rt-spell-row:last-child {
+    border-bottom: 0;
+}
+
+.rt-spell-row-heading {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    padding: 0.42rem 0.65rem;
+    border-right: 1px solid rgba(var(--stat-accent-rgb), 0.25);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(var(--stat-accent-rgb), 0.34),
+            rgba(var(--stat-accent-rgb), 0.15)
+        );
+    color: #f6f2ed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.84rem;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.rt-spell-row-spells {
+    min-width: 0;
+    padding: 0.42rem 0.7rem;
+    color: #f4f1ed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.rt-spell-separator {
+    opacity: 0.68;
+}
+
+.rt-spell-row-spells ::deep .glossary-term,
+.rt-spell-row-heading ::deep .glossary-term {
+    font: inherit;
+}
+
+.rt-spell-row-spells ::deep .glossary-term {
+    color: inherit;
+}
+
+.rt-spell-row-heading ::deep .glossary-term {
+    color: inherit;
+    font-weight: inherit;
+}
+
+
+/* Preserve readable spacing for the freeform
+   notes that follow the structured spell rows. */
+
+.rt-spell-list-rows + br {
+    display: none;
+}
+
+
+
+.rt-spell-list-tab:not(.is-active) {
+    color: #f0ece7;
+    opacity: 1;
+}
+
+.rt-spell-list-tab.is-active {
+    color: #ffffff;
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.9),
+        0 0 6px rgba(var(--stat-accent-rgb), 0.35);
+}
+
+.rt-spell-row-heading {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 720px) {
+    .rt-spell-list-switcher {
+        margin-top: 0.6rem;
+    }
+
+    .rt-spell-list-tab {
+        min-height: 2.1rem;
+        padding: 0.46rem 0.7rem 0.42rem;
+        font-size: 0.82rem;
+    }
+
+    .rt-spell-row {
+        grid-template-columns: 1fr;
+    }
+
+    .rt-spell-row-heading {
+        padding-bottom: 0.25rem;
+        border-right: 0;
+        border-bottom: 1px solid rgba(var(--stat-accent-rgb), 0.18);
+        font-size: 0.8rem;
+    }
+
+    .rt-spell-row-spells {
+        padding-top: 0.34rem;
+        font-size: 0.84rem;
+    }
+}

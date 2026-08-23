@@ -1,0 +1,167 @@
+{
+  "Name": "Corinthian",
+  "Group": "Beast of Bestowal",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Corinthian**\n\n**Title** The Eyes of Blind Fate\n\n**Gemstone** Pyrite\n\n**Type** Oucumeneal\n\n**Originator** Vestias\n\nConsidered to be a “pet” of Lana, the Corinthian was once a primordia who was on Lana’s staff in her Divine Realm. In a wager between Lana and Vestias, the Corinthian - known to be one of her favorite attendants - was used as a wager: if Vestias won, Lana would surrender the Corinthian and the contents of one of her vaults to Vestias, and if Lana won, Vestias would elevate the Corinthian to the status of an eidolos. Lana won of course, as challenging fortune herself to a game of chance is foolish even for an Eidolon, and so the Corinthian became an eidolos whose order was to faithfully serve Lana until they were released from service.",
+  "Information Sections": [
+    {
+      "Title": "Corinthian",
+      "Text": "**Title** The Eyes of Blind Fate\n\n**Gemstone** Pyrite\n\n**Type** Oucumeneal\n\n**Originator** Vestias\n\nConsidered to be a “pet” of Lana, the Corinthian was once a primordia who was on Lana’s staff in her Divine Realm. In a wager between Lana and Vestias, the Corinthian - known to be one of her favorite attendants - was used as a wager: if Vestias won, Lana would surrender the Corinthian and the contents of one of her vaults to Vestias, and if Lana won, Vestias would elevate the Corinthian to the status of an eidolos. Lana won of course, as challenging fortune herself to a game of chance is foolish even for an Eidolon, and so the Corinthian became an eidolos whose order was to faithfully serve Lana until they were released from service."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Corinthian.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Corinthian.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Corinthian.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "corinthian",
+      "section_type": "Stat Block",
+      "title": "Corinthian",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (primordia, eidolos)",
+        "alignment": "true neutral"
+      },
+      "armor_class": "16 (natural armor, cosmogony bonus)",
+      "hit_points": "98 (15d8 + 30)",
+      "speed": {
+        "walk": "30 ft.",
+        "teleport": "30 ft."
+      },
+      "quality_traits": [
+        "Cosmogony +1",
+        "critical 18",
+        "eidolos (oucumeneal)",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+2",
+          "save": "+6"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+5",
+          "save": "+9"
+        },
+        "CHA": {
+          "score": 23,
+          "modifier": "+7"
+        }
+      },
+      "ability_score_note": "*checks, saves, and skills include the +1 cosmogony bonus",
+      "saving_throws": [
+        "Dex +6",
+        "Int +8",
+        "Wis +9"
+      ],
+      "skills": [
+        "Deception +11",
+        "Insight +13",
+        "Perception +9",
+        "Persuasion +11"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "radiant",
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "truesight 15 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "All"
+      ],
+      "challenge_rating": "10 (8,850 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Faultless Gamble",
+          "name_format": "bold_italic",
+          "description": "Corinthian cannot have disadvantage on any attack roll, ability check, or saving throw. When they roll a d20 result of 1, it is treated as a 20 instead."
+        },
+        {
+          "name": "Lucky Resistance (1/Day)",
+          "name_format": "bold_italic",
+          "description": "When Corinthian fails a saving throw, they succeed instead. Once this use has been expended, when a creature fails a saving throw against Corinthian they can cause them to succeed instead, and regains their use of Lucky Resistance."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Corinthian makes two attacks using their Golden Card, then uses Quarterly Gamble if it’s charged."
+        },
+        {
+          "name": "Golden Card",
+          "name_format": "bold_italic",
+          "description": "Melee Spell Attack: +11 to hit, reach 20 ft., one target. Hit: 17 (2d10 + 6) slashing or radiant damage.",
+          "inline_formatting": {
+            "Melee Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Shard: Quarterly Gamble (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "Corinthian chooses up to four creatures it can see within 60 feet, then produces four cards of varying values. They throw them into the air, and each of those targets must choose a card they think will have the highest value (represented by choosing a number between 1 and 4). If the targets are NPCs, their pick is determined by a d4 roll. Once they have chosen, Corinthian rolls a d4, and each creature who guessed the resulting number gains temporary hit points equal to half their maximum hit points, and while they have them they have advantage on attack rolls, saving throws, and ability checks. Creatures who guess wrong must each make a DC 16 Charisma saving throw, taking 44 (8d10) radiant damage on a failure, or half as much damage on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Unfair Hand (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Corinthian produces the effects of dispel magic at 5th level, requiring no spell slot, using Charisma as their spellcasting ability."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Detect",
+            "name_format": "bold_italic",
+            "description": "Corinthian makes a Perception check with advantage, extending its truesight out to 60 feet until the start of their next turn."
+          },
+          {
+            "name": "Retract Favor",
+            "name_format": "bold_italic",
+            "description": "Corinthian chooses one creature within 60 feet, who they attempt to alter the luck of. The target must make a DC 18 Charisma saving throw. On a failure, they cannot gain advantage on any roll from any source for 1 minute. The target repeats this save at the end of each of their turns, ending the effect on a success."
+          },
+          {
+            "name": "Card Rain (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Corinthian throws a deck of celestial cards into their air, which scatters around it, chooses who is an ally and who is hostile within 30 feet, then they roll a d100. On a result of 51 or higher, each hostile creature gains advantage on the next attack roll, saving throw, or ability check they make for 1 minute. On a result of 50 or lower, each of those creatures takes 17 (2d10 + 6) radiant damage instead. On a result of 10 or lower, they take 28 (4d10 + 6) radiant damage instead."
+          }
+        ]
+      }
+    }
+  ]
+}

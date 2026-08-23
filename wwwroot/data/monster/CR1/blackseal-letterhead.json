@@ -1,0 +1,113 @@
+{
+  "Name": "Blackseal Letterhead",
+  "Group": "The Blackseal Order",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "",
+  "Information Sections": [],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Blackseal%20Order%20Letterhand.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Blackseal%20Order%20Letterhand.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Blackseal%20Order%20Letterhand.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "blackseal_letterhead",
+      "section_type": "Stat Block",
+      "title": "Blackseal Letterhead",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "13 (padded armor)",
+      "hit_points": "27 (6d8)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Deception +6",
+        "History +4",
+        "Insight +3",
+        "Persuasion +6"
+      ],
+      "resistances": [
+        "poison",
+        "psychic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed"
+      ],
+      "senses": [
+        "blindsight 10 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Common",
+        "telepathy (touch)",
+        "three other languages"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Mask of Personas",
+          "name_format": "bold_italic",
+          "description": "The letterhead wears a mask blessed by Hightrankul. So long as one of Hightrankul’s followers wears it, their voice and mannerisms cannot be discerned by those studying them, and their voice is not recognizable as their own."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Cursed Ink Dagger",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 2) piercing damage plus 5 (2d4) psychic damage. If any of the damage dice from this attack rolls a result of 1, the target must make a DC 13 Charisma saving throw. On a failure, they suffer points of Combat Fatigue equal to the number of 1s rolled as part of this attack’s damage. If all three damage dice return a result of 1, they suffer a level of exhaustion on a failure instead.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Stamp of Names",
+          "name_format": "bold_italic",
+          "description": "The letterhead takes out a bewitched black page folded into an envelope, which burns in their hand. The cultist chooses one creature it can see, and makes a commanding request of them in the form of a short phrase, producing the effects of the command spell with a save DC of 14. If the letterhead knows the full name of their target or of any crimes they have committed, the target has disadvantage on their saving throw. The target is the only creature who hears the commanding request given, or any utterance of their name or crimes."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

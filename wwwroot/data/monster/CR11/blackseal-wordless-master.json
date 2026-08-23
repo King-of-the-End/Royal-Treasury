@@ -1,0 +1,163 @@
+{
+  "Name": "Blackseal Wordless Master",
+  "Group": "The Blackseal Order",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Wordless Master**\n\nThe Wordless Masters know the identities of all who serve under them and have blackmail of some kind on all those who join their ranks, but none (including other Wordless Masters) know of theirs. Should one’s identity become public knowledge, their life is to be taken by their own order. Wordless Masters stand as equivalents to the Equarries who serve Gotham in terms of rank, and are the eyes and ears of their god. Those who meet their end dedicated to secrecy and loyalty to the Pale Word are promised a glorious, indulgent afterlife in their god’s realm, and they promise this treatment to their followers to encourage them.",
+  "Information Sections": [
+    {
+      "Title": "Wordless Master",
+      "Text": "The Wordless Masters know the identities of all who serve under them and have blackmail of some kind on all those who join their ranks, but none (including other Wordless Masters) know of theirs. Should one’s identity become public knowledge, their life is to be taken by their own order. Wordless Masters stand as equivalents to the Equarries who serve Gotham in terms of rank, and are the eyes and ears of their god. Those who meet their end dedicated to secrecy and loyalty to the Pale Word are promised a glorious, indulgent afterlife in their god’s realm, and they promise this treatment to their followers to encourage them."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Blackseal%20Order%20-%20Wordless%20Master.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Blackseal%20Order%20-%20Wordless%20Master.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR11/Blackseal%20Order%20-%20Wordless%20Master.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "blackseal_wordless_master",
+      "section_type": "Stat Block",
+      "title": "Blackseal Wordless Master",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "17 (half plate)",
+      "hit_points": "156 (24d8 + 48)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+5"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        }
+      },
+      "saving_throws": [
+        "Str +5",
+        "Wis +8",
+        "Cha +8"
+      ],
+      "skills": [
+        "Deception +12",
+        "Insight +8",
+        "Perception +8",
+        "Persuasion +8"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Common",
+        "telepathy 30 ft.",
+        "four other languages"
+      ],
+      "challenge_rating": "11 (7,200 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "When the master hits a target with a ranged weapon or an attack with their Psychic Knife, if that attack was made with advantage, that attack deals an extra 5d8 damage."
+        },
+        {
+          "name": "Static Mind",
+          "name_format": "bold_italic",
+          "description": "The master has advantage on Intelligence, Wisdom, and Charisma saving throws."
+        },
+        {
+          "name": "Mask of Personas",
+          "name_format": "bold_italic",
+          "description": "The master wears a mask blessed by Hightrankul. So long as one of Hightrankul’s followers wears it, their voice and mannerisms cannot be discerned by those studying them, and their voice is not recognizable as their own."
+        },
+        {
+          "name": "Unseen Opposition",
+          "name_format": "bold_italic",
+          "description": "When the master takes its first turn in combat, its form blurs and becomes difficult to track. While blurred, attacks against the master have disadvantage to all creatures who rely on sight and cannot see through illusions. This effect ends while the master is incapacitated or when it hasn’t chosen to continue it at the start of its turn (which it may do without using an action)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The master makes two Psychic Knife attacks. When they hit a target with their Psychic Dagger, once per turn they can choose to teleport to an unoccupied space adjacent to the target they hit."
+        },
+        {
+          "name": "Psychic Knife",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target or as a Ranged Weapon Attack: +10 to hit, range 60 ft., one target. Hit: 11 (2d4 + 6) piercing damage plus 11 (2d10) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Psychic Fracture",
+          "name_format": "bold_italic",
+          "description": "The master chooses a creature it can see within 60 feet, and sends a spike of psychic energy into their mind. The target must make a DC 18 Intelligence saving throw, taking 50 (8d10 + 6) psychic damage on a failed save. Creatures who fail by 5 points or more are silenced magically until the start of the master’s next turn, during which time they cannot speak or produce verbal components."
+        },
+        {
+          "name": "Secret Command (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The master produces the effects of the command spell, requiring no spell slot or component, as though casting the spell at 6th level. It uses Intelligence as its spellcasting ability (with a DC 18 Wisdom saving throw). The command issued by the master can be issued telepathically if they are within range of the master’s telepathy, allowing it to avoid speaking it out loud."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Strike Command",
+          "name_format": "bold_italic",
+          "description": "The master commands up to two of its subordinates who can hear it, who can use their reaction to move up to half their movement speed and make a single weapon attack against a target (each) the master chooses."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Switch Trickery",
+          "name_format": "bold_italic",
+          "description": "When the master is hit by an attack, it can switch places with one of its subordinates who are within 30 feet of it, and they are hit by the attack instead. The appearances of the target and the master are magically switched until the start of the master’s next turn, at which point the illusion ends."
+        }
+      ]
+    }
+  ]
+}

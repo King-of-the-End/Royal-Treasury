@@ -1,0 +1,191 @@
+{
+  "Name": "Blood Dragon, Ancient",
+  "Group": "The Blackseal Order",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Blood Dragon**\n\nBlood Dragons, known otherwise as Bloodfire Dragons, are an evolutionary off-shoot of other dragons that most likely are related to red dragons, but many believe they exist due to arcane tinkering with the eggs of red dragons. These bloody creatures have blood that is constantly burning hot, causing the dragon a constant amount of pain that numbs its mind. Thanks to this, their body is in a perpetual state of venting by sweating out extra blood, causing heat and steam around it, and it has also caused these dragons to become bestial predators that use critical thinking skills far less than other dragons. They can often be found underwater, having evolved the means to live submerged to use the water as a means of temperature regulation. If such a dragon makes a lair in a lake or bay, it will often slowly tinge the water red with its blood.",
+  "Information Sections": [
+    {
+      "Title": "Blood Dragon",
+      "Text": "Blood Dragons, known otherwise as Bloodfire Dragons, are an evolutionary off-shoot of other dragons that most likely are related to red dragons, but many believe they exist due to arcane tinkering with the eggs of red dragons. These bloody creatures have blood that is constantly burning hot, causing the dragon a constant amount of pain that numbs its mind. Thanks to this, their body is in a perpetual state of venting by sweating out extra blood, causing heat and steam around it, and it has also caused these dragons to become bestial predators that use critical thinking skills far less than other dragons. They can often be found underwater, having evolved the means to live submerged to use the water as a means of temperature regulation. If such a dragon makes a lair in a lake or bay, it will often slowly tinge the water red with its blood."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Blood%20Dragon%20Ancient_ISO.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Blood%20Dragon%20Ancient_ISO.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Blood%20Dragon%20Ancient_ISO.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "blood_dragon_ancient",
+      "section_type": "Stat Block",
+      "title": "Blood Dragon, Ancient",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "dragon",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "21 (natural armor)",
+      "hit_points": "533 (26d20 \u002B 260)",
+      "speed": {
+        "walk": "40 ft.",
+        "swim": "60 ft.",
+        "fly": "80 ft."
+      },
+      "quality_traits": [
+        "Amphibious"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 28,
+          "modifier": "\u002B9"
+        },
+        "DEX": {
+          "score": 10,
+          "modifier": "-",
+          "save": "\u002B7"
+        },
+        "CON": {
+          "score": 30,
+          "modifier": "\u002B10",
+          "save": "\u002B17"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B13"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B13"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B7",
+        "Con \u002B17",
+        "Wis \u002B13",
+        "Cha \u002B13"
+      ],
+      "skills": [
+        "Perception \u002B20"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid",
+        "fire"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 30"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "challenge_rating": "24 (18,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Bloodfire Backlash",
+          "name_format": "bold_italic",
+          "description": "Each time a creature deals slashing or piercing damage to the dragon from within 10 feet of it, burning blood erupts from its body and splashes onto them, forcing them to take a d8 of fire damage."
+        },
+        {
+          "name": "Burning Furiosity (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "When the dragon makes a weapon attack, it may choose to roll a new d20 and use it in place of the d20 result of that attack, possibly changing the outcome. Then, all of its attacks until the next time it ends its turn have advantage."
+        },
+        {
+          "name": "Draining Blood Coat",
+          "name_format": "bold_italic",
+          "description": "If the dragon has fewer than half its maximum hit points remaining, its weapon attacks deal an additional 1d12 of acid damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The dragon makes three attacks: one with its Bite and two with its Claws."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 15 ft., one target. Hit: 20 (2d10 \u002B 9) piercing damage plus 18 (4d8) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 10 ft., one target. Hit: 16 (2d6 \u002B 9) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 20 ft., one target. Hit: 31 (4d10 \u002B 9) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Burning Blood Spew (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon spits a burst of burning, acidic blood in a burst targeting a point it can see within 120 feet, where it explodes in a 30-foot radius sphere. Each creature in that line must make a DC 25 Dexterity saving throw, taking 49 (14d6) fire damage plus 49 (14d6) acid damage on a failed save, or half as much on a successful one. If used underwater, it deals 84 (24d6) acid damage instead, and no fire damage."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Cause Terror (Costs X Actions)",
+            "name_format": "bold_italic",
+            "description": "The dragon uses Legendary Actions equal to X, and targets that many creatures who can see or hear it. Each of them must make a DC 21 Wisdom saving throw. Each creature that fails is frightened of the dragon for 1 minute. While frightened, they can repeat the save at the end of each of their turns, ending the effect on a success. A creature who succeeds either save becomes immune to this action for 24 hours."
+          },
+          {
+            "name": "Tail Attack",
+            "name_format": "bold_italic",
+            "description": "The dragon makes a Tail attack against a target within reach."
+          },
+          {
+            "name": "Corrosive Flame Net (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The dragon shakes its body, spewing acidic, burning blood around it. Each other creature within 20 feet of it must make a DC 25 Dexterity saving throw, taking 17 (2d8 \u002B 8) acid damage and 9 (2d8) fire damage on a failed save."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

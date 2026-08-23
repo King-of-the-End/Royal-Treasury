@@ -1,0 +1,189 @@
+{
+  "Name": "Phama Sanctus",
+  "Group": "Beast of Bestowal",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Phama Sanctus**\n\n**Title** The Phantasmal Poison\n\n**Gemstone** Melanite\n\n**Type** Pleromael\n\n**Originator** Aymere\n\nA former gigantic spider that had fallen into the Plane of Negative Energy, and returned changed and aberrant. It began to mutate and change, quickly growing in size beyond its already huge form, and caught the eye of the Eidolon Aymere. The eidolic deity felt corruption within the beast, and attempted to destroy it to prevent it from becoming something more powerful. However, even when destroyed, the spider returned time and time again, as its exposure to the Plane of Negative Energy had given it a ghostly existence that refused to be snuffed out. To prevent its further growth, Aymere tricked the creature into becoming an eidolos under his sway, halting its mutation and trapping it in the form it was in at the time. Aymere assigned it only one directive as an eidolos: do not interfere with or terrorize the settlements of mankind. Having quelled the possibility of its evolution, Aymere then left it to its own devices.",
+  "Information Sections": [
+    {
+      "Title": "Phama Sanctus",
+      "Text": "**Title** The Phantasmal Poison\n\n**Gemstone** Melanite\n\n**Type** Pleromael\n\n**Originator** Aymere\n\nA former gigantic spider that had fallen into the Plane of Negative Energy, and returned changed and aberrant. It began to mutate and change, quickly growing in size beyond its already huge form, and caught the eye of the Eidolon Aymere. The eidolic deity felt corruption within the beast, and attempted to destroy it to prevent it from becoming something more powerful. However, even when destroyed, the spider returned time and time again, as its exposure to the Plane of Negative Energy had given it a ghostly existence that refused to be snuffed out. To prevent its further growth, Aymere tricked the creature into becoming an eidolos under his sway, halting its mutation and trapping it in the form it was in at the time. Aymere assigned it only one directive as an eidolos: do not interfere with or terrorize the settlements of mankind. Having quelled the possibility of its evolution, Aymere then left it to its own devices."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Phama%20Sanctus.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Phama%20Sanctus.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Phama%20Sanctus.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "phama_sanctus",
+      "section_type": "Stat Block",
+      "title": "Phama Sanctus",
+      "creature": {
+        "size": "Huge",
+        "type": "spirit (beast, eidolos)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "17 (cosmogony bonus)",
+      "hit_points": "189 (18d12 \u002B 72)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "cosmogony \u002B2",
+        "eidolos (pleromael)",
+        "ethereal",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "\u002B6",
+          "save": "\u002B6"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B6",
+          "save": "\u002B6"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B5",
+          "save": "\u002B11"
+        },
+        "INT": {
+          "score": 9,
+          "modifier": "-",
+          "save": "\u002B6"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B4",
+          "save": "\u002B10"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-1",
+          "save": "\u002B5"
+        }
+      },
+      "ability_score_note": "*checks, saves and skills include the \u002B1 cosmogony bonus",
+      "saving_throws": [
+        "Str \u002B6",
+        "Dex \u002B6",
+        "Con \u002B11",
+        "Int \u002B6",
+        "Wis \u002B10",
+        "Cha \u002B5"
+      ],
+      "skills": [
+        "Perception \u002B10",
+        "Survival \u002B10"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "exhaustion",
+        "paralyzed",
+        "poisoned"
+      ],
+      "senses": [
+        "tremorsense 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "Primordial"
+      ],
+      "challenge_rating": "17 (27,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Web Walker",
+          "name_format": "bold_italic",
+          "description": "Phama Sanctus ignores movement restrictions caused by webbing."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Phama Sanctus uses its Phantom Bite, then makes two Melanite Limb Strike attacks."
+        },
+        {
+          "name": "Phantom Bite",
+          "name_format": "bold_italic",
+          "description": "Phama Sanctus teleports to an unoccupied space it can see within 60 feet then makes a Melee Weapon Attack: \u002B12 to hit, reach 5 ft., one target. Hit: 14 (2d8 \u002B 6) piercing damage. A creature hit by this attack must make a DC 18 Constitution saving throw, taking an additional 44 (8d10) necrotic damage on a failure.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Melanite Limb Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B12 to hit, reach 10 ft., one target. Hit: 16 (2d10 \u002B 5) bludgeoning damage plus 6 (1d10) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Shard: Phantom Weblight (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Phama Sanctus creates an illusory field of phantom spiderweb threads that bind everything within 60 feet of it. Each creature within that range is bound by these threads, must make a DC 18 Wisdom saving throw, and are restrained by these nonexistent threads on a failure. Each bound creature takes 2d8 necrotic damage at the start of each of their turns, and repeats the saving throw at the end of each of their turns, ending the effect and seeing through the illusion on a success.\n\nCreatures who can see through illusions see these light threads for what they are, but are still bound by them. They have advantage on their saving throws against them.\n\nThese threads, despite being illusions, are able to bind flying or hovering creatures in place, and Phama Sanctus may move through any space within 20 feet of a creature restrained this way as though that space was filled with spiderwebs."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Webshot",
+            "name_format": "bold_italic",
+            "description": "Phama Sanctus fires a burst of webbing at a creature within 60 feet, who must make a DC 18 Dexterity saving throw. On a failure, they are restrained until the end of Phama Sanctus next turn by the illusory webbing, which then vanishes."
+          },
+          {
+            "name": "Phantom Body (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Phama Sanctus becomes fully ethereal and ghostlike, causing all attacks made against it to have disadvantage until the start of its next turn."
+          },
+          {
+            "name": "Teleport (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Phama Sanctus teleports to an unoccupied space it can see within 60 feet."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

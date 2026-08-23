@@ -1,0 +1,225 @@
+{
+  "Name": "Aspect of Hightrankul",
+   "Group": "Deific Aspects",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Aspect of Hightrankul**\n\nHightrankul avoids engaging in combat, but it is capable of manifesting as an aspect, with some difficulty, in the Material Plane. It will generally only manifest itself as a show of good faith at gatherings of its followers, or when engaging with a creature who has caught its attention. Hightrankul\u2019s presence is hidden from prying eyes, and magical effects/divination cannot reveal its presence or evidence of it, as though it was never there - only those who directly perceive them know they are there.\n\n**Black Envelopes**\n\nSeveral of Hightrankul\u2019s actions create Black Envelopes, which are physical contracts Hightrankul holds that seal information. These Envelopes stay on its person, have to be hit to 15 points of damage at once to be destroyed, and cannot be directly targeted by anything requiring a saving throw. They share Hightrankul\u2019s resistances, but are vulnerable to fire damage. A creature may attempt to attack a Black Envelope on Hightrankul that they are aware of, but must beat Hightrankul\u2019s AC \u002B 5 to successfully hit it. A creature who scores a critical hit against Hightrankul can choose to redirect their attack at and automatically destroy a Black Envelope. Once destroyed, a Black Envelope\u2019s sealed information is released. Otherwise, it remains sealed permanently. A creature who had knowledge sealed by a Black Envelope is considered cursed, and the curse can only be ended by an effect such as remove curse, cast at 7th level or higher. Breaking the curse destroys the Envelope.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Hightrankul",
+      "Text": "Hightrankul avoids engaging in combat, but it is capable of manifesting as an aspect, with some difficulty, in the Material Plane. It will generally only manifest itself as a show of good faith at gatherings of its followers, or when engaging with a creature who has caught its attention. Hightrankul\u2019s presence is hidden from prying eyes, and magical effects/divination cannot reveal its presence or evidence of it, as though it was never there - only those who directly perceive them know they are there."
+    },
+    {
+      "Title": "Black Envelopes",
+      "Text": "Several of Hightrankul\u2019s actions create Black Envelopes, which are physical contracts Hightrankul holds that seal information. These Envelopes stay on its person, have to be hit to 15 points of damage at once to be destroyed, and cannot be directly targeted by anything requiring a saving throw. They share Hightrankul\u2019s resistances, but are vulnerable to fire damage. A creature may attempt to attack a Black Envelope on Hightrankul that they are aware of, but must beat Hightrankul\u2019s AC \u002B 5 to successfully hit it. A creature who scores a critical hit against Hightrankul can choose to redirect their attack at and automatically destroy a Black Envelope. Once destroyed, a Black Envelope\u2019s sealed information is released. Otherwise, it remains sealed permanently. A creature who had knowledge sealed by a Black Envelope is considered cursed, and the curse can only be ended by an effect such as remove curse, cast at 7th level or higher. Breaking the curse destroys the Envelope."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Hightrankul%20the%20Pale%20Word.png",
+  "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lesser%20Deity%20Emblem%20-%20Hightrankul%20the%20Pale%20Word.png"
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Hightrankul%20the%20Pale%20Word.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lesser%20Deity%20Emblem%20-%20Hightrankul%20the%20Pale%20Word.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Hightrankul%20the%20Pale%20Word.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_hightrankul",
+      "section_type": "Stat Block",
+      "title": "Aspect of Hightrankul",
+      "creature": {
+        "size": "Medium",
+        "type": "spirit (deity)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "18 (leather, natural armor)",
+      "hit_points": "225 (30d8 \u002B 90)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "30 ft. (hover)",
+        "teleport": "30 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "deific"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B9"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B9"
+        },
+        "INT": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B13"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B13"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B10"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B9",
+        "Con \u002B9",
+        "Int \u002B13",
+        "Wis \u002B13",
+        "Cha \u002B10"
+      ],
+      "skills": [
+        "Deception \u002B16",
+        "Perception \u002B13",
+        "Persuasion \u002B16",
+        "Stealth \u002B10"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical)",
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "paralyzed",
+        "stunned"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "blindsight 120 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "All",
+        "telepathy 240 ft."
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Machinations Unfold (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If Hightrankul is reduced to 0 hit points or is killed outright, its current hit points are reset to 150, it ends any unwanted conditions affecting it, regains its Legendary Reactions, and teleports to an unoccupied space it can see within 60 feet. It gains access to its Mythic Actions for 1 hour. A party that defeats it after using its Mythic Awakening is awarded an additional 25,000 XP (50,000 XP total)."
+        },
+        {
+          "name": "Untrackable",
+          "name_format": "bold_italic",
+          "description": "Hightrankul\u2019s thoughts cannot be read or divined, it leaves no evidence of its presence unless it intends to, and magic that can spy on areas through divination or replay events that happened in a given area do not detect or perceive Hightrankul."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Hightrankul makes three attacks with its Phantom Hands, and if it has used its Machinations Unfold in the last hour, it attacks once with its Black Paper Knife."
+        },
+        {
+          "name": "Phantom Hands",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 30 ft., one target. Hit: 18 (2d10 \u002B 7) force damage. A creature hit by two or more of these attacks on the same turn is made Sluggish until the start of its next turn.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Black Paper Knife",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 5 ft., one target. Hit: 8 (1d6 \u002B 4) slashing damage plus 33 (6d10) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Silver Pool Schism",
+          "name_format": "bold_italic",
+          "description": "Hightrankul produces the effects of the all-known schism spell, requiring no spell slot or components, using Intelligence as their spellcasting ability. When they make a concentration check to maintain this spell, they can make an Intelligence check instead of a Constitution saving throw."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Stolen Voice",
+          "name_format": "bold_italic",
+          "description": "Hightrankul reaches out to one creature it can see within 60 feet, and its silver arms grasp their throat. The target must make a DC 21 Charisma saving throw. On a failure, the target is cursed, and while cursed this way, Hightrankul steals their voice and renders them mute, preventing them from speaking or producing verbal components for spells. The voice is sealed inside a Black Envelope. A creature targeted by this feature cannot be targeted by it again for 24 hours."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Seal Knowledge",
+          "name_format": "bold_italic",
+          "description": "When a creature casts a spell within 60 feet of Hightrankul, it can attempt to lock away knowledge of that spell. The caster must make a DC 21 saving throw using their spellcasting ability. On a failure, their knowledge of that spell (including knowledge of how to read it from spell books and scrolls, or produce its effects from items) is sealed in a Black Envelope. While sealed, the target cannot produce that spell\u2019s effects, minus the instance that triggered this reaction."
+        },
+        {
+          "name": "Mythic Action: Phantom Dodge",
+          "name_format": "bold_italic",
+          "description": "When Hightrankul would take damage from a weapon attack, it takes no damage from it instead."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Phase",
+            "name_format": "bold_italic",
+            "description": "The next weapon attack made against Hightrankul before the start of its next turn automatically misses, as it becomes semi-ethereal until then."
+          },
+          {
+            "name": "Grappling Hands (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "One creature Hightrankul chooses within 60 feet is grasped by dozens of phantom hands. They must make a DC 18 Strength saving throw or be restrained until the end of Hightrankul\u2019s next turn."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Silver Pool Threads",
+            "name_format": "bold_italic",
+            "description": "Each creature within 20 feet of Hightrankul is assaulted by the troubles of those bound in Hightrankul\u2019s silver pool, and must make a DC 18 Intelligence saving throw. Each that fails takes 18 (3d10) psychic damage."
+          },
+          {
+            "name": "Black Seal (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Hightrankul casts a spell it has sealed within one of its envelopes through Seal Knowledge, destroying the envelope in the process, requiring no spell slot or components, and using Intelligence as its spellcasting ability. Hightrankul rolls a d10, and casts the spell at its base level, or at a level equal to the d10 result (whichever is higher, maximum 9th)."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

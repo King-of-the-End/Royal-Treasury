@@ -70,7 +70,7 @@
     "Contexts": []
   },
   {
-    "Term": "Charge",
+    "Term": "Charge ",
     "Definition": "A creature that is Charging is amassing an amount of energy - electrical, magical or otherwise, having jolts and arcs surround her body as the quantity intensifies.\n\nCharge and its unique counterparts do not affect a character by itself, instead being a renewable resource to be spent for activating certain abilities and effects.",
     "CaseSensitive": true,
     "NoOverlay": false,
@@ -2968,5 +2968,143 @@
     "CaseSensitive": false,
     "NoOverlay": true,
     "Contexts": []
+  },
+  {
+    "Term": "Undead Fortitude (X)",
+    "Definition": "When this creature is reduced to 0 hit points (except by damage that is radiant, a critical hit, or X) and not outright killed by massive damage, it must make a Constitution saving throw with a DC of 5 + the damage taken. On a success, the creature drops to 1 hit point instead.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Wildcard": true,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Alloyed (X)",
+    "Definition": "The creature is resistant to damage from creatures of the size category listed as X or smaller.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Wildcard": true,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Battle Ready",
+    "Definition": "This creature cannot be surprised, and has advantage on initiative checks.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Cosmogony +X",
+    "Definition": "The creature has a supernatural power granting them a Cosmogony Bonus of +X. The full bonus is added to their armor class, and half of it (rounded up) is added to the attack rolls, weapon damage, skill checks, and saving throws. These bonuses are represented in their stat blocks for listed bonuses.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Wildcard": true,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Ethereal",
+    "Definition": "The creature can move through the spaces of other creatures or through solid materials freely, without that movement counting as difficult terrain. It may also stop in another creature’s space as long as at least one 5-foot cube of its own space isn’t occupied. If it ends its turn within a solid, inanimate material, it takes 10 damage and is shunted to the nearest unoccupied space.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Weightless",
+    "Definition": "The creature can float in place and orient themselves as they wish in space without falling (unless they wish to). They do not suffer from falling damage, and are not affected by the results of effects changing or manipulating gravity around them.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Tiny",
+    "Definition": "**Creature Size:** Tiny\n\n**Space:** 2½ by 2½ ft.\n\n**Grid Squares:** ¼ square",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Small",
+    "Definition": "**Creature Size:** Small\n\n**Space:** 5 by 5 ft.\n\n**Grid Squares:** 1 square",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Medium",
+    "Definition": "**Creature Size:** Medium\n\n**Space:** 5 by 5 ft.\n\n**Grid Squares:** 1 square",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Large",
+    "Definition": "**Creature Size:** Large\n\n**Space:** 10 by 10 ft.\n\n**Grid Squares:** 2 × 2",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Huge",
+    "Definition": "**Creature Size:** Huge\n\n**Space:** 15 by 15 ft.\n\n**Grid Squares:** 3 × 3",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Gargantuan",
+    "Definition": "**Creature Size:** Gargantuan\n\n**Space:** 20 by 20 ft. or larger\n\n**Grid Squares:** 4 × 4 or larger",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Titanic",
+    "Definition": "**Creature Size:** Titanic\n\n**Space:** 50 × 50 feet\n\n**Grid Squares:** 10 × 10",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Tremendous",
+    "Definition": "**Creature Size:** Tremendous\n\n**Space:** 75 × 75 feet\n\n**Grid Squares:** 15 × 15",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Colossal",
+    "Definition": "**Creature Size:** Colossal\n\n**Space:** 100 × 100 feet\n\n**Grid Squares:** 20 × 20",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
   }
 ]

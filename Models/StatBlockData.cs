@@ -1043,6 +1043,74 @@ public sealed class StatBlockSpellcasting
         string.Empty;
 
 
+    // =====================================
+    // PRIMARY SPELL LIST NAME
+    //
+    // Optional display label used when this
+    // spellcasting trait also provides one
+    // or more alternative spell lists.
+    // =====================================
+
+    [JsonPropertyName("spell_list_name")]
+    public string SpellListName { get; set; } =
+        "Default";
+
+
+    [JsonPropertyName("spells")]
+    public List<StatBlockSpellFrequency>
+        Spells { get; set; } =
+            new();
+
+
+    [JsonPropertyName("prepared_spells")]
+    public List<StatBlockPreparedSpellLevel>
+        PreparedSpells { get; set; } =
+            new();
+
+
+    // =====================================
+    // ALTERNATIVE SPELL LISTS
+    //
+    // These reuse the same frequency and
+    // prepared-spell structures as the main
+    // list. If present, the stat block shows
+    // an in-place selector rather than
+    // navigating or reloading the page.
+    // =====================================
+
+    [JsonPropertyName("alternative_spell_lists")]
+    public List<StatBlockAlternativeSpellList>
+        AlternativeSpellLists { get; set; } =
+            new();
+
+
+    [JsonPropertyName("additional_text")]
+    public string AdditionalText { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("casting_level_note")]
+    public string CastingLevelNote { get; set; } =
+        string.Empty;
+
+
+    [JsonPropertyName("notes")]
+    public List<string> Notes { get; set; } =
+        new();
+}
+
+
+// =========================================
+// ALTERNATIVE SPELL LIST
+// =========================================
+
+public sealed class StatBlockAlternativeSpellList
+{
+    [JsonPropertyName("name")]
+    public string Name { get; set; } =
+        string.Empty;
+
+
     [JsonPropertyName("spells")]
     public List<StatBlockSpellFrequency>
         Spells { get; set; } =

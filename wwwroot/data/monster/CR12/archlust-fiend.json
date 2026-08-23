@@ -1,0 +1,240 @@
+{
+  "Name": "Archlust Fiend",
+  "Group": "",
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Archlust Fiend**\n\nAn archlust fiend is an evolved variant of the succubus/incubus, who has become an embodiment of lust and temptation. They are capable of binding similar fiends under their command, and run more elaborate operations than regular lust fiends. They can sometimes be found running legitimized establishments of the flesh, forming business relationships that are suitable to them for the long term. Unfortunately, as a fiend, they are prone to moments of impulsive selfishness, and sometimes will sabotage their own finely crafted web of protection by going too far with a mortal or two they set their sights on.\n\n***Leader in Bad Faith.*** An archlust fiend will inevitably try to find themselves close to the top of a political or entrepreneurial hierarchy, but rarely will they try to situate themselves at the top. They are more comfortable in a position that places them second or third in command of an operation, and manipulate the true leader through physical and supernatural means. They use those above them to shield themselves from investigation, while pretending to be a vice captain, brothel\u2019s star attraction, or trophy wife, so they can lustfully gain attention while escaping suspicion.\n\n***Royal Divine Consort.*** Archlust fiends will set their sights on the sort of prey that regular succubi steer clear of. They have been seen to seduce angels, other arch-fiends, or even lesser gods if the situation presents itself. Their confidence sometimes exceeds their ability, but on occasion confidence is all one needs.",
+  "Information Sections": [
+    {
+      "Title": "Archlust Fiend",
+      "Text": "An archlust fiend is an evolved variant of the succubus/incubus, who has become an embodiment of lust and temptation. They are capable of binding similar fiends under their command, and run more elaborate operations than regular lust fiends. They can sometimes be found running legitimized establishments of the flesh, forming business relationships that are suitable to them for the long term. Unfortunately, as a fiend, they are prone to moments of impulsive selfishness, and sometimes will sabotage their own finely crafted web of protection by going too far with a mortal or two they set their sights on."
+    },
+    {
+      "Title": "Leader in Bad Faith",
+      "Text": "An archlust fiend will inevitably try to find themselves close to the top of a political or entrepreneurial hierarchy, but rarely will they try to situate themselves at the top. They are more comfortable in a position that places them second or third in command of an operation, and manipulate the true leader through physical and supernatural means. They use those above them to shield themselves from investigation, while pretending to be a vice captain, brothel\u2019s star attraction, or trophy wife, so they can lustfully gain attention while escaping suspicion."
+    },
+    {
+      "Title": "Royal Divine Consort",
+      "Text": "Archlust fiends will set their sights on the sort of prey that regular succubi steer clear of. They have been seen to seduce angels, other arch-fiends, or even lesser gods if the situation presents itself. Their confidence sometimes exceeds their ability, but on occasion confidence is all one needs."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Archlust%20Fiend_Ref.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Archlust%20Fiend_Ref.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Archlust%20Fiend_Ref.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "archlust_fiend",
+      "section_type": "Stat Block",
+      "title": "Archlust Fiend",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (shapechanger)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "21 (natural armor)",
+      "hit_points": "210 (28d8 \u002B 84)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B7"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B11"
+        }
+      },
+      "saving_throws": [
+        "Wis \u002B7",
+        "Cha \u002B11"
+      ],
+      "skills": [
+        "Deception \u002B11",
+        "Insight \u002B7",
+        "Perception \u002B10",
+        "Stealth \u002B11"
+      ],
+      "resistances": [
+        "cold",
+        "fire",
+        "lightning",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "Abyssal",
+        "Common",
+        "Infernal",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Corrosion by Lustful Thoughts",
+          "name_format": "bold_italic",
+          "description": "When a creature charmed by the fiend begins their turn where the fiend can see or hear them, they can cause the creature(s) to become distracted by indulgent thoughts, causing them to take 1d8 psychic damage and become sluggish until the start of the fiend\u2019s next turn. This damage does not count as a hostile action."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The fiend\u2019s spellcasting ability is Charisma (spell attack \u002B11, save DC 19). It can innately cast the following spells, requiring no material components:",
+          "suboptions": [
+            {
+              "name": "At will",
+              "description": "beloved wretch, charm monster, vicious mockery"
+            },
+            {
+              "name": "2/Day each",
+              "description": "etherealness, hold attacker, thunder step"
+            },
+            {
+              "name": "1/Day each",
+              "description": "arrows of love and capture, eros gate, greater invisibility, power word stun"
+            }
+          ]
+        },
+        {
+          "name": "Telepathic Leash",
+          "name_format": "bold_italic",
+          "description": "The fiend can speak with any creature it has charmed telepathically, regardless of the plane of existence both are on or distance between them."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes two attacks, each with their Claws or Arcane Daggers. They then use their Lustburning Whip, Specious Charm, or Draining Kiss."
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 5 ft., one target. Hit: 10 (1d10 \u002B 4) slashing damage plus 6 (1d10) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Arcane Dagger",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B9 to hit, range 60/180 ft., one target. Hit: 9 (1d8 \u002B 4) piercing damage plus 7 (1d12) psychic damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Lustburning Whip",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 30 ft., one target. Hit: 23 (3d10 \u002B 6) psychic damage, and if the target is Huge or smaller they must make a DC 19 Charisma saving throw. On a failure, they are afflicted with a hallucinogenic poison that stimulates lustful thoughts, and are charmed for 1 minute, during which time they are paralyzed. A target paralyzed this way repeats the save at the end of each of their turns, ending the effect on a success. A creature that succeeds either save against this feature becomes immune to the poison for 24 hours.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Specious Charm",
+          "name_format": "bold_italic",
+          "description": "One humanoid the fiend can see must make a DC 19 Wisdom saving throw against this magical effect. On a failure, they are charmed for 1 day. A charmed target obeys the fiend\u2019s commands. If the target suffers any harm they repeat the saving throw, ending the effect on a success. If the target succeeds either saving throw they become immune to the fiend\u2019s Specious Charm for 24 hours."
+        },
+        {
+          "name": "Draining Kiss",
+          "name_format": "bold_italic",
+          "description": "The fiend kisses a target charmed by it (or a willing creature), who must make a DC 19 Constitution saving throw. On a failure they take 34 (5d10 \u002B 6) psychic damage, or half as much on a success. The target\u2019s hit point maximum is reduced by the damage they take, and the fiend gains that amount as temporary hit points. A target regains maximum hit points lost this way when they complete a Long Rest, and if this reduction reduces their maximum hit points to 0 they die."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Shapechange",
+          "name_format": "bold_italic",
+          "description": "The fiend can change its form into its true form, or into any Small, Medium, or Large humanoid form it wishes to take. Its statistics remain the same in its new form. Its wings, equipment, and possessions are disguised unless used or presented while transformed. The fiend resumes its true form if it dies."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Attractive Doppelg\u00E4nger",
+          "name_format": "bold_italic",
+          "description": "When targeted by an attack or effect they can see, the fiend can switch places with a creature they have charmed within 60 feet, who becomes the new target."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Commanding Temptress",
+            "name_format": "bold_italic",
+            "description": "The fiend commands one creature that can see or hear them, and they must make a DC 19 Charisma saving throw. On a failure, they are charmed by the fiend until the start of their next turn, and they use their reaction to take any action the fiend requests them to as though ordered by the command spell. They can move up to half their movement speed as part of the reaction."
+          },
+          {
+            "name": "Charming Gesture (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The fiend uses its Specious Charm."
+          },
+          {
+            "name": "Lustful Sweep (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The fiend uses their Lustburning Whip to bind one creature within 60 feet. The target must make a DC 17 Dexterity saving throw. On a failure they are knocked prone and restrained until the end of the fiend\u2019s next turn."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

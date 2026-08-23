@@ -1,0 +1,110 @@
+{
+  "name": {
+    "text": "Spirit",
+    "bold": true
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "The spirit creature type designates creatures who have died, but failed to become either petitioners who passed on to their next life or become a corrupt form of undead or yokai. They are stable souls, which are able to operate with some level of agency, and most often are bound to an ideal, location, or purpose. While wraiths and ghosts are the result of obsessions or gruesome, wrathful deaths, a spirit is a noble entity that persists through sheer will, love, or conviction - to protect a place, a person, or thing, to guide the living, to protect a people, etc. A spirit is almost always the result of a powerful being losing its mortal body, or a creature who was highly spiritual or magical to begin with.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Detection",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Spirits can be detected by any effect that would detect celestials, fiends, or undead. They should not be conflated with the undead, however. Undead are those pulled from the cycle of death in a new form - a corrupt life - while spirits are those paused in a transitional stage between the two major states of life: living souls and petitioners.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Anchored",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "In a broad sense, spirits are to the Material Plane as devils are to the Hells and demons are to the Abyss. If they are destroyed far from the place where they came to be or in a place that is important to them, they will simply reform later. Some powerful spirits have specific means that are required to destroy them, otherwise they will reappear. This may include besting them in a specific way (such as a duel), quelling their spirit, removing the source of their anchoring, etc.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Secondary Type",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Spirits should generally have a secondary creature type that is either a humanoid subtype or another creature type. Effects that would normally consider those specific creatures also consider them. Unless stated, they are not considered humanoids even if they have a humanoid subtype.",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "spans": [
+            {
+              "text": "A spirit may have undead as a subtype, representing a spirit that is bound or created in a particular way. However, this subtype is more often than not used as an expression of the nature of the spirit - a truly evil, vengeful spirit may be close enough in nature to an undead that the lines between them blur.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "Spell & Feature Interactions",
+        "bold": true
+      },
+      "paragraphs": [
+        {
+          "spans": [
+            {
+              "text": "Not all effects that would target undead can target the spirit subtype. For example, a paladin’s Divine Smite does not consider spirits to be the same as undead, unless they have fiend or undead as a subtype. However, spells like ",
+              "bold": false
+            },
+            {
+              "text": "detect evil and good",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ", ",
+              "bold": false
+            },
+            {
+              "text": "dispel evil and good",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ", and other spells that broadly describe undead, celestials, etc., all together can also target or consider spirits, which are considered similar in nature to celestials, fiends, and fey.",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

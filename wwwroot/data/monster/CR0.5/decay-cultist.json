@@ -46,11 +46,11 @@
       },
       "skills": [
         "Deception +2",
-        "Religion +3"
+        "Religion +4"
       ],
       "resistances": [
         "necrotic",
-        "poisoned"
+        "poison"
       ],
       "senses": [
         "passive Perception 11"
@@ -110,7 +110,7 @@
           "Bonus Actions": "bold"
         }
       },
-      "raw_text": "**DECAY CULTIST**\n*Medium humanoid (any, usually human), neutral evil*\n**Armor Class** 13 (leather armor)\n**Hit Points** 14 (3d8)\n**Speed** 30 ft.\n**STR** 12 (+1) | **DEX** 14 (+2) | **CON** 10 (-) | **INT** 14 (+2) | **WIS** 12 (+1) | **CHA** 10 (-)\n**Skills** Deception +2, Religion +3\n**Resistances** necrotic, poisoned\n**Senses** passive Perception 11\n**Languages** Common, Elvish\n**Challenge Rating** 1/2 (100 XP) **Prof Bonus** +2\n\n***Devoted to Death.*** The cultist’s body has been numbed, giving them advantage on saving throws made against being charmed, paralyzed, or poisoned.\n\n***Undead Salvation.*** If damage reduces the cultist to 0 hit points or an effect kills them outright, roll 1d100. On a result of 71 or higher, the cultist is immediately restored as a Decaying Menial with 3d8 hit points. If this occurs, xp is not awarded for the cultist, but is awarded for the Decaying Menial if it is defeated. This effect is a curse, and if it is removed before it triggers then this does not occur.\n\n**ACTIONS**\n***Sickle.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d4 + 2) slashing damage.\n\n***Death Touch.*** *Melee Spell Attack:* +4 to hit, reach 10 ft., one target. *Hit:* 7 (1d8 + 2) necrotic damage, and the cultist regains hit points equal to half the damage they deal.\n\n**BONUS ACTIONS**\n***Off-Hand Sickle.*** If the cultist uses their action to Attack with their Sickle, they can make one additional attack using it."
+      "raw_text": "**DECAY CULTIST**\n*Medium humanoid (any, usually human), neutral evil*\n**Armor Class** 13 (leather armor)\n**Hit Points** 14 (3d8)\n**Speed** 30 ft.\n**STR** 12 (+1) | **DEX** 14 (+2) | **CON** 10 (-) | **INT** 14 (+2) | **WIS** 12 (+1) | **CHA** 10 (-)\n**Skills** Deception +2, Religion +4\n**Resistances** necrotic, poison\n**Senses** passive Perception 11\n**Languages** Common, Elvish\n**Challenge Rating** 1/2 (100 XP) **Prof Bonus** +2\n\n***Devoted to Death.*** The cultist’s body has been numbed, giving them advantage on saving throws made against being charmed, paralyzed, or poisoned.\n\n***Undead Salvation.*** If damage reduces the cultist to 0 hit points or an effect kills them outright, roll 1d100. On a result of 71 or higher, the cultist is immediately restored as a Decaying Menial with 3d8 hit points. If this occurs, xp is not awarded for the cultist, but is awarded for the Decaying Menial if it is defeated. This effect is a curse, and if it is removed before it triggers then this does not occur.\n\n**ACTIONS**\n***Sickle.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d4 + 2) slashing damage.\n\n***Death Touch.*** *Melee Spell Attack:* +4 to hit, reach 10 ft., one target. *Hit:* 7 (1d8 + 2) necrotic damage, and the cultist regains hit points equal to half the damage they deal.\n\n**BONUS ACTIONS**\n***Off-Hand Sickle.*** If the cultist uses their action to Attack with their Sickle, they can make one additional attack using it."
     }
   ]
 }

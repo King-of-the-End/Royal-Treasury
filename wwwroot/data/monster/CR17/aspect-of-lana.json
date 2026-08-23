@@ -1,0 +1,244 @@
+{
+  "Name": "Aspect of Lana",
+  "Group": "Deific Aspects",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Aspect of Lana**\n\nThe incarnated form of Lana when they appear across the Divine Curtain. Though it doesn\u2019t represent their full power as a goddess, an aspect of Lana still retains her hold over the tides of fate and fortune. Lana is a gambler at heart, who loves to compete with mortals and make seemingly irresponsible wagers (though in truth, she never bets more than she can afford). She feels that all things can be possessed, and that ownership is a form of love - both being owned, and being owned by others. Thanks to this, there are many who have won the right to \u201Cown\u201D Lana, and she may sometimes appear to fulfill favors she gambled away to mortals.\n\n***Patron of the Reckless.*** Lana favors mortals much more directly than most deities, and is called upon arguably the most. Any mortal who hopes that luck will be in their favor during a stressful moment offers their prayer to her unknowingly, and she hears them all. Lana will rarely choose to deprive mortals of the truth of an honest roll of the dice, but sometimes she may steal good fortune from their future to give it to them in the present.\n\n***Divine Protection.*** If anything in the world may threaten the tides of fortune or eliminate the chance for luck or chance, Lana will appear to deter it, and reject it entirely. The chaos in which both mankind and the gods live is sacred to her, and defines what makes reality malleable. Similarly, if a mortal bends fate or luck too often, Lana may appear to judge their intentions.\n\n**Duchess of Fate\u2019s Dominion**\n\nLana always has three d20 results recorded, representing her ability to manipulate chance and fortune. These are called Dominion Results. Any time Lana or a creature within her sight makes an attack roll, ability check, or saving throw, Lana may spend one of these Dominion Results to replace the result with it. When she does, she immediately rerolls that Result and copies the new result in its place.\n\nIf Lana uses this feature to replace the roll of a player character with a result, they also roll a d20 this way and their player must record the result. The player may then use this d20 the same way as their own Dominion Result, for themselves or any creature they can see, but do not regain it or cause another creature to gain one when rolled. If Lana uses this effect on an NPC, they do not gain this benefit - the player represents a chaotic aspect of fate and fortune that Lana cannot manipulate.\n\nUnless otherwise stated, a Dominion Result cannot be used to change a roll determined by another Dominion Result.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Lana",
+      "Text": "The incarnated form of Lana when they appear across the Divine Curtain. Though it doesn\u2019t represent their full power as a goddess, an aspect of Lana still retains her hold over the tides of fate and fortune. Lana is a gambler at heart, who loves to compete with mortals and make seemingly irresponsible wagers (though in truth, she never bets more than she can afford). She feels that all things can be possessed, and that ownership is a form of love - both being owned, and being owned by others. Thanks to this, there are many who have won the right to \u201Cown\u201D Lana, and she may sometimes appear to fulfill favors she gambled away to mortals."
+    },
+    {
+      "Title": "Patron of the Reckless",
+      "Text": "Lana favors mortals much more directly than most deities, and is called upon arguably the most. Any mortal who hopes that luck will be in their favor during a stressful moment offers their prayer to her unknowingly, and she hears them all. Lana will rarely choose to deprive mortals of the truth of an honest roll of the dice, but sometimes she may steal good fortune from their future to give it to them in the present."
+    },
+    {
+      "Title": "Divine Protection",
+      "Text": "If anything in the world may threaten the tides of fortune or eliminate the chance for luck or chance, Lana will appear to deter it, and reject it entirely. The chaos in which both mankind and the gods live is sacred to her, and defines what makes reality malleable. Similarly, if a mortal bends fate or luck too often, Lana may appear to judge their intentions."
+    },
+    {
+      "Title": "Duchess of Fate\u2019s Dominion",
+      "Text": "Lana always has three d20 results recorded, representing her ability to manipulate chance and fortune. These are called Dominion Results. Any time Lana or a creature within her sight makes an attack roll, ability check, or saving throw, Lana may spend one of these Dominion Results to replace the result with it. When she does, she immediately rerolls that Result and copies the new result in its place.\n\nIf Lana uses this feature to replace the roll of a player character with a result, they also roll a d20 this way and their player must record the result. The player may then use this d20 the same way as their own Dominion Result, for themselves or any creature they can see, but do not regain it or cause another creature to gain one when rolled. If Lana uses this effect on an NPC, they do not gain this benefit - the player represents a chaotic aspect of fate and fortune that Lana cannot manipulate.\n\nUnless otherwise stated, a Dominion Result cannot be used to change a roll determined by another Dominion Result."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Somnus%20Domina%20-%20Lana%2C%20Duchess%20of%20Fortune.png",
+   "Image Variants": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Lesser%20Deity%20Emblem%20-%20Lana%2C%20Duchess%20of%20Fortune.png"
+  ],
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Somnus%20Domina%20-%20Lana%2C%20Duchess%20of%20Fortune.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Lesser%20Deity%20Emblem%20-%20Lana%2C%20Duchess%20of%20Fortune.png"
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_lana",
+      "section_type": "Stat Block",
+      "title": "Aspect of Lana",
+      "creature": {
+        "size": "Medium",
+        "type": "elemental",
+        "alignment": "true neutral"
+      },
+      "armor_class": "20 (Luck Shroud)",
+      "hit_points": "163 (25d8 \u002B 50)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Deific (lesser)",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B10"
+        },
+        "WIS": {
+          "score": 26,
+          "modifier": "\u002B8"
+        },
+        "CHA": {
+          "score": 30,
+          "modifier": "\u002B10",
+          "save": "\u002B16"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B8",
+        "Con \u002B8",
+        "Int \u002B10",
+        "Cha \u002B16"
+      ],
+      "skills": [
+        "Insight \u002B16",
+        "Perception \u002B14"
+      ],
+      "skill_notes": [
+        "Lana has proficiency in all games of chance"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "enraged",
+        "exhaustion"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "blindsight 120 ft.",
+        "passive Perception 24"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Gambling Fates (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If Lana is reduced to 0 hit points or killed outright, her hit point total is reset to 100, she regains and spends her Legendary Actions and Legendary Reactions, rerolls each of her Dominion Results, and chooses the three between her previous ones and new rolls that she wants to keep, and can use her Mythic Actions for 1 hour. A party that defeats her after using her Mythic Awakening is awarded an additional 18,000 XP (36,000 XP total).\n\nAdditionally, for the next hour, luck overtakes fate and common sense within 480 feet of Lana. During this time, all attack rolls and saving throws made by creatures in that space (except Lana) are replaced by a d20 roll made with no modifiers, and do not consider advantage or disadvantage. If the creature rolls a result of 11 or higher, their attack hits/save succeeds automatically. On a result of 10 or lower, it fails. A result of 20 or another number within the creature\u2019s critical range also hits. Dominion Results may be used by creatures to automatically determine the result of these d20 rolls.\n\nAttack rolls and saving throws made by deities, as well as attacks or effects originating from artifacts, ignore this effect and proceed normally."
+        },
+        {
+          "name": "Luck Shroud",
+          "name_format": "bold_italic",
+          "description": "Lana may add their Charisma modifier to their attack rolls and armor class in place of Strength or Dexterity, representing their confident reliance of fate to protect them."
+        },
+        {
+          "name": "Mythic Avoidance",
+          "name_format": "bold_italic",
+          "description": "After their Mythic Awakening activates, for 1 hour when Lana would make a saving throw to take half damage from an effect, they take no damage on a success and half damage on a failure."
+        },
+        {
+          "name": "Unlucky",
+          "name_format": "bold_italic",
+          "description": "If a creature attempts to use points of the lucky feat within Lana\u2019s presence or sight, she can choose to force them to take the lowest d20 result included in their rolls instead of picking for themselves."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Lana uses Fate\u2019s Hand three times. If her Mythic Actions are available, she may use Deal Bluff as well."
+        },
+        {
+          "name": "Fate\u2019s Hand",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 5 ft., one target, or as a Ranged Weapon Attack: \u002B16 to hit, range 120 ft., one target. Hit: 21 (2d20) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Deal Bluff",
+          "name_format": "bold_italic",
+          "description": "Lana targets any number of creatures she chooses within 60 feet of her. Each target must roll a d20, and on a result of 10 or lower they are treated as though they were automatically hit by Fate\u2019s Hand. All targets hit this way take the same instance of damage. Creatures with a Dominion Result can change their own result by using it in place of their roll."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "intro": "Each time Lana uses a Legendary Action, Lana may choose to reroll one of her Dominion Results.",
+        "options": [
+          {
+            "name": "Controlled Gamble",
+            "name_format": "bold_italic",
+            "description": "Lana rerolls one of her Dominion Results as described above, but if she does not favor the new Result she may choose to keep the one being rerolled instead of the new one."
+          },
+          {
+            "name": "Divine Coin",
+            "name_format": "bold_italic",
+            "description": "Lana chooses two creatures she can see, then rolls a d20 for one of them. If the result is 11 or higher, that target gains advantage on all attack rolls, ability checks, and saving throws they make until the end of Lana\u2019s next turn. On a result of 10 or lower, they gain disadvantage instead. Whichever result they get, the second creature suffers the other."
+          },
+          {
+            "name": "Path of Purchase (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Lana chooses one of her Dominion Results and attempts to multiply its effects. She may choose up to three creatures she can see, who each must make a DC 24 Charisma saving throw. On a failure, the Dominion Result she picked applies to all attack rolls, ability checks, and saving throws that creature makes until the Lana\u2019s next turn.\n\nIf the target is a player character, they each gain a new Dominion Result to use (regardless of if they fail or succeed). If they wish to, before rolling it, they can immediately spend that Dominion Result to roll it and replace all of their rolls with that result instead. If not, they can opt to retain it. Lana then rerolls the Dominion Result she used."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Fate Strike",
+            "name_format": "bold_italic",
+            "description": "Lana makes a Fate\u2019s Hand attack against a creature within range."
+          },
+          {
+            "name": "Divine Roulette (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Lana chooses three creatures she can see, and forces them to engage in a game of chance. The targets must make a d100 roll, and the following effects occur to each based on their results:",
+            "table": [
+              {
+                "result": "1",
+                "effect": "The creature immediately dies."
+              },
+              {
+                "result": "2 - 20",
+                "effect": "The creature\u2019s current hit points are halved."
+              },
+              {
+                "result": "21 - 40",
+                "effect": "The target is paralyzed until the end of their next turn."
+              },
+              {
+                "result": "41 - 60",
+                "effect": "Nothing occurs."
+              },
+              {
+                "result": "61 - 80",
+                "effect": "The target regains half of their hit points."
+              },
+              {
+                "result": "81 - 99",
+                "effect": "On their next turn, the target can take an additional action and bonus action."
+              },
+              {
+                "result": "100",
+                "effect": "The creature benefits from the effects of a Short Rest."
+              }
+            ],
+            "after_table": "A creature with a Dominion Result can spend it to negate their result and avoid this effect."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

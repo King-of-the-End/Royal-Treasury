@@ -15,114 +15,150 @@
 
 @if (Entry.Spellcasting is not null)
 {
-    @foreach (
-        var spellGroup
-        in Entry.Spellcasting.Spells)
+    @if (Entry.Spellcasting.AlternativeSpellLists.Count > 0)
     {
-        <br />
+        <div class="rt-spell-list-switcher">
+            <div class="rt-spell-list-switcher-title">
+                Spell Lists
+            </div>
 
-        <span>
-            •
-        </span>
+            <div
+                class="rt-spell-list-tabs"
+                role="tablist"
+                aria-label="Spell list">
 
-        <strong>
-            <em>
+                <button
+                    type="button"
+                    class="@SpellListTabClass(0)"
+                    role="tab"
+                    aria-selected="@(_selectedSpellListIndex == 0)"
+                    @onclick="() => SelectSpellList(0)">
+                    Spell List 1
+                </button>
 
-                <GlossaryText
-                    Text="@spellGroup.Frequency"
-                    Context="GlossaryContext.StatBlock" />:
+                @for (
+                    var index = 0;
+                    index < Entry.Spellcasting.AlternativeSpellLists.Count;
+                    index++)
+                {
+                    var tabIndex =
+                        index + 1;
 
-            </em>
-        </strong>
+                    var alternative =
+                        Entry.Spellcasting.AlternativeSpellLists[index];
 
-        <span>
-            @(" ")
-        </span>
+                    <button
+                        type="button"
+                        class="@SpellListTabClass(tabIndex)"
+                        role="tab"
+                        aria-selected="@(_selectedSpellListIndex == tabIndex)"
+                        @onclick="() => SelectSpellList(tabIndex)">
+                        @($"Spell List {tabIndex + 1}")
+                    </button>
+                }
 
-        @for (
-            var index = 0;
-            index < spellGroup.Spells.Count;
-            index++)
-        {
-            if (index > 0)
-            {
-                <span>, </span>
-            }
-
-            <GlossaryText
-                Text="@spellGroup.Spells[index]"
-                Context="GlossaryContext.StatBlock" />
-        }
+            </div>
+        </div>
     }
 
 
-    @foreach (
-        var preparedGroup
-        in Entry.Spellcasting.PreparedSpells)
+    @if (ActiveSpells.Count > 0 || ActivePreparedSpells.Count > 0)
     {
-        <br />
+        <div class="rt-spell-list-rows">
 
-        <span>
-            •
-        </span>
-
-        <strong>
-            <em>
-                @PreparedSpellHeading(
-                    preparedGroup):
-            </em>
-        </strong>
-
-        <span>
-            @(" ")
-        </span>
-
-        @for (
-            var index = 0;
-            index < preparedGroup.Spells.Count;
-            index++)
-        {
-            if (index > 0)
+            @foreach (
+                var spellGroup
+                in ActiveSpells)
             {
-                <span>, </span>
+                <div class="rt-spell-row">
+                    <div class="rt-spell-row-heading">
+                        <GlossaryText
+                            Text="@spellGroup.Frequency"
+                            Context="GlossaryContext.StatBlock" />
+                    </div>
+
+                    <div class="rt-spell-row-spells">
+                        @for (
+                            var index = 0;
+                            index < spellGroup.Spells.Count;
+                            index++)
+                        {
+                            if (index > 0)
+                            {
+                                <span class="rt-spell-separator">, </span>
+                            }
+
+                            <GlossaryText
+                                Text="@spellGroup.Spells[index]"
+                                Context="GlossaryContext.StatBlock" />
+                        }
+                    </div>
+                </div>
             }
 
-            <GlossaryText
-                Text="@preparedGroup.Spells[index]"
-                Context="GlossaryContext.StatBlock" />
-        }
+
+            @foreach (
+                var preparedGroup
+                in ActivePreparedSpells)
+            {
+                <div class="rt-spell-row">
+                    <div class="rt-spell-row-heading">
+                        @PreparedSpellHeading(
+                            preparedGroup)
+                    </div>
+
+                    <div class="rt-spell-row-spells">
+                        @for (
+                            var index = 0;
+                            index < preparedGroup.Spells.Count;
+                            index++)
+                        {
+                            if (index > 0)
+                            {
+                                <span class="rt-spell-separator">, </span>
+                            }
+
+                            <GlossaryText
+                                Text="@preparedGroup.Spells[index]"
+                                Context="GlossaryContext.StatBlock" />
+                        }
+                    </div>
+                </div>
+            }
+
+        </div>
     }
 
 
     @if (
         !string.IsNullOrWhiteSpace(
-            Entry.Spellcasting.AdditionalText))
+            ActiveAdditionalText))
     {
         <br />
         <br />
 
         <GlossaryText
-            Text="@Entry.Spellcasting.AdditionalText"
+            Text="@ActiveAdditionalText"
             Context="GlossaryContext.StatBlock" />
     }
 
 
     @if (
         !string.IsNullOrWhiteSpace(
-            Entry.Spellcasting.CastingLevelNote))
+            ActiveCastingLevelNote))
     {
         <br />
         <br />
 
         <GlossaryText
-            Text="@Entry.Spellcasting.CastingLevelNote"
+            Text="@ActiveCastingLevelNote"
             Context="GlossaryContext.StatBlock" />
     }
 
 
     @foreach (
         var note
-        in Entry.Spellcasting.Notes)
+        in ActiveNotes)
     {
         if (
             !string.IsNullOrWhiteSpace(
@@ -137,7 +173,6 @@
         }
     }
 }
-
 
 @if (NestedEntries.Count > 0)
 {
@@ -195,6 +230,157 @@
     [EditorRequired]
     public StatBlockEntry Entry { get; set; } =
         new();
+
+
+    private int _selectedSpellListIndex;
+
+
+    private string PrimarySpellListName =>
+        string.IsNullOrWhiteSpace(
+            Entry.Spellcasting?.SpellListName)
+
+        ? "Default"
+
+        : Entry.Spellcasting!.SpellListName.Trim();
+
+
+    private StatBlockAlternativeSpellList?
+        SelectedAlternativeSpellList
+    {
+        get
+        {
+            if (
+                Entry.Spellcasting is null ||
+                _selectedSpellListIndex <= 0)
+            {
+                return null;
+            }
+
+            var alternativeIndex =
+                _selectedSpellListIndex - 1;
+
+            return
+                alternativeIndex >= 0 &&
+                alternativeIndex <
+                    Entry.Spellcasting.AlternativeSpellLists.Count
+
+                ? Entry.Spellcasting.AlternativeSpellLists[
+                    alternativeIndex]
+
+                : null;
+        }
+    }
+
+
+    private IReadOnlyList<StatBlockSpellFrequency>
+        ActiveSpells =>
+            SelectedAlternativeSpellList?.Spells
+            ??
+            Entry.Spellcasting?.Spells
+            ??
+            new List<StatBlockSpellFrequency>();
+
+
+    private IReadOnlyList<StatBlockPreparedSpellLevel>
+        ActivePreparedSpells =>
+            SelectedAlternativeSpellList?.PreparedSpells
+            ??
+            Entry.Spellcasting?.PreparedSpells
+            ??
+            new List<StatBlockPreparedSpellLevel>();
+
+
+    private string ActiveAdditionalText =>
+        SelectedAlternativeSpellList is { } alternative &&
+        !string.IsNullOrWhiteSpace(
+            alternative.AdditionalText)
+
+        ? alternative.AdditionalText
+
+        : Entry.Spellcasting?.AdditionalText
+          ??
+          string.Empty;
+
+
+    private string ActiveCastingLevelNote =>
+        SelectedAlternativeSpellList is { } alternative &&
+        !string.IsNullOrWhiteSpace(
+            alternative.CastingLevelNote)
+
+        ? alternative.CastingLevelNote
+
+        : Entry.Spellcasting?.CastingLevelNote
+          ??
+          string.Empty;
+
+
+    private IReadOnlyList<string> ActiveNotes =>
+        SelectedAlternativeSpellList is { } alternative &&
+        alternative.Notes.Count > 0
+
+        ? alternative.Notes
+
+        : Entry.Spellcasting?.Notes
+          ??
+          new List<string>();
+
+
+    protected override void OnParametersSet()
+    {
+        var alternativeCount =
+            Entry.Spellcasting?.AlternativeSpellLists.Count
+            ??
+            0;
+
+        if (
+            _selectedSpellListIndex < 0 ||
+            _selectedSpellListIndex > alternativeCount)
+        {
+            _selectedSpellListIndex = 0;
+        }
+    }
+
+
+    private void SelectSpellList(
+        int selectedIndex)
+    {
+        var alternativeCount =
+            Entry.Spellcasting?.AlternativeSpellLists.Count
+            ??
+            0;
+
+        if (
+            selectedIndex >= 0 &&
+            selectedIndex <= alternativeCount)
+        {
+            _selectedSpellListIndex =
+                selectedIndex;
+        }
+    }
+
+
+    private string SpellListTabClass(
+        int tabIndex)
+    {
+        return
+            tabIndex == _selectedSpellListIndex
+            ? "rt-spell-list-tab is-active"
+            : "rt-spell-list-tab";
+    }
+
+
+    private static string AlternativeSpellListName(
+        StatBlockAlternativeSpellList alternative,
+        int index)
+    {
+        return
+            string.IsNullOrWhiteSpace(
+                alternative.Name)
+
+            ? $"Alternative {index + 1}"
+
+            : alternative.Name.Trim();
+    }
 
 
     private IReadOnlyList<StatBlockEntry>

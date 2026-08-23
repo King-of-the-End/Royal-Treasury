@@ -1,0 +1,264 @@
+{
+  "Name": "Aspect of Meirlach",
+  "Group": "Deific Aspects",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Aspect of Meirlach**\n\nThis aspect of Meirlach Musashi interacts with the Material Plane when necessary, and is also what those who challenge him in his own temple often are confronted with. Meirlach is not a being who craves conflict, despite their overwhelming skill, so they will go out of their way to avoid it or discourage challengers.\n\n***God of Little Notice.*** Meirlach prefers not to be recognized when they appear in the Material Plane. They will assume identities with no luster or appeal to avoid the notice of mortals, unless they wish to be seen. Due to his own stubborn, whimsical nature, Meirlach often enters the mortal world to witness tournaments and duels between fine warriors, and enjoys attending plays and frequenting less than savory establishments while his own divine servants try to find him and return him to where he should be.\n\n***Lax Confrontation.*** If Meirlach wants to confront another creature for the purpose of teaching them a lesson or imparting wisdom to them, he will intentionally weaken himself to do so. In these cases, Meirlach will often reduce his proficiency bonus to be the same as his challenger, reducing his attack rolls, saving throws, skill checks, and save DCs by the amount it\u2019s lowered by. He will also reduce the number of attacks he can make using his Multiattack to one with both his Ephemeral Katana and Ephemeral Wakizashi.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Meirlach",
+      "Text": "This aspect of Meirlach Musashi interacts with the Material Plane when necessary, and is also what those who challenge him in his own temple often are confronted with. Meirlach is not a being who craves conflict, despite their overwhelming skill, so they will go out of their way to avoid it or discourage challengers."
+    },
+    {
+      "Title": "God of Little Notice",
+      "Text": "Meirlach prefers not to be recognized when they appear in the Material Plane. They will assume identities with no luster or appeal to avoid the notice of mortals, unless they wish to be seen. Due to his own stubborn, whimsical nature, Meirlach often enters the mortal world to witness tournaments and duels between fine warriors, and enjoys attending plays and frequenting less than savory establishments while his own divine servants try to find him and return him to where he should be."
+    },
+    {
+      "Title": "Lax Confrontation",
+      "Text": "If Meirlach wants to confront another creature for the purpose of teaching them a lesson or imparting wisdom to them, he will intentionally weaken himself to do so. In these cases, Meirlach will often reduce his proficiency bonus to be the same as his challenger, reducing his attack rolls, saving throws, skill checks, and save DCs by the amount it\u2019s lowered by. He will also reduce the number of attacks he can make using his Multiattack to one with both his Ephemeral Katana and Ephemeral Wakizashi."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Meirlach%20Musashi.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Meirlach%20Musashi.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Lesser%20Deity%20Emblem%20-%20Meirlach%20Musashi%2C%20the%20Unreachable%20Master.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Meirlach Musashi",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Meirlach%20Musashi.png"
+    },
+    {
+      "Label": "Lesser Deity Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Lesser%20Deity%20Emblem%20-%20Meirlach%20Musashi%2C%20the%20Unreachable%20Master.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_meirlach",
+      "section_type": "Stat Block",
+      "title": "Aspect of Meirlach",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "true neutral"
+      },
+      "armor_class": "20 (breastplate \u002B1)",
+      "hit_points": "266 (28d8 \u002B 140)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Deific (lesser)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B14"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        },
+        "WIS": {
+          "score": 26,
+          "modifier": "\u002B8",
+          "save": "\u002B9"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B10"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B14",
+        "Dex \u002B12",
+        "Con \u002B12",
+        "Int \u002B9",
+        "Wis \u002B9",
+        "Cha \u002B10"
+      ],
+      "skills": [
+        "Athletics \u002B14",
+        "Insight \u002B10",
+        "Perception \u002B15",
+        "Persuasion \u002B10"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "paralyzed",
+        "stunned"
+      ],
+      "senses": [
+        "truesight 30 ft.",
+        "blindsight 90 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 25"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "24 (62,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Meirlach\u2019s spellcasting ability is Wisdom. They can cast the following spells, requiring no material components:",
+          "suboptions": [
+            {
+              "name": "At will",
+              "description": "dedicated enemy, deflect"
+            },
+            {
+              "name": "3/day each",
+              "description": "shield of blades"
+            },
+            {
+              "name": "2/day each",
+              "description": "reversal wave, slash wind"
+            },
+            {
+              "name": "1/day each",
+              "description": "malevolent flash"
+            }
+          ],
+          "notes": [
+            "Meirlach\u2019s Zanjen spells are cast as though at 5th level (except at will spells), unless they would already be higher."
+          ]
+        },
+        {
+          "name": "Return to Trial (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If Meirlach is reduced to 0 hit points or is killed outright, his current hit point total is reset to 200, he ends any unwanted conditions affecting him, regains his Legendary Reactions and spells he has used through Innate Spellcasting, recharges Heavenly Blade, and teleports to an unoccupied point he can see within 60 feet. He gains access to his Mythic Actions for 1 hour, during which time he regains his reaction at the start of each creature\u2019s turn in combat. A party that defeats him after using his Mythic Awakening is awarded an additional 62,000 XP (124,000 XP total)."
+        },
+        {
+          "name": "Unmatched Critical",
+          "name_format": "bold_italic",
+          "description": "Meirlach scores a critical hit on a d20 result of 18, 19, or 20. When Meirlach scores a critical hit, they deal maximum damage on all of their weapon damage dice."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Meirlach makes two attacks with their Ephemeral Katana, and two with their Ephemeral Wakizashi. These attacks ignore damage resistances and Damage Thresholds."
+        },
+        {
+          "name": "Ephemeral Katana",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 5 ft., one target. Hit: 24 (3d10 \u002B 7) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Ephemeral Wakizashi",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B12 to hit, reach 5 ft., one target. Hit: 16 (3d6 \u002B 5) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Heavenly Blade (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "Meirlach makes a single weapon attack using their Ephemeral Katana, and applies the result to all targets they choose within 30 feet. This attack is never made with disadvantage and ignores effects that would reduce the attack roll result, such as bane. They then roll a damage roll for both their Ephemeral Katana and Ephemeral Wakizashi, and apply the combined damage result to every target they hit. If the attack was a critical hit, both damage rolls are treated that way as well."
+        },
+        {
+          "name": "Mythic Action: Space Shearing Strike",
+          "name_format": "bold_italic",
+          "description": "Meirlach makes an Ephemeral Katana and Ephemeral Wakizashi attack each against a target Meirlach chooses within 120 feet, still counting them as melee attacks."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Mythic Action: Dual Dragons",
+          "name_format": "bold_italic",
+          "description": "If Meirlach has taken the Multiattack action, they may do so again, but cannot attack any of the same targets with the second Multiattack that they did with the first."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Quickswitch Step",
+          "name_format": "bold_italic",
+          "description": "In response to an attack missing them, Meirlach can move up to their movement speed without provoking opportunity attacks."
+        },
+        {
+          "name": "Mythic Action: Point Zero",
+          "name_format": "bold_italic",
+          "description": "When Meirlach is hit with a critical hit, he can use his reaction to reduce it to a normal hit instead. Then, he can make a single Ephemeral Katana attack against the creature who attacked him, which is treated as a critical hit if it hits. If the target is not within melee range but there is an unoccupied space adjacent to them, Meirlach teleports into such a space to make this attack."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Strike",
+            "name_format": "bold_italic",
+            "description": "Meirlach makes one weapon attack against a creature within range."
+          },
+          {
+            "name": "Phase Step",
+            "name_format": "bold_italic",
+            "description": "Meirlach teleports to an unoccupied space they can see within 60 feet."
+          },
+          {
+            "name": "Suspend Phantasm (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Meirlach produces the effects of dispel magic, using Wisdom as their spellcasting ability, against one target or effect within 30 feet. This does not count as a spell or magical effect."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Duo-Strike",
+            "name_format": "bold_italic",
+            "description": "Meirlach makes an attack against a single target, once each, with their Ephemeral Katana and Ephemeral Wakizashi. Alternatively, they can make a single Ephemeral Katana attack with advantage."
+          },
+          {
+            "name": "Sunset Sabotage (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Meirlach attempts to trip or knock back each creature they choose within 15 feet of them. Each target must make a DC 20 Strength saving throw or DC 20 Dexterity saving throw (they choose). On a failure they take 3d10 slashing damage and are either knocked prone or knocked back a distance equal to 5 feet x the number of points they failed the save by (Meirlach chooses for each)."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}
