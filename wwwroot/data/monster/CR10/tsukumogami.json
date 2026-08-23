@@ -1,0 +1,178 @@
+{
+  "Name": "Tsukumogami",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Tsukumogami**\n\nObjects that exist for extended amounts of time sometimes acquire the spirits of yokai, becoming tsukumogami. These objects are haunted by the thoughts and grudges of those who have most used them. They inspire fixation in those around them, often taking the forms of paintings or statues that demand obsession or adoration from those who see them. They are capable of moving on their own as a poltergeist may, but are content feeding on the attention of others.\n\n***Captive Minds.*** This yokai feeds off of attention and obsession, often appearing as the result of an artist pouring their heart and soul into their work at the cost of the rest of their needs or relationships. Once born, the tsukumogami hungers for more attention. It craves a public space to exist in, and slowly uses its powers to control the minds of others. However, it finds the taste of genuine adoration to be more pleasant than forced servitude so will only control enough people to keep itself protected and to lure others in. If it finds itself to be in danger, it will use those it has brainwashed as guardians and servants.\n\n***Fleeing from Hunters.*** When a tsukumogami starts to feel it is being threatened by hunters who are seeking it, the yokai may try to arrange for its own protection or relocation. Though it can float and teleport small distances on its own, the yokai prefers to manipulate others around it to be moved. It is intelligent enough to not draw attention to itself immediately, but if it is panicked may force a subject to attempt to steal it outright.\n\n***Plane of Obsession.*** Tsukumogami are often capable of generating a special demiplane that binds and saps the strength of their victims, pulling them into a horrific world beyond description that tears the mind of their observer to shreds. These worlds are derived from the subject of the tsukumogami. If it were a painting of a serene landscape, the plane twists and becomes the same landscape but made hellish and distorted. If it were a statue or figurine, the demiplane may consist of everyone the subject loves posed as the same sort of statue, but captured in a pained or contorted moment in time.\n\n***Construct Nature.*** Though not technically a construct, the tsukumogami’s nature as a possessed item leaves it not requiring air, food, drink, or sleep.",
+  "Information Sections": [
+    {
+      "Title": "Tsukumogami",
+      "Text": "Objects that exist for extended amounts of time sometimes acquire the spirits of yokai, becoming tsukumogami. These objects are haunted by the thoughts and grudges of those who have most used them. They inspire fixation in those around them, often taking the forms of paintings or statues that demand obsession or adoration from those who see them. They are capable of moving on their own as a poltergeist may, but are content feeding on the attention of others."
+    },
+    {
+      "Title": "Captive Minds",
+      "Text": "This yokai feeds off of attention and obsession, often appearing as the result of an artist pouring their heart and soul into their work at the cost of the rest of their needs or relationships. Once born, the tsukumogami hungers for more attention. It craves a public space to exist in, and slowly uses its powers to control the minds of others. However, it finds the taste of genuine adoration to be more pleasant than forced servitude so will only control enough people to keep itself protected and to lure others in. If it finds itself to be in danger, it will use those it has brainwashed as guardians and servants."
+    },
+    {
+      "Title": "Fleeing from Hunters",
+      "Text": "When a tsukumogami starts to feel it is being threatened by hunters who are seeking it, the yokai may try to arrange for its own protection or relocation. Though it can float and teleport small distances on its own, the yokai prefers to manipulate others around it to be moved. It is intelligent enough to not draw attention to itself immediately, but if it is panicked may force a subject to attempt to steal it outright."
+    },
+    {
+      "Title": "Plane of Obsession",
+      "Text": "Tsukumogami are often capable of generating a special demiplane that binds and saps the strength of their victims, pulling them into a horrific world beyond description that tears the mind of their observer to shreds. These worlds are derived from the subject of the tsukumogami. If it were a painting of a serene landscape, the plane twists and becomes the same landscape but made hellish and distorted. If it were a statue or figurine, the demiplane may consist of everyone the subject loves posed as the same sort of statue, but captured in a pained or contorted moment in time."
+    },
+    {
+      "Title": "Construct Nature",
+      "Text": "Though not technically a construct, the tsukumogami’s nature as a possessed item leaves it not requiring air, food, drink, or sleep."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Tsukumogami.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Tsukumogami.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Tsukumogami.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "tsukumogami",
+      "section_type": "Stat Block",
+      "title": "Tsukumogami",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "10",
+      "hit_points": "137 (25d10)",
+      "speed": {
+        "fly": "20 ft. (hover)",
+        "teleport": "20 ft."
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 4,
+          "modifier": "-3"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "CON": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+7"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+7"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "+5"
+        }
+      },
+      "saving_throws": [
+        "Int +7",
+        "Wis +7"
+      ],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical or silvered)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic",
+        "poison",
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "grappled",
+        "prone",
+        "charmed",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "blinded",
+        "deafened"
+      ],
+      "senses": [
+        "truesight 120 ft.",
+        "blindsight 240 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands Sylvan, Elvish, and the language of its creator but doesn’t speak",
+        "telepathy 240 ft."
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Critical Vulnerability",
+          "name_format": "bold_italic",
+          "description": "If the yokai suffers a critical hit, it takes twice as much damage from the extra damage dice."
+        },
+        {
+          "name": "False Appearance",
+          "name_format": "bold_italic",
+          "description": "The yokai is unmistakable for the object it is possessing as long as it doesn’t move. If the object it is possessing has limbs or appendages, it can move them at will regardless of the material they are made from."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The yokai’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
+          "suboptions": [
+            {
+              "name": "At will",
+              "description": "minor illusion, suggestion, vicious mockery (3d4 damage)"
+            },
+            {
+              "name": "1/Day each",
+              "description": "greater invisibility, mass suggestion, modify memory"
+            },
+            {
+              "name": "2/Day each",
+              "description": "discombobulate, fear, major image"
+            },
+            {
+              "name": "3/Day each",
+              "description": "biting curse, dispel magic"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Psychic Torment",
+          "name_format": "bold_italic",
+          "description": "Up to five creatures that can see the yokai must make a DC 17 Intelligence saving throw, taking 15 (3d10) psychic damage on a failed save. If a creature rolls a natural 1 on their saving throw that creature is stunned until the end of their next turn. Alternatively, if only one creature was targeted by this feature and they fail their saving throw, they are stunned in the same way."
+        },
+        {
+          "name": "Incite Obsession (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "One non-hostile creature that can see the yokai must make a DC 17 Charisma saving throw or be charmed by it. If they succeed the save they are not charmed and have advantage on future saves against this effect, but are unaware of the effect.\n\nA creature charmed this way tries to stay within sight of the yokai at all times if it can help it, and obeys the yokai’s telepathic commands without question, mistaking them for their own thoughts and ideas.\n\nIf the yokai is threatened, the charmed creature will put their life on the line to protect it, taking whatever action is necessary to do so. The effect ends if dispel magic or protection from evil and good is cast on the creature, or if the yokai dies."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Horrific Banishment",
+          "name_format": "bold_italic",
+          "description": "One creature that can see the yokai must make a DC 17 Charisma saving throw. If they fail, the creature becomes banished to an obsessive demiplane for 1 minute. While banished this way, the creature is subjected to horrors made from the twisted obsessions people have held for the yokai. The creature is incapacitated, and takes 17 (3d10) psychic damage at the start of each of the turns they spend banished this way. At the end of each of their turns they can repeat the saving throw, ending the effect on a success. A creature can end this effect by casting dispel magic on the yokai, treating the effect as if it were a 6th-level spell. When the effect ends the creature returns to the space they left from. If they die within the demiplane, their body remains inside and their soul is trapped within the yokai, and is only released if it is killed."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

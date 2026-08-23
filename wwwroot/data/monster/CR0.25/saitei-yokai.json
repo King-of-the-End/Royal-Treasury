@@ -1,0 +1,108 @@
+{
+  "Name": "Saitei Yokai",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Saitei Yokai**\n\nSaitei yokai are beings born from minor instances of negativity. They can be born from an individual’s personal sadness, a death in a family, lost love, or other similar instances. Like seeds that failed to bloom into greater yokai, these worm-like creatures have a horrifying head of various humanoid and bestial descriptions on the end of repulsive fleshy bodies. They often join into packs, moving with little sense of individuality. They are the lowest of the low among yokai, easily falling under the sway of greater yokai.\n\n***Strength in Numbers.*** The saitei yokai will join together in swarms. Though they have no love for their fellow yokai, they recognize the chances of their survival increasing exponentially in greater numbers. When they finally feed, however, they often will fight with each other to actually consume their prey.\n\n***Combined Horrors.*** When hundreds upon hundreds of Saitei yokai join together they can form greater yokai, though the results are often horrific amalgamations. This defines the value of saitei yokai: they are fodder meant to be killed, consumed, or spent for a greater purpose.",
+  "Information Sections": [
+    {
+      "Title": "Saitei Yokai",
+      "Text": "Saitei yokai are beings born from minor instances of negativity. They can be born from an individual’s personal sadness, a death in a family, lost love, or other similar instances. Like seeds that failed to bloom into greater yokai, these worm-like creatures have a horrifying head of various humanoid and bestial descriptions on the end of repulsive fleshy bodies. They often join into packs, moving with little sense of individuality. They are the lowest of the low among yokai, easily falling under the sway of greater yokai."
+    },
+    {
+      "Title": "Strength in Numbers",
+      "Text": "The saitei yokai will join together in swarms. Though they have no love for their fellow yokai, they recognize the chances of their survival increasing exponentially in greater numbers. When they finally feed, however, they often will fight with each other to actually consume their prey."
+    },
+    {
+      "Title": "Combined Horrors",
+      "Text": "When hundreds upon hundreds of Saitei yokai join together they can form greater yokai, though the results are often horrific amalgamations. This defines the value of saitei yokai: they are fodder meant to be killed, consumed, or spent for a greater purpose."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR0.25/Reference_BG%20-%20Saitei%20Yokai.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR0.25/Reference_BG%20-%20Saitei%20Yokai.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR0.25/Reference_BG%20-%20Saitei%20Yokai.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "saitei_yokai",
+      "section_type": "Stat Block",
+      "title": "Saitei Yokai",
+      "creature": {
+        "size": "Small",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "11",
+      "hit_points": "21 (6d6)",
+      "speed": {
+        "fly": "40 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 5,
+          "modifier": "-3"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [],
+      "skills": [],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 7"
+      ],
+      "languages": [
+        "understands Sylvan but doesn’t speak"
+      ],
+      "challenge_rating": "1/4 (50 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Grasping Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., 1 target. Hit: 5 (1d8) piercing damage. If the yokai hits a Medium or larger creature with its grasping bite, it latches onto the creature and refuses to let go. It can be removed if the creature succeeds a DC 12 Strength check against it. While latched onto a creature it automatically hits that creature with grasping bite attacks that it makes against them.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

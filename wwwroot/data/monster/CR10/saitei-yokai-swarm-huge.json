@@ -1,0 +1,140 @@
+{
+  "Name": "Saitei Yokai Swarm (Huge)",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Saitei Yokai**\n\nSaitei yokai are beings born from minor instances of negativity. They can be born from an individual’s personal sadness, a death in a family, lost love, or other similar instances. Like seeds that failed to bloom into greater yokai, these worm-like creatures have a horrifying head of various humanoid and bestial descriptions on the end of repulsive fleshy bodies. They often join into packs, moving with little sense of individuality. They are the lowest of the low among yokai, easily falling under the sway of greater yokai.\n\n***Strength in Numbers.*** The saitei yokai will join together in swarms. Though they have no love for their fellow yokai, they recognize the chances of their survival increasing exponentially in greater numbers. When they finally feed, however, they often will fight with each other to actually consume their prey.\n\n***Combined Horrors.*** When hundreds upon hundreds of Saitei yokai join together they can form greater yokai, though the results are often horrific amalgamations. This defines the value of saitei yokai: they are fodder meant to be killed, consumed, or spent for a greater purpose.",
+  "Information Sections": [
+    {
+      "Title": "Saitei Yokai",
+      "Text": "Saitei yokai are beings born from minor instances of negativity. They can be born from an individual’s personal sadness, a death in a family, lost love, or other similar instances. Like seeds that failed to bloom into greater yokai, these worm-like creatures have a horrifying head of various humanoid and bestial descriptions on the end of repulsive fleshy bodies. They often join into packs, moving with little sense of individuality. They are the lowest of the low among yokai, easily falling under the sway of greater yokai."
+    },
+    {
+      "Title": "Strength in Numbers",
+      "Text": "The saitei yokai will join together in swarms. Though they have no love for their fellow yokai, they recognize the chances of their survival increasing exponentially in greater numbers. When they finally feed, however, they often will fight with each other to actually consume their prey."
+    },
+    {
+      "Title": "Combined Horrors",
+      "Text": "When hundreds upon hundreds of Saitei yokai join together they can form greater yokai, though the results are often horrific amalgamations. This defines the value of saitei yokai: they are fodder meant to be killed, consumed, or spent for a greater purpose."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR0.25/Reference_BG%20-%20Saitei%20Yokai.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR0.25/Reference_BG%20-%20Saitei%20Yokai.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR0.25/Reference_BG%20-%20Saitei%20Yokai.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "saitei_yokai_swarm_huge",
+      "section_type": "Stat Block",
+      "title": "Saitei Yokai Swarm (Huge)",
+      "creature": {
+        "size": "Huge",
+        "type": "fiend (yokai, swarm)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "11",
+      "hit_points": "105 (30d6 + 60)",
+      "speed": {
+        "fly": "40 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist",
+        "swarm (Small)",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+6"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 5,
+          "modifier": "-3"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Con +6"
+      ],
+      "skills": [
+        "Athletics +7",
+        "Perception +1",
+        "Survival +1"
+      ],
+      "resistances": [
+        "piercing",
+        "slashing",
+        "bludgeoning"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "frightened",
+        "charmed",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "understands Sylvan but doesn’t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Yokai Swarm",
+          "name_format": "bold_italic",
+          "description": "Though the swarm normally cannot regain hit points or gain temporary hit points, it can still regain them through its Yokai Nourishment trait or Consume Dead action."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Grasping Bite (Swarm)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 0 ft., targets all creatures in the swarm’s space. Hit: 5 (8d8 + 3) piercing damage. If the saitei yokai swarm hits any creatures that are Large or smaller with its grasping bite, those creatures must make a DC 16 Strength saving throw. Any creature that fails is restrained and grappled (escape DC 16).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Consume Dead (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "As a bonus action taken only after it has lost at least half of its hit points, the swarm can begin feeding on its own dead. When it does, it may spend up to half of its remaining hit dice, and gains 1d6 + 2 temporary hit points for each hit die it expends this way."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

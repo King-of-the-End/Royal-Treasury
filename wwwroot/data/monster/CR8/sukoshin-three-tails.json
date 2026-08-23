@@ -1,0 +1,188 @@
+{
+  "Name": "Sukoshin (Three Tails)",
+  "Group": "Yokai",
+  "Source": "Lyres Guide to Risk and Reward",
+  "Information": "**Sukoshin**\n\nSukoshin is a variation of yokai that resemble foxes and are as shrewd as that likeness implies. These yokai are born from those who crave affection or have experienced extreme loss. Those feelings twist within the Shadowfell and produce these beasts, who instinctively seek to fulfill the desires of those who feel alone in the world. They feed on the misplaced affection and obsession of others, growing stronger while deluding themselves into thinking they’re helping their victims deal with their loneliness.\n\nLike all yokai they have a desire for human blood. Some find ways to convince their victims that they should allow them to feed upon their blood as if it were a normal thing to do, while many sukoshin hunt those around their target to isolate them and create dependence. When the time finally comes that their target’s desires have dried up or they become dull, a sukoshin will likely slay them and move on to another.\n\n***Shapeshifters.*** Sukoshin can read minds, and will change their form to match that which their target desires. All too often they use their abilities to monitor the dreams and desires of potential victims, then assume the form they most wish to see. They can take the body of a former lover, close friend, or a new individual entirely. Using their magic they integrate themselves into the lives of their victims and breed obsession and necessity. They become indispensable to their partners and consume those feelings of desire to become stronger.\n\n***Beast of Many Tails.*** Each sukoshin grows in proportion to the amount of mortal blood and desire that they consume, and after several years their forms begin to change. They sprout additional tails, growing in size and becoming more powerful as a result. At increments of three, six, and nine tails they gain profound levels of power. Those with three can hunt and kill more efficiently; those with six learn to control multiple targets at once and learn magic that can aid in protecting their own; those who reach nine are the pinnacle of their kind, becoming daiyokai who thirst for adoration from as many people as they can - they are the most efficient temptresses and enticers of the yokai world.\n\nAs they grow in power they desire more subjects. Those with three tails often charm multiple partners or small groups of people, perhaps even worming their way into a family. Those with six might aim higher, seeking the partnership of a leader among their kind or becoming the head of an entire settlement. Those with nine have an insatiable thirst for attention and adoration, and so entice and charm all possible. To them, ruling a kingdom is an appropriate means to their ends.\n\n• “At least some fiends have the decency to be easy on the eyes.”",
+  "Information Sections": [
+    {
+      "Title": "Sukoshin",
+      "Text": "Sukoshin is a variation of yokai that resemble foxes and are as shrewd as that likeness implies. These yokai are born from those who crave affection or have experienced extreme loss. Those feelings twist within the Shadowfell and produce these beasts, who instinctively seek to fulfill the desires of those who feel alone in the world. They feed on the misplaced affection and obsession of others, growing stronger while deluding themselves into thinking they’re helping their victims deal with their loneliness.\n\nLike all yokai they have a desire for human blood. Some find ways to convince their victims that they should allow them to feed upon their blood as if it were a normal thing to do, while many sukoshin hunt those around their target to isolate them and create dependence. When the time finally comes that their target’s desires have dried up or they become dull, a sukoshin will likely slay them and move on to another."
+    },
+    {
+      "Title": "Shapeshifters",
+      "Text": "Sukoshin can read minds, and will change their form to match that which their target desires. All too often they use their abilities to monitor the dreams and desires of potential victims, then assume the form they most wish to see. They can take the body of a former lover, close friend, or a new individual entirely. Using their magic they integrate themselves into the lives of their victims and breed obsession and necessity. They become indispensable to their partners and consume those feelings of desire to become stronger."
+    },
+    {
+      "Title": "Beast of Many Tails",
+      "Text": "Each sukoshin grows in proportion to the amount of mortal blood and desire that they consume, and after several years their forms begin to change. They sprout additional tails, growing in size and becoming more powerful as a result. At increments of three, six, and nine tails they gain profound levels of power. Those with three can hunt and kill more efficiently; those with six learn to control multiple targets at once and learn magic that can aid in protecting their own; those who reach nine are the pinnacle of their kind, becoming daiyokai who thirst for adoration from as many people as they can - they are the most efficient temptresses and enticers of the yokai world.\n\nAs they grow in power they desire more subjects. Those with three tails often charm multiple partners or small groups of people, perhaps even worming their way into a family. Those with six might aim higher, seeking the partnership of a leader among their kind or becoming the head of an entire settlement. Those with nine have an insatiable thirst for attention and adoration, and so entice and charm all possible. To them, ruling a kingdom is an appropriate means to their ends."
+    },
+    {
+      "Title": "",
+      "Text": "“At least some fiends have the decency to be easy on the eyes.”",
+      "IsQuote": true
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20Sukoshin%20(Six%20Tails).jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20Sukoshin%20(Six%20Tails).jpg",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference_BG%20-%20Sukoshin%2C%20Humanoid.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Six Tails",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference%20-%20Sukoshin%20(Six%20Tails).jpg"
+    },
+    {
+      "Label": "Humanoid",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference_BG%20-%20Sukoshin%2C%20Humanoid.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "sukoshin_three_tails",
+      "section_type": "Stat Block",
+      "title": "Sukoshin (Three Tails)",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai, shapechanger)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "110 (20d8 + 20)",
+      "speed": {
+        "walk": "50 ft.",
+        "burrow": "20 ft.",
+        "fly": "30 ft. (hover)"
+      },
+      "quality_traits": [
+        "Magic resist",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CON": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2",
+          "save": "-1"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+7"
+        }
+      },
+      "saving_throws": [
+        "Int -1",
+        "Cha +7"
+      ],
+      "skills": [
+        "Deception +5",
+        "Perception +5",
+        "Persuasion +5"
+      ],
+      "resistances": [
+        "B/P/S (magical or silvered)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Common",
+        "Sylvan",
+        "Elvish (only speaks in humanoid form)"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Affectionate Charm",
+          "name_format": "bold_italic",
+          "description": "The yokai can keep a creature charmed indefinitely, as long as it charmed them using a spell. The charmed creature does not consider attempts to bite them or extract blood a hostile action."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The yokai’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
+          "suboptions": [
+            {
+              "name": "At will",
+              "description": "charm person, detect thoughts"
+            },
+            {
+              "name": "2/Day each",
+              "description": "faerie fire, misty step"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes three weapon attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Nails",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The yokai transforms into a Medium or smaller humanoid creature, into the form of a regular fox, back to its true form, or into the form of a Small single-tailed fox. Its statistics remain the same across its four forms (except its size)."
+        },
+        {
+          "name": "Love to Hate",
+          "name_format": "bold_italic",
+          "description": "Creatures charmed by the yokai (that it chooses) cease being charmed, and become frightened for 1 minute instead. All creatures frightened of it may attempt a DC 15 Wisdom saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Charmed Guardian",
+          "name_format": "bold_italic",
+          "description": "In response to being targeted by a weapon attack it can see, one creature charmed by the yokai moves up to its movement speed to a space adjacent to the attacker or the yokai, and becomes the attack’s new target."
+        }
+      ]
+    }
+  ]
+}
