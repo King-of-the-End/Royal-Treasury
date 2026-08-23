@@ -1,0 +1,230 @@
+{
+  "Name": "Scream of Ambition",
+  "Group": "Yokai",
+  "Groups": [
+    "Yokai"
+  ],
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Scream of Ambition**\n\nThe Scream of Ambition is a daiyokai evolution of the Echo of Ambition yokai, which is itself born from mortal hearts obsessed with achieving mastery of their skill as a swordsman. The Scream is the result of unsealing the echo\u2019s sealed weapon and achieving unbridled mastery of their craft. They become a beast that knows their supernatural skill exists beyond mortal ability, and seeks to test themselves against ever-strengthening opponents to find where their power ends. Categorically, if the Echo of Ambition represents a desire to achieve mastery, the Scream is an empty heart that laments no longer being challenged. To quell its ego, it may choose to take pupils, or disguise itself as a mortal master, but these actions are in service to creating or finding an opponent worth challenging.",
+  "Information Sections": [
+    {
+      "Title": "Scream of Ambition",
+      "Text": "The Scream of Ambition is a daiyokai evolution of the Echo of Ambition yokai, which is itself born from mortal hearts obsessed with achieving mastery of their skill as a swordsman. The Scream is the result of unsealing the echo\u2019s sealed weapon and achieving unbridled mastery of their craft. They become a beast that knows their supernatural skill exists beyond mortal ability, and seeks to test themselves against ever-strengthening opponents to find where their power ends. Categorically, if the Echo of Ambition represents a desire to achieve mastery, the Scream is an empty heart that laments no longer being challenged. To quell its ego, it may choose to take pupils, or disguise itself as a mortal master, but these actions are in service to creating or finding an opponent worth challenging."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Scream%20of%20Ambition.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Scream%20of%20Ambition.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Scream%20of%20Ambition.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "scream_of_ambition",
+      "section_type": "Stat Block",
+      "title": "Scream of Ambition",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": null
+      },
+      "armor_class": "21 (natural armor)",
+      "hit_points": "285 (30d8 \u002B 150)",
+      "speed": {
+        "walk": "50 ft.",
+        "fly": "50 ft. (hover)"
+      },
+      "quality_traits": [
+        "Critical 18",
+        "eidolic",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B11"
+        },
+        "DEX": {
+          "score": 26,
+          "modifier": "\u002B8",
+          "save": "\u002B15"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B11",
+        "Dex \u002B15",
+        "Int \u002B9",
+        "Cha \u002B9"
+      ],
+      "skills": [
+        "Athletics \u002B11",
+        "Intimidation \u002B9",
+        "Perception \u002B12",
+        "Stealth \u002B15"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "slashing",
+        "B/P (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "petrified",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Sylvan",
+        "telepathy 60 ft."
+      ],
+      "challenge_rating": "24 (62,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Ambition Surge (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The yokai takes one additional action on its turn."
+        },
+        {
+          "name": "Dark Motivations (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When the yokai is reduced to 0 hit points or killed outright, its hit points are reset to 200, it regains spent Legendary Reactions, ends any conditions it doesn\u2019t wish to be affected by, recharges Judgement to All and Ambition Surge, and gains access to its Mythic Actions for 1 hour. If a party defeats the yokai after using its Mythic Awakening, they are awarded an additional 62,000 XP (for a total of 124,000 XP)."
+        },
+        {
+          "name": "Projectile Immunity",
+          "name_format": "bold_italic",
+          "description": "Unless it is incapacitated, the yokai reduces all damage from ranged attacks to 0 by masterfully parrying and dodging them."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes three Master\u2019s Blade attacks, then one High Density Plasma Tail attack. After the yokai\u2019s Mythic Awakening has activated, the first time it hits a creature each turn, the target must make a DC 19 Dexterity saving throw. On a failure, ghostly stakes burst from their body and cause them to become restrained until the start of the yokai\u2019s next turn."
+        },
+        {
+          "name": "Master\u2019s Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 10 ft., one target. Hit: 19 (2d10 \u002B 8) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "High Density Plasma Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 15 ft., one target. Hit: 32 (5d10 \u002B 4) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Judgement to All (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The yokai unleashes all of its blades at once, slicing thousands of times in an instant and forcing each target it chooses within 40 feet of it to make a DC 24 Dexterity saving throw, taking 33 (6d10) slashing damage and 33 (6d10) fire damage on a failed save, or half as much damage on a successful one. Creatures who fail are also pushed 15 feet away from the echo and are knocked prone."
+        },
+        {
+          "name": "Mythic Action: Master of the Sword (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The yokai can produce the effects of the zanjen realm spell, requiring no spell slot or components, and using Wisdom as its spellcasting ability. If it loses concentration on the spell when cast this way, it can use its reaction to retain concentration instead."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Flash Mirage",
+          "name_format": "bold_italic",
+          "description": "The yokai teleports to a space it can see within 60 feet."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Steel Cuts the Wind",
+          "name_format": "bold_italic",
+          "description": "In reaction to a ranged attack made against it, the yokai makes a Master\u2019s Blade attack with advantage against the source of the attack (even if they cannot see the target or if they aren\u2019t within range). On a hit, it deals damage as it would normally."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The yokai makes one Master\u2019s Blade attack."
+          },
+          {
+            "name": "Slipstep",
+            "name_format": "bold_italic",
+            "description": "The yokai moves up to half its movement speed without provoking opportunity attacks."
+          },
+          {
+            "name": "Mirage Variance (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The yokai creates a dozen mirage-like clones of itself that move close to it, granting it the effects of the mirror image spell until the start of its next turn."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "availability": "For 1 hour after using Dark Motivations (Mythic Awakening)",
+        "options": [
+          {
+            "name": "Wind Cutter (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The yokai makes a Master\u2019s Blade attack against a target up to 60 feet away, resolving the attack as though it was still a melee attack."
+          },
+          {
+            "name": "Dead Approach (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The yokai unleashes a series of strikes at up to four targets they choose within 20 feet of them. Each must make a DC 24 Dexterity saving throw. On a failure, they take 11 (2d10) slashing damage, and their movement speed is reduced to 0 until the start of the yokai\u2019s next turn. If they fail by 10 points or more, they suffer a point of Combat Fatigue."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

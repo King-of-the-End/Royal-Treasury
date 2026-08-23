@@ -1,0 +1,134 @@
+{
+  "Name": "Stained Knifehand",
+  "Group": "Sect of the Stained",
+  "Groups": [
+    "Sect of the Stained"
+  ],
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Knifehands**\n\nKnifehands are those who are aware that they owe their luck to Scorn, and kill with him in mind. They aren’t particularly advanced in terms of organization, unless a harbinger brings them together. Knifehands prefer feral gauntlets to other types of weapons, as it allows them to feel each blow to their victims directly.",
+  "Information Sections": [
+    {
+      "Title": "Knifehands",
+      "Text": "Knifehands are those who are aware that they owe their luck to Scorn, and kill with him in mind. They aren’t particularly advanced in terms of organization, unless a harbinger brings them together. Knifehands prefer feral gauntlets to other types of weapons, as it allows them to feel each blow to their victims directly."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Stained%20Sect%20Knifehand.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Stained%20Sect%20Knifehand.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Stained%20Sect%20Knifehand.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "stained_knifehand",
+      "section_type": "Stat Block",
+      "title": "Stained Knifehand",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "15 (breastplate)",
+      "hit_points": "45 (6d8 + 18)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Keen senses (hearing, sight)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+3"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +3",
+        "Con +5"
+      ],
+      "skills": [
+        "Athletics +6",
+        "Perception +3"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 13 (18 with Keen Senses)"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Reckless Attacker",
+          "name_format": "bold_italic",
+          "description": "When the knifehand makes an attack on their turn, they can choose to make that attack with advantage. If they do, all of their melee attacks until the end of the turn have advantage, and all attacks made against them until the start of their next turn also have advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The knifehand makes two weapon attacks. They can replace one of those attacks with their Grapple and Hurl if they wish to."
+        },
+        {
+          "name": "Clawed Gauntlets",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Handaxe",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target, or as a Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 8 (1d6 + 4) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Grapple and Hurl",
+          "name_format": "bold_italic",
+          "description": "The knifehand makes a grapple check against one creature they have hit with their Clawed Gauntlets already on this turn. If they win the contest, the target takes 10 (1d10 + 4) bludgeoning damage, and the knifehand can throw the creature into an unoccupied space they choose within 10 feet, where they fall prone."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

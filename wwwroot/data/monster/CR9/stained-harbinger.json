@@ -1,0 +1,150 @@
+{
+  "Name": "Stained Harbinger",
+  "Group": "Sect of the Stained",
+  "Groups": [
+    "Sect of the Stained"
+  ],
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Harbingers**\n\nHarbingers are Scorn’s dark knights, who unify killers and psychopaths under a collective banner. They are often called the Blood Knights of Scorn, due to the striking red armor they wear, and the red blades they carry. Harbingers are often those who have the same killing impulses as Scorn’s other followers, but cloak it under a grand design: to save a settlement through the murder of its nobles, to assassinate those they deem unfit to live, or to reclaim stolen ancestral land or property. Their mission is a pretense that condones the slaughter of others, and allows them to direct their eager following.",
+  "Information Sections": [
+    {
+      "Title": "Harbingers",
+      "Text": "Harbingers are Scorn’s dark knights, who unify killers and psychopaths under a collective banner. They are often called the Blood Knights of Scorn, due to the striking red armor they wear, and the red blades they carry. Harbingers are often those who have the same killing impulses as Scorn’s other followers, but cloak it under a grand design: to save a settlement through the murder of its nobles, to assassinate those they deem unfit to live, or to reclaim stolen ancestral land or property. Their mission is a pretense that condones the slaughter of others, and allows them to direct their eager following."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Stained%20Harbinger.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Stained%20Harbinger.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Stained%20Harbinger.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "stained_harbinger",
+      "section_type": "Stat Block",
+      "title": "Stained Harbinger",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "22 (plate, greatshield)",
+      "hit_points": "120 (16d8 + 48)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+7"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+7"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Con +7",
+        "Int +4",
+        "Wis +7"
+      ],
+      "skills": [
+        "Athletics +9",
+        "Intimidation +9",
+        "Perception +7"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Power Wielder",
+          "name_format": "bold_italic",
+          "description": "The harbinger can wield two-handed weapons with one hand, and versatile weapons they wield with one hand gain their higher damage die. Only one weapon they wield at a time can benefit from this trait."
+        },
+        {
+          "name": "Reckless Attacker",
+          "name_format": "bold_italic",
+          "description": "When the harbinger makes an attack on their turn, they can choose to make that attack with advantage. If they do, all of their melee attacks until the end of the turn have advantage, and all attacks made against them until the start of their next turn also have advantage."
+        },
+        {
+          "name": "Treacherous Tenacity",
+          "name_format": "bold_italic",
+          "description": "When the harbinger has fewer than half of its total hit points remaining, it gives in to rage and drops its tower shield and wields its greatsword with two hands. This reduces its armor class by 4, but also adds a +4 bonus to its attack and damage rolls until combat ends, and it takes hold of its greatshield again."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The harbinger makes two Crimson Greatsword Attacks and one Shield Bash attack."
+        },
+        {
+          "name": "Crimson Greatsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 6 (1d10) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shield Bash",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 5) bludgeoning damage, and if the target is Large or smaller they must make a DC 17 Strength saving throw, falling prone on a failure.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Crimson Sword Arc",
+          "name_format": "bold_italic",
+          "description": "The harbinger gathers necrotic energy as a crimson veil around their sword, and hurls it at a point it can see within 30 feet, where it explodes in a 10-foot cube. Each target within that space must make a DC 17 Dexterity saving throw, taking 27 (6d8) necrotic damage on a failure."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

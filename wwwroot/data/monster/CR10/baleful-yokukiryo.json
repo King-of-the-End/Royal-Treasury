@@ -1,0 +1,158 @@
+{
+  "Name": "Baleful Yokukiryo",
+  "Group": "Yokai",
+  "Groups": [
+    "Yokai"
+  ],
+  "Source": "Blade, Bone & Benefit",
+  "Information": "**Yokukiryo**\n\nThe masked lover, otherwise called the yokukiryō, is a type of yokai that, more commonly than others, is born directly from the soul of a mortal. They can be born from a soul that has experienced rejection or lost love that sends their soul plummeting into the depths of anguish (rational or not). They are masked humanoid figures, bound eternally by a bone mask they cannot remove as an expression of feeling unwanted or incomplete. The yokukiryō seeks two things: to reclaim the object of their affections (the creature who rejected them or they lost), or to take hold of a mortal creature who either spurned another or was spurned. They are phantoms drawn to romantic anguish, and want to seize the love of another to feed on their anguish (which they believe drains the target of their despair and lets them rest).\n\n**Baleful Yokukiryo**\n\nIf slain in a way that does not satisfy it or if they lose the object of their adoration, a yokukiryō may discard its sanity to take on the form of a baleful yokukiryō, a dangerous beast that draws a weapon made of its own phantasmal blood and seeks to kill any living creature in sight. It rips its mask from its face, and reveals its true fiendish nature. If killed in this form, the yokai’s essence does not return to the Realm of Shadows, and so is permanently expunged.\n\nAlternatively, yokai may possess the body of a mortal who gives themselves over to their anger, lust, or feelings of loss, and turn that mortal into a baleful yokukiryō that willingly takes out its anger on the world around it, returning only upon its death.",
+  "Information Sections": [
+    {
+      "Title": "Yokukiryo",
+      "Text": "The masked lover, otherwise called the yokukiryō, is a type of yokai that, more commonly than others, is born directly from the soul of a mortal. They can be born from a soul that has experienced rejection or lost love that sends their soul plummeting into the depths of anguish (rational or not). They are masked humanoid figures, bound eternally by a bone mask they cannot remove as an expression of feeling unwanted or incomplete. The yokukiryō seeks two things: to reclaim the object of their affections (the creature who rejected them or they lost), or to take hold of a mortal creature who either spurned another or was spurned. They are phantoms drawn to romantic anguish, and want to seize the love of another to feed on their anguish (which they believe drains the target of their despair and lets them rest)."
+    },
+    {
+      "Title": "Baleful Yokukiryo",
+      "Text": "If slain in a way that does not satisfy it or if they lose the object of their adoration, a yokukiryō may discard its sanity to take on the form of a baleful yokukiryō, a dangerous beast that draws a weapon made of its own phantasmal blood and seeks to kill any living creature in sight. It rips its mask from its face, and reveals its true fiendish nature. If killed in this form, the yokai’s essence does not return to the Realm of Shadows, and so is permanently expunged.\n\nAlternatively, yokai may possess the body of a mortal who gives themselves over to their anger, lust, or feelings of loss, and turn that mortal into a baleful yokukiryō that willingly takes out its anger on the world around it, returning only upon its death."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Yokukiryo%CC%84.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Yokukiryo%CC%84.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Yokukiryo%CC%84.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "baleful_yokukiryo",
+      "section_type": "Stat Block",
+      "title": "Baleful Yokukiryo",
+      "creature": {
+        "size": "Large",
+        "type": "fiend (yokai)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "11",
+      "hit_points": "119 (20d10 + 60)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [
+        "Ethereal",
+        "magic resist",
+        "magical",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 19,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+5"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "+5"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +5"
+      ],
+      "skills": [
+        "Perception +9"
+      ],
+      "resistances": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "understands Sylvan and the languages of its original self, but doesn’t communicate"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Blind Rage",
+          "name_format": "bold_italic",
+          "description": "The yokai has advantage on all attacks it makes, but all attacks made against it have advantage as well. It does not gain this benefit against creatures who are dying, and will favor active, capable targets to those who are debilitated."
+        },
+        {
+          "name": "Wicked Reactions",
+          "name_format": "bold_italic",
+          "description": "The yokai can make up to four opportunity attacks each round, regaining spent opportunity attacks at the start of its turn. These opportunity attacks do not consume its reaction, but cannot be used if the yokai cannot take reactions."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "If it’s available, the yokai uses its Battering Scream, then makes four attacks with its Blood Blade."
+        },
+        {
+          "name": "Blood Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target or as a Ranged Weapon Attack: +7 to hit, range 30 ft., one target. Hit: 9 (1d8 + 4) slashing damage plus 6 (1d10) necrotic damage, or 14 (2d10 + 3) necrotic damage if used as a Ranged Attack.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Battering Scream (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The yokai unleashes a sorrowful scream, forcing each non-yokai creature within 30 feet of it to make a DC 17 Constitution saving throw, taking 27 (4d10 + 5) thunder damage and becoming sluggish until the end of their next turn on a failure, or half as much damage and isn’t sluggish on a success."
+        },
+        {
+          "name": "Grim Teleport",
+          "name_format": "bold_italic",
+          "description": "The yokai teleports into an unoccupied space adjacent to a creature it can see, then makes two Blood Blade attacks against them."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}
