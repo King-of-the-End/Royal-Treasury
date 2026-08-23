@@ -1,0 +1,273 @@
+{
+  "Name": "Aspect of Burtromet",
+  "Group": "Deific Aspects",
+  "Groups": [
+    "Deific Aspects"
+  ],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Aspect of Burtromet**\n\nThe charred titan fights with startling ferocity. They often bring their engines of war to their battles, utilizing massive iterations of siege equipment or machines they have modified, but even without these terrifying accompaniments they are a titanic force to be reckoned with. As the god of fire, they can manipulate volcanic forces, devastate the landscape with a hammer forged from a volcano\u2019s heart, and call down meteoric disasters.\n\n**Elemental Facsimiles**\n\nBurtromet, an ever-iterating inventor of weaponry, has a certain interest in technology that is more complicated than simply merging metal with elemental power, which is most of his creations. Particularly, he has a morbid curiosity regarding frame units and advanced technology found in places like High Wave. In an effort to keep up with this advanced technology, Burtromet will sometimes create elementals in the \u201Cshape\u201D of advanced technology, effectively creating elementals resembling DGRs and lunar frames. Whether he keeps them in his service or not depends on how accurate they are.\n\n**Living Eruption**\n\nWhen Burtromet steps into the Material Plane, the planet reacts to him with explosive intent: volcanoes erupt, the earth quakes, and sources of water within miles of him begin to sizzle and evaporate in clouds of steam. Burtromet has no great love for being in the Material Plane, so he often reacts to it with rage and destructive fervor. It is commonly believed that Mt. Karna, the largest volcano in the known world, was the site of his first emergence in the Material Plane.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Burtromet",
+      "Text": "The charred titan fights with startling ferocity. They often bring their engines of war to their battles, utilizing massive iterations of siege equipment or machines they have modified, but even without these terrifying accompaniments they are a titanic force to be reckoned with. As the god of fire, they can manipulate volcanic forces, devastate the landscape with a hammer forged from a volcano\u2019s heart, and call down meteoric disasters."
+    },
+    {
+      "Title": "Elemental Facsimiles",
+      "Text": "Burtromet, an ever-iterating inventor of weaponry, has a certain interest in technology that is more complicated than simply merging metal with elemental power, which is most of his creations. Particularly, he has a morbid curiosity regarding frame units and advanced technology found in places like High Wave. In an effort to keep up with this advanced technology, Burtromet will sometimes create elementals in the \u201Cshape\u201D of advanced technology, effectively creating elementals resembling DGRs and lunar frames. Whether he keeps them in his service or not depends on how accurate they are."
+    },
+    {
+      "Title": "Living Eruption",
+      "Text": "When Burtromet steps into the Material Plane, the planet reacts to him with explosive intent: volcanoes erupt, the earth quakes, and sources of water within miles of him begin to sizzle and evaporate in clouds of steam. Burtromet has no great love for being in the Material Plane, so he often reacts to it with rage and destructive fervor. It is commonly believed that Mt. Karna, the largest volcano in the known world, was the site of his first emergence in the Material Plane."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Burtromet%2C%20the%20Charred%20Titan.PNG",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Burtromet%2C%20the%20Charred%20Titan.PNG",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Lesser%20God%20-%20Burtromet%2C%20the%20Charred%20Titan.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Stat Block",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Burtromet%2C%20the%20Charred%20Titan.PNG"
+    },
+    {
+      "Label": "Burtromet",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Lesser%20God%20-%20Burtromet%2C%20the%20Charred%20Titan.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_burtromet",
+      "section_type": "Stat Block",
+      "title": "Aspect of Burtromet",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "elemental, giant",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "488 (25d20 \u002B 225)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft."
+      },
+      "quality_traits": [
+        "Deific",
+        "massive (Large/10 feet/DC 22)",
+        "siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B14"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "CON": {
+          "score": 28,
+          "modifier": "\u002B9"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B10"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B14",
+        "Wis \u002B10",
+        "Cha \u002B12"
+      ],
+      "skills": [
+        "Athletics \u002B14",
+        "Perception \u002B10"
+      ],
+      "resistances": [
+        "necrotic",
+        "poison"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "tremorsense 60 ft.",
+        "darkvision 480 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "22 (41,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Burtromet\u2019s spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components. Burtromet\u2019s spells are cast at 5th level, unless their base level is higher.",
+          "cast_as": "5th level, unless their base level is higher",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "fireball"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "forgelord\u2019s chains",
+                  "hellish rebuke"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "fire storm",
+                  "seal",
+                  "volcanic ash"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "fire shield",
+                  "incendiary cloud",
+                  "wall of fire"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Grand Ignition",
+          "name_format": "bold_italic",
+          "description": "If Burtromet hits a target twice or more in the same turn with a weapon attack, they must succeed a DC 20 Dexterity saving throw or be ignited."
+        },
+        {
+          "name": "Living Avatar of Flame (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Burtromet would be reduced to 0 hit points or killed outright, its hit points are instead reset to 200, it regains its spent Legendary Reactions and cast spells, and for 1 hour it can use its Mythic Actions. During this time, the area around Burtromet burns, and all spaces within 60 feet of it become difficult terrain for any creature that isn\u2019t immune or resistant to fire damage. If a party defeats Burtromet after using its Mythic Awakening, they are awarded an additional 41,000 XP (82,000 XP in total)."
+        },
+        {
+          "name": "Zenith of Flame",
+          "name_format": "bold_italic",
+          "description": "Any fire elemental that has a CR lower than 15 who attempts to act against or defy Burtromet, or disobey his orders, must make a DC 20 Charisma saving throw. On a failure, they must either act according to his will, or be stunned until they do (even if they normally couldn\u2019t be stunned). Creatures stunned this way can repeat the save at the end of each of their turns, ending the effect on a success. A creature who succeeds either save becomes immune to it for 24 hours."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Burtromet makes three Grand Volcanic Hammer attacks."
+        },
+        {
+          "name": "Grand Volcanic Hammer",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 15 ft., one target. Hit: 34 (6d8 \u002B 7) bludgeoning damage plus 13 (2d12) fire damage. If they have access to their Mythic Actions, this hammer\u2019s handle becomes an ignited chain, and the attack\u2019s reach becomes 60 feet.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Burning Rain",
+          "name_format": "bold_italic",
+          "description": "Burtromet summons a series of burning rocks that strike a point they can see within 60 feet, which affect everything in a 20-foot-radius sphere centered there. Each target within that range that Burtromet chooses must make a DC 22 Dexterity saving throw, taking 59 (8d12 \u002B 7) fire damage on a failure."
+        },
+        {
+          "name": "Mythic Action: Cataclysmic Cry (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Burtromet unleashes a terrifying, layered war cry that causes a sudden surge of meteoric energy to crash from the sky into a point they choose within 480 feet, where it explodes in a 60-foot-radius sphere. Each other creature within that space must make a DC 22 Constitution saving throw, taking 55 (10d10) fire damage and 55 (10d10) thunder damage on a failed save, or half as much on a success. Any creature who fails by 10 points or more is knocked prone and pushed 30 feet away from the center of the blast."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Banishment",
+          "name_format": "bold_italic",
+          "description": "Burtromet banishes any number of elementals it can see who are stunned by its Zenith of Flame trait back to the Elemental Plane of Fire, or can immediately deal 55 (10d10) force damage to them."
+        },
+        {
+          "name": "Mythic Action: Erupting Move",
+          "name_format": "bold_italic",
+          "description": "Burtromet explodes into ash and magma, then reappears in an unoccupied space it chooses within 60 feet, erupting in another blast of magma and flame."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Hurl",
+            "name_format": "bold_italic",
+            "description": "Burtromet grabs and attempts to throw one Large or smaller creature within 15 feet of them. Their target must succeed a DC 22 Dexterity saving throw, or be hurled into an unoccupied space Burtromet chooses within 60 feet, where they fall prone."
+          },
+          {
+            "name": "Erupting Shield (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Burtromet shrouds their body in magma and flame, and gains 44 (8d10) temporary hit points, which disappear next time they take damage (after that damage is applied against them)."
+          },
+          {
+            "name": "Volcanic Disruption (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Burtromet causes the ground to shake and flames to burst forth from it, affecting the area within 60 feet of it. Each creature standing on the ground within that space must make a DC 20 Dexterity saving throw, falling prone and taking 11 (3d6) fire damage on a failure."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "availability": "For 1 hour after using Living Avatar of Flame (Mythic Awakening)",
+        "options": [
+          {
+            "name": "Volcanic Hammer",
+            "name_format": "bold_italic",
+            "description": "Burtromet makes a single Grand Volcanic Hammer attack, ignoring its own Massive trait."
+          },
+          {
+            "name": "Spellcast (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Burtromet casts a spell using its Innate Spellcasting."
+          },
+          {
+            "name": "God\u2019s Flame and Forge (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Burtromet further ignites the space around it, causing the area made into difficult terrain by Living Avatar of Flame to cause any creature who enters into a space within it to take 1d6 fire damage. This damage repeats for each space a creature continues to enter."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

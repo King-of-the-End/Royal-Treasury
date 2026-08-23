@@ -1,0 +1,159 @@
+{
+  "Name": "Drowned Banshee",
+  "Group": null,
+  "Groups": [],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Drowned Banshee**\n\nThe drowned banshee is much like its undead counterpart, but is born from the sorrow of those lost on sunken ships and other waterlogged disasters. In most cases they represent a specific individual whose spirit became bound to a shipwreck, beach, sea, etc., and terrorizes all life that enters its territory. In other cases, they might be a combination of bound, tortured souls acting under a single spiritual avatar. The sea’s influence often results in beings taking a form resembling a combination of sealife and a humanoid visage, and composite spirits often take on a resemblance to the god of the seas, Ilsrabae.\n\n**Bound then Freed**\n\nMost drowned banshees are bound to shipwrecks, but when the site of their demise is eroded by the sea, their territory will naturally expand. If they are close to land, they will extend their prowling ground to beaches and shores, where they walk solemnly until observed by unwanted eyes. If too far out to sea, they will walk upon the water’s surface and freeze the sea itself to trap ships that drift too close.\n\n**Territorial Horse**\n\nA drowned banshee believes that those who drift near their lair or place of creation want to disturb them, and will defend it as though protecting a precious sanctuary. If they originate from a ship carrying treasure they will protect it with their life, and if any corpses of their old crew survives they will not tolerate them being disturbed.",
+  "Information Sections": [
+    {
+      "Title": "Drowned Banshee",
+      "Text": "The drowned banshee is much like its undead counterpart, but is born from the sorrow of those lost on sunken ships and other waterlogged disasters. In most cases they represent a specific individual whose spirit became bound to a shipwreck, beach, sea, etc., and terrorizes all life that enters its territory. In other cases, they might be a combination of bound, tortured souls acting under a single spiritual avatar. The sea’s influence often results in beings taking a form resembling a combination of sealife and a humanoid visage, and composite spirits often take on a resemblance to the god of the seas, Ilsrabae."
+    },
+    {
+      "Title": "Bound then Freed",
+      "Text": "Most drowned banshees are bound to shipwrecks, but when the site of their demise is eroded by the sea, their territory will naturally expand. If they are close to land, they will extend their prowling ground to beaches and shores, where they walk solemnly until observed by unwanted eyes. If too far out to sea, they will walk upon the water’s surface and freeze the sea itself to trap ships that drift too close."
+    },
+    {
+      "Title": "Territorial Horse",
+      "Text": "A drowned banshee believes that those who drift near their lair or place of creation want to disturb them, and will defend it as though protecting a precious sanctuary. If they originate from a ship carrying treasure they will protect it with their life, and if any corpses of their old crew survives they will not tolerate them being disturbed."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Drowned%20Banshee.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Drowned%20Banshee.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Drowned%20Banshee.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "drowned_banshee",
+      "section_type": "Stat Block",
+      "title": "Drowned Banshee",
+      "creature": {
+        "size": "Medium",
+        "type": "spirit (undead)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "55 (10d8 + 10)",
+      "speed": {
+        "walk": "0 ft.",
+        "fly": "30 ft. (hover)",
+        "swim": "50 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "ethereal"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+6"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +4",
+        "Cha +6"
+      ],
+      "skills": [],
+      "resistances": [
+        "acid",
+        "fire",
+        "lightning",
+        "thunder"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "cold",
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Common",
+        "Aquan"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Detect Life",
+          "name_format": "bold_italic",
+          "description": "The banshee can magically sense the presence of creatures up to 5 miles away, as long as they aren’t undead or construct, and as long as they are within 5 miles of a large body of water. It knows their general direction but not their exact locations."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Writhing Touch",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 16 (4d6 + 2) cold damage. If this attack is made against a target submerged in liquid, it deals an additional 14 (4d6) cold damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Spirit Sap",
+          "name_format": "bold_italic",
+          "description": "The banshee targets up to three creatures within 60 feet who are submerged in at least two feet of water. A violent chill rushes through their body, and each must succeed on a DC 14 Constitution saving throw, taking 11 (2d10) cold damage on a failed save. If a creature fails their saving throw by 5 points or more, their maximum hit points are reduced by the damage they take instead. If this reduces their maximum hit points to 0, they die immediately and their corpse becomes frozen in place."
+        },
+        {
+          "name": "Chilling Wail (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The banshee unleashes a piercing cry that echoes out and affects all creatures within 30 feet of it (or within 300 feet, if it is submerged while unleashing this wail, though the 300 foot radius only includes other submerged spaces). Each creature within range must make a DC 14 Constitution saving throw, taking 11 (3d6) cold damage and 11 (3d6) psychic damage and suffering a point of Combat Fatigue on a failure. Any creature who fails the save by 10 points or more immediately drops to 0 hit points instead, unless they are resistant or immune to either psychic or cold damage.\n\nIf another drowned banshee within 300 feet has used their Chilling Wail since the start of this one’s last turn, this banshee cannot use it on this turn."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Ship Lock Frost (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The banshee causes all water within 500 feet of it to freeze solid, producing a thick three-foot layer of ice that prevents ships from moving through the water. This ice remains for up to 6 hours or until the banshee is destroyed permanently."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

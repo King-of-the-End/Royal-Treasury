@@ -1,0 +1,195 @@
+{
+  "Name": "Briar Deva",
+  "Group": "Devas",
+  "Groups": [
+    "Devas"
+  ],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Briar Deva**\n\nA briar deva is an extension of Aymere, who assume a humanoid form wrapped in wooden bindings and ametrine mineral horns, ornately adorned. They rarely leave the Whisperwood, and exist mostly to tend to and care for the most fragile bastions of nature to exist. They speak to archdruids and great beasts, guiding them to care for the world around them, rarely stepping in to combat the forces of evil unless needed. Their most common battles are against yokai and fiends who corrupt nature directly.",
+  "Information Sections": [
+    {
+      "Title": "Briar Deva",
+      "Text": "A briar deva is an extension of Aymere, who assume a humanoid form wrapped in wooden bindings and ametrine mineral horns, ornately adorned. They rarely leave the Whisperwood, and exist mostly to tend to and care for the most fragile bastions of nature to exist. They speak to archdruids and great beasts, guiding them to care for the world around them, rarely stepping in to combat the forces of evil unless needed. Their most common battles are against yokai and fiends who corrupt nature directly."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Briar%20Deva.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Briar%20Deva.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Briar%20Deva.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "briar_deva",
+      "section_type": "Stat Block",
+      "title": "Briar Deva",
+      "creature": {
+        "size": "Large",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "20 (barkskinned)",
+      "hit_points": "120 (16d10 \u002B 32)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft. (hover)"
+      },
+      "quality_traits": [
+        "Anchored",
+        "angelic (4d8 radiant)",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "\u002B0",
+          "save": "\u002B4"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B7"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B8",
+        "Int \u002B4",
+        "Cha \u002B7"
+      ],
+      "skills": [
+        "Athletics \u002B12",
+        "Nature \u002B8",
+        "Perception \u002B10"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid",
+        "poison",
+        "radiant",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "blindsight 120 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [
+        {
+          "name": "Barkskinned",
+          "name_format": "bold_italic",
+          "description": "The deva\u2019s AC is calculated as 16 \u002B its Dexterity modifier."
+        },
+        {
+          "name": "Divine Judgement",
+          "name_format": "bold_italic",
+          "description": "When speaking with a mortal creature, the deva can divine the crimes committed during their life and the context surrounding them, which the deva knows with great familiarity."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The deva\u2019s spellcasting ability is Wisdom. It can cast the following spells, requiring no components. The deva counts as a druid for the purposes of considerations for spell effects.",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "commune",
+                  "druidcraft"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "healing word (9th level)",
+                  "gate"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "cure wounds (5th level)"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "entangle (5th level)",
+                  "shield of summer"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Wise Attacks",
+          "name_format": "bold_italic",
+          "description": "The deva uses Wisdom for its attack and damage rolls."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes two Twisting Limb attacks."
+        },
+        {
+          "name": "Twisting Limbs",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 15 ft., one target. Hit: 15 (2d8 \u002B 6) piercing damage plus 18 (4d8) radiant damage. If this attack hits a target who is Huge or smaller, the deva can give up its next attack through Multiattack this turn to entangle the target in twisting roots and bark, causing them to be restrained. The creature can make a DC 18 Athletics check against this effect in place of a weapon attack (as though grappling), ending the effect on a success.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The deva magically polymorphs into a humanoid of any description, a beast of a challenge rating no higher than its own, or back to its true form. If it dies it reverts to its true form. In any humanoid form its statistics remain the same, but in the form of a beast it assumes the AC, movement speed(s), Strength, Dexterity, senses, attacks, and actions of that beast (except class features, Legendary Actions and Lair Actions), but retains access to its own actions and senses as well."
+        },
+        {
+          "name": "Tree Step",
+          "name_format": "bold_italic",
+          "description": "The deva teleports to the space of any Large or larger tree within 60 feet, and emerges in an unoccupied space adjacent to it."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

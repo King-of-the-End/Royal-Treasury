@@ -1,0 +1,144 @@
+{
+  "Name": "Sunken Marshmind",
+  "Group": null,
+  "Groups": [],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Sunken Marshmind**\n\nA marshmind is a scourge from the Elemental Plane of Earth that has been eroded and touched by the Elemental Plane of Water. It is a living swamp, which shifts and pulls itself through the earth searching for intelligent life to consume. Its body is acidic, and the elemental has a taste for the minds of creatures it can contain within it, who it scans the thoughts of as it kills. It does not require food to sustain itself, but instead takes great joy in observing intense emotions, such as those felt by creatures struggling against death.",
+  "Information Sections": [
+    {
+      "Title": "Sunken Marshmind",
+      "Text": "A marshmind is a scourge from the Elemental Plane of Earth that has been eroded and touched by the Elemental Plane of Water. It is a living swamp, which shifts and pulls itself through the earth searching for intelligent life to consume. Its body is acidic, and the elemental has a taste for the minds of creatures it can contain within it, who it scans the thoughts of as it kills. It does not require food to sustain itself, but instead takes great joy in observing intense emotions, such as those felt by creatures struggling against death."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Mud%20Elemental%20(Marshmind)%20ISO.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Mud%20Elemental%20(Marshmind)%20ISO.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR12/Mud%20Elemental%20(Marshmind)%20ISO.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "sunken_marshmind",
+      "section_type": "Stat Block",
+      "title": "Sunken Marshmind",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "elemental, ooze",
+        "alignment": null
+      },
+      "armor_class": "12 (natural armor)",
+      "hit_points": "245 (14d20 + 98)",
+      "speed": {
+        "walk": "30 ft.",
+        "burrow": "30 ft."
+      },
+      "quality_traits": [
+        "Amorphous (½ foot)",
+        "earthglide"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "+3"
+        },
+        "CON": {
+          "score": 25,
+          "modifier": "+7"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2",
+          "save": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +3",
+        "Int +8",
+        "Cha +1"
+      ],
+      "skills": [],
+      "resistances": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid",
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "ignited",
+        "paralyzed",
+        "poisoned",
+        "prone"
+      ],
+      "senses": [
+        "tremorsense 60 ft.",
+        "blindsight 120 ft. (blind beyond this radius)",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "Terran",
+        "telepathy (selective)"
+      ],
+      "challenge_rating": "12 (8,400 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Corpse Speech",
+          "name_format": "bold_italic",
+          "description": "The marshmind can reach out telepathically to any corpses or unconscious creatures within 120 feet of it, and speak through their bodies using a mixture of their voice and those the marshmind has consumed. It is able to speak either Terran, or using a language the corpse knew in life. These corpses can produce vocalizations as long as their head is intact."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The marshmind makes two Mud Limb Slam attacks."
+        },
+        {
+          "name": "Mud Limb Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 13 (1d10 + 7) bludgeoning damage plus 6 (1d10) acid damage. If this attack hits a Large or smaller creature and exceeds their armor class by 10 points or more, they are grappled and restrained (escape DC 19). The marshmind can move freely while grappling any number of Large or smaller creatures, moving those creatures with it.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Engulf",
+          "name_format": "bold_italic",
+          "description": "The marshmind attempts to consume each creature it is grappling by pulling them into its body. Each creature it is grappling must make a DC 19 Strength saving throw or is swallowed (8 Medium creatures/20 damage/DC 19) - this functions as the swallowed condition. Each creature who starts their turn swallowed takes 2d10 acid damage. While creatures are swallowed by the marshmind, it can read their surface thoughts and knows their intentions, actions they will take, and can speak to them telepathically using the voices of every creature it has consumed simultaneously.\n\nA creature swallowed this way may attempt a DC 16 Strength check as an action, breaking free and emerging into an unoccupied space adjacent to the marshmind on a success."
+        },
+        {
+          "name": "Storm Drain (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The marshmind contorts and spins its body, creating a storm of muck and stone that strikes everything within 30 feet of it. Each creature within range (including those swallowed by it, who have disadvantage on the saving throw) must make a DC 19 Dexterity saving throw, taking 23 (5d8) bludgeoning damage and 23 (5d8) acid damage on a failure, or half as much on a success. When it reconstitutes itself, any creature who fails by 10 points or more is dragged into its body and swallowed by it as per its Engulf action."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

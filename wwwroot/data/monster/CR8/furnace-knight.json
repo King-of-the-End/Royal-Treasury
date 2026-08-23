@@ -1,0 +1,151 @@
+{
+  "Name": "Furnace Knight",
+  "Group": null,
+  "Groups": [],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Furnace Knight**\n\nWhen a great blaze claims the lives of the innocent, the pained souls of those caught in the fire (or those who hold themselves responsible for it) can be scorched more than physically: their very soul is burned, and marked by the tragedy. From them, a spirit bound to the place of tragedy or bound to hunt down those responsible can appear in the form of a scorched, unyielding warrior carrying flames made of tormented flame. The furnace knight, as this spirit is called, is a vengeful one that is similar to a wraith, in that it will both defend its grave and will hunt those who must be brought to justice until it is satisfied (or properly exorcised).\n\nAlternatively, adventurers of great strength or honor who die within the Elemental Plane of Fire may become these spirits, bound to a place they held dear in the Material Plane.",
+  "Information Sections": [
+    {
+      "Title": "Furnace Knight",
+      "Text": "When a great blaze claims the lives of the innocent, the pained souls of those caught in the fire (or those who hold themselves responsible for it) can be scorched more than physically: their very soul is burned, and marked by the tragedy. From them, a spirit bound to the place of tragedy or bound to hunt down those responsible can appear in the form of a scorched, unyielding warrior carrying flames made of tormented flame. The furnace knight, as this spirit is called, is a vengeful one that is similar to a wraith, in that it will both defend its grave and will hunt those who must be brought to justice until it is satisfied (or properly exorcised).\n\nAlternatively, adventurers of great strength or honor who die within the Elemental Plane of Fire may become these spirits, bound to a place they held dear in the Material Plane."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20Furnace%20Knight.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20Furnace%20Knight.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20Furnace%20Knight.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "furnace_knight",
+      "section_type": "Stat Block",
+      "title": "Furnace Knight",
+      "creature": {
+        "size": "Large",
+        "type": "spirit (elemental)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "17 (half plate)",
+      "hit_points": "105 (14d10 + 28)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "critical 19",
+        "ethereal",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+5"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Cha +5"
+      ],
+      "skills": [],
+      "resistances": [],
+      "vulnerabilities": [
+        "cold"
+      ],
+      "immunities": [
+        "fire",
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "grappled",
+        "poisoned",
+        "prone"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common",
+        "Ignan"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Cold Vulnerability",
+          "name_format": "bold_italic",
+          "description": "If the knight takes 20 points of cold damage in a single turn (after applying its vulnerabilities), it becomes sluggish until the end of its next turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The knight makes two attacks with its Soulburn Blades."
+        },
+        {
+          "name": "Soulburn Blades",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage plus 6 (1d10) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Blade of Sufferance",
+          "name_format": "bold_italic",
+          "description": "The knight may only use this action after they have scored a critical hit against a creature within the last minute, then after using it must do so again to use it again. It creates a blade of spiritual flame that is used to strike one creature within 10 feet of it as a Melee Weapon Attack: +10 to hit. Then, a burst of flame erupts and envelopes each creature within 20 feet of the initial target, forcing each to make a DC 15 Intelligence saving throw. Each creature who is hit or fails the save against this action is exposed to the vivid memories of the victims who died to the flames that created the knight, taking 14 (4d6) fire damage and 14 (4d6) psychic damage, or half as much on a successful save. The knight is immune to this action’s effects.\n\nCreatures who fail their save by 5 points or more are frightened of the knight for 1 hour, during which time they repeat the save at the end of each of their turns, ending the effect on a success.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Flashfire Step (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The knight teleports in a burst of flame into an unoccupied space it can see within 30 feet, then the next attack it makes on that turn has advantage."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Flame Shield",
+          "name_format": "bold_italic",
+          "description": "When the knight is hit by an attack from a creature within 10 feet of it, it can increase its armor class against that attack by 5 points, possibly changing the result. Additionally, the attacker must make a DC 15 Constitution saving throw as the flaming shield backlashes against them, taking 2d10 fire damage on a failure. If the triggering attack hit regardless of this boost to AC, they have advantage on their saving throw."
+        }
+      ]
+    }
+  ]
+}

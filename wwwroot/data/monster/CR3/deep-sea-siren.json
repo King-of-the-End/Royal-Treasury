@@ -1,0 +1,130 @@
+{
+  "Name": "Deep Sea Siren",
+  "Group": null,
+  "Groups": [],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Deep Sea Siren**\n\nTemptations from the deep can come in the form of these monstrosities who prowl seas waiting to lure sailors to their demise. They are carnivorous hunters who crave the frozen flesh of humanoids, and will gather in small groups along known seafaring routes to wait for passing ships, then use their curse song to entrance those aboard. Usually, they are only interested in feeding on a boat’s inhabitants then letting it drift, but in some cases a particularly ambitious group of deep sea sirens may wait with the remains of one ship in hopes of being “rescued” in a tempting humanoid disguise, then will allow their would-be saviors to take them to a port or hub of commerce where they can infiltrate and feed on larger scores of targets at once, before fleeing again into the ocean.",
+  "Information Sections": [
+    {
+      "Title": "Deep Sea Siren",
+      "Text": "Temptations from the deep can come in the form of these monstrosities who prowl seas waiting to lure sailors to their demise. They are carnivorous hunters who crave the frozen flesh of humanoids, and will gather in small groups along known seafaring routes to wait for passing ships, then use their curse song to entrance those aboard. Usually, they are only interested in feeding on a boat’s inhabitants then letting it drift, but in some cases a particularly ambitious group of deep sea sirens may wait with the remains of one ship in hopes of being “rescued” in a tempting humanoid disguise, then will allow their would-be saviors to take them to a port or hub of commerce where they can infiltrate and feed on larger scores of targets at once, before fleeing again into the ocean."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Deep%20Sea%20Siren.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Deep%20Sea%20Siren.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Reference_BG%20-%20Deep%20Sea%20Siren.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "deep_sea_siren",
+      "section_type": "Stat Block",
+      "title": "Deep Sea Siren",
+      "creature": {
+        "size": "Medium",
+        "type": "monstrosity",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "65 (10d8 + 20)",
+      "speed": {
+        "walk": "30 ft.",
+        "swim": "50 ft."
+      },
+      "quality_traits": [
+        "Amphibious"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Athletics +4",
+        "Deception +6"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 10"
+      ],
+      "languages": [
+        "Common",
+        "Aquan"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Swim-By",
+          "name_format": "bold_italic",
+          "description": "The siren does not provoke opportunity attacks when it swims out of another creature’s reach."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The siren makes two attacks with its Frozen Claws."
+        },
+        {
+          "name": "Frozen Claws",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) slashing damage plus 4 (1d6) cold damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Alluring Melody",
+          "name_format": "bold_italic",
+          "description": "The siren can sing a beautiful song that can be heard by every humanoid within 300 feet of it. Each creature that can hear it must succeed on a DC 14 Wisdom saving throw or be charmed until it stops singing. It must use a bonus action on each of its subsequent turns to continue singing, as well as concentrate on its song as though it were a spell. Each target charmed by the siren ignores other effects that might be charming it that have an equal or lower DC, are incapacitated, and on their turn must move on the most direct route toward the siren to reach them. They will only adjust their path to avoid difficult terrain or obvious danger, and if they take damage from any source other than the siren they repeat the Wisdom saving throw. Targets also repeat the saving throw at the end of each of their turns. If a creature succeeds the save, the effect ends, and the creature is immune to the siren’s melody for 24 hours."
+        },
+        {
+          "name": "Freezing Bindings (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "If a target is at least half-submerged in liquid, the siren can cause chain-like anchors of ice to appear around them. Their target must be within 30 feet of them, and must succeed a DC 14 Strength saving throw or be restrained this way, during which time if the creature is underwater or swimming they plummet 60 feet down at the start of each of their turns. A creature can use their action to make a DC 14 Strength or Dexterity check to break free from the bindings, ending the effect on a success. Otherwise, they take 1d10 cold damage at the start of each turn they are restrained this way."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The siren can transform its shape to appear as a Small or Medium humanoid creature of a race and gender presentation it chooses, or transform back into its true form. Its statistics remain the same in any form it takes this way, and when it dies it returns to its true form."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "Name": "Volcanic Overlord",
+  "Group": null,
+  "Groups": [],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Volcanic Overlord**\n\nA volcanic overlord is an advanced form of fire elemental, born of a minor overlap between the powers of the Elemental Planes of Earth and Fire. Its body is an obsidian shell formed around living fire, and is spoken of as a living volcano. The beast is ferocious and violent, though capable of rational thought, and will destroy anything that does not serve another purpose for it. Should a volcanic overlord escape its own plane and end up in the Material Plane, they can have a devastating effect on ecosystems simply by existing, as they burn away wildlife within kilometers simply by being present.\n\n**Paramental Variant**\n\nIn the Brass Metropolis, an ancient volcanic overlord exists at the city’s core, both keeping alight its ancient engines and drawing power from their activity. This entity is much more powerful than the regular variants, and it is known that if it was to ever leave its shell - the city itself - it would challenge Burtromet as the god of the Elemental Plane of Fire. For now, however, this beast remains content as the core of the Metropolis.",
+  "Information Sections": [
+    {
+      "Title": "Volcanic Overlord",
+      "Text": "A volcanic overlord is an advanced form of fire elemental, born of a minor overlap between the powers of the Elemental Planes of Earth and Fire. Its body is an obsidian shell formed around living fire, and is spoken of as a living volcano. The beast is ferocious and violent, though capable of rational thought, and will destroy anything that does not serve another purpose for it. Should a volcanic overlord escape its own plane and end up in the Material Plane, they can have a devastating effect on ecosystems simply by existing, as they burn away wildlife within kilometers simply by being present."
+    },
+    {
+      "Title": "Paramental Variant",
+      "Text": "In the Brass Metropolis, an ancient volcanic overlord exists at the city’s core, both keeping alight its ancient engines and drawing power from their activity. This entity is much more powerful than the regular variants, and it is known that if it was to ever leave its shell - the city itself - it would challenge Burtromet as the god of the Elemental Plane of Fire. For now, however, this beast remains content as the core of the Metropolis."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Magma%20Elemental%20(Volcanic%20Overlord).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Magma%20Elemental%20(Volcanic%20Overlord).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Magma%20Elemental%20(Volcanic%20Overlord).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "volcanic_overlord",
+      "section_type": "Stat Block",
+      "title": "Volcanic Overlord",
+      "creature": {
+        "size": "Huge",
+        "type": "elemental",
+        "alignment": null
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "230 (20d12 + 100)",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "swim": "60 ft. (magma only)"
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7",
+          "save": "+12"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+6"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "+0",
+          "save": "+5"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Str +12",
+        "Dex +6",
+        "Int +5"
+      ],
+      "skills": [
+        "Athletics +12",
+        "Nature +5",
+        "Perception +8"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "paralyzed",
+        "poisoned",
+        "prone"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Ignan"
+      ],
+      "challenge_rating": "13 (10,000 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Inferno Fury",
+          "name_format": "bold_italic",
+          "description": "After the overlord has used Hellfire Rapture, for 1 hour, each time it makes an attack roll, saving throw, or ability check, it rolls a d4 and adds it to the result."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The overlord makes four Volcano Glass Strike attacks. If its Fireball is charged, it can replace two of them with it instead."
+        },
+        {
+          "name": "Volcano Glass Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) slashing damage plus 9 (2d8) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Fireball (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The overlord hurls a burst of magma and flame at a point it can see within 120 feet, where it explodes in a 30-foot radius. Each creature in the sphere must make a DC 18 Dexterity saving throw, taking 33 (6d10) fire damage on a failure, or half as much on a success."
+        },
+        {
+          "name": "Hellfire Rapture (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "This action cannot be taken except through the effects of Infernal Rev. The overlord unleashes all of the fiery energy stored within its body in a blazing hellfire centered on it, which expands out in a 120-foot radius sphere. Each creature within range must make a DC 18 Constitution saving throw, taking 55 (10d10) fire damage on a failure, or half as much on a success. Creatures who fail are ignited (2d10 damage) and take a level of exhaustion. This damage ignores resistances to fire damage.\n\nAfter using this action, the overlord is stunned, and at the end of each of its subsequent turns it must make a DC 18 Constitution saving throw, ending the effect on a success. Each time it fails this saving throw, its attempts to reignite its core cause it to regain 40 hit points."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Infernal Rev",
+          "name_format": "bold_italic",
+          "description": "The overlord charges its internal fiery core by rolling a d12. On a result of 12 or higher, it is able to use its Hellfire Rapture action for 1 hour (unless it already has). Each time the overlord uses this bonus action, its result increases by 1."
+        },
+        {
+          "name": "Obsidian Gate (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The overlord creates a gate to the Elemental Plane of Fire, which can either produce 1d4 + 2 fire elementals under the overlord’s control, which appear in unoccupied spaces within 60 feet of it, or can be used to teleport the overlord back to the Elemental Plane of Fire, appearing in a location it is familiar with."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Search",
+            "name_format": "bold_italic",
+            "description": "The overlord makes a Perception or Investigation check with advantage, aiming to assess the area for hidden creatures or unseen details."
+          },
+          {
+            "name": "Magma Flow (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Melting stone pools at a point the overlord chooses within 60 feet, expanding out into a 20-foot radius pool. This area becomes difficult terrain, and each creature who begins their turn in one of its spaces or moves into one on their turn takes 1d6 fire damage. This pool vanishes at the end of the overlord’s next turn."
+          },
+          {
+            "name": "Whirling Obsidian (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Each creature within 20 feet of the overlord is pelted by shards of obsidian, and must make a DC 18 Dexterity saving throw, taking 9 (2d8) piercing damage and 7 (2d6) fire damage on a failure."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "Name": "Aspect of Ilsrabae",
+  "Group": "Deific Aspects",
+  "Groups": [
+    "Deific Aspects"
+  ],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Aspect of Ilsrabae**\n\nDespite their titles insinuating something akin to a hag of the sea, Ilsrabae\u2019s true form is a sea monster of monumental scale. They thrash at the environment with colossal tentacles, pull their quarry beneath the waves, and control powerful magic that can bend the nature of the sea. When incensed to fight, they prefer to remain underwater and exhaust their divine magic to turn the sea against their targets, drowning them and pulling them into their realm.\n\n**Split Personality**\n\nThose who witness Ilsrabae\u2019s \u201Cbridal\u201D aspect have said that it is as though Ilsrabae has two split personalities: one is her communicative, covetous side represented by her humanoid form, which exists to entice, seduce, and manipulate creatures through charm and guile. The other is her true monstrous form, which acts with ruthless, animalistic instincts. The former seems to \u201Ctame\u201D the latter, giving the appearance that her humanoid form is a separate being, but this dynamic is itself a manipulation, and the humanoid form\u2019s agreeable tactics are akin to an angler fish\u2019s lure, drawing lesser creatures close to its proverbial jaws.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Ilsrabae",
+      "Text": "Despite their titles insinuating something akin to a hag of the sea, Ilsrabae\u2019s true form is a sea monster of monumental scale. They thrash at the environment with colossal tentacles, pull their quarry beneath the waves, and control powerful magic that can bend the nature of the sea. When incensed to fight, they prefer to remain underwater and exhaust their divine magic to turn the sea against their targets, drowning them and pulling them into their realm."
+    },
+    {
+      "Title": "Split Personality",
+      "Text": "Those who witness Ilsrabae\u2019s \u201Cbridal\u201D aspect have said that it is as though Ilsrabae has two split personalities: one is her communicative, covetous side represented by her humanoid form, which exists to entice, seduce, and manipulate creatures through charm and guile. The other is her true monstrous form, which acts with ruthless, animalistic instincts. The former seems to \u201Ctame\u201D the latter, giving the appearance that her humanoid form is a separate being, but this dynamic is itself a manipulation, and the humanoid form\u2019s agreeable tactics are akin to an angler fish\u2019s lure, drawing lesser creatures close to its proverbial jaws."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lesser%20God%20-%20Ilsrabae%2C%20the%20Deep%20Empress.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lesser%20God%20-%20Ilsrabae%2C%20the%20Deep%20Empress.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lesser%20God%20-%20Ilsrabae%2C%20the%20Deep%20Empress.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_ilsrabae",
+      "section_type": "Stat Block",
+      "title": "Aspect of Ilsrabae",
+      "creature": {
+        "size": "Tremendous",
+        "type": "elemental",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "330 (20d20 \u002B 120)",
+      "speed": {
+        "walk": "20 ft.",
+        "swim": "60 ft."
+      },
+      "quality_traits": [
+        "Deific (lesser)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "\u002B2"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B11"
+        },
+        "CON": {
+          "score": 23,
+          "modifier": "\u002B6"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "\u002B1",
+          "save": "\u002B7"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B10"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "\u002B6"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B11",
+        "Int \u002B7",
+        "Wis \u002B10"
+      ],
+      "skills": [
+        "Athletics \u002B8",
+        "Nature \u002B7",
+        "Perception \u002B10",
+        "Stealth \u002B11"
+      ],
+      "resistances": [
+        "necrotic",
+        "poison"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "cold",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 600 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "all",
+        "telepathy 480 ft."
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Ilsrabae\u2019s spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components. Ilsrabae\u2019s spells are cast at 5th level, unless their base level is higher.",
+          "cast_as": "5th level, unless their base level is higher",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "control water",
+                  "control weather",
+                  "piercing crystal"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "black tentacles",
+                  "drowning wave",
+                  "ice storm"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "cone of cold",
+                  "fog cloud",
+                  "hydro cage"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "banishment",
+                  "imprisonment",
+                  "whirlpool"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Living Avatar of the Depths (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Ilsrabae would be reduced to 0 hit points or killed outright, its hit points are instead reset to 150. It regains all spent Legendary Reactions and cast spells, and for 1 hour it can use its Mythic Actions. They may immediately use Bride of the Sea, requiring no action. During this time, all water within 120 feet of Ilsrabae begins to shift violently, and it becomes difficult terrain for any creature except itself. If a party defeats Ilsrabae after she uses her Living Avatar of the Depths, they are awarded an additional 25,000 XP (50,000 XP total)."
+        },
+        {
+          "name": "Sonarsense",
+          "name_format": "bold_italic",
+          "description": "While Ilsrabae is submerged in liquid, she can see anything within 600 feet of her as though using tremorsense."
+        },
+        {
+          "name": "Zenith of Water",
+          "name_format": "bold_italic",
+          "description": "Any water elemental that has a CR lower than 15 who attempts to act against or defy Ilsrabae, or disobey her orders, must make a DC 20 Charisma saving throw. On a failure, they must either act according to her will, or be stunned until they do (even if they normally couldn\u2019t be stunned). Creatures stunned this way can repeat the save at the end of each of their turns, ending the effect on a success. A creature who succeeds either save becomes immune to it for 24 hours."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Ilsrabae makes two Tentacle attacks, then uses their Wave Crash once. It can replace Wave Crash with casting a spell with a casting time of 1 action using their Innate Spellcasting."
+        },
+        {
+          "name": "Tentacle",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 50 ft., one target. Hit: 16 (3d6 \u002B 5) bludgeoning damage and 11 (2d10) cold damage. If two Tentacle attacks hit the same target on the same turn, they must succeed a DC 16 Strength saving throw or else be grappled and restrained (escape DC 16).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Wave Crash",
+          "name_format": "bold_italic",
+          "description": "Ilsrabae creates a wave of water that crashes down on a point it can see within 60 feet, forcing each creature in a 15-foot-radius sphere centered there to make a DC 20 Dexterity saving throw. Each that fails takes 18 (4d8) bludgeoning damage and 18 (4d8) cold damage."
+        },
+        {
+          "name": "Cage of Stygia (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Ilsrabae creates a floating, contained sphere of water centered on a point it chooses within 1200 feet, which fills a 300-foot-radius sphere. This sphere of water remains suspended in the air, pouring around corners and obstacles and passing through any space with at least a 1-inch opening. Any time a creature within this sphere attempts to leave it by movement, they must succeed a DC 20 Strength saving throw or be pulled 30 feet toward its center. This sphere remains for up to 1 hour, though Ilsrabae can dispel it at will (requiring no action). If Ilsrabae is reduced to 0 hit points or is on another plane for more than 1 minute, the sphere collapses into unsuspended water."
+        },
+        {
+          "name": "Mythic Action: Deep Cry (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "Ilsrabae unleashes a wave of sonic energy following a freezing mist. Each creature within 60 feet of her must make a DC 20 Constitution saving throw, taking 33 (6d10) thunder damage and 33 (6d10) cold damage on a failure, or half as much on a success. Creatures who are submerged in liquid have disadvantage on this save unless they are resistant or immune to cold or thunder damage."
+        },
+        {
+          "name": "Mythic Action: Bride of the Sea (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Ilsrabae gains 100 temporary hit points, and surrounds themselves in a veil of ice and frost. While she has them, each time a creature within 20 feet of her hits her with an attack, they take 9 (2d8) cold damage."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Banishment",
+          "name_format": "bold_italic",
+          "description": "Ilsrabae banishes any number of elementals it can see who are stunned by its Zenith of Water trait back to the Elemental Plane of Water, or can immediately deal 55 (10d10) force damage to them."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Swim Shift",
+            "name_format": "bold_italic",
+            "description": "One creature within Ilsrabae\u2019s Cage of Stygia must make a DC 20 Strength saving throw. On a failure, they are moved up to 60 feet through the water into an unoccupied space she chooses."
+          },
+          {
+            "name": "Crackling Storm (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Ilsrabae forces one creature within 60 feet to be subjected to a stormy burst of thunder and lightning; they must succeed a DC 20 Dexterity saving throw, taking 9 (2d8) thunder damage and 9 (2d8) lightning damage on a failure. If they are submerged in liquid, Ilsrabae may choose to target all creatures within 30 feet of them with this instead."
+          },
+          {
+            "name": "Consuming Mouths (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "If Ilsrabae is submerged, she may target up to four submerged creatures within 120 feet, who schools of carnivorous sealife appear to assail. Each target must make a DC 20 Constitution saving throw as they swarm them. On a failure, each takes 22 (4d10) piercing damage and is made sluggish until the end of their next turn."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "availability": "For 1 hour after using Living Avatar of the Depths (Mythic Awakening)",
+        "options": [
+          {
+            "name": "Whirlpool",
+            "name_format": "bold_italic",
+            "description": "Ilsrabae causes a wave of water to swirl around them, forcing each creature within 30 feet of them to make a DC 16 Dexterity saving throw. Each that fails is knocked prone."
+          },
+          {
+            "name": "Spellcast (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Ilsrabae casts one spell with a casting time of 1 action using Innate Spellcasting."
+          },
+          {
+            "name": "Twisting Current (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Ilsrabae creates a drill-like current of oceanic water that surges forward in a 50-foot-long, 10-foot-wide line originating from Ilsrabae. Each creature in that line must make a DC 20 Dexterity saving throw. On a failure, each takes 14 (3d8) piercing damage and 17 (3d10) cold damage."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "Name": "Custol Bariea",
+  "Group": "Eidolos",
+  "Groups": [
+    "Eidolos"
+  ],
+  "Source": "Paraprismatic Tempest",
+  "Information": "**Custol Bariea**\n\n**Title** The Gatebound Sentry\n**Gemstone** Larimar\n**Type** Seraphael\n**Originator** Aymere\n\nCustol Bariea is a Beast of Bestowal - an eidolos - who was elevated to power to hound and watch the Paraprismatic gods. It both serves as a means of communication between them and Aymere, and as a hunter who cleans up after their messes if they find themselves falling short in their duties. Should they fall out of place, it exists also to antagonize them until they fall in line again. Mankind most commonly encounters Custol Bariea when planar boundaries between the Elemental Planes and the Material Plane are threatened, where it will appear to punish all involved. Otherwise, it stalks the Elemental Planes as a solemn, lone knight.",
+  "Information Sections": [
+    {
+      "Title": "Custol Bariea",
+      "Text": "**Title** The Gatebound Sentry\n**Gemstone** Larimar\n**Type** Seraphael\n**Originator** Aymere\n\nCustol Bariea is a Beast of Bestowal - an eidolos - who was elevated to power to hound and watch the Paraprismatic gods. It both serves as a means of communication between them and Aymere, and as a hunter who cleans up after their messes if they find themselves falling short in their duties. Should they fall out of place, it exists also to antagonize them until they fall in line again. Mankind most commonly encounters Custol Bariea when planar boundaries between the Elemental Planes and the Material Plane are threatened, where it will appear to punish all involved. Otherwise, it stalks the Elemental Planes as a solemn, lone knight."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Custol%20Bariea_Ref.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Custol%20Bariea_Ref.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Custol%20Bariea_Ref.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "custol_bariea",
+      "section_type": "Stat Block",
+      "title": "Custol Bariea",
+      "creature": {
+        "size": "Large",
+        "type": "beast (eidolos)",
+        "alignment": "neutral good"
+      },
+      "armor_class": "20 (cosmogony bonus)",
+      "hit_points": "380 (40d10 \u002B 160)",
+      "speed": {
+        "walk": "60 ft."
+      },
+      "quality_traits": [
+        "Critical 18",
+        "eidolos (seraphael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "check": "\u002B6",
+          "save": "\u002B6"
+        },
+        "DEX": {
+          "score": 26,
+          "modifier": "\u002B8",
+          "check": "\u002B10",
+          "save": "\u002B17"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "check": "\u002B6",
+          "save": "\u002B6"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "check": "\u002B4",
+          "save": "\u002B11"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "check": "\u002B8",
+          "save": "\u002B15"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "check": "\u002B4",
+          "save": "\u002B4"
+        }
+      },
+      "ability_note": "*checks, saves, and skills include the \u002B2 cosmogony bonus",
+      "saving_throws": [
+        "Str \u002B6",
+        "Dex \u002B17",
+        "Con \u002B6",
+        "Int \u002B11",
+        "Wis \u002B15",
+        "Cha \u002B4"
+      ],
+      "skills": [
+        "Athletics \u002B13",
+        "Perception \u002B15"
+      ],
+      "resistances": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison",
+        "all (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "ignited",
+        "poisoned"
+      ],
+      "senses": [
+        "tremorsense 60 ft.",
+        "blindsight 240 ft.",
+        "passive Perception 25"
+      ],
+      "languages": [
+        "Common",
+        "Primordial"
+      ],
+      "challenge_rating": "22 (61,500 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Seraphic Authority: Unwoven Energies",
+          "name_format": "bold_italic",
+          "description": "Custol Bariea strips all creatures within 480 feet of them of their defenses, making them vulnerable where usually they wouldn\u2019t be. All creatures in this range, except Custol Bariea themselves, lose any damage resistances they have and take those damage types normally. They also treat damage immunities as resistances instead."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Custol Bariea makes two Larimar Spear attacks."
+        },
+        {
+          "name": "Larimar Spear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B17 to hit, reach 10 ft., one target, or as a Ranged Weapon Attack: \u002B17 to hit, range 120/480 ft., one target. Hit: 25 (4d6 \u002B 11) piercing damage plus 9 (2d10) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Ultimate Verdict",
+          "name_format": "bold_italic",
+          "description": "Custol Bariea tears a planar gate open and throws themself through it, teleporting to an unoccupied space they can see within 60 feet. They then can make a single Larimar Spear attack with advantage. When attacking this way, they can treat their Larimar Spear\u2019s normal range as being 480 feet."
+        },
+        {
+          "name": "Plane Shift (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "Custom Bariea produces the effects of the plane shift spell, requiring no spell slot, using Wisdom as their spellcasting ability."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Boundary Arts (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Custol uses one of its Boundary Art options, choosing from Banishing Spear or Slayer\u2019s Sight.",
+          "options": [
+            {
+              "name": "Banishing Spear",
+              "name_format": "bold_italic",
+              "description": "Custol Bariea produces the effects of the banishment spell, requiring no spell slot or material components, as though cast at 7th level. They use Wisdom as their spellcasting ability for this effect. If an elemental is banished by this spell, Custol Bariea can choose to return them to their plane of origin immediately, ignoring the 1 minute restriction on the banishment spell. A creature who succeeds their saving throw against this effect becomes immune to it for 24 hours."
+            },
+            {
+              "name": "Slayer\u2019s Sight",
+              "name_format": "bold_italic",
+              "description": "One creature that Custol Bariea chooses within 120 feet is made their target, and is surrounded by arcane energy that attempts to hold them in place. The target must succeed a DC 21 Wisdom saving throw or be stunned for 1 minute. Regardless if they fail or succeed, the target becomes vulnerable to all damage for 1 minute. Both the stunning effect and the vulnerability to damage end if the target takes 15 or more damage from a single source or attack. A creature afflicted by either effect also repeats the saving throw at the end of each of their turns, ending both early on a success."
+            }
+          ]
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Spear Strike",
+            "name_format": "bold_italic",
+            "description": "Custol Baria makes a single Larimar Spear attack."
+          },
+          {
+            "name": "Tread Swiftly",
+            "name_format": "bold_italic",
+            "description": "Custol Bariea moves up to their movement speed. They can use a second Legendary Action when using this option to provoke no opportunity attacks during this movement."
+          },
+          {
+            "name": "Banished Repel (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Custol Bariea causes each creature it chooses that is currently banished using Banishing Spear to take 17 (3d10) force damage. These creatures then make a DC 21 Charisma saving throw with advantage, ending the effects of Banishing Spear early on a success."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

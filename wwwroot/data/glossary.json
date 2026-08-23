@@ -3118,5 +3118,20 @@
   "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
   "CaseSensitive": false,
   "NoOverlay": true
+},
+{
+  "Term": "Invisible Swimmer",
+  "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
+  "CaseSensitive": false,
+  "NoOverlay": true
+},
+{
+  "Term": "Earthglide",
+  "Definition": "The creature can burrow through nonmagical, unworked earth, dirt, and stone. While doing so, it does not disturb the material it moves through.",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "StatBlockQualityTrait"
+  ]
 }
 ]
