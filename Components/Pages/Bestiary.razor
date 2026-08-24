@@ -261,7 +261,7 @@
 
         @foreach (
             var cr
-            in ChallengeRatings)
+            in VisibleChallengeRatings)
         {
             <button
                 type="button"
@@ -676,6 +676,31 @@
 
 
     // =====================================
+    // SEARCH TAB INDEX
+    //
+    // The Bestiary normally loads only the
+    // selected CR. When search is active we
+    // need a lightweight cross-CR view so
+    // CR tabs with no search matches can be
+    // hidden. MonsterService already caches
+    // each CR after it has been read.
+    // =====================================
+
+    private readonly Dictionary<
+        string,
+        IReadOnlyList<StatBlockData>>
+        searchMonstersByChallengeRating =
+            new(
+                StringComparer.OrdinalIgnoreCase);
+
+
+    private bool searchTabIndexReady;
+
+
+    private Task? searchTabIndexTask;
+
+
+    // =====================================
     // FILTER PANELS
     //
     // These are independent.
@@ -731,6 +756,56 @@
                             StringComparison.OrdinalIgnoreCase))
             ??
             ChallengeRatings[0];
+
+
+    // =====================================
+    // VISIBLE CR TABS
+    //
+    // With no search, every CR tab is shown.
+    // While search is active, only CRs that
+    // contain at least one monster matching
+    // the same Bestiary search predicate are
+    // rendered.
+    // =====================================
+
+    private IReadOnlyList<
+        ChallengeRatingTab>
+        VisibleChallengeRatings
+    {
+        get
+        {
+            if (
+                string.IsNullOrWhiteSpace(
+                    searchQuery)
+                ||
+                !searchTabIndexReady)
+            {
+                return
+                    ChallengeRatings;
+            }
+
+
+            var search =
+                searchQuery.Trim();
+
+
+            return
+                ChallengeRatings
+                    .Where(
+                        cr =>
+                            searchMonstersByChallengeRating
+                                .TryGetValue(
+                                    cr.FileName,
+                                    out var crMonsters)
+                            &&
+                            crMonsters.Any(
+                                monster =>
+                                    MonsterMatchesSearch(
+                                        monster,
+                                        search)))
+                    .ToArray();
+        }
+    }
 
 
     // =====================================
@@ -1057,54 +1132,9 @@
                                 monster)
                                 .Any(
                                     variant =>
-                                        ContainsSearch(
-                                            BestiaryMonsterName(
-                                                variant),
-                                            search)
-
-                                        ||
-
-                                        ContainsSearch(
-                                            variant.Title,
-                                            search)
-
-                                        ||
-
-                                        ContainsSearch(
-                                            variant.Creature?.Type,
-                                            search)
-
-                                        ||
-
-                                        ContainsSearch(
-                                            variant.Creature?.Alignment,
-                                            search)
-
-                                        ||
-
-                                        ContainsSearch(
-                                            variant.Creature?.Size,
-                                            search)
-
-                                        ||
-
-                                        MonsterGroups(
-                                            variant)
-                                            .Any(
-                                                group =>
-                                                    ContainsSearch(
-                                                        group,
-                                                        search))
-
-                                        ||
-
-                                        MonsterSources(
-                                            variant)
-                                            .Any(
-                                                source =>
-                                                    ContainsSearch(
-                                                        source,
-                                                        search))));
+                                        MonsterMatchesSearch(
+                                            variant,
+                                            search)));
             }
 
 
@@ -1213,7 +1243,54 @@
         RestoreStateFromUrl();
 
 
+        var activeTabChanged =
+            false;
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                searchQuery))
+        {
+            await EnsureSearchTabIndexAsync();
+
+
+            activeTabChanged =
+                EnsureActiveChallengeRatingVisible();
+        }
+
+
         await LoadActiveChallengeRatingAsync();
+
+
+        if (activeTabChanged)
+        {
+            SyncUrl();
+        }
+    }
+
+
+    // =====================================
+    // WARM SEARCH TAB INDEX
+    //
+    // After the initial Bestiary view is on
+    // screen, start loading the cross-CR
+    // search index in the background. This
+    // keeps the first page load lightweight
+    // while making live tab filtering ready
+    // by the time the user normally types.
+    // =====================================
+
+    protected override Task OnAfterRenderAsync(
+        bool firstRender)
+    {
+        if (firstRender)
+        {
+            _ = EnsureSearchTabIndexAsync();
+        }
+
+
+        return
+            Task.CompletedTask;
     }
 
 
@@ -1479,11 +1556,26 @@
     // SEARCH
     // =====================================
 
-    private void SearchChanged(
+    private async Task SearchChanged(
         string value)
     {
         searchQuery =
             value;
+
+
+        if (
+            !string.IsNullOrWhiteSpace(
+                searchQuery))
+        {
+            await EnsureSearchTabIndexAsync();
+
+
+            if (
+                EnsureActiveChallengeRatingVisible())
+            {
+                await LoadActiveChallengeRatingAsync();
+            }
+        }
 
 
         SyncUrl();
@@ -2063,6 +2155,175 @@
             QueryHelpers.AddQueryString(
                 "/bestiary",
                 query);
+    }
+
+
+    // =====================================
+    // BUILD BESTIARY SEARCH TAB INDEX
+    //
+    // This is built only when search is first
+    // used. MonsterService caches every CR,
+    // so later searches only filter in-memory
+    // data.
+    // =====================================
+
+    private async Task EnsureSearchTabIndexAsync()
+    {
+        if (searchTabIndexReady)
+        {
+            return;
+        }
+
+
+        searchTabIndexTask ??=
+            BuildSearchTabIndexAsync();
+
+
+        await searchTabIndexTask;
+    }
+
+
+    private async Task BuildSearchTabIndexAsync()
+    {
+        foreach (
+            var cr
+            in ChallengeRatings)
+        {
+            try
+            {
+                searchMonstersByChallengeRating[
+                    cr.FileName] =
+                    await MonsterService
+                        .GetMonstersForChallengeRatingAsync(
+                            cr.FileName);
+            }
+            catch
+            {
+                // A problem in one CR should not
+                // prevent search-tab filtering in
+                // every other CR. The normal CR
+                // loader still reports its own
+                // error if that tab is opened.
+                searchMonstersByChallengeRating[
+                    cr.FileName] =
+                    Array.Empty<StatBlockData>();
+            }
+        }
+
+
+        searchTabIndexReady =
+            true;
+    }
+
+
+    // =====================================
+    // KEEP ACTIVE CR VISIBLE
+    //
+    // If typing removes the current CR from
+    // the visible tab set, move to the first
+    // CR that still contains a match.
+    // =====================================
+
+    private bool EnsureActiveChallengeRatingVisible()
+    {
+        if (
+            string.IsNullOrWhiteSpace(
+                searchQuery))
+        {
+            return
+                false;
+        }
+
+
+        var visibleTabs =
+            VisibleChallengeRatings;
+
+
+        if (
+            visibleTabs.Count == 0
+            ||
+            visibleTabs.Any(
+                cr =>
+                    string.Equals(
+                        cr.Value,
+                        activeChallengeRating,
+                        StringComparison.OrdinalIgnoreCase)))
+        {
+            return
+                false;
+        }
+
+
+        activeChallengeRating =
+            visibleTabs[0].Value;
+
+
+        return
+            true;
+    }
+
+
+    // =====================================
+    // BESTIARY SEARCH MATCH
+    //
+    // Shared by the current results and the
+    // cross-CR tab visibility check so both
+    // behaviours always agree.
+    // =====================================
+
+    private static bool MonsterMatchesSearch(
+        StatBlockData monster,
+        string search)
+    {
+        return
+            ContainsSearch(
+                BestiaryMonsterName(
+                    monster),
+                search)
+
+            ||
+
+            ContainsSearch(
+                monster.Title,
+                search)
+
+            ||
+
+            ContainsSearch(
+                monster.Creature?.Type,
+                search)
+
+            ||
+
+            ContainsSearch(
+                monster.Creature?.Alignment,
+                search)
+
+            ||
+
+            ContainsSearch(
+                monster.Creature?.Size,
+                search)
+
+            ||
+
+            MonsterGroups(
+                monster)
+                .Any(
+                    group =>
+                        ContainsSearch(
+                            group,
+                            search))
+
+            ||
+
+            MonsterSources(
+                monster)
+                .Any(
+                    source =>
+                        ContainsSearch(
+                            source,
+                            search));
     }
 
 

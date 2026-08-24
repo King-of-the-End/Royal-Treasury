@@ -3203,5 +3203,18 @@
     "Contexts": [
       "StatBlockQualityTrait"
     ]
+  },
+  {
+    "Term": "Exolunar Nature (X)",
+    "Definition": "This creature does not require air to survive in a vacuum. If there is an amount of time listed as X, they can only survive that long without breathing normally.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Wildcard": true,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ],
+    "Aliases": [
+      "Exolunar Nature"
+    ]
   }
 ]

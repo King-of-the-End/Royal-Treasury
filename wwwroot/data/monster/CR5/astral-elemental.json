@@ -1,0 +1,134 @@
+{
+  "Name": "Astral Elemental",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Astral Elementals**\n\nBorn from fissures in time and space within the Astral Sea, these elementals are best understood as anomalous holes in the universe, expressing themselves as a living mass of compressed space. They drift aimlessly near overlaps between exolunar space and the astral sea, and have a strong distaste for anything with a strong gravitational pull (such as ships, planets, or large creatures).\n\n**Elemental Nature**\n\nAn elemental doesn’t require air, food, drink or sleep.",
+  "Information Sections": [
+    {
+      "Title": "Astral Elementals",
+      "Text": "Born from fissures in time and space within the Astral Sea, these elementals are best understood as anomalous holes in the universe, expressing themselves as a living mass of compressed space. They drift aimlessly near overlaps between exolunar space and the astral sea, and have a strong distaste for anything with a strong gravitational pull (such as ships, planets, or large creatures)."
+    },
+    {
+      "Title": "Elemental Nature",
+      "Text": "An elemental doesn’t require air, food, drink or sleep."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "astral_elemental",
+      "section_type": "Stat Block",
+      "title": "Astral Elemental",
+      "creature": {
+        "size": "Large",
+        "type": "elemental",
+        "alignment": null
+      },
+      "armor_class": "13",
+      "hit_points": "102 (12d10 + 36)",
+      "speed": {
+        "walk": "5 ft.",
+        "teleport": "40 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Ethereal",
+        "weightless"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical)",
+        "force",
+        "poison",
+        "psychic"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Astral"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Death Throes: Gravity Bubble",
+          "name_format": "bold_italic",
+          "description": "When the elemental is killed, its body loses its structure and each creature within 10 feet of it is assaulted by a wave of force and must make a DC 14 Constitution saving throw. On a failure, they are pushed back 10 feet (20 in a zero-gravity environment), are knocked prone and take 7 (1d12) force damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental uses its Dense Matter Strike twice."
+        },
+        {
+          "name": "Dense Matter Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Astral Overwhelm (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The elemental bends gravity around them, forcing each creature within 10 feet of them to make a DC 14 Constitution saving throw. On a failure they are blasted by the pulse of gravitational power, taking 20 (3d10 + 3) force damage, or half as much on a successful save. Creatures who fail are also restrained for 1 minute, locked in place by a gravitational anomaly, and repeat the saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

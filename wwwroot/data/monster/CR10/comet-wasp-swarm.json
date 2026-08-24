@@ -1,0 +1,117 @@
+{
+  "Name": "Comet Wasp Swarm",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Comet Wasp**\n\nThe comet wasp is a space insect that feeds on any scraps of minerals and organic tissue it can find. It has an astoundingly long life span, able to live for up to 200 years. They are ravenous meat-eaters who dissolve their targets from the inside out using acid contained in their stinger, then consume the produced soup-like sludge. This can include minerals in space or the organic tissue in their prey.",
+  "Information Sections": [
+    {
+      "Title": "Comet Wasp",
+      "Text": "The comet wasp is a space insect that feeds on any scraps of minerals and organic tissue it can find. It has an astoundingly long life span, able to live for up to 200 years. They are ravenous meat-eaters who dissolve their targets from the inside out using acid contained in their stinger, then consume the produced soup-like sludge. This can include minerals in space or the organic tissue in their prey."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Comet%20Wasp.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Comet%20Wasp.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Comet%20Wasp.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "comet_wasp_swarm",
+      "section_type": "Stat Block",
+      "title": "Comet Wasp Swarm",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "swarm of medium beasts",
+        "alignment": null
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "130 (20d8 + 40)",
+      "speed": {
+        "walk": "15 ft.",
+        "fly": "40 ft.",
+        "0-G acceleration": "80 ft."
+      },
+      "quality_traits": [
+        "Exolunar nature",
+        "fly-by",
+        "pack tactics",
+        "swarm (Medium)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 4,
+          "modifier": "-3"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "CHA": {
+          "score": 5,
+          "modifier": "-3"
+        }
+      },
+      "saving_throws": [],
+      "skills": [],
+      "resistances": [
+        "poison"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 10"
+      ],
+      "languages": [],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Sting Storm",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, all targets in the swarm’s space. Hit: 22 (5d6 + 4) piercing damage, or 15 (3d6 + 4) piercing damage if the swarm is below half its maximum hit points. The target must succeed a DC 14 Constitution saving throw or take 28 (8d6) acid damage and is poisoned for 1 minute. A creature who succeeds this save becomes immune to being poisoned by a wasp’s sting for 1 hour.\n\nIf this attack hits a poisoned target, it does not cause the Constitution save or its effects above. Instead, the swarm gains hit points equal to half the damage its sting deals. If the swarm is below half its total hit points, this cannot cause it to gain enough hit points to go above half its maximum.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Swarm Grapple",
+          "name_format": "bold_italic",
+          "description": "Each Large or smaller creature in the swarm’s space must make a DC 14 Athletics or Acrobatics check (their choice). Each target that fails is grappled and restrained (escape DC 14), and while grappled this way they fall prone. The swarm can freely move creatures grappled this way when it moves. At the end of the swarm’s turn, it can reposition any creature grappled this way by moving them into an unoccupied space (ignoring itself) within its space."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

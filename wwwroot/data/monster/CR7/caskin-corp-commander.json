@@ -1,0 +1,157 @@
+{
+  "Name": "Caskin Corp Commander",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Caskin Corp Soldiers**\n\nCaskin Corp soldiers are highly efficient and ruthless. Their society is relatively self-contained, with all framebilt among them being born into their ranks, thoroughly indoctrinated, or psychologically conditioned to be obedient to their cause. They are difficult to appeal to when they have a mission on hand. Their commanders are hands-on as well, often choosing to directly engage their opponents alongside their subordinates. Destroying, capturing, or breaking hostile forces is a source of pride for the members of this military, and fealty to the cause often extends in a poisonously patriotic sense to the citizens who live in settlements and worlds they have control over, making true rebellions difficult.\n\n**Junctioneers**\n\nAmong the Caskin Corp are Junctioneers, who have undergone extensive experimentation to bind a frame unit\u2014usually a DGR\u2014to their body. They are a normal framebilt soldier in appearance, but may use an action to assume the form of the frame unit type bound to them, at which point they fill the necessary space. Their equipment, clothes, etc., are stored within the frame unit form, and they retain attunement with any items they are attuned to, which they can use in the same way a frame unit can use its pilot\u2019s attuned items. Finally, the proficiency bonus of the frame unit is replaced by the proficiency bonus of the Junctioneer\u2019s primary form.\n\nA transformed Junctioneer takes on the statistics of the frame unit, while retaining the class features and traits of their original form as well. They retain the highest ability scores between themselves and the frame unit they transform into.\n\nAny damage they had taken before transforming this way is transferred to their frame unit form.\n\nA Junctioneer may also transform back to their true form as an action, and will change back if they die. When they transform back, their damage is once again transferred to their original hit point pool, and if they are reduced to 0 hit points they begin dying as usual. If the frame unit form has taken damage equal to twice the original form\u2019s maximum hit points, transforming back would kill the Junctioneer immediately.\n\n**Mythic Transformation**\n\nIf the frame unit form has a CR of 15 or higher, an untransformed Junctioneer may transform as a last-ditch option, requiring no action, if they are reduced to 0 hit points or killed outright. In this case, their hit points are reset to the frame unit form\u2019s maximum hit points. They cannot transform this way if they have transformed using an action in the last hour.",
+  "Information Sections": [
+    {
+      "Title": "Caskin Corp Soldiers",
+      "Text": "Caskin Corp soldiers are highly efficient and ruthless. Their society is relatively self-contained, with all framebilt among them being born into their ranks, thoroughly indoctrinated, or psychologically conditioned to be obedient to their cause. They are difficult to appeal to when they have a mission on hand. Their commanders are hands-on as well, often choosing to directly engage their opponents alongside their subordinates. Destroying, capturing, or breaking hostile forces is a source of pride for the members of this military, and fealty to the cause often extends in a poisonously patriotic sense to the citizens who live in settlements and worlds they have control over, making true rebellions difficult."
+    },
+    {
+      "Title": "Junctioneers",
+      "Text": "Among the Caskin Corp are Junctioneers, who have undergone extensive experimentation to bind a frame unit\u2014usually a DGR\u2014to their body. They are a normal framebilt soldier in appearance, but may use an action to assume the form of the frame unit type bound to them, at which point they fill the necessary space. Their equipment, clothes, etc., are stored within the frame unit form, and they retain attunement with any items they are attuned to, which they can use in the same way a frame unit can use its pilot\u2019s attuned items. Finally, the proficiency bonus of the frame unit is replaced by the proficiency bonus of the Junctioneer\u2019s primary form.\n\nA transformed Junctioneer takes on the statistics of the frame unit, while retaining the class features and traits of their original form as well. They retain the highest ability scores between themselves and the frame unit they transform into.\n\nAny damage they had taken before transforming this way is transferred to their frame unit form.\n\nA Junctioneer may also transform back to their true form as an action, and will change back if they die. When they transform back, their damage is once again transferred to their original hit point pool, and if they are reduced to 0 hit points they begin dying as usual. If the frame unit form has taken damage equal to twice the original form\u2019s maximum hit points, transforming back would kill the Junctioneer immediately."
+    },
+    {
+      "Title": "Mythic Transformation",
+      "Text": "If the frame unit form has a CR of 15 or higher, an untransformed Junctioneer may transform as a last-ditch option, requiring no action, if they are reduced to 0 hit points or killed outright. In this case, their hit points are reset to the frame unit form\u2019s maximum hit points. They cannot transform this way if they have transformed using an action in the last hour."
+    }
+  ],
+  "Quote": "\u201CAs quickly as framebilt appeared, their dark shadow also did. I admit, I had seen traces of this before they reached into the stars in the form of the strange DGR eidolos Aesanima, which I had encountered once... I believe the Caskin Corp was born out of a desire for autonomy. I can grant that, but they are abrasive nonetheless.\u201D",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Caskin%20Corp%20Soldier.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Caskin%20Corp%20Soldier.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Caskin%20Corp%20Soldier.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "caskin_corp_commander",
+      "section_type": "Stat Block",
+      "title": "Caskin Corp Commander",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (framebilt)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "16 (reinforced integrated armor)",
+      "hit_points": "91 (14d8 \u002B 28)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "belabored flight": "30 ft. (hover)",
+        "0-G acceleration": "90 ft."
+      },
+      "quality_traits": [
+        "Adamantine",
+        "adamant hide"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B5"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B4"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B6"
+        }
+      },
+      "saving_throws": [
+        "Con \u002B5",
+        "Int \u002B4",
+        "Cha \u002B6"
+      ],
+      "skills": [
+        "Athletics \u002B7",
+        "Insight \u002B6",
+        "Perception \u002B9"
+      ],
+      "resistances": [
+        "B/P/S (adamantine)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison",
+        "disease"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 19"
+      ],
+      "languages": [
+        "Common",
+        "two others"
+      ],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Constructed Body",
+          "name_format": "bold_italic",
+          "description": "The commander is immune to disease, can\u2019t be put to sleep against its will, and has advantage on saving throws made against being poisoned."
+        },
+        {
+          "name": "Strict Command",
+          "name_format": "bold_italic",
+          "description": "The commander\u2019s subordinates within 20 feet of them, and those taking action through the commander\u2019s Strike Command bonus action, cannot suffer disadvantage on attack rolls, ability checks, or saving throws as long as the commander is conscious and can communicate with them. If they would have disadvantage and advantage at the same time, despite this effect, they have neither as they usually would."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The commander makes two attacks with its Martial Strike and one with its Shoulder Mounted Light Rifle."
+        },
+        {
+          "name": "Martial Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 5 ft., one target. Hit: 11 (2d6 \u002B 4) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shoulder Mounted Light Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B6 to hit, range 60/180 ft., one target. Hit: 8 (1d10 \u002B 3) piercing damage plus 6 (1d10) radiant damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Strike Command",
+          "name_format": "bold_italic",
+          "description": "The commander barks an order to two of their subordinates that can hear them who must be within 60 feet. Each subordinate can use their reaction to either make a single weapon attack against one target the commander chooses (each creature can have a different target), or can move up to their movement speed as directed by the commander."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

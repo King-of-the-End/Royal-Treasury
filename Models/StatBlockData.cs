@@ -631,6 +631,31 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // SELECTABLE ADDITIONAL SECTIONS
+    //
+    // Generic option sections stored in the
+    // outer monster document through:
+    //
+    // "Additional Sections": [
+    //   {
+    //     "section_type": "Salvo Alternatives",
+    //     "selection": { ... },
+    //     "entries": [ ... ]
+    //   }
+    // ]
+    //
+    // MonsterService copies these sections
+    // onto each stat-block variant so the UI
+    // can apply the selected option as an
+    // action, bonus action, reaction, or trait.
+    // =====================================
+
+    [JsonPropertyName("selectable_sections")]
+    public List<MonsterSelectableSection> SelectableSections { get; set; } =
+        new();
+
+
+    // =====================================
     // RAW TEXT
     // =====================================
 
@@ -2004,6 +2029,67 @@ public sealed class MonsterPathSurgeSection
 }
 
 public sealed class MonsterPathSurgeEntry
+{
+    [JsonPropertyName("name")]
+    public string Name { get; set; } = string.Empty;
+
+    [JsonPropertyName("action_type")]
+    public string ActionType { get; set; } = string.Empty;
+
+    [JsonPropertyName("description")]
+    public string Description { get; set; } = string.Empty;
+}
+
+
+// =========================================
+// MONSTER SELECTABLE ADDITIONAL SECTION
+//
+// Generic single/multiple-choice sections
+// from the outer monster document.
+// =========================================
+
+public sealed class MonsterSelectableSection
+{
+    [JsonPropertyName("title")]
+    public string Title { get; set; } = string.Empty;
+
+    [JsonPropertyName("section_type")]
+    public string SectionType { get; set; } = string.Empty;
+
+    [JsonPropertyName("intro")]
+    public string Intro { get; set; } = string.Empty;
+
+    [JsonPropertyName("selection")]
+    public MonsterSelectionRules Selection { get; set; } = new();
+
+    [JsonPropertyName("entries")]
+    public List<MonsterSelectableEntry> Entries { get; set; } = new();
+}
+
+
+public sealed class MonsterSelectionRules
+{
+    [JsonPropertyName("mode")]
+    public string Mode { get; set; } = "single";
+
+    [JsonPropertyName("required")]
+    public bool Required { get; set; }
+
+    [JsonPropertyName("allow_none")]
+    public bool AllowNone { get; set; } = true;
+
+    [JsonPropertyName("min_selections")]
+    public int MinSelections { get; set; }
+
+    [JsonPropertyName("max_selections")]
+    public int MaxSelections { get; set; }
+
+    [JsonPropertyName("default")]
+    public string Default { get; set; } = string.Empty;
+}
+
+
+public sealed class MonsterSelectableEntry
 {
     [JsonPropertyName("name")]
     public string Name { get; set; } = string.Empty;

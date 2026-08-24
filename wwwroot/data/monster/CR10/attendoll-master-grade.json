@@ -1,0 +1,203 @@
+{
+  "Name": "Attendoll Master Grade",
+  "Group": "Attendoll",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**High Grade and Master Grade**\n\nAs well as the base attendoll models, two extra types exist: high grade and master grade. High grade models are designed to defend the particularly wealthy or individuals of importance, or to secure a location without giving the appearance of security. They can produce a charged blade on their arm and stagger creatures they fight, but otherwise are high-performance variants of the base models.\n\nThe master grade versions are particularly advanced, being capable of humanoid-like thoughts and is able to act autonomously. They can speak falteringly, and even have a \u201Ccombat mode\u201D they can switch their guise into to intimidate others. They are linked to other nearby attendolls who they can command, and they can produce a blade made of pure energy to strike others at a distance. They are almost exclusively used for assault purposes or to protect individuals involved in combat scenarios, such as military officials or political personnel. Very rarely are they autonomously deployed as assassins.",
+  "Information Sections": [
+    {
+      "Title": "High Grade and Master Grade",
+      "Text": "As well as the base attendoll models, two extra types exist: high grade and master grade. High grade models are designed to defend the particularly wealthy or individuals of importance, or to secure a location without giving the appearance of security. They can produce a charged blade on their arm and stagger creatures they fight, but otherwise are high-performance variants of the base models.\n\nThe master grade versions are particularly advanced, being capable of humanoid-like thoughts and is able to act autonomously. They can speak falteringly, and even have a \u201Ccombat mode\u201D they can switch their guise into to intimidate others. They are linked to other nearby attendolls who they can command, and they can produce a blade made of pure energy to strike others at a distance. They are almost exclusively used for assault purposes or to protect individuals involved in combat scenarios, such as military officials or political personnel. Very rarely are they autonomously deployed as assassins."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Attendoll%20(Master%20Grade).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Attendoll%20(Master%20Grade).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Attendoll%20(Master%20Grade).png"
+    }
+  ],
+  "Additional Sections": [
+    {
+      "title": "Salvo Alternatives",
+      "section_type": "Salvo Alternatives",
+      "intro": "In place of the Burst Salvo action, a master grade attendoll can be equipped with other pieces of tactical equipment, which are always actions that recharge on a d6 roll of 5-6. They may be equipped with the following:",
+      "selection": {
+        "mode": "single",
+        "required": true,
+        "allow_none": false,
+        "min_selections": 1,
+        "max_selections": 1,
+        "default": "Burst Salvo (Recharge 5-6)"
+      },
+      "entries": [
+        {
+          "name": "Burst Salvo (Recharge 5-6)",
+          "action_type": "Action",
+          "description": "The construct fires a series of explosive darts at up to 6 creatures it chooses within 60 feet, no two of whom can be 30 feet or more away from another. Each target must make a DC 17 Dexterity saving throw, taking 44 (10d8) fire damage on a failed save, or half as much on a successful one."
+        },
+        {
+          "name": "Actuation Gear (Recharge 5-6)",
+          "action_type": "Action",
+          "description": "The construct uses its Multiattack action twice."
+        },
+        {
+          "name": "Assassination Shroud (Recharge 5-6)",
+          "action_type": "Action",
+          "description": "The construct produces the effects of greater invisibility, targeting only itself."
+        },
+        {
+          "name": "Core Cannon (Recharge 5-6)",
+          "action_type": "Action",
+          "description": "The construct fires a burst of energy at a point it can see within 60 feet, which explodes in a 20-foot-radius centered on that point. Each creature in that range that isn\u2019t a construct must make a DC 17 Dexterity saving throw, taking 22 (4d10) force damage and 22 (4d10) lightning damage and being knocked prone on a failed save, or half as much damage and aren\u2019t knocked prone on a successful one."
+        },
+        {
+          "name": "Rocket Slice (Recharge 5-6)",
+          "action_type": "Action",
+          "description": "The construct immediately moves up to 60 feet, ending in an unoccupied space it can see within range, then makes a single Energy Blade attack with advantage against a creature within range. If it hits, the target is treated as though they failed the Dexterity saving throw associated with the Energy Blade attack."
+        },
+        {
+          "name": "Shield Generator (Recharge 5-6)",
+          "action_type": "Action",
+          "description": "The construct and each attendoll allied to it within 30 feet gain 55 (10d10) temporary hit points."
+        }
+      ]
+    } 
+  ],
+  "Stat Blocks": [
+    {
+      "id": "attendoll_master_grade",
+      "section_type": "Stat Block",
+      "title": "Attendoll Master Grade",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": null
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "170 (20d8 \u002B 80)",
+      "threshold": "5",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)"
+      },
+      "quality_traits": [
+        "Battle ready",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B9"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B7"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "\u002B3"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B9",
+        "Wis \u002B7"
+      ],
+      "skills": [
+        "Deception \u002B7",
+        "Perception \u002B11"
+      ],
+      "resistances": [
+        "B/P/S (magical or adamantine)"
+      ],
+      "vulnerabilities": [
+        "force"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands and speaks the languages of its creator and client, but only speaks in minimalist sentences when it can"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [
+        {
+          "name": "Guardian Presence",
+          "name_format": "bold_italic",
+          "description": "As long as they aren\u2019t incapacitated, the construct can use silent strikes from its energy blade to deflect attacks against any of its allies who are within 20 feet of it, granting attacks against those creatures disadvantage."
+        },
+        {
+          "name": "Servant\u2019s Guise",
+          "name_format": "bold_italic",
+          "description": "The construct, as long as its face is partially covered and it is wearing convincing attire, passes as a living humanoid. Its movements are smooth and organic, though they come across as overly practiced and precise. A DC 18 Insight check can tell they are a construct."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct makes three weapon attacks."
+        },
+        {
+          "name": "Energy Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 10 ft., one target. Hit: 10 (1d8 \u002B 5) slashing damage plus 6 (1d10) force damage. The first time a target is hit by this attack each turn they must make a DC 17 Dexterity saving throw, taking an additional 27 (6d8) force damage on a failure.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Doll Commander",
+          "name_format": "bold_italic",
+          "description": "The construct commands two other friendly attendolls to attack one target (or one each). Each attendoll may use their reaction to move up to 40 feet toward the designated target and make a weapon attack against them. If only one attendoll is commanded, they attack twice instead."
+        },
+        {
+          "name": "Range Extension",
+          "name_format": "bold_italic",
+          "description": "The construct chooses one target within 60 feet, and adjusts the flow of its energy blade to extend out to them. Until the end of the turn, the construct\u2019s Energy Blade attacks have a reach of 60 feet specifically in regards to that target."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Sentinel Strike",
+          "name_format": "bold_italic",
+          "description": "When a creature enters or leaves the construct\u2019s attack range, it may make an opportunity attack against them. If they hit they take damage as usual, but their movement speed is also reduced to 0 until the end of the turn."
+        }
+      ]
+    }
+  ]
+}

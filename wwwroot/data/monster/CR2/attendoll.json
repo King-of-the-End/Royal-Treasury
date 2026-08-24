@@ -1,0 +1,134 @@
+{
+  "Name": "Attendoll",
+  "Group": "Attendoll",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "",
+  "Information Sections": [],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Attendoll.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Attendoll.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Attendoll.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "attendoll",
+      "section_type": "Stat Block",
+      "title": "Attendoll",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": null
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "29 (4d10 + 8)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Battle Ready"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "+1"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +1"
+      ],
+      "skills": [
+        "Deception +4",
+        "Perception +3"
+      ],
+      "resistances": [
+        "B/P/S (magical or adamantine)"
+      ],
+      "vulnerabilities": [
+        "force"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands the languages of its creator and client, but can only speak in simple affirmative or negative statements"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Servant’s Guise",
+          "name_format": "bold_italic",
+          "description": "The construct, as long as its face is partially covered and it is wearing convincing attire, passes as a living humanoid. Its movements are smooth and organic, though they come across as overly practiced and precise. A DC 14 Insight check can tell they are a construct."
+        },
+        {
+          "name": "Tender Guardian",
+          "name_format": "bold_italic",
+          "description": "While the construct is within 5 feet of their client and they are not incapacitated, they can force any creature they can see who targets their client with an attack or effect to target the construct with it instead. If the attack or effect would target both the construct and their client, the construct forces the effect to no longer target the client, but (as applicable) the attack has advantage against the construct, saves made by the construct against the effect have disadvantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct makes two weapon attacks."
+        },
+        {
+          "name": "Sharpened Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) slashing damage plus 3 (1d4) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Puncturing Grasp (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The construct strikes one creature within 5 feet of it and sends electricity surging through their body. The target must succeed a DC 13 Constitution saving throw (creatures resistant to lightning damage have advantage on this save, and those immune to lightning damage automatically succeed). On a failure, the target is paralyzed for 1 minute, during which time they repeat the save at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

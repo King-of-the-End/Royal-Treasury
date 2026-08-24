@@ -1,0 +1,138 @@
+{
+  "Name": "Animated Skirmisher",
+  "Group": "Animated Vessels",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "",
+  "Information Sections": [],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Reference%20-%20Animated%20Vessel.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Reference%20-%20Animated%20Vessel.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Reference%20-%20Animated%20Vessel.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "animated_skirmisher",
+      "section_type": "Stat Block",
+      "title": "Animated Skirmisher",
+      "creature": {
+        "size": "Large",
+        "type": "construct (astradeck)",
+        "alignment": null
+      },
+      "armor_class": "17 (armored hull)",
+      "hit_points": "105 (14d10 \u002B 28)",
+      "threshold": "10",
+      "speed": {
+        "walk": "0 ft.",
+        "fly": "100 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Capacity (4 units)",
+        "evasion",
+        "immutable"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "\u002B2"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B8",
+        "Int \u002B2"
+      ],
+      "skills": [
+        "Perception \u002B8"
+      ],
+      "resistances": [
+        "necrotic",
+        "B/P/S (magical or adamantine)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "understands the languages of its creator but doesn\u2019t speak"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Armored Hull",
+          "name_format": "bold_italic",
+          "description": "The vessel adds its Constitution modifier to its armor class."
+        },
+        {
+          "name": "Self-Detonation",
+          "name_format": "bold_italic",
+          "description": "When the vessel is reduced to 0 hit points or killed outright, it has a 30% chance to detonate its hull (leaving no trace of it behind to repair), forcing each creature and vehicle within 30 feet of it to make a DC 13 Dexterity saving throw. Creatures on board the vessel suffer a -10 penalty to this saving throw. Each target who fails takes 14 (4d6) fire damage plus 14 (4d6) force damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The vessel makes two Shock Lance attacks."
+        },
+        {
+          "name": "Shock Lance",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B8 to hit, range 30/90 ft., one target. Hit: 16 (2d10 \u002B 5) lightning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mach Strike",
+          "name_format": "bold_italic",
+          "description": "The vessel doubles its movement speed until the end of its turn, then either makes one Shock Lance attack or takes the Dash action."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

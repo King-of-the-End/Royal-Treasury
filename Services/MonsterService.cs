@@ -1502,6 +1502,27 @@ public sealed class MonsterService
             }
 
 
+            // =================================
+            // OUTER SELECTABLE SECTIONS
+            //
+            // Generic option sections such as
+            // Attendoll Master Grade's Salvo
+            // Alternatives live beside the stat
+            // blocks in Additional Sections.
+            // =================================
+
+            monster.SelectableSections ??=
+                new List<MonsterSelectableSection>();
+
+            foreach (
+                var selectableSection
+                in metadata.SelectableSections)
+            {
+                monster.SelectableSections.Add(
+                    selectableSection);
+            }
+
+
 
             // =================================
             // OUTER IMAGE
@@ -1694,6 +1715,11 @@ public sealed class MonsterService
                 element);
 
 
+        var selectableSections =
+            ReadSelectableSectionsProperty(
+                element);
+
+
         var image =
             ReadStringProperty(
                 element,
@@ -1767,6 +1793,7 @@ public sealed class MonsterService
                 informationSections,
                 stationSections,
                 pathSurgeSections,
+                selectableSections,
                 image,
                 imageVariants,
                 refinement,
@@ -1828,6 +1855,14 @@ public sealed class MonsterService
             : inherited.PathSurgeSections;
 
 
+        var selectableSections =
+            local.SelectableSections.Count > 0
+
+            ? local.SelectableSections
+
+            : inherited.SelectableSections;
+
+
         var image =
             !string.IsNullOrWhiteSpace(
                 local.Image)
@@ -1883,6 +1918,7 @@ public sealed class MonsterService
                 informationSections,
                 stationSections,
                 pathSurgeSections,
+                selectableSections,
                 image,
                 imageVariants,
                 refinement,
@@ -2167,6 +2203,126 @@ public sealed class MonsterService
             {
             }
         }
+
+        return sections;
+    }
+
+
+    // =====================================
+    // READ GENERIC SELECTABLE SECTIONS
+    //
+    // Any Additional Sections object that:
+    // - is not Stations or Path Surges,
+    // - contains a selection object, and
+    // - contains at least one entry
+    //
+    // is treated as a generic selectable
+    // option section.
+    // =====================================
+
+    private IReadOnlyList<MonsterSelectableSection>
+        ReadSelectableSectionsProperty(
+            JsonElement element)
+    {
+        if (
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    "Additional Sections"),
+                out var value)
+            ||
+            value.ValueKind !=
+            JsonValueKind.Array)
+        {
+            return
+                Array.Empty<MonsterSelectableSection>();
+        }
+
+
+        var sections =
+            new List<MonsterSelectableSection>();
+
+
+        foreach (
+            var sectionElement
+            in value.EnumerateArray())
+        {
+            if (
+                sectionElement.ValueKind !=
+                JsonValueKind.Object)
+            {
+                continue;
+            }
+
+
+            var sectionType =
+                ReadStringProperty(
+                    sectionElement,
+                    "section_type");
+
+
+            var normalizedSectionType =
+                NormalizePropertyName(
+                    sectionType);
+
+
+            /*
+             * Stations and Path Surges already have
+             * dedicated models/renderers and must not
+             * be duplicated here.
+             */
+            if (
+                string.Equals(
+                    normalizedSectionType,
+                    "stations",
+                    StringComparison.Ordinal)
+                ||
+                string.Equals(
+                    normalizedSectionType,
+                    "pathsurges",
+                    StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+
+            if (
+                !TryGetNormalizedProperty(
+                    sectionElement,
+                    NormalizePropertyName(
+                        "selection"),
+                    out var selectionElement)
+                ||
+                selectionElement.ValueKind !=
+                    JsonValueKind.Object)
+            {
+                continue;
+            }
+
+
+            try
+            {
+                var section =
+                    JsonSerializer.Deserialize<MonsterSelectableSection>(
+                        sectionElement.GetRawText(),
+                        jsonOptions);
+
+
+                if (
+                    section is not null
+                    &&
+                    section.Entries.Count > 0)
+                {
+                    sections.Add(
+                        section);
+                }
+            }
+            catch (JsonException)
+            {
+                // Skip only the malformed section.
+            }
+        }
+
 
         return sections;
     }
@@ -2969,6 +3125,7 @@ public sealed class MonsterService
         IReadOnlyList<MonsterInformationSection> InformationSections,
         IReadOnlyList<MonsterStationSection> StationSections,
         IReadOnlyList<MonsterPathSurgeSection> PathSurgeSections,
+        IReadOnlyList<MonsterSelectableSection> SelectableSections,
         string Image,
         IReadOnlyList<string> ImageVariants,
         MonsterRefinementData? Refinement,
@@ -2984,6 +3141,7 @@ public sealed class MonsterService
                 Array.Empty<MonsterInformationSection>(),
                 Array.Empty<MonsterStationSection>(),
                 Array.Empty<MonsterPathSurgeSection>(),
+                Array.Empty<MonsterSelectableSection>(),
                 string.Empty,
                 Array.Empty<string>(),
                 null,

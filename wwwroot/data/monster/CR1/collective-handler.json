@@ -1,0 +1,114 @@
+{
+  "Name": "Collective Handler",
+  "Group": "The Crystal Collective",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "",
+  "Information Sections": [],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Crystal%20Collective%20Handler.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Crystal%20Collective%20Handler.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Crystal%20Collective%20Handler.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "collective_handler",
+      "section_type": "Stat Block",
+      "title": "Collective Handler",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "usually neutral"
+      },
+      "armor_class": "16 (crystal cloth)",
+      "hit_points": "26 (4d8 + 8)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Eidolic"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Deception +3",
+        "Perception +2"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 12"
+      ],
+      "languages": [
+        "any two languages"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Crystal Rewrite (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "When the handler fails an attack or saving throw, it can roll a d6 and add it to the result, possibly changing the outcome. It may only do so once per roll."
+        },
+        {
+          "name": "Unimpeachable Logic",
+          "name_format": "bold_italic",
+          "description": "The handler has advantage on saving throws made to resist being charmed or enraged."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Pseudothesite Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage plus 5 (1d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Flash Taser",
+          "name_format": "bold_italic",
+          "description": "Ranged Spell Attack: +6 to hit, range 10/30 ft., one target. Hit: 11 (2d6 + 4) radiant damage. If either of the damage die for this attack roll their highest result (a 6), the target must make a DC 14 Constitution saving throw, and is stunned until the end of their next turn on a failure.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

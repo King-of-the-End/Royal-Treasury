@@ -1,0 +1,146 @@
+{
+  "Name": "Caskin Corp Soldier",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Caskin Corp Soldiers**\n\nCaskin Corp soldiers are highly efficient and ruthless. Their society is relatively self-contained, with all framebilt among them being born into their ranks, thoroughly indoctrinated, or psychologically conditioned to be obedient to their cause. They are difficult to appeal to when they have a mission on hand. Their commanders are hands-on as well, often choosing to directly engage their opponents alongside their subordinates. Destroying, capturing, or breaking hostile forces is a source of pride for the members of this military, and fealty to the cause often extends in a poisonously patriotic sense to the citizens who live in settlements and worlds they have control over, making true rebellions difficult.\n\n**Junctioneers**\n\nAmong the Caskin Corp are Junctioneers, who have undergone extensive experimentation to bind a frame unit—usually a DGR—to their body. They are a normal framebilt soldier in appearance, but may use an action to assume the form of the frame unit type bound to them, at which point they fill the necessary space. Their equipment, clothes, etc., are stored within the frame unit form, and they retain attunement with any items they are attuned to, which they can use in the same way a frame unit can use its pilot’s attuned items. Finally, the proficiency bonus of the frame unit is replaced by the proficiency bonus of the Junctioneer’s primary form.\n\nA transformed Junctioneer takes on the statistics of the frame unit, while retaining the class features and traits of their original form as well. They retain the highest ability scores between themselves and the frame unit they transform into.\n\nAny damage they had taken before transforming this way is transferred to their frame unit form.\n\nA Junctioneer may also transform back to their true form as an action, and will change back if they die. When they transform back, their damage is once again transferred to their original hit point pool, and if they are reduced to 0 hit points they begin dying as usual. If the frame unit form has taken damage equal to twice the original form’s maximum hit points, transforming back would kill the Junctioneer immediately.\n\n**Mythic Transformation**\n\nIf the frame unit form has a CR of 15 or higher, an untransformed Junctioneer may transform as a last-ditch option, requiring no action, if they are reduced to 0 hit points or killed outright. In this case, their hit points are reset to the frame unit form’s maximum hit points. They cannot transform this way if they have transformed using an action in the last hour.",
+  "Information Sections": [
+    {
+      "Title": "Caskin Corp Soldiers",
+      "Text": "Caskin Corp soldiers are highly efficient and ruthless. Their society is relatively self-contained, with all framebilt among them being born into their ranks, thoroughly indoctrinated, or psychologically conditioned to be obedient to their cause. They are difficult to appeal to when they have a mission on hand. Their commanders are hands-on as well, often choosing to directly engage their opponents alongside their subordinates. Destroying, capturing, or breaking hostile forces is a source of pride for the members of this military, and fealty to the cause often extends in a poisonously patriotic sense to the citizens who live in settlements and worlds they have control over, making true rebellions difficult."
+    },
+    {
+      "Title": "Junctioneers",
+      "Text": "Among the Caskin Corp are Junctioneers, who have undergone extensive experimentation to bind a frame unit—usually a DGR—to their body. They are a normal framebilt soldier in appearance, but may use an action to assume the form of the frame unit type bound to them, at which point they fill the necessary space. Their equipment, clothes, etc., are stored within the frame unit form, and they retain attunement with any items they are attuned to, which they can use in the same way a frame unit can use its pilot’s attuned items. Finally, the proficiency bonus of the frame unit is replaced by the proficiency bonus of the Junctioneer’s primary form.\n\nA transformed Junctioneer takes on the statistics of the frame unit, while retaining the class features and traits of their original form as well. They retain the highest ability scores between themselves and the frame unit they transform into.\n\nAny damage they had taken before transforming this way is transferred to their frame unit form.\n\nA Junctioneer may also transform back to their true form as an action, and will change back if they die. When they transform back, their damage is once again transferred to their original hit point pool, and if they are reduced to 0 hit points they begin dying as usual. If the frame unit form has taken damage equal to twice the original form’s maximum hit points, transforming back would kill the Junctioneer immediately."
+    },
+    {
+      "Title": "Mythic Transformation",
+      "Text": "If the frame unit form has a CR of 15 or higher, an untransformed Junctioneer may transform as a last-ditch option, requiring no action, if they are reduced to 0 hit points or killed outright. In this case, their hit points are reset to the frame unit form’s maximum hit points. They cannot transform this way if they have transformed using an action in the last hour."
+    }
+  ],
+  "Quote": "“As quickly as framebilt appeared, their dark shadow also did. I admit, I had seen traces of this before they reached into the stars in the form of the strange DGR eidolos Aesanima, which I had encountered once... I believe the Caskin Corp was born out of a desire for autonomy. I can grant that, but they are abrasive nonetheless.”",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Caskin%20Corp%20Soldier.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Caskin%20Corp%20Soldier.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Caskin%20Corp%20Soldier.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "caskin_corp_soldier",
+      "section_type": "Stat Block",
+      "title": "Caskin Corp Soldier",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (framebilt)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "16 (integrated armor)",
+      "hit_points": "33 (5d8 + 10)",
+      "speed": {
+        "walk": "30 ft.",
+        "0-G acceleration": "60 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+4"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Con +4"
+      ],
+      "skills": [
+        "Perception +6"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison",
+        "disease"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 16"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Constructed Body",
+          "name_format": "bold_italic",
+          "description": "The soldier is immune to disease, can’t be put to sleep against its will, and has advantage on saving throws made against being poisoned."
+        },
+        {
+          "name": "Marksman Tactics",
+          "name_format": "bold_italic",
+          "description": "The soldier has advantage on ranged weapon attacks made against targets while one of its allies is within 5 feet of its target, as long as that ally is not incapacitated or unconscious."
+        },
+        {
+          "name": "Shock Bullet (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "When the soldier hits a target with their Integrated Revolver, they can choose to have used an electrically charged round to deal an additional 7 (2d6) lightning damage to that target, and to force the target to make a DC 13 Constitution saving throw, and on a failure is stunned until the end of their next turn."
+        },
+        {
+          "name": "Vehicle Expert",
+          "name_format": "bold_italic",
+          "description": "When the soldier is operating a vehicle, or frame unit, or riding in one, their own weapon attacks and saving throws have advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The soldier makes two Integrated Blade attacks."
+        },
+        {
+          "name": "Integrated Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Integrated Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 11 (2d8 + 2) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "Name": "Attendoll High Grade",
+  "Group": "Attendoll",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**High Grade and Master Grade**\n\nAs well as the base attendoll models, two extra types exist: high grade and master grade. High grade models are designed to defend the particularly wealthy or individuals of importance, or to secure a location without giving the appearance of security. They can produce a charged blade on their arm and stagger creatures they fight, but otherwise are high-performance variants of the base models.",
+  "Information Sections": [
+    {
+      "Title": "High Grade and Master Grade",
+      "Text": "As well as the base attendoll models, two extra types exist: high grade and master grade. High grade models are designed to defend the particularly wealthy or individuals of importance, or to secure a location without giving the appearance of security. They can produce a charged blade on their arm and stagger creatures they fight, but otherwise are high-performance variants of the base models."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Attendoll.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Attendoll.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR2/Attendoll.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "attendoll_high_grade",
+      "section_type": "Stat Block",
+      "title": "Attendoll High Grade",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": null
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "112 (15d8 \u002B 45)",
+      "threshold": "5",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Battle ready",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B7"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "\u002B0",
+          "save": "\u002B3"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B7",
+        "Wis \u002B3"
+      ],
+      "skills": [
+        "Deception \u002B5",
+        "Perception \u002B6"
+      ],
+      "resistances": [
+        "B/P/S (magical or adamantine)"
+      ],
+      "vulnerabilities": [
+        "force"
+      ],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "understands the languages of its creator and client, but can only speak in simple affirmative or negative statements"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Servant\u2019s Guide",
+          "name_format": "bold_italic",
+          "description": "The construct, as long as its face is partially covered and it is wearing convincing attire, passes as a living humanoid. Its movements are smooth and organic, though they come across as overly practiced and precise. A DC 16 Insight check can tell they are a construct."
+        },
+        {
+          "name": "Tender Guardian",
+          "name_format": "bold_italic",
+          "description": "While the construct is within 5 feet of their client and they are not incapacitated, they can force any creature they can see who targets their client with an attack or effect to target itself instead. If the attack or effect would target both the construct and their client, the construct forces the effect to no longer target the client, but (as applicable) the attack has advantage against the construct, and saves made by the construct against the effect have disadvantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct makes three melee weapon attacks or two ranged weapon attacks. If it hits the same creature twice or more with its Lightning Strike in the same turn, it can then use its Stunning Surge against them."
+        },
+        {
+          "name": "Lightning Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 5 ft., one target. Hit: 9 (1d8 \u002B 4) slashing damage plus 4 (1d6) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Stunning Surge",
+          "name_format": "bold_italic",
+          "description": "A target within 5 feet is struck with electrical energy and must make a DC 15 Constitution saving throw. On a failure, they are stunned until the start of the construct\u2019s next turn."
+        },
+        {
+          "name": "Detonation Dart",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B7 to hit, range 40/120 ft., one target. Hit: 14 (2d10 \u002B 4) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Support Structure",
+          "name_format": "bold_italic",
+          "description": "The construct takes the Help action."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

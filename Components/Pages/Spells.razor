@@ -225,14 +225,10 @@
         class="spell-level-tabs"
         role="tablist">
 
-        @for (
-            var level = 0;
-            level <= 9;
-            level++)
+        @foreach (
+            var tabLevel
+            in VisibleSpellLevels)
         {
-            var tabLevel =
-                level;
-
             <button
                 type="button"
                 role="tab"
@@ -438,6 +434,17 @@
 
 
     // =====================================
+    // SPELL LEVELS
+    // =====================================
+
+    private static readonly IReadOnlyList<int>
+        SpellLevels =
+            Enumerable
+                .Range(0, 10)
+                .ToArray();
+
+
+    // =====================================
     // CURRENT LEVEL
     // =====================================
 
@@ -559,6 +566,49 @@
 
 
     // =====================================
+    // VISIBLE LEVEL TABS
+    //
+    // Search is the only thing that hides a
+    // level tab. Class/school/group filters
+    // continue to filter the active level's
+    // results without changing the tab bar.
+    // =====================================
+
+    private IReadOnlyList<int>
+        VisibleSpellLevels
+    {
+        get
+        {
+            if (
+                string.IsNullOrWhiteSpace(
+                    searchQuery))
+            {
+                return
+                    SpellLevels;
+            }
+
+
+            var search =
+                searchQuery.Trim();
+
+
+            return
+                SpellLevels
+                    .Where(
+                        level =>
+                            spells.Any(
+                                spell =>
+                                    spell.Level == level
+                                    &&
+                                    SpellMatchesSearch(
+                                        spell,
+                                        search)))
+                    .ToArray();
+        }
+    }
+
+
+    // =====================================
     // FILTERED SPELLS
     // =====================================
 
@@ -589,10 +639,9 @@
                 result =
                     result.Where(
                         spell =>
-                            spell.Name.Contains(
-                                search,
-                                StringComparison
-                                    .OrdinalIgnoreCase));
+                            SpellMatchesSearch(
+                                spell,
+                                search));
             }
 
 
@@ -689,6 +738,13 @@
                 loadError =
                     "No spell files were found " +
                     "in wwwroot/data/spells/.";
+            }
+
+
+            if (
+                EnsureActiveSpellLevelVisible())
+            {
+                SyncUrl();
             }
         }
         catch (Exception ex)
@@ -819,6 +875,9 @@
     {
         searchQuery =
             value;
+
+
+        EnsureActiveSpellLevelVisible();
 
 
         SyncUrl();
@@ -1133,6 +1192,68 @@
             ? "spell-filter-button active"
 
             : "spell-filter-button";
+    }
+
+
+    // =====================================
+    // KEEP ACTIVE LEVEL VISIBLE
+    //
+    // If typing removes the current level
+    // from the tab bar, switch to the first
+    // level that still has a search match.
+    // =====================================
+
+    private bool EnsureActiveSpellLevelVisible()
+    {
+        if (
+            string.IsNullOrWhiteSpace(
+                searchQuery))
+        {
+            return
+                false;
+        }
+
+
+        var visibleLevels =
+            VisibleSpellLevels;
+
+
+        if (
+            visibleLevels.Count == 0
+            ||
+            visibleLevels.Contains(
+                activeLevel))
+        {
+            return
+                false;
+        }
+
+
+        activeLevel =
+            visibleLevels[0];
+
+
+        return
+            true;
+    }
+
+
+    // =====================================
+    // SPELL SEARCH MATCH
+    //
+    // Shared by result filtering and tab
+    // visibility so both behaviours always
+    // use the same search rule.
+    // =====================================
+
+    private static bool SpellMatchesSearch(
+        SpellData spell,
+        string search)
+    {
+        return
+            spell.Name.Contains(
+                search,
+                StringComparison.OrdinalIgnoreCase);
     }
 
 

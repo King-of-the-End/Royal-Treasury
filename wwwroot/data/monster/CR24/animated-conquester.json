@@ -1,0 +1,163 @@
+{
+  "Name": "Animated Conquester",
+  "Group": "Animated Vessels",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "",
+  "Information Sections": [],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Reference%20-%20Animated%20Vessel.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Reference%20-%20Animated%20Vessel.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Reference%20-%20Animated%20Vessel.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "animated_conquester",
+      "section_type": "Stat Block",
+      "title": "Animated Conquester",
+      "creature": {
+        "size": "Colossal",
+        "type": "construct (astradeck)",
+        "alignment": null
+      },
+      "armor_class": "20 (armored hull)",
+      "hit_points": "518 (28d20 \u002B 224)",
+      "threshold": "10",
+      "speed": {
+        "walk": "0 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "180 feet"
+      },
+      "quality_traits": [
+        "Capacity (80 units)",
+        "immutable",
+        "macro attacks (Large)",
+        "massive (L/10 feet/DC 21)",
+        "regen 30"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        },
+        "CON": {
+          "score": 27,
+          "modifier": "\u002B8"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "\u002B6"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B9",
+        "Int \u002B6",
+        "Wis \u002B12"
+      ],
+      "skills": [
+        "Perception \u002B12"
+      ],
+      "resistances": [
+        "necrotic",
+        "B/P/S (magical or adamantine)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 480 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "understands the languages of its creator but doesn\u2019t speak"
+      ],
+      "challenge_rating": "24 (62,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Armored Hull",
+          "name_format": "bold_italic",
+          "description": "The vessel adds its Constitution modifier to its armor class."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The vessel makes two Missile Salvo attacks."
+        },
+        {
+          "name": "Missile Salvo",
+          "name_format": "bold_italic",
+          "description": "Macro Ranged Weapon Attack: \u002B9 to hit, range 300/900 ft., one target. Hit: 19 (3d10 \u002B 2) fire damage plus 13 (2d12) force damage (macro: 32 fire plus 24 force).",
+          "inline_formatting": {
+            "Macro Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Chase Fire",
+          "name_format": "bold_italic",
+          "description": "The vessel makes one Missile Salvo attack and takes the Dash action."
+        },
+        {
+          "name": "Ram (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The vessel moves up to half its movement speed, moving through creatures in its path and pushing any Huge or smaller creature to the nearest unoccupied space outside its movement path. If it is on path to collide with a creature that is Gargantuan or larger, it stops moving before entering their space. Each creature pushed or collided with must make a DC 21 Dexterity saving throw, taking 45 (6d12 \u002B 6) bludgeoning damage on a failed save. If a creature stops the vessel\u2019s movement and fails they take 71 (10d12 \u002B 6) instead."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 5,
+        "options": [
+          {
+            "name": "Missile Spawn",
+            "name_format": "bold_italic",
+            "description": "The vessel makes one Missile Salvo attack against one target within range."
+          },
+          {
+            "name": "Countermeasures",
+            "name_format": "bold_italic",
+            "description": "The next time a creature attacks the vessel before the start of its next turn, the vessel rolls a Missile Salvo attack. If the result of the Missile Salvo attack is higher than the vessel\u2019s armor class, it may treat the result of the Missile Salvo attack as its armor class instead until the end of that turn."
+          },
+          {
+            "name": "Acceleration (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The vessel moves up to its movement speed or, if it\u2019s available, may take the Ram action."
+          }
+        ]
+      }
+    }
+  ]
+}

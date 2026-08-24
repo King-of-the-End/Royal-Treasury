@@ -1,0 +1,175 @@
+{
+  "Name": "Astral Elemental, Elder",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Astral Elementals**\n\nBorn from fissures in time and space within the Astral Sea, these elementals are best understood as anomalous holes in the universe, expressing themselves as a living mass of compressed space. They drift aimlessly near overlaps between exolunar space and the astral sea, and have a strong distaste for anything with a strong gravitational pull (such as ships, planets, or large creatures).\n\n**Elemental Nature**\n\nAn elemental doesn\u2019t require air, food, drink or sleep.",
+  "Information Sections": [
+    {
+      "Title": "Astral Elementals",
+      "Text": "Born from fissures in time and space within the Astral Sea, these elementals are best understood as anomalous holes in the universe, expressing themselves as a living mass of compressed space. They drift aimlessly near overlaps between exolunar space and the astral sea, and have a strong distaste for anything with a strong gravitational pull (such as ships, planets, or large creatures)."
+    },
+    {
+      "Title": "Elemental Nature",
+      "Text": "An elemental doesn\u2019t require air, food, drink or sleep."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "astral_elemental_elder",
+      "section_type": "Stat Block",
+      "title": "Astral Elemental, Elder",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "elemental",
+        "alignment": null
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "261 (18d20 \u002B 72)",
+      "speed": {
+        "walk": "10 ft.",
+        "teleport": "60 ft.",
+        "0-G acceleration": "190 ft."
+      },
+      "quality_traits": [
+        "Ethereal",
+        "magic resist",
+        "magical",
+        "weightless"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B11"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "WIS": {
+          "score": 26,
+          "modifier": "\u002B8"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "\u002B0",
+          "save": "\u002B7"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B11",
+        "Cha \u002B7"
+      ],
+      "skills": [
+        "Perception \u002B15"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "force",
+        "poison",
+        "psychic",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 90 ft.",
+        "passive Perception 25"
+      ],
+      "languages": [
+        "Astral"
+      ],
+      "challenge_rating": "23 (50,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental uses its Astral Shunt, then makes three weapon attacks."
+        },
+        {
+          "name": "Cosmic Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 20 ft., one target. Hit: 26 (4d8 \u002B 8) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Astral Shunt",
+          "name_format": "bold_italic",
+          "description": "The elemental chooses up to three creatures within 60 feet of it, who must each make a DC 23 Charisma saving throw. On a failure, they are teleported to an unoccupied space the elemental chooses within 60 feet of itself, which can be no more than 30 feet above a surface (unless they are in a zero-gravity environment)."
+        },
+        {
+          "name": "Banishment Wave (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The elemental opens a rift to a contained pocket in space inside of itself, targeting any number of creatures it can see within 30 feet. Each target must make a DC 19 Charisma saving throw as a wave of cosmic force attempts to consume them. Each creature that fails is subjected to the effects of the banishment spell, using the Charisma saving throw in place of banishment\u2019s save, and the demiplane they are suspended in is the rift inside the elemental. The elemental must concentrate on the effect as though it were a spell, and if a creature succeeds their saving throw to resist or escape the effects of banishment, they become immune to that aspect of this action for 24 hours. A creature who fails also takes 26 (4d12) force damage regardless of if they are immune to the effects of banishment.\n\nEach time the elemental starts its turn while creatures are banished this way, it regains 11 (2d10) hit points and additionally gains 6 (1d10) temporary hit points for each creature trapped.\n\nTo use this action, the elemental must cease concentrating on existing instances of it. If they do so, they can choose which spaces within 30 feet of them the trapped creatures emerge into, and those creatures emerge prone and incapacitated until the start of their next turn. This also occurs if the elemental willingly stops concentrating on its own turn."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Teleport",
+            "name_format": "bold_italic",
+            "description": "The elemental teleports up to its teleport speed to an unoccupied space it can see."
+          },
+          {
+            "name": "Gatling Darts (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elemental fires a barrage of force darts at each creature in a 10-foot-radius sphere centered on a point it can see within 60 feet. Each creature in range must make a DC 23 Dexterity saving throw, taking 17 (3d10) force damage on a failure."
+          },
+          {
+            "name": "Graviturgy Warp (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Each creature of the elemental\u2019s choice within 30 feet must make a DC 23 Strength saving throw. The elemental can choose to move each creature that fails into any unoccupied space within 30 feet of itself, where the creature remains suspended and is restrained until the start of the elemental\u2019s next turn."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

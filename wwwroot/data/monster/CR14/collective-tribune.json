@@ -1,0 +1,174 @@
+{
+  "Name": "Collective Tribune",
+  "Group": "The Crystal Collective",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Collective Tribune**\n\nThe tribune members are the highest ranking members of the Collective, often serving as the delegators and project leaders who each control a number of large chapters that sit underneath them. Their visions for the potential of thesite often vary between members, and are what define the ambitions of their underlings. The collective council of tribune members do coordinate and support one another when it is sensible to do so, however. When a broad decision about the future of the Collective is required, the tribunes are recalled to their hidden headquarters, where they speak, vote, and delegate before the Mother Stone.",
+  "Information Sections": [
+    {
+      "Title": "Collective Tribune",
+      "Text": "The tribune members are the highest ranking members of the Collective, often serving as the delegators and project leaders who each control a number of large chapters that sit underneath them. Their visions for the potential of thesite often vary between members, and are what define the ambitions of their underlings. The collective council of tribune members do coordinate and support one another when it is sensible to do so, however. When a broad decision about the future of the Collective is required, the tribunes are recalled to their hidden headquarters, where they speak, vote, and delegate before the Mother Stone."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Crystal%20Collective%20Tribune.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Crystal%20Collective%20Tribune.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Crystal%20Collective%20Tribune.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "collective_tribune",
+      "section_type": "Stat Block",
+      "title": "Collective Tribune",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "true neutral"
+      },
+      "armor_class": "19 (crystal cloth, digital emulation)",
+      "hit_points": "130 (20d8 + 40)",
+      "speed": {
+        "walk": "30 ft.",
+        "belabored flight": "50 ft. (hover)"
+      },
+      "quality_traits": [
+        "Eidolic",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+7"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+7"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "+2",
+          "save": "+7"
+        }
+      },
+      "saving_throws": [
+        "Con +7",
+        "Wis +7",
+        "Cha +7"
+      ],
+      "skills": [
+        "Deception +7",
+        "Perception +7",
+        "Persuasion +7"
+      ],
+      "resistances": [
+        "all damage that isn’t eidolic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "truesight 10 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Common",
+        "plus three others"
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "+5",
+      "traits": [
+        {
+          "name": "Digital Emulation",
+          "name_format": "bold_italic",
+          "description": "Due to their knowledge of thesite and its ability to bend reality, while using weapons and armor made of thesite, the tribune may use their Intelligence in place of Strength and Dexterity for attack and damage rolls, and in place of their Dexterity to determine their AC."
+        },
+        {
+          "name": "Unimpeachable Logic",
+          "name_format": "bold_italic",
+          "description": "The tribune has advantage on saving throws made to resist being charmed or enraged."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The tribune attacks three times with its Thesite Psychogauntlets, up to two of which can be replaced with using the Dark Road Selection once each. It cannot target the same creature twice in the same turn with Dark Road Selection."
+        },
+        {
+          "name": "Thesite Psychogauntlets",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dark Road Selection",
+          "name_format": "bold_italic",
+          "description": "The tribune alters the personal reality of one target within 50 feet, who must make a DC 18 Charisma saving throw, taking 13 (2d12) force damage on a successful save. On a failure they take no damage, but are also teleported to an unoccupied space the tribune chooses within 50 feet of themselves (which does not need to be on the ground)."
+        },
+        {
+          "name": "Summon Elemental (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The tribune summons a thesite elemental (CR 7), which appears in an unoccupied space within 30 feet. The elemental remains until the tribune Rests, either they or the elemental is killed, or the tribune uses an action to dismiss it.\n\nThis ability requires the tribune to have a palm-sized chunk of thesite to use, which is lost if the elemental is destroyed, and so may not be available to all tribune members. The same piece of thesite can only be used to do this once per day.\n\nIn a rare situation where a tribune member is in possession of a Huge or larger chunk of thesite, they may use this action while in contact with it to merge with it, destroying both the chunk and themselves to become a thesite evolutionary. Doing so replaces the statistics of the tribune member with the evolutionary, and their personality may be overwritten by their new form."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Conceptual Freeze",
+          "name_format": "bold_italic",
+          "description": "The tribune forces each creature it hits with an attack this turn to confront a paradoxical twisting of their personal reality, requiring a DC 18 Intelligence saving throw. Each target that fails is incapacitated until the start of the tribune’s next turn."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Crystal Counterspell (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "If a creature casts a spell within 60 feet of the tribune, they can produce the effects of the counterspell spell, requiring no spell slot or components and using Intelligence as their spellcasting ability. If they successfully counter the spell, they may cast the negated spell once before the next time they Rest, requiring no spell slot or components, at the same level it was cast at when it was countered. When they do so, they use Intelligence as their spellcasting ability."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Crystal Hypercast",
+            "name_format": "bold_italic",
+            "description": "The tribune casts any spell it has reserved through its Crystal Counterspell reaction, as long as it has a casting time of 1 action or 1 bonus action. When cast this way, the first saving throw its target(s) make(s) may be changed to Intelligence instead of their usual saving throws, as their mind combats the reality-warping nature of this thesite-powered spell."
+          },
+          {
+            "name": "Force Darts",
+            "name_format": "bold_italic",
+            "description": "The tribune fires a burst of dart-like force constructs at up to three targets within 60 feet, each of whom must make a DC 18 Dexterity saving throw. Each that fails takes 8 (3d4) force damage."
+          },
+          {
+            "name": "Threat Mirror (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Until the start of the tribune’s next turn, they are surrounded by a shimmering aura of protective energy with an unrealized form. During that time, when hit by an attack or effect that causes it damage, it can use its reaction to force the source of the attack/effect to make a DC 18 Wisdom saving throw. On a failure, the source takes the same amount of damage from the attack/effect that the tribune does until the end of that turn."
+          }
+        ]
+      }
+    }
+  ]
+}

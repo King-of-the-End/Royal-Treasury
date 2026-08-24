@@ -962,6 +962,84 @@
 
 
     <!-- =================================
+         GENERIC SELECTABLE OPTIONS
+
+         Used by Additional Sections that carry
+         a "selection" object, such as the
+         Attendoll Master Grade's Salvo
+         Alternatives.
+         ================================= -->
+
+    @if (Data.SelectableSections.Count > 0)
+    {
+        <div class="rt-path-surges">
+            @foreach (var optionSection in Data.SelectableSections)
+            {
+                <section class="rt-path-surges-section">
+                    <div class="rt-stat-section-bar">
+                        @(string.IsNullOrWhiteSpace(optionSection.Title)
+                            ? optionSection.SectionType
+                            : optionSection.Title)
+                    </div>
+
+                    @if (!string.IsNullOrWhiteSpace(optionSection.Intro))
+                    {
+                        <p class="rt-path-surges-intro">
+                            <GlossaryText
+                                Text="@optionSection.Intro"
+                                Context="GlossaryContext.StatBlock" />
+                        </p>
+                    }
+
+                    <div class="rt-path-surge-grid">
+                        @foreach (var option in optionSection.Entries)
+                        {
+                            var isSelected =
+                                IsAdditionalOptionSelected(
+                                    optionSection,
+                                    option);
+
+                            <button
+                                type="button"
+                                class="@(isSelected
+                                    ? "rt-path-surge-card is-selected"
+                                    : "rt-path-surge-card")"
+                                aria-pressed="@isSelected"
+                                @onclick="() => SelectAdditionalOption(optionSection, option)">
+
+                                <div class="rt-path-surge-card-head">
+                                    <strong>@option.Name</strong>
+
+                                    @if (!string.IsNullOrWhiteSpace(option.ActionType))
+                                    {
+                                        <span class="rt-path-surge-type">
+                                            @option.ActionType
+                                        </span>
+                                    }
+                                </div>
+
+                                <span class="rt-path-surge-card-body">
+                                    <GlossaryText
+                                        Text="@option.Description"
+                                        Context="GlossaryContext.StatBlock" />
+                                </span>
+
+                                @if (isSelected)
+                                {
+                                    <span class="rt-path-surge-selected">
+                                        Selected
+                                    </span>
+                                }
+                            </button>
+                        }
+                    </div>
+                </section>
+            }
+        </div>
+    }
+
+
+    <!-- =================================
          VEHICLE / CONSTRUCT STATIONS
 
          These are deliberately inside the
@@ -1129,6 +1207,62 @@
 
     private MonsterPathSurgeEntry? _selectedPathSurge;
 
+    private readonly Dictionary<
+        MonsterSelectableSection,
+        List<MonsterSelectableEntry>>
+        _selectedAdditionalOptions =
+            new();
+
+    private StatBlockData? _selectionData;
+
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        if (ReferenceEquals(
+                _selectionData,
+                Data))
+        {
+            return;
+        }
+
+        _selectionData =
+            Data;
+
+        _selectedPathSurge =
+            null;
+
+        _selectedAdditionalOptions.Clear();
+
+        InitializePathSurgeSelection();
+        InitializeAdditionalSelections();
+    }
+
+
+    private void InitializePathSurgeSelection()
+    {
+        if (
+            string.IsNullOrWhiteSpace(
+                Data.SelectedPathSurge))
+        {
+            return;
+        }
+
+        _selectedPathSurge =
+            Data.PathSurgeSections
+                .SelectMany(
+                    section =>
+                        section.Entries)
+                .FirstOrDefault(
+                    entry =>
+                        string.Equals(
+                            entry.Name,
+                            Data.SelectedPathSurge,
+                            StringComparison.OrdinalIgnoreCase));
+    }
+
+
     private void SelectPathSurge(
         MonsterPathSurgeEntry surge)
     {
@@ -1140,8 +1274,215 @@
             : surge;
     }
 
+
     private string ActivePathSurgeActionType =>
-        NormalizePathSurgeActionType(_selectedPathSurge?.ActionType);
+        NormalizeActionType(
+            _selectedPathSurge?.ActionType);
+
+
+    private void InitializeAdditionalSelections()
+    {
+        foreach (
+            var section
+            in Data.SelectableSections)
+        {
+            var selected =
+                new List<MonsterSelectableEntry>();
+
+            _selectedAdditionalOptions[
+                section] =
+                    selected;
+
+            var requiredMinimum =
+                GetRequiredMinimum(
+                    section.Selection);
+
+            var maximum =
+                GetMaximumSelections(
+                    section.Selection);
+
+            if (
+                !string.IsNullOrWhiteSpace(
+                    section.Selection.Default))
+            {
+                var defaultEntry =
+                    section.Entries.FirstOrDefault(
+                        entry =>
+                            string.Equals(
+                                entry.Name,
+                                section.Selection.Default,
+                                StringComparison.OrdinalIgnoreCase));
+
+                if (defaultEntry is not null)
+                {
+                    selected.Add(
+                        defaultEntry);
+                }
+            }
+
+            foreach (
+                var entry
+                in section.Entries)
+            {
+                if (
+                    selected.Count >=
+                        requiredMinimum
+                    ||
+                    selected.Count >=
+                        maximum)
+                {
+                    break;
+                }
+
+                if (!selected.Contains(entry))
+                {
+                    selected.Add(entry);
+                }
+            }
+        }
+    }
+
+
+    private bool IsAdditionalOptionSelected(
+        MonsterSelectableSection section,
+        MonsterSelectableEntry option)
+    {
+        return
+            _selectedAdditionalOptions.TryGetValue(
+                section,
+                out var selected)
+            &&
+            selected.Contains(
+                option);
+    }
+
+
+    private void SelectAdditionalOption(
+        MonsterSelectableSection section,
+        MonsterSelectableEntry option)
+    {
+        if (
+            !_selectedAdditionalOptions.TryGetValue(
+                section,
+                out var selected))
+        {
+            selected =
+                new List<MonsterSelectableEntry>();
+
+            _selectedAdditionalOptions[
+                section] =
+                    selected;
+        }
+
+        var isSingle =
+            string.Equals(
+                NormalizeSelectionMode(
+                    section.Selection.Mode),
+                "single",
+                StringComparison.Ordinal);
+
+        if (selected.Contains(option))
+        {
+            if (
+                selected.Count >
+                    GetRequiredMinimum(
+                        section.Selection))
+            {
+                selected.Remove(
+                    option);
+            }
+
+            return;
+        }
+
+        if (isSingle)
+        {
+            selected.Clear();
+            selected.Add(option);
+            return;
+        }
+
+        if (
+            selected.Count <
+                GetMaximumSelections(
+                    section.Selection))
+        {
+            selected.Add(option);
+        }
+    }
+
+
+    private static int GetRequiredMinimum(
+        MonsterSelectionRules rules)
+    {
+        var minimum =
+            Math.Max(
+                0,
+                rules.MinSelections);
+
+        if (
+            rules.Required
+            ||
+            !rules.AllowNone)
+        {
+            minimum =
+                Math.Max(
+                    1,
+                    minimum);
+        }
+
+        if (
+            string.Equals(
+                NormalizeSelectionMode(
+                    rules.Mode),
+                "single",
+                StringComparison.Ordinal))
+        {
+            minimum =
+                Math.Min(
+                    minimum,
+                    1);
+        }
+
+        return minimum;
+    }
+
+
+    private static int GetMaximumSelections(
+        MonsterSelectionRules rules)
+    {
+        if (
+            string.Equals(
+                NormalizeSelectionMode(
+                    rules.Mode),
+                "single",
+                StringComparison.Ordinal))
+        {
+            return 1;
+        }
+
+        return
+            rules.MaxSelections > 0
+            ? rules.MaxSelections
+            : int.MaxValue;
+    }
+
+
+    private static string NormalizeSelectionMode(
+        string? value)
+    {
+        var normalized =
+            new string(
+                (value ?? string.Empty)
+                    .Where(char.IsLetterOrDigit)
+                    .Select(char.ToLowerInvariant)
+                    .ToArray());
+
+        return
+            normalized is "multiple" or "multi"
+            ? "multiple"
+            : "single";
+    }
 
 
 
@@ -1152,7 +1493,9 @@
     {
         var result =
             new List<StatBlockEntry>(
-                Data.Traits.Count + 1);
+                Data.Traits.Count +
+                1 +
+                Data.SelectableSections.Count);
 
         foreach (var entry in Data.Traits)
         {
@@ -1225,6 +1568,10 @@
                 });
         }
 
+        AddSelectedAdditionalEntries(
+            result,
+            "trait");
+
         return result;
     }
 
@@ -1242,38 +1589,118 @@
         List<StatBlockEntry> original,
         string targetActionType)
     {
-        if (_selectedPathSurge is null ||
-            ActivePathSurgeActionType != targetActionType)
-            return original;
+        var result =
+            new List<StatBlockEntry>(
+                original);
 
-        if (original.Any(e => string.Equals(
-            e.Name, _selectedPathSurge.Name,
-            StringComparison.OrdinalIgnoreCase)))
-            return original;
-
-        var result = new List<StatBlockEntry>(original);
-        result.Add(new StatBlockEntry
+        if (
+            _selectedPathSurge is not null
+            &&
+            ActivePathSurgeActionType ==
+                targetActionType
+            &&
+            !result.Any(
+                entry =>
+                    string.Equals(
+                        entry.Name,
+                        _selectedPathSurge.Name,
+                        StringComparison.OrdinalIgnoreCase)))
         {
-            Name = _selectedPathSurge.Name,
-            NameFormat = "bold_italic",
-            Description = _selectedPathSurge.Description
-        });
+            result.Add(
+                new StatBlockEntry
+                {
+                    Name =
+                        _selectedPathSurge.Name,
+
+                    NameFormat =
+                        "bold_italic",
+
+                    Description =
+                        _selectedPathSurge.Description
+                });
+        }
+
+        AddSelectedAdditionalEntries(
+            result,
+            targetActionType);
+
         return result;
     }
 
-    private static string NormalizePathSurgeActionType(string? value)
+
+    private void AddSelectedAdditionalEntries(
+        List<StatBlockEntry> result,
+        string targetActionType)
     {
-        var normalized = new string((value ?? "")
-            .Where(char.IsLetterOrDigit)
-            .Select(char.ToLowerInvariant)
-            .ToArray());
+        foreach (
+            var pair
+            in _selectedAdditionalOptions)
+        {
+            foreach (
+                var selected
+                in pair.Value)
+            {
+                if (
+                    !string.Equals(
+                        NormalizeActionType(
+                            selected.ActionType),
+                        targetActionType,
+                        StringComparison.Ordinal))
+                {
+                    continue;
+                }
+
+                if (
+                    result.Any(
+                        entry =>
+                            string.Equals(
+                                entry.Name,
+                                selected.Name,
+                                StringComparison.OrdinalIgnoreCase)))
+                {
+                    continue;
+                }
+
+                result.Add(
+                    new StatBlockEntry
+                    {
+                        Name =
+                            selected.Name,
+
+                        NameFormat =
+                            "bold_italic",
+
+                        Description =
+                            selected.Description
+                    });
+            }
+        }
+    }
+
+
+    private static string NormalizeActionType(
+        string? value)
+    {
+        var normalized =
+            new string(
+                (value ?? string.Empty)
+                    .Where(char.IsLetterOrDigit)
+                    .Select(char.ToLowerInvariant)
+                    .ToArray());
 
         return normalized switch
         {
-            "action" or "actions" => "action",
-            "bonusaction" or "bonusactions" => "bonusaction",
-            "reaction" or "reactions" => "reaction",
-            _ => "trait"
+            "action" or "actions" =>
+                "action",
+
+            "bonusaction" or "bonusactions" =>
+                "bonusaction",
+
+            "reaction" or "reactions" =>
+                "reaction",
+
+            _ =>
+                "trait"
         };
     }
 

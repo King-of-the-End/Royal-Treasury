@@ -1,0 +1,144 @@
+{
+  "Name": "Astral Elemental, Greater",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Astral Elementals**\n\nBorn from fissures in time and space within the Astral Sea, these elementals are best understood as anomalous holes in the universe, expressing themselves as a living mass of compressed space. They drift aimlessly near overlaps between exolunar space and the astral sea, and have a strong distaste for anything with a strong gravitational pull (such as ships, planets, or large creatures).\n\n**Elemental Nature**\n\nAn elemental doesn’t require air, food, drink or sleep.",
+  "Information Sections": [
+    {
+      "Title": "Astral Elementals",
+      "Text": "Born from fissures in time and space within the Astral Sea, these elementals are best understood as anomalous holes in the universe, expressing themselves as a living mass of compressed space. They drift aimlessly near overlaps between exolunar space and the astral sea, and have a strong distaste for anything with a strong gravitational pull (such as ships, planets, or large creatures)."
+    },
+    {
+      "Title": "Elemental Nature",
+      "Text": "An elemental doesn’t require air, food, drink or sleep."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Astral%20Elemental%2BSwirl.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "astral_elemental_greater",
+      "section_type": "Stat Block",
+      "title": "Astral Elemental, Greater",
+      "creature": {
+        "size": "Huge",
+        "type": "elemental",
+        "alignment": null
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "171 (18d12 + 54)",
+      "speed": {
+        "walk": "5 ft.",
+        "teleport": "40 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Ethereal",
+        "weightless"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical)",
+        "force",
+        "poison",
+        "psychic"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 90 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Astral"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Death Throes: Gravity Bomb",
+          "name_format": "bold_italic",
+          "description": "When the elemental is killed, its body loses its structure and each creature within 20 feet of it is assaulted by a wave of force and must make a DC 15 Constitution saving throw. On a failure, they are pushed back 15 feet (30 in a zero-gravity environment), are knocked prone and take 13 (2d12) force damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental uses its Astral Ejection, then makes two weapon attacks."
+        },
+        {
+          "name": "Debris Lance",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 16 (2d10 + 5) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Astral Ejection",
+          "name_format": "bold_italic",
+          "description": "The elemental either targets up to three creatures within 60 feet, or only one. Its target(s) must succeed a DC 17 Charisma saving throw. On a failure, the following effects happen:",
+          "options": [
+            {
+              "name": "Multiple Targets",
+              "description": "Each target that fails is teleported to another unoccupied space the elemental chooses within 60 feet of itself, which can be no more than 20 feet above a solid surface unless they are in a zero-gravity environment."
+            },
+            {
+              "name": "One Target",
+              "description": "The target is subjected to the effects of the banishment spell, using the Charisma saving throw in place of its own. These effects end if the elemental targets another creature to banish them this way, if the duration ends, or if they lose concentration. At the start of each of the elemental’s turns after they have banished a creature this way, they regain 9 (2d8) hit points by absorbing displaced astral energy from the creature. A creature who succeeds their Charisma saving throw against this version of this action becomes immune to it for 24 hours."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

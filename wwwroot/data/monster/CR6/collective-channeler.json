@@ -1,0 +1,141 @@
+{
+  "Name": "Collective Channeler",
+  "Group": "The Crystal Collective",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Collective Channeler**\n\nChannelers of the Collective are enforcers who use advanced equipment engineered using research into thesite. Their main weapon is a crystal lance spawned from a hidden matrix containing an almost invisibly small shard of thesite. This lance can be deployed or hidden at will with no evidence remaining, making it a stealthy weapon for agents blending into crowds. Their suits also contain small generators that can produce enough energy to hover for very short bursts, allowing the channeler to engage in aerial combat if needed.",
+  "Information Sections": [
+    {
+      "Title": "Collective Channeler",
+      "Text": "Channelers of the Collective are enforcers who use advanced equipment engineered using research into thesite. Their main weapon is a crystal lance spawned from a hidden matrix containing an almost invisibly small shard of thesite. This lance can be deployed or hidden at will with no evidence remaining, making it a stealthy weapon for agents blending into crowds. Their suits also contain small generators that can produce enough energy to hover for very short bursts, allowing the channeler to engage in aerial combat if needed."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Crystal%20Collective%20Channel.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Crystal%20Collective%20Channel.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Crystal%20Collective%20Channel.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "collective_channeler",
+      "section_type": "Stat Block",
+      "title": "Collective Channeler",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "true neutral"
+      },
+      "armor_class": "15 (crystal cloth)",
+      "hit_points": "113 (15d8 \u002B 45)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "belabored flight": "60 ft. (hover)"
+      },
+      "quality_traits": [
+        "Eidolic"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "\u002B1",
+          "save": "\u002B4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B6"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B4",
+        "Int \u002B6"
+      ],
+      "skills": [
+        "Athletics \u002B7",
+        "Deception \u002B4",
+        "Perception \u002B4"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "any three languages"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Crystal Rewrite (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "When the channeler fails an attack or saving throw, it can roll a d6 and add it to the result, possibly changing the outcome. It may only do so once per roll."
+        },
+        {
+          "name": "Crystal Smite (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "When the channeler hits with a melee weapon attack, it may force its target to make a DC 15 Dexterity saving throw, taking 22 (4d10) radiant damage and is knocked prone on a failed save, or half as much damage and isn\u2019t knocked prone on a success. A single creature can only be targeted by this effect once per turn."
+        },
+        {
+          "name": "Unimpeachable Logic",
+          "name_format": "bold_italic",
+          "description": "The channeler has advantage on saving throws made to resist being charmed or enraged."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The channeler makes two weapon attacks."
+        },
+        {
+          "name": "Pseudothesite Lance",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 11 (1d12 \u002B 4) piercing damage plus 7 (2d6) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Thesite Recharge (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The channeler regains all spent uses of its Crystal Rewrite, Crystal Smite, or Crystal Shield."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Crystal Shield (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "In response to taking damage, the channeler may give themselves resistance to the triggering damage type (or types) until the start of their next turn, including against the triggering attack."
+        }
+      ]
+    }
+  ]
+}
