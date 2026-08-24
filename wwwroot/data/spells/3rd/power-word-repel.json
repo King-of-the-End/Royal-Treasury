@@ -1,0 +1,18 @@
+{
+  "Name": "Power Word Repel",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V",
+  "Duration": "Instantaneous",
+  "Description": "You speak a word of power, and one creature in range is hit by a burst of force, causing the target to make a Strength saving throw. On a failed save, they are pushed 30 feet in a direction you choose and are knocked prone. Creatures that are Huge or bigger have advantage on their Strength saving throw.\n\nIf the target strikes a solid surface that stops them, they must make a Constitution saving throw, taking 2d6 bludgeoning damage for every 10 feet they are stopped short, or half as much on a successful save. They do not take this damage unless they are pushed back at least 10 feet without stopping. If you choose to push a creature up off the ground, the distance they are pushed is halved.",
+  "At Higher Levels": "When casting this spell at 4th level or higher, the distance the creature is forced back increases by 15 feet for every slot level above 3rd. If this spell is cast using a spell slot of 7th level or higher, creatures with 100 hit points or fewer automatically fail their initial Strength saving throw.",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

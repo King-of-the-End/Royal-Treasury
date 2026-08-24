@@ -1,0 +1,23 @@
+{
+  "Name": "Bolganone",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (a charred piece of stone)",
+  "Duration": "Up to three rounds",
+  "Description": "You create a gigantic tidal wave of flame with a wave of your hand. This starts as a 10ft by 10ft cube within range that you can move up to 30-ft as part of casting this spell. When you do so, any creature that the flame tide passes through must pass a Dexterity Saving Throw or suffer 3d4 fire damage or half on a Success. The flaming area remains for up to three rounds or until you dismiss it as a free action.\n\nAny creature who starts or ends their turn in the fire's area suffers 2d4 fire damage as a pillar of fire bursts from scorched earth around them.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you deal an additional 1d4 damage on both damage sources and the flames remain for one round longer for each slot level above 1st.",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

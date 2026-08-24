@@ -1,0 +1,19 @@
+{
+  "Name": "Lightning Bolt",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Twisting Gale Path"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Self (100-foot line)",
+  "Components": "V, S, M (a bit of fur and a rod of amber, crystal, or glass)",
+  "Duration": "Instantaneous",
+  "Description": "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. The lightning ignites flammable objects in the area that aren’t being worn or carried.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you may choose one of the following effects for each level above 3rd:\n\n• The lightning damage increases by 1d6.\n• The line’s length increases by 50 feet.\n• (2 levels) Any creature who fails their saving throw by 5 points or more is stunned until the start of their next turn.\n• (2 levels) You may fire a second identical bolt of lightning in another direction. Creatures hit by two or more lightning bolts are only affected once.",
+  "Classes": [
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Paraprismatic Tempest",
+  "Tags": []
+}

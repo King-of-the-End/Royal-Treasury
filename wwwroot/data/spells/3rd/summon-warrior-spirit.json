@@ -1,0 +1,122 @@
+{
+  "Name": "Summon Warrior Spirit",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "90 feet",
+  "Components": "V, S, M (a gilded playing card depicting a knight worth at least 300 gp)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You call forth a warrior spirit from the legendary Deck of Many Things. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Warrior Spirit stat block. When you cast the spell, choose a type of warrior: barbarian, fighter, or monk. The warrior resembles a humanoid armed appropriately to the chosen class, which determines certain traits in its stat block. The warrior disappears when it drops to 0 hit points or when the spell ends.\n\nThe warrior is an ally to you and your companions. In combat, the warrior shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the creature assumes the higher level for that casting wherever it uses the spell’s level in its stat block.",
+  "Classes": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "D&D 5e",
+  "Tags": [],
+  "Special Notes": [
+    {
+      "type": "stat_block",
+      "stat_block_id": "warrior_spirit",
+      "placement": "After Spell",
+      "marker": "{{STAT_BLOCK:warrior_spirit}}",
+      "section_label": "Stat Block",
+      "instruction": "Render the matching Stat Blocks object as a dedicated Stat Block section after the spell."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "warrior_spirit",
+      "section_type": "Stat Block",
+      "title": "Warrior Spirit",
+      "placement": "After Spell",
+      "marker": "{{STAT_BLOCK:warrior_spirit}}",
+      "creature": {
+        "size": "Medium",
+        "type": "undead",
+        "alignment": ""
+      },
+      "armor_class": "13 + the level of the spell + 2 (Fighter only)",
+      "hit_points": "30 (Barbarian and Fighter only) or 20 (Monk only) + 10 for each spell level above 3rd",
+      "speed": {
+        "walk": "30 ft., 40 ft. (Monk only)"
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "check": "+3",
+          "save": "-"
+        },
+        "DEX": {
+          "score": 16,
+          "check": "+3",
+          "save": "-"
+        },
+        "CON": {
+          "score": 14,
+          "check": "+2",
+          "save": "-"
+        },
+        "INT": {
+          "score": 10,
+          "check": "+0",
+          "save": "-"
+        },
+        "WIS": {
+          "score": 16,
+          "check": "+3",
+          "save": "-"
+        },
+        "CHA": {
+          "score": 9,
+          "check": "-1",
+          "save": "-"
+        }
+      },
+      "saving_throws": [
+        "Str +3",
+        "Dex +3"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "poisoned"
+      ],
+      "senses": [
+        "passive Perception 13"
+      ],
+      "languages": "Common, understands the languages you speak",
+      "challenge_rating": "—",
+      "proficiency_bonus": "equals your bonus",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "description": "The warrior makes a number of attacks equal to half this spell’s level (rounded down)."
+        },
+        {
+          "name": "Reckless Strike (Barbarian Only)",
+          "description": "Melee Weapon Attack: your spell attack modifier to hit (with advantage), reach 5 ft., one target. Hit: 1d12 + 3 + the spell’s level slashing damage, and attacks made against the warrior until the start of its next turn are made with advantage."
+        },
+        {
+          "name": "Rallying Strike (Fighter Only)",
+          "description": "Melee or Ranged Weapon Attack: your spell attack modifier to hit, reach 5 ft., or range 20/60 ft., one target. Hit: 1d6 + 3 + the spell’s level piercing damage, and the warrior can choose another creature it can see within 20 feet of itself. The chosen creature gains 1d6 temporary hit points."
+        },
+        {
+          "name": "Unarmed Strike (Monk Only)",
+          "description": "Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 + 3 + the spell’s level bludgeoning damage, and the target must succeed on a Strength saving throw against your spell save DC or be knocked prone."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Flurry of Blows (Monk Only)",
+          "description": "The monk makes one Unarmed Strike attack."
+        }
+      ],
+      "raw_text": "WARRIOR SPIRIT\nMedium undead\nArmor Class: 13 + the level of the spell + 2 (Fighter only)\nHit Points: 30 (Barbarian and Fighter only) or 20 (Monk only) + 10 for each spell level above 3rd\nSpeed: 30 ft., 40 ft. (Monk only)\nSaving Throws: Str +3, Dex +3\nDamage Resistances: poison\nCondition Immunities: charmed, poisoned\nSenses: passive Perception 13\nLanguages: Common, understands the languages you speak\nChallenge: —\nProficiency Bonus: equals your bonus\nACTIONS\nMultiattack. The warrior makes a number of attacks equal to half this spell’s level (rounded down).\nReckless Strike (Barbarian Only). Melee Weapon Attack: your spell attack modifier to hit (with advantage), reach 5 ft., one target. Hit: 1d12 + 3 + the spell’s level slashing damage, and attacks made against the warrior until the start of its next turn are made with advantage.\nRallying Strike (Fighter Only). Melee or Ranged Weapon Attack: your spell attack modifier to hit, reach 5 ft., or range 20/60 ft., one target. Hit: 1d6 + 3 + the spell’s level piercing damage, and the warrior can choose another creature it can see within 20 feet of itself. The chosen creature gains 1d6 temporary hit points.\nUnarmed Strike (Monk Only). Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 + 3 + the spell’s level bludgeoning damage, and the target must succeed on a Strength saving throw against your spell save DC or be knocked prone.\nBONUS ACTIONS\nFlurry of Blows (Monk Only). The monk makes one Unarmed Strike attack."
+    }
+  ]
+}

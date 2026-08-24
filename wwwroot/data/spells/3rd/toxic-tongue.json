@@ -1,0 +1,20 @@
+{
+  "Name": "Toxic Tongue",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Your mouth gains the ability to create a virulent poison for the duration. You can use your poison in two ways:\n\n**Poison Spit.** As a bonus action, you can spray a stream of poison from your mouth, targeting one creature you can see within 30 feet of you. The target makes a Constitution saving throw. On a failure, they take 3d10 poison damage.\n\n**Poison Weapon.** As a bonus action, you can apply your poison to a melee weapon or piece of ammunition on your person or carried by a willing creature within 5 feet of you. The poison’s potency lasts until the start of your next turn. If the poisoned weapon hits a creature, the target of the attack must make a Constitution saving throw, taking 3d6 poison damage on a failure, or half as much on a success. The poison has no effect if ingested.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage of the poison increases by 1d8 for each slot level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Warlock"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

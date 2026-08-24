@@ -1,0 +1,19 @@
+{
+  "Name": "Shatterfloor",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (60-foot cone)",
+  "Components": "V, S, M (a tuning fork)",
+  "Duration": "Instantaneous",
+  "Description": "You unleash a thrumming crescendo across a solid surface in a 60-foot cone. Creatures in the area must make a Constitution saving throw, taking 7d6 thunder damage on a failure, or half as much on a success. If the surface is made of nonmagical stone, wood, ice, or material with a hardness less than those, the floor is pulverized, becoming difficult terrain.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

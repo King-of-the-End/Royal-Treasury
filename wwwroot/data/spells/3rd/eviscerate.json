@@ -1,0 +1,21 @@
+{
+  "Name": "Eviscerate",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [
+    "Sky-Keeper’s Arcana"
+  ],
+  "Casting Time": "1 reaction, taken when a creature within range dies",
+  "Range": "60 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "When a creature in range dies, their blood and physical tissue become explosive, and their body detonates in a wave of necrotic energy. Creatures within 10 feet of them must make a Dexterity saving throw, taking 8d6 necrotic damage on a failed save, or half as much on a successful one. If this blast kills another creature, roll 1d100 for each. On a result of 61 or higher, their body also explodes with necrotic energy, except it only affects creatures within 5 feet. Creatures who fail their Dexterity save against it only take 2d6 necrotic damage on a failed save, and none on a successful one. Creatures who fail the first saving throw are excluded from the second.\n\nThis spell can only affect creatures that are Small, Medium or Large. For every size category above Medium the target hits, the range of the detonation increases by 10 feet (or 5 feet, for the secondary detonations).\n\nA body destroyed by this spell is treated as having been dead for a full day, due to being withered and blasted apart.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you can choose one of the following effects for each slot level above 3rd:\n\n• The size of creature you can target increases by one size category.\n• The primary and secondary necrotic damage of this spell increase by 1d6.",
+  "Classes": [
+    "Druid",
+    "Dusksworn",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

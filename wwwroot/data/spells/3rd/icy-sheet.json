@@ -1,0 +1,18 @@
+{
+  "Name": "Icy Sheet",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "Special",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You move 10 feet in any direction, up to a number of times equal to your spellcasting ability modifier (minimum of 1), creating a 5-foot-square, 1-foot-thick sheet of ice in your wake. This movement does not provoke opportunity attacks. You can end your movement on any side of the resulting sheet. If the sheet cuts through a creature’s space when it appears, the creature within its area is pushed to one side of the wall of your choice. The ice can be clear or opaque (your choice), but each section must have the same opacity. The sheet lasts for 1 minute or until it is destroyed.\n\nThe sheet is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of sheet to 0 hit points destroys it, and if a section is destroyed that leaves any other section unsupported or unsuspended, those sections are also destroyed.\n\nA Medium or smaller creature attempting to climb the sheet must succeed on a Strength (Athletics) check against your spell save DC or fall prone, even if the creature has a climbing speed or is under the effects of the spider climb spell.\n\nA Medium or smaller creature attempting to climb the sheet as if climbing a wall must also succeed on a Strength (Athletics) check against your spell save DC or fall prone, even if the creature has a climbing speed or is under the effects of the spider climb spell.\n\nA Medium or smaller creature attempting to traverse the sheet’s flat surface area for the first time on a turn or that starts its turn upon it must make a Dexterity saving throw. On a failed save, it falls prone.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

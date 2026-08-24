@@ -1,0 +1,20 @@
+{
+  "Name": "Aquatic Razor",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "40 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You summon a wide arc of high pressure water that you hurl forward. Each creature in a 10-foot wide and 40-foot long line in front of you must succeed on a Dexterity saving throw or take 7d4 slashing damage on a failure, or half as much on a success.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 2d4 for each slot level.",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Abyssal Depths",
+  "Tags": []
+}

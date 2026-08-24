@@ -1,0 +1,23 @@
+{
+  "Name": "Sequester Persona",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [
+    "Sealed Words",
+    "Sinful Codex"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You speak your name to cast it aside, and seal away your sense of self entirely, casting away your identity until the spell ends. During this time, you are considered to have no creature type, race, subrace, or alignment, and you cannot be targeted directly by spells cast at the same level as this spell or lower, or by effects that require a saving throw, as the effects are incapable of determining what their target must be. You may still be affected by spells that target the space you occupy.\n\nSpells cast at a level higher than the level this spell is cast at may attempt to target you, but the caster must succeed a spellcasting ability check made against your spell save DC when they attempt to. On a failure, you are not targeted, and the caster may choose to either select a new target for the same spell or lose the spell as it was cast.\n\nFurthermore, while affected by this spell you cannot be detected by divination spells or effects that would divine your location or condition by targeting you.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

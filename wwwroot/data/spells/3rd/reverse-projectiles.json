@@ -1,0 +1,22 @@
+{
+  "Name": "Reverse Projectiles",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S, M (a tortoiseshell fragment)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You wrap yourself in a nimbus of lavender light which sheds dim light in a 5-foot-radius and deflects projectiles.\n\nFor the duration, when you are hit by a ranged attack, the damage you take from it is reduced by 1d10 + your spellcasting ability modifier. If the spell reduces the projectile's damage to 0, the missile is turned back upon the creature that attacked you.\n\nThe original attack roll is used to determine if the reversed projectile strikes your attacker, but the damage is rerolled using the original attacker's modifiers and bonuses.\n\nIf an attack bounces back toward a creature that is also protected by this spell, it is immediately reduced to 0 damage and the ammunition is destroyed or its magical energies dispersed.\n\nYou can also use this spell to dispel the effects of a missile magnet spell you have been affected by.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Cleric",
+    "Favored Soul",
+    "Paladin",
+    "Petal Knight",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

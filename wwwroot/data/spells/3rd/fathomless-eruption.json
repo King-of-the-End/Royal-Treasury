@@ -1,0 +1,19 @@
+{
+  "Name": "Fathomless Eruption",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 10 minute",
+  "Description": "A massive column of boiling steam erupts from a point you designate within range. Each creature in a cylinder that is 60-foot tall with a 10-foot radius must succeed on a Dexterity saving throw or take 4d10 fire damage, or half as much on a success. This fire damage cannot be resisted as a result of being underwater.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level.",
+  "Classes": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Abyssal Depths",
+  "Tags": []
+}

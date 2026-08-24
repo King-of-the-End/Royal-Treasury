@@ -1,0 +1,18 @@
+{
+  "Name": "Perplex",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (faerie dust)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You target one creature you can see within range, and attempt to wreak havoc among its thoughts.\n\nThe target must make a Wisdom saving throw. On a failed save, at the start of each of its turns it:\n\n• Rolls 1d6.\n• Takes psychic damage equal to the number rolled.\n• Subtracts that number from all attack rolls, ability checks, and concentration checks it makes until the start of its next turn.\n\nThe target repeats the saving throw at the end of each of its turns, ending the spell on a success.\n\nCreatures with an Intelligence score of 2 or lower are immune to this spell.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

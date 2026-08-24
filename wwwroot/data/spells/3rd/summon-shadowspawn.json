@@ -1,0 +1,123 @@
+{
+  "Name": "Summon Shadowspawn",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "90 feet",
+  "Components": "V, S, M (tears inside a crystal vial worth at least 300 gp)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You call forth a shadowy spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Shadow Spirit stat block. When you cast the spell, choose an emotion: Fury, Despair, or Fear. The creature resembles a misshapen biped marked by the chosen emotion, which determines certain traits in its stat block. The creature disappears when it drop to 0 hit points or when the spell ends.\n\nThe creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after your. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and it uses its move to avoid danger.",
+  "At Higher Levels": "When you cast the spell using a spell slot of 4th level or higher, use the higher level wherever the spell’s level appears on the stat block.",
+  "Classes": [
+    "Dusksworn",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "D&D 5e",
+  "Tags": [],
+  "Special Notes": [
+    {
+      "type": "stat_block",
+      "stat_block_id": "shadow_spirit",
+      "placement": "After Spell",
+      "marker": "{{STAT_BLOCK:shadow_spirit}}",
+      "section_label": "Stat Block",
+      "instruction": "Render the matching Stat Blocks object as a dedicated Stat Block section after the spell."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "shadow_spirit",
+      "section_type": "Stat Block",
+      "title": "Shadow Spirit",
+      "placement": "After Spell",
+      "marker": "{{STAT_BLOCK:shadow_spirit}}",
+      "creature": {
+        "size": "Medium",
+        "type": "monstrosity",
+        "alignment": ""
+      },
+      "armor_class": "11 + the level of the spell (natural armor)",
+      "hit_points": "35 + 15 for each level of the spell above 3rd",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "check": "+1",
+          "save": "-"
+        },
+        "DEX": {
+          "score": 16,
+          "check": "+3",
+          "save": "-"
+        },
+        "CON": {
+          "score": 15,
+          "check": "+2",
+          "save": "-"
+        },
+        "INT": {
+          "score": 4,
+          "check": "-3",
+          "save": "-"
+        },
+        "WIS": {
+          "score": 10,
+          "check": "+0",
+          "save": "-"
+        },
+        "CHA": {
+          "score": 16,
+          "check": "+3",
+          "save": "-"
+        }
+      },
+      "resistances": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 10"
+      ],
+      "languages": "understands the languages you speak",
+      "challenge_rating": "—",
+      "proficiency_bonus": "equals your bonus",
+      "traits": [
+        {
+          "name": "Terror Frenzy (Fury Only)",
+          "description": "The spirit has advantage on attack rolls against frightened creatures."
+        },
+        {
+          "name": "Weight of Sorrow (Despair Only)",
+          "description": "Any creature, other than you, that starts its turn within 5 feet of the spirit has its speed reduced by 20 feet until the start of that creature’s next turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "description": "The spirit makes a number of attacks equal to half this spell’s level (rounded down)."
+        },
+        {
+          "name": "Chilling Hand",
+          "description": "Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d12 + 3 + the spell’s level cold damage."
+        },
+        {
+          "name": "Dreadful Scream (1/Day)",
+          "description": "The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom saving throw against your spell save DC or be frightened of the spirit for 1 minute. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Shadow Stealth (Fear Only)",
+          "description": "While in dim light or darkness, the spirit takes the Hide action."
+        }
+      ],
+      "raw_text": "SHADOW SPIRIT\nMedium monstrosity\nArmor Class: 11 + the level of the spell (natural armor)\nHit Points: 35 + 15 for each level of the spell above 3rd\nSpeed: 40 ft.\nDamage Resistances: necrotic\nCondition Immunities: frightened\nSenses: darkvision 120 ft., passive Perception 10\nLanguages: understands the languages you speak\nChallenge: —\nProficiency Bonus: equals your bonus\nTRAITS\nTerror Frenzy (Fury Only). The spirit has advantage on attack rolls against frightened creatures.\nWeight of Sorrow (Despair Only). Any creature, other than you, that starts its turn within 5 feet of the spirit has its speed reduced by 20 feet until the start of that creature’s next turn.\nACTIONS\nMultiattack. The spirit makes a number of attacks equal to half this spell’s level (rounded down).\nChilling Hand. Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d12 + 3 + the spell’s level cold damage.\nDreadful Scream (1/Day). The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom saving throw against your spell save DC or be frightened of the spirit for 1 minute. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\nBONUS ACTIONS\nShadow Stealth (Fear Only). While in dim light or darkness, the spirit takes the Hide action."
+    }
+  ]
+}

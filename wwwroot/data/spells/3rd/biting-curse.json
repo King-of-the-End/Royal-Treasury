@@ -1,0 +1,23 @@
+{
+  "Name": "Biting Curse",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [
+    "Legacy",
+    "Sealed Words"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose one of the following options to dictate the nature of the curse:\n\n• Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.\n• While cursed, the target has disadvantage on attack rolls against you.\n• While cursed, the target must make a Wisdom saving throw at the start of each of their turns. If they fail, they waste their action that turn doing nothing.\n• While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.\n• While the target is cursed they are blinded to anything 30 feet or further away from themselves regardless of their senses.\n• While cursed, the target receives only half as much healing as it normally would, and any effect that would restore 10 or fewer hit points to them restores none instead.\n\nA remove curse spell ends this effect. Its effects cannot be removed by spells that normally remove or dispel magical effects unless they also target curses. Your GM may allow you to create additional curse effects in addition or in place of those listed above.",
+  "At Higher Levels": "If you cast this spell at 4th-level or higher, you may choose one of the following bonuses for each slot level above 3rd:\n\n• You may concentrate on the spell for up to 10 minutes, up to 8 hours (2 slot levels), up to 24 hours (4 slot levels), or have it be permanent unless dispelled (6 slot levels). If the spell lasts 8 or more hours it does not require concentration.\n• You may choose one additional target, who suffers the same effects.\n• (2 slot levels) You may choose an additional effect to apply to the spell’s target.",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

@@ -1,0 +1,19 @@
+{
+  "Name": "Dead-Air Sphere",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Chronurgy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "M, S (a metal orb)",
+  "Duration": "Instantaneous",
+  "Description": "You summon a monochromatic sphere that falls down around a point of your choice that you can see, encompassing a 30-ft radius. All creatures within the area must pass a Dexterity Saving Throw or have their perception of time cut out for a brief second, causing them to suffer 6 Tremor and then trigger Tremor Burst, or only suffer half that count on a success.",
+  "At Higher Levels": "For each Spell Slot Level spent above 3rd you deal an additional 2 Tremor.",
+  "Classes": [
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

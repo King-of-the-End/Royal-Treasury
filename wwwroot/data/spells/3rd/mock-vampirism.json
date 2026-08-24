@@ -1,0 +1,17 @@
+{
+  "Name": "Mock Vampirism",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 Action.",
+  "Range": "30 ft.",
+  "Components": "S, M (A Prickly Red Rose)",
+  "Duration": "Up to three rounds. (Concentration)",
+  "Description": "You point toward a creature within reach and toss the rose at them, pricking the back of their neck and causing them to develop a temporary Vampirism that turns their eyes red and afflicts them with other Vampiresque physical traits of your choice. For the duration the Vampirized creature recovers Hit Points equal to any piercing or necrotic damage dealt. If by the end of their turn they haven't recovered Hit Points this way, they suffer one point of Exhaustion as the curse eats away at them.\n\nWhile Vampirized, the creature also develops natural weapons in the form of sharp fangs and claws that they become proficient with, having the Finesse property and dealing 1d8 piercing damage on a hit. Whenever the Vampirized creature would recover Hit Points, they recover only half that amount (rounded down) if they didn't do so through these natural weapons.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Dusksworn",
+    "Warlock"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

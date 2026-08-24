@@ -1,0 +1,20 @@
+{
+  "Name": "Cursed Dragon Spears",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, S, M (a small bar of obsidian coated in charcoal powder)",
+  "Duration": "10 minutes",
+  "Description": "You summon a series of glowing spears made of ash and obsidian that float around you for the duration of the spell. These spears are intangible until you reach for them. Once when you conjure them, and again on each of your turns as a bonus action, you can use them to make a melee spell attack against a creature within 5 feet of you, or a ranged spell attack against a target within 30 feet. On a hit, the target takes piercing damage equal to 2d8 plus your spellcasting ability modifier.\n\nAlso, when you hit with one of these spears, you can invoke one of the following effects (which you choose for each hit). Any of these effects can be removed by spells and effects that remove curses:\n\n**Armor Break.** If the creature has a bonus to AC caused by armor that isn’t natural armor, their bonus to AC from that armor suffers a -1 penalty for 1 hour. This effect can be inflicted multiple times.\n\n**Burst Flare.** The attack from the spear deals an extra 2d8 points of chromatic energy damage.\n\n**Clumsy Step.** The target’s movement speed is reduced to half until the start of your next turn.\n\n**Strength Burn.** The target must succeed a Strength saving throw or have disadvantage on attack rolls until the end of their next turn.\n\n**Spell Skewer.** If the target is concentrating on a spell, they must make a Concentration check against your spell save DC. On a failure, they lose concentration.\n\n**Weakening Curse.** The target must succeed a Charisma saving throw or be cursed for 1 minute. You have resistance to damage dealt by a creature cursed this way. A creature cursed by this effect can repeat the save at the end of each of their turns, ending the effect on a success.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you can choose one of the following effects for each slot level above 3rd:\n\n• The spears gain a +1 enhancement bonus. You can take this effect up to four times, increasing the bonus by +1 each time after the first.\n• (2 slot levels) When you make an attack with one of these spears, you make one additional attack with them as well.",
+  "Classes": [
+    "Cleric",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

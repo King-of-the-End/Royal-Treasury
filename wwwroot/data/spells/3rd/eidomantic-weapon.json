@@ -1,0 +1,24 @@
+{
+  "Name": "Eidomantic Weapon",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Eidomancy"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "You touch a nonmagical weapon and fill it with eidomantic energy, turning it into a magical weapon with a +2 bonus to attack and damage rolls. For the spell’s duration the weapon deals one additional damage die, its damage (and damage done by its ammunition) is considered eidolic and magical, and if you are wielding the weapon you can make one attack with it as a bonus action.\n\nYou can also cast this spell on a magical weapon, but when you do the bonus to attack and damage rolls is reduced by 2.",
+  "At Higher Levels": "When you cast this spell at 5th level or higher, you can choose one of the following effects for every two slot levels above 3rd:\n\n• The bonus to attack and damage rolls increases by 1 (to a maximum +4).\n• You can target one additional weapon you can touch.\n• The weapon deals an additional damage die on a successful hit.",
+  "Classes": [
+    "Bladebearer",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

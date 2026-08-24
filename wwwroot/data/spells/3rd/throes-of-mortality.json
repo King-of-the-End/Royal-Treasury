@@ -1,0 +1,19 @@
+{
+  "Name": "Throes of Mortality",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [
+    "Chromatic Convocation"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (glass rings strung together on an iron chain, each ring worth at least 50 gp. A ring is consumed by the spell for every target affected.)",
+  "Duration": "1 hour",
+  "Description": "Choose up to five creatures you can see within range. Each creature must make a Charisma saving throw.\n\nA twisting ring of glyphs appears around the necks and foreheads of any creature that fails, causing them intense pain for the spell's duration. During this time they are cursed.\n\nWhile cursed:\n\n• Any healing they receive is reduced to half (rounded down).\n• If they have immunities or resistances to any chromatic energy types, those become resistances or are ignored, respectively, for the spell's duration.\n• At the beginning of each of their turns, they take 1d6 psychic damage.\n\nIf you are reduced to 0 hit points or knocked unconscious, this spell immediately ends.\n\nAdditionally, if a creature cursed by this spell is reduced to 0 hit points, it immediately fails one death saving throw, then the spell ends for that creature.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, choose one of the following effects for each slot level above 3rd:\n\n• The spell's range doubles.\n• The spell can target one additional creature.\n\n(Costs 2 slot levels.) The spell's psychic damage increases by 1d6.",
+  "Classes": [
+    "Dusksworn",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

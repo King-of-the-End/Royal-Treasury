@@ -1,0 +1,22 @@
+{
+  "Name": "Solar Implosion",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Legacy of Gold"
+  ],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "S, M (a red glove, gauntlet or coating of some kind on your hand)",
+  "Duration": "Instantaneous",
+  "Description": "You raise your hand toward a point you can see within range and clench it into a fist, causing a gravitational detonation followed by an immediate implosion to erupt in a 20-foot radius sphere centered there. All creatures in that space are blasted outward then pulled swiftly inward, and must make a Strength saving throw.\n\nOn a failure a creature takes 4d8 force damage and is knocked prone. Creatures that fail are also pulled 10 feet toward the center of the implosion, stopping if they collide with anything solid. Creatures who succeed their save take half damage and are not knocked prone or pulled.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you can choose one of the following options for each spell level above 3rd:\n\n• The force damage increases by 1d8.\n• The radius of the sphere increases by 10 feet, and the distance creatures are pulled increases by 5 feet.",
+  "Classes": [
+    "Cleric",
+    "Dusksworn",
+    "Paladin",
+    "Petal Knight",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

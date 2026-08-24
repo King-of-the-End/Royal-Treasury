@@ -1,0 +1,18 @@
+{
+  "Name": "Pyroclasm",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (a shard of obsidian or pumice)",
+  "Duration": "Instantaneous",
+  "Description": "A cloud of volatile fumes and scorching lava erupts forth at a point you choose in range. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw, taking 2d8 fire damage and 2d8 poison damage on a failure, or half as much damage on a successful one.\n\nAfter damage is dealt, the spell's area of effect is filled by the cloud of fumes and ash, lightly obscuring the area. At the start of your next turn, the cloud ignites. Each creature in the area must make a Dexterity saving throw. A target takes 4d8 fire damage on a failure, or half as much damage on a successful one. Afterwards, the cloud vanishes.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the initial fire or poison damage (your choice when you cast the spell) increases by 1d8 for each slot level above 3rd.",
+  "Classes": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

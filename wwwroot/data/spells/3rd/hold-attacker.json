@@ -1,0 +1,22 @@
+{
+  "Name": "Hold Attacker",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Skulker’s Grimoire"
+  ],
+  "Casting Time": "1 reaction, taken in response to a non-undead humanoid creature within the spell’s",
+  "Range": "missing you with an attack Range 30 feet",
+  "Components": "V, S, M (a small, straight piece of iron)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "The creature who triggers this reaction must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of their turns, the target can make another Wisdom saving throw, ending the spell’s effects on a success.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 6th level or higher, you can use this spell to target any attacker regardless of their creature type. If you cast this spell at 8th level or higher, the target is paralyzed until the end of their turn regardless of the result of their saving throw.",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Inscriptor",
+    "Petal Knight",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

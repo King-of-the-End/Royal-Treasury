@@ -1,0 +1,18 @@
+{
+  "Name": "Explosion",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "150 feet",
+  "Components": "V",
+  "Duration": "Instant",
+  "Description": "Shadows darker than darkness expand out of your arcane focus, while a deep crimson circle appears around the blast radius before erupting. Every creature within a 20-foot-radius sphere centered on a point you choose within range must make a Dexterity saving throw, taking 10d6 fire damage on a failed save, or half as much damage on a successful one. When the spell has finished casting you fall prone, your speed drops to 0, and you become incapacitated until after your next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the base damage increases by 1d6 for each slot level above 3rd.",
+  "Classes": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blaine's Anime in DnD Series",
+  "Tags": []
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Talkative Growth",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "S, M (a ground blue mushroom)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You create a small fungal growth on your hand and another on the target creature's neck, arm or even under their clothes, barely being felt besides of a small bump that shares the target's warmth. The fungus in your hand has a mouth and replicates any sounds heard within a radius of your choice around the target creature, to a maximum of 60-ft.\n\nThere is no limit to how far you may move away from the Growth after it is placed, but it instantly vanishes if covered by metal or if you and the target creature is in another plane of existence compared to you. The target creature can only perceive the Growth through an active Perception check whose DC is equal to your Spell Save DC plus your Stealth modifier. As a reaction to when a creature you can see would try to perceive the Growth while within 30-ft. of you, you may impose disadvantage on that check by moving the Growth to dissolve and reform on another part of the target's body, possibly making it harder to notice.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the spell's duration increases by 1 hour for each slot level above 3rd. This spell doesn't require Concentration when cast with a 6th-level spell slot or greater, and lasts Until Dispelled if cast with a 9th-level spell slot.",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

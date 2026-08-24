@@ -1,0 +1,23 @@
+{
+  "Name": "Vortex Quiver",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Epic of Duality",
+    "Twisting Gale Path"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You imbue a weapon with a swirling whirlwind. When you make a ranged attack with that weapon, its hits deal an extra 1d8 force damage, and if the target is no more than one size category larger than the size of creature the weapon is intended for, they must make a Strength saving throw. On a failure, one of the following two effects occurs (your choice):\n\n• The target is shoved back 10 feet, stopping if they collide with a solid surface. For every 10 feet they are stopped short, they take 1d6 bludgeoning damage.\n• The target is knocked prone.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, choose one of the following effects for each slot level above 3rd:\n\n• The size of creatures that the Strength save can target increases by one category.\n• The target is pushed back 10 additional feet.\n• For every two slot levels above 3rd, the extra force damage also increases by 1d8.",
+  "Classes": [
+    "Bard",
+    "Druid",
+    "Inscriptor",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

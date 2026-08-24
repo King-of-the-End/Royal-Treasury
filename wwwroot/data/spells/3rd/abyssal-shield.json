@@ -1,0 +1,24 @@
+{
+  "Name": "Abyssal Shield",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "1 hour",
+  "Description": "You summon water around your wrist in the form of a shield. For the duration your AC increases by 1. In addition you can, as a reaction, each time you take damage, expand the shield’s size to cover your whole body and protect you. If you do so you reduce the triggering damage by 1d10 + your spellcasting modifier. Once you’ve used this reaction 5 times the spell ends.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you can use the reaction 2 additional times for each slot level.",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Favored Soul",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Abyssal Depths",
+  "Tags": []
+}

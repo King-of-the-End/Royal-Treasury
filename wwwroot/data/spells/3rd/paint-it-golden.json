@@ -1,0 +1,19 @@
+{
+  "Name": "Paint it Golden",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "Action",
+  "Range": "60 feet",
+  "Components": "V, S, M (A rotten fruit)",
+  "Duration": "Up to one minute.",
+  "Description": "You hold the apple high above your head, a golden sheen manifesting around it before it vanishes as if it's skin was peeling off. That golden sheen then appears in a spiral pattern over the skin of a target creature within reach, who may pass a Wisdom Saving Throw if unwilling to endure the spell's effects, suffering nothing on a success. Otherwise, they gain 3 Golden Sheen count. While with Golden Sheen, that creature recovers 1d8+2 hit points at the end of their turns, but loses one count whenever they are hit by an attack.\n\nUpon the last count of Golden Sheen being removed, the patterns on the creature's skin constrict and burst into vermin and larvae, inflicting them with double the initial counts of Golden Sheen in Rotting Flesh count. While suffering Rotting Flesh, the creature suffers half the count's worth of d8 acid damage whenever they suffer damage, rounded down. After suffering this damage, they lose two counts of the Condition.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, you inflict an additional count of Golden Sheen for each second slot level above 3rd, such as 5th level, 7th level and 9th level.",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

@@ -1,0 +1,16 @@
+{
+  "Name": "Fortify Familiar",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "10 minutes",
+  "Range": "10 feet",
+  "Components": "V, S, M (charcoal, incense, and herbs worth at least 20 gp, which the spell consumes)",
+  "Duration": "24 hours",
+  "Description": "You empower a familiar in your service, keeping its current form, or altering it to new one, choosing from the options in the find familiar spell, or another form the DM has approved. The fortified familiar gains these benefits:\n\n• Your familiar uses your proficiency bonus rather than its own, and becomes proficient with all saving throws.\n• For each level you have gained after 3rd, your familiar gains an additional hit die and increases its hit points accordingly.\n• Your familiar’s AC and damage rolls receive a bonus equal to your proficiency bonus minus 2.\n• If you have gained the Ability Score Improvement class feature, your familiar’s abilities also improve. For each of these features you have attained, your familiar can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. Your familiar can’t increase an ability score above 20. Using the optional feats rule, you can forgo this feature to take a feat of your choice from the Familiar Feats list instead.\n\nIn combat, your empowered familiar shares your initiative count, and takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you command it otherwise (no action required). Once on your turn when you take the Attack action or cast a spell, you can command your familiar to use its reaction to make one attack, adding your spellcasting ability modifier to the damage roll on a hit.\n\nYour familiar remains empowered for the duration, after which it reverts to its usual state.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

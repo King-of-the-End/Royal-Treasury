@@ -1,0 +1,19 @@
+{
+  "Name": "Deceptive Mark",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Choose one target within range. That creature must make a Wisdom saving throw or become marked by this spell.\n\nFor the duration, an invisible band appears over the target's eyes that only creatures capable of seeing invisible objects can perceive, appearing as a band of cloth wrapped around their head.\n\nCreatures marked by this spell cannot see you, treating you as though you were invisible.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature within range for every slot level above 3rd.",
+  "Classes": [
+    "Druid",
+    "Dusksworn",
+    "Inscriptor",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

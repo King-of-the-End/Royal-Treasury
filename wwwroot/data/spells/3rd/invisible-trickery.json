@@ -1,0 +1,19 @@
+{
+  "Name": "Invisible Trickery",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "For the duration, roll a d20 at the end of each of your turns. On a roll of 11 or higher, you become invisible until the start of your next turn. Anything you are wearing or carrying is invisible as long as it is on your person. Your invisibility ends early if you attack a creature, cast a spell, or use your reaction.\n\nOnce the spell causes you to become invisible twice, or a number of times equal to your spellcasting ability modifier (whichever is higher), the spell ends at the start of your next turn when your invisibility expires.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Shamwood Stakeout",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "10 feet",
+  "Components": "V, S",
+  "Duration": "8 hours",
+  "Description": "A spectral watchman appears in a space within the spell’s range, invisibly watching over the area. You may describe criteria to it for anything it should watch out for while it exists. While it remains, as long as you are within 1 mile of the invisible watchman, it will alert you to anything suspicious it sees in the most basic terms possible, such as “enemy”, “lurker”, “monster”, etc., It rolls Wisdom (Perception) checks using your spellcasting ability modifier plus your proficiency bonus as its modifier for the skill check and has a passive Perception equal to your spell save DC. It has darkvision out to 120 feet, and is blind beyond that range.\n\nIf you are sleeping when you are alerted by it, you are instantly awoken. If you would be surprised by enemies normally but are awoken by this spell, you may act normally instead.\n\nIf any creature can see invisible creatures, it can attack the invisible watchman as if it had an AC equal to your spell save DC, and all saving throws it makes are made using your spellcasting ability plus your proficiency bonus. It never takes damage from effects that it succeeds saves against. If it takes any damage the spell ends prematurely.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Inscriptor",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

@@ -1,0 +1,66 @@
+{
+  "Name": "Firther’s Shadow",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "90 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You warp and distort the memories of a creature you can see within range, bringing forth hideous and disturbing mental images. The creature must make an Intelligence saving throw. On a failed save, the creature takes 4d10 psychic damage and you learn something about the creature (roll a d6 and consult the following table): {{TABLE:firthers_shadow_thing_learnt}}\n\nOn a successful save, the creature takes half as much damage and you don't learn anything. A creature with an Intelligence score of 4 or lower automatically succeeds on the saving throw.\n\nIf a creature fails the initial saving throw then, on each of your turns for the duration, you can use your action to force the creature to make an Intelligence saving throw. On a failure, the creature takes 4d6 psychic damage and you learn something about the creature (roll a d6 and consult the table above). On a success, the creature takes half as much damage, you don't learn anything, and the spell ends. The spell also ends if the target is ever outside the spell's range.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the initial and ongoing damage increases by 1d10 and 1d6, respectively, for each slot level above 3rd.",
+  "Classes": [
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Helianas Guide to Monster Hunting",
+  "Tags": [],
+  "Special Notes": [
+    {
+      "type": "table",
+      "table_id": "firthers_shadow_thing_learnt",
+      "placement": "Description",
+      "marker": "{{TABLE:firthers_shadow_thing_learnt}}",
+      "instruction": "Replace this marker with the table whose id matches table_id when rendering the spell."
+    }
+  ],
+  "Tables": [
+    {
+      "id": "firthers_shadow_thing_learnt",
+      "title": "Thing Learnt",
+      "placement": "Description",
+      "marker": "{{TABLE:firthers_shadow_thing_learnt}}",
+      "columns": [
+        "d6",
+        "Thing Learnt"
+      ],
+      "rows": [
+        {
+          "d6": "1",
+          "Thing Learnt": "The creature's name"
+        },
+        {
+          "d6": "2",
+          "Thing Learnt": "Something the creature fears"
+        },
+        {
+          "d6": "3",
+          "Thing Learnt": "Something the creature desires"
+        },
+        {
+          "d6": "4",
+          "Thing Learnt": "The creature's condition immunities"
+        },
+        {
+          "d6": "5",
+          "Thing Learnt": "The creature's damage vulnerabilities, resistances, and immunities"
+        },
+        {
+          "d6": "6",
+          "Thing Learnt": "The creature's skill and saving throw proficiencies"
+        }
+      ]
+    }
+  ]
+}

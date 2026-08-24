@@ -1,0 +1,19 @@
+{
+  "Name": "Luck",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S, M (a four-leaf clover or rabbit’s foot)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You touch a willing creature and imbue them with good fortune. For the duration, the target gains 2 Luck points, which last for the duration. When the recipient makes an ability check, attack roll, or saving throw, they can spend a Luck point to gain advantage on the roll. They can also use their reaction to expend a Luck point to reroll a number of damage dice for a spell or weapon attack up to your spellcasting ability modifier (minimum of 1), and accept either result.\n\nOnce the target spends a Luck point, they cannot spend another until the start of their next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the target gains 1 additional Luck point for each slot level above 3rd.",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

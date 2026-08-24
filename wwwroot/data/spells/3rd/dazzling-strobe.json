@@ -1,0 +1,22 @@
+{
+  "Name": "Dazzling Strobe",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "20 feet",
+  "Components": "S, M (faerie dust)",
+  "Duration": "Instantaneous",
+  "Description": "You emit a flickering light with wild intensity.\n\nEach creature within 20 feet of you that can see you must make a Constitution saving throw.\n\nOn a failed save, the creature is incapacitated until the end of its next turn, and any concentration effects it is maintaining are immediately interrupted.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

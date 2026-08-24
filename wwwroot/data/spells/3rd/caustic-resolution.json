@@ -1,0 +1,22 @@
+{
+  "Name": "Caustic Resolution",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Daemoturgy"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "120 feet",
+  "Components": "V, S, M (a small carving of a head with a nail through it)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "If a creature is concentrating on a spell or benefiting from a magical effect that targets only them, you may attempt to cause the build-up of magical energy to burn away at their flesh. The target must succeed on a Constitution saving throw. On a failure, at the start of each turn when the creature is concentrating on a spell or benefiting from a magical effect from a spell, they take 1d6 acid damage. During this time, the creature has disadvantage on concentration checks. If they lose concentration or they benefit from no magical effects, this spell ends immediately.",
+  "At Higher Levels": "When you cast this spell at 5th level or higher, the damage the target takes increases by 1d6 for every two spell slot levels above 3rd.",
+  "Classes": [
+    "Bard",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

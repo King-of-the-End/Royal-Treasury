@@ -1,0 +1,20 @@
+{
+  "Name": "Arcana Abjurative",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [
+    "Sky-Keeper’s Arcana"
+  ],
+  "Casting Time": "1 action",
+  "Range": "10 feet",
+  "Components": "V, S, M (a spell scroll containing a spell of 3rd level or higher, which this spell consumes)",
+  "Duration": "1 hour",
+  "Description": "Choose one creature within the spell’s range: for the spell’s duration they have advantage on saving throws against spells and magical effects.",
+  "At Higher Levels": "When you cast this spell at 4th-level or higher, you can choose one additional creature within range for each slot level above 3rd.",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

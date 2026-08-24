@@ -1,0 +1,20 @@
+{
+  "Name": "Time Bomb",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (a working watch)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You cause a well of pressure to build from within a creature you can see within range, turning them into a living bomb. The target must make a Constitution saving throw. On a failure, they take 3d6 force damage, and their movement speed is halved. On a success, they take half the amount and are otherwise unaffected. Elementals and creatures immune to the grappled condition succeed their saving throw automatically. An affected creature repeats its saving throw at the end of each of their turns, ending the effect on a success.\n\nFor the duration, you can use an action on your turn to deal 3d6 force damage to an affected target. If the target is reduced to 0 hit points, they explode, causing each creature within 15 feet of them to make a Dexterity saving throw. Creatures that fail this saving throw take 4d6 bludgeoning damage on a failure, or half as much on a success.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage for each of its effects increases by 1d6 for each slot level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

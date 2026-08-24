@@ -1,0 +1,17 @@
+{
+  "Name": "Vitality Balance",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You sacrifice some of your health to mend another creature’s injuries. You take 4d8 necrotic damage, which cannot be reduced in any way, and one creature of your choice that you can see within range regains a number of hit points equal to twice the necrotic damage you take. If this spell would reduce you to 0 hit points, the necrotic damage you take is reduced so that you have 1 hit point remaining (the healing is adjusted accordingly as well).",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you can choose one of the following effects for each level above 3rd:\n\n• The damage increases by 1d8.\n• Before taking your necrotic damage, you gain 2d8 temporary hit points. The number of d8s increases by 1d8 each time you choose this effect. These temporary hit points vanish once you take the necrotic damage.",
+  "Classes": [
+    "Cleric",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

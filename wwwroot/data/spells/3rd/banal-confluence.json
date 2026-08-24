@@ -1,0 +1,21 @@
+{
+  "Name": "Banal Confluence",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [
+    "Arts of Value"
+  ],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S, M (a number of gold coins equal to the level the spell is cast at, one of which is consumed each time you use a confluence result)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You attempt to instill one creature within range with a curse that affects their fortune. The target must share a creature type with you (humanoid, your race, or otherwise). The target must make a Charisma saving throw, and on a failure they are cursed for the spell's duration.\n\nWhen the creature is cursed this way, you roll a number of d20s equal to the level this spell is cast at (reroll any results that are 15 or above). Mark these results down—they are your confluence results. At any time before the spell ends, as long as you are not incapacitated, you may spend these results to use them in the following ways:\n\n**Advantage Flux.** Any time the cursed target rolls an attack roll, ability check, or saving throw with advantage, you can spend a confluence result to force them to take the lowest result between your confluence result or their two d20 results as their final roll.\n\n**Armor Bypass.** When the cursed target is targeted by an attack, you may spend a confluence result to treat the target’s AC as if it was equal to that result until the end of the turn.\n\n**Attack Shift.** When the target makes an attack roll, you may replace their d20 result with the confluence result of your choice.\n\n**Ability Shortage.** When the target makes an ability check, you can spend one of your confluence results to treat the result of the ability check as the result you spent.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

@@ -1,0 +1,25 @@
+{
+  "Name": "Make Fearless",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60-ft.",
+  "Components": "V, S, M ((a torch to be burnt))",
+  "Duration": "Instantaneous.",
+  "Description": "You let out a wave of magic to wash over your allies, emboldening them to keep fighting the good fight no matter what. Choose up to five friendly creatures including yourself within the spell's range, these creatures gain a +1 bonus to hit and to their Armor Class for the next three rounds, also being granted 15 temporary hit points.",
+  "At Higher Levels": "The value of the bonuses to hit and to AC are increased by a further +1 for each third level above 3rd, such as 6th and 9th level. The amount of temporary hit points gained also increases by 5.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

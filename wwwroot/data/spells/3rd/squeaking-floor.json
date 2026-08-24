@@ -1,0 +1,20 @@
+{
+  "Name": "Squeaking Floor",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "Touch",
+  "Components": "V, S, M (a rusty iron hinge)",
+  "Duration": "8 hours",
+  "Description": "You create a thin sheet of magical sensors along a stretch of even flooring or terrain with an area up to 50 feet long and 50 feet wide. For the duration, if a creature weighing more than three pounds steps into the area, it emits loud, unmistakable squeaks that can be heard up to 100 feet away. The sound spreads around corners, and through 1 foot of stone, 1 inch of common metal, or 3 feet of wood blocks. Those who hear the squeaking automatically know the direction of the sounds.\n\nCreatures capable of moving completely silently reduce the audible range of the squeaking they produce by half. Flying creatures and others that avoid direct contact with the affected surface do not inspire the spell’s effects.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": [
+    "Ritual"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "Bloodbath for a Throne",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "The next time you hit a creature with a melee weapon attack during the spell’s duration, your weapon nearly shatters in your grip as pure divine power flows through it.\n\nYou deal an additional 2d8 radiant damage on a hit and force all hostile creatures within 10 feet of the initial hit target to pass a Constitution saving throw or take the same amount of damage.\n\nFor any creature that is killed or knocked unconscious from this damage, all hostile creatures within range suffer an additional 2d8 radiant damage and are inflicted with 4 Rupture counts, as the space around you crackles and breaks.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the radiant damage dealt by all effects increases by 1d8, and you deal an additional 2 Rupture counts for each slot level above 1st.",
+  "Classes": [
+    "Bladebearer",
+    "Paladin"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

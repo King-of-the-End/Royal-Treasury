@@ -1,0 +1,24 @@
+{
+  "Name": "Burning Ammunition",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Burning Rites",
+    "Legacy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "90 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You touch an ammunition container or belt containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the container or belt, the target takes an extra 1d6 fire damage. The spell’s magic ends on a piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you may choose one of the following effects for each slot level above 3rd:\n\n• The number of pieces of ammunition you can affect with this spell increases by 2.\n• The extra fire damage becomes 1d8 (1 slot level), 1d10 (2 additional slot levels), 1d12 (3 slot levels), or 2d8 (4 slot levels).",
+  "Classes": [
+    "Artificer",
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

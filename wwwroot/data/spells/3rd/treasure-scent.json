@@ -1,0 +1,21 @@
+{
+  "Name": "Treasure Scent",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (30-foot radius)",
+  "Components": "V, S",
+  "Duration": "1 hour",
+  "Description": "A multihued mist appears in front of you before swirling up into your nose. For the duration, you can detect copper, silver, gold, platinum, mithral, adamantine, and gems within 30 feet of you, as well as differentiate between types of valuables you sense.\n\nWhen you detect valuables, their exact location is not revealed, only their presence and direction. When you come within 10 feet of treasure, you can pinpoint its exact location. This spell can’t locate treasure if more than 5 feet of stone, 1 foot of common metal, or any thickness of lead, even a thin sheet, blocks a direct path between you and the treasure.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Inscriptor",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

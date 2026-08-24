@@ -1,0 +1,19 @@
+{
+  "Name": "Antipathetic Field",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You attempt to invade the mind of a creature, filling it with rage and anger toward you. The target makes a Wisdom saving throw, taking 2d8 psychic damage on a failure, and half as much on a success.\n\nIf the target fails the saving throw, a palpable field of mutual enmity is created in a line that stretches between you and the target. The field is so strong enough that creatures inside it are damaged by your mutual enmity. Each creature in a line between you and the target must make a Wisdom saving throw, taking 1d8 psychic damage on a failure, or half as much on a success. Constructs, Undead, and creatures with an Intelligence score of 4 or lower are unaffected by the spell.\n\nFor the duration, both you and the target have disadvantage on attack rolls made against targets other than one another, and neither of you can willingly move further apart from the other. Additionally, you can use an action to repeat the spell’s effects, damaging the target and each creature that stands between you.\n\nThe target can repeat its saving throw at the end of each of its turns, ending the spell on a success.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage for each of its effects increases by 1d8 for each slot level above 3rd.",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Inscriptor",
+    "Warlock"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

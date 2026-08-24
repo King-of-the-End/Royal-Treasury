@@ -1,0 +1,20 @@
+{
+  "Name": "Flaming Tiger Leap",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (10-foot-radius, 5-foot-high cylinder)",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You erupt from the ground like a firework of the College of Hanabi, but thankfully without exploding at your apex. Each creature within a 15-foot-radius, 5-foot-high cylinder centered on you must make a Dexterity saving throw. A creature takes 5d6 fire damage on a failed saving throw, or half as much damage on a successful one. Until the end of your turn, you gain a flying speed of 120 feet and your movement doesn’t provoke opportunity attacks.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 and your flying speed increases by 30 feet for each slot level above 3rd.",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

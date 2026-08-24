@@ -1,0 +1,21 @@
+{
+  "Name": "Efficacious Bond",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Arts of Value"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Touch (30 feet)",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "You touch one willing creature within range, who allows their natural abilities to be shared among their peers. Choose one of the following:\n\n• Weapon attacks & damage rolls.\n• One type of saving throw.\n• One type of ability check.\n\nTwo other willing creatures that you choose within the spell’s range gain the initial target’s efficacy with the chosen types of rolls – when they make those rolls, they make them as if they had the proficiencies and ability score of the initial target for it (including granting them proficiency with weapons, armor and tools). During this time, the initial target cannot add their proficiency bonus to the selected rolls, as it has been drained temporarily to grant it to others.\n\nAt any time, the initial target may choose to end this effect for all targets involved and the spell immediately ends.",
+  "At Higher Levels": "When this spell is cast at 4th level or higher, choose one of the following effects for each level above 3rd:\n\n• You may choose one more secondary target.\n• You may choose one extra type of roll to share the proficiency of.\n• The initial target retains half of their proficiency bonus on the selected types of rolls, or (2 levels) they retain their full proficiency bonus.",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

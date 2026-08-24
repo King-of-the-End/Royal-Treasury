@@ -1,0 +1,24 @@
+{
+  "Name": "Vorpal Flames",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [
+    "Burning Rites",
+    "Nine Branch Arts"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You call upon flames to join together in the form of an uchigatana which solidifies in your hand. This magic uchigatana (greatsword) lasts until the spell ends. It counts as a martial melee weapon that you are proficient with, has the heavy and reach properties, gives off 20 feet of bright light and 20 feet of dim light beyond that, and deals 3d8 fire damage on a hit. You can drop the sword and make it vanish freely, and can recall it to your hand as a bonus action while the spell persists. When you attack with it you may use either your Strength or your spellcasting ability for its attack and damage rolls.\n\nWhen this sword strikes a creature that is a Plant or Undead, it deals an extra d8 of fire damage to them.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, your proficiency with this weapon increases. Using a slot of 5th level or higher you can make two attacks instead of one with it as part of an Attack action. At 7th level or higher this increases to three instead of one. If cast using a 9th-level spell slot, this weapon scores a critical hit on a d20 result of 18, 19 or 20.",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Inscriptor",
+    "Petal Knight",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

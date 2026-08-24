@@ -1,0 +1,20 @@
+{
+  "Name": "Pall of Twilight",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "S, M (a ball of cotton or wool, dyed grey or black)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "A creeping pall of grey mist manifests in a 30-foot-radius sphere centered on a point you can see within range, muting sound and color alike.\n\nThis spell reduces bright light (including magical light created by spells of 2nd level or lower) in the area to dim light, and dim light to darkness. Additionally, creatures inside the area have disadvantage on Wisdom (Perception) checks that rely on hearing.\n\nCreatures with blindsense or tremorsense have these senses similarly affected, and they have disadvantage on Wisdom (Perception) checks they make while in the area, and attack rolls against targets they rely on blindsight or tremorsense to see.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the radius of the mist increases by 30 feet for each slot level above 3rd.",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

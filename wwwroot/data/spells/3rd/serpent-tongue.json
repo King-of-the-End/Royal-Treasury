@@ -1,0 +1,18 @@
+{
+  "Name": "Serpent Tongue",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "1 minute",
+  "Description": "You transform your tongue into a poisonous serpent for the duration. When you cast this spell, you can make a melee spell attack against a creature within 5 feet of you. On a hit, the target takes 1d8 piercing damage and must succeed on a Constitution saving throw or become poisoned. A poisoned creature can repeat this saving throw at the end of each of its turns, ending the condition on a success.\n\nAs a bonus action on each of your turns, you can repeat the attack against a creature within 5 feet of you.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.",
+  "Classes": [
+    "Dusksworn",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Grim Hollow",
+  "Tags": []
+}

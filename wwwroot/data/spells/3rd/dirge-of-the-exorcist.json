@@ -1,0 +1,22 @@
+{
+  "Name": "Dirge of the Exorcist",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (an engraved silver bell worth at least 50 gp)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You cry out ancient words that create a painful ringing in the ears of your enemies.\n\nChoose one creature type:\n\n• Celestials\n• Elementals\n• Fey\n• Fiends\n• Undead\n\nCreatures of the selected type within 60 feet of you that can hear you must make a Constitution saving throw.\n\nOn a failed save, a creature takes 3d6 thunder damage, or half as much damage on a successful save.\n\nIf a creature fails its saving throw by 5 or more, it is incapacitated until the end of its next turn.\n\nOn each of your turns, you can use your action to continue the dirge, repeating the spell's effects for creatures that share the selected type and can hear you.\n\nWhen you do, creatures in the area who are charmed, frightened, or possessed by the chosen creature type can immediately make a new saving throw to end the unwanted effect.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Favored Soul",
+    "Paladin",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": [
+    "Ritual"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Name": "Path to Victory",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Legacy of Gold",
+    "Zanjen"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "1 minute",
+  "Description": "One creature you touch has its natural combat abilities amplified. For the spell’s duration, when they take the Attack action they can make two attacks instead of one. If they already could make the number of attacks this spell would grant (such as by Extra Attack), their first weapon attack each turn has advantage instead.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 6th level or higher, your target can make three attacks instead of one, and if they already could then they have advantage on all attacks they make.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Inscriptor",
+    "Paladin",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

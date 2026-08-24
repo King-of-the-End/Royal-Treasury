@@ -1,0 +1,21 @@
+{
+  "Name": "Unveiling Gaze",
+  "Spell School": "Divination",
+  "Spell Group(s)": [
+    "Nine Branch Arts"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Self (30 feet)",
+  "Components": "V",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "Your eyes become discerning. For the spell’s duration, you are aware if a creature is not assuming its true form when you look at them and they are within the spell’s range (such as if they have polymorphed, shape changed, or used another feature to change their form), though you do not learn what their true form is.\n\nAt any time during this spell’s effects, if you see a creature that is not assuming its true form you can use your bonus action to force it to make a Charisma saving throw. On a failure, this spell ends and the target is compelled to use their reaction to return to their true form, unless something is preventing them from doing so (such as a curse, or if the transformation was induced by a wish spell). If they succeed they are not compelled, and become aware that something attempted to force them to change their form.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

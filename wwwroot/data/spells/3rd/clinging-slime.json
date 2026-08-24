@@ -1,0 +1,18 @@
+{
+  "Name": "Clinging Slime",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S, M (a vial of babau blood worth at least 100 gp)",
+  "Duration": "1 hour",
+  "Description": "Your flesh and equipment begin to weep hot red tears that quickly coat your body and equipment in a slimy layer of red jelly.\n\nFor the duration, a creature that touches you or hits you with a melee attack while within 5 feet of you takes 3d6 acid damage.\n\nAdditionally, a creature that you are grappling, that is grappling you, or that has swallowed you must succeed on a Constitution saving throw or take 2d6 acid damage at the start of its turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage of each of its effects increases by 1d6 for each slot level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Inscriptor",
+    "Warlock"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

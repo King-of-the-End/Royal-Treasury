@@ -1,0 +1,23 @@
+{
+  "Name": "Corrosive Smite",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Bloody Values",
+    "Torrential Arcanics",
+    "Whisperwood Tome"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 3d8 acid damage.\n\nAdditionally, if the target is a creature, it must make a Constitution saving throw. On a failed save, it is poisoned until the spell ends. While poisoned in this way, the target repeats the Constitution saving throw at the end of each of its turns, ending the spell on a success.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bladebearer",
+    "Dusksworn",
+    "Paladin",
+    "Petal Knight"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

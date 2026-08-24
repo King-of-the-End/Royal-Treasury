@@ -1,0 +1,16 @@
+{
+  "Name": "Unrepair",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Your cold hands imprint a deadly curse upon whoever they touch while this spell is active. Make a melee spell attack against one creature within reach.\n\nOn a hit, the target takes 4d6 necrotic damage and must make a Constitution saving throw. On a failed save, they can’t recover hit points while you’re concentrating on the spell, and on each of your subsequent turns, you can take a bonus action to deal 2d6 necrotic damage to the target automatically.\n\nOn a successful save, the target still can’t recover hit points for the duration of the spell, but you won’t be able to use a bonus action to damage them.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Dusksworn"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

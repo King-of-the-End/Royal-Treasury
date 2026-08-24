@@ -1,0 +1,19 @@
+{
+  "Name": "Misty Slash",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, S, M (a melee weapon worth at least 10 gp that deals slashing damage)",
+  "Duration": "1 round",
+  "Description": "You surround yourself in silvery mist, teleporting up to 30 feet to an unoccupied space that you can see. Until the start of your next turn, the weapon is magical, and the first time you hit a creature with it, the attack deals an additional 2d6 damage.\n\nFor the duration, whenever you hit a creature with the weapon, or if you are hit by an attack or fail a saving throw that doesn't result in your being moved, you can use your reaction to teleport to the space you were in when you cast the spell.\n\nIf the space you were in when you cast the spell is occupied, you teleport to the nearest unoccupied space instead.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+  "Classes": [
+    "Bladebearer",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

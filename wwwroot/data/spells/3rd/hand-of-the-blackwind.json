@@ -1,0 +1,24 @@
+{
+  "Name": "Hand of the Blackwind",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Daemoturgy"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "Your hands ignite with shadowy energy, granting them the ability to strike the target’s mind as well as their body. For the spell’s duration, your unarmed strikes deal 2d8 psychic damage in addition to their normal damage, and when you make an unarmed strike you can use your spellcasting ability modifier for the attack and damage roll. Additionally, when you make an unarmed strike using the Attack action, you can make two attacks instead of one as long as they are both unarmed strikes.\n\nWhen the damage from your unarmed strikes force a creature to make a concentration check, the DC for those checks is always at least equal to your spell save DC.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the psychic damage it deals increases by 1d8 for every two slot levels above 3rd. If cast using a slot level of 7th or higher, when you take the Attack action and make only unarmed strikes, you can strike three times instead of once.",
+  "Classes": [
+    "Druid",
+    "Dusksworn",
+    "Inscriptor",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

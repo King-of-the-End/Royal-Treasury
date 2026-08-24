@@ -1,0 +1,22 @@
+{
+  "Name": "Disorienting Scatter",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [
+    "Nine Branch Arts"
+  ],
+  "Casting Time": "1 action",
+  "Range": "30 feet (60 feet)",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "Choose any number of willing creatures within 30 feet of you. Those creatures are teleported to an unoccupied space of your choice within 60 feet of you, and if they are paralyzed, restrained, or grappled, those effects end.\n\nYou do not have to be able to see the targets or spaces they teleport to as long as you know they are there. If something occupies the space you choose, the target is shunted to the nearest unoccupied space.\n\nCreatures who are teleported must succeed on a Constitution saving throw with a DC equal to 8 + the level you cast the spell at. On a failure, they are stunned until the end of their next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the 30 foot and 60 foot ranges double at each slot level above 3rd (becoming 60/120 ft. at 4th, 120/240 ft. at 5th, etc.).",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Inscriptor",
+    "Petal Knight",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

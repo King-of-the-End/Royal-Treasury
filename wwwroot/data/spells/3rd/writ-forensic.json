@@ -1,0 +1,16 @@
+{
+  "Name": "Writ Forensic",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "Touch",
+  "Components": "S",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "You write a line of arcane text describing the beginning of a flashback as if recounting an effect you had witnessed. Choose a 10-foot radius centered on a point you touch, then choose a period of time within the last week. Illusory projections of creatures, objects, and events that occurred in the 10 minutes following your chosen time play out in the radius chosen, including sounds that originated from that radius. Creatures that were protected from divination for any reason do not appear in the projection. While watching the projection, you may speed up or rewind the projection as if scrubbing through footage, but it cannot project anything outside of the 10 minutes it recorded even if you speed it up.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, the spell’s duration and amount of time recorded increases. It becomes 1 hour when cast using a 4th-level slot and 1 day using a 5th-level slot. If casting a 6th-level slot it can replay events from up to a month ago, up to half a year at 7th, 5 years at 8th, and up to 100 years at 9th. Furthermore, the radius of the projection increases by 5 feet for every slot level above 3rd.",
+  "Classes": [
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

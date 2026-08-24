@@ -1,0 +1,906 @@
+{
+  "spell_count": 213,
+  "file_format": "UTF-8 JSON",
+  "categorical_fields": {
+    "Spell Group(s)": "array of strings; each element is an independent filter/category value",
+    "Classes": "array of strings; each element is an independent filter/category value",
+    "Tags": "array of strings; Ritual is preserved here instead of Spell Group(s)"
+  },
+  "allowed_spell_groups": [
+    "Arts of Value",
+    "Bloody Values",
+    "Sealed Words",
+    "Sinful Codex",
+    "Unbound Moralisms",
+    "Zanjen",
+    "Burning Rites",
+    "Harvest Tradition",
+    "Twisting Gale Path",
+    "Torrential Arcanics",
+    "Elemental Confluence",
+    "Altissima-Cor’s Arcane Arts",
+    "Nine Branch Arts",
+    "Legacy of Gold",
+    "Epic of Duality",
+    "Blood of Cineris",
+    "Chromatic Convocation",
+    "Daemoturgy",
+    "Eidomancy",
+    "Sky-Keeper’s Arcana",
+    "Ossenheimer’s Memoirs",
+    "Whisperwood Tome",
+    "Biomancy",
+    "Sangromancy",
+    "Skulker’s Grimoire",
+    "Chronurgy",
+    "Graviturgy",
+    "Dunamancy",
+    "Legacy",
+    "technomagic"
+  ],
+  "ritual_handling": {
+    "note": "Ritual is not a spell group. It is retained in the Tags array as \"Ritual\"."
+  },
+  "table_handling": {
+    "marker_format": "{{TABLE:<table_id>}}",
+    "note": "Only spells with a source table contain Special Notes and Tables. Use placement + marker to reconstruct the table in the correct section."
+  },
+  "stat_block_handling": {
+    "marker_format": "{{STAT_BLOCK:<stat_block_id>}}",
+    "note": "Summoning spells with supplemental creature data contain Special Notes and Stat Blocks. Render each matching Stat Blocks object as a dedicated Stat Block section using its placement and section_type."
+  },
+  "spells": [
+    {
+      "Name": "Abyssal Shield",
+      "file": "abyssal-shield.json"
+    },
+    {
+      "Name": "Aquatic Razor",
+      "file": "aquatic-razor.json"
+    },
+    {
+      "Name": "Anchor Point",
+      "file": "anchor-point.json"
+    },
+    {
+      "Name": "Fathomless Eruption",
+      "file": "fathomless-eruption.json"
+    },
+    {
+      "Name": "Banal Confluence",
+      "file": "banal-confluence.json"
+    },
+    {
+      "Name": "Biting Curse",
+      "file": "biting-curse.json"
+    },
+    {
+      "Name": "Deadly Target",
+      "file": "deadly-target.json"
+    },
+    {
+      "Name": "Efficacious Bond",
+      "file": "efficacious-bond.json"
+    },
+    {
+      "Name": "Greatwyrm’s Stride",
+      "file": "greatwyrms-stride.json"
+    },
+    {
+      "Name": "Latency State",
+      "file": "latency-state.json"
+    },
+    {
+      "Name": "Midnight Howl",
+      "file": "midnight-howl.json"
+    },
+    {
+      "Name": "Path to Victory",
+      "file": "path-to-victory.json"
+    },
+    {
+      "Name": "Power Word Misfortune",
+      "file": "power-word-misfortune.json"
+    },
+    {
+      "Name": "Saint’s Hallowing",
+      "file": "saints-hallowing.json"
+    },
+    {
+      "Name": "Sequester Persona",
+      "file": "sequester-persona.json"
+    },
+    {
+      "Name": "Explosion",
+      "file": "explosion.json"
+    },
+    {
+      "Name": "Summon Hydro Ally",
+      "file": "summon-hydro-ally.json"
+    },
+    {
+      "Name": "Animate Dead",
+      "file": "animate-dead.json"
+    },
+    {
+      "Name": "Antagonize",
+      "file": "antagonize.json"
+    },
+    {
+      "Name": "Ashardalon’s Stride",
+      "file": "ashardalons-stride.json"
+    },
+    {
+      "Name": "Aura of Vitality",
+      "file": "aura-of-vitality.json"
+    },
+    {
+      "Name": "Beacon of Hope",
+      "file": "beacon-of-hope.json"
+    },
+    {
+      "Name": "Blink",
+      "file": "blink.json"
+    },
+    {
+      "Name": "Catnap",
+      "file": "catnap.json"
+    },
+    {
+      "Name": "Clairvoyance",
+      "file": "clairvoyance.json"
+    },
+    {
+      "Name": "Conjure Animals",
+      "file": "conjure-animals.json"
+    },
+    {
+      "Name": "Conjure Barrage",
+      "file": "conjure-barrage.json"
+    },
+    {
+      "Name": "Counterspell",
+      "file": "counterspell.json"
+    },
+    {
+      "Name": "Create Food & Water",
+      "file": "create-food-and-water.json"
+    },
+    {
+      "Name": "Crusader’s Mantle",
+      "file": "crusaders-mantle.json"
+    },
+    {
+      "Name": "Daylight",
+      "file": "daylight.json"
+    },
+    {
+      "Name": "Dispel Magic",
+      "file": "dispel-magic.json"
+    },
+    {
+      "Name": "Elemental Weapon",
+      "file": "elemental-weapon.json"
+    },
+    {
+      "Name": "Fast Friends",
+      "file": "fast-friends.json"
+    },
+    {
+      "Name": "Fear",
+      "file": "fear.json"
+    },
+    {
+      "Name": "Feign Death",
+      "file": "feign-death.json"
+    },
+    {
+      "Name": "Fly",
+      "file": "fly.json"
+    },
+    {
+      "Name": "Galder’s Tower",
+      "file": "galders-tower.json"
+    },
+    {
+      "Name": "Gaseous Form",
+      "file": "gaseous-form.json"
+    },
+    {
+      "Name": "Glyph of Warding",
+      "file": "glyph-of-warding.json"
+    },
+    {
+      "Name": "Haste",
+      "file": "haste.json"
+    },
+    {
+      "Name": "Hunger of Hadar",
+      "file": "hunger-of-hadar.json"
+    },
+    {
+      "Name": "Hypnotic Pattern",
+      "file": "hypnotic-pattern.json"
+    },
+    {
+      "Name": "Incite Greed",
+      "file": "incite-greed.json"
+    },
+    {
+      "Name": "Leomund’s Tiny Hut",
+      "file": "leomunds-tiny-hut.json"
+    },
+    {
+      "Name": "Magic Circle",
+      "file": "magic-circle.json"
+    },
+    {
+      "Name": "Major Image",
+      "file": "major-image.json"
+    },
+    {
+      "Name": "Mass Healing Word",
+      "file": "mass-healing-word.json"
+    },
+    {
+      "Name": "Meld Into Stone",
+      "file": "meld-into-stone.json"
+    },
+    {
+      "Name": "Motivational Speech",
+      "file": "motivational-speech.json"
+    },
+    {
+      "Name": "Nondetection",
+      "file": "nondetection.json"
+    },
+    {
+      "Name": "Phantom Steed",
+      "file": "phantom-steed.json"
+    },
+    {
+      "Name": "Plant Growth",
+      "file": "plant-growth.json"
+    },
+    {
+      "Name": "Protection from Ballistics",
+      "file": "protection-from-ballistics.json"
+    },
+    {
+      "Name": "Protection from Energy",
+      "file": "protection-from-energy.json"
+    },
+    {
+      "Name": "Psionic Blast",
+      "file": "psionic-blast.json"
+    },
+    {
+      "Name": "Pulse Wave",
+      "file": "pulse-wave.json"
+    },
+    {
+      "Name": "Remove Curse",
+      "file": "remove-curse.json"
+    },
+    {
+      "Name": "Revivify",
+      "file": "revivify.json"
+    },
+    {
+      "Name": "Sleet Storm",
+      "file": "sleet-storm.json"
+    },
+    {
+      "Name": "Slow",
+      "file": "slow.json"
+    },
+    {
+      "Name": "Speak with Dead",
+      "file": "speak-with-dead.json"
+    },
+    {
+      "Name": "Speak with Plants",
+      "file": "speak-with-plants.json"
+    },
+    {
+      "Name": "Spirit Guardians",
+      "file": "spirit-guardians.json"
+    },
+    {
+      "Name": "Stinking Cloud",
+      "file": "stinking-cloud.json"
+    },
+    {
+      "Name": "Summon Fey",
+      "file": "summon-fey.json"
+    },
+    {
+      "Name": "Summon Lesser Demons",
+      "file": "summon-lesser-demons.json"
+    },
+    {
+      "Name": "Summon Shadowspawn",
+      "file": "summon-shadowspawn.json"
+    },
+    {
+      "Name": "Summon Undead",
+      "file": "summon-undead.json"
+    },
+    {
+      "Name": "Summon Warrior Spirit",
+      "file": "summon-warrior-spirit.json"
+    },
+    {
+      "Name": "Tiny Servent",
+      "file": "tiny-servent.json"
+    },
+    {
+      "Name": "Tongues",
+      "file": "tongues.json"
+    },
+    {
+      "Name": "Vampiric Touch",
+      "file": "vampiric-touch.json"
+    },
+    {
+      "Name": "Wall of Sand",
+      "file": "wall-of-sand.json"
+    },
+    {
+      "Name": "Water Breathing",
+      "file": "water-breathing.json"
+    },
+    {
+      "Name": "Water Walk",
+      "file": "water-walk.json"
+    },
+    {
+      "Name": "Wind Wall",
+      "file": "wind-wall.json"
+    },
+    {
+      "Name": "Astral Barrage",
+      "file": "astral-barrage.json"
+    },
+    {
+      "Name": "Displacing Maw",
+      "file": "displacing-maw.json"
+    },
+    {
+      "Name": "Malicious Rancor",
+      "file": "malicious-rancor.json"
+    },
+    {
+      "Name": "Osseous Cage",
+      "file": "osseous-cage.json"
+    },
+    {
+      "Name": "Osseous Impalement",
+      "file": "osseous-impalement.json"
+    },
+    {
+      "Name": "Radiant Bell",
+      "file": "radiant-bell.json"
+    },
+    {
+      "Name": "Radiant Slaughter",
+      "file": "radiant-slaughter.json"
+    },
+    {
+      "Name": "Rubber Bones",
+      "file": "rubber-bones.json"
+    },
+    {
+      "Name": "Spectral Fury",
+      "file": "spectral-fury.json"
+    },
+    {
+      "Name": "Blood Bond",
+      "file": "blood-bond.json"
+    },
+    {
+      "Name": "Conjure Plants",
+      "file": "conjure-plants.json"
+    },
+    {
+      "Name": "Flash Fever",
+      "file": "flash-fever.json"
+    },
+    {
+      "Name": "Mirror Spell",
+      "file": "mirror-spell.json"
+    },
+    {
+      "Name": "Reanimate",
+      "file": "reanimate.json"
+    },
+    {
+      "Name": "Sanguine Poppet",
+      "file": "sanguine-poppet.json"
+    },
+    {
+      "Name": "Serpent Tongue",
+      "file": "serpent-tongue.json"
+    },
+    {
+      "Name": "Suffocate",
+      "file": "suffocate.json"
+    },
+    {
+      "Name": "Acid Rain",
+      "file": "acid-rain.json"
+    },
+    {
+      "Name": "Depth Charge",
+      "file": "depth-charge.json"
+    },
+    {
+      "Name": "Enrage",
+      "file": "enrage.json"
+    },
+    {
+      "Name": "Firther’s Shadow",
+      "file": "firthers-shadow.json"
+    },
+    {
+      "Name": "Food Coma",
+      "file": "food-coma.json"
+    },
+    {
+      "Name": "Influenza",
+      "file": "influenza.json"
+    },
+    {
+      "Name": "Mass Leech",
+      "file": "mass-leech.json"
+    },
+    {
+      "Name": "Mireball",
+      "file": "mireball.json"
+    },
+    {
+      "Name": "Stench",
+      "file": "stench.json"
+    },
+    {
+      "Name": "Turnabout",
+      "file": "turnabout.json"
+    },
+    {
+      "Name": "Hush",
+      "file": "hush.json"
+    },
+    {
+      "Name": "Agitated Pulse",
+      "file": "agitated-pulse.json"
+    },
+    {
+      "Name": "Arcana Abjurative",
+      "file": "arcana-abjurative.json"
+    },
+    {
+      "Name": "Burning Ammunition",
+      "file": "burning-ammunition.json"
+    },
+    {
+      "Name": "Caustic Resolution",
+      "file": "caustic-resolution.json"
+    },
+    {
+      "Name": "Corrosive Smite",
+      "file": "corrosive-smite.json"
+    },
+    {
+      "Name": "Cursed Dragon Spears",
+      "file": "cursed-dragon-spears.json"
+    },
+    {
+      "Name": "Disorienting Scatter",
+      "file": "disorienting-scatter.json"
+    },
+    {
+      "Name": "Dragonskin",
+      "file": "dragonskin.json"
+    },
+    {
+      "Name": "Drowning Wave",
+      "file": "drowning-wave.json"
+    },
+    {
+      "Name": "Earth Geyser",
+      "file": "earth-geyser.json"
+    },
+    {
+      "Name": "Eidomantic Weapon",
+      "file": "eidomantic-weapon.json"
+    },
+    {
+      "Name": "Eviscerate",
+      "file": "eviscerate.json"
+    },
+    {
+      "Name": "Fireball",
+      "file": "fireball.json"
+    },
+    {
+      "Name": "Free Meadow",
+      "file": "free-meadow.json"
+    },
+    {
+      "Name": "Friend as Foe",
+      "file": "friend-as-foe.json"
+    },
+    {
+      "Name": "Hand of the Blackwind",
+      "file": "hand-of-the-blackwind.json"
+    },
+    {
+      "Name": "Hold Attacker",
+      "file": "hold-attacker.json"
+    },
+    {
+      "Name": "Hydro Wall",
+      "file": "hydro-wall.json"
+    },
+    {
+      "Name": "Joyful Toxin",
+      "file": "joyful-toxin.json"
+    },
+    {
+      "Name": "Deceptive Mark",
+      "file": "deceptive-mark.json"
+    },
+    {
+      "Name": "Lightning Hurl",
+      "file": "lightning-hurl.json"
+    },
+    {
+      "Name": "Lightning Storm",
+      "file": "lightning-storm.json"
+    },
+    {
+      "Name": "Smothering Voice",
+      "file": "smothering-voice.json"
+    },
+    {
+      "Name": "Mental Fortification",
+      "file": "mental-fortification.json"
+    },
+    {
+      "Name": "Minute Meteors",
+      "file": "minute-meteors.json"
+    },
+    {
+      "Name": "Phantasmal Shroud",
+      "file": "phantasmal-shroud.json"
+    },
+    {
+      "Name": "Planar Detection",
+      "file": "planar-detection.json"
+    },
+    {
+      "Name": "Power Word Repel",
+      "file": "power-word-repel.json"
+    },
+    {
+      "Name": "Primordial Warp",
+      "file": "primordial-warp.json"
+    },
+    {
+      "Name": "Radiant Smite",
+      "file": "radiant-smite.json"
+    },
+    {
+      "Name": "Sending",
+      "file": "sending.json"
+    },
+    {
+      "Name": "Shamwood Stakeout",
+      "file": "shamwood-stakeout.json"
+    },
+    {
+      "Name": "Solar Implosion",
+      "file": "solar-implosion.json"
+    },
+    {
+      "Name": "Throes of Mortality",
+      "file": "throes-of-mortality.json"
+    },
+    {
+      "Name": "Thunderous Leap",
+      "file": "thunderous-leap.json"
+    },
+    {
+      "Name": "Twin Talent",
+      "file": "twin-talent.json"
+    },
+    {
+      "Name": "Unveiling Gaze",
+      "file": "unveiling-gaze.json"
+    },
+    {
+      "Name": "Valkyrie’s Binding Rings",
+      "file": "valkyries-binding-rings.json"
+    },
+    {
+      "Name": "Vitality Balance",
+      "file": "vitality-balance.json"
+    },
+    {
+      "Name": "Vorpal Flames",
+      "file": "vorpal-flames.json"
+    },
+    {
+      "Name": "Vortex Quiver",
+      "file": "vortex-quiver.json"
+    },
+    {
+      "Name": "Writ Entropy",
+      "file": "writ-entropy.json"
+    },
+    {
+      "Name": "Writ Forensic",
+      "file": "writ-forensic.json"
+    },
+    {
+      "Name": "Writ Reappropriation",
+      "file": "writ-reappropriation.json"
+    },
+    {
+      "Name": "Alter Fortune",
+      "file": "alter-fortune.json"
+    },
+    {
+      "Name": "Antipathetic Field",
+      "file": "antipathetic-field.json"
+    },
+    {
+      "Name": "Arcane Razor",
+      "file": "arcane-razor.json"
+    },
+    {
+      "Name": "Temporal Trickery",
+      "file": "temporal-trickery.json"
+    },
+    {
+      "Name": "Clinging Slime",
+      "file": "clinging-slime.json"
+    },
+    {
+      "Name": "Create Campsite",
+      "file": "create-campsite.json"
+    },
+    {
+      "Name": "Dazzling Strobe",
+      "file": "dazzling-strobe.json"
+    },
+    {
+      "Name": "Dirge of the Exorcist",
+      "file": "dirge-of-the-exorcist.json"
+    },
+    {
+      "Name": "Dodge-Weave",
+      "file": "dodge-weave.json"
+    },
+    {
+      "Name": "Duelist’s Ward",
+      "file": "duelists-ward.json"
+    },
+    {
+      "Name": "Entropic Field",
+      "file": "entropic-field.json"
+    },
+    {
+      "Name": "Euphoric Cloud",
+      "file": "euphoric-cloud.json"
+    },
+    {
+      "Name": "Fortify Familiar",
+      "file": "fortify-familiar.json"
+    },
+    {
+      "Name": "Frigid Wind",
+      "file": "frigid-wind.json"
+    },
+    {
+      "Name": "Healing Wave",
+      "file": "healing-wave.json"
+    },
+    {
+      "Name": "Icy Sheet",
+      "file": "icy-sheet.json"
+    },
+    {
+      "Name": "Invisible Trickery",
+      "file": "invisible-trickery.json"
+    },
+    {
+      "Name": "Luck",
+      "file": "luck.json"
+    },
+    {
+      "Name": "Minor Glamour",
+      "file": "minor-glamour.json"
+    },
+    {
+      "Name": "Misty Slash",
+      "file": "misty-slash.json"
+    },
+    {
+      "Name": "Mushroom Ring",
+      "file": "mushroom-ring.json"
+    },
+    {
+      "Name": "Pall of Twilight",
+      "file": "pall-of-twilight.json"
+    },
+    {
+      "Name": "Perplex",
+      "file": "perplex.json"
+    },
+    {
+      "Name": "Pyroclasm",
+      "file": "pyroclasm.json"
+    },
+    {
+      "Name": "Radiant Glamour",
+      "file": "radiant-glamour.json"
+    },
+    {
+      "Name": "Reverse Projectiles",
+      "file": "reverse-projectiles.json"
+    },
+    {
+      "Name": "Roar of Waves",
+      "file": "roar-of-waves.json"
+    },
+    {
+      "Name": "Shape Wood",
+      "file": "shape-wood.json"
+    },
+    {
+      "Name": "Shatterfloor",
+      "file": "shatterfloor.json"
+    },
+    {
+      "Name": "Speak with Object",
+      "file": "speak-with-object.json"
+    },
+    {
+      "Name": "Squeaking Floor",
+      "file": "squeaking-floor.json"
+    },
+    {
+      "Name": "Suspended Silence",
+      "file": "suspended-silence.json"
+    },
+    {
+      "Name": "Synostodweomer",
+      "file": "synostodweomer.json"
+    },
+    {
+      "Name": "Telepathy Tap",
+      "file": "telepathy-tap.json"
+    },
+    {
+      "Name": "Time Bomb",
+      "file": "time-bomb.json"
+    },
+    {
+      "Name": "Toxic Tongue",
+      "file": "toxic-tongue.json"
+    },
+    {
+      "Name": "Treasure Scent",
+      "file": "treasure-scent.json"
+    },
+    {
+      "Name": "Undead Regeneration",
+      "file": "undead-regeneration.json"
+    },
+    {
+      "Name": "Wild Flight",
+      "file": "wild-flight.json"
+    },
+    {
+      "Name": "Witness",
+      "file": "witness.json"
+    },
+    {
+      "Name": "Lightning Bolt",
+      "file": "lightning-bolt.json"
+    },
+    {
+      "Name": "Extract Spirit",
+      "file": "extract-spirit.json"
+    },
+    {
+      "Name": "Flashbang",
+      "file": "flashbang.json"
+    },
+    {
+      "Name": "Flaming Tiger Leap",
+      "file": "flaming-tiger-leap.json"
+    },
+    {
+      "Name": "Water Wyrm",
+      "file": "water-wyrm.json"
+    },
+    {
+      "Name": "Amplify Electrostatic (Static Shock)",
+      "file": "amplify-electrostatic-static-shock.json"
+    },
+    {
+      "Name": "Bloodbath for a Throne",
+      "file": "bloodbath-for-a-throne.json"
+    },
+    {
+      "Name": "Bolganone",
+      "file": "bolganone.json"
+    },
+    {
+      "Name": "Chain Wrapping",
+      "file": "chain-wrapping.json"
+    },
+    {
+      "Name": "Dead-Air Sphere",
+      "file": "dead-air-sphere.json"
+    },
+    {
+      "Name": "Detonation Cascade",
+      "file": "detonation-cascade.json"
+    },
+    {
+      "Name": "Ferite Sostenudo",
+      "file": "ferite-sostenudo.json"
+    },
+    {
+      "Name": "Dark Forest",
+      "file": "dark-forest.json"
+    },
+    {
+      "Name": "Make Fearless",
+      "file": "make-fearless.json"
+    },
+    {
+      "Name": "Mock Vampirism",
+      "file": "mock-vampirism.json"
+    },
+    {
+      "Name": "Obsession",
+      "file": "obsession.json"
+    },
+    {
+      "Name": "Painful Endurance",
+      "file": "painful-endurance.json"
+    },
+    {
+      "Name": "Paint it Golden",
+      "file": "paint-it-golden.json"
+    },
+    {
+      "Name": "Salvation Smite",
+      "file": "salvation-smite.json"
+    },
+    {
+      "Name": "Sundering Smite",
+      "file": "sundering-smite.json"
+    },
+    {
+      "Name": "Snake Strike",
+      "file": "snake-strike.json"
+    },
+    {
+      "Name": "Sweet Jabs",
+      "file": "sweet-jabs.json"
+    },
+    {
+      "Name": "Talkative Growth",
+      "file": "talkative-growth.json"
+    },
+    {
+      "Name": "Unrepair",
+      "file": "unrepair.json"
+    }
+  ]
+}

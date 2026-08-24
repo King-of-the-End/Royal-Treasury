@@ -1,0 +1,28 @@
+{
+  "Name": "Planar Detection",
+  "Spell School": "Divination",
+  "Spell Group(s)": [
+    "Daemoturgy"
+  ],
+  "Casting Time": "10 minutes",
+  "Range": "120 feet",
+  "Components": "V, S, M (a dream-catcher woven with silver thread worth at least 100 gp)",
+  "Duration": "8 hours",
+  "Description": "You weave a charm into the area, centered on your location when you complete casting the spell. As long as you are within the spell’s range, you become aware when there is a creature native to another plane present within it. You can designate specific creatures to be ignored by this effect when you cast it.\n\nIf you are asleep when this occurs, you and anyone you choose when casting the spell are mentally alarmed in such a way that you are subtly awakened or stirred from rest.\n\nWhen detecting creatures this way, the subject knows what direction they are in, their numbers, and the size of them. They also can detect if the creatures are currently assuming a form that is not their true form.\n\nA creature can circumvent detection through this spell by succeeding on a Dexterity (Stealth) check against your spell save DC, but they make this check with disadvantage.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": [
+    "Ritual"
+  ]
+}

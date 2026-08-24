@@ -1,0 +1,20 @@
+{
+  "Name": "Anchor Point",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 10 minute",
+  "Description": "You summon an aqueous anchor which you hurl into a creature within range. Make a ranged spell attack roll. On a hit the target takes 3d10 piercing damage, and the anchor remains in their body, dragging it down, reducing their movement by 10 ft. In addition on a hit, as a bonus action on that turn and on subsequent ones, you can teleport to an empty space within 5 feet of the creature, as long as the two of you are on the same plane of existence.\n\nAn impaled creature can use their action to make an Athletics check against your spell save DC, removing the anchor and ending the spell on a success.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level.",
+  "Classes": [
+    "Bladebearer",
+    "Favored Soul",
+    "Paladin",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Abyssal Depths",
+  "Tags": []
+}

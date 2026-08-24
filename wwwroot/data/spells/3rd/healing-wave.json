@@ -1,0 +1,21 @@
+{
+  "Name": "Healing Wave",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 Action",
+  "Range": "30 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "You create a pool of 10d4 restorative healing and channel it toward a creature you can see within range. Roll half the pool’s dice, restoring a number of hit points to the creature equal to the result + your spellcasting ability modifier.\n\nChoose a second creature you can see within range. Roll half the pool’s remaining dice, restoring a number of hit points to the creature equal to the result.\n\nChoose a third creature within range. Roll the remaining dice in the pool, restoring a number of hit points to the creature equal to the result.\n\nThis spell has no effect on Constructs or Undead.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the pool of restorative healing increases by 3d4 for each slot level above 3rd. If you cast the spell at 5th level or higher, you can add your spellcasting ability modifier to the second creature’s healing. If you cast the spell at 7th level or higher, you can add your spellcasting ability modifier to the third creature’s healing.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Favored Soul",
+    "Inscriptor"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

@@ -1,0 +1,20 @@
+{
+  "Name": "Entropic Field",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (a hunk of pewter)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You slow the flow of time in a 15-foot-radius, 40-foot-high cylinder centered on a point within range, which glows dimly for the duration. When a creature enters the area for the first time on its turn or starts its turn there, they must make a Strength saving throw. On a failure, their movement speed is reduced by half, they have -2 penalty to Armor Class when attacked by a creature outside the field, and can’t use reactions in response to events that happen outside the field.\n\nThe field also affects objects and projectiles that pass its area:\n\n• Non-magical ranged weapons. The attack is made at disadvantage.\n• Magical ranged weapons and spells. The attack is made at a -2 penalty. If the attack is a spell cast at a higher level than the entropic field, it is not subject to this penalty.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the radius of the cylinder increases by 5 feet for each slot level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Inscriptor",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

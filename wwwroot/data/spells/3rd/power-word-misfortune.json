@@ -1,0 +1,24 @@
+{
+  "Name": "Power Word Misfortune",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Arts of Value",
+    "Daemoturgy"
+  ],
+  "Casting Time": "1 reaction to a creature scoring a critical hit",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "When a creature scores a critical hit within range, you speak a word of power that causes them to lose traction and steals their good fortune. The critical hit is reduced to being a normal hit, and one other creature you choose within range receives this good luck, gaining a bonus on their next attack roll, saving throw, or ability check made within 1 minute equal to half the proficiency bonus (rounded down) of the creature who triggered this effect.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, one more creature you choose within range gains the bonus to their next attack roll, saving throw or ability check for every slot level above 3rd.",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

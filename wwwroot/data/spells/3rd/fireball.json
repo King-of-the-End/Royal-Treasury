@@ -1,0 +1,21 @@
+{
+  "Name": "Fireball",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Burning Rites",
+    "Legacy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "150 feet",
+  "Components": "V, S, M (a tiny ball of bat guano and sulfur)",
+  "Duration": "Instantaneous",
+  "Description": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame.\n\nEach creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners, igniting flammable objects in the area that aren't being worn or carried.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you can choose one of the following effects for each slot level above 3rd:\n\n• The spell's damage increases by 1d6.\n• The spell's spherical radius and range each increase by 10 feet.\n• Each creature that fails its saving throw is ignited (as per the condition).",
+  "Classes": [
+    "Favored Soul",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

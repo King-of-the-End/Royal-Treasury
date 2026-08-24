@@ -1,0 +1,20 @@
+{
+  "Name": "Create Campsite",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "10 minutes",
+  "Range": "Special",
+  "Components": "V, S",
+  "Duration": "24 hours",
+  "Description": "You summon a troupe of tiny Fey servants who create a campsite for up to ten travelers.\n\nThere must be enough nearby natural terrain to host the campsite, or the spell fails.\n\nThe fey follow your instructions, clearing the area of debris, setting up any tents or bedrolls you have (or preparing soft earth and plants to sleep upon), starting a campfire, fetching fresh water, and preparing a bland meal of local flora.\n\nFor the duration, the campsite is so skillfully prepared that it blends into the surrounding terrain:\n\nBeasts in the area have disadvantage on Wisdom (Perception) checks to notice the campsite.\n\nHumanoids in the area must make a Wisdom (Survival) check against your spell save DC to notice alterations to the natural landscape.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Druid",
+    "Inscriptor"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": [
+    "Ritual"
+  ]
+}

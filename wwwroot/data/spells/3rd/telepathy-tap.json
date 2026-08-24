@@ -1,0 +1,20 @@
+{
+  "Name": "Telepathy Tap",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "S",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "You can overhear the telepathic conversations of other creatures within 120 feet of you, and the contents of any message cantrips cast in the same area. You do not detect the uncommunicated thoughts of creatures, nor do you understand telepathic conversations spoken in a language you don't know.\n\nIn an area where numerous telepathic conversations are occurring at the same time, you must specify the specific creatures whose transmissions you wish to overhear, up to a number equal to your spellcasting ability modifier (minimum of 2).\n\nTelepathy tap does not allow you to overhear the telepathic conversations of creatures protected by a mind blank spell, nor does it grant the ability to telepathically send telepathic messages of your own to other creatures.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Inscriptor",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

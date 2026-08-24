@@ -1,0 +1,22 @@
+{
+  "Name": "Detonation Cascade",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (A Lizard's Scale and Gunpowder)",
+  "Duration": "Instantaneous",
+  "Description": "It's hard to go blade to blade with someone in combat, even more-so when the battlefield becomes a mine field.\n\nAs an action, you conjure a downpour of stone scales filled with unwieldy arcane energy, coating a 15-foot by 10-foot rectangle within reach. These scales dig into the ground as they hit it, detonating at the end of the combat Round, after the last creature has acted.\n\nUpon detonation, any creature occupying the same space as the scales must pass a Dexterity Saving Throw or take 4d8 piercing damage, or half on a success. You may spend your reaction when the scales detonate to choose up to your Spellcasting Modifier's worth of creatures to grant advantage on this Dexterity Saving Throw, controlling the arcane energy in the scales around them.\n\nYou may use your bonus action after casting, but before detonation, to extend the detonation time to the end of the next combat Round. When you do so, its total damage increases by 1d8.",
+  "At Higher Levels": "When this spell is cast using a fourth level or higher spell slot, its detonation extension bonus damage increases by a further 1d8 per turn for each spell level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

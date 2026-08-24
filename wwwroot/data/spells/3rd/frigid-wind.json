@@ -1,0 +1,17 @@
+{
+  "Name": "Frigid Wind",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (60-foot line)",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "A line of strong, frigid wind 60 feet long and 10 feet wide blasts from you in a direction you choose. Each creature in the line must make a Constitution saving throw, taking 8d6 cold damage on a failed save, or half as much damage on a successful one.\n\nThe wind disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them. If the wind passes over open water, the water freezes to a depth of 6 inches for 1 minute.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+  "Classes": [
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

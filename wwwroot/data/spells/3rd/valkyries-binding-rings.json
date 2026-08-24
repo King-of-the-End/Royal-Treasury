@@ -1,0 +1,21 @@
+{
+  "Name": "Valkyrie’s Binding Rings",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, M (two silver or gold rings large enough to fit around your wrists, worth at least 300 gp each)",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "The rings used as this spell’s components create large loops of radiant energy dotted with Celestial writing. Once you cast this spell, and then as a bonus action on subsequent turns, you can target one creature within 60 feet to cast these rings at in an attempt to bind the target in place. The target must succeed on a Dexterity saving throw or be restrained until the start of your next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature within range when you use this spell’s effect for each slot level above 3rd.",
+  "Classes": [
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul",
+    "Paladin",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

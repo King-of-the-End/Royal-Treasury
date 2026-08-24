@@ -1,0 +1,19 @@
+{
+  "Name": "Latency State",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Zanjen"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You magically compel yourself to enter a flow state, which you remain in until this spell ends. During this time you gain the following benefits:\n\n• Your base movement speed increases by 10 feet.\n• You cannot be charmed, enraged, or frightened.\n• You may use your bonus action to make one weapon attack or move up to your base movement speed.\n• You regain your reaction at the start of each turn.\n\n**Sword Saint Bonus.** This spell is treated as being on the class spell list(s) of any creature who has at least three levels in sword saint.",
+  "At Higher Levels": "When you cast this spell at 5th level or higher, you gain one of the following effects for every two levels above 3rd:\n\n• The weapon attacks made as part of a bonus action have advantage.\n• You make one additional weapon attack when you use your bonus action to make one.\n• When you would lose concentration, you may use your reaction to maintain it instead.\n• Your movement speed increases by an additional 10 feet.",
+  "Classes": [
+    "Bladebearer",
+    "Petal Knight"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

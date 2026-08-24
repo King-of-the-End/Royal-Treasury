@@ -1,0 +1,20 @@
+{
+  "Name": "Lightning Hurl",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Legacy",
+    "Twisting Gale Path"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "The next time you make a ranged weapon attack during the spell’s duration, the weapon’s ammunition (or the weapon itself if it’s a thrown weapon) transforms into a bolt of lightning. Make the attack roll as normal. The target takes 4d8 lightning damage on a hit, or half as much on a miss, instead of the weapon’s normal damage.\n\nWhether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d8 lightning damage on a failed save, or half as much on a successful one. The piece of ammunition or weapon then returns to its normal form.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you can choose one of the following effects for each slot level above 3rd:\n\n• The spell’s damage increases by 1d8.\n• The attack roll made as part of the spell’s attack gains a +1 bonus.\n• The spell still deals the weapon’s normal damage on top of the lightning damage, but only on a hit.\n• The range at which other creatures are affected around the target increases by 5 feet.",
+  "Classes": [
+    "Favored Soul",
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

@@ -1,0 +1,23 @@
+{
+  "Name": "Midnight Howl",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Bloody Values",
+    "Sinful Codex"
+  ],
+  "Casting Time": "1 action",
+  "Range": "15 feet",
+  "Components": "V",
+  "Duration": "Instantaneous",
+  "Description": "You unleash a terrifying bestial howl, which fills the space around you with deafening noise and mental torment. Each creature (except you) within the spell's range must make a Constitution saving throw. Each target that fails takes 2d8 thunder damage and 2d8 psychic damage, and is deafened for 1 minute. Creatures deafened by this spell repeat the saving throw at the end of each of their turns, ending the effect on a success.\n\nIf this spell is cast while you are in darkness or dim light, it deals an additional d8 of psychic and necrotic damage.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you may choose one of the following effects for each spell level above 3rd:\n\n• The spell's range increases by 15 feet.\n• You may exclude two other creatures from this effect.\n• The spell's psychic and thunder damage each increase by 1d8.\n• Creatures who fail their saving throw take half as much psychic and thunder damage, but aren't deafened.",
+  "Classes": [
+    "Druid",
+    "Dusksworn",
+    "Petal Knight",
+    "Ranger",
+    "Warlock"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

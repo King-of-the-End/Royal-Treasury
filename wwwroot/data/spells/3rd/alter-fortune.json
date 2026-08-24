@@ -1,0 +1,19 @@
+{
+  "Name": "Alter Fortune",
+  "Spell School": "Divination",
+  "Spell Group(s)": [],
+  "Casting Time": "1 reaction",
+  "Range": "30 feet",
+  "Components": "S, M (a set of weighted bone dice)",
+  "Duration": "Instantaneous",
+  "Description": "When a creature you can see within range makes an ability check, attack roll or saving throw, the results of which you wish to alter, you attempt to alter the course of fate. An unwilling target makes a Wisdom save, and if they succeed, the spell fails. On a failure (or if the target is willing), the target can immediately reroll the triggering roll, accepting the new result instead.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

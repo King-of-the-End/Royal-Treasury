@@ -1,0 +1,20 @@
+{
+  "Name": "Dodge-Weave",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 reaction, taken when you are hit by an attack",
+  "Range": "Self",
+  "Components": "S, M (a weapon)",
+  "Duration": "Instantaneous",
+  "Description": "You briefly vanish, gaining a +5 bonus to AC against the triggering attack.\n\nIf your attacker is within 30 feet of you, you may teleport to an unoccupied space within 5 feet of them.\n\nOn your next turn, you have advantage on your first attack roll against that attacker.",
+  "At Higher Levels": "When cast using a 4th-level spell slot or higher, the distance from which you can teleport toward the attacker increases by 10 feet for each slot level above 3rd.",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

@@ -1,0 +1,20 @@
+{
+  "Name": "Euphoric Cloud",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S, M (a few poppy seeds)",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "You create a 20-foot-radius sphere of intoxicating blue vapor centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. Extreme heat also eliminates the vapors (for example, the heat from a fireball spell).\n\nCreatures that enter the spell’s area for the first time on a turn or start their turn there must succeed on a Wisdom saving throw or become charmed until the end of their turn. A charmed creature is intoxicated by the vapor, becoming incapacitated, can speak only falteringly, and is unable to willingly leave the cloud’s area.\n\nConstructs, Undead, and creatures that don’t need to breathe are immune to the spell.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the radius of the sphere increases by 20 feet for each slot level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

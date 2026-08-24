@@ -1,0 +1,21 @@
+{
+  "Name": "Primordial Warp",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Eidomancy"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You create an arcane sigil before you, and from it produce a burst of prismatic light that targets one creature or point within the spell’s range. Make a ranged spell attack against your initial target, dealing 6d10 force damage on a hit. Each creature within 5 feet of your target must succeed a Dexterity saving throw, taking the same force damage on a failure. If any targets hit by this spell have temporary hit points, an amount of this spell’s damage equal to their temporary hit points is doubled.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, you can choose one of the following effects for each slot level above 3rd:\n\n• The spell deals an additional 2d10 force damage.\n• This spell’s range doubles.\n• The range for considering secondary targets doubles.\n• This spell is cast as a bonus action instead of as an action.",
+  "Classes": [
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

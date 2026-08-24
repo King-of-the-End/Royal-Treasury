@@ -1,0 +1,21 @@
+{
+  "Name": "Agitated Pulse",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Skulker’s Grimoire"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "A swirling wave of force protects you, occupying a 5-foot radius centered on you. When a hostile creature starts their turn there or enters into that space for the first time on their turn they must make a Strength saving throw. On a failed save they are repelled to the nearest unoccupied space outside the spell’s range and take 4d6 force damage. A creature shunted this way cannot attempt to enter that area again on that turn, and if they teleport into range, get stuck within it and are unable to move, or are forced in by another effect, they are knocked prone and restrained as long as they are in it until the start of their next turn.\n\nAttacks made against you from outside your protective wave of force have disadvantage.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you can choose one of the following effects for each slot level above 3rd:\n\n• The radius of the wave increases by 5 feet.\n• The spell’s force damage increases by 2d6",
+  "Classes": [
+    "Druid",
+    "Dusksworn",
+    "Petal Knight",
+    "Warlock"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

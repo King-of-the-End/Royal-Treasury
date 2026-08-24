@@ -1,0 +1,22 @@
+{
+  "Name": "Free Meadow",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Harvest Tradition",
+    "Skulker’s Grimoire"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "You choose a point within range, and every surface within a 30-foot radius centered on it is covered in soft grass and roots, except for liquid surfaces and ones that would cause fire or necrotic damage upon contact. For the duration of the spell, the area remains this way, removing the effects of difficult terrain and allowing all creatures to climb vertical surfaces as if they had a climb speed equal to their base movement speed.\n\nAny effect that is modifying the physical properties of the terrain within range is suppressed. If those changes are the result of a spell, they are suppressed only if they were created by a spell with a level lower than the slot level used to cast this spell.\n\nWhen the spell ends, the grass and roots harmlessly disappear. Any fire damage dealt to or in the space destroys the spell’s effect there.",
+  "At Higher Levels": "When you cast this spell at 4th level or higher, the affected radius increases by 15 feet for every slot level above 3rd.",
+  "Classes": [
+    "Bladebearer",
+    "Druid",
+    "Inscriptor",
+    "Petal Knight"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

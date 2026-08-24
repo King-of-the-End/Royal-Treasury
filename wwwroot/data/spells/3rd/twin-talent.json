@@ -1,0 +1,20 @@
+{
+  "Name": "Twin Talent",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [
+    "Epic of Duality"
+  ],
+  "Casting Time": "1 action",
+  "Range": "Self (30 feet) or touch",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "You create an illusory clone of yourself or a willing Medium-sized creature you can touch. The clone appears within 30 feet of you, and you can immediately order it to perform any action the original could perform that requires an ability check or skill check, using the modifier the original would use, such as attempting to pick a lock, grapple a creature, or clean a space. When it moves it provokes the same physical reactions you would. The clone has an armor class equal to your spell save DC, the same saving throws as the original, and if it takes any damage it vanishes. Once commanded to perform an action it continues to act, taking an action and moving up to 30 feet at the end of each of your turns (including on the first) to do so. If it fails to meet the DC of a check associated with the activity you assigned to it two turns in a row, it vanishes.",
+  "At Higher Levels": "When you cast this spell using a 4th level or higher spell slot, you create one additional illusory clone for each slot level above 3rd, and you can give a different task to each (or command any given clone to use the Help action to aid another).",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

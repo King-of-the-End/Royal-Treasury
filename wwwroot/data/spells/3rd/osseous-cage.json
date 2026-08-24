@@ -1,0 +1,18 @@
+{
+  "Name": "Osseous Cage",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (10 foot-radius)",
+  "Components": "V, S",
+  "Duration": "10 minutes",
+  "Description": "You cause a cage of cartilage and bones to erupt from the ground that surrounds a 10-foot-radius circle centered on you. The bones are thick and provide three-quarters cover to creatures inside and outside. When you or any other creature attempts to pass through the cage, you can use your reaction to let them through. Large or larger creatures cannot enter the cage, and are pushed to the nearest empty space if they are within the cage’s radius when it first appears. The osseous cage has AC 12, 100 hit points, and vulnerability to bludgeoning damage. If you cast this spell again while you already have a cage summoned, the previous cage turns to dust.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the cage has an additional 20 hit points for each slot level above 3rd.",
+  "Classes": [
+    "Druid",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Steinhardt's Guide to the Eldritch Hunt",
+  "Tags": []
+}

@@ -1,0 +1,24 @@
+{
+  "Name": "Friend as Foe",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Epic of Duality"
+  ],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You reach into the mind of one creature you can see and force them to make an Intelligence saving throw. A creature automatically succeeds if it is immune to being frightened. On a failed save, the target loses the ability to distinguish friend from foe, regarding all creatures they can see as enemies until the spell ends.\n\nEach time the target takes damage, they can repeat the saving throw, ending the effect on themself on a success.\n\nWhenever the affected creature chooses another creature as a target, they must choose the target at random from among the creatures they can see within range of the attack, spell, or other ability they’re using. If an enemy provokes an opportunity attack from the affected creature, the creature must make that attack if they are able to.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you can choose one of the following effects for each slot level above 3rd:\n\n• You may target one additional character.\n• You can designate one more creature within the spell’s range - creatures under the spell’s effects do not include that creature in their randomized selection of targets if there is an option to attack a different creature.\n• When one of the creatures whose ability to distinguish targets who use its reaction to make an opportunity attack while you can see them, you can choose to have them not do so instead.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

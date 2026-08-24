@@ -1,0 +1,19 @@
+{
+  "Name": "Temporal Trickery",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, S, M (a broken clock)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You dislodge yourself from your current temporality, granting you a modicum of control over the flow of time. For the duration, you can use your bonus action to stop time until the end of your turn. While time is stopped, you are undetectable and other creatures cannot react to your actions. At the end of your turn, time resumes and everything you did during your turn happens simultaneously - any creatures that you damaged take that damage at the end of your turn, and any creatures that must make a saving throw to avoid an effect must do so at the end of your turn. If you move on your turn, other creatures experience events as if you had teleported.\n\nWhen the spell ends, your stolen time catches up with you. Until the end of your next turn, you cannot move or take any actions, and any attacks made against you have advantage.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Inscriptor",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

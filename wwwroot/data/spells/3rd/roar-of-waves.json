@@ -1,0 +1,21 @@
+{
+  "Name": "Roar of Waves",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, S, M (a seashell)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You tap into the mind of a creature you can see within range, creating an illusory manifestation of rising ocean waters, visible only to the target, which must make a Wisdom saving throw. On a failed save, the target is overcome by the rising waters, lost in a nightmare of drowning alone at sea. Creatures with a swimming speed succeed their saving throw automatically.\n\nFor the duration, the creature's movement speed is halved, and is deafened and incapacitated, hearing only the sound of the waves and winds, as it desperately tries to swim to safety. Creatures within 30 feet of the affected target also hear the dull sound of ocean waves.\n\nAt the end of each of the target's turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d4 psychic damage. On a successful save, the spell ends. The spell also ends if the target becomes the subject of a spell that allows them to escape the illusion, for example, the alter self (aquatic adaptation), water breathing, or water walk spells.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

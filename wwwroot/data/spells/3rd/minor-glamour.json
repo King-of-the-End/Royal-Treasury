@@ -1,0 +1,20 @@
+{
+  "Name": "Minor Glamour",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "S, M (a hunk of jade or malachite worth at least 250 gp, which the spell consumes)",
+  "Duration": "Concentration, up to 8 hours",
+  "Description": "You transform yourself into an object up to one size category smaller than yourself. While in an object form, you cannot move, attack, or cast spells but you remain aware, and make any Wisdom (Perception) checks with disadvantage. If your object form is damaged, you immediately revert to your natural form, appearing prone in the nearest unoccupied space, and taking 2d8 force damage.\n\nTo discern that you are transfigured, a creature can use its action to make an Intelligence (Investigation) check against your spell save DC. If they succeed, you must succeed a concentration check to maintain your disguised form.\n\nYou can remain in your object form for the duration, or revert to your form on your turn (no action required).\n\nChoose one of the following two object types:\n\n**Mundane Object.** You become a mundane object. For example, a bundle of rags if you are small, or a wooden chair or suit of armor if you are medium.\n\n**Glamourous Object.** Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. You become an object of great beauty, such as a jeweled statue. If the target sees you in your object form, they must make a Wisdom saving throw. If they fail, they are charmed, and are compelled to attempt to add you to their personal possessions.",
+  "At Higher Levels": "If you cast this spell using a spell slot of 4th level, the duration is 8 hours. The duration is 24 hours at 5th level, 72 hours at 6th level spell, one week at 7th level, one month at 8th level, and one year at 9th level. Using a spell slot of 5th level or higher grants a duration that doesn’t require concentration, and you can finish a long rest while in your object form. Using a spell slot of 7th level or higher makes you invisible to the effects of the detect magic spell.",
+  "Classes": [
+    "Bladebearer",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": [
+    "Ritual"
+  ]
+}

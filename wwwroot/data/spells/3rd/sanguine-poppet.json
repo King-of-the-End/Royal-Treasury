@@ -1,0 +1,18 @@
+{
+  "Name": "Sanguine Poppet",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [
+    "Sangromancy"
+  ],
+  "Casting Time": "1 minute",
+  "Range": "Touch",
+  "Components": "V, S, M (an object shaped like a creature worth 1 cp or more)",
+  "Duration": "Concentration, up to 1 hour",
+  "Description": "As part of casting this spell, you must expend three Hit Dice or the spell automatically fails. When you do, you smear the material component used to cast this spell with your blood. The object shudders and becomes a sanguine poppet under your control.\n\nYour sanguine poppet has an AC equal to 10 + your proficiency bonus + your spellcasting ability modifier and 30 hit points. If your sanguine poppet is ever reduced to 0 hit points or is more than 1 mile away, the spell ends immediately.\n\nAs a bonus action on your turn, your sanguine poppet can walk or climb up to 30 feet, and you can see and hear through it until the start of your next turn.\n\nAs an action, you can cause the poppet to self-destruct in an explosion of blood, ending this spell. Roll the Hit Dice expended casting this spell, and each creature within 30 feet of the poppet must succeed on a Constitution saving throw or take necrotic damage equal to the result. Creatures that succeed on the saving throw take half as much damage.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, you can expend one additional Hit Die for each slot level above 3rd. Additionally, the duration of this spell increases by 1 hour for each spell slot level above 3rd.",
+  "Classes": [
+    "Warlock"
+  ],
+  "Sourcebook": "Grim Hollow",
+  "Tags": []
+}

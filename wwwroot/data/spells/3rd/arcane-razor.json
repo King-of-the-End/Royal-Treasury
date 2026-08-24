@@ -1,0 +1,21 @@
+{
+  "Name": "Arcane Razor",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (15-foot radius)",
+  "Components": "V, S, M (a melee weapon made of metal worth at least 10 gp that deals slashing damage)",
+  "Duration": "Instantaneous",
+  "Description": "You infuse your weapon with arcane energy and whirl it in a circle, unleashing a wave of razor-thin magic out in all directions. Make a melee weapon attack roll. All creatures within 15 feet of you whose AC is less than your attack roll suffer the attack’s normal damage plus an additional 4d10 slashing damage. The spell also damages any objects in the area that aren’t being worn or carried.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

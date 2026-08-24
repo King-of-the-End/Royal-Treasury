@@ -1,0 +1,18 @@
+{
+  "Name": "Radiant Glamour",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "20 feet",
+  "Components": "V, S, M (faerie dust)",
+  "Duration": "Instantaneous",
+  "Description": "You emit an intense light, searing nearby enemies. Each creature of your choice within 20 feet of that can see you makes a Constitution saving throw. A creature takes 3d12 radiant damage on a failure, or half as much on a success. Fiends and Undead have disadvantage on their saving throws, and if they fail, they are blinded until the end of their next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d12 for each slot level above 3rd.",
+  "Classes": [
+    "Cleric",
+    "Favored Soul",
+    "Paladin"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

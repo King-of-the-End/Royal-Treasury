@@ -1,0 +1,18 @@
+{
+  "Name": "Displacing Maw",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "10 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "Your rib cage opens up violently, trying to devour an enemy in range. The creature must succeed on a Strength saving throw or be devoured by the maw formed by your rib bones. On a failure, it takes 4d8 piercing damage and is transported through magic to a point of your choice on the ground within 60 feet of you, where the maw reappears and regurgitates them. On a success, they take half as much damage and are not transported.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8, and the teleportation range increases by 10 feet, for each slot level above 3rd.",
+  "Classes": [
+    "Inscriptor",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Steinhardt's Guide to the Eldritch Hunt",
+  "Tags": []
+}

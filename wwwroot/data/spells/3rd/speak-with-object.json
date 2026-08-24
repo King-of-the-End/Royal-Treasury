@@ -1,0 +1,20 @@
+{
+  "Name": "Speak with Object",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "V, S",
+  "Duration": "10 minutes",
+  "Description": "You summon the most potent memories of a creature by touching an object they once held. The spell fails if the object was the target of this spell within the last 10 days.\n\nUntil the spell ends, you can ask the memory up to five questions. The memory knows only what the creature knew up until the last moment it touched the object. The answers come in the form of memories, impressions, emotions, and the memory is under no compulsion to offer answers if you are hostile to it or it recognizes you as an enemy. The spell doesn’t put you in contact with the original creature, or its soul.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

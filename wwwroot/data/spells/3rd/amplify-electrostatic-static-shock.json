@@ -1,0 +1,22 @@
+{
+  "Name": "Amplify Electrostatic (Static Shock)",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "Action.",
+  "Range": "Self.",
+  "Components": "S, M ( A Needle to be used as a coil )",
+  "Duration": "Up to one minute. (Concentration)",
+  "Description": "You wrap your body in a supercharged electrostatic emanation that zaps and shocks whatever dares move too close, causing arcs of lightning to fly and strike with no mercy. For the duration, whenever a hostile creature ends their turns or moves into a 30-ft. radius of yourself they are forced to pass a Dexterity Saving Throw or have a bolt of lightning strike them, causing them to suffer 2d4 lightning damage.\n\nWhen a creature moves or ends that turn in that range, you may instead choose to focus that electrical build-up to burst at once, spending your Reaction to force them to pass a Dexterity Saving Throw or suffer 3d6 lightning damage, or half on a success. On a failure they also suffer a 15-ft. penalty to their movement speed until the start of their next turn.\n\nWhen you do so, no arcs form from you to other creatures until the start of your next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 and the Reaction damage increases by 1d6 for each second slot level above 3rd, such as 5th Level, 7th Level and 9th Level.",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

@@ -1,0 +1,22 @@
+{
+  "Name": "Saint’s Hallowing",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [
+    "Burning Rites",
+    "Zanjen"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Touch (one weapon)",
+  "Components": "S, M (the weapon being targeted)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "One weapon you are touching is enhanced for the spell’s duration, becoming magical and gaining a bonus to attack rolls equal to half the level this spell is cast at (rounded up). The weapon deals an additional weapon die of damage during this time, and its Critical Range increases by 1. Finally, the weapon ignores Damage Thresholds.\n\n**Sword Saint Bonus.** When this spell is cast on a Saint Weapon you are attuned to, the level it is cast at is increased by half your proficiency bonus (rounded up). This spell is also treated as being on the class spell list(s) of any creature who has at least three levels in sword saint.",
+  "At Higher Levels": "When you cast this spell at 5th level or higher, you can choose one of the following effects for every two levels above 3rd:\n\n• The weapon’s critical range decreases by 1.\n• The weapon deals one additional weapon die of damage.\n• (3 levels) When you take the Attack action, you can make one additional attack using this weapon.",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Paladin",
+    "Petal Knight"
+  ],
+  "Sourcebook": "Blade, Bone & Benefit",
+  "Tags": []
+}

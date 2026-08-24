@@ -1,0 +1,19 @@
+{
+  "Name": "Extract Spirit",
+  "Spell School": "Necromancy",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "15 feet",
+  "Components": "V, S, M (a slice of cucumber)",
+  "Duration": "Instantaneous",
+  "Description": "With a gesture, you attempt to extract a portion of the soul of a creature you can see. The creature must make a Charisma saving throw. On a failure, it takes 8d6 necrotic damage, you regain hit points equal to half the damage taken, and you gain advantage on the next attack roll, ability check, or saving throw you make before the end of your next turn. On a success, the creature takes half as much damage, and you don't gain any benefits. Creatures without souls automatically succeed on this saving throw.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+  "Classes": [
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul",
+    "Warlock"
+  ],
+  "Sourcebook": "Ryoko's Guide to the Yokai Realms",
+  "Tags": []
+}

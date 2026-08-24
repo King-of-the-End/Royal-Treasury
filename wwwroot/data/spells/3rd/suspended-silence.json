@@ -1,0 +1,21 @@
+{
+  "Name": "Suspended Silence",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "Touch",
+  "Components": "V, S, M (A feather and a handful of gem dust worth 25 gp, which the spell consumes)",
+  "Duration": "24 hours",
+  "Description": "You enchant an object weighing no more than 5 pounds, imbuing it with the silence spell. As you finish casting the spell, you assign a command word, which is inaudible to all but you, and is dragged inside the enchanted object. The object remains enchanted for the duration of the spell or until you speak the command word.\n\nAs a bonus action, you can speak the command word, and if your words are audible to the object, it immediately projects a silencing aura in a 20-foot-radius sphere centered on itself. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.\n\nIf the object moves, the aura moves with it. The aura lasts for 1 minute or until the object is destroyed.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Inscriptor",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": []
+}

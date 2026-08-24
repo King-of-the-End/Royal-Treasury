@@ -1,0 +1,21 @@
+{
+  "Name": "Chain Wrapping",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet.",
+  "Components": "V, S",
+  "Duration": "Concentration, up to 1 minute.",
+  "Description": "You summon heavy chains out of the ground, made of its same material to bind a creature down and to drain their energy from inside to out, as if a vine parasitising from an animal. You choose one creature within reach to be the target of this spell, forcing them to pass a Dexterity saving throw or be bound by chains for the duration. While bound, they suffer the following:\n\n• Their movement speed becomes 0, and they can’t benefit from any bonus to its speed.\n• Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.\n• The target has disadvantage on Wisdom saving throws and suffers 3 Sinking at the start of its turns.\n\nTo break out, the chained target can use its action to make a Strength check against your spell save DC. On a success, the target escapes and is no longer restrained by the hand.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Druid",
+    "Inscriptor",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

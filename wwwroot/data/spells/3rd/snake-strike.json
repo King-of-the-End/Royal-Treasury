@@ -1,0 +1,20 @@
+{
+  "Name": "Snake Strike",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "S, M (a snake's fang)",
+  "Duration": "Instantaneous",
+  "Description": "You relax your body and flood it with arcane energy to deftly move from target to target, stinging targets with daggers of mana before running off. When you cast this spell, you may teleport towards any unoccupied space within a 15-ft radius, also performing a melee spell attack against any creature within 5-ft of you afterward, dealing 2d8 acid damage on a hit. If you hit, you may repeat this process up to three times, targeting a creature different than the last.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the amount of times this spell's effects may repeat is increased by one for each slot level above 3rd, up to repeating a total of 6 times. Also when you cast this spell using a spell slot of 5th level or higher, the range of the teleportation increases by 10-ft and the damage increases by 1d8 for each other slot level above 3rd (5th level, 7th level and 9th level).",
+  "Classes": [
+    "Bladebearer",
+    "Druid",
+    "Petal Knight",
+    "Ranger",
+    "Warlock"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

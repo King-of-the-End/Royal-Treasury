@@ -1,0 +1,17 @@
+{
+  "Name": "Smothering Voice",
+  "Spell School": "Illusion",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (20-foot radius)",
+  "Components": "V",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You speak a phrase commanding silence, which is understood by all creatures within 20 feet of you. All creatures within that range must make a Wisdom saving throw.\n\nOn a failed save, they lose the ability to understand other creatures or read any written language for the spell's duration, except that which originates from you. All other language seems like gibberish to them. They can still understand and produce their own words.\n\nFor the duration, you can speak telepathically to any creature under this effect as long as you are on the same plane.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the spell's range doubles for every slot level above 3rd.",
+  "Classes": [
+    "Bard",
+    "Inscriptor"
+  ],
+  "Sourcebook": "Lyres Guide to Retia - Land of Industry",
+  "Tags": []
+}

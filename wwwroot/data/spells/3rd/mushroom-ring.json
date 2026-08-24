@@ -1,0 +1,20 @@
+{
+  "Name": "Mushroom Ring",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 minute",
+  "Range": "10 feet",
+  "Components": "V, S, M (faerie dust and a sample of fungi)",
+  "Duration": "1 hour",
+  "Description": "You enhance the fecundity of a 10-foot-radius circle of bare rock, earth or soil centered directly underneath you. At the start of your next turn, dimly glowing mushrooms appear at the edges of the circle. The ring's effects extend in a 15-foot-high cylinder above and below the ring.\n\nWhen you cast the spell, choose one of the following creature types: Beasts, Humanoids, or Monstrosities. The ring affects a creature of the chosen type in the following ways:\n\nThe creature attempting to enter the area must first succeed on a Charisma saving throw.\n\n• The creature has disadvantage on attacks against you while in the area.\n• Invited creatures within the cylinder can't be charmed or frightened by the creature.\n• While the ring exists, you can use your bonus action to invite a creature of the excluded type into the ring without penalty.\n\nYou can use your action to consume the ring in an explosion of spores, ending the spell. When you do, creatures other than you and those you have invited within 5 feet of the area must make a Constitution saving throw, taking 4d8 poison damage on a failed save, or half as much damage on a success.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.",
+  "Classes": [
+    "Druid",
+    "Petal Knight",
+    "Ranger"
+  ],
+  "Sourcebook": "Old Gus",
+  "Tags": [
+    "Ritual"
+  ]
+}
