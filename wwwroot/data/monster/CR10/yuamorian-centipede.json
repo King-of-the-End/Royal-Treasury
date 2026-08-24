@@ -1,0 +1,161 @@
+{
+  "Name": "Yuamorian Centipede",
+  "Group": "Yuamorian",
+  "Groups": [
+    "Yuamorian"
+  ],
+  "Source": "Zagalhtas Exolunar Collection",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Yuamorian%20Centipede.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Yuamorian%20Centipede.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Yuamorian%20Centipede.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "yuamorian_centipede",
+      "section_type": "Stat Block",
+      "title": "Yuamorian Centipede",
+      "creature": {
+        "size": "Huge",
+        "type": "fiend (yuamorian)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "158 (15d12 + 60)",
+      "speed": {
+        "walk": "40 ft.",
+        "burrow": "40 ft."
+      },
+      "quality_traits": [
+        "Magic Resist",
+        "magical",
+        "tunneler (10 feet)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7"
+        },
+        "DEX": {
+          "score": 10,
+          "modifier": "-",
+          "save": "+4"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+5"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "+3"
+        }
+      },
+      "saving_throws": [
+        "Dex +4",
+        "Wis +5",
+        "Cha +3"
+      ],
+      "skills": [
+        "Perception +9"
+      ],
+      "resistances": [
+        "B/P/S (magical or silvered)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "tremorsense 30 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "insect",
+        "common"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Advanced Grappler",
+          "name_format": "bold_italic",
+          "description": "The fiend can grapple up to four Medium creatures without causing penalties to its movement or actions. For every two Medium creatures it can grapple one Large creature instead, and for every two Large creatures it can grapple one Gargantuan creature instead."
+        },
+        {
+          "name": "Wild Spirit",
+          "name_format": "bold_italic",
+          "description": "The first attack or ability check the fiend makes each turn has advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes one Bite attack, then if it has a creature grappled it uses its Crush."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 7) piercing damage plus 7 (2d6) poison damage. If the target is no more than one size category larger than the fiend, it is restrained and grappled (escape DC 19).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Crush",
+          "name_format": "bold_italic",
+          "description": "Each creature the fiend is grappling must make a DC 19 Strength saving throw, taking 11 (2d10) bludgeoning damage on a failure, or half as much damage on a successful save. A creature that rolls a result of 20 on their d20 result escapes the grapple automatically."
+        },
+        {
+          "name": "Venomous Bite",
+          "name_format": "bold_italic",
+          "description": "The fiend bites one creature it is grappling, forcing it to make a DC 16 Constitution saving throw. On a failure, the target takes 28 (5d10) poison damage and is poisoned. The target repeats the saving throw at the end of each of their turns, ending the effect on a success and taking 6 (1d10) poison damage on a failure. A creature who fails this saving throw by 5 points or more is paralyzed as long as they are poisoned."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Poison Coat",
+          "name_format": "bold_italic",
+          "description": "When a creature hits the fiend with a weapon attack from within 5 feet of it, poisonous gas and blood escapes its body and, as a reaction, it forces its attacker to make a DC 16 Constitution saving throw. On a failure, the attacker takes 11 (3d6) poison damage and is poisoned until the start of their next turn."
+        }
+      ],
+      "legendary_actions": []
+    }
+  ]
+}

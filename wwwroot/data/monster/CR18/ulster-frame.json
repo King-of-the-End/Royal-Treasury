@@ -1,0 +1,172 @@
+{
+  "Name": "Ulster Frame",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Ulster Frame**\n\nCreated from thesite deposits found by Setanta and his macha devas in deep space, the ulster frames were forged for their personal use in the battle against Luminal Minus. Each macha deva has a personal unit bound to them that they can summon and dismiss, but Setanta has occasionally given ulster frames to heroic mortals who he feels might make promising allies one day. The units have fragments of the hide of an ancient exolunar leviathan slain by Setanta built into them. This same sub-planetary-scaled leviathan\u2019s hide was used to reinforce the World Ark, and the remains of the beast are stored within to be used exclusively by Setanta.",
+  "Information Sections": [
+    {
+      "Title": "Ulster Frame",
+      "Text": "Created from thesite deposits found by Setanta and his macha devas in deep space, the ulster frames were forged for their personal use in the battle against Luminal Minus. Each macha deva has a personal unit bound to them that they can summon and dismiss, but Setanta has occasionally given ulster frames to heroic mortals who he feels might make promising allies one day. The units have fragments of the hide of an ancient exolunar leviathan slain by Setanta built into them. This same sub-planetary-scaled leviathan\u2019s hide was used to reinforce the World Ark, and the remains of the beast are stored within to be used exclusively by Setanta."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Ulster%20Frame.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Ulster%20Frame.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Ulster%20Frame.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "ulster_frame",
+      "section_type": "Stat Block",
+      "title": "Ulster Frame",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (frame unit)",
+        "alignment": "",
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "171 (18d12 \u002B 54)",
+      "threshold": "15",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "90 ft. (hover)",
+        "0-G acceleration": "240 ft."
+      },
+      "quality_traits": [
+        "Alloyed (Medium)",
+        "critical 18",
+        "immutable",
+        "eidolic",
+        "evasion",
+        "magic resist",
+        "unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B9"
+        },
+        "DEX": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B13"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-",
+          "save": "\u002B6"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B9",
+        "Dex \u002B13",
+        "Int \u002B6"
+      ],
+      "skills": [
+        "Acrobatics \u002B13",
+        "Perception \u002B12",
+        "Survival \u002B12"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical or eidolic)",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The frame unit makes three Spine of Curruid attacks."
+        },
+        {
+          "name": "Spine of Curruid",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 15 ft., one target or Ranged Weapon Attack: \u002B13 to hit, range 100/300 ft., one target. Hit: 27 (3d12 \u002B 7) piercing damage. After throwing the spine, it vanishes and a new one is produced on the frame unit\u2019s body.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Flash Hound",
+          "name_format": "bold_italic",
+          "description": "The frame unit takes the Dash and Disengage actions, then makes one Spine of Curruid attack with advantage."
+        },
+        {
+          "name": "Cursed Eidomantic Lance (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The frame unit conjures six Spines of Curruid, each of which it launches at a point it can see within 300 feet. The spikes explode into a 20-foot-radius sphere of energy and chaotic thorns, forcing each creature in those areas to make a DC 21 Dexterity saving throw. Each creature that fails takes 33 (6d10) piercing damage and 26 (4d12) lightning damage and is restrained for 1 minute. On a success, they take half as much damage and aren\u2019t restrained. Creatures restrained this way can use an action to attempt a DC 18 Strength check, escaping the thorns on a success. Additionally, creatures restrained this way are cursed until freed, and cannot regain hit points while cursed this way."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Impossibility Reactor (3/Day)",
+          "name_format": "bold_italic",
+          "description": "The next attack the frame unit makes is treated as an automatic hit, regardless of their d20 result. If the attack is ranged, its normal and long ranges are doubled."
+        },
+        {
+          "name": "Sympathetic Gate (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The frame unit produces the effects of the sympathetic gateway spell, requiring no spell slot or components."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "Name": "Undying Frame",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Undying Frame**\n\nThis deceased frame unit is the remains of one or more frame units who met a grizzly end in combat, who then became possessed by the last will and anguish of their pilots, or\u2014in rarer cases\u2014the undying frame is a frame unit with a corrupt sense of self that led to violent case of self-possession. They act as though piloted by a dark spirit, but their mechanical functions have all but ceased. The undying frame will act out against anything it could perceive to be a threat except its own kind, and consumes chunks of other similar frame units it finds or defeats.\n\n**Infectious Spirit.** The malfunction controlling these units can spread from one to another, though it cannot kill another frame unit on its own. By attempting to infect another, it cripples and shuts down a frame unit\u2019s ability to operate, sometimes leading to them hanging lifelessly.\n\n**Jenvaj\u2019s Influence.** Some undying frames are the result of the eidolic deity Jenvaj worming its way into their systems and puppeting them from the inside, then using them to spread its influence. These individuals are monstrosities instead of undead, and have a more mutated appearance.\n\n**Converting a Frame Unit**\n\nIf you wish to turn another frame unit into an undying frame, you can make the following alterations to it do so:\n\n\u2022 The unit gains the Regeneration/Regen trait, regaining a number of points each turn equal to half its challenge rating (rounded up) \u002B 5.\n\u2022 The frame unit gains the undead creature type.\n\u2022 The frame unit\u2019s alignment becomes neutral evil.\n\u2022 The frame unit gains blindsight out to 60 feet, or their existing blindsight increases by 60 feet.\n\u2022 Any cold, radiant, or lightning damage the unit would deal becomes force damage.\n\u2022 The frame unit gains the System Infection (1/Rest) action described below.\n\n**System Infection (1/Rest) (Action).** The undying frame chooses a number of non-undead frame units it can see within 120 feet, whom it attempts to infiltrate the systems of. Each one must make an Intelligence saving throw (DC 8 \u002B Constitution modifier \u002B proficiency bonus). On a failure, they are infected with a virus that attempts to possess their systems, and is stunned for 1 minute. During this time, they can repeat the saving throw each time they take damage and at the end of each of their turns, ending the effect on a success.\n\nThe undying frame can target a number of units equal to its proficiency bonus.\n\n**Quote**\n\n\u201CDeath comes even to machines. So to does undeath. I don\u2019t care for it. I consider it the duty of any living being to destroy these perversions if it is within their power.\u201D",
+  "Information Sections": [
+    {
+      "Title": "Undying Frame",
+      "Text": "This deceased frame unit is the remains of one or more frame units who met a grizzly end in combat, who then became possessed by the last will and anguish of their pilots, or\u2014in rarer cases\u2014the undying frame is a frame unit with a corrupt sense of self that led to violent case of self-possession. They act as though piloted by a dark spirit, but their mechanical functions have all but ceased. The undying frame will act out against anything it could perceive to be a threat except its own kind, and consumes chunks of other similar frame units it finds or defeats.\n\n**Infectious Spirit.** The malfunction controlling these units can spread from one to another, though it cannot kill another frame unit on its own. By attempting to infect another, it cripples and shuts down a frame unit\u2019s ability to operate, sometimes leading to them hanging lifelessly.\n\n**Jenvaj\u2019s Influence.** Some undying frames are the result of the eidolic deity Jenvaj worming its way into their systems and puppeting them from the inside, then using them to spread its influence. These individuals are monstrosities instead of undead, and have a more mutated appearance."
+    },
+    {
+      "Title": "Converting a Frame Unit",
+      "Text": "If you wish to turn another frame unit into an undying frame, you can make the following alterations to it do so:\n\n\u2022 The unit gains the Regeneration/Regen trait, regaining a number of points each turn equal to half its challenge rating (rounded up) \u002B 5.\n\u2022 The frame unit gains the undead creature type.\n\u2022 The frame unit\u2019s alignment becomes neutral evil.\n\u2022 The frame unit gains blindsight out to 60 feet, or their existing blindsight increases by 60 feet.\n\u2022 Any cold, radiant, or lightning damage the unit would deal becomes force damage.\n\u2022 The frame unit gains the System Infection (1/Rest) action described below.\n\n**System Infection (1/Rest) (Action).** The undying frame chooses a number of non-undead frame units it can see within 120 feet, whom it attempts to infiltrate the systems of. Each one must make an Intelligence saving throw (DC 8 \u002B Constitution modifier \u002B proficiency bonus). On a failure, they are infected with a virus that attempts to possess their systems, and is stunned for 1 minute. During this time, they can repeat the saving throw each time they take damage and at the end of each of their turns, ending the effect on a success.\n\nThe undying frame can target a number of units equal to its proficiency bonus."
+    },
+    {
+      "Title": "Quote",
+      "Text": "\u201CDeath comes even to machines. So to does undeath. I don\u2019t care for it. I consider it the duty of any living being to destroy these perversions if it is within their power.\u201D"
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Undying%20Frame.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Undying%20Frame.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Undying%20Frame.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "undying_frame",
+      "section_type": "Stat Block",
+      "title": "Undying Frame",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR), undead",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "168 (16d12 \u002B 64)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "magic resist",
+        "massive (Medium/5 feet/DC 17)",
+        "magical",
+        "regen 10",
+        "unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 5,
+          "modifier": "-3",
+          "save": "\u002B1"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 9,
+          "modifier": "-1",
+          "save": "\u002B3"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B8",
+        "Int \u002B1",
+        "Cha \u002B3"
+      ],
+      "skills": [
+        "Perception \u002B11"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "exhaustion",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all but doesn\u2019t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "\u002B4",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The undying frame makes three DGR Slam attacks or two Dead Space Missile attacks."
+        },
+        {
+          "name": "DGR Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 10 ft., one target. Hit: 16 (2d10 \u002B 5) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dead Space Missile",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B8 to hit, range 150/600 feet, one target. Hit: 17 (2d12 \u002B 4) cold damage plus 6 (1d10) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "System Infection (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The undying frame chooses up to four other non-undead frame units it can see within 120 feet, who it attempts to infiltrate the systems of. Each one must make a DC 16 Intelligence saving throw. On a failure, they are infected with a virus that attempts to possess their systems, and are stunned for 1 minute. During this time, they can repeat the saving throw each time they take damage and at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Phantom Code (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The undying frame vanishes and teleports to a space it can see within 120 feet, then becomes invisible until the start of its next turn. While invisible this way it cannot be detected by blindsight, as though it had phased out of reality entirely. If this action recharges on the same turn the effect would end, it may immediately spend it again to seamlessly remain invisible, requiring no bonus action."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "Name": "Underloft Hiker",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Underloft Hiker**\n\nUnderloft hikers are designed to stand guard over or explore cave-like environments. They easily traverse sheer surfaces, and stay out of sight until they strike targets with compressed bursts of pure arcane power.\n\n**Constructed Nature.** The underloft hiker doesn\u2019t require air, food, drink, or sleep.",
+  "Information Sections": [
+    {
+      "Title": "Underloft Hiker",
+      "Text": "Underloft hikers are designed to stand guard over or explore cave-like environments. They easily traverse sheer surfaces, and stay out of sight until they strike targets with compressed bursts of pure arcane power.\n\n**Constructed Nature.** The underloft hiker doesn\u2019t require air, food, drink, or sleep."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Underloft%20Hiker.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Underloft%20Hiker.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Underloft%20Hiker.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "underloft_hiker",
+      "section_type": "Stat Block",
+      "title": "Underloft Hiker",
+      "creature": {
+        "size": "Medium",
+        "type": "construct",
+        "alignment": ""
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "60 (8d8 \u002B 24)",
+      "threshold": "5",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Athletics \u002B5",
+        "Perception \u002B4"
+      ],
+      "resistances": [
+        "B/P/S (magical or adamantine)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "force",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "blindsight 120 ft. (blind beyond this radius)",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "understands the languages of its creator but can\u2019t speak"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "\u002B2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct uses its Strike twice or its Force Shatter once."
+        },
+        {
+          "name": "Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B5 to hit, reach 5 ft., one target. Hit: 9 (1d10 \u002B 3) piercing damage plus 4 (1d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Force Shatter",
+          "name_format": "bold_italic",
+          "description": "One creature of the construct\u2019s choice that it can see within 60 feet is assailed with a burst of energy, and must make a DC 13 Dexterity saving throw, taking 21 (4d8 \u002B 3) force damage and is knocked prone on a failure. If this action is taken while the construct is hidden from its target, the target has disadvantage on their save against it."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Underaction",
+          "name_format": "bold_italic",
+          "description": "While it is within dim light or is partially obscured, the construct takes the Hide action."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Drop",
+          "name_format": "bold_italic",
+          "description": "When the construct would take falling damage, it takes less damage as though it had fallen 100 fewer feet than it did."
+        }
+      ],
+      "legendary_actions": []
+    }
+  ]
+}

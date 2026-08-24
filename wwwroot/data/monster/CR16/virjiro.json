@@ -1,0 +1,170 @@
+{
+  "Name": "Virjiro",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Virjiro**\n\nOriginally conceptualized as a corruption of their “oppressors,” the virjiro were created by the dragon soul knight Oyd, who wishes to convert the vast power of dragons into a more controlled form. They drained the souls of dragons to create various artifacts, then converted the remaining husks into the alien form of the virjiro. These aberrant creatures—vestiges of once-proud dragons—were bound to Oyd as their servants and guardians. When Oyd eventually fell, the remaining virjiro retreated to the astral plane and mutated further, eventually re-emerging as the “draconic antithesis” they exist as now.\n\nNow a foreign and alien being, the virjiro propagate through mysterious means. They carry a hatred for mankind for having tormented their original draconic selves, but that impulse has devolved into pure instinct and is no longer intellectualized. Virjiro will appear across the universe to assault the domains of dragons and steal their corpses (presumably to aid in the creation of more of their kind). They are unfeeling, unknowable, and alien to common sense.\n\n**Unusual Nature.** The virjiro does not require air, food or water to survive.",
+  "Information Sections": [
+    {
+      "Title": "Virjiro",
+      "Text": "Originally conceptualized as a corruption of their “oppressors,” the virjiro were created by the dragon soul knight Oyd, who wishes to convert the vast power of dragons into a more controlled form. They drained the souls of dragons to create various artifacts, then converted the remaining husks into the alien form of the virjiro. These aberrant creatures—vestiges of once-proud dragons—were bound to Oyd as their servants and guardians. When Oyd eventually fell, the remaining virjiro retreated to the astral plane and mutated further, eventually re-emerging as the “draconic antithesis” they exist as now.\n\nNow a foreign and alien being, the virjiro propagate through mysterious means. They carry a hatred for mankind for having tormented their original draconic selves, but that impulse has devolved into pure instinct and is no longer intellectualized. Virjiro will appear across the universe to assault the domains of dragons and steal their corpses (presumably to aid in the creation of more of their kind). They are unfeeling, unknowable, and alien to common sense.\n\n**Unusual Nature.** The virjiro does not require air, food or water to survive."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Virjiro.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Virjiro.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Virjiro.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "virjiro",
+      "section_type": "Stat Block",
+      "title": "Virjiro",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "aberration (alien)",
+        "alignment": ""
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "206 (16d20 + 38)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Alien absurdity",
+        "macro attacks (Medium)",
+        "magic resist",
+        "magical",
+        "siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+7"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-",
+          "save": "+5"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Int +5"
+      ],
+      "skills": [
+        "Perception +8"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "understands Astral and Draconic but doesn’t speak"
+      ],
+      "challenge_rating": "16 (15,000 XP)",
+      "proficiency_bonus": "+5",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The virjiro uses its Alien Ray or Burden Ray, then makes two Limb Strike attacks."
+        },
+        {
+          "name": "Alien Ray",
+          "name_format": "bold_italic",
+          "description": "The virjiro targets one non-alien creature it can see within 30 feet, who it sends a mind-assaulting beam of alien knowledge toward. The target must make a DC 16 Wisdom saving throw, and on a failure they are affected as though by the confusion spell (using this saving throw in place of its own). A creature who succeeds their saving throw to resist or end this effect becomes immune to the virjiro’s Alien Ray for 24 hours."
+        },
+        {
+          "name": "Burden Ray",
+          "name_format": "bold_italic",
+          "description": "The virjiro fires a ray of energy at one creature it can see within 60 feet, who must make a DC 15 Dexterity saving throw (macro). On a failure, they take 22 (4d10) force damage (macro: 40 force damage)."
+        },
+        {
+          "name": "Limb Strike",
+          "name_format": "bold_italic",
+          "description": "Macro Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage (macro: 26 bludgeoning damage).",
+          "inline_formatting": {
+            "Macro Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Grand Barrage (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The virjiro targets up to six non-alien creatures of its choice within 120 feet with either its Alien Ray or its Burden Ray (choosing the same attack for all targets)."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Energy Reflection",
+          "name_format": "bold_italic",
+          "description": "When the virjiro is targeted by an effect that deals a damage type other than piercing, slashing, or bludgeoning, and it succeeds a saving throw against it, the virjiro may use its reaction to target one creature it can see within 60 feet and make them the next target of the same effect, using the original save DC for it. If they use this reaction to do so, they take no damage and ignore the effects of the triggering effect entirely. If it wishes to, the virjiro can turn the effect’s damage into force damage."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The virjiro makes one Limb Strike attack (1 Legendary Action) or uses its Alien Ray or Burden Ray (2 Legendary Actions)."
+          },
+          {
+            "name": "Shimmering Hue (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The virjiro’s body shimmers until the start of its next turn, granting attacks against it disadvantage."
+          }
+        ]
+      }
+    }
+  ]
+}

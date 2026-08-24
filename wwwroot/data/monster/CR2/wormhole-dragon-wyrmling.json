@@ -1,0 +1,127 @@
+{
+  "Name": "Wormhole Dragon Wyrmling",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Wormhole Dragons**\n\nThese deep-space dragons are a blight to ships that happen to encounter them, and a shadow looming in every debris belt and asteroid moving through exolunar space. They are predatory by nature, seeking anything that sparks their curiosity and destroying anything that gets between them and it. They are highly intelligent when it comes to reasoning and planning, but their isolation leaves them selfish and with a childish mentality, so much so that they don\u2019t consider the effect they have on other creatures.\n\n**Flippant Motivations.** A wormhole dragon is motivated entirely by a focus on breaking from its usual boring patterns: their life in exolunar space rarely holds surprises, and sometimes it can take decades for anything to come through their part of space. As a result, they seek out excitement and try to get the most out of toying with lesser creatures that catch their attention. They can be won over by those who promise them amusement or by people who strike them as fascinating, but they usually get bored with their arrangements and muses quickly. They may even betray allies of \u201Clesser standing\u201D in their boredom, hoping the resulting turmoil will be fun to navigate.\n\n**Cosmic Predators.** Wormhole dragons are cunning hunters who lurk among rocks and meteors to patiently wait for prey to come to them. Utilizing their ability to warp and shift around space, they use hit-and-run tactics to injure their prey then retreat and plan their next move. They are more agile than most dragons, and exploit that for the purposes of overcoming the dangers of exolunar space.\n\nLuckily, most wormhole dragons see the hunt as mere fun. They often keep their sustenance in their lairs and have set hunting grounds they warp between, so their \u201Copportunistic\u201D hunts are more often than not just a ploy to pass time. They may attack a spacefaring vessel until the excitement passes or it poses any moderate threat, then will warp away and leave it in disrepair.\n\n**Planetary Tourists.** Occasionally, a wormhole dragon will choose to visit a populated planet and live for some time as a resident there. They will assume the form of a local creature and spend a human lifetime exploring and \u201Cwindow shopping\u201D in their society. These stints of exploration are a hobby to them, which they gleefully indulge in to pass time. While ingratiated with a society, they will slowly find people and things they desire and lure them to a situation where they can warp them back to their lair, keeping them as possessions, servants, or concubines.\n\nA wormhole dragon\u2019s exit from such a \u201Cvacation\u201D will usually involve revealing itself in the process of stealing something of great importance: a high ranking public servant, a landmark, an entire building or treasury, etc. To the dragon, taking people, places, and things doesn\u2019t cause lasting damage to the world they come from; on the contrary, they see it as enriching their personal world contained in their lair, and see the acquisition of servants as inviting them into a paradise.\n\n**Egocentric Tells.** A common reason for such a dragon being caught in a disguise is due to their consistent inability to recognize the cultures they insert themselves into as their own. Even if they live 100 years on a planet, they will still speak as though they were visiting and use language that separates \u201Ctheir world\u201D from the one they\u2019re inhabiting. Though not obvious at a glance, this behavior can raise suspicions.\n\n**Quote**\n\n\u201CHumanoid forms come and go as needed, but the form of humans and astral elves are my favorites. They have a charming efficiency and elegance to them, and can pop up anywhere across the galaxy. As useful as they are appealing.\u201D",
+  "Information Sections": [
+    {
+      "Title": "Wormhole Dragons",
+      "Text": "These deep-space dragons are a blight to ships that happen to encounter them, and a shadow looming in every debris belt and asteroid moving through exolunar space. They are predatory by nature, seeking anything that sparks their curiosity and destroying anything that gets between them and it. They are highly intelligent when it comes to reasoning and planning, but their isolation leaves them selfish and with a childish mentality, so much so that they don\u2019t consider the effect they have on other creatures.\n\n**Flippant Motivations.** A wormhole dragon is motivated entirely by a focus on breaking from its usual boring patterns: their life in exolunar space rarely holds surprises, and sometimes it can take decades for anything to come through their part of space. As a result, they seek out excitement and try to get the most out of toying with lesser creatures that catch their attention. They can be won over by those who promise them amusement or by people who strike them as fascinating, but they usually get bored with their arrangements and muses quickly. They may even betray allies of \u201Clesser standing\u201D in their boredom, hoping the resulting turmoil will be fun to navigate.\n\n**Cosmic Predators.** Wormhole dragons are cunning hunters who lurk among rocks and meteors to patiently wait for prey to come to them. Utilizing their ability to warp and shift around space, they use hit-and-run tactics to injure their prey then retreat and plan their next move. They are more agile than most dragons, and exploit that for the purposes of overcoming the dangers of exolunar space.\n\nLuckily, most wormhole dragons see the hunt as mere fun. They often keep their sustenance in their lairs and have set hunting grounds they warp between, so their \u201Copportunistic\u201D hunts are more often than not just a ploy to pass time. They may attack a spacefaring vessel until the excitement passes or it poses any moderate threat, then will warp away and leave it in disrepair.\n\n**Planetary Tourists.** Occasionally, a wormhole dragon will choose to visit a populated planet and live for some time as a resident there. They will assume the form of a local creature and spend a human lifetime exploring and \u201Cwindow shopping\u201D in their society. These stints of exploration are a hobby to them, which they gleefully indulge in to pass time. While ingratiated with a society, they will slowly find people and things they desire and lure them to a situation where they can warp them back to their lair, keeping them as possessions, servants, or concubines.\n\nA wormhole dragon\u2019s exit from such a \u201Cvacation\u201D will usually involve revealing itself in the process of stealing something of great importance: a high ranking public servant, a landmark, an entire building or treasury, etc. To the dragon, taking people, places, and things doesn\u2019t cause lasting damage to the world they come from; on the contrary, they see it as enriching their personal world contained in their lair, and see the acquisition of servants as inviting them into a paradise.\n\n**Egocentric Tells.** A common reason for such a dragon being caught in a disguise is due to their consistent inability to recognize the cultures they insert themselves into as their own. Even if they live 100 years on a planet, they will still speak as though they were visiting and use language that separates \u201Ctheir world\u201D from the one they\u2019re inhabiting. Though not obvious at a glance, this behavior can raise suspicions."
+    },
+    {
+      "Title": "Quote",
+      "Text": "\u201CHumanoid forms come and go as needed, but the form of humans and astral elves are my favorites. They have a charming efficiency and elegance to them, and can pop up anywhere across the galaxy. As useful as they are appealing.\u201D"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "wormhole_dragon_wyrmling",
+      "section_type": "Stat Block",
+      "title": "Wormhole Dragon Wyrmling",
+      "creature": {
+        "size": "Medium",
+        "type": "dragon (exolunar)",
+        "alignment": "true neutral"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "60 (8d8 \u002B 24)",
+      "speed": {
+        "walk": "30 ft.",
+        "teleport": "30 ft.",
+        "fly": "60 ft.",
+        "0-G acceleration": "60 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B5"
+        },
+        "INT": {
+          "score": 9,
+          "modifier": "-1",
+          "save": "\u002B1"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Con \u002B5",
+        "Int \u002B1"
+      ],
+      "skills": [
+        "Perception \u002B8",
+        "Stealth \u002B5"
+      ],
+      "resistances": [
+        "cold",
+        "radiant"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "force"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "\u002B2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Sympathetic Warp",
+          "name_format": "bold_italic",
+          "description": "When the dragon uses its teleport speed, any creature mounting it, or who is being grappled by/grappling the dragon directly teleports along with it. This does not end these grapples."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B4 to hit, reach 5 ft., one target. Hit: 8 (1d10 \u002B 2) piercing damage plus 4 (1d6) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Inversion Wave (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The dragon creates an inverted gravity well that projects out from it in a 15-foot cone. Each creature in that area must make a DC 13 Strength saving throw, taking 21 (6d6) force damage on a failure, or half as much on a successful one. Each creature who fails by 5 points or more is also pushed 10 feet back from the dragon and knocked prone."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

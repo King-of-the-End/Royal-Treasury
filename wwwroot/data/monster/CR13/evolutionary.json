@@ -1,0 +1,157 @@
+{
+  "Name": "Evolutionary",
+  "Group": "Thesite Elementals",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Evolutionary**\n\nThe adaptable evolutionary is an elemental that has absorbed the nature of its environment on a conceptual level. Their form may change and shift based on this, producing fins, wings, claws, etc. as needed to best survive in the ecosystem they find themself in. Normally they retain adaptations for the environment they were born into, but exposure to others for long periods of time may lead to them shifting and changing.",
+  "Information Sections": [
+    {
+      "Title": "Evolutionary",
+      "Text": "The adaptable evolutionary is an elemental that has absorbed the nature of its environment on a conceptual level. Their form may change and shift based on this, producing fins, wings, claws, etc. as needed to best survive in the ecosystem they find themself in. Normally they retain adaptations for the environment they were born into, but exposure to others for long periods of time may lead to them shifting and changing."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Thesite%20Evolutionary.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Thesite%20Evolutionary.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR13/Thesite%20Evolutionary.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "evolutionary",
+      "section_type": "Stat Block",
+      "title": "Evolutionary",
+      "creature": {
+        "size": "Huge",
+        "type": "elemental",
+        "alignment": ""
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "170 (20d12 + 40)",
+      "speed": {
+        "walk": "50 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "magic immunity 3rd"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+7"
+        },
+        "DEX": {
+          "score": 23,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-",
+          "save": "+5"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+3"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+6"
+        }
+      },
+      "saving_throws": [
+        "Str +7",
+        "Int +5",
+        "Wis +3",
+        "Cha +6"
+      ],
+      "skills": [
+        "Perception +8"
+      ],
+      "resistances": [
+        "all that isn’t eidolic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "force",
+        "B/P/S (eidolic or magical)"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "truesight 30 ft.",
+        "blindsight 60 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "understands all Primordial languages but doesn’t speak"
+      ],
+      "challenge_rating": "13 (10,000 XP)",
+      "proficiency_bonus": "+5",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Burst Adaptation",
+          "name_format": "bold_italic",
+          "description": "The elemental cannot have disadvantage on attack rolls or saving throws, and will produce adaptations to anything that would cause these issues for as long as they are needed. If such a roll would have disadvantage, however, it cannot have advantage on it either."
+        },
+        {
+          "name": "Varied Evolution",
+          "name_format": "bold_italic",
+          "description": "The elemental has one of the following movement types with a speed equal to its base movement speed: climb, swim, or fly. The type is determined by the environment it was created in and what evolutionary aspects might be needed within it to best navigate its environment. It also has a corresponding damage immunity for whichever one it has: acid for climb, cold for swim, and lightning for fly."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental uses its Unreasoning Slice three times, or uses it once and uses its Potentiality Beam."
+        },
+        {
+          "name": "Unreasoning Slice",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) slashing damage plus 6 (1d10) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Potentiality Beam",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +11 to hit, range 120 ft., one target. Hit: 44 (8d10) force damage. If this attack’s target is immune to force damage they are treated as being resistant instead, and if resistant they are treated as if they weren’t.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Environmental Sovereign (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Depending on the Varied Evolution movement type chosen for the elemental, it produces the effects of one of the following spells as though cast at 8th level (requiring no spell slot or components): earthquake for climb, ravenous tornado for fly, or whirlpool for swim. The elemental has advantage on concentration checks made to sustain these effects, and is unaffected by them."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

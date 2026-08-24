@@ -1,0 +1,160 @@
+{
+  "Name": "Void Majinn",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Void Majinn**\n\nVoid majinn, or cosmic genies, are a genie variant native to the astral plane. These genies find the company of mortals (alive or dead) to be irritating and an affront to the vast, cosmic wisdom they feel they possess. They dislike dealing with mankind unless they can obtain something from it, and only care for the service of mortals if they are particularly noteworthy. On the other hand, void majinn will readily attach themselves to greater cosmic entities in an attempt to elevate themselves, and they can often be found aiding void dragons, astral creatures, cosmic emperors, or other powerful beings who exist on a more universal scale.",
+  "Information Sections": [
+    {
+      "Title": "Void Majinn",
+      "Text": "Void majinn, or cosmic genies, are a genie variant native to the astral plane. These genies find the company of mortals (alive or dead) to be irritating and an affront to the vast, cosmic wisdom they feel they possess. They dislike dealing with mankind unless they can obtain something from it, and only care for the service of mortals if they are particularly noteworthy. On the other hand, void majinn will readily attach themselves to greater cosmic entities in an attempt to elevate themselves, and they can often be found aiding void dragons, astral creatures, cosmic emperors, or other powerful beings who exist on a more universal scale."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Void%20Majinn.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Void%20Majinn.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Void%20Majinn.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "void_majinn",
+      "section_type": "Stat Block",
+      "title": "Void Majinn",
+      "creature": {
+        "size": "Large",
+        "type": "elemental",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "21 (natural armor)",
+      "hit_points": "170 (20d10 + 60)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 23,
+          "modifier": "+6"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+8"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+7"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 23,
+          "modifier": "+6"
+        }
+      },
+      "saving_throws": [
+        "Con +8",
+        "Int +7"
+      ],
+      "skills": [
+        "Deception +11",
+        "Perception +9"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "force",
+        "radiant"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "Astral"
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "+5",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Elemental Demise",
+          "name_format": "bold_italic",
+          "description": "If the majinn dies, its body disintegrates into stardust, leaving behind only the equipment and items it was carrying or wearing."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The majinn’s innate spellcasting ability is Charisma. They can cast the following spells, requiring no material components:\n• At will: bright arrow (4d10), detect evil and good, detect magic, disguise self\n• 3/day each: create food and water (can create wine instead of water), tongues\n• 2/day each: antigravity zone (7th level), enlarge/reduce, major image, plane shift\n• 1/day each: astral weapon, creation, dead nova, limited wish, sympathetic gateway\n\nThe majinn does not make Eidomancy checks. Its spells are cast at 4th level unless their base level is higher."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The majinn may make three weapon attacks (or freely replace each with a use of Cosmic Delusion). It may replace two of those attacks with casting a spell with a casting time of 1 action using its Innate Spellcasting or its Summon Astral Elemental."
+        },
+        {
+          "name": "Meteor Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) piercing damage plus 7 (2d6) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Delusion",
+          "name_format": "bold_italic",
+          "description": "One Huge or smaller creature the majinn chooses within 60 feet is caught in a cosmic spatial warp and must make a DC 19 Dexterity saving throw. On a failure they take 5 (1d8) radiant damage plus 11 (2d10) force damage, and are teleported to an unoccupied space the majinn chooses within 60 feet of themself or the target. The majinn may only target each creature with this effect once per turn."
+        },
+        {
+          "name": "Summon Astral Elemental (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "The majinn may summon one or more astral elementals at will, which appears in an unoccupied space it can see within 30 feet. The elemental remains for 1 hour, until the majinn Rests, or until the majinn is reduced to 0 hit points (whichever comes first). The astral elementals the majinn summons are loyal to it, and will do as it commands with one of the following options:\n• It summons two CR 5 astral elementals, each into a different space within range.\n• It summons one CR 9 greater astral elemental.\n\nIn either case, if the majinn uses the second use of the feature at the same time as the first, the summoned elementals have their highest maximum hit points possible for their hit dice (156 for CR 5 and 270 for CR 9)."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Astral Vault",
+          "name_format": "bold_italic",
+          "description": "The majinn summons and opens a vaulted door to a cosmic vault it owns on another plane, and causes the door to attempt to pull in one creature the majinn chooses within 30 feet of itself. The target must succeed a DC 19 Charisma saving throw or be pulled into the vault, where they are restrained and incapacitated for as long as the majinn can concentrate (it may concentrate on this effect aside from any spells it is concentrating on). The majinn may produce the creature trapped inside in any unoccupied space it chooses within 30 feet as a bonus action (which can be taken as part of using the vault on a new target), where the creature emerges prone. If the majinn loses concentration it produces the creature the same way, except they return to an unoccupied space closest to where they vanished from within that 30 foot range. A creature trapped in the vault repeats the Charisma save at the end of each of their turns, and on a success the majinn loses concentration immediately."
+        },
+        {
+          "name": "Summon Object",
+          "name_format": "bold_italic",
+          "description": "The majinn summons one handheld item from one of its planar vaults to its hand, including summoning a handheld item from the possession of a creature it has trapped."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

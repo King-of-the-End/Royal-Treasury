@@ -1,0 +1,152 @@
+{
+  "Name": "Void Giant",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Void Giant**\n\nThe colossal figures that are void giants are massive humanoid figures with skin resembling the texture of asteroids. They float about exolunar space, searching for sustenance and entertainment. They are capable of surviving for long periods of time by consuming mineral deposits from space rocks and debris, but prefer meat and living creatures. They can grow particularly large compared to terrestrial giants (likely the result of being unburdened by the effects of gravity).\n\n**Alien Introspective.** Void giants are not terribly dissimilar to the giants of Somnus Domina or other planets, but due to their appearance and environment they are disconnected from the traditions of their would-be kin. They see themselves as alien in nature compared to most other life—neither greater nor lesser—and this mental separation allows them to disassociate when at odds with other creatures.\n\n**Astral Strongholds.** Void giants will make their homes in deep space, using their control over gravity to shape asteroids or larger space debris into their personal castles. When many come together, a series of asteroids or a small planetoid may be fashioned into a huge community or city. Very rarely, and very unfortunately, such a home may be drawn into a planet’s gravity and crash down, resulting in an enraged void giant taking out their anger on the surrounding area.\n\n**Hired Compliance.** When presented with an opportunity to gain resources, protection, or a reliable source of nourishment, void giants will allow themselves to be hired as mercenaries. Usually this requires their employer to also be able to best them in combat or hold something over them, otherwise these titanic brutes may turn on them if they feel they can simply seize their payment in advance.\n\n**Ship Raiders.** Void giants that travel in groups will band together to raid exolunar vessels for food and supplies, sieging them like hostile pirates. Due to their size they pose a risk to their prey, being able to withstand the wrath of most astradecks and vessels for long enough to cause proper damage.",
+  "Information Sections": [
+    {
+      "Title": "Void Giant",
+      "Text": "The colossal figures that are void giants are massive humanoid figures with skin resembling the texture of asteroids. They float about exolunar space, searching for sustenance and entertainment. They are capable of surviving for long periods of time by consuming mineral deposits from space rocks and debris, but prefer meat and living creatures. They can grow particularly large compared to terrestrial giants (likely the result of being unburdened by the effects of gravity).\n\n**Alien Introspective.** Void giants are not terribly dissimilar to the giants of Somnus Domina or other planets, but due to their appearance and environment they are disconnected from the traditions of their would-be kin. They see themselves as alien in nature compared to most other life—neither greater nor lesser—and this mental separation allows them to disassociate when at odds with other creatures.\n\n**Astral Strongholds.** Void giants will make their homes in deep space, using their control over gravity to shape asteroids or larger space debris into their personal castles. When many come together, a series of asteroids or a small planetoid may be fashioned into a huge community or city. Very rarely, and very unfortunately, such a home may be drawn into a planet’s gravity and crash down, resulting in an enraged void giant taking out their anger on the surrounding area.\n\n**Hired Compliance.** When presented with an opportunity to gain resources, protection, or a reliable source of nourishment, void giants will allow themselves to be hired as mercenaries. Usually this requires their employer to also be able to best them in combat or hold something over them, otherwise these titanic brutes may turn on them if they feel they can simply seize their payment in advance.\n\n**Ship Raiders.** Void giants that travel in groups will band together to raid exolunar vessels for food and supplies, sieging them like hostile pirates. Due to their size they pose a risk to their prey, being able to withstand the wrath of most astradecks and vessels for long enough to cause proper damage."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Void%20Giant.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Void%20Giant.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Void%20Giant.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "void_giant",
+      "section_type": "Stat Block",
+      "title": "Void Giant",
+      "creature": {
+        "size": "Huge",
+        "type": "giant",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "150 (13d12 + 65)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "30 ft. (hover)",
+        "0-G acceleration": "90 ft."
+      },
+      "quality_traits": [
+        "Exolunar nature"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 21,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+8"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +8",
+        "Int +6",
+        "Wis +4"
+      ],
+      "skills": [
+        "Athletics +8",
+        "Perception +4"
+      ],
+      "resistances": [
+        "force"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "Giant"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "+3",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Forcefield",
+          "name_format": "bold_italic",
+          "description": "The giant projects a field of energy around itself, giving all ranged attacks made against it disadvantage."
+        },
+        {
+          "name": "Unusual Warp (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When the giant takes movement on its turn, it can choose to gain a teleport speed equal to its 0-G acceleration speed until the end of its turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The giant makes two Gravity Staff attacks. If both hit the same creature who is Large or smaller, the target must succeed a DC 16 Dexterity saving throw. On a failure they can seize that creature and throw them as ammunition for their Meteor Hurl attack, which automatically hits that creature, who ends the turn in the target space. They can only throw the target up to the attack’s normal range."
+        },
+        {
+          "name": "Gravity Staff",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 6 (1d10) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Meteor Hurl",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +8 to hit, range 90/270 ft., one target. Hit: 18 (2d12 + 5) bludgeoning damage plus 11 (2d10) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Anomalous Zone (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The giant produces the effects of the antigravity zone spell, cast as though at 5th level. It does not have to concentrate on the effect, which it can end as a bonus action."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

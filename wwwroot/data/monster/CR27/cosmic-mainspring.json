@@ -1,0 +1,243 @@
+{
+  "Name": "Cosmic Mainspring",
+  "Group": "Thesite Elementals",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Cosmic Mainspring**\n\nCompared to lesser creatures by the same name, this is the true nature of a thesite elemental. If a large deposit of thesite is able to absorb enough mental energy from surrounding life, it can come to life in its entirety. This pure elemental is a cosmic glitch, which warps realities around it. The odd nature of these phantasmal beings can puncture adjacent realities, causing the appearance of one mainspring to lead to their emergence in parallel realities as well (and its destruction in those realities leading to its destruction in others).\n\nDue to thesite\u2019s reactivity to thought and imagination, the cosmic mainspring responds to those elements as well, in the form of a voracious desire to integrate more of them into itself. It possesses the ability to trap those it wishes to feed on in a closed sub dimension (existing between the realities it is occupying) to drain them of resilience, before entirely integrating their body and mind into itself, suspended forever on the verge of life and death. Through these captives a mainspring is capable of evolving and dreaming, enhancing its capacity for imagination with each individual it consumes.",
+  "Information Sections": [
+    {
+      "Title": "Cosmic Mainspring",
+      "Text": "Compared to lesser creatures by the same name, this is the true nature of a thesite elemental. If a large deposit of thesite is able to absorb enough mental energy from surrounding life, it can come to life in its entirety. This pure elemental is a cosmic glitch, which warps realities around it. The odd nature of these phantasmal beings can puncture adjacent realities, causing the appearance of one mainspring to lead to their emergence in parallel realities as well (and its destruction in those realities leading to its destruction in others).\n\nDue to thesite\u2019s reactivity to thought and imagination, the cosmic mainspring responds to those elements as well, in the form of a voracious desire to integrate more of them into itself. It possesses the ability to trap those it wishes to feed on in a closed sub dimension (existing between the realities it is occupying) to drain them of resilience, before entirely integrating their body and mind into itself, suspended forever on the verge of life and death. Through these captives a mainspring is capable of evolving and dreaming, enhancing its capacity for imagination with each individual it consumes."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR27/Thesite%20Cosmic%20Mainspring.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR27/Thesite%20Cosmic%20Mainspring.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR27/Thesite%20Cosmic%20Mainspring.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "cosmic_mainspring",
+      "section_type": "Stat Block",
+      "title": "Cosmic Mainspring",
+      "creature": {
+        "size": "Titanic",
+        "type": "elemental",
+        "alignment": ""
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "405 (30d20 \u002B 90)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "immutable"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B10"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B7"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "\u002B1",
+          "save": "\u002B13"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B10"
+        },
+        "CHA": {
+          "score": 28,
+          "modifier": "\u002B9",
+          "save": "\u002B21"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B10",
+        "Dex \u002B5",
+        "Con \u002B7",
+        "Int \u002B13",
+        "Wis \u002B10",
+        "Cha \u002B21"
+      ],
+      "skills": [
+        "Perception \u002B14"
+      ],
+      "resistances": [
+        "all that isn\u2019t eidolic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "force",
+        "poison",
+        "all that isn\u2019t eidolic or magical"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "senses": [
+        "truesight 120 ft.",
+        "passive Perception 24"
+      ],
+      "languages": [
+        "understands all Primordial languages but doesn\u2019t speak"
+      ],
+      "challenge_rating": "27 (105,000 XP)",
+      "proficiency_bonus": "\u002B8",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold",
+          "Legendary Actions": "bold",
+          "Mythic Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Eidomantic Body",
+          "name_format": "bold_italic",
+          "description": "The elemental\u2019s body is made of large quantities of thesite, granting its armor class, weapon attacks, weapon damage, and saving throws a \u002B4 enhancement bonus (already factored into this stat block)."
+        },
+        {
+          "name": "Helix Disenervation (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If the elemental is reduced to 0 hit points or killed outright, it is instead reset to 200 hit points, regains its spent Legendary Reactions, recharges all of its actions/traits, recovers from detrimental effects it wishes not to be affected by, and its Damage Threshold increases to 20. For 1 hour afterwards, it may use its Mythic Actions. Award a party an additional 105,000 XP (210,000 XP total) for defeating the elemental after its Mythic Awakening is used."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental uses its Crystalline Strike three times, its Crystal Missile twice, or each once. If its Mythic Awakening has activated, it can use its Crystalline Strike twice and Crystal Missile twice."
+        },
+        {
+          "name": "Crystalline Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B18 to hit, reach 15 ft., one target. Hit: 21 (2d10 \u002B 10) piercing damage plus 7 (1d12) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Crystal Missile",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B18 to hit, range 100/300 ft., one target. Hit: 32 (4d10 \u002B 10) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Crystal Banishment (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The elemental produces the effects of the crystal nightmare spell (requiring no spell slot or components), using Charisma as their spellcasting ability for it (DC 25 Charisma saving throw). If a creature would be trapped in the spell\u2019s usual material component, it is instead sealed physically in a chunk of the elemental\u2019s own crystal body where it is held in suspended animation, and the elemental gains access to its mind and imagination. Another creature may target the elemental with a magic-negating spell such as dispel magic, treating it as though targeting the crystal nightmare spell, freeing the captive on a success."
+        },
+        {
+          "name": "Mythic Action: Gigamind Ray",
+          "name_format": "bold_italic",
+          "description": "The elemental unleashes a burst of energy in a 60-foot cone originating from itself. Each creature in that cone must make a DC 28 Dexterity saving throw, taking 43 (5d12 \u002B 10) force damage on a failure. This deals double damage to structures and vehicles."
+        },
+        {
+          "name": "Mythic Action: Ultraphase Alimentation",
+          "name_format": "bold_italic",
+          "description": "The elemental taps into its power to rewrite reality around it, spreading its influence in a 1000-foot-radius sphere centered on itself, which it remains as for 1 hour or until the elemental is reduced to 0 hit points. This area immediately becomes a zero-gravity environment, and each non-elemental creature within that space must make a DC 19 Charisma saving throw as they are assailed by reality-warping energy. Creatures who fail take 55 (10d10) force damage and become sluggish, and creatures who succeed take half as much damage. Creatures made sluggish this way repeat the save at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Environment Switch",
+          "name_format": "bold_italic",
+          "description": "The elemental gains a burrow (40 ft.), climb (60 ft.), fly (90 ft.), or swim (60 ft.) speed for 24 hours, and gains immunity to a damage type corresponding to that type (poison, acid, lightning, or cold respectively). If it chooses to gain a new movement speed through this feature, it and the immunity gained replace the old one."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Reflective Rejection (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "In response to an attack it can see, the elemental creates a crystal membrane that increases its Damage Threshold by 15 points. This increase lasts until the end of its turn or until it takes damage despite its Damage Threshold."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "The elemental moves up to its movement speed."
+          },
+          {
+            "name": "Self-Reimagining",
+            "name_format": "bold_italic",
+            "description": "The elemental becomes immune to one condition that it is suffering from for 24 hours. If it uses this feature again during that time, roll a d100. On a result of 75 or higher it loses all previous immunities gained this way."
+          },
+          {
+            "name": "Exospine Ring Laser (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elemental unleashes a series of beams from its body, targeting each non-elemental creature within 50 feet of it. Each target must make a DC 19 Dexterity saving throw, taking 16 (2d10 \u002B 5) radiant damage on a failed save. Creatures who fail by 5 points or more are blinded until the end of elemental\u2019s next turn."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "options": [
+          {
+            "name": "Reality Mirror (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elemental opens several windows into alternate realities, exposing up to three creatures within 60 feet of it to the fates of parallel versions of itself. Each target must succeed a DC 19 Charisma saving throw or be stunned until the start of the elemental\u2019s next turn. Creatures who have made this save at least once within the last hour have advantage on subsequent saves against it."
+          },
+          {
+            "name": "Activate Captive (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The elemental takes any action that a suspended creature within its body (those caused by crystal nightmare) is capable of taking, uses the effects of one of their magic items, or replicates the effects that could be applied to one of their attacks (like a rogue\u2019s Sneak Attack) to one of its own attacks, which count as having the qualifying properties. If it replicates an ongoing magical item effect or trait, this lasts until next time it uses this feature to replicate another one. If it uses an action requiring a resource or limited use (such as a Spell Slot or use of Action Surge), that use is taken from the creature. The DC for these effects is 25, and attack bonuses are \u002B17."
+          }
+        ],
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening."
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      }
+    }
+  ]
+}
