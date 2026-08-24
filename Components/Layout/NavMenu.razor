@@ -189,7 +189,12 @@
                 return currentReference.Label;
 
             if (currentPath.StartsWith("/spells", StringComparison.OrdinalIgnoreCase))
+            {
+                if (MonsterOriginReturnUrl is not null)
+                    return "Monster · Spell";
+
                 return "Spells";
+            }
 
             if (currentPath.StartsWith("/bestiary", StringComparison.OrdinalIgnoreCase))
                 return "Bestiary";
@@ -355,6 +360,69 @@
         return null;
     }
 
+    // =====================================
+    // MONSTER-ORIGIN SPELL NAVIGATION
+    // =====================================
+
+    private string? MonsterOriginReturnUrl
+    {
+        get
+        {
+            if (
+                !currentPath.StartsWith(
+                    "/spells/",
+                    StringComparison.OrdinalIgnoreCase))
+            {
+                return null;
+            }
+
+
+            var origin =
+                ReadQueryValue(
+                    "origin");
+
+
+            if (
+                !string.Equals(
+                    origin,
+                    "monster",
+                    StringComparison.OrdinalIgnoreCase))
+            {
+                return null;
+            }
+
+
+            var returnUrl =
+                ReadQueryValue(
+                    "returnUrl");
+
+
+            if (string.IsNullOrWhiteSpace(returnUrl))
+            {
+                return null;
+            }
+
+
+            if (returnUrl.StartsWith(
+                "//",
+                StringComparison.Ordinal))
+            {
+                return null;
+            }
+
+
+            return
+                returnUrl.StartsWith(
+                    "/bestiary/",
+                    StringComparison.OrdinalIgnoreCase)
+
+                ? returnUrl
+
+                : null;
+        }
+    }
+
+
     private IReadOnlyList<NavItem> PathItems
     {
         get
@@ -386,6 +454,17 @@
 
             if (currentPath.StartsWith("/spells/", StringComparison.OrdinalIgnoreCase))
             {
+                var monsterOrigin =
+                    MonsterOriginReturnUrl;
+
+                if (monsterOrigin is not null)
+                {
+                    items.Add(new("Bestiary", "/bestiary"));
+                    items.Add(new("Monster", monsterOrigin));
+                    items.Add(new("Spell", currentPath + currentQuery));
+                    return items;
+                }
+
                 items.Add(new("Spells", "/spells"));
                 items.Add(new("Spell", currentPath));
                 return items;

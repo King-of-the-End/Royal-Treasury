@@ -1,0 +1,219 @@
+{
+  "Name": "Kellia, the Wanderer",
+  "Group": "The First to Skulk",
+  "Source": "Soul of Trickery",
+  "Information": "**Kellia, the Wanderer**\n\nKellia the Wanderer is the quietest of the First to Skulk, somehow managing to beat even Kyuubi for that title. They are an infiltrator, assassin, and if they are to be believed, an avenger seeking to get revenge on the Principle of the Family, whom they hold responsible for setting Nogistune on the path to kill their siblings. They have been searching for signs of Nogistune, Tamamo no Mae, and Samaru for many lifetimes, while also working their way up the ranks of the Family to strike down their leader.\n\n**Weapon Hunter**\n\nKellia keeps their eye out for objects that might be useful in the struggle against the First to Consume, including keeping their eye on constellequaries and primal gemstones. They have yet to acquire any that they haven\u2019t been forced to part with by Elstrakin or Luxus, but keep tabs on many in case they need to quickly retrieve them.",
+  "Information Sections": [
+    {
+      "Title": "Kellia, the Wanderer",
+      "Text": "Kellia the Wanderer is the quietest of the First to Skulk, somehow managing to beat even Kyuubi for that title. They are an infiltrator, assassin, and if they are to be believed, an avenger seeking to get revenge on the Principle of the Family, whom they hold responsible for setting Nogistune on the path to kill their siblings. They have been searching for signs of Nogistune, Tamamo no Mae, and Samaru for many lifetimes, while also working their way up the ranks of the Family to strike down their leader."
+    },
+    {
+      "Title": "Weapon Hunter",
+      "Text": "Kellia keeps their eye out for objects that might be useful in the struggle against the First to Consume, including keeping their eye on constellequaries and primal gemstones. They have yet to acquire any that they haven\u2019t been forced to part with by Elstrakin or Luxus, but keep tabs on many in case they need to quickly retrieve them."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Kellia.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Kellia.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Kellia.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "kellia_the_wanderer",
+      "section_type": "Stat Block",
+      "title": "Kellia, the Wanderer",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (kits\u2019adria)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "18 (studded leather)",
+      "hit_points": "163 (25d8 \u002B 50)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "burrow": "30 ft. (fox form)"
+      },
+      "quality_traits": [
+        "Evasion",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B11"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B7"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B9"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B11",
+        "Con \u002B7",
+        "Wis \u002B9"
+      ],
+      "skills": [
+        "Acrobatics \u002B11",
+        "Deception \u002B7",
+        "Investigation \u002B9",
+        "Perception \u002B9",
+        "Survival \u002B9"
+      ],
+      "resistances": [
+        "poison"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "paralyzed",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Kitzish",
+        "Orcish"
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Evasive Movement",
+          "name_format": "bold_italic",
+          "description": "Kellia\u2019s movement does not provoke opportunity attacks, and they can escape being restrained or grappled by spending 5 feet of movement."
+        },
+        {
+          "name": "No Holding Back (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Kellia\u2019s hit points are reduced to 0 or he is killed outright, his hit points reset to 100, he regains spent Legendary Reactions, ends any effects causing unwanted conditions on himself, and gains access to his Mythic Traits and Mythic Actions for 1 hour.\n\nAdditionally, when his Mythic Awakening is triggered, Kellia teleports to an unoccupied space within 60 feet. Then, each creature he chooses within 30 feet of his destination is struck by a phantom strike, and must make a DC 19 Dexterity saving throw. Each that fails takes 28 (5d10) piercing damage and 28 (5d10) poison damage, or half as much damage on a success."
+        },
+        {
+          "name": "Sneak Attack (1/Day)",
+          "name_format": "bold_italic",
+          "description": "When Kellia hits a target while they have advantage on their attack, or when their target is within melee reach of one of Kellia\u2019s allies, Kellia may deal an extra 28 (8d6) damage on that attack, as long as it was a light, finesse, or ranged weapon."
+        },
+        {
+          "name": "Mythic: Improved Critical",
+          "name_format": "bold_italic",
+          "description": "Kellia scores a critical hit on a d20 result of 19 or 20."
+        },
+        {
+          "name": "Mythic: Subversive Dodge",
+          "name_format": "bold_italic",
+          "description": "All ranged attacks against Kellia have disadvantage, he is resistant to damage from ranged attacks, and no attacks made against him can have advantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Kellia makes three weapon attacks."
+        },
+        {
+          "name": "Shortsword",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 5 ft., one target. Hit: 11 (1d6 \u002B 6) piercing damage plus 9 (2d8) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Throwing Knife",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B11 to hit, range 30/90 ft., one target. Hit: 13 (2d6 \u002B 6) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Windmill Shuriken (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B11 to hit, range 40/120 ft., one target. Hit: 39 (5d12 \u002B 6) slashing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Telestrike (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Kellia teleports into an unoccupied space they can see within 60 feet, then makes two weapon attacks with advantage."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "Kellia turns into a small fox, or back into his true form, while retaining his statistics in either form. If he is reduced to 0 hit points he returns to his true form. His equipment merges into him when he becomes a small fox."
+        },
+        {
+          "name": "Poison Master (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Kellia applies poison to one of his weapons, and the next time he hits a creature with it within 1 minute, the target must make a DC 17 Constitution saving throw, or be subject to the poison\u2019s effects. Kellia chooses from the following poisons; a creature afflicted with one of these ongoing effects repeats the save at the end of each of their turns, ending the effect on a success:",
+          "options": [
+            {
+              "name": "Creeping Agony",
+              "description": "The target suffers a point of Combat Fatigue, then each time they fail the ongoing save against this effect they suffer one more point."
+            },
+            {
+              "name": "Deathwood",
+              "description": "The target takes 33 (6d10) necrotic damage and is poisoned for 1 minute."
+            },
+            {
+              "name": "Tendonrot",
+              "description": "The target is paralyzed for 1 minute."
+            }
+          ]
+        }
+      ],
+      "reactions": [],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

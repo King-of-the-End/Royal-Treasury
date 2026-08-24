@@ -1,0 +1,241 @@
+{
+  "Name": "Kitsune",
+  "Group": "Spirit",
+  "Source": "Soul of Trickery",
+  "Information": "**Kitsune**\n\nKitsune was the first Beast of Bestowal, even though they are not what would come to be known as the typical sort. They were originally a fox-like beast that was Luxus\u2019 companion and best friend, and in the battles against the Grand Primaries, they met their end. By connecting their fading life to Luxus\u2019 own soul, the two became intertwined, and both were transformed. Kitsune gained a new spiritual form from their ascension, and became both a lesser god and a living cosmogony.\n\n**Humanoid Avatar**\n\nKitsune gained a humanoid guise that resembles a priestess-like golden-haired portrayal of Luxus, which she will use when necessary to converse with others. This version of Kitsune is sometimes mistaken for Luxus or treated as a sibling of the goddess, though it is only a sympathetic mirror held up between Luxus and Kitsune, who both derived elements of themselves from the other.\n\n**Strange Beast of Bestowal**\n\nEidolic deities would use Kitsune\u2019s transformation as a template for creating eidolos - by linking them to an eidolic deity\u2019s divine power, preserving the creature\u2019s essence as a cosmogony, and binding it within sepherite, they could be preserved and elevated to greater power. Kitsune doesn\u2019t obey some of those same principles, however: they do not have a sepherite core, do not yield an eidolic armament when defeated, and when their body is destroyed, they vanish and return to the Last Camera.\n\n**Worship of Kitsune**\n\nMost worship of Kitsune treats them as an extension of Luxus, which they rightfully are. They are an embodiment of Luxus\u2019 kindness toward beasts, and will execute their will to preserve wildlife and beasts when needed. They share Luxus\u2019 Divine Realm, and pull from the same divine domains as Luxus. Kitsune is often worshipped separately using a symbol that resembles a circle with nine foxtail blades surrounding it, representing her children, magic, and tails.",
+  "Information Sections": [
+    {
+      "Title": "Kitsune",
+      "Text": "Kitsune was the first Beast of Bestowal, even though they are not what would come to be known as the typical sort. They were originally a fox-like beast that was Luxus\u2019 companion and best friend, and in the battles against the Grand Primaries, they met their end. By connecting their fading life to Luxus\u2019 own soul, the two became intertwined, and both were transformed. Kitsune gained a new spiritual form from their ascension, and became both a lesser god and a living cosmogony."
+    },
+    {
+      "Title": "Humanoid Avatar",
+      "Text": "Kitsune gained a humanoid guise that resembles a priestess-like golden-haired portrayal of Luxus, which she will use when necessary to converse with others. This version of Kitsune is sometimes mistaken for Luxus or treated as a sibling of the goddess, though it is only a sympathetic mirror held up between Luxus and Kitsune, who both derived elements of themselves from the other."
+    },
+    {
+      "Title": "Strange Beast of Bestowal",
+      "Text": "Eidolic deities would use Kitsune\u2019s transformation as a template for creating eidolos - by linking them to an eidolic deity\u2019s divine power, preserving the creature\u2019s essence as a cosmogony, and binding it within sepherite, they could be preserved and elevated to greater power. Kitsune doesn\u2019t obey some of those same principles, however: they do not have a sepherite core, do not yield an eidolic armament when defeated, and when their body is destroyed, they vanish and return to the Last Camera."
+    },
+    {
+      "Title": "Worship of Kitsune",
+      "Text": "Most worship of Kitsune treats them as an extension of Luxus, which they rightfully are. They are an embodiment of Luxus\u2019 kindness toward beasts, and will execute their will to preserve wildlife and beasts when needed. They share Luxus\u2019 Divine Realm, and pull from the same divine domains as Luxus. Kitsune is often worshipped separately using a symbol that resembles a circle with nine foxtail blades surrounding it, representing her children, magic, and tails."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Kitsune.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Kitsune.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Kitsune.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "kitsune",
+      "section_type": "Stat Block",
+      "title": "Kitsune",
+      "creature": {
+        "size": "Huge",
+        "type": "spirit (eidolos)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "20 (cosmogony, natural armor)",
+      "hit_points": "375 (30d12 \u002B 180)",
+      "speed": {
+        "walk": "60 ft."
+      },
+      "cosmogony_note": "*the checks, saves, and skills listed include their \u002B2 Cosmogony Bonus",
+      "quality_traits": [
+        "Cosmogony \u002B3",
+        "deific (lesser)",
+        "eidolos (seraphael)",
+        "keen senses"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B6",
+          "save": "\u002B6"
+        },
+        "DEX": {
+          "score": 23,
+          "modifier": "\u002B8",
+          "save": "\u002B15"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "\u002B8",
+          "save": "\u002B15"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B5",
+          "save": "\u002B5"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B9",
+          "save": "\u002B16"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "\u002B7",
+          "save": "\u002B7"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B6",
+        "Dex \u002B15",
+        "Con \u002B15",
+        "Int \u002B5",
+        "Wis \u002B16",
+        "Cha \u002B7"
+      ],
+      "skills": [
+        "Deception \u002B14",
+        "Nature \u002B12",
+        "Perception \u002B16"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire",
+        "radiant",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "paralyzed",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "passive Perception 26 (31 w/Keen Senses)"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Kitzish",
+        "Sylvan"
+      ],
+      "challenge_rating": "24\u002B (93,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "challenge_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Heavenly Wheel Turns (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Kitsune is reduced to 0 hit points or killed outright, she is reset to 150 hit points instead, regains spent Legendary Reactions, ends any effects on her causing unwanted conditions, and can use her Mythic Traits and Mythic Actions for 1 hour.\n\nAdditionally, when Kitsune\u2019s Mythic Awakening is triggered, a spinning wheel of radiant flame appears above Kitsune, and causes columns of radiant flame to appear and engulf any targets Kitsune can see and she chooses within 120 feet. Each creature engulfed must make a DC 22 Dexterity saving throw, taking 35 (10d6) fire damage and 35 (10d6) radiant damage on a failed save, or half as much damage on a successful one. Undead and aberrations have disadvantage on these saving throws."
+        },
+        {
+          "name": "Seraphic Authority: Bestial Plight",
+          "name_format": "bold_italic",
+          "description": "Any beast within 120 feet of Kitsune cannot be reduced to 0 hit points or killed outright. When they would be, they take a level of exhaustion and are reduced to 10 hit points instead. If they cannot suffer the effects of exhaustion, they are reduced to 0 hit points instead. Creatures within this range making death saving throws have advantage on them, and do not suffer the effects of the dying condition, except that they must make death saving throws."
+        },
+        {
+          "name": "Mythic: Firesage Aura",
+          "name_format": "bold_italic",
+          "description": "Kitsune becomes a being of pure elemental fire. They are resistant to all bludgeoning, piercing, and slashing damage, and each time a creature hits them with an attack from within 20 feet, they take 7 (1d12) fire damage. Additionally, they add their Charisma modifier to their armor class."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Kitsune makes two Claw attacks, then a third with her Nine-Branch Uchigatana if it is available."
+        },
+        {
+          "name": "Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 10 ft., one target. Hit: 19 (2d10 \u002B 8) slashing damage plus 7 (2d6) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Nine-Branch Uchigatana",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 10 ft., one target. Hit: 26 (4d8 \u002B 8) slashing damage plus 13 (2d12) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Divine Fireball",
+          "name_format": "bold_italic",
+          "description": "Kitsune fires a burst of flame at a point they can see within 120 feet, where it explodes in a 30-foot-radius sphere. Each creature in that space must make a DC 21 Dexterity saving throw, taking 18 (4d8) fire damage and 18 (4d8) radiant damage on a failure, or half as much on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "Kitsune changes her size to be any size from Small to Huge, assumes a Medium humanoid form or reverts to her true Huge form. Her statistics remain the same in any form she takes."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Mythic: Catastrophic Shield (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "In response to taking damage, Kitsune creates a barrier around themselves that prevents them from taking damage until the start of their next turn."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Kitsune makes one Claw attack against a target within reach."
+          },
+          {
+            "name": "Spectral Celebration (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Kitsune produces firework-like bursts of light around it, specifically swarming a 30-foot cube centered on a point it chooses within 60 feet. Each creature in that cube must make a DC 21 Constitution saving throw, and on a failure are blinded until the start of Kitsune\u2019s next turn."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Fireburst Gallop",
+            "name_format": "bold_italic",
+            "description": "Kitsune moves up to their movement speed without provoking opportunity attacks."
+          },
+          {
+            "name": "Spirit Sanctuary (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Until the start of its next turn, Kitsune and each non-undead, non-fiend creature within 60 feet of it becomes a spiritual being, and is immune to bludgeoning, piercing, and slashing damage."
+          },
+          {
+            "name": "Sacred Fireball (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Kitsune uses its Divine Fireball."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

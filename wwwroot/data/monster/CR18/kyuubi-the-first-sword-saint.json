@@ -1,0 +1,195 @@
+{
+  "Name": "Kyuubi, the First Sword Saint",
+  "Group": "The First to Skulk",
+  "Source": "Soul of Trickery",
+  "Information": "**Kyuubi, the First Sword Saint**\n\nKyuubi, the First Sword Saint, was the student of Luxus and Kitsune, who developed the means for copying and applying the techniques of others that would come to identify the sword saint’s legacy. They are a stoic fighter who quietly hunts down any sign of the First to Consume and strikes it down, granting no quarter to her traitorous kin. Since being assigned an unknown agenda by Elstrakin, she has acted almost entirely in secret and appears only when a chance to further her private mission presents itself.\n\n**Loose Number**\n\nKyuubi wields a weapon called the Loose Number, which is a faithful greatsword given to her by Kitsune upon the completion of her training. This weapon is Kyuubi’s faithful companion, and though she has at times given it out to others to use, it always finds its way back into her hands. It is a weapon made of pure gemstone, which she keeps hidden when possible.\n\n**Meirlach’s Teacher**\n\nThough the god of swordsman is undeniably a more powerful being and masterful fighter, Kyuubi is one of very few individuals he calls his master, and would bend the knee to. Kyuubi has free access to the Twin Dragon Temple, where they are said to hold authority equal to Meirlach himself, and is one of the very limited number of guests who can appear unannounced to see him - a number one could count on one hand.",
+  "Information Sections": [
+    {
+      "Title": "Kyuubi, the First Sword Saint",
+      "Text": "Kyuubi, the First Sword Saint, was the student of Luxus and Kitsune, who developed the means for copying and applying the techniques of others that would come to identify the sword saint’s legacy. They are a stoic fighter who quietly hunts down any sign of the First to Consume and strikes it down, granting no quarter to her traitorous kin. Since being assigned an unknown agenda by Elstrakin, she has acted almost entirely in secret and appears only when a chance to further her private mission presents itself."
+    },
+    {
+      "Title": "Loose Number",
+      "Text": "Kyuubi wields a weapon called the Loose Number, which is a faithful greatsword given to her by Kitsune upon the completion of her training. This weapon is Kyuubi’s faithful companion, and though she has at times given it out to others to use, it always finds its way back into her hands. It is a weapon made of pure gemstone, which she keeps hidden when possible."
+    },
+    {
+      "Title": "Meirlach’s Teacher",
+      "Text": "Though the god of swordsman is undeniably a more powerful being and masterful fighter, Kyuubi is one of very few individuals he calls his master, and would bend the knee to. Kyuubi has free access to the Twin Dragon Temple, where they are said to hold authority equal to Meirlach himself, and is one of the very limited number of guests who can appear unannounced to see him - a number one could count on one hand."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Kyuubi.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Kyuubi.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Kyuubi.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "kyuubi_the_first_sword_saint",
+      "section_type": "Stat Block",
+      "title": "Kyuubi, the First Sword Saint",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (kits’adria)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "20 (unarmored defense)",
+      "hit_points": "225 (30d8 + 90)",
+      "speed": {
+        "walk": "60 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "jack of all trades +3",
+        "keen senses"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+10"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+9"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "+6",
+          "save": "+12"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +10",
+        "Con +9",
+        "Wis +12"
+      ],
+      "skills": [
+        "Athletics +11",
+        "Insight +12",
+        "Perception +12",
+        "Survival +12"
+      ],
+      "resistances": [
+        "necrotic",
+        "psychic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "restrained"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 22 (27 w/Keen Senses)"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Kitzish"
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "Balanced Retrograde",
+          "name_format": "bold_italic",
+          "description": "When Kyuubi rolls a d20 result of 9 or less on an attack or saving throw, they record the difference between their d20 result and 10, and add that difference to an ongoing tally. Next time they roll a d20 result of 10 or higher, the accumulated tally is added to it (maximum 20), and the tally resets to 0."
+        },
+        {
+          "name": "Deflecting Blade",
+          "name_format": "bold_italic",
+          "description": "As long as Kyuubi isn’t incapacitated and is wielding a weapon, she is resistant to bludgeoning, piercing, and slashing damage."
+        },
+        {
+          "name": "My Soul is a Blade (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Kyuubi is reduced to 0 hit points or killed outright, she resets to 120 hit points instead, ends effects on herself causing unwanted conditions, and can use her Mythic Traits and Mythic Actions for 1 hour.\n\nAdditionally, when her Mythic Awakening Triggers, Kyuubi can conjure a massive ghostly white blade of light that strikes down on one point she can see within 60 feet, striking everything in a 30-foot radius centered on that point (except Kyuubi). Each target must make a DC 20 Dexterity saving throw, taking 28 (8d6) piercing damage and 28 (8d6) force damage on a failure, or half as much damage on a success. Each 6 rolled on a damage die for this damage roll is rolled again, and its new result is also added to the damage total."
+        },
+        {
+          "name": "Pure Dragon Surge (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Kyuubi takes a second action on her turn. At the end of a turn when Kyuubi scores a critical hit, they regain their use of this feature if it’s spent."
+        },
+        {
+          "name": "Mythic: Superior Critical",
+          "name_format": "bold_italic",
+          "description": "Kyuubi scores a critical hit on a d20 result of 18, 19, or 20."
+        },
+        {
+          "name": "Mythic: Wind Blade",
+          "name_format": "bold_italic",
+          "description": "Kyuubi’s weapon attacks can use the wind to strike, increasing their reach by 30 feet."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Kyuubi makes three weapon attacks. She can replace the third and final attack with her Perfect Strike, if it is available."
+        },
+        {
+          "name": "Whitehilt Katana, +1",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage, or 17 (2d10 + 6) slashing damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Spirit Slice",
+          "name_format": "bold_italic",
+          "description": "Ranged Spell Attack: +12 to hit, range 60 ft., one target. Hit: 15 (2d8 + 6) psychic damage.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: The Loose Number, +2",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 21 (4d6 + 7) slashing damage. Damage from this weapon cannot be reduced by resistances or immunities, nor can targets take reactions triggered by its attacks or damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Perfect Strike (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Kyuubi strikes one target within 30 feet with the Loose Number, forcing them to make a DC 18 Constitution saving throw. On a failure, they are reduced immediately to 0 hit points, and on a success they take 44 (8d10) slashing damage instead."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "Kyuubi turns into a small fox, or back to her true form, while retaining her statistics in either form. If she is reduced to 0 hit points, she returns to her true form. Her equipment merges into her when she becomes a small fox."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

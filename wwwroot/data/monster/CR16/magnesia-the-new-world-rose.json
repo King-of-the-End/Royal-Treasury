@@ -1,0 +1,186 @@
+{
+  "Name": "Magnesia, The New World Rose",
+  "Group": "The First to Skulk",
+  "Source": "Soul of Trickery",
+  "Information": "**Magnesia, The New World Rose**\n\nMagnesia is an adventurous member of the First to Skulk, and lives like a pirate queen who galavants across the seas on her water-treading airship, the Tides of Conquest. She is always looking for adventure and excitement, while also ferrying her siblings around Somnus Domina when they request it.\n\n**Artifact Hunter**\n\nSimilar to Kellia, Magnesia makes a hobby out of collecting artifacts of the Old World, though she rarely holds onto them. Unlike Kellia, her motivations are recreational: she loves anything rare, valuable, or simply anything that is unique and in demand. She loves to race to collect items and artifacts from those who don\u2019t deserve them, and take them for herself.",
+  "Information Sections": [
+    {
+      "Title": "Magnesia, The New World Rose",
+      "Text": "Magnesia is an adventurous member of the First to Skulk, and lives like a pirate queen who galavants across the seas on her water-treading airship, the Tides of Conquest. She is always looking for adventure and excitement, while also ferrying her siblings around Somnus Domina when they request it."
+    },
+    {
+      "Title": "Artifact Hunter",
+      "Text": "Similar to Kellia, Magnesia makes a hobby out of collecting artifacts of the Old World, though she rarely holds onto them. Unlike Kellia, her motivations are recreational: she loves anything rare, valuable, or simply anything that is unique and in demand. She loves to race to collect items and artifacts from those who don\u2019t deserve them, and take them for herself."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Magnesia.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Magnesia.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Magnesia.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "magnesia_the_new_world_rose",
+      "section_type": "Stat Block",
+      "title": "Magnesia, The New World Rose",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (kits\u2019adria)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "18 (studded leather)",
+      "hit_points": "188 (25d8 \u002B 75)",
+      "speed": {
+        "walk": "40 ft.",
+        "swim": "40 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "keen senses",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B11"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B9"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B11"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B11",
+        "Wis \u002B9",
+        "Cha \u002B11"
+      ],
+      "skills": [
+        "Acrobatics \u002B11",
+        "Perception \u002B14",
+        "Persuasion \u002B11",
+        "Survival \u002B9"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "thunder"
+      ],
+      "condition_immunities": [
+        "frightened",
+        "stunned"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "passive Perception 29 (w/Keen Senses)"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Kitzish"
+      ],
+      "challenge_rating": "16 (15,000 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Aim and Fire! (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Magnesia is reduced to 0 hit points or killed outright, she instead resets to 100 hit points, regains her spent Legendary Reactions, ends any effects causing unwanted conditions on her, and gains access to her Mythic Actions and Mythic Traits for 1 hour.\n\nAdditionally, when her Mythic Awakening triggers, she can target up to six points within 60 feet of her, and a blast of thunder like a cannon blast falls upon each, detonating in a 20-foot-radius sphere. Each creature within any of those spheres (except Magnesia) must make a DC 19 Constitution saving throw, taking 52 (12d8) thunder damage on a failure, or half as much damage on a success."
+        },
+        {
+          "name": "Free Movement",
+          "name_format": "bold_italic",
+          "description": "Magnesia can escape being restrained or grappled by spending 5 feet of movement."
+        },
+        {
+          "name": "Mythic: Grand Applause",
+          "name_format": "bold_italic",
+          "description": "Each of Magnesia\u2019s allies within 30 feet of them have advantage on saving throws made against creatures Magnesia considers an enemy or obstacle."
+        },
+        {
+          "name": "Mythic: Thunderous Fire",
+          "name_format": "bold_italic",
+          "description": "Magnesia\u2019s weapon attacks deal an additional 9 (2d8) thunder damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Magnesia makes three weapon attacks."
+        },
+        {
+          "name": "Nail Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 5 ft., one target. Hit: 15 (2d8 \u002B 6) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Flintlock Pistol",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B11 to hit, range 40/120 ft., one target. Hit: 15 (2d8 \u002B 6) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Thunder Cannon (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Magnesia conjures two arcane cannons in the air and fires each at a point she can see within 60 feet, where each detonates in a 10-foot-radius sphere. Each creature in one of these spheres must make a DC 19 Constitution saving throw, taking 36 (8d8) thunder damage on a failure, or half as much damage on a successful one. Any creature who fails by 5 points or more is deafened to 1 minute, and repeats the save at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "Magnesia turns into a small fox, or back into her true form, while retaining her statistics in either form. If she is reduced to 0 hit points she returns to her true form. Her equipment merges into her when she becomes a small fox."
+        },
+        {
+          "name": "Cunning Movement",
+          "name_format": "bold_italic",
+          "description": "Magnesia takes the Dash action."
+        }
+      ],
+      "reactions": [],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

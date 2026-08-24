@@ -17,7 +17,7 @@
         "alignment": "chaotic evil"
       },
       "armor_class": "20 (natural armor)",
-      "hit_points": "338 (25d12 + 175)",
+      "hit_points": "338 (25d12 \u002B 175)",
       "speed": {
         "walk": "40 ft.",
         "burrow": "80 ft."
@@ -27,45 +27,46 @@
         "magic resist",
         "regen 4d12",
         "spider climb",
-        "yokai nourishment"
+        "yokai nourishment",
+        "Siphon the Devout"
       ],
       "ability_scores": {
         "STR": {
           "score": 24,
-          "modifier": "+7",
-          "save": "+7"
+          "modifier": "\u002B7",
+          "save": "\u002B7"
         },
         "DEX": {
           "score": 14,
-          "modifier": "+2",
-          "save": "+10"
+          "modifier": "\u002B2",
+          "save": "\u002B10"
         },
         "CON": {
           "score": 24,
-          "modifier": "+7",
-          "save": "+15"
+          "modifier": "\u002B7",
+          "save": "\u002B15"
         },
         "INT": {
           "score": 16,
-          "modifier": "+3",
-          "save": "+3"
+          "modifier": "\u002B3",
+          "save": "\u002B3"
         },
         "WIS": {
           "score": 30,
-          "modifier": "+10",
-          "save": "+10"
+          "modifier": "\u002B10",
+          "save": "\u002B10"
         },
         "CHA": {
           "score": 21,
-          "modifier": "+5",
-          "save": "+5"
+          "modifier": "\u002B5",
+          "save": "\u002B5"
         }
       },
       "skills": [
-        "Athletics +15",
-        "Nature +18",
-        "Perception +18",
-        "Stealth +10"
+        "Athletics \u002B15",
+        "Nature \u002B18",
+        "Perception \u002B18",
+        "Stealth \u002B10"
       ],
       "resistances": [
         "B/P/S (eidolic)"
@@ -90,7 +91,7 @@
         "all"
       ],
       "challenge_rating": "25 (75,000 XP)",
-      "proficiency_bonus": "+8",
+      "proficiency_bonus": "\u002B8",
       "traits": [
         {
           "name": "Death Aura",
@@ -106,7 +107,7 @@
       "legendary_reactions": {
         "header": "Legendary Reactions",
         "uses": 3,
-        "entries": [
+        "options": [
           {
             "name": "TBA",
             "name_format": "plain",
@@ -123,22 +124,22 @@
         {
           "name": "Horns",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 35 (5d10 + 7) piercing damage."
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 5 ft., one target. Hit: 35 (5d10 \u002B 7) piercing damage."
         },
         {
           "name": "Oaken Claws",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) slashing damage plus 7 (1d12) acid damage."
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 10 ft., one target. Hit: 18 (2d10 \u002B 7) slashing damage plus 7 (1d12) acid damage."
         },
         {
           "name": "Root Garden",
           "name_format": "bold_italic",
-          "description": "Each creature touching the ground in a 30-foot-radius sphere centered up to 60 feet away from the false Eidolon is assaulted by twisting, grasping vines bursting from the ground to bind them. Each must succeed a DC 21 Dexterity saving throw. Any creature that fails takes 22 (4d10) bludgeoning damage and is restrained. Creatures can attempt to escape the roots using their action, attempting a DC 20 Strength check. On a success they break free and aren’t restrained and take no damage. At the start of each of the false Eidolon’s turns, each creature restrained this way takes 11 (2d10) acid damage from corrosive sap that seeps from the roots."
+          "description": "Each creature touching the ground in a 30-foot-radius sphere centered up to 60 feet away from the false Eidolon is assaulted by twisting, grasping vines bursting from the ground to bind them. Each must succeed a DC 21 Dexterity saving throw. Any creature that fails takes 22 (4d10) bludgeoning damage and is restrained. Creatures can attempt to escape the roots using their action, attempting a DC 20 Strength check. On a success they break free and aren\u2019t restrained and take no damage. At the start of each of the false Eidolon\u2019s turns, each creature restrained this way takes 11 (2d10) acid damage from corrosive sap that seeps from the roots."
         },
         {
           "name": "Willowing Tendrils (Recharge 6)",
           "name_format": "bold_italic",
-          "description": "Tendrils made of twisting wood burst forth from the false Eidolon’s body, piercing and striking each creature in a 60-foot cone originating from it. Each creature in range must make a DC 21 Dexterity saving throw, taking 33 (6d10) piercing damage and 33 (6d10) acid damage on a failed save, or half as much damage on a successful one. The false Eidolon can also choose to grasp and pull each creature that fails into an unoccupied space within 30 feet of it that it chooses, where they fall prone."
+          "description": "Tendrils made of twisting wood burst forth from the false Eidolon\u2019s body, piercing and striking each creature in a 60-foot cone originating from it. Each creature in range must make a DC 21 Dexterity saving throw, taking 33 (6d10) piercing damage and 33 (6d10) acid damage on a failed save, or half as much damage on a successful one. The false Eidolon can also choose to grasp and pull each creature that fails into an unoccupied space within 30 feet of it that it chooses, where they fall prone."
         }
       ],
       "bonus_actions": [
@@ -150,7 +151,7 @@
         {
           "name": "Tree Haunt",
           "name_format": "bold_italic",
-          "description": "The false Eidolon’s body becomes a twisting tree of the same size it currently is, while he teleports into and fuses with a Medium, Large or Huge tree within 120 feet. The latter tree twists to become the false Eidolon’s new body, and it becomes the size of the tree it possessed."
+          "description": "The false Eidolon\u2019s body becomes a twisting tree of the same size it currently is, while he teleports into and fuses with a Medium, Large or Huge tree within 120 feet. The latter tree twists to become the false Eidolon\u2019s new body, and it becomes the size of the tree it possessed."
         }
       ],
       "legendary_actions": {
@@ -164,7 +165,7 @@
           {
             "name": "Twisting Nature (Costs 2 Actions)",
             "name_format": "bold_italic",
-            "description": "The false Eidolon creates four trees of Huge to Gargantuan size to burst from the ground at four points within 60 feet of it. Each creature that would be in each tree’s space must succeed a DC 21 Dexterity saving throw or take 11 (2d10) bludgeoning damage. These trees then push all creatures in their space into the nearest unoccupied space."
+            "description": "The false Eidolon creates four trees of Huge to Gargantuan size to burst from the ground at four points within 60 feet of it. Each creature that would be in each tree\u2019s space must succeed a DC 21 Dexterity saving throw or take 11 (2d10) bludgeoning damage. These trees then push all creatures in their space into the nearest unoccupied space."
           },
           {
             "name": "Bloody Regeneration (Costs 3 Actions)",

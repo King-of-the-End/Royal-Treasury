@@ -220,3 +220,35 @@
         font-size: 0.84rem;
     }
 }
+
+
+/* =========================================
+   SPELL DETAIL LINKS
+   ========================================= */
+
+.rt-spell-link {
+    color: var(--stat-accent-bright);
+    font: inherit;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.14em;
+    text-decoration-color: rgba(var(--stat-accent-rgb), 0.72);
+    cursor: pointer;
+    transition:
+        color 120ms ease,
+        text-decoration-color 120ms ease,
+        text-shadow 120ms ease;
+}
+
+.rt-spell-link:hover,
+.rt-spell-link:focus-visible {
+    color: #ffffff;
+    text-decoration-color: var(--stat-accent-bright);
+    text-shadow: 0 0 6px rgba(var(--stat-accent-rgb), 0.4);
+}
+
+.rt-spell-link:focus-visible {
+    outline: 1px solid var(--stat-accent-bright);
+    outline-offset: 2px;
+}

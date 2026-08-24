@@ -1,6 +1,11 @@
 @using System.Text.Json
+@using Microsoft.AspNetCore.WebUtilities
 @using Website_of_Everything.Models
 @using Website_of_Everything.Components.Pages
+@using Website_of_Everything.Services
+
+@inject SpellService SpellService
+@inject NavigationManager Navigation
 
 
 @if (
@@ -88,9 +93,30 @@
                                 <span class="rt-spell-separator">, </span>
                             }
 
-                            <GlossaryText
-                                Text="@spellGroup.Spells[index]"
-                                Context="GlossaryContext.StatBlock" />
+                            var spellText =
+                                spellGroup.Spells[index];
+
+                            var spellUrl =
+                                BuildSpellUrl(
+                                    spellText);
+
+                            @if (
+                                !string.IsNullOrWhiteSpace(
+                                    spellUrl))
+                            {
+                                <a
+                                    class="rt-spell-link"
+                                    href="@spellUrl"
+                                    title="View spell details">
+                                    @spellText
+                                </a>
+                            }
+                            else
+                            {
+                                <GlossaryText
+                                    Text="@spellText"
+                                    Context="GlossaryContext.StatBlock" />
+                            }
                         }
                     </div>
                 </div>
@@ -118,9 +144,30 @@
                                 <span class="rt-spell-separator">, </span>
                             }
 
-                            <GlossaryText
-                                Text="@preparedGroup.Spells[index]"
-                                Context="GlossaryContext.StatBlock" />
+                            var spellText =
+                                preparedGroup.Spells[index];
+
+                            var spellUrl =
+                                BuildSpellUrl(
+                                    spellText);
+
+                            @if (
+                                !string.IsNullOrWhiteSpace(
+                                    spellUrl))
+                            {
+                                <a
+                                    class="rt-spell-link"
+                                    href="@spellUrl"
+                                    title="View spell details">
+                                    @spellText
+                                </a>
+                            }
+                            else
+                            {
+                                <GlossaryText
+                                    Text="@spellText"
+                                    Context="GlossaryContext.StatBlock" />
+                            }
                         }
                     </div>
                 </div>
@@ -391,6 +438,75 @@
                 .Concat(
                     Entry.Bullets)
                 .ToList();
+
+
+    // =====================================
+    // SPELL DETAIL LINK
+    // =====================================
+
+    private string? BuildSpellUrl(
+        string spellReference)
+    {
+        var route =
+            SpellService
+                .ResolveSpellReference(
+                    spellReference);
+
+
+        if (route is null)
+        {
+            return null;
+        }
+
+
+        var detailUrl =
+            $"/spells/" +
+            $"{Uri.EscapeDataString(route.LevelFolder)}/" +
+            $"{Uri.EscapeDataString(route.Slug)}";
+
+
+        var currentUri =
+            Navigation.ToAbsoluteUri(
+                Navigation.Uri);
+
+
+        var currentPathAndQuery =
+            currentUri.PathAndQuery;
+
+
+        if (
+            currentUri.AbsolutePath.StartsWith(
+                "/bestiary/",
+                StringComparison.OrdinalIgnoreCase))
+        {
+            detailUrl =
+                QueryHelpers.AddQueryString(
+                    detailUrl,
+                    "returnUrl",
+                    currentPathAndQuery);
+
+
+            detailUrl =
+                QueryHelpers.AddQueryString(
+                    detailUrl,
+                    "origin",
+                    "monster");
+        }
+        else if (
+            currentUri.AbsolutePath.StartsWith(
+                "/spells/",
+                StringComparison.OrdinalIgnoreCase))
+        {
+            detailUrl =
+                QueryHelpers.AddQueryString(
+                    detailUrl,
+                    "returnUrl",
+                    currentPathAndQuery);
+        }
+
+
+        return detailUrl;
+    }
 
 
     // =====================================

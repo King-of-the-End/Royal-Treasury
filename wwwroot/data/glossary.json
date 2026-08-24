@@ -697,6 +697,15 @@
     ]
   },
   {
+    "Term": "Alien Absurdity",
+    "Definition": "The alien creature is immune to the effects of extreme environments unless the environment would cause damage to them. Additionally, their minds cannot be read or supernaturally/magically understood by non-alien creatures.\n\nEffects that divine information about an alien creature always treat them as though they are completely unfamiliar and unknown to the caster(s) for the purposes of effects such as scrying.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
     "Term": "Amorphous (X)",
     "Definition": "The creature’s body can alter its shape to squeeze through spaces as narrow as whatever is listed as X.",
     "CaseSensitive": false,
@@ -743,9 +752,10 @@
   },
   {
     "Term": "Capacity (X)",
-    "Definition": "This creature is a vehicle with space available to house passengers inside itself, who move with the creature. These creatures are not considered pilots/operators (if there are pilots or operators, they will have their own spaces (stations)). A creature must spend 10 feet to enter or exit the vehicle. If enclosed inside the creature, the passengers have total cover against effects and attacks originating from outside. If only partially enclosed or “on” the vehicle, the passengers have half-cover against effects and attacks from outside the vehicle.\n\nThis vehicle has a number of units of space inside it, listed as X. Each passenger occupies as many of these spaces as they fill 5-foot spaces (Medium creatures take 1, Large creatures take 4, Huge creatures take 9, etc.,).\n\nA creature with this quality can carry additional weight equal in passengers equal to 100 lbs x the number of units of space they have available. This carrying capacity only applies to passengers, and not to their carry weight otherwise.\n\nThough this quality refers to the creature as a vehicle, it only counts as one for the purposes of effects if it also has the “Vehicle” quality trait. The word vehicle for this effect is used descriptively, not mechanically.",
+    "Definition": "This creature is a vehicle with space available to house passengers inside itself, who move with the creature. These creatures are not considered pilots/operators (if there are pilots or operators, they will have their own spaces (stations)). Another creature must spend 10 feet to enter or exit the vehicle. If enclosed inside the creature, the passengers have total cover against effects and attacks originating from outside. If only partially enclosed or “on” the vehicle, the passengers have half-cover against effects and attacks from outside the vehicle.\n\nThis vehicle has a number of units of space inside it, listed as X. Each passenger occupies as many of these spaces as they fill 5-foot spaces (Medium creatures take 1, Large creatures take 4, Huge creatures take 9, etc.).\n\nA creature with this quality can carry the additional weight of the passengers equal to 100 lbs x the number of units of space they have available. This carrying capacity only applies to passengers, and not to their carry weight otherwise.\n\nThough this quality refers to the creature as a vehicle, it only counts as one for the purposes of effects if it also has the “Vehicle” quality trait. The word vehicle for this effect is used descriptively, not mechanically.",
     "CaseSensitive": false,
     "NoOverlay": false,
+    "Wildcard": true,
     "Contexts": [
       "StatBlockQualityTrait"
     ]
@@ -756,6 +766,15 @@
       "Critical X"
     ],
     "Definition": "This creature scores a critical hit on any d20 result between X and 20. If they would only score these critical hits on specific attack types or at certain ranges (such as “weapon”, “spell”, “melee” or “ranged”) they will be listed as Y.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Debris Resist",
+    "Definition": "This creature has advantage on checks and saving throws made against the Density DC of debris fields.",
     "CaseSensitive": false,
     "NoOverlay": false,
     "Contexts": [
@@ -844,6 +863,16 @@
     "Definition": "The creature has advantage on Perception checks involving whatever is listed as X. If there is nothing, they have advantage on Perception checks at all times. This advantage is not factored into their passive Perception, which would have a +5 bonus in cases this advantage should apply.",
     "CaseSensitive": false,
     "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Macro Attacks (X)",
+    "Definition": "Macro attacks, as listed before the attack type (such as “Macro Melee Weapon Attack”) are capable of doing excessive damage to anything that is considerably smaller than it. These attacks affect targets of a specified size or smaller, listed as X, and when they hit such a creature they do not roll their damage dice. Instead, the target takes damage equal to the maximum result of all of the damage dice that would have been rolled (plus bonuses and modifiers), including those that would be rolled as part of extra effects or critical hits.\n\nA save-based effect may also benefit from this effect, and will list (macro) after the saving throw. For example, they may call for creatures to make a “DC 14 Constitution saving throw (macro).” In this case, this damage is dealt as its maximum result to creatures of the designated size as well.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Wildcard": true,
     "Contexts": [
       "StatBlockQualityTrait"
     ]
@@ -945,6 +974,16 @@
     ]
   },
   {
+    "Term": "Tunneler (X)",
+    "Definition": "The creature can burrow through solid rock at half its burrow speed and leaves a tunnel with a diameter of X feet in its wake.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Wildcard": true,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
     "Term": "Undead Fortitude",
     "Definition": "When this creature is reduced to 0 hit points (except by damage that is radiant or from a critical hit) and not outright killed by massive damage, it must make a Constitution saving throw with a DC of 5 + the damage taken. On a success, the creature drops to 1 hit point instead.",
     "CaseSensitive": false,
@@ -956,6 +995,15 @@
   {
     "Term": "Massive (X/Y/DC Z)",
     "Definition": "Due to this creature’s large size, it takes half the damage from creatures of a certain size category or smaller. Additionally, when they attack a creature of that size category or smaller, each creature within a certain distance of that creature must succeed a Dexterity saving throw or be targeted by that attack. The same attack roll is used for each creature, but each is treated as being targeted by an independent version of that attack.\n\n• X is the size category.\n• Y is the space surrounding their target.\n• Z is the Dexterity save DC.\n\nThe following notations are used for X above.\n\n• Tiny - T\n• Small - S\n• Medium - M\n• Large - L\n• Huge - H\n• Gargantuan - G\n• Titanic - Ti\n• Tremendous - Tr\n• Colossal - Co\n• Supermassive - Su\n• Planetary - Pl",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Watchful",
+    "Definition": "The creature adds its proficiency bonus to its passive Perception, even if it has proficiency or Expertise in Perception.",
     "CaseSensitive": false,
     "NoOverlay": false,
     "Contexts": [
@@ -981,13 +1029,15 @@
     ]
   },
   {
-    "Term": "Vehicle",
+    "Term": "Vehicle (X Cover)",
     "Aliases": [
+      "Vehicle",
       "Vehicle (Auto)"
     ],
-    "Definition": "This creature serves as a vehicle, which can either house one or more creatures internally or have them ride it from the outside. While a creature who knows how to operate the vehicle is in a position to pilot it (or operate it, drive it, etc.,) they can assume control of the creature.\n\nActions. A creature piloting a vehicle can determine what the vehicle does on their turn as long as it isn’t incapacitated. On their own turn they can have the vehicle take any action it is capable of taking using their own equivalent action (except the vehicle’s Multiattack, if they have it).\n\nCover. A creature serving as the pilot for another with this quality tag is protected by it, granting them half cover and allowing them to redirect attacks from themselves to the vehicle as long as they are aware of them. If the creature is housed inside the vehicle, it has total cover and can’t be targeted by effects originating from outside.\n\nEntering & Exiting. Unless otherwise stated, entering the piloting position or leaving the creature requires 5 feet of movement on the part of the pilot. To pilot a vehicle a creature must occupy a number of spaces equal to half or fewer the number the vehicle occupies, and they must have both the anatomical features and knowledge needed to direct or control the vehicle. A creature exiting a vehicle emerges in an unoccupied space adjacent to the vehicle.\n\nMounted Combat. In most cases, operating a vehicle also counts as mounting it, granting bonuses associated with doing so. A GM may decide this is not the case based on context.\n\nProficiency Adjustment. When piloted by a creature with a higher proficiency bonus than its own, the vehicle’s proficiency bonus becomes its pilot’s.\n\nVehicle (Auto). If the quality is listed with this variant, it means the vehicle is capable of acting on its own without a pilot/operator. Its decisions will be influenced by whatever it was programmed or created to do, often simplistically and single-mindedly pursuing the last directive of its pilot or following their orders. Vehicles with this tag do not cease operating if their pilot is unable to act.\n\nSome creatures, like DGRs, have unique handling rules that supersede the vehicle quality.",
+    "Definition": "This creature serves as a vehicle, which can either house one or more creatures internally or have them ride it from the outside. While a creature who knows how to operate the vehicle is in a position to pilot it (or operate it, drive it, etc.) they can assume control of the creature.\n\nActions. A creature piloting a vehicle can determine what the vehicle does on its turn as long as the vehicle isn’t incapacitated. On their own turn, the creature can have the vehicle take any action it is capable of taking by using the creature’s own equivalent action (except the vehicle’s Multiattack, if they have it).\n\nCover. A creature serving as the pilot for another creature might be protected by it, indicated by text where the “X Cover” tag would be. It will be listed the following ways, granting the cover listed; if nothing is listed, it means the pilot has total cover:\n• No Cover\n• Half Cover\n• Three-Quarters Cover\n\nA pilot may redirect attacks from themselves to the vehicle as long as they are aware of them and both aren’t incapacitated. If the creature is housed inside the vehicle, it has total cover and can’t be targeted by effects originating from outside.\n\nEntering & Exiting. Unless otherwise stated, entering the piloting position or leaving the creature requires 5 feet of movement on the part of the pilot. To pilot a vehicle a creature must occupy a number of spaces equal to half or fewer of the number of spaces the vehicle occupies, and the creature must have both the anatomical features and knowledge needed to direct or control the vehicle. A creature exiting a vehicle emerges in an unoccupied space adjacent to the vehicle.\n\nMounted Combat. In most cases, operating a vehicle also counts as mounting it, granting bonuses associated with doing so. A GM may decide this is not the case based on context.\n\nProficiency Adjustment. When piloted by a creature with a higher proficiency bonus than its own, the vehicle’s proficiency bonus becomes its pilot’s.\n\nVehicle (Auto). If the quality is listed with this variant, it means the vehicle is capable of acting on its own without a pilot/operator. Its decisions will be influenced by whatever it was programmed or created to do, often simplistically and single-mindedly pursuing the last directive of its pilot or following their orders. Vehicles with this tag do not cease operating if their pilot is unable to act.\n\nSome creatures, like frame units, have unique handling rules that supersede the vehicle quality.",
     "CaseSensitive": false,
     "NoOverlay": false,
+    "Wildcard": true,
     "Contexts": [
       "StatBlockQualityTrait"
     ]
@@ -2645,7 +2695,7 @@
     "NoOverlay": true,
     "Contexts": []
   },
-   {
+  {
     "Term": "Burn Caster",
     "Definition": "",
     "CaseSensitive": false,
@@ -2811,16 +2861,14 @@
     "Definition": "",
     "CaseSensitive": false,
     "NoOverlay": true,
-    "Contexts": [
-    ]
+    "Contexts": []
   },
   {
     "Term": "Barrel Charge",
     "Definition": "",
     "CaseSensitive": false,
     "NoOverlay": true,
-    "Contexts": [
-    ]
+    "Contexts": []
   },
   {
     "Term": "Gallant Charge",
@@ -3108,30 +3156,52 @@
     ]
   },
   {
-  "Term": "(Malfunction)",
-  "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
-  "CaseSensitive": false,
-  "NoOverlay": false
-},
-{
-  "Term": "Grim Teleport",
-  "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
-  "CaseSensitive": false,
-  "NoOverlay": true
-},
-{
-  "Term": "Invisible Swimmer",
-  "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
-  "CaseSensitive": false,
-  "NoOverlay": true
-},
-{
-  "Term": "Earthglide",
-  "Definition": "The creature can burrow through nonmagical, unworked earth, dirt, and stone. While doing so, it does not disturb the material it moves through.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "StatBlockQualityTrait"
-  ]
-}
+    "Term": "(Malfunction)",
+    "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
+    "CaseSensitive": false,
+    "NoOverlay": false
+  },
+  {
+    "Term": "Grim Teleport",
+    "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
+    "CaseSensitive": false,
+    "NoOverlay": true
+  },
+  {
+    "Term": "Invisible Swimmer",
+    "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
+    "CaseSensitive": false,
+    "NoOverlay": true
+  },
+  {
+    "Term": "Earthglide",
+    "Definition": "The creature can burrow through nonmagical, unworked earth, dirt, and stone. While doing so, it does not disturb the material it moves through.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Jack of all Trades +X",
+    "Aliases": [
+      "Jack of all Trades"
+    ],
+    "Definition": "The creature adds half of their proficiency bonus (listed as X) to any ability check that doesn’t already add it.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Wildcard": true,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  },
+  {
+    "Term": "Siphon the Devout",
+    "Definition": "When the creature would be reduced to 0 hit points while worshippers who believe in their dogma exists within 1000 feet of them, they can siphon the souls of any number of those willing worshippers, killing them to reduce the damage they would take by an amount equal to the remaining hit points of the killed individuals.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockQualityTrait"
+    ]
+  }
 ]

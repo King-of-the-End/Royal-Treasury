@@ -36,7 +36,7 @@ else if (spell is null)
             class="spell-back-link"
             href="@BackUrl">
 
-            ← Back to Spells
+            @BackLinkText
 
         </a>
 
@@ -60,7 +60,7 @@ else
             class="spell-back-link"
             href="@BackUrl">
 
-            ← Back to Spells
+            @BackLinkText
 
         </a>
 
@@ -680,7 +680,7 @@ else
 
 
     // =====================================
-    // BACK URL
+    // BACK URL / ORIGIN
     // =====================================
 
     private string BackUrl
@@ -697,11 +697,6 @@ else
                     uri.Query);
 
 
-            /*
-             * Spells.razor passes its current
-             * search / filter state through
-             * returnUrl.
-             */
             if (
                 query.TryGetValue(
                     "returnUrl",
@@ -712,33 +707,72 @@ else
                         .FirstOrDefault();
 
 
-                /*
-                 * Only permit an internal
-                 * spells URL.
-                 */
-                if (
-                    !string.IsNullOrWhiteSpace(
-                        returnUrl)
-                    &&
-                    returnUrl.StartsWith(
-                        "/spells",
-                        StringComparison
-                            .OrdinalIgnoreCase))
+                if (IsAllowedInternalReturnUrl(
+                    returnUrl))
                 {
-                    return returnUrl;
+                    return returnUrl!;
                 }
             }
 
 
-            /*
-             * Fallback when someone opens a
-             * spell directly.
-             */
             return
                 $"/spells?level=" +
                 $"{LevelFromFolder(
                     LevelFolder)}";
         }
+    }
+
+
+    private string BackLinkText
+    {
+        get
+        {
+            if (BackUrl.StartsWith(
+                "/bestiary",
+                StringComparison.OrdinalIgnoreCase))
+            {
+                return "← Back to Monster";
+            }
+
+
+            if (BackUrl.StartsWith(
+                "/spells/",
+                StringComparison.OrdinalIgnoreCase))
+            {
+                return "← Back to Previous Spell";
+            }
+
+
+            return "← Back to Spells";
+        }
+    }
+
+
+    private static bool IsAllowedInternalReturnUrl(
+        string? value)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            return false;
+        }
+
+
+        if (value.StartsWith(
+            "//",
+            StringComparison.Ordinal))
+        {
+            return false;
+        }
+
+
+        return
+            value.StartsWith(
+                "/spells",
+                StringComparison.OrdinalIgnoreCase)
+            ||
+            value.StartsWith(
+                "/bestiary",
+                StringComparison.OrdinalIgnoreCase);
     }
 
 

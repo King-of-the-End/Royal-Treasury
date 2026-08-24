@@ -1,0 +1,125 @@
+{
+  "Name": "Spirit Fox",
+  "Group": "Spirit",
+  "Source": "Soul of Trickery",
+  "Information": "**Spirit Fox**\n\nSpirit Foxes are small packs of ghostly beasts who appear in areas that are mostly untouched by the advancement of modern technology and culture, that are suddenly disturbed. Like many spirits, they are a natural reaction taken by primal forces to sudden change, and are aggressive toward mortals who don’t show proper respect for the natural world.\n\n**Druidic Guardians**\n\nSpirit Foxes (and similar spirits) are sometimes conjured by druids, petal knights, and other primal agents to protect or inhabit sacred groves or places of importance.",
+  "Information Sections": [
+    {
+      "Title": "Spirit Fox",
+      "Text": "Spirit Foxes are small packs of ghostly beasts who appear in areas that are mostly untouched by the advancement of modern technology and culture, that are suddenly disturbed. Like many spirits, they are a natural reaction taken by primal forces to sudden change, and are aggressive toward mortals who don’t show proper respect for the natural world."
+    },
+    {
+      "Title": "Druidic Guardians",
+      "Text": "Spirit Foxes (and similar spirits) are sometimes conjured by druids, petal knights, and other primal agents to protect or inhabit sacred groves or places of importance."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Spirit%20Fox.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Spirit%20Fox.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Spirit%20Fox.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "spirit_fox",
+      "section_type": "Stat Block",
+      "title": "Spirit Fox",
+      "creature": {
+        "size": "Medium",
+        "type": "spirit (beast)",
+        "alignment": null
+      },
+      "armor_class": "14",
+      "hit_points": "52 (8d8 + 16)",
+      "speed": {
+        "walk": "40 ft.",
+        "belabored flight": "40 ft."
+      },
+      "quality_traits": [
+        "Ethereal",
+        "pack tactics"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +5",
+        "Stealth +6"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "cold",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "poisoned",
+        "restrained"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "understands Sylvan but doesn’t speak"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Spirit Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 26 (4d10 + 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Death Howl (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The fox lets out a dreadful howl that forces each non-spirit creature within 20 feet of it to make a DC 14 Wisdom saving throw, taking 27 (6d8) psychic damage on a failure, or half as much damage on a success. Each spirit wolf within 60 feet of the fox can use their reaction to also use their Death Howl simultaneously, if it is available. A creature within two or more of these Howls has disadvantage on their saving throw against it, but only takes the damage from one Howl caused this way."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

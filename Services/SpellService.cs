@@ -1,4 +1,7 @@
 using System.Collections.Concurrent;
+using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Text.Json;
 using Website_of_Everything.Models;
 
@@ -57,6 +60,35 @@ public sealed class SpellService
 
     private Task<IReadOnlyList<SpellData>>?
         _allSpellsTask;
+
+
+    /*
+     * Lightweight route index used by stat blocks.
+     *
+     * This deliberately indexes filenames instead of loading every
+     * spell JSON file. A monster only needs the spell's level folder
+     * and slug in order to create a detail-page link.
+     */
+    private readonly object _spellRouteIndexLock =
+        new();
+
+
+    private IReadOnlyDictionary<string, SpellRoute>?
+        _spellRouteIndex;
+
+
+    private static readonly Regex
+        SpellReferenceAnnotationRegex =
+            new(
+                @"\s*\((?:\d+(?:st|nd|rd|th)\s+level|self\s+only)\)\s*$",
+                RegexOptions.IgnoreCase
+                | RegexOptions.CultureInvariant
+                | RegexOptions.Compiled);
+
+
+    public sealed record SpellRoute(
+        string LevelFolder,
+        string Slug);
 
 
     public SpellService(
@@ -346,6 +378,282 @@ public sealed class SpellService
 
 
         return spell;
+    }
+
+
+    // =====================================
+    // RESOLVE A SPELL REFERENCE TO A ROUTE
+    //
+    // Used by stat-block spell lists.
+    //
+    // Examples:
+    //
+    // healing word
+    // -> /spells/1st/healing-word
+    //
+    // healing word (9th level)
+    // -> /spells/1st/healing-word
+    //
+    // invisibility (self only)
+    // -> /spells/2nd/invisibility
+    //
+    // If Royal Treasury does not actually have a spell JSON file for
+    // the reference, null is returned and the stat block leaves the
+    // spell as ordinary text rather than creating a broken link.
+    // =====================================
+
+    public SpellRoute? ResolveSpellReference(
+        string? spellReference)
+    {
+        if (string.IsNullOrWhiteSpace(spellReference))
+        {
+            return null;
+        }
+
+
+        var index =
+            GetSpellRouteIndex();
+
+
+        /*
+         * First try the text exactly as written. This is important if
+         * a future real spell name contains parentheses.
+         */
+        var exactSlug =
+            ToSpellSlug(
+                spellReference);
+
+
+        if (
+            !string.IsNullOrWhiteSpace(exactSlug)
+            &&
+            index.TryGetValue(
+                exactSlug,
+                out var exactRoute))
+        {
+            return exactRoute;
+        }
+
+
+        /*
+         * Monster spell lists sometimes append casting notes that are
+         * not part of the spell name. Remove only the known note forms
+         * after exact matching has failed.
+         */
+        var withoutAnnotation =
+            SpellReferenceAnnotationRegex
+                .Replace(
+                    spellReference.Trim(),
+                    string.Empty)
+                .Trim();
+
+
+        if (string.Equals(
+            withoutAnnotation,
+            spellReference.Trim(),
+            StringComparison.Ordinal))
+        {
+            return null;
+        }
+
+
+        var baseSlug =
+            ToSpellSlug(
+                withoutAnnotation);
+
+
+        return
+            !string.IsNullOrWhiteSpace(baseSlug)
+            &&
+            index.TryGetValue(
+                baseSlug,
+                out var baseRoute)
+
+            ? baseRoute
+
+            : null;
+    }
+
+
+    private IReadOnlyDictionary<string, SpellRoute>
+        GetSpellRouteIndex()
+    {
+        if (_spellRouteIndex is not null)
+        {
+            return _spellRouteIndex;
+        }
+
+
+        lock (_spellRouteIndexLock)
+        {
+            if (_spellRouteIndex is not null)
+            {
+                return _spellRouteIndex;
+            }
+
+
+            var routes =
+                new Dictionary<string, SpellRoute>(
+                    StringComparer.OrdinalIgnoreCase);
+
+
+            var root =
+                Path.Combine(
+                    _environment.WebRootPath,
+                    "data",
+                    "spells");
+
+
+            if (Directory.Exists(root))
+            {
+                foreach (var level in LevelFolders)
+                {
+                    var folder =
+                        Path.Combine(
+                            root,
+                            level.Key);
+
+
+                    if (!Directory.Exists(folder))
+                    {
+                        continue;
+                    }
+
+
+                    foreach (
+                        var file in
+                        Directory.EnumerateFiles(
+                            folder,
+                            "*.json",
+                            SearchOption.TopDirectoryOnly))
+                    {
+                        if (
+                            Path.GetFileName(file)
+                                .Equals(
+                                    "_manifest.json",
+                                    StringComparison.OrdinalIgnoreCase))
+                        {
+                            continue;
+                        }
+
+
+                        var slug =
+                            Path.GetFileNameWithoutExtension(
+                                file);
+
+
+                        if (string.IsNullOrWhiteSpace(slug))
+                        {
+                            continue;
+                        }
+
+
+                        routes.TryAdd(
+                            slug,
+                            new SpellRoute(
+                                level.Key,
+                                slug));
+                    }
+                }
+            }
+
+
+            _spellRouteIndex =
+                routes;
+
+
+            return _spellRouteIndex;
+        }
+    }
+
+
+    /*
+     * Spell filenames in the current catalogue are deterministic slugs
+     * of their display names. Keep the conversion here so stat-block
+     * references do not require a full spell-catalogue load.
+     */
+    private static string ToSpellSlug(
+        string value)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            return string.Empty;
+        }
+
+
+        var normalized =
+            value
+                .Trim()
+                .Normalize(
+                    NormalizationForm.FormD);
+
+
+        var builder =
+            new StringBuilder();
+
+
+        var separatorPending =
+            false;
+
+
+        foreach (var character in normalized)
+        {
+            var category =
+                CharUnicodeInfo.GetUnicodeCategory(
+                    character);
+
+
+            if (category == UnicodeCategory.NonSpacingMark)
+            {
+                continue;
+            }
+
+
+            /*
+             * Apostrophes are removed by the spell filename convention
+             * rather than converted into hyphens.
+             */
+            if (
+                character == '\''
+                ||
+                character == '’'
+                ||
+                character == '‘')
+            {
+                continue;
+            }
+
+
+            if (char.IsLetterOrDigit(character))
+            {
+                if (separatorPending && builder.Length > 0)
+                {
+                    builder.Append('-');
+                }
+
+
+                builder.Append(
+                    char.ToLowerInvariant(
+                        character));
+
+
+                separatorPending =
+                    false;
+
+
+                continue;
+            }
+
+
+            separatorPending =
+                builder.Length > 0;
+        }
+
+
+        return
+            builder
+                .ToString()
+                .Trim('-');
     }
 
 
