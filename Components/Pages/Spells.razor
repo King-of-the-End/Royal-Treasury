@@ -1002,13 +1002,24 @@
 
     // =====================================
     // SYNC CURRENT STATE TO URL
+    //
+    // Search, filter, and level changes are
+    // in-page state changes rather than page
+    // navigations. Use the browser History
+    // API so the address bar remains
+    // shareable without triggering Blazor's
+    // enhanced-navigation loading screen.
+    //
+    // Real navigation into /spells, opening
+    // a spell, and browser history navigation
+    // still use the normal page loader.
     // =====================================
 
     private void SyncUrl()
     {
-        Navigation.NavigateTo(
-            BuildListUrl(),
-            replace: true);
+        _ = JS.InvokeVoidAsync(
+            "royalTreasuryLoading.replaceUrl",
+            BuildListUrl());
     }
 
 
