@@ -1,0 +1,119 @@
+{
+  "Name": "Cajole",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Cajole**\n\nHumanoid infiltrators created by Luminal Minus to aid Outer Titans in circumstances where pure strength may not be the best option. Though large by mortal standards for humanoids, the cajole are small compared to their titan brethren. Like the Outer Titans, they are part of Luminal Minus’ hivemind, and are expressionless extensions of the Grand Primary’s will.",
+  "Information Sections": [
+    {
+      "Title": "Cajole",
+      "Text": "Humanoid infiltrators created by Luminal Minus to aid Outer Titans in circumstances where pure strength may not be the best option. Though large by mortal standards for humanoids, the cajole are small compared to their titan brethren. Like the Outer Titans, they are part of Luminal Minus’ hivemind, and are expressionless extensions of the Grand Primary’s will."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Cajole.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Cajole.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Cajole.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "cajole",
+      "section_type": "Stat Block",
+      "title": "Cajole",
+      "creature": {
+        "size": "Large",
+        "type": "aberration (alien)",
+        "alignment": null
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "53 (7d10 + 4)",
+      "speed": {
+        "walk": "20 ft.",
+        "fly": "40 ft. (hover)",
+        "0-G acceleration": "60 ft."
+      },
+      "quality_traits": [
+        "Alien absurdity",
+        "eidolic"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception +6"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "hivesense 120 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The titan uses its Penetrating Psych, then attacks using its Spear Arm."
+        },
+        {
+          "name": "Penetrating Psych",
+          "name_format": "bold_italic",
+          "description": "One creature the titan can see within 60 feet has their mind filled with horrific visions of the deaths of those on Luminal Prime. They must succeed a DC 14 Charisma saving throw or be stunned until the start of the titan’s next turn."
+        },
+        {
+          "name": "Spear Arm",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

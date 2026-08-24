@@ -2,11 +2,11 @@
   "Name": "Sukoshin (Six Tails)",
   "Group": "Yokai",
   "Source": "Lyres Guide to Risk and Reward",
-  "Information": "**Sukoshin**\n\nSukoshin is a variation of yokai that resemble foxes and are as shrewd as that likeness implies. These yokai are born from those who crave affection or have experienced extreme loss. Those feelings twist within the Shadowfell and produce these beasts, who instinctively seek to fulfill the desires of those who feel alone in the world. They feed on the misplaced affection and obsession of others, growing stronger while deluding themselves into thinking they’re helping their victims deal with their loneliness.\n\nLike all yokai they have a desire for human blood. Some find ways to convince their victims that they should allow them to feed upon their blood as if it were a normal thing to do, while many sukoshin hunt those around their target to isolate them and create dependence. When the time finally comes that their target’s desires have dried up or they become dull, a sukoshin will likely slay them and move on to another.\n\n***Shapeshifters.*** Sukoshin can read minds, and will change their form to match that which their target desires. All too often they use their abilities to monitor the dreams and desires of potential victims, then assume the form they most wish to see. They can take the body of a former lover, close friend, or a new individual entirely. Using their magic they integrate themselves into the lives of their victims and breed obsession and necessity. They become indispensable to their partners and consume those feelings of desire to become stronger.\n\n***Beast of Many Tails.*** Each sukoshin grows in proportion to the amount of mortal blood and desire that they consume, and after several years their forms begin to change. They sprout additional tails, growing in size and becoming more powerful as a result. At increments of three, six, and nine tails they gain profound levels of power. Those with three can hunt and kill more efficiently; those with six learn to control multiple targets at once and learn magic that can aid in protecting their own; those who reach nine are the pinnacle of their kind, becoming daiyokai who thirst for adoration from as many people as they can - they are the most efficient temptresses and enticers of the yokai world.\n\nAs they grow in power they desire more subjects. Those with three tails often charm multiple partners or small groups of people, perhaps even worming their way into a family. Those with six might aim higher, seeking the partnership of a leader among their kind or becoming the head of an entire settlement. Those with nine have an insatiable thirst for attention and adoration, and so entice and charm all possible. To them, ruling a kingdom is an appropriate means to their ends.\n\n• “At least some fiends have the decency to be easy on the eyes.”",
+  "Information": "**Sukoshin**\n\nSukoshin is a variation of yokai that resemble foxes and are as shrewd as that likeness implies. These yokai are born from those who crave affection or have experienced extreme loss. Those feelings twist within the Shadowfell and produce these beasts, who instinctively seek to fulfill the desires of those who feel alone in the world. They feed on the misplaced affection and obsession of others, growing stronger while deluding themselves into thinking they\u2019re helping their victims deal with their loneliness.\n\nLike all yokai they have a desire for human blood. Some find ways to convince their victims that they should allow them to feed upon their blood as if it were a normal thing to do, while many sukoshin hunt those around their target to isolate them and create dependence. When the time finally comes that their target\u2019s desires have dried up or they become dull, a sukoshin will likely slay them and move on to another.\n\n***Shapeshifters.*** Sukoshin can read minds, and will change their form to match that which their target desires. All too often they use their abilities to monitor the dreams and desires of potential victims, then assume the form they most wish to see. They can take the body of a former lover, close friend, or a new individual entirely. Using their magic they integrate themselves into the lives of their victims and breed obsession and necessity. They become indispensable to their partners and consume those feelings of desire to become stronger.\n\n***Beast of Many Tails.*** Each sukoshin grows in proportion to the amount of mortal blood and desire that they consume, and after several years their forms begin to change. They sprout additional tails, growing in size and becoming more powerful as a result. At increments of three, six, and nine tails they gain profound levels of power. Those with three can hunt and kill more efficiently; those with six learn to control multiple targets at once and learn magic that can aid in protecting their own; those who reach nine are the pinnacle of their kind, becoming daiyokai who thirst for adoration from as many people as they can - they are the most efficient temptresses and enticers of the yokai world.\n\nAs they grow in power they desire more subjects. Those with three tails often charm multiple partners or small groups of people, perhaps even worming their way into a family. Those with six might aim higher, seeking the partnership of a leader among their kind or becoming the head of an entire settlement. Those with nine have an insatiable thirst for attention and adoration, and so entice and charm all possible. To them, ruling a kingdom is an appropriate means to their ends.\n\n\u2022 \u201CAt least some fiends have the decency to be easy on the eyes.\u201D",
   "Information Sections": [
     {
       "Title": "Sukoshin",
-      "Text": "Sukoshin is a variation of yokai that resemble foxes and are as shrewd as that likeness implies. These yokai are born from those who crave affection or have experienced extreme loss. Those feelings twist within the Shadowfell and produce these beasts, who instinctively seek to fulfill the desires of those who feel alone in the world. They feed on the misplaced affection and obsession of others, growing stronger while deluding themselves into thinking they’re helping their victims deal with their loneliness.\n\nLike all yokai they have a desire for human blood. Some find ways to convince their victims that they should allow them to feed upon their blood as if it were a normal thing to do, while many sukoshin hunt those around their target to isolate them and create dependence. When the time finally comes that their target’s desires have dried up or they become dull, a sukoshin will likely slay them and move on to another."
+      "Text": "Sukoshin is a variation of yokai that resemble foxes and are as shrewd as that likeness implies. These yokai are born from those who crave affection or have experienced extreme loss. Those feelings twist within the Shadowfell and produce these beasts, who instinctively seek to fulfill the desires of those who feel alone in the world. They feed on the misplaced affection and obsession of others, growing stronger while deluding themselves into thinking they\u2019re helping their victims deal with their loneliness.\n\nLike all yokai they have a desire for human blood. Some find ways to convince their victims that they should allow them to feed upon their blood as if it were a normal thing to do, while many sukoshin hunt those around their target to isolate them and create dependence. When the time finally comes that their target\u2019s desires have dried up or they become dull, a sukoshin will likely slay them and move on to another."
     },
     {
       "Title": "Shapeshifters",
@@ -18,7 +18,7 @@
     },
     {
       "Title": "",
-      "Text": "“At least some fiends have the decency to be easy on the eyes.”",
+      "Text": "\u201CAt least some fiends have the decency to be easy on the eyes.\u201D",
       "IsQuote": true
     }
   ],
@@ -48,7 +48,7 @@
         "alignment": "neutral evil"
       },
       "armor_class": "18 (natural armor)",
-      "hit_points": "162 (25d10 + 25)",
+      "hit_points": "162 (25d10 \u002B 25)",
       "speed": {
         "walk": "50 ft.",
         "burrow": "20 ft.",
@@ -62,39 +62,39 @@
       "ability_scores": {
         "STR": {
           "score": 14,
-          "modifier": "+2"
+          "modifier": "\u002B2"
         },
         "DEX": {
           "score": 22,
-          "modifier": "+6"
+          "modifier": "\u002B6"
         },
         "CON": {
           "score": 13,
-          "modifier": "+1"
+          "modifier": "\u002B1"
         },
         "INT": {
           "score": 7,
           "modifier": "-2",
-          "save": "+2"
+          "save": "\u002B2"
         },
         "WIS": {
           "score": 15,
-          "modifier": "+2"
+          "modifier": "\u002B2"
         },
         "CHA": {
           "score": 18,
-          "modifier": "+4",
-          "save": "+8"
+          "modifier": "\u002B4",
+          "save": "\u002B8"
         }
       },
       "saving_throws": [
-        "Int +2",
-        "Cha +8"
+        "Int \u002B2",
+        "Cha \u002B8"
       ],
       "skills": [
-        "Deception +8",
-        "Perception +6",
-        "Persuasion +8"
+        "Deception \u002B8",
+        "Perception \u002B6",
+        "Persuasion \u002B8"
       ],
       "resistances": [
         "B/P/S (magical or silvered)"
@@ -117,7 +117,7 @@
         "Elvish"
       ],
       "challenge_rating": "12 (8,400 XP)",
-      "proficiency_bonus": "+4",
+      "proficiency_bonus": "\u002B4",
       "traits": [
         {
           "name": "Affectionate Charm",
@@ -127,25 +127,41 @@
         {
           "name": "Innate Spellcasting",
           "name_format": "bold_italic",
-          "description": "The yokai’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
-          "suboptions": [
-            {
-              "name": "At will",
-              "description": "charm person (5th level), detect thoughts"
-            },
-            {
-              "name": "1/Day each",
-              "description": "dominate person, heal, mislead"
-            },
-            {
-              "name": "2/Day each",
-              "description": "hold person (4th level)"
-            },
-            {
-              "name": "3/Day each",
-              "description": "dispel magic, faerie fire, major image, misty step"
-            }
-          ]
+          "description": "The yokai\u2019s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "charm person (5th level)",
+                  "detect thoughts"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "dominate person",
+                  "heal",
+                  "mislead"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "hold person (4th level)"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "spells": [
+                  "dispel magic",
+                  "faerie fire",
+                  "major image",
+                  "misty step"
+                ]
+              }
+            ]
+          }
         }
       ],
       "actions": [
@@ -157,7 +173,7 @@
         {
           "name": "Bite",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 5 ft., one target. Hit: 17 (2d10 \u002B 6) piercing damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -166,7 +182,7 @@
         {
           "name": "Nails",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage.",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 5 ft., one target. Hit: 17 (2d10 \u002B 6) slashing damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -194,7 +210,7 @@
         {
           "name": "Charmed Guardian",
           "name_format": "bold_italic",
-          "description": "In response to being targeted by a weapon attack it can see, one creature charmed by the yokai moves up to its movement speed to a space adjacent to the attacker or the yokai, and becomes the attack’s new target."
+          "description": "In response to being targeted by a weapon attack it can see, one creature charmed by the yokai moves up to its movement speed to a space adjacent to the attacker or the yokai, and becomes the attack\u2019s new target."
         }
       ]
     }

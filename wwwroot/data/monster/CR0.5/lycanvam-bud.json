@@ -1,0 +1,119 @@
+{
+  "Name": "Lycanvam Bud",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Lycanvam**\n\nLycanvam are dangerous alien plants that take root on planets across the cosmos, as well as seed themselves on drifting comets and space debris. They are voracious, looking to devour any life they can get their tendrils around, and have a unique ability that lets them share the traits and qualities of the creatures they are consuming, often making them resistant to the escape attempts of their prey.\n\n**Silent Slumber.** When a lycanvam growth runs out of food to consume, it will regress into its seedling state (a mossy growth that secures itself in small, tucked-away spaces) and enters into a state of deathly hibernation until it feels the warmth of blood and life around it. It then reawakens and attempts to feed in a wild frenzy. In this suspended state it can exist for hundreds of thousands of years, resembles regular plantlife, and can survive huge impacts, such as a derelict astradeck or meteor crashing down to a planet.",
+  "Information Sections": [
+    {
+      "Title": "Lycanvam",
+      "Text": "Lycanvam are dangerous alien plants that take root on planets across the cosmos, as well as seed themselves on drifting comets and space debris. They are voracious, looking to devour any life they can get their tendrils around, and have a unique ability that lets them share the traits and qualities of the creatures they are consuming, often making them resistant to the escape attempts of their prey."
+    },
+    {
+      "Title": "Silent Slumber",
+      "Text": "When a lycanvam growth runs out of food to consume, it will regress into its seedling state (a mossy growth that secures itself in small, tucked-away spaces) and enters into a state of deathly hibernation until it feels the warmth of blood and life around it. It then reawakens and attempts to feed in a wild frenzy. In this suspended state it can exist for hundreds of thousands of years, resembles regular plantlife, and can survive huge impacts, such as a derelict astradeck or meteor crashing down to a planet."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lycanvam_bud",
+      "section_type": "Stat Block",
+      "title": "Lycanvam Bud",
+      "creature": {
+        "size": "Tiny",
+        "type": "plant",
+        "alignment": ""
+      },
+      "armor_class": "11",
+      "hit_points": "9 (2d4 + 4)",
+      "speed": {
+        "walk": "10 ft.",
+        "0-G acceleration": "30 ft."
+      },
+      "quality_traits": [
+        "Exolunar nature",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "-"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Stealth +3"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "deafened",
+        "exhaustion"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [],
+      "challenge_rating": "1/2 (100 XP)",
+      "proficiency_bonus": "+2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Stunning Needle",
+          "name_format": "bold_italic",
+          "description": "The bud fires a needle coated in neurotoxin at a target as either a Melee Weapon Attack: +3 to hit, 5 ft., one target, or as a Ranged Weapon Attack: +3 to hit, range 20 ft., one target. Hit: 4 (1d4 + 1) piercing damage plus 3 (1d4) poison damage, and the target must make a DC 11 Constitution saving throw. On a failure, the target is stunned until the start of the bud’s next turn.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Latch Strike",
+          "name_format": "bold_italic",
+          "description": "The bud throws itself into a space that can fit it within 10 feet and attempts to latch onto one target as a Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) necrotic damage, the bud gains temporary hit points equal to the damage it deals, and the target is grappled (escape DC 12), regardless of their size. Being grappled this way does not hinder the movement of the target if they are Medium or larger, except that for each bud grappling them their movement speed is reduced by 5 feet (unless they are Huge or larger). When the bud makes a Latch Strike attack against a target it is grappling, it adds a +5 bonus to its attack.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "Name": "False Arc Valinn",
+  "Group": "False Eidolons",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**False Arc Valinn**\n\nArc Valinn\u2019s shadow will most typically form in response to cultural fears of technology, serving as a corruption of Arc Valinn\u2019s own purpose. They will almost always interpret their purpose as forcing a world to accept technological advancement, often through acts of mass destruction against factions who would stand in their way, and they seek to bring entire worlds under their sway on the pretense of \u201Copening minds to the future.\u201D A false Arc Valinn will generally attempt to utilize technology as an impulse, such as using liners, frame units, constructs, etc.\n\n**Dark Cosmos Galactia.** Like Arc Valinn, a false Arc Valinn can manifest/transform into a deific mechanical being that resembles a frame unit, which serves as the counterpart to Frame Galactia. They generally do not manifest this form unless they are required to, and prefer to use other frame units to avoid the noticeably fiendish aspects of their counterpart form.\n\n**Extinction.** At the height of their power, a false Arc Valinn may be capable of channeling its power into use of the eidomancy spell extinction. Doing so requires a massive amount of outside eidomantic energy and support from willing followers, who must bear the burden of the spell in their place for a time. This power is born within them as a result of their origins: a fear of technological advancement wiping out civilization. In most cases, they will not attempt to use it unless annihilating any proof of their false identity.\n\n\u201CIf it walks like a god, talks like a god, pontificates like a god, and demands worship like a god... it may simply be a threat to civilization as we know it. Shadows of gods are never good news, even when they act with good intentions.\u201D",
+  "Information Sections": [
+    {
+      "Title": "False Arc Valinn",
+      "Text": "Arc Valinn\u2019s shadow will most typically form in response to cultural fears of technology, serving as a corruption of Arc Valinn\u2019s own purpose. They will almost always interpret their purpose as forcing a world to accept technological advancement, often through acts of mass destruction against factions who would stand in their way, and they seek to bring entire worlds under their sway on the pretense of \u201Copening minds to the future.\u201D A false Arc Valinn will generally attempt to utilize technology as an impulse, such as using liners, frame units, constructs, etc."
+    },
+    {
+      "Title": "Dark Cosmos Galactia",
+      "Text": "Like Arc Valinn, a false Arc Valinn can manifest/transform into a deific mechanical being that resembles a frame unit, which serves as the counterpart to Frame Galactia. They generally do not manifest this form unless they are required to, and prefer to use other frame units to avoid the noticeably fiendish aspects of their counterpart form."
+    },
+    {
+      "Title": "Extinction",
+      "Text": "At the height of their power, a false Arc Valinn may be capable of channeling its power into use of the eidomancy spell extinction. Doing so requires a massive amount of outside eidomantic energy and support from willing followers, who must bear the burden of the spell in their place for a time. This power is born within them as a result of their origins: a fear of technological advancement wiping out civilization. In most cases, they will not attempt to use it unless annihilating any proof of their false identity."
+    },
+    {
+      "Title": "Quote",
+      "Text": "\u201CIf it walks like a god, talks like a god, pontificates like a god, and demands worship like a god... it may simply be a threat to civilization as we know it. Shadows of gods are never good news, even when they act with good intentions.\u201D"
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/False%20Eidolic%20Deity%20-%20Arc%20Valinn.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/False%20Eidolic%20Deity%20-%20Arc%20Valinn.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/False%20Eidolic%20Deity%20-%20Arc%20Valinn.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "false_arc_valinn",
+      "section_type": "Stat Block",
+      "title": "False Arc Valinn",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "228 (24d8 \u002B 120)",
+      "speed": {
+        "walk": "30 ft.",
+        "0-G acceleration": "160 ft."
+      },
+      "quality_traits": [
+        "Deific (false)",
+        "siphon the devout",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B11"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B13"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B11",
+        "Int \u002B9",
+        "Wis \u002B12",
+        "Cha \u002B13"
+      ],
+      "skills": [
+        "Deception \u002B13",
+        "History \u002B9",
+        "Insight \u002B12",
+        "Perception \u002B12"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "force",
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "22 (41,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Construct Avatar",
+          "name_format": "bold_italic",
+          "description": "Constructs have disadvantage on attack rolls against the yokai, and it has advantage on saving throws made against them."
+        },
+        {
+          "name": "Dark Junction (1/Day)",
+          "name_format": "bold_italic",
+          "description": "As an action, or when the yokai would be reduced to 0 hit points or killed outright, it teleports to a point it chooses within 1000 feet that can fit a tremendous or smaller creature, and their hit points are reset to those of Dark Cosmos Galactia. It then uses Dark Cosmos Galactia\u2019s statblock in place of its own. If a party defeats Dark Cosmos Galactia, they are awarded its experience in addition to the yokai\u2019s own.\n\nAt the GM\u2019s discretion, the yokai may roll an additional initiative for False Arc Valinn, and treat that initiative as though the yokai, using this statblock, was also piloting Dark Cosmos Galactia."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The yokai\u2019s spellcasting ability is Charisma. The can innately cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "antigravity zone (9th level)",
+                  "gravity bind"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "spells": [
+                  "astral collision",
+                  "transmission"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "gravitational purge",
+                  "heat metal",
+                  "stasis",
+                  "sympathetic gateway"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "dead nova",
+                  "solar implosion"
+                ]
+              }
+            ],
+            "additional_text": "The yokai\u2019s spells are all cast as though they were at least 5th level, unless they were higher already. They do not make eidomancy checks."
+          }
+        },
+        {
+          "name": "Technological Supremacy",
+          "name_format": "bold_italic",
+          "description": "The yokai can exert control over mindless technology or constructs with an Intelligence score of 10 or lower they can see, unless those constructs are being directly controlled by another creature. Entities controlled this way bend to her will and follow her commands, requiring no concentration from her, and remain under her control as long as they are able to act. When she seizes control of technology this way, she remains aware of its actions and situation until she loses control."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes two attacks, choosing between its Solopsist Twinblade and Solopsist Arcbow. It can replace one of these attacks with Dominate Technology."
+        },
+        {
+          "name": "Solopsist Twinblade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 5 ft., one target. Hit: 17 (2d10 \u002B 6) slashing damage plus 9 (2d8) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Solopsist Arcbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B11 to hit, range 150/600 ft., one target. Hit: 21 (3d10 \u002B 4) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dominate Technology",
+          "name_format": "bold_italic",
+          "description": "The yokai produces the effects of the dominate monster spell, targeting one construct it can see (ignoring the spell\u2019s range), using Charisma as their spellcasting ability. This requires no spell slots or components, and doesn\u2019t count as a magical effect. The yokai can maintain any number of instances of this effect at the same time, concentrating on them as though they were one effect. They cannot target a creature who succeeds their saving throw against this effect again for 24 hours."
+        },
+        {
+          "name": "Demon Meteor (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The yokai creates a meteor of fiendish energy that strikes a point it can see 480 feet, where it detonates in a 50-foot-radius sphere. Each creature within that sphere (except the yokai) must succeed a DC 21 Dexterity saving throw, taking 38 (6d10) psychic damage and 38 (6d10) force damage on a failed save."
+        },
+        {
+          "name": "Manifest Demon Frame (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The yokai creates a clone of any frame unit they wish to as long as it is not a one-of-a-kind unit and its CR is 15 or lower. This frame unit is summoned for 1 hour (or until this feature is used again), is treated as a fiend (yokai) in addition to being a construct, and if it has traits that prevent it from taking damage from creatures based on size, these traits don\u2019t function. The frame unit also loses all resistances or immunities based on eidolic damage. The frame unit is summoned with a proficiency bonus of \u002B7.\n\nAlternatively, it can create two frame units of CR 8 or lower."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": [
+        {
+          "name": "Transmodification",
+          "name_format": "bold_italic",
+          "description": "The yokai chooses one creature they can see within 120 feet, whose body is briefly transformed into a somewhat mechanical iteration of themselves. The target must succeed a DC 21 Constitution saving throw. On a failure, the target is cursed, and while cursed this way they lose all existing creature types (except humanoid) and become a construct. The target may (if they choose) repeat this saving throw at the end of each of their turns, ending the effect on a success. If they fail this save for 1 full minute the curse becomes permanent unless removed by an effect, such as remove curse, which must be cast at 6th level or higher. A creature who succeeds their save against this effect becomes immune to it for 24 hours."
+        },
+        {
+          "name": "Warp Step",
+          "name_format": "bold_italic",
+          "description": "The yokai teleports (along with any willing vehicles or frame units it is in contact with) to a space it can see within 60 feet that can fit all the creatures being teleported."
+        },
+        {
+          "name": "Techno Hypnosis (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The yokai chooses up to three constructs it can see. Each may use its reaction to move up to half their movement speed and make a single weapon attack against a target within range, or use their reaction to move their full movement speed without provoking opportunity attacks. If the targets are unwilling, they must make a DC 22 Wisdom saving throw: on a failure, they obey the command against their will."
+        },
+        {
+          "name": "Organic Undoing (Costs 3 Actions)",
+          "name_format": "bold_italic",
+          "description": "All non-construct creatures within 30 feet of the yokai are overtaken by a wave of heat and force, and must make a DC 21 Dexterity saving throw, taking 11 (2d10) fire damage and 11 (2d10) force damage on a failure."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "legendary_action_count": 4
+    }
+  ]
+}

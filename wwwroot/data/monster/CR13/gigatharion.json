@@ -72,7 +72,6 @@
           "save": "\u002B2"
         }
       },
-      "ability_score_note": "*checks, saves and skills include the \u002B1 cosmogony bonus",
       "saving_throws": [
         "Str \u002B6",
         "Dex \u002B7",
@@ -193,7 +192,8 @@
           }
         ],
         "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
-      }
+      },
+      "ability_note": "*checks, saves and skills include the \u002B1 cosmogony bonus"
     }
   ]
 }

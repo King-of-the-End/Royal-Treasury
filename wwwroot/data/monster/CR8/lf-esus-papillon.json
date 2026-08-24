@@ -1,0 +1,146 @@
+{
+  "Name": "L.F. ESUS PAPILLON",
+  "Group": "Lunar Frames",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**ESUS PAPILLON**\n\nTaking on a form described as being similar to a humanoid butterfly, the graceful ESUS PAPILLON unit relies on subtle sensory illusions to fool others. They are surrounded by a gentle, swirling prismatic light that makes long-range combat against them difficult, and can turn this light into energy to strike others.",
+  "Information Sections": [
+    {
+      "Title": "ESUS PAPILLON",
+      "Text": "Taking on a form described as being similar to a humanoid butterfly, the graceful ESUS PAPILLON unit relies on subtle sensory illusions to fool others. They are surrounded by a gentle, swirling prismatic light that makes long-range combat against them difficult, and can turn this light into energy to strike others."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/L.F.%20ESUS%20PAPILLION.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/L.F.%20ESUS%20PAPILLION.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/L.F.%20ESUS%20PAPILLION.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lf_esus_papillon",
+      "section_type": "Stat Block",
+      "title": "L.F. ESUS PAPILLON",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (lunar frame)",
+        "alignment": null,
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "133 (14d12 \u002B 42)",
+      "threshold": "5",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Alloyed (Large)",
+        "debris resist",
+        "immutable",
+        "magic resist",
+        "magical",
+        "unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 21,
+          "modifier": "\u002B5",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B6"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "\u002B3"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B8",
+        "Wis \u002B6"
+      ],
+      "skills": [
+        "Perception \u002B9",
+        "Stealth \u002B8"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Shimmering Illustrator",
+          "name_format": "bold_italic",
+          "description": "The frame unit leaves an illusory track behind it, making its movements difficult to track. Opportunity attacks made against it have disadvantage unless the attacker has truesight or uses a sense that doesn\u2019t rely on sight. Blindsight cannot bypass this feature.\n\nSeparately, ranged attacks made against the frame unit have disadvantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The frame unit makes two melee weapon attacks."
+        },
+        {
+          "name": "Arcane Ranseur",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B8 to hit, reach 15 ft., one target. Hit: 12 (1d12 \u002B 5) piercing damage plus 6 (1d10) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Rainbow Attenuation (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The frame unit unleashes two rainbow beams that cross into each other at a point of the frame unit\u2019s choice that it can see within 60 feet. A burst of prismatic light erupts from that point, forcing each creature in a 20-foot-radius sphere centered there to make a DC 14 Constitution saving throw. Each creature that fails takes 25 (4d10 \u002B 3) psychic damage and becomes sluggish until the start of the frame unit\u2019s next turn."
+        },
+        {
+          "name": "Mach Boost",
+          "name_format": "bold_italic",
+          "description": "The frame unit doubles its movement speed until the end of its turn and takes the Dash action."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

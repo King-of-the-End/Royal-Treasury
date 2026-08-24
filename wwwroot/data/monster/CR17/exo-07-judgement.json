@@ -1,0 +1,163 @@
+{
+  "Name": "EXO-07 - JUDGEMENT",
+  "Group": "Eidolos",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**EXO-07 - JUDGEMENT**\n\nPivoting from the construction application of earlier exo-armors, JUDGEMENT was a test to see how quickly the Ignisforge could push the military functions of their units. JUDGEMENT was designed as a weapon of mass destruction. It is highly mobile but lacks flight capabilities, which it makes up for with its destructive artillery.\n\n**Construct Traits.** The construct does not require air, food or water to survive.",
+  "Information Sections": [
+    {
+      "Title": "EXO-07 - JUDGEMENT",
+      "Text": "Pivoting from the construction application of earlier exo-armors, JUDGEMENT was a test to see how quickly the Ignisforge could push the military functions of their units. JUDGEMENT was designed as a weapon of mass destruction. It is highly mobile but lacks flight capabilities, which it makes up for with its destructive artillery.\n\n**Construct Traits.** The construct does not require air, food or water to survive."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/EXO-07%20JUDGEMENT.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/EXO-07%20JUDGEMENT.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/EXO-07%20JUDGEMENT.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "exo_07_judgement",
+      "section_type": "Stat Block",
+      "title": "EXO-07 - JUDGEMENT",
+      "creature": {
+        "size": "Tremendous",
+        "type": "construct (frame unit)",
+        "alignment": null,
+        "tags": [
+          "footprint 4"
+        ]
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "243 (18d12 \u002B 126)",
+      "threshold": "15",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "magic resist",
+        "magical",
+        "vehicle (auto)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B12"
+        },
+        "DEX": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "CON": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "INT": {
+          "score": 8,
+          "modifier": "-1",
+          "save": "\u002B5"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CHA": {
+          "score": 5,
+          "modifier": "-3"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B12",
+        "Int \u002B5"
+      ],
+      "skills": [
+        "Athletics \u002B12",
+        "Perception \u002B16"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "sluggish",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 26"
+      ],
+      "languages": [
+        "understands the languages of its creators but doesn\u2019t speak"
+      ],
+      "challenge_rating": "17 (18,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct uses its Charge, then uses its Macro Bolt Spam twice."
+        },
+        {
+          "name": "Charge",
+          "name_format": "bold_italic",
+          "description": "The construct rushes up to half its movement speed (which is counted against and cannot exceed their remaining movement), moving through the spaces of any creature smaller than it. Creatures it moves through the space of must make a DC 20 Strength saving throw, taking 19 (2d12 \u002B 6) bludgeoning damage and are knocked prone on a failure, or no damage on a success. If a creature the same size as the construct or larger would be in its path, they still make the saving throw but it stops moving before entering their space. Creatures in the construct\u2019s space at the end of this movement are pushed to the nearest available unoccupied space.\n\nThis movement does not provoke opportunity attacks."
+        },
+        {
+          "name": "Macro Bolt Spam",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B10 to hit, range 60/240 ft., one target. Hit: 21 (3d10 \u002B 4) lightning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "High Charge Rail (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The construct chooses one point it can see within 480 feet and fires a concentrated burst of energy from its primary cannon at it, which detonates in a 40-foot-radius sphere. Each creature in that space must make a DC 21 Dexterity saving throw, taking 35 (10d6) lightning damage and 35 (10d6) force damage on a failed save, or half as much on a successful one.\n\nIf the construct spends 1 minute concentrating on this action before using it, it may fire at a point within 5000 feet instead of 480."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Break Dash",
+          "name_format": "bold_italic",
+          "description": "The construct takes the Dash action."
+        },
+        {
+          "name": "Sensorspike",
+          "name_format": "bold_italic",
+          "description": "The construct makes a Wisdom (Perception) check to attempt to locate invisible or hiding creatures. If creatures are invisible within the range of its darkvision but not hiding, they are treated as having a passive Stealth score of 10 \u002B their Stealth modifier. An invisible creature perceived through this action is treated as being visible to the construct until they use the Hide action to hide again."
+        }
+      ],
+      "reactions": [],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "Name": "Aspect of Destimus",
+  "Group": "Deific Aspects",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Aspect of Destimus**\n\nDestimus was once a gnomish inventor who created an artificial body for themselves, then made new iterations until they had completely lost their mortality. They are a god of constructs, experimentation, and iteration. They have always had a fascination with frame units, specifically DGRs, which they discovered during their mortal life. They quietly researched them through their followers, and eventually, when Somnus Domina\u0027s culture expanded into space, they turned their attention toward exolunar cultures as well. Their newest physical iterations have more and more resembled DGR units.\n\n**Iteration Matrixes**\n\nDestimus can gather loose materials to create pillar-like engines that briefly enhance his own abilities, or the abilities of his followers if he chooses to help them. These Matrixes are likened to divine totems by their followers.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Destimus",
+      "Text": "Destimus was once a gnomish inventor who created an artificial body for themselves, then made new iterations until they had completely lost their mortality. They are a god of constructs, experimentation, and iteration. They have always had a fascination with frame units, specifically DGRs, which they discovered during their mortal life. They quietly researched them through their followers, and eventually, when Somnus Domina\u0027s culture expanded into space, they turned their attention toward exolunar cultures as well. Their newest physical iterations have more and more resembled DGR units."
+    },
+    {
+      "Title": "Iteration Matrixes",
+      "Text": "Destimus can gather loose materials to create pillar-like engines that briefly enhance his own abilities, or the abilities of his followers if he chooses to help them. These Matrixes are likened to divine totems by their followers."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Destimus%2C%20the%20Great%20Engine.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Destimus%2C%20the%20Great%20Engine.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Destimus%2C%20the%20Great%20Engine_Iteration%20Matrix.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Destimus-Emblem.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Destimus%2C%20the%20Great%20Engine.png"
+    },
+    {
+      "Label": "Iteration Matrix",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Destimus%2C%20the%20Great%20Engine_Iteration%20Matrix.png"
+    },
+    {
+      "Label": "Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Destimus-Emblem.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_destimus",
+      "section_type": "Stat Block",
+      "title": "Aspect of Destimus",
+      "creature": {
+        "size": "Large",
+        "type": "construct",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "210 (20d10 \u002B 100)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "burrow": "40 ft.",
+        "climb": "40 ft."
+      },
+      "quality_traits": [
+        "Deific",
+        "magic resist",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 26,
+          "modifier": "\u002B8",
+          "save": "\u002B13"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B6"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B8",
+        "Int \u002B13",
+        "Cha \u002B6"
+      ],
+      "skills": [
+        "Athletics \u002B8",
+        "Investigation \u002B13",
+        "Perception \u002B10"
+      ],
+      "resistances": [
+        "fire",
+        "lightning",
+        "B/P/S (adamantine)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "exhaustion",
+        "paralyzed",
+        "poisoned",
+        "stunned",
+        "unconscious"
+      ],
+      "senses": [
+        "tremorsense 60 ft.",
+        "blindsight 120 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "16 (22,500 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Iteration Implementation",
+          "name_format": "bold_italic",
+          "description": "When Destimus rolls initiative, it creates four Iteration Matrixes, each of which appears at a point Destimus chooses within 60 feet of itself. These Matrixes automatically disappear after 1 hour. At the start of each of Destimus\u2019s turns, they can move each Iteration Matrix up to 30 feet. They can move as though using a fly (hover) speed, but move half as far that way. If Destimus would take enough damage to reduce it to 0 hit points, it can destroy one of its Iteration Matrixes to take no damage instead."
+        },
+        {
+          "name": "Ultimate Upgrade (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Destimus is reduced to 0 hit points or killed outright, his hit points are instead reset to 150, and they regain their spent Legendary Reactions. Destimus teleports to an unoccupied space they can see within 60 feet, where they become Gargantuan by modifying their body with additional equipment, causing their attack reach and effect range to double. They then create four Iteration Matrixes that appear within 60 feet of them, and each of these Matrixes rolls for two effects instead of one (rerolling duplicate effects for each). Destimus then gains access to his Mythic Actions for 1 hour, after which he returns to his original size. If a party defeats Destimus after using his Mythic Awakening, they are awarded an additional 22,500 XP (for a total of 45,000 XP)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Destimus makes two weapon attacks. They can replace either of those attacks with a use of their Hook Line."
+        },
+        {
+          "name": "Hydraulic Assault",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B8 to hit, reach 10 ft., one target. Hit: 12 (2d8 \u002B 3) piercing damage plus 7 (2d6) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Hook Line",
+          "name_format": "bold_italic",
+          "description": "Destimus fires a hooked cable at a target within 60 feet. The target must make a DC 21 Dexterity saving throw. On a failure, they take 13 (2d12) piercing damage and are pulled into any space within 60 feet of Destimus that he chooses, where they fall prone. Creatures who are Gargantuan or larger have advantage on this saving throw."
+        },
+        {
+          "name": "Replace Device (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "If at least one Iteration Matrix has been destroyed and fewer than four exist, Destimus creates a new one. If they have used their Ultimate Upgrade, the next Matrix still only rolls one effect."
+        },
+        {
+          "name": "Mythic Action: Missile Salvo",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B10 to hit, range 60/180 ft., one target. Hit: 28 (5d8 \u002B 5) fire damage or 28 (5d8 \u002B 5) lightning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Engine Flare (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "Each of Destimus\u2019s Iteration Matrixes lets out a burst of energy, affecting each creature Destimus chooses within 30 feet of them. Each target must make a DC 21 Constitution saving throw, taking 39 (6d12) thunder damage on a failure, or half as much on a successful save."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Adapt and Evolve",
+          "name_format": "bold_italic",
+          "description": "When one of Destimus\u2019s Iteration Matrixes is destroyed, Destimus can adapt to the damage dealt to it, and for 1 hour Destimus becomes immune to the damage type(s) that destroyed it."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Matrix Pulse",
+            "name_format": "bold_italic",
+            "description": "Destimus causes one of their Iteration Matrixes to let out a pulse of energy, forcing each creature within 10 feet of it to make a DC 18 Strength saving throw. On a failure they are knocked prone."
+          },
+          {
+            "name": "Seeking Sight",
+            "name_format": "bold_italic",
+            "description": "Destimus makes a Perception check, attempting to find hidden creatures around them."
+          },
+          {
+            "name": "Shocking Strike (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Destimus strikes one creature within reach of their Hydraulic Assault, who must make a DC 18 Constitution saving throw. On a failure, the target is paralyzed until the start of Destimus\u2019s next turn."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "options": [
+          {
+            "name": "Shift Mechanism",
+            "name_format": "bold_italic",
+            "description": "Destimus teleports to a space adjacent to one of his Iteration Matrixes, then makes a single weapon attack against a target within range."
+          },
+          {
+            "name": "Recharge Matrix (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Destimus chooses two of their Iteration Matrixes, which each regain 26 (4d12) hit points."
+          },
+          {
+            "name": "Smokescreen (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Destimus releases a thick wall of smoke that follows after them, completely obscuring Destimus until the end of their next turn."
+          }
+        ],
+        "intro": "Destimus may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening."
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ],
+  "Additional Sections": [
+    {
+      "title": "Iteration Matrix",
+      "section_type": "Iteration Matrix",
+      "intro": "Medium object. Armor Class 15. Hit Points 50.",
+      "entries": [
+        {
+          "name": "Destimus Bound",
+          "name_format": "bold_italic",
+          "description": "The Iteration Matrix\u2019s saving throws, immunities, resistances, and vulnerabilities are identical to Destimus\u2019s, changing if Destimus\u2019s change. They are treated as if afflicted by any condition Destimus is affected by. The Matrix does not count as a creature, and is instead a magical object. It can still be targeted by damaging effects that can target creatures.",
+          "action_type": "Trait"
+        },
+        {
+          "name": "Expansion Engine",
+          "action_type": "Trait",
+          "description": "When the Matrix is created, roll a d6 to determine one of the following effects, which is applied to Destimus as long as this Matrix exists and is within 120 feet of Destimus.",
+          "table": {
+            "title": "",
+            "columns": [
+              "d6",
+              "Effect",
+              "Description"
+            ],
+            "rows": [
+              [
+                "1",
+                "Armor Mending",
+                "Destimus\u2019s armor class increases by 3."
+              ],
+              [
+                "2",
+                "Bonus Attack",
+                "Destimus may use their bonus action to make one additional attack (multiple iterations of this effect add their attacks all to the same bonus action)."
+              ],
+              [
+                "3",
+                "Resistance Engine",
+                "Destimus reduces all damage that it takes by 10 points."
+              ],
+              [
+                "4",
+                "Evasive Motor",
+                "Destimus\u2019s movement increases by 20 feet, and their movement doesn\u2019t provoke opportunity attacks."
+              ],
+              [
+                "5",
+                "Attack Engine",
+                "Destimus\u2019s attack and damage rolls gain a \u002B2 bonus."
+              ],
+              [
+                "6",
+                "Barrier",
+                "At the start of each of Destimus\u2019s turns, Destimus gains 20 temporary hit points (plus 20 for each additional Matrix with this effect)."
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Unmovable",
+          "name_format": "bold_italic",
+          "description": "The Matrix cannot be moved against Destimus\u2019s will.",
+          "action_type": "Trait"
+        }
+      ]
+    }
+  ]
+}

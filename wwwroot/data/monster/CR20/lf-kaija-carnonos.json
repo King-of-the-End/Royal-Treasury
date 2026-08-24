@@ -1,0 +1,179 @@
+{
+  "Name": "L.F. Kaija Carnonos",
+  "Group": "Lunar Frames",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**KAIJA CARNONOS**\n\nA frame unit type that almost matches the scale of the ProtoDGRs of Somnus Domina. This tendrilled unit relies on mental anguish to terrorize others, and looks into their hearts and minds when doing so to inflict their insecurities upon them as damage. Its massive size makes it a terrifying sight to behold, as does its ability to change the resonance of its psychic energy to appear to command different elements.",
+  "Information Sections": [
+    {
+      "Title": "KAIJA CARNONOS",
+      "Text": "A frame unit type that almost matches the scale of the ProtoDGRs of Somnus Domina. This tendrilled unit relies on mental anguish to terrorize others, and looks into their hearts and minds when doing so to inflict their insecurities upon them as damage. Its massive size makes it a terrifying sight to behold, as does its ability to change the resonance of its psychic energy to appear to command different elements."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/L.F.%20KAIJA%20CARNONOS.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/L.F.%20KAIJA%20CARNONOS.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/L.F.%20KAIJA%20CARNONOS.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lf_kaija_carnonos",
+      "section_type": "Stat Block",
+      "title": "L.F. KAIJA CARNONOS",
+      "creature": {
+        "size": "Tremendous",
+        "type": "construct (lunar frame)",
+        "alignment": "",
+        "tags": [
+          "footprint 4"
+        ]
+      },
+      "armor_class": "22 (natural armor)",
+      "hit_points": "249 (18d20 \u002B 60)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "120 ft. (hover)",
+        "0-G acceleration": "240 ft."
+      },
+      "quality_traits": [
+        "Debris resist",
+        "magic resist",
+        "magical",
+        "massive (L/10/DC 20)",
+        "unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "DEX": {
+          "score": 23,
+          "modifier": "\u002B6",
+          "save": "\u002B12"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 23,
+          "modifier": "\u002B6",
+          "save": "\u002B12"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B12",
+        "Wis \u002B12",
+        "Cha \u002B8"
+      ],
+      "skills": [
+        "Athletics \u002B11",
+        "Perception \u002B18"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 28"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The frame unit uses its Penitent Burst, then makes two Savior Tendril Spear attacks."
+        },
+        {
+          "name": "Penitent Burst",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B12 to hit, range 120/360 ft., one target. Hit: 33 (4d12 \u002B 6) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Savior Tendril Spear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 30 ft., one target. Hit: 23 (4d8 \u002B 5) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Grand Phobiaphelle",
+          "name_format": "bold_italic",
+          "description": "The frame unit creates a swirling wheel of psychic flames, which it hurls at a point it can see within 240 feet. It swirls destructively, filling a 40-foot-radius sphere centered on that point. Each creature in that space must succeed a DC 19 Intelligence saving throw, taking 83 (15d10) psychic damage on a failed save, or half as much damage on a successful one. Creatures who fail by 5 points or more are bombarded by psychic torment, and become sluggish for 1 minute. At the end of each of their turns they may repeat the saving throw, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Element Shift",
+          "name_format": "bold_italic",
+          "description": "The frame unit chooses one of the following energy types: cold, fire, necrotic, radiant, or thunder. Until the next time it takes a Rest or uses this action again, it becomes resistant to that damage type and its Grand Phobiaphelle action can deal that damage type instead of dealing psychic damage."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": [
+        {
+          "name": "Move",
+          "name_format": "bold_italic",
+          "description": "The frame unit moves up to its movement speed."
+        },
+        {
+          "name": "Tendril Rake",
+          "name_format": "bold_italic",
+          "description": "The frame unit attacks up to two different creatures within range with its Savior Tendril Spear. Its Massive trait does not apply to these attacks."
+        },
+        {
+          "name": "Eye of Oppression (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The frame unit chooses any number of creatures it can see within 60 feet, or one target up to 240 feet away. Its targets witness a multitude of judgmental, disorienting eyes opening in space around them, and must make a DC 20 Wisdom saving throw. On a failure they are frightened of the frame unit for 1 minute, during which they can reattempt the save at the end of each of their turns, ending the effect on a success. Creatures frightened this way take 11 (1d10 \u002B 5) psychic damage at the start of each of their turns as long as they are conscious."
+        }
+      ],
+      "legendary_action_count": 2
+    }
+  ]
+}

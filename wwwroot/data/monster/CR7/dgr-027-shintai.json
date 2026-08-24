@@ -1,12 +1,12 @@
 {
   "Name": "DGR 027 - SHINTAI",
   "Group": "DGR Frame Units",
-  "Source": "Blade, Bone & Benefit",
-  "Information": "**DGR 027 - SHINTAI**\n\nKnown as “the living shrine,” and meant as a pseudo-medical unit that could protect and repair soldiers by healing them inside it. SHINTAI releases sub-eidomantic particles of energy that can infuse elements and objects around it, to bring out latent qualities in them to suit its needs. The design of the SHINTAI is inspired by golems found only in the Fey Realm.",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**DGR 027 - SHINTAI**\n\nKnown as \u201Cthe living shrine,\u201D and meant as a pseudo-medical unit that could protect and repair soldiers by healing them inside it. SHINTAI releases sub-eidomantic particles of energy that can infuse elements and objects around it, to bring out latent qualities in them to suit its needs. The design of the SHINTAI is inspired by golems found only in the Fey Realm.",
   "Information Sections": [
     {
       "Title": "DGR 027 - SHINTAI",
-      "Text": "Known as “the living shrine,” and meant as a pseudo-medical unit that could protect and repair soldiers by healing them inside it. SHINTAI releases sub-eidomantic particles of energy that can infuse elements and objects around it, to bring out latent qualities in them to suit its needs. The design of the SHINTAI is inspired by golems found only in the Fey Realm."
+      "Text": "Known as \u201Cthe living shrine,\u201D and meant as a pseudo-medical unit that could protect and repair soldiers by healing them inside it. SHINTAI releases sub-eidomantic particles of energy that can infuse elements and objects around it, to bring out latent qualities in them to suit its needs. The design of the SHINTAI is inspired by golems found only in the Fey Realm."
     }
   ],
   "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/DGR-027%20-%20SHINTAI.png",
@@ -28,10 +28,12 @@
         "size": "Large",
         "type": "construct (DGR)",
         "alignment": "",
-        "footprint": "2"
+        "tags": [
+          "footprint 2"
+        ]
       },
       "armor_class": "18 (natural armor)",
-      "hit_points": "95 (10d10 + 40)",
+      "hit_points": "95 (10d10 \u002B 40)",
       "threshold": "10",
       "speed": {
         "walk": "30 ft.",
@@ -45,40 +47,40 @@
       "ability_scores": {
         "STR": {
           "score": 18,
-          "modifier": "+4"
+          "modifier": "\u002B4"
         },
         "DEX": {
           "score": 14,
-          "modifier": "+2",
-          "save": "+5"
+          "modifier": "\u002B2",
+          "save": "\u002B5"
         },
         "CON": {
           "score": 18,
-          "modifier": "+4"
+          "modifier": "\u002B4"
         },
         "INT": {
           "score": 12,
-          "modifier": "+1",
-          "save": "+4"
+          "modifier": "\u002B1",
+          "save": "\u002B4"
         },
         "WIS": {
           "score": 18,
-          "modifier": "+4"
+          "modifier": "\u002B4"
         },
         "CHA": {
           "score": 16,
-          "modifier": "+3",
-          "save": "+6"
+          "modifier": "\u002B3",
+          "save": "\u002B6"
         }
       },
       "saving_throws": [
-        "Dex +5",
-        "Int +4",
-        "Cha +6"
+        "Dex \u002B5",
+        "Int \u002B4",
+        "Cha \u002B6"
       ],
       "skills": [
-        "Nature +4",
-        "Perception +7"
+        "Nature \u002B4",
+        "Perception \u002B7"
       ],
       "resistances": [
         "B/P/S (magical)"
@@ -103,15 +105,15 @@
         "passive Perception 17"
       ],
       "languages": [
-        "understands all, but doesn’t speak"
+        "understands all, but doesn\u2019t speak"
       ],
       "challenge_rating": "7 (2,300 XP)",
-      "proficiency_bonus": "+3",
+      "proficiency_bonus": "\u002B3",
       "traits": [
         {
           "name": "Restorative Shrine",
           "name_format": "bold_italic",
-          "description": "A creature piloting this DGR is treated by its restorative properties, regaining 10 hit points at the start of each of the DGR’s turns."
+          "description": "A creature piloting this DGR is treated by its restorative properties, regaining 10 hit points at the start of each of the DGR\u2019s turns."
         }
       ],
       "actions": [
@@ -123,7 +125,7 @@
         {
           "name": "DGR Kanabo",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 13 (2d8 \u002B 4) bludgeoning damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -147,7 +149,7 @@
               "description": "The DGR infuses spiritual energy into moisture in the air, then binds it together to form around a point it chooses within 60 feet. A 20-foot radius sphere of freezing water appears there, engulfing anything in that space. Each creature that starts its turn in that sphere must make a DC 15 Constitution saving throw, taking 2d12 cold damage on a failure and their movement speed is reduced to 0 until the start of their next turn, or half as much on a success, and their movement is unaffected."
             },
             {
-              "name": "Land’s Grasp",
+              "name": "Land\u2019s Grasp",
               "description": "The DGR chooses three targets within 60 feet of it, and infuses sacred energy into seeds built into its hull to produce grasping roots, which try to bind those targets. Each target must make a DC 15 Strength saving throw or be restrained. The target can attempt a DC 15 Strength check in place of a weapon attack on their turn, breaking free on a success."
             }
           ]

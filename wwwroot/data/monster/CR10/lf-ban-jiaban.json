@@ -1,0 +1,163 @@
+{
+  "Name": "L.F. BAN JIABAN",
+  "Group": "Lunar Frames",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**BAN JIABAN**\n\nConstructed with newly recruited sunlings in mind, this admittedly simian-coded lunar frame lacks the terrestrial flight capabilities of many lunar frames, but is an expert climber and has hand-to-hand combat capabilities that others generally don\u2019t. It is among the strongest of the lunar frames in terms of pure brawling strength, and each is armed with a disassemblable combat staff that features drone technology, which can extend and fly through space independently to strike far-away targets.",
+  "Information Sections": [
+    {
+      "Title": "BAN JIABAN",
+      "Text": "Constructed with newly recruited sunlings in mind, this admittedly simian-coded lunar frame lacks the terrestrial flight capabilities of many lunar frames, but is an expert climber and has hand-to-hand combat capabilities that others generally don\u2019t. It is among the strongest of the lunar frames in terms of pure brawling strength, and each is armed with a disassemblable combat staff that features drone technology, which can extend and fly through space independently to strike far-away targets."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/L.F.%20BAN%20JIABAN.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/L.F.%20BAN%20JIABAN.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/L.F.%20BAN%20JIABAN.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lf_ban_jiaban",
+      "section_type": "Stat Block",
+      "title": "L.F. BAN JIABAN",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (lunar frame)",
+        "alignment": null,
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "133 (14d12 \u002B 42)",
+      "threshold": "10",
+      "speed": {
+        "walk": "60 ft.",
+        "climb": "60 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Alloyed (Medium)",
+        "debris resist",
+        "evasion",
+        "immutable",
+        "magic resist",
+        "magical",
+        "unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "\u002B6",
+          "save": "\u002B10"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B7"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1",
+          "save": "\u002B5"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B10",
+        "Con \u002B7",
+        "Cha \u002B5"
+      ],
+      "skills": [
+        "Acrobatics \u002B8",
+        "Athletics \u002B10",
+        "Perception \u002B11"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 80 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The frame unit makes two weapon attacks. If it is already grappling a creature when it takes this action, it can make one additional Grappling Strike against one creature it\u2019s grappling."
+        },
+        {
+          "name": "Dronereach Staff",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 20 ft., one target or a Ranged Weapon Attack: \u002B10 to hit, range 80/240 ft., one target. Hit: 17 (2d10 \u002B 6) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Grappling Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 10 ft., one target. Hit: 15 (2d8 \u002B 6) bludgeoning damage. If the target is smaller than the frame unit, it is grappled.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Force Launch",
+          "name_format": "bold_italic",
+          "description": "The frame unit hurls one creature it is grappling at a space it can see within 60 feet (doubled for each size category below Large they are). This ends the grapple, and the target must make a DC 18 Dexterity saving throw, taking 52 (8d12) force damage and falling prone on a failed save, or half as much damage and aren\u2019t prone on a successful one.\n\nIf the frame unit targets a space with a creature in it, the target must make the same saving throw, taking half as much damage and falling prone on a failure, or no damage on a success. The thrown creature then ends the throw in the nearest unoccupied space to the targeted one.\n\nIn a zero-gravity environment, the range the target can be thrown doubles."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Mech Leap",
+          "name_format": "bold_italic",
+          "description": "The frame unit leaps into an unoccupied space it can see within 60 feet. Opportunity attacks made against it due to this movement have disadvantage, and if it lands on an inverted or horizontal surface, or onto a creature larger than it, it grips onto it immediately and does not fall. If it grips onto a creature it makes a grapple attempt against them immediately, only falling if it fails."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Bludgeoneer",
+          "name_format": "bold_italic",
+          "description": "If any creature takes more than 10 feet of movement within the frame unit\u2019s melee reach on the same turn, it can make an opportunity attack against them."
+        }
+      ]
+    }
+  ]
+}

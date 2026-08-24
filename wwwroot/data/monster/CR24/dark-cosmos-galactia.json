@@ -1,0 +1,221 @@
+{
+  "Name": "Dark Cosmos Galactia",
+  "Group": "False Eidolons",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**False Arc Valinn**\n\nArc Valinn\u2019s shadow will most typically form in response to cultural fears of technology, serving as a corruption of Arc Valinn\u2019s own purpose. They will almost always interpret their purpose as forcing a world to accept technological advancement, often through acts of mass destruction against factions who would stand in their way, and they seek to bring entire worlds under their sway on the pretense of \u201Copening minds to the future.\u201D A false Arc Valinn will generally attempt to utilize technology as an impulse, such as using liners, frame units, constructs, etc.\n\n**Dark Cosmos Galactia.** Like Arc Valinn, a false Arc Valinn can manifest/transform into a deific mechanical being that resembles a frame unit, which serves as the counterpart to Frame Galactia. They generally do not manifest this form unless they are required to, and prefer to use other frame units to avoid the noticeably fiendish aspects of their counterpart form.\n\n**Extinction.** At the height of their power, a false Arc Valinn may be capable of channeling its power into use of the eidomancy spell extinction. Doing so requires a massive amount of outside eidomantic energy and support from willing followers, who must bear the burden of the spell in their place for a time. This power is born within them as a result of their origins: a fear of technological advancement wiping out civilization. In most cases, they will not attempt to use it unless annihilating any proof of their false identity.\n\n\u201CIf it walks like a god, talks like a god, pontificates like a god, and demands worship like a god... it may simply be a threat to civilization as we know it. Shadows of gods are never good news, even when they act with good intentions.\u201D",
+  "Information Sections": [
+    {
+      "Title": "False Arc Valinn",
+      "Text": "Arc Valinn\u2019s shadow will most typically form in response to cultural fears of technology, serving as a corruption of Arc Valinn\u2019s own purpose. They will almost always interpret their purpose as forcing a world to accept technological advancement, often through acts of mass destruction against factions who would stand in their way, and they seek to bring entire worlds under their sway on the pretense of \u201Copening minds to the future.\u201D A false Arc Valinn will generally attempt to utilize technology as an impulse, such as using liners, frame units, constructs, etc."
+    },
+    {
+      "Title": "Dark Cosmos Galactia",
+      "Text": "Like Arc Valinn, a false Arc Valinn can manifest/transform into a deific mechanical being that resembles a frame unit, which serves as the counterpart to Frame Galactia. They generally do not manifest this form unless they are required to, and prefer to use other frame units to avoid the noticeably fiendish aspects of their counterpart form."
+    },
+    {
+      "Title": "Extinction",
+      "Text": "At the height of their power, a false Arc Valinn may be capable of channeling its power into use of the eidomancy spell extinction. Doing so requires a massive amount of outside eidomantic energy and support from willing followers, who must bear the burden of the spell in their place for a time. This power is born within them as a result of their origins: a fear of technological advancement wiping out civilization. In most cases, they will not attempt to use it unless annihilating any proof of their false identity."
+    },
+    {
+      "Title": "Quote",
+      "Text": "\u201CIf it walks like a god, talks like a god, pontificates like a god, and demands worship like a god... it may simply be a threat to civilization as we know it. Shadows of gods are never good news, even when they act with good intentions.\u201D"
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Dark%20Cosmos%20Galactia%20(Ref).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Dark%20Cosmos%20Galactia%20(Ref).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Dark%20Cosmos%20Galactia%20(Ref).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dark_cosmos_galactia",
+      "section_type": "Stat Block",
+      "title": "Dark Cosmos Galactia",
+      "creature": {
+        "size": "Tremendous",
+        "type": "construct, yokai",
+        "alignment": "lawful evil"
+      },
+      "armor_class": "22 (natural armor)",
+      "hit_points": "490 (28d20 \u002B 196)",
+      "threshold": "10",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "90 ft.",
+        "0-G acceleration": "240 ft."
+      },
+      "quality_traits": [
+        "Deific (false)",
+        "massive (H/10 feet/DC 22)",
+        "siphon the devout",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B10"
+        },
+        "CON": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        },
+        "CHA": {
+          "score": 24,
+          "modifier": "\u002B7"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B10",
+        "Int \u002B9",
+        "Wis \u002B12"
+      ],
+      "skills": [
+        "Athletics \u002B14",
+        "Deception \u002B14",
+        "Insight \u002B12",
+        "Perception \u002B12"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "force",
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 240 ft.",
+        "darkvision (indefinite)",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "24 (41,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Construct Avatar",
+          "name_format": "bold_italic",
+          "description": "Constructs have disadvantage on attack rolls against the yokai, and it has advantage on saving throws made against them."
+        },
+        {
+          "name": "Dark Reactor (3/Rest)",
+          "name_format": "bold_italic",
+          "description": "The yokai can engage stores of dark energy to produce any of the following effects when they would apply. It cannot use the same effect more than once per turn. At the start of each of its turns, the yokai rolls a d4: on a result of 4, it regains one spent use of its Dark Reactor.",
+          "bullets": [
+            "Burst Effect. When the yokai makes an attack roll, ability check or saving throw, it can add a 2d6 to the result. It can do so when it fails, possibly changing the result. After using this effect, each attack, check, or save of the same type retains this bonus until the start of its next turn.",
+            "Crash Amplifier. When the yokai is hit by a weapon attack from a source within 600 feet, the yokai can make a Disruption Salvo attack with advantage against it.",
+            "Explosive Means. (On a hit with a weapon attack) the yokai\u2019s attack deals an additional 33 (6d10) psychic damage.",
+            "Hyperdrive Dash. The yokai\u2019s speed doubles until the end of its turn."
+          ]
+        },
+        {
+          "name": "Technological Supremacy",
+          "name_format": "bold_italic",
+          "description": "The yokai can exert control over mindless technology or constructs with an Intelligence score of 10 or lower it can see, unless those constructs are being directly controlled by another creature. Entities controlled this way bend to their will and follow its commands, requiring no concentration from it, and remain under its control as long as it is able to act. When it seizes control of technology this way, it remains aware of its actions and situation until it loses control."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Dark Cosmos Galactia makes three attacks, choosing between its Grand Solopsist Blade and Disruption Salvo."
+        },
+        {
+          "name": "Grand Solopsist Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 20 ft., one target. Hit: 18 (2d10 \u002B 7) slashing damage plus 9 (2d8) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Disruption Salvo",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B10 to hit, range 500/1500 ft., one target. Hit: 23 (3d12 \u002B 3) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Fusion Slash Wave",
+          "name_format": "bold_italic",
+          "description": "The yokai charges cosmic energy around its Grand Solopsist Blade and slashes it through the air, unleashing energy in a 90-foot cone originating from it. Each creature within that range must make a DC 22 Dexterity saving throw, taking 27 (3d12 \u002B 7) force damage on a failure."
+        },
+        {
+          "name": "Dark Star Skyfall (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The yokai chooses six points within 1 mile, where meteors made of burning astral energy crash down and explode in a 30-foot-radius sphere. Each creature within at least one of these spheres must make a DC 22 Dexterity saving throw, taking 44 (8d10) radiant damage plus 44 (8d10) psychic damage on a failed save, or half as much damage on a successful one."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": [
+        {
+          "name": "Burst Dash",
+          "name_format": "bold_italic",
+          "description": "The yokai moves up to their movement speed."
+        },
+        {
+          "name": "Destructive Salvo",
+          "name_format": "bold_italic",
+          "description": "The yokai makes one Disruption Salvo attack against a target within its normal range."
+        },
+        {
+          "name": "Techno Hypnosis (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The yokai chooses up to three constructs it can see. Each may use its reaction to move up to half their movement speed and make a single weapon attack against a target within range, or use their reaction to move their full movement speed without provoking opportunity attacks. If the targets are unwilling, they must make a DC 22 Wisdom saving throw: on a failure, they obey the command against their will."
+        },
+        {
+          "name": "Create Belzer (Costs 3 Actions)",
+          "name_format": "bold_italic",
+          "description": "The yokai creates a single Belzer unit (see Lyre\u2019s Guide to Risk \u0026 Reward) which is allied to it. This Belzer is a yokai in addition to being a construct."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "legendary_action_count": 4
+    }
+  ]
+}

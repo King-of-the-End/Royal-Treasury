@@ -122,7 +122,6 @@
           "name": "Innate Spellcasting",
           "name_format": "bold_italic",
           "description": "Tithiss\u2019s spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material components. Tithiss\u2019s spells are cast at 5th level, unless their base level is higher.",
-          "cast_as": "5th level, unless their base level is higher",
           "spellcasting": {
             "spells": [
               {
@@ -158,7 +157,8 @@
                   "sanctuary"
                 ]
               }
-            ]
+            ],
+            "casting_level_note": "5th level, unless their base level is higher"
           }
         },
         {
@@ -248,7 +248,6 @@
       },
       "mythic_actions": {
         "header": "Mythic Actions",
-        "availability": "For 1 hour after using Living Avatar of the Earth (Mythic Awakening)",
         "options": [
           {
             "name": "Arm Strike",
@@ -265,7 +264,8 @@
             "name_format": "bold_italic",
             "description": "Three creatures Tithiss chooses within 60 feet must make a DC 18 Dexterity saving throw. On a failure, they are encased in a sphere of sap, where they are restrained. Creatures restrained this way have total cover against anything outside, and vice versa. These sap shells have 18 AC, 30 hit points, and resistance to nonmagical weapon damage. If they are broken they crumble into dust. If Tithiss uses this feature again, existing sap shells vanish. Tithiss may still target creatures trapped like this with spells, as though they didn\u2019t have cover."
           }
-        ]
+        ],
+        "intro": "For 1 hour after using Living Avatar of the Earth (Mythic Awakening)"
       },
       "legendary_reactions": {
         "header": "Legendary Reactions",

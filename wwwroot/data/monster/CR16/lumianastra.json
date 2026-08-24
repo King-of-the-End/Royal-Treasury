@@ -1,0 +1,213 @@
+{
+  "Name": "Lumianastra",
+  "Group": "Eidolos",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Title": "The Untethered Accent",
+  "Gemstone": "Benitoite",
+  "Type": "Pleromael",
+  "Originator": "Arc Valinn",
+  "Information": "**Lumianastra**\n\n**Title** The Untethered Accent\n**Gemstone** Benitoite\n**Type** Pleromael\n**Originator** Arc Valinn\n\nOn the eve of the War in One Moment, DGR 010 - SKOFNUNG was stolen by a rogue framebilt team who objected to the Eidolons and their reign. Leading them was an influential individual who had arranged for SKOFNUNG\u2019s creation to begin with. On this, the climax of their attempt to steal a series of DGR units, a friend-turned-rival of that leader stood by to stop them, and gave chase to that rebel element in SKOFNUNG, eventually meeting them in even-handed combat before both were struck by the shockwave unleashed upon the DGRs in orbit from Lycrothemia, and were knocked out of commission for several thousand years.\n\nWhen SKOFNUNG awakened, their opponent also stirred and attempted to re-engage, but in their damaged state they could not match them. Responding to their undefeatable spirit, the eidolic deities Vestias, Arc Valinn, and Setanta each reached out to the pilot in their final hour, debating how to go about dealing with them, and in the end Arc Valinn raised them into an eidolos with the mission to guide their world toward the future they saw fit, in any way they saw fit, producing Lumianastra. This served as granting them free will as an eidolos, and they would dedicate themselves to watching over SKOFNUNG until the two eventually came into conflict again: the two would emerge and do battle; a battle in which Lumianastra was victorious.\n\nSKOFNUNG fell into the Midnight Peaks, crashing unseen into an ancient pre-Somonian ruin that would come to be flooded by a redirected lake, albeit unknown to Lumianastra. Searching for their opponent\u2019s remains, they could not confirm their defeat, and so took on a vigilant post in the mountains, eventually falling into a watchful rest where they would remain eternally, waiting in peace for their fallen opponent to rise again. Due to their near-death state when they became an eidolos, Lumianastra suffers from a near-constant state of fatigue, and so remains in stasis when it is able.",
+  "Information Sections": [
+    {
+      "Title": "Lumianastra",
+      "Text": "On the eve of the War in One Moment, DGR 010 - SKOFNUNG was stolen by a rogue framebilt team who objected to the Eidolons and their reign. Leading them was an influential individual who had arranged for SKOFNUNG\u2019s creation to begin with. On this, the climax of their attempt to steal a series of DGR units, a friend-turned-rival of that leader stood by to stop them, and gave chase to that rebel element in SKOFNUNG, eventually meeting them in even-handed combat before both were struck by the shockwave unleashed upon the DGRs in orbit from Lycrothemia, and were knocked out of commission for several thousand years.\n\nWhen SKOFNUNG awakened, their opponent also stirred and attempted to re-engage, but in their damaged state they could not match them. Responding to their undefeatable spirit, the eidolic deities Vestias, Arc Valinn, and Setanta each reached out to the pilot in their final hour, debating how to go about dealing with them, and in the end Arc Valinn raised them into an eidolos with the mission to guide their world toward the future they saw fit, in any way they saw fit, producing Lumianastra. This served as granting them free will as an eidolos, and they would dedicate themselves to watching over SKOFNUNG until the two eventually came into conflict again: the two would emerge and do battle; a battle in which Lumianastra was victorious.\n\nSKOFNUNG fell into the Midnight Peaks, crashing unseen into an ancient pre-Somonian ruin that would come to be flooded by a redirected lake, albeit unknown to Lumianastra. Searching for their opponent\u2019s remains, they could not confirm their defeat, and so took on a vigilant post in the mountains, eventually falling into a watchful rest where they would remain eternally, waiting in peace for their fallen opponent to rise again. Due to their near-death state when they became an eidolos, Lumianastra suffers from a near-constant state of fatigue, and so remains in stasis when it is able."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Reference_BG%20-%20Lumianastra.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Reference_BG%20-%20Lumianastra.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR16/Reference_BG%20-%20Lumianastra.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lumianastra",
+      "section_type": "Stat Block",
+      "title": "Lumianastra",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "construct (eidolos, DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "20 (natural armor, cosmogony bonus)",
+      "hit_points": "216 (16d20 \u002B 48)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "80 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Alloyed (Large)",
+        "avoidance",
+        "eidolos (Pleromael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "check": "\u002B8",
+          "save": "\u002B13"
+        },
+        "DEX": {
+          "score": 19,
+          "modifier": "\u002B4",
+          "check": "\u002B5",
+          "save": "\u002B5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "check": "\u002B4",
+          "save": "\u002B9"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "check": "\u002B3",
+          "save": "\u002B3"
+        },
+        "WIS": {
+          "score": 23,
+          "modifier": "\u002B6",
+          "check": "\u002B7",
+          "save": "\u002B7"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "check": "\u002B4",
+          "save": "\u002B4"
+        }
+      },
+      "ability_note": "Checks, saves and skills include the \u002B1 cosmogony bonus.",
+      "saving_throws": [
+        "Str \u002B13",
+        "Dex \u002B5",
+        "Con \u002B9",
+        "Int \u002B3",
+        "Wis \u002B7",
+        "Cha \u002B4"
+      ],
+      "skills": [
+        "Athletics \u002B13",
+        "Insight \u002B12",
+        "Perception \u002B12"
+      ],
+      "resistances": [
+        "all (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "radiant",
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "16\u002B (22,500 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Cosmogony Bonus (\u002B2)",
+          "name_format": "bold_italic",
+          "description": "Half of Lumianastra\u2019s Cosmogony Bonus is added to their attack rolls, ability checks, damage rolls, and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls, and armor class is accounted for in this stat block."
+        },
+        {
+          "name": "Eidolic Reactor",
+          "name_format": "bold_italic",
+          "description": "Lumianastra may choose to use the following effects, when appropriate:",
+          "bullets": [
+            "(On their turn) Lumianastra gains a teleport speed equal to their existing movement speeds until the start of their next turn.",
+            "When Lumianastra is hit by a weapon attack, they may roll a d10 and add it to their armor class until the start of their next turn.",
+            "When Lumianastra fails a saving throw, they may succeed instead.",
+            "(As a reaction) When one or more creatures within 60 feet of Lumianastra would take damage from the same effect, they take half damage instead."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Lumianastra makes three weapon attacks."
+        },
+        {
+          "name": "Benitoite Glaive",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 15 ft., one target or Ranged Weapon Attack: \u002B13 to hit, range 40/160 ft., one target. Hit: 21 (2d12 \u002B 8) piercing damage plus 13 (2d12) radiant damage as a melee attack, or 26 (4d12) radiant damage as a ranged attack.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Shard: Value of Heavens Divide (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Lumianastra creates a vortex of radiant light above its head, which surges outward in numerous beams that target each creature Lumianastra chooses within 100 feet of them, but cannot target creatures behind three-quarters or total cover. Each target must make a DC 20 Dexterity saving throw, taking 45 (8d10) radiant damage on a failure. Lumianastra then chooses one of those targets and hurls the ball of light at them as a Ranged Weapon Attack: \u002B13 to hit. On a hit, this deals 45 (8d10) radiant damage to that target, and it is stunned until the end of their next turn.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic"
+          }
+        },
+        {
+          "name": "Engine of Perseverance (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "Lumianastra connects with up to three creatures of its choice it can see within 60 feet of itself, which remain connected for 1 minute. During that time, each creature becomes immune to radiant damage and becomes resistant to all bludgeoning, piercing, and slashing damage. Furthermore, each creature benefits from Lumianastra\u2019s Damage Threshold. If these creatures would be subjected to detrimental effects based on their size (such as a creature taking half damage due to them being Medium or smaller), they are treated as being the same size as Lumianastra by that effect if it would benefit them. Each creature warded by this effect deals an additional 9 (2d8) radiant damage when they hit with a weapon attack. Lumianastra must concentrate on this effect as though it was a spell."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Victorious Raid",
+          "name_format": "bold_italic",
+          "description": "If Lumianastra moves at least 20 feet in a straight line toward a target, it can use this bonus action to give its next attack that turn advantage. If it moves at least 40 feet the attack deals an extra 11 (2d10) piercing damage."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Sentinel Strike",
+          "name_format": "bold_italic",
+          "description": "When a creature enters or leaves Lumianastra\u2019s Benitoite Glaive\u2019s range, it can make an opportunity attack against them. If they hit, their movement speed is reduced to 0 until the end of the turn."
+        }
+      ],
+      "legendary_actions": [
+        {
+          "name": "Chariot Dash",
+          "name_format": "bold_italic",
+          "description": "Lumianastra moves up to half its movement speed and makes one Benitoite Glaive attack against one target within range."
+        },
+        {
+          "name": "Radiant Cross (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "Lumianastra makes one Benitoite Glaive attack against one target within its long range, without suffering any penalties to the attack roll based on distance. On a hit, the target takes 52 (8d12) radiant damage and is blinded until the start of their next turn."
+        },
+        {
+          "name": "Shield of Rebuff (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "Lumianastra creates a barrier around one target it can see within 30 feet (which can include itself). Until the end of its next turn, all attacks made against that target have disadvantage, and any creature who hits them with a weapon attack from within 10 feet takes 9 (2d8) radiant damage."
+        }
+      ],
+      "legendary_action_count": 2
+    }
+  ]
+}

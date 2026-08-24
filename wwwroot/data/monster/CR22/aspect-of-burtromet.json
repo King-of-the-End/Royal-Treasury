@@ -124,7 +124,6 @@
           "name": "Innate Spellcasting",
           "name_format": "bold_italic",
           "description": "Burtromet\u2019s spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components. Burtromet\u2019s spells are cast at 5th level, unless their base level is higher.",
-          "cast_as": "5th level, unless their base level is higher",
           "spellcasting": {
             "spells": [
               {
@@ -156,7 +155,8 @@
                   "wall of fire"
                 ]
               }
-            ]
+            ],
+            "casting_level_note": "5th level, unless their base level is higher"
           }
         },
         {
@@ -237,7 +237,6 @@
       },
       "mythic_actions": {
         "header": "Mythic Actions",
-        "availability": "For 1 hour after using Living Avatar of Flame (Mythic Awakening)",
         "options": [
           {
             "name": "Volcanic Hammer",
@@ -254,7 +253,8 @@
             "name_format": "bold_italic",
             "description": "Burtromet further ignites the space around it, causing the area made into difficult terrain by Living Avatar of Flame to cause any creature who enters into a space within it to take 1d6 fire damage. This damage repeats for each space a creature continues to enter."
           }
-        ]
+        ],
+        "intro": "For 1 hour after using Living Avatar of Flame (Mythic Awakening)"
       },
       "legendary_reactions": {
         "header": "Legendary Reactions",

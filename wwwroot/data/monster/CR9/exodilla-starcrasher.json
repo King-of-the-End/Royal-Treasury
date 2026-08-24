@@ -1,0 +1,146 @@
+{
+  "Name": "Exodilla Starcrasher",
+  "Group": "",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Exodilla**\n\nPods of exodilla remain scattered in the universe, living nomadic lives as scavengers among the stars. These groups are not unlike the more savage lizardfolk of Somnus Domina, who see other species as prey to be hunted or invaders to be defended against.\n\n**Exodilla Starcrasher**\n\nOccasionally an exodilla is born with a genetic mutation that causes it to develop extreme amounts of muscle, harder scales, and it grows to an imposing size. These exodilla have reduced mental abilities and their bodies are more traditionally lizard-like. They are commonly friendly to other exodilla, and so are made into guardians of their pods or used as weapons in raids. Sometimes a temperamental starcrasher may take control of its own pod like a wild beast, demanding food and entertainment in exchange for mercy.",
+  "Information Sections": [
+    {
+      "Title": "Exodilla",
+      "Text": "Pods of exodilla remain scattered in the universe, living nomadic lives as scavengers among the stars. These groups are not unlike the more savage lizardfolk of Somnus Domina, who see other species as prey to be hunted or invaders to be defended against."
+    },
+    {
+      "Title": "Exodilla Starcrasher",
+      "Text": "Occasionally an exodilla is born with a genetic mutation that causes it to develop extreme amounts of muscle, harder scales, and it grows to an imposing size. These exodilla have reduced mental abilities and their bodies are more traditionally lizard-like. They are commonly friendly to other exodilla, and so are made into guardians of their pods or used as weapons in raids. Sometimes a temperamental starcrasher may take control of its own pod like a wild beast, demanding food and entertainment in exchange for mercy."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Exodilla%20Starcrasher.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Exodilla%20Starcrasher.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Exodilla%20Starcrasher.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "exodilla_starcrasher",
+      "section_type": "Stat Block",
+      "title": "Exodilla Starcrasher",
+      "creature": {
+        "size": "Huge",
+        "type": "beast (exodilla)",
+        "alignment": null
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "125 (10d12 \u002B 60)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "swim": "60 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Amphibious",
+        "avoidance",
+        "exolunar nature",
+        "regen 10",
+        "siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "\u002B6",
+          "save": "\u002B10"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B5"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B10",
+        "Dex \u002B5"
+      ],
+      "skills": [
+        "Perception \u002B6"
+      ],
+      "resistances": [
+        "P/S (magical)",
+        "bludgeoning"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 90 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "understands Common but doesn\u2019t speak"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The exodilla makes one Bite attack and one Tail attack."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 5 ft., one target. Hit: 17 (2d10 \u002B 6) piercing damage plus 5 (1d8) acid damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 10 ft., one target. Hit: 23 (3d10 \u002B 6) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Acid Wave (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The exodilla breathes a 60-foot-long, 10-foot-wide line of acid originating from itself. Each creature in range must make a DC 18 Dexterity saving throw, taking 50 (9d10) acid damage on a failed save, or half as much damage on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Spine Dash (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "The exodilla curls into a ball and rolls 30 feet in a straight line (or 60 feet in a zero-gravity environment), aiming to end their movement in an unoccupied space it can see. Creatures riding it are safely contained inside the ball with it, harmlessly moving with it. Each Large or smaller creature the exodilla passes through is subjected to a Tail attack by the exodilla. If it collides with a Huge or larger creature, the exodilla stops moving."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

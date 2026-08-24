@@ -1,0 +1,246 @@
+{
+  "Name": "Macha Mallachaid",
+  "Group": "Eidolos",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Title": "Universal Gauge",
+  "Gemstone": "Lavender Jade",
+  "Type": "Hyperanael",
+  "Originator": "Setanta",
+  "Information": "**Macha Mallachaid**\n\n**Title** Universal Gauge\n**Gemstone** Lavender Jade\n**Type** Hyperanael\n**Originator** Setanta\n\nKnown to have been a close friend to Setanta in their mortal days, Macha Mallachaid is a rare instance of an eidolos who commonly goes by their former name\u2014Banshee Morgan. She is an exception among exceptions; she battled as a delinquent thug beside Setanta and gained phenomenal power on her own. All signs point to her having been an exarch in life, but it is impossible to know. It was through her campaign with Setanta, facing threats with her closest friend, that she lost her life and was reborn beside him, becoming an eidolos and the template for macha devas who followed. Curiously, she became both a deva and eidolos of Setanta before he had fully ascended to become an eidolic deity himself, but this contradiction of probabilities can be attributed to Setanta\u2019s influence over the impossible and nonsensical.\n\nAs an eidolos, Macha has no assigned mission or constraints. She serves as Setanta\u2019s right hand, leading his devas and celestial forces, and like him is eternally dedicated to fighting against Outer Titan incursions. Her most common appearances across the cosmos are when a worldbreaker appears, and she makes it her express mission to fight it to a standstill until either she or Setanta can manage to destroy it. As an eidolos of Setanta, she is capable of twisting common sense and breaking the fundamental rules of reality in times of need.",
+  "Information Sections": [
+    {
+      "Title": "Macha Mallachaid",
+      "Text": "Known to have been a close friend to Setanta in their mortal days, Macha Mallachaid is a rare instance of an eidolos who commonly goes by their former name\u2014Banshee Morgan. She is an exception among exceptions; she battled as a delinquent thug beside Setanta and gained phenomenal power on her own. All signs point to her having been an exarch in life, but it is impossible to know. It was through her campaign with Setanta, facing threats with her closest friend, that she lost her life and was reborn beside him, becoming an eidolos and the template for macha devas who followed. Curiously, she became both a deva and eidolos of Setanta before he had fully ascended to become an eidolic deity himself, but this contradiction of probabilities can be attributed to Setanta\u2019s influence over the impossible and nonsensical.\n\nAs an eidolos, Macha has no assigned mission or constraints. She serves as Setanta\u2019s right hand, leading his devas and celestial forces, and like him is eternally dedicated to fighting against Outer Titan incursions. Her most common appearances across the cosmos are when a worldbreaker appears, and she makes it her express mission to fight it to a standstill until either she or Setanta can manage to destroy it. As an eidolos of Setanta, she is capable of twisting common sense and breaking the fundamental rules of reality in times of need."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Morgan%20Mallachiad.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Morgan%20Mallachiad.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Morgan%20Mallachiad.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "macha_mallachaid",
+      "section_type": "Stat Block",
+      "title": "Macha Mallachaid",
+      "creature": {
+        "size": "Large",
+        "type": "celestial (eidolos)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "20 (cosmogony)",
+      "hit_points": "420 (40d10 \u002B 200)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft.",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Eidolos (hyperanael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "check": "\u002B7",
+          "save": "\u002B7"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "check": "\u002B8",
+          "save": "\u002B16"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "check": "\u002B7",
+          "save": "\u002B7"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "check": "\u002B5",
+          "save": "\u002B13"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "check": "\u002B5",
+          "save": "\u002B13"
+        },
+        "CHA": {
+          "score": 28,
+          "modifier": "\u002B9",
+          "check": "\u002B11",
+          "save": "\u002B11"
+        }
+      },
+      "ability_note": "Checks, saves and skills include the \u002B2 cosmogony bonus.",
+      "saving_throws": [
+        "Str \u002B7",
+        "Dex \u002B16",
+        "Con \u002B7",
+        "Int \u002B13",
+        "Wis \u002B13",
+        "Cha \u002B11"
+      ],
+      "skills": [
+        "Athletics \u002B15",
+        "Intimidation \u002B19",
+        "Perception \u002B13"
+      ],
+      "resistances": [
+        "all (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "radiant",
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened",
+        "petrified"
+      ],
+      "senses": [
+        "truesight 30 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "all",
+        "telepathy 480 ft."
+      ],
+      "challenge_rating": "25\u002B (112,500 XP)",
+      "proficiency_bonus": "\u002B8",
+      "traits": [
+        {
+          "name": "Cosmic Shard: Unyielding Fist (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid bends the nature of probability, turning weakness into advantage and advantage into certainty: when she targets a creature with a weapon attack or makes a saving throw against one, she can add the difference between her proficiency bonus and the proficiency bonus of her target/the creature targeting her to her attack rolls, saving throws, and ability checks made against that creature. This lasts until she uses this feature again or completes a Rest. During this time, Macha Mallachaid ignores the resistances and damage thresholds of that target, and treats their immunities as resistances."
+        },
+        {
+          "name": "Cosmogony Bonus (\u002B4)",
+          "name_format": "bold_italic",
+          "description": "Half of Macha Mallachaid\u2019s Cosmogony Bonus (\u002B2) is added to her attack rolls, damage rolls, ability checks, and saving throws. The full bonus is added to her armor class. These bonuses are included in this stat block."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid\u2019s spellcasting ability is Charisma. She can innately cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "antigravity zone (9th level)",
+                  "command (6th level)",
+                  "raise dead"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "gate",
+                  "radiant barrage (6th level)"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "astral fissure"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Macro Breaker",
+          "name_format": "bold_italic",
+          "description": "When a feature or trait targeting Macha Mallachaid would have an effect detrimental to her based on her size (such as maximum macro damage being dealt to creatures her size, or creatures resisting her damage based on her size), she is considered to be whatever size would be most beneficial to her for the purposes of those effects."
+        },
+        {
+          "name": "Seraphic Authority: Heavenly Gambit (1/Round)",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid can leave her fate to impossible odds and come out unscathed. She has one additional use of her Legendary Reaction trait, which she regains (if spent) at the start of each of her turns. It is always spent before remaining Legendary Reactions. When she uses this particular Legendary Reaction to succeed a saving throw, it ignores all effects that would result from the effect that prompted it, taking no damage and resisting all resulting effects."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid makes three melee weapon attacks or two ranged weapon attacks."
+        },
+        {
+          "name": "Cosmic Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 10 ft., one target. Hit: 22 (3d10 \u002B 5) bludgeoning damage plus 11 (2d10) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Wingburst",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B16 to hit, range 200/800 ft., one target. Hit: 44 (8d10) radiant damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid magically transforms into a humanoid form, or her true form at any size between (and including) Medium and Huge. When she assumes a regular humanoid form she becomes Medium."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": [
+        {
+          "name": "Strike",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid uses her Cosmic Strike against one target within range."
+        },
+        {
+          "name": "Burst Surge (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid moves up to her movement speed and makes a single Cosmic Strike attack against a target within reach, then stops moving."
+        },
+        {
+          "name": "Unparalleled Wall (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid chooses any number of creatures she can see within 120 feet of it. When each of those creatures takes damage before the start of Macha Mallachaid\u2019s next turn, she takes that damage in their place (applying her own resistances and immunities to the damage instead of the initial target\u2019s own). If a single effect or attack would damage multiple of these creatures, Macha Mallachaid only takes a single instance of it: the highest one."
+        },
+        {
+          "name": "Spellcast (Costs 3 Actions)",
+          "name_format": "bold_italic",
+          "description": "Macha Mallachaid casts one spell with a casting time of 1 action using its Innate Spellcasting."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "legendary_action_count": 3
+    }
+  ]
+}

@@ -133,7 +133,7 @@
           "name": "Breath Weapon (Recharge 5-6)",
           "name_format": "bold_italic",
           "description": "The dekishikori uses one of the following breath weapon options (Screaming Breath or Thunder Breath).",
-          "suboptions": [
+          "options": [
             {
               "name": "Screaming Breath",
               "description": "The yokai unleashes a wave of screeching mental torment in a 60-foot-cone. All targets within range must make a DC 19 Intelligence saving throw, taking 63 (14d8) psychic damage on a failed save, or half as much damage on a successful one."

@@ -1,0 +1,140 @@
+{
+  "Name": "DGR 109 - VISCOUNT",
+  "Group": "DGR Frame Units",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**DGR 109 - VISCOUNT**\n\nThe VISCOUNT is functionally a bulky suit of mechanized armor, similar to the SVALINN or KAIKAVUS. It was designed for elite framebilt soldiers, bodyguards, and private combatants to use as an offensive weapon.",
+  "Information Sections": [
+    {
+      "Title": "DGR 109 - VISCOUNT",
+      "Text": "The VISCOUNT is functionally a bulky suit of mechanized armor, similar to the SVALINN or KAIKAVUS. It was designed for elite framebilt soldiers, bodyguards, and private combatants to use as an offensive weapon."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference_BG%20-%20DGR-109%20-%20VISCOUNT%20(Whip).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference_BG%20-%20DGR-109%20-%20VISCOUNT%20(Whip).png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Reference_BG%20-%20DGR-109%20-%20VISCOUNT%20(Whip).png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_109_viscount",
+      "section_type": "Stat Block",
+      "title": "DGR 109 - VISCOUNT",
+      "creature": {
+        "size": "Large",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 1"
+        ]
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "57 (6d10 \u002B 24)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "30 ft. (hover)",
+        "0-G acceleration": "90 ft."
+      },
+      "quality_traits": [
+        "Immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CHA": {
+          "score": 19,
+          "modifier": "\u002B4"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Intimidation \u002B6",
+        "Perception \u002B6"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "\u002B2",
+      "traits": [
+        {
+          "name": "Solid Plating",
+          "name_format": "bold_italic",
+          "description": "All damage that the DGR takes is reduced by 5 points."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two Eidopyre Chain attacks, one of which it can exchange with a use of its Micromissile Darts."
+        },
+        {
+          "name": "Eidopyre Chain",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B6 to hit, 15 ft., one target. Hit: 9 (1d8 \u002B 4) slashing damage plus 5 (1d8) fire damage.\n\nIf either of the d8 damage dice from this attack roll their maximum result and its target is Large or smaller, the chain wraps around the target, who is restrained and grappled (escape DC 14). While restrained this way they take a d8 of fire damage at the start of their turn. This effect ends if the DGR or the target move further away than this attack\u2019s range, and while they are restrained this way the DGR loses one use of its Eidopyre Chain attack each turn unless it\u2019s used to attack that target.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Micromissile Darts",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B6 to hit, range 20/60 ft., one target. Hit: 17 (2d12 \u002B 4) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

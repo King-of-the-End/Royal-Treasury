@@ -1,0 +1,145 @@
+{
+  "Name": "Skeleton Hackstruct",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Skeleton Hackstruct**\n\nA cluster of bones forming an unspeakable mass of undeath which can contort and reconstruct itself at will. This cluster is often the result of a necromancer who has left-over incomplete bodies that they wish to put to some use, and so extract every last bone and puzzle them together into this terrifying abomination.",
+  "Information Sections": [
+    {
+      "Title": "Skeleton Hackstruct",
+      "Text": "A cluster of bones forming an unspeakable mass of undeath which can contort and reconstruct itself at will. This cluster is often the result of a necromancer who has left-over incomplete bodies that they wish to put to some use, and so extract every last bone and puzzle them together into this terrifying abomination."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Skeleton%20Hackstrut.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Skeleton%20Hackstrut.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Skeleton%20Hackstrut.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "skeleton_hackstruct",
+      "section_type": "Stat Block",
+      "title": "Skeleton Hackstruct",
+      "creature": {
+        "size": "Large",
+        "type": "undead",
+        "alignment": ""
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "85 (10d10 \u002B 30)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "burrow": "20 ft.",
+        "climb": "30 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B3"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2",
+          "save": "\u002B0"
+        },
+        "WIS": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B3",
+        "Int \u002B0"
+      ],
+      "skills": [
+        "Perception \u002B1",
+        "Stealth \u002B3"
+      ],
+      "resistances": [
+        "slashing"
+      ],
+      "vulnerabilities": [
+        "bludgeoning"
+      ],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "tremorsense 30 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 11"
+      ],
+      "languages": [
+        "understands the languages it knew in life but can\u2019t speak"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "\u002B2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Grapple Punisher",
+          "name_format": "bold_italic",
+          "description": "The jagged construction of the skeleton\u2019s body causes any creature who grapples it to take 5 (1d8) piercing damage when they start grappling it, and again at the start of each of their turns while grappling it."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The skeleton makes two Appendage Assault attacks."
+        },
+        {
+          "name": "Appendage Assault",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B5 to hit, reach 5 ft., one target. Hit: 12 (2d8 \u002B 3) bludgeoning, piercing, or slashing damage (the skeleton chooses).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Deathly Porcupine (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The skeleton causes bones to jut out on all sides like spears, forcing each creature it chooses within 5 feet of it to make a DC 13 Dexterity saving throw, taking 14 (2d10 \u002B 3) piercing damage and 5 (1d8) poison damage on a failed save."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

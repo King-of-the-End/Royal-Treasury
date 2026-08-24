@@ -1,0 +1,146 @@
+{
+  "Name": "Lumite Vanguard",
+  "Group": "Lumites",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Lumite%20Vanguard.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Lumite%20Vanguard.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Lumite%20Vanguard.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lumite_vanguard",
+      "section_type": "Stat Block",
+      "title": "Lumite Vanguard",
+      "creature": {
+        "size": "Huge",
+        "type": "monstrosity",
+        "alignment": ""
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "115 (10d12 + 50)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 21,
+          "modifier": "+5"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "INT": {
+          "score": 5,
+          "modifier": "-3"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-",
+          "save": "+4"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Wis +4"
+      ],
+      "skills": [
+        "Athletics +9",
+        "Perception +8"
+      ],
+      "resistances": [
+        "B/P/S (adamantine)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid",
+        "poison"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "tremorsense 60 ft.",
+        "darkvision 120 ft.",
+        "hivesense 240 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "+4",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Acid Blood",
+          "name_format": "bold_italic",
+          "description": "A creature who deals slashing or piercing damage to the lumite from within 5 feet of it is splashed by its blood and takes 7 (2d6) acid damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The lumite uses its Pincers and Ravage once each."
+        },
+        {
+          "name": "Pincers",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 32 (5d10 + 5) piercing damage. If the target is Large or smaller it is restrained and grappled (escape DC 17). If the lumite is grappling a creature it must be the target of its Pincers, and the attack deals an extra 9 (2d8) acid damage to creatures it is grappling.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Ravage",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 28 (5d8 + 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Acid Spit",
+          "name_format": "bold_italic",
+          "description": "The lumite spits a burst of acidic bile that splashes around a point the lumite chooses within 60 feet. Each creature within 10 feet of that point must make a DC 17 Constitution saving throw, taking 49 (8d10 + 5) acid damage on a failure, or half as much damage on a success."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Escape Punisher",
+          "name_format": "bold_italic",
+          "description": "When a creature escapes the lumite’s grapple, the lumite can make one Ravage attack against them immediately."
+        }
+      ],
+      "legendary_actions": []
+    }
+  ]
+}

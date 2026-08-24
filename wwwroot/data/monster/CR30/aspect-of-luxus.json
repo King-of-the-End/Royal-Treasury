@@ -200,7 +200,6 @@
       },
       "mythic_actions": {
         "header": "Mythic Actions",
-        "availability": "For 1 hour after using Contingency Plan (Mythic Awakening)",
         "options": [
           {
             "name": "Organized Assault (Costs 2 Actions)",
@@ -212,7 +211,8 @@
             "name_format": "bold_italic",
             "description": "An eruption of flame is produced from a point Luxus can see within 60 feet of her, forcing each creature within 15 feet of that space to make a DC 22 Dexterity saving throw. Each creature who fails takes 22 (4d10) fire damage."
           }
-        ]
+        ],
+        "intro": "For 1 hour after using Contingency Plan (Mythic Awakening)"
       },
       "legendary_reactions": {
         "header": "Legendary Reactions",

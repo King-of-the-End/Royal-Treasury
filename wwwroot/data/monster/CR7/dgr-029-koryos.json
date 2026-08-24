@@ -1,7 +1,7 @@
 {
   "Name": "DGR 029 - KORYOS",
   "Group": "DGR Frame Units",
-  "Source": "Blade, Bone & Benefit",
+  "Source": "Blade, Bone \u0026 Benefit",
   "Information": "**DGR 029 - KORYOS**\n\nKORYOS is a unit that is much larger than others constructed in its generation - it was created to act as a hunter and sentry, with an alien form that is meant to confuse targets it goes after. KORYOS was originally made with the intention of being mostly unmanned units that would guard strategic areas with predetermined orders, but the limited initial use of DGR units prevented this from ever happening. This insectoid machine is capable of digging below the ground and sensing the locations of other terrestrial enemies with great ease.",
   "Information Sections": [
     {
@@ -28,10 +28,12 @@
         "size": "Huge",
         "type": "construct (DGR)",
         "alignment": "",
-        "footprint": "2"
+        "tags": [
+          "footprint 2"
+        ]
       },
       "armor_class": "17 (natural armor)",
-      "hit_points": "119 (14d12 + 28)",
+      "hit_points": "119 (14d12 \u002B 28)",
       "threshold": "10",
       "speed": {
         "walk": "45 ft.",
@@ -47,38 +49,38 @@
       "ability_scores": {
         "STR": {
           "score": 18,
-          "modifier": "+4"
+          "modifier": "\u002B4"
         },
         "DEX": {
           "score": 20,
-          "modifier": "+5"
+          "modifier": "\u002B5"
         },
         "CON": {
           "score": 15,
-          "modifier": "+2",
-          "save": "+5"
+          "modifier": "\u002B2",
+          "save": "\u002B5"
         },
         "INT": {
           "score": 15,
-          "modifier": "+2",
-          "save": "+5"
+          "modifier": "\u002B2",
+          "save": "\u002B5"
         },
         "WIS": {
           "score": 20,
-          "modifier": "+5"
+          "modifier": "\u002B5"
         },
         "CHA": {
           "score": 12,
-          "modifier": "+1"
+          "modifier": "\u002B1"
         }
       },
       "saving_throws": [
-        "Con +5",
-        "Int +5"
+        "Con \u002B5",
+        "Int \u002B5"
       ],
       "skills": [
-        "Perception +11",
-        "Survival +8"
+        "Perception \u002B11",
+        "Survival \u002B8"
       ],
       "resistances": [
         "B/P/S (magical)"
@@ -103,10 +105,10 @@
         "passive Perception 21"
       ],
       "languages": [
-        "understands all, but doesn’t speak"
+        "understands all, but doesn\u2019t speak"
       ],
       "challenge_rating": "7 (2,300 XP)",
-      "proficiency_bonus": "+3",
+      "proficiency_bonus": "\u002B3",
       "traits": [
         {
           "name": "Confusing Strikes",
@@ -123,7 +125,7 @@
         {
           "name": "Ferris Claw",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 5) piercing damage.",
+          "description": "Melee Weapon Attack: \u002B8 to hit, reach 10 ft., one target. Hit: 11 (2d6 \u002B 5) piercing damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -132,7 +134,7 @@
         {
           "name": "Sonic Scream",
           "name_format": "bold_italic",
-          "description": "The DGR unleashes a chittering, sharp scream as an array of sonic energy, targeting one creature it can see within 90 feet, as a Ranged Weapon Attack: +8 to hit. Hit: 33 (5d10 + 5) thunder damage, and if any of the d10s rolls a result of 10, the target is deafened until the end of the DGR’s next turn.",
+          "description": "The DGR unleashes a chittering, sharp scream as an array of sonic energy, targeting one creature it can see within 90 feet, as a Ranged Weapon Attack: \u002B8 to hit. Hit: 33 (5d10 \u002B 5) thunder damage, and if any of the d10s rolls a result of 10, the target is deafened until the end of the DGR\u2019s next turn.",
           "inline_formatting": {
             "Ranged Weapon Attack": "italic",
             "Hit": "italic"

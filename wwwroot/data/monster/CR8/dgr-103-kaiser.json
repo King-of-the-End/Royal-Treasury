@@ -1,0 +1,161 @@
+{
+  "Name": "DGR 103 - KAISER",
+  "Group": "DGR Frame Units",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**DGR 103 - KAISER**\n\nThe KAISER DGR unit, built in the form of a centaur-like spider, was created to control the environment of battle when required. It is a unit with moderate mobility meant to give boons to allies and slow down targets. It can create a great number of artificial gravity wells that make movement difficult.",
+  "Information Sections": [
+    {
+      "Title": "DGR 103 - KAISER",
+      "Text": "The KAISER DGR unit, built in the form of a centaur-like spider, was created to control the environment of battle when required. It is a unit with moderate mobility meant to give boons to allies and slow down targets. It can create a great number of artificial gravity wells that make movement difficult."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/DGR%20103%20-%20KAISER.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/DGR%20103%20-%20KAISER.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/DGR%20103%20-%20KAISER.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_103_kaiser",
+      "section_type": "Stat Block",
+      "title": "DGR 103 - KAISER",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "19 (natural armor)",
+      "hit_points": "119 (14d12 \u002B 28)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "0-G acceleration": "90 ft."
+      },
+      "quality_traits": [
+        "Alloyed (Medium)",
+        "immutable",
+        "magical",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B5"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B6"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Con \u002B5",
+        "Int \u002B6"
+      ],
+      "skills": [
+        "Insight \u002B9",
+        "Perception \u002B9"
+      ],
+      "resistances": [
+        "force",
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 19"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Gravity Spike",
+          "name_format": "bold_italic",
+          "description": "When the DGR makes an attack against a target, it can choose to place an energy construct\u2014a gravity spike\u2014in an unoccupied space adjacent to that target, which must be within the DGR\u2019s reach. If the target attempts to move further away from the spike using their movement, they must make a DC 17 Strength check, and on a failure their movement speed is reduced to 5 feet until the end of their turn and before they begin moving. If they succeed, the gravity spike vanishes harmlessly. A gravity spike has 15 AC, 20 hit points, a damage threshold of 10, and shares the DGR\u2019s resistances and immunities. A spike deactivates after 10 minutes. For each gravity spike after the first that is targeting a creature, the Strength check DC increases by 1."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR uses Commanding Calculation once, then makes two weapon attacks."
+        },
+        {
+          "name": "Bladed Limb",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B6 to hit, reach 10 ft., one target. Hit: 21 (3d10 \u002B 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Commanding Calculation",
+          "name_format": "bold_italic",
+          "description": "The DGR chooses a number of constructs that can hear it, who each gain advantage on the next attack roll, saving throw, or ability check they make before the start of the DGR\u2019s next turn."
+        },
+        {
+          "name": "Gravitational Pin Burst",
+          "name_format": "bold_italic",
+          "description": "The DGR destroys all gravity spikes it has created, but in the process causes each to warp gravity in a 15-foot-radius sphere surrounding it. Each creature in any of these spaces must succeed a DC 17 Constitution saving throw, taking 22 (4d10) force damage on a failure, or half as much damage on a success. Furthermore, creatures who fail are knocked prone and are pulled into the nearest unoccupied space adjacent to the gravity spike\u2019s former space as possible."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Lockdown Point",
+          "name_format": "bold_italic",
+          "description": "The DGR chooses a creature who is within 30 feet of an existing gravity spike, and causes it to target them (in addition to any existing targets it has)."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Reactive Pin Burst",
+          "name_format": "bold_italic",
+          "description": "When a creature succeeds a check against a gravity spike while the DGR is within 60 feet of them, it may use their reaction to detonate the spike, destroying it, and cause them to take 11 (2d10) force damage."
+        }
+      ]
+    }
+  ]
+}

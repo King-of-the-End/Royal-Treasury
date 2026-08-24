@@ -1523,6 +1523,22 @@ public sealed class MonsterService
             }
 
 
+            // =================================
+            // OUTER STATIC ADDITIONAL SECTIONS
+            // =================================
+
+            monster.StaticAdditionalSections ??=
+                new List<MonsterStaticAdditionalSection>();
+
+            foreach (
+                var staticSection
+                in metadata.StaticAdditionalSections)
+            {
+                monster.StaticAdditionalSections.Add(
+                    staticSection);
+            }
+
+
 
             // =================================
             // OUTER IMAGE
@@ -1720,6 +1736,11 @@ public sealed class MonsterService
                 element);
 
 
+        var staticAdditionalSections =
+            ReadStaticAdditionalSectionsProperty(
+                element);
+
+
         var image =
             ReadStringProperty(
                 element,
@@ -1794,6 +1815,7 @@ public sealed class MonsterService
                 stationSections,
                 pathSurgeSections,
                 selectableSections,
+                staticAdditionalSections,
                 image,
                 imageVariants,
                 refinement,
@@ -1863,6 +1885,14 @@ public sealed class MonsterService
             : inherited.SelectableSections;
 
 
+        var staticAdditionalSections =
+            local.StaticAdditionalSections.Count > 0
+
+            ? local.StaticAdditionalSections
+
+            : inherited.StaticAdditionalSections;
+
+
         var image =
             !string.IsNullOrWhiteSpace(
                 local.Image)
@@ -1919,6 +1949,7 @@ public sealed class MonsterService
                 stationSections,
                 pathSurgeSections,
                 selectableSections,
+                staticAdditionalSections,
                 image,
                 imageVariants,
                 refinement,
@@ -2323,6 +2354,100 @@ public sealed class MonsterService
             }
         }
 
+
+        return sections;
+    }
+
+
+    // =====================================
+    // READ STATIC ADDITIONAL SECTIONS
+    //
+    // Any Additional Sections object that is
+    // not Stations, Path Surges, or a selectable
+    // section is treated as an always-visible
+    // static supporting section.
+    // =====================================
+
+    private IReadOnlyList<MonsterStaticAdditionalSection>
+        ReadStaticAdditionalSectionsProperty(
+            JsonElement element)
+    {
+        if (
+            !TryGetNormalizedProperty(
+                element,
+                NormalizePropertyName(
+                    "Additional Sections"),
+                out var value)
+            ||
+            value.ValueKind !=
+            JsonValueKind.Array)
+        {
+            return
+                Array.Empty<MonsterStaticAdditionalSection>();
+        }
+
+        var sections =
+            new List<MonsterStaticAdditionalSection>();
+
+        foreach (var sectionElement in value.EnumerateArray())
+        {
+            if (sectionElement.ValueKind != JsonValueKind.Object)
+            {
+                continue;
+            }
+
+            var sectionType =
+                ReadStringProperty(
+                    sectionElement,
+                    "section_type");
+
+            var normalizedType =
+                NormalizePropertyName(sectionType);
+
+            if (string.Equals(
+                    normalizedType,
+                    "stations",
+                    StringComparison.Ordinal)
+                ||
+                string.Equals(
+                    normalizedType,
+                    "pathsurges",
+                    StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+            if (TryGetNormalizedProperty(
+                    sectionElement,
+                    NormalizePropertyName("selection"),
+                    out var selectionElement)
+                &&
+                selectionElement.ValueKind == JsonValueKind.Object)
+            {
+                continue;
+            }
+
+            try
+            {
+                var section =
+                    JsonSerializer.Deserialize<MonsterStaticAdditionalSection>(
+                        sectionElement.GetRawText(),
+                        jsonOptions);
+
+                if (section is not null
+                    &&
+                    (!string.IsNullOrWhiteSpace(section.Intro)
+                     || section.Entries.Count > 0
+                     || section.Table is not null))
+                {
+                    sections.Add(section);
+                }
+            }
+            catch (JsonException)
+            {
+                // Skip only the malformed section.
+            }
+        }
 
         return sections;
     }
@@ -3126,6 +3251,7 @@ public sealed class MonsterService
         IReadOnlyList<MonsterStationSection> StationSections,
         IReadOnlyList<MonsterPathSurgeSection> PathSurgeSections,
         IReadOnlyList<MonsterSelectableSection> SelectableSections,
+        IReadOnlyList<MonsterStaticAdditionalSection> StaticAdditionalSections,
         string Image,
         IReadOnlyList<string> ImageVariants,
         MonsterRefinementData? Refinement,
@@ -3142,6 +3268,7 @@ public sealed class MonsterService
                 Array.Empty<MonsterStationSection>(),
                 Array.Empty<MonsterPathSurgeSection>(),
                 Array.Empty<MonsterSelectableSection>(),
+                Array.Empty<MonsterStaticAdditionalSection>(),
                 string.Empty,
                 Array.Empty<string>(),
                 null,

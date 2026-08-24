@@ -198,7 +198,6 @@
       },
       "mythic_actions": {
         "header": "Mythic Actions",
-        "availability": "For 1 hour after using Fires of Rebirth (Mythic Awakening)",
         "options": [
           {
             "name": "Rain of Fire",
@@ -213,7 +212,8 @@
             "name_format": "bold_italic",
             "description": "Suzaku no Sorani uses its Nova Gate action."
           }
-        ]
+        ],
+        "intro": "For 1 hour after using Fires of Rebirth (Mythic Awakening)"
       },
       "legendary_reactions": {
         "header": "Legendary Reactions",

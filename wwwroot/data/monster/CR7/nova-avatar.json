@@ -1,0 +1,156 @@
+{
+  "Name": "Nova Avatar",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Nova Avatar**\n\nWithin the core of each burning star is a gateway to the Plane of Positive Energy, and from those gates sometimes flows embodiments of the plane itself, in the form of nova avatars. These are not necessarily natives to the Plane of Positive Energy, but rather are flickers of starlight that the planes grant animation and will. Nova avatars typically reside within stars themselves, defending them from threats, but when one disappears (such as through a supernova), its inhabitants may be thrown across the universe in a confused rage.",
+  "Information Sections": [
+    {
+      "Title": "",
+      "Text": "Living sparks, born from pure light...\u201D\n\n\u201C... to cross one is to slight a star. I would never try to harm something so beautiful, nor would I ever try to touch something so deadly.",
+      "IsQuote": true
+    },
+    {
+      "Title": "Nova Avatar",
+      "Text": "Within the core of each burning star is a gateway to the Plane of Positive Energy, and from those gates sometimes flows embodiments of the plane itself, in the form of nova avatars. These are not necessarily natives to the Plane of Positive Energy, but rather are flickers of starlight that the planes grant animation and will. Nova avatars typically reside within stars themselves, defending them from threats, but when one disappears (such as through a supernova), its inhabitants may be thrown across the universe in a confused rage."
+    }
+  ],
+  "Quotes": [
+    "\u201CLiving sparks, born from pure light...\u201D",
+    "\u201C... to cross one is to slight a star. I would never try to harm something so beautiful, nor would I ever try to touch something so deadly.\u201D"
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Nova%20Avatar.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Nova%20Avatar.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Nova%20Avatar.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "nova_avatar",
+      "section_type": "Stat Block",
+      "title": "Nova Avatar",
+      "creature": {
+        "size": "Large",
+        "type": "elemental",
+        "alignment": ""
+      },
+      "armor_class": "14",
+      "hit_points": "128 (15d10 \u002B 45)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 9,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 10,
+          "modifier": "-"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "\u002B4"
+        }
+      },
+      "saving_throws": [],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison",
+        "radiant"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 10"
+      ],
+      "languages": [
+        "Astral"
+      ],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Body of Illumination",
+          "name_format": "bold_italic",
+          "description": "The elemental projects bright sunlight 30 feet in every direction, then dim light 30 feet beyond that. Creatures cannot benefit from being invisible within the elemental\u2019s bright light, where they are made plainly visible. Similarly, creatures in the Ethereal Plane in this range are visible and treated as though they are in the Material Plane, and vice versa."
+        },
+        {
+          "name": "Vitality Slicer",
+          "name_format": "bold_italic",
+          "description": "When the elemental deals damage to a creature with temporary hit points, the damage that reduces their temporary hit points is doubled."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental makes two Sunlight Fist attacks."
+        },
+        {
+          "name": "Sunlight Fist",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 13 (2d8 \u002B 4) radiant damage. The first time each creature is hit by this attack each turn, they must succeed a DC 15 Constitution saving throw or be blinded until the start of the elemental\u2019s next turn.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cancerous Restoration (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The elemental chooses one creature it can see within 60 feet, and directs unchecked positive energy toward them. That target must make a DC 15 Charisma saving throw. On a failure, their maximum hit points are reduced by 3d8 until they complete a Long Rest, and the elemental gains twice that many temporary hit points."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

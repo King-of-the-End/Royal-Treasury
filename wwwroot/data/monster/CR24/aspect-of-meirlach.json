@@ -123,27 +123,39 @@
           "name": "Innate Spellcasting",
           "name_format": "bold_italic",
           "description": "Meirlach\u2019s spellcasting ability is Wisdom. They can cast the following spells, requiring no material components:",
-          "suboptions": [
-            {
-              "name": "At will",
-              "description": "dedicated enemy, deflect"
-            },
-            {
-              "name": "3/day each",
-              "description": "shield of blades"
-            },
-            {
-              "name": "2/day each",
-              "description": "reversal wave, slash wind"
-            },
-            {
-              "name": "1/day each",
-              "description": "malevolent flash"
-            }
-          ],
-          "notes": [
-            "Meirlach\u2019s Zanjen spells are cast as though at 5th level (except at will spells), unless they would already be higher."
-          ]
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "dedicated enemy",
+                  "deflect"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "shield of blades"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "reversal wave",
+                  "slash wind"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "malevolent flash"
+                ]
+              }
+            ],
+            "notes": [
+              "Meirlach\u2019s Zanjen spells are cast as though at 5th level (except at will spells), unless they would already be higher."
+            ]
+          }
         },
         {
           "name": "Return to Trial (Mythic Awakening)",

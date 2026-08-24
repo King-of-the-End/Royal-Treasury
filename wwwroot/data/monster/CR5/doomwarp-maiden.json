@@ -1,0 +1,140 @@
+{
+  "Name": "Doomwarp Maiden",
+  "Group": "Spirit",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Doomwarp Maiden**\n\nDoomwarp maidens are a subset of spirits (known as doomwarp phantoms) that are formed from the lingering emotions of those who die in the depths of space\u2014cursing the cosmos itself for their fate\u2014or while exposed to the energies of the Astral Plane. They haunt drifting abandoned ships, sections of exolunar space, and dying planets. Doomwarp creatures are hostile to the living, who they strike out against without hesitation. Doomwarp entities bound to the same locations, curses, or sentiments can communicate intelligently with one another, but will generally refuse to speak with any other form of life.",
+  "Information Sections": [
+    {
+      "Title": "Doomwarp Maiden",
+      "Text": "Doomwarp maidens are a subset of spirits (known as doomwarp phantoms) that are formed from the lingering emotions of those who die in the depths of space\u2014cursing the cosmos itself for their fate\u2014or while exposed to the energies of the Astral Plane. They haunt drifting abandoned ships, sections of exolunar space, and dying planets. Doomwarp creatures are hostile to the living, who they strike out against without hesitation. Doomwarp entities bound to the same locations, curses, or sentiments can communicate intelligently with one another, but will generally refuse to speak with any other form of life."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Doomwarp%20Maiden.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Doomwarp%20Maiden.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR5/Doomwarp%20Maiden.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "doomwarp_maiden",
+      "section_type": "Stat Block",
+      "title": "Doomwarp Maiden",
+      "creature": {
+        "size": "Medium",
+        "type": "spirit (alien)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "75 (10d8 \u002B 30)",
+      "speed": {
+        "walk": "30 ft.",
+        "teleport": "30 ft.",
+        "0-G acceleration": "80 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "ethereal",
+        "magical",
+        "weightless"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B5"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B5"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B5",
+        "Wis \u002B5"
+      ],
+      "skills": [
+        "Perception \u002B5"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "cold",
+        "necrotic",
+        "psychic"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 30 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "telepathy (other doomwarp entities)"
+      ],
+      "challenge_rating": "5 (1,800 XP)",
+      "proficiency_bonus": "\u002B3",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Cosmic Glaive",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 10 (1d10 \u002B 4) slashing damage plus 9 (2d8) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Astral Bane",
+          "name_format": "bold_italic",
+          "description": "One creature the maiden chooses within 30 feet is afflicted by cosmic energy, and must make a DC 16 Charisma saving throw. On a failure, the targeted creature is cursed for 1 minute, and while cursed this way they are under one of the following effects, randomly determined by a d6 roll, even if they are immune to the conditions described by the effect:",
+          "additional_text": "The targeted creature repeats the Charisma save at the end of each of their turns, ending the effect on a success. A creature who succeeds their saving throw against this effect becomes immune to it from the maiden for 24 hours.",
+          "bullets": [
+            "The creature is blinded.",
+            "The creature suffers 2d10 psychic damage, then another d10 of psychic damage at the start of each of their turns.",
+            "The creature is sluggish.",
+            "The creature has disadvantage on weapon attacks.",
+            "Attacks against the creature have advantage.",
+            "Roll two additional d6s, rerolling results of 6 and duplicates, and apply both of those effects at the same time."
+          ]
+        },
+        {
+          "name": "Cosmic Phantom",
+          "name_format": "bold_italic",
+          "description": "The maiden becomes semi-ethereal, becoming resistant to all damage and immune to damage from nonmagical weapons until the start of their next turn."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Soul Smite",
+          "name_format": "bold_italic",
+          "description": "The maiden targets up to three creatures cursed by its Astral Bane within 30 feet of it, and causes the curse to deal mental harm to them. Each target must make a DC 16 Charisma saving throw. On a failure, the maiden can choose to either deal 11 (3d6) psychic damage to them, or to roll a d6 on the Astral Bane effect list (rerolling existing effects and 6s) and apply the new result as part of the curse\u2019s effects."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

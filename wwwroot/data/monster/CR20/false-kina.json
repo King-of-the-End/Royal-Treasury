@@ -1,0 +1,241 @@
+{
+  "Name": "False Kina",
+  "Group": "False Eidolons",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**False Kina**\n\nThe shadow of Kina would see itself as a protector of dreams and slumber. Like Kina, it visits the dreams of others, but will make itself more explicitly known to the dreamer than Kina would, and unknowingly makes the dreams of others about itself. While gathering followers, it hopes to arrange for a large group of its devotees to consent to entering into a permanent dreamlike sleep, where their minds join into a false Divine Realm it claims to be its own. Souls bound within them will eventually experience more and more vivid nightmares, which become real for them and others in the Realm, until eventually the shadow of Kina must expunge the dreamers (often costing them their lives).\n\n**Nightmare Seed.** The shadow of Kina is especially talented at seeding the birth of new yokai by instilling nightmares and fears into the dreams of others. It can manifest many servants this way, resulting in these shadows serving as particularly striking lords of yokai. The shadow of Kina believes these agents to be \u201Ctamed nightmares\u201D that are not yokai at all, though it knows the truth at its core. It will often use the subjugation of these yokai as a show of force to act like it is banishing the very same nightmares it instills.",
+  "Information Sections": [
+    {
+      "Title": "False Kina",
+      "Text": "The shadow of Kina would see itself as a protector of dreams and slumber. Like Kina, it visits the dreams of others, but will make itself more explicitly known to the dreamer than Kina would, and unknowingly makes the dreams of others about itself. While gathering followers, it hopes to arrange for a large group of its devotees to consent to entering into a permanent dreamlike sleep, where their minds join into a false Divine Realm it claims to be its own. Souls bound within them will eventually experience more and more vivid nightmares, which become real for them and others in the Realm, until eventually the shadow of Kina must expunge the dreamers (often costing them their lives)."
+    },
+    {
+      "Title": "Nightmare Seed",
+      "Text": "The shadow of Kina is especially talented at seeding the birth of new yokai by instilling nightmares and fears into the dreams of others. It can manifest many servants this way, resulting in these shadows serving as particularly striking lords of yokai. The shadow of Kina believes these agents to be \u201Ctamed nightmares\u201D that are not yokai at all, though it knows the truth at its core. It will often use the subjugation of these yokai as a show of force to act like it is banishing the very same nightmares it instills."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/False%20Kina_Ref.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/False%20Kina_Ref.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/False%20Kina_Ref.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "false_kina",
+      "section_type": "Stat Block",
+      "title": "False Kina",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "225 (30d8 \u002B 90)",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Deific (false)",
+        "ethereal",
+        "magic resist",
+        "siphon the devout",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        },
+        "DEX": {
+          "score": 21,
+          "modifier": "\u002B5"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B7"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B13"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B9"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B8",
+        "Int \u002B7",
+        "Wis \u002B13",
+        "Cha \u002B9"
+      ],
+      "skills": [
+        "Deception \u002B9",
+        "Insight \u002B13",
+        "Perception \u002B13"
+      ],
+      "resistances": [
+        "B/P/S (silvered)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "truesight 30 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "all",
+        "telepathy 240 ft."
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The yokai\u2019s spellcasting ability is Wisdom. They can innately cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "astral projection",
+                  "dream",
+                  "modify memory"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "etherealness",
+                  "hold attacker",
+                  "nightmare cell",
+                  "vanquish magic"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "banishment",
+                  "hold monster",
+                  "power word break",
+                  "power word forget"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "astral weapon (6th level)",
+                  "punishing gleam",
+                  "spirit guardians",
+                  "weird"
+                ]
+              }
+            ],
+            "additional_text": "The yokai\u2019s spells are cast at 5th level, unless their base level is higher."
+          }
+        },
+        {
+          "name": "Spirit Channeler",
+          "name_format": "bold_italic",
+          "description": "The yokai can use their Wisdom modifier in place of their Strength or Dexterity for weapon attacks and damage rolls."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes two weapon attacks then casts one spell with a casting time of 1 action using Innate Spellcasting."
+        },
+        {
+          "name": "Solopsist Spear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 10 ft., one target, or as a Ranged Weapon Attack: \u002B13 to hit, range 90 ft., one target. Hit: 21 (4d6 \u002B 7) piercing damage or 21 (4d6 \u002B 7) psychic damage (the yokai chooses).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dark Spirit Art (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The yokai uses one of its Spirit Art options:",
+          "options": [
+            {
+              "name": "True Nightmares",
+              "description": "The yokai unleashes a nightmarish influence around it, turning the deepest nightmares of all creatures it chooses within 60 feet of it into their personal realities. Each target must make a DC 21 Wisdom saving throw, taking 28 (8d6) psychic damage and 28 (8d6) necrotic damage on a failure, or half as much on a success. Each creature who fails by 10 points or more is stunned until the start of the yokai\u2019s next turn."
+            },
+            {
+              "name": "Red Cord Binding",
+              "description": "The yokai chooses three creatures they can see within 30 feet, and attempts to sever the astral cord binding their souls to their body. Each target must make a DC 21 Charisma saving throw. On a failure, each target\u2019s soul is severed helplessly from their body and they are stunned for 1 minute, during which time they may repeat the saving throw at the end of each of their turns, ending the effect on a success and rebinding their soul to their body."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Semirealist Shift",
+          "name_format": "bold_italic",
+          "description": "When the yokai takes damage from a source it can see, it takes no damage instead. It then becomes resistant to all damage until the end of that turn."
+        }
+      ],
+      "legendary_actions": [
+        {
+          "name": "Spirit Haze",
+          "name_format": "bold_italic",
+          "description": "The yokai creates a veil of dreams and illusions around itself that replicate the effects of the blur spell (requiring no concentration), which last until the start of its next turn."
+        },
+        {
+          "name": "Touch of Slumber",
+          "name_format": "bold_italic",
+          "description": "One creature the yokai chooses within 120 feet must make a DC 17 Wisdom saving throw. On a failure, they fall unconscious until the start of the yokai\u2019s next turn. If they are standing, they do not fall prone while sleeping. If another creature deals damage to them or uses an action to shake them away, the effect ends early."
+        },
+        {
+          "name": "Spellcast (2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The yokai casts a spell with a casting time of 1 action using Innate Spellcasting."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_action_count": 3
+    }
+  ]
+}

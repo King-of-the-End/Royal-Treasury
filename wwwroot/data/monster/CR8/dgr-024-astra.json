@@ -1,0 +1,705 @@
+{
+  "Name": "DGR 024 - ASTRA",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Group": "DGR Frame Units",
+  "Information": "**DGR 024 - ASTRA**\n\nThe ASTRA unit is a versatile combat unit designed to be deployed by type as it has a number of variants with different elemental affinities. Each type possesses slightly different features, coming in the variants described below, with the traits listed for each.\n\n**Corrosion ASTRA.** Its elemental damage type is acid. It has a burrow speed equal to its fly speed and deals double damage to vehicles and structures.\n\n**Inferno ASTRA.** Its elemental damage type is fire. It can retaliate against nearby melee attackers with its Hellfire Shield.\n\n**Tundral ASTRA.** Its elemental damage type is cold. Its Freezing Aura turns nearby spaces into difficult terrain for creatures not resistant or immune to cold.\n\n**Void ASTRA.** Its elemental damage type is force. Its Fly-By movement applies to its 0-G acceleration speed.\n\n**Wind ASTRA.** Its elemental damage type is lightning. Its fly speed is doubled and it has the Fly-By trait.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/DGR%20024%20-%20ASTRA.png",
+  "Stat Blocks": [
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "115 (10d12 \u002B 50)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft.",
+        "0-G acceleration": "120 ft.",
+        "burrow": "40 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B7"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B8"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B7",
+        "Con \u002B8"
+      ],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "acid",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands all but doesn\u2019t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "id": "corrosion_astra",
+      "title": "Corrosion ASTRA",
+      "tag": "Corrosion",
+      "traits": [
+        {
+          "name": "Movement",
+          "name_format": "bold_italic",
+          "description": "The DGR has a burrow speed equal to its fly speed."
+        },
+        {
+          "name": "Siege",
+          "name_format": "bold_italic",
+          "description": "The DGR deals double damage to vehicles and structures."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three Adaptive Claw attacks."
+        },
+        {
+          "name": "Adaptive Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 10 (1d10 \u002B 4) slashing damage plus 7 (1d12) acid damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Arrow of Enlightened Fury",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B7 to hit, range 120/480 ft., one target. Hit: 46 (8d8 \u002B 10) acid damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Reactor Flare (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a burst of energy, targeting each creature within 20 feet of it. Each target must make a DC 16 Dexterity saving throw, taking 39 (6d12) acid damage on a failed save, or half as much on a successful one."
+        }
+      ],
+      "reactions": []
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "115 (10d12 \u002B 50)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B7"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B8"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B7",
+        "Con \u002B8"
+      ],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "fire",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands all but doesn\u2019t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "id": "inferno_astra",
+      "title": "Inferno ASTRA",
+      "tag": "Inferno",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three Adaptive Claw attacks."
+        },
+        {
+          "name": "Adaptive Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 10 (1d10 \u002B 4) slashing damage plus 7 (1d12) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Arrow of Enlightened Fury",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B7 to hit, range 120/480 ft., one target. Hit: 46 (8d8 \u002B 10) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Reactor Flare (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a burst of energy, targeting each creature within 20 feet of it. Each target must make a DC 16 Dexterity saving throw, taking 39 (6d12) fire damage on a failed save, or half as much on a successful one."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Hellfire Shield",
+          "name_format": "bold_italic",
+          "description": "When hit by a melee attack from within 30 feet, the DGR can use its reaction to generate flames that deal 3d8 fire damage to its attacker."
+        }
+      ]
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "115 (10d12 \u002B 50)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B7"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B8"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B7",
+        "Con \u002B8"
+      ],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "cold",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands all but doesn\u2019t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "id": "tundral_astra",
+      "title": "Tundral ASTRA",
+      "tag": "Tundral",
+      "traits": [
+        {
+          "name": "Freezing Aura",
+          "name_format": "bold_italic",
+          "description": "Creatures who are not resistant or immune to cold damage treat spaces within 20 feet of the DGR as difficult terrain."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three Adaptive Claw attacks."
+        },
+        {
+          "name": "Adaptive Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 10 (1d10 \u002B 4) slashing damage plus 7 (1d12) cold damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Arrow of Enlightened Fury",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B7 to hit, range 120/480 ft., one target. Hit: 46 (8d8 \u002B 10) cold damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Reactor Flare (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a burst of energy, targeting each creature within 20 feet of it. Each target must make a DC 16 Dexterity saving throw, taking 39 (6d12) cold damage on a failed save, or half as much on a successful one."
+        }
+      ],
+      "reactions": []
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "115 (10d12 \u002B 50)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "40 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B7"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B8"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B7",
+        "Con \u002B8"
+      ],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "force",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands all but doesn\u2019t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "id": "void_astra",
+      "title": "Void ASTRA",
+      "tag": "Void",
+      "traits": [
+        {
+          "name": "Movement",
+          "name_format": "bold_italic",
+          "description": "The DGR has the Fly-By trait, except it applies only to its 0-G acceleration speed."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three Adaptive Claw attacks."
+        },
+        {
+          "name": "Adaptive Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 10 (1d10 \u002B 4) slashing damage plus 7 (1d12) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Arrow of Enlightened Fury",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B7 to hit, range 120/480 ft., one target. Hit: 46 (8d8 \u002B 10) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Reactor Flare (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a burst of energy, targeting each creature within 20 feet of it. Each target must make a DC 16 Dexterity saving throw, taking 39 (6d12) force damage on a failed save, or half as much on a successful one."
+        }
+      ],
+      "reactions": []
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "115 (10d12 \u002B 50)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "80 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Critical 19",
+        "immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B7"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B8"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B7",
+        "Con \u002B8"
+      ],
+      "skills": [],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "immunities": [
+        "lightning",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "understands all but doesn\u2019t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Reactions": "bold"
+        }
+      },
+      "id": "wind_astra",
+      "title": "Wind ASTRA",
+      "tag": "Wind",
+      "traits": [
+        {
+          "name": "Movement",
+          "name_format": "bold_italic",
+          "description": "The DGR\u2019s fly speed is doubled, and it has the Fly-By trait."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes three Adaptive Claw attacks."
+        },
+        {
+          "name": "Adaptive Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 10 ft., one target. Hit: 10 (1d10 \u002B 4) slashing damage plus 7 (1d12) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Arrow of Enlightened Fury",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B7 to hit, range 120/480 ft., one target. Hit: 46 (8d8 \u002B 10) lightning damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Reactor Flare (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a burst of energy, targeting each creature within 20 feet of it. Each target must make a DC 16 Dexterity saving throw, taking 39 (6d12) lightning damage on a failed save, or half as much on a successful one."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

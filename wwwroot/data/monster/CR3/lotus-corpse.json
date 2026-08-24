@@ -1,0 +1,141 @@
+{
+  "Name": "Lotus Corpse",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Lotus Corpse**\n\nA lotus corpse is an unfortunate soul who was overtaken by the living vegetation of the Fey Realm. Their will is sapped away, and they become animated by the nonsensical impulses of the Fey Realm itself. If the flora that created them originates from a Domain of Delight, the fey controlling it may exert power over these corpses, which act as extensions of them. Most fey with control over them choose to keep these corpses out of sight as they are unseemly and devoid of joy.\n\n**Unusual Nature.** A lotus corpse does not require food, water, or air.",
+  "Information Sections": [
+    {
+      "Title": "Lotus Corpse",
+      "Text": "A lotus corpse is an unfortunate soul who was overtaken by the living vegetation of the Fey Realm. Their will is sapped away, and they become animated by the nonsensical impulses of the Fey Realm itself. If the flora that created them originates from a Domain of Delight, the fey controlling it may exert power over these corpses, which act as extensions of them. Most fey with control over them choose to keep these corpses out of sight as they are unseemly and devoid of joy."
+    },
+    {
+      "Title": "Unusual Nature",
+      "Text": "A lotus corpse does not require food, water, or air."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Lotus%20Corpse.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Lotus%20Corpse.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Lotus%20Corpse.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lotus_corpse",
+      "section_type": "Stat Block",
+      "title": "Lotus Corpse",
+      "creature": {
+        "size": "Medium",
+        "type": "plant",
+        "alignment": ""
+      },
+      "armor_class": "14 (natural armor)",
+      "hit_points": "56 (7d8 + 24)",
+      "speed": {
+        "walk": "30 ft.",
+        "burrow": "30 ft."
+      },
+      "quality_traits": [
+        "Spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 4,
+          "modifier": "-3"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "CHA": {
+          "score": 6,
+          "modifier": "-2"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Athletics +5"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "paralyzed",
+        "poisoned"
+      ],
+      "senses": [
+        "tremorsense 30 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "understands Sylvan"
+      ],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "+2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Floral Aura",
+          "name_format": "bold_italic",
+          "description": "The lotus corpse releases a constant cloud of spores, which force creatures who start their turn within 5 feet of it to make a DC 13 Constitution saving throw, taking 7 (2d6) poison damage and are poisoned until the start of their next turn on a failure. If they are within the range of multiple Floral Aura effects they only make one saving throw, taking the highest damage among the effects (if they are different), and they make that saving throw with disadvantage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The corpse attacks once each with its Lotus Nail and its Vine Lash."
+        },
+        {
+          "name": "Lotus Nail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 3) slashing damage plus 5 (1d8) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Vine Lash",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 10 (2d6 + 3) slashing damage, and if the target is the same size as the corpse or smaller, it must make a DC 13 Strength saving throw. On a failure, they are pulled up to 10 feet toward the corpse into an unoccupied space it chooses, then the corpse’s next attack against them that turn has advantage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

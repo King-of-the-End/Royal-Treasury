@@ -1,0 +1,132 @@
+{
+  "Name": "Exolunar Soldier",
+  "Group": "Exolunar Confederation",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Exolunar%20Confederation%20Soldier.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Exolunar%20Confederation%20Soldier.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Exolunar%20Confederation%20Soldier.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "exolunar_soldier",
+      "section_type": "Stat Block",
+      "title": "Exolunar Soldier",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "16 (threadware)",
+      "hit_points": "39 (6d8 + 12)",
+      "speed": {
+        "walk": "30 ft.",
+        "0-G acceleration": "60 ft."
+      },
+      "quality_traits": [
+        "Watchful"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "+1"
+        }
+      },
+      "saving_throws": [
+        "Dex +5",
+        "Wis +5"
+      ],
+      "skills": [
+        "Perception +5"
+      ],
+      "resistances": [
+        "radiant"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Astral Breath",
+          "name_format": "bold_italic",
+          "description": "The elf can survive without air for up to 1 hour and has advantage on saving throws made as a result of breathing in harmful substances."
+        },
+        {
+          "name": "Lunar Threadware",
+          "name_format": "bold_italic",
+          "description": "The elf wears armor that is made from rare exolunar material, which causes all piercing, slashing and bludgeoning damage done to it to be reduced by 5 (independently)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elf makes two weapon attacks."
+        },
+        {
+          "name": "Novaburn Rapier",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) piercing damage plus 3 (1d4) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Radiant Strike",
+          "name_format": "bold_italic",
+          "description": "The elf hurls a bolt of radiant energy at a target as a Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 9 (1d10 + 3) radiant damage.",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cosmic Step (2/Rest)",
+          "name_format": "bold_italic",
+          "description": "The elf teleports to an unoccupied space it can see within 30 feet, then gains a fly (hover) speed equal to its base movement speed until the end of its next turn."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

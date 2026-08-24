@@ -46,7 +46,6 @@
       "speed": {
         "walk": "60 ft."
       },
-      "cosmogony_note": "*the checks, saves, and skills listed include their \u002B2 Cosmogony Bonus",
       "quality_traits": [
         "Cosmogony \u002B3",
         "deific (lesser)",
@@ -123,9 +122,8 @@
         "Kitzish",
         "Sylvan"
       ],
-      "challenge_rating": "24\u002B (93,000 XP)",
+      "challenge_rating": "24\u002B (93,000 XP) \u2014 Challenge Bonus: \u002B3",
       "proficiency_bonus": "\u002B7",
-      "challenge_bonus": "\u002B3",
       "traits": [
         {
           "name": "Heavenly Wheel Turns (Mythic Awakening)",
@@ -235,7 +233,8 @@
           }
         ],
         "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
-      }
+      },
+      "ability_note": "*the checks, saves, and skills listed include their \u002B2 Cosmogony Bonus"
     }
   ]
 }

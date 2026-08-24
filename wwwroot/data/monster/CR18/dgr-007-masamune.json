@@ -28,7 +28,9 @@
         "size": "Huge",
         "type": "construct (DGR)",
         "alignment": "",
-        "footprint": "3"
+        "tags": [
+          "footprint 3"
+        ]
       },
       "armor_class": "21 (natural armor)",
       "hit_points": "210 (20d12 \u002B 80)",

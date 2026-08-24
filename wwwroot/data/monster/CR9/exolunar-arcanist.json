@@ -1,0 +1,192 @@
+{
+  "Name": "Exolunar Arcanist",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Exolunar Arcanist**\n\nAn exolunar arcanist channels the arcane energies of a cosmos, focusing on astromancy and the effects that the exolunar void have on magic. They sometimes appear more scientifically minded than other arcanists, even beside the already formulaic nature presented by other wizards.\n\n\u201CWhen science and arcanics meet, the result is always beautiful. All who reach beyond their worlds require both, and both are truly one and the same. There\u2019s little to gain in trying to separate technology and magic.\u201D",
+  "Information Sections": [
+    {
+      "Title": "Exolunar Arcanist",
+      "Text": "An exolunar arcanist channels the arcane energies of a cosmos, focusing on astromancy and the effects that the exolunar void have on magic. They sometimes appear more scientifically minded than other arcanists, even beside the already formulaic nature presented by other wizards."
+    },
+    {
+      "Title": "Quote",
+      "Text": "\u201CWhen science and arcanics meet, the result is always beautiful. All who reach beyond their worlds require both, and both are truly one and the same. There\u2019s little to gain in trying to separate technology and magic.\u201D"
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Exolunar%20Arcanist.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Exolunar%20Arcanist.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Exolunar%20Arcanist.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "exolunar_arcanist",
+      "section_type": "Stat Block",
+      "title": "Exolunar Arcanist",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "any alignment"
+      },
+      "armor_class": "16 (mage armor)",
+      "hit_points": "121 (22d8 \u002B 22)",
+      "speed": {
+        "walk": "30 ft.",
+        "belabored flight": "30 ft. (hover)",
+        "0-G acceleration": "60 ft."
+      },
+      "quality_traits": [],
+      "ability_scores": {
+        "STR": {
+          "score": 8,
+          "modifier": "-1"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "INT": {
+          "score": 19,
+          "modifier": "\u002B4",
+          "save": "\u002B8"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B5"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Int \u002B8",
+        "Wis \u002B5"
+      ],
+      "skills": [
+        "Arcana \u002B8",
+        "Perception \u002B5"
+      ],
+      "resistances": [
+        "radiant"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 15"
+      ],
+      "languages": [
+        "any four languages"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [
+        {
+          "name": "Concentration Expert",
+          "name_format": "bold_italic",
+          "description": "The arcanist has advantage on concentration checks."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The arcanist is a 10th level wizard. Their spellcasting ability is Intelligence (save DC 16, spell attack \u002B8). They have the following spells prepared:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "Cantrips",
+                "spells": [
+                  "bright arrow",
+                  "deflect",
+                  "outer breath"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "antigravity zone",
+                  "astral collision",
+                  "mage armor",
+                  "shield",
+                  "stasis"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "moonbeam",
+                  "propulsion",
+                  "throw image"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "spells": [
+                  "astral weapon",
+                  "minute meteors",
+                  "open communication"
+                ]
+              },
+              {
+                "frequency": "4th level (2 slots)",
+                "spells": [
+                  "force missile",
+                  "slipstream gate",
+                  "transmission"
+                ]
+              },
+              {
+                "frequency": "5th level (1 slot)",
+                "spells": [
+                  "conjure frame echo",
+                  "wall of radiance"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiaction",
+          "name_format": "bold_italic",
+          "description": "The arcanist makes three Cosmic Burst attacks, or makes one Cosmic Burst attack and casts one spell with a casting time of 1 action using its Spellcasting trait."
+        },
+        {
+          "name": "Cosmic Burst",
+          "name_format": "bold_italic",
+          "description": "Melee Spell Attack: \u002B8 to hit, reach 5 ft., one target, or as a Ranged Spell Attack: \u002B8 to hit, range 120 ft., one target. Hit: 24 (3d12 \u002B 4) radiant damage.",
+          "inline_formatting": {
+            "Melee Spell Attack": "italic",
+            "Ranged Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cosmic Step",
+          "name_format": "bold_italic",
+          "description": "The arcanist teleports to an unoccupied space it can see within 30 feet (90 feet if the space is in a zero-gravity environment)."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Countercast (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The arcanist produces the effects of the counterspell spell, requiring no spell slot and using Intelligence as their spellcasting ability. They cannot automatically negate the triggering spell, and must roll an ability check against it even if its spell level is 3rd or lower."
+        }
+      ]
+    }
+  ]
+}

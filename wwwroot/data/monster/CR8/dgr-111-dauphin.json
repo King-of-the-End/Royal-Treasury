@@ -1,0 +1,159 @@
+{
+  "Name": "DGR 111 - DAUPHIN",
+  "Group": "DGR Frame Units",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**DGR 111 - DAUPHIN**\n\nDAUPHIN was designed as a deep-sea exploration unit that is able to use echolocation to navigate the depths of the ocean. It is also able to function as a sentry when underwater as it boasts above-average stealth capabilities.",
+  "Information Sections": [
+    {
+      "Title": "DGR 111 - DAUPHIN",
+      "Text": "DAUPHIN was designed as a deep-sea exploration unit that is able to use echolocation to navigate the depths of the ocean. It is also able to function as a sentry when underwater as it boasts above-average stealth capabilities."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20DGR%20111%20-%20DAUPHIN.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20DGR%20111%20-%20DAUPHIN.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Reference_BG%20-%20DGR%20111%20-%20DAUPHIN.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_111_dauphin",
+      "section_type": "Stat Block",
+      "title": "DGR 111 - DAUPHIN",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 2"
+        ]
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "105 (10d12 \u002B 40)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "swim": "60 ft.",
+        "0-G acceleration": "90 ft."
+      },
+      "quality_traits": [
+        "Alloyed (Medium)",
+        "immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 6,
+          "modifier": "-2",
+          "save": "\u002B1"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "0"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B8",
+        "Int \u002B1"
+      ],
+      "skills": [
+        "Acrobatics \u002B8",
+        "Perception \u002B7",
+        "Stealth \u002B8"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Dive-By",
+          "name_format": "bold_italic",
+          "description": "When the DGR is submerged, it does not provoke opportunity attacks from creatures that do not have a swim speed when entering or leaving their spaces."
+        },
+        {
+          "name": "Void Submerged",
+          "name_format": "bold_italic",
+          "description": "The DGR\u2019s features and actions consider zero-gravity environments to be submerged, as though underwater."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two Slam attacks."
+        },
+        {
+          "name": "Slam",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B8 to hit, reach 10 ft., one target. Hit: 16 (2d10 \u002B 5) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Echo Wave",
+          "name_format": "bold_italic",
+          "description": "One target the DGR chooses within 60 feet is assailed by a wave of sonic energy, forcing them to make a DC 15 Constitution saving throw, taking 32 (5d10 \u002B 5) thunder damage on a failure. If the target is submerged and doesn\u2019t have a swim speed, they have disadvantage on their saving throw."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Chain Anchor",
+          "name_format": "bold_italic",
+          "description": "The DGR fires an anchor-like chain at a target within 60 feet, and the target must make a DC 14 Strength or Dexterity saving throw (their choice). On a failure, they are dragged 30 feet toward the DGR, and if they are pulled within 10 feet of the DGR they are grappled by the DGR automatically. If the DGR and target are submerged, the range of the anchor and distance the target is dragged both double."
+        },
+        {
+          "name": "Echolocation",
+          "name_format": "bold_italic",
+          "description": "If it is submerged, the DGR makes a Perception check with advantage, attempting to detect hidden creatures within 60 feet. Until the start of its next turn, it can see invisible creatures who were within the pulse\u2019s range."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

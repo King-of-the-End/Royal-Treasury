@@ -1,0 +1,163 @@
+{
+  "Name": "Nova Avatar, Greater",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Nova Avatar**\n\nWithin the core of each burning star is a gateway to the Plane of Positive Energy, and from those gates sometimes flows embodiments of the plane itself, in the form of nova avatars. These are not necessarily natives to the Plane of Positive Energy, but rather are flickers of starlight that the planes grant animation and will. Nova avatars typically reside within stars themselves, defending them from threats, but when one disappears (such as through a supernova), its inhabitants may be thrown across the universe in a confused rage.",
+  "Information Sections": [
+    {
+      "Title": "",
+      "Text": "Living sparks, born from pure light...\u201D\n\n\u201C... to cross one is to slight a star. I would never try to harm something so beautiful, nor would I ever try to touch something so deadly.",
+      "IsQuote": true
+    },
+    {
+      "Title": "Nova Avatar",
+      "Text": "Within the core of each burning star is a gateway to the Plane of Positive Energy, and from those gates sometimes flows embodiments of the plane itself, in the form of nova avatars. These are not necessarily natives to the Plane of Positive Energy, but rather are flickers of starlight that the planes grant animation and will. Nova avatars typically reside within stars themselves, defending them from threats, but when one disappears (such as through a supernova), its inhabitants may be thrown across the universe in a confused rage."
+    }
+  ],
+  "Quotes": [
+    "\u201CLiving sparks, born from pure light...\u201D",
+    "\u201C... to cross one is to slight a star. I would never try to harm something so beautiful, nor would I ever try to touch something so deadly.\u201D"
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Nova%20Avatar.jpg",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Nova%20Avatar.jpg"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Nova%20Avatar.jpg"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "nova_avatar_greater",
+      "section_type": "Stat Block",
+      "title": "Nova Avatar, Greater",
+      "creature": {
+        "size": "Huge",
+        "type": "elemental",
+        "alignment": ""
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "184 (16d12 \u002B 80)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-"
+        },
+        "WIS": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "\u002B5"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception \u002B5"
+      ],
+      "resistances": [],
+      "vulnerabilities": [
+        "necrotic"
+      ],
+      "immunities": [
+        "poison",
+        "radiant",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Astral"
+      ],
+      "challenge_rating": "11 (7,200 XP)",
+      "proficiency_bonus": "\u002B4",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Body of Illumination",
+          "name_format": "bold_italic",
+          "description": "The elemental projects bright sunlight 30 feet in every direction, then dim light 30 feet beyond that. Creatures cannot benefit from being invisible within the elemental\u2019s bright light, where they are made plainly visible. Similarly, creatures in the Ethereal Plane in this range are visible and treated as though they are in the Material Plane, and vice versa."
+        },
+        {
+          "name": "Light of Regeneration",
+          "name_format": "bold_italic",
+          "description": "Any non-elemental creature who starts their turn within 5 feet of the elemental regains 5 hit points. If they cannot regain any more hit points, their maximum hit points are reduced by the same amount until the next time they complete a Long Rest."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elemental makes three weapon attacks."
+        },
+        {
+          "name": "Sunlight Hammer",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 10 ft., one target. Hit: 16 (2d10 \u002B 5) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Nova Burst (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The elemental chooses one point it can see within 60 feet, from which an explosion of radiant sunlight erupts in a 20-foot-radius sphere. Each creature in that sphere must make a DC 17 Dexterity saving throw, taking 46 (8d8 \u002B 10) radiant damage on a failed save, or half as much on a successful one. Each creature who fails by 5 points or more is also blinded, and must make a DC 17 Constitution saving throw at the end of each of their turns, ending the effect on a success."
+        },
+        {
+          "name": "Teleport",
+          "name_format": "bold_italic",
+          "description": "The elemental teleports to an unoccupied space it can see within 40 feet, then makes a single Sunlight Hammer attack."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

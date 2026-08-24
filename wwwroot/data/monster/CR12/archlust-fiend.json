@@ -1,7 +1,7 @@
 {
   "Name": "Archlust Fiend",
   "Group": "",
-  "Source": "Blade, Bone & Benefit",
+  "Source": "Blade, Bone \u0026 Benefit",
   "Information": "**Archlust Fiend**\n\nAn archlust fiend is an evolved variant of the succubus/incubus, who has become an embodiment of lust and temptation. They are capable of binding similar fiends under their command, and run more elaborate operations than regular lust fiends. They can sometimes be found running legitimized establishments of the flesh, forming business relationships that are suitable to them for the long term. Unfortunately, as a fiend, they are prone to moments of impulsive selfishness, and sometimes will sabotage their own finely crafted web of protection by going too far with a mortal or two they set their sights on.\n\n***Leader in Bad Faith.*** An archlust fiend will inevitably try to find themselves close to the top of a political or entrepreneurial hierarchy, but rarely will they try to situate themselves at the top. They are more comfortable in a position that places them second or third in command of an operation, and manipulate the true leader through physical and supernatural means. They use those above them to shield themselves from investigation, while pretending to be a vice captain, brothel\u2019s star attraction, or trophy wife, so they can lustfully gain attention while escaping suspicion.\n\n***Royal Divine Consort.*** Archlust fiends will set their sights on the sort of prey that regular succubi steer clear of. They have been seen to seduce angels, other arch-fiends, or even lesser gods if the situation presents itself. Their confidence sometimes exceeds their ability, but on occasion confidence is all one needs.",
   "Information Sections": [
     {
@@ -123,20 +123,35 @@
           "name": "Innate Spellcasting",
           "name_format": "bold_italic",
           "description": "The fiend\u2019s spellcasting ability is Charisma (spell attack \u002B11, save DC 19). It can innately cast the following spells, requiring no material components:",
-          "suboptions": [
-            {
-              "name": "At will",
-              "description": "beloved wretch, charm monster, vicious mockery"
-            },
-            {
-              "name": "2/Day each",
-              "description": "etherealness, hold attacker, thunder step"
-            },
-            {
-              "name": "1/Day each",
-              "description": "arrows of love and capture, eros gate, greater invisibility, power word stun"
-            }
-          ]
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "beloved wretch",
+                  "charm monster",
+                  "vicious mockery"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "etherealness",
+                  "hold attacker",
+                  "thunder step"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "arrows of love and capture",
+                  "eros gate",
+                  "greater invisibility",
+                  "power word stun"
+                ]
+              }
+            ]
+          }
         },
         {
           "name": "Telepathic Leash",

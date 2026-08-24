@@ -115,7 +115,6 @@
           "name": "Innate Spellcasting",
           "name_format": "bold_italic",
           "description": "Ilsrabae\u2019s spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components. Ilsrabae\u2019s spells are cast at 5th level, unless their base level is higher.",
-          "cast_as": "5th level, unless their base level is higher",
           "spellcasting": {
             "spells": [
               {
@@ -150,7 +149,8 @@
                   "whirlpool"
                 ]
               }
-            ]
+            ],
+            "casting_level_note": "5th level, unless their base level is higher"
           }
         },
         {
@@ -236,7 +236,6 @@
       },
       "mythic_actions": {
         "header": "Mythic Actions",
-        "availability": "For 1 hour after using Living Avatar of the Depths (Mythic Awakening)",
         "options": [
           {
             "name": "Whirlpool",
@@ -253,7 +252,8 @@
             "name_format": "bold_italic",
             "description": "Ilsrabae creates a drill-like current of oceanic water that surges forward in a 50-foot-long, 10-foot-wide line originating from Ilsrabae. Each creature in that line must make a DC 20 Dexterity saving throw. On a failure, each takes 14 (3d8) piercing damage and 17 (3d10) cold damage."
           }
-        ]
+        ],
+        "intro": "For 1 hour after using Living Avatar of the Depths (Mythic Awakening)"
       },
       "legendary_reactions": {
         "header": "Legendary Reactions",

@@ -1040,6 +1040,146 @@
 
 
     <!-- =================================
+         STATIC ADDITIONAL SECTIONS
+
+         Always-visible supporting mechanics
+         such as Iteration Matrix and
+         Tower of Annulment. Expansion Engine
+         is nested within Iteration Matrix.
+         ================================= -->
+
+    @if (Data.StaticAdditionalSections.Count > 0)
+    {
+        <div class="rt-static-additional-sections">
+            @foreach (var staticSection in Data.StaticAdditionalSections)
+            {
+                <section class="rt-static-additional-section">
+                    <div class="rt-stat-section-bar">
+                        @(string.IsNullOrWhiteSpace(staticSection.Title)
+                            ? staticSection.SectionType
+                            : staticSection.Title)
+                    </div>
+
+                    @if (!string.IsNullOrWhiteSpace(staticSection.Intro))
+                    {
+                        <p class="rt-static-additional-intro">
+                            <GlossaryText
+                                Text="@staticSection.Intro"
+                                Context="GlossaryContext.StatBlock" />
+                        </p>
+                    }
+
+                    @if (staticSection.Table is not null)
+                    {
+                        <div class="rt-static-table-wrap">
+                            @if (!string.IsNullOrWhiteSpace(staticSection.Table.Title))
+                            {
+                                <div class="rt-static-table-title">@staticSection.Table.Title</div>
+                            }
+
+                            <table class="rt-static-table">
+                                @if (staticSection.Table.Columns.Count > 0)
+                                {
+                                    <thead>
+                                        <tr>
+                                            @foreach (var column in staticSection.Table.Columns)
+                                            {
+                                                <th>@column</th>
+                                            }
+                                        </tr>
+                                    </thead>
+                                }
+                                <tbody>
+                                    @foreach (var row in staticSection.Table.Rows)
+                                    {
+                                        <tr>
+                                            @foreach (var cell in row)
+                                            {
+                                                <td>
+                                                    <GlossaryText
+                                                        Text="@cell"
+                                                        Context="GlossaryContext.StatBlock" />
+                                                </td>
+                                            }
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+
+                    @if (staticSection.Entries.Count > 0)
+                    {
+                        <div class="rt-static-additional-list">
+                            @foreach (var entry in staticSection.Entries)
+                            {
+                                <article class="rt-static-additional-card">
+                                    <div class="rt-static-additional-card-head">
+                                        <strong>@entry.Name</strong>
+                                        @if (!string.IsNullOrWhiteSpace(entry.ActionType))
+                                        {
+                                            <span class="rt-path-surge-type">@entry.ActionType</span>
+                                        }
+                                    </div>
+
+                                    @if (!string.IsNullOrWhiteSpace(entry.Description))
+                                    {
+                                        <div class="rt-static-additional-card-body">
+                                            <GlossaryText
+                                                Text="@entry.Description"
+                                                Context="GlossaryContext.StatBlock" />
+                                        </div>
+                                    }
+
+                                    @if (entry.Table is not null)
+                                    {
+                                        <div class="rt-static-table-wrap">
+                                            @if (!string.IsNullOrWhiteSpace(entry.Table.Title))
+                                            {
+                                                <div class="rt-static-table-title">@entry.Table.Title</div>
+                                            }
+
+                                            <table class="rt-static-table">
+                                                @if (entry.Table.Columns.Count > 0)
+                                                {
+                                                    <thead>
+                                                        <tr>
+                                                            @foreach (var column in entry.Table.Columns)
+                                                            {
+                                                                <th>@column</th>
+                                                            }
+                                                        </tr>
+                                                    </thead>
+                                                }
+                                                <tbody>
+                                                    @foreach (var row in entry.Table.Rows)
+                                                    {
+                                                        <tr>
+                                                            @foreach (var cell in row)
+                                                            {
+                                                                <td>
+                                                                    <GlossaryText
+                                                                        Text="@cell"
+                                                                        Context="GlossaryContext.StatBlock" />
+                                                                </td>
+                                                            }
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    }
+                                </article>
+                            }
+                        </div>
+                    }
+                </section>
+            }
+        </div>
+    }
+
+
+    <!-- =================================
          VEHICLE / CONSTRUCT STATIONS
 
          These are deliberately inside the

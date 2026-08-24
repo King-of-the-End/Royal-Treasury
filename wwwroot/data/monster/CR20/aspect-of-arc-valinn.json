@@ -1,0 +1,273 @@
+{
+  "Name": "Aspect of Arc Valinn",
+  "Group": "Deific Aspects",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Arc Valinn**\n\nArc Valinn is a goddess of technology and considered the god of frame units and freedom. She was originally an astral elf exarch who helped to set exolunar frame unit technology on its path, then would ascend to godhood on her own in an effort to protect the universe from those who would hoard and abuse technology. Her physical form is split between two entities: her humanoid form, and her mechanical avatar Frame Galactia, a supermassive frame unit that can become an astradeck.",
+  "Information Sections": [
+    {
+      "Title": "Arc Valinn",
+      "Text": "Arc Valinn is a goddess of technology and considered the god of frame units and freedom. She was originally an astral elf exarch who helped to set exolunar frame unit technology on its path, then would ascend to godhood on her own in an effort to protect the universe from those who would hoard and abuse technology. Her physical form is split between two entities: her humanoid form, and her mechanical avatar Frame Galactia, a supermassive frame unit that can become an astradeck."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Arc%20Valinn.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Arc%20Valinn.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Zero%20Point%20God%20Emblem%20-%20Arc%20Valinn%2C%20the%20Voyager.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Arc%20Valinn.png"
+    },
+    {
+      "Label": "Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Zero%20Point%20God%20Emblem%20-%20Arc%20Valinn%2C%20the%20Voyager.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_arc_valinn",
+      "section_type": "Stat Block",
+      "title": "Aspect of Arc Valinn",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "281 (25d8 \u002B 144)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "deific"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B12"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B11"
+        },
+        "CHA": {
+          "score": 26,
+          "modifier": "\u002B8",
+          "save": "\u002B14"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B12",
+        "Int \u002B8",
+        "Wis \u002B11",
+        "Cha \u002B14"
+      ],
+      "skills": [
+        "History \u002B8",
+        "Insight \u002B11",
+        "Perception \u002B11",
+        "Persuasion \u002B14"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Arc Valinn\u2019s spellcasting ability is Charisma. She can innately cast the following spells, requiring no material components:",
+          "additional_text": "When Arc Valinn casts any Astromancy spell with limited uses, she can spend one of her Legendary Actions for that round to cast it at 6th level, unless it was already higher, or three Legendary Actions to cast it at 9th. Arc Valinn does not make Eidomancy checks.",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "antigravity zone (9th level)",
+                  "gate",
+                  "gravity bind"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "gravitational purge",
+                  "heat metal",
+                  "sympathetic gateway"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "auto-repair",
+                  "supreme hand"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "conjure frame echo",
+                  "dead nova",
+                  "minute meteors",
+                  "teleport"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Macro Breaker (Supermassive)",
+          "name_format": "bold_italic",
+          "description": "When a feature or trait targeting Arc Valinn would have an effect detrimental to her based on her size (such as maximum macro damage being dealt to creatures her size, or creatures resisting her damage based on her size) Arc Valinn is considered to be whatever size would be most beneficial for her for the purposes of those effects, up to a maximum size of Supermassive.\n\nAdditionally, Arc Valinn\u2019s carry weight is calculated as though she is a Supermassive creature."
+        },
+        {
+          "name": "Supergalactic Junction (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Arc Valinn is reduced to 0 hit points or killed outright, she can use one of the following options.",
+          "options": [
+            {
+              "name": "Personal Invigoration",
+              "description": "Arc Valinn\u2019s hit points are reset to 150 points, she regains all uses of her Legendary Reaction, recharges her Technobliteration Arrow, and teleports to a space that can fit her within 120 feet. For 1 hour, Arc Valinn can use her Mythic Actions, and gains a Damage Threshold of 10. A party that defeats her after using her Personal Invigoration is awarded an additional 25,000 XP (for a total of 50,000 XP). If reduced to 0 hit points during this hour, she can choose to use the Frame Galactia option below, but when she does, Frame Galactia begins with 200 fewer hit points."
+            },
+            {
+              "name": "Frame Galactia",
+              "description": "Arc Valinn teleports to a point she chooses within 1 mile that could fit a Gargantuan or larger creature (it must fit the size she appears in as per the Scale Shift trait), where she transforms into the Frame Galactia and her hit points are reset to Frame Galactia\u2019s own. She then uses the Frame Galactia\u2019s statblock as her own. If a party defeats the Frame Galactia, they are awarded experience for the Frame Galactia in addition to Arc Valinn\u2019s (for a total of 180,000 XP, or 205,000 XP if Personal Invigoration was used)."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Arc Valinn makes three attacks with Galaxium. Two of these attacks can be replaced with one use of Warp Frequenshot if it is available."
+        },
+        {
+          "name": "Galaxium (Blade or Arcbow)",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B12 to hit, reach 10 ft., one target, or as a Ranged Weapon Attack: \u002B12 to hit, range 150/600 ft., one target. Hit: 13 (1d12 \u002B 6) radiant damage plus 11 (2d10) force damage. In a zero-gravity environment, this attack can treat its long range as its normal range.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Technobliteration (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Arc Valinn unleashes a storm of energy from Galaxium that echoes out in a 120-foot cone (480 feet in a zero-gravity environment). Each creature in that space, except those Arc Valinn chooses to omit, must make a DC 20 Dexterity saving throw, taking 39 (6d12) radiant damage and 39 (6d12) force damage on a failed save, or half as much on a success."
+        },
+        {
+          "name": "Mythic Action: Warp Frequenshot",
+          "name_format": "bold_italic",
+          "description": "Arc Valinn targets one creature within 480 feet, and releases an enhanced burst from Galaxium into a rift that teleports the energy to the target\u2019s position, ignoring cover. Each target must make a DC 20 Dexterity saving throw, taking 38 (5d10 \u002B 10) radiant damage on a failure. If the target has a passive Perception of 15 or less, they have disadvantage on this Dexterity saving throw."
+        },
+        {
+          "name": "Mythic Action: Skyfall (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Arc Valinn produces the effects of the meteor swarm spell, but only creates one meteor. This is not treated as casting a spell or producing a magical effect, but uses Charisma as her spellcasting ability."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Mythic Action: Warp Parry",
+          "name_format": "bold_italic",
+          "description": "When a creature hits Arc Valinn with a weapon attack, she can strike back by carving a rift in space, which increases her AC by 5 against that attack, possibly causing it to miss. If the triggering attack was a melee attack from a Gargantuan or smaller creature, the attacker must make a DC 19 Charisma saving throw. On a failure they are warped to a space Arc Valinn chooses that can fit them within 120 feet of her."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Rush",
+            "name_format": "bold_italic",
+            "description": "Arc Valinn moves up to their movement speed."
+          },
+          {
+            "name": "Galaxium Strike",
+            "name_format": "bold_italic",
+            "description": "Arc Valinn makes a single attack with Galaxium."
+          },
+          {
+            "name": "Interference Generator (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Arc Valinn chooses an unoccupied space within 120 feet where a Large object could fit. A field generator appears there, which has 18 AC, succeeds all saving throws, is immune to all conditions, and must take 20 or more damage from the same attack to be destroyed. While present, all hostile creatures within 30 feet of it have disadvantage on their attack rolls (except those made against it). When Arc Valinn uses this action, she can choose to teleport any existing generators to a new unoccupied space within range as well as create a new one."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "options": [
+          {
+            "name": "Warp",
+            "name_format": "bold_italic",
+            "description": "Arc Valinn teleports to an unoccupied space she can see within 60 feet."
+          },
+          {
+            "name": "Spellcast (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Arc Valinn casts any spell with a casting time of 1 action using her Innate Spellcasting, and that spell is cast at 6th level if it wasn\u2019t already higher."
+          },
+          {
+            "name": "Catastrophic Failure (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "All constructs and frame units who are not allied to Arc Valinn and within 300 feet of her must succeed a DC 20 Charisma saving throw or become sluggish (malfunction) until the end of her next turn."
+          }
+        ],
+        "intro": "Arc Valinn may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening."
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

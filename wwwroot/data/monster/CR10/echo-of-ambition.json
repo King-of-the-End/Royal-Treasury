@@ -24,7 +24,7 @@
         "alignment": ""
       },
       "armor_class": "18 (natural armor)",
-      "hit_points": "165 (22d8 + 66)",
+      "hit_points": "165 (22d8 \u002B 66)",
       "speed": {
         "walk": "30 ft."
       },
@@ -36,39 +36,39 @@
       "ability_scores": {
         "STR": {
           "score": 13,
-          "modifier": "+1"
+          "modifier": "\u002B1"
         },
         "DEX": {
           "score": 18,
-          "modifier": "+4",
-          "save": "+8"
+          "modifier": "\u002B4",
+          "save": "\u002B8"
         },
         "CON": {
           "score": 16,
-          "modifier": "+3"
+          "modifier": "\u002B3"
         },
         "INT": {
           "score": 13,
-          "modifier": "+1"
+          "modifier": "\u002B1"
         },
         "WIS": {
           "score": 15,
-          "modifier": "+2"
+          "modifier": "\u002B2"
         },
         "CHA": {
           "score": 14,
-          "modifier": "+2",
-          "save": "+6"
+          "modifier": "\u002B2",
+          "save": "\u002B6"
         }
       },
       "saving_throws": [
-        "Dex +8",
-        "Cha +6"
+        "Dex \u002B8",
+        "Cha \u002B6"
       ],
       "skills": [
-        "Athletics +6",
-        "Perception +6",
-        "Stealth +8"
+        "Athletics \u002B6",
+        "Perception \u002B6",
+        "Stealth \u002B8"
       ],
       "resistances": [
         "slashing",
@@ -92,10 +92,10 @@
         "passive Perception 16"
       ],
       "languages": [
-        "understands Common and Fiendish, but doesn’t speak"
+        "understands Common and Fiendish, but doesn\u2019t speak"
       ],
       "challenge_rating": "10 (5,900 XP)",
-      "proficiency_bonus": "+4",
+      "proficiency_bonus": "\u002B4",
       "traits": [
         {
           "name": "Projectile Aversion",
@@ -106,14 +106,14 @@
           "name": "Saint Technique (Recharge 4-6)",
           "name_format": "bold_italic",
           "description": "The echo uses one of the following effects:",
-          "suboptions": [
+          "options": [
             {
               "name": "Dragon Surge",
               "description": "On its turn, the echo takes an additional action after the first. When it does so, its movement speed increases by 20 feet until the end of its turn."
             },
             {
               "name": "Wind Chain",
-              "description": "On its turn, the echo can make any melee weapon attack as though its reach was 30 feet by projecting a cutting wave of force acting as an extension of the weapon. When it does, that weapon’s reach remains as such until the end of the turn."
+              "description": "On its turn, the echo can make any melee weapon attack as though its reach was 30 feet by projecting a cutting wave of force acting as an extension of the weapon. When it does, that weapon\u2019s reach remains as such until the end of the turn."
             }
           ]
         }
@@ -125,9 +125,9 @@
           "description": "The echo makes attacks twice with its Devil Blade and once with its Plasma Tail."
         },
         {
-          "name": "Devil Blade (+2 Longsword)",
+          "name": "Devil Blade (\u002B2 Longsword)",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage.",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 5 ft., one target. Hit: 17 (2d10 \u002B 6) slashing damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -136,7 +136,7 @@
         {
           "name": "Plasma Tail",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) slashing damage plus 6 (1d10) fire damage.",
+          "description": "Melee Weapon Attack: \u002B8 to hit, reach 10 ft., one target. Hit: 15 (2d10 \u002B 4) slashing damage plus 6 (1d10) fire damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -146,14 +146,14 @@
           "name": "Devil Blade Tourbillion (Recharge 5-6)",
           "name_format": "bold_italic",
           "description": "The echo attempts to unsheath the blade containing their sealed skills. Roll 1d100, then do the following based on the result:",
-          "suboptions": [
+          "options": [
             {
               "name": "51-100",
               "description": "The echo is unsuccessful in drawing the blade, and energy erupts from it chaotically. Each creature within 15 feet of the echo (including the echo) must make a DC 16 Dexterity saving throw, taking 17 (3d10) force damage on a failed save, or half as much damage on a successful one. Creatures apart from the echo who fail the save are pushed 15 feet away from it and are knocked prone."
             },
             {
               "name": "1-50",
-              "description": "The echo is successful in drawing the blade, and unleashes a thousand slashes at once. Each creature within 30 feet of it must make a DC 18 Dexterity saving throw, taking 26 (4d12) slashing damage on a failed save, or half as much damage on a successful one. Each creature who fails this save is sluggish until the start of the echo’s next turn. The slashing damage from this attack ignores resistances. After the effect resolves, the sword is sealed again."
+              "description": "The echo is successful in drawing the blade, and unleashes a thousand slashes at once. Each creature within 30 feet of it must make a DC 18 Dexterity saving throw, taking 26 (4d12) slashing damage on a failed save, or half as much damage on a successful one. Each creature who fails this save is sluggish until the start of the echo\u2019s next turn. The slashing damage from this attack ignores resistances. After the effect resolves, the sword is sealed again."
             }
           ]
         }
@@ -162,7 +162,7 @@
         {
           "name": "Mirage Dash",
           "name_format": "bold_italic",
-          "description": "The echo takes the Dash action, and each time a creature makes an opportunity attack against it while Dashing this way, the echo makes a weapon attack against them in response, using its Devil Blade. If the echo’s attack roll result is higher than theirs, the creature’s attack misses. This Devil Blade attack does no damage."
+          "description": "The echo takes the Dash action, and each time a creature makes an opportunity attack against it while Dashing this way, the echo makes a weapon attack against them in response, using its Devil Blade. If the echo\u2019s attack roll result is higher than theirs, the creature\u2019s attack misses. This Devil Blade attack does no damage."
         }
       ],
       "reactions": [

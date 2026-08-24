@@ -1,0 +1,227 @@
+{
+  "Name": "Sealgair-Ce",
+  "Group": "Eidolos",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Title": "The Astral Hound",
+  "Gemstone": "Moldavite",
+  "Type": "Seraphael",
+  "Originator": "Setanta",
+  "Information": "**Sealgair-Ce**\n\n**Title** The Astral Hound\n**Gemstone** Moldavite\n**Type** Seraphael\n**Originator** Setanta\n\nThe Astral Hound is an eidolos elevated from a monstrous hound that mutated to survive in exolunar space. It was encountered by Setanta\u2019s followers while investigating what they thought was an Outer Titan incursion, and it was powerful enough to draw Setanta\u2019s attention directly. After battling and subduing the beast, Setanta trained it to be faithful to himself and his crew, then after an act of self-sacrificial bravery he elevated it to the state of an eidolos. The Astral Hound is Setanta\u2019s faithful companion, and is used as his messenger and hunting dog across space.\n\nSealgair-Ce is charged with the task of hunting anything across space that defies conventional logic and serves as a threat to those Setanta would consider allies. It has been known to appear on planets with no idea what an eidolos is, in reaction to anomalies like large-scale rituals that affect exolunar space, or the emergence of technology that is sinister in design and might reach a universal stage. Sealgair-Ce also appears by Setanta\u2019s side when needed, and is readily available to Junction with frame units when called for.\n\n\u201CThis mutt! Any creature of power in exolunar space knows of the infernal, irritating Sealgair-Ce! I\u2019ve never met it, and pray I don\u2019t, as I\u2019ve heard that once it has your scent it can never be deterred. I wouldn\u2019t turn away Setanta\u2019s gaze\u2014I would enjoy that\u2014but his hound should stay kenneled.\u201D",
+  "Information Sections": [
+    {
+      "Title": "Sealgair-Ce",
+      "Text": "The Astral Hound is an eidolos elevated from a monstrous hound that mutated to survive in exolunar space. It was encountered by Setanta\u2019s followers while investigating what they thought was an Outer Titan incursion, and it was powerful enough to draw Setanta\u2019s attention directly. After battling and subduing the beast, Setanta trained it to be faithful to himself and his crew, then after an act of self-sacrificial bravery he elevated it to the state of an eidolos. The Astral Hound is Setanta\u2019s faithful companion, and is used as his messenger and hunting dog across space.\n\nSealgair-Ce is charged with the task of hunting anything across space that defies conventional logic and serves as a threat to those Setanta would consider allies. It has been known to appear on planets with no idea what an eidolos is, in reaction to anomalies like large-scale rituals that affect exolunar space, or the emergence of technology that is sinister in design and might reach a universal stage. Sealgair-Ce also appears by Setanta\u2019s side when needed, and is readily available to Junction with frame units when called for."
+    },
+    {
+      "Title": "Quote",
+      "Text": "\u201CThis mutt! Any creature of power in exolunar space knows of the infernal, irritating Sealgair-Ce! I\u2019ve never met it, and pray I don\u2019t, as I\u2019ve heard that once it has your scent it can never be deterred. I wouldn\u2019t turn away Setanta\u2019s gaze\u2014I would enjoy that\u2014but his hound should stay kenneled.\u201D"
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Sealgair-Ce.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Sealgair-Ce.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Sealgair-Ce.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "sealgair_ce",
+      "section_type": "Stat Block",
+      "title": "Sealgair-Ce",
+      "creature": {
+        "size": "Huge",
+        "type": "beast (eidolos)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "19 (natural armor, cosmogony bonus)",
+      "hit_points": "213 (25d12 \u002B 50)",
+      "speed": {
+        "walk": "60 ft.",
+        "climb": "60 ft.",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "eidolos (Seraphael)",
+        "keen senses"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "check": "\u002B7",
+          "save": "\u002B7"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "check": "\u002B8",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "check": "\u002B5",
+          "save": "\u002B11"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "\u002B1",
+          "check": "\u002B3",
+          "save": "\u002B3"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "check": "\u002B9",
+          "save": "\u002B15"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "check": "\u002B4",
+          "save": "\u002B4"
+        }
+      },
+      "ability_note": "Checks, saves and skills include the \u002B2 cosmogony bonus.",
+      "saving_throws": [
+        "Str \u002B7",
+        "Dex \u002B8",
+        "Con \u002B11",
+        "Int \u002B3",
+        "Wis \u002B15",
+        "Cha \u002B4"
+      ],
+      "skills": [
+        "Perception \u002B15",
+        "Survival \u002B15"
+      ],
+      "resistances": [
+        "all (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison",
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 480 ft.",
+        "passive Perception 25 (30 with Keen Senses)"
+      ],
+      "languages": [
+        "understands common, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "18\u002B (30,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Cosmogony Bonus (\u002B3)",
+          "name_format": "bold_italic",
+          "description": "Half of Sealgair-Ce\u2019s Cosmogony Bonus (rounded up, \u002B2) is added to their attack rolls, ability checks, damage rolls, and saving throws. The full bonus is added to their armor class. The bonus to their attack rolls, saving throws, damage rolls, and armor class is accounted for in this stat block."
+        },
+        {
+          "name": "Seraphic Authority: Blackvenom Mist",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce is surrounded by a poisonous miasma while in combat. Any creature who starts their turn within 30 feet of Sealgair-Ce during combat takes 16 (2d8 \u002B 7) poison damage and must make a DC 17 Constitution saving throw. On a failure, the creature is poisoned and sluggish until the start of their next turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce makes one Bite attack and two Moldavite Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 5 ft., one target. Hit: 35 (5d10 \u002B 7) piercing damage. The target must make a DC 17 Constitution saving throw. On a failure, they take 33 (6d10) poison damage and are poisoned for 1 minute, during which time they repeat the save at the end of each of their turns, ending the effect on a success.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Moldavite Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 10 ft., one target. Hit: 20 (2d12 \u002B 7) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tail Spine Strike",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B14 to hit, range 60/180 ft., one target. Hit: 62 (8d12 \u002B 8) poison damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Shard: Blackmist Arrow (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce creates a massive lance-like arrow of moldavite, then detonates it in a wave of shrapnel in a 90-foot cone. Each target within that space must make a DC 20 Dexterity saving throw, taking 39 (7d10) piercing damage and 39 (7d10) poison damage on a failed save, or half as much damage on a successful one."
+        },
+        {
+          "name": "Transmission Dash",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce gains a teleport speed equal to its base movement speed, then uses its Bite attack once before the end of its turn. If it teleports into a space adjacent to a creature then doesn\u2019t move before using its Bite attack against them, its Bite attack is made with advantage."
+        },
+        {
+          "name": "Gateway (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce produces the effects of the gate spell."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Sentinel Strike",
+          "name_format": "bold_italic",
+          "description": "When a creature leaves Sealgair-Ce\u2019s Moldavite Claw range, it can make an opportunity attack against that creature with it. If it hits, the creature takes damage as normal, and their movement speed is reduced to 0 until the start of their next turn."
+        }
+      ],
+      "legendary_actions": [
+        {
+          "name": "Perception",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce makes a Perception check to attempt to find hidden creatures around it."
+        },
+        {
+          "name": "Strike",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce moves up to 20 feet (unless its movement speed is 0) and it makes one Moldavite Claw attack."
+        },
+        {
+          "name": "Tail Spine Strike (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce makes a single Tail Spine Strike attack."
+        },
+        {
+          "name": "Bloodboiling Swipe (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "Sealgair-Ce unleashes a series of Moldavite Claw strikes on everything within 30 feet of it. Each creature within that range must make a DC 19 Dexterity saving throw, taking 20 (2d12 \u002B 7) slashing damage on a failed save."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_action_count": 4
+    }
+  ]
+}

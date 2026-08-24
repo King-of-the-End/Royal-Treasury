@@ -1,0 +1,149 @@
+{
+  "Name": "Outer Titan, Dustwalker",
+  "Group": "Outer Titans",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Dustwalker**\n\nThe hounds of the outer titans, who are brought forward with cajoles during the initial incursions by outer titan forces. They are smaller than most titans, but just as vicious, and are adept in searching for life.\n\nDustwalkers also serve as cosmic hunters, being flung like drones through the depths of space by other outer titans to eventually crash into planetary bodies, and should they land on a life-rich world they will begin consuming eidomantic radiation, eventually gaining enough to send a signal through space to a tesseract, signaling the beginning of an incursion.",
+  "Information Sections": [
+    {
+      "Title": "Dustwalker",
+      "Text": "The hounds of the outer titans, who are brought forward with cajoles during the initial incursions by outer titan forces. They are smaller than most titans, but just as vicious, and are adept in searching for life.\n\nDustwalkers also serve as cosmic hunters, being flung like drones through the depths of space by other outer titans to eventually crash into planetary bodies, and should they land on a life-rich world they will begin consuming eidomantic radiation, eventually gaining enough to send a signal through space to a tesseract, signaling the beginning of an incursion."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Somnus%20Domina%20-%20Outer%20Titan%20Dustwalker.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Somnus%20Domina%20-%20Outer%20Titan%20Dustwalker.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR8/Somnus%20Domina%20-%20Outer%20Titan%20Dustwalker.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "outer_titan_dustwalker",
+      "section_type": "Stat Block",
+      "title": "Outer Titan, Dustwalker",
+      "creature": {
+        "size": "Large",
+        "type": "aberration (alien)",
+        "alignment": ""
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "75 (10d10 \u002B 20)",
+      "threshold": "5",
+      "speed": {
+        "walk": "40 ft.",
+        "climb": "40 ft.",
+        "0-G acceleration": "80 ft."
+      },
+      "quality_traits": [
+        "Alien absurdity",
+        "eidolic",
+        "keen senses (sight, smell)",
+        "regen 10",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 21,
+          "modifier": "\u002B5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception \u002B5"
+      ],
+      "resistances": [
+        "radiant",
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "exhaustion"
+      ],
+      "senses": [
+        "blindsight 20 ft.",
+        "darkvision 60 ft.",
+        "hivesense 240 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [],
+      "challenge_rating": "8 (3,900 XP)",
+      "proficiency_bonus": "\u002B3",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Zero Gravity Resistance",
+          "name_format": "bold_italic",
+          "description": "The titan does not suffer fall damage, nor does it suffer any negative effects or damage when entering, passing through, or exiting a planet\u2019s atmosphere."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The titan uses its Horn and Poison Claw once each."
+        },
+        {
+          "name": "Horn",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 5 ft., one target. Hit: 22 (4d8 \u002B 4) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Poison Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B8 to hit, reach 10 ft., one target. Hit: 12 (2d6 \u002B 5) slashing damage. The target must succeed a DC 13 Constitution saving throw, taking 22 (4d10) poison damage and being poisoned for 1 minute on a failure. A creature poisoned this way repeats the saving throw at the end of each of its turns, ending the effect on a success.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Lifesense",
+          "name_format": "bold_italic",
+          "description": "The titan makes a Wisdom (Perception) check."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

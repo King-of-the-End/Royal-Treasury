@@ -656,6 +656,22 @@ public sealed class StatBlockData
 
 
     // =====================================
+    // STATIC ADDITIONAL SECTIONS
+    //
+    // Non-selectable structured sections
+    // stored beside Stat Blocks in the outer
+    // monster JSON. These are used for
+    // supporting mechanics such as Destimus's
+    // Iteration Matrix / Expansion Engine and
+    // Berhelyx's Tower of Annulment.
+    // =====================================
+
+    [JsonPropertyName("static_additional_sections")]
+    public List<MonsterStaticAdditionalSection> StaticAdditionalSections { get; set; } =
+        new();
+
+
+    // =====================================
     // RAW TEXT
     // =====================================
 
@@ -2038,6 +2054,47 @@ public sealed class MonsterPathSurgeEntry
 
     [JsonPropertyName("description")]
     public string Description { get; set; } = string.Empty;
+}
+
+
+// =========================================
+// MONSTER STATIC ADDITIONAL SECTION
+//
+// Generic always-visible supporting sections
+// from the outer monster document.
+// =========================================
+
+public sealed class MonsterStaticAdditionalSection
+{
+    [JsonPropertyName("title")]
+    public string Title { get; set; } = string.Empty;
+
+    [JsonPropertyName("section_type")]
+    public string SectionType { get; set; } = string.Empty;
+
+    [JsonPropertyName("intro")]
+    public string Intro { get; set; } = string.Empty;
+
+    [JsonPropertyName("entries")]
+    public List<MonsterStaticAdditionalEntry> Entries { get; set; } = new();
+
+    [JsonPropertyName("table")]
+    public MonsterLoreTableData? Table { get; set; }
+}
+
+public sealed class MonsterStaticAdditionalEntry
+{
+    [JsonPropertyName("name")]
+    public string Name { get; set; } = string.Empty;
+
+    [JsonPropertyName("action_type")]
+    public string ActionType { get; set; } = string.Empty;
+
+    [JsonPropertyName("description")]
+    public string Description { get; set; } = string.Empty;
+
+    [JsonPropertyName("table")]
+    public MonsterLoreTableData? Table { get; set; }
 }
 
 

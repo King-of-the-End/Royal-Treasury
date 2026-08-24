@@ -1,7 +1,7 @@
 {
   "Name": "DGR 020 - EROSPOINT",
   "Group": "DGR Frame Units",
-  "Source": "Blade, Bone & Benefit",
+  "Source": "Blade, Bone \u0026 Benefit",
   "Information": "**DGR 020 - EROSPOINT**\n\nEROSPOINT was designed to hold back away from front-line units, suppressing opponents by overloading their senses with their eidomantic arrows, then causing the energy released from those arrows to build up and explode in a dramatic flash. These more elegant units were assigned to marksmen and dextrous pilots, who could best use their advanced speed and targeting systems.",
   "Information Sections": [
     {
@@ -28,10 +28,12 @@
         "size": "Huge",
         "type": "construct (DGR)",
         "alignment": "",
-        "footprint": "3"
+        "tags": [
+          "footprint 3"
+        ]
       },
       "armor_class": "21 (natural armor)",
-      "hit_points": "170 (20d12 + 40)",
+      "hit_points": "170 (20d12 \u002B 40)",
       "threshold": "10",
       "speed": {
         "walk": "40 ft.",
@@ -46,40 +48,40 @@
       "ability_scores": {
         "STR": {
           "score": 18,
-          "modifier": "+4",
-          "save": "+8"
+          "modifier": "\u002B4",
+          "save": "\u002B8"
         },
         "DEX": {
           "score": 25,
-          "modifier": "+7"
+          "modifier": "\u002B7"
         },
         "CON": {
           "score": 14,
-          "modifier": "+2"
+          "modifier": "\u002B2"
         },
         "INT": {
           "score": 8,
           "modifier": "-1",
-          "save": "+3"
+          "save": "\u002B3"
         },
         "WIS": {
           "score": 14,
-          "modifier": "+2"
+          "modifier": "\u002B2"
         },
         "CHA": {
           "score": 20,
-          "modifier": "+5",
-          "save": "+9"
+          "modifier": "\u002B5",
+          "save": "\u002B9"
         }
       },
       "saving_throws": [
-        "Str +8",
-        "Int +3",
-        "Cha +9"
+        "Str \u002B8",
+        "Int \u002B3",
+        "Cha \u002B9"
       ],
       "skills": [
-        "Acrobatics +11",
-        "Perception +12"
+        "Acrobatics \u002B11",
+        "Perception \u002B12"
       ],
       "resistances": [
         "B/P/S (magical)"
@@ -104,10 +106,10 @@
         "passive Perception 22"
       ],
       "languages": [
-        "understands all, but doesn’t speak"
+        "understands all, but doesn\u2019t speak"
       ],
       "challenge_rating": "10 (5,900 XP)",
-      "proficiency_bonus": "+4",
+      "proficiency_bonus": "\u002B4",
       "traits": [],
       "actions": [
         {
@@ -118,7 +120,7 @@
         {
           "name": "DGR Pike",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.",
+          "description": "Melee Weapon Attack: \u002B8 to hit, reach 10 ft., one target. Hit: 15 (2d10 \u002B 4) bludgeoning damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -127,7 +129,7 @@
         {
           "name": "Eidoglamor Arrow",
           "name_format": "bold_italic",
-          "description": "Ranged Weapon Attack: +11 to hit, range 600 ft., one target. Hit: 20 (2d12 + 7) piercing damage. The first time a target is hit by this attack each turn, they must make a DC 17 Wisdom saving throw. On a failure the target is Charmed (or charmed (malfunction) if they are a construct) for 1 minute, and unable to take hostile action toward the DGR or its allies. A target charmed this way repeats the save at the end of each of their turns, ending the effect on a success. If the target was hit by a critical hit, they fail their saving throw automatically.",
+          "description": "Ranged Weapon Attack: \u002B11 to hit, range 600 ft., one target. Hit: 20 (2d12 \u002B 7) piercing damage. The first time a target is hit by this attack each turn, they must make a DC 17 Wisdom saving throw. On a failure the target is Charmed (or charmed (malfunction) if they are a construct) for 1 minute, and unable to take hostile action toward the DGR or its allies. A target charmed this way repeats the save at the end of each of their turns, ending the effect on a success. If the target was hit by a critical hit, they fail their saving throw automatically.",
           "inline_formatting": {
             "Ranged Weapon Attack": "italic",
             "Hit": "italic"

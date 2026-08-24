@@ -1,0 +1,225 @@
+{
+  "Name": "Aspect of Setanta",
+  "Group": "Deific Aspects",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Aspect of Setanta**\n\nSetanta is the god of the impossible, and is known for having achieved unbelievable feats of luck and guts while he was mortal. He unknowingly awakened his Spiral Signature\u2014Heavenbreaking Fist\u2014while defending his home from a localized Outer Titan incursion which could have alerted Luminal Minus to Somnus Domina\u2019s position. His aspect is one of the most powerful even among the eidolic deities, and he is considered to have limitless potential, which is turned toward protecting the universe in its entirety from outside threats.\n\n**Somnian Homecoming**\n\nSetanta\u2019s homeland is a still lesser island not considered part of any nation on Somnus Domina, kept hidden by an ancient technological shield erected during his own life. Since Setanta claims part of Somnus Domina as his home, his own logic that he should be welcome there allows him to freely appear on the planet, even though the Eidolons do their best to keep is influence away from it.\n\n**Potential Seeker**\n\nSetanta has a strong desire to find things that shouldn\u2019t be, or could be absurd. He likes to make friends with anomalies from other universes, timelines, or ways of life, and it is believed that his existence is what allows for the occasional overlap between Somnus Domina\u2019s universe and others it shouldn\u2019t be able to touch. Many believe he becomes immediately aware when an impossible entity comes into being, and he will generally reveal himself to them in one form or another.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Setanta",
+      "Text": "Setanta is the god of the impossible, and is known for having achieved unbelievable feats of luck and guts while he was mortal. He unknowingly awakened his Spiral Signature\u2014Heavenbreaking Fist\u2014while defending his home from a localized Outer Titan incursion which could have alerted Luminal Minus to Somnus Domina\u2019s position. His aspect is one of the most powerful even among the eidolic deities, and he is considered to have limitless potential, which is turned toward protecting the universe in its entirety from outside threats."
+    },
+    {
+      "Title": "Somnian Homecoming",
+      "Text": "Setanta\u2019s homeland is a still lesser island not considered part of any nation on Somnus Domina, kept hidden by an ancient technological shield erected during his own life. Since Setanta claims part of Somnus Domina as his home, his own logic that he should be welcome there allows him to freely appear on the planet, even though the Eidolons do their best to keep is influence away from it."
+    },
+    {
+      "Title": "Potential Seeker",
+      "Text": "Setanta has a strong desire to find things that shouldn\u2019t be, or could be absurd. He likes to make friends with anomalies from other universes, timelines, or ways of life, and it is believed that his existence is what allows for the occasional overlap between Somnus Domina\u2019s universe and others it shouldn\u2019t be able to touch. Many believe he becomes immediately aware when an impossible entity comes into being, and he will generally reveal himself to them in one form or another."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Setanta%2C%20the%20Heavenbreaker.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Setanta%2C%20the%20Heavenbreaker.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Zero%20Point%20God%20Emblem%20-%20Setanta%2C%20the%20Heavenbreaker.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Setanta%2C%20the%20Heavenbreaker.png"
+    },
+    {
+      "Label": "Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Zero%20Point%20God%20Emblem%20-%20Setanta%2C%20the%20Heavenbreaker.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_setanta",
+      "section_type": "Stat Block",
+      "title": "Aspect of Setanta",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (human)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "525 (50d8 \u002B 300)",
+      "speed": {
+        "walk": "40 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "critical 19",
+        "deific"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B10"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B7"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B7"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B11"
+        },
+        "CHA": {
+          "score": 28,
+          "modifier": "\u002B9"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B10",
+        "Dex \u002B7",
+        "Int \u002B7",
+        "Wis \u002B11"
+      ],
+      "skills": [
+        "Athletics \u002B15",
+        "Intimidation \u002B18",
+        "Perception \u002B16",
+        "Persuasion \u002B18"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 240 ft.",
+        "passive Perception 26"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "\u002B9",
+      "traits": [
+        {
+          "name": "Impossible Resilience (Recharge 3-6)",
+          "name_format": "bold_italic",
+          "description": "When Setanta fails a saving throw, he can succeed instead."
+        },
+        {
+          "name": "Macro Breaker",
+          "name_format": "bold_italic",
+          "description": "Setanta\u2019s damage cannot be reduced or negated by features that reference his size. For the purposes of damage, he is always treated as whatever size is more beneficial to him."
+        },
+        {
+          "name": "Make the Impossible Real (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Setanta is reduced to 0 hit points, he instead resets to 400 hit points, recharges all of his traits and actions, and for 1 hour gains a bonus to all saving throws he makes (including death saves) equal to half his proficiency bonus, rounded up (\u002B5), and can use his Mythic Actions. When Make the Impossible Real activates, he can teleport to any unoccupied space he chooses within 120 feet, and may use Call Ulster Frame immediately (requiring no action). If a party defeats Setanta after using Make the Impossible Real, they are awarded an additional 155,000 XP (310,000 XP total)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Setanta makes three Lord Spiral Attacks."
+        },
+        {
+          "name": "Lord Spiral",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 10 ft., one target. Hit: 17 (2d10 \u002B 6) piercing damage plus 9 (2d8) force damage. If any damage die rolled for this attack are their maximum result (such as a 10 on a d10 or 8 on a d8), Setanta rolls that die again and adds the new result to the damage as well. He may also do this on the re-rolled damage die.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dimensional Helix (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Setanta generates a swirling drill-like vortex of spiraling crimson energy, which he unleashes before him in a 300-foot cone originating from him. Each creature in that space must make a DC 25 Dexterity saving throw, taking 66 (12d10) piercing damage on a failed save, or half as much on a success. Alternatively, he can use this action to target a single creature within 15 feet of him, who must make the saving throw alone. If they do, that creature takes an extra 55 (10d10) piercing damage, but on a successful save takes no damage at all.\n\nWhen this effect ends, Setanta may teleport to any unoccupied space adjacent to any of his targets."
+        },
+        {
+          "name": "Mythic Action: Lord Stinger",
+          "name_format": "bold_italic",
+          "description": "Setanta takes the Dash and Disengage actions simultaneously, while using his movement speed to move in a straight line, ending his movement in an unoccupied space he can see and that he could reach. As he moves in this straight line, he can make a single weapon attack with advantage against each creature he moves within 10 feet of before reaching his destination. He rolls a single weapon attack to use as a result against each target attacked this way."
+        },
+        {
+          "name": "Mythic Action: Call Ulster Frame (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Setanta manifests an Ulster Frame, which appears in an unoccupied space within 120 feet of him, or appears around him, allowing him to immediately begin piloting it. While piloting this Ulster Frame, his proficiency bonus becomes \u002B9, and if damage would reduce the Ulster Frame to 0 hit points, that damage is dealt to Setanta instead."
+        },
+        {
+          "name": "Mythic Action: Heavenbreaking Fist (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Setanta either recharges his Dimensional Helix or produces the effects of the wish spell, incurring no detrimental effects for himself. This is not treated as a magical effect. If Setanta\u2019s wish spell has an ongoing effect, then producing its effects again ends the previous effect. He uses Charisma as his spellcasting ability when relevant."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Instinct Guard",
+          "name_format": "bold_italic",
+          "description": "When hit by a weapon attack, Setanta can quickly block to increase his AC by 10, possibly changing the result. If this causes the attack to miss, Setanta applies this bonus against each attack from the same target until the start of his next turn or until he is hit by an attack."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Defiant Movement",
+            "name_format": "bold_italic",
+            "description": "Setanta moves up to half of their movement speed. When moving this way, they can move as though they are in a zero-gravity environment until their movement ends."
+          },
+          {
+            "name": "Break Up!",
+            "name_format": "bold_italic",
+            "description": "Setanta hurls Lord Spiral at a point he can see within 60 feet of himself, where it unleashes a shockwave in a 15-foot sphere centred there. Each target in range must succeed a DC 25 Strength saving throw or be knocked prone. Lord Spiral then returns to him."
+          },
+          {
+            "name": "Let\u2019s Get Fired Up! (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Setanta gathers eidomantic energy into Lord Spiral until the start of his next turn, during which time all attacks made against him have advantage. On his next turn he has advantage on all attacks he makes."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "options": [
+          {
+            "name": "Fateful Coin",
+            "name_format": "bold_italic",
+            "description": "If Impossible Resilience is recharging, Setanta may roll to recharge it immediately."
+          },
+          {
+            "name": "Fusion Storm (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Setanta strikes the ground with Lord Spiral, causing a burst of prismatic energy to erupt around him. Each creature he chooses within 40 feet must make a DC 25 Constitution saving throw, taking 36 (8d8) radiant damage on a failure."
+          },
+          {
+            "name": "Remember This Attack (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Setanta makes a single Lord Spiral attack against a creature within reach. On a hit, the attack is an automatic critical hit."
+          }
+        ],
+        "intro": "Setanta may use the following actions as Legendary Actions for 1 hour after using his Mythic Awakening."
+      }
+    }
+  ]
+}

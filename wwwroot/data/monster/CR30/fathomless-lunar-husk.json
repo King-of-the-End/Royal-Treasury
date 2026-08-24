@@ -1,0 +1,352 @@
+{
+  "Name": "Fathomless Lunar Husk",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "A fathomless lunar husk is a cosmic graveyard personified. They are the result of a planetary level of death occurring very suddenly, such as by a rapid extinction event. When a planet dies, its latent arcane energy and the sorrow of its inhabitants twist together and become this vengeful cosmic entity which serves only to repeat the same tragedy elsewhere. They are a galactic cancer, and when one comes to be it is considered a serious threat that most exolunar organizations take note of.\n\n**Fiend or Undead**\n\nThere are two versions of a fathomless lunar husk: one that is an undead creature, and another that is a yokai. Each possesses a different additional feature, but they largely function the same way. Both are rooted to the Material Plane (unlike most yokai, who are anchored to the Realm of Shadows), and both seek to destroy other worlds in the same way theirs was destroyed.\n\nThe yokai variant has the Yokai Nourishment quality trait, and the undead variant has the Undead Fortitude quality trait. The yokai version also replaces necrotic damage in this stat block with psychic damage.\n\nDepending on which the husk is, it may leave different types of destruction in its wake: the undead husk may cause its destroyed victims, ships, and frame units to reanimate as an extension of it, serving as a vanguard or defensive force. The yokai version, on the other hand, may attract the attention of other yokai, who swarm ahead of the husk to take advantage of the oncoming doom and terror that will come with its eventual arrival.\n\n**Planetary Death Aura**\n\nWhen a fathomless lunar husk arrives on a planet (or near it), it begins to siphon off the life force of the world as a whole. This effect is rapid: after the first day, a 1-mile radius area closest to its point of contact with the world begins to wither and die. Flora and fauna begin to perish as living matter petrifies or crumbles away. Complete living beings, such as mortals, who enter into this space or complete a Long Rest within it must make a DC 16 Constitution saving throw, taking 2d10 necrotic damage on a failed save, and their maximum hit points are reduced by the damage taken. This damage can only be reversed through use of spells like greater restoration and remove curse cast at 5th level or higher, or similar magic. The sky proceeds to darken, taking on an appearance similar to the Realm of Shadows as life is sucked from the very soil. Within this aura, the dead often rise up as undead, and yokai run rampant (both of which are unaffected by it). Yokai of all sorts thrive in this aura, and can replace the usual emotional devastation they use to feed with the agony of the planet itself, allowing them to feed endlessly.\n\nEach day, the radius of aura is doubled, leading to most average planets being completely covered within a month. Generally, most planets can survive for a time under this effect by utilizing protective shelters and enchantments, but growing food and moving on the surface becomes difficult, leading existing life to have to delve deeper and deeper underground to avoid the encroaching aura, which begins to permeate the planet once it is covered. Places protected by powerful divine beings or magic might act as an oasis in this desert of decay, but this does nothing to protect the planet as a whole.\n\nAfter the planet\u2019s surface has been entirely covered, it slowly breaks it down, and the aura seeps into the planet\u2019s crust until it eventually reaches the core. Once it has drained the core of a world completely, the planet dies and can no longer support life, and the husk triggers tectonic disasters that rip the planet apart from the inside, destroying it outright.",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Fathomless%20Lunar%20Husk.png",
+  "Stat Blocks": [
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Colossal",
+        "type": "undead",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "740 (40d20 \u002B 320)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical",
+        "massive (L/15 feet/DC 22)",
+        "regen 40",
+        "Undead Fortitude"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 26,
+          "modifier": "\u002B8"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B10"
+        },
+        "CON": {
+          "score": 26,
+          "modifier": "\u002B8"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4",
+          "save": "\u002B5"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "\u002B4"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B10",
+        "Int \u002B5"
+      ],
+      "skills": [],
+      "resistances": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 240 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "-"
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "\u002B9",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "title": "Fathomless Lunar Husk",
+      "traits": [
+        {
+          "name": "Planetary Decay",
+          "name_format": "bold_italic",
+          "description": "Any creature who starts its turn within 20 feet of the husk is overwhelmed by its turn decaying aura and must make a DC 24 Constitution saving throw. On a failure, they take 18 (4d8) necrotic damage. Creatures who are immune to this damage take half of it regardless of immunities, resistances, or damage thresholds."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The husk makes one Bite attack and four Death Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B17 to hit, reach 30 ft., one target. Hit: 21 (2d12 \u002B 8) piercing damage plus 18 (4d8) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Death Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B17 to hit, reach 40 ft., one target. Hit: 19 (2d10 \u002B 8) slashing damage plus 9 (2d8) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dread Upheaval (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The husk performs one of the following Upheaval actions:",
+          "options": [
+            {
+              "name": "Debris Field",
+              "description": "If the husk is in a zero-gravity environment, it summons debris (or transforms the terrain into it), turning it into a debris field with a density of 2d4 \u002B 2. It remains this way for 1 hour, unless the husk uses another Upheaval action. The husk automatically succeeds saving throws against its debris field, and is ignored by negative effects it produces if it wishes to be."
+            },
+            {
+              "name": "Natural Disaster",
+              "description": "The husk produces the effects of the earthquake spell, using Constitution as its spellcasting ability. This effect ends if it uses another Upheaval action."
+            },
+            {
+              "name": "Meteorfall",
+              "description": "A meteor made from the remains of the husk\u2019s planet of origin is summoned from the skies above, which crashes down at a point the husk chooses within 1 mile. Each creature in a 40-foot-radius sphere centered on that point must make a DC 24 Dexterity saving throw, taking 53 (15d6) bludgeoning damage and 53 (15d6) necrotic damage on a failed save, or half as much on a successful one."
+            }
+          ]
+        }
+      ],
+      "legendary_actions": [
+        {
+          "name": "Move",
+          "name_format": "bold_italic",
+          "description": "The husk moves up to its movement speed."
+        },
+        {
+          "name": "Claws",
+          "name_format": "bold_italic",
+          "description": "The husk makes one Death Claw attack each at up to two targets within reach."
+        },
+        {
+          "name": "Dead Weight Flare (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The husk charges and unleashes a burst of necrotic energy from its maw, targeting a point it can see within 120 feet, which expands into a 15-foot radius sphere. Each creature in that space must make a DC 21 Charisma saving throw, or become sluggish until the end of the husk\u2019s next turn."
+        }
+      ],
+      "id": "fathomless_lunar_husk_undead",
+      "tag": "Undead",
+      "raw_text": "**FATHOMLESS LUNAR HUSK**\n\n*Colossal undead, chaotic evil*\n**Armor Class** 17 (natural armor)\n**Hit Points** 740 (40d20 \u002B 320)\n**Speed** 40 ft., fly (hover) 60 ft., 0-G acceleration 180 ft.\n**Quality Traits** Magic resist, magical, massive (L/15 feet/DC 22), regen 40, Undead Fortitude\n**STR** 26 (\u002B8) | **DEX** 13 (\u002B1; save \u002B10) | **CON** 26 (\u002B8) | **INT** 3 (-4; save \u002B5) | **WIS** 16 (\u002B3) | **CHA** 18 (\u002B4)\n**Immunities** necrotic, poison; B/P/S (magical); charmed, frightened, exhaustion, poisoned\n**Senses** blindsight 240 ft., passive Perception 13\n**Languages** -\n**Challenge Rating** 30 (155,000 XP) **Prof Bonus** \u002B9\n\n**TRAITS**\n\n***Legendary Resistance (3/Day).*** When the lunar husk fails a saving throw, it can choose to succeed instead.\n\n***Planetary Decay.*** Any creature who starts its turn within 20 feet of the husk is overwhelmed by its turn decaying aura and must make a DC 24 Constitution saving throw. On a failure, they take 18 (4d8) necrotic damage. Creatures who are immune to this damage take half of it regardless of immunities, resistances, or damage thresholds.\n\n**ACTIONS**\n\n***Multiattack.*** The husk makes one Bite attack and four Death Claw attacks.\n\n***Bite.*** *Melee Weapon Attack:* \u002B17 to hit, reach 30 ft., one target. *Hit:* 21 (2d12 \u002B 8) piercing damage plus 18 (4d8) necrotic damage.\n\n***Death Claw.*** *Melee Weapon Attack:* \u002B17 to hit, reach 40 ft., one target. *Hit:* 19 (2d10 \u002B 8) slashing damage plus 9 (2d8) necrotic damage.\n\n***Dread Upheaval (Recharge 5-6).*** The husk performs one of the following Upheaval actions:\n- ***Debris Field.*** If the husk is in a zero-gravity environment, it summons debris (or transforms the terrain into it), turning it into a debris field with a density of 2d4 \u002B 2. It remains this way for 1 hour, unless the husk uses another Upheaval action. The husk automatically succeeds saving throws against its debris field, and is ignored by negative effects it produces if it wishes to be.\n- ***Natural Disaster.*** The husk produces the effects of the earthquake spell, using Constitution as its spellcasting ability. This effect ends if it uses another Upheaval action.\n- ***Meteorfall.*** A meteor made from the remains of the husk\u2019s planet of origin is summoned from the skies above, which crashes down at a point the husk chooses within 1 mile. Each creature in a 40-foot-radius sphere centered on that point must make a DC 24 Dexterity saving throw, taking 53 (15d6) bludgeoning damage and 53 (15d6) necrotic damage on a failed save, or half as much on a successful one.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n\n***Move.*** The husk moves up to its movement speed.\n\n***Claws.*** The husk makes one Death Claw attack each at up to two targets within reach.\n\n***Dead Weight Flare (Costs 2 Actions).*** The husk charges and unleashes a burst of necrotic energy from its maw, targeting a point it can see within 120 feet, which expands into a 15-foot radius sphere. Each creature in that space must make a DC 21 Charisma saving throw, or become sluggish until the end of the husk\u2019s next turn.",
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_action_count": 3
+    },
+    {
+      "section_type": "Stat Block",
+      "creature": {
+        "size": "Colossal",
+        "type": "fiend (yokai)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "740 (40d20 \u002B 320)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Magic resist",
+        "magical",
+        "massive (L/15 feet/DC 22)",
+        "regen 40",
+        "Yokai Nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 26,
+          "modifier": "\u002B8"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B10"
+        },
+        "CON": {
+          "score": 26,
+          "modifier": "\u002B8"
+        },
+        "INT": {
+          "score": 3,
+          "modifier": "-4",
+          "save": "\u002B5"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "\u002B4"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B10",
+        "Int \u002B5"
+      ],
+      "skills": [],
+      "resistances": [],
+      "immunities": [
+        "psychic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened",
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 240 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "-"
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "\u002B9",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "title": "Fathomless Lunar Husk",
+      "traits": [
+        {
+          "name": "Planetary Decay",
+          "name_format": "bold_italic",
+          "description": "Any creature who starts its turn within 20 feet of the husk is overwhelmed by its turn decaying aura and must make a DC 24 Constitution saving throw. On a failure, they take 18 (4d8) psychic damage. Creatures who are immune to this damage take half of it regardless of immunities, resistances, or damage thresholds."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The husk makes one Bite attack and four Death Claw attacks."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B17 to hit, reach 30 ft., one target. Hit: 21 (2d12 \u002B 8) piercing damage plus 18 (4d8) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Death Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B17 to hit, reach 40 ft., one target. Hit: 19 (2d10 \u002B 8) slashing damage plus 9 (2d8) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dread Upheaval (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The husk performs one of the following Upheaval actions:",
+          "options": [
+            {
+              "name": "Debris Field",
+              "description": "If the husk is in a zero-gravity environment, it summons debris (or transforms the terrain into it), turning it into a debris field with a density of 2d4 \u002B 2. It remains this way for 1 hour, unless the husk uses another Upheaval action. The husk automatically succeeds saving throws against its debris field, and is ignored by negative effects it produces if it wishes to be."
+            },
+            {
+              "name": "Natural Disaster",
+              "description": "The husk produces the effects of the earthquake spell, using Constitution as its spellcasting ability. This effect ends if it uses another Upheaval action."
+            },
+            {
+              "name": "Meteorfall",
+              "description": "A meteor made from the remains of the husk\u2019s planet of origin is summoned from the skies above, which crashes down at a point the husk chooses within 1 mile. Each creature in a 40-foot-radius sphere centered on that point must make a DC 24 Dexterity saving throw, taking 53 (15d6) bludgeoning damage and 53 (15d6) psychic damage on a failed save, or half as much on a successful one."
+            }
+          ]
+        }
+      ],
+      "legendary_actions": [
+        {
+          "name": "Move",
+          "name_format": "bold_italic",
+          "description": "The husk moves up to its movement speed."
+        },
+        {
+          "name": "Claws",
+          "name_format": "bold_italic",
+          "description": "The husk makes one Death Claw attack each at up to two targets within reach."
+        },
+        {
+          "name": "Dead Weight Flare (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The husk charges and unleashes a burst of psychic energy from its maw, targeting a point it can see within 120 feet, which expands into a 15-foot radius sphere. Each creature in that space must make a DC 21 Charisma saving throw, or become sluggish until the end of the husk\u2019s next turn."
+        }
+      ],
+      "id": "fathomless_lunar_husk_yokai",
+      "tag": "Yokai",
+      "raw_text": "**FATHOMLESS LUNAR HUSK**\n\n*Colossal fiend (yokai), chaotic evil*\n**Armor Class** 17 (natural armor)\n**Hit Points** 740 (40d20 \u002B 320)\n**Speed** 40 ft., fly (hover) 60 ft., 0-G acceleration 180 ft.\n**Quality Traits** Magic resist, magical, massive (L/15 feet/DC 22), regen 40, Yokai Nourishment\n**STR** 26 (\u002B8) | **DEX** 13 (\u002B1; save \u002B10) | **CON** 26 (\u002B8) | **INT** 3 (-4; save \u002B5) | **WIS** 16 (\u002B3) | **CHA** 18 (\u002B4)\n**Immunities** psychic, poison; B/P/S (magical); charmed, frightened, exhaustion, poisoned\n**Senses** blindsight 240 ft., passive Perception 13\n**Languages** -\n**Challenge Rating** 30 (155,000 XP) **Prof Bonus** \u002B9\n\n**TRAITS**\n\n***Legendary Resistance (3/Day).*** When the lunar husk fails a saving throw, it can choose to succeed instead.\n\n***Planetary Decay.*** Any creature who starts its turn within 20 feet of the husk is overwhelmed by its turn decaying aura and must make a DC 24 Constitution saving throw. On a failure, they take 18 (4d8) psychic damage. Creatures who are immune to this damage take half of it regardless of immunities, resistances, or damage thresholds.\n\n**ACTIONS**\n\n***Multiattack.*** The husk makes one Bite attack and four Death Claw attacks.\n\n***Bite.*** *Melee Weapon Attack:* \u002B17 to hit, reach 30 ft., one target. *Hit:* 21 (2d12 \u002B 8) piercing damage plus 18 (4d8) psychic damage.\n\n***Death Claw.*** *Melee Weapon Attack:* \u002B17 to hit, reach 40 ft., one target. *Hit:* 19 (2d10 \u002B 8) slashing damage plus 9 (2d8) psychic damage.\n\n***Dread Upheaval (Recharge 5-6).*** The husk performs one of the following Upheaval actions:\n- ***Debris Field.*** If the husk is in a zero-gravity environment, it summons debris (or transforms the terrain into it), turning it into a debris field with a density of 2d4 \u002B 2. It remains this way for 1 hour, unless the husk uses another Upheaval action. The husk automatically succeeds saving throws against its debris field, and is ignored by negative effects it produces if it wishes to be.\n- ***Natural Disaster.*** The husk produces the effects of the earthquake spell, using Constitution as its spellcasting ability. This effect ends if it uses another Upheaval action.\n- ***Meteorfall.*** A meteor made from the remains of the husk\u2019s planet of origin is summoned from the skies above, which crashes down at a point the husk chooses within 1 mile. Each creature in a 40-foot-radius sphere centered on that point must make a DC 24 Dexterity saving throw, taking 53 (15d6) bludgeoning damage and 53 (15d6) psychic damage on a failed save, or half as much on a successful one.\n\n**LEGENDARY ACTIONS (3 ACTIONS)**\n\n***Move.*** The husk moves up to its movement speed.\n\n***Claws.*** The husk makes one Death Claw attack each at up to two targets within reach.\n\n***Dead Weight Flare (Costs 2 Actions).*** The husk charges and unleashes a burst of psychic energy from its maw, targeting a point it can see within 120 feet, which expands into a 15-foot radius sphere. Each creature in that space must make a DC 21 Charisma saving throw, or become sluggish until the end of the husk\u2019s next turn.",
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      },
+      "legendary_action_count": 3
+    }
+  ]
+}

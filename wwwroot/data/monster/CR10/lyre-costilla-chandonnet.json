@@ -24,7 +24,7 @@
         "alignment": "chaotic good"
       },
       "armor_class": "18 (studded leather, ring of protection)",
-      "hit_points": "120 (16d8 + 48)",
+      "hit_points": "120 (16d8 \u002B 48)",
       "speed": {
         "walk": "30 ft."
       },
@@ -34,49 +34,49 @@
       "ability_scores": {
         "STR": {
           "score": 12,
-          "modifier": "+3",
-          "save": "+4"
+          "modifier": "\u002B3",
+          "save": "\u002B4"
         },
         "DEX": {
           "score": 18,
-          "modifier": "+6",
-          "save": "+9"
+          "modifier": "\u002B6",
+          "save": "\u002B9"
         },
         "CON": {
           "score": 16,
-          "modifier": "+5",
-          "save": "+8"
+          "modifier": "\u002B5",
+          "save": "\u002B8"
         },
         "INT": {
           "score": 13,
-          "modifier": "+3",
-          "save": "+4"
+          "modifier": "\u002B3",
+          "save": "\u002B4"
         },
         "WIS": {
           "score": 15,
-          "modifier": "+4",
-          "save": "+5"
+          "modifier": "\u002B4",
+          "save": "\u002B5"
         },
         "CHA": {
           "score": 19,
-          "modifier": "+6",
-          "save": "+9"
+          "modifier": "\u002B6",
+          "save": "\u002B9"
         }
       },
       "saving_throws": [
-        "Str +4",
-        "Dex +9",
-        "Con +8",
-        "Int +4",
-        "Wis +5",
-        "Cha +9"
+        "Str \u002B4",
+        "Dex \u002B9",
+        "Con \u002B8",
+        "Int \u002B4",
+        "Wis \u002B5",
+        "Cha \u002B9"
       ],
       "skills": [
-        "Acrobatics +11",
-        "Deception +8",
-        "Investigation +5",
-        "Perception +10",
-        "Performance +12"
+        "Acrobatics \u002B11",
+        "Deception \u002B8",
+        "Investigation \u002B5",
+        "Perception \u002B10",
+        "Performance \u002B12"
       ],
       "resistances": [],
       "immunities": [],
@@ -91,25 +91,22 @@
         "Celestial"
       ],
       "challenge_rating": "10 (5,900 XP)",
-      "proficiency_bonus": "+4",
-      "notes": [
-        "*Checks, saves and skills above include Jack of All Trades, and Ring of Protection."
-      ],
+      "proficiency_bonus": "\u002B4",
       "traits": [
         {
-          "name": "Maiden’s Luck (Recharge 5-6)",
+          "name": "Maiden\u2019s Luck (Recharge 5-6)",
           "name_format": "bold_italic",
           "description": "When Lyre makes an attack roll, ability check, or saving throw, she may choose to roll an additional d20 after seeing the d20 results of her own roll. She then chooses which d20 result among those rolled to use."
         },
         {
           "name": "Metamagic (4/Day)",
           "name_format": "bold_italic",
-          "description": "When Lyre casts a spell, she can choose to apply one of the following effects to it:\n\n• Careful Spell. Lyre chooses up to four creatures targeted by the spell’s effects, and they are excluded from its effects and damage for the first turn of the spell’s duration.\n• Empowered Spell. Up to four targets of the spell that Lyre chooses have disadvantage on the first saving throw they make against it.\n• Quickened Spell. The spell (which must be one with a casting time of 1 action) is cast as a bonus action."
+          "description": "When Lyre casts a spell, she can choose to apply one of the following effects to it:\n\n\u2022 Careful Spell. Lyre chooses up to four creatures targeted by the spell\u2019s effects, and they are excluded from its effects and damage for the first turn of the spell\u2019s duration.\n\u2022 Empowered Spell. Up to four targets of the spell that Lyre chooses have disadvantage on the first saving throw they make against it.\n\u2022 Quickened Spell. The spell (which must be one with a casting time of 1 action) is cast as a bonus action."
         },
         {
           "name": "Ring of Protection",
           "name_format": "bold_italic",
-          "description": "Lyre wears a ring of protection that grants her a +1 bonus to her saving throws and armor class (already accounted for in this stat block)."
+          "description": "Lyre wears a ring of protection that grants her a \u002B1 bonus to her saving throws and armor class (already accounted for in this stat block)."
         },
         {
           "name": "Spellcasting",
@@ -191,7 +188,7 @@
         {
           "name": "Resonant Rapier",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +10 to hit, magical, reach 5 ft., one target. Hit: 11 (1d8 + 6) piercing damage plus 5 (1d8) thunder damage.",
+          "description": "Melee Weapon Attack: \u002B10 to hit, magical, reach 5 ft., one target. Hit: 11 (1d8 \u002B 6) piercing damage plus 5 (1d8) thunder damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -200,7 +197,7 @@
         {
           "name": "Revolver",
           "name_format": "bold_italic",
-          "description": "Ranged Weapon Attack: +8 to hit, range 20/60 ft., reload 6, one target. Hit: 15 (2d6 + 4) piercing damage.",
+          "description": "Ranged Weapon Attack: \u002B8 to hit, range 20/60 ft., reload 6, one target. Hit: 15 (2d6 \u002B 4) piercing damage.",
           "inline_formatting": {
             "Ranged Weapon Attack": "italic",
             "Hit": "italic"
@@ -211,10 +208,11 @@
         {
           "name": "Bardic Inspiration (Recharge 4-6)",
           "name_format": "bold_italic",
-          "description": "Lyre inspires one creature who can see or hear her within 60 feet of her. For the next minute, that creature has one Bardic Inspiration. After they make an attack roll, ability check, or saving throw (but before the roll’s success or failure is announced) they can spend it to roll a d10 and add it to the result."
+          "description": "Lyre inspires one creature who can see or hear her within 60 feet of her. For the next minute, that creature has one Bardic Inspiration. After they make an attack roll, ability check, or saving throw (but before the roll\u2019s success or failure is announced) they can spend it to roll a d10 and add it to the result."
         }
       ],
-      "reactions": []
+      "reactions": [],
+      "ability_note": "*Checks, saves and skills above include Jack of All Trades, and Ring of Protection."
     }
   ]
 }

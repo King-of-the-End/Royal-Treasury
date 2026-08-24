@@ -1,0 +1,149 @@
+{
+  "Name": "Exolunar Commander",
+  "Group": "Exolunar Confederation",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Exolunar%20Confederation%20Soldier.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Exolunar%20Confederation%20Soldier.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Exolunar%20Confederation%20Soldier.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "exolunar_commander",
+      "section_type": "Stat Block",
+      "title": "Exolunar Commander",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "19 (threadware)",
+      "hit_points": "91 (14d8 + 28)",
+      "speed": {
+        "walk": "30 ft.",
+        "0-G acceleration": "60 ft."
+      },
+      "quality_traits": [
+        "Watchful"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+7"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+8"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Wis +8"
+      ],
+      "skills": [
+        "Insight +8",
+        "Perception +8"
+      ],
+      "resistances": [
+        "radiant"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "charmed",
+        "enraged"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [
+        {
+          "name": "Astral Breath",
+          "name_format": "bold_italic",
+          "description": "The elf can survive without air for up to 1 hour, and has advantage on saving throws made as a result of breathing in harmful substances."
+        },
+        {
+          "name": "Lunar Threadware, +2",
+          "name_format": "bold_italic",
+          "description": "The elf wears armor that is made from rare exolunar material, which causes all bludgeoning, piercing, and slashing damage done to it to be reduced by 7 (independently). This armor also has a +2 enhancement bonus."
+        },
+        {
+          "name": "Nova Shield",
+          "name_format": "bold_italic",
+          "description": "The elf wears a projectable shield, which is automatically deployed at the end of each of their turns where they did not make any two-handed attacks, and lasts until the end of their next turn. While deployed, their armor class increases by 2."
+        },
+        {
+          "name": "Piloting Proficiency",
+          "name_format": "bold_italic",
+          "description": "When the elf is piloting a frame unit, they may use the higher proficiency bonus between the two as their own for actions the DGR takes, and may use the frame unit’s Multiattack or Multiaction action if they have one. If that action would involve fewer than three weapon attacks, the commander may make additional weapon attacks through the DGR to bring the total to three, using its own weapons to do so."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The elf makes three weapon attacks."
+        },
+        {
+          "name": "Novaburn Spear, +1",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target, or as a Ranged Weapon Attack: +8 to hit, range 20/60 ft., one target. Hit: 9 (1d6 + 5) piercing damage plus 4 (1d6) radiant damage, or 10 (1d8 + 5) piercing damage plus 5 (1d8) radiant damage if wielded with two hands.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Radiant Arrowfall (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The elf creates a storm of radiant arrows that fire at targets in one of two fashions, which the elf decides: they may target up to 4 creatures within 60 feet of them, or may target all creatures in a 20-foot-radius sphere centered within 60 feet. Each target must make a DC 16 Dexterity saving throw, taking 22 (3d10 + 5) radiant damage on a failure, or half as much damage on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Radiant Step (3/Rest)",
+          "name_format": "bold_italic",
+          "description": "The elf teleports to an unoccupied space it can see within 30 feet, then gains a fly (hover) speed equal to its base movement speed until the end of its next turn."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Nova Parry",
+          "name_format": "bold_italic",
+          "description": "If the elf’s Nova Shield is deployed when they are targeted by an attack they can see, they may use their reaction to increase their armor class against that attack by an additional 2, and if the attack originated from a creature within 10 feet they take 7 (2d6) fire damage if they still hit the elf."
+        }
+      ]
+    }
+  ]
+}

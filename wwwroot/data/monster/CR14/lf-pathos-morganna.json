@@ -1,0 +1,167 @@
+{
+  "Name": "L.F. Pathos Morganna",
+  "Group": "Lunar Frames",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**PATHOS MORGANNA**\n\nPATHOS MORGANNA is an elite unit used by high-ranking confederation pilots, or deployed on their own as guardians for important locations. They are protective sentinels and sniper units, who were also built with arcane reactors allowing them to convert arcane power into a variety of effects.",
+  "Information Sections": [
+    {
+      "Title": "PATHOS MORGANNA",
+      "Text": "PATHOS MORGANNA is an elite unit used by high-ranking confederation pilots, or deployed on their own as guardians for important locations. They are protective sentinels and sniper units, who were also built with arcane reactors allowing them to convert arcane power into a variety of effects."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Somnus%20Domina%20-%20L.F.%20PATHOS%20MORGANNA.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Somnus%20Domina%20-%20L.F.%20PATHOS%20MORGANNA.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR14/Somnus%20Domina%20-%20L.F.%20PATHOS%20MORGANNA.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lf_pathos_morganna",
+      "section_type": "Stat Block",
+      "title": "L.F. PATHOS MORGANNA",
+      "creature": {
+        "size": "Titanic",
+        "type": "construct (lunar frame)",
+        "alignment": "",
+        "tags": [
+          "footprint 4"
+        ]
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "189 (14d20 \u002B 42)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "90 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Debris resist",
+        "immutable",
+        "magic resist",
+        "magical",
+        "massive (L/5 feet/DC 17)",
+        "unique"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B12"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B8"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "-",
+          "save": "\u002B5"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1",
+          "save": "\u002B6"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B12",
+        "Con \u002B8",
+        "Int \u002B5",
+        "Cha \u002B6"
+      ],
+      "skills": [
+        "Insight \u002B10",
+        "Perception \u002B15"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "thunder"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "darkvision 240 ft.",
+        "passive Perception 25"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "\u002B5",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Arcane Reactor (3/Rest)",
+          "name_format": "bold_italic",
+          "description": "The frame unit may use any of the following effects when they would be appropriate. When it does so, that use does not consume a use of this trait if the frame unit\u2019s pilot spends a spell slot or limited-use spell of 3rd level or higher when doing so:\n\n\u2022 (As a bonus action) The frame unit teleports to an unoccupied space it can see within 60 feet, then turns invisible until the next time it makes an attack or the end of the turn.\n\u2022 On a successful hit with its Arcanosalvo claws, if the pilot or frame unit doesn\u2019t spend a spell slot to increase its damage, it may use this trait to deal an extra 3d10 force damage instead.\n\u2022 When the frame unit is targeted by a spell of 6th level or lower, it automatically succeeds on all saving throws against that spell and takes no damage from its effects.\n\u2022 (As a reaction to taking damage) The frame unit gains 50 temporary hit points, which disappear at the start of its next turn.\n\u2022 When the frame unit makes a ranged attack, it can multiply the range of that attack by four. Until the end of that turn, attacks using the same weapon, spells, or effect benefit from this bonus.\n\nIt cannot use this trait if the frame unit is incapacitated."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The frame unit makes two Arcanosalvo Claw attacks, then one attack with its Forcerail Bombardment."
+        },
+        {
+          "name": "Arcanosalvo Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 10 ft., one target. Hit: 13 (2d8 \u002B 4) slashing damage. The frame unit or pilot may also expend a spell slot of 2nd-level or higher to deal extra force damage equal to 1d10 per the slot\u2019s level.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Forcerail Bombardment",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B12 to hit, range 100/600 ft., one target. Hit: 40 (6d10 \u002B 7) thunder damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mach Boost",
+          "name_format": "bold_italic",
+          "description": "The frame unit doubles its movement speed until the end of its turn then takes the Dash action."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

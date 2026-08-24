@@ -1,0 +1,290 @@
+{
+  "Name": "Aspect of Berhelyx",
+  "Group": "Deific Aspects",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Aspect of Berhelyx**\n\nBerhelyx is an astral body that aches for destruction and entropy. They are a force that reduces all things around them to nothingness by way of destruction, seeking the end of all things. Berhelyx\u0027s specific motives are unknown, but it is thought to be sensitive to the \u0022vibrations of life\u0022 - the minor ripples caused across the cosmos by active life, changing and evolving through the millennia. It would return the universe to silent stillness, snuffing out thought and growth.\n\n**Prior Destruction**\n\nAs a god representing destruction, other divine powers have previously waged war against Berhelyx, who is for all intents and purposes a dark god. However, even the obliteration of its Divine Realm and true form by Arc Valinn did not silence it forever: destruction is its natural form, and so its Realm only continued to exist in a formless, devastated manner. As an elemental being, Berhelyx only returned later, proving to somehow be beyond permanent destruction. It is not uncommon across the ages for it to occasionally be destroyed, only to re-emerge again.\n\n**World Ending Lure**\n\nWhen a world is close to destruction, it is possible for Berhelyx to appear there (sometimes as a weakened aspect), in response to its Portfolio being evoked. It is not always there to be a part of the procession of annihilation to come, but is drawn to it like a moth to a flame. When it is only partially involved, it appears with its proficiency bonus reduced by 2 (which its saving throws and attacks suffer as a penalty), is considered to have a CR of 18, and cannot use its Mythic Awakening. When something draws its full attention, averting the cause may leave a new problem: Berhelyx, manifested, seeking to see through its purpose.",
+  "Information Sections": [
+    {
+      "Title": "",
+      "Text": "Some gods should stay in their realms. There is a limit to the number of useful miracles in the universe... I wonder, is there a word for a bad miracle? If there isn\u0027t, I suggest Berhelyx.",
+      "IsQuote": true
+    },
+    {
+      "Title": "Aspect of Berhelyx",
+      "Text": "Berhelyx is an astral body that aches for destruction and entropy. They are a force that reduces all things around them to nothingness by way of destruction, seeking the end of all things. Berhelyx\u0027s specific motives are unknown, but it is thought to be sensitive to the \u0022vibrations of life\u0022 - the minor ripples caused across the cosmos by active life, changing and evolving through the millennia. It would return the universe to silent stillness, snuffing out thought and growth."
+    },
+    {
+      "Title": "Prior Destruction",
+      "Text": "As a god representing destruction, other divine powers have previously waged war against Berhelyx, who is for all intents and purposes a dark god. However, even the obliteration of its Divine Realm and true form by Arc Valinn did not silence it forever: destruction is its natural form, and so its Realm only continued to exist in a formless, devastated manner. As an elemental being, Berhelyx only returned later, proving to somehow be beyond permanent destruction. It is not uncommon across the ages for it to occasionally be destroyed, only to re-emerge again."
+    },
+    {
+      "Title": "World Ending Lure",
+      "Text": "When a world is close to destruction, it is possible for Berhelyx to appear there (sometimes as a weakened aspect), in response to its Portfolio being evoked. It is not always there to be a part of the procession of annihilation to come, but is drawn to it like a moth to a flame. When it is only partially involved, it appears with its proficiency bonus reduced by 2 (which its saving throws and attacks suffer as a penalty), is considered to have a CR of 18, and cannot use its Mythic Awakening. When something draws its full attention, averting the cause may leave a new problem: Berhelyx, manifested, seeking to see through its purpose."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Berheylex%2C%20the%20Wellborne%20Horror.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Berheylex%2C%20the%20Wellborne%20Horror.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Lesser%20Deity%20Emblem%20-%20Berhelyx%2C%20the%20Wellborne%20Horror.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Berheylex%2C%20the%20Wellborne%20Horror.png"
+    },
+    {
+      "Label": "Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR25/Lesser%20Deity%20Emblem%20-%20Berhelyx%2C%20the%20Wellborne%20Horror.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_berhelyx",
+      "section_type": "Stat Block",
+      "title": "Aspect of Berhelyx",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "elemental",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "435 (30d20 \u002B 120)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "50 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Critical 18",
+        "deific",
+        "siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "\u002B6"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B10"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B9"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B10"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B12"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B10",
+        "Int \u002B9",
+        "Wis \u002B10",
+        "Cha \u002B12"
+      ],
+      "skills": [
+        "Intimidation \u002B12",
+        "Perception \u002B10",
+        "Survival \u002B10"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "force",
+        "poison",
+        "psychic",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "prone",
+        "unconscious"
+      ],
+      "senses": [
+        "passive Perception 20"
+      ],
+      "languages": [
+        "all",
+        "telepathy 240 ft. (rarely communicates)"
+      ],
+      "challenge_rating": "25 (75,000 XP)",
+      "proficiency_bonus": "\u002B8",
+      "traits": [
+        {
+          "name": "Aching Strikes",
+          "name_format": "bold_italic",
+          "description": "When Berhelyx reduces a creature to 0 hit points, they make three death saving throws immediately, disregarding the result of successes. If a creature who failed at least one saving throw this way dies, or are killed outright by Berhelyx, their body is reduced to ashes and disappears (leaving only artifacts and magic items behind)."
+        },
+        {
+          "name": "Galactic Destruction (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Berhelyx is reduced to 0 hit points or killed outright, they are restored to 150 hit points instead, immediately regain spent Legendary Reactions, and may use their Change Size action immediately (requiring no action). They can then use their Mythic Actions for 1 hour, and may use their reaction to use their Tower of Annulment action immediately. If a party defeats Berhelyx after it uses Galactic Destruction, they are awarded an additional 75,000 XP (for a total of 150,000 XP)."
+        },
+        {
+          "name": "Unstoppable Force",
+          "name_format": "bold_italic",
+          "description": "Berhelyx\u2019s damage cannot be reduced based on resistances, immunities, damage thresholds, or effects that rely on size differences."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Berhelyx makes two Astral Hammer attacks, then uses its Cosmic Disaster."
+        },
+        {
+          "name": "Astral Hammer",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 15 ft., one target. Hit: 23 (3d10 \u002B 6) force damage. After their Mythic Awakening is used, a creature hit by one of these attacks must make a DC 22 Constitution saving throw, taking an additional 27 (6d8) force damage on a failure.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Disaster",
+          "name_format": "bold_italic",
+          "description": "Berhelyx targets two different creatures it can see within 120 feet, who it fires a missile of chaotic astral energy toward. Each target must make a DC 20 Dexterity saving throw, taking 32 (4d10 \u002B 10) force damage on a failure. A creature who fails this saving throw by 5 points or more becomes sluggish until the start of Berhelyx\u2019s next turn."
+        },
+        {
+          "name": "Mythic Action: Tower of Annulment (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Berhelyx creates a Tower of Annulment - a titanic hollow pillar that has a 25-foot diameter, and is 150-feet tall - in an unoccupied space within range. This tower can cut through nonmagical material when it appears, disintegrating material it overlaps with when it appears. As long as this tower exists, on initiative count 20 each round the tower takes an action as directed by Berhelyx."
+        },
+        {
+          "name": "Mythic Action: Ultimate Extermination (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Berhelyx unleashes a distortion that spreads 240 feet in every direction surrounding it. Each creature within range (except Berhelyx or his Tower of Annulment) must make a DC 22 Constitution saving throw, taking 78 (12d12) force damage on a failure, or half as much on a success. Any creature who fails also has their nonmagical weapons and armor damaged to an extent that prevents them from being used or granting protection. Anything not being actively wielded/exposed is not affected (such as stored weapons or ammunition). Any creature reduced to 0 hit points by this distortion immediately dies and is reduced to dust."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Size",
+          "name_format": "bold_italic",
+          "description": "Berhelyx can change their size to become any size between Medium and Titanic. When it is Large or smaller, its Astral Hammer reach becomes 10 feet."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Brutal Hoist",
+            "name_format": "bold_italic",
+            "description": "Berhelyx creates a Huge claw made of astral energy which attempts to grab one creature within 120 feet, who must be smaller than Berhelyx. The target must succeed a DC 20 Strength or Dexterity saving throw (their choice) or be pulled into an unoccupied space within 30 feet of Berhelyx."
+          },
+          {
+            "name": "Catastrophe Minefield (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Berhelyx creates a gravitational distortion that extends 30 feet from it, which is difficult terrain for other creatures and remains until the start of its next turn. A creature who enters any space within this area on their turn takes 1d6 force damage (which repeats for every other space they move through). Ranged attacks made against creatures within this area have disadvantage, unless they are made by Berhelyx."
+          },
+          {
+            "name": "Vanquishing Strike (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Berhelyx targets one creature within 60 feet, around whom a glowing ring of destructive energy appears. The next attack Berhelyx makes against them before the end of its next turn has advantage and, if it hits, is an automatic critical hit."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "options": [
+          {
+            "name": "Astral Hammer",
+            "name_format": "bold_italic",
+            "description": "Berhelyx makes one Astral Hammer attack against a target within range. This attack does not include the saving throw to take force damage."
+          },
+          {
+            "name": "Tower Command (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Berhelyx commands the Tower of Annulment to take one of its actions, which it does immediately."
+          },
+          {
+            "name": "Visions of Annihilation (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Berhelyx chooses three creatures it can see within 90 feet, who must make a DC 21 Charisma saving throw. Each target that fails is hurled into a unique demiplane of annihilation, which morphs to resemble cosmic and natural disasters devastating locations, people, and memories pulled from the target\u2019s subconscious. The target takes 44 (8d10) psychic damage, and is stunned until the start of Berhelyx\u2019s next turn, when they are teleported back to the space they were removed from (or the closest unoccupied space). A creature who succeeds on their save against this action becomes immune to it for 1 hour."
+          }
+        ],
+        "intro": "Berhelyx may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening."
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ],
+  "Additional Sections": [
+    {
+      "title": "Tower of Annulment",
+      "section_type": "Tower of Annulment",
+      "intro": "Titanic Structure. Armor Class 15. Hit Points 200. Threshold 20.",
+      "entries": [
+        {
+          "name": "Berhelyx Bound",
+          "name_format": "bold_italic",
+          "description": "The Tower of Annulment uses Berhelyx\u2019s saving throws (except Dexterity and Strength, which it has no modifier for) when relevant, and shares their resistances and immunities.",
+          "action_type": "Trait"
+        },
+        {
+          "name": "Magic Immunity (5th-level)",
+          "name_format": "bold_italic",
+          "description": "The Tower is immune to the effects of 5th-level and lower spells unless Berhelyx wishes it to be affected. It has advantage on saving throws against magical effects.",
+          "action_type": "Trait"
+        },
+        {
+          "name": "Astral Artillery",
+          "name_format": "bold_italic",
+          "description": "The Tower unleashes a barrage of astral bolts at up to four targets within 240 feet of it. It makes a single Ranged Weapon Attack: \u002B10 to hit, then uses it for all of the attacks. Hit: 33 (6d10) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          },
+          "action_type": "Action"
+        },
+        {
+          "name": "Dispel Complication",
+          "name_format": "bold_italic",
+          "description": "The Tower produces the effects of vanquish magic, targeting one creature Berhelyx chooses within 120 feet of itself, using Berhelyx\u2019s Charisma as its spellcasting ability.",
+          "action_type": "Action"
+        },
+        {
+          "name": "Restore Destroyed (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Berhelyx is teleported inside of the Tower of Annulment, where they gain total cover against anything outside it. While within, Berhelyx regains 28 (5d10) hit points at the start of each of its turns. Berhelyx cannot, however, take its own actions or Legendary Actions, but can use their action to take one of the Tower\u2019s actions on their turn. If the Tower takes 50 points of damage while Berhelyx is within it, they is ejected to an unoccupied space within 30 feet of the Tower on his next turn, and does not regain hit points this way on that turn.\n\nThe Tower rolls to recharge this feature on initiative count 20 before its own action is decided, but cannot roll to recharge it while Berhelyx is within it.",
+          "action_type": "Action"
+        },
+        {
+          "name": "Trigger Quake",
+          "name_format": "bold_italic",
+          "description": "The area within 60 feet of either the Tower or Berhelyx shakes violently (including the air, if there is an atmosphere). Each creature within range except Berhelyx and the Tower must make a DC 20 Constitution saving throw, taking 22 (4d10) force damage and are knocked prone on a failure.",
+          "action_type": "Action"
+        }
+      ]
+    }
+  ]
+}

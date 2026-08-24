@@ -1,0 +1,187 @@
+{
+  "Name": "Frame Killer",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "Modified to battle against frame units, astradecks, and more, the frame killer is an enhanced eidotech soldier that occurs either through scientific tempering and augmentation, or by controlled exposure to specific types of eidomantic radiation. The result is an assassin who possesses a unique quality: the ability to alter their strength to compensate for their size when facing larger opponents. They are also trained and talented killers when facing those of their own scale. Most frame killers become famous mercenaries or assassins.\n\n**Unusual Nature.** The frame killer does not need to eat, drink, or breathe to live.",
+  "Information Sections": [
+    {
+      "Title": "Frame Killer",
+      "Text": "Modified to battle against frame units, astradecks, and more, the frame killer is an enhanced eidotech soldier that occurs either through scientific tempering and augmentation, or by controlled exposure to specific types of eidomantic radiation. The result is an assassin who possesses a unique quality: the ability to alter their strength to compensate for their size when facing larger opponents. They are also trained and talented killers when facing those of their own scale. Most frame killers become famous mercenaries or assassins."
+    },
+    {
+      "Title": "Unusual Nature",
+      "Text": "The frame killer does not need to eat, drink, or breathe to live."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Frame%20Killer.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Frame%20Killer.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Frame%20Killer.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "frame_killer",
+      "section_type": "Stat Block",
+      "title": "Frame Killer",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "usually chaotic neutral"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "238 (25d8 \u002B 125)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "0-G acceleration": "90 ft."
+      },
+      "quality_traits": [
+        "Eidolic",
+        "evasion"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B7"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B10"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B8",
+        "Int \u002B7",
+        "Wis \u002B10"
+      ],
+      "skills": [
+        "Athletics \u002B12",
+        "Perception \u002B10",
+        "Survival \u002B7"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [
+        "enraged",
+        "exhaustion",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "blindsight 10 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "Common",
+        "plus two others"
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Construct Hunter",
+          "name_format": "bold_italic",
+          "description": "When the frame killer makes an attack roll against a construct, it rolls a d4 and adds it to the result."
+        },
+        {
+          "name": "Macro Breaker (Huge)",
+          "name_format": "bold_italic",
+          "description": "When a feature or trait targeting the frame would have an effect detrimental to it based on its size (such as maximum macro damage being dealt to creatures its size, or creatures resisting its damage based on its size) the frame killer is considered to be whatever size would be most beneficial to it for the purposes of those effects, up to a maximum of size Huge.\n\nAdditionally, the frame killer\u2019s carry weight is calculated as though it was a Huge creature."
+        },
+        {
+          "name": "Stealth Generator",
+          "name_format": "bold_italic",
+          "description": "When the frame killer takes the Hide action, it engages a cloaking device that allows it to turn invisible until it takes another action, forcing another creature to make a saving throw or take damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The frame killer makes three weapon attacks, one of which can be its Latch Bolt."
+        },
+        {
+          "name": "Lunarlight Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B12 to hit, reach 5 ft., one target. Hit: 12 (1d10 \u002B 6) force damage plus 9 (2d8) cold or radiant damage (the frame killer chooses when it hits).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Latch Bolt",
+          "name_format": "bold_italic",
+          "description": "The frame killer fires a grappling line at a creature it can see within 30 feet (90 feet in a zero-gravity environment). The target must be small enough for the frame killer to shove or grapple, and the target must succeed a DC 18 Strength or Dexterity saving throw (their choice). On a failure, they are pulled up to 20 feet (60 feet in a zero-gravity environment) into an unoccupied space closer to the frame killer, and the creature is grappled (escape DC 18) until the start of the frame killer\u2019s next turn."
+        },
+        {
+          "name": "Ship-Sundering Blade",
+          "name_format": "bold_italic",
+          "description": "The frame killer overcharges its weaponry to unleash a huge wave of energy from its weapons in the shape of a cresting sword slash. It unleashes this energy at a point it can see within 120 feet, where it expands in a 30-foot-radius sphere. Each target in this space must make a DC 19 Dexterity saving throw, taking 35 (10d6) cold damage and 35 (10d6) force damage on a failed save, or half as much on a successful one. The frame killer is ignored by this effect if it is within its range.\n\nIf this action is taken in a zero-gravity environment, the sphere\u2019s size doubles, as does the range in which it can target."
+        },
+        {
+          "name": "Teleportation Burst",
+          "name_format": "bold_italic",
+          "description": "The frame killer teleports into an unoccupied space it can see within 60 feet, then makes a weapon attack against an adjacent target with advantage. If it is in a zero-gravity environment, the range it can teleport increases to 180 feet."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Scan",
+          "name_format": "bold_italic",
+          "description": "The frame killer makes a Perception check, the d20 result of which cannot be less than 10."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": [],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

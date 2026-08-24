@@ -1,0 +1,167 @@
+{
+  "Name": "Outer Titan, Elite",
+  "Group": "Outer Titans",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Outer%20Titan%20Elite.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Outer%20Titan%20Elite.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Outer%20Titan%20Elite.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "outer_titan_elite",
+      "section_type": "Stat Block",
+      "title": "Outer Titan, Elite",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "aberration (alien)",
+        "alignment": ""
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "233 (15d20 \u002B 75)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Alien absurdity",
+        "eidolic",
+        "macro attacks (Large)",
+        "magic resist",
+        "regen 15"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "\u002B6"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B8"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 11,
+          "modifier": "-",
+          "save": "\u002B5"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B8",
+        "Int \u002B5"
+      ],
+      "skills": [
+        "Athletics \u002B11",
+        "Perception \u002B8"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)",
+        "force"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical)",
+        "psychic"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "hivesense 600 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [],
+      "challenge_rating": "15 (13,000 XP)",
+      "proficiency_bonus": "\u002B5",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The titan makes three Husk Lance attacks."
+        },
+        {
+          "name": "Husk Lance",
+          "name_format": "bold_italic",
+          "description": "Macro Melee Weapon Attack: \u002B11 to hit, reach 15 ft., one target. Hit: 26 (3d12 \u002B 6) piercing damage (macro: 42 piercing).",
+          "inline_formatting": {
+            "Macro Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Elimination Cannon",
+          "name_format": "bold_italic",
+          "description": "Macro Ranged Weapon Attack: \u002B10 to hit, range 240/720 ft., one target. Hit: 27 (4d10 \u002B 5) radiant damage (macro: 45 radiant). A blast erupts around the target: each creature in a 40-foot-radius sphere centered on the target (including the target) must make a DC 18 Dexterity saving throw (macro), taking 31 (4d12 \u002B 5) force damage on a failure, or half as much damage on a success (macro: 53 force).",
+          "inline_formatting": {
+            "Macro Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Meteor Pitch",
+          "name_format": "bold_italic",
+          "description": "The titan throws one creature it is grappling into a space it can see within 60 feet (plus an additional 30 feet for each size category smaller than Huge they are). This is made as a Macro Ranged Weapon Attack: \u002B11 to hit, targeting both the thrown creature and any creature occupying the targeted space. On a hit, both creatures take 26 (4d12) bludgeoning damage and are knocked prone (macro: 48 bludgeoning).",
+          "inline_formatting": {
+            "Macro Ranged Weapon Attack": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Capture Strike",
+          "name_format": "bold_italic",
+          "description": "The titan makes one Husk Lance attack against a Huge or smaller creature within range. On a success the creature takes no damage, but is restrained and grappled (escape DC 19). While grappled this way, the titan can move freely with the creature in tow, but they make one fewer Husk Lance attack with their Multiattack. The titan may grapple up to two creatures this way."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": [],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

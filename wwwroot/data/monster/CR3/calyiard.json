@@ -1,0 +1,110 @@
+{
+  "Name": "Calyiard",
+  "Group": null,
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Calyiard**\n\nThe calyiard\u2014known to some terrestrials as the space cow\u2014is a large, plump, vaguely rhino-like creature that can often be found living a quiet life among debris belts, on meteors, or on other exolunar bodies. They are filter feeders that siphon off microscopic amounts of nutrition in space, combining that with energy they photosynthesize from nearby stars. They mostly live off of solar radiation, but their filter feeding can yield by-products such as calyiard husks that other creatures can eat.\n\nMany colonies and union vessels keep them on board to act as a source of food.\n\n**Calyiard Husk**\n\nThe exoskeleton of a calyiard appears like a rocky growth with a texture to touch like a rough sponge. This husk is the result of filtering out nutrients that aren\u2019t useful to it, but are useful to other creatures. The husk is high in nutritional value, making the calyiard a valued meal to other creatures. Those who know how to remove chunks of it can use the calyiard as a harmless source of food: by succeeding a DC 13 Nature check (DC 10 if the calyiard is domesticated) a creature can gather 1d6 lbs of this material, which can be consumed safely by most creatures. On a failure the calyiard becomes uncooperative, and further attempts that day require it to be sedated or restrained.",
+  "Information Sections": [
+    {
+      "Title": "Calyiard",
+      "Text": "The calyiard\u2014known to some terrestrials as the space cow\u2014is a large, plump, vaguely rhino-like creature that can often be found living a quiet life among debris belts, on meteors, or on other exolunar bodies. They are filter feeders that siphon off microscopic amounts of nutrition in space, combining that with energy they photosynthesize from nearby stars. They mostly live off of solar radiation, but their filter feeding can yield by-products such as calyiard husks that other creatures can eat.\n\nMany colonies and union vessels keep them on board to act as a source of food."
+    },
+    {
+      "Title": "Calyiard Husk",
+      "Text": "The exoskeleton of a calyiard appears like a rocky growth with a texture to touch like a rough sponge. This husk is the result of filtering out nutrients that aren\u2019t useful to it, but are useful to other creatures. The husk is high in nutritional value, making the calyiard a valued meal to other creatures. Those who know how to remove chunks of it can use the calyiard as a harmless source of food: by succeeding a DC 13 Nature check (DC 10 if the calyiard is domesticated) a creature can gather 1d6 lbs of this material, which can be consumed safely by most creatures. On a failure the calyiard becomes uncooperative, and further attempts that day require it to be sedated or restrained."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Calyiard.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Calyiard.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR3/Calyiard.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "calyiard",
+      "section_type": "Stat Block",
+      "title": "Calyiard",
+      "creature": {
+        "size": "Large",
+        "type": "beast (exolunar)",
+        "alignment": null
+      },
+      "armor_class": "11 (natural armor)",
+      "hit_points": "45 (6d10 \u002B 12)",
+      "threshold": "5",
+      "speed": {
+        "walk": "20 ft.",
+        "0-G acceleration": "60 ft."
+      },
+      "quality_traits": [
+        "Exolunar nature"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "DEX": {
+          "score": 13,
+          "modifier": "\u002B1"
+        },
+        "CON": {
+          "score": 15,
+          "modifier": "\u002B2"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "WIS": {
+          "score": 15,
+          "modifier": "\u002B2"
+        },
+        "CHA": {
+          "score": 4,
+          "modifier": "-3"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception \u002B4"
+      ],
+      "resistances": [
+        "cold"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "passive Perception 14"
+      ],
+      "languages": [],
+      "challenge_rating": "3 (700 XP)",
+      "proficiency_bonus": "\u002B2",
+      "traits": [
+        {
+          "name": "Solar Shriek (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "When a creature hits the calyiard with a weapon attack from within 10 feet, it lets out a pained shriek accompanied by stored solar energy, and the attacker takes 5 (2d4) radiant damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B7 to hit, reach 5 ft., one target. Hit: 14 (2d8 \u002B 5) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

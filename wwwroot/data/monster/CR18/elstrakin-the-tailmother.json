@@ -118,7 +118,6 @@
           "name": "Spellcasting",
           "name_format": "bold_italic",
           "description": "Elstrakin is a 16th-level spellcaster. Her spellcasting ability is Wisdom. She has the following spells prepared:",
-          "notes": "Elstrakin will not use her 6th-level or higher spells or spell slots, unless her Mythic Awakening has triggered.",
           "spellcasting": {
             "spells": [
               {
@@ -191,6 +190,9 @@
                   "nova"
                 ]
               }
+            ],
+            "notes": [
+              "Elstrakin will not use her 6th-level or higher spells or spell slots, unless her Mythic Awakening has triggered."
             ]
           }
         },

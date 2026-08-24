@@ -3,18 +3,18 @@
   "Group": null,
   "Groups": [],
   "Source": "Soul of Trickery",
-  "Information": "**Beast of Cataclysm**\n\nThe Beast of Cataclysm doesn’t exist currently as anything more than an omen of things to come. It is the power Nogistune desires, and would be able to assume if she consumed the essence of her siblings in the First to Skulk. This massive fox-like creature towers above most settlements and beasts, and is a distorted reflection of Kitsune. Though bestial and destructive, its nature is still Nogistune in a sense - if she were to become the beast, she would retain the persona of Nogistune as a mask, but her purpose would be the rampant destruction of all natural life.\n\n**Lesser Creation**\n\nThis stat block represents Nogistune after consuming all six of her siblings. Nogistune may become this beast early, if she allows herself to be consumed by its growing presence within her. If she did, it would be modified based on the number of her siblings she has consumed. If Nogistune is destroyed in any sort of permanent way, the shock may cause her to reform mindlessly as the Beast of Cataclysm.\n\n**Spirit’s End**\n\nIf Nogistune succeeds in becoming the Beast of Cataclysm, she loses her immortality gained as a lich-like spirit, and her phylactery breaks immediately.",
+  "Information": "**Beast of Cataclysm**\n\nThe Beast of Cataclysm doesn\u2019t exist currently as anything more than an omen of things to come. It is the power Nogistune desires, and would be able to assume if she consumed the essence of her siblings in the First to Skulk. This massive fox-like creature towers above most settlements and beasts, and is a distorted reflection of Kitsune. Though bestial and destructive, its nature is still Nogistune in a sense - if she were to become the beast, she would retain the persona of Nogistune as a mask, but her purpose would be the rampant destruction of all natural life.\n\n**Lesser Creation**\n\nThis stat block represents Nogistune after consuming all six of her siblings. Nogistune may become this beast early, if she allows herself to be consumed by its growing presence within her. If she did, it would be modified based on the number of her siblings she has consumed. If Nogistune is destroyed in any sort of permanent way, the shock may cause her to reform mindlessly as the Beast of Cataclysm.\n\n**Spirit\u2019s End**\n\nIf Nogistune succeeds in becoming the Beast of Cataclysm, she loses her immortality gained as a lich-like spirit, and her phylactery breaks immediately.",
   "Information Sections": [
     {
       "Title": "Beast of Cataclysm",
-      "Text": "The Beast of Cataclysm doesn’t exist currently as anything more than an omen of things to come. It is the power Nogistune desires, and would be able to assume if she consumed the essence of her siblings in the First to Skulk. This massive fox-like creature towers above most settlements and beasts, and is a distorted reflection of Kitsune. Though bestial and destructive, its nature is still Nogistune in a sense - if she were to become the beast, she would retain the persona of Nogistune as a mask, but her purpose would be the rampant destruction of all natural life."
+      "Text": "The Beast of Cataclysm doesn\u2019t exist currently as anything more than an omen of things to come. It is the power Nogistune desires, and would be able to assume if she consumed the essence of her siblings in the First to Skulk. This massive fox-like creature towers above most settlements and beasts, and is a distorted reflection of Kitsune. Though bestial and destructive, its nature is still Nogistune in a sense - if she were to become the beast, she would retain the persona of Nogistune as a mask, but her purpose would be the rampant destruction of all natural life."
     },
     {
       "Title": "Lesser Creation",
       "Text": "This stat block represents Nogistune after consuming all six of her siblings. Nogistune may become this beast early, if she allows herself to be consumed by its growing presence within her. If she did, it would be modified based on the number of her siblings she has consumed. If Nogistune is destroyed in any sort of permanent way, the shock may cause her to reform mindlessly as the Beast of Cataclysm."
     },
     {
-      "Title": "Spirit’s End",
+      "Title": "Spirit\u2019s End",
       "Text": "If Nogistune succeeds in becoming the Beast of Cataclysm, she loses her immortality gained as a lich-like spirit, and her phylactery breaks immediately."
     }
   ],
@@ -32,32 +32,32 @@
       "Rows": [
         [
           "Five",
-          "363 (22d20 + 132)",
-          "+6",
+          "363 (22d20 \u002B 132)",
+          "\u002B6",
           "No",
           "2d8 slashing / 1d8 necrotic",
           "8d10"
         ],
         [
           "Six",
-          "429 (26d20 + 156)",
-          "+7",
+          "429 (26d20 \u002B 156)",
+          "\u002B7",
           "No",
           "2d8 slashing / 2d8 necrotic",
           "9d10"
         ],
         [
           "Seven",
-          "495 (30d20 + 180)",
-          "+7",
+          "495 (30d20 \u002B 180)",
+          "\u002B7",
           "Yes",
           "2d10 slashing / 2d8 necrotic",
           "10d10"
         ],
         [
           "Eight",
-          "561 (34d20 + 204)",
-          "+8",
+          "561 (34d20 \u002B 204)",
+          "\u002B8",
           "Yes",
           "2d12 slashing / 2d8 necrotic",
           "12d10"
@@ -86,7 +86,7 @@
         "alignment": "chaotic evil"
       },
       "armor_class": "19",
-      "hit_points": "660 (40d20 + 240)",
+      "hit_points": "660 (40d20 \u002B 240)",
       "speed": {
         "walk": "50 ft.",
         "climb": "50 ft.",
@@ -99,43 +99,43 @@
       "ability_scores": {
         "STR": {
           "score": 24,
-          "modifier": "+7",
-          "save": "+16"
+          "modifier": "\u002B7",
+          "save": "\u002B16"
         },
         "DEX": {
           "score": 28,
-          "modifier": "+9"
+          "modifier": "\u002B9"
         },
         "CON": {
           "score": 22,
-          "modifier": "+6"
+          "modifier": "\u002B6"
         },
         "INT": {
           "score": 23,
-          "modifier": "+6",
-          "save": "+15"
+          "modifier": "\u002B6",
+          "save": "\u002B15"
         },
         "WIS": {
           "score": 16,
-          "modifier": "+3",
-          "save": "+12"
+          "modifier": "\u002B3",
+          "save": "\u002B12"
         },
         "CHA": {
           "score": 18,
-          "modifier": "+4",
-          "save": "+13"
+          "modifier": "\u002B4",
+          "save": "\u002B13"
         }
       },
       "saving_throws": [
-        "Str +16",
-        "Int +15",
-        "Wis +12",
-        "Cha +13"
+        "Str \u002B16",
+        "Int \u002B15",
+        "Wis \u002B12",
+        "Cha \u002B13"
       ],
       "skills": [
-        "Arcana +15",
-        "Perception +12",
-        "Survival +12"
+        "Arcana \u002B15",
+        "Perception \u002B12",
+        "Survival \u002B12"
       ],
       "resistances": [
         "B/P/S (eidolic)"
@@ -163,12 +163,12 @@
         "telepathy 240 ft."
       ],
       "challenge_rating": "30 (155,000 XP)",
-      "proficiency_bonus": "+9",
+      "proficiency_bonus": "\u002B9",
       "traits": [
         {
           "name": "Innate Spellcasting",
           "name_format": "bold_italic",
-          "description": "The beast’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
+          "description": "The beast\u2019s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
           "spellcasting": {
             "spells": [
               {
@@ -196,12 +196,12 @@
                 "frequency": "1/day each",
                 "spells": [
                   "circle of death",
-                  "Everest’s isolated undoing",
-                  "Kellia’s deceptive mark",
-                  "Magnesia’s smothering voice",
-                  "Nogistune’s negative edge",
-                  "Springmoon’s holy shield",
-                  "Tamamo’s arrowfall",
+                  "Everest\u2019s isolated undoing",
+                  "Kellia\u2019s deceptive mark",
+                  "Magnesia\u2019s smothering voice",
+                  "Nogistune\u2019s negative edge",
+                  "Springmoon\u2019s holy shield",
+                  "Tamamo\u2019s arrowfall",
                   "teleport"
                 ]
               }
@@ -216,7 +216,7 @@
         {
           "name": "Mythic: Spell Fortification",
           "name_format": "bold_italic",
-          "description": "The beast’s spells cast through Innate Spellcasting are cast at 9th level."
+          "description": "The beast\u2019s spells cast through Innate Spellcasting are cast at 9th level."
         }
       ],
       "actions": [
@@ -228,7 +228,7 @@
         {
           "name": "Cataclysm Claw",
           "name_format": "bold_italic",
-          "description": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d12 + 7) slashing damage plus 11 (2d10) necrotic damage.",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 15 ft., one target. Hit: 20 (2d12 \u002B 7) slashing damage plus 11 (2d10) necrotic damage.",
           "inline_formatting": {
             "Melee Weapon Attack": "italic",
             "Hit": "italic"
@@ -276,7 +276,6 @@
       },
       "mythic_actions": {
         "header": "Mythic Actions",
-        "availability": "For 1 hour after using Ultimate Terror (Mythic Awakening)",
         "options": [
           {
             "name": "Black Burst (Costs 2 Actions)",
@@ -288,7 +287,8 @@
             "name_format": "bold_italic",
             "description": "The beast chooses three targets within 60 feet of it to be assailed by deadly exhaustion. Each must make a DC 20 Constitution saving throw, suffering a point of Combat Fatigue on a failure. Each that fails by 10 points or more suffers a level of exhaustion instead."
           }
-        ]
+        ],
+        "intro": "For 1 hour after using Ultimate Terror (Mythic Awakening)"
       },
       "legendary_reactions": {
         "header": "Legendary Reactions",

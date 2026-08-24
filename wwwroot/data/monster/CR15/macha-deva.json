@@ -1,0 +1,190 @@
+{
+  "Name": "Macha Deva",
+  "Group": "Devas",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Macha Devas**\n\nMost terrestrial devas are servants of eidolic deities, and macha devas are no different: they are the trusted soldiers of Setanta, who primarily has them face the Outer Titan threat in the Material Plane. Unlike normal devas that are entirely born from the divine power of their god, the macha devas are largely willingly ascended beings. Warriors with a strong sense of justice and the willpower to make the impossible possible may be offered a chance to stand as one of Setanta\u2019s macha devas, who serve as celestial frame unit pilots and Setanta\u2019s \u201Ccrew\u201D in the battle against Luminal Minus.\n\nMacha devas can manifest a special frame unit called an ulster frame which serves as an extension of them.\n\nMacha devas spend quite a bit of time in the Material Plane, traveling exolunar space in disguise as ship crew members while searching for Outer Titan incursions to repel. They are fiery and high-spirited, and are less devoted to celestial justice than most devas.",
+  "Information Sections": [
+    {
+      "Title": "Macha Devas",
+      "Text": "Most terrestrial devas are servants of eidolic deities, and macha devas are no different: they are the trusted soldiers of Setanta, who primarily has them face the Outer Titan threat in the Material Plane. Unlike normal devas that are entirely born from the divine power of their god, the macha devas are largely willingly ascended beings. Warriors with a strong sense of justice and the willpower to make the impossible possible may be offered a chance to stand as one of Setanta\u2019s macha devas, who serve as celestial frame unit pilots and Setanta\u2019s \u201Ccrew\u201D in the battle against Luminal Minus.\n\nMacha devas can manifest a special frame unit called an ulster frame which serves as an extension of them.\n\nMacha devas spend quite a bit of time in the Material Plane, traveling exolunar space in disguise as ship crew members while searching for Outer Titan incursions to repel. They are fiery and high-spirited, and are less devoted to celestial justice than most devas."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Deva%20-%20Macha.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Deva%20-%20Macha.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Deva%20-%20Macha.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "macha_deva",
+      "section_type": "Stat Block",
+      "title": "Macha Deva",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial (deva)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "187 (22d8 \u002B 88)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft.",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Angelic (4d8 radiant)",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B9"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B8"
+        },
+        "CHA": {
+          "score": 24,
+          "modifier": "\u002B7"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B9",
+        "Wis \u002B8"
+      ],
+      "skills": [
+        "Athletics \u002B10",
+        "Intimidation \u002B13",
+        "Perception \u002B8"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical or adamantine)",
+        "radiant"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 18"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "15 (13,000 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The deva\u2019s spellcasting ability is Charisma. The deva can innately cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "command",
+                  "raise dead"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "shield"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "antigravity zone (6th level)",
+                  "heal"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "astral weapon (6th level)",
+                  "gate",
+                  "radiant barrage"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Junction Master",
+          "name_format": "bold_italic",
+          "description": "The deva is able to naturally junction with any frame unit it pilots, as though it was an eidolic armament."
+        },
+        {
+          "name": "Macro Breaker",
+          "name_format": "bold_italic",
+          "description": "When a feature or trait targeting the deva would have an effect detrimental to it based on its size (such as maximum macro damage being dealt to creatures its size, or creatures resisting its damage based on its size), the deva is considered to be whatever size would be most beneficial to it for the purposes of those effects."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes three melee weapon attacks or two ranged weapon attacks."
+        },
+        {
+          "name": "Celestial Knuckle",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 5 ft., one target. Hit: 10 (1d8 \u002B 5) bludgeoning damage plus 18 (4d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Celestial Snipe",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B9 to hit, range 600/1800 ft., one target. Hit: 13 (2d8 \u002B 4) piercing damage plus 18 (4d8) radiant damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The deva magically transforms into a humanoid of any description, a beast of a challenge rating no higher than its own, or back to its true form. If it dies it reverts to its true form. In any humanoid form its statistics remain the same, but in the form of a beast it assumes the AC, movement speed(s), Strength, Dexterity, senses, attacks, and actions of that beast (except class features, Legendary Actions, and Lair Actions) but retains access to its own actions and senses as well."
+        },
+        {
+          "name": "Conjure Ulster Frame (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The deva conjures an ulster frame that overlaps with its space. When it appears it is immediately junctioned to by the deva, whose body disperses to fuse with it. When the deva leaves the unit or the ulster frame is reduced to 0 hit points, the ulster frame dissolves into radiant energy."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

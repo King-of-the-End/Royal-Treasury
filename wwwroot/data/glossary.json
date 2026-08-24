@@ -621,7 +621,7 @@
   },
   {
     "Term": "Humanoid",
-    "Definition": "Humanoids are the main peoples of the D&D world, both civilized and savage, including humans and a tremendous variety of other species. They have language and culture, few if any innate magical abilities (though most humanoids can learn spellcasting), and a bipedal form. The most common humanoid races are the ones most suitable as player characters: humans, dwarves, elves, and halflings. Almost as numerous but far more savage and brutal, and almost uniformly evil, are the races of goblinoids (goblins, hobgoblins, and bugbears), orcs, gnolls, lizardfolk, and kobolds.\n\nA variety of humanoids appear throughout this book, but the races detailed in the Player’s Handbook—with the exception of drow—are dealt with in appendix B. That appendix gives you a number of stat blocks that you can use to make various members of those races.",
+    "Definition": "Humanoids are the main peoples of the D&D world, both civilized and savage, including humans and a tremendous variety of other species. They have language and culture, few if any innate magical abilities (though most humanoids can learn spellcasting), and a bipedal form. The most common humanoid races are the ones most suitable as player characters: humans, dwarves, elves, and halflings. Almost as numerous but far more savage and brutal, and almost uniformly evil, are the races of goblinoids (goblins, hobgoblins, and bugbears), orcs, gnolls, lizardfolk, and kobolds.",
     "CaseSensitive": false,
     "NoOverlay": false,
     "Contexts": [
@@ -3156,6 +3156,33 @@
     ]
   },
   {
+  "Term": "Supermassive",
+  "Definition": "**Creature Size:** Supermassive\n\n**Space:** 150 × 150 feet\n\n**Grid Squares:** 30 × 30",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "StatBlockCreatureLine"
+  ]
+},
+{
+  "Term": "Planetary",
+  "Definition": "**Creature Size:** Planetary\n\n**Space:** 500 × 500 feet\n\n**Grid Squares:** 100 × 100",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "StatBlockCreatureLine"
+  ]
+},
+{
+  "Term": "Superplanetary",
+  "Definition": "**Creature Size:** Superplanetary\n\n**Space:** 1000 × 1000 feet\n\n**Grid Squares:** 200 × 200",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "StatBlockCreatureLine"
+  ]
+},
+  {
     "Term": "(Malfunction)",
     "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
     "CaseSensitive": false,
@@ -3216,5 +3243,11 @@
     "Aliases": [
       "Exolunar Nature"
     ]
+  },
+   {
+    "Term": "Concentration Expert",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true
   }
 ]

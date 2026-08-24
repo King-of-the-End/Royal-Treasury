@@ -22,7 +22,7 @@
     }
   ],
   "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Somnus%20Domina%20-%20Lana%2C%20Duchess%20of%20Fortune.png",
-   "Image Variants": [
+  "Image Variants": [
     "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR17/Lesser%20Deity%20Emblem%20-%20Lana%2C%20Duchess%20of%20Fortune.png"
   ],
   "Images": [
@@ -87,9 +87,6 @@
       "skills": [
         "Insight \u002B16",
         "Perception \u002B14"
-      ],
-      "skill_notes": [
-        "Lana has proficiency in all games of chance"
       ],
       "resistances": [],
       "vulnerabilities": [],
@@ -193,37 +190,37 @@
             "name": "Divine Roulette (Costs 2 Actions)",
             "name_format": "bold_italic",
             "description": "Lana chooses three creatures she can see, and forces them to engage in a game of chance. The targets must make a d100 roll, and the following effects occur to each based on their results:",
-            "table": [
+            "options": [
               {
-                "result": "1",
-                "effect": "The creature immediately dies."
+                "name": "1",
+                "description": "The creature immediately dies."
               },
               {
-                "result": "2 - 20",
-                "effect": "The creature\u2019s current hit points are halved."
+                "name": "2 - 20",
+                "description": "The creature\u2019s current hit points are halved."
               },
               {
-                "result": "21 - 40",
-                "effect": "The target is paralyzed until the end of their next turn."
+                "name": "21 - 40",
+                "description": "The target is paralyzed until the end of their next turn."
               },
               {
-                "result": "41 - 60",
-                "effect": "Nothing occurs."
+                "name": "41 - 60",
+                "description": "Nothing occurs."
               },
               {
-                "result": "61 - 80",
-                "effect": "The target regains half of their hit points."
+                "name": "61 - 80",
+                "description": "The target regains half of their hit points."
               },
               {
-                "result": "81 - 99",
-                "effect": "On their next turn, the target can take an additional action and bonus action."
+                "name": "81 - 99",
+                "description": "On their next turn, the target can take an additional action and bonus action."
               },
               {
-                "result": "100",
-                "effect": "The creature benefits from the effects of a Short Rest."
+                "name": "100",
+                "description": "The creature benefits from the effects of a Short Rest."
               }
             ],
-            "after_table": "A creature with a Dominion Result can spend it to negate their result and avoid this effect."
+            "additional_text": "A creature with a Dominion Result can spend it to negate their result and avoid this effect."
           }
         ]
       },
@@ -238,7 +235,8 @@
           }
         ],
         "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
-      }
+      },
+      "ability_note": "Lana has proficiency in all games of chance"
     }
   ]
 }

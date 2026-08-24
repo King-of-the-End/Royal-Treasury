@@ -1,0 +1,131 @@
+{
+  "Name": "Exodilla Scavenger",
+  "Group": "",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Exodilla**\n\nPods of exodilla remain scattered in the universe, living nomadic lives as scavengers among the stars. These groups are not unlike the more savage lizardfolk of Somnus Domina, who see other species as prey to be hunted or invaders to be defended against.",
+  "Information Sections": [
+    {
+      "Title": "Exodilla",
+      "Text": "Pods of exodilla remain scattered in the universe, living nomadic lives as scavengers among the stars. These groups are not unlike the more savage lizardfolk of Somnus Domina, who see other species as prey to be hunted or invaders to be defended against."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Exodilla.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Exodilla.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR1/Exodilla.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "exodilla_scavenger",
+      "section_type": "Stat Block",
+      "title": "Exodilla Scavenger",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (exodilla)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "15 (natural armor)",
+      "hit_points": "30 (4d8 \u002B 12)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "swim": "30 ft.",
+        "0-G acceleration": "60 ft."
+      },
+      "quality_traits": [
+        "Amphibious",
+        "exolunar nature"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "\u002B2"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 9,
+          "modifier": "-1"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "CHA": {
+          "score": 8,
+          "modifier": "-1"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Perception \u002B3"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "challenge_rating": "1 (200 XP)",
+      "proficiency_bonus": "\u002B2",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The exodilla attacks twice: once with its Bite, and once with its Meteorite Spear."
+        },
+        {
+          "name": "Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B4 to hit, reach 5 ft., one target. Hit: 7 (1d8 \u002B 2) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Meteorite Spear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B4 to hit, reach 5 ft., one target, or Ranged Weapon Attack: \u002B4 to hit, range 20/60 ft., one target. Hit: 6 (1d6 \u002B 2) piercing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Corrosive Spit",
+          "name_format": "bold_italic",
+          "description": "One target the exodilla chooses within 60 feet must make a DC 13 Dexterity saving throw, taking 9 (2d8) acid damage on a failure."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Flash Regeneration (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The exodilla regains 13 (2d12) hit points, and if it uses its Multiattack on the same turn it can make one additional Bite attack or use its Corrosive Spit as part of it."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

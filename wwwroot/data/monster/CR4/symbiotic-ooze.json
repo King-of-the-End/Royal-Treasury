@@ -1,0 +1,139 @@
+{
+  "Name": "Symbiotic Ooze",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Symbiotic Ooze**\n\nA symbiotic ooze is a parasitic entity that can merge with a living host body and completely incorporate into them. They have a strong understanding of humanoid intelligence, which they can emulate to communicate with hosts, but their primary concern is to bond to a host that they use to feed on.\n\n**Rotting Host.** If a symbiotic ooze’s host dies, the ooze may continue to control its body while it rots. When it does so, the body gains temporary hit points equal to the number of hit dice it had multiplied by its Constitution modifier (treated as minimum +1), which represents the damage the body can take before it becomes unusable. When these temporary hit points run out, the body collapses and the ooze must separate from it. The ooze may use the host’s dead body to use their senses, actions, statistics, memories, voice, etc. However, their proficiency bonus is replaced by the ooze’s own. The host is unable to regain hit points or repair physical damage, and it cannot benefit from Rests of any type. Any healing effect targeting the body targets the ooze.\n\n**Ooze Nature.** An ooze doesn’t require air or sleep.",
+  "Information Sections": [
+    {
+      "Title": "Symbiotic Ooze",
+      "Text": "A symbiotic ooze is a parasitic entity that can merge with a living host body and completely incorporate into them. They have a strong understanding of humanoid intelligence, which they can emulate to communicate with hosts, but their primary concern is to bond to a host that they use to feed on.\n\n**Rotting Host.** If a symbiotic ooze’s host dies, the ooze may continue to control its body while it rots. When it does so, the body gains temporary hit points equal to the number of hit dice it had multiplied by its Constitution modifier (treated as minimum +1), which represents the damage the body can take before it becomes unusable. When these temporary hit points run out, the body collapses and the ooze must separate from it. The ooze may use the host’s dead body to use their senses, actions, statistics, memories, voice, etc. However, their proficiency bonus is replaced by the ooze’s own. The host is unable to regain hit points or repair physical damage, and it cannot benefit from Rests of any type. Any healing effect targeting the body targets the ooze.\n\n**Ooze Nature.** An ooze doesn’t require air or sleep."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Symbiotic%20Ooze.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Symbiotic%20Ooze.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR4/Symbiotic%20Ooze.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "symbiotic_ooze",
+      "section_type": "Stat Block",
+      "title": "Symbiotic Ooze",
+      "creature": {
+        "size": "Medium",
+        "type": "ooze",
+        "alignment": ""
+      },
+      "armor_class": "8",
+      "hit_points": "51 (6d8 + 24)",
+      "speed": {
+        "walk": "15 ft.",
+        "climb": "15 ft."
+      },
+      "quality_traits": [
+        "Amorphous (1 inch)",
+        "spider climb"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 6,
+          "modifier": "-2"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4"
+        },
+        "INT": {
+          "score": 4,
+          "modifier": "-3"
+        },
+        "WIS": {
+          "score": 7,
+          "modifier": "-2"
+        },
+        "CHA": {
+          "score": 5,
+          "modifier": "-3"
+        }
+      },
+      "saving_throws": [],
+      "skills": [],
+      "resistances": [
+        "acid",
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "prone"
+      ],
+      "senses": [
+        "blindsight 60 ft. (blind beyond this radius)",
+        "passive Perception 8"
+      ],
+      "languages": [
+        "telepathy (host)"
+      ],
+      "challenge_rating": "4 (1,100 XP)",
+      "proficiency_bonus": "+2",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold"
+        }
+      },
+      "traits": [
+        {
+          "name": "Symbiotic Bond",
+          "name_format": "bold_italic",
+          "description": "A creature the ooze has bonded to gains both the benefits and detriments described here. The ooze cannot be targeted by any attacks or effects while bonded to another creature, and the ooze may willingly remove itself from its host by using an action, at which point it appears in an unoccupied space adjacent to the host. A host of this bond regains only half of their hit dice each time they take a Long Rest, and can take one fewer Short Rests per Long Rest, as the ooze consumes their stamina and vitality.\n\nThe host has advantage on death saving throws, is immune to combat fatigue and exhaustion, and may add half their proficiency bonus to any skill check or saving throw they don’t already add it to. They may also spend any number of hit dice as an action and regain hit points equal to the result of rolling them as though they took a Short Rest. The host does not need to breathe air to survive, but must eat twice as much food each day or gain a level of exhaustion (ignoring its immunity to exhaustion) that cannot be removed until they eat the required amount of food.\n\nA symbiotic ooze may speak to its host telepathically, and is capable of reading their surface thoughts without issue. If the host takes an action the ooze does not agree with, it can use its reaction to force the host to make a DC 14 Charisma saving throw. On a failure, they don’t take that action, and instead act according to the ooze’s will until the start of their next turn. When the ooze does so, its host takes 1d6 necrotic or poison damage (the ooze chooses).\n\nA symbiotic ooze can be forcefully “starved out” from the body of a host if the host does not regain hit dice for over 72 hours, at which point it must roll a d100 and leaves on a result of 10 or lower every 8 hours. It can also be forced out by a greater restoration or remove curse spell cast at 5th level or higher, or an equivalent spell."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The ooze makes two pseudopod attacks."
+        },
+        {
+          "name": "Pseudopod",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage plus 9 (2d8) acid damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Merge",
+          "name_format": "bold_italic",
+          "description": "The ooze attempts to bond to an unconscious, dying, or willing host creature it can touch, who cannot be a construct, undead, or plant. If the target is unconscious or unwilling, they must make a DC 14 Constitution saving throw, or the ooze bonds with them and its physical form vanishes into its target. From this point on, the target is under the influence of the Symbiotic Bond trait."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

@@ -199,7 +199,6 @@
       },
       "mythic_actions": {
         "header": "Mythic Actions",
-        "availability": "For 1 hour after using Dark Motivations (Mythic Awakening)",
         "options": [
           {
             "name": "Wind Cutter (Costs 2 Actions)",
@@ -211,7 +210,8 @@
             "name_format": "bold_italic",
             "description": "The yokai unleashes a series of strikes at up to four targets they choose within 20 feet of them. Each must make a DC 24 Dexterity saving throw. On a failure, they take 11 (2d10) slashing damage, and their movement speed is reduced to 0 until the start of the yokai\u2019s next turn. If they fail by 10 points or more, they suffer a point of Combat Fatigue."
           }
-        ]
+        ],
+        "intro": "For 1 hour after using Dark Motivations (Mythic Awakening)"
       },
       "legendary_reactions": {
         "header": "Legendary Reactions",

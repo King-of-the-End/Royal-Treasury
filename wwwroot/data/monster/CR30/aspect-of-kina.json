@@ -1,0 +1,282 @@
+{
+  "Name": "Aspect of Kina",
+  "Group": "Deific Aspects",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Aspect of Kina**\n\nThe Dream Lord is one of the most combat adverse gods in Somnus Domina, preferring to remain in their realms of dreams and fantasy. Their only true enemies are those who try to contort and weaponize dreams as a concept, or nightmares that take on a life of their own. As a god of dreams, Kina is in tune with the delicate threads that bind a mind to a body, and when pushed to their limit Kina can cut them.\n\n**Ephemeral Visitor**\n\nKina will often talk to others by appearing in their dreams. They may directly address them in disguise or as a formless phantom, or may guide their dream to show scenes and images that allow Kina to learn about them. Most mortals have encountered Kina in a dream at some point, but would never recognize them for what they truly are.\n\n**Nightmare Slayer**\n\nThe Dream Lord is capable of manifesting dark dreams into a physical form\u2014yokai\u2014in order to give them a shape to slay. Kina avoids doing this except when expunging the most dangerous nightmares and torments, but some credit Kina for expelling all nightmares regardless.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Kina",
+      "Text": "The Dream Lord is one of the most combat adverse gods in Somnus Domina, preferring to remain in their realms of dreams and fantasy. Their only true enemies are those who try to contort and weaponize dreams as a concept, or nightmares that take on a life of their own. As a god of dreams, Kina is in tune with the delicate threads that bind a mind to a body, and when pushed to their limit Kina can cut them."
+    },
+    {
+      "Title": "Ephemeral Visitor",
+      "Text": "Kina will often talk to others by appearing in their dreams. They may directly address them in disguise or as a formless phantom, or may guide their dream to show scenes and images that allow Kina to learn about them. Most mortals have encountered Kina in a dream at some point, but would never recognize them for what they truly are."
+    },
+    {
+      "Title": "Nightmare Slayer",
+      "Text": "The Dream Lord is capable of manifesting dark dreams into a physical form\u2014yokai\u2014in order to give them a shape to slay. Kina avoids doing this except when expunging the most dangerous nightmares and torments, but some credit Kina for expelling all nightmares regardless."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Somnus%20Domina%20-%20Kina%2C%20the%20Lost%20Home.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Somnus%20Domina%20-%20Kina%2C%20the%20Lost%20Home.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Zero%20Point%20God%20Emblem%20-%20Kina%2C%20the%20Lost%20Home.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Somnus%20Domina%20-%20Kina%2C%20the%20Lost%20Home.png"
+    },
+    {
+      "Label": "Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Zero%20Point%20God%20Emblem%20-%20Kina%2C%20the%20Lost%20Home.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_kina",
+      "section_type": "Stat Block",
+      "title": "Aspect of Kina",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (kits\u2019adria)",
+        "alignment": "neutral good"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "375 (50d8 \u002B 150)",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "60 ft. (hover)",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Deific (eidolic)",
+        "ethereal",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B11"
+        },
+        "DEX": {
+          "score": 21,
+          "modifier": "\u002B5"
+        },
+        "CON": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "INT": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B10"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B16"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B11"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B11",
+        "Int \u002B10",
+        "Wis \u002B16",
+        "Cha \u002B11"
+      ],
+      "skills": [
+        "Acrobatics \u002B14",
+        "Insight \u002B16",
+        "Nature \u002B10",
+        "Perception \u002B16"
+      ],
+      "resistances": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic",
+        "all (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "truesight 120 ft.",
+        "passive Perception 26"
+      ],
+      "languages": [
+        "all",
+        "telepathy 600 ft."
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "\u002B9",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Kina\u2019s spellcasting ability is Wisdom. They can innately cast the following spells, requiring no material components:",
+          "additional_text": "Kina\u2019s spells are cast at 5th level, unless their base level is higher. Kina does not make Eidomancy checks.",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "astral projection",
+                  "awaken",
+                  "dream",
+                  "major image",
+                  "modify memory"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "etherealness",
+                  "hold attacker (6th level)",
+                  "psychic lance",
+                  "vanquish magic"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "banishment",
+                  "divine word",
+                  "mirage arcane",
+                  "nightmare cell",
+                  "power word forget",
+                  "punishing gleam"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "astral fissure",
+                  "astral weapon (9th level)",
+                  "imprisonment",
+                  "power word lethargy",
+                  "weird"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Recurring Dream (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "If Kina is reduced to 0 hit points or killed outright, their hit points are instead reset to 200, they regain their spent Legendary Actions and Legendary Reactions, and can teleport to an unoccupied space within 60 feet. For 1 hour, they gain a teleport speed equal to their base movement speed, and they can use their Mythic Actions. If a party defeats Kina after using their Mythic Awakening, they are awarded an additional 155,000 XP (for a total of 310,000 XP)."
+        },
+        {
+          "name": "Spirit Channeler",
+          "name_format": "bold_italic",
+          "description": "Kina can use their Wisdom modifier in place of their Strength or Dexterity for weapon attacks and damage rolls."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Kina makes two weapon attacks, then casts a spell with a casting time of 1 action using Innate Spellcasting."
+        },
+        {
+          "name": "Spirit Spear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, 5 ft., one target, or as a Ranged Weapon Attack: \u002B16 to hit, range 120 ft., one target. Hit: 18 (2d10 \u002B 7) piercing damage or 18 (2d10 \u002B 7) psychic damage (Kina chooses).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Spirit Uchigatana",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 30 ft., one target. Hit: 25 (4d8 \u002B 7) slashing damage or 25 (4d8 \u002B 7) psychic damage (Kina chooses).",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Dreamweaving (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Kina conjures a living, morphic dream that affects all creatures within 100 feet of him, which subjects others to erosive illusions conjured from their own subconscious. Each target they choose within the range must make a DC 24 Wisdom saving throw, taking 110 (20d10) psychic damage on a failure, or half as much on a success. Any creature who fails by 10 points or more is also stunned until the start of Kina\u2019s next turn. Additionally, any creature who fails their saving throw against this feature and is under any effect with a duration treats that effect as though 10 minutes had suddenly passed."
+        },
+        {
+          "name": "Mythic Action: Red Cord Severance (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "Kina chooses one creature within 60 feet, and they manifest an astral cord that binds their soul and physical form together, which they attempt to sever. The target must make a DC 24 Charisma saving throw. On a failure, their soul is separated from their body, and while separated this way they are treated as though killed. Their body remains alive and motionless, as though stunned (regardless of immunities) as long as it has no soul. Kina may use an action to restore the creature to life by repairing the cord, but otherwise they cannot be restored to life except by deific intervention or the equivalent of a wish spell. This feature cannot affect deities, spirits, fiends, celestials, or other beings with no separation between soul and body."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Teleport",
+            "name_format": "bold_italic",
+            "description": "Kina teleports to an unoccupied space of their choice within 60 feet."
+          },
+          {
+            "name": "Fictional Shield",
+            "name_format": "bold_italic",
+            "description": "Kina enters a dreamlike state, and the next attack that hits them before the start of their next turn misses instead (even if it was a critical hit), and no effects, traits, or features may cause it to hit."
+          },
+          {
+            "name": "Spellcast (3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Kina casts one spell with a casting time of 1 action using Innate Spellcasting."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "options": [
+          {
+            "name": "Dreamstrike",
+            "name_format": "bold_italic",
+            "description": "Kina makes a single Spirit Uchigatana attack against one target within reach."
+          },
+          {
+            "name": "Cord Manipulation (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "If Kina has severed a creature\u2019s life using their Red Cord Severance, they may animate that body and have it move up to its movement speed and take an action they were capable of in life."
+          },
+          {
+            "name": "Dreaming Amnesia (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Kina chooses one creature within sight, and attempts to invade their mind by way of a waking dream. The target must make a DC 24 Charisma saving throw. On a failure, one proficiency they currently have in one weapon, skill, or ability score (such as in the case of Jack of All Trades) is lost until they complete a Long Rest."
+          }
+        ],
+        "intro": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening."
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

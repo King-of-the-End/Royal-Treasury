@@ -1,0 +1,248 @@
+{
+  "Name": "Frame Galactia",
+  "Group": "Deific Aspects",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Arc Valinn**\n\nArc Valinn is a goddess of technology and considered the god of frame units and freedom. She was originally an astral elf exarch who helped to set exolunar frame unit technology on its path, then would ascend to godhood on her own in an effort to protect the universe from those who would hoard and abuse technology. Her physical form is split between two entities: her humanoid form, and her mechanical avatar Frame Galactia, a supermassive frame unit that can become an astradeck.",
+  "Information Sections": [
+    {
+      "Title": "Arc Valinn",
+      "Text": "Arc Valinn is a goddess of technology and considered the god of frame units and freedom. She was originally an astral elf exarch who helped to set exolunar frame unit technology on its path, then would ascend to godhood on her own in an effort to protect the universe from those who would hoard and abuse technology. Her physical form is split between two entities: her humanoid form, and her mechanical avatar Frame Galactia, a supermassive frame unit that can become an astradeck."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Arc%20Valinn%20(Frame%20Galactia).png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Arc%20Valinn%20(Frame%20Galactia).png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Zero%20Point%20God%20Emblem%20-%20Arc%20Valinn%2C%20the%20Voyager.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Arc%20Valinn%20(Frame%20Galactia).png"
+    },
+    {
+      "Label": "Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Zero%20Point%20God%20Emblem%20-%20Arc%20Valinn%2C%20the%20Voyager.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "frame_galactia",
+      "section_type": "Stat Block",
+      "title": "Frame Galactia",
+      "creature": {
+        "size": "Supermassive",
+        "type": "construct (frame unit)",
+        "alignment": "chaotic neutral",
+        "tags": [
+          "footprint 6"
+        ]
+      },
+      "armor_class": "22 (natural armor)",
+      "hit_points": "700 (40d20 \u002B 280)",
+      "threshold": "10",
+      "speed": {
+        "walk": "60 ft.",
+        "fly": "90 ft.",
+        "0-G acceleration": "240 ft."
+      },
+      "quality_traits": [
+        "Debris resist",
+        "deific",
+        "macro attacks (Gargantuan)",
+        "magic immunity 5th",
+        "massive (Gargantuan/20 feet/DC 23)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 28,
+          "modifier": "\u002B9"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B13"
+        },
+        "CON": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B11"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B14"
+        },
+        "CHA": {
+          "score": 26,
+          "modifier": "\u002B8"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B13",
+        "Int \u002B11",
+        "Wis \u002B14"
+      ],
+      "skills": [
+        "Athletics \u002B18",
+        "Perception \u002B14"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "prone",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 480 ft.",
+        "darkvision (unlimited)",
+        "passive Perception 24"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "\u002B9",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Frame Galactia\u2019s spellcasting ability is Charisma. They can innately cast the following spells, requiring no material components:",
+          "additional_text": "When Frame Galactia casts any Astromancy spell with limited uses, it can spend one of its Legendary Actions for that round to cast it at 6th level, unless it was already higher, or three Legendary Actions to cast it at 9th. Frame Galactia does not make Eidomancy checks. Frame Galactia\u2019s spells are cast as though they have a Footprint of 6 and their pilots were Medium sized, regardless of their actual size.",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "gravitational purge",
+                  "heat metal",
+                  "sympathetic gateway"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "auto-repair",
+                  "summon belzer",
+                  "supreme hand"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "dead nova",
+                  "galactic meteor",
+                  "minute meteors"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Scale Shifter",
+          "name_format": "bold_italic",
+          "description": "At the start of its turn, Frame Galactia may change its size to become any size between Gargantuan and Supermassive. If it makes itself Colossal or smaller, its melee reach is reduced by 20 feet, and its Macro trait doesn\u2019t function. Regardless of its size, effects targeting it or restrictions based on size (such as damage being reduced for creatures of a certain size or lower) treat it as Supermassive."
+        },
+        {
+          "name": "Universal Reactor (4/Rest)",
+          "name_format": "bold_italic",
+          "description": "Frame Galactia can engage a powerful eidomantic core to use any of the following effects when they would apply. It cannot use the same effect more than once per turn. At the start of each of its turns, Frame Galactia rolls a d4: on a result of 4, it regains one spent use of its Universal Reactor.",
+          "options": [
+            {
+              "name": "Absolute Barrier",
+              "description": "When it takes damage, Frame Galactia can take half damage instead, then half damage from all sources of damage until the end of that turn."
+            },
+            {
+              "name": "Cast Amplifier",
+              "description": "On its turn, Frame Galactia casts one spell through Innate Spellcasting that has a limit of 2/Day or 3/Day, and if that spell requires 1 action it is cast as a bonus action."
+            },
+            {
+              "name": "Feat Drive",
+              "description": "When Frame Galactia fails to hit with an attack, it can roll 2d6 and add the result to their failed attack roll, possibly changing the result. Then, until the end of that turn, they add the higher result from individual d6s to all of their attack rolls."
+            },
+            {
+              "name": "Hyperdrive Dash",
+              "description": "Frame Galactia\u2019s speed doubles until the end of its turn."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Frame Galactia makes three Grand Galaxium attacks."
+        },
+        {
+          "name": "Grand Galaxium (Blade or Arcbow)",
+          "name_format": "bold_italic",
+          "description": "Macro Melee Weapon Attack: \u002B18 to hit, reach 40 ft., one target, or as a Ranged Weapon Attack: \u002B13 to hit, range 500/1500 ft., one target. Hit: 22 (2d12 \u002B 9) radiant damage plus 22 (4d10) force damage. [macro: 33 radiant plus 40 force].",
+          "inline_formatting": {
+            "Macro Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Eidomantic Fusion Arrow",
+          "name_format": "bold_italic",
+          "description": "Frame Galactia fires an arrow of eidomantic energy as a 1000-foot long, 50-foot wide line originating from it. Each creature in that space must make a DC 24 Dexterity saving throw, taking 22 (2d12 \u002B 9) radiant damage plus 22 (4d10) force damage on a failure."
+        },
+        {
+          "name": "Galactic Technobliteration (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Frame Galactia fires a tremendous volley of explosives and energy into the air using Grand Galaxium, which splits into a maelstrom of individual bursts of light. Each target Frame Galactia chooses within 300 feet of a point it chooses within 3000 feet must make a DC 24 Dexterity saving throw, taking 55 (10d10) fire damage and 55 (10d10) radiant damage on a failed save, or half as much on a successful one.\n\nAlternatively, it can focus this energy on one creature it can see within 3000 feet, who must make a DC 24 Dexterity saving throw, taking 82 (15d10) fire damage and 82 (15d10) radiant damage on a failure."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Move",
+            "name_format": "bold_italic",
+            "description": "Frame Galactia moves up to its movement speed."
+          },
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Frame Galactia makes a single Grand Galaxium attack."
+          },
+          {
+            "name": "Universal Recharge (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Frame Galactia regains one spent use of its Universal Reactor."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

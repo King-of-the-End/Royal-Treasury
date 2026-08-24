@@ -1,0 +1,165 @@
+{
+  "Name": "EXO-06 - DECREE",
+  "Group": "Eidolos",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**EXO-06 - DECREE**\n\nCreated by an exolunar branch of Destimus\u2019s followers\u2014the Ignisforge\u2014these exo-armors are a mechanical variant of frame unit that was originally conceived to eliminate the pseudo-sentience that lunar frames and DGRs possess. They wished to create a soulless device that could amplify one\u2019s physical attributes and offer greater mobility, and so the EXO-series of constructs came to be. The initial units, 01 through 05, were made mostly for sentry and labor purposes, whereas units 06 and onward were created for military applications. The means to create these constructs escaped their original creators relatively quickly and are no longer a trademark of the Destians who originated them, but these exo-armors are uncommon due to the difficulty associated with creating them.\n\n**Construct Traits.** The construct does not require air, food or water to survive.",
+  "Information Sections": [
+    {
+      "Title": "EXO-06 - DECREE",
+      "Text": "Created by an exolunar branch of Destimus\u2019s followers\u2014the Ignisforge\u2014these exo-armors are a mechanical variant of frame unit that was originally conceived to eliminate the pseudo-sentience that lunar frames and DGRs possess. They wished to create a soulless device that could amplify one\u2019s physical attributes and offer greater mobility, and so the EXO-series of constructs came to be. The initial units, 01 through 05, were made mostly for sentry and labor purposes, whereas units 06 and onward were created for military applications. The means to create these constructs escaped their original creators relatively quickly and are no longer a trademark of the Destians who originated them, but these exo-armors are uncommon due to the difficulty associated with creating them.\n\n**Construct Traits.** The construct does not require air, food or water to survive."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/EXO-06%20-%20DECREE.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/EXO-06%20-%20DECREE.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/EXO-06%20-%20DECREE.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "exo_06_decree",
+      "section_type": "Stat Block",
+      "title": "EXO-06 - DECREE",
+      "creature": {
+        "size": "Huge",
+        "type": "construct (frame unit)",
+        "alignment": null,
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "173 (15d12 \u002B 75)",
+      "threshold": "10",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft.",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Battle ready",
+        "immutable",
+        "magic resist",
+        "magical",
+        "vehicle (three-quarters, auto)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "\u002B6"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B6"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B6"
+        },
+        "CHA": {
+          "score": 7,
+          "modifier": "-2",
+          "save": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B6",
+        "Wis \u002B6",
+        "Cha \u002B2"
+      ],
+      "skills": [
+        "Athletics \u002B10",
+        "Perception \u002B6"
+      ],
+      "resistances": [
+        "B/P/S (magical or adamantine)",
+        "lightning",
+        "necrotic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "enraged",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "sluggish",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "understands the languages of its creators but doesn\u2019t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The construct makes three Deplo-Blade attacks."
+        },
+        {
+          "name": "Deplo-Blade",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 10 ft., one target. Hit: 15 (2d8 \u002B 6) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Routine Deployment (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The construct deploys one of its routine features, choosing from the following options:",
+          "options": [
+            {
+              "name": "Barrage Routine",
+              "description": "The construct fires a series of magitech missiles at up to four targets it can see within 60 feet. Each target must make a DC 18 Dexterity saving throw, taking 28 (5d10) fire damage and 28 (5d10) force damage on a failed save, or half as much on a successful one."
+            },
+            {
+              "name": "Defense Routine",
+              "description": "The construct makes one Deplo-Blade attack then creates a barrier that causes it to gain 55 (10d10) temporary hit points. As long as it has these temporary hit points, weapon attacks have disadvantage against it."
+            },
+            {
+              "name": "Pursuit Routine",
+              "description": "The construct\u2019s movement speed doubles, and before the end of its turn it can make two Deplo-Blade attacks. The first of these attacks has advantage and deals one additional weapon die of damage."
+            },
+            {
+              "name": "Targeting Routine",
+              "description": "The construct chooses a target within 60 feet whom it zeroes in on until the end of its next turn. Until that time, it cannot have disadvantage on attack rolls against that target, the target cannot benefit from cover against the construct\u2019s attacks, and the construct gains a bonus to its attack rolls against them equal to half its proficiency bonus. Then, the construct can make two Deplo-Blade attacks before its turn ends."
+            }
+          ]
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Pilot Protection",
+          "name_format": "bold_italic",
+          "description": "When the construct\u2019s pilot would take damage from an effect or attack, the construct can use their reaction to redirect the damage to itself. If it already was taking damage from the same effect, the pilot simply takes no damage and the damage done to the construct is unchanged."
+        }
+      ]
+    }
+  ]
+}

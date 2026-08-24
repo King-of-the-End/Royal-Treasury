@@ -134,24 +134,42 @@
           "name": "Innate Spellcasting",
           "name_format": "bold_italic",
           "description": "The yokai\u2019s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
-          "suboptions": [
-            {
-              "name": "At will",
-              "description": "charm person (7th level), detect thoughts, faerie fire, misty step"
-            },
-            {
-              "name": "1/Day each",
-              "description": "circle of death, dominate person, heal, mislead"
-            },
-            {
-              "name": "2/Day each",
-              "description": "hold person (4th level), polymorph"
-            },
-            {
-              "name": "3/Day each",
-              "description": "dispel magic, major image"
-            }
-          ]
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "charm person (7th level)",
+                  "detect thoughts",
+                  "faerie fire",
+                  "misty step"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "circle of death",
+                  "dominate person",
+                  "heal",
+                  "mislead"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "hold person (4th level)",
+                  "polymorph"
+                ]
+              },
+              {
+                "frequency": "3/Day each",
+                "spells": [
+                  "dispel magic",
+                  "major image"
+                ]
+              }
+            ]
+          }
         }
       ],
       "actions": [

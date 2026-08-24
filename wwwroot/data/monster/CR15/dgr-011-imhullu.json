@@ -1,0 +1,155 @@
+{
+  "Name": "DGR 011 - Imhullu",
+  "Group": "DGR Frame Units",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**DGR 011 - IMHULLU**\n\nA bird-like DGR unit that was designed to control battles in the air. Its primary function is to prevent the strategic movement of hostile forces by battering them with powerful winds, which it could generate even in the depths of space. It is capable of generating massive amounts of electrical energy and freely discharging it.",
+  "Information Sections": [
+    {
+      "Title": "DGR 011 - IMHULLU",
+      "Text": "A bird-like DGR unit that was designed to control battles in the air. Its primary function is to prevent the strategic movement of hostile forces by battering them with powerful winds, which it could generate even in the depths of space. It is capable of generating massive amounts of electrical energy and freely discharging it."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/DGR-011%20IMHULLU.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/DGR-011%20IMHULLU.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/DGR-011%20IMHULLU.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dgr_011_imhullu",
+      "section_type": "Stat Block",
+      "title": "DGR 011 - IMHULLU",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "construct (DGR)",
+        "alignment": null,
+        "tags": [
+          "footprint 3"
+        ]
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "188 (15d20 \u002B 30)",
+      "threshold": "10",
+      "speed": {
+        "walk": "20 ft.",
+        "fly": "90 ft.",
+        "0-G acceleration": "240 ft."
+      },
+      "quality_traits": [
+        "Alloyed (Medium)",
+        "fly-by",
+        "immutable",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "DEX": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B11"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "INT": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B8"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B11",
+        "Int \u002B8"
+      ],
+      "skills": [
+        "Perception \u002B17"
+      ],
+      "resistances": [
+        "force",
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "lightning",
+        "necrotic",
+        "poison"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 27"
+      ],
+      "languages": [
+        "understands all, but doesn\u2019t speak"
+      ],
+      "challenge_rating": "15 (13,000 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Galeforce Generator",
+          "name_format": "bold_italic",
+          "description": "A powerful gale surrounds the DGR, bending and twisting at its whim. When a creature ends their turn within 60 feet of the DGR while it is not incapacitated, the DGR may choose to have them make a DC 16 Strength saving throw. On a failure, they are either moved 30 feet in any direction the DGR chooses or are knocked prone. If the creature is flying in an environment with planetary gravity, it has disadvantage on this saving throw."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The DGR makes two Eidotalon attacks."
+        },
+        {
+          "name": "Eidotalon",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 5 ft., one target. Hit: 17 (2d10 \u002B 6) piercing damage plus 7 (1d12) lightning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Storm Center (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The DGR unleashes a wave of lightning that bounces between all targets it chooses within 60 feet of it, who each must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much on a successful one."
+        },
+        {
+          "name": "Mach Boost",
+          "name_format": "bold_italic",
+          "description": "The DGR doubles its movement speed until the end of its turn and takes the Dash action."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Wind Control",
+          "name_format": "bold_italic",
+          "description": "When a creature starts its turn within range of the DGR\u2019s Galeforce Generator or enters that space for the first time on their turn, the DGR may use its reaction to immediately treat the creature as though it had ended its turn there, and force them to save against that trait. They do not do so again at the end of their turn when this happens."
+        }
+      ]
+    }
+  ]
+}

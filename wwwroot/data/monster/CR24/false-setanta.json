@@ -1,0 +1,231 @@
+{
+  "Name": "False Setanta",
+  "Group": "False Eidolons",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**False Setanta**\n\nSetanta\u2019s shadow is every bit as bold as he is, but possesses little self control. Reflecting Setanta\u2019s devil-may-care attitude, it doesn\u2019t spend much time considering its own existence as a yokai, and instead considers itself to be an aspect of Setanta meant to perform great, impossible feats, and shape the future of the universe. They are a shrewd manipulator and combatant who is willing to engage in competitions and contests to bring fame to itself, considering that to be identical to a clergy. When faced with opposition who knows its true nature, it willfully takes on the persona of a hero overcoming the impossible, and dictates that its accusers must simply be insane.\n\n**Heroic Pursuits.** This yokai conflates the deeds of its former self with an unfocused desire to be seen as a hero and leader. It will purposefully create cataclysms and threats to the innocent so that it can swoop in to save them against all odds, hoping to curry favor by inspiring others. At its core, it is a vain being that conflates respect with virtue.\n\n**Enemy of the Monumentals.** Monumentals, the celestial soldiers of Harros, are seen as a threat to Setanta\u2019s shadow. Setanta has a strong relationship with the Eidolon Harros, and those who serve the Monument generally would see through the vainglorious behavior of this shadow of Setanta. Due to this, and fearing they will steal their spotlight, this shadow of Setanta would attempt to sabotage any representatives of Harros it encounters.\n\n**Impulsive Manipulator.** A shadow of Setanta will act impulsively and heroically in the moment, making split-second decisions that befit their namesake. This behavior is limited to when they are being observed by others, however. When the shadow of Setanta is left to its own silent devices, it is a quiet, subtle manipulator of others who is capable of juggling complex gambits. Their behavior in isolation is more like that of a military commander predicting the movement of their enemies, compared to their more bombastic, arrogant presentation when others are engaging with them. Even when acting impulsively though, the shadow of Setanta is always thinking, scheming, and planning ahead under the surface\u2014a habit that sets it apart from Setanta, and can help to reveal its true nature by comparison.",
+  "Information Sections": [
+    {
+      "Title": "False Setanta",
+      "Text": "Setanta\u2019s shadow is every bit as bold as he is, but possesses little self control. Reflecting Setanta\u2019s devil-may-care attitude, it doesn\u2019t spend much time considering its own existence as a yokai, and instead considers itself to be an aspect of Setanta meant to perform great, impossible feats, and shape the future of the universe. They are a shrewd manipulator and combatant who is willing to engage in competitions and contests to bring fame to itself, considering that to be identical to a clergy. When faced with opposition who knows its true nature, it willfully takes on the persona of a hero overcoming the impossible, and dictates that its accusers must simply be insane."
+    },
+    {
+      "Title": "Heroic Pursuits",
+      "Text": "This yokai conflates the deeds of its former self with an unfocused desire to be seen as a hero and leader. It will purposefully create cataclysms and threats to the innocent so that it can swoop in to save them against all odds, hoping to curry favor by inspiring others. At its core, it is a vain being that conflates respect with virtue."
+    },
+    {
+      "Title": "Enemy of the Monumentals",
+      "Text": "Monumentals, the celestial soldiers of Harros, are seen as a threat to Setanta\u2019s shadow. Setanta has a strong relationship with the Eidolon Harros, and those who serve the Monument generally would see through the vainglorious behavior of this shadow of Setanta. Due to this, and fearing they will steal their spotlight, this shadow of Setanta would attempt to sabotage any representatives of Harros it encounters."
+    },
+    {
+      "Title": "Impulsive Manipulator",
+      "Text": "A shadow of Setanta will act impulsively and heroically in the moment, making split-second decisions that befit their namesake. This behavior is limited to when they are being observed by others, however. When the shadow of Setanta is left to its own silent devices, it is a quiet, subtle manipulator of others who is capable of juggling complex gambits. Their behavior in isolation is more like that of a military commander predicting the movement of their enemies, compared to their more bombastic, arrogant presentation when others are engaging with them. Even when acting impulsively though, the shadow of Setanta is always thinking, scheming, and planning ahead under the surface\u2014a habit that sets it apart from Setanta, and can help to reveal its true nature by comparison."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Somnus%20Domina%20-%20False%20Setanta%20-%20Ref.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Somnus%20Domina%20-%20False%20Setanta%20-%20Ref.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Somnus%20Domina%20-%20False%20Setanta%20-%20Ref.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "false_setanta",
+      "section_type": "Stat Block",
+      "title": "False Setanta",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "20 (natural armor)",
+      "hit_points": "420 (40d8 \u002B 240)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "40 ft. (hover)",
+        "0-G acceleration": "120 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "critical 19",
+        "deific (false)",
+        "siphon the devout",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 25,
+          "modifier": "\u002B7",
+          "save": "\u002B14"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B10"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "WIS": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "CHA": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B14"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B14",
+        "Dex \u002B10",
+        "Cha \u002B14"
+      ],
+      "skills": [
+        "Athletics \u002B14",
+        "Deception \u002B14",
+        "Perception \u002B13",
+        "Persuasion \u002B14"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "24 (62,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Improbable Resistance (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "When the yokai fails a saving throw it can succeed instead."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The yokai\u2019s spellcasting ability is Charisma. They can innately cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "find the path",
+                  "fly",
+                  "locate creature",
+                  "locate object"
+                ]
+              },
+              {
+                "frequency": "2/Day each",
+                "spells": [
+                  "astral collision",
+                  "gravitational purge",
+                  "sunspot arrow"
+                ]
+              },
+              {
+                "frequency": "1/Day each",
+                "spells": [
+                  "antigravity zone (9th level)",
+                  "conjure frame echo",
+                  "deathgate",
+                  "haste",
+                  "limited wish"
+                ]
+              }
+            ],
+            "additional_text": "All of the yokai\u2019s spells are cast at 6th level, unless their base level is higher. They do not make Eidomancy checks."
+          }
+        },
+        {
+          "name": "Macro Breaker",
+          "name_format": "bold_italic",
+          "description": "The yokai\u2019s damage cannot be reduced or negated by features that reference its size. For the purposes of damage, it is always treated as whatever size is most beneficial for it."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes three weapon attacks. It can exchange two of these for casting a spell with a casting time of 1 action using its Innate Spellcasting."
+        },
+        {
+          "name": "Solopsist Spiral",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 10 ft., one target. Hit: 14 (1d12 \u002B 7) piercing damage plus 9 (2d8) force damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Solopsist Rifle",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B10 to hit, range 40/120 ft., one target. Hit: 12 (2d8 \u002B 3) piercing damage plus 9 (2d8) force damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Dimensional Helix Cannon (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The yokai creates a vortex of swirling fiendish energy in front of it, then fires its rifle through it, causing a blast of cosmic energy centered on a point it chooses within 240 feet. Each target in a 30-foot radius sphere centered there must make a DC 22 Dexterity saving throw, taking 39 (6d12) radiant damage and 39 (6d12) force damage on a failure, or half as much on a success. Any target who fails by 10 points or more is stunned until the end of their next turn."
+        },
+        {
+          "name": "Summon Vilehound Frame (1/Day)",
+          "name_format": "bold_italic",
+          "description": "The yokai summons an ulster frame into an unoccupied space it can see within 90 feet of itself, or summons it in its own space and immediately begins piloting it. This ulster frame is summoned with 200 hit points, its creature type is also treated as a fiend (yokai), and it benefits from the yokai\u2019s Avoidance, Macro Breaker, and Yokai Nourishment traits. If any source of damage would reduce the frame\u2019s hit points to 0 while the yokai is piloting it, the yokai takes that damage in its place."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": [
+        {
+          "name": "Shadow Step",
+          "name_format": "bold_italic",
+          "description": "The yokai teleports to a space it can see within its movement speed."
+        },
+        {
+          "name": "Break Away!",
+          "name_format": "bold_italic",
+          "description": "The yokai hurls its Solopsist Spiral at a point it can see within 60 feet of itself, where it unleashes a shockwave in a 15-foot-radius sphere centered there. Each target in range must succeed a DC 22 Strength saving throw or be knocked prone. The Solopsist Spiral then returns to it."
+        },
+        {
+          "name": "Dark Eruption (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The yokai strikes its Solopsist Spiral into the ground, causing a burst of mental torment to erupt around it. Each creature it chooses within 30 feet must make a DC 22 Intelligence saving throw, taking 23 (5d8) psychic damage on a failure."
+        },
+        {
+          "name": "Carve This Into Your Mind (Costs 3 Actions)",
+          "name_format": "bold_italic",
+          "description": "The yokai warps reality around it, causing all attacks made against it to have disadvantage until the start of its next turn. Then, the first attack it hits with on its next turn is automatically a critical hit."
+        }
+      ],
+      "legendary_action_count": 3
+    }
+  ]
+}

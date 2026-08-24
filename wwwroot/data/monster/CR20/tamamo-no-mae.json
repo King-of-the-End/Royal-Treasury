@@ -130,7 +130,6 @@
           "name": "Spellcasting",
           "name_format": "bold_italic",
           "description": "Tamamo no Mae is a 17th-level spellcaster. Her spellcasting ability is Intelligence. She has the following spells prepared:",
-          "notes": "Tamamo no Mae will not use her 6th-level or higher spells unless her Mythic Awakening has triggered, but will use higher level spell slots before that.",
           "spellcasting": {
             "spells": [
               {
@@ -205,6 +204,9 @@
                   "yokai possession"
                 ]
               }
+            ],
+            "notes": [
+              "Tamamo no Mae will not use her 6th-level or higher spells unless her Mythic Awakening has triggered, but will use higher level spell slots before that."
             ]
           }
         },

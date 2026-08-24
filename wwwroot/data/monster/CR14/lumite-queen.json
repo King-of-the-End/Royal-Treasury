@@ -1,0 +1,191 @@
+{
+  "Name": "Lumite Queen",
+  "Group": "Lumites",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Lumite Queen Lair**\n\nThe lair of a lumite queen and its hive usually constitute the wreckage of space ships or space debris. They burrow holes and tunnels into them until they drift close to a new ship or planet with suitable prey, then direct their hive to crash into or intercept it. Their lairs are reinforced by an internal membrane created by mixing natural metals and minerals with their acidic fluids, creating a tough, chitinous pseudo-alloy that can survive meteoric impacts. When their hives crash down to planets they become buried deep in the earth, and the lumites within emerge to attack and feed.\n\nLumite queens connect to the heart of their lairs, laying eggs, rearing new broods, and psychically adjusting the gravity of their hive to direct them through the depths of the exolunar void. They tend to avoid planetfall unless a world seems to have large amounts of suitable prey. To determine this, they will break off chunks of their hive to send scouts that gauge local life, then report back to the queen to determine if they should fall or not.",
+  "Information Sections": [
+    {
+      "Title": "Lumite Queen Lair",
+      "Text": "The lair of a lumite queen and its hive usually constitute the wreckage of space ships or space debris. They burrow holes and tunnels into them until they drift close to a new ship or planet with suitable prey, then direct their hive to crash into or intercept it. Their lairs are reinforced by an internal membrane created by mixing natural metals and minerals with their acidic fluids, creating a tough, chitinous pseudo-alloy that can survive meteoric impacts. When their hives crash down to planets they become buried deep in the earth, and the lumites within emerge to attack and feed.\n\nLumite queens connect to the heart of their lairs, laying eggs, rearing new broods, and psychically adjusting the gravity of their hive to direct them through the depths of the exolunar void. They tend to avoid planetfall unless a world seems to have large amounts of suitable prey. To determine this, they will break off chunks of their hive to send scouts that gauge local life, then report back to the queen to determine if they should fall or not."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "lumite_queen",
+      "section_type": "Stat Block",
+      "title": "Lumite Queen",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "monstrosity",
+        "alignment": ""
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "175 (10d20 \u002B 70)",
+      "threshold": "10",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "90 ft.",
+        "0-G acceleration": "180 ft."
+      },
+      "quality_traits": [
+        "Macro attacks (Medium)",
+        "siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B7"
+        },
+        "CON": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B12"
+        },
+        "INT": {
+          "score": 7,
+          "modifier": "-2",
+          "save": "\u002B3"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "\u002B2"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B7",
+        "Con \u002B12",
+        "Int \u002B3"
+      ],
+      "skills": [
+        "Perception \u002B13"
+      ],
+      "resistances": [
+        "B/P/S (adamantine)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid",
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "frightened"
+      ],
+      "senses": [
+        "tremorsense 60 ft.",
+        "darkvision 120 ft.",
+        "hivesense 480 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [],
+      "challenge_rating": "14 (11,500 XP)",
+      "proficiency_bonus": "\u002B5",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Legendary Actions": "bold",
+          "Lair Actions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The lumite attacks once with its Horn and twice with its Piercing Appendage."
+        },
+        {
+          "name": "Horn",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B12 to hit, reach 10 ft., one target. Hit: 25 (5d6 \u002B 7) bludgeoning damage. If the target is Large or smaller they must succeed a DC 21 Strength saving throw or be knocked prone.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Piercing Appendage",
+          "name_format": "bold_italic",
+          "description": "Macro Melee Weapon Attack: \u002B12 to hit, reach 10 ft., one target. Hit: 16 (2d8 \u002B 7) piercing damage. (macro: 23 piercing)",
+          "inline_formatting": {
+            "Macro Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Acid Gout (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The lumite spits acid in a 60-foot cone. Each creature in that area must succeed a DC 21 Dexterity saving throw, taking 66 (12d10) acid damage on a failed save, or half as much on a successful one. Creatures who fail by 5 points or more are covered in acid, and take a d10 of acid damage at the start of each of their turns. They can wash the acid away and end this effect by becoming totally submerged in liquid or by using their action to do so."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": [
+        {
+          "name": "Fly-By",
+          "name_format": "bold_italic",
+          "description": "The lumite moves up to half its movement speed, provoking no opportunity attacks."
+        },
+        {
+          "name": "Horn Attack",
+          "name_format": "bold_italic",
+          "description": "The lumite makes one Horn attack."
+        },
+        {
+          "name": "Queen\u2019s Command (Costs 2 Actions)",
+          "name_format": "bold_italic",
+          "description": "The lumite commands up to three other lumites within 60 feet to attack, allowing each to use their reaction to move up to half their movement speed and make a single weapon attack against a target the lumite queen can see."
+        }
+      ],
+      "lair_actions": {
+        "initiative": 20,
+        "loses_initiative_ties": true,
+        "description": "On initiative count 20 (losing initiative ties), the lumite takes a Lair Action to cause one of the following effects. It cannot use the same effect twice in a row.",
+        "actions": [
+          {
+            "name": "Infesting Swarm",
+            "name_format": "bold_italic",
+            "description": "A swarm of subservient insects swarm around three points the lumite queen chooses within their lair, filling a 10-foot-radius sphere centered on each. A creature who starts their turn within one of these swarms or enters their space for the first time on their turn must make a DC 16 Constitution saving throw, taking 16 (2d10 \u002B 5) necrotic damage on a failure. These swarms also count as difficult terrain for any non-lumite creature. These swarms vanish once the lumite takes another Lair Action."
+          },
+          {
+            "name": "Poison Wind",
+            "name_format": "bold_italic",
+            "description": "A wind carrying toxins breezes between two points the lumite queen can see, which can be no further than 60 feet from one another. The line is 15 feet wide, and each creature within it must succeed a DC 16 Constitution saving throw or be poisoned for 1 minute. Each creature poisoned this way may repeat the save at the end of each of their turns, ending the effect on a success."
+          },
+          {
+            "name": "Hivemind Shriek",
+            "name_format": "bold_italic",
+            "description": "The hivemind bound to the lumite queen exerts a shriek of psychic energy, causing up to four creatures the lumite queen can see to make a DC 16 Intelligence saving throw. On a failure, their minds are overloaded and they become sluggish until initiative count 20 the following round."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      },
+      "legendary_action_count": 3
+    }
+  ]
+}

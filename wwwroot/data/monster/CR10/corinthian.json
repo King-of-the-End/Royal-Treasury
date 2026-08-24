@@ -1,12 +1,12 @@
 {
   "Name": "Corinthian",
   "Group": "Beast of Bestowal",
-  "Source": "Blade, Bone & Benefit",
-  "Information": "**Corinthian**\n\n**Title** The Eyes of Blind Fate\n\n**Gemstone** Pyrite\n\n**Type** Oucumeneal\n\n**Originator** Vestias\n\nConsidered to be a “pet” of Lana, the Corinthian was once a primordia who was on Lana’s staff in her Divine Realm. In a wager between Lana and Vestias, the Corinthian - known to be one of her favorite attendants - was used as a wager: if Vestias won, Lana would surrender the Corinthian and the contents of one of her vaults to Vestias, and if Lana won, Vestias would elevate the Corinthian to the status of an eidolos. Lana won of course, as challenging fortune herself to a game of chance is foolish even for an Eidolon, and so the Corinthian became an eidolos whose order was to faithfully serve Lana until they were released from service.",
+  "Source": "Blade, Bone \u0026 Benefit",
+  "Information": "**Corinthian**\n\n**Title** The Eyes of Blind Fate\n\n**Gemstone** Pyrite\n\n**Type** Oucumeneal\n\n**Originator** Vestias\n\nConsidered to be a \u201Cpet\u201D of Lana, the Corinthian was once a primordia who was on Lana\u2019s staff in her Divine Realm. In a wager between Lana and Vestias, the Corinthian - known to be one of her favorite attendants - was used as a wager: if Vestias won, Lana would surrender the Corinthian and the contents of one of her vaults to Vestias, and if Lana won, Vestias would elevate the Corinthian to the status of an eidolos. Lana won of course, as challenging fortune herself to a game of chance is foolish even for an Eidolon, and so the Corinthian became an eidolos whose order was to faithfully serve Lana until they were released from service.",
   "Information Sections": [
     {
       "Title": "Corinthian",
-      "Text": "**Title** The Eyes of Blind Fate\n\n**Gemstone** Pyrite\n\n**Type** Oucumeneal\n\n**Originator** Vestias\n\nConsidered to be a “pet” of Lana, the Corinthian was once a primordia who was on Lana’s staff in her Divine Realm. In a wager between Lana and Vestias, the Corinthian - known to be one of her favorite attendants - was used as a wager: if Vestias won, Lana would surrender the Corinthian and the contents of one of her vaults to Vestias, and if Lana won, Vestias would elevate the Corinthian to the status of an eidolos. Lana won of course, as challenging fortune herself to a game of chance is foolish even for an Eidolon, and so the Corinthian became an eidolos whose order was to faithfully serve Lana until they were released from service."
+      "Text": "**Title** The Eyes of Blind Fate\n\n**Gemstone** Pyrite\n\n**Type** Oucumeneal\n\n**Originator** Vestias\n\nConsidered to be a \u201Cpet\u201D of Lana, the Corinthian was once a primordia who was on Lana\u2019s staff in her Divine Realm. In a wager between Lana and Vestias, the Corinthian - known to be one of her favorite attendants - was used as a wager: if Vestias won, Lana would surrender the Corinthian and the contents of one of her vaults to Vestias, and if Lana won, Vestias would elevate the Corinthian to the status of an eidolos. Lana won of course, as challenging fortune herself to a game of chance is foolish even for an Eidolon, and so the Corinthian became an eidolos whose order was to faithfully serve Lana until they were released from service."
     }
   ],
   "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Corinthian.png",
@@ -30,13 +30,13 @@
         "alignment": "true neutral"
       },
       "armor_class": "16 (natural armor, cosmogony bonus)",
-      "hit_points": "98 (15d8 + 30)",
+      "hit_points": "98 (15d8 \u002B 30)",
       "speed": {
         "walk": "30 ft.",
         "teleport": "30 ft."
       },
       "quality_traits": [
-        "Cosmogony +1",
+        "Cosmogony \u002B1",
         "critical 18",
         "eidolos (oucumeneal)",
         "magic resist"
@@ -44,43 +44,42 @@
       "ability_scores": {
         "STR": {
           "score": 15,
-          "modifier": "+3"
+          "modifier": "\u002B3"
         },
         "DEX": {
           "score": 13,
-          "modifier": "+2",
-          "save": "+6"
+          "modifier": "\u002B2",
+          "save": "\u002B6"
         },
         "CON": {
           "score": 15,
-          "modifier": "+3"
+          "modifier": "\u002B3"
         },
         "INT": {
           "score": 17,
-          "modifier": "+4",
-          "save": "+8"
+          "modifier": "\u002B4",
+          "save": "\u002B8"
         },
         "WIS": {
           "score": 18,
-          "modifier": "+5",
-          "save": "+9"
+          "modifier": "\u002B5",
+          "save": "\u002B9"
         },
         "CHA": {
           "score": 23,
-          "modifier": "+7"
+          "modifier": "\u002B7"
         }
       },
-      "ability_score_note": "*checks, saves, and skills include the +1 cosmogony bonus",
       "saving_throws": [
-        "Dex +6",
-        "Int +8",
-        "Wis +9"
+        "Dex \u002B6",
+        "Int \u002B8",
+        "Wis \u002B9"
       ],
       "skills": [
-        "Deception +11",
-        "Insight +13",
-        "Perception +9",
-        "Persuasion +11"
+        "Deception \u002B11",
+        "Insight \u002B13",
+        "Perception \u002B9",
+        "Persuasion \u002B11"
       ],
       "resistances": [
         "B/P/S (eidolic)"
@@ -99,7 +98,7 @@
         "All"
       ],
       "challenge_rating": "10 (8,850 XP)",
-      "proficiency_bonus": "+4",
+      "proficiency_bonus": "\u002B4",
       "traits": [
         {
           "name": "Faultless Gamble",
@@ -116,12 +115,12 @@
         {
           "name": "Multiattack",
           "name_format": "bold_italic",
-          "description": "Corinthian makes two attacks using their Golden Card, then uses Quarterly Gamble if it’s charged."
+          "description": "Corinthian makes two attacks using their Golden Card, then uses Quarterly Gamble if it\u2019s charged."
         },
         {
           "name": "Golden Card",
           "name_format": "bold_italic",
-          "description": "Melee Spell Attack: +11 to hit, reach 20 ft., one target. Hit: 17 (2d10 + 6) slashing or radiant damage.",
+          "description": "Melee Spell Attack: \u002B11 to hit, reach 20 ft., one target. Hit: 17 (2d10 \u002B 6) slashing or radiant damage.",
           "inline_formatting": {
             "Melee Spell Attack": "italic",
             "Hit": "italic"
@@ -158,10 +157,11 @@
           {
             "name": "Card Rain (Costs 2 Actions)",
             "name_format": "bold_italic",
-            "description": "Corinthian throws a deck of celestial cards into their air, which scatters around it, chooses who is an ally and who is hostile within 30 feet, then they roll a d100. On a result of 51 or higher, each hostile creature gains advantage on the next attack roll, saving throw, or ability check they make for 1 minute. On a result of 50 or lower, each of those creatures takes 17 (2d10 + 6) radiant damage instead. On a result of 10 or lower, they take 28 (4d10 + 6) radiant damage instead."
+            "description": "Corinthian throws a deck of celestial cards into their air, which scatters around it, chooses who is an ally and who is hostile within 30 feet, then they roll a d100. On a result of 51 or higher, each hostile creature gains advantage on the next attack roll, saving throw, or ability check they make for 1 minute. On a result of 50 or lower, each of those creatures takes 17 (2d10 \u002B 6) radiant damage instead. On a result of 10 or lower, they take 28 (4d10 \u002B 6) radiant damage instead."
           }
         ]
-      }
+      },
+      "ability_note": "*checks, saves, and skills include the \u002B1 cosmogony bonus"
     }
   ]
 }

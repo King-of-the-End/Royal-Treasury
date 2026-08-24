@@ -1,0 +1,146 @@
+{
+  "Name": "Kyozoku",
+  "Group": "Yokai",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Kyozoku**\n\nBrought about by the intense feelings of betrayal experienced by the framebilt when their knowledge of their past was restored, kyozoku are a construct-like large yokai that embodies the framebilt\u2019s regrets and lamentations about how their history with DGR units caused their species to be abused by the Eidolons.\n\nKyozoku carry a desire to seize control where the framebilt felt powerless. They are drawn to frame units and similar beings (i.e. constructs) and possess them, taking control of the object of the framebilt\u2019s dark history. They then use those frame units to cause terror and fear, feeding on negativity they can stir toward the machine or its creators.\n\nIf a kyozoku spends enough time merged with a frame unit, it can cause it to become an undying frame (if the yokai abandons it) or, if they remain in it, may evolve into a kyozoku daiyokai, escaping into a new, terrifying form as a frame unit merged eternally with the fiend.",
+  "Information Sections": [
+    {
+      "Title": "Kyozoku",
+      "Text": "Brought about by the intense feelings of betrayal experienced by the framebilt when their knowledge of their past was restored, kyozoku are a construct-like large yokai that embodies the framebilt\u2019s regrets and lamentations about how their history with DGR units caused their species to be abused by the Eidolons.\n\nKyozoku carry a desire to seize control where the framebilt felt powerless. They are drawn to frame units and similar beings (i.e. constructs) and possess them, taking control of the object of the framebilt\u2019s dark history. They then use those frame units to cause terror and fear, feeding on negativity they can stir toward the machine or its creators.\n\nIf a kyozoku spends enough time merged with a frame unit, it can cause it to become an undying frame (if the yokai abandons it) or, if they remain in it, may evolve into a kyozoku daiyokai, escaping into a new, terrifying form as a frame unit merged eternally with the fiend."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Kyozoku.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Kyozoku.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Kyozoku.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "kyozoku",
+      "section_type": "Stat Block",
+      "title": "Kyozoku",
+      "creature": {
+        "size": "Large",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "16 (natural armor)",
+      "hit_points": "143 (15d10 \u002B 60)",
+      "threshold": "10",
+      "speed": {
+        "walk": "5 ft.",
+        "teleport": "15 ft.",
+        "fly": "30 ft. (hover)",
+        "0-G acceleration": "90 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "magic resist",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "\u002B1"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "\u002B3"
+        },
+        "CON": {
+          "score": 19,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B9"
+        },
+        "CHA": {
+          "score": 17,
+          "modifier": "\u002B3",
+          "save": "\u002B7"
+        }
+      },
+      "saving_throws": [
+        "Wis \u002B9",
+        "Cha \u002B7"
+      ],
+      "skills": [
+        "Stealth \u002B7"
+      ],
+      "resistances": [
+        "B/P/S (magical)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "cold",
+        "force"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "paralyzed",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "understands Sylvan and Elvish but doesn\u2019t speak"
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "\u002B4",
+      "formatting": {
+        "title": "bold",
+        "creature_line": "italic",
+        "field_labels": "bold",
+        "ability_headers": "bold",
+        "section_headers": {
+          "Traits": "bold",
+          "Actions": "bold",
+          "Bonus Actions": "bold",
+          "Legendary Actions": "bold"
+        }
+      },
+      "traits": [],
+      "actions": [
+        {
+          "name": "Force Crush",
+          "name_format": "bold_italic",
+          "description": "The yokai chooses three creatures within 60 feet and creates a gravity well focused on each that can crush them. Each target must make a DC 17 Strength saving throw, taking 33 (6d10) force damage on a failed save. Creatures who roll a natural 1 on their saving throw are treated as though this was a critical hit as per the Yokai Nourishment trait."
+        },
+        {
+          "name": "String Puppet Grip (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The yokai teleports to a space adjacent to a construct within 120 feet of it, and forces the construct to resist an attempt at possession. The target must make a DC 17 Charisma saving throw, becoming charmed (malfunction) on a failure. When charmed this way, the yokai merges with the construct, overpowering both its will and the will of each of its pilots/operators. While charmed, the yokai cannot be touched or targeted by spells except those that shunt a creature through space or planes (such as banishment), and the yokai dictates all actions the construct takes on its turn. The construct\u2019s proficiency bonus is increased to the yokai\u2019s if it wasn\u2019t already higher.\n\nAt the end of each of its turns, the construct reattempts the Charisma saving throw. On three successes, the yokai is shunted from it into an adjacent unoccupied space. After three failures, this effect becomes permanent unless the construct is reduced to 0 hit points or another effect exorcises the yokai.\n\nWhen the construct is reduced to 0 hit points, the yokai can prevent it from dying and have it instead drops to 1 hit point instead, taking all damage the construct should have taken upon itself instead (bypassing immunities, resistances, and thresholds). If the construct drops to 0 hit points the yokai is shunted out of the construct.\n\nIf the target was a frame unit or astradeck, it stops responding to its existing pilots/operators and treats the yokai as its new pilot/operator, following the usual rules for doing so."
+        },
+        {
+          "name": "Force Action",
+          "name_format": "bold_italic",
+          "description": "The yokai forces whatever construct it is possessing to take any action and/or bonus action it is capable of."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Shimmer Out",
+          "name_format": "bold_italic",
+          "description": "The yokai becomes invisible until the start of its next turn."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": []
+    }
+  ]
+}

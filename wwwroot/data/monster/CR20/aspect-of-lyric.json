@@ -1,0 +1,316 @@
+{
+  "Name": "Aspect of Lyric",
+  "Group": "Deific Aspects",
+  "Source": "Zagalhtas Exolunar Collection",
+  "Information": "**Aspect of Lyric**\n\nLyric is a songstress and goddess of revelry. Though not prone to combat, when she must engage in it, she prefers to transform the battlefield itself into a performance. In her mortal life she was both a sorceress and performer, and so she applies these aspects to that performance. Lyric has a general distaste for needless violence or killing, and when it can be avoided\u2014regardless of who her opponent is\u2014she will do so, even if they are of an evil nature. When it is necessary, she prefers to imprison those who cannot be settled down within objects of beauty, which are locked by charms that require a specific song or performance to unlock.\n\n**Divine Purpose**\n\nLyric\u0027s current goal as a goddess, as she rises into the early stages of her eternity, is to bring music and stories to new worlds and people. She subtly introduces the beauty of song to those who have yet to experience it, plants seeds in the hearts of aspiring performers, and seeks to elaborate on grand epics told throughout the stars. Thanks to her own indulgent habits, Lyric finds herself sewing commonalities between stories on various worlds, which have begun to form a unified universal story of hither-to unheard-of scale and majesty.\n\n**Shifting Existence**\n\nAs her ascension to a full goddess is relatively recent, Lyric has not been completely filtered by the Divine Curtain yet. Thanks to her body being within the acceptable timeframe in which it would normally exist in the Material Plane, she is still rooted there, and so she is able to appear more easily in the Material Plane than many other deities\u2014for now at least. However, the destruction of her aspect would mean the destruction of that body, and would fully filter her divine power through the Curtain and leave her sequestered on one side like all gods.\n\n**Sovereignty**\n\nLyric trained to master the sovereignty spell during her mortal life, and discovered a new dimension to her magical abilities through it. As a goddess she can produce this spell, but it is an absolute last resort; using it represents a show of force that she considers to be entirely unbecoming of her Domains or divine responsibilities.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Lyric",
+      "Text": "Lyric is a songstress and goddess of revelry. Though not prone to combat, when she must engage in it, she prefers to transform the battlefield itself into a performance. In her mortal life she was both a sorceress and performer, and so she applies these aspects to that performance. Lyric has a general distaste for needless violence or killing, and when it can be avoided\u2014regardless of who her opponent is\u2014she will do so, even if they are of an evil nature. When it is necessary, she prefers to imprison those who cannot be settled down within objects of beauty, which are locked by charms that require a specific song or performance to unlock."
+    },
+    {
+      "Title": "Divine Purpose",
+      "Text": "Lyric\u0027s current goal as a goddess, as she rises into the early stages of her eternity, is to bring music and stories to new worlds and people. She subtly introduces the beauty of song to those who have yet to experience it, plants seeds in the hearts of aspiring performers, and seeks to elaborate on grand epics told throughout the stars. Thanks to her own indulgent habits, Lyric finds herself sewing commonalities between stories on various worlds, which have begun to form a unified universal story of hither-to unheard-of scale and majesty."
+    },
+    {
+      "Title": "Shifting Existence",
+      "Text": "As her ascension to a full goddess is relatively recent, Lyric has not been completely filtered by the Divine Curtain yet. Thanks to her body being within the acceptable timeframe in which it would normally exist in the Material Plane, she is still rooted there, and so she is able to appear more easily in the Material Plane than many other deities\u2014for now at least. However, the destruction of her aspect would mean the destruction of that body, and would fully filter her divine power through the Curtain and leave her sequestered on one side like all gods."
+    },
+    {
+      "Title": "Sovereignty",
+      "Text": "Lyric trained to master the sovereignty spell during her mortal life, and discovered a new dimension to her magical abilities through it. As a goddess she can produce this spell, but it is an absolute last resort; using it represents a show of force that she considers to be entirely unbecoming of her Domains or divine responsibilities."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lyric%2C%20the%20Revelous%20Note.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lyric%2C%20the%20Revelous%20Note.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lesser%20Deity%20Emblem%20-%20Lyrice%2C%20the%20Revelous%20Note.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lyric%2C%20the%20Revelous%20Note.png"
+    },
+    {
+      "Label": "Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Lesser%20Deity%20Emblem%20-%20Lyrice%2C%20the%20Revelous%20Note.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_lyric",
+      "section_type": "Stat Block",
+      "title": "Aspect of Lyric",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (human)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "255 (30d8 \u002B 120)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "40 ft. (hover)"
+      },
+      "quality_traits": [
+        "Deific",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B11"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B7"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B8"
+        },
+        "WIS": {
+          "score": 19,
+          "modifier": "\u002B4",
+          "save": "\u002B10"
+        },
+        "CHA": {
+          "score": 26,
+          "modifier": "\u002B8",
+          "save": "\u002B11"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B8",
+        "Dex \u002B11",
+        "Con \u002B7",
+        "Int \u002B8",
+        "Wis \u002B10",
+        "Cha \u002B11"
+      ],
+      "skills": [
+        "Acrobatics \u002B11",
+        "History \u002B8",
+        "Perception \u002B16",
+        "Performance \u002B20"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "thunder",
+        "psychic",
+        "B/P/S (magical or eidolic)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "unconscious"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "passive Perception 26"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "20 (25,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Aura of Soothing",
+          "name_format": "bold_italic",
+          "description": "Any creature that can hear or see Lyric is immune to being charmed or frightened by any creature other than her or her allies."
+        },
+        {
+          "name": "Concentration Expert",
+          "name_format": "bold_italic",
+          "description": "Lyric has advantage on concentration checks, and can concentrate on two spells at the same time. Concentration checks for both are rolled as one."
+        },
+        {
+          "name": "Glamorous Encore (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Lyric is reduced to 0 hit points or killed outright, she is instead reduced to 150 hit points, regains her Legendary Reactions, and her spent spells. She teleports to an unoccupied point she chooses within 60 feet, and for 1 hour she can use her Mythic Actions. If a party defeats her after using her Glamorous Encore, they are awarded an additional 25,000 XP (for a total of 50,000 XP)."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Lyric\u2019s spellcasting ability is Charisma. She can cast the following spells innately, requiring no material components:",
+          "additional_text": "All of Lyric\u2019s spells are cast at 6th level, unless their base level is higher.",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "dream",
+                  "enthrall",
+                  "sending"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "calm emotions",
+                  "dimension door",
+                  "dispel magic",
+                  "dissonant whispers"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "fortune/failure",
+                  "heal",
+                  "irresistible dance",
+                  "mislead",
+                  "power word response",
+                  "power word stun"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "foresight",
+                  "greater invisibility",
+                  "imprisonment",
+                  "song of harmony",
+                  "sunburst",
+                  "tormented scream"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Lyric makes two Sibilant Rapier attacks, and uses her Devastating Whisper or Whip of Harsh Melodies once. She can replace both of her weapon attacks with casting a spell that has a casting time of 1 action through her Innate Spellcasting."
+        },
+        {
+          "name": "Sibilant Rapier",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B11 to hit, reach 5 ft., one target. Hit: 10 (1d8 \u002B 5) piercing damage plus 9 (2d6) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Devastating Whisper",
+          "name_format": "bold_italic",
+          "description": "Lyric utters a phrase of mockery or repulsion toward one creature she chooses within 60 feet. That target must make a DC 22 Charisma saving throw, taking 19 (2d10 \u002B 8) psychic damage on a failure. If the target fails the save by 10 points or more, they become sluggish until the end of their next turn."
+        },
+        {
+          "name": "Mythic Action: Whip of Harsh Melodies",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 30 ft., one target. Hit: 27 (4d8 \u002B 8) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic Action: Grand Dance (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Lyric spreads an aura of merry influence in a 30-foot-radius sphere, centered on a point she can see within 120 feet. Each creature in that space that Lyric chooses must make a DC 18 Charisma saving throw, and are caught up in the revelry for 10 minutes on a failure. During that time, affected targets move as though dancing or performing, and they use Charisma in place of Strength or Dexterity when making attack rolls, ability checks, or saving throws. At the end of each of their turns, they may repeat the saving throw, ending the effect on a success. If they fail these ongoing checks by 5 points or more, they suffer a point of Combat Fatigue."
+        },
+        {
+          "name": "Mythic Action: Diva\u2019s Rapture (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Lyric chooses one creature she can see within 60 feet, who she subjects to a reality-warping illusion of seeing her give them a grand, solo performance. The target must make a DC 22 Charisma saving throw. On a failure, they are stunned, and remain trapped in this illusion, during which time they repeat the saving throw at the end of each of their turns, as well as with advantage each time they take damage (only once per turn). On a success, the effect ends. Lyric must concentrate on this effect, but may concentrate on it in addition to any other effects she is concentrating on (including this one)."
+        },
+        {
+          "name": "Mythic Action: Sovereignty (1/Day)",
+          "name_format": "bold_italic",
+          "description": "Lyric produces the effects of the sovereignty spell, requiring no spell slot or Eidomancy check. It is produced at 9th level."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Harmonic Inspiration (3/Day)",
+          "name_format": "bold_italic",
+          "description": "Lyric chooses up to three creatures within 90 feet who can hear or see her. Each of those creatures gains a use of Harmonic Inspiration, which they can only have one of, and which lasts for 10 minutes. At any point during that time, when they fail an attack roll, ability check, or saving throw, they can spend their Harmonic Inspiration to roll a d12 and add it to the result, possibly changing the outcome. Additionally, if that roll had disadvantage, they can choose to switch to the higher result of their d20 rolls instead."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Counternote",
+          "name_format": "bold_italic",
+          "description": "In response to a spell with verbal components, Lyric produces the effects of the counterspell spell, requiring no spell slot, using Charisma as her spellcasting ability."
+        },
+        {
+          "name": "Cutting Quip",
+          "name_format": "bold_italic",
+          "description": "When a creature makes an attack roll, ability check, or saving throw while within 120 feet of Lyric, she can roll a d12 and subtract it from the result. If that roll was made with advantage, she can instead force them to use the lower result of their d20 rolls, as though they had disadvantage."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Isolated Vocals",
+            "name_format": "bold_italic",
+            "description": "Until the start of Lyric\u2019s next turn, all creatures within 60 feet of Lyric cannot hear the voices of other creatures, except Lyric\u2019s own (if she wishes to be heard). Lyric is omitted from this effect."
+          },
+          {
+            "name": "Extra Verse (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Lyric uses her Devastating Whisper against two targets within range."
+          },
+          {
+            "name": "Spellcast (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Lyric casts one spell using Innate Spellcasting with a casting time of 1 action or 1 bonus action."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "options": [
+          {
+            "name": "Acentual Strike",
+            "name_format": "bold_italic",
+            "description": "Lyric moves up to her movement speed and makes a single Whip of Harsh Melodies attack."
+          },
+          {
+            "name": "Bithreading (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Lyric conjures physical strings of notes in the air and directs them toward a single target within 60 feet. That target must succeed a DC 18 Strength saving throw or be restrained by these notes until the end of Lyric\u2019s next turn."
+          },
+          {
+            "name": "Panseverence (Costs 3 Action)",
+            "name_format": "bold_italic",
+            "description": "Lyric uses the Whip of Harsh Melodies against all creatures within its reach, forcing each to make a DC 19 Dexterity saving throw. Each target that fails is hit by the Whip and takes its damage."
+          }
+        ],
+        "intro": "Lyric may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening."
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}
