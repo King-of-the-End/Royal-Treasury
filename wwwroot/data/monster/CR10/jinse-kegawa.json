@@ -1,0 +1,178 @@
+{
+  "Name": "Jins\u00E8 Kegawa",
+  "Group": "Beast of Bestowal",
+  "Source": "Soul of Trickery",
+  "Information": "**Jins\u00E8 Kegawa**\n\n**Title** The Herding Heatwave\n**Gemstone** Autumn Emerald\n**Type** Oucumenael\n**Originator** Luxus\n\nJins\u00E8 Kegawa is a protector of helpless animals who has wool made of crimson emerald fibers. They wander, grazing and feeding, known to fly into a fiery frenzy when attacked or bothered by anything that is not a docile animal. When called upon by Suzaku no Sorani, it is an attack dog that hunts down other creatures to burn them to the ground. Its fleece provides extreme offensive and defensive abilities.",
+  "Information Sections": [
+    {
+      "Title": "Jins\u00E8 Kegawa",
+      "Text": "**Title** The Herding Heatwave\n**Gemstone** Autumn Emerald\n**Type** Oucumenael\n**Originator** Luxus\n\nJins\u00E8 Kegawa is a protector of helpless animals who has wool made of crimson emerald fibers. They wander, grazing and feeding, known to fly into a fiery frenzy when attacked or bothered by anything that is not a docile animal. When called upon by Suzaku no Sorani, it is an attack dog that hunts down other creatures to burn them to the ground. Its fleece provides extreme offensive and defensive abilities."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Jinse%20Kegawa.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Jinse%20Kegawa.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Jinse%20Kegawa.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "jinse_kegawa",
+      "section_type": "Stat Block",
+      "title": "Jins\u00E8 Kegawa",
+      "creature": {
+        "size": "Large",
+        "type": "beast (eidolos, oucumenael)",
+        "alignment": null
+      },
+      "armor_class": "21 (cosmogony bonus, natural armor)",
+      "hit_points": "188 (15d10 \u002B 105)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "cosmogony \u002B1",
+        "eidolos (oucumenael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "check": "\u002B5",
+          "save": "\u002B5"
+        },
+        "DEX": {
+          "score": 8,
+          "modifier": "-1",
+          "check": "-",
+          "save": "\u002B4"
+        },
+        "CON": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "check": "\u002B8",
+          "save": "\u002B8"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "check": "\u002B5",
+          "save": "\u002B5"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "check": "\u002B3",
+          "save": "\u002B7"
+        },
+        "CHA": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "check": "\u002B2",
+          "save": "\u002B6"
+        }
+      },
+      "ability_note": "*the checks, saves, and skills listed includes their \u002B1 Cosmogony Bonus",
+      "saving_throws": [
+        "Str \u002B5",
+        "Dex \u002B4",
+        "Con \u002B8",
+        "Int \u002B5",
+        "Wis \u002B7",
+        "Cha \u002B6"
+      ],
+      "skills": [],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "exhaustion",
+        "poisoned",
+        "restrained"
+      ],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 13"
+      ],
+      "languages": [
+        "Primordial"
+      ],
+      "challenge_rating": "10\u002B (8,850 XP)",
+      "proficiency_bonus": "\u002B4",
+      "cosmogony_bonus": "\u002B1",
+      "traits": [
+        {
+          "name": "Charging Ram",
+          "name_format": "bold_italic",
+          "description": "If Jins\u00E8 Kegawa moves at least 20 feet on their turn before making an attack, that next attack has advantage, and if it hits, its target is knocked prone if they are Medium or smaller."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Jins\u00E8 Kegawa makes two attacks with its Emerald Horns."
+        },
+        {
+          "name": "Emerald Horns",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 5 ft., one target. Hit: 21 (3d10 \u002B 5) piercing damage plus 7 (2d6) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Cosmic Shard: Firefleece Cloud (Recharge 4-6)",
+          "name_format": "bold_italic",
+          "description": "The fleece on Jins\u00E8 Kegawa heats up and becomes red hot. Until the start of its next turn, each time a creature hits it with an attack from within 20 feet, they take 7 (2d6) fire damage. Then, at the start of Jins\u00E8 Kegawa\u2019s next turn, the heat explodes outward, forcing each creature within 30 feet to make a DC 19 Dexterity saving throw, taking 45 (10d8) fire damage on a failure, or half as much damage on a success. A creature who fails by 10 points or more is ignited, and takes 7 (2d6) fire damage from the condition."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Hot Roll",
+            "name_format": "bold_italic",
+            "description": "Jins\u00E8 Kegawa rolls in a fiery ball, moving up to its movement speed. Each creature who comes within 10 feet of it during this movement takes a 5 (d8) of fire damage."
+          },
+          {
+            "name": "Superheat",
+            "name_format": "bold_italic",
+            "description": "The next weapon attack made against Jins\u00E8 Kegawa has disadvantage, and if it hits the weapon superheats in the hands of its wielder, who must make a DC 19 Constitution saving throw. On a failure, they drop that weapon due to its heat, and if they pick it up again before the end of Jins\u00E8 Kegawa\u2019s next turn, they take 9 (2d8) fire damage."
+          },
+          {
+            "name": "Exhausting Heatwave (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Jins\u00E8 Kegawa unleashes a wave of heat, which halves the movement speed of each creature within 30 feet of them who are not resistant or immune to fire damage until the start of Jins\u00E8 Kegawas next turn."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 1,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (1/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

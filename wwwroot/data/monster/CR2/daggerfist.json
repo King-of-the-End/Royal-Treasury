@@ -1,0 +1,129 @@
+{
+  "Name": "Daggerfist",
+  "Group": "Blackwind Acolytes",
+  "Source": "Soul of Trickery",
+  "Information": "**Daggerfist**\n\nDaggerfists are martial artists who train under the Way of the Slicing Nail, attempting to turn their bodies into lethal weapons. They learn from teachings passed down through the Blackwind Temple, and in return act as its guards, attendants, and footsoldiers.",
+  "Information Sections": [
+    {
+      "Title": "Daggerfist",
+      "Text": "Daggerfists are martial artists who train under the Way of the Slicing Nail, attempting to turn their bodies into lethal weapons. They learn from teachings passed down through the Blackwind Temple, and in return act as its guards, attendants, and footsoldiers."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "daggerfist",
+      "section_type": "Stat Block",
+      "title": "Daggerfist",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "16 (unarmored defense)",
+      "hit_points": "46 (7d8 + 14)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Critical 19"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+3"
+        },
+        "DEX": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+3"
+        },
+        "WIS": {
+          "score": 17,
+          "modifier": "+3",
+          "save": "+5"
+        },
+        "CHA": {
+          "score": 10,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [
+        "Str +3",
+        "Dex +5",
+        "Int +3",
+        "Wis +5"
+      ],
+      "skills": [
+        "Athletics +5",
+        "Insight +5",
+        "Perception +5"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "blindsight 15 ft.",
+        "darkvision 60 ft.",
+        "passive Perception 15"
+      ],
+      "languages": [
+        "Common",
+        "Kitzish",
+        "Sylvan"
+      ],
+      "challenge_rating": "2 (450 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Killing Blow",
+          "name_format": "bold_italic",
+          "description": "When the daggerfist scores a critical hit, their target must make a DC 13 Constitution saving throw. On a failure, they take an additional 14 (3d8) slashing damage from the attack."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The daggerfist makes two weapon attacks."
+        },
+        {
+          "name": "Foxpaw Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Swift Action",
+          "name_format": "bold_italic",
+          "description": "The daggerfist takes the Dash or Disengage action."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Deflect Missiles",
+          "name_format": "bold_italic",
+          "description": "When hit by a ranged weapon attack, the daggerfist may reduce the damage they take from it by 1d10 + 10. If this reduces its damage to 0, the daggerfist may target another creature within 30 feet of them to make a Ranged Weapon Attack: +5 to hit against, and on a successful hit, the target is hit by the projectile instead, dealing the damage it would have originally dealt before the reduction.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "Name": "Elstrakin, the Tailmother",
+  "Group": "The First to Skulk",
+  "Source": "Soul of Trickery",
+  "Information": "**Elstrakin, the Tailmother**\n\nThe prophet of Luxus and voice of Kitsune is a powerful archdruid who draws upon the wisdom of one mother, and the flames of the other. She is the embodiment of the Singeing itself, and has protected herself with rituals meant to prevent her from being preyed upon by Nogistune. Elstrakin is hailed as the spiritual leader of all kits\u2019adria, and who, through divine knowledge, knows each who walks Somnus Domina. She guides her family, cares for the Deep Pause Temple, and fights back against the tyranny of her fallen siblings.\n\n**Born of Flame**\n\nAs of her last Singeing, Kitsune and Elstrakin wove the very nature of the Singeing into Elstrakin so that if her life would end, she would be empowered by the same flames that have consumed each member of the First to Skulk to allow their rebirth. It serves as a reprisal of energy, a defensive countermeasure, a means to access unthinkable magic, and finally it is a way to prevent her body and soul from falling into the hands of her sister, should she perish. Thanks to this, Elstrakin has come to embody the fires of rebirth, and is seen as a symbol of flame\u2019s ability to reinvigorate the very land it burns.\n\n**Hidden Names**\n\nThough she tends to her duties as the Tailmother, Elstrakin commonly disguises herself and takes on different identities so she can investigate matters related to other kits\u2019adria, and will secretly serve many roles within her own community.",
+  "Information Sections": [
+    {
+      "Title": "Elstrakin, the Tailmother",
+      "Text": "The prophet of Luxus and voice of Kitsune is a powerful archdruid who draws upon the wisdom of one mother, and the flames of the other. She is the embodiment of the Singeing itself, and has protected herself with rituals meant to prevent her from being preyed upon by Nogistune. Elstrakin is hailed as the spiritual leader of all kits\u2019adria, and who, through divine knowledge, knows each who walks Somnus Domina. She guides her family, cares for the Deep Pause Temple, and fights back against the tyranny of her fallen siblings."
+    },
+    {
+      "Title": "Born of Flame",
+      "Text": "As of her last Singeing, Kitsune and Elstrakin wove the very nature of the Singeing into Elstrakin so that if her life would end, she would be empowered by the same flames that have consumed each member of the First to Skulk to allow their rebirth. It serves as a reprisal of energy, a defensive countermeasure, a means to access unthinkable magic, and finally it is a way to prevent her body and soul from falling into the hands of her sister, should she perish. Thanks to this, Elstrakin has come to embody the fires of rebirth, and is seen as a symbol of flame\u2019s ability to reinvigorate the very land it burns."
+    },
+    {
+      "Title": "Hidden Names",
+      "Text": "Though she tends to her duties as the Tailmother, Elstrakin commonly disguises herself and takes on different identities so she can investigate matters related to other kits\u2019adria, and will secretly serve many roles within her own community."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Elstrakin.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Elstrakin.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Elstrakin.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "elstrakin_the_tailmother",
+      "section_type": "Stat Block",
+      "title": "Elstrakin, the Tailmother",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (kits\u2019adria)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "20 (unarmored defense)",
+      "hit_points": "213 (25d8 \u002B 100)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "DEX": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B9"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B10"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "WIS": {
+          "score": 24,
+          "modifier": "\u002B7"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B9"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B9",
+        "Con \u002B10",
+        "Cha \u002B9"
+      ],
+      "skills": [
+        "History \u002B9",
+        "Insight \u002B13",
+        "Nature \u002B9",
+        "Perception \u002B19"
+      ],
+      "resistances": [
+        "necrotic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "acid",
+        "poison"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 29"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "\u002B6",
+      "traits": [
+        {
+          "name": "Before I Burn Out (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "Elstrakin is reduced to 0 hit points or is killed outright, her hit points instead reset to 120, she regains her spent Legendary Reactions, ends any effects on her causing unwanted conditions, and can use her Mythic Traits and Mythic Actions for 1 hour.\n\nAdditionally, when her Mythic Awakening is triggered, she can immediately cast nova using her Spellcasting trait, requiring no action."
+        },
+        {
+          "name": "Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Elstrakin is a 16th-level spellcaster. Her spellcasting ability is Wisdom. She has the following spells prepared:",
+          "notes": "Elstrakin will not use her 6th-level or higher spells or spell slots, unless her Mythic Awakening has triggered.",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "Cantrips (at will)",
+                "spells": [
+                  "ivy whip",
+                  "poison spray",
+                  "pyre tag",
+                  "thunder tongue"
+                ]
+              },
+              {
+                "frequency": "1st level (4 slots)",
+                "spells": [
+                  "cure wounds",
+                  "shield of summer",
+                  "tempest strikes"
+                ]
+              },
+              {
+                "frequency": "2nd level (3 slots)",
+                "spells": [
+                  "hold person",
+                  "moonbeam",
+                  "protective gale"
+                ]
+              },
+              {
+                "frequency": "3rd level (3 slots)",
+                "spells": [
+                  "dispel magic",
+                  "drowning wave",
+                  "lightning storm"
+                ]
+              },
+              {
+                "frequency": "4th level (3 slots)",
+                "spells": [
+                  "binding vine",
+                  "energy scourge",
+                  "searing sea"
+                ]
+              },
+              {
+                "frequency": "5th level (2 slots)",
+                "spells": [
+                  "elemental assault",
+                  "Elstrakin\u2019s instant bounty",
+                  "mass cure wounds"
+                ]
+              },
+              {
+                "frequency": "6th level (1 slot)",
+                "spells": [
+                  "investiture of fire",
+                  "sunbeam"
+                ]
+              },
+              {
+                "frequency": "7th level (1 slot)",
+                "spells": [
+                  "Elstrakin\u2019s loving embrace",
+                  "fire storm"
+                ]
+              },
+              {
+                "frequency": "8th level (1 slot)",
+                "spells": [
+                  "control weather",
+                  "nova"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Wild Caster",
+          "name_format": "bold_italic",
+          "description": "Elstrakin does not require verbal or material components for her druid spells, and can cast them while in fox form."
+        },
+        {
+          "name": "Wildspeaker",
+          "name_format": "bold_italic",
+          "description": "Elstrakin is perpetually under the effects of speak with animals and speak with plants."
+        },
+        {
+          "name": "Mythic: Pyrewalk Contingent",
+          "name_format": "bold_italic",
+          "description": "Elstrakin\u2019s body is wreathed in divine flames, giving her immunity to fire damage, and all of her attacks deal an additional 9 (2d8) fire damage. Any creature who hits her with an attack from within 15 feet takes a d10 of fire damage. If Elstrakin is killed, her body immediately vaporizes into ash, leaving behind magical possessions."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Elstrakin makes two weapon attacks, one of which she may replace with casting a spell with a casting time of 1 action. Elstrakin may use her Wisdom in place of Strength or Dexterity for weapon attacks."
+        },
+        {
+          "name": "Quarterstaff of Purifying Fire",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 5 ft., one target. Hit: 13 (1d8 \u002B 7) piercing damage plus 5 (1d8) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Singeing Root",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 30 ft., one target. Hit: 16 (2d8 \u002B 7) piercing damage, and the target must make a DC 21 Strength saving throw. On a failure, they are restrained until the start of Elstrakin\u2019s next turn.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "Elstrakin turns into a small fox, or back into her true form, while retaining her statistics in either form. If she is reduced to 0 hit points, she returns to her true form. Her equipment merges into her when she becomes a small fox."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Mythic: Tree Dodge",
+          "name_format": "bold_italic",
+          "description": "When an attack hits Elstrakin, she can force her attacker to make a DC 17 Dexterity saving throw. On a failure, she teleports up to 30 feet away to an unoccupied space, leaving behind a husk made of tree bark resembling her body, which takes the attack for her and leaves her unharmed. The attacker still takes damage from Pyrewalk Contingent as though they had hit her."
+        }
+      ],
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

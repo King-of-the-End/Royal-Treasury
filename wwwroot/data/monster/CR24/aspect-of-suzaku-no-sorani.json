@@ -1,0 +1,232 @@
+{
+  "Name": "Aspect of Suzaku no Sorani",
+  "Group": "Deific Aspects",
+  "Groups": [
+    "Deific Aspects"
+  ],
+  "Source": "Soul of Trickery",
+  "Information": "**Aspect of Suzaku no Sorani**\n\nThe Vermillion Bird of Flame is the Divine Beast God of Southern Cu Chullis. They are living fire and represent rebirth, acting as an obedient gatekeeper for the Eidolon Luxus. The massive bird is approached to foretell the future by those willing to brave their domain, the Sacred Graveyard, a valley where heroes and nobles are buried to allow their spirits to reach the next life with unequaled purity.\n\n**Advisor to the Shi Hang**\n\nThis avian god of flame is located in the Southern reaches of Cu Chullis, meaning it is on the territory of the Shi Hang dynasty, who are the sun elf rulers of much of Cu Chullis. They allow themselves to be called upon by the dynasty\u2019s Sun Lord to act as an advisor, and are also a critical part of the crowning of a new Sun Lord. Though it has never occurred, it is tradition that if Suzaku no Sorani would reject the authority of a Sun Lord, they would lose their status immediately. Due to this tie, Suzaku no Sorani is considered a symbol of the Shi Hang dynasty, and many commoners speak of the Sun Lord as an incarnation of the deity.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Suzaku no Sorani",
+      "Text": "The Vermillion Bird of Flame is the Divine Beast God of Southern Cu Chullis. They are living fire and represent rebirth, acting as an obedient gatekeeper for the Eidolon Luxus. The massive bird is approached to foretell the future by those willing to brave their domain, the Sacred Graveyard, a valley where heroes and nobles are buried to allow their spirits to reach the next life with unequaled purity."
+    },
+    {
+      "Title": "Advisor to the Shi Hang",
+      "Text": "This avian god of flame is located in the Southern reaches of Cu Chullis, meaning it is on the territory of the Shi Hang dynasty, who are the sun elf rulers of much of Cu Chullis. They allow themselves to be called upon by the dynasty\u2019s Sun Lord to act as an advisor, and are also a critical part of the crowning of a new Sun Lord. Though it has never occurred, it is tradition that if Suzaku no Sorani would reject the authority of a Sun Lord, they would lose their status immediately. Due to this tie, Suzaku no Sorani is considered a symbol of the Shi Hang dynasty, and many commoners speak of the Sun Lord as an incarnation of the deity."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Ref_Suzaku%20no%20Sorani.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Ref_Suzaku%20no%20Sorani.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR24/Ref_Suzaku%20no%20Sorani.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_suzaku_no_sorani",
+      "section_type": "Stat Block",
+      "title": "Aspect of Suzaku no Sorani",
+      "creature": {
+        "size": "Tremendous",
+        "type": "beast",
+        "alignment": "neutral good"
+      },
+      "armor_class": "18 (natural armor)",
+      "hit_points": "462 (28d20 \u002B 168)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "120 ft."
+      },
+      "quality_traits": [
+        "Deific (lesser)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 28,
+          "modifier": "\u002B9"
+        },
+        "DEX": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "\u002B6"
+        },
+        "INT": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B11"
+        },
+        "CHA": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B14"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B9",
+        "Int \u002B9",
+        "Wis \u002B11",
+        "Cha \u002B14"
+      ],
+      "skills": [
+        "Nature \u002B9",
+        "Perception \u002B11",
+        "Religion \u002B9"
+      ],
+      "resistances": [
+        "radiant"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire",
+        "thunder",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 21"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "24 (75,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Fires of Rebirth (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Suzaku no Sorani is reduced to 0 hit points or killed outright, they instead are reset to 250, they regain spent Legendary Reactions, and they can use their Mythic Traits and Mythic Actions for 1 hour.\n\nAdditionally, when their Mythic Awakening triggers, they cause the weather to change around them: the sky within 1 mile of them becomes clear of clouds or precipitation, and the temperature becomes warm and pleasant. Sunlight takes on a rich golden hue and burns across the sky. For the next hour, any creature who must look upward toward the sky is blinded to any creatures flying above them, and fire damage dealt to other creatures cannot be reduced by resistances."
+        },
+        {
+          "name": "Mythic: Future Teller",
+          "name_format": "bold_italic",
+          "description": "Suzaku no Sorani cannot have disadvantage on any attack roll, ability check, or saving throw, resulting from their ability to foresee the short-term future."
+        },
+        {
+          "name": "Mythic: Restorative Flames",
+          "name_format": "bold_italic",
+          "description": "Each time Suzaku no Sorani deals fire damage to a hostile creature, they gain temporary hit points equal to the fire damage dealt (if they deal damage to multiple creatures at once, they take the highest damage dealt among them only)."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Suzaku no Sorani makes three attacks: one with its Beak, and two with its Talons. It can replace its Beak attack with its Burning Wave if it\u2019s available."
+        },
+        {
+          "name": "Beak",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 10 ft., one target. Hit: 22 (2d12 \u002B 9) piercing damage plus 11 (2d10) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Talons",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 10 ft., one target. Hit: 18 (2d8 \u002B 9) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Nova Gate",
+          "name_format": "bold_italic",
+          "description": "Suzaku no Sorani turns into pure flame, and up to its movement speed, it can move through other creatures\u2019 spaces without penalty, as long as it does not end its movement in another creature\u2019s space. Each creature whose space it moves through must make a DC 17 Constitution saving throw, taking 14 (4d6) fire damage on a failure. If Suzaku no Sorani ends their movement in the space of another creature, they are shunted to the nearest unoccupied space that can fit them, and take 4 (1d6) irreducible damage for every 10 feet they are shunted. While moving with this feature, they have the Amorphous (1 foot) Quality Trait."
+        },
+        {
+          "name": "Mythic: Burning Wave",
+          "name_format": "bold_italic",
+          "description": "Suzaku no Sorani unleashes a wave of flame with a flap of its wings, which targets up to six creatures within 30 feet of it. Each target must make a DC 22 Dexterity saving throw, taking 39 (6d12) fire damage on a failure."
+        },
+        {
+          "name": "Mythic: Soul-Burning Pyre (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Suzaku no Sorani rains radiant fire down on each creature they choose in a 40-foot-radius sphere centered on a point it can see within 240 feet. Each target must make a DC 22 Dexterity saving throw, taking 44 (8d10) fire damage and 44 (8d10) radiant damage on a failure, or only the fire damage on a failure."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Fortunesight (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "When Suzaku no Sorani fails a saving throw or takes damage from an attack or effect, they can retroactively have foreseen this fortune and avoid it. If they do, they succeed the saving throw, are ignored by resulting effects targeting them, and take no damage from the triggering attack or effect."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Eye of Objection",
+            "name_format": "bold_italic",
+            "description": "Suzaku no Sorani forces one creature who can see it within 120 feet to make a DC 22 Charisma saving throw against their overwhelming presence. On a failure, they are frightened of Suzaku no Sorani until the end of the deity\u2019s next turn. On a success, they become immune to this Legendary Action for 24 hours."
+          },
+          {
+            "name": "Talons",
+            "name_format": "bold_italic",
+            "description": "Suzaku no Sorani makes a Talons attack against a target within reach."
+          },
+          {
+            "name": "Firewind (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Each creature within 30 feet of Suzaku no Sorani is exposed to a burning wave of heat, and must make a DC 22 Dexterity saving throw. On a failure, they are ignited for 1 minute, and take 7 (2d6) fire damage at the start of each of their turns as part of the condition."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "availability": "For 1 hour after using Fires of Rebirth (Mythic Awakening)",
+        "options": [
+          {
+            "name": "Rain of Fire",
+            "name_format": "bold_italic",
+            "description": "Feathers of radiant flame are thrown from Suzaku no Sorani\u2019s wings like spears, striking at up to three creatures within 60 feet of Suzaku no Sorani as a Ranged Weapon Attack: \u002B9 to hit. Each that hits deals 11 (2d10) radiant damage plus 11 (2d10) fire damage. Each feather must target a different creature.",
+            "inline_formatting": {
+              "Ranged Weapon Attack": "italic"
+            }
+          },
+          {
+            "name": "Nova Gate (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Suzaku no Sorani uses its Nova Gate action."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

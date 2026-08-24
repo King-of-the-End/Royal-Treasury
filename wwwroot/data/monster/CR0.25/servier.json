@@ -1,0 +1,108 @@
+{
+  "Name": "Servier",
+  "Group": "Blackwind Acolytes",
+  "Source": "Soul of Trickery",
+  "Information": "**Servier**\n\nThe rank-and-file members of the Blackwind who have not yet achieved any sort of mastery are given no proper title, and are referred to internally as serviers. They aspire to greatness, but rarely manage to achieve it. They are treated by most higher-ranking members as expendable and devoid of personal freedom.",
+  "Information Sections": [
+    {
+      "Title": "Servier",
+      "Text": "The rank-and-file members of the Blackwind who have not yet achieved any sort of mastery are given no proper title, and are referred to internally as serviers. They aspire to greatness, but rarely manage to achieve it. They are treated by most higher-ranking members as expendable and devoid of personal freedom."
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "servier",
+      "section_type": "Stat Block",
+      "title": "Servier",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "14 (studded leather)",
+      "hit_points": "13 (2d8 + 2)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CHA": {
+          "score": 11,
+          "modifier": "+0"
+        }
+      },
+      "saving_throws": [],
+      "skills": [
+        "Deception +2",
+        "Religion +2"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 12"
+      ],
+      "languages": [
+        "Common",
+        "Sylvan"
+      ],
+      "challenge_rating": "1/4 (50 XP)",
+      "proficiency_bonus": "+2",
+      "traits": [
+        {
+          "name": "Dark Devotion",
+          "name_format": "bold_italic",
+          "description": "The servier has advantage on saving throws made to resist being charmed or frightened."
+        },
+        {
+          "name": "Psychic Bludgeoning (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "When the servier hits a target with a weapon attack, they can choose to deal an additional d8 of psychic damage."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Quarterstaff",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) bludgeoning damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shortbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +4 to hit, range 40/120 ft., one target. Hit: 6 (1d6 + 2) piercing.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": []
+    }
+  ]
+}

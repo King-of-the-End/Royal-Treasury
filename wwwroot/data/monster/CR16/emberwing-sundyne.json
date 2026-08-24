@@ -1,0 +1,195 @@
+{
+  "Name": "Emberwing Sundyne",
+  "Group": "Devas",
+  "Source": "Soul of Trickery",
+  "Information": "**Emberwings**\n\nEmberwings are a distillation of Luxus\u2019 divine power, and do the majority of the management of the Island of Beckoning. They are also sent to perform all duties expected of a deva, which for them include enforcing Luxus\u2019 will against criminals, assassins and organizations deserving of intervention.\n\n**Divine Judgement**\n\nWhen speaking to a mortal creature, an Emberwing deva can divine the crimes they have committed during their life, and become aware of the context of them as though they were present and familiar with them.\n\n**Sundynes**\n\nThe most powerful of the Emberwings are the Sundynes, who carry greater divine power over fire compared to regular Emberwings, and are armed with Sundyne shields, which they are named for, which contain a spark of sun-like flame within them.",
+  "Information Sections": [
+    {
+      "Title": "Emberwings",
+      "Text": "Emberwings are a distillation of Luxus\u2019 divine power, and do the majority of the management of the Island of Beckoning. They are also sent to perform all duties expected of a deva, which for them include enforcing Luxus\u2019 will against criminals, assassins and organizations deserving of intervention."
+    },
+    {
+      "Title": "Divine Judgement",
+      "Text": "When speaking to a mortal creature, an Emberwing deva can divine the crimes they have committed during their life, and become aware of the context of them as though they were present and familiar with them."
+    },
+    {
+      "Title": "Sundynes",
+      "Text": "The most powerful of the Emberwings are the Sundynes, who carry greater divine power over fire compared to regular Emberwings, and are armed with Sundyne shields, which they are named for, which contain a spark of sun-like flame within them."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Monadic%20Deva%20-%20Emberwing.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Monadic%20Deva%20-%20Emberwing.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Monadic%20Deva%20-%20Emberwing.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "emberwing_sundyne",
+      "section_type": "Stat Block",
+      "title": "Emberwing Sundyne",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "20 (body of certainty)",
+      "hit_points": "238 (28d8 \u002B 112)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "90 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "angelic (4d8)",
+        "evasion",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "save": "\u002B11"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B10"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B10"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B11",
+        "Dex \u002B10",
+        "Cha \u002B10"
+      ],
+      "skills": [
+        "Insight \u002B10",
+        "Intimidation \u002B10",
+        "Perception \u002B10"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire",
+        "radiant",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "16 (15,000 XP)",
+      "proficiency_bonus": "\u002B5",
+      "traits": [
+        {
+          "name": "Body of Certainty",
+          "name_format": "bold_italic",
+          "description": "The deva adds its Charisma modifier to its armor class."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The deva\u2019s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "detect thoughts",
+                  "scorching ray"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "dispel magic"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "heal",
+                  "hold monster",
+                  "sear"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "fire storm",
+                  "gate"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes three weapon attacks. The deva\u2019s attacks have advantage against creatures who have committed crimes with purely evil or destructive intentions, in any manner Luxus would condemn. It can replace one of its attacks with casting a 5th-level or lower spell using Innate Spellcasting."
+        },
+        {
+          "name": "Spear of Sanction, \u002B2",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B13 to hit, reach 10 ft., one target, or as a Ranged Weapon Attack: \u002B13 to hit, range 60 ft., one target. Hit: 13 (1d8 \u002B 8) piercing damage plus 18 (4d8) radiant damage. After being thrown, the spear immediately vanishes and returns to the deva when they will it to.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Nova Burst (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The deva unleashes the fire within their shield in a 60-foot cone originating from themselves. Each creature within that cone must make a DC 18 Dexterity saving throw, taking 36 (8d8) radiant damage and 36 (8d8) fire damage on a failure, or half as much on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The deva magically transforms into a humanoid of any description, a beast of a challenge rating no higher than its own, or back to its true form. If it dies, it reverts to its true form. In any humanoid form, its statistics remain the same, but in the form of a beast it assumes the AC, movement speed(s), Strength, Dexterity, senses, attacks, and actions of that beast (except class features, Legendary Actions, and Lair Actions) but retains access to its own actions and senses as well."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Sundyne Shield",
+          "name_format": "bold_italic",
+          "description": "The deva takes half damage from a single attack targeting it, and its attacker must make a DC 18 Constitution saving throw if they are within 60 feet. On a failure, they take 11 (2d10) radiant damage."
+        }
+      ]
+    }
+  ]
+}

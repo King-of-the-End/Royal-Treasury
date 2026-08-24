@@ -1,0 +1,231 @@
+{
+  "Name": "Aspect of Luxus",
+  "Group": "Deific Aspects",
+  "Groups": [
+    "Deific Aspects"
+  ],
+  "Source": "Soul of Trickery",
+  "Information": "**Aspect of Luxus**\n\nLuxus is the Queen of Pirates and Empress Assassin, and her aspect is a symbol of blinding speed and punishing fire. When she manifests as an aspect, it is almost always in a secret, discreet form as to hide herself - though her vanity does sometimes betray her need to hide, as she is prone to assuming forms that suit her eccentric tastes. She almost always appears in the Material Plane when she wants to investigate those who are undermining the honor of their fellow criminals. She rarely acts with cruelty or haste, and will investigate, watch, learn, and try to set in motion events that help such situations resolve themselves (such as a despot criminal lord being turned on by their own organization). In her mind, this lends itself to the image that crime without honor will solve for itself, rather than have people only fear divine judgement.",
+  "Information Sections": [
+    {
+      "Title": "Aspect of Luxus",
+      "Text": "Luxus is the Queen of Pirates and Empress Assassin, and her aspect is a symbol of blinding speed and punishing fire. When she manifests as an aspect, it is almost always in a secret, discreet form as to hide herself - though her vanity does sometimes betray her need to hide, as she is prone to assuming forms that suit her eccentric tastes. She almost always appears in the Material Plane when she wants to investigate those who are undermining the honor of their fellow criminals. She rarely acts with cruelty or haste, and will investigate, watch, learn, and try to set in motion events that help such situations resolve themselves (such as a despot criminal lord being turned on by their own organization). In her mind, this lends itself to the image that crime without honor will solve for itself, rather than have people only fear divine judgement."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Somnus%20Domina%20-%20Luxus%2C%20the%20Soul%20of%20Trickery_RF.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Somnus%20Domina%20-%20Luxus%2C%20the%20Soul%20of%20Trickery_RF.png",
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Eidolic%20Deity%20Emblem%20-%20Luxus%2C%20the%20Soul%20of%20Trickery.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Luxus",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Somnus%20Domina%20-%20Luxus%2C%20the%20Soul%20of%20Trickery_RF.png"
+    },
+    {
+      "Label": "Emblem",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Eidolic%20Deity%20Emblem%20-%20Luxus%2C%20the%20Soul%20of%20Trickery.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "aspect_of_luxus",
+      "section_type": "Stat Block",
+      "title": "Aspect of Luxus",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (elf, shapechanger)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "24 (unarmored defense)",
+      "hit_points": "425 (50d8 \u002B 200)",
+      "speed": {
+        "walk": "60 ft."
+      },
+      "quality_traits": [
+        "Deific (eidolic)",
+        "evasion"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 30,
+          "modifier": "\u002B10"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B13"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B14"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B12"
+        }
+      },
+      "saving_throws": [
+        "Con \u002B13",
+        "Int \u002B14",
+        "Cha \u002B12"
+      ],
+      "skills": [
+        "Acrobatics \u002B19",
+        "Deception \u002B12",
+        "Perception \u002B13",
+        "Stealth \u002B19"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire",
+        "psychic",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "blinded",
+        "charmed",
+        "frightened",
+        "paralyzed",
+        "stunned"
+      ],
+      "senses": [
+        "blindsight 120 ft.",
+        "darkvision 480 ft.",
+        "passive Perception 23"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "\u002B9",
+      "traits": [
+        {
+          "name": "Contingency Plan (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Luxus is reduced to 0 hit points or would be killed outright, she resets to 300 hit points instead, regaining all spent uses of Legendary Reaction. She also recharges her Kunzite Vortex, teleports to an unoccupied space of her choice within 60 feet, and for 1 hour can use her Mythic Actions and Mythic Traits."
+        },
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "When Luxus hits a target while they have advantage on their attack, or when their target is within melee reach of one of Luxus\u2019 allies, Luxus may deal an extra 45 (10d8) damage on that attack, as long as it was a light, finesse, or ranged weapon."
+        },
+        {
+          "name": "Mythic: Vanishing Steps",
+          "name_format": "bold_italic",
+          "description": "When Luxus moves between spaces on her turn, she vanishes from sight due to her extreme speed. Creatures who have a passive Perception of 20 or less (except those with truesight) treat Luxus as invisible when she is moving. If she moves at least 15 feet, she is treated as invisible to these creatures until she takes an action, makes an attack, or ends her turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Luxus makes four weapon attacks."
+        },
+        {
+          "name": "Seeking Solace",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B19 to hit, reach 5 ft., one target. Hit: 14 (1d6 \u002B 10) piercing damage plus 9 (2d8) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Kunzite Vortex (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "Luxus unleashes a vortex of pink and red flame, which circles around her in a 60-foot-radius sphere. Each target she chooses within that area must make a DC 22 Dexterity saving throw, taking 33 (6d10) slashing damage and 33 (6d10) fire damage on a failure, or half as much damage on a success. Any creature who fails by 10 points or more is stunned until the start of Luxus\u2019 next turn."
+        },
+        {
+          "name": "Mythic: Solace Flame",
+          "name_format": "bold_italic",
+          "description": "Luxus makes an attack with Seeking Solace, but as a Ranged Weapon Attack: \u002B19 to hit, range 60 ft., and it deals all of its damage as fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Light Blade Assassination",
+          "name_format": "bold_italic",
+          "description": "Kunzite Vortex and this action share the same recharge. Luxus targets one creature within 60 feet, and unleashes a slash in space that strikes them with a condensed stroke of intense fire and radiant energy. The target must make a DC 22 Dexterity saving throw, taking 45 (10d8) fire damage and 45 (10d8) radiant damage on a failed save, or half as much damage on a success. If the target fails by 10 points or more, this deals double damage instead."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Assume Persona",
+          "name_format": "bold_italic",
+          "description": "Luxus changes their voice and appearance to that of another Large or smaller humanoid, or back into their true form. They can match the appearance, mannerisms, and quirks of any creature they\u2019ve encountered or observed while doing so. Their statistics remain the same, apart from their size, between forms."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Mythic: Doppelg\u00E4nger Tactic",
+          "name_format": "bold_italic",
+          "description": "When Luxus is targeted by a weapon attack or effect targeting only her, she may choose another creature within the attack/effect\u2019s range, then force the attacker to make a DC 22 Wisdom saving throw. On a failure, Luxus swaps the appearances of herself and her target briefly, and the creature she swapped with becomes the new target instead."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Cunning Movement",
+            "name_format": "bold_italic",
+            "description": "Luxus moves up to her movement speed."
+          },
+          {
+            "name": "Solace Strike",
+            "name_format": "bold_italic",
+            "description": "Luxus makes an attack with Seeking Solace against a target within reach. This attack always qualifies for her Sneak Attack damage, but only adds half of it instead of the full damage."
+          },
+          {
+            "name": "Invisible Retreat (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Luxus turns invisible until the start of her next turn, then teleports into an unoccupied space within 30 feet of her."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "availability": "For 1 hour after using Contingency Plan (Mythic Awakening)",
+        "options": [
+          {
+            "name": "Organized Assault (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Luxus splits into several illusory iterations of herself, giving all attacks made against her disadvantage until the start of her next turn. Then, she can choose to begin her next turn in any unoccupied space within 40 feet of where she took this action. Her true location cannot be discerned through truesight, tremorsense, blindsight, or similar vision types."
+          },
+          {
+            "name": "Deathly Flame (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "An eruption of flame is produced from a point Luxus can see within 60 feet of her, forcing each creature within 15 feet of that space to make a DC 22 Dexterity saving throw. Each creature who fails takes 22 (4d10) fire damage."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 4,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (4/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

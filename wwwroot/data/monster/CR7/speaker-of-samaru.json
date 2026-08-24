@@ -1,0 +1,127 @@
+{
+  "Name": "Speaker of Samaru",
+  "Group": "Blackwind Acolytes",
+  "Source": "Soul of Trickery",
+  "Information": "**Speaker of Samaru**\n\nThe speakers of Samaru are talented arcanists and advisors who have been granted insight into Samaru’s will and intentions. They are allowed to speak in his place on almost all matters with authority as though they were Samaru himself. They are chosen from those who display more cunning and keen senses, rather than physical aptitude, and indoctrinated to both know and love Samaru’s intentions.",
+  "Information Sections": [
+    {
+      "Title": "Speaker of Samaru",
+      "Text": "The speakers of Samaru are talented arcanists and advisors who have been granted insight into Samaru’s will and intentions. They are allowed to speak in his place on almost all matters with authority as though they were Samaru himself. They are chosen from those who display more cunning and keen senses, rather than physical aptitude, and indoctrinated to both know and love Samaru’s intentions."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Speaker%20of%20Samaru.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Speaker%20of%20Samaru.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR7/Speaker%20of%20Samaru.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "speaker_of_samaru",
+      "section_type": "Stat Block",
+      "title": "Speaker of Samaru",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "14 (studded leather)",
+      "hit_points": "83 (15d8 + 15)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "CON": {
+          "score": 13,
+          "modifier": "+1"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2",
+          "save": "+5"
+        },
+        "WIS": {
+          "score": 12,
+          "modifier": "+1"
+        },
+        "CHA": {
+          "score": 19,
+          "modifier": "+4",
+          "save": "+7"
+        }
+      },
+      "saving_throws": [
+        "Int +5",
+        "Cha +7"
+      ],
+      "skills": [
+        "Arcana +5",
+        "Deception +7",
+        "Perception +4",
+        "Persuasion +7"
+      ],
+      "resistances": [
+        "psychic"
+      ],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "Kitzish",
+        "Sylvan"
+      ],
+      "challenge_rating": "7 (2,900 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Shadowdampened Staff",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 4) bludgeoning damage plus 20 (3d12) psychic damage. If any of the d12s rolled for this attack roll a 1 or a 12, the target is blinded until the start of the speaker’s next turn.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Eldritch Shadowburst",
+          "name_format": "bold_italic",
+          "description": "The speaker fires three beams, each at a target the speaker chooses as a Ranged Spell Attack: +7 to hit, range 60 ft., one target. Each that hits deals 10 (1d10 + 4) force damage or 10 (1d10 + 4) psychic damage (the speaker chooses). If the speaker hits the same target with two of these beams in a single turn, and the target is no larger than one size category larger than them, the target is knocked prone or shoved 10 feet away (the speaker chooses).",
+          "inline_formatting": {
+            "Ranged Spell Attack": "italic"
+          }
+        },
+        {
+          "name": "Words of Quieting (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The speaker attempts to silence the words of those who would speak against them, forcing up to three targets within 40 feet of them to make a DC 15 Charisma saving throw. On a failure, those targets are unable to speak or produce verbal components for spells or magical items, and they are also deafened for 1 minute. While under this effect, targets take 6 (1d10) psychic damage at the start of each of their turns, and repeat the saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Shadow Door",
+          "name_format": "bold_italic",
+          "description": "The speaker, and one creature no larger than one size category larger than it who is either willing or unconscious, is teleported to an unoccupied space that can fit them within 30 feet."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

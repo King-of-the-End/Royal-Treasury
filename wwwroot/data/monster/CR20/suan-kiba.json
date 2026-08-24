@@ -1,0 +1,210 @@
+{
+  "Name": "Suan Kiba",
+  "Group": "Beast of Bestowal",
+  "Source": "Soul of Trickery",
+  "Information": "**Suan Kiba**\n\n**Title** The Coiling Mirror\n**Gemstone** Red Opal\n**Type** Seraphael\n**Originator** Luxus\n\nSu\u0101n Kiba is the advisor, speaker for, and guardian of Suzaku no Sorani, serving as its point of communication between outsiders and the guardian of its material Divine Realm. Su\u0101n Kiba performs whatever is asked of it by Suzaku no Sorani, and in Southern Cu Chullis it is recognized as the representative of a deity. In meetings of the Court of Divine Beasts, they authoritatively represent Suzaku no Sorani.",
+  "Information Sections": [
+    {
+      "Title": "Suan Kiba",
+      "Text": "**Title** The Coiling Mirror\n**Gemstone** Red Opal\n**Type** Seraphael\n**Originator** Luxus\n\nSu\u0101n Kiba is the advisor, speaker for, and guardian of Suzaku no Sorani, serving as its point of communication between outsiders and the guardian of its material Divine Realm. Su\u0101n Kiba performs whatever is asked of it by Suzaku no Sorani, and in Southern Cu Chullis it is recognized as the representative of a deity. In meetings of the Court of Divine Beasts, they authoritatively represent Suzaku no Sorani."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Suan%20Kiba.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Suan%20Kiba.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR20/Suan%20Kiba.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "suan_kiba",
+      "section_type": "Stat Block",
+      "title": "Suan Kiba",
+      "creature": {
+        "size": "Gargantuan",
+        "type": "beast (eidolos, seraphael)",
+        "alignment": "lawful neutral"
+      },
+      "armor_class": "17 (cosmogony bonus, natural armor)",
+      "hit_points": "290 (20d20 \u002B 80)",
+      "threshold": "5",
+      "speed": {
+        "walk": "30 ft.",
+        "burrow": "30 ft."
+      },
+      "quality_traits": [
+        "Cosmogony \u002B3",
+        "eidolos (seraphael)",
+        "tunneler"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "check": "\u002B8",
+          "save": "\u002B8"
+        },
+        "DEX": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "check": "\u002B4",
+          "save": "\u002B4"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "check": "\u002B6",
+          "save": "\u002B12"
+        },
+        "INT": {
+          "score": 22,
+          "modifier": "\u002B6",
+          "check": "\u002B8",
+          "save": "\u002B14"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "check": "\u002B6",
+          "save": "\u002B6"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "check": "\u002B7",
+          "save": "\u002B7"
+        }
+      },
+      "ability_note": "*the checks, saves, and skills listed includes their \u002B2 Cosmogony Bonus",
+      "saving_throws": [
+        "Str \u002B8",
+        "Dex \u002B4",
+        "Con \u002B12",
+        "Int \u002B14",
+        "Wis \u002B6",
+        "Cha \u002B7"
+      ],
+      "skills": [
+        "Athletics \u002B14",
+        "Deception \u002B13",
+        "Nature \u002B14",
+        "Perception \u002B12",
+        "Persuasion \u002B13"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "radiant",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "tremorsense 60 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Primordial"
+      ],
+      "challenge_rating": "20\u002B (37,500 XP)",
+      "proficiency_bonus": "\u002B6",
+      "cosmogony_bonus": "\u002B3",
+      "traits": [
+        {
+          "name": "Seraphic Authority: Red Mirror",
+          "name_format": "bold_italic",
+          "description": "As long as it wishes them to, Su\u0101n Kiba\u2019s scales give off a supernaturally bright red light, which punishes those who attempt to strike it from afar. Each time a creature targets them with an attack or effect from further than 30 feet away, they are treated as though blinded, as their vision of Su\u0101n Kiba perceives them as a burning red source of blinding light."
+        },
+        {
+          "name": "Voice of Familiarity",
+          "name_format": "bold_italic",
+          "description": "When Su\u0101n Kiba speaks, its voice is heard as one that is innately trusted by any listening to it, often speaking as a loved one, friend, or figure of authority. It has advantage on Charisma-based checks made against others."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Su\u0101n Kiba makes two Opal Bite attacks. If it hits a target with the first, it can replace the second with its Shining Constriction against the same target."
+        },
+        {
+          "name": "Opal Bite",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B14 to hit, reach 10 ft., one target. Hit: 19 (2d10 \u002B 8) piercing damage plus 9 (2d8) radiant damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Shining Constriction",
+          "name_format": "bold_italic",
+          "description": "A target within 10 feet is bound by Su\u0101n Kiba, and must make a DC 20 Strength saving throw. On a failure, the target is grappled (escape DC 22). Until the grapple ends the target is restrained. At the start of each of Su\u0101n Kiba\u2019s turns, its grappled target(s) takes 22 (4d10) radiant damage as Su\u0101n Kiba\u2019s body burns it with radiant red light.\n\nSu\u0101n Kiba can constrict up to four Medium-size targets (a Large creature counts as two, a Huge creature counts as three, and so on) at a time, and can drag them with it as it moves, which it can do uninhibited by them."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Cosmic Shard: Cycle of Restoration (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Su\u0101n Kiba\u2019s body dries, cracks, and breaks apart as it sheds its skin. It regains 100 hit points, its size increases by one category, its reach extends by 5 feet, its Damage Threshold increases by 5, it ends any effects causing unwanted conditions on it, its Shining Constriction can constrict an additional two Medium-sized creatures, and for 10 minutes its attacks deal an additional d8 of radiant damage. After 10 minutes, its body curls into a ball, solidifies, and it returns to its original size and form."
+        },
+        {
+          "name": "Form of Familiarity",
+          "name_format": "bold_italic",
+          "description": "Su\u0101n Kiba can transform into a Medium or Large humanoid form, which can have whatever characteristics it wishes. While its statistics remain the same (excluding its size), its reach becomes 5 feet, and its Shining Constriction can only target one creature of its size or smaller. Its humanoid form can assume one familiar to another creature Su\u0101n Kiba is conversing with, but appears as a bleached, albino version of that creature. It can use this action again to resume its true form."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Su\u0101n Kiba makes an Opal Bite attack against a creature within reach."
+          },
+          {
+            "name": "Detection",
+            "name_format": "bold_italic",
+            "description": "Su\u0101n Kiba makes a Perception check."
+          },
+          {
+            "name": "Restoring Light (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Su\u0101n Kiba blesses itself and up to four other creatures within 60 feet of it with divine protection, causing each target to gain 22 (4d10) temporary hit points."
+          },
+          {
+            "name": "Self-Protection (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Su\u0101n Kiba wraps its head and vital spots with the coils of its body, granting it resistance to all damage it takes until the start of its next turn. However, it becomes blinded during that time as well (regardless of its blindsight)."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

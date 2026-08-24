@@ -1,0 +1,159 @@
+{
+  "Name": "First Order",
+  "Group": "Blackwind Acolytes",
+  "Source": "Soul of Trickery",
+  "Information": "**First Order**\n\nThe First Order of the Blackwind were kits\u2019adria who served and trained under Samaru when he was a mortal kits\u2019adria, but remained with him after his transformation. They wish to save the Blackwind lineage, but their devotion to the daiyokai has turned them into yokai over time, similar but not like the closely related yurei\u2019adria. They are creatures of night and shadow who spread the word of Samaru, and act as guides to the rest of the Blackwind Temple. They often act as Samaru\u2019s personal assassins.",
+  "Information Sections": [
+    {
+      "Title": "First Order",
+      "Text": "The First Order of the Blackwind were kits\u2019adria who served and trained under Samaru when he was a mortal kits\u2019adria, but remained with him after his transformation. They wish to save the Blackwind lineage, but their devotion to the daiyokai has turned them into yokai over time, similar but not like the closely related yurei\u2019adria. They are creatures of night and shadow who spread the word of Samaru, and act as guides to the rest of the Blackwind Temple. They often act as Samaru\u2019s personal assassins."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Blackwind%20Acolyte.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Blackwind%20Acolyte.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR9/Blackwind%20Acolyte.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "first_order",
+      "section_type": "Stat Block",
+      "title": "First Order",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai, shapechanger)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "17 (natural armor)",
+      "hit_points": "117 (18d8 \u002B 36)",
+      "speed": {
+        "walk": "40 ft."
+      },
+      "quality_traits": [
+        "Evasion",
+        "magic resist",
+        "magical"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "\u002B5"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "\u002B2"
+        },
+        "WIS": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B8"
+        },
+        "CHA": {
+          "score": 15,
+          "modifier": "\u002B2",
+          "save": "\u002B6"
+        }
+      },
+      "saving_throws": [
+        "Wis \u002B8",
+        "Cha \u002B6"
+      ],
+      "skills": [
+        "Deception \u002B6",
+        "Stealth \u002B9",
+        "Survival \u002B8"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic",
+        "B/P/S (magical or silvered)"
+      ],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 14"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Kitzish"
+      ],
+      "challenge_rating": "9 (5,000 XP)",
+      "proficiency_bonus": "\u002B4",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The fiend\u2019s spellcasting ability is Wisdom. They can cast the following spells innately, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "message"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "valkyrie strike",
+                  "warding word"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "hand of the Blackwind",
+                  "shadow gate"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The fiend makes three Shadow Fist attacks."
+        },
+        {
+          "name": "Shadow Fist",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B9 to hit, reach 10 ft., one target. Hit: 10 (1d8 \u002B 5) bludgeoning damage plus 5 (1d8) psychic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Shadow Swim",
+          "name_format": "bold_italic",
+          "description": "If they are in dim light or darkness, the fiend dissolves into a puddle of darkness and reappears in another unoccupied space that is in dim light or darkness within 60 feet of them, then the next attack they make before the end of the turn has advantage."
+        },
+        {
+          "name": "Shape Change",
+          "name_format": "bold_italic",
+          "description": "The fiend changes their voice and body to assume the appearance of another Medium or Small creature they choose, or return to their true form. Their statistics do not change, except for their size. If they are incapacitated or killed, they return to their true form."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

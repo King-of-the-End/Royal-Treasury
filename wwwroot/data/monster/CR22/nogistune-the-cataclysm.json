@@ -1,0 +1,257 @@
+{
+  "Name": "Nogistune, the Cataclysm",
+  "Group": "The First to Consume",
+  "Source": "Soul of Trickery",
+  "Information": "**Nogistune, the Cataclysm**\n\nNogistune was once an infiltrator and spy who worked closely with Everest in the Age of Sunderance, but found themselves fading into the shadows when peace came to Somnus Domina. They have always been withdrawn and dark, but at one point she was a more optimistic person. After the Age of Sunderance, she investigated the bindings that kept the Grand Primaries sealed away, and encountered Infra Cavadri directly - this left a mark on her, which instilled a fear of the unknown within her. This fear was twisted and morphed over time into a desire for power beyond her station.\n\n**The Principle**\n\nIn her investigations, she found an ancient pre-Somonian ruin that was once the catacombs of an Old World stronghold. At its deepest point, Nogistune found and communed with an Old World being that had survived the Age of Sunderance, whom she kept sealed, but interrogated and learned from. The being eventually bartered for its freedom, offering to tutor her in lost arts that could elevate her very soul to a higher, immortal station. She agreed, and developed the ritual she would eventually use to become her undead spiritual form. That being, once freed from their arrangement, would go on to become the heart of the Family, Somnus Domina\u2019s most notorious criminal organization.\n\n**Tailed Beast**\n\nFor each of her siblings whose souls have been consumed, Nogistune develops another tail. Currently, she has five: one for herself, Samaru, Springmoon, Tamamo no Mae, and Everest.\n\n**Spirit of Nature\u2019s End**\n\nThough a being of undeath, Nogistune is a spirit who has bound her essence within a jade fox statue, in the same manner that a lich might create a phylactery. This statue helps to contain both her soul and the overflowing power coming from the souls of the siblings she has consumed. Without it, her effective immortality would end, and she would turn into the Beast of Cataclysm due to the overwhelming power of her siblings\u2019 accumulated essence. This statue is a Medium object with 20 AC, 50 hit points, immunity to damage that isn\u2019t eidolic, and any spell cast on it is reflected back at its caster. If Nogistune\u2019s physical body is destroyed, it reforms in 1d10 days within 20 feet of this statue.",
+  "Information Sections": [
+    {
+      "Title": "Nogistune, the Cataclysm",
+      "Text": "Nogistune was once an infiltrator and spy who worked closely with Everest in the Age of Sunderance, but found themselves fading into the shadows when peace came to Somnus Domina. They have always been withdrawn and dark, but at one point she was a more optimistic person. After the Age of Sunderance, she investigated the bindings that kept the Grand Primaries sealed away, and encountered Infra Cavadri directly - this left a mark on her, which instilled a fear of the unknown within her. This fear was twisted and morphed over time into a desire for power beyond her station."
+    },
+    {
+      "Title": "The Principle",
+      "Text": "In her investigations, she found an ancient pre-Somonian ruin that was once the catacombs of an Old World stronghold. At its deepest point, Nogistune found and communed with an Old World being that had survived the Age of Sunderance, whom she kept sealed, but interrogated and learned from. The being eventually bartered for its freedom, offering to tutor her in lost arts that could elevate her very soul to a higher, immortal station. She agreed, and developed the ritual she would eventually use to become her undead spiritual form. That being, once freed from their arrangement, would go on to become the heart of the Family, Somnus Domina\u2019s most notorious criminal organization."
+    },
+    {
+      "Title": "Tailed Beast",
+      "Text": "For each of her siblings whose souls have been consumed, Nogistune develops another tail. Currently, she has five: one for herself, Samaru, Springmoon, Tamamo no Mae, and Everest."
+    },
+    {
+      "Title": "Spirit of Nature\u2019s End",
+      "Text": "Though a being of undeath, Nogistune is a spirit who has bound her essence within a jade fox statue, in the same manner that a lich might create a phylactery. This statue helps to contain both her soul and the overflowing power coming from the souls of the siblings she has consumed. Without it, her effective immortality would end, and she would turn into the Beast of Cataclysm due to the overwhelming power of her siblings\u2019 accumulated essence. This statue is a Medium object with 20 AC, 50 hit points, immunity to damage that isn\u2019t eidolic, and any spell cast on it is reflected back at its caster. If Nogistune\u2019s physical body is destroyed, it reforms in 1d10 days within 20 feet of this statue."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Nogistune.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Nogistune.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/Nogistune.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "nogistune_the_cataclysm",
+      "section_type": "Stat Block",
+      "title": "Nogistune, the Cataclysm",
+      "creature": {
+        "size": "Medium",
+        "type": "spirit (undead)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "21 (natural armor)",
+      "hit_points": "345 (30d8 \u002B 210)",
+      "speed": {
+        "walk": "40 ft.",
+        "fly": "40 ft. (hover)"
+      },
+      "quality_traits": [
+        "Anchored",
+        "eidolic",
+        "ethereal"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 13,
+          "modifier": "\u002B1",
+          "save": "\u002B8"
+        },
+        "DEX": {
+          "score": 26,
+          "modifier": "\u002B8"
+        },
+        "CON": {
+          "score": 24,
+          "modifier": "\u002B7",
+          "save": "\u002B14"
+        },
+        "INT": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "\u002B3",
+          "save": "\u002B10"
+        },
+        "CHA": {
+          "score": 20,
+          "modifier": "\u002B5"
+        }
+      },
+      "saving_throws": [
+        "Str \u002B8",
+        "Con \u002B14",
+        "Int \u002B12",
+        "Wis \u002B10"
+      ],
+      "skills": [
+        "Arcana \u002B12",
+        "Deception \u002B12",
+        "Perception \u002B10",
+        "Stealth \u002B15"
+      ],
+      "resistances": [
+        "acid",
+        "cold",
+        "lightning"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "darkvision 120 ft.",
+        "passive Perception 20"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "22 (41,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "Nogistune\u2019s spellcasting ability is Charisma. She can cast the following spells, requiring no material components:",
+          "notes": "Nogistune\u2019s spells are cast at 5th level, unless their base level is higher. She will not cast her 1/day spells unless her Mythic Awakening has been triggered.",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "animate dead",
+                  "dispel magic",
+                  "hold monster"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "circle of death",
+                  "energy scourge",
+                  "Everest\u2019s isolated undoing",
+                  "Nogistune\u2019s soulbound vessel",
+                  "Springmoon\u2019s holy shield",
+                  "Tamamo\u2019s arrowfall"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "finger of death",
+                  "power word stun",
+                  "Samaru\u2019s traumatic aggravation",
+                  "Tamamo\u2019s gentle execution"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "The Beast Within (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Nogistune is reduced to 0 hit points or killed outright, she is instead reset to 150 hit points, ends any effects on her causing unwanted conditions, and can use her Mythic Traits and Mythic Actions for 1 hour.\n\nAdditionally, when her Mythic Awakening triggers, a 60-foot-tall, 20-foot-radius column of negative energy erupts around her, centered on her space. Each other creature within it must make a DC 20 Constitution saving throw, suffering one level of exhaustion on a failure. Then, at the end of each of their turns, affected creatures must make the save again, suffering another level of exhaustion on a failure. Succeeding any of these saves ends the effect early. Any creature immune to exhaustion instead takes 22 (4d10) necrotic damage in its place."
+        },
+        {
+          "name": "Mythic: Concentration Master",
+          "name_format": "bold_italic",
+          "description": "Nogistune has advantage on concentration checks, and can concentrate on two spells as though they were one."
+        },
+        {
+          "name": "Mythic: Limited Magic Immunity 5th",
+          "name_format": "bold_italic",
+          "description": "Nogistune has advantage on saving throws made against magical effects, and is unaffected by spells of 5th level and lower, unless she wishes to be affected by them."
+        },
+        {
+          "name": "Mythic: Undead Fortitude",
+          "name_format": "bold_italic",
+          "description": "When Nogistune is reduced to 0 hit points (except by radiant damage or a critical hit), and is not killed outright by massive damage, she must make a Constitution saving throw with a DC of 5 \u002B the damage taken. On a success, she drops to 1 hit point instead."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Nogistune makes two weapons attacks, and casts a spell using their Innate Spellcasting with a casting time of 1 action."
+        },
+        {
+          "name": "Paralytic Nail",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B15 to hit, reach 5 ft., one target. Hit: 17 (2d8 \u002B 8) slashing damage plus 11 (2d10) cold damage. The first time a creature is hit by this attack each turn, they must make a DC 20 Constitution saving throw. On a failure, the creature is paralyzed until the start of Nogistune\u2019s next turn.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Negative Edge",
+          "name_format": "bold_italic",
+          "description": "Melee Spell Attack: \u002B15 to hit, reach 10 ft., one target. Hit: 34 (4d12 \u002B 8) necrotic damage, and the target must make a DC 20 Constitution saving throw. On a failure, their maximum hit points are reduced by the necrotic damage they take. If their maximum hit points are reduced to 0 by this attack, they die immediately.",
+          "inline_formatting": {
+            "Melee Spell Attack": "italic",
+            "Hit": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Teleport",
+          "name_format": "bold_italic",
+          "description": "Nogistune teleports to an unoccupied space she can see within 60 feet."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 4,
+        "options": [
+          {
+            "name": "Clawstrike",
+            "name_format": "bold_italic",
+            "description": "Nogistune makes a Paralytic Claw attack against a creature within reach."
+          },
+          {
+            "name": "Spellburst (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Nogistune forces each creature in a 10-foot-radius sphere centered on a point within 60 feet of her to make a DC 20 Concentration check, ending spells they\u2019re concentrating on and dealing 11 (2d10) psychic damage on a failure."
+          },
+          {
+            "name": "Spellcast (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Nogistune casts one spell using her Innate Spellcasting."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Negative Edge (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Nogistune makes a Negative Edge attack against a target within reach."
+          },
+          {
+            "name": "Soul-Wretching Vortex (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "Nogistune causes a vortex of dark spirits to rise up and swirl around her, forcing each creature within 20 feet of her to make a DC 20 Constitution saving throw. Each target that fails suffers a point of Combat Fatigue."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "Name": "Beast of Cataclysm",
+  "Group": null,
+  "Groups": [],
+  "Source": "Soul of Trickery",
+  "Information": "**Beast of Cataclysm**\n\nThe Beast of Cataclysm doesn’t exist currently as anything more than an omen of things to come. It is the power Nogistune desires, and would be able to assume if she consumed the essence of her siblings in the First to Skulk. This massive fox-like creature towers above most settlements and beasts, and is a distorted reflection of Kitsune. Though bestial and destructive, its nature is still Nogistune in a sense - if she were to become the beast, she would retain the persona of Nogistune as a mask, but her purpose would be the rampant destruction of all natural life.\n\n**Lesser Creation**\n\nThis stat block represents Nogistune after consuming all six of her siblings. Nogistune may become this beast early, if she allows herself to be consumed by its growing presence within her. If she did, it would be modified based on the number of her siblings she has consumed. If Nogistune is destroyed in any sort of permanent way, the shock may cause her to reform mindlessly as the Beast of Cataclysm.\n\n**Spirit’s End**\n\nIf Nogistune succeeds in becoming the Beast of Cataclysm, she loses her immortality gained as a lich-like spirit, and her phylactery breaks immediately.",
+  "Information Sections": [
+    {
+      "Title": "Beast of Cataclysm",
+      "Text": "The Beast of Cataclysm doesn’t exist currently as anything more than an omen of things to come. It is the power Nogistune desires, and would be able to assume if she consumed the essence of her siblings in the First to Skulk. This massive fox-like creature towers above most settlements and beasts, and is a distorted reflection of Kitsune. Though bestial and destructive, its nature is still Nogistune in a sense - if she were to become the beast, she would retain the persona of Nogistune as a mask, but her purpose would be the rampant destruction of all natural life."
+    },
+    {
+      "Title": "Lesser Creation",
+      "Text": "This stat block represents Nogistune after consuming all six of her siblings. Nogistune may become this beast early, if she allows herself to be consumed by its growing presence within her. If she did, it would be modified based on the number of her siblings she has consumed. If Nogistune is destroyed in any sort of permanent way, the shock may cause her to reform mindlessly as the Beast of Cataclysm."
+    },
+    {
+      "Title": "Spirit’s End",
+      "Text": "If Nogistune succeeds in becoming the Beast of Cataclysm, she loses her immortality gained as a lich-like spirit, and her phylactery breaks immediately."
+    }
+  ],
+  "Tables": [
+    {
+      "Title": "Lesser Creation",
+      "Columns": [
+        "Siblings Absorbed",
+        "Hit Points",
+        "Prof. Bonus",
+        "Mythic Awakening?",
+        "Claw Damage",
+        "Senseless Shock Dmg"
+      ],
+      "Rows": [
+        [
+          "Five",
+          "363 (22d20 + 132)",
+          "+6",
+          "No",
+          "2d8 slashing / 1d8 necrotic",
+          "8d10"
+        ],
+        [
+          "Six",
+          "429 (26d20 + 156)",
+          "+7",
+          "No",
+          "2d8 slashing / 2d8 necrotic",
+          "9d10"
+        ],
+        [
+          "Seven",
+          "495 (30d20 + 180)",
+          "+7",
+          "Yes",
+          "2d10 slashing / 2d8 necrotic",
+          "10d10"
+        ],
+        [
+          "Eight",
+          "561 (34d20 + 204)",
+          "+8",
+          "Yes",
+          "2d12 slashing / 2d8 necrotic",
+          "12d10"
+        ]
+      ]
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Beast%20of%20Cataclysm.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Beast%20of%20Cataclysm.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR30/Beast%20of%20Cataclysm.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "beast_of_cataclysm",
+      "section_type": "Stat Block",
+      "title": "Beast of Cataclysm",
+      "creature": {
+        "size": "Tremendous",
+        "type": "spirit (undead)",
+        "alignment": "chaotic evil"
+      },
+      "armor_class": "19",
+      "hit_points": "660 (40d20 + 240)",
+      "speed": {
+        "walk": "50 ft.",
+        "climb": "50 ft.",
+        "fly": "50 ft. (hover)",
+        "swim": "50 ft."
+      },
+      "quality_traits": [
+        "Siege"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 24,
+          "modifier": "+7",
+          "save": "+16"
+        },
+        "DEX": {
+          "score": 28,
+          "modifier": "+9"
+        },
+        "CON": {
+          "score": 22,
+          "modifier": "+6"
+        },
+        "INT": {
+          "score": 23,
+          "modifier": "+6",
+          "save": "+15"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+12"
+        },
+        "CHA": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+13"
+        }
+      },
+      "saving_throws": [
+        "Str +16",
+        "Int +15",
+        "Wis +12",
+        "Cha +13"
+      ],
+      "skills": [
+        "Arcana +15",
+        "Perception +12",
+        "Survival +12"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "necrotic",
+        "poison",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "deafened",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "stunned"
+      ],
+      "senses": [
+        "truesight 60 ft.",
+        "passive Perception 22"
+      ],
+      "languages": [
+        "all",
+        "telepathy 240 ft."
+      ],
+      "challenge_rating": "30 (155,000 XP)",
+      "proficiency_bonus": "+9",
+      "traits": [
+        {
+          "name": "Innate Spellcasting",
+          "name_format": "bold_italic",
+          "description": "The beast’s spellcasting ability is Charisma. They can cast the following spells, requiring no material components:",
+          "spellcasting": {
+            "spells": [
+              {
+                "frequency": "At will",
+                "spells": [
+                  "shadow gate"
+                ]
+              },
+              {
+                "frequency": "3/day each",
+                "spells": [
+                  "counterspell",
+                  "dispel magic",
+                  "hold attacker"
+                ]
+              },
+              {
+                "frequency": "2/day each",
+                "spells": [
+                  "dimension door",
+                  "disintegrate"
+                ]
+              },
+              {
+                "frequency": "1/day each",
+                "spells": [
+                  "circle of death",
+                  "Everest’s isolated undoing",
+                  "Kellia’s deceptive mark",
+                  "Magnesia’s smothering voice",
+                  "Nogistune’s negative edge",
+                  "Springmoon’s holy shield",
+                  "Tamamo’s arrowfall",
+                  "teleport"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ultimate Terror (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When the beast is reduced to 0 hit points or killed outright, its hit points reset to 300, it regains its used Legendary Reactions, Wave of Senseless Shock, and spells through Innate Spellcasting, and gains access to its Mythic Actions and Mythic Traits for 1 hour."
+        },
+        {
+          "name": "Mythic: Spell Fortification",
+          "name_format": "bold_italic",
+          "description": "The beast’s spells cast through Innate Spellcasting are cast at 9th level."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The beast makes three weapon attacks. It can replace one of them with its Black Burst if it is available."
+        },
+        {
+          "name": "Cataclysm Claw",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d12 + 7) slashing damage plus 11 (2d10) necrotic damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Wave of Senseless Shock (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The beast unleashes a wave of crippling paralytic energy in a 120-foot cone originating from it. Each target in range must make a DC 23 Constitution saving throw, taking 77 (14d10) necrotic damage on a failure, or half as much on a success. Any creature who fails by 10 points or more is also paralyzed, and must make a DC 18 Constitution saving throw at the end of each of their turns, ending the effect on a success."
+        },
+        {
+          "name": "Mythic: Black Burst",
+          "name_format": "bold_italic",
+          "description": "The beast fires a concentrated sphere of necrotic energy at a point it can see within 240 feet, which explodes in a 20-foot-radius sphere. Each creature within that sphere must make a DC 23 Constitution saving throw, taking 26 (4d12) necrotic damage on a failure."
+        },
+        {
+          "name": "Mythic: Black Realm Blade",
+          "name_format": "bold_italic",
+          "description": "This action shares its recharge with Wave of Senseless Shock. The beast creates a monumental blade of pure blackened energy, and plunges it into a point it can see within 480 feet. Each creature within 60 feet of that point must make a DC 23 Constitution saving throw as the blade discorporates and spreads necrotic energy into the area, taking 45 (10d8) necrotic damage and 45 (10d8) poison damage on a failure, or half as much on a success. Creatures who fail this saving throw by 10 points or more suffer a level of exhaustion."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Form",
+          "name_format": "bold_italic",
+          "description": "The beast transforms into its Medium humanoid form as Nogistune, or back into its true form. Its true form can appear at any size between Huge and Tremendous. Their statistics remain the same in both forms, apart from their size."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Claw Strike",
+            "name_format": "bold_italic",
+            "description": "The beast makes a Cataclysm Claw attack."
+          },
+          {
+            "name": "Destructive Roar (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Each creature within 20 feet of the beast is struck by a thundering bellow from it, and must make a DC 20 Constitution saving throw, taking 11 (2d10) thunder damage on a failure."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "availability": "For 1 hour after using Ultimate Terror (Mythic Awakening)",
+        "options": [
+          {
+            "name": "Black Burst (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The beast uses its Black Burst action."
+          },
+          {
+            "name": "Auto Death (Costs 3 Actions)",
+            "name_format": "bold_italic",
+            "description": "The beast chooses three targets within 60 feet of it to be assailed by deadly exhaustion. Each must make a DC 20 Constitution saving throw, suffering a point of Combat Fatigue on a failure. Each that fails by 10 points or more suffers a level of exhaustion instead."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

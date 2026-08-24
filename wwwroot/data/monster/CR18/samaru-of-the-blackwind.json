@@ -1,0 +1,210 @@
+{
+  "Name": "Samaru of the Blackwind",
+  "Group": "The First to Consume",
+  "Source": "Soul of Trickery",
+  "Information": "**Samaru of the Blackwind**\n\nSamaru carries guilt unknown to the other two members of the First to Consume. They allowed Tamamo no Mae to undergo their ascension, inadvertently opening the way to their own fall into becoming a daiyokai and paving the way for Nogistune’s transformation as well. Though vainglorious, Samaru was the most conflicted among their fallen siblings, but in the end their own selfishness and desire to escape their cycle of rebirth proved their undoing. They carry an eternal sadness for what they did to Springmoon, but deny it and attempt to fill the void inside them with indulgences and empty affection from others.\n\n**Bound Collar**\n\nLike Tamamo no Mae, the essence of Samaru’s soul is bound within Nogistune. He is forced to do her bidding, and this is the only dynamic in which he is controlled by or indebted to another being. He despises his sisters and his connection to Nogistune, and so will perform whatever tasks she asks of him as quickly, efficiently, and quietly as he can to avoid his situation becoming well known.\n\n**Temple of the Blackwind**\n\nSamaru lives like a deity in the Realm of Shadows, at the temple named for them. Here, they gather together yurei’adria, fallen kits’adria, and those who are without purpose or a home, and slowly indoctrinate them to serve as his pets, guards, and worshippers. To him, those of his order are nothing but entertainment who serve to pass the time, but his remarkable martial arts talent allows him to retain his position as a leader and guide for the unwanted.",
+  "Information Sections": [
+    {
+      "Title": "Samaru of the Blackwind",
+      "Text": "Samaru carries guilt unknown to the other two members of the First to Consume. They allowed Tamamo no Mae to undergo their ascension, inadvertently opening the way to their own fall into becoming a daiyokai and paving the way for Nogistune’s transformation as well. Though vainglorious, Samaru was the most conflicted among their fallen siblings, but in the end their own selfishness and desire to escape their cycle of rebirth proved their undoing. They carry an eternal sadness for what they did to Springmoon, but deny it and attempt to fill the void inside them with indulgences and empty affection from others."
+    },
+    {
+      "Title": "Bound Collar",
+      "Text": "Like Tamamo no Mae, the essence of Samaru’s soul is bound within Nogistune. He is forced to do her bidding, and this is the only dynamic in which he is controlled by or indebted to another being. He despises his sisters and his connection to Nogistune, and so will perform whatever tasks she asks of him as quickly, efficiently, and quietly as he can to avoid his situation becoming well known."
+    },
+    {
+      "Title": "Temple of the Blackwind",
+      "Text": "Samaru lives like a deity in the Realm of Shadows, at the temple named for them. Here, they gather together yurei’adria, fallen kits’adria, and those who are without purpose or a home, and slowly indoctrinate them to serve as his pets, guards, and worshippers. To him, those of his order are nothing but entertainment who serve to pass the time, but his remarkable martial arts talent allows him to retain his position as a leader and guide for the unwanted."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Samaru.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Samaru.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR18/Samaru.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "samaru_of_the_blackwind",
+      "section_type": "Stat Block",
+      "title": "Samaru of the Blackwind",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "20 (unarmored defense)",
+      "hit_points": "213 (25d8 + 100)",
+      "speed": {
+        "walk": "60 ft.",
+        "climb": "60 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "critical 19",
+        "magic resist",
+        "magical",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 23,
+          "modifier": "+6"
+        },
+        "DEX": {
+          "score": 20,
+          "modifier": "+5",
+          "save": "+11"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+10"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "+1",
+          "save": "+7"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "+5"
+        },
+        "CHA": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+9"
+        }
+      },
+      "saving_throws": [
+        "Dex +11",
+        "Con +10",
+        "Int +7",
+        "Cha +9"
+      ],
+      "skills": [
+        "Athletics +12",
+        "Deception +9",
+        "Insight +11",
+        "Perception +17",
+        "Stealth +11"
+      ],
+      "resistances": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "psychic",
+        "B/P/S (magical or silvered)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed"
+      ],
+      "senses": [
+        "blindsight 30 ft.",
+        "devilsight 120 ft.",
+        "passive Perception 27"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Sylvan"
+      ],
+      "challenge_rating": "18 (20,000 XP)",
+      "proficiency_bonus": "+6",
+      "traits": [
+        {
+          "name": "You’re Just Toys (Mythic Awakening)",
+          "name_format": "bold_italic",
+          "description": "When Samaru is reduced to 0 hit points or killed outright, he instead resets to 120 hit points, ends any effects on him causing unwanted conditions, and can use his Mythic Actions and Mythic Traits for 1 hour.\n\nAdditionally, when his Mythic Awakening triggers, Samaru can move at instantly high speeds to strike each creature he chooses within 60 feet of him. Each target must make a DC 20 Constitution saving throw, taking damage equal to half of their maximum hit points (minimum 30) on a failure, or 29 (4d12 + 6) piercing damage on a success. Creatures who fail their saving throw by 5 points or more are stunned, and repeat their save at the end of each of their turns, ending the effect on a success. Samaru ends this action in a space adjacent to any of his targets."
+        },
+        {
+          "name": "Mythic: Avoidance",
+          "name_format": "bold_italic",
+          "description": "When Samaru makes a saving throw to take half damage from an effect, he takes no damage on a success, and half damage on a failure."
+        },
+        {
+          "name": "Mythic: Superior Critical",
+          "name_format": "bold_italic",
+          "description": "Samaru scores a critical hit on a d20 result of 18, 19, or 20."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Samaru makes four weapon attacks."
+        },
+        {
+          "name": "Nailfist Strike",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Mythic: Death Nail (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Samaru teleports to an unoccupied space adjacent to a target he chooses within 60 feet, then hits them with a singular devastating strike. His target must make a DC 20 Constitution saving throw. On a failure, they are reduced to 0 hit points immediately. On a success, they take 55 (10d10) piercing damage instead, and on a success by 5 points or more they take no damage at all."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Far Claw",
+          "name_format": "bold_italic",
+          "description": "Samaru’s next Nailfist Strike attack this turn has advantage, and its target must succeed a DC 20 Strength saving throw if hit, and falls prone on a failure."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Mythic: Phantasmal Strikes (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "When Samaru is dealt damage by an attack or effect targeting only him, he may choose up to three creatures within 30 feet of him (except the source of the damage) and force them each to make a DC 20 Charisma saving throw. He replicates the damage dealt to him, and each target who fails takes the same damage he did."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Martial Toss",
+            "name_format": "bold_italic",
+            "description": "Samaru makes a grapple check against a target of his choice within reach. If he succeeds, he can throw his target into an unoccupied space on the ground within 30 feet, where they fall prone. His target must be Huge or smaller."
+          },
+          {
+            "name": "Strike",
+            "name_format": "bold_italic",
+            "description": "Samaru makes a Nailfist Strike against a target within reach."
+          }
+        ]
+      },
+      "mythic_actions": {
+        "header": "Mythic Actions",
+        "description": "The creature may use the following actions as Legendary Actions for 1 hour after using their Mythic Awakening.",
+        "options": [
+          {
+            "name": "Defensive Stance",
+            "name_format": "bold_italic",
+            "description": "The next attack made against Samaru before the start of their turn has disadvantage, and if it hits Samaru can (as long as he isn’t incapacitated) make an opportunity attack against the source if they are within reach, without using his reaction."
+          },
+          {
+            "name": "Dark Wind (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Visible black winds swarm around a point Samaru chooses within 30 feet, where they fill a 20-foot-radius sphere with magical darkness. This darkness remains until the end of Samaru’s next turn."
+          }
+        ]
+      }
+    }
+  ]
+}

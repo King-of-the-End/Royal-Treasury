@@ -1,0 +1,139 @@
+{
+  "Name": "Dustpelt Hunter",
+  "Group": null,
+  "Source": "Soul of Trickery",
+  "Information": "**Dustpelt Hunter**\n\nThe Dustpelt Conclave are those who follow in the footsteps of Springmoon. They are roguish despite their righteous nature, and concern themselves with protecting the less fortunate from those who stand above them. Their chief concern is interfering with the activities of the First to Consume - most specifically Nogistune - to avenge their fallen originator. This clergy functionally stands under Kitsune and Luxus, and serves the Deep Pause temple.",
+  "Information Sections": [
+    {
+      "Title": "Dustpelt Hunter",
+      "Text": "The Dustpelt Conclave are those who follow in the footsteps of Springmoon. They are roguish despite their righteous nature, and concern themselves with protecting the less fortunate from those who stand above them. Their chief concern is interfering with the activities of the First to Consume - most specifically Nogistune - to avenge their fallen originator. This clergy functionally stands under Kitsune and Luxus, and serves the Deep Pause temple."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Dustpelt%20Conclave.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Dustpelt%20Conclave.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR6/Dustpelt%20Conclave.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "dustpelt_hunter",
+      "section_type": "Stat Block",
+      "title": "Dustpelt Hunter",
+      "creature": {
+        "size": "Medium",
+        "type": "humanoid (any)",
+        "alignment": "chaotic good"
+      },
+      "armor_class": "14 (studded leather)",
+      "hit_points": "91 (14d8 + 28)",
+      "speed": {
+        "walk": "30 ft."
+      },
+      "quality_traits": [
+        "Evasion",
+        "pack tactics"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+7"
+        },
+        "CON": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "INT": {
+          "score": 10,
+          "modifier": "+0"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3",
+          "save": "+6"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "+2"
+        }
+      },
+      "saving_throws": [
+        "Dex +7",
+        "Wis +6"
+      ],
+      "skills": [
+        "Investigation +6",
+        "Perception +6",
+        "Stealth +10",
+        "Survival +6"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [],
+      "condition_immunities": [],
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 16"
+      ],
+      "languages": [
+        "Common",
+        "Elvish",
+        "Kitzish"
+      ],
+      "challenge_rating": "6 (2,300 XP)",
+      "proficiency_bonus": "+3",
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The hunter makes two weapon attacks."
+        },
+        {
+          "name": "Venom Spear",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target, or Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 8 (1d6 + 4) piercing damage plus 4 (1d6) poison damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Longbow",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 9 (1d8 + 4) piercing damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Tetherfall Spear",
+          "name_format": "bold_italic",
+          "description": "The hunter throws a spear with a magical tether at a creature no more than one size category larger than them, as a Ranged Weapon Attack: +7 to hit, range 120 feet., one target. On a hit, they take 7 (1d6 + 4) piercing damage plus 22 (4d10) force damage, and must make a DC 15 Strength saving throw. On a failure, they are pulled 20 feet toward the hunter, where they fall prone.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic"
+          }
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Echofire Strike (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "The hunter makes a Venom Spear attack against a creature within 60 feet as though it was within its normal range. If it hits, this attack deals an additional 7 (2d6) fire damage, then the hunter can choose to teleport into an unoccupied space adjacent to their target."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

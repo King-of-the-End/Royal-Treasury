@@ -1,0 +1,217 @@
+{
+  "Name": "False Luxus",
+  "Group": "False Eidolons",
+  "Source": "Soul of Trickery",
+  "Information": "**False Luxus**\n\nA false Eidolon of Luxus is born from a great fear of the criminals and assassins that Luxus is a patron to. Those who cannot fathom a well-meaning god of crime, or who view Luxus as a proponent of the violence and destruction that assassins bring about, may contribute to the birth of such a twisted mirror of the otherwise neutral goddess.\n\nThe goal of a false Luxus is to establish a network of criminals, worshippers, and assassins that they can stand at the top of. Where Luxus would quietly try to influence them to act with honor, false Luxus believes they should directly oversee the criminals, pirates, and assassins they loom over, and will use violent tactics to both establish and keep their power.",
+  "Information Sections": [
+    {
+      "Title": "False Luxus",
+      "Text": "A false Eidolon of Luxus is born from a great fear of the criminals and assassins that Luxus is a patron to. Those who cannot fathom a well-meaning god of crime, or who view Luxus as a proponent of the violence and destruction that assassins bring about, may contribute to the birth of such a twisted mirror of the otherwise neutral goddess.\n\nThe goal of a false Luxus is to establish a network of criminals, worshippers, and assassins that they can stand at the top of. Where Luxus would quietly try to influence them to act with honor, false Luxus believes they should directly oversee the criminals, pirates, and assassins they loom over, and will use violent tactics to both establish and keep their power."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/False%20Eidolon%20-%20Luxus.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/False%20Eidolon%20-%20Luxus.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR22/False%20Eidolon%20-%20Luxus.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "false_luxus",
+      "section_type": "Stat Block",
+      "title": "False Luxus",
+      "creature": {
+        "size": "Medium",
+        "type": "fiend (yokai)",
+        "alignment": "neutral evil"
+      },
+      "armor_class": "24 (unarmored defense)",
+      "hit_points": "340 (40d8 \u002B 160)",
+      "speed": {
+        "walk": "60 ft.",
+        "climb": "60 ft."
+      },
+      "quality_traits": [
+        "Avoidance",
+        "deific (false)",
+        "siphon the devout",
+        "yokai nourishment"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 16,
+          "modifier": "\u002B3"
+        },
+        "DEX": {
+          "score": 28,
+          "modifier": "\u002B9",
+          "save": "\u002B16"
+        },
+        "CON": {
+          "score": 18,
+          "modifier": "\u002B4"
+        },
+        "INT": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "save": "\u002B11"
+        },
+        "WIS": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "save": "\u002B12"
+        },
+        "CHA": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "save": "\u002B9"
+        }
+      },
+      "saving_throws": [
+        "Dex \u002B16",
+        "Int \u002B11",
+        "Wis \u002B12",
+        "Cha \u002B9"
+      ],
+      "skills": [
+        "Deception \u002B9",
+        "History \u002B11",
+        "Perception \u002B19",
+        "Stealth \u002B16"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire",
+        "psychic",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed"
+      ],
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 240 ft.",
+        "passive Perception 29"
+      ],
+      "languages": [
+        "all"
+      ],
+      "challenge_rating": "22 (41,000 XP)",
+      "proficiency_bonus": "\u002B7",
+      "traits": [
+        {
+          "name": "Emergent Fortitude (1/turn)",
+          "name_format": "bold_italic",
+          "description": "When the yokai would be reduced to 0 hit points or killed outright, they survive with 10 hit points instead, and aren\u2019t killed."
+        },
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "name_format": "bold_italic",
+          "description": "When the yokai hits a target while they have advantage on their attack, or when their target is within melee reach of one of the yokais\u2019 allies, the yokai may deal an extra 27 (6d8) damage on that attack, as long as it was a light, finesse, or ranged weapon."
+        },
+        {
+          "name": "Vanishing Steps",
+          "name_format": "bold_italic",
+          "description": "When the yokai moves between spaces on her turn, she vanishes from sight due to her extreme speed. Creatures who have a passive Perception of 17 or less (except those with truesight) treat the yokai as invisible when she is moving. If she moves at least 15 feet, she is treated as invisible to these creatures until she takes an action, makes an attack, or ends her turn."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The yokai makes three weapon attacks, which must include one Solopsist Rapier and one Solopsist Revolver attack."
+        },
+        {
+          "name": "Solopsist Rapier",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B16 to hit, reach 5 ft., one target. Hit: 14 (1d8 \u002B 9) piercing damage plus 9 (2d8) fire damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Solopsist Revolver",
+          "name_format": "bold_italic",
+          "description": "Ranged Weapon Attack: \u002B16 to hit, range 60 ft., one target. Hit: 16 (2d6 \u002B 9) piercing damage plus 7 (2d6) fire damage.",
+          "inline_formatting": {
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Fireline Shot",
+          "name_format": "bold_italic",
+          "description": "The yokai fires its revolver and unleashes a piercing bullet in a 60-foot line originating from itself. Each creature in that line must make a DC 19 Dexterity saving throw. Each that fails takes damage as though hit by their Solopsist Revolver, and the yokai may choose to deal their Sneak Attack damage to one of them."
+        },
+        {
+          "name": "Sacred Pyre (Recharge 6)",
+          "name_format": "bold_italic",
+          "description": "The yokai creates six pillars of pink, kunzite-tinged flame that have swirling, sharpened gemstones within them. Each pillar is 40 feet tall, has a radius of 5 feet, and each originates from a point within 60 feet of the yokai. Each creature within one or more of these pillars must make a DC 24 Dexterity saving throw, taking 28 (5d10) fire damage and 28 (5d10) slashing damage on a failure, or half as much damage on a success."
+        },
+        {
+          "name": "Death Queen (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The yokai strikes one creature it can touch with a deadly blow. Its target must succeed on a DC 19 Dexterity or Constitution saving throw (they choose) or take slashing damage equal to their maximum hit points. On a success, they take 65 (10d12) slashing damage instead."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Bestial Oppression (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The yokai produces the effects of dominate beast, requiring no spell slot, using Intelligence as her spellcasting ability (DC 19)."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Insidious Double",
+          "name_format": "bold_italic",
+          "description": "When the yokai is targeted by an attack, it can force another creature within 30 feet of it to make a DC 19 Charisma saving throw. On a failure, the yokai switches spaces with them, and they become the new target of the triggering attack."
+        }
+      ],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 3,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "The yokai makes a single weapon attack against a target within range."
+          },
+          {
+            "name": "Fire Lash",
+            "name_format": "bold_italic",
+            "description": "The yokai creates a whip made of flame, and lashes out at a target within 30 feet of them. The target must make a DC 19 Dexterity saving throw. On a failure, they take 9 (2d8) fire damage and the yokai can move them into any unoccupied space within 30 feet of them that they wish."
+          },
+          {
+            "name": "Counterparry (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "The next time a creature attacks the yokai before the start of her next turn, she can make an attack roll with one of her weapons to contest theirs. If her result is higher, their attack misses automatically, and that attack from her hits their target if they are within the attack\u2019s range."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 3,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (3/Day) per standing formatting rule."
+      }
+    }
+  ]
+}

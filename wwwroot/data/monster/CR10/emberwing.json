@@ -1,0 +1,146 @@
+{
+  "Name": "Emberwing",
+  "Group": "Devas",
+  "Source": "Soul of Trickery",
+  "Information": "**Emberwings**\n\nEmberwings are a distillation of Luxus’ divine power, and do the majority of the management of the Island of Beckoning. They are also sent to perform all duties expected of a deva, which for them include enforcing Luxus’ will against criminals, assassins and organizations deserving of intervention.\n\n**Divine Judgment**\n\nWhen speaking to a mortal creature, an Emberwing deva can divine the crimes they have committed during their life, and become aware of the context of them as though they were present and familiar with them.",
+  "Information Sections": [
+    {
+      "Title": "Emberwings",
+      "Text": "Emberwings are a distillation of Luxus’ divine power, and do the majority of the management of the Island of Beckoning. They are also sent to perform all duties expected of a deva, which for them include enforcing Luxus’ will against criminals, assassins and organizations deserving of intervention."
+    },
+    {
+      "Title": "Divine Judgment",
+      "Text": "When speaking to a mortal creature, an Emberwing deva can divine the crimes they have committed during their life, and become aware of the context of them as though they were present and familiar with them."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Monadic%20Deva%20-%20Emberwing.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Monadic%20Deva%20-%20Emberwing.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR10/Monadic%20Deva%20-%20Emberwing.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "emberwing",
+      "section_type": "Stat Block",
+      "title": "Emberwing",
+      "creature": {
+        "size": "Medium",
+        "type": "celestial",
+        "alignment": "lawful good"
+      },
+      "armor_class": "20 (body of certainty)",
+      "hit_points": "135 (18d8 + 54)",
+      "speed": {
+        "walk": "30 ft.",
+        "fly": "60 ft."
+      },
+      "quality_traits": [
+        "Anchored",
+        "angelic (4d8)",
+        "magic resist"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "+4",
+          "save": "+8"
+        },
+        "CON": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "INT": {
+          "score": 14,
+          "modifier": "+2"
+        },
+        "WIS": {
+          "score": 16,
+          "modifier": "+3"
+        },
+        "CHA": {
+          "score": 22,
+          "modifier": "+6",
+          "save": "+10"
+        }
+      },
+      "saving_throws": [
+        "Str +8",
+        "Dex +8",
+        "Cha +10"
+      ],
+      "skills": [
+        "Insight +7",
+        "Perception +7"
+      ],
+      "resistances": [],
+      "vulnerabilities": [],
+      "immunities": [
+        "fire",
+        "radiant",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "charmed",
+        "exhaustion",
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 120 ft.",
+        "passive Perception 17"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "challenge_rating": "10 (5,900 XP)",
+      "proficiency_bonus": "+4",
+      "traits": [
+        {
+          "name": "Body of Certainty",
+          "name_format": "bold_italic",
+          "description": "The deva adds its Charisma modifier to its armor class."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "The deva makes two weapon attacks. The deva’s attacks have advantage against creatures who have committed crimes with purely evil or destructive intentions, in any manner Luxus would condemn."
+        },
+        {
+          "name": "Spear of Sanction, +2",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: +10 to hit, reach 10 ft. or Ranged Weapon Attack: +10 to hit, range 60 ft., one target. Hit: 11 (1d8 + 6) piercing damage plus 18 (4d8) radiant damage. After being thrown, the spear immediately vanishes and returns to the deva when they will it to.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Ranged Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Chaos Squall (1/Rest)",
+          "name_format": "bold_italic",
+          "description": "The deva targets all creatures within 60 feet of itself who are chaotic or evil, and each is searched by a celestial brand. Each target must make a DC 18 Charisma saving throw. Each that fails is paralyzed, and repeats the save at the end of each of their turns, ending the effect on a success. A creature who fails the save for 3 turns times remains paralyzed for a full hour, and only makes the save at the end of each minute. Creatures who are chaotic evil have disadvantage on their saves against this action."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Change Shape",
+          "name_format": "bold_italic",
+          "description": "The deva magically transforms into a humanoid of any description, a beast of a challenge rating no higher than its own, or back to its true form. If it dies, it reverts to its true form. In any humanoid form, its statistics remain the same, but in the form of a beast it assumes the AC, movement speed(s), Strength, Dexterity, senses, attacks, and actions of that beast (except class features, Legendary Actions, and Lair Actions) but retains access to its own actions and senses as well."
+        }
+      ],
+      "reactions": []
+    }
+  ]
+}

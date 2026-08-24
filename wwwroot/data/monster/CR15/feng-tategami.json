@@ -1,0 +1,203 @@
+{
+  "Name": "Feng Tategami",
+  "Group": "Beast of Bestowal",
+  "Source": "Soul of Trickery",
+  "Information": "**Feng Tategami**\n\n**Title** The Chariot of Declaration\n**Gemstone** Imperial Topaz\n**Type** Pleromael\n**Originator** Luxus\n\nThe Chariot of Declaration is a messenger who can tirelessly move faster than most other creatures on the face of Somnus Domina. They can suffocate the sounds of others and communicate with other creatures through telepathy. Though they are a servant of Suzaku no Sorani, they act as a messenger for all of the Divine Beasts unless there is a conflict of interest between them.",
+  "Information Sections": [
+    {
+      "Title": "Feng Tategami",
+      "Text": "**Title** The Chariot of Declaration\n**Gemstone** Imperial Topaz\n**Type** Pleromael\n**Originator** Luxus\n\nThe Chariot of Declaration is a messenger who can tirelessly move faster than most other creatures on the face of Somnus Domina. They can suffocate the sounds of others and communicate with other creatures through telepathy. Though they are a servant of Suzaku no Sorani, they act as a messenger for all of the Divine Beasts unless there is a conflict of interest between them."
+    }
+  ],
+  "Image": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Feng%20Tategami.png",
+  "Images": [
+    "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Feng%20Tategami.png"
+  ],
+  "Image Tabs": [
+    {
+      "Label": "Image 1",
+      "Url": "https://pub-bf21913a9572403eaaeb529e5bc42880.r2.dev/monsters/CR15/Feng%20Tategami.png"
+    }
+  ],
+  "Stat Blocks": [
+    {
+      "id": "feng_tategami",
+      "section_type": "Stat Block",
+      "title": "Feng Tategami",
+      "creature": {
+        "size": "Large",
+        "type": "beast (eidolos, pleromael)",
+        "alignment": "chaotic neutral"
+      },
+      "armor_class": "16 (cosmogony bonus, natural armor)",
+      "hit_points": "210 (20d10 \u002B 100)",
+      "threshold": "10",
+      "speed": {
+        "walk": "90 ft."
+      },
+      "quality_traits": [
+        "Cosmogony \u002B2",
+        "eidolos (pleromael)"
+      ],
+      "ability_scores": {
+        "STR": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "check": "\u002B5",
+          "save": "\u002B10"
+        },
+        "DEX": {
+          "score": 18,
+          "modifier": "\u002B4",
+          "check": "\u002B5",
+          "save": "\u002B5"
+        },
+        "CON": {
+          "score": 20,
+          "modifier": "\u002B5",
+          "check": "\u002B6",
+          "save": "\u002B11"
+        },
+        "INT": {
+          "score": 12,
+          "modifier": "\u002B1",
+          "check": "\u002B2",
+          "save": "\u002B2"
+        },
+        "WIS": {
+          "score": 14,
+          "modifier": "\u002B2",
+          "check": "\u002B3",
+          "save": "\u002B8"
+        },
+        "CHA": {
+          "score": 12,
+          "modifier": "\u002B1",
+          "check": "\u002B2",
+          "save": "\u002B2"
+        }
+      },
+      "ability_note": "*the checks, saves, and skills listed includes their \u002B1 Cosmogony Bonus",
+      "saving_throws": [
+        "Str \u002B10",
+        "Dex \u002B5",
+        "Con \u002B11",
+        "Int \u002B2",
+        "Wis \u002B8",
+        "Cha \u002B2"
+      ],
+      "skills": [
+        "Athletics \u002B10",
+        "Perception \u002B8",
+        "Survival \u002B8"
+      ],
+      "resistances": [
+        "B/P/S (eidolic)"
+      ],
+      "vulnerabilities": [],
+      "immunities": [
+        "thunder",
+        "B/P/S (magical)"
+      ],
+      "condition_immunities": [
+        "deafened",
+        "exhaustion",
+        "paralyzed"
+      ],
+      "senses": [
+        "passive Perception 18"
+      ],
+      "languages": [
+        "Primordial",
+        "telepathy 240 ft."
+      ],
+      "challenge_rating": "15 (19,500 XP)",
+      "proficiency_bonus": "\u002B5",
+      "cosmogony_bonus": "\u002B2",
+      "traits": [
+        {
+          "name": "Aura of Noise and Clamor",
+          "name_format": "bold_italic",
+          "description": "A shroud of disturbed air surrounds Feng Tategami, causing all creatures (except its rider(s)) within 30 feet of it to have disadvantage on concentration checks."
+        },
+        {
+          "name": "Divine Dash",
+          "name_format": "bold_italic",
+          "description": "If Feng Tategami used its action to Dash on its previous turn, then does so again on its current turn, its Dash grants twice the movement speed of its Dash on the previous turn."
+        },
+        {
+          "name": "Unslowable",
+          "name_format": "bold_italic",
+          "description": "Unless an effect is reducing their movement speed to 0, Feng Tategami\u2019s movement speed cannot be lowered by effects, conditions, or environmental effects like difficult terrain. If it uses its action to Dash, it can move across the surfaces of liquids such as water and magma, as well as on vertical surfaces such as walls without falling or sinking, until it takes another action or its movement speed is reduced to 0 feet."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "name_format": "bold_italic",
+          "description": "Feng Tategami makes two attacks with its Topaz Hooves."
+        },
+        {
+          "name": "Topaz Hooves",
+          "name_format": "bold_italic",
+          "description": "Melee Weapon Attack: \u002B10 to hit, reach 5 ft., one target. Hit: 14 (2d8 \u002B 5) bludgeoning damage plus 7 (2d6) thunder damage.",
+          "inline_formatting": {
+            "Melee Weapon Attack": "italic",
+            "Hit": "italic"
+          }
+        },
+        {
+          "name": "Thunderous Whinny",
+          "name_format": "bold_italic",
+          "description": "Feng Tategami unleashes an earth-rocking whinny that forces each creature within 30 feet of it, excluding its rider(s), to make a DC 18 Constitution saving throw. On a failure, they take 13 (2d12) thunder damage and lose concentration on effects and spells. On a success, they take half as much damage and do not lose concentration. This damage does not trigger concentration checks."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Chariot Dash",
+          "name_format": "bold_italic",
+          "description": "Feng Tategami moves up to half its movement speed."
+        },
+        {
+          "name": "Cosmic Shard: Golden Road Dash (Recharge 5-6)",
+          "name_format": "bold_italic",
+          "description": "Feng Tategami dashes forward in a 60-foot line, ending in an unoccupied space within 60 feet that it can see. Each creature in a 15-foot-wide line between it and that point must make a DC 18 Constitution saving throw, taking 44 (8d10) thunder damage on a failure, or half as much damage on a success. Each creature who fails is also deafened and knocked prone. Creatures deafened this way repeat the save at the end of each of their turns, ending the effect on a success, but if they fail three times they are deafened permanently. Creatures riding Feng Tategami are ignored by this action, but move with them."
+        }
+      ],
+      "reactions": [],
+      "legendary_actions": {
+        "header": "Legendary Actions",
+        "actions_per_round": 2,
+        "options": [
+          {
+            "name": "Attack",
+            "name_format": "bold_italic",
+            "description": "Feng Tategami attacks with its Topaz Hooves against one target within reach."
+          },
+          {
+            "name": "Self-Banish (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Feng Tategami chooses a point it can see within 30 feet, then vanishes entirely to a harmless isolated demiplane. At the start of its next turn, it reappears in the space it picked (or, if it is occupied now, returns to the space it disappeared from)."
+          },
+          {
+            "name": "Thunderfall Silencing (Costs 2 Actions)",
+            "name_format": "bold_italic",
+            "description": "Until the start of Feng Tategami\u2019s next turn, each creature within 120 feet of it that attempt to cast a spell of 3rd level or higher is assailed by thunderous energy after they do so, and must make a DC 18 Constitution saving throw, taking 17 (3d10) thunder damage and losing concentration on a failure. They do not make concentration checks in response to this damage."
+          }
+        ]
+      },
+      "legendary_reactions": {
+        "header": "Legendary Reactions",
+        "uses": 2,
+        "options": [
+          {
+            "name": "TBA",
+            "name_format": "plain",
+            "description": ""
+          }
+        ],
+        "source_conversion_note": "Converted from Legendary Resistance (2/Day) per standing formatting rule."
+      }
+    }
+  ]
+}
