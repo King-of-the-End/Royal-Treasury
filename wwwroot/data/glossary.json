@@ -3249,5 +3249,32 @@
     "Definition": "",
     "CaseSensitive": false,
     "NoOverlay": true
-  }
+  },
+  {
+  "Term": "Two-Weapon Fighting",
+  "Definition": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n**Lesser Advancement**\nAttack rolls made using your off-hand weapon gain a +2 bonus.\n\n**Greater Advancement**\nAttacks made using your off-hand weapon have advantage if your primary weapon attack that preceded it missed.",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "Class"
+  ]
+},
+{
+  "Term": "Art Wielder",
+  "Definition": "Choose one spell group. You gain knowledge of a number of spells from that group equal to your proficiency bonus, which must be of 1st level. You can cast one of these spells by spending an Arcane Charge, casting the spell at a base level when you do, requiring no spell slot. Your spellcasting ability is Strength, Dexterity, or Constitution (you choose).\n\nYou do not actually learn these spells, and they cannot be cast using spell slots or resources from other classes (unless other text says they can be).\n\nEach time you gain a new level, you may change which spells from that Spell Group you selected.\n\n**Lesser Advancement**\nUp to two of the spells you pick can be 2nd level or lower, and when you cast spells this way they are cast at 2nd level.\n\n**Greater Advancement**\nOne of the spells you pick can be 3rd level or lower, and when you cast spells this way they are cast at 3rd level.",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "Class"
+  ]
+},
+{
+  "Term": "Slayer",
+  "Definition": "When you reduce a creature to 0 hit points or kill them outright with a weapon attack, you gain 5 temporary hit points. If a different feature, item, or effect would give you temporary hit points when you do so, that amount is increased by 5 points instead. You lose these temporary hit points after 1 minute.\n\n**Lesser Advancement**\nWhen you reduce a creature to 0 hit points or kill them outright with a weapon attack, each time you make an attack until the end of your turn you may roll a d6 and add it to the result.\n\n**Greater Advancement**\nWhen a creature reduces you to 0 hit points, you may use your reaction to make a melee weapon attack against them. If you reduce them to 0 hit points or kill them outright with that attack, you are reduced to 1 hit point instead and your reaction is immediately regained.",
+  "CaseSensitive": false,
+  "NoOverlay": false,
+  "Contexts": [
+    "Class"
+  ]
+}
 ]
