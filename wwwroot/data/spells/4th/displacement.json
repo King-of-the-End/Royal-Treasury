@@ -1,0 +1,22 @@
+{
+  "Name": "Displacement",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [
+    "Zanjen"
+  ],
+  "Casting Time": "1 bonus action",
+  "Range": "Self",
+  "Components": "S",
+  "Duration": "1 minute",
+  "Description": "You infuse your arcane power into your senses directly, allowing you to teleport short distances as if it were simply second nature. For the duration you may forgo moving normally, you may choose to teleport to any unoccupied space within a reach equal to your maximum movement speed by spending the same amount of movement.\n\nThis movement counts as moving each space individually, but does not count for Opportunity Attacks and similar Reactions that would trigger on you moving away. Whenever you move this way, you ignore Difficult Terrain and any of its associated effects.\n\nYou can only teleport to spaces that you can see and can fit through if they are blocked by any kind of wall or similar surface.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 6th level or higher, the duration increases to one hour, and when you cast it using a spell slot of 8th level or higher, the duration becomes 6 hours.",
+  "Classes": [
+    "Bladebearer",
+    "Favored Soul",
+    "Inscriptor",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

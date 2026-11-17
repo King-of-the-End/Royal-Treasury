@@ -1,0 +1,21 @@
+{
+  "Name": "Horrible Death",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "S, M (a tooth, an eye)",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "You attempt to enchant a creature you touch with the illusion that they are dying in a horrific manner. The creature must make a Wisdom saving throw or be suddenly tormented with extremely vivid and realistic hallucinations of them dying in drawn-out, painful, and particularly traumatic ways. The pain they feel will be realistic to how much pain the given manner of death would inflict, and without magical senses, it is indistinguishable from reality. During the duration of this spell, they are frightened and paralyzed and must continually make Wisdom saving throws to break the enchantment. After the enchantment is broken or when you stop concentrating on this spell, the victim gains a level of exhaustion.",
+  "At Higher Levels": "When you cast this spell using a 7th-level spell slot, the duration is concentration, up to 30 minutes. When you use a 8th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 9th level or higher, the duration is concentration, up to 7 hours.",
+  "Classes": [
+    "Bard",
+    "Favored Soul",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

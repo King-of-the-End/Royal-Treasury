@@ -1,0 +1,27 @@
+{
+  "Name": "Blue Rose Paradise",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S, M (a thorn from a wilted rose)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You create a wall of briars on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The vines do not obstruct view from inside and outside the wall and it lasts for the duration.\n\nWhen the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 4d10 Piercing damage, or half as much damage on a successful save.\n\nYou may use a Reaction when a creature fails their saving throw against the wall to make the briars extend and Restrain them. A creature Restrained this way may reroll their saving throw at the end of their turns, ending the effect on a success. If they fail the saving throw, they take an additional 4d10 Piercing damage as they struggle against the briar.\n\nCreatures that have curses affecting them roll their saving throws against the wall with disadvantage, as the briars feed on cursed energy. If the curse affecting them is related to a spell of 4th-level or lower, or a magical equivalent, that curse is broken once this spell ends.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

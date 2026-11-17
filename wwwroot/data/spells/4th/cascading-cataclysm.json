@@ -1,0 +1,24 @@
+{
+  "Name": "Cascading Cataclysm",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "30 feet",
+  "Components": "V, M (gunpowder on your lips)",
+  "Duration": "Instantaneous",
+  "Description": "You click your tongue in a frequency that causes flames to burst out and rage in a blazing howl. One Burning creature within reach must pass a Dexterity saving throw or combust violently, suffering an amount of d8 fire damage equal to half their current Burn count (To a maximum of 6d8) and suffering the same value of Burn count, (Max. 6) or half that damage and count.\n\nAll creatures within 15-ft. of the initial target must pass a Dexterity saving throw or suffer half that damage and count. If the initial target failed, you may choose to have one already Burning creature within that reach make a Wisdom saving throw instead, causing them to explode on a failure and suffer the same as the initial effects of this spell.\n\nYou may make creatures explode in this way for an amount of times equal to the Spell Slot Level spent to cast this spell, and must always target a creature who has not yet attempted this spell's Wisdom saving throw to explode.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Petal Knight",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

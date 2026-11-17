@@ -1,0 +1,24 @@
+{
+  "Name": "Thundercrack",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S",
+  "Duration": "Instantaneous",
+  "Description": "*“What a dumb way to go!”*\n\nYou crack your hands as electricity crackles through the air around you, afterward you point your finger toward 3 points within range, causing electricity shaped like crosses to appear onto each spot.\n\nAfter setting up each cross, you drag your finger from one point to another, causing an static to jolt between each point in a line. You do so until each point is connected to at most two other points, and afterward a great surge of electricity in each line, forcing all creatures within these lines to pass a single Dexterity saving throw for all lines at once, suffering 3d8 lightning damage per line that is passing through their space, or half on a success. (To a maximum of being afflicted by 3 lines at once.)\n\nEach cross you place down must be at least 10-ft. apart from the others, or the spell instantly fails and you recover the spent spell slot. Each line is 5 feet wide.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Favored Soul",
+    "Inscriptor",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

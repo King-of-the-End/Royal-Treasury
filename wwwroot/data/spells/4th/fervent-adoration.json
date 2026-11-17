@@ -1,0 +1,19 @@
+{
+  "Name": "Fervent Adoration",
+  "Spell School": "Enchantment",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S, M (sheet music)",
+  "Duration": "Concentration, up to 10 minutes",
+  "Description": "An enchanting, singular note rings out, to a point you choose within range then blossoms into a song of unmitigated, primal beauty. Each creature of your choice in a 60-foot radius must make a Wisdom saving throw. On a failure, they gain a bonus to their damage equal to their proficiency bonus, and must use the Random Targeting Rule to decide who to attack. You may use your reaction to reroll a singular result once per round.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bard",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

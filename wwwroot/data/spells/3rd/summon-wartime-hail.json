@@ -1,0 +1,17 @@
+{
+  "Name": "Summon Wartime Hail",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, M (shell casings)",
+  "Duration": "Concentration, up to 1 minute",
+  "Description": "You crush the metallic casings in your hand and blow their dust upward to form a localized storm cloud that forms various crimson magic circles that pelt down bullet fire as if raindrops. Choose an area you can see within range, a cloud of bullet hail sprouts to cover a 30-ft. by 30-ft. cube centered at that point.\n\nAny creature must pass a Dexterity saving throw whenever they start or end their turns within that area, suffering 2d12 piercing damage on a failure, or half on a success. These bullets come from every direction at once, causing Large or greater creatures to suffer one additional damage die as per each additional 5-ft. of space they occupy in a line. (This only counts a line traced between the start and end of where a creature occupies, such as having Large creatures suffer an additional 1d12 piercing damage, or Huge ones suffering an additional 2d12 and so on.)",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d12 for each slot level above 3rd.",
+  "Classes": [
+    "Artificer",
+    "Ranger"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

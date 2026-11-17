@@ -1,0 +1,21 @@
+{
+  "Name": "Marination Beam",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S, M (a ball of spices to scrape off)",
+  "Duration": "Instantaneous",
+  "Description": "You point your finger at one target within range that you can see, then having a spicy beam emanate toward that spot, forcing the target to pass a Dexterity saving throw or become engulfed by a stream of magical spices that cling to them. On a failure, other creatures gain Advantage on Perception checks to find them and the next time they would suffer a Bite attack or a similarly consuming attack (Such as a Wraith’s Life Drain) they suffer an additional 2d8 damage that cannot be reduced through any means. The creature who deals this damage recovers an amount of Hit Points equal to the damage dealt by these additional damage die.\n\nAfter triggering its healing effect, this spell’s effects immediately end. The specific spices used by this spell can be of any odour and flavour of the caster’s choice.\n\nDruids may cast this spell while in Wildshape, albeit at a reduced range of 30-ft.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Cleric",
+    "Druid",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

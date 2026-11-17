@@ -1,0 +1,22 @@
+{
+  "Name": "Searing Birdcage",
+  "Spell School": "Abjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, M (the burnt feather of a goose)",
+  "Duration": "Instantaneous",
+  "Description": "You invoke the spirit of a flaming goose that manifests above a target creature within reach and have it then judge their sins. The creature must pass a Wisdom saving throw or suffer 4d4 fire damage and 4 Burn count.\n\nIf the creature has committed any of the following since the start of their last turn, they suffer additional effects upon failing this saving throw:\n\n• Killed or knocked another creature Unconscious.\n• Cast a spell by spending a spell slot.\n• Spoke ill or disrespected the core beliefs of a non-Evil aligned deity.\n\nUpon committing any of these sins, the creature suffers 4d12 fire damage instead as a cage of searing feathers comes to bind them. They also suffer 8 Burn count instead, have their movement speed reduced to 0-ft. and a -3 negative modifier to Dexterity saving throws until the end of their next turn.\n\nIf they have committed two or more of these sins, they have Disadvantage on the saving throw.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 6th level or higher, you may select an additional target for each slot level above 5th.",
+  "Classes": [
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Sorcerer"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

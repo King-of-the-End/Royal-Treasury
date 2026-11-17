@@ -1,0 +1,27 @@
+{
+  "Name": "Creeping Saucers",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self (see text)",
+  "Components": "S, M (ice needles)",
+  "Duration": "Instantaneous",
+  "Description": "You swing out the needles from between your fingers, tossing them in a spinning motion to make their ice grow and transform into slicing saucers that glide off the ground to reach their targets.\n\nWhen you cast this spell, you may choose one of the following trajectories for these saucers:\n\n• You make only one saucer that aims for one target of your choice within 120-ft. of you.\n• You make two saucers spin quickly around you, aiming for all targets within a 10-ft. radius of you.\n• You make three saucers that slice through a particular area of your choice, aiming for all targets within a 30-ft. cone starting from you.\n\nThe targets of these saucers must pass a Dexterity saving throw or suffer 6d6 cold damage, or half on a success. If there is only a single target, that target has disadvantage on its saving throw as the saucer has a homing effect toward them.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
+  "Classes": [
+    "Artificer",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

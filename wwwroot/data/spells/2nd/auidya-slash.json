@@ -1,0 +1,30 @@
+{
+  "Name": "Auidya Slash",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [
+    "Zanjen"
+  ],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S, M (a sword)",
+  "Duration": "Instantaneous",
+  "Description": "You brandish the sword used in the spell's casting and make a ranged spell attack with it against one creature within 60 feet of you, releasing a shadowy slash that flies towards the target. On a hit, the target suffers the weapon attack's normal effects and an additional 1d6 Psychic damage.\n\nFurthermore, they must succeed on a Constitution saving throw or suffer an effect of your choice. Either the Blinded Condition as your shadows engulf their face or to have a condition removed from them as your shadows absorb it. If the Condition has multiple counts, you remove a number of counts equal to double the spell slot spent to cast this.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, you can choose between the damage dice increasing or decreasing by 1d6 for each slot level above 2nd.",
+  "Classes": [
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Paladin",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

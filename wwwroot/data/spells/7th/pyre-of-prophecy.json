@@ -1,0 +1,21 @@
+{
+  "Name": "Pyre of Prophecy",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V, S",
+  "Duration": "Up to 1 minute",
+  "Description": "Through whispers of shattered texts and precognition of old you cause a burning pyre to burst out from an unoccupied 10-ft. by 10-ft. space within reach, rising to stand tall and cause life to burn bright.\n\nThis Pyre is a large object that has an AC of 17, Resistance to Fire and Radiant damage and is Vulnerable to cold damage. It does not benefit from this Resistance toward suffering Burn damage.\n\nThe Pyre demands the extinguishment of all around it, constantly emanating scorching air that causes all creatures within 30-ft. of it to suffer 2 Burn at the end of their turns. At the start of a creatures turn they must pass a Wisdom saving throw or suffer 6 Burn count if they are inside this area.\n\nFurthermore, this Pyre makes burns inside its reach feel like one is being pressed against hell itself, increasing Burn damage to d8s instead of d4s and Tremor - Scorch's end of turn damage to d8s as well. The Condition's burst damage becomes d10s instead of d6s.\n\nAt the end of your turns, the Pyre gains 2 Burn count per creature inside it's area, to a minimum of 2, and suffers the Condition's damage at the start of your subsequent turns.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 6th level or higher, you may select an additional target for each slot level above 5th.",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Inscriptor",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

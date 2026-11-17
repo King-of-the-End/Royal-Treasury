@@ -1,0 +1,23 @@
+{
+  "Name": "Broken Match",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "S, M (an intact match)",
+  "Duration": "Instantaneous",
+  "Description": "You lit the match between your fingers and use it to draw out four symbols of floating ember in the air, connecting them to up to three Burning creatures within range. You then strike through all these symbols with the match, instantly making it and the target creatures burst in flame.\n\nThese target creatures instantly suffer the effects of their Burn count twice, halving their count each time they suffer it. If a target is suffering from Tremor - Scorch, you may choose to trigger Tremor - Scorch once instead.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the targets must pass a Wisdom saving throw or suffer an amount Burn count after triggering the Condition equal to three times each slot level above 3rd on a failure.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

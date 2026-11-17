@@ -1,0 +1,20 @@
+{
+  "Name": "Combustion Snap",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S",
+  "Duration": "Instantaneous",
+  "Description": "You snap your fingers together, causing a burst of flame to abruptly erupt at the surface of another creature's body. You make one ranged spell attack against that creature, dealing 1d4 fire damage and 1 Burn count on a hit.\n\nYou create more than one burst when you reach higher levels: two bursts at 5th level, three bursts at 11th level and four bursts at 17th level. You can cause these bursts at the same target or at different ones. Make a separate attack roll for each target, hitting or missing all bursts dedicated to the same target depending on the result.\n\nIf you could deal additional Burn count on hits through external effects, you may only deal up to half your proficiency bonus' worth of the count per burst instead.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

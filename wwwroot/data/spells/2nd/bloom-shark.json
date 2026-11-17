@@ -1,0 +1,23 @@
+{
+  "Name": "Bloom Shark",
+  "Spell School": "Transmutation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Self",
+  "Components": "V, M (wilted rose petals)",
+  "Duration": "Instantaneous",
+  "Description": "You throw your weight back and sink into your shadows. You gain a burrowing speed of 30-ft. and instantly burrow 5-ft. into the ground without spending that movement speed and can't go deeper than that. You may then move up to that remaining movement speed and re-emerge at the end of your turn. You must be 5-ft. under an unoccupied space to re-emerge, and if you aren't able to you instantly start suffocating and must spend your Action to dig out of the ground toward the nearest 5-ft. of unoccupied space.\n\nA thick brambly mess clings to the top of where your shadow still lingers, causing any terrain you move into to be shredded and be considered Difficult Terrain. Additionally, whenever you first move 5-ft. below another creature's space using this they must pass a Dexterity saving throw or suffer 2d8 slashing damage and have their movement speed reduced by 10-ft. until the start of your next turn.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 and your burrowing speed increases by 5-ft. for each slot level above 2nd.",
+  "Classes": [
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Petal Knight",
+    "Sorcerer",
+    "Wizard",
+    "Ranger",
+    "Warlock"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

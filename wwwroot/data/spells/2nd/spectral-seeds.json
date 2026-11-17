@@ -1,0 +1,16 @@
+{
+  "Name": "Spectral Seeds",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S, M (a few rose seeds)",
+  "Duration": "Instantaneous",
+  "Description": "You toss the seeds in the air and make them vanish with a snap of your fingers, causing them to grow and reappear around one target creature within reach. Each seed contorts into a spiral, wringing out all of it's energy to be fired in a concentrated beam at the target, having you make a spell ranged attack against them for each and dealing 2d4 acid damage on a hit.\n\nYou create an amount of seeds equal to half the spell slot level used to cast this spell, rounded up.\n\nWhenever you would score a Critical Hit upon casting this spell using a spell slot of 7th level or higher, the beam pierces their heart and instantly kills them if their CR or Level is lower than the value of your Spell Save DC. If they would not be killed, the target instead suffers an additional 3d4 acid damage. (This damage is not affected by the Critical Hit.)",
+  "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, spell attacks using it become a Critical Hit on a roll of 19-20, lowering the minimum value by 1 per spell slot level above 5th.",
+  "Classes": [
+    "Druid"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

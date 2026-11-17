@@ -1,0 +1,19 @@
+{
+  "Name": "Flower Burying Pin",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "S, M (a petal to scatter)",
+  "Duration": "Instantaneous",
+  "Description": "You summon an intricate red spear which is meant to pin down a heart and let it be buried into the ground, having it fly to the air with grace. You make a ranged spell attack against a creature within reach, dealing 1d6 piercing damage and inflicting one Rupture count on a hit.\n\nThis spell does not consume any counts of the Condition when triggering it, but can only ever have rupture do up to your proficiency bonus' worth of d4 additional damage when triggering it. (As per the usual rules of the Condition.)\n\nThe spell creates more than one pin when you reach higher levels: two pins at 5th level, three pins at 11th level, and four pins at 17th level. You can direct the pins at the same target or at different ones. Make a separate attack roll for each pin.\n\nIf a target was already pierced by a pin as part of this Action, they suffer an additional Rupture Rupture count per pin already buried in them due to a hit attack.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Bladebearer",
+    "Cleric",
+    "Inscriptor",
+    "Warlock"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

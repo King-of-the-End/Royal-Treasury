@@ -1,0 +1,25 @@
+{
+  "Name": "Ice Slide",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "Touch",
+  "Components": "S, M (a snowflake)",
+  "Duration": "1 hour",
+  "Description": "You extend your hands and clap, crushing the snowflake in-between to make the ground crackle with an icy sheet forming over it. You coat the ground within a line in ice. It is 5-ft. wide and up to 60-ft. long, or alternatively 15-ft. wide and up to 30-ft. long.\n\nThat ground becomes Difficult Terrain, but any creature standing ontop of it may spend their Bonus Action or half their movement speed to instantly slide down a line to the other end of the frozen path. Whenever they do, they must pass an Athletics or Acrobatics check against your Spell Save DC or fall Prone at the end. You automatically pass this check.\n\nWhenever you cast this spell, you may alter the height of the frozen path to go 15-ft. up or down and it may end without sufficient footing, with it being able to support up to 2 tons of weight before breaking.",
+  "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the first length presented increases by 20-ft. and the second increases by 10-ft. per spell slot level spent above 2nd.",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}

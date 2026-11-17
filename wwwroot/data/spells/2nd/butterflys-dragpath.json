@@ -1,0 +1,28 @@
+{
+  "Name": "Butterfly's Dragpath",
+  "Spell School": "Conjuration",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "60 feet",
+  "Components": "V, S",
+  "Duration": "Up to 1 minute",
+  "Description": "You make a rift in space appear at a point within range, to where a massive blazing talon bears down and drags through a 30-ft. long, 10-ft. wide line of your choice. This area is engulfed in flame for the duration, causing any creature inside that area to suffer 2 Burn count whenever they end or start their turn atop the area.\n\nThis flame cannot be put out by non-magical water or wind, but will be extinguished by effects such as the Gust of Wind spell. Surmountable fuel may be thrown into the fire as a Bonus Action, such as an Oil (Flask), causing it to rage on stronger and deal an additional Burn count whenever the Condition is applied. The same happens through spells such as Grease being cast atop this zone, also effectively expanding its area to cover wherever it is covered by the Grease spell.\n\nThis fire may deal a total of 6 Burn count per turn start or end.",
+  "At Higher Levels": "",
+  "Classes": [
+    "Artificer",
+    "Bard",
+    "Bladebearer",
+    "Cleric",
+    "Druid",
+    "Dusksworn",
+    "Favored Soul",
+    "Inscriptor",
+    "Petal Knight",
+    "Ranger",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+  ],
+  "Sourcebook": "Undertomes",
+  "Tags": []
+}
