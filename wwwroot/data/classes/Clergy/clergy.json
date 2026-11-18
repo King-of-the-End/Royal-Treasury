@@ -24,13 +24,13 @@
     {
       "title": "The Clergy in Regular D\u0026D",
       "paragraphs": [
-        "You can use the clergy relatively easily in the realms by simply using them as a variation of paladins or clerics. The class can be moved to function as members of most religious orders by simply removing the allusions to the Roman Catholic Church and using whatever church or organization you wish. They can follow any god and still function properly. If the church in question does not have any text to use as a spell focus then their black keys and ash locks still work, and you can use a regular religious symbol or focus in their place. Their attitude toward mages can remain the same under the context of being those who hunt down or specifically oppose magic users, but their primary identity can still be daemon hunters. It is also very simple to incorporate those who hunt and reclaim religious artifacts for their gods.",
+        "You can use the clergy relatively easily in the realms by simply using them as a variation of clerics. The class can be moved to function as members of most religious orders by simply removing the allusions to the Roman Catholic Church and using whatever church or organization you wish. They can follow any god and still function properly. If the church in question does not have any text to use as a spell focus then their black keys and ash locks still work, and you can use a regular religious symbol or focus in their place. Their attitude toward mages can remain the same under the context of being those who hunt down or specifically oppose magic users, but their primary identity can still be daemon hunters. It is also very simple to incorporate those who hunt and reclaim religious artifacts for their gods.",
         "Rather than having to explain their brutal methods, they can be treated as if they are the darker underbelly of their church, performing deeds that even their leaders may not know about. Since the context of the religion would have changed, you don\u2019t need to do as much legwork to explain away their methods. In regards to secrecy, they may still prefer to operate in the shadows and so do not wish for their order to be discovered by the public."
       ]
     }
   ],
   "roleplay": {
-    "quick_build": "There is no obvious quick build strategy for the clergy, as the various orders cause the class to go in different directions. The knight fights similarly to a fighter, and so you should prioritize Strength for them. The executor is similar to a rogue and specializes in dealing damage, and usually benefits from Dexterity. The Exorcist is an undead-hunting class that focuses on durability, so Constitution is key for them. In any case a clergy member should have a high Wisdom stat, preferably your highest, to boost their spellcasting. You can take the acolyte background to quickly throw yourself into the role. In some circumstances, your DM may be willing to use paladin or cleric subclasses in place of the chivalric order."
+    "quick_build": "There is no obvious quick build strategy for the clergy, as the various orders cause the class to go in different directions. The knight fights similarly to a fighter, and so you should prioritize Strength for them. The executor is similar to a rogue and specializes in dealing damage, and usually benefits from Dexterity. The Exorcist is an undead-hunting class that focuses on durability, so Constitution is key for them. In any case a clergy member should have a high Wisdom stat, preferably your highest, to boost their spellcasting. You can take the acolyte background to quickly throw yourself into the role. In some circumstances, your DM may be willing to use cleric subclasses in place of the chivalric order."
   },
   "mechanics_tabs": [
     {
@@ -141,7 +141,11 @@
             "blocks": [
               {
                 "type": "paragraph",
-                "text": "You belong to one of the different orders that make up the Holy Church. Charged with different duties and expressing them through different levels of violence and brutality, they all protect the Holy Church from different heretical elements. The chivalric orders are listed at the end of these class features."
+                "text": "You belong to one of the different orders that make up the Holy Church. Charged with different duties and expressing them through different levels of violence and brutality, they all protect the Holy Church from different heretical elements. The chivalric orders are listed below."
+              },
+              {
+                "type": "paragraph",
+                "text": "Members of the clergy choose a specialization and dedicate themselves to it. They are all warriors and killers in different respects, but are focused on guarding the integrity of the Church and spreading the word of God in different ways."
               }
             ]
           },
@@ -894,7 +898,11 @@
             "blocks": [
               {
                 "type": "paragraph",
-                "text": "You belong to one of the different orders that make up the Holy Church. Charged with different duties and expressing them through different levels of violence and brutality, they all protect the Holy Church from different heretical elements. The chivalric orders are listed at the end of these class features."
+                "text": "You belong to one of the different orders that make up the Holy Church. Charged with different duties and expressing them through different levels of violence and brutality, they all protect the Holy Church from different heretical elements. The chivalric orders are listed below."
+              },
+              {
+                "type": "paragraph",
+                "text": "Members of the clergy choose a specialization and dedicate themselves to it. They are all warriors and killers in different respects, but are focused on guarding the integrity of the Church and spreading the word of God in different ways."
               }
             ]
           },

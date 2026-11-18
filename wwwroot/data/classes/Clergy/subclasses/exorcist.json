@@ -1,0 +1,80 @@
+{
+  "name": "Exorcist",
+  "slug": "exorcist",
+  "class": "Clergy",
+  "subclass_feature": "Chivalric Order",
+  "summary": "TBA",
+  "introduction": [
+    "Exorcists are trained to deal with daemons and evil spirits. They perform rituals that help them resist the control of such beings, rendering them immune to possession and granting them power against anything that would alter their behavior. They specialize in destroying otherworldly beings permanently, even if they could normally return to their own domains upon their destruction."
+  ],
+  "features": [
+    {
+      "name": "Bonus Proficiency",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this chivalric order, you gain proficiency in Constitution saving throws."
+        }
+      ]
+    },
+    {
+      "name": "Fiendish Perception",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have been trained to seek out and sense when a fiend, shapechanger, or undead are nearby. As an action you can rely upon special senses trained through divine rites. Until the start of your next turn you know the location of any fiend, shapechanger, or undead that is nearby as well as sensing if any creature around you is possessed or has assumed a form that is not their true form. This perception extends out 120 feet in every direction. You learn the type of creature you sense but not specific details about them or their identities, unless you have encountered that creature before by having conversed with it (it spoke to you and vice versa), or either dealt damage to or been dealt damage by it."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times equal to 1 + your Wisdom modifier. When you finish a long rest you regain expended uses."
+        }
+      ]
+    },
+    {
+      "name": "Rite of Banishment",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this chivalric order, you are taught the means to battle supernatural beings. Fiends and aberrations suffer disadvantage on saving throws against your sacrament spells, and you have advantage on spell attacks against them using them."
+        }
+      ]
+    },
+    {
+      "name": "Soul Perseverance",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, you cannot be possessed. Any time a creature uses an effect that would allow them to force you to act in any way against your will or in a way you wouldn't normally, you can choose to act normally instead and end the effect when you would make a saving throw against it."
+        }
+      ]
+    },
+    {
+      "name": "Ethereal Reach",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 9th level, you gain the ability to look into the spirit world and interact with what resides there. As a bonus action you can step into a space between both the ethereal and material planes, allowing you to interact with and attack creatures that are on either. Likewise, creatures on both planes can interact with you as well."
+        },
+        {
+          "type": "paragraph",
+          "text": "This effect lasts for 10 minutes, during which time you can use another bonus action to shift between being in both planes and being only in the material plane. You can use your ethereal reach once, then must complete a long rest before using it again."
+        }
+      ]
+    },
+    {
+      "name": "Rite of the Black Barrel",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 14th level, you learn a ritual that allows you to permanently subdue and destroy the eternal souls of daemons. Whenever you kill an undead, fiend, or monstrosity that would later regenerate (such as a lich or a fiend), that creature must succeed a Charisma saving throw against your spell save DC. If they fail their soul is destroyed immediately and they do not return to their own plane or regenerate."
+        }
+      ]
+    }
+  ]
+}

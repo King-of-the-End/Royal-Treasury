@@ -1,0 +1,92 @@
+{
+  "name": "Executor",
+  "slug": "executor",
+  "class": "Clergy",
+  "subclass_feature": "Chivalric Order",
+  "summary": "TBA",
+  "introduction": [
+    "Executors are sent to clean up messes caused by anyone the Holy Church considers an enemy. They are trained to eliminate all threats in front of them, and are especially talented at dispatching mages and similar sorts. They are trained most proficiently in the use of black keys and their methods are looked upon by others as those of professional murderers. They act under the presumption that God will forgive their actions since they only act to restore his logic to the world, eliminating aberrations in his logic to do so."
+  ],
+  "features": [
+    {
+      "name": "Bonus Proficiency",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this chivalric order, you gain proficiency in Dexterity saving throws."
+        }
+      ]
+    },
+    {
+      "name": "Eighth Sacrament: Heretical Methods",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this chivalric order, you are granted permission to engage in whatever methods you wish to when pursuing your duties, including the use of forbidden magic. When you are choosing sacrament spells you can choose spells from the warlock spell list. These are treated as paladin spells for you."
+        }
+      ]
+    },
+    {
+      "name": "Scrambler",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this chivalric order, your base movement speed is increased by 10 feet. Climbing, swimming, and other types of difficult movement do not cost extra movement unless it is difficult terrain caused by magic effects."
+        }
+      ]
+    },
+    {
+      "name": "Magic Resistance",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, you have advantage on saving throws against spells and magical effects, and you have resistance to damage from spells."
+        }
+      ]
+    },
+    {
+      "name": "Resulting Scars",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 6th level you realize the results of physical training you have put yourself through. Your Clergy HD becomes d10s instead of d8s, and your maximum hit points increase by 10 to account for your previous hit dice. This change is accounted for before you roll hit points for this level."
+        }
+      ]
+    },
+    {
+      "name": "Blood-Soaked Critical",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 9th level, you learn to perform excruciating killing strikes against your opponents. When you make an attack roll you score a critical hit on a d20 roll of 19 or 20. Whenever you score a critical hit with a melee or thrown weapon, you may roll an additional three of the weapon's damage dice and add them to the damage roll."
+        }
+      ]
+    },
+    {
+      "name": "Brutal Murderer",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, whenever you make an attack or damage roll against a humanoid creature, you may roll 1d6 and add it to the result."
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack+",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, the amount of attacks you can make using your extra attack feature when you take an Attack action increases to three."
+        }
+      ]
+    }
+  ]
+}

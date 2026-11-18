@@ -1,0 +1,80 @@
+{
+  "name": "Knight",
+  "slug": "knight",
+  "class": "Clergy",
+  "subclass_feature": "Chivalric Order",
+  "summary": "TBA",
+  "introduction": [
+    "Members of the clergy that make up the main military force of the Holy Church. Knights exist in orders that serve individual churches and look out for their interests above all else, even the interests of other churches. They are primarily users of halberds. Among the members of the Holy Church, they are trained for the greatest durability and have straight-forward tactics."
+  ],
+  "features": [
+    {
+      "name": "Bonus Proficiencies",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this chivalric order, you gain proficiency in Strength saving throws."
+        }
+      ]
+    },
+    {
+      "name": "Archaic Polearm Mastery",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this chivalric order, you immediately gain the Polearm Master feat."
+        }
+      ]
+    },
+    {
+      "name": "Reactive Guardian",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this chivalric order, you learn defensive techniques that aid in defending the territory you are assigned to watch. Creatures provoke opportunity attacks from you even if they take the Disengage action and, unless the creature did take the Disengage action, you have advantage on opportunity attacks against them."
+        }
+      ]
+    },
+    {
+      "name": "Erupting Surge",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level you can, on your turn, choose to take an extra action. This action can be used to make a single weapon attack, Dash, Disengage, Hide, Use an Object or as an extra bonus action. You can use this feature once and cannot use it again until you complete a short or long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach 11th level you can use this feature twice, and then three times at 16th level. You regain expended uses when you complete a short or long rest. You can only use this feature once per turn."
+        }
+      ]
+    },
+    {
+      "name": "Faith Embodied",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 9th level, you learn a prayer that grants you protection against death. Whenever you are reduced to 0 hit points, you may choose to make a Wisdom saving throw with a DC equal to 8 plus the amount of damage that exceeded your hit points. For example, if you had 6 hit points and took 15 damage, the DC would be 8 + 9, equalling 17. If you succeed this saving throw you are reduced to 1 hit point instead of falling unconscious. You can only use this feature once per round, regaining your use of it at the start of your turn. Each time you use this feature to avoid being reduced to 0 hit points the DC increases by 2 until you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Spear of Scripture",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, you have the ability to create spears of holy power using transformed pages of scripture. You can summon one of these spears as a bonus action. These spears are martial weapons that deal 1d10 radiant damage on a successful hit. They have the silvered, versatile (1d12), and thrown (100/300 ft) properties. If you throw the spear you can choose to have it return to you as a bonus action. It disappears when you will it to vanish, when you conjure a new spear, when another creature attempts to make an attack roll with it, or when you move more than 500 feet away from it. This spear has advantage on attacks against undead creatures and aberrations, against which it also does an additional 1d8 radiant damage on a successful hit."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you summon one of these spears you can choose to expend one of your sacrament spells, granting the spear a bonus to attack and damage rolls equal to the base level of the spell. Also, when summoned using a sacrament spell, you can use a bonus action to cause it to erupt into a blinding flash of radiant power. All creatures in a 30-foot-radius centred where it hits must make a Dexterity saving throw, taking radiant damage equal to 2d10 plus your Wisdom modifier per level of the sacrament spell. Causing the spear to erupt destroys it. Undead creatures and aberrations take an additional 1d8 damage per spell level and have disadvantage on their saving throw against this effect."
+        }
+      ]
+    }
+  ]
+}

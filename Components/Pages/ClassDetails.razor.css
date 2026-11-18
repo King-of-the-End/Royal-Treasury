@@ -3108,3 +3108,21 @@
         grid-column: 1 / -1;
     }
 }
+
+
+/* Clergy / Magus subclass groups: reuse the invocation tab appearance. */
+.class-page ::deep .class-subclass-list .class-subclass-tabs {
+    margin: 0.85rem 0 0;
+    padding-bottom: 0.35rem;
+}
+.class-page ::deep .class-subclass-tabs button:focus-visible {
+    outline: 2px solid var(--gold-light);
+    outline-offset: -3px;
+}
+.class-page ::deep .class-subclass-list .class-subclass-alternative-note {
+    margin: 0.85rem 0 0;
+    line-height: 1.6;
+}
+.class-page ::deep .class-subclass-table .class-subclass-empty {
+    color: rgba(240, 236, 230, 0.72);
+}

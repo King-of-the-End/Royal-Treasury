@@ -295,6 +295,24 @@ else if (classDocument is not null)
 
     private JsonDocument? classDocument;
     private IReadOnlyList<SubclassEntry> subclasses = Array.Empty<SubclassEntry>();
+    private IReadOnlyList<SubclassEntry> alternativeSubclasses = Array.Empty<SubclassEntry>();
+    private bool showAlternativeSubclasses;
+
+    // Only these two classes support an alternative subclass catalogue.
+    private static string? AlternativeSubclassClass(string classSlug) => classSlug.ToLowerInvariant() switch
+    {
+        "clergy" => "cleric",
+        "magus" => "wizard",
+        _ => null
+    };
+
+    private bool IsAlternativeSubclassFeature(string featureName) =>
+        !IsSubclassPage && (Slug.ToLowerInvariant() switch
+        {
+            "clergy" => AnchorId(featureName) == AnchorId("Chivalric Order"),
+            "magus" => AnchorId(featureName) == AnchorId("Craft Focus / Arcane Tradition"),
+            _ => false
+        });
     private JsonDocument? subclassDocument;
     private string? loadedSubclassSlug;
     private long loadVersion;
@@ -408,16 +426,19 @@ else if (classDocument is not null)
                 }
 
                 var featureName = GetString(feature, "name") ?? string.Empty;
-                var matchingSubclasses = remainingSubclasses
-                    .Where(subclass =>
+                var hasAlternativeTabs = IsAlternativeSubclassFeature(featureName);
+                // Clergy and Magus have a single selection feature per mechanics view.
+                // Keep their entire core catalogue together, even for entries without a parent feature.
+                var matchingSubclasses = hasAlternativeTabs
+                    ? subclasses.ToArray()
+                    : remainingSubclasses.Where(subclass =>
                         subclass.ParentFeature is string target &&
-                        AnchorId(target) == AnchorId(featureName))
-                    .ToArray();
+                        AnchorId(target) == AnchorId(featureName)).ToArray();
 
                 foreach (var subclass in matchingSubclasses)
                     remainingSubclasses.Remove(subclass);
 
-                builder.AddContent(seq++, RenderFeatureCard(feature, matchingSubclasses));
+                builder.AddContent(seq++, RenderFeatureCard(feature, matchingSubclasses, hasAlternativeTabs));
             }
         }
 
@@ -494,6 +515,8 @@ else if (classDocument is not null)
         classDocument = null;
         ClearSubclass();
         subclasses = Array.Empty<SubclassEntry>();
+        alternativeSubclasses = Array.Empty<SubclassEntry>();
+        showAlternativeSubclasses = false;
         loadedClassSlug = null;
 
         try
@@ -538,6 +561,11 @@ else if (classDocument is not null)
             }
             classDocument = document;
             subclasses = SubclassCatalog.Read(classFolderPath, Logger);
+            if (AlternativeSubclassClass(safeSlug) is string alternativeClass &&
+                SubclassCatalog.FindClassFolder(Environment.WebRootPath, alternativeClass) is string alternativeFolder)
+            {
+                alternativeSubclasses = SubclassCatalog.Read(alternativeFolder, Logger);
+            }
             loadedClassSlug = safeSlug;
             LoadSelectedSubclass(safeSubclassSlug);
         }
@@ -587,13 +615,16 @@ else if (classDocument is not null)
         }
     }
 
-    private string SubclassUrl(SubclassEntry entry)
-        => $"/classes/{Slug.ToLowerInvariant()}/{entry.Slug}" +
-            (activeMechanicsTabIndex > 0 ? $"?mechanicsTab={activeMechanicsTabIndex}" : string.Empty);
+    private string SubclassUrl(SubclassEntry entry, string? ownerClass = null)
+        => ownerClass is not null
+            ? $"/classes/{ownerClass}/{entry.Slug}"
+            : $"/classes/{Slug.ToLowerInvariant()}/{entry.Slug}" +
+                (activeMechanicsTabIndex > 0 ? $"?mechanicsTab={activeMechanicsTabIndex}" : string.Empty);
 
     // A single native details control collapses the entire table. Individual
     // rows contain only a normal navigation link and the short summary.
-    private RenderFragment RenderSubclassList(IReadOnlyList<SubclassEntry> entries, string? anchor = null) => builder =>
+    private RenderFragment RenderSubclassList(IReadOnlyList<SubclassEntry> entries, string? anchor = null,
+        bool hasAlternativeTabs = false) => builder =>
     {
         var seq = 0;
         builder.OpenElement(seq++, "details");
@@ -611,6 +642,49 @@ else if (classDocument is not null)
         builder.CloseElement();
         builder.CloseElement();
 
+        if (hasAlternativeTabs)
+        {
+            builder.AddContent(seq++, RenderSubclassTabs());
+            if (showAlternativeSubclasses && string.Equals(Slug, "clergy", StringComparison.OrdinalIgnoreCase))
+            {
+                builder.OpenElement(seq++, "p");
+                builder.AddAttribute(seq++, "class", "class-subclass-alternative-note");
+                builder.AddContent(seq++, "A player may use a Cleric Subclass in place of a Clergy Subclass. If they do, all channel divinity abilities become once per short rest abilities.");
+                builder.CloseElement();
+            }
+        }
+
+        var alternativeOwner = hasAlternativeTabs && showAlternativeSubclasses
+            ? AlternativeSubclassClass(Slug) : null;
+        var visibleEntries = alternativeOwner is null ? entries : alternativeSubclasses;
+        builder.AddContent(seq++, RenderSubclassTable(visibleEntries, alternativeOwner));
+        builder.CloseElement(); // details
+    };
+
+    private RenderFragment RenderSubclassTabs() => builder =>
+    {
+        builder.OpenElement(0, "div");
+        builder.AddAttribute(1, "class", "class-invocation-tabs class-subclass-tabs");
+        builder.AddAttribute(2, "role", "group");
+        builder.AddAttribute(3, "aria-label", "Subclass groups");
+        foreach (var alternative in new[] { false, true })
+        {
+            var isActive = showAlternativeSubclasses == alternative;
+            builder.OpenElement(4, "button");
+            builder.SetKey(alternative);
+            builder.AddAttribute(5, "type", "button");
+            builder.AddAttribute(6, "aria-pressed", isActive ? "true" : "false");
+            builder.AddAttribute(7, "class", $"class-invocation-tab-button{(isActive ? " active" : string.Empty)}");
+            builder.AddAttribute(8, "onclick", EventCallback.Factory.Create(this, () => { showAlternativeSubclasses = alternative; }));
+            builder.AddContent(9, alternative ? "Alternative" : "Core");
+            builder.CloseElement();
+        }
+        builder.CloseElement();
+    };
+
+    private RenderFragment RenderSubclassTable(IReadOnlyList<SubclassEntry> entries, string? ownerClass) => builder =>
+    {
+        var seq = 0;
         builder.OpenElement(seq++, "div");
         builder.AddAttribute(seq++, "class", "class-table-scroll class-subclass-table-scroll");
         builder.OpenElement(seq++, "table");
@@ -627,6 +701,16 @@ else if (classDocument is not null)
         builder.CloseElement();
         builder.CloseElement();
         builder.OpenElement(seq++, "tbody");
+        if (entries.Count == 0)
+        {
+            builder.OpenElement(seq++, "tr");
+            builder.OpenElement(seq++, "td");
+            builder.AddAttribute(seq++, "colspan", 2);
+            builder.AddAttribute(seq++, "class", "class-subclass-empty");
+            builder.AddContent(seq++, $"No {SlugToDisplayName(ownerClass ?? Slug)} subclasses are currently listed.");
+            builder.CloseElement();
+            builder.CloseElement();
+        }
         foreach (var entry in entries.OrderBy(item => item.Name, StringComparer.OrdinalIgnoreCase)
                      .ThenBy(item => item.Slug, StringComparer.OrdinalIgnoreCase))
         {
@@ -635,7 +719,7 @@ else if (classDocument is not null)
             builder.OpenElement(seq++, "td");
             builder.OpenElement(seq++, "a");
             builder.AddAttribute(seq++, "class", "class-subclass-name");
-            builder.AddAttribute(seq++, "href", SubclassUrl(entry));
+            builder.AddAttribute(seq++, "href", SubclassUrl(entry, ownerClass));
             builder.AddContent(seq++, entry.Name);
             builder.CloseElement();
             builder.CloseElement();
@@ -648,7 +732,6 @@ else if (classDocument is not null)
         builder.CloseElement(); // tbody
         builder.CloseElement(); // table
         builder.CloseElement(); // scroll wrapper
-        builder.CloseElement(); // details
     };
 
     private static JsonElement? GetProperty(JsonElement element, string name)
@@ -815,7 +898,8 @@ else if (classDocument is not null)
     };
 
     private RenderFragment RenderFeatureCard(JsonElement feature,
-        IReadOnlyList<SubclassEntry>? nestedSubclasses = null) => builder =>
+        IReadOnlyList<SubclassEntry>? nestedSubclasses = null,
+        bool hasAlternativeTabs = false) => builder =>
     {
         var seq = 0;
 
@@ -882,8 +966,9 @@ else if (classDocument is not null)
                         : RenderBlock(block));
         }
 
-        if (nestedSubclasses is { Count: > 0 })
-            builder.AddContent(seq++, RenderSubclassList(nestedSubclasses));
+        if (hasAlternativeTabs || nestedSubclasses is { Count: > 0 })
+            builder.AddContent(seq++, RenderSubclassList(nestedSubclasses ?? Array.Empty<SubclassEntry>(),
+                hasAlternativeTabs: hasAlternativeTabs));
 
         builder.CloseElement();
         builder.CloseElement();
