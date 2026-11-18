@@ -1,0 +1,523 @@
+{
+  "name": "Path of Grievance",
+  "slug": "path-of-grievance",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "Barbarians of the Path of Grievance never forgive and never forget. They remember every slight committed against them and other members of their clan, and will go through all ordeals necessary to see the perpetrators of such crimes be thoroughly punished. They are armed solely with their fists and with magic tattoos given to them after they exact final vengeance, with the purpose of making them stronger. The more tattoos in your skin, the higher your ranking at the clan.",
+    "In the Forgotten Realms, the city of Waterdeep has grown restless with fear over a criminal group comprised of people that follow this way of life. Known as the Half, because none of their members are complete without each other, the Barbarians that stem from this family are known for being swift deliverers of vengeance over the smallest injuries and remarks raised against their own.",
+    "In the universe of Project Moon, the Middle is one of the Fingers, and, consequently, a Star of the City. They record all injustices made against their members in a book, repaying not in kind, but in cruelty, everything done against them tenfold. Members of the Middle see each other as a family, and would die for the honor of their brothers and sisters."
+  ],
+  "features": [
+    {
+      "name": "Loyalty",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting on level 3, you can roll 1d6 in place of the normal damage of your Unarmed Strike, which now also count as Heavy Weapons. When you hit a creature, you can choose to make them roll a Constitution saving throw against your Tattoo save DC or be pushed back 5 feet."
+        },
+        {
+          "type": "paragraph",
+          "text": "During combat, the enemy that dealt the most damage to you or your allies this round gains a Vengeance Mark. This lasts until the end of the next round, or until you fall unconscious. If no enemy has dealt damage this turn, the stack of Vengeance Mark is given to the enemy that last attempted to attack you or an allied creature. If two enemies dealt the same amount of highest damage, the stack of Vengeance Mark goes to the latest enemy that dealt this damage. Outside of combat, whenever someone rolls an ability check to hurt or damage your character or their reputation, they will also gain a point of Vengeance Mark until your next short rest. If combat is initiated right after an instance of this by rolling an initiative check, then the enemy with the highest initiative roll gains Vengeance Mark until the end of the first round of combat."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you hit an enemy with a stack of Vengeance Mark, they gain 1 stack of Bleed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you gain proficiency in Painter’s Supplies for the sake of carving magic tattoos on yourself and others."
+        }
+      ]
+    },
+    {
+      "name": "Checking the Book",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Every barbarian in the Path of Grievance carries magical tattoos that empower them in fights and allow them to deal devastating blows to their enemies and the enemies of their family. Also on level 3, you engrave two tattoos of your choice on your own body, from amongst the tattoos described below, and each time you gain a level in this class, you can replace one tattoo you know with a different one from this feature, as they need a constant flow of magical ink, not permitting all of them to be active at once. When you reach certain levels in this class, you learn additional tattoos, as shown in the Tattoos Known table."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you finish a long rest, you can engrave one of your known tattoos onto a willing creature or reactivate one with magical ink. Your tattoo remains active on that creature until you finish a long rest; after this, the magical ink ceases to have effect unless you activate it again. Any tattoo can be engraved and activated, as long as it is known to you. Allied creatures can count levels from any class for the sake of using your level-restricted tattoos."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Barbarian Level"
+            },
+            {
+              "key": "tattoos",
+              "label": "Number of Tattoos"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "tattoos": 2
+            },
+            {
+              "level": "6th",
+              "tattoos": 4
+            },
+            {
+              "level": "10th",
+              "tattoos": 6
+            },
+            {
+              "level": "14th",
+              "tattoos": 10
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The tattoos shown below are available to you when you learn a tattoo. If a tattoo has a level requirement, you must be at least that level in this class to learn the tattoo. If a tattoo requires a saving throw, your Tattoo Magic save DC equals 8 + your proficiency bonus + your Constitution modifier."
+        }
+      ]
+    },
+    {
+      "name": "A Just Vengeance",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your family has only empowered you further, and the more enemies you strike down, the more benefits you reap for your loyalty. Once you reach 6th level, your Unarmed Strike damage die changes to 1d8. Additionally, when you reduce a hostile creature to 0 hit points, choose one of the two options below:"
+        },
+        {
+          "type": "subsection",
+          "title": "Brush it Off",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Gain temporary hit points equal to a roll of your Unarmed Strike damage die plus your Rage bonus."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Ready to Write",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Gain a +1 bonus for your attack and damage rolls for the duration of the combat against enemies with Vengeance Mark."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Your Unarmed Strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+        }
+      ]
+    },
+    {
+      "name": "Favoritism",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are finally starting to ascend in the family, growing from a common runt to a person of some respect. Once you reach level 10, your Unarmed Strike damage die changes to 1d10. Additionally, whenever a creature with Vengeance Mark is killed, the creature that last attacked you or an ally this combat gains a stack of Vengeance Mark."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever an allied creature within 30 feet of you is hit by a hostile creature, the allied creature with least HP gains a +1 bonus to their ability checks, attack rolls and saving throws until the end of their next turn, to a maximum of +3."
+        }
+      ]
+    },
+    {
+      "name": "Multifold Retribution",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The family has finally recognized your skills, and given you a position worthy of your power, which demands respect from all people. Once you reach 14th level, your Unarmed Strike damage die changes to 1d12."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, as a reaction when a creature within 30 feet of you attempts to cast a spell, take a bonus action, a reaction, a legendary action or a mythic action, you may use your speed to run up to them without provoking opportunity attacks and perform an attack roll. If you hit, the creature’s action and spell slot is spent and lost. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses on a long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you enter your Rage, a burst of purple energy flames explode from your Tattoos, covering your entire body in a menacing aura, signaling you have entered Rageful Vengeance. During Rageful Vengeance, you have all benefits from a normal Rage, with the addition of:"
+        },
+        {
+          "type": "subsection",
+          "title": "Right In the Solar Plexus",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As an action, which can be taken as part of your Attack action when you hit a creature or an object, you get to end all magical effects currently affecting that object or creature, and if the creature is shape-shifted, it reverts to its true form. If the magical effect is of 7th-level or higher, you must roll d20 + your Constitution modifier against the caster’s save DC, dispelling the effect on a success. If the magical effect doesn’t need to be activated, and is instead constantly active, like a Monk’s Timeless Body, the suppression only lasts for a minute. You can use this ability once per Rageful Vengeance."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Watch Your Back!",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As part of your Attack action, you can force the enemy to roll a Charisma saving throw against your Tattoo save DC. If they fail, they become surprised by your might, recognizing their inferiority, and your second attack immediately grapples the creature on a hit. You have advantage attacking a creature surprised this way. Immediately after grappling them, you may throw them on a 30-foot line in any direction. They take 1d10 bludgeoning damage for each 10 feet traveled. If they hit another creature or an object this way, they instead take double the dice in damage and what they hit takes half that damage, being pushed along with it to the end of the line if possible. All creatures that took damage this way fall prone. You can use this ability once per Rageful Vengeance."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Swear Vengeance",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you successfully hit a creature with all available Unarmed Attack actions in your turn, they become Panicked until the end of their next turn."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Path of Grievance Tattoos",
+      "style": "option-cards",
+      "group_by": "level",
+      "intro": [
+        "The following tattoos include the original options and both optional expansions. Tattoos are grouped by the minimum level at which they become available."
+      ],
+      "features": [
+        {
+          "name": "Tattoo of Arcana",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As an action, you can make your tattoos glow with a magical aura. For 1 minute, or until you dismiss it as an action, you shed bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. You can take this as a reaction instead of an action when you enter your Rage. While you are glowing, you can spend a bonus action, or do this as part of your reaction when you Rage, to force all creatures of your choice within 20 feet of you to make a Wisdom saving throw against your Tattoo save DC or become frightened of you until the start of your next turn. Creatures frightened this way take an additional die of damage from your Unarmed Strikes whenever you hit them. Once you use this feature, you can’t use it again until your next long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Binding",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can use a bonus action to force an enemy creature to make a Constitution saving throw against your Tattoo save DC as magical shackles extend from your tattoos to hold them. If they pass, they take 1d6 bludgeoning damage as they break off the chains (this damage increases to 2d6 on 6th level, 3d6 on 10th level and 4d6 on 14th level). If they fail, both you and the creature can only use one action per turn until the start of your next turn. Extra attacks cannot be used as part of the same Attack action. This ability can only be used a number of times equal to your proficiency modifier, and you recover all expended uses on a long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Family",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "If an ally within 30 feet of you also has active magical tattoos on their body, you may spend a bonus action to gain temporary hit points equal to your Unarmed Strike die + your Rage damage. You can use this feature a number of times equal to your proficiency modifier, and you regain all expended uses on a long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Fists",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you hit a creature with an unarmed attack, you may perform another attack as a bonus action if the creature has a stack of Vengeance Mark. Additionally, you can add your Rage bonus to Intimidation checks."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Lockdown",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Instead of performing an attack during your Attack action you may choose to have purple chains burst out of your tattoo to pin down a target within 20 feet of you. You must roll a Grapple check against them; on a success their movement speed is reduced to 0 feet until the end of their next turn, yet so is yours as you’re weighed down by your chains. If the creature has a stack of Vengeance Mark your movement speed is instead halved. Once you use this feature, you can only use it again after a short or long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Loyalty",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you hit a creature that has a stack of Vengeance Mark with an Unarmed Strike, other creatures will gain advantage on their first attack roll against it until the end of the affected creature’s turn."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Needle Fractures",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can sink the ink in this tattoo to create binding points in your muscles that take out the force of whatever hits you as a reaction you may take whenever you suffer damage. When you do so, reduce the damage taken by your choice between your current amount of tattoos or proficiency bonus. You cannot reduce force damage this way and may use this tattoo an amount of times equal to your proficiency bonus, regaining spent uses after a short or long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Passion",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you hit a creature with an Unarmed Strike, you inflict 1 Burn count. Additionally, you gain advantage on Performance checks whenever performing with (or to impress) other friendly creatures or against a hostile creature."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Remembrance",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you hit a creature with an Unarmed Strike, you inflict 1 Bleed. Additionally, you gain advantage on History checks made to remember events you participated in. You may inflict Bleed this way up to two times per turn."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Scary Faces",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You have many terrifying-looking tattoos all over your body, causing you to become a very scary fellow. You gain proficiency in Intimidation, or Expertise if you were already proficient in it. When you would make a Charisma check using Persuasion, Deception or Performance you may choose to use Intimidation instead. You may do this an amount of times equal to your proficiency bonus, regaining its uses after a short or long rest. Additionally, if you attempt an Intimidation check against a creature who has a stack of Vengeance Mark, you may use your Strength modifier instead of Charisma."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Skull Bursting",
+          "level": "3",
+          "subtitle": "Available at 3rd level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you hit a grappled creature you may choose to suplex them and cause them to become prone. When you do so, for the remainder of the duration this creature remains prone you may choose to reroll any damage die against them, taking the greater result. You may do so once per die."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Bloody Knuckles",
+          "level": "6",
+          "subtitle": "Prerequisite: 6th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you cause a creature to be Bleeding, they instead become Heavily Bleeding until the condition is cured. Heavily Bleeding instead causes the afflicted creature to suffer 2d4 damage on the same triggers as the previous condition and 2 stacks are removed every time it is triggered. The Medicine check required to remove this condition is increased by 5. When first inflicted, any stacks of Bleeding on the target are turned into Heavily Bleeding, and this condition may only be increased by one during a creature’s turn, despite how many times it is inflicted."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Goading Scowls",
+          "level": "6",
+          "subtitle": "Prerequisite: 6th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "While you’re engaged in combat with another creature you may use your reaction when they would attack another creature to make your tattoos flash and move to goad them into attacking you instead. That creature has disadvantage on attacks against any creature other than you until the end of their turn."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Kicking",
+          "level": "6",
+          "subtitle": "Prerequisite: 6th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can use an action to kick down an enemy’s weak spot, leaving them vulnerable for further attacks. As a part of this action, roll an Unarmed Strike against the enemy. If it hits, the creature must make a Constitution saving throw against your Tattoo save DC or become paralyzed for a minute. The creature can reroll the saving throw at the end of each of their turns, ending the effect on a success. Once you successfully use this ability, you can only use it again after a short or long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Mutual Discombobulation",
+          "level": "6",
+          "subtitle": "Prerequisite: 6th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Once per turn you may choose to change one of your attacks as part of the Attack action with a Headbutt. To do so you perform a melee Unarmed Strike that you are proficient in against a creature within 5 feet of you. On a hit, you deal 2d10 bludgeoning damage and inflict half your proficiency bonus’ worth of Immobilized count, then suffering half the damage dealt yourself and the same amount of the condition’s count. When you gain it this way, you only lose this count at the end of your next turn."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Punching",
+          "level": "6",
+          "subtitle": "Prerequisite: 6th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you make an Attack action on your turn using an unarmed melee attack and successfully hit a creature, they must make a Constitution saving throw against your Tattoo save DC or gain one stack of Immobilized. If you managed to hit all of your unarmed attacks made with your Attack action this turn and they failed all of your saving throws, they gain 2 stacks of Immobilized per attack instead. You can use this ability a number of times equal to your proficiency modifier, and regain all expended uses on a long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Turtle Skin",
+          "level": "6",
+          "subtitle": "Prerequisite: 6th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You may spend your bonus action to have the ink from this tattoo spread out and flow over your skin, creating a protective layer over it. As long as you aren’t wearing armor or are wearing a Tattoo Set armor, you gain a bonus modifier to your AC equal to half your current magical Tattoo count until the start of your next turn. For each attack performed against you in that duration this modifier is reduced by one. You may use this tattoo an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Vicious Burns",
+          "level": "6",
+          "subtitle": "Prerequisite: 6th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You learn the Vicious Mockery spell. Whenever you cause damage to another creature using it, you may choose to deal fire damage instead of psychic and one Burn for each damage die rolled. If you are not a spellcaster your DC for this spell’s saving throw is 10 + your Charisma modifier + your proficiency bonus + any bonuses gained from being attuned to a magical weapon."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Dominance",
+          "level": "10",
+          "subtitle": "Prerequisite: 10th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "A bright light shines from your tattoos, and zaps of electricity signify to all creatures around you the build up of strength you’re about to commence when activating this tattoo. As a bonus action, which you may take together with your Rage bonus action, you begin for yourself a Test of the Big Brother. Until the start of your next turn, all enemies have advantage on attacks against you, and you gain vulnerability to all damage types. Once your second turn starts, if you’re still alive, you pass the test, removing all the previous conditions. For two rounds, until the end of your second turn after this, you gain advantage on all of your ability checks, attack rolls and saving throws. Additionally, all creatures you attack gain vulnerability to your Unarmed Strikes for the duration."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Entrenched Ankles",
+          "level": "10",
+          "subtitle": "Prerequisite: 10th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You gain 10 feet of movement speed. Whenever you attempt to climb a surface, you can spend up to 10 feet of walking speed at a time to successfully climb the same amount of feet spent by kicking and locking your feet into the surface, remaining there without falling at the end of your turns."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Payback",
+          "level": "10",
+          "subtitle": "Prerequisite: 10th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When a creature hits you or a friendly creature within 10 feet of you with an attack, you may, as a reaction, immediately move up to that creature without provoking opportunity attacks and hit them with a fortress-breaking punch, leaving a small crater on the floor. They must roll a Constitution saving throw against your Tattoo save DC or take 10d8 bludgeoning damage and gain one stack of Immobilized. Additionally, you may add 1d4 to the next attack roll you make, and if it hits, add 1d4 force damage to the damage roll. On a successful save, they only take half the damage, but you still gain the attack and damage bonus. Once you use this feature, you can only use it again after a short or long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Stitches",
+          "level": "10",
+          "subtitle": "Prerequisite: 10th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When a creature within 30 feet of you targets you with a spell effect, they must pass a Charisma saving throw or be silenced for one minute, becoming unable to speak as purple chains quickly wrap around their mouth. They may repeat this saving throw on the end of their turn. If the target has a stack of Vengeance Mark, it rolls this saving throw with disadvantage. You may use this feature once per long rest, regaining your uses after a short or long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Threadmarks",
+          "level": "10",
+          "subtitle": "Prerequisite: 10th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As an action during your turn you may brace yourself for a violent sprint. When you do so, you gain 30 feet of walking speed until the end of your turn and any damage dealt to you through opportunity attacks is halved. Whenever you move through another creature’s space they must pass a Dexterity saving throw or be caught in your wild trample, being knocked prone on a failure and suffering an amount of d10 bludgeoning damage equal to your proficiency bonus, or half that value on a success. The DC for this is 8 + your Strength modifier + your proficiency bonus. When you do so you may choose to grapple up to your Strength modifier’s worth of creatures instead of knocking them prone, then knocking them prone in a pile onto any unoccupied space within 5 feet of you at the end of your turn. You may use this ability an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Twisting",
+          "level": "10",
+          "subtitle": "Prerequisite: 10th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "These tattoos are made using powdered cartilage and as an action you may speak a command word to have your entire body become rubbery just as cartilage. This lasts for up to one hour or until you dismiss it. While like this you may twist and bend your body in any way, being able to fit through any hole that is greater than one foot in diameter and having a +5 to escape being grappled. Furthermore, your softer body only suffers half the damage you would when you would take falling damage."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of an Thunderstorm",
+          "level": "14",
+          "subtitle": "Prerequisite: 14th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you would be forced to attempt a Dexterity saving throw to resist the effects of a spell or attack that affects a radius, line or sphere that has a physical form (such as a Fireball, Lightning Bolt, Ballista Bolt or Cannonball) and pass, you may spend your reaction to suffer no damage if you would take half and punch through the attack, redirecting it to instead hit another point of your choice within 60 feet of you. When you do so, all creatures within this new area must attempt the same saving throw against the original DC. You may use this ability an amount of times equal to half your proficiency bonus, regaining spent uses after a long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Starburst",
+          "level": "14",
+          "subtitle": "Prerequisite: 14th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you deal a critical hit against a target creature, you deal an additional 2 damage dice equal to the attack’s current damage. Additionally, you inflict an amount of Bleed and Immobilized count against the hit creature equal to the amount of damage dice rolled and when you perform this your fists burst into bright light that covers a 30-foot area around you. All hostile creatures within that reach must then pass a Constitution saving throw or be blinded until the end of their next turn."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Ten Thousand Vendettas",
+          "level": "14",
+          "subtitle": "Prerequisite: 14th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The names of many creatures who’ve wronged you are etched and crossed on your skin. As such you may use your bonus action during your turn to etch up to half your proficiency modifier’s worth of creatures’ names onto your body, inflicting them with Vengeance Mark until they are knocked unconscious or die."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of the Great Wielder",
+          "level": "14",
+          "subtitle": "Prerequisite: 14th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You have tattoos depicting yourself wielding the most insane, unexpected weapons imaginable. As such you may wield Large or smaller creatures as if they were martial weapons after grappling them. You are considered proficient with them and they are all considered two-handed, except for Tiny sized creatures, which aren’t heavy and are one-handed. Tiny creatures deal 2d4 bludgeoning damage, Small creatures deal 2d6 bludgeoning damage, Medium creatures deal 2d8 bludgeoning damage and Large creatures deal 2d12 bludgeoning damage. Every time a creature is used as a weapon and hits, they take half the damage dealt. While you wield a Medium creature your speed is reduced by 10 feet, and while wielding a Large creature your speed is reduced by 20 feet. If you would use a creature whose hit points are 0 or below, they deal only one point of bludgeoning damage instead, as the limp body is much harder to use properly."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Vengeance",
+          "level": "14",
+          "subtitle": "Prerequisite: 14th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As an action, you get to dash in a straight line of up to 60 feet towards a creature with Vengeance Mark, leaving behind a purple trail of light and energy. This action does not provoke opportunity attacks. All other creatures of your choice in this line must roll a Dexterity saving throw against your Tattoo save DC or take 2d10 force damage, taking only half that damage on a success. Once you reach the target, you may roll an attack roll against it for each attack roll it has made in its last turn, with a minimum of two. After beating the creature to a pulp, it must make a Constitution saving throw, becoming blinded and deafened until the end of its next turn on a failure due to your thunderous pummeling. Once you use this ability, you cannot use it again until you finish a long rest."
+            }
+          ]
+        },
+        {
+          "name": "Tattoo of Wrath",
+          "level": "14",
+          "subtitle": "Prerequisite: 14th-level Barbarian",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As an action, you accumulate powerful magical energy from your tattoos on your fists, charging up a devastating attack. You punch the ground, immediately shattering it like a crater as long as the material is nonmagical. All creatures of your choice within 60 feet of you must roll a Constitution saving throw against your Tattoo save DC. On a failure, they take a number of d6 of force damage equal to the number of Magical Tattoos you have and are stunned until the start of your next turn. On a success, they take half the damage and suffer no additional effects. You can use this ability twice, and you regain all expended uses on a long rest."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

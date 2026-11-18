@@ -1,0 +1,87 @@
+{
+  "name": "Path of the Gladiator",
+  "slug": "path-of-the-gladiator",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "The roar of the crowd pushes on the Gladiator, who seeks to entertain and draw attention just as much as they indulge in their anger. They specialize in focusing their efforts on set opponents, who they make sport out of challenging to direct combat. Gladiators are known for their flashy personalities and larger-than-life point of view in regards to honor and physical competition."
+  ],
+  "features": [
+    {
+      "name": "Beatdown Attack",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once on each of your turns, when you hit with a melee weapon attack you can force your target to make a Strength saving throw (DC 8 + your Strength modifier + your proficiency bonus). On a failure, your target is knocked prone (in addition to the damage the attack would deal), unless they are two or more size categories larger than you."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you are Raging, your target has disadvantage on their Strength save."
+        }
+      ]
+    },
+    {
+      "name": "Competitive Rampage",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Rather than fly into a mindless Rage, you can use your bonus action to expend a use of Rage and enter a Competitive Rampage for 1 minute, during which time you gain the following effects:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You gain a number of temporary hit points equal to 1d10 + your Barbarian level, which vanish when the Rampage ends.",
+            "Your Strength-based weapon attacks gain a bonus equal to your Rage damage bonus.",
+            "All damage you take is reduced by an amount equal to your Charisma modifier.",
+            "You have advantage on Strength checks and saves, and on Constitution saving throws.",
+            "You can still take actions and do not fall prone when you have the dying condition, and if you fail a third death saving throw while Rampaging, that failure is negated and your Rampage ends.",
+            "You can ignore the penalty to your rolls caused by Combat Fatigue."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "When you begin your Rampage you can declare a challenge against a number of creatures who can hear you, up to a number equal to your Rage damage bonus. They must make a Wisdom saving throw (passive Intimidation). If they fail they must answer the challenge, and have disadvantage on attack rolls against creatures other than you so long as your Rampage hasn’t ended. You, in turn, have resistance to all piercing, slashing, and bludgeoning damage the challenged creatures do to you during this time."
+        },
+        {
+          "type": "paragraph",
+          "text": "Your Rampage ends if you fall unconscious, end your turn without hostile creatures within sight, or end your turn without having made any attacks or dealt damage. Your Rage and Competitive Rampage cannot be used simultaneously - using one ends the other immediately."
+        },
+        {
+          "type": "paragraph",
+          "text": "Regardless of your remaining uses of Rage, you can only use your Competitive Rampage a number of times per Long Rest equal to your proficiency bonus."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you gain the Persistent Rage feature it also applies to your Competitive Rampage."
+        }
+      ]
+    },
+    {
+      "name": "Uproarious Retaliation",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you are hit by an attack you can see, you can use your reaction to reduce the damage by an amount equal to 1d10 plus your Barbarian level. You can then make a weapon attack against the source of the attack if they are within range as part of the same reaction."
+        },
+        {
+          "type": "paragraph",
+          "text": "After you resolve this reduction and possible attack, make a DC 10 Charisma saving throw: on a failure you gain a point of Combat Fatigue. If you have your maximum amount you cannot use this reaction again. The DC for this Constitution save increases by 2 each time you succeed it, resetting when you fail it or complete a Short or Long Rest."
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack Improvement",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action on your turn, you can make three weapon attacks instead of one."
+        }
+      ]
+    }
+  ]
+}

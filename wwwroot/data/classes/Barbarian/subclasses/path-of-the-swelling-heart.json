@@ -1,0 +1,76 @@
+{
+  "name": "Path of the Swelling Heart",
+  "slug": "path-of-the-swelling-heart",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "Rage bubbles up within the hearts of all barbarians, allowing them to generate a wide array of features. Within the Swelling Heart, a devotion to one’s allies is the source of their rage, and so it is directed at those their allies are in combat with or who threaten them. The Swelling Heart is susceptible to anger, provoked by hurting those they care about, and this anger can lead to immeasurable feats of destructive might."
+  ],
+  "features": [
+    {
+      "name": "Ceaseless Friendship",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When one of your allies takes damage or is attacked within 60 feet of you, it counts as you having taken damage for the purposes of maintaining your Rage."
+        }
+      ]
+    },
+    {
+      "name": "Furious Interference",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "While you are Raging, your desire to protect those around you allows you to furiously offer diligent protection to your allies. When creatures within your melee weapon’s reach would take piercing, slashing, or bludgeoning damage, the damage is reduced by your Rage damage."
+        }
+      ]
+    },
+    {
+      "name": "Erratic Loss of Kin",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If an allied creature within 30 feet of you is reduced to 0 hit points or suffers a critical hit, you regain a spent use of your Rage. As a reaction to this occurring, you may choose to enter into a Rage and/or move up to your movement speed toward the source of the damage, and take an Attack action against them immediately. All attacks made as part of this action must be made against that target."
+        }
+      ]
+    },
+    {
+      "name": "Cratering Heartache",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you hit a creature with a weapon attack while a close ally is dying or lays recently dead within 60 feet of you, that attack deals extra damage equal to one of its weapon dice. This effect stacks for each ally accounted for this way within range (up to a number equal to your proficiency bonus)."
+        }
+      ]
+    },
+    {
+      "name": "Unsubtle Bonds",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "While a dying creature can see or hear you within 30 feet and you are Raging, those creatures have advantage on death saving throws. Creatures who succeed a third death saving throw while they have advantage this way immediately regain 1 hit point."
+        },
+        {
+          "type": "paragraph",
+          "text": "Similarly, you have advantage on death saving throws and regain 1 hit point on three successful death saving throws if an ally is within 30 feet of you."
+        }
+      ]
+    },
+    {
+      "name": "Circumstantial Attack",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action, you can make one additional attack as long as it is made against a target within melee range of one of your allies. This special additional attack is made after all other attacks you make as part of that action, and if you roll a 9 or lower on its d20, you may treat the result as a 10 instead."
+        }
+      ]
+    }
+  ]
+}

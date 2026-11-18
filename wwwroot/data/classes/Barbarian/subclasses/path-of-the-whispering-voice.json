@@ -1,0 +1,104 @@
+{
+  "name": "Path of the Whispering Voice",
+  "slug": "path-of-the-whispering-voice",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "During their travels, this barbarian starts to hear the soft whispers of a voice upon the winds. Softly at first, then stronger over time, they become aware of a force that gives life to the currents around them and they interpret it as the voice of the wind. Once they gain this awareness they find themselves guided and aided by this force, making the air around them into an ally. Whether these voices are fatherly or those of a mentor, be they gentle or filled with rage, the barbarian learns to trust their aural companion and bends the air to their will."
+  ],
+  "features": [
+    {
+      "name": "Whispersense",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A voice carried by the wind speaks to you, telling you where everything around you that moves is and allows you to see that which is hidden. You have blindsight out to 60 feet."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you can speak and understand Auran."
+        }
+      ]
+    },
+    {
+      "name": "Whirlwind Aura",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The wind spirits protecting you allow you to manipulate the wind around you. Whenever you rage you can create a swirling whirlwind that affects a 10-foot-radius sphere centered on you. Any creature within the range of your whirlwind must make a Strength saving throw. On a failed save they take bludgeoning damage equal to twice your proficiency bonus, and are either knocked prone or pushed 10 feet away from you (your choice). You can also use this as a bonus action on each of your turns as long as you are still raging."
+        },
+        {
+          "type": "paragraph",
+          "text": "The aura’s DC equals 8 + your proficiency bonus + your Constitution modifier."
+        }
+      ]
+    },
+    {
+      "name": "Atmosphere of Rage",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "While you are raging you can manipulate the power of the air and atmosphere around you in brief bursts. You gain use of the following features while you’re raging, and can use any of them a number of times equal to half your proficiency bonus (rounded down) each time you rage."
+        },
+        {
+          "type": "subsection",
+          "title": "Aural Path",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Once per turn, you can double your movement speed until the end of your turn."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Obliterating Strike",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "With the strength of a hurricane behind your attack you can cause an attack to deal greater damage. When you hit with a weapon attack you can use this feature to deal extra bludgeoning damage to the target equal to half your barbarian level (rounded down)."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Tornado Leap",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can take your movement speed as a thunderous leap, propelled forward by a slipstream of your own creation. Your movement for this turn is treated as if you had a fly (hover) speed equal to your movement speed, and does not provoke opportunity attacks. At the start of your next turn you will fall to the ground unless you use this feature to sustain your flight."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Vortex Shield",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As a reaction to a weapon attack made against you that you can see, you can create an outward gale that pushes back the attack. You gain a bonus to your AC equal to your rage damage against that attack."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Voice of Guidance",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The voices that whisper to you on the winds become numerous and clearer than ever before. Once per turn, when you miss a weapon attack or fail a saving throw you can seek guidance from the voices about how to best proceed, allowing you to roll a new d20 and use that result in place of whatever you rolled."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you complete a long rest."
+        }
+      ]
+    }
+  ]
+}

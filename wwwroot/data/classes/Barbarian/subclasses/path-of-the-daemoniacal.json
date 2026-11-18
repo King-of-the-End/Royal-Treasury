@@ -1,0 +1,100 @@
+{
+  "name": "Path of the Daemoniacal",
+  "slug": "path-of-the-daemoniacal",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "A barbarian who bears a curse, burned into their skin, that imbues them with the essence of hellfire. By channeling this cursed power they can summon fiendish flames and transform their physical form to resemble a terrifying burning fiend or undead."
+  ],
+  "features": [
+    {
+      "name": "Ever Under Flames",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you Rage, you shroud yourself in a hellish flame, and the smell of brimstone emanates from you. While you Rage you gain the following benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You are resistant to fire damage.",
+            "Your Rage damage is fire damage, and is doubled.",
+            "Your weapons explode with fire that extends your attack reach by 10 feet. Damage dealt this way to creatures beyond your usual reach is taken as fire damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Daemon Arms",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you make a weapon attack on your turn you can create a replica of any mundane weapon you have seen before, which you attack with. This replica is wreathed in flames that do not burn you, and the weapon itself is made of an embering wood-like material. These weapons function as normal, except that they deal fire damage instead of their usual damage type. These weapons can produce their own ammunition, and disappear at the start of your turn if they aren’t in your possession. You can choose to use your Constitution for attack and damage rolls you make with weapons created this way. Weapons created this way gain an enhancement bonus equal to half your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Shrieking Visage",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you Rage, your flame shroud causes you to appear demonic, while several skulls of flame appear and hover around you, cackling defiantly. When you take the action to Rage, choose a number of creatures who can see or hear you up to your proficiency bonus. These creatures must make a Wisdom saving throw (Con or Cha), and on a failure they become frightened of you for 1 minute. Creatures frightened of you this way are burned by supernatural flames, and take fire damage equal to twice your Rage damage at the start of each of their turns. Creatures frightened this way can reattempt the saving throw at the end of each of their turns, ending the effect on a success."
+        }
+      ]
+    },
+    {
+      "name": "Hellfire Astrainment",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You become imbued with the flames of hell itself, which sear and burn away even those born in flame. This grants you the following boons:"
+        },
+        {
+          "type": "subsection",
+          "title": "Inferno Shield",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you are Raging, the first time each turn you are hit with an attack from within 15 feet, the attacker takes fire damage equal to your barbarian level."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Devastating Burn",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you score a critical hit, you can choose to deal all of your weapon damage and extra damage from the critical hit as fire damage (including the extra damage from your brutal critical feature)."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Purest Fire",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Fire damage that you deal ignores resistances, and creatures immune to fire damage are treated as being resistant to fire damage instead."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Apex of Ruination",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can concentrate the flames of your Rage into a focused infernal strike. When you make a melee weapon attack you can choose to spend one use of your Rage to cause it to burn with overwhelming supernatural heat. This weapon deals an extra four weapon damage die of fire damage until the end of your next turn. You can use this feature twice per Rest, regardless of how many Rages you have."
+        }
+      ]
+    }
+  ]
+}

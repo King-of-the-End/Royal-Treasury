@@ -1,0 +1,357 @@
+{
+  "name": "Path of the Icon",
+  "slug": "path-of-the-icon",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "The path of the icon is one walked by warriors who stand before their allies, protecting them with their rage instead of flailing blindly. Guiding them against great threats in battle, they do not stand down to fear and inspire their allies to do the same."
+  ],
+  "features": [
+    {
+      "name": "Heroic Grandeur",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 3rd level when you take this primal path, you become an imposing but inspired force on any battlefield. As a bonus action, you can give a cheer that grants one creature you choose within 30 feet that can see or hear you advantage on their next attack roll made within 1 minute."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you complete a long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach 10th level, you can target two creatures when you use this feature."
+        }
+      ]
+    },
+    {
+      "name": "Minor Magecraft",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 3rd level when you take this primal path, you gain 2 magecraft features from the Magus class. If those features require ether points, you have a number of ether points equal to your proficiency bonus plus your Intelligence modifier. You regain spent ether points when you complete a long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach 11th level as a Barbarian, you gain a third magecraft feature from the Magus class."
+        },
+        {
+          "type": "paragraph",
+          "text": "The spell save DC for magecraft features obtained through this feature is 8 + your Constitution or Intelligence modifier + your proficiency bonus. The spell attack bonus is equal to your Constitution or Intelligence modifier + your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Fearless Influence",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, you and all of your allies within 15 feet of you have advantage on saving throws against being frightened or stunned."
+        },
+        {
+          "type": "paragraph",
+          "text": "While frightened, you are not prevented from moving closer to the source of your fear. If a fear-inducing effect would normally cause you to flee from them, you can choose to take no movement and act normally instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "If such an effect requires you to not have the source of your fear in view before rolling to end the effect, you can roll to end it regardless."
+        }
+      ]
+    },
+    {
+      "name": "Improved Critical (Rage)",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level, whenever you are raging your weapon attacks score a critical hit on an attack roll of 19 or 20."
+        }
+      ]
+    },
+    {
+      "name": "Mantle of the Victor",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 14th level, your concentrated rage lets you fight more viciously, knocking aside opponents in your path. You gain the following benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Whenever you use your Reckless Attack feature, all of your attacks that turn deal an extra 1d6 damage of your weapon’s type.",
+            "While you are raging, when you score a critical hit against a creature they must succeed a Strength saving throw. On a failed save they are knocked prone and stunned until the end of their next turn.",
+            "When you knock a creature prone on your turn, you can make a weapon attack against them immediately as long as they are within range."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The DC for the Strength saving throw is 8 + your Strength modifier + your proficiency bonus."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Magecraft Features",
+      "style": "option-cards",
+      "intro": [
+        "The following features are available as part of the Magus class, and can be taken by anyone with the magecraft or minor magecraft features."
+      ],
+      "features": [
+        {
+          "name": "Affinity Evocation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Prerequisite: 9th level"
+            },
+            {
+              "type": "paragraph",
+              "text": "Whenever you cast a spell that deals damage related to your elemental affinity, you may add your Intelligence modifier to the damage roll as long as that damage requires an attack roll or saving throw (unless you were already adding it to the damage)."
+            }
+          ]
+        },
+        {
+          "name": "Body Regulation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Choose two of the following conditions: blinded, charmed, frightened, stunned, paralyzed, poisoned, deafened, or petrified."
+            },
+            {
+              "type": "paragraph",
+              "text": "By regulating the flow of mana in your body and preparing certain, constant defenses, you protect yourself from the effects of particular ailments. You have advantage on saving throws against effects that cause the conditions you choose."
+            }
+          ]
+        },
+        {
+          "name": "Broadened Studies",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Choose one of the following classes: cleric, druid, ranger, warlock."
+            },
+            {
+              "type": "paragraph",
+              "text": "Whenever you learn a new spell after gaining a magus level (including when you take this magecraft) you can choose to take a spell off of the spell list of the class you choose in place of a magus spell. The highest level of the spell you can choose, maximum level you can cast the spell at, and number of spells from this class you can have on your spell list are all equal to half your proficiency bonus (rounded up). You cannot learn cantrips using this feature."
+            }
+          ]
+        },
+        {
+          "name": "Compartmentalize",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you cast a spell that requires concentration while already concentrating on another spell or effect, you can spend an amount of ether points to concentrate on both. The amount is equal to half the level of the spell (rounded up). You roll both concentration checks as one, succeeding or failing both together. If you cast another spell and use this effect to concentrate on the new spell, you must drop concentration on one of your existing spells."
+            }
+          ]
+        },
+        {
+          "name": "Energy Adept",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Prerequisite: 9th level"
+            },
+            {
+              "type": "paragraph",
+              "text": "You have resistance to the damage types associated with your elemental affinity. If you already had resistance to these damage types, you take 10 fewer points of damage from effects or attacks that deal that damage type (calculated after your resistance)."
+            }
+          ]
+        },
+        {
+          "name": "Enervation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you cast a spell that requires its targets to make a saving throw, you may give them disadvantage on their rolls against this spell for one turn. You spend an amount of ether points equal to twice the number of creatures making saves against this spell that you would like to target. If the spell has lasting effects that require saving throws on subsequent turns, you may use an ether point each time they make a save against its effects to give them disadvantage again."
+            }
+          ]
+        },
+        {
+          "name": "Escape Caster",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you cast a spell of 1st level or higher, you can briefly pulse your own body with magic energy. You may immediately take an extra 10 feet of movement that does not provoke opportunity attacks and ignores difficult terrain."
+            }
+          ]
+        },
+        {
+          "name": "Ether Armament",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As a bonus action, you may touch a weapon and spend one ether point. That weapon is treated as if it were magical for 1 hour."
+            }
+          ]
+        },
+        {
+          "name": "Gandr",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You learn the spell magic missile. Whenever you cast it, you may choose to cast it in a special way referred to as gandr shot. When you cast it this way, you must make an attack roll for each missile you fire (one roll per target) and the damage is increased to 5 (1d6 + 1) force damage per missile. Any creature you hit with a gandr shot must attempt a Constitution saving throw. On a failed save they are poisoned until the start of your next turn."
+            }
+          ]
+        },
+        {
+          "name": "Improved Mage Armor",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Prerequisite: 9th level"
+            },
+            {
+              "type": "paragraph",
+              "text": "Whenever you cast the spell mage armor you can choose to calculate your Armor Class as 10 + your proficiency bonus + your Dexterity modifier instead."
+            }
+          ]
+        },
+        {
+          "name": "Mana Resilience",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "By flooding your body with magical energy you can reduce the effects of other magic against you. As a reaction to being targeted by a spell effect that requires a saving throw or attack roll, you may spend 1 ether point. If you do: you gain advantage on all saving throws against spells and magic effects, and spell attacks that target you have disadvantage until the start of your next turn."
+            }
+          ]
+        },
+        {
+          "name": "Multi-Core Cast",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Prerequisite: 9th level"
+            },
+            {
+              "type": "paragraph",
+              "text": "When you cast a 1st level or higher spell for the first time on your turn, you may spend any number of ether points as a bonus action. You may immediately cast a second 1st level or higher spell of a level equal to the amount of ether points you spent, but cannot cast any other spells after it until the start of your next turn (including reactions). The spell cast this way cannot be a higher level than your Intelligence modifier."
+            }
+          ]
+        },
+        {
+          "name": "Overedge",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you cast a spell that targets a single creature and requires an attack roll to hit and deal damage, you may spend a number of ether points to add extra damage to the spell’s initial damage, equaling 1d6 damage per ether point spent this way. You cannot spend more ether points than the level the spell is cast at."
+            }
+          ]
+        },
+        {
+          "name": "Refined Spell Strength",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When creatures attempt to use spells like dispel magic or counterspell against your spell effects, they must roll against the level of your magical effect to determine if they should succeed, even if it would normally succeed automatically."
+            }
+          ]
+        },
+        {
+          "name": "Reinforcement",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you roll an attack roll, ability check, or Dexterity saving throw, you can spend 1 ether point to roll 1d6 and add it to the result."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Minor Magecraft Options",
+      "style": "option-cards",
+      "intro": [
+        "Creatures that have the minor magecraft feature or feat may take these options when selecting their magecraft. A creature without the minor magecraft feature or feat cannot choose them, even if they otherwise can use magecraft."
+      ],
+      "features": [
+        {
+          "name": "Armed and Ready",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever combat begins, you briefly prepare with haste inspired by your reinforced reflexes. As a bonus action, on your turn you can stow or draw any number of weapons, as well as equip or unequip a shield immediately."
+            }
+          ]
+        },
+        {
+          "name": "Bond Flanking",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Once per turn, whenever you make a melee weapon attack against a creature that one of your allies is adjacent to, you have advantage on that attack roll as long as your ally is not incapacitated."
+            }
+          ]
+        },
+        {
+          "name": "Floating Shield",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can spend 1 ether point as a bonus action to enchant a shield you are carrying to float around you, granting you its AC bonus without impeding use of your hands. You cannot gain the benefit of another shield while using this."
+            },
+            {
+              "type": "paragraph",
+              "text": "If a creature scores a critical hit against you while this effect is in play, your shield is knocked to the ground during the attack and the effect ends."
+            }
+          ]
+        },
+        {
+          "name": "Memory Incantation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Choose one 1st-level spell from the Wizard spell list. You can manifest the effects of this spell by expending 1 ether point, using your magecraft DC and spell attack for it. This does not count as casting a spell."
+            },
+            {
+              "type": "paragraph",
+              "text": "You may select this magecraft option multiple times."
+            }
+          ]
+        },
+        {
+          "name": "Returning Weapon",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "If you drop or throw a magic weapon that you are attuned to and it is still within 100 feet of you, you can recall it to your hand as a bonus action."
+            }
+          ]
+        },
+        {
+          "name": "Self-Inspiration",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As a bonus action you can spend 1 ether point to heighten your senses against the next obstacle you face. Next time you make a saving throw within 1 minute, roll 1d6 and add the result to the save."
+            }
+          ]
+        },
+        {
+          "name": "Terrain Advantage",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can spend 1 ether point when you move to gain a swim or climb speed equal to your remaining movement until the end of this turn. Additionally, while benefiting from this effect, you can move through difficult terrain without suffering a penalty to your movement."
+            }
+          ]
+        },
+        {
+          "name": "Twisted Resistance",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you succeed a saving throw against an effect that would cause you to be stunned, poisoned, paralyzed, or frightened, you have advantage on your next saving throw against an attack, feature or ability that would cause the same effect."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

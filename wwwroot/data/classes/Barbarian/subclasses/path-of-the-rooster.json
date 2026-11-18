@@ -1,0 +1,105 @@
+{
+  "name": "Path of the Rooster",
+  "slug": "path-of-the-rooster",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "“Is that it?! Where are the rest? Where?! I ain’t stopping ’til— [inhales] … Fine… Keep it down. I’ve got to keep this down… or I won’t get to fight another day.”",
+    "Barbarians following the Path of the Rooster have been permanently changed by a powerful magic likening their appearance and instincts to those of the same animal. Usually members of the Heishou Packs, these Barbarians are commanded by the highest payers or strongest authorities, the ones holding the leash of their Packs, to wreak havoc and destruction upon their enemies. In the Forgotten Realms, these Barbarians are usually part of a gang of bandits hired for their lust for battle, unafraid to die in combat as long as they can take out one more enemy. You were born, or transformed, to fight until your last breath."
+  ],
+  "features": [
+    {
+      "name": "Peck ’Em",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Yesss…! Finally! Listen up, gamefowls! Get your talons out! We’ll be fightin’ the night away tonight, ’til there’s no more feed left on the sand circle…!”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Your body has been altered to sport powerful feathers made to boost your aggression despite damage to yourself. You gain resistance to fire damage, and once per short rest you can use a reaction when you would take fall damage to negate that damage instead, as long as you didn’t fall more than 100 feet."
+        }
+      ]
+    },
+    {
+      "name": "Bloody Storm of Blades",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Ah… and here I thought I’d manage to keep it cool all day today.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "You do not simply rage, your fury and lust for battle boil and spill over like an erupting volcano. While you are raging, once per turn when you hit an attack, you gain 1 count of Bloodflame. Additionally, you gain 1 count of Bloodflame when you score a critical hit, when you attack a creature with half or less of its total hit points, or when a creature dies or falls unconscious within 15 feet of you."
+        },
+        {
+          "type": "paragraph",
+          "text": "While you have counts of Bloodflame, your attacks also deal 1 count of Rupture to the target and 2 counts of Burn to yourself. While you have counts of Burn, you add +1 to your rage damage bonus for every 2 counts of Burn you have on yourself, to a maximum of +3."
+        }
+      ]
+    },
+    {
+      "name": "Flame Rooster’s Death Defiance [炎息不死戦]",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Roosters crow only when the lord holding our leash commands us to.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Roosters never die, they’re simply out of breath, ready to recover and burst back into the fight like a living inferno. If your hit points drop to 0 or you become Unconscious, you can use a reaction to immediately deplete all of your counts of Burn or half the counts of Burn on a creature within 15 feet of you and lose the Unconscious condition, recover 1 hit point and gain 1d10 temporary hit points for each count of Burn depleted this way. After this, you can immediately start Raging and move up to your movement speed towards a creature to perform an attack roll. If you score a critical hit or reduce the creature to 0 hit points with this attack, you gain an additional 1d10 temporary hit points."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature once, and you regain all expended uses on a long rest. Upon reaching level 14, you can use it twice."
+        }
+      ]
+    },
+    {
+      "name": "Mutilating Talons",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Listen… I did this for you instead of indulgin’ my fighting urges. Remember, that, yeah?”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Your feathers have grown more fierce, are burning hotter, and you can’t wait to dispense all of that fury on your enemies. While you have counts of Bloodflame, you now deal 2 counts of Rupture to the target and 4 counts of Burn to yourself. While you have 4 or more counts of Burn on yourself, your Bloodflame applies thrice its amount as Burn on enemies. If you have Bloodflame or counts of Burn, you get to do an extra attack once per turn. For each consecutive attack that you hit on the same creature this turn, you deal an additional 1d6 fire damage to them as long as you have counts of Bloodflame."
+        }
+      ]
+    },
+    {
+      "name": "Bloodflame Massacre [血炎乱舞]",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Hah, what’s that? You lot haven’t had your fill just yet, either…? Fine! Come and get me!”"
+        },
+        {
+          "type": "paragraph",
+          "text": "The oil you use to ignite your sword is now coursing through your veins, and every single part of you is itching to start a conflagration. While you’re raging, you can use a reaction when you take fire damage to immediately make an attack against a creature within reach. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses on a long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you bring a creature to 0 hit points after an attack, you can immediately walk up to 15 feet and make another attack roll against a creature within reach."
+        },
+        {
+          "type": "subsection",
+          "title": "Rooster’s Rampaging Blades Under the Ensanguined Heaven",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Once per long rest, as an action you can take when you have half of your hit points or less, you open your wings and coat your weapons and yourself in flammable oil, gaining 4 counts of Burn. You can reach each creature in a 20-foot-radius sphere around you without spending movement speed. You can make a number of attack rolls against them equal to half the count of Burn on yourself. Your weapon damage dice for all of these attacks is 1d4 fire damage, but you can still apply your Rage bonus to them. If you reduce a creature to 0 hit points this way, your damage dice becomes 1d6 for the duration."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

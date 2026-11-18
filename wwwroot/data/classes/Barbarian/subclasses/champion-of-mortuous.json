@@ -1,0 +1,96 @@
+{
+  "name": "Champion of Mortuous",
+  "slug": "champion-of-mortuous",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "A style of combat that emerged from ancient warriors who battled in Lopoint Ring in Sermonway, where Mortuous was once worshiped as the patron of their arena. Their champions would be trained to disregard personal safety to terrorize and call out their targets, striking fear into their prey at the cost of their own safety and sanity."
+  ],
+  "features": [
+    {
+      "name": "Bloody Declaration",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Whenever you Rage, you can choose one creature that can see or hear you within 60 feet, and declare that you will defeat that enemy with absolute certainty. Until your Rage ends, you add your Rage Damage bonus to your attack rolls against that creature, and you can immediately take the Dash action as long as the extra movement is spent attempting to move toward the target."
+        },
+        {
+          "type": "paragraph",
+          "text": "If your target is reduced to 0 hit points by you before your Rage ends, you gain temporary hit points equal to 1d10 + your Barbarian level. If your current target is at 0 hit points or dead, you may use your bonus action to choose a new target. You may only choose a new target this way a number of times per rage equal to half your proficiency bonus (rounded down)."
+        }
+      ]
+    },
+    {
+      "name": "Rampage Moments",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are capable of extreme bursts of adrenaline, known as Rampage Moments, which you have a number of equal to half your Barbarian level (rounded down). You can spend a Rampage Moment to do any of the following, as described. You regain spent Rampage Moments when you complete a Long Rest."
+        },
+        {
+          "type": "subsection",
+          "title": "Bloodlust",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you reduce a creature to 0 hit points or score a critical hit on your turn, you can spend two Rampage Moments as a bonus action to move up to 15 feet toward another creature and take another Attack action."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Crunch Damage",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you roll the maximum result on a weapon damage die (such as a 6 on a d6), you can use a Rampage Moment to roll that die again, and add the new result to your damage roll in addition to the triggering result - if that new result is also the maximum result, you can roll it again this way."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Fatigue Resist",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As a bonus action you can use a Rampage Moment to reduce your Combat Fatigue by 1d4 points, or remove one level of exhaustion from yourself."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Survival",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you would be reduced to 0 hit points by an attack or effect you are aware of, you can use a Rampage Moment as a reaction to reduce the damage by your Barbarian level."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fearful Rage",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Whenever you are Raging, your feral behavior can instill fear in others. Hostile creatures who start their turn within 10 feet of you while you are Raging or enter that area for the first time on their turn must succeed a Wisdom saving throw (Str). On a failure they are frightened of you until the start of their next turn, and on a success they are unaffected and are immune to this effect for 24 hours (or until next time you Rage)."
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack Improvement",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action you can attack three times instead of once."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Path of the Oni",
+  "slug": "path-of-the-oni",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "To walk the Path of the Oni is to be unsatisfied, always hungry for more of whatever compulsions drive the barbarian: food, pleasure, combat, etc... The barbarian begins this path when the blood of a ravenous oni awakens inside of them, they are cursed with an oni’s essence, or they have a near-death experience at one’s hands and incorporates part of their nature. Or, in a more grim fashion, if one is taught the ways of life and combat by an oni directly."
+  ],
+  "features": [
+    {
+      "name": "Lavender Nature",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can read, write, and speak both Giant and Abyssal, and have Expertise in Athletics or Intimidation checks (your choice when gaining this feature)."
+        }
+      ]
+    },
+    {
+      "name": "Titan’s Wrath",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can channel the fiendish giant’s power imbued in your body to grow to absurd heights. When you Rage, you can choose to produce the enlarge effects of enlarge/reduce targeting yourself, requiring no concentration or spell slot and these effects are not treated as a spell or magical effect. They are produced as though cast at a level equal to half your barbarian level (rounded up, maximum 9th) or lower (you choose). These effects end when your Rage does."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can choose to produce this effect a number of times per Long Rest equal to your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Nightmare Steps",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can replicate an oni’s ability to levitate, and have a belabored flight (hover) speed equal to your base movement speed."
+        }
+      ]
+    },
+    {
+      "name": "Neobhàsmhor",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your body can stitch itself back together as needed. When you begin your turn with 1 or more hit points, but no more than half your hit point maximum remains, you regain hit points equal to a d6 + your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Dark Frenzy",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your mastery of a ravenous giant’s nature grows, allowing you the following the improvements on your previous features:"
+        },
+        {
+          "type": "paragraph",
+          "text": "When you use Titan’s Wrath to enlarge but your Rage ends, you can choose to continue the effects of enlarge/reduce, but must begin concentrating on those effects, which end either when you stop concentrating or 1 minute passes."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you are Raging, your belabored flight (hover) speed becomes a hover (flight) speed instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you make any attack that you have advantage on and hit, you may roll one additional weapon damage die and add it to the damage result."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Path of the Grandstander",
+  "slug": "path-of-the-grandstander",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "Ready to draw attention to themselves and boastfully declare their victory ahead of time, the grandstander is a wild warrior who draws the ire of opponents to the benefit of their allies. They are obnoxiously victorious, playing up the drama of combat to make it about them, while cleverly luring enemies into deceptive misdirections."
+  ],
+  "features": [
+    {
+      "name": "Grand Distractor",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are a chaotic presence on the battlefield, and can draw attention away from allies to either protect them or create openings for them. As a bonus action or as part of beginning to Rage, you can choose one ally that can see or hear you within 60 feet. For 1 minute, creatures have disadvantage on attacks against them if you are within 30 feet of the target or creatures attacking them."
+        },
+        {
+          "type": "paragraph",
+          "text": "Similarly, during that minute, your target has advantage on the first attack they make each turn against any creature within 20 feet of you."
+        },
+        {
+          "type": "paragraph",
+          "text": "This effect ends if you are incapacitated or you use it again. You can use this feature a number of times per Long Rest equal to your proficiency bonus."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach 10th-level as a Barbarian, you can choose two allied targets when you use this feature instead of one."
+        }
+      ]
+    },
+    {
+      "name": "Fearlessness",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are immune to being frightened or enraged, and all creatures within 20 feet of you while you are not incapacitated have advantage on saving throws made against being frightened as well."
+        }
+      ]
+    },
+    {
+      "name": "Headrush",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Whenever your Rage ends, you gain an adrenaline rush: until the end of your turn your movement speed increases by 10 feet and you have advantage on all weapon attacks you make."
+        }
+      ]
+    },
+    {
+      "name": "Improved Critical (Rage)",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "While you are Raging, you score a critical hit on an attack roll d20 result of 19 or 20."
+        }
+      ]
+    },
+    {
+      "name": "Shroud of the Champion",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your self-assured, confident nature demonstrates your bravery — you have the soul of a champion and it shows. You gain the following benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "When you hit with a weapon attack you have advantage on, you deal an additional d6 of your weapon’s damage type.",
+            "When you score a critical hit by rolling a 19 or 20 on a d20 roll, you gain temporary hit points equal to the damage you deal on that attack.",
+            "You gain proficiency in Charisma saving throws, and can add half your proficiency bonus (rounded down) to any Charisma-based ability check you make that doesn’t already include it."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -331,6 +331,7 @@ else if (classDocument is not null)
     private string activeTab = "lore";
     private int activeMechanicsTabIndex = 0;
     private string activeInvocationTab = "General";
+    private string activeLevelOptionTab = "3";
 
     private string DisplayName
         => classDocument is not null && GetString(classDocument.RootElement, "name") is string name && !string.IsNullOrWhiteSpace(name)
@@ -586,6 +587,7 @@ else if (classDocument is not null)
 
     private void ClearSubclass()
     {
+        activeLevelOptionTab = "3";
         subclassDocument?.Dispose();
         subclassDocument = null;
         loadedSubclassSlug = null;
@@ -1146,6 +1148,10 @@ else if (classDocument is not null)
             {
                 builder.AddContent(seq++, RenderInvocationTabs(appendix));
             }
+            else if (string.Equals(GetString(appendix, "group_by"), "level", StringComparison.OrdinalIgnoreCase))
+            {
+                builder.AddContent(seq++, RenderLevelOptionTabs(appendix));
+            }
             else
             {
                 builder.OpenElement(seq++, "div");
@@ -1181,6 +1187,45 @@ else if (classDocument is not null)
             }
         }
 
+        builder.CloseElement();
+    };
+
+    private RenderFragment RenderLevelOptionTabs(JsonElement appendix) => builder =>
+    {
+        var seq = 0;
+        var options = EnumerateAppendixOptionCards(appendix)
+            .OrderBy(AppendixSortKey, StringComparer.OrdinalIgnoreCase).ToList();
+        var levels = options.Select(option => GetString(option, "level") ?? string.Empty)
+            .Where(level => int.TryParse(level, out _))
+            .Distinct(StringComparer.Ordinal).OrderBy(level => int.Parse(level)).ToList();
+        if (levels.Count == 0) return;
+        if (!levels.Contains(activeLevelOptionTab)) activeLevelOptionTab = levels[0];
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-invocation-tabs");
+        builder.AddAttribute(seq++, "role", "tablist");
+        builder.AddAttribute(seq++, "aria-label", "Tattoo level requirements");
+        foreach (var level in levels)
+        {
+            var selectedLevel = level;
+            var isActive = activeLevelOptionTab == selectedLevel;
+            builder.OpenElement(seq++, "button");
+            builder.AddAttribute(seq++, "type", "button");
+            builder.AddAttribute(seq++, "role", "tab");
+            builder.AddAttribute(seq++, "aria-selected", isActive);
+            builder.AddAttribute(seq++, "class", $"class-invocation-tab-button{(isActive ? " active" : string.Empty)}");
+            builder.AddAttribute(seq++, "onclick", EventCallback.Factory.Create(this, () => { activeLevelOptionTab = selectedLevel; }));
+            builder.AddContent(seq++, $"Level {selectedLevel}");
+            builder.CloseElement();
+        }
+        builder.CloseElement();
+        builder.OpenElement(seq++, "div");
+        builder.SetKey(activeLevelOptionTab);
+        builder.AddAttribute(seq++, "role", "tabpanel");
+        builder.AddAttribute(seq++, "aria-label", $"Level {activeLevelOptionTab} tattoos");
+        builder.AddAttribute(seq++, "class", "class-option-feature-list class-invocation-list");
+        foreach (var option in options.Where(option => GetString(option, "level") == activeLevelOptionTab))
+            builder.AddContent(seq++, RenderOptionCard(option));
         builder.CloseElement();
     };
 

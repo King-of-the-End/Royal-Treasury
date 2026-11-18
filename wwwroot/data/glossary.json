@@ -35,6 +35,13 @@
     "Contexts": []
   },
   {
+    "Term": "Blind Obsession",
+    "Definition": "A creature suffering from Blind Obsession feels like they’re being stared constantly, their every breath a thought on another being’s mind. As long as they suffer Blind Obsession certain abilities such as the Way of Obsession monk’s skills can be used against the afflicted. Blind Obsession lasts until its source is knocked unconscious or dies.",
+    "CaseSensitive": true,
+    "NoOverlay": false,
+    "Contexts": []
+  },
+  {
     "Term": "Blinded",
     "Definition": "A blinded creature can’t see and automatically fails any ability check that requires sight.\n\nAttack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.",
     "CaseSensitive": false,
@@ -44,6 +51,13 @@
   {
     "Term": "Blood of Cineris",
     "Definition": "The Congression of Cineris Clade experimented with the creation of arcane arts based on the magmatic blood of Cineris Clade. Those who consumed it or branded themselves using it employed their connection to create various spells, which they passed on to the Congression. They closely guard these spells and spurn any who attempt to steal this knowledge, considering it a divine power granted only to them. However, there are some who acquire the power of Cineris Clade by other means and exhibit use of these powerful mystics nonetheless.",
+    "CaseSensitive": true,
+    "NoOverlay": false,
+    "Contexts": []
+  },
+  {
+    "Term": "Bloodflame",
+    "Definition": "While you have *Bloodflame*, you may easily coat your swings into a pure blaze, causing you to deal an additional 1d6 fire damage per count of *Bloodflame* and also inflict two times your *Bloodflame* count of Burn on melee weapon attacks. You may have up to three counts of *Bloodflame* at any given time, losing one whenever you deal damage to a creature and at the end of combat.",
     "CaseSensitive": true,
     "NoOverlay": false,
     "Contexts": []
@@ -240,7 +254,7 @@
   },
   {
     "Term": "Immobilized",
-    "Definition": "A creature suffering from Immobilized is one who's suffering to move their stiffening limbs and joints. While enduring Immobilized, they take a penalty equal to the count of Immobilized they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All Immobilized stacks are removed at the end of the creature’s turn or after a minute has passed outside of combat.",
+    "Definition": "A creature suffering from **Immobilized** is one who’s suffering to move their stiffening limbs and joints. While enduring **Immobilized**, they take a penalty equal to the count of **Immobilized** they are currently afflicted with to all of their attack rolls, ability checks and saving throws. All **Immobilized** stacks are removed at the end of the creature’s turn or after a minute has passed outside of combat.",
     "CaseSensitive": true,
     "NoOverlay": false,
     "Contexts": []
@@ -3609,6 +3623,54 @@
     ],
     "ClassPages": [
       "Artificer"
+    ]
+  },
+  {
+    "Term": "a dark ritual",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Barbarian"
+    ]
+  },
+  {
+    "Term": "cursed rituals",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Barbarian"
+    ]
+  },
+  {
+    "Term": "diligent protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Barbarian"
+    ]
+  },
+  {
+    "Term": "system of defense",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Barbarian"
     ]
   }
 ]

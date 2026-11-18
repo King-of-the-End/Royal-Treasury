@@ -1,0 +1,92 @@
+{
+  "name": "Path of Blind Obsession",
+  "slug": "path-of-blind-obsession",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "Rage isn’t just some little thing to feel over, it must be consumed like the very blood that flows through one veins, sated as a thirst for water. The Barbarians who follow the Primal Path of sheer, uncontrolled blind obsession leave a trail of broken things in their wake and stop at nothing in their quest for whatever their heart may desire at any given moment, devouring and moving onto the next thing as their flickering whims will.",
+    "In worlds such as the Forgotten Realms, the Ravagers of the Abyss are the main example of such trailblazers, deep beneath the waters along the Sword Coast this band of marauding pirates travel in small ships, with crews that devour themselves just as much as they raid others.",
+    "In others, such as the mists of Ravenloft, Barbarians of Blind Obsession might be those hulks who have been driven mad by their wayward travels, slowly becoming as much of a horror as the world around them."
+  ],
+  "features": [
+    {
+      "name": "Drink In Obsession",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, your desires and cravings have turned into an instinctive obsession, having you stop at nothing to get what you want. As a free action when you enter Rage or during it, you may choose a creature that you can see to designate as your Blind Obsession. Your mind focuses solely on that creature, and no one else, let the world be damned by such. When you Recklessly Attack, you may choose to Strike With Obsession, while doing so you gain advantage on your attack rolls against your Blind Obsession until the start of your next turn, also imposing disadvantage on that creature’s attacks against you, ignoring advantage gained from your use of Reckless Attack. When you choose to Strike With Obsession, in addition to Reckless Attack’s effects, you gain an additional 1d8 damage die to your attacks, whose type is your choice between either the same damage dealt by your weapon or psychic damage, and creatures who hit you because of your Reckless Attack also roll their damage die twice, taking the highest result. The damage die increases to 1d8 at 6th level, 1d10 at 10th level and 1d12 at 14th level."
+        }
+      ]
+    },
+    {
+      "name": "Satisfaction, Give Me More",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 6th level, your thirst for fulfilling your obsession has grown to always be present within you, the thrill of fulfilment following your steps like a beloved stalker. You have a pool of Satisfaction Points, which will be shortened to SP, these points measure the momentary satisfaction you gain after consuming your Blind Obsession, the small bursts of elation fueling you onwards towards your next objective, with no end in sight. You can have a maximum of Satisfaction Points equal to half your Barbarian level, and they fade by one per minute passed without gaining a point. You gain one SP when you knock your Blind Obsession unconscious for the first time in combat or kill them, and may spend one SP to make use of one of the following abilities:"
+        },
+        {
+          "type": "subsection",
+          "title": "Sweeping Strikes",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You focus your everything on being a force of destruction and nothing else, all those who stand between you and your quarry will suffer your wrath. Until the start of your next turn, when you Strike With Obsession your attacks also target any creature within 5-feet to the sides of your Blind Obsession. You use the same result to hit other targets as you use for your Blind Obsession, dealing the same damage on a hit."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Devour Dreams",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "No poor sod can stand you, and seeing the life leaving your target’s eyes is a rush that makes you keep living forever, just to sow more death. As a reaction to when you knock your Blind Obsession unconscious or kill them, you may heal yourself for 2d4 + your Constitution modifier as the sheer elation of the act fills you with life. This amount increases by an additional d4 when you reach 10th level and 14th level."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Snuff Lights",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Don’t even let they know what hit them. When you Strike With Obsession, you may choose to focus your blows not where it hurts, but where it would break your Blind Obsession’s mind the most, be it by concussing them or causing them distress with what you break. When you hit an attack on them, you inflict one stack of Immobilized."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Slaying a creature whose CR equals a number lower than your level by three or greater doesn’t gain any Satisfaction, as there is no thrill in simple cleaning of dregs."
+        }
+      ]
+    },
+    {
+      "name": "Flickering Senses",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Like an abyssal dreadnought with a flickering light to draw in prey, as a fight goes on and you feed into your focus, as much as you might give your enemies a breach its all worth it when you can clamp down on them with one fell swoop. Starting from 10th level, during combat, you gain one Poise stack at the start of every other turn, beginning at the first turn of combat. Poise is a condition that grants you the ability to perform a Posture Critical hit, of which you do by rolling a 19–20 on attack, before adding any modifiers. This threshold is reduced by each additional stack of Poise you have after the first, up to five (triggering a critical hit on a roll of 15) and being reduced in half when you land a Posture Critical hit. When this effect is triggered, you deal an additional 2d6 damage on a hit of type equal to your attack’s damage type. If you have 6 or more stacks of Poise, you deal an additional d6 of damage for each stack above 6."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you also gain sudden bursts of energy that you can use to push through challenges in your path. When you roll a skill check, before or after rolling, but before the DM announces the result you may choose to add a 1d4 bonus to the roll. If you roll a 4, you may roll once more and add the result, repeating this process for up to 3 times. You may use this feature an amount of times equal to half your proficiency modifier, regaining uses on a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Self-Devouring Current",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 14th level, you realize that sometimes one bite just isn’t enough, one bite will never satiate your desires. As such, once per long rest you can unleash all of your want into a series of vicious strikes, the world be damned. As an action during your turn, you unleash all your will into a deafening series of attacks that leave foes either dead in their tracks, for the good of your own mind. Until the end of your turn, you can target your Blind Obsession if they are within reach with a three-combo attack. You have advantage for each attack and hitting each gives you a cumulative +1 to hit and for damage until the end of your turn, with you dealing an additional d8 psychic damage per attack hit, and the third hit is always considered a Critical Hit. If the target would die by this onslaught, a wave of pure ecstasy overwhelms your body, propelling you onward. You regain your use of Self-Devouring Current and are healed by 4d8 + 8 hit points. If the target survives this onslaught, an abyssal dread overtakes your heart as you are confronted with the reality that you cannot take down any monster you’d so please. You suffer 3 points of Exhaustion and for the rest of this combat you have disadvantage on all attack rolls, can only move up to half your movement speed during your turn and any time you would use your reaction, you must first roll a d6, losing the reaction on any roll below 4."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Path of Sacred Obsidian",
+  "slug": "path-of-sacred-obsidian",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "By painting their skin with tattoos and arcane symbols using special arcane ink — expoentrum — some warriors can turn their skin into a powerful shield that defends them. They incorporate this ink into their body and control it intuitively, causing it to shift and move on their skin to cause temporary transmutations, turning skin into a carbonized substance that is as hard as steel. This can be used offensively or defensively, and full mastery of these charms grants a nearly autonomous system of defense."
+  ],
+  "features": [
+    {
+      "name": "Raging Pummel",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you make the Attack action while you’re Raging, you can use your bonus action to make two unarmed strikes. Furthermore, while Raging, your unarmed strikes deal bludgeoning damage equal to 1d8 + your Strength modifier."
+        }
+      ]
+    },
+    {
+      "name": "Carbon Shielding",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you are hit with an attack you may use your reaction to harden the skin at the point of impact, granting you a bonus to your armor class equal to your proficiency bonus. This bonus remains until the end of the turn, and may also change the outcome of the triggering attack."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times per Long Rest equal to half your Barbarian level (rounded down)."
+        }
+      ]
+    },
+    {
+      "name": "Steel Resilience",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per Short or Long Rest, when you Rage, you gain temporary hit points equal to twice your Barbarian level, which vanish after 1 minute or when your Rage ends."
+        }
+      ]
+    },
+    {
+      "name": "Feral Avoidance",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The charms protecting your body become so autonomous and fast that they protect you from all foreseeable threats. When you make a saving throw to take half damage, you take no damage on a successful save and half damage on a failed one."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "name": "Path of the Bloodpainted",
+  "slug": "path-of-the-bloodpainted",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "The Bloodpainted warrior houses the violent spirit of a terrible beast within them, sealed away by happenstance, a dark ritual, a family curse, or a consequence of grim prophecy. The beast within them seeks to feed on living flesh at all times, and so pushed the barbarian housing it to seek out blood and violence. Each drop of blood that touches the skin of the Bloodpainted feeds the monster within, who inch by inch turns their captor’s body into a vessel for themselves. Eventually, a terrible transformation becomes possible for them, and the line where the vessel ends and the beast begins becomes lost."
+  ],
+  "features": [
+    {
+      "name": "Sanguine Frenzy",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are driven into a frenzy when you encounter the sight of blood and violence. If you have taken damage from an attack or hit another creature with an attack since the start of your last turn, you can make an additional attack as part of any Attack action you make."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, once per turn, if you roll a critical hit on a weapon attack, you can make two additional weapon attacks with the same weapon as a bonus action. You do not gain this benefit if the critical hit was an automatic result of a condition like paralyzed — it must be the result of a die roll."
+        }
+      ]
+    },
+    {
+      "name": "Adrenaline Crash",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you enter a Rage, you can choose to end any effect on you that is causing you to be restrained, paralyzed, stunned, poisoned, frightened, or charmed. If it is the result of a disease or ongoing effect that would last longer than 10 minutes, it is merely suppressed while you are raging, rather than ending."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you start your turn and one of these conditions is causing you to be unable to take actions (such as being paralyzed or stunned), you can choose to fly into a Rage anyway, requiring no action."
+        }
+      ]
+    },
+    {
+      "name": "Explosive Swing",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Even while not Raging, exposure to blood and violence awakens a monstrous influence within you. Once per damage die, when you make a Strength-based weapon attack and roll the maximum result on a damage die (for example, a 6 on a d6, or an 8 on a d8) you can roll that die again and then add it to the damage you deal."
+        },
+        {
+          "type": "paragraph",
+          "text": "This only applies to dice that are rolled as a part of damage, and not to results that are automatically set to their highest value by rules, features, traits, or effects."
+        }
+      ]
+    },
+    {
+      "name": "Bloodbeast",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per Rest, when you Rage, you can choose to transform into a terrifying hybrid beast of the night, instead of flying into a Rage normally. If you choose to transform this way you gain the benefits of Raging normally, but with the following changes:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You do not fall out of your Rage early unless you fall unconscious or choose to on your turn.",
+            "You grow by one size category, and your reach with melee attacks extends by 5 feet.",
+            "You may add your Rage Damage bonus to your armor class, and to Strength, Dexterity, and Constitution saving throws made while transformed.",
+            "You may use your bonus action each turn to make a Strength-based unarmed strike that deals damage equal to a d6 × your proficiency bonus. If you use your bonus action to make extra attacks through your Sanguine Frenzy feature, both of the attacks made can be this unarmed strike.",
+            "At the start of each of your turns while you are transformed, you lose your highest remaining hit die."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This transformation lasts up to 1 minute, or until you stop Raging, then ends."
+        }
+      ]
+    },
+    {
+      "name": "Bloodstarved Beast",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you would lose a hit die at the start of each turn while transformed into a Bloodbeast, you may roll that hit die (not including your Constitution modifier) and regain hit points equal to the result. If the result is less than your Constitution modifier, it becomes your Constitution modifier instead."
+        }
+      ]
+    },
+    {
+      "name": "Improved Critical",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You score a critical hit on a d20 result of 19 or 20."
+        }
+      ]
+    }
+  ]
+}

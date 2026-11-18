@@ -1,0 +1,113 @@
+{
+  "name": "Path of the Sheep",
+  "slug": "path-of-the-sheep",
+  "class": "Barbarian",
+  "subclass_feature": "Primal Path",
+  "summary": "TBA",
+  "introduction": [
+    "“Ye jest, surely… how can ye speak of heat…?”",
+    "Barbarians that walk the Path of the Sheep are a part of the Heishou — a group of soldiers that only listen to a single master, the ones who hold their leash. They have been magically altered to resemble a distant monster similar to a sheep, and Barbarians of this Path are constantly feeling cold no matter the weather. When their master commands, they’re filled with an uncontrollable fear and rage to ram forward and destroy everything in their path so they can escape the creature following them — one that exists only in their mind.",
+    "In the Forgotten Realms, the Wei branch of the Heishou is comprised of Barbarians magically altered to fear a legendary creature known as a Tarrasque. Despite being extremely strong and capable warriors, whenever they enter their frenzied rage, they are also filled with a dread which makes them run, and hardly anything can stop them but the person hiring them.",
+    "If you want to play as a Wei branch Heishou, keep in mind that they’re always feeling unreasonably cold, which makes even simple actions such as paying for something difficult. When you enter your Rage, you’ll be filled with a deep dread and only want to run from the place you were at, believing a Tarrasque is right behind you. The destruction of property is hardly a matter for people of your group."
+  ],
+  "features": [
+    {
+      "name": "Explosive Battering Ram",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Ye jest, surely… how can ye speak of heat…? By my troth, *groan I could perish of cold this very moment… Achoo!*”"
+        },
+        {
+          "type": "paragraph",
+          "text": "You have been given a powerful weapon of war to facilitate your destruction, bringing with it discomfort as your horns shape and grow to accommodate it. You have two battering rams formed from a yellow, crystallized substance that seeps from your horns. Each battering ram is a Maul with which you are proficient. If a battering ram is lost or destroyed, you can recreate it at the end of a long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you wield these battering rams, your horns grow and wrap around them, binding the weapons to you. While a battering ram is bound to you in this way, it can’t be disarmed from you by any means unless you choose to release it (no action required), which causes your horns to unwrap from them and return to their original state."
+        },
+        {
+          "type": "paragraph",
+          "text": "The battering rams deal double damage to objects and structures and inflict 2 counts of Rupture and 3 counts of Sinking when they hit a creature. Upon reaching level 10, they inflict 4 counts of Rupture instead. You can only inflict counts with this weapon twice per turn."
+        }
+      ]
+    },
+    {
+      "name": "Breakthrough",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“We must break through their ranks and press onward! Come! Forth, Battering Ram Horns!”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fear guides your steps, and pride guides your strikes. Once you enter your Rage, you become Frightened in addition to everything else. The source of your fear is always considered to be 5 feet behind you, even if nothing is physically present there. As long as you are Frightened, your Rage will be maintained, even if you haven’t attacked a hostile creature or taken damage on your turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "While Frightened this way, you gain the following benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Your movement speed is doubled. If you don’t spend all of it on your turn, you take 6d10 psychic damage (the number of dice diminish by 1 for each point of proficiency bonus you have above 2, to a minimum of 1d10) as you feel the source of your fear catching up to you. While running this way, you can choose to slam yourself into any object, structure or creature in your path as long as you have walked at least 10 feet before reaching it, spending an Attack action to make an attack roll against it. If you hit, you deal an additional 1d6 bludgeoning damage for each 10 feet travelled this way, to a maximum of 3d6 per attack. This maximum increases to 4d6 at level 6, 6d6 at level 10 and 8d6 at level 14.",
+            "When you take psychic damage or when you take damage while below half your hit points, you excrete a yellow liquid that is able to transfer your trauma and dread to those that touch it. Any creature hit by your next attack must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or become Frightened of the grand beast they believe is behind them for 1 minute. If they don’t spend all of their movement speed in their turn, they take 6d10 psychic damage (the number of dice diminish by 1 for each point of proficiency bonus you have above 2, to a minimum of 1d10) and whenever they suffer counts of Sinking, they suffer an additional count. They can roll this saving throw at the end of their turns, ending the effect on a success.",
+            "Once per Rage as a bonus action, you can choose to double all infliction of Rupture and Sinking done this turn."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Seize the Momentum",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Be warned and thrash not thus before me, lest I, peradventure, fail to resist the urge to ram thee!”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sheep are not only known for the speed in which they run, but also jumping to avoid obstacles in their way. As a reaction when you’re attacked, you can attempt to jump out of the way by rolling a Strength (Athletics) or a Dexterity (Acrobatics) check, increasing your AC by 1 for each 5 points of the total result, to a maximum of 5. If that increased AC makes the attack not hit you, you can immediately make an attack roll after you land against a creature within range."
+        }
+      ]
+    },
+    {
+      "name": "Flesh-Rending Horn Growth",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Doth not thy brainpan rattle from within?”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Your horns have grown to protect you, but you must endure searing mental duress for their swift shield. As a reaction after being attacked, you can increase your AC by a number between 1 and 5 until the start of your next turn. For each point of AC increased this way, you take 1d6 psychic damage that cannot be reduced in any way."
+        }
+      ]
+    },
+    {
+      "name": "Crushing Horns (破碎角)",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Hark, fellow herd of mine! Tarry not in your tracks, lest the jaws of our enemies close on us! Put your trust in your mighty horns, and charge forth!”"
+        },
+        {
+          "type": "paragraph",
+          "text": "You move with the herd, and the herd is united in a single goal and fear — to trample their enemies and escape your incoming doom. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Until the Rage ends, the chosen creatures become Frightened of a creature only they can perceive standing 5 feet behind them. Their next attack roll that hits inflicts their choice between additional Rupture or Sinking counts equal to 1 per 10 feet of movement traveled, to a maximum of 3 for Sinking and 4 for Rupture."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        }
+      ]
+    }
+  ]
+}
