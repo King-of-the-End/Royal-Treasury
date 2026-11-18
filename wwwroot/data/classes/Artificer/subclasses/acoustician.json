@@ -1,0 +1,239 @@
+{
+  "name": "Acoustician",
+  "slug": "acoustician",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "An acoustician’s area of study focuses on sounds, vibrations and the magic held within their oscillations. Masters of speed and balance, master acousticians are said to feel the vibrations between planes and even other worlds."
+  ],
+  "features": [
+    {
+      "name": "Feel the Vibrations",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you adopt this specialization at 3rd level, you gain a bonus to Wisdom (Perception) checks you make that rely on hearing equal to your Intelligence modifier (minimum of 1)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, choose two of the following: glassblower’s tools, leatherworker’s tools, potter’s tools, smith’s tools, or woodcarver’s tools. You gain proficiency with the tools of your choice."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use tools you are proficient with to create musical instruments, and you are proficient with any musical instrument you create. Furthermore, you can use such instruments as a spellcasting focus for your artificer spells."
+        }
+      ]
+    },
+    {
+      "name": "Acoustician Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Acoustician Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Acoustician Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Detect Evil and Good, Thunderwave"
+            },
+            {
+              "level": "5th",
+              "spells": "Shatter, Silence"
+            },
+            {
+              "level": "9th",
+              "spells": "Counterspell, Sending"
+            },
+            {
+              "level": "13th",
+              "spells": "Banishment, Dimension Door"
+            },
+            {
+              "level": "17th",
+              "spells": "Destructive Wave, Telekinesis"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "title": "Additional Spells",
+          "paragraphs": [
+            "Additional spells detailed in Chapter 4 that the DM might make available to an acoustician include Dirge of the Exorcist, Discordant Thrum, Dimensional Anchor, Hold Portal, Peal of Nine Bells, Power Word: Silence, Shatterfloor, Suspended Silence, and Whelm."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonic Weapon",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 3rd level, you transform a musical instrument you have created into a sonic weapon. In your hands, the instrument becomes a simple ranged weapon with the two-handed property, a normal range of 90 feet and a long range of 300 feet. You can add your Intelligence modifier, instead of Dexterity, to the weapon’s attack and damage rolls, which deal 1d8 thunder damage on a hit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once on each of your turns when you hit a target with it, you can cause the weapon to deal an additional damage die. A creature hit by your sonic weapon has disadvantage on the first attack roll or ability check it makes before the end of its next turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can create up to two sonic weapons, each of which can bear one of your infusions. If your sonic weapons are lost or destroyed, you can create a replacement when you complete your next short or long rest. If you create a third, one sonic weapon ceases to function (your choice). These weapons also cease to function if you die."
+        },
+        {
+          "type": "paragraph",
+          "text": "If one of your sonic weapons is within 120 feet of you, you know it, and you can summon it to your hands using a bonus action, provided it is not being held by another creature or is otherwise unable to be moved. If it is being held by another creature, they must make a Strength saving throw against your artificer spell save DC or lose possession of it."
+        }
+      ]
+    },
+    {
+      "name": "Sonic Barrier",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 3rd level, with your sonic weapon in hand, when a creature you can see hits a target within 30 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your artificer level."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you reduce the damage to 0, you can choose to perform one of the following:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You cause the warded target to gain temporary hit points equal to the remainder.",
+            "You deal the remainder to the attacker as thunder damage, provided they are within 15 feet of the target they attacked."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn."
+        }
+      ]
+    },
+    {
+      "name": "Maestro of Mayhem",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 9th level, you gain the following benefits:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The damage of your sonic weapons increases to 1d12."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When you take the Attack action with a sonic weapon, you can make one additional attack with it as a bonus action.",
+            "When you cause a sonic weapon to deal an additional damage die, you can push the target up to 15 feet away from you. Alternatively, you can force the target to make a Strength saving throw against your artificer spell save DC. On a failure, the target is knocked prone.",
+            "The recipient of your sonic barrier gains a protective field, which moves with them, and lasts until the end of your next turn. The recipient (and other creatures of their choice) within 15 feet of them gain half cover."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vibrational Virtuoso",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 15th level, you gain the following benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You gain resistance to thunder damage.",
+            "Any creature that takes damage from your sonic weapon becomes wreathed in magical vibrations until the end of your next turn. For the duration, it sheds bright light in a 5-foot radius, and it can’t teleport, become invisible or leave the plane it is on. Additionally, the next attack roll against it has advantage.",
+            "The damage reduction of your sonic barrier increases to 2d10, and its range increases to 60 feet."
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Additional Acoustician Infusions",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Gloves of Natural Vibrations",
+          "subtitle": "Prerequisites: Acoustician specialization, 4th level",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "While wearing these gloves, the wielders can cast Control Flames, Gust, Mold Earth, and Shape Water (XGE), using Intelligence as their spellcasting ability for the spells."
+            }
+          ]
+        },
+        {
+          "name": "Goggles of Extraplanar Vision",
+          "subtitle": "Prerequisites: Acoustician specialization (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "While wearing these goggles, you can see vibrational disruptions in the fabric of reality within 120 feet of you. The goggles have 4 charges and regain 1d4 expended charges daily at dawn."
+            },
+            {
+              "type": "paragraph",
+              "text": "As an action, you can expend one charge and activate the goggles. For the next 1 minute, you gain the ability to see residual energies left behind wherever a creature has teleported or changed planes of existence to or from that location within the last 24 hours, to a distance of 30 feet. At the DM’s discretion, you might be able to discern additional information, such as the identity of the traveler, the location (or plane) they were moving to (or from), or other useful information (for example, the nature of a portal’s key)."
+            }
+          ]
+        },
+        {
+          "name": "Spellweave Disruptor",
+          "subtitle": "Prerequisites: Acoustician specialization, 10th level (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can apply this property only to a sonic weapon of your own design."
+            },
+            {
+              "type": "paragraph",
+              "text": "When a creature within 60 feet that you can hear casts a spell, you can use your reaction to attack against that creature with this weapon. Additionally, when you damage a creature that is concentrating on a spell with this weapon, that creature has disadvantage on the saving throw it makes to maintain its concentration."
+            }
+          ]
+        },
+        {
+          "name": "Thunderball Bracers",
+          "subtitle": "Prerequisites: Acoustician specialization, 8th level (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "While wearing these bracers, the wielder can use a bonus action and expend 1 charge to surround themselves in a vibrational field, which lasts until the start of their next turn. Their movement speed is increased by 25 feet, they cannot take falling damage or be knocked prone, attack rolls against them have disadvantage, unless the attacker has truesight."
+            },
+            {
+              "type": "paragraph",
+              "text": "Once used, the bracers can’t be used again until the wielder finishes a short or long rest."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

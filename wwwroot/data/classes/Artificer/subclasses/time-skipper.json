@@ -1,0 +1,251 @@
+{
+  "name": "Time Skipper",
+  "slug": "time-skipper",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "Having been resurrected by a secretive time organization linked to their future self, Time Skippers embark on a journey of temporal discovery and mastery. With each level, they unlock newfound abilities in time manipulation, crafting Chronographs that can slow enemies, expedite allies, and even halt time itself."
+  ],
+  "features": [
+    {
+      "name": "Time Skipper Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Time Skipper Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Comprehend Languages, Gift of Alacrity"
+            },
+            {
+              "level": "5th",
+              "spells": "Blur, Locate Object"
+            },
+            {
+              "level": "9th",
+              "spells": "Major Image, Slow"
+            },
+            {
+              "level": "13th",
+              "spells": "Banishment, Dimension Door"
+            },
+            {
+              "level": "17th",
+              "spells": "Geas, Temporal Shunt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tool Proficiency",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Upon adopting this specialization at 3rd level, you gain proficiency with jeweler’s tools, reflecting your subclass’s focus on time and precision mechanics. If you already have this proficiency, you gain proficiency with another type of artisan’s tools of your choice, such as woodcarver’s tools or tinker’s tools, which can also be relevant for fine, detailed work."
+        }
+      ]
+    },
+    {
+      "name": "Chronograph Schematics",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, your mastery of time manipulation allows you to create a magical device known as a Chronograph. Using your tinker’s tools, you can take an action to magically create a Chronograph configuration in an unoccupied space within 5 feet of you or on your character. Once you create a Chronograph, you can’t do so again until you finish a long rest. You can only have one Chronograph active at a time. All devices have 2 charges and they regain all expended charges after a long rest. The number of charges increases to 3 at 10th level and 4 at 15th level."
+        },
+        {
+          "type": "subsection",
+          "title": "Quantum Ticker (Handheld)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Choose a portable form for your Chronograph, like a pocket watch, a small orb, or a tablet."
+            },
+            {
+              "type": "subsection",
+              "title": "Temporal Insight (Bonus Action)",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Activate to gain advantage on attack rolls, saving throws, and ability checks on your next turn."
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Stasis Lock (Action)",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Target a creature within 30 feet and disrupt its temporal state. The target must make a Constitution saving throw, becoming paralyzed until the end of your next turn on a failed save."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Chrono-Gear (Wearable)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Choose a wearable form for your Chronograph, like goggles, bracer, or belt."
+            },
+            {
+              "type": "subsection",
+              "title": "Accelerated Action (Bonus Action)",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Activate the Chrono-Wear to take an additional action this turn."
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Rewind (Reaction)",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "When you take damage or fail a saving throw, use your reaction to activate the Chrono-Wear, rerolling the saving throw or forcing the attack to be rerolled against you."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Temporal Anchor (Astral Construct)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Choose a deployable Chronograph construct like a grand clock or floating time dial."
+            },
+            {
+              "type": "subsection",
+              "title": "Temporal Field (Action)",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Deploy the Temporal Anchor to create a 20-foot radius field. Enemies within the field have their speed halved and attacks against them have advantage. Allies gain an additional 10 feet of movement if they start their turn in or enter the field on their turn."
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Spectral Movement (Bonus Action)",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Spend up to 15 feet of your movement to move your Temporal Anchor up to 15 feet."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lockstone Upgrade",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "During a long rest, choose a Tiny nonmagical object that has been the subject of your Magical Tinkering. You can imbue this object with the Lockstone Upgrade, granting it the ability to manipulate time. You can apply this upgrade to only one object at a time. Designed for ease of use, it’s accessible to both the artificer and their allies."
+        },
+        {
+          "type": "subsection",
+          "title": "Safeguard (Bonus Action)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As a bonus action, the user can prepare to use the Lockstone and become immune to the effects of Chrono-Lock for the rest of their turn."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Chrono-Lock (Action)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As an action, the user activates the Lockstone, creating a 10-foot radius field of frozen time around it until the start of their next turn. Within this field, all other creatures and objects are incapacitated and unable to take actions or move."
+            },
+            {
+              "type": "paragraph",
+              "text": "Once the Chrono-Lock has been used, it can’t be used again until you finish a long rest."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paradox Engineering",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 9th level, your expertise in temporal mechanics enables you to enhance your Chronograph with paradoxical upgrades, unlocking powerful abilities. These enhancements can be used once per short or long rest."
+        },
+        {
+          "type": "subsection",
+          "title": "Quantum Ticker Paradox",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When activating Stasis Lock, the Quantum Ticker emits a temporal pulse that affects all enemies within 10 feet of the target. Each enemy in the area must make a Constitution saving throw or be affected by the slow spell until the end of your next turn."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Chrono-Wear Paradox",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Your Chrono-Wear gains the ability to manipulate the wearer’s personal timeline to mend recent wounds. When activating Accelerated Action, you can choose to heal yourself for an amount equal to all damage taken since the end of your last turn."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Temporal Anchor Paradox",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The Temporal Anchor can now emit a pulsating temporal wave. As an action, cause the Temporal Anchor to pulsate, granting all allies within its field the Dash action on their next turn. Simultaneously, all enemies within the field have their speed reduced to 0 until the end of their next turn."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Master of Moments",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain the ability to exert control over brief periods of time. Once per long rest, before the end of your turn, you can use your reaction to take an additional turn immediately. When you use this ability, you gain a charge to your Chronograph."
+        }
+      ]
+    }
+  ]
+}

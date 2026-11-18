@@ -3126,3 +3126,20 @@
 .class-page ::deep .class-subclass-table .class-subclass-empty {
     color: rgba(240, 236, 230, 0.72);
 }
+
+
+/* Subclass gained spells navigate to the spell catalogue. */
+.class-page ::deep .class-gained-spell-link {
+    color: var(--gold-light);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+.class-page ::deep .class-gained-spell-link:hover,
+.class-page ::deep .class-gained-spell-link:focus-visible {
+    color: #fff;
+}
+.class-page ::deep .class-gained-spell-link:focus-visible {
+    outline: 1px solid var(--gold-light);
+    outline-offset: 2px;
+}

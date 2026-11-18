@@ -1,0 +1,209 @@
+{
+  "name": "Arcane Weaver",
+  "slug": "arcane-weaver",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "features": [
+    {
+      "name": "Tool Proficiency",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this specialization at 3rd level, you gain proficiency in weaver’s tools. If you already have proficiency in weaver’s tools, you gain proficiency in an artisan’s tool set of your choice."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you can use weaver’s tools as an arcane focus for your artificer spells."
+        }
+      ]
+    },
+    {
+      "name": "Arcane Weaver Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Arcane Weaver Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Arcane Weaver Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Detect Magic, Mage Armor"
+            },
+            {
+              "level": "5th",
+              "spells": "Alter Self, Nystul’s Magic Aura"
+            },
+            {
+              "level": "9th",
+              "spells": "Dispel Magic, Slow"
+            },
+            {
+              "level": "13th",
+              "spells": "Fabricate, Greater Invisibility"
+            },
+            {
+              "level": "17th",
+              "spells": "Bigby’s Hand, Raise Dead"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Intertwined Armor",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you can cast the Mage Armor spell on yourself at-will, without expending a spell slot. When you cast the Mage Armor spell on yourself, you can apply one infusion you know on it as if it was a piece of armor or a set of clothes. This doesn’t count against the number of infused items you can have at any given time. This infusion lasts for the duration of the spell."
+        }
+      ]
+    },
+    {
+      "name": "Altering the Flow",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 3rd level, you can alter your spells. Each time you cast a spell of 1st level or higher that influences a specific area, you can modify it in the following ways:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Circle or Sphere",
+              "paragraphs": [
+                "You can increase or reduce the radius of the area by 5 feet."
+              ]
+            },
+            {
+              "name": "Cube",
+              "paragraphs": [
+                "You can increase or reduce the length of the edges of the cube by 5 feet. If the cube needs to be centered on a point but changing the edges would not make it able to be centered, you can consider any of the vertices of the central spaces of the cube (or of its base) like its center."
+              ]
+            },
+            {
+              "name": "Cylinder",
+              "paragraphs": [
+                "You can increase or reduce the radius of the cylinder by 5 feet, and you can increase or reduce the height of the cylinder by up to 10 feet."
+              ]
+            },
+            {
+              "name": "Line",
+              "paragraphs": [
+                "You can increase or reduce the length of the line by up to 10 feet."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Strum the Cord",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 5th level, every time you cast a cantrip, you can choose one of the following benefits to apply to it:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "If the spell deals damage, you can add 1d8 to the first damage roll of the spell.",
+            "The casting of the spell doesn’t require verbal, somatic or material components that aren’t consumed and that don’t have a cost.",
+            "The spell is originated from the space of a willing creature you can see within 30 feet of you, as if you were in that space."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature also when you cast a spell of 1st level or higher, but you can do so a number of times equal to your proficiency bonus, regaining all expended uses when you complete a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Flow Weaver",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 9th level, you are more capable at altering the Weave. You gain the following benefits:"
+        },
+        {
+          "type": "subsection",
+          "title": "Arcane Empowerment",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When a willing creature you can see within 60 feet of you casts a spell, you can expend a use of Strum the Cord to apply a benefit of that feature to that spell."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Improved Armor",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The number of infusions you can apply when you cast Mage Armor becomes 2. If both infusions provide a bonus to your AC, you only gain the highest one."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Master Weaver",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 15th level, your skills at altering the Weave are second to none. You gain the following benefits:"
+        },
+        {
+          "type": "subsection",
+          "title": "Dense Weave",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You regain a spent use of your Strum the Cord feature when you complete a short rest."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Greater Alteration",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you use your Altering the Flow feature, you can increase or reduce the area of the spell up to 10 feet, or increase or reduce the length of a line or the height of a cylinder up to 15 feet."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Superior Armor",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Your Mage Armor cannot be dispelled, except by a 9th level spell, unless you allow it."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,776 @@
+{
+  "name": "Golem Pilot",
+  "slug": "golem-pilot",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "Long ago, an artificer crafted a golem to serve as the perfect weapon. As the construct neared completion, a sudden thought struck: “If I can create an automaton, why not command it from within?” Thus, the first Golem Pilot was born, merging mind and machine. Today, these artificers move as one with their creations, a testament to their genius. With unmatched defense and destructive force, piloted golems turn every conflict into a display of sheer might and ingenuity."
+  ],
+  "features": [
+    {
+      "name": "Tool Proficiency",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you adopt this specialization, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice."
+        }
+      ]
+    },
+    {
+      "name": "Battle Ready",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are always prepared for battle, even without your golem. You gain proficiency with martial weapons and, when you attack with a magic weapon, you can use your Intelligence modifier for the attack and damage rolls."
+        }
+      ]
+    },
+    {
+      "name": "Piloted Golem",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You build a Large, humanoid golem — a special suit of armor only you can pilot — that relies on magic to function. Its capabilities are in the Piloted Golem stat block. You can store the golem in an extradimensional space as an action, and summon it as a bonus action, appearing in an unoccupied space of your choice within 5 feet."
+        },
+        {
+          "type": "paragraph",
+          "text": "To pilot the golem, magical energy is required. As an action, you can expend a 1st-level or higher spell slot to power up the golem for 1 hour per spell slot level. Once this time runs out, the golem becomes incapacitated until you spend another spell slot to power it up again."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can mount or dismount the golem as a free action. While mounted, you adopt its AC, speed, physical stats, and immunities, and your actions become the golem’s actions. However, you cannot concentrate on spells while piloting, as it requires your full attention, though you can still cast other spells normally."
+        },
+        {
+          "type": "paragraph",
+          "text": "The golem’s hit points act as temporary hit points for you. During a short rest, you can use your smith’s tools to repair it when it is damaged, restoring hit points equal to your proficiency bonus in d8s. After a long rest, the golem is fully restored. If its hit points drop to 0, it becomes incapacitated, and you are ejected 10 feet in a random direction, falling prone. You won’t be able to power up the golem again until you finish a long rest. If the damage taken equals or exceeds its hit point maximum, the golem is instead destroyed, and you are also ejected. Rebuilding it requires 1,000 gp worth of materials and 8 hours of uninterrupted work."
+        },
+        {
+          "type": "paragraph",
+          "text": "The golem functions as a suit of armor for your artificer’s infusions."
+        },
+        {
+          "type": "stat_block",
+          "data": {
+            "id": "piloted_golem",
+            "section_type": "Stat Block",
+            "title": "Piloted Golem",
+            "creature": {
+              "size": "Large",
+              "type": "construct"
+            },
+            "armor_class": "16",
+            "hit_points": "(artificer level + proficiency bonus) × 5",
+            "speed": {
+              "walk": "30 ft."
+            },
+            "ability_scores": {
+              "STR": {
+                "score": 16,
+                "check": "+3"
+              },
+              "DEX": {
+                "score": 10,
+                "check": "+0"
+              },
+              "CON": {
+                "score": 14,
+                "check": "+2"
+              }
+            },
+            "condition_immunities": [
+              "exhaustion"
+            ],
+            "proficiency_bonus": "equals your bonus",
+            "ability_note": "The golem uses the pilot’s mental ability scores.",
+            "traits": [
+              {
+                "name": "Inanimate",
+                "name_format": "bold_italic",
+                "description": "The golem is incapacitated without a pilot and energy from spell slots."
+              },
+              {
+                "name": "Mindless",
+                "name_format": "bold_italic",
+                "description": "The golem uses the pilot’s mental stats. If it is subjected to an effect that deals psychic damage, the pilot takes that damage instead. Without a pilot, the golem is immune to mental attacks and effects."
+              },
+              {
+                "name": "Bulky",
+                "name_format": "bold_italic",
+                "description": "The golem has disadvantage on Dexterity checks. It can perform any action its pilot can, except for attacking with weapons."
+              },
+              {
+                "name": "Naturally Armored",
+                "name_format": "bold_italic",
+                "description": "The golem gains the properties of the materials from which it’s made, and it cannot use shields."
+              }
+            ],
+            "actions": [
+              {
+                "name": "Slam",
+                "name_format": "bold_italic",
+                "description": "Melee attack roll: proficiency bonus + Strength modifier to hit, reach 5 ft. Hit: 1d10 + Strength modifier bludgeoning damage.",
+                "inline_formatting": {
+                  "Melee attack roll": "italic",
+                  "Hit": "italic"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Custom Golem (Optional Feature)",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Rather than creating humanoid constructs, you forge new varieties of golems, but they always have two arms and shoulders. The Reverse Joint and Tank golems require a 1st-level spell slot, while the Tetrapod golem requires a 2nd-level spell slot to be powered up for 1 hour."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can change the type of golem during a long rest with your smith’s tools."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Boost Jolt upgrade deals one die of additional damage (3d6) if the golem is Tank or Tetrapod. Also, attacks limited to Slam will now be limited to the basic attacks of each golem type."
+        },
+        {
+          "type": "stat_block",
+          "data": {
+            "id": "reverse_joint_piloted_golem",
+            "section_type": "Stat Block",
+            "title": "Reverse Joint Piloted Golem",
+            "creature": {
+              "size": "Large",
+              "type": "construct"
+            },
+            "armor_class": "17",
+            "hit_points": "(artificer level + proficiency bonus) × 4",
+            "speed": {
+              "walk": "40 ft."
+            },
+            "ability_scores": {
+              "STR": {
+                "score": 12,
+                "check": "+1"
+              },
+              "DEX": {
+                "score": 16,
+                "check": "+3"
+              },
+              "CON": {
+                "score": 12,
+                "check": "+1"
+              }
+            },
+            "condition_immunities": [
+              "exhaustion"
+            ],
+            "proficiency_bonus": "equals your bonus",
+            "ability_note": "The golem uses the pilot’s mental ability scores.",
+            "traits": [
+              {
+                "name": "Inanimate",
+                "name_format": "bold_italic",
+                "description": "The golem is incapacitated without a pilot and energy from spell slots."
+              },
+              {
+                "name": "Mindless",
+                "name_format": "bold_italic",
+                "description": "The golem uses the pilot’s mental stats. If it is subjected to an effect that deals psychic damage, the pilot takes that damage instead. Without a pilot, the golem is immune to mental attacks and effects."
+              },
+              {
+                "name": "Naturally Armored",
+                "name_format": "bold_italic",
+                "description": "The golem gains the properties of the materials from which it’s made, and it cannot use shields."
+              },
+              {
+                "name": "Jumper (replaces Bulky)",
+                "name_format": "bold_italic",
+                "description": "The golem has two digitigrade legs, making it nimble. Its jump distance doubles, without taking fall damage. It has disadvantage on Stealth checks. It can perform any action its pilot can, except for attacking with weapons."
+              }
+            ],
+            "actions": [
+              {
+                "name": "Kick",
+                "name_format": "bold_italic",
+                "description": "Melee attack roll: proficiency bonus + Dexterity modifier to hit, reach 5 ft. Hit: 1d10 + Dexterity modifier bludgeoning damage.",
+                "inline_formatting": {
+                  "Melee attack roll": "italic",
+                  "Hit": "italic"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "stat_block",
+          "data": {
+            "id": "tank_piloted_golem",
+            "section_type": "Stat Block",
+            "title": "Tank Piloted Golem",
+            "creature": {
+              "size": "Large",
+              "type": "construct"
+            },
+            "armor_class": "14",
+            "hit_points": "(artificer level + proficiency bonus) × 7",
+            "speed": {
+              "walk": "25 ft."
+            },
+            "ability_scores": {
+              "STR": {
+                "score": 18,
+                "check": "+4"
+              },
+              "DEX": {
+                "score": 6,
+                "check": "-2"
+              },
+              "CON": {
+                "score": 16,
+                "check": "+3"
+              }
+            },
+            "condition_immunities": [
+              "exhaustion"
+            ],
+            "proficiency_bonus": "equals your bonus",
+            "ability_note": "The golem uses the pilot’s mental ability scores.",
+            "traits": [
+              {
+                "name": "Inanimate",
+                "name_format": "bold_italic",
+                "description": "The golem is incapacitated without a pilot and energy from spell slots."
+              },
+              {
+                "name": "Mindless",
+                "name_format": "bold_italic",
+                "description": "The golem uses the pilot’s mental stats. If it is subjected to an effect that deals psychic damage, the pilot takes that damage instead. Without a pilot, the golem is immune to mental attacks and effects."
+              },
+              {
+                "name": "Bulky",
+                "name_format": "bold_italic",
+                "description": "The golem has disadvantage on Dexterity checks. It can perform any action its pilot can, except for attacking with weapons."
+              },
+              {
+                "name": "Naturally Armored",
+                "name_format": "bold_italic",
+                "description": "The golem gains the properties of the materials from which it’s made, and it cannot use shields."
+              },
+              {
+                "name": "All-terrain",
+                "name_format": "bold_italic",
+                "description": "The golem is equipped with wheels or treads for movement, as it is particularly heavy. It cannot jump and is unaffected by difficult terrain."
+              }
+            ],
+            "actions": [
+              {
+                "name": "Heavy Slam",
+                "name_format": "bold_italic",
+                "description": "Melee attack roll: proficiency bonus + Strength modifier to hit, reach 5 ft. Hit: 1d12 + Strength modifier bludgeoning damage.",
+                "inline_formatting": {
+                  "Melee attack roll": "italic",
+                  "Hit": "italic"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "stat_block",
+          "data": {
+            "id": "tetrapod_piloted_golem",
+            "section_type": "Stat Block",
+            "title": "Tetrapod Piloted Golem",
+            "creature": {
+              "size": "Large",
+              "type": "construct"
+            },
+            "armor_class": "15 (natural armor)",
+            "hit_points": "(artificer level + proficiency bonus) × 6",
+            "speed": {
+              "walk": "30 ft."
+            },
+            "ability_scores": {
+              "STR": {
+                "score": 16,
+                "check": "+3"
+              },
+              "DEX": {
+                "score": 8,
+                "check": "-1"
+              },
+              "CON": {
+                "score": 16,
+                "check": "+3"
+              }
+            },
+            "saving_throws": [
+              "Str +3",
+              "Dex −1",
+              "Con +3"
+            ],
+            "condition_immunities": [
+              "exhaustion"
+            ],
+            "proficiency_bonus": "equals your bonus",
+            "ability_note": "The golem uses the pilot’s mental ability scores.",
+            "traits": [
+              {
+                "name": "Inanimate",
+                "name_format": "bold_italic",
+                "description": "The golem is incapacitated without a pilot and energy from spell slots."
+              },
+              {
+                "name": "Mindless",
+                "name_format": "bold_italic",
+                "description": "The golem uses the pilot’s mental stats. If it is subjected to an effect that deals psychic damage, the pilot takes that damage instead. Without a pilot, the golem is immune to mental attacks and effects."
+              },
+              {
+                "name": "Bulky",
+                "name_format": "bold_italic",
+                "description": "The golem has disadvantage on Dexterity checks. It can perform any action its pilot can, except for attacking with weapons."
+              },
+              {
+                "name": "Naturally Armored",
+                "name_format": "bold_italic",
+                "description": "The golem gains the properties of the materials from which it’s made, and it cannot use shields."
+              },
+              {
+                "name": "Airborne",
+                "name_format": "bold_italic",
+                "description": "The golem has four specialized legs that enable it to fly. For 1 minute, it can expel magic from its legs, gaining a flying speed of 30 feet. It can use this feature a number of times equal to your Intelligence modifier divided by two (round up)."
+              }
+            ],
+            "actions": [
+              {
+                "name": "Slam",
+                "name_format": "bold_italic",
+                "description": "Melee attack roll: proficiency bonus + Strength modifier to hit, reach 5 ft. Hit: 1d10 + Strength modifier bludgeoning damage.",
+                "inline_formatting": {
+                  "Melee attack roll": "italic",
+                  "Hit": "italic"
+                }
+              },
+              {
+                "name": "Airshot",
+                "name_format": "bold_italic",
+                "description": "Ranged attack roll: proficiency bonus + Strength modifier to hit, range 30 ft. Hit: 1d8 + Strength modifier piercing damage.",
+                "inline_formatting": {
+                  "Ranged attack roll": "italic",
+                  "Hit": "italic"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Upgrade Tuning",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You learn to craft magical upgrades for the Piloted Golem. Choose one from the Upgrades list at the end of the subclass description, gaining one more at levels 7, 9, 11, 13, 15, 17, and 19 in this class."
+        },
+        {
+          "type": "paragraph",
+          "text": "Upgrades can be installed in different parts of the golem, with some restrictions: one Arm upgrade on each arm, one Shoulder upgrade on each shoulder, and only one Armor and one Core upgrade at a time. There are no limits on Special upgrades. All of them can be stored and summoned with the golem."
+        },
+        {
+          "type": "paragraph",
+          "text": "Each equipped upgrade has a limited number of charges every time the golem is powered up, unless stated otherwise. To activate the upgrade, you must expend one charge."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can change the equipped upgrades during a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Destructive Weapon",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your Piloted Golem becomes more lethal. You can make an additional attack with its action, and the Slam attack now deals extra damage equal to your Intelligence modifier."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you can build tougher golems. The construct gains a +1 bonus to its AC."
+        },
+        {
+          "type": "subsection",
+          "title": "Custom Golem (Optional Feature)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The basic attack of each golem type deals extra damage equal to your Intelligence modifier. The golems also gain the bonus to AC."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Perfected Mechanism",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your Piloted Golem becomes an engineering marvel, more powerful than ever before. Its speed increases to 40 feet, and its stats are now 18 Str (+4), 12 Dex (+1), and 16 Con (+3). It gains a flying speed of 25 feet for 1 minute per power up, by expelling magic from its legs and back."
+        },
+        {
+          "type": "subsection",
+          "title": "Custom Golem (Optional Feature)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Each golem type improves in the following ways:"
+            },
+            {
+              "type": "subsection",
+              "title": "Reverse Joint",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Its speed increases to 50 feet and its jump distance triples, without taking fall damage. Stats are now Str 14 (+2), Dex 18 (+4), Con 14 (+2). It gains a flying speed of 25 feet for 1 minute per power up."
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Tank",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Its speed increases to 35 feet. Stats are now Str 20 (+5), Dex 8 (−1), Con 18 (+4). It reduces all damage taken by an amount equal to your Intelligence modifier."
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Tetrapod",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Its speed increases to 40 feet, its flying speed is now 50 feet and it gains the ability to hover. Stats are now Str 18 (+4), Dex 10 (+0), Con 18 (+4). Airshot increases its range to 60 feet."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Arm Upgrades",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Lightning Lance",
+          "subtitle": "3 charges | Prerequisite: 7th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You attach an electric barrel to the golem’s arm. As an action, it can discharge lightning in a line 20 feet long and 5 feet wide. Each creature in this area must make a Dexterity saving throw. On a failed save, a creature takes 3d8 lightning damage and its speed is halved until the end of its next turn. On a successful save, it takes half as much damage and its speed isn’t reduced."
+            },
+            {
+              "type": "paragraph",
+              "text": "The lightning ignites any flammable objects in the area that aren’t being worn or carried."
+            }
+          ]
+        },
+        {
+          "name": "Metal Shredder",
+          "subtitle": "3 charges | Prerequisite: 7th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You attach a container filled with metal scrap to the golem’s arm. As an action, it can explosively release this scrap, creating a cloud of projectiles in a 20-foot cone. Each creature in this area must make a Dexterity saving throw. On a failed save a creature takes 6d4 piercing damage and is frightened until the end of its next turn. On a successful save, it takes half as much damage and isn’t frightened."
+            }
+          ]
+        },
+        {
+          "name": "Pile Bunker",
+          "subtitle": "2 charges | Prerequisite: 9th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You attach a heavy metal rod to the golem’s arm. As an action, it can retract and release with incredible power into a creature within 5 feet. The target must make a Dexterity saving throw. On a failed save, it takes 5d10 + 10 piercing damage."
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "subtitle": "3 charges | Prerequisite: 7th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You attach a device to the golem’s arm that can store magic. As an action, it can energize the golem’s fist. Make a melee spell attack against a target within 5 feet. On a hit, it deals 2d8 thunder damage + 2d8 bludgeoning damage, and the target must pass a Strength saving throw or be pushed 10 feet away from you."
+            }
+          ]
+        },
+        {
+          "name": "Pulse Blade",
+          "subtitle": "5 charges",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You attach an arcane blade to the golem’s arm. As an action, it can deploy, pulsing with magic. Make a melee spell attack against a target within 10 feet. On a hit, the attack deals 2d8 + Intelligence modifier force damage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shoulder Upgrades",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Blasting Battery",
+          "subtitle": "3 charges | Prerequisite: 7th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You mount a battery on the golem’s shoulder. As an action, it can fire 4 flaming missiles at creatures or objects within 90 feet. Make a ranged spell attack for each projectile. On a hit, it deals 1d8 + 1 fire damage."
+            }
+          ]
+        },
+        {
+          "name": "Oscillating Cannon",
+          "subtitle": "2 charges | Prerequisite: 9th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You mount a huge cannon on the golem’s shoulder. As an action, it can fire a blinding ray of arcane magic that detonates at a point within 120 feet. Creatures in a 30-foot sphere around that point must make a Constitution saving throw. On a failed save, a creature takes 3d6 fire damage + 3d6 lightning damage, and is blinded until the end of its next turn. On a successful save, it takes half as much damage and isn’t blinded."
+            },
+            {
+              "type": "paragraph",
+              "text": "The fire ignites any flammable objects in the area that aren’t being worn or carried."
+            }
+          ]
+        },
+        {
+          "name": "Protective Field",
+          "subtitle": "5 charges",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You mount a device on your golem’s shoulder that projects a magical barrier. As a reaction, you can activate it, creating a 20-foot radius field. You and allied creatures within this area gain a +3 bonus to their AC until the start of your next turn. If they leave the barrier’s protection, they lose this bonus."
+            }
+          ]
+        },
+        {
+          "name": "Rotary Cannon",
+          "subtitle": "5 charges",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You mount a multi-barrel cannon on the golem’s shoulder. As an action, it can fire arcane projectiles in rapid succession against a target within 60 feet. A creature must make five Dexterity saving throws. On a failed save, it takes 1d4 + 2 force damage."
+            }
+          ]
+        },
+        {
+          "name": "Sniper Barrel",
+          "subtitle": "3 charges | Prerequisite: 7th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You mount a long barrel on the golem’s shoulder. As an action, it can fire an arcane projectile with incredible precision. Make a ranged spell attack against a target within 380 feet. On a hit, it deals 3d6 + Intelligence modifier force damage."
+            },
+            {
+              "type": "paragraph",
+              "text": "You can choose to aim for the target’s head (if it has one) at disadvantage. On a hit, the damage increases to 5d6."
+            }
+          ]
+        },
+        {
+          "name": "Upgrade Bay",
+          "subtitle": "No charges",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You mount a structure on the golem’s shoulder designed to store arm upgrades. The golem can now carry one extra arm upgrade, even if both arms are already equipped. As a bonus action, you can swap an equipped arm upgrade with the one stored in the bay."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Armor Upgrades",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Deflective Armor",
+          "subtitle": "1 charge / Long Rest | Prerequisite: 11th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The golem’s armor can generate a powerful magical field. As a bonus action, you can activate it for 1 minute, giving the golem resistance to all damage and immunity to force damage."
+            }
+          ]
+        },
+        {
+          "name": "Explosive Armor",
+          "subtitle": "1 charge / Long Rest | Prerequisite: 11th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The golem’s armor can release an energetic explosion. As an action, it can expel raw magic to create a shockwave. All creatures within a 60-foot sphere must make a Constitution saving throw. On a failed save, a creature takes 7d8 force damage and becomes stunned until the end of its next turn. On a successful save, it takes half as much damage and isn’t stunned."
+            }
+          ]
+        },
+        {
+          "name": "Terminal Armor",
+          "subtitle": "1 charge / Long Rest",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The golem’s armor has a contingency switch. When it takes enough damage to be destroyed, the switch releases a magical barrier to stabilize the golem, remaining at 1 hit point instead."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Upgrades",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Devastating Core",
+          "subtitle": "1 charge | Prerequisite: 13th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You install a last-resort, unstable core. As an action, you can activate it, initiating a catastrophic energy buildup. You are ejected 120 feet from the golem in a direction of your choice, becoming stunned until the end of your next turn."
+            },
+            {
+              "type": "paragraph",
+              "text": "A meltdown process begins and, at the start of your next turn, the core detonates, obliterating the construct and unleashing a massive explosion in a 90-foot radius sphere. All creatures within this area must make a Constitution saving throw. On a failed save, a creature takes 4d10 force damage + 3d8 fire damage and is stunned until the end of its next turn. On a successful save, it takes half as much damage, but becomes stunned regardless."
+            },
+            {
+              "type": "paragraph",
+              "text": "The golem is completely destroyed, and any structure within the area is leveled. The outburst emits a sonic boom audible out to 2000 feet."
+            }
+          ]
+        },
+        {
+          "name": "Efficiency Core",
+          "subtitle": "No charges | Prerequisite: 9th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You install a core that optimizes available magic. Powering up the golem will now cost an additional 3rd-level spell slot. In exchange, the golem will now last for 6 hours when you power it up (but it doesn’t scale with spell slot level)."
+            },
+            {
+              "type": "paragraph",
+              "text": "During this extended period, you can activate another upgrade with 3 or more charges once, without spending a charge."
+            }
+          ]
+        },
+        {
+          "name": "Hastener Core",
+          "subtitle": "1 charge | Prerequisite: 11th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You install a core that overcharges the golem’s systems, pushing them to the limit. As a bonus action, you can activate it for 1 minute. During this time, the golem’s movement speed is doubled, its AC increases by 1, and it gains an additional action on each of its turns, but limited to attack, dash or disengage."
+            },
+            {
+              "type": "paragraph",
+              "text": "This intense energy output causes the golem to glow red-hot. It becomes vulnerable to bludgeoning, piercing, and slashing damage."
+            },
+            {
+              "type": "paragraph",
+              "text": "After this period ends, the golem becomes incapacitated for 1 minute, even if you power it up, as it needs to cool down."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Special Upgrades",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Autonomous System",
+          "subtitle": "2 charges | Prerequisite: 9th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You create a system for the golem to act on its own. As a bonus action, it can become autonomous for 1 minute. During this period, the golem requires no pilot and acts immediately after your turn. You command it with your bonus action, but the construct can only move, dash, disengage or attack with Slam, and it can’t take reactions. If no command is issued, it will try to attack the nearest hostile creature."
+            },
+            {
+              "type": "paragraph",
+              "text": "Additionally, an ally of your choice can mount the golem while in this state. The system assists the ally in piloting, enabling them to perform any actions you would normally be able to do."
+            },
+            {
+              "type": "paragraph",
+              "text": "After this period ends, the golem becomes incapacitated until you mount it."
+            }
+          ]
+        },
+        {
+          "name": "Boost Jolt",
+          "subtitle": "5 charges",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You equip the golem with thrusters that launch it at high speed. As an action, you can activate them to dash 60 feet in a straight line. If it would strike a creature, that creature must make a Strength saving throw. On a failure, it takes 2d6 bludgeoning damage, is pushed 5 feet to the side and falls prone."
+            },
+            {
+              "type": "paragraph",
+              "text": "On a success, it takes half as much damage, is not pushed and does not fall prone, and the golem stops moving."
+            }
+          ]
+        },
+        {
+          "name": "Dexterous Arm",
+          "subtitle": "No charges | Prerequisite: 7th-level artificer",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You create a finely tuned arm for your golem, one that closely mimics your movements. Powering up the golem will now cost an additional 1st-level spell slot. In exchange, it becomes proficient with all melee weapons. Weapon attacks made with this arm deal extra damage equal to your Intelligence modifier. It can wield two-handed melee weapons with one hand and rolls the larger die for versatile weapons."
+            },
+            {
+              "type": "paragraph",
+              "text": "You can’t attach Arm upgrades to it, and you can choose this upgrade twice (one for each arm)."
+            }
+          ]
+        },
+        {
+          "name": "Reflective Cloak",
+          "subtitle": "No charges",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You outfit the golem with a special cloak made of highly reflective fabric, designed to confuse nearby foes. Hostile creatures within 5 feet of the golem have disadvantage on attack rolls against targets other than the construct. However, ranged attacks made against it from more than 30 feet away have advantage."
+            }
+          ]
+        },
+        {
+          "name": "Sensible Hull",
+          "subtitle": "5 charges",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You integrate specialized sensors into your golem’s hull, vastly improving its ability to detect hidden threats. As an action, you can activate them to detect the presence of hidden or invisible creatures within 30 feet until the start of your next turn."
+            },
+            {
+              "type": "paragraph",
+              "text": "Additionally, while mounted in the golem, you gain darkvision out to a range of 60 feet and cannot be surprised."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

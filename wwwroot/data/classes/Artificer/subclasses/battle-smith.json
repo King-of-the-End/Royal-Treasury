@@ -1,0 +1,294 @@
+{
+  "name": "Battle Smith",
+  "slug": "battle-smith",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "Armies require protection, and someone has to put things back together if defenses fail. A combination of protector and medic, a Battle Smith is an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a steel defender, a protective companion of their own creation. Many soldiers tell stories of nearly dying before being saved by a Battle Smith and a steel defender.",
+    "In the world of Eberron, Battle Smiths played a key role in House Cannith’s work on battle constructs and the original warforged, and after the Last War, these artificers led efforts to aid those who were injured in the war’s horrific battles."
+  ],
+  "features": [
+    {
+      "name": "Tool Proficiency",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you adopt this specialization at 3rd level, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice."
+        }
+      ]
+    },
+    {
+      "name": "Battle Smith Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Battle Smith Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Battle Smith Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Heroism, Shield"
+            },
+            {
+              "level": "5th",
+              "spells": "Branding Smite, Warding Bond"
+            },
+            {
+              "level": "9th",
+              "spells": "Aura of Vitality, Conjure Barrage"
+            },
+            {
+              "level": "13th",
+              "spells": "Aura of Purity, Fire Shield"
+            },
+            {
+              "level": "17th",
+              "spells": "Banishing Smite, Mass Cure Wounds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Battle Ready",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You gain proficiency with martial weapons.",
+            "When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Steel Defender",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "By 3rd level, your tinkering has borne you a faithful companion, a steel defender. It’s friendly to you and your companions, and it obeys your commands. See its game statistics in the Steel Defender stat block, which uses your proficiency bonus (PB) in several places. You determine the creature’s appearance and whether it has two legs or four; your choice has no effect on its game statistics."
+        },
+        {
+          "type": "paragraph",
+          "text": "In combat, the defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, not just Dodge."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith’s tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored."
+        },
+        {
+          "type": "paragraph",
+          "text": "At the end of a long rest, you can create a new steel defender if you have smith’s tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die."
+        },
+        {
+          "type": "stat_block",
+          "data": {
+            "id": "steel_defender",
+            "section_type": "Stat Block",
+            "title": "Steel Defender",
+            "creature": {
+              "size": "Medium",
+              "type": "construct"
+            },
+            "armor_class": "15 (natural armor)",
+            "hit_points": "2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)",
+            "speed": {
+              "walk": "40 ft."
+            },
+            "ability_scores": {
+              "STR": {
+                "score": 14,
+                "check": "+2"
+              },
+              "DEX": {
+                "score": 12,
+                "check": "+1"
+              },
+              "CON": {
+                "score": 14,
+                "check": "+2"
+              },
+              "INT": {
+                "score": 4,
+                "check": "-3"
+              },
+              "WIS": {
+                "score": 10,
+                "check": "+0"
+              },
+              "CHA": {
+                "score": 6,
+                "check": "-2"
+              }
+            },
+            "saving_throws": [
+              "Dex +1 plus PB",
+              "Con +2 plus PB"
+            ],
+            "skills": [
+              "Athletics +2 plus PB",
+              "Perception +0 plus PB × 2"
+            ],
+            "immunities": [
+              "poison"
+            ],
+            "condition_immunities": [
+              "charmed",
+              "exhaustion",
+              "poisoned"
+            ],
+            "senses": [
+              "darkvision 60 ft.",
+              "passive Perception 10 + (PB × 2)"
+            ],
+            "languages": "understands the languages you speak",
+            "challenge_rating": "—",
+            "proficiency_bonus": "equals your bonus",
+            "traits": [
+              {
+                "name": "Vigilant",
+                "name_format": "bold_italic",
+                "description": "The defender can’t be surprised."
+              }
+            ],
+            "actions": [
+              {
+                "name": "Force-Empowered Rend",
+                "name_format": "bold_italic",
+                "description": "Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d8 + PB force damage.",
+                "inline_formatting": {
+                  "Melee Weapon Attack": "italic",
+                  "Hit": "italic"
+                }
+              },
+              {
+                "name": "Repair (3/Day)",
+                "name_format": "bold_italic",
+                "description": "The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it."
+              }
+            ],
+            "reactions": [
+              {
+                "name": "Deflect Attack",
+                "name_format": "bold_italic",
+                "description": "The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn."
+        }
+      ]
+    },
+    {
+      "name": "Arcane Jolt",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 9th level, you’ve learned new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The target takes an extra 2d6 force damage.",
+            "Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Improved Defender",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 15th level, your Arcane Jolt and steel defender become more powerful:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The extra damage and the healing of your Arcane Jolt both increase to 4d6.",
+            "Your steel defender gains a +2 bonus to Armor Class.",
+            "Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 + your Intelligence modifier."
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Additional Battle Smith Infusions",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Artificial Intelligence",
+          "subtitle": "Prerequisite: 17th-level Battle Smith | Item: Steel Defender (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You upgrade the mental capabilities of your Steel Defender. The Defender’s Intelligence and Charisma scores increase to 14, it can speak the languages it knows, and it becomes capable of making complex decisions with only minor direction. You can command your Defender on your turn without using your bonus action."
+            },
+            {
+              "type": "paragraph",
+              "text": "This infusion is so advanced that you can apply it to the Steel Defender even if it already bears another infusion."
+            }
+          ]
+        },
+        {
+          "name": "Mounting Support",
+          "subtitle": "Prerequisite: 6th-level Battle Smith | Item: Steel Defender",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You make your Steel Defender more suitable to ride as a mount. The Defender’s speed increases by 10 feet, and you can use the Defender as a mount, even if your size is Medium. While you are mounted on your Defender, it acts as a Controlled Mount, meaning it acts on your initiative. However, it is not restricted to the actions a controlled mount can take if you use your bonus action to command it, and it can use its Deflect Attack reaction as normal without direction."
+            }
+          ]
+        },
+        {
+          "name": "Vigilant Deflector",
+          "subtitle": "Prerequisite: 6th-level Battle Smith | Item: Steel Defender (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You make your Defender even more protective of your allies on the battlefield. When a creature within 15 feet of it makes an attack, it can use its reaction to move up to 10 feet toward that creature without provoking opportunity attacks and immediately use Deflect Attack."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

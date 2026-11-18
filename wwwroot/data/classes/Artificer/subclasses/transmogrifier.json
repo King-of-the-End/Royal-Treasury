@@ -1,0 +1,192 @@
+{
+  "name": "Transmogrifier",
+  "slug": "transmogrifier",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "“Surely if I can harness magic and place it in an object, I could also place it in my own body... right?” This thought often features in the past of Transmogrifiers, artificers that brew and consume magical concoctions to modify and augment their bodies. Many who follow this path do so to develop themselves into superior warriors, while others are simply unsatisfied by the limitations of their physical form and seek to better it."
+  ],
+  "features": [
+    {
+      "name": "Transmogrifier Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You always have certain spells prepared after you reach particular levels in this class, as shown in the Transmogrifier Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Transmogrifier Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Elemental Strikes, Expeditious Retreat"
+            },
+            {
+              "level": "5th",
+              "spells": "Alter Self, Enlarge/Reduce"
+            },
+            {
+              "level": "9th",
+              "spells": "Fly, Haste"
+            },
+            {
+              "level": "13th",
+              "spells": "Freedom of Movement, Stoneskin"
+            },
+            {
+              "level": "17th",
+              "spells": "Far Step, System Surge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Extra Proficiencies",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain proficiency with alchemist’s supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice. You also gain proficiency with martial weapons."
+        }
+      ]
+    },
+    {
+      "name": "Self Transmogrifying Concoctions",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your experimentation on your own body has permanently altered your physiology and has made you particularly accepting of your self-enhancing concoctions. You gain the following benefits:"
+        },
+        {
+          "type": "subsection",
+          "title": "Concoction Casting",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you cast one of your Transmogrifier Spells and target only yourself, you can do so by quaffing a special concoction that you brew. When you cast a spell in this way, it has no verbal or somatic components, but you must use alchemist’s supplies as a spellcasting focus, and you must drink the concoction as part of casting the spell. You do not need to concentrate on the spell. You can only be affected by one spell in this way at a time, and the previous spell ends immediately if you use Concoction Casting again. You can end the spell early as a bonus action."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Free Casting",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can cast one of your Transmogrifier Spells without expending a spell slot, provided that you do so with Concoction Casting. You can’t do so again until you finish a long rest."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Intelligent Attacks",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "While under the effects of one or more of your Transmogrifier Spells, you can make weapon attacks using your Intelligence modifier, instead of Strength or Dexterity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can attack twice, rather than once, whenever you take the Attack action on your turn."
+        }
+      ]
+    },
+    {
+      "name": "Body Modifications",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In the pursuit of developing your body into your optimal tool, you have prepared a concoction that will leave you forever changed. Select one of the following options:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Bodily Infusion",
+              "paragraphs": [
+                "You can apply infusions directly to your body parts, in place of items. The infusion must be for an item that is worn, other than a suit of armor, and the infused body part must be where that item would be worn. For instance, instead of infusing a cap, you would infuse your head. In so doing, you can benefit from both the infusion and a magic item worn over the same body part. In addition, the number of infusions you know and the maximum number of items you can infuse at once both increase by 1, but the extra item must be part of your body."
+              ]
+            },
+            {
+              "name": "Corporeal Weapon",
+              "paragraphs": [
+                "You grow a vicious weapon that is attached to your body. You determine the appearance of the weapon, where it appears on your body and whether it deals bludgeoning, piercing or slashing damage. You also choose one of the following weapon properties for it to have: light, heavy, finesse or reach. Regardless of your choices, the weapon is a simple melee weapon with which you are proficient that deals 1d10 damage. You do not need to use your hands to wield this weapon, you cannot be disarmed of it, and it is a valid candidate for any infusion that can be applied to a melee weapon."
+              ]
+            },
+            {
+              "name": "Tough Skin",
+              "paragraphs": [
+                "Your body becomes harder and more durable. Your hit point maximum increases by 9 and increases by 1 each subsequent time you gain a level in this class. While you are not wearing armor, your armor class is equal to 14 + your Intelligence modifier. You can benefit from a shield using this armor class. Additionally, your skin becomes a valid candidate for any infusion that can be applied to a suit of armor."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Master of Self Transmogrification",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your body has adapted to become even more accepting of your transmogrifying concoctions, allowing you to accomplish feats that were previously impossible. You can now benefit from two Self Transmogrifying Concoctions at the same time. If you quaff a third concoction, one of the two active spells ends (you choose which)."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Additional Transmogrifier Infusions",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Epic Transmogrification",
+          "subtitle": "Prerequisite: 17th-level Transmogrifier | Item: Alchemist’s supplies (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you finish a long rest, you can use these alchemist’s supplies to prepare yourself one special concoction, which you can drink without expending a spell slot. It otherwise behaves in the same way as your Self-Transmogrifying Concoctions. The concoction contains either the Tenser’s Transformation spell or the Tasha’s Otherworldly Guise spell (you choose which when you prepare the concoction). The concoction spoils when you next complete a long rest."
+            },
+            {
+              "type": "paragraph",
+              "text": "This infusion is so advanced that you can apply it to a set of alchemist’s supplies even if they already bear another infusion."
+            }
+          ]
+        },
+        {
+          "name": "Transmogrifying Samples",
+          "subtitle": "Prerequisite: 6th-level Transmogrifier | Item: Alchemist’s supplies (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you cast one of your Transmogrifier spells with these alchemist’s supplies on your person, you can create a number of transmogrifying samples instead of producing the effects of the spell. The number of samples you create is equal to your Intelligence modifier (minimum one). These samples form as a liquid, which each must be stored in its own flask. A creature can consume the sample as a bonus action, granting the drinker the effects of the spell until the start of its next turn, as if it had cast the spell on itself. The spell uses your Intelligence as the spellcasting ability, and does not require concentration. Any remaining samples spoil when you finish a long rest."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "Name": "Sound of Repudiation",
+  "Spell School": "Evocation",
+  "Spell Group(s)": [],
+  "Casting Time": "1 action",
+  "Range": "120 feet",
+  "Components": "V",
+  "Duration": "Instantaneous",
+  "Description": "You vocalize a melodious tone that ascends into the air as a light that manifests from your lips. One creature of your choice that is not Deafened within this spell’s range must pass a Constitution saving throw or have that note repeated a thousand times inside of their head, overlaid as if a tower of sound were crashing over them.\n\nOn a failure, they suffer 2d6 psychic damage and are rendered unable to form coherent words for the next minute, consequentially being unable to perform verbal components for spellcasting or use voice-activated features. They may re-attempt this saving throw at the end of their subsequent turns, ending the effect early on a success.\n\nOn a success or after the effect of a failure passes, they may still only speak in whispers or in whispered shouts for the next ten minutes, as the worlds weigh their mind too much to be able to speak clearly without risking their own vocalization reverberating through their skull in a horrible headache.",
+  "At Higher Levels": "When you cast this spell at 3rd level or higher, you can choose one of the following effects for each slot level above 2nd:\n- (1 Slot Level) The initial damage increases by 1d6.\n- (1 Slot Level) The creature takes 2d6 psychic damage from one additional failed save.\n- (2 Slot Levels) You may choose an additional target within range who is not Deafened.",
+  "Classes": [
+    "Bard",
+    "Cleric",
+    "Dusksworn",
+    "Favored Soul"
+  ],
+  "Sourcebook": "",
+  "Tags": []
+}

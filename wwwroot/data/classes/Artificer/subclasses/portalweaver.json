@@ -1,0 +1,257 @@
+{
+  "name": "Portalweaver",
+  "slug": "portalweaver",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "Portalweavers are fascinated by manipulations of space, and how magic can be used to link two different spatial points with phenomena known as portals. These artificers develop devices for their own use to form these portals, allowing them to rival the translocation capabilities of even the most powerful conjurers."
+  ],
+  "features": [
+    {
+      "name": "Portalweaver Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You always have certain spells prepared after you reach particular levels in this class, as shown in the Portalweaver Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Portalweaver Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Catapult, Fall Loop"
+            },
+            {
+              "level": "5th",
+              "spells": "Misty Step, Rope Trick"
+            },
+            {
+              "level": "9th",
+              "spells": "Blink, Thunder Step"
+            },
+            {
+              "level": "13th",
+              "spells": "Dimension Door, Leomund’s Secret Chest"
+            },
+            {
+              "level": "17th",
+              "spells": "Passwall, Steel Wind Strike"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Portal Device",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain proficiency with Weaver’s tools. If you already have this tool proficiency, you instead gain proficiency with one set of artisan’s tools of your choice. Over the course of a long rest, you can use Weaver’s tools to imbue a Tiny nonmagical object you touch, such as a light crossbow, with the capability of creating portals, thereby turning it into your Portal Device. The Portal Device loses its magic if you create another one, but otherwise lasts indefinitely. You can use the Portal Device as a spellcasting focus for your artificer spells."
+        },
+        {
+          "type": "paragraph",
+          "text": "The device stores a number of charges equal to your Intelligence modifier (minimum 2). It regains all expended charges when you finish a long rest, and regains two charges when you finish a short rest."
+        }
+      ]
+    },
+    {
+      "name": "Attack Redirection",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you or a creature you can see within 30 feet of you is targeted by an attack, you use your reaction to expend one charge of your Portal Device and open a portal, attempting to redirect the attack through it. The attacker must make a Dexterity saving throw against your spell save DC, which can be failed willingly. On a failure, the attack instead targets a different creature of your choice that you can see within 30 feet of you, or empty air."
+        }
+      ]
+    },
+    {
+      "name": "Portals",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action you can expend one charge of your Portal Device to create linked portals in two unoccupied spaces you can see within 30 feet of you. The portals appear as 5 foot diameter circular rings of colored light which hover in place, perpendicular to the ground, facing a direction of your choice. The portals have the following properties:"
+        },
+        {
+          "type": "subsection",
+          "title": "Duration",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The portals remain in place until the start of your next turn or until they close."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Portal Travel",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Creatures and objects that are Medium or smaller can fit through the portals, attacks can be made through them, and effects that form as an area can extend through the portals, so long as they are no more than 5 feet wide at the point where they do so. When a creature, object, attack or area effect passes through the portal, it instantly appears adjacent to the face of the connected portal, and then the portals close."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Closing Portals",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "If a creature is part-way through the portals when they close, they are instantly shunted to an unoccupied space on one side of their choice."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Visibility",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "One side of each portal can be seen through, the other appearing opaque. When looking through a portal, a creature sees through the face of the connected portal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Translocated Spells",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain the ability to manifest your spells through your portals. While holding your portal device, you gain the following benefits:"
+        },
+        {
+          "type": "subsection",
+          "title": "Spell Portals",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you cast a spell with a range of touch, or with an instantaneous duration, you can originate the spell from a point you can see within 30 feet of you."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Empowered Cantrip",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you cast an artificer cantrip that deals damage, you can add your Intelligence modifier (minimum +1) to one of its damage rolls."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "High-Powered Portals",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can supercharge your Portal Device when you use your Portals feature by expending one additional charge, improving the feature in the following ways:"
+        },
+        {
+          "type": "subsection",
+          "title": "Range",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can create the portals twice as far away."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Duration",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The portals remain for 1 minute, or until you lose concentration (as if concentrating on a spell)."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Relocate",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As a bonus action, you can move one portal to another unoccupied space you can see within range."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Portal Travel",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The portals no longer close after something passes through them."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Portal Master",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have infused your portal device with the ability to transport people to destinations near and far. You can use it to cast one of the following spells without expending a spell slot, and then can’t do so again until you finish a long rest: arcane gate, plane shift, scatter, teleport. Intelligence is your spellcasting ability for these spells."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, the range of your Attack Redirection, Portals and Spell Portals features all increase to 60 feet."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Additional Portalweaver Infusions",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Momentum Accelerator",
+          "subtitle": "Prerequisite: 6th-level Portalweaver | Item: Portal Device",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The first time on a turn that a creature travels through a portal created by your Portals feature, its momentum is boosted, increasing its speed by 10 feet until the end of its turn."
+            }
+          ]
+        },
+        {
+          "name": "Programmed Positioning",
+          "subtitle": "Prerequisite: 17th-level Portalweaver | Item: Portal Device (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You upgrade your Portal Device with the ability to program the positions of your portals in space relative to yourself, without needing to see. When you use your Portals feature, you can cause the portals to appear in spaces within range that you specify by stating distance and direction, such as “60 feet, straight forwards”. If either of the portals appear in a space that is already occupied by an object or creature, they fail to manifest, and the use of the feature is wasted."
+            },
+            {
+              "type": "paragraph",
+              "text": "This infusion is so advanced that you can apply it to the Portal Device even if it already bears another infusion."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

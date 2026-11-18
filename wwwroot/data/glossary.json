@@ -147,6 +147,13 @@
     "Contexts": []
   },
   {
+    "Term": "Electric Arc",
+    "Definition": "A creature with Electric Arc counts has a static electricity field constantly crackle and rattle across their extremities. That creature deals additional lightning damage on attack hits equal to their Electric Arc count.",
+    "CaseSensitive": true,
+    "NoOverlay": false,
+    "Contexts": []
+  },
+  {
     "Term": "Elemental Confluence",
     "Definition": "Any spell listed as being in the Elemental Confluence spell group is considered to be in all of these spell groups (Burning Rites, Harvest Manual, Torrential Arcanics, and Twisting Gale Path) simultaneously, and includes the following:",
     "CaseSensitive": true,
@@ -3156,32 +3163,32 @@
     ]
   },
   {
-  "Term": "Supermassive",
-  "Definition": "**Creature Size:** Supermassive\n\n**Space:** 150 × 150 feet\n\n**Grid Squares:** 30 × 30",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "StatBlockCreatureLine"
-  ]
-},
-{
-  "Term": "Planetary",
-  "Definition": "**Creature Size:** Planetary\n\n**Space:** 500 × 500 feet\n\n**Grid Squares:** 100 × 100",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "StatBlockCreatureLine"
-  ]
-},
-{
-  "Term": "Superplanetary",
-  "Definition": "**Creature Size:** Superplanetary\n\n**Space:** 1000 × 1000 feet\n\n**Grid Squares:** 200 × 200",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "StatBlockCreatureLine"
-  ]
-},
+    "Term": "Supermassive",
+    "Definition": "**Creature Size:** Supermassive\n\n**Space:** 150 × 150 feet\n\n**Grid Squares:** 30 × 30",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Planetary",
+    "Definition": "**Creature Size:** Planetary\n\n**Space:** 500 × 500 feet\n\n**Grid Squares:** 100 × 100",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
+  {
+    "Term": "Superplanetary",
+    "Definition": "**Creature Size:** Superplanetary\n\n**Space:** 1000 × 1000 feet\n\n**Grid Squares:** 200 × 200",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "StatBlockCreatureLine"
+    ]
+  },
   {
     "Term": "(Malfunction)",
     "Definition": "Malfunction conditions are identical to their original variants, except that they are only capable of affecting frame units and constructs. They are indicated in an effect by featuring (malfunction) in parenthesis next to the condition. Targets can be affected by malfunction conditions even if immune to the original condition, but in that case they have advantage on saving throws made to resist it.",
@@ -3244,39 +3251,39 @@
       "Exolunar Nature"
     ]
   },
-   {
+  {
     "Term": "Concentration Expert",
     "Definition": "",
     "CaseSensitive": false,
     "NoOverlay": true
   },
   {
-  "Term": "Two-Weapon Fighting",
-  "Definition": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n**Lesser Advancement**\nAttack rolls made using your off-hand weapon gain a +2 bonus.\n\n**Greater Advancement**\nAttacks made using your off-hand weapon have advantage if your primary weapon attack that preceded it missed.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "Class"
-  ]
-},
-{
-  "Term": "Art Wielder",
-  "Definition": "Choose one spell group. You gain knowledge of a number of spells from that group equal to your proficiency bonus, which must be of 1st level. You can cast one of these spells by spending an Arcane Charge, casting the spell at a base level when you do, requiring no spell slot. Your spellcasting ability is Strength, Dexterity, or Constitution (you choose).\n\nYou do not actually learn these spells, and they cannot be cast using spell slots or resources from other classes (unless other text says they can be).\n\nEach time you gain a new level, you may change which spells from that Spell Group you selected.\n\n**Lesser Advancement**\nUp to two of the spells you pick can be 2nd level or lower, and when you cast spells this way they are cast at 2nd level.\n\n**Greater Advancement**\nOne of the spells you pick can be 3rd level or lower, and when you cast spells this way they are cast at 3rd level.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "Class"
-  ]
-},
-{
-  "Term": "Slayer",
-  "Definition": "When you reduce a creature to 0 hit points or kill them outright with a weapon attack, you gain 5 temporary hit points. If a different feature, item, or effect would give you temporary hit points when you do so, that amount is increased by 5 points instead. You lose these temporary hit points after 1 minute.\n\n**Lesser Advancement**\nWhen you reduce a creature to 0 hit points or kill them outright with a weapon attack, each time you make an attack until the end of your turn you may roll a d6 and add it to the result.\n\n**Greater Advancement**\nWhen a creature reduces you to 0 hit points, you may use your reaction to make a melee weapon attack against them. If you reduce them to 0 hit points or kill them outright with that attack, you are reduced to 1 hit point instead and your reaction is immediately regained.",
-  "CaseSensitive": false,
-  "NoOverlay": false,
-  "Contexts": [
-    "Class"
-  ]
-},
+    "Term": "Two-Weapon Fighting",
+    "Definition": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n**Lesser Advancement**\nAttack rolls made using your off-hand weapon gain a +2 bonus.\n\n**Greater Advancement**\nAttacks made using your off-hand weapon have advantage if your primary weapon attack that preceded it missed.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "Class"
+    ]
+  },
+  {
+    "Term": "Art Wielder",
+    "Definition": "Choose one spell group. You gain knowledge of a number of spells from that group equal to your proficiency bonus, which must be of 1st level. You can cast one of these spells by spending an Arcane Charge, casting the spell at a base level when you do, requiring no spell slot. Your spellcasting ability is Strength, Dexterity, or Constitution (you choose).\n\nYou do not actually learn these spells, and they cannot be cast using spell slots or resources from other classes (unless other text says they can be).\n\nEach time you gain a new level, you may change which spells from that Spell Group you selected.\n\n**Lesser Advancement**\nUp to two of the spells you pick can be 2nd level or lower, and when you cast spells this way they are cast at 2nd level.\n\n**Greater Advancement**\nOne of the spells you pick can be 3rd level or lower, and when you cast spells this way they are cast at 3rd level.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "Class"
+    ]
+  },
+  {
+    "Term": "Slayer",
+    "Definition": "When you reduce a creature to 0 hit points or kill them outright with a weapon attack, you gain 5 temporary hit points. If a different feature, item, or effect would give you temporary hit points when you do so, that amount is increased by 5 points instead. You lose these temporary hit points after 1 minute.\n\n**Lesser Advancement**\nWhen you reduce a creature to 0 hit points or kill them outright with a weapon attack, each time you make an attack until the end of your turn you may roll a d6 and add it to the result.\n\n**Greater Advancement**\nWhen a creature reduces you to 0 hit points, you may use your reaction to make a melee weapon attack against them. If you reduce them to 0 hit points or kill them outright with that attack, you are reduced to 1 hit point instead and your reaction is immediately regained.",
+    "CaseSensitive": false,
+    "NoOverlay": false,
+    "Contexts": [
+      "Class"
+    ]
+  },
   {
     "Term": "Slayer’s Implement",
     "Definition": "",
@@ -3482,6 +3489,126 @@
     ],
     "ClassPages": [
       "Jaeger"
+    ]
+  },
+  {
+    "Term": "invisible marking",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Magus"
+    ]
+  },
+  {
+    "Term": "ritual to turn a familiar back into magical energy",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Magus"
+    ]
+  },
+  {
+    "Term": "self-defense teachings",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Magus"
+    ]
+  },
+  {
+    "Term": "invisible cloud of microscopic toxins",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Magus"
+    ]
+  },
+  {
+    "Term": "draw on for protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Artificer"
+    ]
+  },
+  {
+    "Term": "formidable defense",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Artificer"
+    ]
+  },
+  {
+    "Term": "field of magical protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Artificer"
+    ]
+  },
+  {
+    "Term": "Armies require protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Artificer"
+    ]
+  },
+  {
+    "Term": "nearly dying",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Artificer"
+    ]
+  },
+  {
+    "Term": "unmatched defense",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Artificer"
     ]
   }
 ]

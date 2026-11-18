@@ -1,0 +1,339 @@
+{
+  "name": "Iron Liner",
+  "slug": "iron-liner",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "“I think I’ve finally learned how to speak to children. Since coming here, I haven’t caused a single child to cry.”",
+    "The Iron Liner artificer specialization is rare to see in the wild, but ironically enough they are among the ones that are more easily recognizable compared to others: signified by a conspicuous scarring left on their skin and often on their soul, an understated mastery of their craft and a desire set in iron and buried deep within their chests, silently having them chug along.",
+    "They tend to make use of lightning and electricity to fuel their way forward, usually hailing from places torn in one way or another. Warfare, famines and other tragedies tend to paint the lives of Iron Liners like no other, yet trudge on they must and they will. They tend to be hardy folk that make the most they can, also having a strong tendency for helping their fellow people without a care for judgements.",
+    "In worlds like Eberron, the Iron Liners are the far and few that decide to go along the old forlorn lands and aid the stragglers of the Great War as they can, lingering in the past to forge a future onward. In others, such as the fantastical world of Thespis, the Iron Liners are a more proper group — a railroad crew that follows along the wrecks of warring states and overtaken villages to try and reconnect them to the living, breathing world that they had been cut off from."
+  ],
+  "features": [
+    {
+      "name": "The Warmth to be Knitted",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“No matter how cold the weather, the boiler room always burns hot — like Baba Yaga’s clay oven in the story I tell Aima when she’s feeling restless.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Despite any pains that the past may graft onto anyone, you’ve learnt that such burden can always be lifted with the right piece of intent, and you’ve learned just enough to be able to create something sincere for those around you. You gain proficiency in weaver’s tools. Once per long rest you can create a piece of woven fabric from the Warmth of a Kind Heart Artificer Infusion that only another creature may benefit from. A single creature may benefit from only one of these at any given time."
+        }
+      ]
+    },
+    {
+      "name": "Expanded Spell List",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Iron Liner Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Hail of Thorns, Hex"
+            },
+            {
+              "level": "5th",
+              "spells": "Calm Emotions, Warding Wind"
+            },
+            {
+              "level": "9th",
+              "spells": "Beacon of Hope, Lightning Bolt"
+            },
+            {
+              "level": "13th",
+              "spells": "Death Ward, Gate Seal"
+            },
+            {
+              "level": "17th",
+              "spells": "Dispel Evil and Good, Wall of Force"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Threading Arcs Towards Dawn",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“A needle threads the soul’s still depths — soft heart, steel shell, waiting calmly for dawn.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "You are an adept not only with engines and machinery, but also at forging a path ahead that cannot be stopped through any means, even if it means solving any unwanted quirks met along the way. You gain proficiency in martial ranged weapons and you don’t have disadvantage while using infused ranged weapons in close quarters."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you perform an attack, regardless of hit or miss, you gain one count of Electric Arc. For each Electric Arc count you currently have you deal an additional point of lightning damage on a hit. Electric Arc fizzles out and becomes 0 at the end of combat and you may hold a maximum count of (your proficiency bonus × 3) Electric Arc."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you have 4 or more Electric Arc, you may choose to push a hit target to their Breaking Point on a hit ranged attack. A creature remains at their Breaking Point until the end of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "From the Cracked Earth",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“The weaver’s trail winds onward, along the snowbound Danube — a mirror of home’s cracked soil.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sufferance will hardly ever allow you to stay still for too long, being a teacher for you to become an ever-watching sentinel to keep the people you wish to protect put together while those in your path remain severed and torn. You may spend your action to enter Channelling: Stitching. [BA] for the next 3 turns. While Channelling, you perform Sew It All Up against a target within 60 feet of you at the end of your turns, performing a ranged spell attack against them. On a hit, you deal 2d4 lightning damage plus your Electric Arc count."
+        },
+        {
+          "type": "paragraph",
+          "text": "If this hit would cause you to gain Electric Arc, gain an additional count and the hit also has crackling electricity linger on the target, Welding their mental faculties and wearing their focus down until the end of their next turn. This makes them suffer an additional 1d6 psychic damage whenever they suffer psychic damage or fail a Wisdom saving throw. Upon reaching 6th level, a creature undergoing Welding also suffers from having any psychic damage resistance or immunity negated for the duration."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the target was at their Breaking Point, after suffering from Welding they then suffer an additional amount of lightning damage equal to your Electric Arc count times the party’s Pulsing Field level (minimum 1). This instantly ends the target’s Breaking Point and you instead gain a total of 3 Electric Arc from this hit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you use Sew It All Up, add 2 Dynamo to the party’s Pulsing Field."
+        }
+      ]
+    },
+    {
+      "name": "Forward March",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“A minor incident. Let’s continue the journey.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nothing will stop you from the path you’ve set in iron, sewn in your brain and set alight with lightning. If you are moving toward a friendly creature, you ignore Hard Terrain and any effects that would cause you to become unable to move toward them, such as the frightened condition."
+        },
+        {
+          "type": "paragraph",
+          "text": "Furthermore, whenever you take an action you add 2 Dynamo to the party’s Pulsating Field."
+        }
+      ]
+    },
+    {
+      "name": "Glimpse of Hope",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Aside from their arcane talents, my hands are like anyone else’s. Yes, they were once bloodied, but now there are only calluses.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "You won’t be content in just aiding people half-heartedly, you wish to bring them hope, to allow them to see Dawn. You have carefully made a special piece of ammunition that you can attach to any ranged weapon, acting as a flare charged by the very electricity that always surrounds you. As an action during your turn, you may shoot the flare 120 feet up into the air. It bathes a radius within 120 feet of it in bright light and a further 240 feet in dim light."
+        },
+        {
+          "type": "paragraph",
+          "text": "Any friendly creatures within this range have advantage against being frightened or charmed, and when you do this you may spend any amount of Electric Arc to power up the flare, granting the chosen effects as per the following:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "cost",
+              "label": "Electric Arc Cost"
+            },
+            {
+              "key": "effect",
+              "label": "Effect"
+            }
+          ],
+          "rows": [
+            {
+              "cost": "2",
+              "effect": "Your lights are bathed in the tone of a bright yellow and also emit warmth in oranges to calm the hearts of all, giving a path toward the coming dawn. Any friendly creature who can see this flare within a 600-foot radius may choose to end one of their choice: the frightened condition, the charmed condition or the effects of any enchantment spell afflicting them."
+            },
+            {
+              "cost": "4",
+              "effect": "The flare grows ever brighter, showing the gaps at the armor of those who slither in darkness, having its dim light radius become bright light. Any friendly creature within that bright light’s radius has advantage on their first attack roll during their turn."
+            },
+            {
+              "cost": "6",
+              "effect": "The grand explosion of clarity blinds the eyes of those who hold back the steps toward freedom. All hostile creatures that can see the flare within 300 feet of you must pass a Constitution saving throw against your spell save DC or be blinded for one minute. They may re-attempt this saving throw at the end of their subsequent turns."
+            },
+            {
+              "cost": "8",
+              "effect": "Your piece of ammunition bursts into pure electricity, a cacophony of sound and light that cracks through the air like a whistle to bolden your allies’ charge. All friendly creatures within 600 feet that can see or hear the flare gain 4 Electric Arc."
+            },
+            {
+              "cost": "12",
+              "effect": "Heaven is split by your shot as its electricity brightens it like a blinking sun, bathing in light all of those that stand in the path of your march. Every hostile creature within 120 feet of you must pass a Wisdom saving throw against your spell save DC or reach their Breaking Point until the end of their next turn. At the end of your turn, you perform Sew It All Up against a number of individual targets equal to your proficiency bonus. This use does not generate Electric Arc."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You may do this once per long or short rest. You may have multiple effects trigger at once from a single flare shot. Upon reaching 16th level in artificer you may use this feature twice per short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Sewn Into Forever",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Sparks leap from crimson flame, order reborn in fury’s wake, till silence sunders the fragile dreams.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Although a passer-by through it, your relationship with life has been tightened and casted in steel, with every single day serving as another piece of your railway. Through this, you have come to learn that all the good and bad memories, every smile and every scar are what shape you as a person and they are the greatest machinations that may shape others as well."
+        },
+        {
+          "type": "paragraph",
+          "text": "As an action, once per short or long rest you may perform a ranged spell attack against a target creature within 60 feet of you and you do so at advantage. On a hit you deal 6d10 plus your Intelligence modifier lightning damage and have them reach their Breaking Point. Afterward, perform Sew It All Up against that target immediately afterward."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you do so, you don’t only fixate the wounds on your target’s body, but also your prowess in the eyes of your allies — brightening their way forward so they may live to return from the battlefield. After using this attack, for the rest of combat any friendly creature who was not blinded at the moment you used this gains advantage on their next Wisdom saving throw, regaining any spent uses of this at the start of their turn. This lasts until the end of combat."
+        },
+        {
+          "type": "paragraph",
+          "text": "Furthermore, if the target was suffering from any negative condition or effect (such as the effects of the slow spell), the remaining duration of the effect is doubled. This affects every negative condition or effect they are suffering at once."
+        },
+        {
+          "type": "paragraph",
+          "text": "Upon reaching 20th level you may do this twice per short or long rest."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Additional Rules",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Dynamo & Pulsing Field",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "A Pulsing Field is created whenever a creature from the party first deploys enough Dynamo into the party’s pool, and it is an array of machine or spell generated, electromagnetic or magical field that increasingly amplifies the powers of those inside it."
+            },
+            {
+              "type": "paragraph",
+              "text": "A Dynamo by itself is a representation of machinery and other thingamajigs that a character may use to contribute to this growing amplification field, and is used only to improve the current Pulsing Field level."
+            },
+            {
+              "type": "paragraph",
+              "text": "The current amount of Dynamo dictates the current Pulsing Array field and its effects, beginning at 0 and lasting for up to three turns after reaching 3rd Level, then resetting to 0. When the party attains a Pulsing Field Lv. 1 any spellcaster may deploy the field as a bonus action during their turn, and it covers an area of 80 feet around them. This area increases by 80 feet per each level higher than 1, such as having a maximum area of 240 feet at Pulsing Field Lv. 2."
+            },
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Pulsing Field Level"
+                },
+                {
+                  "key": "dynamo",
+                  "label": "Min. Dynamo"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effects"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "Level I",
+                  "dynamo": "10",
+                  "effect": "All friendly creatures within reach deal an additional 1d4 lightning or psychic damage on any hit."
+                },
+                {
+                  "level": "Level II",
+                  "dynamo": "25",
+                  "effect": "All friendly creatures within reach gain an additional 5 feet of movement and a +1 to Dexterity and Wisdom saving throws."
+                },
+                {
+                  "level": "Level III",
+                  "dynamo": "50",
+                  "effect": "After using a Special Ability, friendly creatures within reach deal an additional amount of lightning or psychic damage equal to half their damage die’s value, rounded up (such as a 4d8 dealing an additional 16 damage). This effect lasts until the end of their next turn."
+                },
+                {
+                  "level": "Alt. Level III",
+                  "dynamo": "50",
+                  "effect": "All friendly creatures within reach deal an additional 2d8 lightning or psychic damage when dealing damage instead."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "These effects are additive. For the sake of ease, an alternative Pulsating Field Lv. 3 option is displayed if a DM would rather not engage with the regular rule."
+            },
+            {
+              "type": "paragraph",
+              "text": "A Special Ability is any ability that would spend a significant class resource or is of significance to the class itself, such as the following examples:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "An Inspiration has been used by a player during their turn.",
+                "Once per short or long rest abilities such as the Paladin and Cleric’s Channel Divinity.",
+                "An Artificer using their Flash of Genius feature.",
+                "A Bard granting their Bardic Inspiration.",
+                "A Barbarian entering their Rage.",
+                "A Druid using their Wildshape feature.",
+                "A Fighter’s Second Wind or Action Surge.",
+                "A Monk or Sorcerer that has spent at least 3 Ki/Sorcery Points during their turn.",
+                "A Ranger using their Primeval Awareness action.",
+                "A Rogue taking the Hide action.",
+                "A Warlock spending any spell slot.",
+                "A Wizard spending their highest-levelled spell slot, or a 5th or higher levelled spell slot."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Ultimately, a DM may choose what counts and doesn’t count as a Special Ability for the sake of a Pulsing Field. At the end of combat the Pulsating Field collapses and all Dynamo count is reset to 0."
+            }
+          ],
+          "subtitle": "Field Rule"
+        },
+        {
+          "name": "Channelling",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Channelling is a state of being where a creature focused into a single purpose, such as chanting a long rite or amounting a large amount of their magic into a single point."
+            },
+            {
+              "type": "paragraph",
+              "text": "This state is entered with certain features and abilities and usually holds effects at the end or start of many turns, with it being broken only when the Channelling creature is knocked unconscious."
+            },
+            {
+              "type": "paragraph",
+              "text": "Regardless of what, when a creature is Channelling they instantly spend their action, bonus action or reaction for the duration of this Channelling state (these being henceforth referred to as A, BA and RE for ease)."
+            }
+          ],
+          "subtitle": "Optional Rule"
+        }
+      ]
+    }
+  ]
+}

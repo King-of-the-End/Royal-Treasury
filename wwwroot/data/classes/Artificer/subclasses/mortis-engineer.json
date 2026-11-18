@@ -1,0 +1,193 @@
+{
+  "name": "Mortis Engineer",
+  "slug": "mortis-engineer",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "Before manikin technology revolutionized artificial life, the Scions’ earliest experiments emerged from the blood-soaked laboratories of the Mortis Engineers. These deranged pioneers arose during the First War’s darkest hours, when desperation bred monsters and necessity justified atrocity. While their contemporary counterparts work with sterile materials like gold and ivory, Mortis Engineers reveled in the vile work of grafting lightning science to still-warm flesh.",
+    "From their chambers high in what would become the Scions’ Fortress, screams regularly echoed throughout the walls as Mortis Engineers refined their horrific craft. Their experiments involved shocking living subjects until they discovered the precise voltage needed to animate dead tissue. The failures far outnumbered the successes—countless bodies reduced to charred husks, nervous systems burned out, and muscles exploded from within.",
+    "In battle, Mortis Engineers are nothing short of nightmarish. Their mastery of lightning allows them to scorch their enemies from the inside out, before raising the smoking corpses as puppets. Their signature technique involves driving electrified metal rods through nerve clusters and major organs, creating undead that spasm and twitch with unnatural speed under the absolute command of their killer. These reanimated horrors leak ozone and burned flesh, their bodies wrapped in crude metal conductors that occasionally spark and sizzle against rotting skin.",
+    "The Mortis Engineers’ development of resurrection chamber technology came at an unspeakable cost in human suffering. Their research required countless “fresh” subjects, leading to whispered rumors about where these specimens truly came from. Though most Mortis Engineers eventually abandoned organic matter for the cleaner manikin science, the old guard continues their grotesque work. Their hidden laboratories are harrowing galleries of half-formed bodies suspended in lightning-charged tanks, waiting to be perfected or mercifully destroyed.",
+    "Today, the Mortis Engineers operate in utmost secrecy within the fortress’s highest towers. Even the Scions, who pride themselves on scientific progress at any cost, keep their distance from these deranged practitioners. While manikin achievements are celebrated in public squares, Mortis Engineers toil in shadow-cloaked workshops that reek of decay. The constant hum of their generators barely masks the sounds from within—the crackle of lightning, the buzz of conductors, and sometimes, if one listens closely, the whimpers of their latest subjects as they push the boundaries between life, death, and mechanical horror."
+  ],
+  "features": [
+    {
+      "name": "Tool Proficiency",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain proficiency in the Medicine skill. If you are already proficient in it, you gain proficiency in another skill of your choice."
+        }
+      ]
+    },
+    {
+      "name": "Mortis Engineer Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You always have certain spells prepared after you reach particular levels in this class, as shown in the Mortis Engineer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "False Life, Witch Bolt"
+            },
+            {
+              "level": "5th",
+              "spells": "Lightning Charged, Ray of Enfeeblement"
+            },
+            {
+              "level": "9th",
+              "spells": "Lightning Bolt, Revivify"
+            },
+            {
+              "level": "13th",
+              "spells": "Graveyard Shuffle, Jumping Jolt"
+            },
+            {
+              "level": "17th",
+              "spells": "Negative Energy Flood, Raise Dead"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jumpstart",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can channel lightning to mend wounds. Once on your turn, when you deal lightning damage to a creature with a spell of 1st level or higher, you can choose to heal the creature instead. The creature regains hit points equal to your Intelligence modifier multiplied by the spell’s level (minimum of 1). If the spell affects multiple creatures, choose one which receives the healing; the others take the damage as normal. Starting at 9th level, you can ignore this limitation and heal multiple creatures at once."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you attempt to heal a creature in this way on consecutive rounds, the creature must succeed on a Constitution saving throw or take the lightning damage as normal instead. The DC for this save starts at 15 and increases by 5 for each subsequent round the healing is used on that creature. This DC resets after the creature doesn’t receive healing from this feature for 1 round."
+        }
+      ]
+    },
+    {
+      "name": "Galvanized Flesh",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You master the art of reanimating corpses through electricity. When you deal lightning damage to a corpse of size Small or larger with a spell of 1st level or higher, you can take a bonus action to embed metallic rods into the nervous system of the corpse and briefly bring it to unlife as a Zombie."
+        },
+        {
+          "type": "paragraph",
+          "text": "The zombie gains temporary hit points equal to twice your artificer level, and it gains a bonus to its attack and damage rolls equal to your Intelligence modifier (minimum of +1)."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can control up to 2 zombies at once. This increases to 3 zombies at 9th level and 4 zombies at 17th level. If you attempt to create more zombies than this limit allows, your oldest zombie crumbles to dust. A zombie disintegrates after 10 minutes, when it drops to 0 hit points, or if you take a bonus action to extract the rods, killing it."
+        },
+        {
+          "type": "paragraph",
+          "text": "The zombies are friendly to you and your companions. In combat, they share your initiative count, but they take their turns immediately after yours. They obey your verbal commands (no action required by you). If you don’t issue a command, or they can’t see and hear you directly, they take the Dodge action."
+        },
+        {
+          "type": "paragraph",
+          "text": "When a zombie you created is reduced to 0 hit points, it releases a surge of electricity. One creature of your choice within 15 feet of the zombie must succeed on a Dexterity saving throw against your spell save DC or take lightning damage equal to your Intelligence modifier (minimum of 1) and have its speed reduced by 10 feet until the start of its next turn."
+        }
+      ]
+    },
+    {
+      "name": "Death Lightning",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You learn to interweave necrotic and electrical energies. Whenever you cast a spell that deals necrotic damage, you can choose to have it deal lightning damage instead and vice versa."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, the legions you raise can act as catalysts for your spells. When you cast a spell with a range of touch, choose one of your zombies within 100 feet of you; it can deliver the spell as if it had cast the spell. Your zombie must use its reaction to deliver the spell when you cast it."
+        }
+      ]
+    },
+    {
+      "name": "Shock Troopers",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your expertise in electrical animation enhances your zombies’ capabilities. Each zombie you create has a speed of 40 feet, and you can choose to have its attacks deal lightning damage instead of bludgeoning damage."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, your zombies gain the following bonus action:"
+        },
+        {
+          "type": "subsection",
+          "title": "System Overload",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The zombie attempts to shock one creature it can see within 5 feet of it. The target must succeed on a Constitution saving throw against your spell save DC or take 1d6 lightning damage and have its speed reduced by 10 feet until the end of its next turn. If the target has taken lightning damage since the start of its last turn, it automatically fails this saving throw. A creature whose speed is reduced to 0 by this feature has the stunned condition until the start of its next turn."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unending Legion",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You’ve mastered the art of mass reanimation. You create a specialized container that uses manikin technology to enhance your undead servants. This container can take the form of a coffin, chest, backpack, or other similar receptacle of your choice, which you must carry on your person."
+        },
+        {
+          "type": "paragraph",
+          "text": "Each zombie you create can be enhanced with a metallic shell from your container. An enhanced zombie gains these benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Its Armor Class equals 12 + your Intelligence modifier.",
+            "It adds your Intelligence modifier to saving throws.",
+            "It has immunity to lightning damage."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, when you take a bonus action as part of your Galvanized Flesh feature, you can animate a number of zombies equal to the level of the spell you cast, up to your maximum limit, provided sufficient corpses are affected by your lightning spell."
+        }
+      ]
+    },
+    {
+      "name": "Flesh Titan",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You’ve perfected a volatile combination of electrical shocks and enhancement serums. As an action, you can inject a zombie under your control within 5 feet of you with this unstable mixture, causing its flesh to swell and crackle with intense electrical energy. It becomes a Flesh Golem for 1 minute, but still benefits from any of your features that affect zombies."
+        },
+        {
+          "type": "paragraph",
+          "text": "At the end of the minute, or when it reaches 0 hit points, it dies in an explosion of lightning. Each creature within a 20-foot radius centered on the flesh golem must succeed on a Constitution saving throw against your spell save DC or take 4d8 lightning damage."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once you’ve used this feature, you can’t use it again until you finish a long rest or expend a spell slot of 5th level or higher to use it again."
+        }
+      ]
+    }
+  ]
+}

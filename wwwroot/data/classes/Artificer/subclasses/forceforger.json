@@ -1,0 +1,215 @@
+{
+  "name": "Forceforger",
+  "slug": "forceforger",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "Forceforgers specialize in creating special devices that produce force fields - physical manifestations of force which occupy small regions of space. As adventurers, Forceforgers aim to use their force fields to protect themselves and their allies, but also delight in how useful free-standing panels of force can be as a tool for problem solving."
+  ],
+  "features": [
+    {
+      "name": "Forcefield Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You always have certain spells prepared after you reach particular levels in this class, as shown in the Forcefield Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Forcefield Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Shield, Tenser’s Floating Disk"
+            },
+            {
+              "level": "5th",
+              "spells": "Regenerating Ward, Silence"
+            },
+            {
+              "level": "9th",
+              "spells": "Leomund’s Tiny Hut, Magic Circle"
+            },
+            {
+              "level": "13th",
+              "spells": "Death Ward, Otiluke’s Resilient Sphere"
+            },
+            {
+              "level": "17th",
+              "spells": "Antilife Shell, Wall of Force"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Field Projector",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain proficiency with Smith’s tools. If you already have this tool proficiency, you instead gain proficiency with one set of artisan’s tools of your choice. Over the course of a long rest, you can use Smith’s tools to imbue a Tiny nonmagical object you touch, such as a gauntlet, with the capabilities of projecting force fields, thereby turning it into your Field Projector. The Field Projector loses its magic if you create another one, but otherwise lasts indefinitely. You can use the Field Projector as a spellcasting focus for your artificer spells."
+        },
+        {
+          "type": "paragraph",
+          "text": "While you are holding or wearing your Field Projector, you can cast one of your Forcefield Spells without expending a spell slot, and then cannot do so again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Force Panel",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "While you are holding or wearing your Field Projector, you can use your bonus action to create a 1 inch thick, 5 foot square transparent panel of force in an unoccupied space within 30 feet of you in an orientation of your choice. The panel has the following properties."
+        },
+        {
+          "type": "subsection",
+          "title": "Duration",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The panel floats in place for one minute, until it is destroyed, or until you create another one."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Load Bearing",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The panel can support 50 lbs of weight for each level you have in this class. If more weight is placed on it, the panel is instantly destroyed."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Cover",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The panel is an object with an AC of 12 + your Intelligence modifier and hit points equal to your artificer level + your Intelligence modifier (minimum 1 hit point). The panel is solid, blocking movement through it, and it can be used as half cover by Medium and smaller creatures."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Damage Reduction",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "If a friendly creature is subjected to an attack or a Dexterity saving throw that is affected by the panel’s Cover and it still takes damage, that damage is reduced by an amount equal to your Intelligence modifier (minimum 1). A creature can benefit from this damage reduction no more than once per turn."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Forceful Shove",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per turn when you cast an artificer spell, you can use your Field Projector to conjure a force field and slam it into one of the spell’s targets of your choice. The target must succeed on a Strength saving throw against your spell save DC or take 1d6 force damage and be pushed 10 feet in a horizontal direction of your choice."
+        },
+        {
+          "type": "paragraph",
+          "text": "The force damage increases to 2d6 when you reach 15th level in this class."
+        }
+      ]
+    },
+    {
+      "name": "Improved Field Projector",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your Force Panel feature improves in the following ways:"
+        },
+        {
+          "type": "subsection",
+          "title": "Two Panels",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can now maintain two Force Panels at once. If you create another panel while two exist, you choose which is destroyed."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Reactive Panel",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When a creature you can see within 30 feet of you is targeted by an attack or makes a Dexterity saving throw, you can use your reaction to create one Force Panel between the target and the source of damage, thereby granting it cover from the effect."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flyrokinetic Master",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you use your bonus action or your reaction to create a Force Panel, you can cast one of your Forcefield spells instead of manifesting a Panel, so long as the spell has a casting time of 1 action. The spell expends a spell slot as normal. Once you cast a spell in this way, you can’t do so again until you finish a short or long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, your Force Panels grant an additional +1 bonus to AC and Dexterity saving throws to creatures benefiting from its cover."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Additional Forceforger Infusions",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Moving Platform",
+          "subtitle": "Prerequisite: 6th-level Forceforger | Item: Field Projector",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can use your Force Panel feature in a special way, requiring your concentration when you do so, as if you were concentrating on a spell. As a bonus action on each of your turns, you can cause the panel to move up to 30 feet through space, carrying with it any creatures or objects it is supporting. The panel’s movement fails to move unwilling creatures or move through the space of structures, coming to a halt on attempting to do so."
+            },
+            {
+              "type": "paragraph",
+              "text": "If you lose concentration, the panel remains in place until it is destroyed."
+            }
+          ]
+        },
+        {
+          "name": "Personalized Force Shields",
+          "subtitle": "Prerequisite: 17th-level Forceforger | Item: Field Projector (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As an action, you can use your Field Projector to bolster one willing creature that you touch with a flexible force field that surrounds their body. It gains a number of temporary hit points equal to your level in this class."
+            },
+            {
+              "type": "paragraph",
+              "text": "This infusion is so advanced that you can apply it to the Field Projector even if it already bears another infusion."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

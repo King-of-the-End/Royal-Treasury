@@ -1,0 +1,257 @@
+{
+  "name": "Alchemist",
+  "slug": "alchemist",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "An Alchemist is an expert at combining reagents to produce mystical effects. Alchemists use their creations to give life and to leech it away. Alchemy is the oldest of artificer traditions, and its versatility has long been valued during times of war and peace."
+  ],
+  "features": [
+    {
+      "name": "Tool Proficiency",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you adopt this specialization at 3rd level, you gain proficiency with alchemist’s supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice."
+        }
+      ]
+    },
+    {
+      "name": "Alchemist Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Alchemist Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Healing Word, Ray of Sickness"
+            },
+            {
+              "level": "5th",
+              "spells": "Flaming Sphere, Melf’s Acid Arrow"
+            },
+            {
+              "level": "9th",
+              "spells": "Gaseous Form, Mass Healing Word"
+            },
+            {
+              "level": "13th",
+              "spells": "Blight, Death Ward"
+            },
+            {
+              "level": "17th",
+              "spells": "Cloudkill, Raise Dead"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Experimental Elixir",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 3rd level, whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir’s effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir’s effect from the Experimental Elixir table."
+        },
+        {
+          "type": "paragraph",
+          "text": "Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir’s effect separately. Each elixir requires its own flask."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "roll",
+              "label": "d6"
+            },
+            {
+              "key": "effect",
+              "label": "Effect"
+            }
+          ],
+          "rows": [
+            {
+              "roll": "1",
+              "effect": "Healing. The drinker regains a number of hit points equal to 2d4 + your Intelligence modifier."
+            },
+            {
+              "roll": "2",
+              "effect": "Swiftness. The drinker’s walking speed increases by 10 feet for 1 hour."
+            },
+            {
+              "roll": "3",
+              "effect": "Resilience. The drinker gains a +1 bonus to AC for 10 minutes."
+            },
+            {
+              "roll": "4",
+              "effect": "Boldness. The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute."
+            },
+            {
+              "roll": "5",
+              "effect": "Flight. The drinker gains a flying speed of 10 feet for 10 minutes."
+            },
+            {
+              "roll": "6",
+              "effect": "Transformation. The drinker’s body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alchemical Savant",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 5th level, you’ve developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist’s supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1)."
+        }
+      ]
+    },
+    {
+      "name": "Restorative Reagents",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 9th level, you can incorporate restorative reagents into some of your works:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Whenever a creature drinks an experimental elixir you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).",
+            "You can cast Lesser Restoration without expending a spell slot and without preparing the spell, provided you use alchemist’s supplies as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chemical Mastery",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "By 15th level, you have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You gain resistance to acid damage and poison damage, and you are now immune to the poisoned condition.",
+            "You can cast Greater Restoration and Heal without expending a spell slot, without preparing the spell, and without providing the material component, provided you use alchemist’s supplies as the spellcasting focus. Once you cast either spell with this feature, you can’t cast that spell with it again until you finish a long rest."
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Additional Alchemist Infusions",
+      "style": "option-cards",
+      "features": [
+        {
+          "name": "Elixir Diffuser",
+          "subtitle": "Prerequisite: 6th-level Alchemist | Item: A flask stopper",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can place this flask stopper on a flask containing one of your Experimental Elixirs. As an action, a creature can release the flask’s contents as a vapor that fills the air in a 5 foot radius around it. Each creature in that area can inhale the vapor to gain the benefit of the elixir as if it had drunk it. However, the duration of the effect, the number of hit points it restores and the number of temporary hit points it provides are all halved."
+            },
+            {
+              "type": "paragraph",
+              "text": "Once the diffuser is used in this way, it cannot be used again until the next dawn."
+            }
+          ]
+        },
+        {
+          "name": "Empowered Elixir",
+          "subtitle": "Prerequisite: 17th-level Alchemist | Item: Alchemist’s supplies (requires attunement)",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you create an Experimental Elixir using these alchemist’s supplies, its effects are empowered."
+            },
+            {
+              "type": "paragraph",
+              "text": "This infusion is so advanced that you can apply it to a set of alchemist’s supplies even if they already bear another infusion."
+            },
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "die",
+                  "label": "d6"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                }
+              ],
+              "rows": [
+                {
+                  "die": "1",
+                  "effect": "Healing. The drinker regains a number of hit points equal to 4d4 + your Intelligence modifier."
+                },
+                {
+                  "die": "2",
+                  "effect": "Swiftness. The drinker’s speed increases by 20 feet for 1 hour."
+                },
+                {
+                  "die": "3",
+                  "effect": "Resilience. The drinker gains a +2 bonus to AC for 10 minutes."
+                },
+                {
+                  "die": "4",
+                  "effect": "Boldness. The drinker can roll 1d6 and add the number rolled to every attack roll and saving throw it makes for 1 minute."
+                },
+                {
+                  "die": "5",
+                  "effect": "Flight. The drinker gains a flying speed equal to its walking speed for 10 minutes."
+                },
+                {
+                  "die": "6",
+                  "effect": "Transformation. The drinker’s body is transformed as if by the alter self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes. Additionally, while transformed, one of the drinker’s ability scores of their choice increases by 4, to a maximum of 30."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Injector Projector",
+          "subtitle": "Prerequisite: 6th-level Alchemist | Item: Alchemist’s supplies",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "These supplies include large syringes and a long metal tube. As an action, a creature can transfer the contents of a potion they are holding into a syringe and fire it through the tube at a creature it can see within 60 feet. The creature gains the effects of the potion as if it had drunk it. An unwilling creature can make a Dexterity saving throw against your spell save DC to avoid being injected. You can load and fire a syringe with one of your Experimental Elixirs as part of the action you use to create it."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

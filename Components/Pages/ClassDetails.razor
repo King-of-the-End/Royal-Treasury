@@ -12,6 +12,7 @@
 
 @inject IWebHostEnvironment Environment
 @inject NavigationManager Navigation
+@inject SpellService SpellService
 @inject Microsoft.Extensions.Logging.ILogger<ClassDetails> Logger
 
 <PageTitle>@(IsSubclassPage ? $"{SubclassDisplayName} — {DisplayName}" : DisplayName)</PageTitle>
@@ -2064,6 +2065,71 @@ private RenderFragment RenderBlock(JsonElement block) => builder =>
         builder.CloseElement();
     };
 
+    // Gained-spell tables link to the spell catalogue, never to the glossary.
+    // The label convention covers all current subclass spell tables; the
+    // optional spell_links flag also supports future custom column labels.
+    private static bool IsGainedSpellColumn(JsonElement column)
+    {
+        var flag = GetProperty(column, "spell_links");
+        if (flag is JsonElement explicitFlag)
+            return explicitFlag.ValueKind == JsonValueKind.True;
+
+        var label = (GetString(column, "label") ?? string.Empty).Trim();
+        return label.Equals("Spell", StringComparison.OrdinalIgnoreCase)
+            || label.Equals("Spells", StringComparison.OrdinalIgnoreCase)
+            || label.EndsWith(" Spells", StringComparison.OrdinalIgnoreCase)
+            || label.Equals("Spell List", StringComparison.OrdinalIgnoreCase)
+            || label.Equals("Expanded Spell List", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private RenderFragment RenderGainedSpells(JsonElement value) => builder =>
+    {
+        var seq = 0;
+        // Existing spell tables use comma-separated names; also accept arrays.
+        var names = value.ValueKind == JsonValueKind.Array
+            ? value.EnumerateArray().Select(ValueToText).ToArray()
+            : ValueToText(value).Split(',', StringSplitOptions.TrimEntries);
+
+        for (var i = 0; i < names.Length; i++)
+        {
+            if (i > 0) builder.AddContent(seq++, ", ");
+            var name = names[i].Trim();
+            if (string.IsNullOrWhiteSpace(name) || name is "—" or "–" or "-"
+                || int.TryParse(name, out _))
+            {
+                builder.AddContent(seq++, name);
+                continue;
+            }
+
+            var route = SpellService.ResolveSpellReference(name);
+            // The catalogue uses these shorter names for the equivalent spells.
+            if (route is null)
+            {
+                var catalogueName = name.Replace('’', '\'').ToLowerInvariant() switch
+                {
+                    "melf's acid arrow" => "Acid Arrow",
+                    "nystul's magic aura" => "Magic Aura",
+                    "tenser's floating disk" => "Floating Disc",
+                    "absorb elements" => "Absorb Energy",
+                    _ => name
+                };
+                route = SpellService.ResolveSpellReference(catalogueName);
+            }
+            // Do not invent detail URLs for spells that have not been digitised.
+            var url = route is not null
+                ? $"/spells/{Uri.EscapeDataString(route.LevelFolder)}/{Uri.EscapeDataString(route.Slug)}"
+                : $"/spells?search={Uri.EscapeDataString(name)}";
+
+            builder.OpenElement(seq++, "a");
+            builder.AddAttribute(seq++, "class", "class-gained-spell-link");
+            builder.AddAttribute(seq++, "href", url);
+            if (route is null)
+                builder.AddAttribute(seq++, "title", "Search spell catalogue (no matching detail page yet)");
+            builder.AddContent(seq++, name);
+            builder.CloseElement();
+        }
+    };
+
     private RenderFragment RenderDynamicTable(JsonElement table, string cssClass) => builder =>
     {
         var columns = GetProperty(table, "columns");
@@ -2147,8 +2213,9 @@ private RenderFragment RenderBlock(JsonElement block) => builder =>
                 {
                     builder.AddContent(
                         seq++,
-                        RenderGlossaryText(
-                            ValueToText(value)));
+                        IsSubclassPage && IsGainedSpellColumn(column)
+                            ? RenderGainedSpells(value)
+                            : RenderGlossaryText(ValueToText(value)));
                 }
 
                 builder.CloseElement();

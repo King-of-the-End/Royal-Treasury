@@ -1,0 +1,137 @@
+{
+  "name": "Infernal Smith",
+  "slug": "infernal-smith",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "Those that churn the furnaces of the Nine Hells and the Abyss have honed their craft for untold centuries, with their secrets being jealously guarded. By gleaming some of this knowledge, you can take and give power just like them, and resemble them in spirit."
+  ],
+  "features": [
+    {
+      "name": "Bonus Proficiencies",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain proficiency with smith’s tools. If you already have this tool proficiency, you gain proficiency with one other type of artisan’s tools of your choice. You also gain proficiency with three martial weapons of your choice."
+        }
+      ]
+    },
+    {
+      "name": "Infernal Smith Spells",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You always have certain spells prepared after you reach particular levels in this class, as shown in the Infernal Smith Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Artificer Level"
+            },
+            {
+              "key": "spells",
+              "label": "Infernal Smith Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Bane, Burning Hands"
+            },
+            {
+              "level": "5th",
+              "spells": "Mind Spike, Scorching Ray"
+            },
+            {
+              "level": "9th",
+              "spells": "Ashardalon’s Stride, Enemies Abound"
+            },
+            {
+              "level": "13th",
+              "spells": "Charm Monster, Wall of Fire"
+            },
+            {
+              "level": "17th",
+              "spells": "Hold Monster, Immolation"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "title": "Source Note",
+          "paragraphs": [
+            "The original text states that the spell plated veil is included in the source document, although it is not listed in the subclass’s spell table."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pacts Borne of Hatred",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, your creations come bearing great power, at great cost. When a creature starts its turn and is using an item bearing one of your infusions, it can invoke its contract, making a Charisma check as it does so. On a failed check, the creature cannot invoke its contract again until it finishes a long rest. On a pass, the creature gains the following benefits until the start of its next turn:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The creature has +1 AC.",
+            "When the creature deals damage, it can reroll a number of damage dice equal to your Intelligence modifier (a minimum of 1) and retain the higher roll."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can expend a spell slot to turn a failed check into a successful one instead (no action required)."
+        }
+      ]
+    },
+    {
+      "name": "Dregs of Power",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 5th level, you can reap the benefits of your contracts being fulfilled, barely scraping enough power to avoid suspicion."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you start your turn, you can gain a +1 bonus to either your melee attack rolls or your damage rolls for melee weapons. For each creature that has currently invoked its contract, you gain an additional +1 to allocate."
+        }
+      ]
+    },
+    {
+      "name": "Desperate Pledge",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 9th level, your easy access to the souls of your allies makes it easier to compel them in ways that suit you. When you use your Flash of Genius feature to assist a creature that has invoked its contract, they gain an additional +1 to the check. You can now use Flash of Genius to add to missed attack rolls, potentially turning a miss into a hit."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, a creature that attempts to invoke its contract can choose to gain disadvantage on the check. If it does so, it can reroll all damage dice, rather than a selection."
+        }
+      ]
+    },
+    {
+      "name": "Debt to the Soul Forge",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 15th level, your presence has begun to seep into those that bear your profane weaponry, for your own benefit. When you cast a spell, you can act as though you were in the space of any creature that has invoked its contract as well as your own space."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, whenever you use a spell slot to automatically pass the check for a creature to invoke its contract, you gain the benefits of success as well as the creature that made the check."
+        }
+      ]
+    }
+  ]
+}

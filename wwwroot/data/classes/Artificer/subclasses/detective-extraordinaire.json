@@ -1,0 +1,198 @@
+{
+  "name": "Detective Extraordinaire",
+  "slug": "detective-extraordinaire",
+  "class": "Artificer",
+  "subclass_feature": "Artificer Specialist",
+  "summary": "TBA",
+  "introduction": [
+    "A Detective Extraordinaire isn’t exactly an inventor at heart but one who uses technology and ingenious application to further their goals, looking either to push themselves or a cause, usually in advantage of the very people, for wits are the one thing that cannot be bought by money.",
+    "Equipped with tremendous intelligence, they travel the worlds solving both cases and societal problems with equally dashing as revolting solutions, stopping at nothing to become their own Master Detective.",
+    "They may be found as Harpers disguised as Private Detectives around the shallow streets of Waterdeep, in Faêrun, or might even spread out as info collectors and brokers amongst many other operations around the realms."
+  ],
+  "features": [
+    {
+      "name": "Expanded Spell List",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Detective Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Detective Level"
+            },
+            {
+              "key": "spells",
+              "label": "Detective Spells"
+            }
+          ],
+          "rows": [
+            {
+              "level": "3rd",
+              "spells": "Shakewave, Unseen Servant"
+            },
+            {
+              "level": "5th",
+              "spells": "Locate Object, Metalbloom"
+            },
+            {
+              "level": "9th",
+              "spells": "Clairvoyance, Tongues"
+            },
+            {
+              "level": "13th",
+              "spells": "Divination, Locate Creature"
+            },
+            {
+              "level": "17th",
+              "spells": "Legend Lore, Scrying"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tools of a Detective",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Like any grand detective or keen-eyed activist from before, you’ve learnt how to perform a well conducted deduction as needed. You gain proficiency in Investigation, or expertise in it if you were already proficient. Furthermore, you also share the thought that to know how others work, you’ve got to learn a thing or two from their trade; choose one: (A) You gain proficiency in thieves’ tools or (B) You learn how to speak Thieves’ Cant."
+        }
+      ]
+    },
+    {
+      "name": "In the Culprit’s Shoes",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "People might call you a fool for your idealism and the rare methods you employ to learn about your fellow man, yet you know better than them that for the well-being of all this is all necessary. Either through your own deductive skills and detailed explanation or through a device you’ve invented, you manage to reconstruct a course of action that happened inside a 60-ft. cube around you, which molds to fit the room you are in. By using a very descriptive process or that machine, you and other creatures can see an illusion of what has happened inside that area for the past hour, using clues and details around the area to deduce so. To do this, you must spend at least ten minutes inside the area."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you’ve spent an hour inside that area or with each Glaring Clue (that is, a clue that DM determines already counts towards this) that you’ve collected you gain additional insight into the case, being able to deduce what happened within the space of an additional day per hour or Glaring Clue spent. You might get facts wrong as per the DM’s discretion in cases such as another creature purposefully planting evidence, to which you may pass an Investigation DC to recognize as a fake or not. In such cases, the DC to be rolled is decided by the DM, who does not have to reveal if you have succeeded or failed this roll, instead only needing to describe what you perceive through your deduction."
+        }
+      ]
+    },
+    {
+      "name": "Deduction Start!",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Someone of your standing must always be ready for action when it comes knocking at your door, as it often does for anyone who wishes to bring change about. As such, you are always prepared — after rolling initiative but before the first creature in the initiative order you may take the Ready action."
+        },
+        {
+          "type": "paragraph",
+          "text": "Upon reaching 12th level in Artificer, your preparations have come to another level, allowing for a quick witted movement before any others. Once per long rest, you may choose to have one extra turn at initiative count 20, once per combat. During this turn you are only preparing the battlefield, being unable to take the Attack action or the Cast a Spell action if it is targeting a hostile creature or area containing hostile creatures."
+        }
+      ]
+    },
+    {
+      "name": "Prepared Fool",
+      "level": "5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Nothing is built in one day, much less a grand archive of knowledge. You, however, have been taking notes — building up your own cookbook to remedy any unforeseen situation you and your comrades may find yourselves in. As such, during a long rest you may create up to half your proficiency bonus’ worth of the following selection of Artificer Infusions, rounded down:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "name",
+              "label": "Artificer Infusion"
+            }
+          ],
+          "rows": [
+            {
+              "name": "Collective’s Pocket Watch"
+            },
+            {
+              "name": "Faker’s Grenade"
+            },
+            {
+              "name": "Friendly Warning"
+            },
+            {
+              "name": "Junk Surprise"
+            },
+            {
+              "name": "Monocle of Breaking Down"
+            },
+            {
+              "name": "Replicate Magic Item"
+            },
+            {
+              "name": "Vibroweld Morph-Combat Cane"
+            },
+            {
+              "name": "Wind-up Spanner"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These gadgets are usually made of rackety materials and are highly volatile, so they tend to break down by your next long rest, causing them to be lost if not used but providing scrap so that you don’t have to waste any gold in their creation. Furthermore, you’ve learnt how to keep the knowledge of materials like these on the down low, having any creature who attempts an Insight skill check against you be forced to do so at disadvantage."
+        }
+      ]
+    },
+    {
+      "name": "Quick Witted",
+      "level": "9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Although a reactionary movement may not be the right call always, it’s important for any self-respecting detective to be aware enough to always be on the hair trigger to catch the right moment to put a plan into action. As such, you may add your Intelligence modifier as a bonus to your initiative rolls and use it instead of Dexterity for saving throws. Furthermore you gain an additional reaction during your turn."
+        }
+      ]
+    },
+    {
+      "name": "Exploit the Strong",
+      "level": "15",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your investigative genius is unmatched and has been allowed to grow into a menace that won’t be easily dealt with. You know just the right strategy to have your comrades bring those who oppress you to their knees, as such you may spend a bonus action during your turn to designate a target hostile creature that you can see within 120 ft. of you as a Culprit!"
+        },
+        {
+          "type": "paragraph",
+          "text": "While being a Culprit!, a creature suffers an additional 2 Tremor whenever it is hit and suffers a critical hit on a roll of 18–20, before any modifiers. The condition ends after one minute, after the Culprit! suffers a critical hit or after the Culprit! is knocked unconscious. When a Culprit! suffers a critical hit, they also suffer from Tremor Burst."
+        },
+        {
+          "type": "paragraph",
+          "text": "You may assign a creature as a Culprit! up to three times per long rest, but may only do so once per creature."
+        },
+        {
+          "type": "paragraph",
+          "text": "Furthermore, your deductive capability to profile someone has truly flourished, as such while outside of combat you may spend a minute to analyze a creature or 120-ft. location for your advantage:"
+        },
+        {
+          "type": "subsection",
+          "title": "If you analyze a creature",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You must pass an Investigation check against a DC that is equal to the target’s CR (maximum of 14) + their Insight modifier. On a success, you may choose to deduce their maximum hit points, damage vulnerabilities, damage resistances and immunities or what magic items they are currently attuned to. On a failure, you cannot attempt to analyze them until the next day."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "If you analyze a location",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You gain a +1 bonus to hit and to damage while within this area, also adding a bonus modifier equal to half your Intelligence modifier, rounded down, to any Dexterity saving throws and Perception checks while inside the area, as you know exactly how and where everything is."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
