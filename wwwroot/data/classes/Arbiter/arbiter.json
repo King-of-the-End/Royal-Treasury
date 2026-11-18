@@ -574,7 +574,7 @@
           },
           {
             "type": "paragraph",
-            "text": "At 2nd level, you acquire two primeval birthrights of your choice. The birthright options that you can choose from are detailed at the end of the class description. When you reach certain arbiter levels, you gain additional birthrights of your choice, as shown in the Birthrights column of the Arbiter table."
+            "text": "At 2nd level, you acquire two primeval birthrights of your choice. The general birthright options are detailed at the end of the class description. Your chosen ascension also offers exclusive birthright options, detailed at the end of its subclass description. When you reach certain arbiter levels, you gain additional birthrights of your choice, as shown in the Birthrights column of the Arbiter table."
           },
           {
             "type": "paragraph",
@@ -762,7 +762,8 @@
         "style": "option-cards",
         "intro": [
           "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
-          "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+          "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights.",
+          "Your chosen ascension offers additional birthright options in its subclass description. You can choose those options in place of the general options listed here, provided you meet their prerequisites."
         ],
         "features": [
           {
@@ -774,16 +775,6 @@
               }
             ],
             "subtitle": "Prerequisite: 5th level"
-          },
-          {
-            "name": "Abyssal Sight",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Your benthic origin grants you the same sight that creatures of the deep possess. You gain darkvision out to a range of 90 feet. Moreover, you have advantage on saving throws against being blinded and saving throws you make to end the blinded condition."
-              }
-            ],
-            "subtitle": "Prerequisite: Sovereign of Tides ascension"
           },
           {
             "name": "Adjudicator\u2019s Steed",
@@ -814,16 +805,6 @@
             ]
           },
           {
-            "name": "Ascendant Mind",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You can use an action to gain the effects of the spell detect thoughts until you dismiss it (no action required) or you die."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Hand of Arrogation ascension"
-          },
-          {
             "name": "Aspect of Cognizance",
             "blocks": [
               {
@@ -832,36 +813,6 @@
               }
             ],
             "subtitle": "Prerequisite: 7th level"
-          },
-          {
-            "name": "Astral Brilliance",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Whenever you use a herrscher ability that deals damage, add your Constitution modifier to the damage dealt."
-              }
-            ],
-            "subtitle": "Prerequisite: Entropic Li\u00E8ge ascension"
-          },
-          {
-            "name": "Blazing Reverie",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Add your proficiency bonus to initiative rolls you make. In addition, whenever you roll initiative, you regain 3 charges."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Vermillion Knight ascension"
-          },
-          {
-            "name": "Celestial Mettle",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "When you gain this birthright, if you are already proficient in saving throws that use Constitution, your proficiency bonus is doubled for saving throws you make that use it. Otherwise, you gain proficiency in saving throws that use Constitution but your proficiency bonus is not doubled for saving throws that use it."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Entropic Li\u00E8ge ascension"
           },
           {
             "name": "Dauntless Executioner",
@@ -882,36 +833,6 @@
               }
             ],
             "subtitle": "Prerequisite: 12th level"
-          },
-          {
-            "name": "Destructive Exhalation",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You can double the number of damage dice rolled for your Dragon Breath once when you use it. You can\u2019t do so again until you finish a short or long rest."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Wyrmscourge ascension"
-          },
-          {
-            "name": "Divine Reach",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Whenever you cast a seneschal spell with a single target, the spell\u2019s range is doubled if it targets a creature that\u2019s branded with your ruincrest and it doesn\u2019t have a range of touch."
-              }
-            ],
-            "subtitle": "Prerequisite: Seneschal ascension"
-          },
-          {
-            "name": "Draconic Infusion",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Whenever you hit a creature with an unarmed strike, you can replace all of the damage dealt by the attack with the damage type that\u2019s associated with your chosen ancestry."
-              }
-            ],
-            "subtitle": "Prerequisite: Wyrmscourge ascension"
           },
           {
             "name": "Empyrean Awareness",
@@ -964,16 +885,6 @@
             "subtitle": "Prerequisite: 15th level"
           },
           {
-            "name": "Fiery Tenacity",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Your weapon attacks leave behind streaks of fire that harm your enemies even when you miss. The first time each turn you miss with a weapon attack, the attack\u2019s target takes fire damage equal to your proficiency bonus."
-              }
-            ],
-            "subtitle": "Prerequisite: Vermillion Knight ascension"
-          },
-          {
             "name": "Form of the Arbiter",
             "blocks": [
               {
@@ -984,26 +895,6 @@
             "subtitle": "Prerequisite: 12th level"
           },
           {
-            "name": "Ghastly Intrusion",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You can cast the spell pass without trace without expending a spell slot, and don\u2019t need to concentrate on it. You must finish a short or long rest before you can do so again."
-              }
-            ],
-            "subtitle": "Prerequisite: Phantasmal Hunter ascension"
-          },
-          {
-            "name": "Guided by Divinity",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You are always under the effects of a guidance spell."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Seneschal ascension"
-          },
-          {
             "name": "Hunter\u2019s Tongue",
             "blocks": [
               {
@@ -1011,26 +902,6 @@
                 "text": "You understand any language spoken by a creature that\u2019s marked with your ruincrest and they can understand any language spoken by you."
               }
             ]
-          },
-          {
-            "name": "Imperious Will",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You can use a bonus action to regain expended uses of your tyrannical flairs, up to half your proficiency bonus, rounded up. Once you use this birthright, you can\u2019t use it again until you finish a short or long rest."
-              }
-            ],
-            "subtitle": "Prerequisite: Fell Tyrant ascension"
-          },
-          {
-            "name": "Malefic Indignation",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Whenever a creature that you can see within 30 feet of you deals damage to you while you are missing at least half of your hit points, that creature takes 1d10 necrotic damage unless you choose not to harm them."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Blood Voivode ascension"
           },
           {
             "name": "Menacing Crest",
@@ -1083,16 +954,6 @@
             "subtitle": "Prerequisite: 15th level"
           },
           {
-            "name": "Phantom Execution",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "When you deal extra damage to a creature branded with your ruincrest with the Phantasmal Initiation feature, you can deal the maximum damage, instead of rolling for damage. Once you use this feature, you can\u2019t use it again until you finish a short or long rest."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Phantasmal Hunter ascension"
-          },
-          {
             "name": "Preternatural Prescience",
             "blocks": [
               {
@@ -1142,26 +1003,6 @@
             "subtitle": "Prerequisite: 12th level"
           },
           {
-            "name": "Psychic Strikes",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You empower the attacks made with your psionic weapons using your mind rather than physical strength. You can use Intelligence instead of Strength for the attack and damage rolls of your psionic weapons."
-              }
-            ],
-            "subtitle": "Prerequisite: Hand of Arrogation ascension"
-          },
-          {
-            "name": "Sanguine Protection",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You get a \u002B2 bonus to your Armor Class while you\u2019re missing at least half of your hit points."
-              }
-            ],
-            "subtitle": "Prerequisite: Blood Voivode ascension"
-          },
-          {
             "name": "Slayer\u2019s Implement",
             "blocks": [
               {
@@ -1185,26 +1026,6 @@
             ]
           },
           {
-            "name": "Sovereign\u2019s Resolve",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this birthright, you can\u2019t use it again until you finish a long rest."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Sovereign of Tides ascension"
-          },
-          {
-            "name": "Steadfast Aegis",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You can cast the spell you learned from Arcane Defense one additional time between long rests. At 9th level, you can cast your chosen spell with that feature two more times instead."
-              }
-            ],
-            "subtitle": "Prerequisite: Aegis Knight ascension"
-          },
-          {
             "name": "Transcendant Stride",
             "blocks": [
               {
@@ -1215,59 +1036,6 @@
             "subtitle": "Prerequisite: 9th level"
           },
           {
-            "name": "Tyrant\u2019s Resolution",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You are immune to being charmed or frightened as long as you are conscious. Additionally, you suffer from exhaustion differently from others, a sign of your primeval endurance."
-              },
-              {
-                "type": "table",
-                "columns": [
-                  {
-                    "key": "level",
-                    "label": "Level"
-                  },
-                  {
-                    "key": "effect",
-                    "label": "Effect"
-                  }
-                ],
-                "rows": [
-                  {
-                    "level": "1",
-                    "effect": "None"
-                  },
-                  {
-                    "level": "2",
-                    "effect": "Disadvantage on ability checks"
-                  },
-                  {
-                    "level": "3",
-                    "effect": "Speed halved"
-                  },
-                  {
-                    "level": "4",
-                    "effect": "Disadvantage on attack rolls and saving throws"
-                  },
-                  {
-                    "level": "5",
-                    "effect": "Hit point maximum halved"
-                  },
-                  {
-                    "level": "6",
-                    "effect": "Speed reduced to 0"
-                  },
-                  {
-                    "level": "7",
-                    "effect": "Death"
-                  }
-                ]
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Fell Tyrant ascension"
-          },
-          {
             "name": "Unfathomable Interference",
             "blocks": [
               {
@@ -1276,16 +1044,6 @@
               }
             ],
             "subtitle": "Prerequisite: 17th level"
-          },
-          {
-            "name": "Unwavering Determination",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "You can reroll a saving throw that you fail. When you do, you must use the new roll, and add your arbiter level to the result. Once you use this birthright, you can\u2019t use it again until you finish a short or long rest."
-              }
-            ],
-            "subtitle": "Prerequisite: 9th level, Aegis Knight ascension"
           },
           {
             "name": "Vicious Advance",

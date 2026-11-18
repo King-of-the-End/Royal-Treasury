@@ -1,0 +1,218 @@
+{
+  "name": "Phantasmal Hunter",
+  "slug": "phantasmal-hunter",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "Phantasmal hunters are arbiters who specialize in the art of becoming invisible to their foes. With the aid of their primeval might, they are lethal assassins who need not the shadows or magic to mask their presence."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Proficiencies",
+          "paragraphs": [
+            "Skills: Your choice of Sleight of Hand or Stealth"
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Starting Equipment",
+          "paragraphs": [
+            "You can start with your choice of a light crossbow and 20 bolts or a longbow and 20 arrows, in addition to the rest of the equipment granted by this class."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shadowed Seeker",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you first choose this ascension at 1st level, you add your Marked Bonus to any Dexterity (Stealth) checks you make to hide yourself from a creature that’s branded with your ruincrest. Moreover, the armor you wear no longer imposes disadvantage on Dexterity (Stealth) checks you make."
+        }
+      ]
+    },
+    {
+      "name": "Ruincrest Damage Type",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also when you first choose this ascension, choose from necrotic or psychic damage. If you would deal damage to a creature that is branded with your ruincrest, you can replace all of the damage dealt with the chosen damage type instead."
+        }
+      ]
+    },
+    {
+      "name": "Phantasmal Initiation",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, your latent supernatural potential awakens, and you learn to cloak yourself. As a bonus action, you can make yourself and anything you are wearing or carrying invisible to the creature branded with your ruincrest for the next minute. The effect ends when you make an attack or cast a spell. You can use this feature a number of times equal to 1 plus your Constitution modifier (a minimum of twice), and regain all expended uses of it when you finish a short or long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, you can take the Hide action as a bonus action on your turn, and you gain the following benefits while you’re hidden from or invisible to at least one creature."
+        },
+        {
+          "type": "list",
+          "items": [
+            "A creature that’s frightened of you has disadvantage on all ability checks and attack rolls, even if you aren’t in its line of sight. You must be within 30 feet of the creature to gain this benefit.",
+            "A creature that you are hidden from or invisible to can’t hear your movement and what you’re saying unless you allow them to.",
+            "Once per turn, you can deal an extra 1d6 damage to a creature you hit with an attack if you are hidden from or invisible to that creature. The extra damage increases at higher levels, as shown in the Phantasmal Initiation table."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Phantasmal Initiation",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Arbiter Level"
+                },
+                {
+                  "key": "damage",
+                  "label": "Extra Damage"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "3rd — 5th",
+                  "damage": "1d6"
+                },
+                {
+                  "level": "6th — 8th",
+                  "damage": "2d6"
+                },
+                {
+                  "level": "9th — 11th",
+                  "damage": "3d6"
+                },
+                {
+                  "level": "12th — 14th",
+                  "damage": "4d6"
+                },
+                {
+                  "level": "15th — 17th",
+                  "damage": "5d6"
+                },
+                {
+                  "level": "18th — 20th",
+                  "damage": "6d6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stalking Dread",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 6th level, you invoke fear in your prey when they watch you vanish. Whenever you successfully hide from or become invisible to a creature that’s branded with your ruincrest, you may have it make a Wisdom saving throw. On a failed save, it becomes frightened of you for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on a failed save. If a creature makes a successful save or the condition ends for it, it can’t be frightened with this feature for the next 24 hours."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times equal to 1 plus your Constitution modifier (a minimum of twice). You regain any expended uses of it when you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Ghastly Reverie",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 10th level, the Phantasmal Initiation feature and other spells and effects that normally end early when you attack or cast a spell (such as an invisibility spell) instead end at the end of the turn after you make two attacks."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, when you hit a creature that can’t see you, you can make that attack a critical hit. Once you use this feature, you can’t use it again your next turn. You can use this feature a number of times equal to 1 plus your Constitution modifier (a minimum of twice), and regain all expended uses when you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Spectral Butcher",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, you don’t give away your location when you make an attack and you’re hidden or invisible. Moreover, you can make one weapon attack against a creature that can’t see you as a bonus action on your turn. If you are engaging in two-weapon fighting, you can make one more attack with the weapon that is being used to make the second attack instead, provided it targets a creature that can’t see you."
+        }
+      ]
+    },
+    {
+      "name": "Everlasting Delusion",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 18th level, you are permanently invisible to a creature branded with your ruincrest. Using your Phantasmal Initiation feature instead causes you to become invisible to all other creatures for its duration."
+        },
+        {
+          "type": "paragraph",
+          "text": "While you are invisible to a creature that’s branded with your ruincrest and your Phantasmal Initiation feature isn’t active, that creature can still hear noise created by your movement as normal."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Ghastly Intrusion",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can cast the spell pass without trace without expending a spell slot, and don’t need to concentrate on it. You must finish a short or long rest before you can do so again."
+            }
+          ],
+          "subtitle": "Prerequisite: Phantasmal Hunter ascension"
+        },
+        {
+          "name": "Phantom Execution",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you deal extra damage to a creature branded with your ruincrest with the Phantasmal Initiation feature, you can deal the maximum damage, instead of rolling for damage. Once you use this feature, you can’t use it again until you finish a short or long rest."
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Phantasmal Hunter ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}

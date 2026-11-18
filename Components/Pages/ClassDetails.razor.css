@@ -3031,3 +3031,80 @@
     height: auto !important;
     min-height: 0 !important;
 }
+
+/* Subclass catalogue: one collapsible table, with ordinary page links. */
+.class-page ::deep .class-subclass-list {
+    margin: 1.25rem 0 0;
+    padding: 0.9rem 1rem;
+    min-width: 0;
+}
+.class-page ::deep .class-subclass-list > .class-feature-header .class-feature-chevron {
+    transform: rotate(0deg);
+}
+.class-page ::deep .class-subclass-list[open] > .class-feature-header .class-feature-chevron {
+    transform: rotate(180deg);
+}
+.class-page ::deep .class-subclass-table-scroll { margin-top: 0.75rem; }
+.class-page ::deep .class-subclass-table {
+    min-width: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+.class-page ::deep .class-subclass-table th:first-child { width: 30%; }
+.class-page ::deep .class-subclass-table th,
+.class-page ::deep .class-subclass-table td {
+    white-space: normal;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+.class-page ::deep .class-subclass-name {
+    color: var(--gold-light);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+.class-page ::deep .class-subclass-name:hover,
+.class-page ::deep .class-subclass-name:focus-visible { color: #ffe59a; }
+.class-page ::deep .class-subclass-name:focus-visible {
+    outline: 2px solid var(--gold-light);
+    outline-offset: 3px;
+}
+.class-page ::deep .class-subclass-summary { line-height: 1.55; }
+@media (max-width: 650px) {
+    .class-page ::deep .class-subclass-list { padding: 0.7rem; }
+    .class-page ::deep .class-subclass-table th:first-child { width: 36%; }
+    .class-page ::deep .class-subclass-table th,
+    .class-page ::deep .class-subclass-table td { padding: 0.58rem 0.46rem; font-size: 0.88rem; }
+}
+
+
+/* Aegis Knight battlesuits: reuse the standard class option-card grid.
+   Only the subclass's Battlesuit Engagement feature is affected. */
+.class-page ::deep #subclass-features #battlesuit-engagement .class-options {
+    container-type: inline-size;
+}
+.class-page ::deep #subclass-features #battlesuit-engagement .class-options > .class-option {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.class-page ::deep #subclass-features #battlesuit-engagement .class-option > h4 {
+    color: #f4efe8;
+    font-size: 1.55rem;
+    margin-bottom: 0.85rem;
+}
+.class-page ::deep #subclass-features #battlesuit-engagement .class-option > .class-feature-subsection {
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+}
+.class-page ::deep #subclass-features #battlesuit-engagement .class-option > .class-feature-subsection > h4 {
+    color: #efcf7d;
+    font-size: 1.15rem;
+    margin-bottom: 0.45rem;
+}
+/* A sidebar can leave a desktop viewport with a narrow content area.
+   Fall back to a single column if the cards themselves would be cramped. */
+@container (max-width: 43rem) {
+    .class-page ::deep #subclass-features #battlesuit-engagement .class-options > .class-option {
+        grid-column: 1 / -1;
+    }
+}

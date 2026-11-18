@@ -1,0 +1,266 @@
+{
+  "name": "Sovereign of Tides",
+  "slug": "sovereign-of-tides",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "A sovereign of tides is an arbiter with unparalleled physical might, and is unmatched when it comes to single combat. Relying on their own strength and weapons instead of the enigmatic powers that other arbiters can make use of, they cut down enemies with inhuman efficiency, as if they were hunters in the abyss."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Proficiencies",
+          "paragraphs": [
+            "Armor: Heavy armor",
+            "Skills: Survival"
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Starting Equipment",
+          "paragraphs": [
+            "Instead of the scale mail or leather armor granted by the arbiter class, you can start with chain mail."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Benthic Ascent",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you first choose this ascension at 1st level, you gain a swim speed of 30 feet and the ability to breathe underwater."
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreover, you also choose a benthic origin and gain its feature and minor physical attributes that are reminiscent of your chosen origin. For instance, if your chosen origin is the shark, your skin might be incredibly rough, or you’re unusually tall or physically imposing compared to other members of your race if the whale is your chosen origin."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Kraken",
+              "paragraphs": [
+                "Whenever you hit a creature marked with your ruincrest with a melee weapon attack, you can charge your weapon with electricity; when you do, the attack deals an additional 1d8 lightning damage. You can use this feature a number of times equal to two plus your Constitution modifier (a minimum of three times) and you regain expended uses when you finish a short or long rest. The additional damage increases to 2d8 at 11th level."
+              ]
+            },
+            {
+              "name": "Leviathan",
+              "paragraphs": [
+                "As a scion of the lord of the deep, you display extraordinary physical resilience. You gain a +2 bonus to all Strength saving throws and grapple checks you make."
+              ]
+            },
+            {
+              "name": "Orca",
+              "paragraphs": [
+                "As an apex predator, creatures you mark will not escape unharmed. Whenever you hit a creature marked with your ruincrest with a weapon attack, if it’s missing any hit points, the damage dealt increases by 2."
+              ]
+            },
+            {
+              "name": "Shark",
+              "paragraphs": [
+                "The scent of your prey’s blood emboldens you. Your movement speed is increased by 10 feet as long as a creature that’s branded with your ruincrest is missing any of its hit points and is within 90 feet of you. This increases to 20 feet when you reach 11th level."
+              ]
+            },
+            {
+              "name": "Whale",
+              "paragraphs": [
+                "Your prey’s attacks falter before you. Whenever a creature marked with your ruincrest makes an attack roll against you, it gets -1 to that attack roll. They get -2 to the attack roll instead starting at 11th level."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ruincrest Damage Type",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you would deal damage to a creature that is branded with your ruincrest, you can replace all of the damage dealt with bludgeoning damage instead, as a result of your connection to the deep sea."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you choose the kraken for your benthic origin at 1st, 6th, or 14th level, you can also replace the damage with lightning damage instead."
+        }
+      ]
+    },
+    {
+      "name": "Unbreakable Predator",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, equipment you are wearing or wielding are considered magical for the purpose of ignoring spells or effects that can damage or destroy nonmagical equipment, such as a black pudding’s corrosive form."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you can draw on a limited well of stamina to protect yourself. As a bonus action while you’re missing any hit points, you can gain temporary hit points equal to 2d6 + your arbiter level. Once you use this feature, you can’t use it again until you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Deep-Dweller’s Heart",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 6th level, you no longer gain levels of exhaustion due to extreme cold or from extreme levels of water pressure from traversing the depths. In addition, you gain a supernatural feature based on the origin of your choice. You can choose the same origin you selected at 1st level or a different one."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Kraken",
+              "paragraphs": [
+                "You now have resistance to lightning damage. In addition, your vision is no longer obscured by thick fog or ink."
+              ]
+            },
+            {
+              "name": "Leviathan",
+              "paragraphs": [
+                "Your strength continues to grow, but with diminishing returns. Your Strength score increases by 2, to a maximum of 22 now, and your Intelligence score is reduced by 2 (to a minimum of 1). Additionally, you gain proficiency in Dexterity saving throws."
+              ]
+            },
+            {
+              "name": "Orca",
+              "paragraphs": [
+                "You will not be stopped by ancient sigils forced upon you in your quest to shed blood. Your marked bonus and penalty each increase and decrease by 1, respectively."
+              ]
+            },
+            {
+              "name": "Shark",
+              "paragraphs": [
+                "Your movement is unaffected by difficult terrain and magical effects can’t reduce your speed or restrain you. In addition, you can spend 10 feet of movement to escape from nonmagical restraints or being grappled while underwater."
+              ]
+            },
+            {
+              "name": "Whale",
+              "paragraphs": [
+                "Compared to other members of your race, you display impressive physical attributes. Your maximum hit points increase by 12, and when you gain another level in this class, your maximum hit points increase by 2 again."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elegy of the Arbiter",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 10th level, you can enter a trance that lasts one minute as a bonus action. When you do so, you gain temporary hit points equal to your maximum hit points, you have a second instance of Extra Attack, are immune to being charmed and frightened, your movement speed is increased by 20 feet, and can’t cast spells for the duration of the trance, which ends early if you reach 0 hit points, are incapacitated, or choose to end it early using a bonus action. Once you use this feature, you must finish a long rest before using it again."
+        }
+      ]
+    },
+    {
+      "name": "Aquatic Tyrant",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 14th level, you gain a supernatural benefit based on the origin of your choice. You can choose the same origin you selected previously or a different one."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Kraken",
+              "paragraphs": [
+                "You augment yourself with more abilities that krakens are capable of. When you take the Attack action on your turn, you can replace one of your attacks with the conjuring of a bolt of lightning, which strikes a target that you can see within 60 feet of you. The target must make a Dexterity saving throw. They take 5d10 lightning damage on a failed save, or half as much damage on a successful save. You can use this feature a number of times equal to your proficiency bonus. You regain expended uses when you finish a short or long rest."
+              ]
+            },
+            {
+              "name": "Leviathan",
+              "paragraphs": [
+                "You begin to emulate the unstoppable nature of leviathans. Effects can’t make you roll for melee attack rolls with disadvantage when you are attacking a creature that is branded with your ruincrest, and when you score a hit with a melee weapon, it deals an extra 1d6 damage."
+              ]
+            },
+            {
+              "name": "Orca",
+              "paragraphs": [
+                "You attack with lethal force. Whenever you hit a creature with a weapon that has the two-handed property, they must make a Strength saving throw. On a failed save, they are pushed 5 feet away from you. Before determining if that creature fails its save, you can use a bonus action to knock it prone instead on a failed save."
+              ]
+            },
+            {
+              "name": "Shark",
+              "paragraphs": [
+                "Melee weapon attacks that you make score a critical hit on a roll of 18–20. Moreover, if you have the Critical Mark acumen, melee weapon attacks you make against a creature marked with your ruincrest score a critical hit on a roll of 17–20 instead."
+              ]
+            },
+            {
+              "name": "Whale",
+              "paragraphs": [
+                "You have become an impregnable hunter of the deep; you are now resistant to nonmagical bludgeoning, piercing, and slashing damage."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sovereign’s Respite",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 18th level, whenever you finish a short or long rest, you gain 30 temporary hit points, which last until they are depleted or you finish another rest. In addition, you can now use your Elegy of the Arbiter twice between long rests, but only if you aren’t currently in a trance."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Abyssal Sight",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Your benthic origin grants you the same sight that creatures of the deep possess. You gain darkvision out to a range of 90 feet. Moreover, you have advantage on saving throws against being blinded and saving throws you make to end the blinded condition."
+            }
+          ],
+          "subtitle": "Prerequisite: Sovereign of Tides ascension"
+        },
+        {
+          "name": "Sovereign’s Resolve",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this birthright, you can’t use it again until you finish a long rest."
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Sovereign of Tides ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}

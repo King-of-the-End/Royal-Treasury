@@ -1,0 +1,327 @@
+{
+  "name": "Fell Tyrant",
+  "slug": "fell-tyrant",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "Fell tyrants are arbiters who are merciless warriors, capable of manifesting their primordial might into a weapon that suits the occasion and shifts with their movements and will. Their true potential awakens when they are in the midst of combat and bloodied, revealing the depths of their primal strength."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Proficiencies",
+          "paragraphs": [
+            "Saving Throws (Optional): Replace Constitution with Dexterity",
+            "Skills: Your choice of Athletics or History"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Primeval Perseverance",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you first choose this ascension at 1st level, you learn to tap into your true potential while you are wounded. While you are missing any of your hit points, you can use a bonus action to either take the Disengage, move up to 10 feet, or take the Dodge action if you are missing at least half of your hit points."
+        }
+      ]
+    },
+    {
+      "name": "Ruincrest Damage Type",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also when you first choose this ascension, choose from force, necrotic, or radiant damage. At the DM’s discretion, you can choose another damage type they deem appropriate instead. If you would deal damage to a creature branded with your ruincrest, you can replace all of the damage dealt with the chosen damage type instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can replace the chosen damage type with another damage type when you reach 3rd level, and again at 6th, 10th, 14th, and 18th level, at the DM’s discretion."
+        }
+      ]
+    },
+    {
+      "name": "Tyrant’s Weapon",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you can channel the pain you’ve suffered into something tangible, a tyrant’s weapon. You choose the form that it takes each time you create it, which must be a melee weapon, and you are proficient with it. Regardless of its current form, its damage type is always the damage type chosen for this ascension’s ruincrest damage type."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you take the Attack action on your turn, you can replace any number of attacks you make with the creation of your tyrant’s weapon in one of your free hands, then making an attack with the weapon."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can make opportunity attacks with your tyrant’s weapon even while it isn’t in your hand, provided the creature moving out of your reach is within the weapon’s reach as you create it in one of your free hands and make the attack with it as part of the reaction (allowing you to make opportunity attacks against creatures more than 5 feet away from you)."
+        },
+        {
+          "type": "paragraph",
+          "text": "The nature of your tyrant’s weapon is fleeting. The weapon disappears after you make an attack with it, on either a hit or a miss."
+        },
+        {
+          "type": "section",
+          "title": "Tyrannical Flair",
+          "paragraphs": [
+            "Also when you reach 3rd level, you learn two tyrannical flairs of your choice. Flairs are special actions that fell tyrants take to channel their primordial might, using their tyrant’s weapon as a focus.",
+            "Whenever you take the Attack action on your turn, you can replace one of your attacks with a tyrannical flair that doesn’t require an action, bonus action, or reaction to use.",
+            "You can use tyrannical flairs a number of times equal to 2 + your proficiency bonus, and regain all expended uses of them whenever you roll initiative. For instance, with a proficiency bonus of +2, after using any combination of flairs four times, you can’t use a flair again until you roll initiative."
+          ],
+          "blocks": [
+            {
+              "type": "options",
+              "options": [
+                {
+                  "name": "Dash Attack",
+                  "paragraphs": [
+                    "Before or after you make an attack with your tyrant’s weapon, you can move up to 10 feet. This movement doesn’t count against your movement speed for the turn.",
+                    "The distance that you can move with this flair increases by 5 feet at 5th level (15 feet), 11th level (20 feet), and 17th level (25 feet)."
+                  ]
+                },
+                {
+                  "name": "Expedited Withdrawal",
+                  "paragraphs": [
+                    "You take both the Disengage and Dodge actions using a bonus action and until the start of your next turn, you have advantage on Dexterity saving throws you make.",
+                    "When you reach higher levels in this class, you also add a die to Dexterity saving throws you make until the start of your next turn, potentially turning a failed save into a successful one; add 1d4 at 5th level, 1d6 at 11th level, and 1d8 at 17th level."
+                  ]
+                },
+                {
+                  "name": "Extricating Attack",
+                  "paragraphs": [
+                    "After you make an attack with your tyrant’s weapon, you can immediately take the Disengage action as part of the same attack.",
+                    "The damage dealt by your tyrant’s weapon when you use this tyrannical flair increases at higher levels; by 1d4 at 5th level, 1d6 at 11th level, and 1d8 at 17th level."
+                  ]
+                },
+                {
+                  "name": "Reverberating Impact",
+                  "paragraphs": [
+                    "Your tyrant’s weapon takes the shape of a colossal weapon as you slam it into the ground, causing violent ripples. Each creature in a 15-foot cone of you must make a Dexterity saving throw. On a failed save, a creature is knocked prone and dealt bludgeoning damage equal to 2d4 + your Strength or Constitution modifier (your choice).",
+                    "The damage that’s dealt increases by 1d4 and the range increases by 5 feet when you reach 5th level (3d4, 15 feet), 11th level (4d4, 20 feet), and 17th level (5d4, 25 feet)."
+                  ]
+                },
+                {
+                  "name": "Sweeping Strike",
+                  "paragraphs": [
+                    "When you make a melee attack with your tyrant’s weapon, you can make one additional melee attack with it against up to two other creatures as part of the same attack, with a separate attack roll for each target. The weapon’s damage for this attack is 1d6.",
+                    "The damage dealt by your tyrant’s weapon increases when you use this flair at higher levels; the damage dealt on a hit when you use this flair increases by 1d4 at 5th level, 1d6 at 11th level, and 1d8 at 17th level.",
+                    "Moreover, when you reach 11th level, instead of making melee attacks against up to two other creatures, you can make melee attacks with your tyrant weapon against any number of creatures."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tyrannical Escalation",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 6th level, your tyrant’s weapon gains a +1 bonus to attack and damage rolls made with it. The bonus increases to +2 at 11th level and +3 at 17th level."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, if you’re missing at least half of your hit points, when you take the Attack action on your turn, you can replace up to two of the attacks that you make with it with tyrannical flairs, instead of replacing a single attack. You cannot use the same flair more than once each turn this way."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you gain this feature, you learn one tyrannical flair of your choice from the Tyrant’s Weapon feature, and two of the four following tyrannical flairs of your choice shown below."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Chain Attack",
+              "paragraphs": [
+                "When you use this flair to replace an attack, you can make two attacks with your tyrant’s weapon instead of one. Each attack can target the same creature or different ones. The weapon’s damage for this attack is 1d6, increasing to 1d8 at 17th level.",
+                "The number of additional attacks that are made with your tyrant’s weapon when you use this tyrannical flair increases to two at 11th level. You can move between each attack that’s made as part of this bonus action, as normal when you make more than one attack with the Attack action, and can change the form that your tyrant’s weapon takes with each attack.",
+                "Using this flair expends two uses of your tyrannical flairs, instead of one."
+              ]
+            },
+            {
+              "name": "Impairing Attack",
+              "paragraphs": [
+                "You attempt to cripple and hinder the target with your tyrant’s weapon. On a hit with the weapon, the target has disadvantage on Dexterity saving throws it makes until the beginning of your next turn and is dealt an additional 1d4 damage. This increases to 1d6 at 11th level and 1d8 at 17th level."
+              ]
+            },
+            {
+              "name": "Prostrating Strike",
+              "paragraphs": [
+                "Before you attack with your tyrant’s weapon, you attempt to knock the target down. If the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone. On either a failure or success, you then attack the target with your tyrant’s weapon, dealing an additional 1d4 damage.",
+                "The additional damage increases to 1d6 at 11th level and 1d8 at 17th level."
+              ]
+            },
+            {
+              "name": "Savage Oppression",
+              "paragraphs": [
+                "You imbue your tyrant’s weapon with your primal strength as you attack with it. On a hit with it, the weapon deals additional damage to the target equal to 1d6 + your ability modifier. This increases to 1d8 at 11th level and 1d10 at 17th level.",
+                "Also when you score a hit with your tyrant’s weapon using this flair, the target must succeed on a Wisdom saving throw or it becomes frightened of you for the next minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save. When a creature makes a successful saving throw against this option or the effect ends for it, that creature cannot be frightened of you this way for the next 24 hours."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ravager’s Endurance",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 10th level, when your hit points are reduced to less than half of your maximum hit points, you gain temporary hit points equal to twice your arbiter level. You gain these temporary hit points when you roll for initiative and have hit points equal to or less than half of your maximum hit points as well."
+        },
+        {
+          "type": "paragraph",
+          "text": "The duration of any temporary hit points that you gain with this feature is 1 minute. When you gain temporary hit points with this feature, you can’t do so again until you roll initiative."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also when you gain this feature, choose from bludgeoning, piercing, or slashing damage, and then choose one flair from a fell tyrant feature that you don’t know. You gain resistance to damage of the chosen type, both magical and nonmagical, and learn the chosen tyrannical flair."
+        }
+      ]
+    },
+    {
+      "name": "Ascendant Desolator",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, while you’re missing at least half of your hit points, you can use a bonus action to create your tyrant’s weapon in a free hand and make an attack with it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, when you gain this feature, choose one of the following tyrannical flairs. Each flair require an action to use. Once you use that flair, you can’t use it again until you finish a short or long rest."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Desolating Weapon",
+              "paragraphs": [
+                "As an action, you create your tyrant’s weapon and imbue it with the entirety of your primordial will as you strike with it. When you create it this way, the weapon scores a critical hit on a roll of 17–20, it deals an additional 3d10 damage on a hit, and a creature is killed instantly if it has a number of hit points equal to or less than three times your arbiter level after being hit by the weapon and taking damage from it. Performing this flair is taxing on both your body and soul, causing you to suffer 1 level of exhaustion if the creature you kill had at least 40 hit points when it died."
+              ]
+            },
+            {
+              "name": "Lethal Sequence",
+              "paragraphs": [
+                "As an action, you make four attacks with your tyrant’s weapon, which can take a different form with each attack that you make this way. On a hit when you use this flair, each other attack made with this action deals an additional 1d8 damage; for instance, if the first, third, and final attacks hit but the second attack misses, the third attack deals an additional 1d8 damage and the final attack deals an additional 2d8 damage."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Primordial Conqueror",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 18th level, you can use your tyrannical flairs an unlimited number of times while you’re missing at least half of your hit points and it isn’t a flair from the Ascendant Desolator feature."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, your tyrant’s weapon ignores any resistance to damage the target has when you score a hit with it."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Imperious Will",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can use a bonus action to regain expended uses of your tyrannical flairs, up to half your proficiency bonus, rounded up. Once you use this birthright, you can’t use it again until you finish a short or long rest."
+            }
+          ],
+          "subtitle": "Prerequisite: Fell Tyrant ascension"
+        },
+        {
+          "name": "Tyrant’s Resolution",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You are immune to being charmed or frightened as long as you are conscious. Additionally, you suffer from exhaustion differently from others, a sign of your primeval endurance."
+            },
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1",
+                  "effect": "None"
+                },
+                {
+                  "level": "2",
+                  "effect": "Disadvantage on ability checks"
+                },
+                {
+                  "level": "3",
+                  "effect": "Speed halved"
+                },
+                {
+                  "level": "4",
+                  "effect": "Disadvantage on attack rolls and saving throws"
+                },
+                {
+                  "level": "5",
+                  "effect": "Hit point maximum halved"
+                },
+                {
+                  "level": "6",
+                  "effect": "Speed reduced to 0"
+                },
+                {
+                  "level": "7",
+                  "effect": "Death"
+                }
+              ]
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Fell Tyrant ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}

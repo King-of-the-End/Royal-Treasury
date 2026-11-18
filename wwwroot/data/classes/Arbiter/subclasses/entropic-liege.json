@@ -1,0 +1,287 @@
+{
+  "name": "Entropic Liege",
+  "slug": "entropic-liege",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "Entropic lieges are arbiters who carry with them an otherworldly birthright; one that allows them to use abilities that are beyond comprehension. Innately capable of twisting reality with a flick of their wrist, they wield powers conferred to them by forces older and more powerful than the gods."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Proficiencies",
+          "paragraphs": [
+            "Skills: Your choice of Arcana or Insight"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Subspace Armaments",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you first choose this ascension at 1st level, you learn to manifest the essence of the multiverse into a weapon you can launch at your enemies from a distance to deadly effect."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you take the Attack action on your turn, you can replace any number of your attacks with the summoning of a sleek, lance-like needle, provided you have an open hand to guide it. For each attack you replace, make a ranged arbiter attack against a target you can see within 45 feet of you. A target takes force damage equal to 1d8 + your Constitution modifier on a hit. The projectile then vanishes after a hit or miss. The damage increases to 2d8 at 11th level."
+        }
+      ]
+    },
+    {
+      "name": "Ruincrest Damage Type",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you would deal damage to a creature that is branded with your ruincrest, you can replace all of the damage dealt with force damage instead, as a result of your cosmic inheritance."
+        }
+      ]
+    },
+    {
+      "name": "Void Neophyte",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, to augment your newfound capabilities, you learn the cosmic sword ability and two of the 3 following herrscher abilities shown below. You can use a herrscher ability a number of times equal to 1 plus your Constitution modifier (a minimum of twice) unless that ability has a set number of uses. You regain expended uses of your herrscher abilities when you finish a long rest, and can’t use more than one herrscher ability on each of your turns."
+        },
+        {
+          "type": "paragraph",
+          "text": "Several herrscher abilities require complex hand motions to invoke their power. If a herrscher ability requires an open hand to use, it is noted in parenthesis before its description."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action on your turn, you can replace one of your attacks with a herrscher ability that doesn’t require an action, bonus action, or reaction to use."
+        },
+        {
+          "type": "section",
+          "title": "Unfathomable Power",
+          "paragraphs": [
+            "A creature that makes a roll to learn more about your herrscher abilities rolls with disadvantage unless it has studied them in the past."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Blade of the Stars",
+          "paragraphs": [
+            "Unlike other herrscher abilities, you regain expended uses of cosmic sword when you finish a short rest. Whenever you finish a short rest, you regain 2 expended uses of it."
+          ]
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Cosmic Sword",
+              "paragraphs": [
+                "(somatic) You summon a sword made of starstuff and attack a creature or object within 10 feet of you with it. Make a melee arbiter attack against the target. On a hit, the target is dealt 2d6 force damage. The blade then evanesces after you hit or miss with it. The damage dealt increases to 3d6 at 5th level, 4d6 at 11th level, and 5d6 at 17th level."
+              ]
+            },
+            {
+              "name": "Netherspike",
+              "paragraphs": [
+                "(somatic) A geyser of abyssal force erupts from underneath a creature you can see no more than 30 feet away from you as a bonus action. It is knocked prone unless it succeeds on a Strength saving throw."
+              ]
+            },
+            {
+              "name": "Spatial Ward",
+              "paragraphs": [
+                "(somatic) You warp reality to augment your defenses as a reaction to a spell or attack. Until the end of the turn, you gain a +2 bonus to Armor Class and get a +2 bonus to saving throws you make."
+              ]
+            },
+            {
+              "name": "Voidburst",
+              "paragraphs": [
+                "You expel chaotic energy that lashes out at others. Each other creature within 10 feet of you must succeed on a Dexterity saving throw or take 1d8 force damage. The damage dealt increases to 2d8 at 5th level, 3d8 at 11th level, and 4d8 at 17th level."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Astral Grace",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 6th level, you have a flying speed of 30 feet, can hover, and gain an additional use of cosmic sword. With this movement, you can’t move more than 5 feet above a solid or liquid surface."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also when you gain this feature, choose two of the four following herrscher abilities to learn."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Kinetic Crash",
+              "paragraphs": [
+                "You dash in a straight line at a point no more than 20 feet away, moving through everything you touch. Each creature touched must make a Constitution saving throw. A creature is dealt 4d6 force damage on a failed save and half as much damage on a success. The damage dealt increases to 5d6 at 11th level and 6d6 at 17th level."
+              ]
+            },
+            {
+              "name": "Abyssal Claws",
+              "paragraphs": [
+                "(somatic) You summon three claws made of abyssal energy. Each of these claws strike a creature of your choice that’s within 10 feet of you. For each claw, the target must succeed on a Dexterity saving throw or suffer 2d6 force damage. The claw’s damage increases to 3d6 at 11th level and 4d7 at 17th level. Shortly afterwards, each claw vanishes."
+              ]
+            },
+            {
+              "name": "Regeneration",
+              "paragraphs": [
+                "(2/rest) You glow with a shimmering light which heals you for 2d8 hit points. Starting at 11th level, the number of hit points regained increases to 3d8, and you can use this ability 3 times per rest instead of twice."
+              ]
+            },
+            {
+              "name": "Teleportation",
+              "paragraphs": [
+                "(somatic) You melt into a shadowy mass that sinks into the ground as a bonus action, reappearing in an unoccupied space you can see no more than 30 feet away from your original location."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Temporal Distortion",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 10th level, you gain one additional use of cosmic sword. In addition, whenever you kill a creature that is branded with your ruincrest with an entropic liege feature, a sphere of negative energy with a radius of 10 feet emerges from it. Each hostile creature in the sphere’s area must make a Constitution saving throw. A creature’s movement speed is halved until the end of its next turn on a failed save."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also when you gain this feature, choose two of the three following herrscher abilities to learn."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Abyssal Lance",
+              "paragraphs": [
+                "(somatic, 3/rest) You summon a lance made of starstuff and strike at a creature within 15 feet of you with it; make a melee arbiter attack against the target. On a hit, the target takes 3d12 force damage. The lance then turns into nothing on a hit or miss, and follows the same rules as a lance - if you make an attack against a creature within 5 feet of you with it, you make the attack roll with disadvantage. The damage increases to 4d12 at 17th level."
+              ]
+            },
+            {
+              "name": "Nethersquall",
+              "paragraphs": [
+                "(2/rest) You call upon the void to send tremors through your surroundings. Each other creature within 30 feet of you must make a Strength saving throw. On a failed save, a creature is knocked prone."
+              ]
+            },
+            {
+              "name": "Voidsnare",
+              "paragraphs": [
+                "(somatic, 2/rest) As a bonus action, you impose the weight of the void onto those near you. Each creature of your choice you can see within 30 feet of you must make a Constitution saving throw. Each target that fails its saving throw has its speed reduced to 0 until the beginning of your next turn."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sovereign’s Grace",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 14th level, the flying speed from Astral Grace increases to 40 feet and can be used to fly more than 5 feet above a surface."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also when you gain this feature, choose two of the three following herrscher abilities to learn."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Abyssal Storm",
+              "paragraphs": [
+                "(somatic, 1/rest) You rain annihilating star-matter upon the battlefield as an action. Each other creature within 45 feet of you must make a Constitution saving throw. A creature takes 5d10 force damage on a failed save, or half as much damage on a successful save."
+              ]
+            },
+            {
+              "name": "Herrscher’s Rage",
+              "paragraphs": [
+                "(1/rest) You enter a rage which lasts 1 minute as a bonus action. For the duration of the rage, you are immune to being charmed and frightened, and when you take the Attack action on your turn, you can replace any number of your attacks with an expulsion of cosmic energy that lashes out at your surroundings. Each other creature within 15 feet of you must make a Constitution saving throw. A creature takes 2d12 force damage on a failed save, or half as much damage on a successful one. The rage ends early if you end it early as a bonus action, your hit points reach 0, or you are incapacitated."
+              ]
+            },
+            {
+              "name": "Reality Conflagration",
+              "paragraphs": [
+                "(somatic, 1/rest) You let loose a barrage of space-rending pressure. Each creature of your choice that you can see or are aware of within 45 feet you must make a Constitution saving throw. A creature gains two levels of exhaustion on a failed save, or one level on a successful save."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sundering Herald",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 18th level, whenever you roll initiative and have no uses of cosmic sword left, you regain three uses of it. In addition, you gain an additional use of cosmic sword, and when you use it, can make attacks against any number of creatures within 10 feet of you, with a separate attack roll for each target."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also when you gain this feature, choose a herrscher ability from an entropic liege feature that you don’t know. You learn the chosen herrscher ability."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Astral Brilliance",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you use a herrscher ability that deals damage, add your Constitution modifier to the damage dealt."
+            }
+          ],
+          "subtitle": "Prerequisite: Entropic Liège ascension"
+        },
+        {
+          "name": "Celestial Mettle",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When you gain this birthright, if you are already proficient in saving throws that use Constitution, your proficiency bonus is doubled for saving throws you make that use it. Otherwise, you gain proficiency in saving throws that use Constitution but your proficiency bonus is not doubled for saving throws that use it."
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Entropic Liège ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}

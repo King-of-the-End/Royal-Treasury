@@ -1,0 +1,245 @@
+{
+  "name": "Hand of Arrogation",
+  "slug": "hand-of-arrogation",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "A hand of arrogation takes what is rightfully theirs, be it willingly or by force. As arbiters that have been augmented with minor psionics, they are able to control their weapons from afar, safe from the dangers of close quarters combat."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Proficiencies",
+          "paragraphs": [
+            "Saving Throws (Optional): Replace Strength or Constitution (your choice) with Intelligence",
+            "Skills: Investigation"
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Starting Equipment",
+          "paragraphs": [
+            "You can start with a longsword instead of two handaxes or the simple melee weapon granted by the arbiter class."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Psychic Awakening",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As a hand of arrogation, you wield impressive psychic might. When you choose this ascension, some hand of arrogation features grant you the ability to cast certain spells through the use of psionics, which require no verbal components. You use your Intelligence modifier when setting the saving throw DC for these spells and when making an attack roll with one."
+        },
+        {
+          "type": "paragraph",
+          "text": "Spell save DC = 8 + your proficiency bonus + your Marked Bonus (if applicable) + your Intelligence modifier"
+        },
+        {
+          "type": "paragraph",
+          "text": "Spell attack modifier = your proficiency bonus + your Marked Bonus (if applicable) + your Intelligence modifier"
+        }
+      ]
+    },
+    {
+      "name": "Psionic Weapon",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you first choose this ascension at 1st level, you learn a ritual that creates a psionic connection between yourself and one melee weapon, which you perform over the course of one hour, and can be done during a short rest. It must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence as you, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. At 3rd level, you can summon it in the unoccupied space closest to you instead, to command it with the Psychic Control feature detailed below."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can have up to two weapons bonded to you psychically, but can only summon one at a time with a bonus action. If you try to bond with a third weapon, you must break your bond with one of the other two psionic weapons. At 10th level, you can summon both of your psionic weapons with a single bonus action."
+        }
+      ]
+    },
+    {
+      "name": "Ruincrest Damage Type",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you would deal damage to a creature that is branded with your ruincrest, you can replace all of the damage dealt with psychic damage instead, due to the psionic might you wield."
+        }
+      ]
+    },
+    {
+      "name": "Psychic Control",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, you learn how to command one of your psionic weapons with telekinesis. During your turn, you can mentally command one of your psionic weapons to move up to 30 feet in any direction (no action required). If a weapon that you are controlling is more than 15 feet away from you at any time, it teleports back to you in the nearest unoccupied space. This increases to 30 feet at 10th level. In addition, a weapon that you’re mentally controlling doesn’t occupy the space that it’s in."
+        },
+        {
+          "type": "paragraph",
+          "text": "You must have a free hand available to command a psionic weapon you aren’t wielding. If you attempt to command more than one psionic weapon at once, you choose which one isn’t teleported back to you, as your psychic might hasn’t nurtured enough yet."
+        },
+        {
+          "type": "list",
+          "items": [
+            "When you take the Attack action on your turn, attacks you make with that action can originate from either the space that you’re in or the space of a psionic weapon that you’re mentally controlling, as if you were in the weapon’s space and wielding it. You make this choice for each attack.",
+            "Whenever you take the Attack action on your turn to make attacks with only weapons you’re wielding (including your psionic weapons), you can use a bonus action to make an attack with one of your psionic weapons you’re mentally controlling that doesn’t have the two-handed property as though you were in the weapon’s space and wielding it. If a weapon you attacked with as part of that action had the two-handed property, you can’t use this bonus action.",
+            "When a creature that you can see moves out of the reach of one of the psionic weapons you’re mentally controlling, you can use your reaction to make an opportunity attack against that creature as if you were in the weapon’s space and wielding it."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you use a bonus action to make an attack with a psionic weapon that you are mentally controlling, the attack doesn’t gain any benefits from targeting a creature branded with your ruincrest, nor do you add your ability modifier to the damage roll of the attack. As normal, it also suffers from penalties to attack rolls you make against creatures that aren’t marked with your ruincrest."
+        }
+      ]
+    },
+    {
+      "name": "Psionic Ascent",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 6th level, your psychic might grows beyond commanding weapons using your mind’s strength. You gain the following benefits."
+        },
+        {
+          "type": "section",
+          "title": "Mind Ward",
+          "paragraphs": [
+            "When a creature tries to access your mind, it must make an Intelligence saving throw. On a failed save, the creature is forced out, takes 1d10 psychic damage, and alerts you to its failed mental incursion. Spells such as phantasmal killer and weird trigger this feature and have no effect on you if the caster fails their saving throw. Moreover, a creature can telepathically communicate with you only if you allow it, and your thoughts can’t be read by magical means."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Psychic Resistance",
+          "paragraphs": [
+            "You have resistance to psychic damage."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spellcasting (Psionics)",
+          "paragraphs": [
+            "You learn your choice of mind spike, tasha’s mind whip, or wrathful smite. You can cast it twice without expending a spell slot, and regain expended uses when you finish a short or long rest. When you cast a spell this way, you don’t need to concentrate on that spell.",
+            "When you reach 9th level, you can cast the chosen spell three times, instead of two, without expending a spell slot."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ascended Psion",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 10th level, you are capable of controlling two psionic weapons at once, provided you have the free hands to command each of them to attack or move. Each weapon can move up to 30 feet on each of your turns."
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreover, when you take the Attack action on your turn, if one of the psionic weapons you’re commanding wasn’t used to make an attack as part of that action, you can use a bonus action to make an attack with that weapon as though you were in its space and wielding it."
+        }
+      ]
+    },
+    {
+      "name": "Usurper’s Resentment",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 14th level, while you’re missing more than half your hit points, the maximum range of your psionic weapons is unlimited."
+        },
+        {
+          "type": "section",
+          "title": "Spellcasting (Psionics)",
+          "paragraphs": [
+            "Moreover, you learn raulothim’s psychic lance and can cast it without expending a spell slot. When cast this way, the target is marked with your ruincrest for 1 hour before making the saving throw. You must finish a short or long rest before you can do so again."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arrogation’s Wrath",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 18th level, your psychic might has reached its apex. You gain the following benefits."
+        },
+        {
+          "type": "section",
+          "title": "Extra Bonus Action",
+          "paragraphs": [
+            "You have a second bonus action that you can use during each of your turns. It can only be used to make an attack with a psionic weapon that you are mentally commanding."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Extra Reaction",
+          "paragraphs": [
+            "You have a second reaction that you can use each round of combat, which can only be used to make an opportunity attack with a psionic weapon that you are mentally commanding."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spellcasting (Psionics)",
+          "paragraphs": [
+            "You learn psychic scream and can cast it without expending a spell slot if you’re missing at least half of your hit points. Once you do so, you must finish a long rest before you can cast it again."
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Ascendant Mind",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can use an action to gain the effects of the spell detect thoughts until you dismiss it (no action required) or you die."
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Hand of Arrogation ascension"
+        },
+        {
+          "name": "Psychic Strikes",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You empower the attacks made with your psionic weapons using your mind rather than physical strength. You can use Intelligence instead of Strength for the attack and damage rolls of your psionic weapons."
+            }
+          ],
+          "subtitle": "Prerequisite: Hand of Arrogation ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}

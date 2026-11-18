@@ -1,6 +1,8 @@
 @rendermode InteractiveServer
 
 @using System.Text.Json
+@using Website_of_Everything.Services
+@using Microsoft.Extensions.Logging
 @using Microsoft.AspNetCore.Components.Routing
 @implements IDisposable
 @implements IAsyncDisposable
@@ -8,6 +10,7 @@
 @inject NavigationManager Navigation
 @inject IJSRuntime JS
 @inject IWebHostEnvironment Environment
+@inject ILogger<NavMenu> Logger
 
 <nav class="@NavCssClass" aria-label="Site navigation">
 
@@ -110,6 +113,9 @@
 @code {
     private string currentPath = "/";
     private string currentQuery = string.Empty;
+    private string? indexedSubclassPath;
+    private string? indexedSubclassName;
+    private IReadOnlyList<(string Name, string Anchor)> indexedSubclassFeatures = Array.Empty<(string, string)>();
 
     private bool mobileMenuOpen;
     private string? activeIndexLabel;
@@ -157,6 +163,7 @@
             currentPath = "/";
 
         currentQuery = uri.Query;
+        UpdateSubclassIndex();
     }
 
     private string NavCssClass =>
@@ -174,6 +181,9 @@
                     CurrentClassSlug is { Length: > 0 } slug
                         ? GetClassDisplayName(slug)
                         : "Class";
+
+                if (CurrentSubclassSlug is string subclassSlug)
+                    className = indexedSubclassName ?? HumanizeSlug(subclassSlug);
 
                 if (!string.IsNullOrWhiteSpace(activeIndexLabel))
                     return $"{className} · {activeIndexLabel}";
@@ -305,6 +315,59 @@
             return parts.Length >= 2
                 ? parts[1]
                 : null;
+        }
+    }
+
+    private string? CurrentSubclassSlug
+    {
+        get
+        {
+            if (!IsClassDetailsPage) return null;
+            var parts = currentPath.Split('/', StringSplitOptions.RemoveEmptyEntries);
+            return parts.Length == 3 ? parts[2] : null;
+        }
+    }
+
+    private void UpdateSubclassIndex()
+    {
+        var slug = CurrentSubclassSlug;
+        var classSlug = CurrentClassSlug;
+        if (slug is null || classSlug is null)
+        {
+            indexedSubclassPath = null;
+            indexedSubclassName = null;
+            indexedSubclassFeatures = Array.Empty<(string, string)>();
+            return;
+        }
+        if (string.Equals(indexedSubclassPath, currentPath, StringComparison.OrdinalIgnoreCase)) return;
+        indexedSubclassPath = currentPath;
+        indexedSubclassName = null;
+        indexedSubclassFeatures = Array.Empty<(string, string)>();
+        if (!SubclassCatalog.IsSafeSlug(slug) || !SubclassCatalog.IsSafeSlug(classSlug)) return;
+        try
+        {
+            var folder = SubclassCatalog.FindClassFolder(Environment.WebRootPath, classSlug);
+            if (folder is null) return;
+            var entry = SubclassCatalog.Read(folder, Logger)
+                .FirstOrDefault(item => string.Equals(item.Slug, slug, StringComparison.OrdinalIgnoreCase));
+            if (entry is null) return;
+            using var document = SubclassCatalog.Open(entry);
+            indexedSubclassName = entry.Name;
+            if (TryGetArray(document.RootElement, "features", out var features))
+                indexedSubclassFeatures = features.EnumerateArray().OrderBy(SubclassCatalog.FeatureLevel)
+                    .Select(feature => GetString(feature, "name") ?? "Feature")
+                    .Select(name => (name, AnchorId(name))).ToArray();
+            if (TryGetArray(document.RootElement, "appendices", out var appendices))
+            {
+                indexedSubclassFeatures = indexedSubclassFeatures.Concat(appendices.EnumerateArray()
+                    .Select(appendix => GetString(appendix, "title") ?? "Appendix")
+                    .OrderBy(title => title, StringComparer.OrdinalIgnoreCase)
+                    .Select(title => (title, AnchorId(title)))).ToArray();
+            }
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or JsonException)
+        {
+            Logger.LogWarning(ex, "Unable to load subclass navigation for {Path}", currentPath);
         }
     }
 
@@ -441,8 +504,14 @@
 
                 var slug = CurrentClassSlug;
                 if (!string.IsNullOrWhiteSpace(slug))
-                    items.Add(new(GetClassDisplayName(slug), $"/classes/{slug}"));
-
+                {
+                    var subclass = CurrentSubclassSlug;
+                    var parentUrl = subclass is null ? $"/classes/{slug}"
+                        : $"/classes/{slug}?tab=mechanics&mechanicsTab={ActiveMechanicsTabIndex}";
+                    items.Add(new(GetClassDisplayName(slug), parentUrl));
+                    if (subclass is not null)
+                        items.Add(new(indexedSubclassName ?? HumanizeSlug(subclass), currentPath + currentQuery));
+                }
                 return items;
             }
 
@@ -723,6 +792,20 @@
 
             if (string.IsNullOrWhiteSpace(slug))
                 return Array.Empty<NavItem>();
+
+            if (CurrentSubclassSlug is not null)
+            {
+                var subclassPrefix = currentPath + currentQuery;
+                if (indexedSubclassName is null) return Array.Empty<NavItem>();
+                var subclassItems = new List<NavItem>
+                {
+                    new("Overview", $"{subclassPrefix}#overview"),
+                    new("Subclass Features", $"{subclassPrefix}#subclass-features")
+                };
+                subclassItems.AddRange(indexedSubclassFeatures.Select(feature =>
+                    new NavItem(feature.Name, $"{subclassPrefix}#{feature.Anchor}")));
+                return subclassItems;
+            }
 
             var prefix = ActiveClassTab == "mechanics"
                 ? $"/classes/{slug}?tab=mechanics&mechanicsTab={ActiveMechanicsTabIndex}"

@@ -1,27 +1,76 @@
-@page "/classes/{Slug}"
+@page "/classes/{Slug}/{SubclassSlug?}"
 @rendermode InteractiveServer
 
 @using System.Text.Json
 @using Microsoft.AspNetCore.Components
 @using Microsoft.AspNetCore.Components.Rendering
+@using Microsoft.Extensions.Logging
 @using Website_of_Everything.Models
+@using Website_of_Everything.Services
 @using Website_of_Everything.Components
 @implements IDisposable
 
 @inject IWebHostEnvironment Environment
 @inject NavigationManager Navigation
+@inject Microsoft.Extensions.Logging.ILogger<ClassDetails> Logger
 
-<PageTitle>@DisplayName</PageTitle>
+<PageTitle>@(IsSubclassPage ? $"{SubclassDisplayName} — {DisplayName}" : DisplayName)</PageTitle>
 
 @if (isLoading)
 {
-    <main class="class-page"><div class="class-loading">Loading class...</div></main>
+    <main class="class-page"><div class="class-loading">@(IsSubclassPage ? "Loading subclass..." : "Loading class...")</div></main>
 }
 else if (!string.IsNullOrWhiteSpace(errorMessage))
 {
     <main class="class-page">
-        <a href="/classes" class="class-back-link">← Back to Classes</a>
-        <div class="class-error"><h1>Class Not Found</h1><p>@errorMessage</p></div>
+        <a href="@(IsSubclassPage ? ParentClassUrl : "/classes")" class="class-back-link">@(IsSubclassPage ? "← Back to Class" : "← Back to Classes")</a>
+        <div class="class-error"><h1>@(IsSubclassPage ? "Subclass Not Found" : "Class Not Found")</h1><p>@errorMessage</p></div>
+    </main>
+}
+else if (IsSubclassPage && subclassDocument is not null)
+{
+    var subclass = subclassDocument.RootElement;
+    <main class="class-page" id="overview" @key="SubclassPageKey">
+        <a href="@ParentClassUrl" class="class-back-link">← Back to @DisplayName</a>
+        <header class="class-hero">
+            <div class="class-hero-emblem">
+                <img src="@EmblemPath" alt="@($"{DisplayName} class emblem")" />
+            </div>
+            <div class="class-hero-copy">
+                <div class="class-kicker">@DisplayName Subclass</div>
+                <h1>@SubclassDisplayName</h1>
+            </div>
+        </header>
+        @if (GetProperty(subclass, "introduction") is JsonElement subclassIntroduction)
+        {
+            <section class="class-lore-section">
+                @foreach (var paragraph in subclassIntroduction.EnumerateArray())
+                {
+                    <p>@RenderGlossaryText(ValueToText(paragraph))</p>
+                }
+            </section>
+        }
+        <section class="class-feature-chapter" id="subclass-features">
+            <header class="class-chapter-heading">
+                <div class="class-section-kicker">Abilities</div>
+                <h2>Subclass Features</h2>
+            </header>
+            @if (GetProperty(subclass, "features") is JsonElement subclassFeatures)
+            {
+                @foreach (var feature in subclassFeatures.EnumerateArray().OrderBy(SubclassCatalog.FeatureLevel))
+                {
+                    @RenderFeatureCard(feature)
+                }
+            }
+        </section>
+        @if (GetProperty(subclass, "appendices") is JsonElement subclassAppendices &&
+            subclassAppendices.ValueKind == JsonValueKind.Array)
+        {
+            @foreach (var appendix in subclassAppendices.EnumerateArray().OrderBy(AppendixSortKey, StringComparer.OrdinalIgnoreCase))
+            {
+                @RenderAppendix(appendix)
+            }
+        }
     </main>
 }
 else if (classDocument is not null)
@@ -236,6 +285,7 @@ else if (classDocument is not null)
     return "item-theme-default";
 }
     [Parameter] public string Slug { get; set; } = string.Empty;
+    [Parameter] public string? SubclassSlug { get; set; }
 
     [SupplyParameterFromQuery(Name = "tab")]
     public string? Tab { get; set; }
@@ -244,6 +294,18 @@ else if (classDocument is not null)
     public int? MechanicsTab { get; set; }
 
     private JsonDocument? classDocument;
+    private IReadOnlyList<SubclassEntry> subclasses = Array.Empty<SubclassEntry>();
+    private JsonDocument? subclassDocument;
+    private string? loadedSubclassSlug;
+    private long loadVersion;
+    private bool IsSubclassPage => SubclassSlug is not null;
+    private string SubclassPageKey => $"{Slug}/{loadedSubclassSlug}";
+    private string SubclassDisplayName => subclassDocument is not null
+        ? GetString(subclassDocument.RootElement, "name") ?? SlugToDisplayName(SubclassSlug ?? string.Empty)
+        : SlugToDisplayName(SubclassSlug ?? string.Empty);
+    private string ParentClassUrl => IsSafeSlug(Slug)
+        ? $"/classes/{Slug.ToLowerInvariant()}?tab=mechanics&mechanicsTab={Math.Max(0, MechanicsTab ?? 0)}"
+        : "/classes";
     private string? loadedClassSlug;
     private bool isLoading = true;
     private string? errorMessage;
@@ -332,17 +394,35 @@ else if (classDocument is not null)
             foreach (var section in preFeatureSections.EnumerateArray())
                 builder.AddContent(seq++, RenderPreFeatureSection(section));
 
+        // Subclasses are attached to the class's existing selection feature
+        // using subclass_feature. Unassigned entries get their own dropdown.
+        var remainingSubclasses = subclasses.Where(entry => IsSubclassForMechanics(entry, mechanics)).ToList();
         if (GetProperty(mechanics, "features") is JsonElement features)
         {
             foreach (var feature in features.EnumerateArray())
             {
-                builder.AddContent(
-                    seq++,
-                    GetProperty(feature, "alternatives") is JsonElement
-                        ? RenderEitherOrFeature(feature)
-                        : RenderFeatureCard(feature));
+                if (GetProperty(feature, "alternatives") is JsonElement)
+                {
+                    builder.AddContent(seq++, RenderEitherOrFeature(feature));
+                    continue;
+                }
+
+                var featureName = GetString(feature, "name") ?? string.Empty;
+                var matchingSubclasses = remainingSubclasses
+                    .Where(subclass =>
+                        subclass.ParentFeature is string target &&
+                        AnchorId(target) == AnchorId(featureName))
+                    .ToArray();
+
+                foreach (var subclass in matchingSubclasses)
+                    remainingSubclasses.Remove(subclass);
+
+                builder.AddContent(seq++, RenderFeatureCard(feature, matchingSubclasses));
             }
         }
+
+        if (remainingSubclasses.Count > 0)
+            builder.AddContent(seq++, RenderSubclassList(remainingSubclasses, "subclasses"));
 
         builder.CloseElement();
 
@@ -356,6 +436,22 @@ else if (classDocument is not null)
             }
         }
     };
+
+    private bool IsSubclassForMechanics(SubclassEntry entry, JsonElement mechanics)
+    {
+        if (classDocument is null || GetProperty(classDocument.RootElement, "mechanics_tabs") is not JsonElement tabs ||
+            tabs.ValueKind != JsonValueKind.Array || tabs.GetArrayLength() == 0) return true;
+
+        bool Matches(JsonElement content) => entry.ParentFeature is string target &&
+            GetProperty(content, "features") is JsonElement features && features.ValueKind == JsonValueKind.Array &&
+            features.EnumerateArray().Any(feature => GetProperty(feature, "alternatives") is null &&
+                GetString(feature, "name") is string name && AnchorId(name) == AnchorId(target));
+
+        if (Matches(mechanics)) return true;
+        if (tabs.EnumerateArray().Any(tab => GetProperty(tab, "mechanics") is JsonElement content && Matches(content)))
+            return false;
+        return Math.Clamp(activeMechanicsTabIndex, 0, tabs.GetArrayLength() - 1) == 0;
+    }
 
     protected override async Task OnParametersSetAsync()
     {
@@ -373,37 +469,35 @@ else if (classDocument is not null)
                 ? "mechanics"
                 : "lore";
 
+        var version = ++loadVersion;
         var safeSlug = Slug.Trim().ToLowerInvariant();
+        var safeSubclassSlug = SubclassSlug?.Trim().ToLowerInvariant();
+        errorMessage = null;
 
-        if (!IsSafeSlug(safeSlug))
+        if (!IsSafeSlug(safeSlug) || (IsSubclassPage && !IsSafeSlug(safeSubclassSlug ?? string.Empty)))
         {
+            ClearSubclass();
             isLoading = false;
-            errorMessage = "The requested class name is invalid.";
+            errorMessage = "The requested class or subclass name is invalid.";
             return;
         }
 
-        if (
-            classDocument is not null
-            && string.Equals(
-                loadedClassSlug,
-                safeSlug,
-                StringComparison.OrdinalIgnoreCase))
+        if (classDocument is not null && string.Equals(loadedClassSlug, safeSlug, StringComparison.OrdinalIgnoreCase))
         {
+            LoadSelectedSubclass(safeSubclassSlug);
             isLoading = false;
-            errorMessage = null;
             return;
         }
 
         isLoading = true;
-        errorMessage = null;
-
         classDocument?.Dispose();
         classDocument = null;
+        ClearSubclass();
+        subclasses = Array.Empty<SubclassEntry>();
         loadedClassSlug = null;
 
         try
         {
-
             var classesRoot = Path.Combine(Environment.WebRootPath, "data", "classes");
             if (!Directory.Exists(classesRoot))
             {
@@ -411,43 +505,23 @@ else if (classDocument is not null)
                 return;
             }
 
-            // Find the folder case-insensitively so this also works on Linux/Render.
-            // Resolve every class folder through the same slug-normalisation path.
-            // This keeps Arbiter, hyphenated classes, and all other classes on one loader.
-            var classFolderPath = Directory
-                .EnumerateDirectories(classesRoot, "*", SearchOption.TopDirectoryOnly)
-                .FirstOrDefault(path => string.Equals(
-                    ToSlug(Path.GetFileName(path)),
-                    safeSlug,
-                    StringComparison.OrdinalIgnoreCase));
-
+            var classFolderPath = SubclassCatalog.FindClassFolder(Environment.WebRootPath, safeSlug);
             if (classFolderPath is null)
             {
                 errorMessage = $"No class folder was found for \"{Slug}\".";
                 return;
             }
 
-            var preferredNames = new[]
-            {
-                $"{safeSlug}.json",
-                $"{safeSlug.Replace('-', '_')}.json",
-                "class.json"
-            };
+            var preferredNames = new[] { $"{safeSlug}.json", $"{safeSlug.Replace('-', '_')}.json", "class.json" };
             string? jsonFilePath = null;
-
             foreach (var preferredName in preferredNames)
             {
-                jsonFilePath = Directory
-                    .EnumerateFiles(classFolderPath, "*.json", SearchOption.TopDirectoryOnly)
+                jsonFilePath = Directory.EnumerateFiles(classFolderPath, "*.json", SearchOption.TopDirectoryOnly)
                     .FirstOrDefault(path => string.Equals(Path.GetFileName(path), preferredName, StringComparison.OrdinalIgnoreCase));
                 if (jsonFilePath is not null) break;
             }
-
-            jsonFilePath ??= Directory
-                .EnumerateFiles(classFolderPath, "*.json", SearchOption.TopDirectoryOnly)
-                .OrderBy(path => path)
-                .FirstOrDefault();
-
+            jsonFilePath ??= Directory.EnumerateFiles(classFolderPath, "*.json", SearchOption.TopDirectoryOnly)
+                .OrderBy(path => path).FirstOrDefault();
             if (jsonFilePath is null)
             {
                 errorMessage = $"No class JSON file was found inside the {Path.GetFileName(classFolderPath)} folder.";
@@ -455,22 +529,127 @@ else if (classDocument is not null)
             }
 
             await using var stream = File.OpenRead(jsonFilePath);
-            classDocument = await JsonDocument.ParseAsync(stream);
+            var document = await JsonDocument.ParseAsync(stream);
+            // A rapid navigation or component disposal may have made this load obsolete.
+            if (version != loadVersion)
+            {
+                document.Dispose();
+                return;
+            }
+            classDocument = document;
+            subclasses = SubclassCatalog.Read(classFolderPath, Logger);
             loadedClassSlug = safeSlug;
+            LoadSelectedSubclass(safeSubclassSlug);
         }
         catch (JsonException ex)
         {
-            errorMessage = $"The class JSON could not be read: {ex.Message}";
+            if (version == loadVersion) errorMessage = $"The class JSON could not be read: {ex.Message}";
         }
         catch (Exception ex)
         {
-            errorMessage = $"The class could not be loaded: {ex.Message}";
+            if (version == loadVersion) errorMessage = $"The class could not be loaded: {ex.Message}";
         }
         finally
         {
-            isLoading = false;
+            if (version == loadVersion) isLoading = false;
         }
     }
+
+    private void ClearSubclass()
+    {
+        subclassDocument?.Dispose();
+        subclassDocument = null;
+        loadedSubclassSlug = null;
+    }
+
+    private void LoadSelectedSubclass(string? slug)
+    {
+        if (slug is not null && subclassDocument is not null &&
+            string.Equals(loadedSubclassSlug, slug, StringComparison.OrdinalIgnoreCase)) return;
+        ClearSubclass();
+        if (slug is null) return;
+
+        var entry = subclasses.FirstOrDefault(item => string.Equals(item.Slug, slug, StringComparison.OrdinalIgnoreCase));
+        if (entry is null)
+        {
+            errorMessage = $"No subclass was found for \"{SubclassSlug}\" in {DisplayName}.";
+            return;
+        }
+        try
+        {
+            subclassDocument = SubclassCatalog.Open(entry);
+            loadedSubclassSlug = entry.Slug;
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or JsonException)
+        {
+            Logger.LogWarning(ex, "Unable to open subclass: {File}", entry.FilePath);
+            errorMessage = "The subclass JSON could not be read. Please try again after refreshing the page.";
+        }
+    }
+
+    private string SubclassUrl(SubclassEntry entry)
+        => $"/classes/{Slug.ToLowerInvariant()}/{entry.Slug}" +
+            (activeMechanicsTabIndex > 0 ? $"?mechanicsTab={activeMechanicsTabIndex}" : string.Empty);
+
+    // A single native details control collapses the entire table. Individual
+    // rows contain only a normal navigation link and the short summary.
+    private RenderFragment RenderSubclassList(IReadOnlyList<SubclassEntry> entries, string? anchor = null) => builder =>
+    {
+        var seq = 0;
+        builder.OpenElement(seq++, "details");
+        builder.AddAttribute(seq++, "class", "class-feature class-subclass-list");
+        if (anchor is not null) builder.AddAttribute(seq++, "id", anchor);
+        builder.OpenElement(seq++, "summary");
+        builder.AddAttribute(seq++, "class", "class-feature-header");
+        builder.OpenElement(seq++, "h3");
+        builder.AddContent(seq++, "Subclasses");
+        builder.CloseElement();
+        builder.OpenElement(seq++, "span");
+        builder.AddAttribute(seq++, "class", "class-feature-chevron");
+        builder.AddAttribute(seq++, "aria-hidden", "true");
+        builder.AddContent(seq++, "⌄");
+        builder.CloseElement();
+        builder.CloseElement();
+
+        builder.OpenElement(seq++, "div");
+        builder.AddAttribute(seq++, "class", "class-table-scroll class-subclass-table-scroll");
+        builder.OpenElement(seq++, "table");
+        builder.AddAttribute(seq++, "class", "class-table class-subclass-table");
+        builder.OpenElement(seq++, "thead");
+        builder.OpenElement(seq++, "tr");
+        foreach (var heading in new[] { "Subclass", "Summary" })
+        {
+            builder.OpenElement(seq++, "th");
+            builder.AddAttribute(seq++, "scope", "col");
+            builder.AddContent(seq++, heading);
+            builder.CloseElement();
+        }
+        builder.CloseElement();
+        builder.CloseElement();
+        builder.OpenElement(seq++, "tbody");
+        foreach (var entry in entries.OrderBy(item => item.Name, StringComparer.OrdinalIgnoreCase)
+                     .ThenBy(item => item.Slug, StringComparer.OrdinalIgnoreCase))
+        {
+            builder.OpenElement(seq++, "tr");
+            builder.SetKey(entry.Slug);
+            builder.OpenElement(seq++, "td");
+            builder.OpenElement(seq++, "a");
+            builder.AddAttribute(seq++, "class", "class-subclass-name");
+            builder.AddAttribute(seq++, "href", SubclassUrl(entry));
+            builder.AddContent(seq++, entry.Name);
+            builder.CloseElement();
+            builder.CloseElement();
+            builder.OpenElement(seq++, "td");
+            builder.AddAttribute(seq++, "class", "class-subclass-summary");
+            builder.AddContent(seq++, entry.Summary);
+            builder.CloseElement();
+            builder.CloseElement();
+        }
+        builder.CloseElement(); // tbody
+        builder.CloseElement(); // table
+        builder.CloseElement(); // scroll wrapper
+        builder.CloseElement(); // details
+    };
 
     private static JsonElement? GetProperty(JsonElement element, string name)
         => element.ValueKind == JsonValueKind.Object && element.TryGetProperty(name, out var property) ? property : null;
@@ -635,7 +814,8 @@ else if (classDocument is not null)
         builder.CloseElement();
     };
 
-    private RenderFragment RenderFeatureCard(JsonElement feature) => builder =>
+    private RenderFragment RenderFeatureCard(JsonElement feature,
+        IReadOnlyList<SubclassEntry>? nestedSubclasses = null) => builder =>
     {
         var seq = 0;
 
@@ -701,6 +881,9 @@ else if (classDocument is not null)
                         ? RenderFightingStyleBlock(block)
                         : RenderBlock(block));
         }
+
+        if (nestedSubclasses is { Count: > 0 })
+            builder.AddContent(seq++, RenderSubclassList(nestedSubclasses));
 
         builder.CloseElement();
         builder.CloseElement();
@@ -1929,5 +2112,10 @@ private RenderFragment RenderBlock(JsonElement block) => builder =>
     private static bool IsSafeSlug(string slug)
         => !string.IsNullOrWhiteSpace(slug) && slug.All(character => char.IsLetterOrDigit(character) || character == '-');
 
-    public void Dispose() => classDocument?.Dispose();
+    public void Dispose()
+    {
+        ++loadVersion;
+        ClearSubclass();
+        classDocument?.Dispose();
+    }
 }

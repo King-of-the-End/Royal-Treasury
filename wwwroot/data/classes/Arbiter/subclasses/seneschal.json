@@ -1,0 +1,427 @@
+{
+  "name": "Seneschal",
+  "slug": "seneschal",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "Seneschals typically serve a figure of authority, often as agents who act under their direct orders. As the hand of a powerful figure, they act with impunity. They utilize magic to supplant their martial prowess and make up for their lack of otherworldly powers with divine might bestowed upon them."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Proficiencies",
+          "paragraphs": [
+            "Saving Throws (Optional): Replace Constitution with Wisdom",
+            "Skills: Your choice of History or Religion"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spellcasting",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you first choose this ascension at 1st level, you learn how to cast spells as an agent of authority, to augment your martial capabilities. You draw your spells from the cleric spell list. Spells learned through this feature, as well as spells that another Seneschal feature explicitly treats as such, are your Seneschal spells."
+        },
+        {
+          "type": "section",
+          "title": "Cantrips",
+          "paragraphs": [
+            "At 1st level, choose one cantrip from the cleric spell list. At 3rd level and again at 10th level, you learn another cleric cantrip of your choice."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spell Slots",
+          "paragraphs": [
+            "The Seneschal table indicates your available spell slots for casting the cleric spells you learn through this feature (1st level or higher). Casting one of these spells requires a slot of at least the spell’s level. You regain every expended spell slot when you complete a long rest.",
+            "For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "The Seneschal",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Arbiter Level"
+                },
+                {
+                  "key": "cantrips",
+                  "label": "Cantrips Known"
+                },
+                {
+                  "key": "spells",
+                  "label": "Spells Known"
+                },
+                {
+                  "key": "first",
+                  "label": "1st"
+                },
+                {
+                  "key": "second",
+                  "label": "2nd"
+                },
+                {
+                  "key": "third",
+                  "label": "3rd"
+                },
+                {
+                  "key": "fourth",
+                  "label": "4th"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "cantrips": "1",
+                  "spells": "—",
+                  "first": "—",
+                  "second": "—",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "2nd",
+                  "cantrips": "1",
+                  "spells": "—",
+                  "first": "—",
+                  "second": "—",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "3rd",
+                  "cantrips": "2",
+                  "spells": "3",
+                  "first": "2",
+                  "second": "—",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "4th",
+                  "cantrips": "2",
+                  "spells": "4",
+                  "first": "3",
+                  "second": "—",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "5th",
+                  "cantrips": "2",
+                  "spells": "5",
+                  "first": "3",
+                  "second": "—",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "6th",
+                  "cantrips": "2",
+                  "spells": "5",
+                  "first": "3",
+                  "second": "—",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "7th",
+                  "cantrips": "2",
+                  "spells": "6",
+                  "first": "4",
+                  "second": "2",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "8th",
+                  "cantrips": "2",
+                  "spells": "6",
+                  "first": "4",
+                  "second": "2",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "9th",
+                  "cantrips": "2",
+                  "spells": "7",
+                  "first": "4",
+                  "second": "2",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "10th",
+                  "cantrips": "3",
+                  "spells": "7",
+                  "first": "4",
+                  "second": "3",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "11th",
+                  "cantrips": "3",
+                  "spells": "8",
+                  "first": "4",
+                  "second": "3",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "12th",
+                  "cantrips": "3",
+                  "spells": "8",
+                  "first": "4",
+                  "second": "3",
+                  "third": "—",
+                  "fourth": "—"
+                },
+                {
+                  "level": "13th",
+                  "cantrips": "3",
+                  "spells": "9",
+                  "first": "4",
+                  "second": "3",
+                  "third": "2",
+                  "fourth": "—"
+                },
+                {
+                  "level": "14th",
+                  "cantrips": "3",
+                  "spells": "9",
+                  "first": "4",
+                  "second": "3",
+                  "third": "2",
+                  "fourth": "—"
+                },
+                {
+                  "level": "15th",
+                  "cantrips": "3",
+                  "spells": "10",
+                  "first": "4",
+                  "second": "3",
+                  "third": "2",
+                  "fourth": "—"
+                },
+                {
+                  "level": "16th",
+                  "cantrips": "3",
+                  "spells": "10",
+                  "first": "4",
+                  "second": "3",
+                  "third": "3",
+                  "fourth": "—"
+                },
+                {
+                  "level": "17th",
+                  "cantrips": "3",
+                  "spells": "11",
+                  "first": "4",
+                  "second": "3",
+                  "third": "3",
+                  "fourth": "—"
+                },
+                {
+                  "level": "18th",
+                  "cantrips": "3",
+                  "spells": "11",
+                  "first": "4",
+                  "second": "3",
+                  "third": "3",
+                  "fourth": "—"
+                },
+                {
+                  "level": "19th",
+                  "cantrips": "3",
+                  "spells": "12",
+                  "first": "4",
+                  "second": "3",
+                  "third": "3",
+                  "fourth": "1"
+                },
+                {
+                  "level": "20th",
+                  "cantrips": "3",
+                  "spells": "12",
+                  "first": "4",
+                  "second": "3",
+                  "third": "3",
+                  "fourth": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Multiclassing",
+          "paragraphs": [
+            "You add one third of your arbiter levels (rounded down) to your total multiclass spellcaster level to determine your available spell slots when multiclassing as a seneschal arbiter and at least one other class with the spellcasting feature."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spells Known of 1st Level and Higher",
+          "paragraphs": [
+            "At 3rd level, choose three 1st-level spells from the cleric spell list.",
+            "Refer to the Spells Known column of the Seneschal table to see when you can add another cleric spell to your repertoire. You must have a spell slot of the chosen spell’s level. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
+            "Whenever you gain an arbiter level, you can replace any of the spells you learned through this feature with other spells of your choice from the cleric spell list. The replacement spells must be of levels for which you have spell slots."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spellcasting Ability",
+          "paragraphs": [
+            "Wisdom is your spellcasting ability for the cleric spells you learn through this feature. The power of your spells comes from the primeval force that you possess, ignited by your loyalty to the one you serve. Use your Wisdom for any of these spells that refer to your spellcasting ability, and your Wisdom modifier to calculate their saving throw DC and spell attack modifier.",
+            "Spell save DC = 8 + your proficiency bonus + your Marked Bonus (if applicable) + your Wisdom modifier",
+            "Spell attack modifier = your proficiency bonus + your Marked Bonus (if applicable) + your Wisdom modifier"
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spellcasting Focus",
+          "paragraphs": [
+            "You can use a martial melee weapon that you are wielding as the spellcasting focus for your cleric spells learned through this feature."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ruincrest Damage Type",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you would deal damage to a creature that is branded with your ruincrest, you can replace all of the damage dealt with radiant damage instead, as a result of the divine powers that you wield."
+        }
+      ]
+    },
+    {
+      "name": "Prophet’s Fangs",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, you can manipulate the Weave to cast a spell even when you have no spell slots left to expend, or that you want to expend. You can cast a seneschal spell you know of 1st level without expending a spell slot, provided it targets a single creature and the target is marked with your ruincrest. Once you cast a spell with this feature, you can’t do so again until you finish a short or long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can cast a spell of 2nd level with this feature when you reach 9th level, and a spell of 3rd level with it starting at 15th level."
+        },
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level, you can cast two spells, instead of one, with this feature. You regain expended uses when you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Emissary of Authority",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 6th level, you learn to silence your prey when they attempt to cast a spell. Whenever a creature within 60 feet of you that is branded with your ruincrest casts a spell, you can use your reaction to cast counterspell, no spell slot required, targeting that creature. Your spellcasting modifier for it is your Wisdom score. You must finish a short or long rest before you do so again."
+        },
+        {
+          "type": "paragraph",
+          "text": "Starting at 11th level, you can cast counterspell twice with this feature instead of once. You regain expended uses when you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Arcane Adeptus",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 10th level, you have learned to complement your martial skills with the magic you wield in the midst of battle. When you take the Attack action on your turn, you can cast one of your seneschal spells with a casting time of 1 action in place of one of the attacks you make with it."
+        }
+      ]
+    },
+    {
+      "name": "Divine Providence",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 14th level, you are bestowed with divine might, causing melee weapons you wield to be suffused with radiance. Your melee weapon attacks deal an additional 1d6 radiant damage."
+        }
+      ]
+    },
+    {
+      "name": "Sovereign Enforcer",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 18th level, when you kill a creature marked with your ruincrest with a weapon attack, you regain one of your expended spell slots of 1st level. Whenever you score a critical hit with a weapon attack against a creature marked with your ruincrest and kill it, you regain a spell slot of 2nd level or lower that’s expended instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreover, you learn the spells destructive wave (choosing radiant damage) and holy weapon. They count as cleric spells for your Seneschal spellcasting (and as Seneschal spells), and do not count towards the number of spells that you know. You can cast one of them without expending a spell slot and without requiring concentration. Once you cast any of these spells this way, you must finish a long rest before you can cast either of them this way again."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Divine Reach",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you cast a seneschal spell with a single target, the spell’s range is doubled if it targets a creature that’s branded with your ruincrest and it doesn’t have a range of touch."
+            }
+          ],
+          "subtitle": "Prerequisite: Seneschal ascension"
+        },
+        {
+          "name": "Guided by Divinity",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You are always under the effects of a guidance spell."
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Seneschal ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}

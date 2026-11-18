@@ -1,0 +1,371 @@
+{
+  "name": "Blood Voivode",
+  "slug": "blood-voivode",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "Blood voivodes are unshakable juggernauts, able to leech the life force of those they defeat and sacrifice their own blood to perform extraordinary feats. Demonized and labeled heralds of destruction, it is up to you to prove whether or not you’re a portent of the evils that are rumored to follow you."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Hit Points",
+          "paragraphs": [
+            "Hit Dice: 1d12 per arbiter level",
+            "Hit Points at 1st Level: 12 + your Constitution modifier",
+            "Hit Points at Higher Levels: 1d12 (or 7) + your Constitution modifier per arbiter level after 1st level"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deathleech",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 1st level when you first choose this ascension, when you kill a hostile creature marked with your ruincrest, you regain hit points equal to 1d4 + your proficiency bonus. The amount of hit points that you regain increases as you gain more levels in this class, as shown in the Deathleech table below."
+        },
+        {
+          "type": "section",
+          "title": "Deathleech",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Arbiter Level"
+                },
+                {
+                  "key": "hp",
+                  "label": "HP Regained"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st — 4th",
+                  "hp": "1d4 + Proficiency Bonus"
+                },
+                {
+                  "level": "5th — 10th",
+                  "hp": "2d4 + Proficiency Bonus"
+                },
+                {
+                  "level": "11th — 16th",
+                  "hp": "3d4 + Proficiency Bonus"
+                },
+                {
+                  "level": "17th — 20th",
+                  "hp": "4d4 + Proficiency Bonus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ruincrest Damage Type",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you would deal damage to a creature that is branded with your ruincrest, you can replace all of the damage dealt with necrotic damage instead, as a result of your dark ascension."
+        }
+      ]
+    },
+    {
+      "name": "Crimson Sacraments",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Crimson sacraments are rituals that blood voivodes perform to carry out superhuman feats, at the cost of their own blood. While some sacraments are acts that are difficult for mortals to achieve, others are violent acts that send shivers through onlookers."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach 3rd level, you learn two sacraments of your choice. You learn more sacraments as you gain additional levels as an arbiter, as indicated by blood voivode features that you gain at higher levels. The list of sacraments you can learn from at 3rd level are detailed at the end of the feature’s description."
+        },
+        {
+          "type": "paragraph",
+          "text": "A crimson sacrament can only be used so many times per rest. The number of times you can perform a sacrament, the number of hit points you must expend to use it, and whether or not it requires a free hand to use it is noted in parenthesis before its description. You regain all expended uses of your sacraments when you finish a short or long rest, and can’t use more than one sacrament on each of your turns."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can’t expend hit points to perform a sacrament if you have hit points less than half the maximum result you can roll to determine how many hit points are lost. For example, you can’t perform sangrite cleaver if you currently have less than 6 hit points. Additionally, your hit points can’t be reduced to less than 1 from performing a sacrament, and temporary hit points can’t be expended to perform sacraments."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action on your turn, you can replace one of your attacks with a crimson sacrament that doesn’t require an action, bonus action, or reaction to use."
+        },
+        {
+          "type": "note",
+          "title": "Rule Tip: Temporary Hit Points Don’t Stack",
+          "text": "Blood voivodes have several features that grant them temporary hit points. If you have temporary hit points and gain more of them, you don’t add them together unless a rule says you can. Instead, you decide which temporary hit points to keep."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Blood Surge",
+              "paragraphs": [
+                "(2/rest) As a bonus action, you temper your body and resolve to gain 10 temporary hit points, which last for one minute. The amount of temporary hit points gained increases to 15 at 5th level, 20 at 11th level, and 25 at 17th level."
+              ]
+            },
+            {
+              "name": "Crimson Claw",
+              "paragraphs": [
+                "(5/rest, 2d4) You summon a blood-red claw that descends upon another creature you can see within 30 feet of you, which disappears after striking the target. The target must make a Dexterity saving throw. It takes 2d6 slashing damage on a failed save, or half as much damage on a successful save. The damage increases to 3d6 at 5th level, 4d6 at 11th level, and 5d6 at 17th level."
+              ]
+            },
+            {
+              "name": "Sangrite Cleaver",
+              "paragraphs": [
+                "(4/rest, somatic, 1d10) You summon a viscous sword forged from your own blood and swing it at a creature within 10 feet of you, which fades into red mist afterwards on either a hit or miss. Make a melee arbiter attack against the target. On a hit, the target takes 2d10 force damage. The damage increases to 3d10 at 5th level, 4d10 at 11th level, and 5d10 at 17th level."
+              ]
+            },
+            {
+              "name": "Scarlet Spear",
+              "paragraphs": [
+                "(3/rest, somatic, 1d12) A crimson spear materializes in your grasp as you throw it at a creature that you can see no more than 40 feet away from you. Make a ranged arbiter attack against the target. On a hit, the spear deals 2d10 piercing damage to the target. The damage increases to 3d10 at 5th level, 4d10 at 11th level, and 5d10 at 17th level."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vampiric Impetus",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 6th level, both your maximum hit points and your Constitution score can’t be reduced. Then choose two of the following crimson sacraments to learn."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Bloodburst",
+              "paragraphs": [
+                "(3/rest, somatic, 2d8) You let loose a burst of blood, centered on yourself, that lashes out uncontrollably at your surroundings. Each other creature within 10 feet of you must make a Constitution saving throw. A creature takes 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one. The damage increases to 4d6 at 11th level and 5d6 at 17th level."
+              ]
+            },
+            {
+              "name": "Mistwake",
+              "paragraphs": [
+                "(5/rest, 1d6) You teleport to an unoccupied spot you can see that is up to 40 feet away in a flourish of blood-red petals as a bonus action. After you teleport, you can brand a creature you can see within 30 feet of your new location with a ruincrest for one hour."
+              ]
+            },
+            {
+              "name": "Sword Flurry",
+              "paragraphs": [
+                "(3/rest, 2d6) You strike with overwhelming speed; with one of the weapons you’re currently wielding, make two weapon attacks divided as you choose against up to two targets within that weapon’s reach. In addition, you also gain 15 extra feet of movement speed this turn."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Undying Fortitude",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level, whenever you are stabilized or healed while you have 0 hit points, you also gain hit points equal to twice your arbiter level. Once you use this feature, you can’t use it again until you finish a long rest. In addition, you have advantage on death saving throws."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also when you gain this feature, choose two of the three following crimson sacraments to learn."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Blood Dance",
+              "paragraphs": [
+                "(1/rest, 3d8) You enter a hysterical rage with your bonus action. For the next minute, you have advantage on Strength and Dexterity saving throws, are immune to the charmed and frightened conditions, have another instance of Extra Attack, and can’t cast spells or perform crimson sacraments. The rage ends early if you are reduced to 0 hit points, choose to end it early with a bonus action, or are incapacitated."
+              ]
+            },
+            {
+              "name": "Crimson Flurry",
+              "paragraphs": [
+                "(2/rest, somatic, 3d8) You unleash a flurry of primordial force against creatures close to you. Make four melee arbiter attacks distributed against any number of creatures you can see within 10 feet of you. Each time you hit, the target takes 2d8 slashing damage."
+              ]
+            },
+            {
+              "name": "Vampiric Respite",
+              "paragraphs": [
+                "(3/rest, 2d8) You imbue your weapon with parasitic energy as you attack with it. On a hit, the weapon deals an additional 2d12 necrotic damage and you gain a number of temporary hit points equal to the damage dealt by the weapon."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crimson Arrogation",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 14th level, whenever you take damage from a creature within 10 feet of you, you can use your reaction to make a weapon attack against that creature; you can’t make an attack against a creature outside of your weapon’s range."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, when you gain this feature, choose one of the following crimson sacraments to learn."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Bloodstorm",
+              "paragraphs": [
+                "(1/rest, 5d8) You unleash a storm of flesh-ripping force as an action. Each other creature within 30 feet of you must make a Constitution saving throw. Each creature that fails its saving throw and each object in the storm’s vicinity takes 6d10 slashing damage, while each creature that succeeds on its saving throw takes half as much damage instead."
+              ]
+            },
+            {
+              "name": "Forsaken Blade",
+              "paragraphs": [
+                "(1/rest, somatic, 4d8) You summon a blood-clad greatsword and attack a creature within 5 feet of you with it as an action. Make a melee arbiter attack against the target, dealing 8d10 slashing damage on a hit. If the target dies from the damage inflicted by the sword, you regain all of your missing hit points. The greatsword then vanishes."
+              ]
+            },
+            {
+              "name": "Symphony of Pain",
+              "paragraphs": [
+                "(1/rest, 5d10) You push your body to inhuman limits for a moment, making ten attacks in the amount of time it takes others to attack once as an action. Make ten attacks with weapons you’re holding distributed against any number of creatures within the range of those weapons. The physical trauma you incur from performing such a feat ends your turn and causes you to suffer 1 level of exhaustion."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Exhaustion",
+          "paragraphs": [
+            "Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to exhaustion, which is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect’s description."
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                }
+              ],
+              "rows": [
+                {
+                  "level": 1,
+                  "effect": "Disadvantage on ability checks"
+                },
+                {
+                  "level": 2,
+                  "effect": "Speed halved"
+                },
+                {
+                  "level": 3,
+                  "effect": "Disadvantage on attack rolls and saving throws"
+                },
+                {
+                  "level": 4,
+                  "effect": "Hit point maximum halved"
+                },
+                {
+                  "level": 5,
+                  "effect": "Speed reduced to 0"
+                },
+                {
+                  "level": 6,
+                  "effect": "Death"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "If a creature that’s already exhausted suffers from another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect’s description."
+            },
+            {
+              "type": "paragraph",
+              "text": "A creature suffers the effect of its current exhaustion level as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks."
+            },
+            {
+              "type": "paragraph",
+              "text": "An effect that removes exhaustion reduces its level by the amount specified in its description, with all effects ending if the exhaustion level is reduced below 1."
+            },
+            {
+              "type": "paragraph",
+              "text": "Finishing a long rest reduces a creature’s exhaustion level by 1 if the creature has ingested some food and drink. Also, being raised from the dead reduces a creature’s exhaustion level by 1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bloodscarred Sovereignty",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 18th level, whenever you kill a creature branded with your ruincrest, you also gain temporary hit points equal to your arbiter level. Moreover, your primeval might sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically; however you can still die of old age. You also no longer need food or water, and for every 5 years that pass, your body ages only 1 year."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Malefic Indignation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever a creature that you can see within 30 feet of you deals damage to you while you are missing at least half of your hit points, that creature takes 1d10 necrotic damage unless you choose not to harm them."
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Blood Voivode ascension"
+        },
+        {
+          "name": "Sanguine Protection",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You get a +2 bonus to your Armor Class while you’re missing at least half of your hit points."
+            }
+          ],
+          "subtitle": "Prerequisite: Blood Voivode ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}

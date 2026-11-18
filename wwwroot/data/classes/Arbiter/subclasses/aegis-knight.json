@@ -1,0 +1,450 @@
+{
+  "name": "Aegis Knight",
+  "slug": "aegis-knight",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "Aegis knights are arbiters with a modicum of magical ability, able to summon arcane suits of armor for a short amount of time that bolster their combat skills. These mysterious suits can perform a variety of tasks, such as briefly granting them giant weapons, turning them into juggernauts, or even flight."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Proficiencies",
+          "paragraphs": [
+            "Armor: Heavy armor",
+            "Skills: Arcana"
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Starting Equipment",
+          "paragraphs": [
+            "Instead of the scale mail or leather armor granted by the arbiter class, you can start with chain mail."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arcane Defense",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you first choose this ascension at 1st level, your innate magical ability awakens, providing you a means to magically protect yourself from harm."
+        },
+        {
+          "type": "paragraph",
+          "text": "You learn your choice of absorb elements or shield. You can cast it twice without expending a spell slot, and regain expended uses when you finish a short or long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach 5th level, you can cast the chosen spell three times, instead of two, without expending a spell slot."
+        }
+      ]
+    },
+    {
+      "name": "Ruincrest Damage Type",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you would deal damage to a creature branded with your ruincrest, you can replace all of the damage dealt with the damage type you chose for Battlesuit Engagement instead."
+        }
+      ]
+    },
+    {
+      "name": "Battlesuit Engagement",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, your meager magical power blossoms, allowing you to conjure magical armor for yourself. On your turn, you can engage your battlesuit as a bonus action. While you have a battlesuit active, you gain the following benefits."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Your Armor Class becomes the Armor Class dictated by the battlesuit.",
+            "Your battlesuit grants you a weapon unique to it, which is summoned in one of your hands (typically the hand that was wielding a weapon) when you engage the battlesuit.",
+            "Any features granted by your battlesuit."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Your battlesuit lasts for 10 minutes. It ends early if you are knocked unconscious or you end it early with a bonus action. The duration of your battlesuit increases to 30 minutes when you reach 10th level."
+        },
+        {
+          "type": "paragraph",
+          "text": "Your gear melds into the equipment that’s granted by your battlesuit. You can’t activate, use, wield, or otherwise benefit from any of your melded equipment."
+        },
+        {
+          "type": "paragraph",
+          "text": "You have a limited number of uses of this feature. Once you have engaged your battlesuit the number of times shown for your arbiter level, you must finish a long rest before you can engage a battlesuit again. Moreover, when you finish a short rest, you regain one expended battlesuit engagement."
+        },
+        {
+          "type": "section",
+          "title": "Battlesuit Engagements",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Arbiter Level"
+                },
+                {
+                  "key": "engages",
+                  "label": "Engages"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "3rd — 6th",
+                  "engages": 3
+                },
+                {
+                  "level": "7th — 14th",
+                  "engages": 4
+                },
+                {
+                  "level": "15th — 20th",
+                  "engages": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, choose from acid, cold, fire, lightning, necrotic, or radiant damage. As long as your battlesuit is engaged, you can replace the damage normally dealt by your battlesuit’s weapon or summoned weapon with damage of the chosen type on a hit."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can replace the chosen damage type with another damage type when you reach 6th level, and again at 10th, 14th, and 18th level."
+        },
+        {
+          "type": "note",
+          "title": "Setting Considerations",
+          "text": "Battlesuits with an array of built-in armaments may push the boundaries of what is acceptable for the setting your character is in. Consult your DM to determine if it’s an appropriate ascension for your character to take, or for the setting itself."
+        },
+        {
+          "type": "note",
+          "title": "Variant Battlesuit Rules",
+          "text": "At the DM’s discretion, whenever you engage your battlesuit, you can use and/or benefit from certain equipment that’s melded into the battlesuit."
+        },
+        {
+          "type": "section",
+          "title": "Battlesuits",
+          "paragraphs": [
+            "When you reach 3rd level, choose one of the following battlesuits. The battlesuit you choose is the one that is summoned whenever you use a battlesuit engagement."
+          ],
+          "blocks": [
+            {
+              "type": "section",
+              "title": "Battlesuit Weapon",
+              "paragraphs": [
+                "You can’t be disarmed of the weapon associated with your battlesuit while it’s engaged and you’re conscious. In addition, if it’s not in your hand, you can use a bonus action to cause it to teleport to one of your free hands. When your battlesuit is disengaged, the weapon associated with it vanishes."
+              ]
+            },
+            {
+              "type": "options",
+              "options": [
+                {
+                  "name": "Bladeliege",
+                  "paragraphs": [
+                    "Armor Class: 11 + your Constitution modifier + your proficiency bonus",
+                    "Weapon: Greatsword, 2d6 slashing (two-handed)"
+                  ],
+                  "blocks": [
+                    {
+                      "type": "section",
+                      "title": "Mobile",
+                      "paragraphs": [
+                        "While this battlesuit is engaged, your movement doesn’t provoke opportunity attacks."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Weapon Improvement",
+                      "paragraphs": [
+                        "Beginning at 5th level, while this battlesuit is engaged, melee weapon attacks you make deal an additional 2 damage on a hit. This increases to 3 at 11th level and 4 at 17th level."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Sword Flurry",
+                      "paragraphs": [
+                        "Beginning at 11th level, while this battlesuit is engaged, you can use your action to make melee attacks against any number of creatures within 5 feet of you, or 10 feet instead if you are making attacks with a weapon that has the reach property, with a separate attack roll for each target."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Greater Weapon Improvement",
+                      "paragraphs": [
+                        "When you reach 17th level, while your battlesuit is engaged, your melee attacks deal one extra die of damage; for instance, the damage dealt by a greatsword increases from 2d6 to 3d6 slashing damage."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Juggernaut",
+                  "paragraphs": [
+                    "Armor Class: 14 + your Constitution modifier + your proficiency bonus",
+                    "Weapon: Glaive, 1d10 slashing (reach, two-handed)"
+                  ],
+                  "blocks": [
+                    {
+                      "type": "section",
+                      "title": "Colossal Armament",
+                      "paragraphs": [
+                        "As long as this battlesuit is engaged, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Resilient Guard",
+                      "paragraphs": [
+                        "Starting at 5th level, while this battlesuit is engaged, any damage that you take is reduced by 1d4 + 1. The damage is reduced by more at higher levels: by 1d6 + 2 at 11th level and by 1d8 + 3 at 17th level."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Mystic Ward",
+                      "paragraphs": [
+                        "At 11th level, while this battlesuit is engaged, you have advantage on saving throws against spells and other magical effects."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Impregnable",
+                      "paragraphs": [
+                        "When you reach 17th level, if you fail a saving throw while this battlesuit is engaged, you can choose to succeed instead. Once you use this feature, you can’t use it again until you engage this battlesuit again."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Palisade",
+                  "paragraphs": [
+                    "Armor Class: 12 + your Constitution modifier + your proficiency bonus",
+                    "Weapon: Halberd, 1d10 slashing (reach, two-handed)"
+                  ],
+                  "blocks": [
+                    {
+                      "type": "section",
+                      "title": "Bulwark Aura",
+                      "paragraphs": [
+                        "Each friendly creature that is within 10 feet of you gets a +1 bonus to its Armor Class while this battlesuit is engaged."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Support Armaments",
+                      "paragraphs": [
+                        "Starting at 5th level, whenever you or a friendly creature within the range of your Bulwark Aura must make a saving throw, the creature gains a +1 bonus to the saving throw. The bonus is increased to +2 at 11th level and +3 at 17th level."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Assault Modulator",
+                      "paragraphs": [
+                        "When you reach 11th level, the range of your Bulwark Aura increases to 30 feet. Moreover, friendly creatures in the range of your Bulwark Aura gain a +2 bonus to attack rolls and to the save DC of their features and spells."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Walking Rampart",
+                      "paragraphs": [
+                        "At 17th level, the range of your Bulwark Aura increases to 60 feet. In addition, the bonuses from other features granted by this battlesuit are increased to +3."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Seraph",
+                  "paragraphs": [
+                    "Armor Class: 10 + your Constitution modifier + your proficiency bonus",
+                    "Weapon: Longsword, 1d8 slashing (versatile, 1d10)"
+                  ],
+                  "blocks": [
+                    {
+                      "type": "section",
+                      "title": "Flight",
+                      "paragraphs": [
+                        "While this battlesuit is engaged, you can hover and have a flying speed of 25 feet."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Shoulder-mounted Missile Pods",
+                      "paragraphs": [
+                        "When you reach 5th level, you also create two shoulder-mounted pods when you engage this battlesuit. While this battlesuit is engaged, you can use a bonus action to cast magic missile as a 2nd level spell without expending a spell slot. You can’t cast it more than twice this way each time you engage this battlesuit. It’s cast at 3rd level starting at 11th level and at 4th level when you reach 17th level."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Improved Flight",
+                      "paragraphs": [
+                        "At 11th level, the flying speed granted by this battlesuit is increased to 50 feet."
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Disintegration Ray",
+                      "paragraphs": [
+                        "When you reach 17th level, you also summon a shoulder-mounted cannon whenever you engage this battlesuit. You can cast disintegrate using the shoulder-mounted cannon without expending a spell slot while this battlesuit is engaged. Its save DC is equal to your arbiter save DC. Once you use this feature, you can’t use it again until you finish a long rest."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Battlesuit Improvement",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 6th level, your magical power blossoms. You gain the following benefits."
+        },
+        {
+          "type": "section",
+          "title": "Target Lock",
+          "paragraphs": [
+            "Whenever you engage your battlesuit, you can brand a creature that you can see that is within 60 feet of you with your ruincrest for 1 hour."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Weapon Enhancement",
+          "paragraphs": [
+            "The weapon associated with your battlesuit becomes a magical weapon with a +1 bonus to any attack and damage rolls you make with it. Moreover, you can now summon it in one of your free hands with a bonus action, even if your battlesuit is not engaged. The weapon disappears if you are incapacitated or dismiss it (no action required). The bonus is increased to +2 at 11th level and +3 at 17th level."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Security Override",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 10th level, you gain a degree of familiarity with your battlesuit, in addition to warding magic. You gain the following benefits."
+        },
+        {
+          "type": "section",
+          "title": "Armored Resistance",
+          "paragraphs": [
+            "You have resistance to your chosen damage type for Battlesuit Engagement while your battlesuit is engaged."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spellcasting",
+          "paragraphs": [
+            "You learn otiluke’s resilient sphere and can cast it once without expending a spell slot. When you cast it this way, the spell can only target yourself and ignores your size. You must finish a long rest before you can do so again."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Weapon Override",
+          "paragraphs": [
+            "Whenever you engage your battlesuit, you can summon a weapon that you’re carrying or wielding instead of the weapon associated with that battlesuit."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Primordial Aegis",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 14th level, you can use your reaction when you’re dealt damage to reduce the damage that you take by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must have your battlesuit engaged to use this reaction."
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreover, your innate magical power matures. You learn banishing smite, and can cast it once without expending a spell slot. You must finish a long rest before you can do so again."
+        }
+      ]
+    },
+    {
+      "name": "Aegis’s Apex",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 18th level, your reserve of limited magical power reaches its apex. You gain the following benefits."
+        },
+        {
+          "type": "section",
+          "title": "Self-Preservation Protocol",
+          "paragraphs": [
+            "Your battlesuit no longer ends early if you are knocked unconscious. Moreover, you regain 5 hit points at the start of each of your turns if your battlesuit is engaged and you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spellcasting",
+          "paragraphs": [
+            "You learn globe of invulnerability, and can cast it once without expending a spell slot. When you cast it this way, it doesn’t require concentration. You must finish a long rest before you can do so again."
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Steadfast Aegis",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can cast the spell you learned from Arcane Defense one additional time between long rests. At 9th level, you can cast your chosen spell with that feature two more times instead."
+            }
+          ],
+          "subtitle": "Prerequisite: Aegis Knight ascension"
+        },
+        {
+          "name": "Unwavering Determination",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can reroll a saving throw that you fail. When you do, you must use the new roll, and add your arbiter level to the result. Once you use this birthright, you can’t use it again until you finish a short or long rest."
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Aegis Knight ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}

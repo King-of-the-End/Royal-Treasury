@@ -1,0 +1,374 @@
+{
+  "name": "Wyrmscourge",
+  "slug": "wyrmscourge",
+  "class": "Arbiter",
+  "subclass_feature": "Arbiter’s Ascension",
+  "summary": "TBA",
+  "introduction": [
+    "Wyrmscourges are arbiters who surge with draconic might, perhaps as a result of bargaining with a dragon or draconic parentage. Regardless of their circumstances, they emulate many aspects of dragons such as their iconic breath attacks, rending claws, and flight capabilities."
+  ],
+  "features": [
+    {
+      "name": "Starting Class Benefits",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the arbiter is your starting class and this is your chosen ascension, you gain the following features:"
+        },
+        {
+          "type": "section",
+          "title": "Proficiencies",
+          "paragraphs": [
+            "Skills: Your choice of Insight or Nature"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Draconic Bloodline",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this ascension at 1st level, you choose one type of dragon as your ancestor. The traits that are associated with each dragon are used by features you gain later. If you would deal damage to a creature that is branded with your ruincrest, you can replace all of the damage dealt with the damage type associated with your ancestor instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "You also learn to speak, read, and write Draconic. Additionally, parts of your skin are covered by a thin sheen of dragon-like scales as physical traits of your dragon ancestors emerge."
+        },
+        {
+          "type": "section",
+          "title": "Draconic Ancestry",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "dragon",
+                  "label": "Dragon"
+                },
+                {
+                  "key": "type",
+                  "label": "Type"
+                },
+                {
+                  "key": "damage",
+                  "label": "Damage"
+                },
+                {
+                  "key": "breath",
+                  "label": "Breath Weapon"
+                }
+              ],
+              "rows": [
+                {
+                  "dragon": "Amethyst",
+                  "type": "Gem",
+                  "damage": "Force",
+                  "breath": "15 ft. cone (Dex. save)"
+                },
+                {
+                  "dragon": "Black",
+                  "type": "Chromatic",
+                  "damage": "Acid",
+                  "breath": "5 by 30 ft. line (Dex. save)"
+                },
+                {
+                  "dragon": "Blue",
+                  "type": "Chromatic",
+                  "damage": "Lightning",
+                  "breath": "5 by 30 ft. line (Dex. save)"
+                },
+                {
+                  "dragon": "Brass",
+                  "type": "Metallic",
+                  "damage": "Fire",
+                  "breath": "5 by 30 ft. line (Dex. save)"
+                },
+                {
+                  "dragon": "Bronze",
+                  "type": "Metallic",
+                  "damage": "Lightning",
+                  "breath": "5 by 30 ft. line (Dex. save)"
+                },
+                {
+                  "dragon": "Copper",
+                  "type": "Metallic",
+                  "damage": "Acid",
+                  "breath": "5 by 30 ft. line (Dex. save)"
+                },
+                {
+                  "dragon": "Crystal",
+                  "type": "Gem",
+                  "damage": "Radiant",
+                  "breath": "15 ft. cone (Con. save)"
+                },
+                {
+                  "dragon": "Emerald",
+                  "type": "Gem",
+                  "damage": "Psychic",
+                  "breath": "15 ft. cone (Dex. save)"
+                },
+                {
+                  "dragon": "Gold",
+                  "type": "Metallic",
+                  "damage": "Fire",
+                  "breath": "15 ft. cone (Dex. save)"
+                },
+                {
+                  "dragon": "Green",
+                  "type": "Chromatic",
+                  "damage": "Poison",
+                  "breath": "15 ft. cone (Con. save)"
+                },
+                {
+                  "dragon": "Red",
+                  "type": "Chromatic",
+                  "damage": "Fire",
+                  "breath": "15 ft. cone (Dex. save)"
+                },
+                {
+                  "dragon": "Sapphire",
+                  "type": "Gem",
+                  "damage": "Thunder",
+                  "breath": "15 ft. cone (Con. save)"
+                },
+                {
+                  "dragon": "Silver",
+                  "type": "Metallic",
+                  "damage": "Cold",
+                  "breath": "15 ft. cone (Con. save)"
+                },
+                {
+                  "dragon": "Topaz",
+                  "type": "Gem",
+                  "damage": "Necrotic",
+                  "breath": "15 ft. cone (Con. save)"
+                },
+                {
+                  "dragon": "White",
+                  "type": "Chromatic",
+                  "damage": "Cold",
+                  "breath": "15 ft. cone (Con. save)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wyrmling’s Claws",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your draconic ascent allows you to transform your hands into a dragon’s claws whenever you make an unarmed attack with them. You can roll 1d8 in place of the normal damage of your unarmed strike, which now deals slashing damage instead of bludgeoning damage after being transformed. After you make the attack, your hands return to normal. The damage dealt increases as you gain more levels in this class, as shown in the Wyrmling’s Claws table."
+        },
+        {
+          "type": "section",
+          "title": "Wyrmling’s Claws",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Arbiter Level"
+                },
+                {
+                  "key": "damage",
+                  "label": "Claw Damage"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st — 4th",
+                  "damage": "1d8"
+                },
+                {
+                  "level": "5th — 10th",
+                  "damage": "1d10"
+                },
+                {
+                  "level": "11th — 16th",
+                  "damage": "1d12"
+                },
+                {
+                  "level": "17th — 20th",
+                  "damage": "2d8"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dragon Breath",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, you are able to emulate the destructive breath attacks of dragons. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of destructive energy. It deals damage in an area according to your chosen ancestry. When you use your breath weapon, all creatures in the area must make a saving throw, the type of which is determined by your chosen ancestry. A creature is dealt 2d8 damage on a failed save, or half as much damage on a successful save. The damage dealt increases to 3d8 at 5th level, 4d8 at 11th level, and 5d8 at 17th level."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses of it when you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Draconic Resistance",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 6th level, you have resistance to the damage type associated with your ancestry. In addition, you gain one of the following features that’s associated with your ancestry. You have two uses of the feature you gain this way and regain expended uses when you finish a long rest."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Chromatic Ward",
+              "paragraphs": [
+                "(Chromatic) You can use a bonus action to channel your innate draconic might. For 1 minute, you become immune to the damage type associated with your ancestry."
+              ]
+            },
+            {
+              "name": "Enervating Breath",
+              "paragraphs": [
+                "(Metallic) You gain a second breath attack. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. A creature in the cone’s area must succeed on a Constitution saving throw or become incapacitated until the start of your next turn."
+              ]
+            },
+            {
+              "name": "Psychic Rebuke",
+              "paragraphs": [
+                "(Gem) You can use your reaction to retaliate with your mind when a creature you can see within 90 feet of you damages you. The creature must succeed on an Intelligence saving throw or take 3d10 psychic damage as you mentally overwhelm it."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Terrifying Exhalation",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 10th level, when a hostile creature is subjected to your Dragon Breath, it must succeed on a Wisdom saving throw or become frightened of you for 1 minute as well. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever a creature makes a successful saving throw against this feature, it can’t be frightened of you with this feature for the next 24 hours."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, whenever you roll initiative, roll a d6. On a roll of 5 or higher, you regain two expended uses of your Dragon Breath."
+        },
+        {
+          "type": "paragraph",
+          "text": "At the DM’s discretion, you might also grow a draconic tail."
+        }
+      ]
+    },
+    {
+      "name": "Dragon Wings",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 14th level, you gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can manifest these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can’t manifest your wings while wearing armor unless the armor is made to accommodate them, and clothes that aren’t made to accommodate your wings may be destroyed when you manifest them."
+        },
+        {
+          "type": "section",
+          "title": "Luminous Pinions",
+          "paragraphs": [
+            "Additionally, if your ancestor is a gem dragon, you can hover while you have your wings manifested."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wyrmling’s Ascension",
+      "level": "18",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 18th level, you have reached the peak of your draconic might. You gain the following benefits."
+        },
+        {
+          "type": "section",
+          "title": "Ascendant Breath",
+          "paragraphs": [
+            "Whenever you use your Dragon Breath, the exhalation becomes a 45-foot cone or a 90-foot line that is 5 feet wide, depending on your chosen ancestor."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Blindsight",
+          "paragraphs": [
+            "You have blindsight out to 20 feet. Within that range, you can effectively see anything that isn’t behind total cover, even if you’re blinded or in darkness. Additionally, you can see an invisible creature within that range, unless the creature successfully hides from you."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Draconic Rage",
+          "paragraphs": [
+            "When you take the Attack action to make an unarmed strike against a creature that’s frightened of you or that’s branded with your ruincrest on your turn, you can use a bonus action to make an attack with a melee weapon against that creature."
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Primeval Birthrights",
+      "style": "option-cards",
+      "intro": [
+        "The following birthrights are available only to arbiters who choose this ascension. These are additional options for the Primeval Birthright class feature, not features you gain automatically; they use your normal number of birthrights known.",
+        "If a birthright has prerequisites, you must meet them to learn it. You can learn the birthright at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+        "If a birthright grants you the ability to cast a spell, you use your Constitution modifier whenever the spell refers to your spellcasting ability. You use your arbiter save DC and arbiter attack modifier to determine the save DC and attack modifier of spells granted by your birthrights."
+      ],
+      "features": [
+        {
+          "name": "Destructive Exhalation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "You can double the number of damage dice rolled for your Dragon Breath once when you use it. You can’t do so again until you finish a short or long rest."
+            }
+          ],
+          "subtitle": "Prerequisite: 9th level, Wyrmscourge ascension"
+        },
+        {
+          "name": "Draconic Infusion",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whenever you hit a creature with an unarmed strike, you can replace all of the damage dealt by the attack with the damage type that’s associated with your chosen ancestry."
+            }
+          ],
+          "subtitle": "Prerequisite: Wyrmscourge ascension"
+        }
+      ],
+      "intro_blocks": [
+        {
+          "type": "note",
+          "title": "Unnatural Inheritance",
+          "paragraphs": [
+            "Primeval birthrights behave similarly to your arbiter features. If a birthright grants you the effects of a spell, it’s not magical unless it explicitly states that you cast a spell granted with it or that it is magical."
+          ]
+        }
+      ]
+    }
+  ]
+}
