@@ -1,0 +1,72 @@
+{
+  "name": "College of Waves",
+  "slug": "college-of-waves",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "Bards of the College of Waves raise seashells to their ears so they can hear the song of the ocean, and then replicate it with their instruments wherever they go. They dance beneath the rain and sing throughout taverns, drowning their fans in wanderlust for the sea. They play the melodies of the depths and bring forth sounds that only the deepest fish have heard. They uncover secret rhythms from the bubbling waves and burst them only to those ready to listen. From land to brimy water, they will never get tired of performing the undersea orchestra."
+  ],
+  "features": [
+    {
+      "name": "Sirenic Serenade",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your song is enticing to all creatures from the dry lands and beyond, reminiscing to those of sirens. As a bonus action, you can sing or play a song of the depths. When you do, choose a number of creatures within 30 feet of you equal to your proficiency bonus (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you for a minute. While charmed in this way, a creature must use as much of its movement as possible on its turn to move closer to you. The effect ends early if the creature takes damage. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on a success."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature once, and you regain all expended uses on a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Echoes in Still Waters",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As one that communes with the ocean, you would be at odds with yourself if it wasn’t a welcoming home to you as well. You gain a swimming speed of 30 feet, and the ability to move across water without falling as long as you don’t end your turn on top of it. Additionally, you become resistant to cold damage."
+        }
+      ]
+    },
+    {
+      "name": "Chorus After Dark Tides",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You attract your enemies with sweet melodies before drowning them beneath the frigid waters of the depths. As an action, you play one of your instruments or sing one of your songs, which splashes forth a wave of briny ocean water from you. Each creature of your choice in a 15-foot cone must make a Constitution saving throw against your spell save DC. On a failed save, a creature takes 5d8 cold damage, and attack rolls made against it have advantage until the start of your next turn. On a successful save, the creature takes half as much damage and suffers no additional effects. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you get access to the Wall of Water spell. This spell doesn’t count against the number of Bard spells you know. You can cast this spell once without expending a spell slot. Once you cast a spell in this way, you can’t do so again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Maelstrom Rhapsody",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have reached the crest of your talent, and have learned how to deluge and drown the opposition with your endless underwater concert. As an action, you start playing a song, and summon a field of water currents and marine life in a 60-foot radius around you. This area lasts for 1 minute or until you lose concentration on it, as if you were concentrating on a spell. All creatures of your choice within the radius gain vulnerability to Cold damage, disadvantage on saving throws, and creatures that attack them can add your charisma modifier to their damage rolls."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, as an action on subsequent turns while the area is active, you can summon a whale from the depths to hit each creature of your choice in a 15-foot cone in front of you. They must make a Constitution saving throw or take 3d10 Cold damage, taking only half the damage on a successful roll."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this ability once, and you regain all expended uses on a long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you get access to the Control Water spell. This spell doesn’t count against the number of Bard spells you know. You can cast this spell once without expending a spell slot. Once you cast a spell in this way, you can’t do so again until you finish a long rest."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Elegiac Artist",
+  "slug": "elegiac-artist",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "The Elegiac Artist knows the value of names, words, and their relationship to each other. They are able to command whole concepts with a single word, and draw out the power of a name or title."
+  ],
+  "features": [
+    {
+      "name": "Epithet Implied",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you give a creature one of your Bardic Inspirations, you may also bestow them with a temporary title that they retain as long as they hold it. You may choose one from the following:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Bold Warrior",
+              "paragraphs": [
+                "The creature can use their bonus action to make a weapon attack. When they spend their Bardic Inspiration on a weapon attack, they can make another weapon attack against the same target immediately."
+              ]
+            },
+            {
+              "name": "Enduring Tribute",
+              "paragraphs": [
+                "The creature gains a +2 bonus to their armor class. If they use this Bardic Inspiration on a saving throw to take half damage, they take half damage on a failure, and no damage on a successful one."
+              ]
+            },
+            {
+              "name": "Great Defender",
+              "paragraphs": [
+                "The creature gains temporary hit points equal to half your bard level + 5, which they also regain at the start of each of their turns. When they spend the Bardic Inspiration, they also gain these temporary hit points."
+              ]
+            },
+            {
+              "name": "Rushing Windwalker",
+              "paragraphs": [
+                "The creature’s movement speed increases by 10 feet. When they use this Bardic Inspiration, they can use their reaction to move up to their movement speed."
+              ]
+            },
+            {
+              "name": "Watchful Dragon",
+              "paragraphs": [
+                "The creature gains a +5 bonus on Perception checks, and blindsight out to 10 feet. If they spend this Bardic Inspiration on a Perception check, they add this bonus to that check twice."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Words Hold Nuance",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your spellcasting understands the power that emerges from words and their use, rather than a Bard’s reliance on harmonics and evocative prose. Inscriptor spells count as bard spells for you, allowing you to learn, read, and cast them. When you gain this feature you may switch up to three of your bard spells for incriptor spells of a level you are capable of casting, one of which can be switching a cantrip for another cantrip."
+        }
+      ]
+    },
+    {
+      "name": "Unleashed Utterances",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are able to produce the effects of power word spells easily. You learn all power word spells, which count as bard spells for you, and do not count against your spells known."
+        }
+      ]
+    },
+    {
+      "name": "Stolen Mantle",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature within 90 feet of you (including yourself) is targeted directly by an effect or attack, you can use your reaction to switch their name for another creature’s within range, briefly, and attempt to redirect the damage and effects targeting them at another creature you choose within the same range (which cannot be who is it originating from). When you do, the attack is then applied to the new target’s AC or they must make the initial saving throw against the effect, as though targeted by it. The original target is then ignored entirely by the attack or effect. You can use this feature a number of times per Long Rest equal to your proficiency bonus."
+        }
+      ]
+    }
+  ]
+}

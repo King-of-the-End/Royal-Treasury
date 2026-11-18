@@ -1,0 +1,68 @@
+{
+  "name": "College of Requiems",
+  "slug": "college-of-requiems",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "Performing a macabre melody filled with grief-stricken chords with a mournful refrain, the funerary songs of the College of Requiems stir the very bones of the dead. The Requiem bard weaves necromantic magic into their repertoire to control and empower a host of undead minions."
+  ],
+  "features": [
+    {
+      "name": "Chilling Melody",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, you learn two necromancy cantrips of your choice from any class spell list. These count as bard spells for you, but don’t count against the number of cantrips you know."
+        }
+      ]
+    },
+    {
+      "name": "Pluck the Heartstrings",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 3rd level, you gain the ability to use your Bardic Inspiration to pluck at the tethers of life within a creature. A creature with one of your Bardic Inspiration dice can expend it when dealing damage with a weapon attack, dealing additional necrotic damage equal to the die result."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, when a living creature that has your Bardic Inspiration die is reduced to 0 hit points, it can expend that die as a reaction to be reduced to 1 hit point instead."
+        }
+      ]
+    },
+    {
+      "name": "Stir the Bones",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 6th level, you learn the animate dead spell. It counts as a bard spell for you, and it doesn’t count against the number of Bard spells you know."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you give a creature one of your Bardic Inspiration dice, choose a number of undead creatures equal to your proficiency bonus under your control and within 60 feet of you. Chosen creatures each gain a Dirge die, which they lose if they do not spend within the next 10 minutes. Dirge dice can be spent the same way and under the same circumstances your Bardic Inspiration dice are. You can also issue mental commands to undead creatures under your control as part of the same bonus action."
+        },
+        {
+          "type": "paragraph",
+          "text": "When an undead creature you control expends a Dirge die on an attack roll that hits, it can also apply the result to the damage roll."
+        }
+      ]
+    },
+    {
+      "name": "Dance of the Dead",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, when you cast a necromancy spell that targets only one creature, you can have it target a second creature within range. This does not consume additional components."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once you use this feature, you must finish a short or long rest before you can use it again."
+        }
+      ]
+    }
+  ]
+}

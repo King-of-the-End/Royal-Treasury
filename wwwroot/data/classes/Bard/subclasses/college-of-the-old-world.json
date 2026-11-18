@@ -1,0 +1,64 @@
+{
+  "name": "College of the Old World",
+  "slug": "college-of-the-old-world",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "Some who delve deep into the lost reaches of history find themselves learning about mankind’s struggles during the Age of Sunderance. Their work becomes influenced by the immeasurable tragedy and pain mortalkind suffered while almost being wiped out, and of the lamentation caused by the destruction of the old gods. These stories become one with their music and songs, and the Bard expresses the ferocity, bravery, and tragedy of these days as a psychic force embedded in their performance."
+  ],
+  "features": [
+    {
+      "name": "Song of Courage",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Any creature carrying one of your Bardic Inspiration can roll and add it to any saving throw made to avoid being charmed or frightened – using it this way does not spend the Bardic Inspiration."
+        }
+      ]
+    },
+    {
+      "name": "Tragic Influence",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you deal damage to a creature with a spell, you may choose to – even briefly – convert the spell’s effects into an illusory recreation of a similar event from the Age of Sunderance. The damage becomes psychic damage, and you may add your Bard level to the damage result. If the spell would deal damage multiple times, this only applies to a single instance against one target, and the rest of the spell’s effects play out normally."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times per Short or Long Rest equal to half your proficiency bonus (rounded down)."
+        }
+      ]
+    },
+    {
+      "name": "Song of Freedom",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Any creature carrying one of your Bardic Inspiration can use their bonus action to take the Disengage action, or to free themselves from an effect that is grappling or restraining them."
+        }
+      ]
+    },
+    {
+      "name": "Song of Cosmic Annihilation",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Drawing upon radiant power in the air to empower their song, you may use an action to play a song of devastation and an age’s end. All creatures they choose within 30 feet must make a Charisma saving throw. Any creature that fails endures the weight of tales from the Age of Sunderance, and for 1 minute takes psychic damage equal to one of your Bardic Inspiration at the start of each of their turns. They may reattempt the saving throw at the end of each of their turns, ending the effect on a success."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a creature enduring this effect is within 30 feet of you, you may use your bonus action to focus these visions on them to make them particularly vivid: the target must make a Wisdom saving throw or be stunned until the end of their next turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature once per Short or Long Rest."
+        }
+      ]
+    }
+  ]
+}

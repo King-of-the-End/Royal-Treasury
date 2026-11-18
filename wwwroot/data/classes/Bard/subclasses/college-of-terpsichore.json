@@ -1,0 +1,87 @@
+{
+  "name": "College of Terpsichore",
+  "slug": "college-of-terpsichore",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "Bards are historically keepers of lore and recounters of ancient stories, recording what may eventually become myth and legend. Though song and words are the primary means for doing so, Bards of the College of Terpsichore relay this information through interpretive dance and physical movement. They train themselves to evoke imagery through precise and enticing dance routines and train their body like an instrument. As a result, they gain an above average affinity for charming others and distracting them. The magic they invoke with these movements can capture the senses and manipulate others for both pleasurable and detrimental purposes.",
+    "Bards of this college follow the teachings of Terpsichore, an ancient celestial muse, even if they don’t realize it. This being was considered by some to be a deific keeper of stories, and by some to be a Bard who themself became the thing of legends."
+  ],
+  "features": [
+    {
+      "name": "Inspired Moment",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can bestow inspiration on others through the use of your physical performance, and these movements become a distracting and unpredictable ruse when necessary. Whenever you use a bonus action to give another creature Bardic Inspiration, you may, as part of the same bonus action, move up to half your movement speed immediately. This movement does not provoke attacks of opportunity and does not count against your movement speed on this turn."
+        }
+      ]
+    },
+    {
+      "name": "Interpretive Expression",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can enthrall and entice others using your physical acuity and refined dance skills. As long as you are not incapacitated, whenever you make a performance skill check, you may choose to use your Dexterity instead of Charisma to calculate the modifier."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you do not require a spell focus or the verbal components of Bard spells you cast as long as you are not restrained and your movement is higher than 0. Instead, you cast your magic using expressive physical movements (usually dancing)."
+        }
+      ]
+    },
+    {
+      "name": "Dance of Coercion",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can perform a dance that captures the eye of man and beast alike. As a bonus action you can use your dance of coercion as long as you are not incapacitated or grappled. One creature you focus on that can see you must attempt a Wisdom saving throw against your spell save DC. On a failed save, that creature is charmed for 1 minute and becomes inescapably enticed or distracted by you."
+        },
+        {
+          "type": "paragraph",
+          "text": "The number of creatures you can charm at the same time this way is equal to half your proficiency bonus rounded down. If you take any actions that are directly harmful to the creature you are charming then the effect ends for them immediately."
+        },
+        {
+          "type": "paragraph",
+          "text": "A creature charmed this way must roll 1d4 every time they attempt an attack roll, saving throw, or ability check, and subtract it from the result. A creature charmed by you this way may reattempt the saving throw at the end of their turn, but rolls the save with disadvantage as long as they can see you. A creature that succeeds a save against this effect from you is rendered immune to it for 24 hours."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you fall unconscious, this effect ends for all creatures charmed by you. When you reach 14th level in this class, the die charmed creatures subtract from their rolls is increased from a d4 to a d6."
+        }
+      ]
+    },
+    {
+      "name": "Twisting Intervention",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Whenever a creature within 60 feet of you attempts to cast a spell, take the Attack action, or use any feature that requires an attack roll, you may use your reaction to exert your control over them momentarily."
+        },
+        {
+          "type": "paragraph",
+          "text": "The creature must attempt a Charisma saving throw against this magical effect (using your spell save DC). If the creature is charmed by you they have disadvantage on the saving throw. On a failed save they do not take that action and must instead take a different action in its place if possible."
+        },
+        {
+          "type": "paragraph",
+          "text": "You must use this feature before you see the result of any attack rolls or saving throws associated with the effect you are trying to prevent, and before any of its effects resolve. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you complete a Long Rest."
+        }
+      ]
+    },
+    {
+      "name": "Masterful Terpsichorean",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your control over your movements and ability to cast spells using your body has reached its peak. Whenever you cast a spell that requires you expend a spell slot, you may also make a weapon attack as part of the same action. The weapon must be a one-handed ranged/thrown weapon, or have either the finesse or light properties. You may roll a die equal to one of your Bardic Inspirations and add it to the result of this weapon attack."
+        }
+      ]
+    }
+  ]
+}

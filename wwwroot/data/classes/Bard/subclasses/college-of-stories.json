@@ -1,0 +1,251 @@
+{
+  "name": "College of Stories",
+  "slug": "college-of-stories",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "While most bards tend to focus on telling the tales of real people, bards of the College of Stories prefer to start from scratch, weaving together fantastical tales of a heroic protagonist.",
+    "Through the power of their words, they breathe life into the protagonist of their stories, bringing them into the real world. This hero, called the Hero of the Story, is summoned directly from the pages of fiction to aid them in their adventures.",
+    "College of Stories bards are known for being preoccupied with their fiction, resulting in them being somewhat detached from the real world. While some may see their investment as eccentric, none can deny their mastery in creating enticing narratives and tales."
+  ],
+  "features": [
+    {
+      "name": "Immersive Storytelling",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, your stories are so convincing that they can alter their listener’s perception of reality. You can cast silent image or disguise self at will, without expending a spell slot or material components."
+        }
+      ]
+    },
+    {
+      "name": "Hero of the Story",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 3rd level, the dramatic tales you tell begin to come to life, and the protagonist of your stories steps forth as a real person. Using an action, you can summon the Hero of the Story, a Medium humanoid creature of a description of your choosing. It appears in an unoccupied space of your choice within 30 feet of you."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Hero is friendly to you and your companions, and it obeys your commands, but it cannot speak. See its game statistics in the accompanying Hero of the Story stat block, which uses your proficiency bonus (PB) in several places. You can determine the cosmetic characteristics and alignment of the Hero."
+        },
+        {
+          "type": "paragraph",
+          "text": "In combat, the Hero shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the Hero can take any action of its choice, not just Dodge."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, your stories imbue the Hero with legendary abilities fueled by your Bardic Inspiration die. The Hero shares your pool of Bardic Inspiration dice, and can use them to activate certain abilities. Any ability that uses Bardic Inspiration (BI) expends one of your Bardic Inspiration dice."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Hero remains until it is reduced to 0 hit points, until you use this feature to summon the Hero again, or until you die. Anything the Hero was wearing or carrying that it was not summoned with is left behind when the Hero vanishes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once you summon the Hero, you can’t do so again until you finish a long rest, unless you expend a spell slot of 1st level or higher to summon it."
+        },
+        {
+          "type": "stat_block",
+          "data": {
+            "id": "hero_of_the_story",
+            "section_type": "Stat Block",
+            "title": "Hero of the Story",
+            "creature": {
+              "size": "Medium",
+              "type": "humanoid"
+            },
+            "armor_class": "14 + PB (natural armor)",
+            "hit_points": "5 + five times your Bard level (the Hero has a number of Hit Dice [d10s] equal to your Bard level)",
+            "speed": {
+              "walk": "30 ft."
+            },
+            "ability_scores": {
+              "STR": {
+                "score": 16,
+                "check": "+3"
+              },
+              "DEX": {
+                "score": 12,
+                "check": "+1"
+              },
+              "CON": {
+                "score": 15,
+                "check": "+2"
+              },
+              "INT": {
+                "score": 11,
+                "check": "+0"
+              },
+              "WIS": {
+                "score": 13,
+                "check": "+1"
+              },
+              "CHA": {
+                "score": 14,
+                "check": "+2"
+              }
+            },
+            "saving_throws": [
+              "Dex +1 plus PB",
+              "Con +2 plus PB"
+            ],
+            "senses": [
+              "passive Perception 11 plus PB"
+            ],
+            "languages": "Understands the languages you speak",
+            "challenge_rating": "—",
+            "proficiency_bonus": "equals your bonus",
+            "traits": [
+              {
+                "name": "Bardic Inspiration (BI)",
+                "name_format": "bold_italic",
+                "description": "Equals your Bardic Inspiration dice."
+              },
+              {
+                "name": "Fictional Foil",
+                "name_format": "bold_italic",
+                "description": "The Hero can add its PB to any ability check that you are proficient in."
+              },
+              {
+                "name": "Weapon of the Hero",
+                "name_format": "bold_italic",
+                "description": "When you summon the Hero, choose a damage type: bludgeoning, piercing, or slashing. The chosen type determines the damage of its Valiant Swing attack."
+              }
+            ],
+            "actions": [
+              {
+                "name": "Valiant Swing",
+                "name_format": "bold_italic",
+                "description": "Melee Weapon Attack: +3 plus PB to hit, reach 5 ft., one target. Hit: 1d6 plus PB bludgeoning/piercing/slashing damage (chosen when summoned).\n\nAfter making an attack roll but before the outcome is determined, the Hero can expend a BI die to add the number rolled to both the attack roll and the damage roll (if it hits).",
+                "inline_formatting": {
+                  "Melee Weapon Attack": "italic",
+                  "Hit": "italic"
+                }
+              },
+              {
+                "name": "Inspiring Rally",
+                "name_format": "bold_italic",
+                "description": "By expending a BI die, the Hero can choose a number of creatures up to your Charisma modifier within 30 feet. Each creature gains a number of temporary hit points equal to the number rolled plus PB."
+              }
+            ],
+            "bonus_actions": [
+              {
+                "name": "Comeback Story",
+                "name_format": "bold_italic",
+                "description": "As a bonus action, the Hero can expend a BI die to regain hit points equal to the number rolled plus your bard level."
+              }
+            ],
+            "reactions": [
+              {
+                "name": "Plot Armor",
+                "name_format": "bold_italic",
+                "description": "When the Hero is hit by an attack or fails a saving throw, it can use its reaction to expend a BI die and add the number rolled to its AC for that attack (potentially causing the attack to miss) or to the saving throw (potentially causing the save to succeed)."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Character Growth",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 6th level, your stories weave the tale of how the Hero becomes more powerful. The Hero’s attacks now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, when you cast a spell with a range of touch, the Hero can deliver the spell as if it had cast the spell. The Hero must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll."
+        },
+        {
+          "type": "paragraph",
+          "text": "Finally, the Hero gains one of the following features of your choice."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Agility of the Hero",
+              "paragraphs": [
+                "The Hero’s Dexterity score increases by 2, granting it a +1 bonus to AC and Dexterity saving throws."
+              ]
+            },
+            {
+              "name": "Endurance of the Hero",
+              "paragraphs": [
+                "The Hero’s Constitution score increases by 2. Its maximum hit points increase by an amount equal to your Bard level (for a total of 5 + six times your Bard level), and it gains a +1 bonus to Constitution saving throws."
+              ]
+            },
+            {
+              "name": "Strength of the Hero",
+              "paragraphs": [
+                "The Hero’s Strength score increases by 2, granting it a +1 bonus to attack and damage rolls."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "At 10th and 14th level, you gain another feature that you have not yet chosen."
+        }
+      ]
+    },
+    {
+      "name": "Protagonist’s Charm",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 6th level, the Hero gains the ability to speak any language that it understands."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, its Fictional Foil ability is upgraded:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Improved Fictional Foil",
+              "paragraphs": [
+                "The Hero can add its PB to any ability check that you are proficient in. If it is a Charisma ability check, it can instead add double its PB to the check."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Legendary Persona",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 14th level, your tales of the Hero speak of his legendary prowess, and as a result the Hero becomes more powerful. The Hero gains the following actions:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Improved Inspiring Rally",
+              "paragraphs": [
+                "By expending two BI dice, the Hero can choose a number of creatures up to your Charisma modifier within 30 feet. Each creature gains a number of temporary hit points equal to total rolled plus PB."
+              ]
+            },
+            {
+              "name": "Multiattack",
+              "paragraphs": [
+                "The Hero makes two Valiant Swing attacks."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "name": "Wild Erudite",
+  "slug": "wild-erudite",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "Bards study stories about places, people, and events, as well as legendary beasts and great battles. The wild erudite focuses on these stories, learning about monsters, ancient warriors, and how to defeat them. They sing songs about these wild encounters, and their knowledge can prove beneficial to those they travel with."
+  ],
+  "features": [
+    {
+      "name": "Storied Research",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have studied beasts and monsters at length, both in the form of stories and literal accounts. You have Expertise in the Nature skill, and as a bonus action you can make a Nature check targeting a non-humanoid creature you can see within 60 feet: the DC is equal to the creature’s Challenge Rating plus 10."
+        },
+        {
+          "type": "paragraph",
+          "text": "On a success, you roll 1d6 a number of times equal to half your proficiency bonus (rounded down), and learn one of the following pieces of information; the information you receive is based on an average creature of that type, disregarding special instances:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "roll",
+              "label": "1d6"
+            },
+            {
+              "key": "information",
+              "label": "Information"
+            }
+          ],
+          "rows": [
+            {
+              "roll": "1",
+              "information": "Their armor class and movement speed(s)."
+            },
+            {
+              "roll": "2",
+              "information": "What saving throws they’re proficient in."
+            },
+            {
+              "roll": "3",
+              "information": "Their damage immunities, resistances, types and damage threshold."
+            },
+            {
+              "roll": "4",
+              "information": "If they have any of the following traits: magic resistance, magic immunity, pack tactics, evasion, improved critical, superior critical, regeneration."
+            },
+            {
+              "roll": "5",
+              "information": "The creature’s type(s) and alignment."
+            },
+            {
+              "roll": "6",
+              "information": "A critical piece of information that grants you and those fighting with you a tactical advantage – for one minute, you and those carrying your Bardic Inspiration have advantage on the first attack roll, ability check, or saving throw they make against that creature each turn."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Furthermore, when a creature uses one of your Bardic Inspiration to hit a creature within this ability’s range, you can roll 1d6 to learn one piece of information about them automatically."
+        }
+      ]
+    },
+    {
+      "name": "Trained Warrior",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain the skills needed to join your companions in combat – you are proficient in the use of light armor, shields, and martial weapons."
+        }
+      ]
+    },
+    {
+      "name": "Magic Strike",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you cast a spell that requires one action, you can make a weapon attack as part of the same action."
+        }
+      ]
+    },
+    {
+      "name": "Situational Savant",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If a creature carrying one of your Bardic Inspiration makes an attack roll that would have advantage due to firing a weapon at its long range, because of cover, or the environment (such as underwater penalties), they can choose before making the attack to add their Bardic Inspiration to the attack as they normally would to also not have disadvantage from those effect(s)."
+        }
+      ]
+    },
+    {
+      "name": "Complete Certainty",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you or an ally within 60 feet of you hits a creature with an attack, you can spend a use of Bardic Inspiration as a reaction to allow that attack (and all other attacks they hit that creature with this turn) to ignore their target’s resistances, and treat their immunities as resistances."
+        },
+        {
+          "type": "paragraph",
+          "text": "If your ally is carrying one of your Bardic Inspiration and they choose to apply it to their attack, they gain the benefit above on that attack and all others they make against that target that turn."
+        }
+      ]
+    }
+  ]
+}

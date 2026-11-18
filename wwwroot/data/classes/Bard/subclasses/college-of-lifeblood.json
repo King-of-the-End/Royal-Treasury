@@ -1,0 +1,127 @@
+{
+  "name": "College of Lifeblood",
+  "slug": "college-of-lifeblood",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "Members of the College of Lifeblood decided to add a spice to their shows and parades that no other Bard would morally consider – which makes their craft more special than any other. They fearlessly draw from cruelty, violence and fear to paint the crowds in unforgettable shades of crimson. With blood and guts, they lead a march of masks, parasols and colorful dresses that change the lives of any towns and villages they visit forever.",
+    "Their parasols have a special mechanism which allows them to both draw and expel blood quickly through its end tip, which they use to sign their works and paint vibrant pictures of carnage. They always carry masks with themselves to add to the mystery of whoever is behind it, as well as to avoid the ones focused on maintaining the law.",
+    "Bards of this College want to spread joy, in their own twisted sense, throughout the realms, but they also want to be the lead as they do so – the one that vaunts always in front of the bloody promenade. The centerpiece, and brightest jewel. Let your jealousy and the envy of others burn as you rise as the main character of life’s spectacle."
+  ],
+  "features": [
+    {
+      "name": "Parade’s Bloodfeast",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The vital fluid that flows out of the creatures you pierce serves as fuel for your performance and the parade which it conducts. Whenever you inflict a creature with Bleed stacks, an equal amount of Bloodfeast is added to your party’s pool. Bloodfeast is a party-wide resource used to fuel a number of skills, and when you use it to fuel your own abilities. The party’s Bloodfeast is reduced to 0 during a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Hardblood Thorn",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can use a parasol as a spellcasting focus for your bard spells. This parasol is the perfect tool to easily channel blood from your enemies to you, and vice versa. You gain Blooming Thorns with your Bloodfeast, which gradually grows in power the more blood you spend. The requirements you must meet for each rank and their effects are described in the table below:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "rank",
+              "label": "Rank"
+            },
+            {
+              "key": "bloodfeast",
+              "label": "Min. Bloodfeast"
+            },
+            {
+              "key": "level",
+              "label": "Min. Level"
+            },
+            {
+              "key": "effect",
+              "label": "Effect"
+            }
+          ],
+          "rows": [
+            {
+              "rank": "0",
+              "bloodfeast": "0",
+              "level": "3",
+              "effect": "If your parasol is lost or destroyed, you may recreate it during a long rest without spending materials. It is a martial weapon you are proficient in and it deals 1d8 piercing damage. You may use Charisma to attack with it."
+            },
+            {
+              "rank": "I",
+              "bloodfeast": "6",
+              "level": "3rd",
+              "effect": "Whenever you apply stacks of Bleed to a creature, you add twice the amount of Bloodfeast to your party’s pool. Additionally, once per day, you get to cast Melf’s Acid Arrow with your parasol without requiring material components, however, instead of dealing an additional 2d4 acid damage, you apply 2 stacks of Bleed. You can spend spell slots of level 2 or higher to cast this version of the spell, as if you had it prepared, and instead of green acidic arrows, you launch a crystallized blood spike."
+            },
+            {
+              "rank": "II",
+              "bloodfeast": "12",
+              "level": "6th",
+              "effect": "The blood covering your parasol hardens like a rock. Your parasol now deals 2d8 piercing damage instead of 1d8. As a bonus action, you can open your parasol and hold it in front of you, granting you and a creature directly behind you Half Cover. Due to your parasol’s thorns, whenever you are hit by a melee attack, the creature that attacked you gains one stack of Bleed. Additionally, the parasol counts as a +1 Arcane Focus and a +1 Weapon."
+            },
+            {
+              "rank": "III",
+              "bloodfeast": "30",
+              "level": "14th",
+              "effect": "The weight of the hardened blood reminds you of the sins crawling on your back. Your parasol now deals 2d10 piercing damage, plus 1d8 piercing damage on enemies with stacks of Bleed. Whenever you apply stacks of Bleed to a creature, you add three times the amount of Bloodfeast to your party’s pool, and you heal hit points equal to the number of Bloodfeast acquired. It counts as a +2 Arcane Focus and a +2 Weapon. On a Critical Hit with this weapon, you may heal yourself or a creature within the weapon’s reach for up to two times the stacks of bleed on target."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lead of the Parade",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As the centerpiece, you must know how to draw attention and awe from your peers, allowing the envy and jealousy to fester in their hearts and turn that into aggressive power. You gain expertise in the Performance skill if you didn’t already have it."
+        },
+        {
+          "type": "paragraph",
+          "text": "As a bonus action, you can choose a creature that you can see in front of you and roll a Charisma (Performance) check against their presence DC (CR + 10). If you pass, whenever Bleed is applied to them until the start of your next turn, that number +1 is applied instead. You can use this ability a number of times equal to your proficiency modifier, and you regain all expended uses on a long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, whenever you hit a creature with a damaging spell or it fails a saving throw, they gain 1 stack of Bleed and 1 stack of Rupture."
+        }
+      ]
+    },
+    {
+      "name": "In Finely Ground Mistfall",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action, you get to raise your parasol in front of you and spin it, releasing a storm of sharp blood crystals in a 15 foot Cone. Every creature in this Cone must make a Dexterity saving throw against your spell save DC. On a failed save, they take 2d10 piercing damage and gain 2 stacks of Bleed and Rupture. On a successful save, they take only half the damage and suffer no additional effects. If a creature that failed the saving throw was also the successful target of your Lead of the Parade ability, creatures attempting to hit them gain a +1 bonus to their attack and damage rolls on their first attack against them until the start of your next turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "After a creature uses Bardic Inspiration, as a reaction, you may walk up to 15 feet and use this ability. You can use this ability a number of times equal to your proficiency modifier, and you regain all expended uses on a long rest."
+        }
+      ]
+    },
+    {
+      "name": "The Finale",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have finally become the master of the parade, rivaled by none and adored by all. Once you use your Lead of the Parade ability, you can choose up to three creatures of your choice within 30 feet of you to gain a stack of Festive Fever. If you choose three creatures, they will each gain a stack of Festive Fever; if you choose two creatures, you can choose which one of them gains two stacks while the other gains one; if you choose one creature, they will get all three stacks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, when a creature uses your Bardic Inspiration on their attack roll and successfully hits because of it, they inflict 2 stacks of Bleed and Rupture."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "name": "Temper Cross",
+  "slug": "temper-cross",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "The Temper Cross cleric is a broad description of one who follows a domain associated with combat and self-improvement, such as Rivalry or Blades, and is one that clerics follow when seeking to improve through martial refinement. They focus on spiritual enrichment balanced with training their understanding of combat as a means to finding perspective, and apply that wisdom to the tasks issued to them by their gods."
+  ],
+  "features": [
+    {
+      "name": "Temper Cross Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once you reach the cleric level required to learn the following spells, you always have them prepared and they don’t count against the number of cleric spells you can prepare each day. Spells on this list count as cleric spells for you."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Instinctual Response, Warding Word"
+            },
+            {
+              "level": "3rd",
+              "spells": "Harpy Strike, Hold Person"
+            },
+            {
+              "level": "5th",
+              "spells": "Deadly Target, Path to Victory"
+            },
+            {
+              "level": "7th",
+              "spells": "Freedom of Movement, Tamamo’s Arrowfall"
+            },
+            {
+              "level": "9th",
+              "spells": "Heastened Quiver, Power Word Response"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blade of Sealing Rites",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As a bonus action, you may choose a melee weapon you are holding and a spell that would normally target a creature, space, or point, and has a casting time of 1 action or 1 bonus action. You expend the spell slot, resources, and components for that spell, and for 1 minute it is imbued into the selected weapon. Each time that weapon hits a target within that minute, you can choose to unleash that spell as though you cast it targeting that creature, their space, or a point on one corner of their space (your choice, but as per the spell’s requirements). You may choose to omit yourself from the spell’s effects."
+        },
+        {
+          "type": "paragraph",
+          "text": "The spell save DC for the spell is increased by the enhancement bonus of the weapon you imbued the spell into, and if it required a spell attack it is treated as automatically hitting as part of the effect."
+        },
+        {
+          "type": "paragraph",
+          "text": "After the spell is cast from the weapon, it is expended regardless of the outcome. If the spell is not used within 1 minute of being placed within the weapon, then it is lost."
+        }
+      ]
+    },
+    {
+      "name": "Diligent Training",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are proficient in heavy armor and all martial weapons. Spells and items that have effects that require a sword saint, or can only be attuned to by a sword saint, treat your cleric levels as sword saint levels."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Tsujigiri",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You may call divine power to strengthen your focus and sharpen your strikes. As an action, you can make three weapon attacks using a melee weapon you are proficient with. These attacks are treated as magical, and follow two rules:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "If even one of these attacks hits, all three are treated as having hit even if their attack results would have missed.",
+            "If all three attack rolls would hit, the final hit is treated as an automatic critical hit."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Extra Focus Attack",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action, you can make two attacks instead of one, or can make one attack and cast one spell with a casting time of one action."
+        }
+      ]
+    },
+    {
+      "name": "Focal Replenishment",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per Long Rest, when you complete a Short Rest you may choose to regain hit points equal to twice your cleric level, as well as all of your 1st-level spell slots."
+        }
+      ]
+    },
+    {
+      "name": "Extended Rites",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you imbue a spell into a weapon using the Blade of Sealing Rites, it can remain within the weapon for up to 1 hour, or until you complete a Rest. Additionally, when the spell would call for a spell save DC, you can replace your usual spell save DC with the d20 result of the attack if it would be higher (adding your enhancement bonus afterward)."
+        }
+      ]
+    },
+    {
+      "name": "Supreme Focus Attack",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action, you can make three attacks, instead of one, or you can make two attacks and cast one spell with a casting time of one action."
+        }
+      ]
+    }
+  ]
+}

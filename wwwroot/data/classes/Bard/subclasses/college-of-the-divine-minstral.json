@@ -1,0 +1,114 @@
+{
+  "name": "College of the Divine Minstral",
+  "slug": "college-of-the-divine-minstral",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "Bards who study T’quinn’s legacy in the Itonian Capital learn how to incorporate her word and myths into their own spellcasting, granting them the boons of speed, duplicity, and thunderous damage that she is known for. These Bards play music recorded in T’quinn’s religious material and remix it into their own songs to evoke the effects, and when they sing along to their own songs they often produce sound as if they are singing twice – in harmony with themselves."
+  ],
+  "features": [
+    {
+      "name": "Splitting Sync",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Learning the ways of duality from your knowledge of T’quinn, you can focus your inspiration on multiple targets at once. When you give Bardic Inspiration to a creature you can do so as an action instead of a bonus action. When you do so, choose two targets within range: both targets gain your Bardic Inspiration (you expend only one), but the die you use for them is reduced based on the table below."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "original",
+              "label": "Original Die"
+            },
+            {
+              "key": "reduced",
+              "label": "Reduced Die"
+            }
+          ],
+          "rows": [
+            {
+              "original": "d6",
+              "reduced": "d4"
+            },
+            {
+              "original": "d8 or d10",
+              "reduced": "d6"
+            },
+            {
+              "original": "d12",
+              "reduced": "d8"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You cannot use your action to use Bardic Inspiration in the same turn you used your bonus action to do so, and vice versa."
+        }
+      ]
+    },
+    {
+      "name": "Celestial Chord",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action you may use an instrument to play a powerful chord, which is backed up by a phantom orchestra that briefly plays with you. When you do, choose a number of creatures within 30 feet of you equal to your proficiency bonus – these creatures each gain a single use of Celestial Chord, which disappears when used or after 1 minute. A creature can only have one Celestial Chord at a time."
+        },
+        {
+          "type": "paragraph",
+          "text": "A creature with a Celestial Chord may use it for any of the following effects, as long as they aren’t incapacitated:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Dash",
+              "paragraphs": [
+                "They may use their bonus action to take the Dash action."
+              ]
+            },
+            {
+              "name": "Saving Throw",
+              "paragraphs": [
+                "They gain advantage on one saving throw they make – they must declare its use before rolling it."
+              ]
+            },
+            {
+              "name": "Thunder Damage",
+              "paragraphs": [
+                "When they hit a creature with a weapon attack they can choose to have that attack deal extra thunder damage equal to one of your Bardic Inspiration dice."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times per Long Rest equal to half your Bard level (rounded down)."
+        }
+      ]
+    },
+    {
+      "name": "Inspired Strike",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature carrying one of your Bardic Inspiration dice takes the Attack action, they can choose to spend the Inspiration as a bonus action to make one extra weapon attack – if they do, they must apply the Bardic Inspiration to the result of the attack roll."
+        }
+      ]
+    },
+    {
+      "name": "Sympathetic Presence",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature makes an attack against you while a creature friendly to you is within 5 feet of you or the attacker (and that creature isn’t incapacitated), your presence is diminished and feels like less of a threat, causing the attacker to have disadvantage on the attack."
+        }
+      ]
+    }
+  ]
+}

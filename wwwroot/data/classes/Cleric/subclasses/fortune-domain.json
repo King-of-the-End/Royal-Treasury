@@ -1,0 +1,144 @@
+{
+  "name": "Fortune Domain",
+  "slug": "fortune-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "The Fortune Domain (which also functions as the Luck Domain) grants the cleric borrowing power from it the ability to twist fate before them, altering outcomes to suit their needs as they seek greater rewards. They can broaden the swing of luck’s pendulum, or bring it to a stop to incite entirely neutral results. These clerics are usually motivated to punish those that use similar abilities to their own to abuse or manipulate others."
+  ],
+  "features": [
+    {
+      "name": "Fortune Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain the following Domain Spells at the cleric levels listed below, which are considered always prepared as Cleric spells and don’t count against your limit of prepared spells:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Miraculous Evasion, Writ Recollection"
+            },
+            {
+              "level": "3rd",
+              "spells": "Song of Inspiration, Weapon of Fortune"
+            },
+            {
+              "level": "5th",
+              "spells": "Banal Confluence, Path to Victory"
+            },
+            {
+              "level": "7th",
+              "spells": "Deva’s Glamour, Private Sanctum"
+            },
+            {
+              "level": "9th",
+              "spells": "Hastened Quiver, Power Word Break"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fair Contest",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per Rest, you can use an action or bonus action to declare a Fair Contest against one creature you choose within 60 feet who can see or hear you. If you do, for 1 hour, you can choose advantage, disadvantage, or neither: all rolls you make against one another during that hour are rolled with whichever circumstance you picked (ignoring other sources of advantage or disadvantage)."
+        }
+      ]
+    },
+    {
+      "name": "Loaded Roll",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A number of times per Rest equal to your proficiency bonus, when you roll multiple d20s for the same attack roll, ability check, or saving throw, you may choose which result among them you use (even if another effect would dictate which should be the result)."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Golden Opportunity",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you take an action to make an attack against a creature or force them to make a saving throw, you can spend your Channel Divinity to bless yourself with fortune against them. Choose one of the following effects, which applies against that target for one minute:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You may add your proficiency bonus again to all attack and damage rolls you make against them.",
+            "All damage you deal to them ignores Damage Thresholds and resistances (but not immunities).",
+            "Your target has disadvantage on all saving throws made against you."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, if the triggering action was an attack, you gain a +10 bonus to hit, and if it was having them make a saving throw they suffer a -5 penalty to their result."
+        }
+      ]
+    },
+    {
+      "name": "Bet on Gold",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Fortune swings wildly, possibly in your favor, and possibly to your detriment. When you have advantage on any roll you make, you can roll without advantage to, instead, roll a d6 and add it to the result. When you would have disadvantage on any roll, you can roll without disadvantage to, instead, roll a d6 and subtract it from the result. You must choose to do either before you roll."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach 10th level these effects roll a d8 instead, then at 14th level they use a d10."
+        }
+      ]
+    },
+    {
+      "name": "Explosive Outcome",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you roll dice for damage or healing, if you roll the maximum result on any die (such as a 4 on a d4, or an 8 on a d8) you may roll that die again and add the new roll to the result as well. You may do so again on the re-rolled dice if their results are also a maximum result."
+        }
+      ]
+    },
+    {
+      "name": "Equal Ante",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can regain divine energy proportionate to the misfortune turned against you. When a hostile creature within 60 feet of you does any of the following, roll a d10 and regain a spent spell slot of the level rolled. If you roll a 10, then roll it again twice and regain two spell slots instead."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Uses a Legendary Resistance.",
+            "Scores a critical hit.",
+            "Undergoes a Mythic Awakening.",
+            "Hits with three or more attacks against a single target in a single turn.",
+            "Casts or produces the effects of a 7th level or higher spell."
+          ]
+        }
+      ]
+    }
+  ]
+}

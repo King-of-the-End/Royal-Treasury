@@ -1,0 +1,163 @@
+{
+  "name": "Love Domain",
+  "slug": "love-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Clerics who draw power from the Domain of Love gain the power to manifest their affection as power, and to protect those around them by offering them joint means of collaboration. They are not always warm-natured people, as sometimes those who best understand love are those who struggle to show it. The same powers can be drawn from Domains similar to love - desire, temptation, friendship, etc.."
+  ],
+  "features": [
+    {
+      "name": "Love Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once you reach the cleric level required to learn the following spells, you always have them prepared and they don’t count against the number of cleric spells you can prepare each day. Spells on this list count as cleric spells for you."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Shield of Faith, Stars of Affection"
+            },
+            {
+              "level": "3rd",
+              "spells": "Song of Inspiration, Warding Bond"
+            },
+            {
+              "level": "5th",
+              "spells": "Path to Victory, Vitality Balance"
+            },
+            {
+              "level": "7th",
+              "spells": "Dominate Beast, Eros Gate"
+            },
+            {
+              "level": "9th",
+              "spells": "Bestow Expertise, Greater Restoration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Force of Endearment",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your domain grants you the power to turn love and determination into strength. You can use Charisma in place of Strength or Dexterity when you make weapon attacks and damage rolls, and as your spellcasting ability."
+        }
+      ]
+    },
+    {
+      "name": "Love Proficiencies",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are proficient in Insight and Persuasion, and are immune to being charmed or enraged."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Threads Bind Us",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action you can use your Channel Divinity to grant a protective boon to a number of creatures within 30 feet of you equal to your proficiency bonus, who you choose. This protective boon lasts for 1 minute, and during that time, each time one of them takes damage one of two things can happen:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Another of the targets (or you) who can see them can use their reaction to reach out and grant that creature temporary hit points equal to your cleric level.",
+            "You can end the effect for that target to reduce damage to 0."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Golden Defense",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature within 30 feet of you is targeted by an attack or effect, you can choose to use your reaction to magically project your own defenses and boons onto them. In response only to that effect, they gain the following:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "An AC bonus granted by your shield or the enhancement bonuses of your equipment.",
+            "Your resistances and immunities.",
+            "The effects of spells, magical effects, and magical items you are under the influence of, except those requiring actions.",
+            "Once the triggering effect resolves they lose these benefits. They also lose them when the current turn ends."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Emotive Dynamic",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you hit a creature with a weapon or spell attack while they are within 10 feet of one of your allies, that attack is empowered by their presence and deals one additional weapon die of radiant damage. If your target is charmed by one of those allies or you, the attack has advantage."
+        }
+      ]
+    },
+    {
+      "name": "Passion of the Gods",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action, you can manifest the nature of your domain and infuse yourself within it, taking on an alluring, tempestuous form for 1 minute. During this time, you gain the following benefits. You can use this feature once per Long Rest. You cannot project these effects using Golden Defense:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Aura of Companionship",
+              "paragraphs": [
+                "Other creatures within 10 feet of you can add your Charisma modifier to their armor class."
+              ]
+            },
+            {
+              "name": "Greater Endearment",
+              "paragraphs": [
+                "Your Charisma modifier is added to your weapon damage, armor class, and saving throws (minimum +1). If it already was, you may add it again."
+              ]
+            },
+            {
+              "name": "Love Step",
+              "paragraphs": [
+                "Once on each of your turns, you can use your bonus action to teleport up to 60 feet to an unoccupied space adjacent to one of your allies, then may make a weapon attack with advantage. If you wish, you may then immediately teleport back to the space you left."
+              ]
+            },
+            {
+              "name": "Sanctified Body",
+              "paragraphs": [
+                "Each time a creature attacks you for the first time that turn, they must make a Wisdom saving throw. On a failure, they must choose a new target or lose the action."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

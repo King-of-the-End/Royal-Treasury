@@ -1,0 +1,66 @@
+{
+  "name": "College of Quiet Dignity",
+  "slug": "college-of-quiet-dignity",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "A refined individual who knows that engaging in high society comes with a good deal of risk. Bards of this College know to carry the means to protect themselves from danger, and use their guile to help them bluff their way through confrontations they would otherwise not be suited for."
+  ],
+  "features": [
+    {
+      "name": "Gentleman’s Preparations",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are proficient in all weapons with the finesse or light properties (including relevant firearms), and you may use your Charisma for attack and damage rolls for those and all simple weapons instead of Strength or Dexterity. You are also proficient in Medium armor."
+        }
+      ]
+    },
+    {
+      "name": "Tap Lightly",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The first time each turn you hit a creature with a weapon or spell attack, you may roll a die equal to your Bardic Inspiration die and add it to the damage result. If you would hit multiple creatures this way, you must choose one to apply this extra damage to alone."
+        }
+      ]
+    },
+    {
+      "name": "Eloquent Critical",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an extension of your refined skill, your attacks (both with weapons and spells) score a critical hit on a d20 result of 19 or 20, and when you do you add your Bardic Inspiration to your damage (separately from Tap Lightly)."
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack (Gentle)",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action, you can make two attacks instead of one, as long as both of those attacks are made with simple weapons or those described by Gentleman’s Preparations."
+        }
+      ]
+    },
+    {
+      "name": "Sharp Wit, Sharper Blade",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You score a critical hit on a d20 result of 18, 19, or 20 as described by Eloquent Critical, and when you do you add yet another Bardic Inspiration die to the result."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, if the critical hit was the result of a result of 20, you can make one additional attack with the same weapon that scored the critical hit. You can only do this once per turn."
+        }
+      ]
+    }
+  ]
+}

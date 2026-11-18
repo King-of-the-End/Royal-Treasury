@@ -1,0 +1,52 @@
+{
+  "name": "College of the Planes",
+  "slug": "college-of-the-planes",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "The College of Planes sings of the wonders and dangers of the Elemental Planes, and their effects on the Material Plane. Their songs and performances describe the wild landscapes and exotic locales found in these worlds beyond, and bring their spark to their own world."
+  ],
+  "features": [
+    {
+      "name": "Prismatic Studies",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose one of the following spell groups: Burning Rites, Harvest Tradition, Torrential Arcanics, or Twisting Gale Path. You can treat the spells from that spell group as being bard spells, allowing you to learn and cast them. You learn another of these spell groups this way when you reach 6th level as a bard, then again at 14th level."
+        }
+      ]
+    },
+    {
+      "name": "Melody of Confluence",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you cast any spell that belongs to one of the spell groups you’ve learned through Prismatic Studies, and it requires a spell slot, you can give another creature a Bardic Inspiration without spending one of your uses, and as part of the same action."
+        }
+      ]
+    },
+    {
+      "name": "Elemental Stagehand",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can manifest an assistant in the form of an elemental. Once per Long Rest, you can produce the effects of the conjure elemental avatar spell, requiring no spell slot, concentration, or components. This spell is cast at base level, or at half your bard level (rounded down, maximum 9th), whichever is higher."
+        }
+      ]
+    },
+    {
+      "name": "Harmonious Energies",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "While another creature holds one of your Bardic Inspiration, when they take tempest damage, they take fewer points of damage equal to your bard level. The damage types this applies to are based on the spell groups you know through Prismatic Studies: fire for Burning Rites, poison and acid for Harvest Tradition, cold for Torrential Arcanics, and lightning for Twisting Gale Path."
+        }
+      ]
+    }
+  ]
+}

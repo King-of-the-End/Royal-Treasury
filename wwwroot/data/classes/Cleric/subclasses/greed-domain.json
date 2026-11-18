@@ -1,0 +1,124 @@
+{
+  "name": "Greed Domain",
+  "slug": "greed-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Clerics who channel the Domain of Greed will take into themselves all benefits they can, and place a strong emphasis on their own well-being. They may follow a god whose selfish whims they channel, but those deities promote behavior that insinuates the cleric should act in kind."
+  ],
+  "features": [
+    {
+      "name": "Greed Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once you reach the cleric level required to learn the following spells, you always have them prepared and they don’t count against the number of cleric spells you can prepare each day. Spells on this list count as cleric spells for you."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Sanctuary, Shield of Faith"
+            },
+            {
+              "level": "3rd",
+              "spells": "Hold Person, Scoremark"
+            },
+            {
+              "level": "5th",
+              "spells": "Blink, Path to Victory"
+            },
+            {
+              "level": "7th",
+              "spells": "Greater Invisibility, Resilient Sphere"
+            },
+            {
+              "level": "9th",
+              "spells": "Unverbatism, Waltz of Corpses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Egregious Wastefulness",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you make any roll with disadvantage during combat, or in response to a hostile effect, you can choose to record the higher die result. You can record a number of these results up to your proficiency bonus, and lose them when you complete a Rest. If you are at your maximum number of recorded results, you must remove an old one to record a new one."
+        },
+        {
+          "type": "paragraph",
+          "text": "At any time when you make a roll that has neither advantage or disadvantage, if your d20 result is lower than one of your recorded results, you can replace your d20 result with it, possibly changing the result. You must do so before the outcome is confirmed as a success or failure."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Bolstered by Greed",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you cast a spell that targets only yourself, or an ally targets you with a spell that targets only you, you can spend a use of Channel Divinity to have the effects of that spell be treated as if it was cast at a higher level, equal to the level it was cast at plus half your proficiency bonus (rounded up, maximum 9th). If the spell has additional effect options when cast at a higher level, you choose the option taken for that extra level even if you didn’t cast the spell."
+        }
+      ]
+    },
+    {
+      "name": "Partake Together",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature within 60 feet of you regains hit points or targets themselves with a beneficial effect, you may use your reaction to replicate that effect on yourself or regain those same hit points. If the effect would physically change the body of the target or is impossible for your anatomy, this fails."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the effect was from a spell, you must make a spellcasting ability check equal to the level the spell was cast at + 10, and on a failure you do not copy its effects. If the effect requires concentration, you must concentrate on it or it ends."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once you use this feature successfully, your target must make a Charisma saving throw. On a failure, they do not benefit from the triggering effect."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature three times per Long Rest."
+        }
+      ]
+    },
+    {
+      "name": "Potent Spellcasting",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You add your Wisdom modifier to the damage you deal with any cleric cantrip."
+        }
+      ]
+    },
+    {
+      "name": "Dissolution of Intent",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are able to absorb malicious intent and harm directed toward you. You can use your bonus action to gain a sum of temporary hit points equal to the number of hostile attacks, spells, and effects that targeted you since the end of your last turn x 5."
+        }
+      ]
+    }
+  ]
+}

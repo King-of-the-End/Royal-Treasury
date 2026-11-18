@@ -1,0 +1,118 @@
+{
+  "name": "College of Rosehunters",
+  "slug": "college-of-rosehunters",
+  "class": "Bard",
+  "subclass_feature": "Bard College",
+  "summary": "TBA",
+  "introduction": [
+    "To trim the world into perfection, to let the roseate bloom of all things radiate - That is the creed of the Rosehunter bards.",
+    "Bards of the Rosehunter College are usually not only versed in how to hunt prey, but live for the sweet attention it brings, seeing being gifted a rose thrown into their way as a sign that what they are doing is what they are always meant to be doing. Overall, they are great acrobats who wield both whip and magic to masterfully put on a show no matter where.",
+    "In the Forgotten Realms, Rosehunters are found as a troupe of circus performers by day, using ropes and great monuments to show off their abilities in dazzling displays, while at night they stalk streets still with a shine in their eyes, using their thorns to destroy anything that might harm their circus goers.",
+    "In the dense mists of Ravenloft, Rosehunters embrace much more the glory of a well done hunt, making use of tight, coiling vines to choke out the life of their prey and then rip them to bits, directing any colleagues into the most perfect roles for such work."
+  ],
+  "features": [
+    {
+      "name": "Rosé Flourish",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Upon reaching 3rd level and choosing the Rosehunter college, you’ve learnt how to fashion yourself impressive tools out of simple vines or to create them through your magic. You create a Rosé Whip made out of vines and undergrowth which extends up to a certain reach."
+        },
+        {
+          "type": "paragraph",
+          "text": "You may use your Whip as a grappling hook, using any vantage points you might find to better travel harsh environments, granting yourself advantage on Acrobatics checks to do so, in addition, you gain proficiency in the skill."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also when you reach 3rd level, you may chose one of the following Rosé Arts to learn:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Becoming a Garden",
+              "paragraphs": [
+                "As a bonus action, you may create up to half your Proficiency Bonus’ worth of Rosé Whips to lasso around one friendly creature within 45-feet of you, pulling them to be standing in an unoccupied space within 5-feet of you, or pulling yourself to be standing in an unoccupied space within 5-feet of one of them."
+              ]
+            },
+            {
+              "name": "Scattering Petals",
+              "paragraphs": [
+                "As a bonus action, you may create two Rosé Whips targeting two perpendicular walls to grapple and use to slingshot yourself across the battlefield, instantly flinging yourself by 20-ft in a line. You may angle yourself to reach higher, at the expense of gaining 5-ft of height per 5-feet travelled horizontally."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A Most Beautiful Touch",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you reach 3rd level, you know your way on how to let prey feel the encroaching force of your Whip. You gain the two following abilities:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Embrace of Thorns",
+              "paragraphs": [
+                "As an action, you may spend a Bardic Inspiration dice to use your Rosé Whip to force a creature within 30-feet of you to roll a Dexterity Saving Throw or be grappled by your Whip, which can be destroyed by hitting it. Your Whip has 10 times your Bard level HP and an AC of 8, with vulnerability to fire and necrotic damage. Only one creature may be grappled at once, and while grappled they gain half the result of one roll of your Bardic Inspiration dice in Rupture stacks on the start of their turn, rounded up. A creature that is of size Large or greater has advantage on this Saving Throw. The grappled creature is freed upon breaking the Whip."
+              ]
+            },
+            {
+              "name": "Thrill of the Hunt",
+              "paragraphs": [
+                "As an action, you may spend a Bardic Inspiration dice to use your Rosé Whip to force a creature within 30-feet of you to roll a Dexterity Saving Throw or suffer one roll of your Bardic Inspiration’s worth of piercing damage and then the same number of Rupture stacks. You cannot use this action while grappling a creature through Embrace of Thorns. You may also use this skill outside of combat to make a short 5-ft wide suspended bridge that connects where you stand to one point within range. This is considered Difficult Terrain and breaks under the weight of a Large or greater creature."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Announcer of Grandiosity",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As you reach 6th level, you not only put on a show with your gracious moves, but also with words of true inspiration! If you are not surprised, you may spend one Bardic Inspiration dice and your reaction when combat would start, before rolling initiative, to unleash from your sharp as thorns tongue a short monologue to inspire your allies to do their best."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you do so, all creatures of your choice within 30-feet of yourself may add a roll of your Bardic Inspiration die to their Initiative Bonus, rolled once for each."
+        }
+      ]
+    },
+    {
+      "name": "Sprawling Garden Blooms at Last",
+      "level": "16",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Upon reaching 16th level, your abilities with the Rosé Whip are second to none. Your Most Beautiful Touch skills are upgraded:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Embrace of Thorns",
+              "paragraphs": [
+                "You may now target up to three creatures when using this action, additionally, your Whips become much tougher, with an AC of 15 and you may target Large creatures with it without them having advantage. Furthermore, you may spend your action on subsequent turns while you have creatures grappled onto your Whip to make its vines lash out against all creatures of your choice around 10-feet of the grappled, including the grappled creature itself. They must pass a Dexterity Saving Throw or take 2d8 piercing damage plus your Charisma modifier and suffer one Rupture stack."
+              ]
+            },
+            {
+              "name": "Thrill of the Hunt",
+              "paragraphs": [
+                "Now has a reach of 45-feet and deals three Bardic Inspiration die in piercing damage that is considered magical, yet the inflicted Rupture is still equal to only half the first roll. Additionally, when you would trigger Rupture stacks to be removed with an attack using Thrill of the Hunt, only half are removed. If you would create a bridge for you and your allies, it is now considered 15-feet wide and Large or smaller creatures can pass without any difficulty."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

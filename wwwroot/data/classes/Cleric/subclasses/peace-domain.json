@@ -1,0 +1,172 @@
+{
+  "name": "Peace Domain",
+  "slug": "peace-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.",
+    "Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another’s burdens, and the clerics' magic aids those who are driven to fight for the way of peace."
+  ],
+  "features": [
+    {
+      "name": "Peace Deities",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "deity",
+              "label": "Example Deity"
+            },
+            {
+              "key": "pantheon",
+              "label": "Pantheon"
+            }
+          ],
+          "rows": [
+            {
+              "deity": "Angharradh",
+              "pantheon": "Elven"
+            },
+            {
+              "deity": "Berronar Truesilver",
+              "pantheon": "Dwarven"
+            },
+            {
+              "deity": "Boldrei",
+              "pantheon": "Eberron"
+            },
+            {
+              "deity": "Cyrrollalee",
+              "pantheon": "Halfling"
+            },
+            {
+              "deity": "Eldath",
+              "pantheon": "Forgotten Realms"
+            },
+            {
+              "deity": "Gaerdal Ironhand",
+              "pantheon": "Gnomish"
+            },
+            {
+              "deity": "Paladine",
+              "pantheon": "Dragonlance"
+            },
+            {
+              "deity": "Rao",
+              "pantheon": "Greyhawk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Peace Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Heroism, Sanctuary"
+            },
+            {
+              "level": "3rd",
+              "spells": "Aid, Warding Bond"
+            },
+            {
+              "level": "5th",
+              "spells": "Beacon of Hope, Sending"
+            },
+            {
+              "level": "7th",
+              "spells": "Aura of Purity, Otiluke’s Resilient Sphere"
+            },
+            {
+              "level": "9th",
+              "spells": "Greater Restoration, Rary’s Telepathic Bond"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Implement of Peace",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this domain at 1st level, you gain proficiency in the Insight, Performance, or Persuasion skill (your choice)."
+        }
+      ]
+    },
+    {
+      "name": "Emboldening Bond",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 1st level, you can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Balm of Peace",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level, you can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once whenever you take this action."
+        }
+      ]
+    },
+    {
+      "name": "Protective Bond",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 6th level, the bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead."
+        }
+      ]
+    },
+    {
+      "name": "Potent Spellcasting",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+        }
+      ]
+    },
+    {
+      "name": "Expansive Bond",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 17th level, the benefits of your Emboldening Bond and Protective Bond features now work when the creatures are within 60 feet of each other. Moreover, when a creature uses Protective Bond to take someone else's damage, the creature has resistance to that damage."
+        }
+      ]
+    }
+  ]
+}
