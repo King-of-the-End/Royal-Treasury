@@ -1,0 +1,92 @@
+{
+  "name": "Marauder Chapter",
+  "slug": "marauder-chapter",
+  "class": "Jaeger",
+  "subclass_feature": "Jaeger Chapter",
+  "summary": "TBA",
+  "introduction": [
+    "A jaeger of this Chapter embodies raw slaughter. Vengeance, wrath, and death, all rolled into one swing that never ceases, endlessly scything through monsters, leaving a bloody wake of destruction. Each marauder is a symbol of the Chapter’s determination and ferocity, striking fear into the hearts of their enemies with every swing of their weapon. They are unstoppable warriors, driven by a thirst for vengeance and the need to protect humanity from the monstrous hordes."
+  ],
+  "features": [
+    {
+      "name": "Path of Gore",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you learn the Great Cleave Finisher. This does not count against your Finishers known."
+        },
+        {
+          "type": "subsection",
+          "title": "Great Cleave",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Finisher, special"
+            },
+            {
+              "type": "paragraph",
+              "text": "When you hit a creature with an attack using a weapon with the two-handed property, you can expend all of your Momentum dice. When you do so, the attack deals additional damage equal to 1 Momentum die, and cleaves a number of adjacent targets within reach equal to the number of dice expended. Make a melee weapon attack against each creature targeted. You regain 1 Focus Point for each creature this reduces to 0 hit points, up to your maximum number of Focus Points."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Marauder Momentum",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 3rd level, while you are wielding a melee weapon with the two-handed property, the size of your Momentum die is increased by one step (from a d6 to a d8, to a d10 at 11th level, and to a d12 at 17th level)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, while you are wearing medium armor, you can add your Constitution modifier in place of your Dexterity modifier (to a maximum of +2) when calculating your AC."
+        }
+      ]
+    },
+    {
+      "name": "Leap Attack",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 7th level, once per turn, if you move more than 15 feet toward a creature (or fall 10 feet or more) immediately before making a weapon attack against them, you deal additional damage on a hit equal to your Momentum Die."
+        },
+        {
+          "type": "paragraph",
+          "text": "When falling, you can make this attack prior to hitting the ground if there is a target creature in range where you would fall. On a hit, any falling damage you take is reduced by half, and you do not fall prone from the fall."
+        }
+      ]
+    },
+    {
+      "name": "Fell the Leviathan",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, whenever you use a Finisher, the target must make a Strength saving throw against 8 + your Strength modifier + your proficiency bonus, or be knocked prone. Creatures that are Large or larger have disadvantage on this saving throw."
+        }
+      ]
+    },
+    {
+      "name": "Titanic Strength",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 17th level, your strength is so great that you can wield a two-handed weapon in one hand, and can use two-weapon fighting even when the weapons you are wielding aren’t light (including using two-handed weapons)."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you choose to use two hands to wield a two-handed weapon, when you roll damage with it, you deal bonus damage equal to half your Strength modifier (rounded up)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, when you use a Finisher, you can use your full titanic power to treat it as if it had twice as many Momentum dice, up to a number equal to your maximum Momentum dice + 1. Once you use this, you can’t do so again until you finish a long rest."
+        }
+      ]
+    }
+  ]
+}

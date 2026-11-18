@@ -1,0 +1,131 @@
+{
+  "name": "Astromancy",
+  "slug": "astromancy",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Astromancy is a specialization that allows a magus to tap into the powers of the cosmos around them for the purposes of divination, prediction, and emulating cosmic phenomena. Those who study it put importance into astrological bodies, using their arrangement and symbolism as the basis for their magecraft. By doing so, they can create complete results that interfere with the world around them, including altering space and the flow of time."
+  ],
+  "features": [
+    {
+      "name": "Guided by the Stars",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you can attempt to read the stars each night, using them to guide your vision and connect with another location. Each time you complete a long rest, you may cast the spell clairvoyance sometime during the final thirty minutes without spending a spell slot or requiring material components. Casting clairvoyance this way does not interrupt your rest."
+        }
+      ]
+    },
+    {
+      "name": "Heliocraft",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you gain the following magecraft features:"
+        },
+        {
+          "type": "section",
+          "title": "Astromalice",
+          "paragraphs": [
+            "Whenever you attack a creature using your arche blast cantrip you can add your Intelligence modifier to the damage roll. The damage type for your arche blast changes from your elemental affinity, instead dealing radiant damage if used during daylight hours, and cold damage if used during nighttime hours.",
+            "In conditions where determining which condition is true is impossible (such as space), the DM may rule either can be used. When you are exposed directly to a/the sun it should be considered daytime.",
+            "When you cast arche blast, you can spend 1 ether point to fire one extra beam as a bonus action."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Cosmic Telepathy",
+          "paragraphs": [
+            "As an action, you can attempt to form a telepathic link with another creature that is on the same plane as you as long as you are familiar with them. The creature receives a mental ping that makes your attempt to connect to them clear, and they can either accept or reject the connection. If they accept, you can spend 1 ether point to secure the connection until the next time you fall unconscious or take a long rest.",
+            "While you are connected, you and that creature can communicate telepathically. Either you or the creature you’re connected to can suppress the connection at any time, silencing the other person until they unsuppress it. If either of you enters an effect like an anti-magic field, the connection is severed immediately and attempts to connect through one automatically fail.",
+            "You can maintain connections with multiple creatures at once, but they cannot communicate with one another through these links."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Orbital Rotation",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As a bonus action, on your turn you may spend 2 ether points and target a single creature within 50 feet of you with this ability. You can choose to do one of three things:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "You teleport to an unoccupied space you can see where your distance from the creature before and after you teleport remains the same.",
+                "You can try to teleport the creature to an unoccupied space you can see where its distance from you before and after teleporting remains the same.",
+                "You and that creature switch places, as long as there is enough room in each place for you both to be exchanged. If the creature occupies multiple spaces, you choose which space you end up in as long as your distance to the creature’s new space remains the same as it was before."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "If you choose either option that teleports the target creature and it is unwilling then it must make a Wisdom saving throw, and on a success the teleportation fails for both of you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gravity Well",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, you can use your mana to create a gravity well that warps space. As an action, you can create an artificial black hole in a space within 100 feet of yourself which remains for 1 minute or until you dismiss it. You must concentrate on the gravity well as if it were a spell, and if dispel magic is cast on you or the gravity well’s center then the effect ends."
+        },
+        {
+          "type": "paragraph",
+          "text": "This gravity well becomes a sphere that is a minimum radius of 5 feet and a maximum radius equal to 5 feet x your magus level. You choose the radius when you conjure it. The space within the gravity well is considered difficult terrain. All creatures that start their turn within the radius of this gravity well or enter it for the first time on their turn must make a Strength saving throw against your spell save DC."
+        },
+        {
+          "type": "paragraph",
+          "text": "On a failed save they fall prone and are pulled 5 feet toward the gravity well for each point they failed the save by, and take 1d10 force damage. A creature that fails the save by 5 points or more is considered restrained until the start of their next turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ranged attacks made into or within the gravity well have disadvantage."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature once per long rest. You can also use it additional times by spending 3 ether points."
+        }
+      ]
+    },
+    {
+      "name": "Temporal Revolution",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level you can directly affect the relative time passing between individuals. As an action you can switch the initiative order of two creatures you can see with one another. Additionally, you can choose one of these creatures to benefit from accelerated perception. That creature gains a bonus to their attack rolls and saving throws equal to your spellcasting ability modifier until the start of your next turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature twice, regaining expended uses when you complete a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Wrath of the Cosmos",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level you can realign the universe to make use of its drifting chaotic astral bodies. As an action, you can spend 6 ether points to conjure up a rift in space linking to the path of a powerful meteorite, which is summoned and aimed where you please. You can cause this meteor to strike any point you can see within 1 mile."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever it strikes, it detonates in a 50-foot-radius sphere and all creatures within that sphere must make a Dexterity saving throw against your spell save DC. A creature takes 6d12 radiant damage and 6d12 cold damage on a failed save, or half as much damage on a successful one."
+        },
+        {
+          "type": "paragraph",
+          "text": "The damage from this effect is considered magical, and saves against it are made as if against a 7th level spell."
+        }
+      ]
+    }
+  ]
+}

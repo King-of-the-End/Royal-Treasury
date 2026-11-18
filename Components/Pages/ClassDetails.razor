@@ -310,7 +310,7 @@ else if (classDocument is not null)
         !IsSubclassPage && (Slug.ToLowerInvariant() switch
         {
             "clergy" => AnchorId(featureName) == AnchorId("Chivalric Order"),
-            "magus" => AnchorId(featureName) == AnchorId("Craft Focus / Arcane Tradition"),
+            "magus" => AnchorId(featureName) == AnchorId("Craft Focus"),
             _ => false
         });
     private JsonDocument? subclassDocument;
@@ -645,12 +645,21 @@ else if (classDocument is not null)
         if (hasAlternativeTabs)
         {
             builder.AddContent(seq++, RenderSubclassTabs());
-            if (showAlternativeSubclasses && string.Equals(Slug, "clergy", StringComparison.OrdinalIgnoreCase))
+            if (showAlternativeSubclasses)
             {
-                builder.OpenElement(seq++, "p");
-                builder.AddAttribute(seq++, "class", "class-subclass-alternative-note");
-                builder.AddContent(seq++, "A player may use a Cleric Subclass in place of a Clergy Subclass. If they do, all channel divinity abilities become once per short rest abilities.");
-                builder.CloseElement();
+                var alternativeNote = Slug.ToLowerInvariant() switch
+                {
+                    "clergy" => "A player may use a Cleric Domain in place of a Clergy Chivalric Order. If they do, all channel divinity abilities become once per short rest abilities.",
+                    "magus" => "A Player may choose a Wizard Arcane Tradition in place of a Magus Craft Focus.",
+                    _ => null
+                };
+                if (alternativeNote is not null)
+                {
+                    builder.OpenElement(seq++, "p");
+                    builder.AddAttribute(seq++, "class", "class-subclass-alternative-note");
+                    builder.AddContent(seq++, alternativeNote);
+                    builder.CloseElement();
+                }
             }
         }
 

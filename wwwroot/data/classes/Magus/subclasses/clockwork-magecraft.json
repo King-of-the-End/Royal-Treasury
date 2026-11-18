@@ -1,0 +1,179 @@
+{
+  "name": "Clockwork Magecraft",
+  "slug": "clockwork-magecraft",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Clockwork mages pay close attention to the passage of time and the functions of clockwork devices. They see beauty and order within the repetition and routine of machines, and so use those principles as the foundation for the magecraft. They are intelligent, direct, and invested in their methods. They learn to create items and equipment to use on the fly, and can use their own magic circuits to generate pure ether that they or others can utilize. By learning to perform magecraft in a manner not unlike programming a machine, they codify and find short-hand for their spells that they can exploit readily."
+  ],
+  "features": [
+    {
+      "name": "Reliable Initiative",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 2nd level when you take this craft focus, whenever you roll for initiative you may add your Intelligence modifier to the result."
+        }
+      ]
+    },
+    {
+      "name": "Memory Gear",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you gain the ability to create small cogs that store spell scripts to be unleashed later by pumping mana through them. Whenever you complete a long rest, you can choose two spells that you know with a casting time of 1 action, each of which cannot be a higher level than your proficiency bonus. These can be different spells or the same spell multiple times. The spells take physical form as small copper cogs with shifting arcane inscriptions upon their surface."
+        },
+        {
+          "type": "paragraph",
+          "text": "On your turn, you can spend a number of ether points equal to the level of the spell in one of the cogs, channeling magical energy through it and allowing you to cast that spell as if it were a bonus action (requiring no spell slot). When casting the spell this way, it ignores the level of any other spells you cast this turn for the purpose of dismissing rules that limit what you can cast in the same turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "At 8th level, you can create a third cog when you complete a long rest, then a fourth when you reach 15th level. When you create new cogs, an equivalent amount of your existing cogs dissolve into harmless magical energy (you choose which). If you die, they can each be used once more, then become inert and dissolve when the spell is cast. You can render any of your cogs inert and useless as a reaction, and can restore their function as a bonus action."
+        },
+        {
+          "type": "paragraph",
+          "text": "To other creatures, they appear mundane; another creature aware of the spell contained and has that spell on their own spell list can use their spell slots and ether points (or sorcery points) to cast the spell inside, using their own spell attack or spell save DC. To gain access to the cog’s spell, they must be in contact with the cog and speak a password you programmed."
+        }
+      ]
+    },
+    {
+      "name": "Gearcraft",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, on your turn you can use ether points to create temporary gadgets, items, and armor that grant the effects listed below to any creature within 30 feet. You can create and bind one to a creature as a bonus action. These items remain in effect for 1 hour or until you fall unconscious, at which point they are destroyed in 1d4 rounds unless you regain consciousness. Any given creature can only be equipped with two of these inventions at a time."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can sustain an active amount of these inventions at a time equal to your proficiency bonus, and creating a new one after that point requires one of the previous inventions to vanish immediately (you choose which). If you have more than two gadgets active at a time you must concentrate on them collectively as if they were a spell, and they all break if you lose concentration."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Belt of Power (3 points)",
+              "paragraphs": [
+                "The creature gains a belt with three small nodes on it. When the creature makes an attack roll, saving throw, or ability check they can expend one of the nodes to gain advantage on the roll."
+              ]
+            },
+            {
+              "name": "Bracer of Enhancement (2 points)",
+              "paragraphs": [
+                "The creature gains a bracer on one or both of their arms which grants them advantage on Strength checks, as well as adding 1d4 to any attack and damage rolls they make with a weapon attack that uses Strength."
+              ]
+            },
+            {
+              "name": "Chains of Unbinding (3 points)",
+              "paragraphs": [
+                "Chains made of copper connecting various hexagonal plates appear, hanging weightlessly from the creature’s existing armor or clothes. These chains act independently to intercept attacks and deflect harm, granting the creature a +2 bonus to their armor class. If the creature is hit by a critical hit these chains shatter.",
+                "While equipped with these chains, a creature can increase the range of one of their melee weapon attacks on their turn by 10 feet. This is done by binding a chain to the weapon and telepathically directing them to swing and release it at a distance, which then returns to their hand."
+              ]
+            },
+            {
+              "name": "Clockwork Weapon (1+ points)",
+              "paragraphs": [
+                "You create any weapon which takes on a clockwork quality and appears in the creature’s hand. The created weapon has the stats of a regular version of the weapon you make, and the weapon it’s based on must be nonmagical and of common or uncommon rarity. This weapon’s damage is considered magical for the purposes of overcoming immunities and resistances but has no other magical effects, and the creature it is summoned for is treated as if they were proficient with it.",
+                "The weapon has a bonus to attack and damage rolls made with it by the creature it was summoned for depending on the amount of ether points used to create it. 1 point is required to create a normal item, 3 points are required for a weapon with a +1 bonus, 5 to create one with a +2 bonus, and 7 points to create one with a +3 bonus.",
+                "You may also spend 1 ether point to create 10 pieces of ammunition for a weapon that falls into the description above. This ammunition is magical but otherwise unremarkable. When you create a clockwork weapon with this feature it has 10 pieces of ammunition automatically."
+              ]
+            },
+            {
+              "name": "Deployable Gear Shield (2 points)",
+              "paragraphs": [
+                "The creature has a small shield that floats near their arm. As a reaction to being hit by an attack or effect that will deal damage, the creature can cause the shield to interpose itself between the target and themselves and expand outward, absorbing half of the damage the creature would take (before resistances or immunities are applied). The shield is then destroyed in doing so."
+              ]
+            },
+            {
+              "name": "Perceptive Lenses (2 points)",
+              "paragraphs": [
+                "You create a set of glasses or goggles that allow the creature to see up to 5000 feet away clearly, granting them the ability to see in the dark and their vision cannot be impeded by anything obscuring it unless the subject has total cover. The wearer has advantage on Wisdom (perception) checks made to spot movement or fine details."
+              ]
+            },
+            {
+              "name": "Satellite Gear (3 points)",
+              "paragraphs": [
+                "A clockwork familiar appears, latching onto the target and granting them a localized barrier that protects them against attacks. When the target takes damage from an attack or effect, the familiar absorbs 5 points of the damage. Once it has absorbed 20 points of damage it is destroyed. While it is active the creature has resistance against piercing, slashing, or bludgeoning damage from nonmagical attacks."
+              ]
+            },
+            {
+              "name": "Speed Enhancer (1 point)",
+              "paragraphs": [
+                "The creature gains footwear with an arcane thruster added, increasing their base movement speed by 10 feet. Their high jumps and long jumps also gain 10 feet of distance. The creature can run across liquids and similarly semi-solid surfaces as if they were normal terrain, unless they stop over them."
+              ]
+            },
+            {
+              "name": "Vanishing Point (2 points)",
+              "paragraphs": [
+                "The creature gains a bracelet that allows them to put themself into a temporary state of temporal flux. As a bonus action, they can teleport with their possessions and anything they’re carrying up to 20 feet to an unoccupied space they can see. When they do, they must roll 1d20. On a result of 5 or lower the vanishing point generator breaks and ceases to function. If it does not break, next time the range for it failing is increased by 1 point."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ether Engine",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 10th level, you can convert magical energy within your body into a form of ether attuned to your spells and abilities. Once per turn as an action or bonus action, you can convert a spell slot into extra ether points. The amount of ether points you gain is based on the level of spell slot used, as listed below. Extra ether points gained this way disappear next time you complete a short or long rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you gain ether points this way, you can choose to transfer them to a creature within 15 feet of you who can use them as if they are for their own features or can use them in place of sorcery points."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "slot_level",
+              "label": "Spell Slot Level"
+            },
+            {
+              "key": "ether_points",
+              "label": "Ether Points"
+            }
+          ],
+          "rows": [
+            {
+              "slot_level": "2nd or 3rd",
+              "ether_points": "1"
+            },
+            {
+              "slot_level": "4th or 5th",
+              "ether_points": "2"
+            },
+            {
+              "slot_level": "6th or 7th",
+              "ether_points": "3"
+            },
+            {
+              "slot_level": "8th or 9th",
+              "ether_points": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dominate Construct",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 14th level, you have the ability to exert control over the artificial servants of others. As an action, you can expend 3 ether points to attempt to seize control of a construct within 60 feet of you. This effect functions as if you were casting dominate monster without expending a spell slot and requiring no components, except you don’t have to concentrate on the effect. If the construct’s intelligence score is 8 or higher they have advantage on their Wisdom saving throws against this effect."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once you have control of a construct using this effect, every time they succeed a saving throw they make against it you can spend 1 ether point to cause them to fail instead."
+        }
+      ]
+    }
+  ]
+}

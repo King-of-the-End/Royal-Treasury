@@ -1,0 +1,91 @@
+{
+  "name": "Toxicology Magecraft",
+  "slug": "toxicology-magecraft",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Toxicology is a specialization born in studying naturally corrosive elements in nature, and replicating their effects using magecraft. Mages who study toxicology strengthen their own body against the effects of poisons and can often make their own body caustic to others."
+  ],
+  "features": [
+    {
+      "name": "Toxic Affinity",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you wish to select “toxic” as a deviant affinity (or something comparable), you can choose to be resistant to either poison or acid damage and use it for your arche blast. Furthermore, if you have this affinity and another feature would give you resistance against your chosen damage type, you become immune instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "A Magus with this affinity has advantage on ability checks made to identify, handle and apply poisons."
+        }
+      ]
+    },
+    {
+      "name": "Toxin Expert",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are immune to the poisoned condition and resistant to poison damage."
+        },
+        {
+          "type": "section",
+          "title": "Toxic Efficacy",
+          "paragraphs": [
+            "When this feature makes reference to your toxic efficacy, it is referring to the potency of the toxins you wield. Your toxic efficacy is poison damage equal to 1d6 multiplied by your proficiency bonus."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shroud of Microtoxins",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "There is an ever-present invisible cloud of microscopic toxins that swarm around you in a 10-foot-radius sphere centered on you. As a bonus action on your turn, you can spend a number of ether points equal to or less than your proficiency bonus. If you do, you may target a number of creatures within your aura of a number equal to or less than twice the number of ether points you use. Those creatures must make a Constitution saving throw against your spell save DC. On a failed save they take the damage of your toxic efficacy and are poisoned until the end of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "Toxic to the Bone",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your craft has advanced far enough that you can infuse your own body with dangerous toxins at will, protecting you from those who look to physically threaten you. As a bonus action, you can flood your body with toxins that are harmless to you but grant you the following benefits for 1 minute, or until you choose the end of effect (no action required):"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You become immune to poison damage.",
+            "The first time on each turn when a creature hits you with a weapon attack from within 5 feet, they take the damage from your toxic efficacy.",
+            "The first time on each turn you deal damage with a weapon attack or spell, you deal extra poison damage equal to your Magus level. If there are multiple possible targets, you must choose one to take the extra damage.",
+            "If any creature would gain hit points or temporary hit points as a result of dealing damage to you (such as by the spell vampiric touch), they do not gain those points and, instead, take poison damage equal to half of what they would have gained (rounded down).",
+            "You do not need to breathe."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature once per long rest, but after using it once may use it again by expending 2 ether points."
+        }
+      ]
+    },
+    {
+      "name": "Suffocating Shroud",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature fails their saving throw against your shroud of microtoxins, you can choose to spend an extra ether point to separate a fragment of your shroud from you and have it remain on them, invisibly assailing and suffocating them. While this shroud remains on them they are poisoned, they take 2d8 poison damage at the start of each of their turns, and they are unable to breathe. The creature makes Constitution saving throw (using your spell save DC) against the shroud at the end of each of their turns, ending the effect on a success."
+        },
+        {
+          "type": "paragraph",
+          "text": "A creature poisoned by this effect cannot recover from it until they succeed its saving throw."
+        }
+      ]
+    }
+  ]
+}

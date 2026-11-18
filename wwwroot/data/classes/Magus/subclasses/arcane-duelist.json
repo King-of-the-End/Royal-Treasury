@@ -1,0 +1,78 @@
+{
+  "name": "Arcane Duelist",
+  "slug": "arcane-duelist",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "A magus who has trained in techniques related to battling others, and has tailored their skill-set to target and eliminate select targets when necessary. This craft allows the magus to overcome a creature’s defenses by focusing the deadliest aspects of their spells on these vulnerable areas. It is most common for mages who look for work as executioners or career assassins to delve into this magic. While outwardly crude, the level of skill required to shape and sharpen spells as per this craft is respected by most educated mages."
+  ],
+  "features": [
+    {
+      "name": "Concentration Proficiency",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you can add your proficiency bonus to any concentration check you make unless you already did twice."
+        }
+      ]
+    },
+    {
+      "name": "Mystic Heartbeat",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level, whenever you roll a d20 result of 20 on any attack roll you make or any saving throw against an effect from a hostile creature, you immediately regain 1 ether point or gain temporary hit points equal to 1d10 + your magus level (you choose when the effect occurs)."
+        }
+      ]
+    },
+    {
+      "name": "Shroud of Protection",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 6th level, you can cast a shroud of energy over a creature when they are in danger. Whenever you or a creature within 60 feet of you is targeted by an attack or spell effect, you may spend a number of ether points as a reaction to add a bonus to their armor class or saving throw against the triggering effect/attack equal to half your proficiency bonus (rounded down) for each ether point spent. You can do this after the attack roll or saving throw is made, but not once the outcome has been revealed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you reach 14th level in this class, a creature benefiting from this effect also reduces damage taken from the effect or attack by an amount equal to your proficiency bonus per ether point spent."
+        }
+      ]
+    },
+    {
+      "name": "Evocation Dial",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 14th level, you can condense the essence of your spells to focus them on priority targets and exclude anyone else in range."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you cast a spell that affects all creatures within a specified area that includes at least four five-foot squares (including but not limited to a cone, cube, or sphere) and would force them to make a saving throw, you can spend 2 ether points to pick an amount of creatures in range up to your proficiency bonus, and exclude all others from the spell’s effects."
+        }
+      ]
+    },
+    {
+      "name": "Killzone",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, your spells are more devastating and can be twisted to strike even the most cautious targets."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you cast a spell that forces a target to make a saving throw against damage, and on a successful save they would take no damage from that effect, they instead take half damage on a successful save."
+        },
+        {
+          "type": "paragraph",
+          "text": "If that creature has a feature that would allow them to take no damage instead of half (such as evasion or avoidance) which does not require a reaction, they take half damage as if that feature didn’t apply."
+        }
+      ]
+    }
+  ]
+}

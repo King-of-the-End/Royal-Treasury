@@ -1,0 +1,99 @@
+{
+  "name": "Cognition Magecraft",
+  "slug": "cognition-magecraft",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Your talents lie in altering the perception of those around you, changing their appearance and characteristics to suit their needs. Rather than alter the properties of the subjects they wish to affect, however, these mages are proficient in targeting the senses of the onlooker directly: rather than bend light around a creature to cause invisibility, they force an onlooker’s brain to interpret signals in such a way as to not see the subject at all. They refine this craft to heighten their own senses and freely tamper with those of others."
+  ],
+  "features": [
+    {
+      "name": "Perceptive Affinity",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you wish to choose “cognition”, “perception”, “clarity” or something conceptually similar as a deviant affinity, you are resistant to psychic damage and use it for your arche blast. Furthermore, if you have this affinity, you gain proficiency in Wisdom (Perception) checks and treat lightly obscured subjects as if they weren’t obscured at all, and heavily obscured subjects as if they were only lightly obscured."
+        }
+      ]
+    },
+    {
+      "name": "Master of Occurrence",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you wish to cast a spell of the enchantment or illusion schools, you may spend one ether point while doing so to treat the spell as if you had cast using a spell slot two levels higher than the one you expended (maximum 9th), but only in regards to its effects that scale with slot levels. Spells like counterspell and dispel magic are still treated as being cast at the level of spell slot you spent to cast it."
+        }
+      ]
+    },
+    {
+      "name": "Blindspot",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As a bonus action on your turn, you can target one creature that can see you and attempt to affect their sense of perception. You must choose one of the options below, pay its ether point cost, then force the target to make a Wisdom saving throw against your spell save DC. On a failure, they are subjected to the effect you picked, and at the end of each of their turns, they reattempt the saving throw, ending the effect on a success."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Eye on Me (3 ether points)",
+              "paragraphs": [
+                "The target becomes unable to see or hear any creatures that you choose within 30 feet of you or them, who are magically shrouded from them as though by the invisibility spell (requiring no concentration). If they have another sense that would be able to perceive them, such as tremorsense or blindsight, the creatures become invisible to those senses as well. You cannot shroud yourself using this effect."
+              ]
+            },
+            {
+              "name": "Vanishing Point (1 ether point)",
+              "paragraphs": [
+                "You become invisible to the target for the effect’s duration, and cannot be seen or heard by them even if they have special senses that could otherwise detect you."
+              ]
+            },
+            {
+              "name": "Greyscale (1 ether point)",
+              "paragraphs": [
+                "If the creature has blindsight, devilsight, darkvision or truesight, they lose those special senses for 1 minute."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Light Field Manipulation",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can cast seeming once per long rest, requiring no spell slot or components."
+        }
+      ]
+    },
+    {
+      "name": "Greater Crest",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You possess greater magecraft than would normally be possible using regular means, learning it slowly as you master your craft. When you gain this feature you can choose one 7th-level illusion or enchantment spell from any spell list, which counts as a Magus spell for you. When you reach 15th-level as a Magus you can choose a spell of 8th-level, then when you reach 17th-level as a Magus you can choose another of 9th-level."
+        },
+        {
+          "type": "paragraph",
+          "text": "These spells do not count against your Magus spells known, cannot be switched out for another spell when gaining Magus levels, and cannot be transferred via crest transfer."
+        }
+      ]
+    },
+    {
+      "name": "Truesight",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your perceptive abilities sharpen, granting unparalleled visual acuity. You gain truesight out to 60 feet, allowing you to see through illusions, see in magical and nonmagical darkness, see invisible creatures, and discern the true form of shapechangers you can see."
+        }
+      ]
+    }
+  ]
+}

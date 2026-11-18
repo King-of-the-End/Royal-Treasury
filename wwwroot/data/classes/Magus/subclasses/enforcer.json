@@ -1,0 +1,74 @@
+{
+  "name": "Enforcer",
+  "slug": "enforcer",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Enforcers are mages who train themselves to hunt down other heretical mages. Usually those less concerned with the political landscape of the mage world and more concerned with the integrity of magecraft or lining their own pockets. They employ unorthodox methods to hunt down and kill those they’re sent after (usually mages with a sealing designation placed on them). They have been known to work from time to time with the Holy Church."
+  ],
+  "features": [
+    {
+      "name": "Martial Mystic Arts",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you gain proficiency with martial weapons, shields, and medium armor. You can choose to use a simple or martial weapon as your arcane focus."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you cast a cantrip on your turn you can use a bonus action to either Dash or make a single weapon attack."
+        }
+      ]
+    },
+    {
+      "name": "Prana Bulwark",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, whenever you are hit by an attack or fail a saving throw against an effect you can see that deals damage to you, you can choose to cover yourself in a protective aura by pushing mana into the space around you as a reaction. You may spend a spell slot to roll an amount of d10s equal to the spell slot level, gaining that many temporary hit points. You lose these temporary hit points at the start of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, you can attack twice instead of once whenever you take the Attack action on your turn."
+        }
+      ]
+    },
+    {
+      "name": "Countercasting",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level you automatically learn the spell counterspell which does not count against your total magus spells known."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you cast counterspell you have advantage on the ability check made against higher level spells, and you can choose to spend 1 ether point instead of spending a spell slot."
+        }
+      ]
+    },
+    {
+      "name": "Circuit Seizure",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, whenever you make an attack roll against a creature that has cast a spell since your last turn or is benefiting from an ongoing magical effect, you roll 1d6 and add it to the result of both the attack and damage roll."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a creature casts a spell as a reaction to any attack you make or spell you cast, you can cause some of the magical energy to rebound against them, and they take 1d8 necrotic damage per level the spell is cast at. If they use a magical effect with no spell level the damage is instead an amount of d8s equal to half their proficiency bonus (rounded up)."
+        }
+      ]
+    }
+  ]
+}

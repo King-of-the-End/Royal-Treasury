@@ -104,7 +104,7 @@
         {
           "level": "2nd",
           "proficiency_bonus": "+2",
-          "features": "Magecraft",
+          "features": "Magecraft, Craft Focus",
           "cantrips_known": "3",
           "spells_known": "5",
           "magecraft": "2",
@@ -172,7 +172,7 @@
         {
           "level": "6th",
           "proficiency_bonus": "+3",
-          "features": "—",
+          "features": "Craft Focus Feature",
           "cantrips_known": "4",
           "spells_known": "9",
           "magecraft": "3",
@@ -240,7 +240,7 @@
         {
           "level": "10th",
           "proficiency_bonus": "+4",
-          "features": "—",
+          "features": "Craft Focus Feature",
           "cantrips_known": "4",
           "spells_known": "13",
           "magecraft": "4",
@@ -308,7 +308,7 @@
         {
           "level": "14th",
           "proficiency_bonus": "+5",
-          "features": "Supreme Thaumaturgy",
+          "features": "Supreme Thaumaturgy, Craft Focus Feature",
           "cantrips_known": "5",
           "spells_known": "17",
           "magecraft": "5",
@@ -608,12 +608,16 @@
         ]
       },
       {
-        "name": "Craft Focus / Arcane Tradition",
+        "name": "Craft Focus",
         "level": "2",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "At 2nd level, you choose any arcane tradition available to a wizard, or a magus' craft focus. These define the focus of the mage's career path and their studies. The craft focuses are detailed at the end of the class features. Your arcane tradition/craft focus grants you features at 2nd level, then again at 6th, 10th, and 14th level."
+            "text": "Magus study the mysteries of the world, refining their magecraft in pursuit of the Root. Each craft focus represents a distinct avenue of research, shaped by the mage’s talents, the secrets of their lineage, and the theories they seek to prove. Some explore the cosmos or the properties of precious minerals, while others refine their own bodies, manipulate perception, or command familiars. Though their methods differ, each seeks to uncover truths that lie beyond the limits of ordinary magecraft."
+          },
+          {
+            "type": "paragraph",
+            "text": "At 2nd level, you choose a craft focus. Your craft focus grants you features at 2nd, 6th, 10th, and 14th level."
           }
         ]
       },
@@ -706,9 +710,9 @@
     ],
     "appendices": [
       {
-  "title": "Magecraft Features",
-  "style": "option-cards",
-  "blocks": [
+        "title": "Magecraft Features",
+        "style": "option-cards",
+        "blocks": [
           {
             "type": "options",
             "items": [

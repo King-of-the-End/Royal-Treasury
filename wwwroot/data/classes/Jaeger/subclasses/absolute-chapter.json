@@ -1,0 +1,70 @@
+{
+  "name": "Absolute Chapter",
+  "slug": "absolute-chapter",
+  "class": "Jaeger",
+  "subclass_feature": "Jaeger Chapter",
+  "summary": "TBA",
+  "introduction": [
+    "Jaegers of the Absolute Chapter aim for the perfect hunt - to kill their prey without suffering a single hit. Quick hands, quick feet, and quick minds, they never stay still - always one step ahead, always striking with lethal accuracy. They are masters of their craft, refining the core techniques of a jaeger to absolute perfection. Members of the Absolute Chapter are respected by their allies and feared by their enemies."
+  ],
+  "features": [
+    {
+      "name": "Counter Strike",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, when you use the Weapon Parry Focus Art, your damage roll increases by an amount equal to half your level in this class (rounded down). If the amount of damage you block exceeds the damage their attack would deal, and your attack roll would hit their AC, the target takes damage equal to the remainder of the damage roll."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you expend a Focus Point on a Focus Art, you gain advantage on your next weapon attack roll before the end of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "Unencumbered Movement",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 3rd level, while you are wearing light armor or no armor, your speed increases by 10 feet, and the distance you can move when using the Dodge Step Focus Art increases by 5 feet."
+        }
+      ]
+    },
+    {
+      "name": "Encircling Strike",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 7th level, if you move to the opposite side of a creature from where you started your turn, or are directly on the opposite side of a creature from an allied creature of yours, you deal additional damage to the target equal to your Momentum die the first time you hit it with a melee weapon attack."
+        }
+      ]
+    },
+    {
+      "name": "Mobile Pursuer",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 14th level, when you move as part of your Hunter’s Pursuit, you ignore difficult terrain, can pass through hostile creatures, and don’t need to spend extra movement to climb or swim."
+        }
+      ]
+    },
+    {
+      "name": "The Hunt",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 17th level, you can declare a hunt (no action required). For 1 minute, you are under the effect of freedom of movement and each time you expend a Focus Point, you gain 2 Momentum dice, instead of 1."
+        },
+        {
+          "type": "paragraph",
+          "text": "This effect ends early if you become incapacitated, or end it early as a bonus action. Once you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    }
+  ]
+}

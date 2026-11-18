@@ -1,0 +1,75 @@
+{
+  "name": "Mineralogy",
+  "slug": "mineralogy",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Mineralogy is the study of natural elements for the purpose of performing magecraft. By studying the structure of gemstones and minerals, a mage learns to manipulate and recreate microstructures with great durability which, when made large enough, allows for strengthened walls, weapons, and creative gem-based magecraft. By applying mineralogy a mage can learn the value of gemstones, specifically how their structure allows them to store energy and spells when used properly.",
+    "The more valuable the gemstone the greater its capacity for this. More to that point, gemstones with supreme value are granted power by the reverence given to them by modern society, making them a resource that can be expended to gain additional magical energy. Unfortunately, this type of magecraft is one of the most expensive, requiring huge investments when using powerful magic. Some consider this factor to be gratuitous and difficult to manage, but those who adopt it find the trade-off worth it in life or death situations."
+  ],
+  "features": [
+    {
+      "name": "Value Transposition",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, whenever you cast a spell that has a material component with a gold cost you can substitute the cost for gemstones or valuable minerals worth an equal or greater amount. If the material cost is for objects that must be possessed by you or a target of the spell (such as the rings for warding bond), you can spend 10 minutes per spell attuning gemstones/minerals of equal or greater value to that spell’s effects, possessing them being equivalent to holding or wearing that component."
+        }
+      ]
+    },
+    {
+      "name": "Mineral Spellcraft",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you gain the ability to store spells within gemstones. Whenever you complete a long rest you may imbue several gemstones or minerals you possess with spell energy. You may choose an amount of spells you are capable of casting equal to your Intelligence modifier, and expend the spell slot(s) (and material components) needed to cast them at base level. The spells cannot have a casting time longer than 1 action. For each one, you prepare a gemstone and place the spell inside of it. These gemstones function as magic items."
+        },
+        {
+          "type": "paragraph",
+          "text": "You may use any of these gemstones as a bonus action to cast the spell stored inside them, expending the gemstone, and stored spell. When you cast a spell this way you must spend 1 ether point, and may still cast another spell normally in the same turn using your action, regardless of the stored spell’s level."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you are preparing gemstones with spells you can automatically create worthless gemstones made of mana for this purpose, adding no additional cost. You may also choose to store the spell in an existing gemstone (which is consumed when you cast the spell stored within) and, depending on the value of the gemstone, the spell may receive a bonus. If the gemstone is worth 50 gold pieces or more your spell attack and spell save DC both gain a +1 bonus; if the gemstone is worth 500 gold pieces or more it gains a +2 bonus; if it is worth 1000 gold pieces or more the spell gains a +3 bonus."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you choose to place the spell inside an existing gemstone, the spell fades when you complete your next long rest and the gemstone becomes mundane again. Any gemstones you made from mana using this feature also disappear when you finish a long rest, along with the spells stored inside them."
+        }
+      ]
+    },
+    {
+      "name": "Crystal Membrane",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, you learn the spell shield (if you did not already have it) which does not count against your total magus spells known. Whenever you cast shield you can choose to spend 1 ether point instead of a spell slot. If you cast it this way, the first attack that hits you before the effects of shield ends may be absorbed by the gemstone membrane. The damage it deals is treated as if you had resistance to it, and then the remaining damage is reduced by an amount equal to your level + your Intelligence modifier."
+        }
+      ]
+    },
+    {
+      "name": "Flashing Radial",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level, whenever you cast a spell you may choose to spend an ether point to cause your mana to express itself as a bright multicolored flash of refracting light. All creatures within 50 feet of you that can see you must succeed a Constitution saving throw against your spell save DC or be blinded. At the end of each of their turns they may re-attempt the saving throw, ending the effect on a success."
+        }
+      ]
+    },
+    {
+      "name": "Glittering Gemcraft",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, whenever you cast a spell you may choose to spend an ether point and expend a gemstone or mineral worth at least 5000 gold pieces - these are separate from other gems used as spell components or for other effects in the spell. If you do this, the spell consumes a spell slot of its base level (unless you choose to cast it using a higher spell slot) but is treated as if it were cast at 9th level."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Trickster",
+  "slug": "trickster",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Those who train themselves to act dexterously, relying only partially on their magical talents and instead focusing on their instincts and spatial acuity. This magecraft is a strictly antagonistic kind, meant to harm and assault others. It is not uncommon for families that specialize in assassination or infiltration work to have members trained in its use."
+  ],
+  "features": [
+    {
+      "name": "Trick Proficiency",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you gain proficiency with all finesse and light weapons. You also gain proficiency with your choice of two skills, choosing from Athletics, Acrobatics, Insight, Intimidation, Sleight of Hand, and Stealth."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you gain new spells through Magus features (including the spell gained at this level), you may select spells from the bard spell list and treat them as if they were wizard spells for you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Finally, you have a climb speed equal to your base movement speed, and when clinging to or climbing any surface you can perform any actions you normally could as long as they don’t require the use of both of your hands."
+        }
+      ]
+    },
+    {
+      "name": "Sparking Strike",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 2nd level when you take this craft focus, you have the ability to exploit openings and advantageous situations in combat by unleashing small amounts of mana with your attacks. Whenever you hit a creature with a weapon attack that you had advantage on or that scored a critical hit, you may choose to deal extra damage on the attack as long as it was with a light or finesse weapon."
+        },
+        {
+          "type": "paragraph",
+          "text": "The damage is equal to 1d6 per two points of your proficiency bonus, and the damage type is one of the damage types you’re aligned with through your affinity with the five features."
+        }
+      ]
+    },
+    {
+      "name": "Tenacity",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, whenever you hit a creature with a weapon attack you can choose to expend 1 ether point to flood their body with corrosive magical energy, briefly staggering them. That creature has disadvantage on saving throws they make within the next minute, or until they fail one."
+        }
+      ]
+    },
+    {
+      "name": "Virulent Attack",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 6th level, when you take the Attack action on your turn and only attack using light or finesse weapons, you can make one extra weapon attack using one of them."
+        }
+      ]
+    },
+    {
+      "name": "Extra Arcana",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level, whenever you take an Attack action that involves no more than a single weapon attack, or cast a spell with a casting time of 1 action on your turn, you can cast another spell with a casting time of 1 bonus action, or one with a casting time of 1 action as long as its level is equal to or less than half your proficiency bonus (rounded down). The extra spell cast this way is cast at its base level."
+        }
+      ]
+    },
+    {
+      "name": "Flash Victorious",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 14th level, you gained the supernatural ability to link a teleportation spell to a weapon in your possession. On your turn, you can expend 2 ether points and imbue a light weapon or weapon with the thrown property with the enchantment which lasts until the start of your next turn. As a part of the act of enchanting it, you can throw it up to 30 feet or up to its attack range into an unoccupied space you can see. Any time before the enchantment ends, you can use your reaction to teleport to the weapon (as long as it is at least 10 feet away from you) and take hold of it. You can then make a weapon attack with it against any creature within range."
+        },
+        {
+          "type": "paragraph",
+          "text": "Alternatively, when you hit a creature with a melee attack, you can quickly tie them to the effect instead of yourself and attempt to teleport them in your place. The target must make a Charisma saving throw against your spell DC, and on a failed save the creature is teleported to the weapon’s space instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once teleported to, the enchantment on a weapon ends. If you enchant multiple weapons this way in a single turn you can choose which one you teleport to."
+        }
+      ]
+    }
+  ]
+}

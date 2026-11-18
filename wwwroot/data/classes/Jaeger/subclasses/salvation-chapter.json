@@ -1,0 +1,91 @@
+{
+  "name": "Salvation Chapter",
+  "slug": "salvation-chapter",
+  "class": "Jaeger",
+  "subclass_feature": "Jaeger Chapter",
+  "summary": "TBA",
+  "introduction": [
+    "A divine force endows jaegers of the Salvation Chapter with the ability to defend the world from the horrors, purging evil with one hand while saving the innocent with the other. Favorites of the Radiant Church, they are the light of hope in the darkness where evil dwells. Members of the Salvation Chapter know that prevention is always better than cure, and that murder is the most effective method of prevention. In their zealous righteousness, they offer hope of sanity and sanctuary to those that stand with them in their war against the tides of madness."
+  ],
+  "features": [
+    {
+      "name": "Art of Salvation",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, you learn the Prayer of Salvation Focus Art. This does not count against your Focus Arts known."
+        },
+        {
+          "type": "subsection",
+          "title": "Prayer of Salvation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Focus Art, bonus action"
+            },
+            {
+              "type": "paragraph",
+              "text": "As a bonus action, you expend 1 Focus Point. You and one creature of your choice you can see within 60 feet of you regain 1d6 hit points, and gain an equal number of temporary hit points."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Savior’s Focus",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 3rd level, you find new strength in the most desperate hours. When an allied creature you can see or hear is reduced to 0 hit points, you regain 1 Focus Point. Once you use this feature, you can’t do so again for 1 minute."
+        }
+      ]
+    },
+    {
+      "name": "Sanctifying Light",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 7th level, when you expend a Focus Point, you can choose to emit a glow of divine light, until the end of your next turn, illuminating a 20-foot radius in bright light and an additional 20 feet in dim light. The light is sunlight. Any allied creature that starts its turn in the bright light or enters it for the first time on its turn gains 1d6 + your proficiency bonus hit points. This light is extinguished if you become incapacitated."
+        }
+      ]
+    },
+    {
+      "name": "Purifying Salvation",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, your Prayer of Salvation Focus Art can target an additional creature, and the amount of hit points it restores and temporary hit points it grants increases to 1d12."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, if any of the targets are charmed, frightened, poisoned, or suffering from a short-term madness, you can cleanse the condition from them, ending it."
+        }
+      ]
+    },
+    {
+      "name": "Light of Hope",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 17th level, as a bonus action, you can unleash a blinding light from within for 1 minute, illuminating the darkness. You gain the following benefits for the duration:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The radius of your Sanctifying Light becomes 30 feet of bright light and an additional 30 feet of dim light. You and all creatures of your choice within the bright light are under the effect of bless. Creatures in the bright light have advantage on death saving throws, do not die at three failed saves, and continue to roll until they are stable. A creature that is no longer within the bright light of this effect and is not stable dies if they have failed three death saving throws.",
+            "When you use Prayer of Salvation, you immediately regain the expended Focus Point."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These benefits end early if you become incapacitated, or end this feature early as a bonus action. Once you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    }
+  ]
+}

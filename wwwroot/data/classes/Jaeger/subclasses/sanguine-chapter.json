@@ -1,0 +1,158 @@
+{
+  "name": "Sanguine Chapter",
+  "slug": "sanguine-chapter",
+  "class": "Jaeger",
+  "subclass_feature": "Jaeger Chapter",
+  "summary": "TBA",
+  "introduction": [
+    "In order to strengthen themselves, jaegers of the Sanguine Chapter rely on the essential essence that is blood. They achieve resilient states of unnatural life and feed their powers with the fruits of their violence. Although some may consider them to be monsters in and of themselves, when faced with the horrors that lurk in the dark recesses of the world, their abilities can hold the line and preserve the tenuous flame of life when it should have long since been extinguished, keeping themselves and their allies alive while draining the strength of their adversaries in an endless crimson parade of blood."
+  ],
+  "features": [
+    {
+      "name": "Vital Consumption",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 3rd level, you gain the ability to draw power from the flowing blood of your foes, and learn the Blood Drain Finisher, which does not count against your Finishers known. Some of your abilities use a Blood Magic save DC, which is calculated as follows:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Blood Magic DC = 8 + your Intelligence or Constitution modifier (your choice) + your proficiency modifiers."
+        },
+        {
+          "type": "subsection",
+          "title": "Blood Drain",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Finisher, bonus action"
+            },
+            {
+              "type": "paragraph",
+              "text": "As a bonus action, you can expend all of your Momentum dice to drain a creature within 5 feet of blood, magically consuming its vitality as your own. The target makes a Constitution saving throw against your Blood Magic save DC. On a failed save, it takes necrotic damage equal to the value rolled on all the expended Momentum dice. On successful save, it takes half as much necrotic damage. Success or failure, you regain hit points equal to half the necrotic damage dealt."
+            },
+            {
+              "type": "paragraph",
+              "text": "If the target is bloodied (has fewer than half its maximum hit points) after taking the damage from this Finisher or if you use this Finisher against a creature suffering from an effect that makes it bleed (such as Hemorrhaging Wound), you regain 1 Focus Point."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crimson Rage",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Also at 3rd level, the first time you become bloodied (have fewer than half your maximum hit points), you gain 1 Focus Point and 1 Momentum die. You cannot benefit from this feature again for 1 minute."
+        }
+      ]
+    },
+    {
+      "name": "Blood Hex",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 7th level, when you use your Blood Drain Finisher and the target fails its saving throw, you can invoke a blood hex, selecting one of the following effects:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Blood Puppet",
+              "paragraphs": [
+                "The target must use its reaction to move up to 5 feet in a direction of your choice (if the target’s reaction is unavailable, they cannot move)."
+              ]
+            },
+            {
+              "name": "Bound Blood",
+              "paragraphs": [
+                "The target’s movement speed is reduced by half until the start of your next turn."
+              ]
+            },
+            {
+              "name": "Burning Blood",
+              "paragraphs": [
+                "The target takes additional fire damage equal to half necrotic damage dealt."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Empowered Blood Hex",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, you can invoke more powerful blood hexes. You gain the following options, each of which are improved versions of the hexes granted by Blood Hex, but cost 2 Focus Points to invoke."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Blood Puppet (Empowered)",
+              "paragraphs": [
+                "The target must use its reaction to move up to 5 feet and make a single weapon attack against a creature of your choice (if the target’s reaction is unavailable, they cannot move)."
+              ]
+            },
+            {
+              "name": "Bound Blood (Empowered)",
+              "paragraphs": [
+                "The target is restrained until the start of your next turn."
+              ]
+            },
+            {
+              "name": "Burning Blood (Empowered)",
+              "paragraphs": [
+                "The target takes fire damage equal to the necrotic damage dealt at the start of each of its turns. It can repeat the saving throw it made against the Blood Drain Finisher at the end of each of its turns, ending the effect on a success."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blood Frenzy",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 17th level, while bloodied (have fewer than half your maximum hit points), you gain the following benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Your speed is increased by 20 feet.",
+            "When you take the attack action, the number of attacks you make increases to three.",
+            "All hit points you regain from your jaeger abilities are doubled.",
+            "You can use the Blood Craze Focus Art."
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Blood Craze",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Focus Art, Reaction"
+            },
+            {
+              "type": "paragraph",
+              "text": "As a reaction to being reduced to 0 hit points, you can expend 1 Focus Point to be reduced to 1 hit point instead."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "title": "Note: Blood Craze",
+          "text": "This is a Focus Art, so it works with Always Ready (which grants an additional reaction), making the Sanguine Chapter fairly difficult to stop at 20th level."
+        }
+      ]
+    }
+  ]
+}

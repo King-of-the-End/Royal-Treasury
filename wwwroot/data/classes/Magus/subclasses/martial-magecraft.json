@@ -1,0 +1,72 @@
+{
+  "name": "Martial Magecraft",
+  "slug": "martial-magecraft",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Martial Magecraft is a relatively new but popular study. Those who focus on it utilize their mana to reinforce their body to deal more damage, increase their staying power in close combat, and simultaneously employ magic and assail opponents. It has roots in self-defense teachings for mages in the onset of the modern world, and this specialization is the result of experts who dedicate themselves entirely to it. Many mages that study this craft believe that achieving perfect harmony between body and mind may one day open a new path to the Root."
+  ],
+  "features": [
+    {
+      "name": "Martial Arts Proficiency",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you become proficient with medium and heavy armor. Your unarmed strikes become empowered by mana-fueled martial techniques, dealing 1d6 bludgeoning damage when they hit. This damage increases to 1d8 at 10th level."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you make an unarmed strike, you can use your Intelligence modifier to determine your attack bonus instead of Strength and may add your Intelligence modifier to the damage instead of Strength. Your unarmed strike’s damage type becomes one of the types associated with your elemental affinity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Your magus hit dice become d8s, and your maximum hit points increase by 2 (accounting for the increase of your level 1 hit die from a d6 to a d8)."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can spend 1 ether point to cast the spell enhance ability as a bonus action with yourself as the target, requiring no spell slot."
+        }
+      ]
+    },
+    {
+      "name": "Ether Surge",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, once per turn whenever you hit a creature with a melee attack you can choose to spend 1 ether point to deal an additional 1d10 damage with that attack. When you reach 5th level, the extra damage increases to 2d10, then again at 11th level to 3d10, then again at 17th level to 4d10."
+        }
+      ]
+    },
+    {
+      "name": "Extra Arcana Attack",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, you can attack twice instead of once when you take the Attack action. You can replace one of your attacks with a spell that has a casting time of 1 action that targets a creature you hit with a weapon attack this turn. The spell must be a 1st or 2nd level spell. At 14th level you can attack three times instead of once, and the spell can also be 1st, 2nd or 3rd level."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you replace an attack with a spell this way, you just spend ether points equal to half the spell’s level (rounded up, minimum 1)."
+        }
+      ]
+    },
+    {
+      "name": "Advanced Reinforcement",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level you learn to regulate magical energy within your own body to great effect. Whenever you take the Dash action you do not provoke opportunity attacks from any creatures that you both enter and exit the threat range of this round. Additionally, if you are not wearing armor, you may calculate your Armor Class as 10 + your Intelligence modifier + your Dexterity modifier."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you take the long jump or high jump actions you can spend 1 ether point to add your Intelligence score in feet to the long jump distance, or half your Intelligence score (rounded down) to your high jump distance. When you do this, you gain a +2 bonus to your Armor Class and saving throws until the start of your next turn."
+        }
+      ]
+    }
+  ]
+}

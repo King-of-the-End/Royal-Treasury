@@ -1,0 +1,136 @@
+{
+  "name": "Familiar Magecraft",
+  "slug": "familiar-magecraft",
+  "class": "Magus",
+  "subclass_feature": "Craft Focus",
+  "summary": "TBA",
+  "introduction": [
+    "Practitioners of familiar magecraft take regular familiar magic to an entirely new level. Summoning creatures like undead, monstrosities, and elementals into their service, they show a clear proficiency for their craft that regular familiar users simply lack. Their magecraft focuses on creating greater, more durable familiars charged with magical energy that can be manipulated as it’s needed. The greatest practitioners of this magecraft can summon truly powerful creatures."
+  ],
+  "features": [
+    {
+      "name": "Greater Companion",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, you learn the spell find familiar, which does not count against your magus spells known. You do not have to pay the material cost to cast find familiar. The familiar you summon has a bonus to maximum hit points equal to your magus level."
+        }
+      ]
+    },
+    {
+      "name": "Manifest Familiar",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level when you take this craft focus, as an action you may spend one or more ether points to summon one or more special familiars within 30 feet of yourself in an unoccupied space you can see. For each ether point you spend you can summon one familiar, or you can use multiple ether points on the same familiar. The familiar can be any beast, construct, undead, aberration, monstrosity, or elemental creature with a CR equal to or less than the amount of ether points you used to summon it. You can only summon generic versions of those creatures, not specific individuals. The CR cannot be higher than half your magus level rounded down."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you do this you must also spend a spell slot for each creature. The creature is summoned with maximum hit points equal to 1d10 per level of the spell slot used + your magus level. It cannot increase its hit point maximum by any means. Depending on the spell slot used, the creature gains a bonus to attack and damage rolls equal to +1 for 3rd or 4th, +2 for 5th or 6th, and +3 for 7th or higher."
+        },
+        {
+          "type": "paragraph",
+          "text": "The summoned creature has the following traits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The attacks your familiar makes are considered magical for the purposes of overcoming damage reduction.",
+            "If the creature has any kind of spellcasting it cannot use it.",
+            "You can choose to be excluded from any effects the creature has, such as auras of fear.",
+            "On your turn you may cast spells through your familiar as if it was originating from them.",
+            "If the creature had any legendary actions or legendary resistances it cannot use them.",
+            "You can enter into this creature’s senses as you would be able to through the find familiar spell."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "When it is summoned, the creature rolls initiative and takes its next turn as normal. You control the creature on its turn, directing its actions as if it were your character. If the creature goes outside your line of sight you can still control it by jumping into its senses briefly, using your reaction to do so."
+        },
+        {
+          "type": "paragraph",
+          "text": "The familiar instantly disappears when it is reduced to 0 hit points (even if it could regenerate), is killed, or after 1 hour passes since it was summoned. You can spend 1 minute performing a ritual to turn a familiar back into magical energy, regaining the ether points you spent on it if you are successful. If it is killed you do not regain these points."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you are reduced to 0 hit points or knocked unconscious your familiars are no longer under your control. They will use the Disengage action or any means they have to escape from enemies around them to make it to your body. They will attack any creatures they see as hostile to you, and otherwise will interpose themselves between you and other creatures unless those creatures clearly attempt to aid you. Your familiars trust any creatures you would normally trust."
+        }
+      ]
+    },
+    {
+      "name": "Recursive Magecraft",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, whenever you have a familiar summoned and you cast a spell, you can choose to kill that familiar and use its magical energy instead of spending a spell slot."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use a familiar in place of a spell slot with a level equal to either the spell slot you used to summon it or their current hit points divided by 5 (whichever is lower). The familiar instantly is destroyed and disappears, and you may use any ether points you used to create it immediately for other features. Any ether points from it you don’t use this turn disappear."
+        }
+      ]
+    },
+    {
+      "name": "All as One",
+      "level": "10",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 10th level you gain the following magecraft features which you can spend your ether points on."
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Command Avoidance",
+              "paragraphs": [
+                "Whenever your familiar would be reduced to 0 hit points by an attack or effect that required a saving throw, you may spend 1 ether point and roll 1d10. The familiar’s hit points are reduced to the amount you roll instead."
+              ]
+            },
+            {
+              "name": "Command Surge",
+              "paragraphs": [
+                "On your familiar’s turn you may spend 1 ether point to give it a surge of magical energy. That familiar’s movement speed doubles and it has advantage on all attack rolls it makes until the start of your next turn."
+              ]
+            },
+            {
+              "name": "Command Strike",
+              "paragraphs": [
+                "At the end of another creature’s turn (not yours and not your familiar’s), you may spend an ether point to have your familiar take any action they have access to."
+              ]
+            },
+            {
+              "name": "Command Shell",
+              "paragraphs": [
+                "As a reaction to you being targeted by an attack or feature that requires a saving throw that only targets you, you may spend 1 ether point to summon an existing familiar to an unoccupied space around you. The familiar becomes the new target of the attack or effect."
+              ]
+            },
+            {
+              "name": "Extend Shelf Life",
+              "paragraphs": [
+                "When your familiar would disappear after it has been summoned for 1 hour you can spend 1 ether point to give it another hour before it disappears."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Obliterate Subordinate",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 14th level, whenever your familiar is reduced to 0 hit points you may expend an ether point to cause its body to blow up, catching all creatures in a 20-foot-radius sphere surrounding it in the blast. Those creatures must make a Dexterity saving throw against your spell save DC, taking 1d8 damage per ether point you used to create the familiar on a failed saving throw or half as much damage on a successful one. The damage type is one of those associated with your elemental affinity."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you do not have an ether point to spend on this feature, or do not wish to spend one, you can activate it without expending one. In this case the damage is treated as if half as many ether points (rounded down) had been used to create the familiar."
+        }
+      ]
+    }
+  ]
+}

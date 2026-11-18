@@ -1,0 +1,279 @@
+{
+  "name": "Heretic Chapter",
+  "slug": "heretic-chapter",
+  "class": "Jaeger",
+  "subclass_feature": "Jaeger Chapter",
+  "summary": "TBA",
+  "introduction": [
+    "The Heretic Chapter’s jaegers are despised by both religious organizations and their adherents. In a world where acts of faith are required to harness divine powers, these jaegers instead rip these powers from the very gods, tearing away their divine fabric. Through blasphemous rituals, strange ingestions, and direct grafting of powers onto their souls, heretics bind the powers of greater beings to their will. This is a path that calls for a certain madness that is only found in the most ardent of hunters, those who feel the burning need to reach the pinnacle of power and will do anything to achieve it. Some seek such power for its own sake, but most want it to put an end to the nightmare."
+  ],
+  "features": [
+    {
+      "name": "Heretic Magic",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, you bend dark powers to your service through blasphemous occult rituals, making them your own. You gain the ability to cast spells."
+        },
+        {
+          "type": "section",
+          "title": "Cantrips",
+          "paragraphs": [
+            "You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrip of your choice at 10th level."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spell Slots",
+          "paragraphs": [
+            "The Heretic Spellcasting table shows how many spell slots you have, as well as the level of those spell slots. All of your slots are of the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Heretic Spellcasting",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Heretic Level"
+                },
+                {
+                  "key": "cantrips",
+                  "label": "Cantrips Known"
+                },
+                {
+                  "key": "spells",
+                  "label": "Spells Known"
+                },
+                {
+                  "key": "slots",
+                  "label": "Spell Slots"
+                },
+                {
+                  "key": "slot_level",
+                  "label": "Slot Level"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "3rd",
+                  "cantrips": "2",
+                  "spells": "2",
+                  "slots": "1",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "4th",
+                  "cantrips": "2",
+                  "spells": "2",
+                  "slots": "1",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "5th",
+                  "cantrips": "2",
+                  "spells": "2",
+                  "slots": "2",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "6th",
+                  "cantrips": "2",
+                  "spells": "3",
+                  "slots": "2",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "7th",
+                  "cantrips": "2",
+                  "spells": "3",
+                  "slots": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "8th",
+                  "cantrips": "2",
+                  "spells": "3",
+                  "slots": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "9th",
+                  "cantrips": "2",
+                  "spells": "4",
+                  "slots": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "10th",
+                  "cantrips": "3",
+                  "spells": "4",
+                  "slots": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "11th",
+                  "cantrips": "3",
+                  "spells": "4",
+                  "slots": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "12th",
+                  "cantrips": "3",
+                  "spells": "5",
+                  "slots": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "13th",
+                  "cantrips": "3",
+                  "spells": "5",
+                  "slots": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "14th",
+                  "cantrips": "3",
+                  "spells": "5",
+                  "slots": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "15th",
+                  "cantrips": "3",
+                  "spells": "6",
+                  "slots": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "16th",
+                  "cantrips": "3",
+                  "spells": "6",
+                  "slots": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "17th",
+                  "cantrips": "3",
+                  "spells": "6",
+                  "slots": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "18th",
+                  "cantrips": "3",
+                  "spells": "7",
+                  "slots": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "19th",
+                  "cantrips": "3",
+                  "spells": "7",
+                  "slots": "2",
+                  "slot_level": "4th"
+                },
+                {
+                  "level": "20th",
+                  "cantrips": "3",
+                  "spells": "7",
+                  "slots": "2",
+                  "slot_level": "4th"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spells Known of 1st Level and Higher",
+          "paragraphs": [
+            "At 3rd level, you know two 1st-level spells of your choice from the warlock spell list. The Spells Known column of the Heretic Spellcasting table shows when you learn a new spell of your choice from the warlock spell list. A spell you choose must be of a level you can cast. Additionally, when you complete a long rest, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Spellcasting Ability",
+          "paragraphs": [
+            "Intelligence is your spellcasting ability for your warlock spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Intelligence modifier",
+            "Spell attack modifier = your proficiency bonus + your Intelligence modifier"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arcane Arts",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 3rd level, you learn the Spell Flurry Focus Art. This does not count against your Focus Arts known."
+        },
+        {
+          "type": "subsection",
+          "title": "Spell Flurry",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Focus Art, Bonus Action"
+            },
+            {
+              "type": "paragraph",
+              "text": "When you cast a cantrip or a spell of 1st-level or higher, you can expend 1 Focus Point to make a single weapon attack as a bonus action."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shrouded Steps",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 7th level, when you use Dodge Step, Hunter’s Rush, or other jaeger abilities that allow you to move without expending your movement (such as Chasing Finisher), you can teleport the distance moved instead. When doing so you always succeed on the saving throw for Dodge Step."
+        }
+      ]
+    },
+    {
+      "name": "Mystical Momentum",
+      "level": "14",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 14th level, when you expend a spell slot, you gain a number of Momentum dice equal to the level of the spell slot spent."
+        }
+      ]
+    },
+    {
+      "name": "Darkness Within",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 17th level, you can unleash the twisted powers you’ve bound to your soul, taking on a terrifying aspect as a bonus action. For 1 minute, you sprout wings of shadow and become wreathed in darkness. You gain the following effects:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The area within 10 feet around you dims. Bright light becomes dim light, and dim light becomes darkness.",
+            "You are heavily obscured by swirling shadows.",
+            "You gain a flying speed of 30 feet.",
+            "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren’t silvered."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These effects end early if you become incapacitated, or end this feature early as a bonus action. Once you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    }
+  ]
+}
