@@ -1,0 +1,129 @@
+{
+  "name": "Record Domain",
+  "slug": "record-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Otherwise considered a domain of time and history, the Record Domain is mindful of the passage of time, its shifting currents, and paying heed to the events that pull them in one direction or another. They keep track of each and every second that passes them by, deeming them sacred and precious. Those who draw from this domain can see both ways in time, to a limited degree. However, by looking into the future and observing it they run the risk of locking what they see into certainty, and so this capability is used sparingly.",
+    "Vestias and T’quinn are both Retian deities that have an interest in this domain: T’quinn’s reverence for the importance of knowing history plays into it, as does Vestias’ desire to retain knowledge and push the world of magic forward (as well as the tempting nature of chronomancy)."
+  ],
+  "features": [
+    {
+      "name": "Record Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain domain spells at the Cleric levels listed in the Domain Spells table below. See the Divine Domain class feature for how domain spells work."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Expeditious Retreat, Writ Bookmark"
+            },
+            {
+              "level": "3rd",
+              "spells": "Acceleration, Throw Image"
+            },
+            {
+              "level": "5th",
+              "spells": "Haste, Path to Victory"
+            },
+            {
+              "level": "7th",
+              "spells": "Freedom of Movement, Locate Creature"
+            },
+            {
+              "level": "9th",
+              "spells": "Legend Lore, Reincarnate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Time’s Eye",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You cannot be surprised in combat, and have advantage on initiative checks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, you do not suffer the negative after-effects of the haste spell."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Chronal Instincts",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you would be forced to make a Dexterity saving throw and fail or you are hit by an attack, you can use your Channel Divinity to use your reaction and enter a displaced temporal state for 1 minute. While in this state, you have advantage on Dexterity saving throws (including against the triggering effect)."
+        },
+        {
+          "type": "paragraph",
+          "text": "While in this state, if you are hit by an attack you can use your reaction to add a bonus to your armor class equal to your proficiency bonus (including against the triggering attack, as well as the attack that caused you to enter into this displaced state) until the end of that turn. If you use this reaction and are still hit by the attack, your displaced state comes to an end early."
+        }
+      ]
+    },
+    {
+      "name": "Precious Exchange",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you cast a spell that would consume a spell component, you can pull an approximation of that component from an echo of yourself in another time, effectively removing the need for that component. The cost of the component must be equal to or less than 100 gold pieces multiplied by your Cleric level. If the component is not used immediately it remains for 1 minute, then vanishes from this timeline."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature once per Short or Long Rest."
+        }
+      ]
+    },
+    {
+      "name": "Radiant Strike",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra d8 radiant damage. When you reach 14th level, the extra damage increases to 2d8."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Sight Beyond Time",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At the end of your turn you can use your Channel Divinity to choose two creatures with differing initiative counts. At those initiative counts, after the end of each of those creature’s turns, you can take an additional turn of your own (acting after Legendary Actions are taken by other creatures). If something prevents you from using these turns then they are lost."
+        },
+        {
+          "type": "paragraph",
+          "text": "Effects that would normally trigger at the start or end of your turn (such as ongoing saving throws, damage from poison or effects, etc.) do not occur on these turns, and ongoing effects based on failing/succeeding saving throws treat your last result with them as still being in effect."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature once per Long Rest."
+        }
+      ]
+    }
+  ]
+}

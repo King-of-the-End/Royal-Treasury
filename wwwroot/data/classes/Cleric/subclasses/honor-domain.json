@@ -1,0 +1,163 @@
+{
+  "name": "Honor Domain",
+  "slug": "honor-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Bound to protect others and encourage righteous behavior, the Clerics of the Honor Domain do not break vows they make. They are critical of those who go back on their word, and the power they draw from their domain allows them to see through the lies and manipulation of others. When a Cleric of this order swears to fight beside another warrior they mean it: no spell can force them to raise a blade against their allies, and the promises they make to them carry a sacred power. Similarly, when they swear to defeat an opponent this bond becomes a destructive vow that haunts their enemy so long as the Cleric is near."
+  ],
+  "features": [
+    {
+      "name": "Honor Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain domain spells at the Cleric levels listed in the Domain Spells table below. See the Divine Domain class feature for how domain spells work."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Dedicated Enemy, Shield of Summer"
+            },
+            {
+              "level": "3rd",
+              "spells": "Locate Objects, Spiritual Weapon"
+            },
+            {
+              "level": "5th",
+              "spells": "Deadly Target, Phantom Steed"
+            },
+            {
+              "level": "7th",
+              "spells": "Death Ward, Unsealed Bravery"
+            },
+            {
+              "level": "9th",
+              "spells": "Geas, Golden Spirtal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bonus Proficiencies",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain proficiency in heavy armor and the Intimidation skill."
+        }
+      ]
+    },
+    {
+      "name": "Integrity",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have advantage on saving throws made to resist being charmed or enraged, and no effect can compel you to attack or harm a creature you would normally consider an ally."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Champion’s Promise",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action you can use your Channel Divinity to declare a promise toward one creature within 30 feet of you, and choose to invoke one of the following effects to back it up; for 1 minute, as long as you are within 30 feet of your target and aren’t incapacitated or unconscious, your chosen effect remains applied. If you are not within 30 feet of them it is suspended, but still ends at the end of the minute:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Challenge",
+              "paragraphs": [
+                "Your target has disadvantage on all attack rolls they make, except against you."
+              ]
+            },
+            {
+              "name": "Defeat",
+              "paragraphs": [
+                "You have advantage on attack rolls against your target."
+              ]
+            },
+            {
+              "name": "Destruction",
+              "paragraphs": [
+                "Your attacks against your target deal extra damage equal to half your Cleric level (rounded down)."
+              ]
+            },
+            {
+              "name": "Guardian",
+              "paragraphs": [
+                "Your target adds your proficiency bonus to their armor class against the first attack that targets them each turn."
+              ]
+            },
+            {
+              "name": "Shared Burden",
+              "paragraphs": [
+                "Your target is resistant to all damage, but when they take damage you take as much damage as they do."
+              ]
+            },
+            {
+              "name": "Unyielding",
+              "paragraphs": [
+                "If the target reduces you or one of your allies within 30 feet of you to 0 hit points, they are reduced to 1 hit point instead, then this effect ends."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pledge to Defend",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When an ally within 60 feet of you is targeted by an attack or effect requiring a saving throw, you can use your reaction to move up to your movement speed toward them. If you end this movement in a space adjacent to them you can offer them defense, adding your Wisdom modifier to their armor class or their saving throw result."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times per Long Rest equal to your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Divine Strike (Fire)",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra d8 fire damage. When you reach 14th level, the extra damage increases to 2d8."
+        }
+      ]
+    },
+    {
+      "name": "Truesight",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your eyes cannot be deceived. You gain truesight out to 30 feet."
+        }
+      ]
+    }
+  ]
+}

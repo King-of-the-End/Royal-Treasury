@@ -1,0 +1,133 @@
+{
+  "name": "Void Domain",
+  "slug": "void-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "“There is serenity in eternal silence.”",
+    "All gods claim some aspects of creation as their domain and their devoted clerics work according to their gods’ definitive nature. But not all gods have interest in the created things. Some forces beyond the veil see all of the creation as weak and disgusting. There are gods that favor destruction of course, but destruction and chaos in itself is a “thing” at the end. But there are some beings that only crave the peace of the nothingness.",
+    "For the unsophisticated, these concepts may seem familiar by judging the results and methods of their followers. But the urge to kill is not the same as the craving of silence. These kinds of divine beings usually don’t get many followers among mortals, due to every creature’s essential desire to exist. However, there are cults consisting of nihilistic individuals. Some have hope for new beginnings after the total annihilation, some don’t even have that. They just believe existing causes pain and there is serenity in void."
+  ],
+  "features": [
+    {
+      "name": "Void Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain domain spells at the Cleric levels listed in the Domain Spells table below. See the Divine Domain class feature for how domain spells work."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Bane, Command"
+            },
+            {
+              "level": "3rd",
+              "spells": "Blindness/Deafness, Invisibility"
+            },
+            {
+              "level": "5th",
+              "spells": "Dispel Magic, Fear"
+            },
+            {
+              "level": "7th",
+              "spells": "Banishment, Blight"
+            },
+            {
+              "level": "9th",
+              "spells": "Dominate Person, Dream"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bonus Cantrip",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you choose this domain at 1st level, you gain the Chill Touch cantrip if you don’t already know it."
+        }
+      ]
+    },
+    {
+      "name": "Glorious Decay",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 1st level, death is not what you seek, but it is better than life. Dead things fade away much easier. When you deal necrotic damage to any creature by any means, you regain hit points equal to your proficiency bonus. This feature only works once per turn, on the first time you deal necrotic damage."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Serenity of the Void",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 2nd level, you can use your Channel Divinity to silence the most loud and changing voice of creation, magic."
+        },
+        {
+          "type": "paragraph",
+          "text": "As an action, you choose up to 4 creatures you can see within 30 feet of you. They must make a Charisma saving throw against your spell save DC. On a fail, these creatures are blessed with the serenity of the void and they cannot cast any spells until the end of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "Call of the Void",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Beginning at 6th level, when a creature within 30 feet of you regains hit points, you can use your reaction to block that life energy. The target must succeed on a Constitution saving throw against your spell save DC or the target cannot regain any hit points from that effect. Once you use this feature you cannot use it again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Potent Spellcasting",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cantrip or necromancy spell."
+        }
+      ]
+    },
+    {
+      "name": "Doomsayer",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 17th level, your mere existence is unbearable for your enemies, reminding them of their insignificance. Whenever a creature hits you with a melee weapon or melee spell attack they are marked with the cold touch of the void. Their will to fight is broken. They have disadvantage on all saving throws until the end of their next turn."
+        },
+        {
+          "type": "note",
+          "title": "In the Lands of Exile",
+          "paragraphs": [
+            "There are many gods above and below but there is only one with the power of creating. Ironically, he hates everything he creates. Finding someone who worships the Dark One is almost impossible. He does not answer to anyone, but some chosen ones can use his divine power.",
+            "There are cultists who claim to fight for him, also timeless and immortal servants. These cultists are very different from those who worship demons or dragons. They call their god the Dark Father, and they believe that they are carriers of his silent commands. These people believe in a twisted way that after the Dark One puts an end to this flawed creation, he will create a painless and lossless new one for everyone.",
+            "Being a priest of the Dark One in the Lands of Exile is outright madness. But this madness is fueled by a mysterious power. If you are playing a cleric of the Dark Father, put a little bit of insanity into the mix. You don’t have to be evil, maybe your character believes that this is the best path to the greater good."
+          ]
+        }
+      ]
+    }
+  ]
+}

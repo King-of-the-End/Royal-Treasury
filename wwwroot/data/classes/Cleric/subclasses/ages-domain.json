@@ -1,0 +1,118 @@
+{
+  "name": "Ages Domain",
+  "slug": "ages-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "The Domain of Ages focuses on recounting and applying the knowledge accumulated by the generation. The Clerics who draw from it peel back inconsistent accounts and find the truth of the matter, seeking to know what is fact and what is fiction. By keeping such a close eye on truth, they excel at finding patterns and taking stock of what’s in front of them, which can be applied to healing, craft, and combat equally. These Clerics value the preservation of true history and the celebration of what is discernibly fictional, but are kept separate - fact is fact and fiction is fiction."
+  ],
+  "features": [
+    {
+      "name": "Ages Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain domain spells at the Cleric levels listed in the Domain Spells table below. See the Divine Domain class feature for how domain spells work."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Comprehend Languages, Link Spell"
+            },
+            {
+              "level": "3rd",
+              "spells": "Cloud Canvas, Embedded Message"
+            },
+            {
+              "level": "5th",
+              "spells": "Speak with Dead, Writ Forensic"
+            },
+            {
+              "level": "7th",
+              "spells": "Divination, Private Sanctum"
+            },
+            {
+              "level": "9th",
+              "spells": "Scrying, Bestow Expertise"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bonus Proficiencies",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are proficient in the History and Investigation skills."
+        }
+      ]
+    },
+    {
+      "name": "Mental Bookmark",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have read a great deal of information regarding a wide variety of topics. When you make a skill check you can choose to apply some knowledge that pertains to this specific topic. When you do you can roll a new d20 and choose which result to keep. You can use this feature a number of times equal to half your Cleric level (rounded up) per Long Rest."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Regressive Account",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When an effect or spell with a duration that originated from you is about to end (due to it being dispelled, its duration ending, or concentration on it being lost), you can use your Channel Divinity as a reaction to renew its duration and continue the effect - including resuming concentration if necessary. If the duration is greater than 10 minutes the new duration of the effect becomes 10 minutes instead."
+        }
+      ]
+    },
+    {
+      "name": "Exploiting Patterns",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you are targeted by a weapon attack or are forced to make a save by a creature that has hit or damaged you since the end of your last turn, you can use your reaction to cause that creature to have disadvantage on all of their attacks against you (including the triggering attack), and grant you advantage on all saving throws against them until the start of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "Proficient Spellcasting",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can add your Wisdom modifier to die damage you deal with your Cleric spells."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Recount the Tally",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature within 30 feet of you rolls any number of dice as part of a damage roll or a healing roll, you can use your Channel Divinity to change the outcome of the roll. You can roll half the dice from the triggering roll (rounded up), and either increase or reduce the final result of the roll by that amount."
+        }
+      ]
+    }
+  ]
+}

@@ -217,6 +217,16 @@
     "Contexts": []
   },
   {
+    "Term": "Grace of the Prescripts",
+    "Definition": "The blessings of the Living Will course through your veins like oxygen through your lungs, empowering your every movement and granting you a closer sense toward enlightenment. You gain the following:\n\n• You gain a bonus modifier to your Attack Rolls and Saving Throws equal to half the count of Grace you currently have (rounded down).\n• You gain an amount of Poise count equal to the count of this effect at the start of your turns, with this value remaining until the end of your turn.\n\nThis effect ends whenever you are knocked Unconscious. You lose one count of Grace of the Prescript whenever you suffer Karmic Consequences. You may have 9 maximum counts of Grace.",
+    "CaseSensitive": true,
+    "NoOverlay": false,
+    "Contexts": [],
+    "Aliases": [
+      "Grace of the Prescript"
+    ]
+  },
+  {
     "Term": "Grappled",
     "Definition": "A grappled creature’s speed becomes 0, and it can’t benefit from any bonus to its speed.\n\nThe condition ends if the grappler is incapacitated.\n\nThe condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.",
     "CaseSensitive": false,
@@ -293,6 +303,54 @@
     "CaseSensitive": false,
     "NoOverlay": false,
     "Contexts": []
+  },
+  {
+    "Term": "Karmic Consequences",
+    "Definition": "As negative Karma builds up from your inaction and disregard for what must be done, a crippling force presses down on your soul, slowly bringing you to nothingness. You suffer the following effects according to how many Karmic Consequences you are suffering from:\n\n1–3: You have disadvantage on Ability Checks.\n4–6: You have disadvantage on Attack Rolls and Saving Throws.\n7–8: Your maximum hit points are halved.\n9: You are instantly knocked Unconscious. This Condition lasts until your next short rest.\n\nYour Karmic Consequences count is reduced by one upon a short or long rest, and is reduced by 3 whenever the Lesser Restoration spell is cast upon you, or reduced by 6 whenever the Greater Restoration is cast upon you.",
+    "CaseSensitive": true,
+    "NoOverlay": false,
+    "Contexts": [],
+    "Blocks": [
+      {
+        "Type": "paragraph",
+        "Text": "As negative Karma builds up from your inaction and disregard for what must be done, a crippling force presses down on your soul, slowly bringing you to nothingness. You suffer the following effects according to how many Karmic Consequences you are suffering from:"
+      },
+      {
+        "Type": "table",
+        "Columns": [
+          {
+            "Key": "count",
+            "Label": "Karma Count"
+          },
+          {
+            "Key": "effect",
+            "Label": "Effect"
+          }
+        ],
+        "Rows": [
+          {
+            "count": "1–3",
+            "effect": "You have disadvantage on Ability Checks."
+          },
+          {
+            "count": "4–6",
+            "effect": "You have disadvantage on Attack Rolls and Saving Throws."
+          },
+          {
+            "count": "7–8",
+            "effect": "Your maximum hit points are halved."
+          },
+          {
+            "count": "9",
+            "effect": "You are instantly knocked Unconscious. This Condition lasts until your next short rest."
+          }
+        ]
+      },
+      {
+        "Type": "paragraph",
+        "Text": "Your Karmic Consequences count is reduced by one upon a short or long rest, and is reduced by 3 whenever the Lesser Restoration spell is cast upon you, or reduced by 6 whenever the Greater Restoration is cast upon you."
+      }
+    ]
   },
   {
     "Term": "Legacy of Gold",
@@ -426,6 +484,20 @@
     "CaseSensitive": false,
     "NoOverlay": false,
     "Contexts": []
+  },
+  {
+    "Term": "Target of the Prescripts",
+    "Definition": "A creature who is The Prescript’s Target will soon feel the Living Will fall upon them.\n\nWhenever a Target is dealt damage by a character that is aligned with the Will, such as a Living Will Warlock or Procuration Paladin, they suffer half their attacker’s Proficiency Bonus in Sinking count and the attacker may once per turn re-roll one of their damage die, taking the new result.\n\nOther Conditions such as Will’s Paper Slip also count as The Prescript’s Target to any creature that isn’t already benefitting from the equivalent Condition.",
+    "CaseSensitive": true,
+    "NoOverlay": false,
+    "Contexts": [],
+    "Aliases": [
+      "Target of the Prescript",
+      "The Prescript’s Target",
+      "The Prescript's Target",
+      "Marked by the Prescript",
+      "Marked by the Prescripts"
+    ]
   },
   {
     "Term": "Teleport",
@@ -3879,6 +3951,102 @@
   },
   {
     "Term": "Golden Defense",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Cleric"
+    ]
+  },
+  {
+    "Term": "Angelic Protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Cleric"
+    ]
+  },
+  {
+    "Term": "Aura of Defense",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Cleric"
+    ]
+  },
+  {
+    "Term": "guardian’s protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Cleric"
+    ]
+  },
+  {
+    "Term": "offer them defense",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Cleric"
+    ]
+  },
+  {
+    "Term": "Chord of Protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Cleric"
+    ]
+  },
+  {
+    "Term": "veil of divine protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Cleric"
+    ]
+  },
+  {
+    "Term": "weather protection",
+    "Definition": "",
+    "CaseSensitive": false,
+    "NoOverlay": true,
+    "Contexts": [
+      "Class"
+    ],
+    "ClassPages": [
+      "Cleric"
+    ]
+  },
+  {
+    "Term": "harmless ritual",
     "Definition": "",
     "CaseSensitive": false,
     "NoOverlay": true,

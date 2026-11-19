@@ -1,0 +1,233 @@
+{
+  "name": "Guardian Domain",
+  "slug": "guardian-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Clerics of the Radiant Church are venerated as saint-like figures, and those who walk the path of the guardian even more so. Such overwhelming praise was only heightened by the arrival of the scourge, and the countless heroic actions performed by the Church anchored it as a beacon of salvation in the heart of the citizens of Luyarnha. This abundant reverence has its risks, of course, though few dare point it out; a zealous crowd is best left well alone.",
+    "Guardian domain clerics were the first to jump into combat against the beasts, and to this day haven’t backed down from the battle, despite the pain and loss they have endured. Their protective spirit is embodied in their magic - summoning guardian angels - which swoop to their side, protecting any who would ask under their wings. Although the features of these angels can be unsettling, none would dare doubt their intentions."
+  ],
+  "features": [
+    {
+      "name": "Guardian Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Compelled Duel, Protection from Evil and Good"
+            },
+            {
+              "level": "3rd",
+              "spells": "Aid, Warding Bond"
+            },
+            {
+              "level": "5th",
+              "spells": "Protection from Energy, Slow"
+            },
+            {
+              "level": "7th",
+              "spells": "Guardian of Faith, Otiluke’s Resilient Sphere"
+            },
+            {
+              "level": "9th",
+              "spells": "Antilife Shell, Wall of Force"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bonus Proficiencies",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 1st level, you gain proficiency with heavy armor."
+        }
+      ]
+    },
+    {
+      "name": "Protective Magic",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 1st level, when you cast a spell that restores hit points, the targeted creature also gains half as many temporary hit points (rounded down). If a spell targets multiple creatures, choose one creature that benefits from this effect."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Guardian Angel",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 2nd level, you can use your Channel Divinity to summon a divine emissary to your aid."
+        },
+        {
+          "type": "paragraph",
+          "text": "As an action, you present your holy symbol, and in a flash of radiance, a guardian angel appears in an empty space of your choice within 5 feet of you. The angel is friendly to you and your companions, and obeys your commands. When you gain this feature, choose the nature of your angel: radiant or necrotic. This will affect abilities in the stat block."
+        },
+        {
+          "type": "paragraph",
+          "text": "See this creature’s game statistics in the Guardian Angel stat block, which uses your proficiency bonus (PB) in several places. You determine the angel’s appearance. Some angels take the form of a humanoid angelic figure dressed with pure garments, while many others espouse a more eldritch appearance."
+        },
+        {
+          "type": "paragraph",
+          "text": "In combat, the angel shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the angel can take any action of its choice, not just Dodge."
+        },
+        {
+          "type": "paragraph",
+          "text": "The guardian appears for 1 hour, until it is reduced to 0 hit points, until you use this feature to summon the angel again, or until you die."
+        },
+        {
+          "type": "stat_block",
+          "data": {
+            "id": "guardian_angel",
+            "section_type": "Stat Block",
+            "title": "Guardian Angel",
+            "creature": {
+              "size": "Medium",
+              "type": "Celestial"
+            },
+            "armor_class": "10 + PB (natural armor)",
+            "hit_points": "5 + 5 times your cleric level",
+            "speed": {
+              "walk": "0 ft.",
+              "fly": "10 ft. (hover)"
+            },
+            "ability_scores": {
+              "STR": {
+                "score": 10,
+                "check": "+0"
+              },
+              "DEX": {
+                "score": 14,
+                "check": "+2"
+              },
+              "CON": {
+                "score": 14,
+                "check": "+2"
+              },
+              "INT": {
+                "score": 13,
+                "check": "+1"
+              },
+              "WIS": {
+                "score": 15,
+                "check": "+2"
+              },
+              "CHA": {
+                "score": 11,
+                "check": "+0"
+              }
+            },
+            "damage_immunities": [
+              "radiant or necrotic"
+            ],
+            "condition_immunities": [
+              "blinded",
+              "charmed",
+              "frightened",
+              "grappled",
+              "prone",
+              "restrained"
+            ],
+            "senses": [
+              "blindsight 60 ft. (blind beyond this radius)",
+              "passive Perception 12"
+            ],
+            "languages": "understands the languages you speak",
+            "challenge_rating": "—",
+            "proficiency_bonus": "equals your bonus",
+            "traits": [
+              {
+                "name": "Incorporeal Being",
+                "name_format": "bold_italic",
+                "description": "The angel can move through other creatures as if they were difficult terrain."
+              }
+            ],
+            "actions": [
+              {
+                "name": "Divine Blade",
+                "name_format": "bold_italic",
+                "description": "Melee Weapon Attack: your spell attack modifier to hit, reach 10 ft., one target you can see. Hit: 1d6 + PB radiant or necrotic damage and the angel regains half as many hit points.",
+                "inline_formatting": {
+                  "Melee Weapon Attack": "italic",
+                  "Hit": "italic"
+                }
+              }
+            ],
+            "bonus_actions": [
+              {
+                "name": "Reality Warp",
+                "name_format": "bold_italic",
+                "description": "The Angel teleports to an empty space adjacent to an allied creature within 60 feet of it."
+              }
+            ],
+            "reactions": [
+              {
+                "name": "Self Sacrifice",
+                "name_format": "bold_italic",
+                "description": "When a creature other than the angel is hit by an attack while within 30 feet of the angel, the angel can use its reaction to teleport into the creature’s space, taking the damage instead of the creature. To do so, the angel must be able to see both the creature and the attacker."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Angelic Protection",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting at 6th level, you can summon your Guardian Angel to protect others. It casts warding bond on a friendly creature that it can see (you included) upon appearing, ignoring the components of the spell."
+        }
+      ]
+    },
+    {
+      "name": "Divine Strike",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8."
+        },
+        {
+          "type": "paragraph",
+          "text": "Your Guardian Angel also gains this ability."
+        }
+      ]
+    },
+    {
+      "name": "Aura of Defense",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At 17th level, when your Guardian Angel casts warding bond, it can target a number of allied creatures (including you) equal to your Wisdom modifier. The spell functions as if the angel had created a warding bond with each individual creature. In addition, upon being summoned, the Guardian Angel gains temporary hit points equal to 5 times the number of creatures targeted by the spell."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once you use this ability, you can’t use it again until you finish a long rest."
+        }
+      ]
+    }
+  ]
+}

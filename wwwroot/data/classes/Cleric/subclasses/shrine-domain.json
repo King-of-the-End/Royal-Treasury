@@ -1,0 +1,112 @@
+{
+  "name": "Shrine Domain",
+  "slug": "shrine-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Shrine maidens are shamans who perform sealing and purification rituals. Many also undergo rigorous reflex, focus, and precision training to prepare for their most dangerous rite; the exorcising of vengeful spirits."
+  ],
+  "features": [
+    {
+      "name": "Kami",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Shrine maidens may offer their faith and receive blessings from kami. Kami take many forms, be them elements of the landscape, forces of nature, or beings and the qualities that those beings express; they can also be the spirits of venerated dead people. Many kami are considered the ancient ancestors of entire clans. Even great leaders like an Emperor could become kami."
+        },
+        {
+          "type": "paragraph",
+          "text": "At each indicated cleric level, you add the listed spells to your spells prepared."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Expeditious Retreat, Magic Missile"
+            },
+            {
+              "level": "3rd",
+              "spells": "Blur, Protection from Evil and Good"
+            },
+            {
+              "level": "5th",
+              "spells": "Fly, Haste"
+            },
+            {
+              "level": "7th",
+              "spells": "Death Ward, Dimension Door"
+            },
+            {
+              "level": "9th",
+              "spells": "Dispel Evil and Good, Passwall"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yin-Yang Orbs",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Whenever a creature within 60 feet of you dies while you’re concentrating on a spell of 1st level or higher, you create a tiny orb that performs a circular hovering motion around you (up to a maximum of four orbs). You can detonate an orb as a bonus action to cast a 1st level concentration spell you have prepared as if you used a 1st level spell slot. A spell cast in this way lasts until you begin your turn without having taken or dealt damage since your last turn. Additionally, during a short rest you can convert any amount of 1st level spell slots you possess into an equal number of orbs."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Soul Graze",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can use your Channel Divinity to temporarily fade into the ethereal plane, leaving nothing but your soul behind. As a reaction to being hit by an attack roll or failing a Dexterity saving throw, you can detonate an orb you possess and gain a +10 bonus to your AC against the attack, or a +5 bonus to the save."
+        }
+      ]
+    },
+    {
+      "name": "Superior Focus",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can concentrate on two spells cast using spell slots of 1st level or lower at the same time. Whenever you would make a Constitution saving throw to maintain your concentration, make separate rolls for each spell you’re concentrating on."
+        }
+      ]
+    },
+    {
+      "name": "Charm Barrage",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can conjure magical paper charms to hunt down and purify targets. Once on each of your turns when you hit a creature with a ranged attack, you can cause a charm to purify the target if they were within 60 feet of you, dealing 1d6 radiant damage. When you reach 14th level, you can activate Charm Barrage twice on each of your turns, and on the same attack."
+        }
+      ]
+    },
+    {
+      "name": "Spell Bomb",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can detonate an orb you possess as a bonus action to cast the spell Antimagic Field, requiring no spell slot or components and lasting until the start of your next turn."
+        }
+      ]
+    }
+  ]
+}

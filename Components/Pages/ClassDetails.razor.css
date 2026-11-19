@@ -3143,3 +3143,59 @@
     outline: 1px solid var(--gold-light);
     outline-offset: 2px;
 }
+
+/* Crawling Prescripts: compact dice column, full-width rules text. */
+.class-page ::deep #crawling-prescripts-table .class-inline-table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+}
+
+.class-page ::deep #crawling-prescripts-table .class-inline-table th.table-col-roll,
+.class-page ::deep #crawling-prescripts-table .class-inline-table td.table-col-roll {
+    width: 4.75rem;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap !important;
+    font-variant-numeric: tabular-nums;
+}
+
+.class-page ::deep #crawling-prescripts-table .class-inline-table th.table-col-prescript,
+.class-page ::deep #crawling-prescripts-table .class-inline-table td.table-col-prescript {
+    width: auto;
+    text-align: left;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* Celestial Chaos and Eldritch Effects: compact roll columns.
+   Match the two-column rules tables inside their own feature cards. */
+.class-page ::deep #celestial-chaos .class-inline-table.table-cols-2,
+.class-page ::deep #eldritch-contagion .class-inline-table.table-cols-2 {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+}
+
+.class-page ::deep #celestial-chaos .class-inline-table.table-cols-2 .table-col-roll,
+.class-page ::deep #eldritch-contagion .class-inline-table.table-cols-2 .table-col-roll {
+    width: 5.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap !important;
+    font-variant-numeric: tabular-nums;
+}
+
+.class-page ::deep #eldritch-contagion .class-inline-table.table-cols-2 .table-col-roll {
+    width: 4.75rem;
+}
+
+.class-page ::deep #celestial-chaos .class-inline-table.table-cols-2 .table-col-effect,
+.class-page ::deep #eldritch-contagion .class-inline-table.table-cols-2 .table-col-effect {
+    width: auto;
+    text-align: left;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}

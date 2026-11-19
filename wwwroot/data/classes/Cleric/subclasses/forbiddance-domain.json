@@ -1,0 +1,131 @@
+{
+  "name": "Forbiddance Domain",
+  "slug": "forbiddance-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Keepers of secrets and forbidden knowledge, the Forbiddance Domain Cleric is charged with respecting the line between what knowledge and power might threaten mankind. They are protective, often introverted, and reclusive. The gods they draw from (which commonly includes Vestias and the Correfonts but sometimes also can be Aymere or other gods that respect healthy limitations) encourage these Clerics to not spread dangerous teachings to mortals, and to keep dangerous artifacts and objects of power out of the hands of those who abuse them.",
+    "Among the Spellbound Clergy there are many Clerics of Forbiddance who draw from the domain’s power, claiming to be putting Vestias’ gifts back into the proper hands. Many of them use this as an excuse, however, and in truth are using this dogma as permission to seek ancient knowledge and forbidden power."
+  ],
+  "features": [
+    {
+      "name": "Forbiddance Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain domain spells at the Cleric levels listed in the Domain Spells table below. See the Divine Domain class feature for how domain spells work."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Inflict Terror, Shield"
+            },
+            {
+              "level": "3rd",
+              "spells": "Invisibility, Suggestion"
+            },
+            {
+              "level": "5th",
+              "spells": "Dispel Magic, Nondetection"
+            },
+            {
+              "level": "7th",
+              "spells": "Greater Invisibility, Perfect Silence"
+            },
+            {
+              "level": "9th",
+              "spells": "Animate Objects, Modify Memory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bonus Proficiencies",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are proficient in the Deception and Stealth skills."
+        }
+      ]
+    },
+    {
+      "name": "Layered Words",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you speak you can choose to layer two sets of words on top of one another and choose who hears which - when you speak you can dictate one message and who hears it, but also dictate a second message that everyone else hears. Creatures around you hear whichever set was intended for them while the other remains unheard by them."
+        },
+        {
+          "type": "paragraph",
+          "text": "If there is some issue with the contrast of these words (for example, one message is notably shorter than the other, which would cause the shorter message to seem like overblown rambling to fill the same space), or a creature is paying close attention to your lips and notices they don’t perfectly match what’s being said, they may attempt an Insight check against your passive Deception score to detect that something is awry."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Cheap Dominance",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature moves into a space within 30 feet of you, you can use your Channel Divinity as a reaction to attempt to bind them in place. The target must succeed a Wisdom saving throw. On a failure they are stunned for 1 minute, but may repeat the saving throw at the end of each of their turns and each time they take damage, ending the effect on a success."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the target would succeed their saving throw as a result of taking damage, you can use your reaction to have them fail instead."
+        }
+      ]
+    },
+    {
+      "name": "Locked Mind",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are proficient in Intelligence saving throws."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once per Short or Long Rest, when you fail a Wisdom or Charisma saving throw, you can use your reaction to add your Intelligence modifier to the result of your saving throw, possibly changing the outcome."
+        }
+      ]
+    },
+    {
+      "name": "Divine Strike (Lightning)",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once on each of your turns, when you hit a creature with a weapon attack you can deal an extra d8 lightning damage to them. When you reach 14th level in this class the damage increases to 2d8."
+        }
+      ]
+    },
+    {
+      "name": "Teleporting Footprint",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain a teleport speed equal to your base movement speed."
+        }
+      ]
+    }
+  ]
+}

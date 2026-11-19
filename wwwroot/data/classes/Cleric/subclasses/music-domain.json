@@ -1,0 +1,140 @@
+{
+  "name": "Music Domain",
+  "slug": "music-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Clerics of the Music Domain allow sound and communication to guide their actions. Songs, lyrics, and music are underpinned by the fundamental force of understanding and conversation, transcending limitations such as language and culture. Those who draw upon the power of this Domain use enchanted songs and chords to soothe the minds of others, grant them divine inspiration to bolster their strength, and guide an attack to its most desired conclusion."
+  ],
+  "features": [
+    {
+      "name": "Music Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain domain spells at the Cleric levels listed in the Domain Spells table below. See the Divine Domain class feature for how domain spells work."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Ceremonial Rite, Hideous Laughter"
+            },
+            {
+              "level": "3rd",
+              "spells": "Enamour, Suggestion"
+            },
+            {
+              "level": "5th",
+              "spells": "Fly, Power Word Repel"
+            },
+            {
+              "level": "7th",
+              "spells": "Freedom of Movement, Thunder Spiral"
+            },
+            {
+              "level": "9th",
+              "spells": "Dispel Good and Evil, Power Word Break"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bonus Proficiencies",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are proficient in the Performance skill, as well as with one instrument of your choice."
+        }
+      ]
+    },
+    {
+      "name": "Chord of Protection",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action on your turn you can use an instrument to manifest a protective melody. This grants a number of creatures equal to your Wisdom modifier that you choose (which may include you) and within 30 feet a protective or invigorating boon, the effects of which you choose from the following:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The next attack made against each creature has disadvantage.",
+            "The next attack each creature makes gains a bonus equal to your Wisdom modifier.",
+            "Each creature’s movement speed increases by 10 feet.",
+            "Each creature is resistant to the next instance of damage they take (unless they were already immune).",
+            "This boon disappears at the end of your next turn."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times per Long Rest equal to your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Heroic Regale",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can spend 1 minute performing using an instrument while telling an inspiring or fantastic story, spending one use of your Channel Divinity when you finish doing so. Up to six creatures that listen for the minute are fortified by your tale, and have their maximum hit points increased by 1d6 multiplied by your proficiency bonus, and they regain as many hit points. This maximum hit point increase reverts when the creature completes a Short or Long Rest or has their maximum hit points increased by another effect."
+        }
+      ]
+    },
+    {
+      "name": "Universal Medium",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have learned to communicate based on intention, emotion, and context rather than simply with words. You can understand any language you hear spoken aloud, and creatures can understand any language you speak. This communication is based on intention - creatures not capable of understanding your emotional state or who have an Intelligence score of 3 or less only understand you in a general sense."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also, you have advantage on Charisma-based checks if making them involves performing music or singing."
+        }
+      ]
+    },
+    {
+      "name": "Proficient Spellcasting",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can add your Wisdom modifier to damage you deal with your Cleric spells."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Gain to 11",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you or a creature within 30 feet of you makes an attack roll and hits, you can use your Channel Divinity as a reaction to conjure up the sounds of either a sweeping orchestra to magically inspire their actions (turning the hit into a critical hit) or a cacophony of noise to distract the attacker (turning the attack into a miss). If you choose the former, the damage dice for the attack roll becomes the maximum result."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature twice per Long Rest."
+        }
+      ]
+    }
+  ]
+}

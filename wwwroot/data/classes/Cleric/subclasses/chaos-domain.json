@@ -1,0 +1,287 @@
+{
+  "name": "Chaos Domain",
+  "slug": "chaos-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Bathing in the power of chaotic energy, Clerics who connect themselves to the domain of chaos find they are capable of producing great bursts of unpredictable magic. They are able to siphon this magical power off as it works through them, regaining their strength as they allow chaos to have its way in the world surrounding them.",
+    "Perhaps counterintuitively, Clerics of the chaos domain work vigilantly to keep the forces of chaos in check in the world, and indulge in its power to understand it. Many succumb to the temptation to let it control them, however."
+  ],
+  "features": [
+    {
+      "name": "Chaos Domain Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain domain spells at the Cleric levels listed in the Domain Spells table below. See the Divine Domain class feature for how domain spells work."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Absorb Energy, Hellish Rebuke"
+            },
+            {
+              "level": "3rd",
+              "spells": "Boomerange Weapon, Laborious Flight"
+            },
+            {
+              "level": "5th",
+              "spells": "Hypnotic Pattern, Major Image"
+            },
+            {
+              "level": "7th",
+              "spells": "Confusion, Psychic Lance"
+            },
+            {
+              "level": "9th",
+              "spells": "Reincarnate, Telepathic Bond"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Celestial Chaos",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As a bonus action you can invoke the forces of chaos through a divine prayer, allowing you to roll a d8 on the Celestial Chaos table, then you must invoke the result. You can do so as a bonus action a number of times per Long Rest equal to your proficiency bonus."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you reach 8th-level as a Cleric you roll a d12 off the table instead, then at 14th-level you roll a d20."
+        },
+        {
+          "type": "heading",
+          "text": "1 and 20"
+        },
+        {
+          "type": "paragraph",
+          "text": "When you roll a d20 result of 1 or 20 on a saving throw or attack roll, you can roll off the Celestial Chaos table and invoke the resulting effect without expending a use of this feature."
+        },
+        {
+          "type": "heading",
+          "text": "Chaos Sustenance Checks"
+        },
+        {
+          "type": "paragraph",
+          "text": "When an effect calls for a chaos sustenance check, roll 1d100 minus your Cleric level. On a result of 51 or higher the effect ends."
+        },
+        {
+          "type": "heading",
+          "text": "Celestial Chaos Table"
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "roll",
+              "label": "Result"
+            },
+            {
+              "key": "effect",
+              "label": "Effect"
+            }
+          ],
+          "rows": [
+            {
+              "roll": "1",
+              "effect": "You gain an extra spell slot which vanishes after 1 minute, and is of a level equal to your proficiency bonus. You then roll from this table again, re-rolling any result of 1 or 20 that you roll without invoking its effects."
+            },
+            {
+              "roll": "2",
+              "effect": "For 1 minute, when you take the Attack action, you can make one additional weapon attack. An angelic doppelganger of you appears to make the additional attack when you do so."
+            },
+            {
+              "roll": "3",
+              "effect": "You create a celestial guardian that protects one creature you choose within 30 feet for 1 minute. While under this guardian’s protection, attack rolls made against that creature have disadvantage. At the start of each of your turns, make a chaos sustenance check for this effect."
+            },
+            {
+              "roll": "4",
+              "effect": "Motes of radiant light appear around you, before firing at creatures around you. Every other creature within a number of feet equal to your proficiency bonus × 5 must make a Dexterity saving throw, taking radiant damage equal to 2d8 + half your Cleric level (rounded down)."
+            },
+            {
+              "roll": "5",
+              "effect": "You gain a fly (hover) speed equal to your base movement speed for 1 minute. Each time you take damage you must make a chaos sustenance check for this effect."
+            },
+            {
+              "roll": "6",
+              "effect": "You become a lantern archon with 30 hit points for 1 minute, retaining your personality but adopting all of its statistics and abilities in place of your own. You return to your own form after the minute ends, you are reduced to 0 hit points, or you would die outright (in which case you don’t)."
+            },
+            {
+              "roll": "7",
+              "effect": "You burst suddenly into radiant light until the start of your next turn, projecting bright light in a 30-foot-radius sphere and blinding yourself. Any creature that attacks you during this time must avert their gaze until the start of their next turn or be blinded until this effect ends. A creature that averts their gaze is treated as blinded, but only in respect to you."
+            },
+            {
+              "roll": "8",
+              "effect": "Choose a number of creatures within 30 feet of you (which can include you) equal to your proficiency bonus. The next time within 1 minute that those creatures make an attack roll, you roll 1d10 and add the result to that and all others attack rolls they make that turn."
+            },
+            {
+              "roll": "9",
+              "effect": "The next time within 1 minute you deal damage to a creature by way of an attack or effect with a saving throw, roll a number of d8s equal to half your Cleric level and add the result to the damage roll."
+            },
+            {
+              "roll": "10",
+              "effect": "You become immune to the next damage type you take damage from for 1 minute. If you take multiple types at once, you become immune to the highest damaging type among them."
+            },
+            {
+              "roll": "11",
+              "effect": "You lose the ability to understand any language or comprehend physical communication for 10 minutes, though you can still speak. This effect ends if lesser restoration, greater restoration, or any effect capable of ending the charmed condition is used on you."
+            },
+            {
+              "roll": "12",
+              "effect": "You may cast any Cleric spell you have prepared, requiring no spell slot. This spell must have a casting time of 1 action or bonus action, and is cast as though with a spell slot equal to your proficiency bonus unless its base level would be higher."
+            },
+            {
+              "roll": "13",
+              "effect": "You are vulnerable to all damage from the next effect or attack that damages you."
+            },
+            {
+              "roll": "14",
+              "effect": "You are resistant to all damage. At the start of each of your turns roll a chaos sustenance check for this effect."
+            },
+            {
+              "roll": "15",
+              "effect": "One creature you choose within 60 feet of you sees you as a being of awe and radiant power, and must make a Charisma saving throw. On a failure they are charmed by you or stunned for 1 minute (your choice), and repeat the save at the end of each of their turns, ending the effect on a success."
+            },
+            {
+              "roll": "16",
+              "effect": "You disappear, and are trapped in a harmless demiplane contained in a hand-held crystal ball, which falls into the space you occupied. This crystal ball has 20 AC, 10 hit points, and is resistant to piercing and slashing damage as well as immune to necrotic and psychic damage. If shattered, you return to the nearest unoccupied space to the orb. While trapped, roll 1d6 at the start of each of your turns - on a result of 6 it shatters on its own. While trapped inside you are suspended and incapacitated as though by the banishment spell."
+            },
+            {
+              "roll": "17",
+              "effect": "Until the end of your next turn you gain a teleport speed equal to your base movement speed, and you immediately take the Dash action."
+            },
+            {
+              "roll": "18",
+              "effect": "You are immune to all damage from the next attack that hits you or effect that damages you which requires a saving throw. This effect disappears after 1 minute."
+            },
+            {
+              "roll": "19",
+              "effect": "For 1 minute, at the start of each of your turns you regain 2d6 hit points. If you start your turn unconscious you regain these hit points, stop dying, and then this effect ends. At the end of each of your turns, make a chaos sustenance check for this effect."
+            },
+            {
+              "roll": "20",
+              "effect": "You gain an extra use of Channel Divinity which vanishes after 1 minute. This use of Channel Divinity must be used before regular uses. Then roll from this table again, re-rolling any result of 1 or 20 that you roll without invoking its effects."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Probability Siphon",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Each time you invoke an effect from the Celestial Chaos table, you also gain temporary hit points equal to its roll on the table."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Chaos Alignment",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action you can use your Channel Divinity to roll off of the Celestial Chaos table three times (rerolling results of 1 or 20 until you get a different result), then choose one of the options you roll to occur."
+        }
+      ]
+    },
+    {
+      "name": "Chaos Strike",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you hit with an attack using a weapon not already under this feature’s influence, you can cause the attack to ignite with chaotic energy. That weapon deals an extra d8 of damage for 1 minute, of a type determined randomly by a d10 roll off the Chaos Strike table. That weapon only deals that damage when wielded by you. When you reach 14th level, the extra damage increases to 2d8."
+        },
+        {
+          "type": "heading",
+          "text": "Chaos Strike Table"
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "roll",
+              "label": "d10 Result"
+            },
+            {
+              "key": "type",
+              "label": "Type"
+            }
+          ],
+          "rows": [
+            {
+              "roll": "1",
+              "type": "Acid"
+            },
+            {
+              "roll": "2",
+              "type": "Cold"
+            },
+            {
+              "roll": "3",
+              "type": "Fire"
+            },
+            {
+              "roll": "4",
+              "type": "Force"
+            },
+            {
+              "roll": "5",
+              "type": "Lightning"
+            },
+            {
+              "roll": "6",
+              "type": "Necrotic"
+            },
+            {
+              "roll": "7",
+              "type": "Poison"
+            },
+            {
+              "roll": "8",
+              "type": "Psychic"
+            },
+            {
+              "roll": "9",
+              "type": "Radiant"
+            },
+            {
+              "roll": "10",
+              "type": "Thunder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Persisting Chaos",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Each time you roll initiative while you have no uses of your Celestial Chaos feature remaining, you regain one use."
+        }
+      ]
+    }
+  ]
+}

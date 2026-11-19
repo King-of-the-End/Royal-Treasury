@@ -1,0 +1,858 @@
+{
+  "name": "Fatalism Domain",
+  "slug": "fatalism-domain",
+  "class": "Cleric",
+  "subclass_feature": "Divine Domain",
+  "summary": "TBA",
+  "introduction": [
+    "Fatalism. “The belief that all events are predetermined and therefore inevitable.” Those who follow its domain believe as if the concept itself was God, a force of nature with no parallel or counterweight - And one that if they go against, it’d be as going against their own heartbeat.",
+    "These have become empty husks that embraced a prescribed fate to their name, old or new, and molded themselves accordingly. They are often imitations of someone that once was, is or will be and pursue barely any personal goal past what was ascribed to them. Despite that, there are still those that try to look for cracks in “Fate’s” mask, to have little actions and pursuits that might change things ever so slightly, all to satisfy imprinting their own will into the world, like a wave trying to form in the sea.",
+    "In worlds such as the Forgotten Realms those who follow the Fatalism Domain are the highest members of those under the Living Will, acting as their indirect proxies and undercover agents that are used to shape other settlements in certain ways to go according to plan. In others such as Thespis, there was but one true believer of the Fatalist Domain - Their name lost to time and story far, far ago, and their remains being distorted tales that many a new cleric tried to imitate and reach, attempting to forge their own unbreakable fatalism."
+  ],
+  "features": [
+    {
+      "name": "Domain Extended Spells",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "level",
+              "label": "Cleric Level"
+            },
+            {
+              "key": "spells",
+              "label": "Spells",
+              "spell_links": true
+            }
+          ],
+          "rows": [
+            {
+              "level": "1st",
+              "spells": "Ceremony, Heart-Breaking Smite"
+            },
+            {
+              "level": "3rd",
+              "spells": "Alter Self, Magic Mouth"
+            },
+            {
+              "level": "5th",
+              "spells": "Leomund’s Tiny Hut, Sending"
+            },
+            {
+              "level": "7th",
+              "spells": "Compulsion, Divination"
+            },
+            {
+              "level": "9th",
+              "spells": "Dispel Evil and Good, Enervation"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "title": "Source Note",
+          "text": "Heart-Breaking Smite is from the Oath of Procuration subclass document."
+        }
+      ]
+    },
+    {
+      "name": "Multitudes in a Crashing Wave",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Be cheerful in your final moments. For you have been chosen.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "To become a true follower of the Will you have come to understand that you are not the wielder of a weapon as an extension of yourself, no. You are no more than a weapon that extends from the whims made manifest."
+        },
+        {
+          "type": "paragraph",
+          "text": "You gain a Wilful Device, a small golden box which displays your Prescripts and contains a black ferrofluid substance that mimics and adapts as much like your soul. If lost or removed from your person, you may recall it to your hand as a free action. It is indestructible and may be wielded as a weapon with the Finesse property. At the start of your turns in combat, roll two d8 to determine the shape it takes as per the following table, disregarding the second roll unless both are the same number."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "roll",
+              "label": "d8"
+            },
+            {
+              "key": "weapon",
+              "label": "Weapon"
+            },
+            {
+              "key": "damage",
+              "label": "Damage"
+            },
+            {
+              "key": "properties",
+              "label": "Properties"
+            }
+          ],
+          "rows": [
+            {
+              "roll": "1",
+              "weapon": "Hatchet",
+              "damage": "1d6 slashing",
+              "properties": "Light"
+            },
+            {
+              "roll": "2",
+              "weapon": "Stiletto",
+              "damage": "1d4 piercing",
+              "properties": "Light"
+            },
+            {
+              "roll": "3",
+              "weapon": "Bastard Sword",
+              "damage": "1d8 slashing",
+              "properties": "Versatile (1d10)"
+            },
+            {
+              "roll": "4",
+              "weapon": "Rapier",
+              "damage": "1d6 piercing",
+              "properties": ""
+            },
+            {
+              "roll": "5",
+              "weapon": "Hammer",
+              "damage": "1d6 bludgeoning",
+              "properties": ""
+            },
+            {
+              "roll": "6",
+              "weapon": "Great Sword",
+              "damage": "2d6 slashing",
+              "properties": "Heavy, Two-Handed"
+            },
+            {
+              "roll": "7",
+              "weapon": "Lance",
+              "damage": "1d12 piercing",
+              "properties": "Reach"
+            },
+            {
+              "roll": "8",
+              "weapon": "Whip",
+              "damage": "1d4 slashing",
+              "properties": "Reach of 15 ft."
+            },
+            {
+              "roll": "Any double except 1-1",
+              "weapon": "Scythe",
+              "damage": "2d6 slashing",
+              "properties": "Heavy, Versatile (2d8)"
+            },
+            {
+              "roll": "Double 1-1",
+              "weapon": "Spork",
+              "damage": "1 piercing",
+              "properties": "Whenever you deal damage with this weapon, also inflict Sinking equal to your proficiency bonus."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "At the beginning of your turns, if there is no creature suffering the effect, one random hostile creature within 120 feet of you becomes Marked by the Prescript. You inflict Sinking count equal to your proficiency bonus when attacking a Marked creature."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whenever you or a friendly creature within 15 feet of you knocks a Marked creature unconscious for the first time in combat or kills them, you gain Poise count equal to your proficiency bonus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Upon reaching 4th level in Cleric, you gain a +1 to hit and to damage rolls while using your Wilful Device to attack. This increases to a +2 at 10th level and a +3 at 16th level. It also counts as a holy symbol for you."
+        },
+        {
+          "type": "note",
+          "title": "Designer’s Note 1",
+          "text": "This subclass is not meant to be taken as a multi-class with other Dexterity-based classes, since it may provide too-strong a weapon with the Finesse property, which was chosen to be given to all weapons for the sake of greater freedom when designing your player character. We recommend removing the Finesse property and only adding it to Hatchet, Stiletto, Rapier, Lance, Whip and Scythe if multi-classing into a Dexterity-based class to avoid abuse of this feature."
+        },
+        {
+          "type": "note",
+          "title": "Designer’s Note 2",
+          "text": "To define a “random hostile creature” we recommend using the Random Targeting Rule within the Optional Rules & Prescripts section of this document."
+        }
+      ]
+    },
+    {
+      "name": "To Become a Canvas, Slowly Painted",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“*beep* Hah... the waves are rolling in.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "The future is pre-ordained, and you are but a gear in a greater plan, slowly letting it shape you and in turn you shape the world around you. At the beginning of every long rest you draw a Prescript from the Crawling Prescripts Table. When you do so, you have up to a week or until your next long rest to finish its objective, as per described in the Prescript itself."
+        },
+        {
+          "type": "paragraph",
+          "text": "Upon completing this Prescript, you gain a single count of Procuration [Hermes]. You may have a maximum of this effect equal to half your proficiency bonus at any given time, rounded down, and a minimum of −2."
+        },
+        {
+          "type": "paragraph",
+          "text": "You gain the following effects while you have negative or positive counts of this effect:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Lesser than zero",
+              "paragraphs": [
+                "Your heart is beating at an unsteady rhythm, much like the crumbling road you feel like you walk upon. You cannot spend Hit Dice to recover Hit Points during a short rest and only recover half your maximum Hit Points on a long rest. You suffer a negative modifier to Strength, Dexterity and Constitution saving throws equal to the negative count of Procuration [Hermes]. You suffer disadvantage on death saving throws."
+              ]
+            },
+            {
+              "name": "Zero count",
+              "paragraphs": [
+                "You constantly feel uneasy, as if something bad will happen at any given time that you are not working towards your goal. You suffer a −1 negative modifier on Wisdom saving throws and gain a +1 bonus modifier on Perception and Investigation checks."
+              ]
+            },
+            {
+              "name": "Greater than one",
+              "paragraphs": [
+                "You can feel that all is going according to plan, and this confidence in the greater drives you on with a practiced ease. You gain a bonus modifier to your Intelligence, Wisdom and Charisma saving throws equal to your current Procuration [Hermes] count. You deal additional damage equal to that value whenever you deal damage using your Cleric spells and your spell save DC increases by the same value."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, whenever you fail a Prescript drawn from this feature, you suffer 3 Karmic Consequences. Whenever you complete one, you instead gain 2 Grace of the Prescript, except you lose one at the end of your combats. You may only have up to 6 Grace of the Prescript this way."
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity: Lacrimoso-Crescendo",
+      "level": "2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“I shall replicate a passionate heart.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Starting at 2nd level, you may use your Channel Divinity to unleash a wave of powerful attacks using your Beeper, changing its fluid shape after every attack and drawing out every ounce of pain so that your goal may be reached. As an action you dash toward up to your movement speed toward a target within reach and perform an amount of weapon attacks using your Wilful Beeper equal to half your proficiency bonus, changing its form as per the Multitudes in a Crashing Wave before each attack."
+        },
+        {
+          "type": "paragraph",
+          "text": "On a hit, you inflict 2 Sinking count on the target and deal additional psychic damage equal to half their Sinking count, rounded down. Upon killing a creature this way, you may instantly move up to another creature within a reach equal to your movement speed and perform the same number of attacks with the same effects, repeating this process until you fail to kill a creature."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a creature killed this way was Marked by the Prescript, your next target becomes Marked instead and you gain 4 Poise count. If you fail to kill your target, you perform a final additional attack using the Scythe form of your Wilful Beeper at advantage. This attack is a Critical Hit on a dice roll of 17–20."
+        },
+        {
+          "type": "paragraph",
+          "text": "After using this Channel Divinity, its use is not restored after finishing a short or long rest, instead requiring that you consume one count of Procuration [Hermes] to use it again."
+        }
+      ]
+    },
+    {
+      "name": "Brandishes to Quell the Innermost Self",
+      "level": "6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“By day as by night, this City... shows itself only as a pale blur, as though the rain has washed its silhouette white”"
+        },
+        {
+          "type": "paragraph",
+          "text": "To become a better tool yourself, you have mastered many a weapon for its best use, being able to bring out their full potential while they’re in your hands. Once every other turn you may replace one of your attacks as part of the Attack action with a Weapon Brandish according to your current Wilful Beeper form, as presented below:"
+        },
+        {
+          "type": "options",
+          "options": [
+            {
+              "name": "Bastard Brandish: Vuoto Ardente",
+              "paragraphs": [
+                "Though bland, one with a practiced Bastard Sword can put fear into their enemies’ core. You perform a weapon attack roll against a target within reach. On a hit, the target must pass a Wisdom saving throw or be Frightened of you. While Frightened, the target cannot willingly move away from you, as they are paralyzed by your presence. Whenever you finish your turn within 5 feet of the Frightened creature, you gain 2 Poise."
+              ]
+            },
+            {
+              "name": "Great Brandish: Mannaia Distrettuale",
+              "paragraphs": [
+                "You may swing the Great Sword to paint broad strokes, perform a melee attack roll against a target within reach. The result also counts as if it were targeting any other creatures 5 feet beside the original target. When you roll damage you do so once for all targets hit, with an additional d6 slashing damage for each hit target."
+              ]
+            },
+            {
+              "name": "Hammer Brandish: Scindermentes",
+              "paragraphs": [
+                "You bring down your Hammer in a potentially horrid blow to the cranium. Perform a melee weapon attack against a creature within reach. On a hit they must pass a Constitution saving throw or receive a negative modifier to their Intelligence, Wisdom and Constitution saving throws equal to half your proficiency bonus until the end of their next turn, rounded down."
+              ]
+            },
+            {
+              "name": "Hatchet Brandish: Filo del Ragno",
+              "paragraphs": [
+                "You extend your Hatchet’s liquid hilt toward any target creature within 30 feet of you, performing a weapon attack roll against them. On a hit, you may instantly rush toward them, moving to be within 5 feet of the target. They have disadvantage on attacks against you until the start of your next turn."
+              ]
+            },
+            {
+              "name": "Lance Brandish: Linea di Macellazione",
+              "paragraphs": [
+                "You brace for a reckless dash forward using your Lance to raze all in your path. Choose a point within 20 feet of you to move to. All creatures in a line between you and your end goal must pass a Dexterity saving throw against your Cleric spell save DC or be impaled, taking 1d12 + half your proficiency bonus’ worth of d12 piercing damage (rounded down) and both being knocked Prone and forcibly moved to 5 feet in front of you or the closest available space on a failure."
+              ]
+            },
+            {
+              "name": "Rapier Brandish: Intecciare",
+              "paragraphs": [
+                "Fencing is all about positioning, and you know how to make your opponent’s the worse possible. You instantly gain 3 Poise and may instantly move to any empty space within 5 feet of your target to Flank with another friendly creature, if able, then perform a weapon attack roll against them. On a hit the target must spend their action and bonus action if they attempt to Disengage from you until the end of your next turn."
+              ]
+            },
+            {
+              "name": "Scythe Brandish: Riverbero Splendente",
+              "paragraphs": [
+                "Pursuit is the only way to make a weapon sing, and you will pursue until your Scythe runs hoarse. You perform three weapon attacks against a target within reach. If the first two attacks hit, your third attack is considered a Critical Hit if it hits as well."
+              ]
+            },
+            {
+              "name": "Spork Brandish: Coraggio a Metà",
+              "paragraphs": [
+                "You have to make the best out of the worst with this weapon. Perform a weapon attack roll with this weapon, on a hit you inflict double the Sinking count you normally would."
+              ]
+            },
+            {
+              "name": "Stiletto Brandish: Guida Falsa",
+              "paragraphs": [
+                "You maintain dominance through any battlefield. Perform an amount of melee weapon attacks against a target within reach equal to half your proficiency bonus (rounded down). On a hit the target is moved back 5 feet each time you hit it until the end of your turn."
+              ]
+            },
+            {
+              "name": "Whip Brandish: Spezzaarmatura",
+              "paragraphs": [
+                "You may use the Whip’s everchanging point to hook and tear away your opponent’s weapon with ease. Perform a melee weapon attack against a target within reach. On a hit they must pass a Dexterity saving throw or have one weapon of your choice that they are holding be flung toward any space within 35 feet of them."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Furthermore, at the start of your turns you roll a d4, with the following effects occurring:"
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "roll",
+              "label": "d4"
+            },
+            {
+              "key": "effect",
+              "label": "Effect"
+            }
+          ],
+          "rows": [
+            {
+              "roll": "1",
+              "effect": "You deal an additional die of bludgeoning damage whenever you deal bludgeoning damage. You ignore Resistance to bludgeoning damage and treat Immunities as if they were Resistance instead."
+            },
+            {
+              "roll": "2",
+              "effect": "You deal an additional die of slashing damage whenever you deal slashing damage. You ignore Resistance to slashing damage and treat Immunities as if they were Resistance instead."
+            },
+            {
+              "roll": "3",
+              "effect": "You deal an additional die of piercing damage whenever you deal piercing damage. You ignore Resistance to piercing damage and treat Immunities as if they were Resistance instead."
+            },
+            {
+              "roll": "4",
+              "effect": "You deal an additional die of matching damage type whenever you deal bludgeoning, slashing or piercing damage. You ignore Resistance to these damage types and treat Immunities as if they were Resistance instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, once per long rest you may consume one count of Procuration [Hermes] to always choose your Wilful Beeper’s form at the start of your turns. You cannot choose the same form twice in a row this way."
+        }
+      ]
+    },
+    {
+      "name": "Pre-Ordained Strikes",
+      "level": "8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“…Yet my visage, seared and scorched, permits me not a day of reprieve from pain—oh, how it aches even under the gentlest sun.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "You gain the ability to channel the Will through your fingertips so your swings may always find their mark, even if that puts you in harm’s way. When you miss an attack roll, you may choose to still roll damage and deal half the result still, but suffer the same damage dealt. This does not count as a hit for other effects purposes and inflicts only half any Condition/Effect count that would be inflicted."
+        },
+        {
+          "type": "paragraph",
+          "text": "You may do this an amount of times equal to your proficiency bonus per short or long rest. Additionally, once per long rest you may consume one count of Procuration [Hermes] to always deal full damage on a missed attack, but you still suffer half that damage."
+        }
+      ]
+    },
+    {
+      "name": "Rein All, Raze All, Reign Nil",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“There come moments wherein I find myself longing to be tagged unfrozen; alas, my darling daughter appears to have mislaid the memory to do so. *beep* Hah... how draining this is.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "A husk is all that remains of you when it comes to obeying the Will, to resonate with it so profoundly that your entire being is made by it. That devotion, however, has not gone unheard, allowing you some reprieve at the hardest of times just to reach your ultimate goal."
+        },
+        {
+          "type": "paragraph",
+          "text": "You gain the following effects:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "You have learnt how to fill the empty husk that you are with anything demanded by the greater Will, granting you the ability to use your Wisdom modifier instead of Charisma on any skill checks that would use the attribute.",
+            "Every time you would be afflicted with a negative Condition or Effect such as the Frightened Condition, roll a d100. On a roll of 75 or greater, you instead suffer nothing as fate seems to miraculously intervene.",
+            "Whenever a creature would damage you with a Critical Hit, they must confirm it by rolling a d20, with any result below 15 having the hit instead be a regular attack only.",
+            "You may guide others toward the Will’s bidding with expertise, become immune to being Frightened and Charmed. Additionally whenever you Charm a creature, they benefit from your current Procuration [Hermes] count as a bonus modifier to their attack and damage rolls while friendly to you.",
+            "The grace of your God reaches even those who indirectly contribute to its whims, granting you a 15-foot aura where any friendly creature within reach benefits from the d4 effects of your Brandishes to Quell the Innermost Self feature."
+          ]
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Crawling Prescripts Table",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The following Prescripts are meant to be of a “Crawling” speed, which means they should be completed within the timespan of your next long rest or until an entire week has passed."
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "key": "roll",
+              "label": "d100"
+            },
+            {
+              "key": "prescript",
+              "label": "Prescript"
+            }
+          ],
+          "rows": [
+            {
+              "roll": "1",
+              "prescript": "Among those you consider your companions, find out which of them is the youngest and acquire as much currency as you can. On the final day of the week, spend all of it to throw a party for your youngest companion."
+            },
+            {
+              "roll": "2",
+              "prescript": "Nurture the next wounded creature you see back to health, then eat it as dinner after it is healed. (This must be a Beast, Monstrosity, or Plant)"
+            },
+            {
+              "roll": "3",
+              "prescript": "Investigate the first murder you come across and after finding the culprit, abandon the case."
+            },
+            {
+              "roll": "4",
+              "prescript": "Give the nameless a name. (Find seven objects of little or no monetary value, grant each a name and a distinct personality, and introduce them to your companions.)"
+            },
+            {
+              "roll": "5",
+              "prescript": "Create 3 paintings of the most beautiful things you know, then throw them into a fire. (You must truly capture the beauty. To do so, you must spend at least 3 hours or a Long Rest to create a painting by attempting a Performance check, successfully painting a work that satisfies you on a DC of 16.)"
+            },
+            {
+              "roll": "6",
+              "prescript": "Let hesitation give way to conviction. (During combat, you must declare your intended Action at the end of your previous turn. You cannot willingly change it unless it becomes impossible to perform.)"
+            },
+            {
+              "roll": "7",
+              "prescript": "Slay a beast that is larger than you yet smaller than the last room you have slept or stayed more than 15 minutes at. (This may be a creature of Aberration, Beast or Monstrosity type.)"
+            },
+            {
+              "roll": "8",
+              "prescript": "For the next three days: become the smartest eater. (You must use a combined tool for eating, such as a spork, fpoon or switchblade. You cannot consume food without its use.)"
+            },
+            {
+              "roll": "9",
+              "prescript": "Preserve the words that were never spoken. (Write a letter to someone you can no longer meet. Carry it upon your person until the Prescript ends, then decide whether to keep it or leave it behind.)"
+            },
+            {
+              "roll": "10",
+              "prescript": "Become a saint in red. (Gift something worth at least 1 gold to 10 or more children. This Prescript is instantly failed if you cause the children to cry or if any harm befalls them until the Prescript is undertaken.)"
+            },
+            {
+              "roll": "11",
+              "prescript": "Cook three waffles and stack them while putting mayonnaise on the bottom waffle. Then serve them to the 9th person you saw this week and wish them a happy birthday."
+            },
+            {
+              "roll": "12",
+              "prescript": "Stalk the third person you see. In within 7 days but not less of 3 days, attempt to win their heart and break it. Record this experience."
+            },
+            {
+              "roll": "13",
+              "prescript": "Embrace and conjoin the way of a Hero. (Within a week, bite off one piece of a fresh apple and change into a new personality according to the Heroes Journey every day. (Roll a 1d8, no repeats) (1: Act of the best of intentions. (Hero), 2: Guide those who are lost or without reason. (Mentor), 3: Assist those who are in trouble. (Ally), 4: Give those without reason a task. (Herald), 5: Disrupt those with a goal with a hurdle. (Trickster), 6: Be of aid or of disdain. (Shapeshifter), 7: Test the position of the able-bodied fighters, kill if they are unworthy, spare if they are worthy. (Guardian), 8: Vow to kill the first able-bodied fighter you see in a day. (Shadow))"
+            },
+            {
+              "roll": "14",
+              "prescript": "Seek the warmth of an unfamiliar hearth. (Spend three nights resting in three different locations, none of which you have previously slept in.)"
+            },
+            {
+              "roll": "15",
+              "prescript": "Find god in a tomato. (Pray every day and plant a whole fruit in the ground while reciting prayers, then roll a d100. On a roll of 90 or greater, it sprouts to a tree sapling mere moments after being planted as if by godly will and you are successful in this Prescript.)"
+            },
+            {
+              "roll": "16",
+              "prescript": "Become a mirror of the next being reflected in your eyes. (Act as the first creature that you see after getting this Prescript until someone else points it out.)"
+            },
+            {
+              "roll": "17",
+              "prescript": "In one week, win 5 left shoes in games of cards."
+            },
+            {
+              "roll": "18",
+              "prescript": "Spread one’s wings. (You must help any random person of your choice pursue and at least begin reaching a dream of theirs. An example would be aiding one who wishes to become a wizard enrol in an Arcane Study Institution.)"
+            },
+            {
+              "roll": "19",
+              "prescript": "Act as new. (Act as a person who is incredibly naive and unaware, often unsure of their actions and doubts their every move until someone questions why you are acting in such a way.)"
+            },
+            {
+              "roll": "20",
+              "prescript": "Embrace the natural downpour of greater hearts. (If it rains or snows, use no weather protection and instead stay under the phenomena until the Prescripts completion or until the event ceases.)"
+            },
+            {
+              "roll": "21",
+              "prescript": "Be unlike yourself. (Your alignment must be reversed for the Prescripts duration, neutrals remain neutral with inversed values, such as if they hated undead they now must act as if they love them. Lawful characters must act chaotic and so on.)"
+            },
+            {
+              "roll": "22",
+              "prescript": "Speak to a person every day for 4 days, choosing a different person each day, and ask them the meaning of life and why they don’t wish to die. If any answer yes, pre-emptively leave and avoid that person for the rest of their life. Otherwise, take note of the answers and leave it in a cleaned plate of food of the next tavern or inn you visit."
+            },
+            {
+              "roll": "23",
+              "prescript": "Be as of the accursed birds of black feather. (Communicate only by mimicking other's words.)"
+            },
+            {
+              "roll": "24",
+              "prescript": "Experience what it is to be alive. (Within the next seven days, feel the emotions of Hate/Resentment, Anger/Wrath, Anxiety/Bad, Joy/Pride, Calmness/Peace, Disgust/Envy, Innocence/Curiosity, Sadness/Gloom, Shock/Fear, and Love/Longing.)"
+            },
+            {
+              "roll": "25",
+              "prescript": "Steal the hearts of the people who fought and died against you."
+            },
+            {
+              "roll": "26",
+              "prescript": "Paint your view of heaven and what you wish to see after death. Then show it around to your fellows and hear their opinions. (This creation must be sincere and contain both your sufferings and yearnings. You may attempt Performance checks, yet they mean nothing. When you do so, you must spend at least 5 days doing so, if not longer. Upon each long rest, describe what are the feelings your character is having to go through to reach this ideal vision. In the end, question if it is something you’d deserve or still need to get within grasp of.)"
+            },
+            {
+              "roll": "27",
+              "prescript": "Provide safe passage and sanctuary to the next wounded creature you see. Ask nothing of return except for a single story of their lives."
+            },
+            {
+              "roll": "28",
+              "prescript": "Do not aid the dreary. (Do not do anything that would result in other creatures being Stabilized, recover Hit Points or that would result in a negative Condition of theirs ending early.)"
+            },
+            {
+              "roll": "29",
+              "prescript": "Visit a church not of your own God and learn their truths and falsities. Then commit either a sin or ten good deeds in their eyes."
+            },
+            {
+              "roll": "30",
+              "prescript": "Trace the direction of your homeland on a map, then acquire a bow and arrow. Set the ammunition aflame and shoot it toward the sky at midnight for three nights. If it ever hits or narrowly misses a person, monster or creature, regale them with the food of your homeland in a show of genuine hospitality."
+            },
+            {
+              "roll": "31",
+              "prescript": "Do not ask a single question. Only do as you know best."
+            },
+            {
+              "roll": "32",
+              "prescript": "Ne exceedingly courteous, no matter how rude or debauched your fellows might add."
+            },
+            {
+              "roll": "33",
+              "prescript": "Play a song to mesmerize the hearts of all that could hear. (If you do not know how to play an instrument, seek a master to do so. After being taught, you permanently gain Proficiency in that instrument.)"
+            },
+            {
+              "roll": "34",
+              "prescript": "In a single swig, drink a glass bottle’s worth of poison. (If not Immune to the Poisoned Condition: Roll a number of Hit Die equal to your level divided by 3, rounded down. Your Maximum Hit Points are deduced by that value for a week. This Prescript is instantly completed upon consuming the poison.)"
+            },
+            {
+              "roll": "35",
+              "prescript": "Bite your tongue. (Speak only in one language other than Common. If you know no other languages, you may not communicate verbally at all)"
+            },
+            {
+              "roll": "36",
+              "prescript": "Become a pretty picture in a pricey wall. (Ask your party members how much they think their heads are worth. Then print or commission an artist to make several bounty posters of your party with their ascribed values. Post them in whichever Tavern, Guild Hall or Public Post Sign you can.)"
+            },
+            {
+              "roll": "37",
+              "prescript": "Part ways with that which has greatly aided you. (Discard one magic item you have been Attuned to since the last long rest. This item may not be cursed nor be given to a permanent member of the party.)"
+            },
+            {
+              "roll": "38",
+              "prescript": "Speak only in rhymes. If you come across something wearing or that is of orange color, only lie to them instead of rhyming. (This extends to simple conversation, such as saying “Good night” as simple courtesy while it is day.)"
+            },
+            {
+              "roll": "39",
+              "prescript": "At night, before sleep, confess your most painful secret to the one who sleeps closest to you."
+            },
+            {
+              "roll": "40",
+              "prescript": "Do nothing as the products of your heart stand in the face of death. (Do not heal any friendly creatures or Stabilize them for any reason.)"
+            },
+            {
+              "roll": "41",
+              "prescript": "Embrace the first ideal presented to you, no matter how you may feel about it."
+            },
+            {
+              "roll": "42",
+              "prescript": "Mock those in power, aggrandize those who have nothing."
+            },
+            {
+              "roll": "43",
+              "prescript": "Revel in filth and disease. (You must Poison yourself and at least five other creatures.)"
+            },
+            {
+              "roll": "44",
+              "prescript": "Act like a legendary hero or villain of the region. (You must dress like them, change your appearance to be like them and attempt to imitate their personality.)"
+            },
+            {
+              "roll": "45",
+              "prescript": "Harbor no doubt, plant no regrets. (Draw another Prescript. You gain double the effect you would gain upon its completion or failure.)"
+            },
+            {
+              "roll": "46",
+              "prescript": "Push yourself to your limits. (You must reach at least 5 Exhaustion points. You may, once per roll give yourself Advantage after failing a attack, check or save, taking the new result and gaining a point of Exhaustion. You must do so after rolling but before the DM announces the result.)"
+            },
+            {
+              "roll": "47",
+              "prescript": "Spread the word of the Prescripts to seven people. (You must convince seven creatures to Draw at least one Prescript.)"
+            },
+            {
+              "roll": "48",
+              "prescript": "Clutch with the golden hand what is yours. (Do not spend a single gold piece, use an item on another creature or otherwise grant them a gift or material gain.)"
+            },
+            {
+              "roll": "49",
+              "prescript": "Take a measured stride always. (Never take the Dash Action or willingly attempt an Athletics or Acrobatics check.)"
+            },
+            {
+              "roll": "50",
+              "prescript": "Become yourself- Act like you would before getting your first prescript. (Do you even remember who you were then?)"
+            },
+            {
+              "roll": "51",
+              "prescript": "Handle your share in your utmost lonesome. (Do not accept or take the Aid, help or counselling from other creatures.)"
+            },
+            {
+              "roll": "52",
+              "prescript": "Make peace. (Successfully end hostilities or at least form a truce between yourself and another creature or faction. Alternatively, do so as a mediator between two parties.)"
+            },
+            {
+              "roll": "53",
+              "prescript": "Light the sparks of war. (Successfully pit one party against another without being linked as the source of the conflict.)"
+            },
+            {
+              "roll": "54",
+              "prescript": "Take no part in mysticism. (While out of combat, cast no spells and use no magic items.)"
+            },
+            {
+              "roll": "55",
+              "prescript": "Discover the secrets of at least three of the people that share a meal with you."
+            },
+            {
+              "roll": "56",
+              "prescript": "Spread or fabricate a legend or myth across your current settlement, or the next one you come across if within the wilderness."
+            },
+            {
+              "roll": "57",
+              "prescript": "Decline matters of subtleness. (You cannot willingly attempt Stealth checks and must always either loudly knock on doors before coming through or kick them open if locked.)"
+            },
+            {
+              "roll": "58",
+              "prescript": "Atone for your past sins while enduring the interminable hell of your own making. (You must do so in a way that is found acceptable after confessing to your nearest Cleric or spiritually adjacent creature. They must dictate how to better atone. For the duration, you must not recover hit points.)"
+            },
+            {
+              "roll": "59",
+              "prescript": "Whenever you tell a lie or are untrustworthy, bite down your tongue with force. (You suffer 3d8 piercing damage whenever you do so. Untrustworthiness delineates lying, cheating or spreading secrets.)"
+            },
+            {
+              "roll": "60",
+              "prescript": "Draw in black the lines of suffering on your body. (Your body must be marked with black dotted lines at the articulations. Hostile creatures gain Advantage to hit you while within 5-ft. of you)"
+            },
+            {
+              "roll": "61",
+              "prescript": "In lack of acknowledgement, light yourself ablaze. (If you do not take responsibility for your actions and see them through, as per the DMs discretion, you must set yourself on fire as an Action. You suffer 16 Burn count instantly.)"
+            },
+            {
+              "roll": "62",
+              "prescript": "Weigh your soul against the contents of your pockets. (Ask three different creatures what they consider your greatest virtue. Give each of them an item that you believe represents their answer.)"
+            },
+            {
+              "roll": "63",
+              "prescript": "Allow the past to choose your attire. (Ask the oldest creature you encounter to describe the clothing they wore in their youth. Dress in accordance with their description for the remainder of the Prescript.)"
+            },
+            {
+              "roll": "64",
+              "prescript": "Clap without a sound, slash without a voice. (Start any Combat Hidden and do not fail a single Stealth check.)"
+            },
+            {
+              "roll": "65",
+              "prescript": "Confess to a sin you have yet to commit. At the end of the Prescript, reflect upon whether you have become the person you described."
+            },
+            {
+              "roll": "66",
+              "prescript": "For once, the Will shall listen. (Write a Prescript of your own making, seal it within an envelope and entrust it to another creature. You must neither explain its meaning nor attempt to discover whether it was fulfilled.)"
+            },
+            {
+              "roll": "67",
+              "prescript": "Welcome the Wills in minor scale. (During combat, at the start of your turns always draw a Prescript from the Magicked Prescripts table. [From the Oath of Procuration Subclass])"
+            },
+            {
+              "roll": "68",
+              "prescript": "Loudly proclaim your fair crew’s namesake at the heat of combat. (Whenever your party has triumph over a challenge, such as interacting with an adverse character, winning a game of dice or entering battle, scream your party’s name loudly.)"
+            },
+            {
+              "roll": "69",
+              "prescript": "Act by unpredictable whim. (Always choose your targets randomly. If there are multiple ways of approaching a situation through Skill checks, do so randomly. If you have to make a decision that can be summarized as “yes or no”, pick a side and toss a coin to decide.)"
+            },
+            {
+              "roll": "70",
+              "prescript": "Become the patron of an unfinished masterpiece. (Find a creature who has abandoned a creative endeavour and convince them to resume it. You must contribute to its completion without claiming any credit.)"
+            },
+            {
+              "roll": "71",
+              "prescript": "Knock on three front doors of three different homes at midnight during three different days. If attended to, ask for food. If refused, starve until a creature gives you food, if given food grant the one who fed you a gift of your choice the next day. (You suffer one point of Exhaustion for each night spent without food.)"
+            },
+            {
+              "roll": "72",
+              "prescript": "Tomorrow, you shall be a stranger. (At the end of each long rest, choose a different name and introduce yourself by that name to every unfamiliar creature you meet that day.)"
+            },
+            {
+              "roll": "73",
+              "prescript": "Acquire a relic of some importance and grant it as a boon to the nearest blacksmith or merchant. (You must give a Magic Item that you have acquired after drawing this Prescript.)"
+            },
+            {
+              "roll": "74",
+              "prescript": "Witness the birth of a tradition. (Invent a harmless ritual and convince at least five creatures to participate in it on three separate occasions.)"
+            },
+            {
+              "roll": "75",
+              "prescript": "See not the world for what it is, but instead of what you wish it to be. (You must blindfold yourself for the duration of the Prescript, becoming Blinded.)"
+            },
+            {
+              "roll": "76",
+              "prescript": "Learn of others and have others learn of others in tow. (Ask someone to tell you a personal story and repeat it truthfully to another creature before the week ends.)"
+            },
+            {
+              "roll": "77",
+              "prescript": "Be precise in your curiosity. (In any interaction, you may only ask any individual creature only up to three questions per long rest.)"
+            },
+            {
+              "roll": "78",
+              "prescript": "Become a part-time historian, grant the gift of knowledge to the mystics. (Learn the name and history of any landmarks you come across. Log them in a leather-bound book and then give it to another spellcaster.)"
+            },
+            {
+              "roll": "79",
+              "prescript": "Find an object left unattended and attempt to return it to its owner. Upon failure, willingly lose one object of your own choice that is similar to the first object lost."
+            },
+            {
+              "roll": "80",
+              "prescript": "Lift others burdens, aid those without ability. (You must take the Aid Action whenever another creature attempts a skill check, aiding them.)"
+            },
+            {
+              "roll": "81",
+              "prescript": "Embrace the sheer inexplainable force of luck. (Whenever you roll a d100, do so three more times then decide which is the true roll by rolling a d4. The d100 are presented in the order they were rolled.)"
+            },
+            {
+              "roll": "82",
+              "prescript": "When in doubt, ask the stars. (If your character has a question, ask around the table for other players answers. The DM selects one of the responses given and your character imagines that response while looking up to the sky.)"
+            },
+            {
+              "roll": "83",
+              "prescript": "Once a day for the next week, when the sun hangs at it’s highest, find the 5th person you see. Challenge them to duel, if you win thank them for their time. If you lose, apologize for your weakness."
+            },
+            {
+              "roll": "84",
+              "prescript": "Be a retainer to your friend, sneer your foes. (Act as if you were the humble servant of one party member of your choice. Actively mock and disrespect any who come to disrespect that creature in any way. You may choose pets and companions as a party member for this Prescript.)"
+            },
+            {
+              "roll": "85",
+              "prescript": "Leave no slight unpunished. (If a creature lies to you, you must lie to them enough that they feel unsure of what they are doing in life. If a creature harms you, you must at least leave a lasting injury on their body, such as severing a finger. If a creature slights you, you must make them cry.)"
+            },
+            {
+              "roll": "86",
+              "prescript": "Interrogate nature and reach a tune with it. (Attempt to interview any critter or beast you find in a conversation. The 6th beast you come across gives you a random trinket of your DMs choice, as per their discretion or rolled on any trinket table.)"
+            },
+            {
+              "roll": "87",
+              "prescript": "Simulate a better person than who you are. (Help the homeless when able, avoid killing other creatures and do not commit any sins against any Deities.)"
+            },
+            {
+              "roll": "88",
+              "prescript": "Ignore social etiquette and always respond with the first thing that comes to your mind."
+            },
+            {
+              "roll": "89",
+              "prescript": "Fish a fish greater in length than your head. Then grill it. Then feast on it with your comrades. Then carve knives out of its bones. Leave these knives within the third hole you see this week after eating the fish. (The length of your head includes horns.)"
+            },
+            {
+              "roll": "90",
+              "prescript": "Be free-spirited in your consumerism. (Always accept and consume any potions, drinks, food and drugs given to you.)"
+            },
+            {
+              "roll": "91",
+              "prescript": "Allow the stressed hard workers to rest. (For all nights you remain in a settlement, convince and work in stead of an tavernkeeper or similar professional to the best of your ability.)"
+            },
+            {
+              "roll": "92",
+              "prescript": "Whenever you come across a shunned topic or forgotten knowledge, start a conversation around it and attempt to restore any form of glory it once might have had."
+            },
+            {
+              "roll": "93",
+              "prescript": "Call out your every action. (Creatures have Advantage on Perception checks against you. Furthermore, all Spells you cast gain the Verbal component. If they would require a target to attempt a Strength, Dexterity or Constitution saving throw, they gain Advantage.)"
+            },
+            {
+              "roll": "94",
+              "prescript": "Arrange a collection of your favorite colour. (You must pick up and constantly carry all objects of the chosen colour in your person until the end of this Prescript.)"
+            },
+            {
+              "roll": "95",
+              "prescript": "Log your adventure’s next three days for those who will come. (Keep a detailed diary of whatever you and your party has done during the day and update it at night. Then leave it at the nearest Inn, Tavern or public space.)"
+            },
+            {
+              "roll": "96",
+              "prescript": "When faced with multiple paths, always take the hardest known route."
+            },
+            {
+              "roll": "97",
+              "prescript": "Learn and help another learn of the story they tell at night for the next three nights. (Before the next long rest, ask another party member about their most recent dreams and relate it back to them in your own words. Repeat this three times.)"
+            },
+            {
+              "roll": "98",
+              "prescript": "Follow along your path. The Will is watching you. (Simply keep progressing towards your Party's current objective. Acknowledge that it is all part of a grander plan.)"
+            },
+            {
+              "roll": "99",
+              "prescript": "Try something you have never once done in your life."
+            },
+            {
+              "roll": "100",
+              "prescript": "Have your hair groomed to absolute lusciousness. If you have no hair, have your head shined to a sparkling sheen. (You must spend at least 60 * your Level GP to do so. After doing so, your Charisma score increases by 2 for the next week.)"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "title": "Designer’s Note",
+          "text": "In cases that you are in a time-sensitive moment of your Campaign that require lots of long rests, we recommend just treating all of these as week-long."
+        }
+      ]
+    }
+  ]
+}
