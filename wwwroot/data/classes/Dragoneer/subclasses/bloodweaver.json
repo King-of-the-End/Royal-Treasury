@@ -1,0 +1,391 @@
+{
+  "name": "Bloodweaver",
+  "slug": "bloodweaver",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "Emulating the power of a dragon’s blood—considered by many to be the most magical substance native to organic life—the bloodweaver draws out the pure energy in their magic and infuses it into their body or their strikes. Each spell that flows through them heals their wounds and refreshes them, and being so closely tied to a dragon’s nature means that they can manifest their dragon spirit to assault others with a phantom of a dragon."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d6"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Constitution, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "All simple weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light, medium armor"
+            },
+            {
+              "label": "Skills",
+              "value": "Arcana; choose one from Deception, Insight, Intimidation, Persuasion, and Religion"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Full Caster (Sorcerer)"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Full Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_1",
+                  "label": "1st"
+                },
+                {
+                  "key": "slot_2",
+                  "label": "2nd"
+                },
+                {
+                  "key": "slot_3",
+                  "label": "3rd"
+                },
+                {
+                  "key": "slot_4",
+                  "label": "4th"
+                },
+                {
+                  "key": "slot_5",
+                  "label": "5th"
+                },
+                {
+                  "key": "slot_6",
+                  "label": "6th"
+                },
+                {
+                  "key": "slot_7",
+                  "label": "7th"
+                },
+                {
+                  "key": "slot_8",
+                  "label": "8th"
+                },
+                {
+                  "key": "slot_9",
+                  "label": "9th"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "2nd",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "3rd",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "4th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "5th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—",
+                  "slot_5": "—",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "6th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—",
+                  "slot_5": "—",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "7th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1",
+                  "slot_5": "—",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "8th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "2",
+                  "slot_5": "—",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "9th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "1",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "10th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2",
+                  "slot_6": "—",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "11th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2",
+                  "slot_6": "1",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "12th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2",
+                  "slot_6": "1",
+                  "slot_7": "—",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "13th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2",
+                  "slot_6": "1",
+                  "slot_7": "1",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "14th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2",
+                  "slot_6": "1",
+                  "slot_7": "1",
+                  "slot_8": "—",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "15th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2",
+                  "slot_6": "1",
+                  "slot_7": "1",
+                  "slot_8": "1",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "16th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2",
+                  "slot_6": "1",
+                  "slot_7": "1",
+                  "slot_8": "1",
+                  "slot_9": "—"
+                },
+                {
+                  "level": "17th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2",
+                  "slot_6": "1",
+                  "slot_7": "1",
+                  "slot_8": "1",
+                  "slot_9": "1"
+                },
+                {
+                  "level": "18th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "3",
+                  "slot_6": "1",
+                  "slot_7": "1",
+                  "slot_8": "1",
+                  "slot_9": "1"
+                },
+                {
+                  "level": "19th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "3",
+                  "slot_6": "1",
+                  "slot_7": "1",
+                  "slot_8": "1",
+                  "slot_9": "1"
+                },
+                {
+                  "level": "20th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "3",
+                  "slot_6": "2",
+                  "slot_7": "1",
+                  "slot_8": "1",
+                  "slot_9": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spirit Restoring Aura",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Each time you cast a dragoneer spell, you regain hit points equal to twice the level of the Spell Slot you expend when casting it. If the spell did not require a spell slot but is still a leveled spell, you regain hit points equal to the base level of the spell instead."
+        }
+      ]
+    },
+    {
+      "name": "Metasorcery",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose two Metamagic options available to the sorcerer. You learn these Metamagic options and can use them as described by that class, and have Sorcery Points equal to your highest dragoneer spell slot level to use for them, which you regain each time you complete a Long Rest. Each time you gain a level as a dragoneer you may switch one of the Metamagic options you picked for another."
+        }
+      ]
+    },
+    {
+      "name": "Dragon-Binding",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are capable of expending a Spell Slot to conjure up the spirit of a Gargantuan dragon as a bonus action, which takes semi-corporeal form. The dragon makes an attack using your spell attack bonus against one target you choose within 60 feet, and on a hit the target is restrained until the end of their next turn and they take embodiment damage equal to 1d8 × the expended Spell Slot’s level."
+        }
+      ]
+    },
+    {
+      "name": "Dragoneer’s Bonus",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you cast any spell that does not have a Dragoneer Bonus effect but is still a dragoneer spell, that spell is cast as though the Spell Slot you used to cast it was one level higher."
+        }
+      ]
+    },
+    {
+      "name": "Bloodletting Ritual",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you cast a spell you can choose to forgo the hit points you would have regained through Spirit Restoring Aura to instead add the same amount to all damage rolls made for that spell the first time they damage each given target. If the spell would only have one target, the amount is the full bonus described by Spirit Restoring Aura, but if it would have multiple targets it deals half that much to each instead."
+        }
+      ]
+    }
+  ]
+}

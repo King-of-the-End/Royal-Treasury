@@ -1,0 +1,310 @@
+{
+  "name": "Royal Sweeper",
+  "slug": "royal-sweeper",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "A symbol of authority who stands valiantly against enemies in combat. They are ferocious and inspiring, tearing through targets with growing momentum while encouraging their allies to follow suit. Much more than just a berserker, though, these watchful warriors keenly protect their allies from danger by redirecting strikes toward them."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d10"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Wisdom, Charisma"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "All simple and martial weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "All armor and shields"
+            },
+            {
+              "label": "Skills",
+              "value": "Persuasion; choose one from Athletics, Insight, Intimidation, Medicine, and Religion"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Half Caster (Paladin)"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Half Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_1",
+                  "label": "1st"
+                },
+                {
+                  "key": "slot_2",
+                  "label": "2nd"
+                },
+                {
+                  "key": "slot_3",
+                  "label": "3rd"
+                },
+                {
+                  "key": "slot_4",
+                  "label": "4th"
+                },
+                {
+                  "key": "slot_5",
+                  "label": "5th"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "2nd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "3rd",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "4th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "5th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "6th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "7th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "8th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "9th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "10th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "11th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "12th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "13th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "14th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "15th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "2",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "16th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "17th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "1"
+                },
+                {
+                  "level": "18th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "1"
+                },
+                {
+                  "level": "19th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2"
+                },
+                {
+                  "level": "20th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chain Dance",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per turn, when you reduce a creature to 0 hit points as the immediate result of an action you took that turn, you can choose to do one of the following:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Immediately make one weapon attack with advantage against another target within range.",
+            "Before the end of the turn, use your bonus action to make two additional weapon attacks against a single target within range."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Whirlwind Cry",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As an action, you can make a weapon attack using the same weapon against each creature you choose within that weapon’s reach. You can do so a number of times per Long Rest equal to your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Deny the Loss",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When an ally of yours who is within reach of a weapon you are holding would be hit by an attack you can see, you may use your reaction to redirect the attack to you, causing it to hit automatically. Any damage you take from this is reduced by half your dragoneer level."
+        },
+        {
+          "type": "paragraph",
+          "text": "You may also choose to do as described above without using your reaction, but must spend a dragoneer Spell Slot instead and you cannot do so if you are incapacitated. If you do, the damage is further reduced by 1d8 × the level of the Spell Slot you used to do so."
+        }
+      ]
+    },
+    {
+      "name": "Chain Attack Improvement",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can make three attacks, instead of one, when you take the Attack action. When you do, you can replace one of these attacks with casting a dragoneer spell with a casting time of 1 action."
+        }
+      ]
+    },
+    {
+      "name": "Commander’s Authority",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You and creatures within 15 feet of you are immune to the frightened and enraged conditions. They retain this immunity until they end a turn outside this range."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, as long as you aren’t incapacitated, you and each creature within this feature’s range add a +2 bonus to the first attack roll and saving throw they make each turn."
+        }
+      ]
+    }
+  ]
+}

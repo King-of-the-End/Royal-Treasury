@@ -1,0 +1,285 @@
+{
+  "name": "Fortune Veil",
+  "slug": "fortune-veil",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "The Fortune Veil taps into the forces of change, chance, and fortune, using them to enhance their attacks and make certain their path. They can also manipulate the forces of fate, pushing it down a path they determine with supernatural certainty."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d10"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Constitution, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "Simple and martial weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light and Medium armor"
+            },
+            {
+              "label": "Skills",
+              "value": "Insight; choose one from Arcana, Deception, Intimidation, Persuasion, and Religion"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Third Caster (Sorcerer)"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Third Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_1",
+                  "label": "1st"
+                },
+                {
+                  "key": "slot_2",
+                  "label": "2nd"
+                },
+                {
+                  "key": "slot_3",
+                  "label": "3rd"
+                },
+                {
+                  "key": "slot_4",
+                  "label": "4th"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "2nd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "3rd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "4th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "5th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "6th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "7th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "8th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "9th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "10th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "11th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "12th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "13th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "14th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "15th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "16th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "17th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "18th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "19th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1"
+                },
+                {
+                  "level": "20th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Improved Critical",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You score critical hits on a d20 result of 19 or 20."
+        }
+      ]
+    },
+    {
+      "name": "Wyrmheart Strikes",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can use Wisdom in place of Strength or Dexterity for weapon attacks and damage rolls. You may also treat weapon attacks as spell attacks that are considered to be produced by a spell for secondary effects and features."
+        }
+      ]
+    },
+    {
+      "name": "Shifting Tides",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You are able to bend the tides of fate and chance in your favor. Each time you roll initiative in combat, roll a number of d20s equal to your proficiency bonus, and record the results. These results are Tide Changes. At any point during that combat, when you roll a d20 you can spend one of your Tide Changes to change the d20 result into it, and that Tide Change is then lost. You can do so before or after rolling a d20, but not after the GM declares the success or failure of the roll."
+        }
+      ]
+    },
+    {
+      "name": "Tide Burst",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You learn to use your Tide Changes more efficiently. When you spend one to change a d20 result, you may turn each d20 result you roll until the end of that turn into that result as well. You may choose to do so to each subsequent roll after rolling it normally and seeing its result."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, at the start of each of your turns you can choose one of your remaining Tide Changes and reroll it, and must keep the new result."
+        }
+      ]
+    },
+    {
+      "name": "Superior Critical",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You score critical hits on a d20 result of 18, 19, or 20."
+        }
+      ]
+    },
+    {
+      "name": "Critical Change",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you score a critical hit on an attack, roll two d20s and record the higher result of the two as a new Tide Change, which vanishes at the end of combat."
+        }
+      ]
+    }
+  ]
+}

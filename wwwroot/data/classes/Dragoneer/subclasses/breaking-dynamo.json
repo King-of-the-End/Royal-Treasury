@@ -1,0 +1,279 @@
+{
+  "name": "Breaking Dynamo",
+  "slug": "breaking-dynamo",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "A gallant warrior who channels a dragon’s pride and relentless strength. They surge into combat, striking first and laying their power bare for all to see. They are experts at forcing combatants to engage them directly, with a unique ability to best defend against the attacks of those who do not meet them on their terms—a distillation of the dragon spirit’s heightened perception."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d10"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Strength, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "All simple and martial weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light and medium armor, shields"
+            },
+            {
+              "label": "Skills",
+              "value": "Athletics; choose one from Acrobatics, Animal Handling, History, Insight, Intimidation, Perception, and Survival"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Third Caster"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Third Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_1",
+                  "label": "1st"
+                },
+                {
+                  "key": "slot_2",
+                  "label": "2nd"
+                },
+                {
+                  "key": "slot_3",
+                  "label": "3rd"
+                },
+                {
+                  "key": "slot_4",
+                  "label": "4th"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "2nd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "3rd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "4th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "5th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "6th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "7th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "8th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "9th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "10th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "11th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "12th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "13th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "14th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "15th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "16th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "17th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "18th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "19th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1"
+                },
+                {
+                  "level": "20th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Improved Critical",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You score a critical hit on a d20 result of 19 or 20."
+        }
+      ]
+    },
+    {
+      "name": "Head-On Focus",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you are hit with an attack from further than 10 feet away from you, you can react quickly enough to defend yourself. As long as you aren’t incapacitated, your armor class against that attack gains a bonus equal to your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Wrathful Charge",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you fail a saving throw, you gain a single point of Wrath which you retain for 1 minute. You can have a number of points of Wrath equal to your proficiency bonus."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you make a weapon attack, you may spend a point of Wrath to add your proficiency bonus a second time to the result, and also to the damage roll if you hit."
+        }
+      ]
+    },
+    {
+      "name": "Chain Attack Improvement",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can make three attacks, instead of one, when you take the Attack action. When you do, you can replace one of these attacks with casting a dragoneer spell with a casting time of 1 action."
+        }
+      ]
+    },
+    {
+      "name": "Embodied Chain Attack",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can make four attacks, instead of one, when you take the Attack action. When you do, you can replace one of these attacks with casting a dragoneer spell with a casting time of 1 action."
+        },
+        {
+          "type": "paragraph",
+          "text": "Furthermore, your Embodied Strike deals an additional weapon damage die of damage."
+        }
+      ]
+    }
+  ]
+}

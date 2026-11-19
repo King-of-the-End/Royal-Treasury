@@ -1,0 +1,115 @@
+{
+  "name": "Raging Titan",
+  "slug": "raging-titan",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "The might of a dragon is unmatched among most creatures, and the raging titan specifically draws upon that pure power to fuel themselves. Rather than using the magic of a dragoneer, they focus on absolute endurance and destructive power. These warriors are capable of feats of strength far exceeding what their bodies would imply they should be able to muster."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d12"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Strength, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "All simple and martial weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light armor"
+            },
+            {
+              "label": "Skills",
+              "value": "Athletics; choose one from Animal Handling, Intimidation, Nature, Perception, and Survival"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reckless Fighting",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain the Reckless Fighter fighting style. This fighting style automatically advances by one level when you reach 7th level, then again at 13th level. If you cannot advance it at either of these levels you may choose a new fighting style from the dragoneer fighting style options instead."
+        }
+      ]
+    },
+    {
+      "name": "Titan’s Strength",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have the strength of a beast twice your size granting you the following benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Your attacks ignore resistances caused by size differences.",
+            "You can shove and grapple creatures larger than you by a number of size categories equal to your proficiency bonus.",
+            "Your carrying capacity is doubled."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spirit Toughness",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your body is as tough as the hide of a dragon, fortified by the spirit you channel. When you take damage, each individual damage type involved is reduced by a number of points equal to your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Great Strikes",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you have advantage on an attack with a Heavy or Two-Handed melee weapon, you deal an extra damage die when you hit with it."
+        }
+      ]
+    },
+    {
+      "name": "Extra Attack (Improved)",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can make three attacks instead of one when you take the Attack action."
+        }
+      ]
+    },
+    {
+      "name": "Maximum Drive",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per Long Rest, when you are reduced to 0 hit points or killed outright, your hit points are set to your dragoneer level instead, and you gain temporary hit points equal to half your maximum hit points."
+        }
+      ]
+    }
+  ]
+}

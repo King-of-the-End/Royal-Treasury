@@ -1,0 +1,299 @@
+{
+  "name": "Piercing Hand",
+  "slug": "piercing-hand",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "The dragon’s eye archer, known as the piercing hand, is a duelist and ranged combatant who strikes surely at opponents with bestial ferocity and an eagle’s eye. They seize opportunities as an assassin might, but turn them to a vicious plunge meant to kill with each strike. As their skills reach their peak they gain the eye of the dragon, emulating their ability to see through illusions and deceptions without fail."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d10"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Dexterity, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "All simple and ranged weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light, medium armor"
+            },
+            {
+              "label": "Skills",
+              "value": "Perception; choose two from Animal Handling, Athletics, Insight, Investigation, Nature, Stealth, and Survival"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Half Caster (Ranger)"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Half Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_1",
+                  "label": "1st"
+                },
+                {
+                  "key": "slot_2",
+                  "label": "2nd"
+                },
+                {
+                  "key": "slot_3",
+                  "label": "3rd"
+                },
+                {
+                  "key": "slot_4",
+                  "label": "4th"
+                },
+                {
+                  "key": "slot_5",
+                  "label": "5th"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "2nd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "3rd",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "4th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "5th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "6th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "7th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "8th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "9th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "10th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "11th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "12th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "13th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "14th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "15th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "2",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "16th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "17th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "1"
+                },
+                {
+                  "level": "18th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "1"
+                },
+                {
+                  "level": "19th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2"
+                },
+                {
+                  "level": "20th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pull Advantage",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you would have advantage on an attack roll, you can choose to make the roll without advantage to add a +5 bonus to the attack instead."
+        }
+      ]
+    },
+    {
+      "name": "Pack Strike",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you make an attack against a target while they are within melee reach of one of your allies, you have advantage on that attack."
+        }
+      ]
+    },
+    {
+      "name": "Adjudicator’s Sentence",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per turn, when you choose to forgo advantage on an attack using Pull Advantage and hit your target, you deal an additional 2d8 embodiment damage. This damage increases by a d8 once each when you reach 13th and 17th level as a dragoneer."
+        }
+      ]
+    },
+    {
+      "name": "Expand Preparations",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose one saving throw to become proficient in which you cannot have been proficient in already."
+        }
+      ]
+    },
+    {
+      "name": "Dragon’s Eye",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You gain truesight out to 60 feet, and when you target an invisible creature with any attack within a weapon’s normal range you may treat them as though you could see them plainly."
+        },
+        {
+          "type": "paragraph",
+          "text": "Furthermore, your attacks ignore all except total cover."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "name": "Auraphage",
+  "slug": "auraphage",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "Drawing from the arcane power of the dragon spirit, the auraphage is filled to the brim with the untamed arcane prowess that dragons hold over mortal beings. This power can be explosive and dangerous, but through sheer force of will, the auraphage offers their body and mind as kindling to stoke and tame the flames of the arcane furnace within them."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d8"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Wisdom, Charisma"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "All simple weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light, medium armor"
+            },
+            {
+              "label": "Skills",
+              "value": "Religion; choose two from Arcana, Deception, History, Intimidation, Investigation and Nature"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Burn Caster (Warlock)"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Burn Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_number",
+                  "label": "Slot Number"
+                },
+                {
+                  "key": "slot_level",
+                  "label": "Slot Level"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_number": "1",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "2nd",
+                  "slot_number": "2",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "3rd",
+                  "slot_number": "2",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "4th",
+                  "slot_number": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "5th",
+                  "slot_number": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "6th",
+                  "slot_number": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "7th",
+                  "slot_number": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "8th",
+                  "slot_number": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "9th",
+                  "slot_number": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "10th",
+                  "slot_number": "2",
+                  "slot_level": "4th"
+                },
+                {
+                  "level": "11th",
+                  "slot_number": "3",
+                  "slot_level": "4th"
+                },
+                {
+                  "level": "12th",
+                  "slot_number": "3",
+                  "slot_level": "4th"
+                },
+                {
+                  "level": "13th",
+                  "slot_number": "3",
+                  "slot_level": "5th"
+                },
+                {
+                  "level": "14th",
+                  "slot_number": "3",
+                  "slot_level": "5th"
+                },
+                {
+                  "level": "15th",
+                  "slot_number": "3",
+                  "slot_level": "5th"
+                },
+                {
+                  "level": "16th",
+                  "slot_number": "3",
+                  "slot_level": "6th"
+                },
+                {
+                  "level": "17th",
+                  "slot_number": "4",
+                  "slot_level": "6th"
+                },
+                {
+                  "level": "18th",
+                  "slot_number": "4",
+                  "slot_level": "6th"
+                },
+                {
+                  "level": "19th",
+                  "slot_number": "4",
+                  "slot_level": "6th"
+                },
+                {
+                  "level": "20th",
+                  "slot_number": "4",
+                  "slot_level": "6th"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "The spell slots gained from the Burn Caster columns of the table are treated as Pact Magic Spell Slots, or Pact Spell Slots, for features that care for the distinction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ember and Burn",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you cast a spell using a dragoneer Spell Slot, roll a d100. On a result equal to or less than your dragoneer level plus 10, the spell slot is not consumed."
+        }
+      ]
+    },
+    {
+      "name": "Power of Connection",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "By offloading the burden of magic you’re wielding to the dragon spirit fueling you, you may concentrate on a second spell (or effect) that requires it alongside the first. Both effects requiring concentration use a combined concentration check, failing or succeeding together."
+        }
+      ]
+    },
+    {
+      "name": "Chain Burst",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you trade a weapon attack to cast a spell as described in your Chain Action feature, you can choose to cast a spell that has a level equal to half the Spell Slot level you used or less. This spell is cast as though the Spell Slot used was equal to the base level of that spell. If you do so, you can trade a second weapon attack as part of that Chain Action to cast another spell in the same manner, which must also have a casting time of 1 action."
+        }
+      ]
+    },
+    {
+      "name": "Magic Resistance",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You have advantage on saving throws against magical effects."
+        }
+      ]
+    },
+    {
+      "name": "Venomous Arcana",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your arcane potency has caused arcane energy to freely leak from your body, lashing back against any who strike you. Any time a creature hits you with an attack from within 30 feet, they take a d10 of embodiment damage. This damage ignores damage thresholds and resistances (but not immunities)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "name": "Lord Guardian",
+  "slug": "lord-guardian",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "The Lord Guardian is a monumental protector of others, who stands with the righteous size of a dragon. They can alter the size of their body, becoming more draconic in the process, and channel great might to aid those under the charge."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d10"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Strength, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "All simple and martial weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "All armor and shields"
+            },
+            {
+              "label": "Skills",
+              "value": "Athletics; choose two from Animal Handling, Intimidation, Nature, Perception, and Survival"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lord’s Stature",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As a bonus action, you can become one size category larger (all of your equipment increases in size with you), and you remain at that size for 1 minute. While you are this size, you gain the following benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Your melee attack reach increases by 5 feet.",
+            "When you make a weapon attack, roll a d4 and add it to the attack and damage result.",
+            "Your carrying capacity doubles.",
+            "You can make one melee weapon attack as a bonus action."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can use this feature a number of times per Rest equal to half your proficiency bonus."
+        }
+      ]
+    },
+    {
+      "name": "Protective Strike",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a creature within your melee weapon reach is targeted by an attack, you can use your reaction to strike the attacking weapon away: make a melee weapon attack, and until the end of this turn, the target may treat your attack roll result as their new armor class (unless it was already higher)."
+        }
+      ]
+    },
+    {
+      "name": "Dragon’s Defense",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your hide is strong and resistant to attacks. You have a Damage Threshold equal to your dragoneer level."
+        }
+      ]
+    },
+    {
+      "name": "Improved Chain Action",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you take the Attack action, you can make three attacks, instead of one."
+        }
+      ]
+    },
+    {
+      "name": "Goliath’s Stature",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you use Lord’s Stature, you can choose to increase by two size categories instead of one, and gain the following additional benefits:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Your melee attack reach increases by an additional 5 feet.",
+            "Your bonus to attack and damage rolls becomes a d6 instead of a d4.",
+            "Your carry capacity doubles again.",
+            "Your Embodied Strike deals an additional die of damage."
+          ]
+        }
+      ]
+    }
+  ]
+}

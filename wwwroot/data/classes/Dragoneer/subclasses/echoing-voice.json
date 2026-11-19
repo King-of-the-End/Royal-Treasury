@@ -1,0 +1,307 @@
+{
+  "name": "Echoing Voice",
+  "slug": "echoing-voice",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "Drawing on the arcane knowledge within the dragon soul, the echoing voice imbues their magic with the full force of a dragon’s wrath. They are the most knowledgeable in terms of arcane power, and are able to produce more spells than any other dragoneer. They can shape spells into a ferocious draconic variant of themselves to strike others by commanding the magic itself in the voice of dragonkind."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d8"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Intelligence, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "All simple weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light, medium armor"
+            },
+            {
+              "label": "Skills",
+              "value": "Arcana; choose one from History, Insight, Investigation, Medicine, and Religion"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Half Caster (Wizard)"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Half Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_1",
+                  "label": "1st"
+                },
+                {
+                  "key": "slot_2",
+                  "label": "2nd"
+                },
+                {
+                  "key": "slot_3",
+                  "label": "3rd"
+                },
+                {
+                  "key": "slot_4",
+                  "label": "4th"
+                },
+                {
+                  "key": "slot_5",
+                  "label": "5th"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "2nd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "3rd",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "4th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "5th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "6th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "7th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "8th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "9th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "10th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "11th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "12th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "13th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "14th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "15th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "2",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "16th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "—"
+                },
+                {
+                  "level": "17th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "1"
+                },
+                {
+                  "level": "18th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "1"
+                },
+                {
+                  "level": "19th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2"
+                },
+                {
+                  "level": "20th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "3",
+                  "slot_5": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sealing Arc",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can produce the endurance of dragons to defend you, allowing you to produce the effects of the shield spell, requiring no Spell Slot or components. You can do so twice per Rest, then as you gain dragoneer levels you can use it additional times per Rest: three times at 7th level, and four times at 13th level."
+        }
+      ]
+    },
+    {
+      "name": "Echo Spirit",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you cast a dragoneer spell, you can choose to project a copy of yourself up to 30 feet away from you and have the spell originate from that echo as though it was you. At the end of the turn you produce the echo, it vanishes and the continuing effects of the spell, if their range is “self,” return to being centered on you."
+        }
+      ]
+    },
+    {
+      "name": "Blast Magic",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can empower spells by calling them out by their Draconic name. When you cast a spell at a higher level than its base level, you can treat the spell as though it has the following At Higher Level options, alongside any it already has:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The DC of the first save each creature makes against this spell increases by 1 (1 level), 2 (3 levels) or 3 (5 levels).",
+            "Any attack rolls made as part of this spell on the same turn it is cast gain a +1 bonus.",
+            "Any damage dealt by this spell becomes your embodiment type instead."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "To do this, you must perform vocal components for the spell (even if it doesn’t have them or a feature would let you ignore them). If you do not or cannot, these options do not take effect."
+        }
+      ]
+    },
+    {
+      "name": "Wyrmblood Weapon",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can produce the effects of sword of the archmage once per Rest, requiring no Spell Slot or material components. When you do, the sword can deal your embodiment type instead of force damage."
+        }
+      ]
+    },
+    {
+      "name": "Draconian Bypass",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your spells ignore any trait or feature that would give a target advantage on saving throws against magical effects unless they outright negate those effects or the target would automatically be unaffected by them."
+        }
+      ]
+    }
+  ]
+}

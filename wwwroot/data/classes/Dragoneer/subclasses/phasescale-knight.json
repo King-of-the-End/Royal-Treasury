@@ -1,0 +1,285 @@
+{
+  "name": "Phasescale Knight",
+  "slug": "phasescale-knight",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "Becoming one with a living mist bit by bit, the Phasescale Knight can create duplicates of themselves to aid them, either in efforts to distract enemies, take hits in their place, defend them, or cover distances quickly. Their weapons carry an ink-like misty substance that it pulls through space as it moves, forming like a billowing cloud behind them."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d10"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Dexterity, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "Simple and martial weapons"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light, medium armor, shields"
+            },
+            {
+              "label": "Skills",
+              "value": "Perception; choose two from Athletics, History, Intimidation, Nature, Riding, or Survival"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Third Caster"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Third Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_1",
+                  "label": "1st"
+                },
+                {
+                  "key": "slot_2",
+                  "label": "2nd"
+                },
+                {
+                  "key": "slot_3",
+                  "label": "3rd"
+                },
+                {
+                  "key": "slot_4",
+                  "label": "4th"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "2nd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "3rd",
+                  "slot_1": "2",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "4th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "5th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "6th",
+                  "slot_1": "3",
+                  "slot_2": "—",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "7th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "8th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "9th",
+                  "slot_1": "4",
+                  "slot_2": "2",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "10th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "11th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "12th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "—",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "13th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "14th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "15th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "2",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "16th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "17th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "18th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "—"
+                },
+                {
+                  "level": "19th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1"
+                },
+                {
+                  "level": "20th",
+                  "slot_1": "4",
+                  "slot_2": "3",
+                  "slot_3": "3",
+                  "slot_4": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dragonblade Repertoire",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You may treat spells from the Zanjen spell group as being on the dragoneer spell list, allowing you to learn, prepare, and cast them. When you cast a Zanjen spell, you can benefit from the Sword Saint Bonus effects as though your dragoneer levels were sword saint levels."
+        },
+        {
+          "type": "paragraph",
+          "text": "When a Zanjen spell would deal bludgeoning, piercing, or slashing damage, you may replace those damage types with your embodiment type."
+        }
+      ]
+    },
+    {
+      "name": "Improved Critical",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You score a critical hit on d20 results of 19 or 20."
+        }
+      ]
+    },
+    {
+      "name": "Phase Challenge",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You can turn your body briefly into an illusory duplicate while shifting away from harm. When you take damage from a weapon attack, you can use your reaction to avoid it entirely, causing the attack to miss. When you do, you become semi-ethereal until the end of that turn, causing subsequent attacks against you during that time to have disadvantage. You can use this feature a number of times per Rest equal to the level of your highest level dragoneer spell slot."
+        }
+      ]
+    },
+    {
+      "name": "Staccato’s Mist",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you are dying, paralyzed, stunned, or incapacitated by anything other than being knocked unconscious, you can project a semi-ethereal replica of yourself at the start of each of your turns, which appears in a space within 30 feet of you that you choose, then can move and take actions as you would be able to (including using your resources, spell slots, item charges, etc), except they do not suffer from the conditions or effects on you (except those caused by magical items in your possession). The projection disappears for the round if it takes damage, has movement equal to your base movement speed, or if it uses any actions. It is capable of taking all actions you would be capable of taking, and has access to your features and weapons, and uses your statistics concerning saving throws, ability checks, and AC, but it is not resistant or immune to any damage types. It cannot suffer from any conditions. The replica disappears at the end of your turn."
+        }
+      ]
+    },
+    {
+      "name": "Self-Project",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you use your Chain Action feature to make one or more weapon attacks, you can teleport to an unoccupied space within 30 feet of you before doing so."
+        }
+      ]
+    },
+    {
+      "name": "Body of Lucky Fog",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Any time an attack or effect would reduce you to 0 hit points, kill you outright, or would damage you while you have 0 hit points, roll a d100. On a result equal to twice your dragoneer level or lower, the attack/effect has no effect on you, as it targets a misty illusion of you instead."
+        }
+      ]
+    }
+  ]
+}

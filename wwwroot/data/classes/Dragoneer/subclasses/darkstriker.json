@@ -1,0 +1,237 @@
+{
+  "name": "Darkstriker",
+  "slug": "darkstriker",
+  "class": "Dragoneer",
+  "subclass_feature": "Core Concept",
+  "summary": "TBA",
+  "introduction": [
+    "A Darkstriker carries a corrupt dragon soul with them, which lends itself to producing erratic, explosive energy. The power of a Darkstriker is difficult to control, but grants additional destructive power to its user. Due to the broken nature of the dragon soul within, their very nature eventually twists and mutates into something more sinister."
+  ],
+  "features": [
+    {
+      "name": "Core Concept Statistics",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Hit Dice",
+              "value": "d10"
+            },
+            {
+              "label": "Saving Throws",
+              "value": "Dexterity, Wisdom"
+            },
+            {
+              "label": "Weapon Proficiencies",
+              "value": "Simple weapons and martial ranged weapons; simple and martial firearms"
+            },
+            {
+              "label": "Armor Proficiencies",
+              "value": "Light armor"
+            },
+            {
+              "label": "Skills",
+              "value": "Arcana; choose one from Athletics, History, Insight, Investigation, Medicine"
+            },
+            {
+              "label": "Spellcasting",
+              "value": "Burn Caster (Wizard)"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Burn Caster Spell Slot Table",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "slot_number",
+                  "label": "Slot Number"
+                },
+                {
+                  "key": "slot_level",
+                  "label": "Slot Level"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1st",
+                  "slot_number": "1",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "2nd",
+                  "slot_number": "2",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "3rd",
+                  "slot_number": "2",
+                  "slot_level": "1st"
+                },
+                {
+                  "level": "4th",
+                  "slot_number": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "5th",
+                  "slot_number": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "6th",
+                  "slot_number": "2",
+                  "slot_level": "2nd"
+                },
+                {
+                  "level": "7th",
+                  "slot_number": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "8th",
+                  "slot_number": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "9th",
+                  "slot_number": "2",
+                  "slot_level": "3rd"
+                },
+                {
+                  "level": "10th",
+                  "slot_number": "2",
+                  "slot_level": "4th"
+                },
+                {
+                  "level": "11th",
+                  "slot_number": "3",
+                  "slot_level": "4th"
+                },
+                {
+                  "level": "12th",
+                  "slot_number": "3",
+                  "slot_level": "4th"
+                },
+                {
+                  "level": "13th",
+                  "slot_number": "3",
+                  "slot_level": "5th"
+                },
+                {
+                  "level": "14th",
+                  "slot_number": "3",
+                  "slot_level": "5th"
+                },
+                {
+                  "level": "15th",
+                  "slot_number": "3",
+                  "slot_level": "5th"
+                },
+                {
+                  "level": "16th",
+                  "slot_number": "3",
+                  "slot_level": "6th"
+                },
+                {
+                  "level": "17th",
+                  "slot_number": "4",
+                  "slot_level": "6th"
+                },
+                {
+                  "level": "18th",
+                  "slot_number": "4",
+                  "slot_level": "6th"
+                },
+                {
+                  "level": "19th",
+                  "slot_number": "4",
+                  "slot_level": "6th"
+                },
+                {
+                  "level": "20th",
+                  "slot_number": "4",
+                  "slot_level": "6th"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "The spell slots gained from the Burn Caster columns of the table are treated as Pact Magic Spell Slots, or Pact Spell Slots, for features that care for the distinction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drake’s Eye",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you attack with a ranged or thrown weapon you are proficient with, you can treat its long range as its normal range."
+        }
+      ]
+    },
+    {
+      "name": "Improved Critical (Embodied)",
+      "level": "1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You score critical hits on a d20 result of 19 or 20. When you score a critical hit, you can choose to deal all of your weapon’s damage as your embodiment type."
+        }
+      ]
+    },
+    {
+      "name": "Dragon Shell",
+      "level": "3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you hit a target with a weapon attack and deal weapon damage to them, you can use your bonus action to create a blast of energy that targets each creature you choose within 10 feet of your target (including them). Each target must make a saving throw (based on your embodiment damage’s save type) against your spell save DC. On a failure, they take the same damage your attack dealt, but as your embodiment damage. You can use this trait a number of times per Rest equal to half your proficiency bonus (rounded down)."
+        }
+      ]
+    },
+    {
+      "name": "Smiteful Burst",
+      "level": "7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once per turn, when you score a critical hit due to a d20 result on an attack roll against a target, you deal additional damage of your embodiment type equal to a d8 × your highest level spell slot (including used ones)."
+        }
+      ]
+    },
+    {
+      "name": "Vain Sympathy",
+      "level": "13",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a second Embodiment Type. You gain it as a mutation, and so have access to its feature, movement type, embodiment damage type and save type just as you would for your first. When an embodiment damage type is called for, you can choose which you use, and must use the corresponding embodiment type’s saving throw (and vice versa)."
+        }
+      ]
+    },
+    {
+      "name": "Superior Critical (Embodied)",
+      "level": "17",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You score a critical hit on a d20 result of 18, 19, or 20."
+        }
+      ]
+    }
+  ]
+}
